@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+#data ingestion script results ignored as they are large you can rerun it when you need it, its collect_pmc.py
+data/raw/*.txt
+data/raw/*.json
