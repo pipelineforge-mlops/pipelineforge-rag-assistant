@@ -1,0 +1,365 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Vaccine X
+Journal ID: Vaccine X
+NLM Journal ID: 101748769
+
+Vaccine: X
+
+EISSN: 2590-1362
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498395
+Article ID: NIHMS2193772
+PMID: 42631324
+DOI: 10.1016/j.jvacx.2026.100829
+Article ID: NIHMS2193772
+Article ID: NIHPA2193772
+Article version: 1
+Subjects: Article
+
+Mobile Vaccine Uptake (MoVeUP): a randomized effectiveness trial for a vaccine communication app
+
+Kerns Ellen K. a b *
+Ounpraseuth Songthip c
+Darden Paul c d
+Roberts James R. e
+Lee Jeannette c
+Newcomer Sophia R. f
+Costello Lisa M. g
+Hockett Christine W. h i
+Dehority Walter j
+Queen Katie k
+Alamarat Zain c
+Watts Delma-Jean l
+Greer Melody c
+Phan Ly T. m
+Chang Di c
+Snowden Jessica n
+McCulloh Russell J. a b
+a Children’s Nebraska, Omaha, NE, United States of America
+b Department of Pediatrics, University of Nebraska Medical Center, Omaha, NE, United States of America
+c University of Arkansas for Medical Sciences, Little Rock, AR, United States of America
+d University of Oklahoma Health Sciences Center, Oklahoma City, OK, United States of America
+e Medical University of South Carolina College of Medicine, Charleston, SC, United States of America
+f University of Montana Center for Population Health Research, Missoula, MT, United States of America
+g West Virginia University School of Medicine, Morgantown, WV, United States of America
+h Avera Research Institute, Sioux Falls, SD, United States of America
+i Department of Pediatrics, University of South Dakota School of Medicine, Sioux Falls, SD, United States of America
+j Vanderbilt University School of Medicine, Nashville, TN, United States of America
+k Our Lady of the Lake Children’s Health, Pennington Biomedical Research Center, Baton Rouge, Louisiana, United States of America
+l Warren Alpert School of Medicine, Brown University, Providence, RI, United States of America
+m Nemours Children’s Health, Wilmington, DE, United States of America
+n The University of Tennessee Health Sciences Center, Memphis, TN, United States of America
+* Corresponding author at: Department of Pediatrics, University of Nebraska Medical Center, 985900 Nebraska Medical Center, Omaha, NE 68198, United States of America. ellen.kerns@unmc.edu (E.K. Kerns).
+Print publication date: 2026 Jun
+Electronic publication date: 2026 May 4
+Volume: 30
+Electronic Location ID: 100829
+Author manuscript; available in PMC: 2026 Aug 22
+License: This is an open access article under the CC BY-NC license (https://creativecommons.org/licenses/by-nc/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: COVID-19, mHealth, Mobile health, App, Vaccine confidence, Vaccine decision making
+
+==============================
+Background:
+
+COVID-19 vaccine uptake among children remains low. Bundling multiple strategies into a mobile health (mHealth) application (app) may be effective in promoting vaccine uptake. We aimed to determine the effectiveness of a caregiver-facing mHealth app on pediatric COVID-19 vaccine uptake.
+
+Methods:
+
+Caregivers of a child unvaccinated for COVID-19 were recruited from 29 clinics in 15 states. Caregivers were randomized to either a COVID-19 vaccine communication (Vup) or a general health education (GenH) app. Caregivers self-reported (with verification) their child’s COVID-19 vaccinations over a 24-week study period. Mixed-effect Poisson regression models were run adjusting for clinic and stratified by child age and rurality.
+
+Results:
+
+From 15Jul22–14Feb23, 727(32% rural, 50% white) caregivers of 1205 unvaccinated children were enrolled. 22(3.7%) children of caregivers randomized to VUp compared to 25(3.6%) and 7(1.1%) children of caregivers randomized to GenH initiated COVID-19 vaccination (unadjusted relative risk (uRR): 0.85(95% CI:0.49–1.50). 13(2.2%) Vup versus 7(1.1%) GenH completed (uRR: 1.80(95%CI:0.72–4.49)). Among rural children, the uRR of vaccine series completion was 6.22(95%CI:1.38–28.03). Adjusted models showed similar effect sizes.
+
+Conclusions:
+
+Overall low vaccination uptake in this diverse cohort limited the power to detect an effect. Future studies should examine the utility of mHealth apps on other vaccinations, particularly in rural populations.
+
+1. Background and objectives
+
+Vaccination against SARS-CoV-2 has proven instrumental in protecting individuals from hospitalization and death due to COVID-19.The first COVID-19 vaccines were emergency use authorization (EUA) by the US Food and Drug Administration (FDA) for individuals aged 16 years and older in December 2020 [1]; EUA for younger ages was achieved over the subsequent 18 months [2,3]. These first vaccines decreased the risk of hospitalization by 73% (in individuals receiving 1 dose) to 89% (after 2 doses), and reduced the risk of death by 68% (in individuals receiving 1 dose) to 92% (after 2 doses) [4], In younger children, COVID-19 vaccination has been associated with a roughly 90% reduced risk of COVID-19 disease [5,6] and may reduce the risk of developing post-acute sequelae of SARS-CoV-2 infection (PASC, or long COVID) [7]. However, the positive public health impact of effective vaccines depends upon sufficient uptake.
+
+Disparities in COVID-19 vaccine uptake among different communities are a major driver of disparities in health outcomes, particularly in rural areas [8,9]. During the initial 2 years of vaccine availability, rural counties had lower uptake of both the first dose (52.1% vs 66.2%) and primary series completion (58.5% vs 75.4%) compared to urban counties. Disparities in vaccination for rural children were larger, with 30.5% of 5–11-year-olds in large metropolitan areas receiving ≥1 dose compared to only 14.7% of same-aged rural children [8].Children of parents who identify from groups that have been historically minoritized or socioeconomically marginalized also had lower rates of COVID-19 vaccination [10]. Consequently, increasing COVID-19 vaccination rates among these communities was identified as a public health priority.
+
+Parental hesitancy to COVID-19 vaccines has been higher than hesitancy to routine childhood vaccines [11].Contributors to parental vaccine hesitancy are multifactorial, interconnected, and vary across sociodemographic contexts [10,12]. Thus, identifying effective and scalable interventions to increase COVID-19 vaccine uptake requires integration of multiple approaches that consider recipients’ social/cultural context in ways that reflect communities’ norms and values.Mobile health (mHealth) tools such as mobile device applications (apps), can incorporate multiple communication/uptake strategies and have previously been shown to positively affect parents’ knowledge of childhood vaccines and increase their intent to vaccinate [13]. However, prospective studies evaluating their effectiveness in increasing children’s vaccination uptake are limited, and such interventions have not been evaluated in rural and underserved populations.
+
+In September 2020, the National Institutes of Health (NIH) developed the Community Engagement Alliance (CEAL) Against COVID-19 Disparities [14]. CEAL aimed to enhance research and outreach efforts in communities disproportionately affected by the pandemic. In parallel, the NIH-funded Environmental Influences on Child Health Outcomes IDeA States Pediatric Clinical Trials Network (ECHO ISPCTN) [15], the nation’s only federally funded clinical trials network focused on engaging children and families from rural or underserved communities in biomedical research, identified caregiver COVID-19 vaccine hesitancy as a priority health concern. In response, the ECHO ISPCTN conducted a randomized controlled trial to test the effectiveness of a personalized mHealth vaccine communication intervention, specifically in rural or medically underserved populations where vaccine hesitancy was highest. We hypothesized that children of caregivers receiving the vaccine communication app intervention would experience greater COVID-19 vaccine uptake when compared to children of caregivers receiving a control general health app.
+
+2. Methods
+
+2.1. Trial design and oversight
+
+Details of the “Improving Pediatric COVID-19 Vaccine Uptake Using an mHealth Tool” (MoVeUP) clinical trial protocol (clinicaltrials.gov ID: NCT05386355) were published previously [16]. Briefly, we conducted a multicenter, prospective, randomized, single-blinded clinical trial to test the effectiveness of a clinic- and demographic-customized app focused on COVID-19 vaccination communication versus a non-customized general pediatric health information app on caregivers’ decisions to vaccinate their child against COVID-19. Caregivers were enrolled from 15 July 2022 to 14 February 2023, after the vaccine had been authorized or approved for children aged 6 months and older (Fig. 1).The final participants’ outcomes assessment occurred in August 2023.This trial was approved by the University of Arkansas Medical Sciences institutional review board (IRB), the central IRB for the ECHO ISPCTN, under protocol #273761.
+
+2.2. Participants
+
+2.2.1 . Clinics
+
+Caregivers were recruited from 29 clinics from 15 states within the ECHO ISPCTN. Clinics were selected based on the following criteria: 1) provide primary care to at least 100 pediatric patients/year; 2) have access to their state’s vaccine registry; 3) have electronic health record and/or billing data infrastructure to identify qualifying patients; and 4) meet at least one of the following criteria for patients seen by the clinic: <60% non-Hispanic White; >40% reside in a rural area (patient zip code assigned a rural-urban commuting area code ≥ 4) [17]; or > 40% with Medicaid/Medicare insurance or uninsured. Clinics serving Spanish-speaking patients were prioritized.
+
+2.2.2. Caregivers and children
+
+Eligible caregivers had an eligible child and no history of other COVID-19 vaccine-related study participation. Eligible children were patients at a participating clinic, aged 6 months old to their state’s age of majority, without medical contraindications to COVID-19 vaccination, completely unvaccinated against COVID-19, and had not participated in a COVID-19 vaccine-related study.
+
+2.2.3. Randomization and retention
+
+Using a centralized electronic data capture system [18], we randomly assigned consented caregivers to receive the intervention app “Vaccine Uptake” (VUp) or the control app “General Health” (GenH), stratified by enrolling clinic, using block sizes of 2 to 4 according to a permuted design. Allocation was concealed from the enrolling site and most of the central study team including the statistician; central research staff who provided technical assistance with app downloads and use (i.e., app team) were not blinded. Once randomized, the app team registered caregivers in their assigned app using their demographics (self-reported race, ethnicity, rurality, and clinic of enrollment) to ensure customized app content and sent them instructions for downloading and logging into the app. Further details regarding enrollment, randomization, and retention efforts are summarized in a separate publication [19].
+
+2.2.4. Trial interventions
+
+The intervention app (VUp) was designed to present three forms of content about pediatric COVID-19 disease and vaccination: 1) narrative vignettes; 2) self-directed education; and 3) vaccine access information. Content and design utilized the Health Belief Model [20] and addressed barriers to pediatric COVID-19 vaccination identified by the NIH CEAL initiative [14]. Content was customized to the child’s clinic (e.g. clinic branding, provider testimonials with pictures, and local vaccine access information) and the caregiver’s demographic information using insights from a prior qualitative study conducted by the ISPCTN [21]. The control app (GenH) provided self-directed education focused on general pediatric health topics. COVID-19 vaccine information in GenH was limited to listing it among other recommended childhood vaccines. GenH was not customized by demographic or clinic (Fig. 2). Both apps were available in English and in Spanish.
+
+The apps also delivered scheduled push notifications (i.e., cues to action) to view content and, for VUp, to provide behavioral prompts to vaccinate. Both apps sent weekly notifications for the first 8 study weeks followed by two monthly notifications completing the 16-week active intervention phase. This phase was followed by 8 weeks of passive intervention during which time no push notifications were sent. Twenty-four weeks of participation duration allowed for completion of the longest pediatric COVID-19 vaccination initial series at the time of the trial if vaccination was initiated by week 8. Both apps underwent 2 rounds of user acceptance testing with representative caregivers prior to trial launch wherein usability issues were identified and resolved.
+
+2.2.5. Study data collection
+
+At enrollment, caregivers were asked for their own and their eligible children’s demographic and contact information (supplemental Table 1). They were also surveyed regarding COVID-19 vaccine hesitancy, vaccination intentions, and selected covariates of interest at baseline, app usability at week 8, and were re-surveyed regarding covariates of interest and vaccine hesitancy at week 16. Eligible children’s COVID-19 vaccination status was elicited at weeks 8, 16, and 24. App usage was recorded automatically throughout the caregiver’s participation. Each time an app was opened, every selection made within the app by a participant was tagged and recorded with both the caregiver’s study number and a date/time stamp.
+
+2.2.6. Outcomes
+
+The primary outcome was COVID-19 vaccine initial series completion, defined as completion of all doses considered to be part of the initial series by the Centers for Disease Control and Prevention based on the child’s age and the brand of vaccine received. Doses were confirmed if documented in any of the following records reviewed by study staff: 1) an uploaded vaccination card; 2) electronic health record; or 3) state immunization registry record. Doses had to be within the participating caregiver’s 24-week intervention period to be considered valid for study purposes. If caregivers failed to upload a vaccination card or to complete the week 24 survey within two weeks of its due date, local study personnel searched both the child’s clinic electronic health record and (if necessary and available) their state’s immunization registry record to confirm vaccination status. Secondary outcomes included COVID-19 series initiation (defined as receipt of at least one vaccine dose) and vaccine hesitancy; the latter will be presented in a separate upcoming manuscript.
+
+2.2.7. Sample size determination
+
+We assumed a baseline prevalence of 30% COVID-19 vaccine initial series completion based on vaccination rates of children aged 12–17 years in IDeA states at the time of trial design [8]. The COVID-19 vaccine became available for children aged 6 months to 12 years old after trial design but one month before enrollment began. We hypothesized a 10% increase in COVID-19 vaccine initial series completion based on prior studies [13,22,23]. In determining sample size, each caregiver was considered as a cluster with an average of 2 unvaccinated children. Given these assumptions, an improvement from 30% to 40% was determined to require 758 caregivers (379 per arm), at the two-sided 0.05 significance level, power of 0.90, and clinic intraclass correlation coefficient of 0.60. To ensure at least 758 caregivers available for modified intention to treat analysis, we expected to randomize 892 caregivers to account for ≤15% of randomized participants failing to download their assigned app during enrollment. In November 2022, the number of children needed was re-assessed to account for clustering by caregiver as well as clinic. When accounting for this nested correlation, it was determined that 696 caregivers would give 80% power to detect the hypothesized improvement; this new recruitment target was approved by our data safety and monitoring board.
+
+2.3. Statistical analyses
+
+2.3.1. Populations for analyses
+
+This study had three analysis populations: 1) intention to treat (ITT)—all children of randomized caregivers; 2) modified ITT (mITT)—all children of randomized caregivers who completed at least one app session (defined as downloading the app and clicking on at least one content module); and 3) per protocol (PP)—all participants in the mITT population who were retained in the study until completion (completed the week 24 survey). The ITT population was the primary population for analysis.
+
+2.3.2. Descriptive analysis
+
+Caregiver and child demographics were summarized and stratified by study arm.Categorical variables were presented as counts and percentages; means and standard deviations or medians with interquartile ranges were used for continuous variables, as appropriate.
+
+2.3.3. Unadjusted and adjusted analyses
+
+Initially, a non-modeling approach was used to compare the two intervention groups with respect to the proportions of children who completed COVID-19 vaccination and those who initiated COVID-19 vaccination.We report both the unadjusted relative risk (RR) with Wald 95% confidence interval (CI). Mixed-effect Poisson regression with robust variance estimation was used to report the adjusted RR with 95% CI accounting for clinic-specific random intercepts. All models were additionally run within self-reported rural/non-rural, racial/ethnic, and age category (6 months- < 5 years, 5–11 years, and 12–17 years) sub-groups.
+
+3. Results
+
+2999 caregivers of unvaccinated children were screened between July 2022 and February 2023. Of these, 361 caregivers were randomized to VUp and 366 were randomized to GenH. Two caregivers (one from each group) were randomized in error as the caregiver did not have an eligible child and were removed from analyses (Fig. 3). Overall, 71% of caregivers randomized to either app completed the baseline survey and 82% of those who completed the baseline survey completed the remaining surveys. In the ITT population, 34.3% reported living in a rural area, 47.7% identified as White, and 70.6% reported an educational level less than a bachelor’s degree (Table 1). Most caregivers were women (94.1%) and reported their child was on public insurance (63.5%). A total of 40/725 (5.5%) caregivers selected Spanish as their preferred language. Most eligible children were younger than 12 years old (45.2% 6 months-5 years old, 38.8% 6–11 years old, 16.1% 12–17 years old, supplemental Table 2). Additional details regarding recruitment, retention, and the baseline hesitancy of enrolled caregivers have been described previously [19,24].
+
+In ITT analysis, the rate of COVID-19 vaccine primary series completion in GenH was 1.2% compared to 2.1% in VUp (RR:1.80, 95% CI:0.72–4.48).The rate of COVID-19 vaccine primary series initiation was 3.9% (Table 2). Vaccination series initiation was 4.2% in the GenH group vs 3.7% in VUp (RR:0.85, 95%CI:0.49–1.50). In the subgroup analysis of rural participants, children in VUp (5.7%) were more likely to have completed their COVID-19 vaccine primary series than GenH children (0.9%) (RR: 6.22, 95%CI:1.38–28.03). This finding was no longer significant when adjusting for clustering by clinic. Models were not adjusted for clustering by caregiver due to most randomized caregivers only having one eligible child and the underlying low outcome rate. There was no difference between groups when stratified by race, ethnicity, or age.
+
+A total of 449 (62%) of the ITT population used their assigned app at least once (mITT). Among the mITT population, the median number of sessions was 8 (IQR: 4–15); average session duration in seconds was 19 s (IQR: 10–47 s). Usage patterns did not significantly differ by app. One child reported a new onset diabetes adverse event which was unrelated to study intervention. No other adverse events were reported. Four mITT caregivers were lost to follow-up resulting in 445 caregivers completing the study per protocol (PP). The results for the mITT and PP analyses were similar to ITT (supplemental Tables 3–4).
+
+4. Discussion
+
+In this trial, we found no difference in the rate of COVID-19 vaccine primary series completion or initiation among children of caregivers receiving a customized COVID-19 vaccine communication app compared to caregivers receiving a control app. When examining our sub-group of interest, rural children, we saw a higher rate of COVID-19 vaccine series completion among children of caregivers who received VUp compared to those who received GenH, but this difference was not significant when controlling for the child’s primary care clinic. Despite achieving adequate enrollment, we were underpowered to detect an effect given the unexpectedly low rate of vaccination.
+
+COVID-19 vaccination uptake among children of enrolled caregivers was substantially lower than nationally reported rates. This finding reflects successful enrollment of caregivers from the most vaccine hesitant segments of the US population, including individuals who identified as being from rural and/or Black communities, as we have published previously [19]. Additionally, COVID-19 vaccination rates are substantially lower among children <12 years old as compared to rates among adolescents and young adults; 84% of children in our study were younger than 12 years of age. Overall, the achievement of target enrollment—and of participants from rural or underserved settings—should be viewed as a success, given the fact that many pediatric clinical trials fail to achieve enrollment targets [25–27].
+
+Our findings provide evidence to support the feasibility and potential role of combining multiple vaccine communication strategies via mHealth tools, particularly in rural settings. Various methods previously demonstrated as effective for other vaccines and outside of mHealth apps include provider recommendations, patient reminder recalls, and text messaging campaigns. However, these interventions can be expensive and logistically challenging to implement and sustain [28]. mHealth apps have been used for various reminder and medical education interventions outside of vaccination, and they can be customized to deliver a more personalized approach based on relevant geographic, social, and/or demographic factors. VUp combined messaging from participating clinics’ local healthcare providers, location-specific information for accessing COVID-19 vaccines, community-informed messaging customized by participants’ race/ethnicity and rurality, and behavioral nudges through automated text messages. Combining multiple strategies may have contributed to the increase in COVID-19 vaccine series completion observed among rural children. Given that most US families from rural communities use smart phones (88% overall and 84% of families earning <$30,000/year) [29], mHealth interventions tailored to and deployed in partnership with rural communities may enable broad uptake and positive health impact for these populations.
+
+This study has limitations. First, vaccine availability for older children occurred earlier than for younger children, likely skewing enrollment toward caregivers of younger children and contributing to lower-than-expected vaccination rates. Study findings may not translate to vaccines with FDA approval since COVID-19 vaccines for children <12 years were only available under Emergency Use Authorization during the study period [30]. Future studies should assess the effectiveness of tailored mHealth apps like VUp for increasing uptake of FDA approved vaccines.Additionally, SARS-CoV-2 epidemiology and COVID-19 disease burden varied substantially throughout the study period; our analyses do not account for potential confounding from caregiver awareness of local circulating virus and disease burden epidemiology. Although VUp content was branded with their child’s primary clinic’s information, app content was presented in the context of a research study and not directly from the clinic itself; this may have limited caregivers’ trust in app recommendations and engagement. A post-hoc power analysis revealed that our intervention would have needed to generate a 400% increase in vaccine completion to be sufficiently powered to detect the impact given the baseline rate found of 1%. Since we had hypothesized a baseline rate of 30% and an increase of 33% this left us severely underpowered to confirm the observed 100% increase even if we had enrolled the original target sample size. Only 62% of caregivers used the intervention. We found that most caregivers (90%) who did not use the intervention also did not engage in the outcome assessments indicating that they were lost to follow up after the initial consent. Future mHealth studies should consider additional retention methods to prevent this attrition such as completing app download during the consent visit. Finally, this study was conducted in primary care clinics; results may differ for mHealth interventions deployed across other settings.
+
+5. Conclusion
+
+A customized, multi-faceted mHealth vaccine communication tool was not effective in increasing pediatric COVID-19 vaccine primary series completion or initiation. However, app usage and retention of participants from rural and underserved communities in our study suggest that mHealth technology may be effective in disseminating vaccine uptake messages across diverse settings, thus highlighting their potential to be used in future vaccine-promotion efforts for other vaccines.
+
+Supplementary Material
+
+1
+
+Acknowledgements
+
+We would like to thank the teams at each of the sites who made this work possible: Lee Howard, RN, CCRC; Hanna Krehbiel, BS; Rita Hudson Brown, BA From Arkansas Children’s Research Institute in Little Rock, Arkansas.
+
+Joseph Majure, MD; Emily Fratesi, RNC; Taylor Fry, MS; Lacy Malloch, BS From University of Mississippi Medical Center in Jackson, Mississippi.
+
+Jessie Maxwell, MD; Hengameh Raissy, PharmD; Samiha Mateen, PhD; Sandra Beauman, MSN; Eve Gronert, BS; Elizabeth Kuan, BSN; Sarah Sanders, BSN From University of New Mexico Health Sciences Center in Albuquerque, New Mexico.
+
+Venkataraman Balaraman, MD; Annette Amiotte, BSN; Moara Ssantos, PhD; Kelsey Rhodes, DO From Kapiolani Medical Center for Women and Children in Honolulu, Hawaii.
+
+Thomas Chun, MD; Melinda Delaney, MD; Barbara Bancroft, MSN; Miranda Triedman, BA; Owen Wogmon, BS From Rhode Island Hospitalin Providence, Rhode Island.
+
+Paul Palumbo, MD; Mary McNally, BS; Karlyn Martini, BSN From Dartmouth-Hitchcock Clinic in Lebanon, New Hampshire.
+
+Erin Dawley, BA; Elizabeth O’Brien, MSN; Danyel Dantzler, MS From Medical University of South Carolina in Charleston, South Carolina.
+
+Jyoti Angal, PhD; Diane Smith, PhD, MSN; Katelynne Clark, BS; Roger DeRaad, MN, CNP; Crystal Gruetzmacher, CCRC; Rachel Johannsen, BS; Meggie McCoy, BS; Kristina Tindall, MPH From Avera Research Institute in Sioux Falls, South Dakota.
+
+Daniel Blatt, MD; Sara Watson, MD; Jacqueline Boyd, BSN; Heather Felton, MD From Norton Children’s Research Institute in Louisville, Kentucky.
+
+Lee Pyles, MD; J. Philip Saul, MD; Lesley Cottrell, PhD; Lauren Lake, BA; Emily Polak, BA; Joseph Scattaregia, BSN; Michelle Shaffer, CCRP; Sarah Stutler, MBA; Tricia Swiger, RN; Jessica Tissue, RRT From West Virginia University in Morgantown, West Virginia.
+
+Amanda Bogie, MD; Alexandria Caldwell, MD; Marianne Dunlap, MD; Ryan McKee, MD; Ryan Blucker, PhD; Timothy VanWagoner, PhD; Bertha Cardenas, MA; Christi Madden, MBA, MA; Valorie Owens, MSW; Timothy Walsh, MPH From University of Oklahoma Health Sciences Center in Oklahoma City, Oklahoma.
+
+Daniel Hsia, MD; Micah Klumpp, PhD; Mary Duhon, RN; Tina Martinez; Logan Arceneaux, BS; Jill Tomkins, BS, MS; Ann-Elise Mitcham, BS; Cristine Le Boeuf, DNP; Misty Eiserloh, BS From Our Lady of the Lake Regional Medical Center in Baton Rouge, Louisiana.
+
+Thomas Ryan Smith, MD; Kristina Foster, BSN, MS; Michael B. Nelson, MD, MPH; Loretta Nelson, MD From University of Kansas Medical Center in Kansas City, Kansas.
+
+Paul Enlow, PhD; Victoria Reynolds, BS; Andgel Munoz Osario, BS; Judith Ross, MD; Ridgette Hindt, BS From Nemours Children’s Hospital in Wilmington, Delaware.
+
+Gwenn Skar, MD; Adrien Honcoop, PhD; Colter Benson, BS; Jonathan Figliomeni, MHA; Ricky Flores, BS; Miranda Johs; Saikiran Kalali, BS; Bibhusha Karki, MS; Betty Oberle, BSN; Nicholas Reynolds, MS; Fernando Sanchez, BBA; Rachel Wellman, BSN, MS From University of Nebraska Medical Center in Omaha, Nebraska.
+
+Funding/support
+
+All phases of this study were supported by the National Institutes of Health to the IDeA States Pediatric Clinical Trials Network under grants, UG1 OD024945, UG1 OD024947, UG1 OD024951, UG1 OD024952, UG1 OD024953, UG1 OD024956, UG1 OD0249458, UG1 OD024959, UG1 OD030016, UG1 OD030019; and U24 OD024957.
+
+Role of Funder/Sponsor (if any)
+
+Although NIH ECHO staff had input into the study design, conduct, analysis, and manuscript drafting (or whichever of these activities apply), the comments and views of the authors do not necessarily represent the views of the National Institutes of Health, the Department of Health and Human Services, or the US Government.
+
+Data availability
+
+Deidentified individual participant data (including data dictionaries) have been made available in the NICHD Data and Specimen Hub (DASH) repository. The data is available to the public. The data can be downloaded here.
+
+Appendix A. Supplementary data
+
+Supplementary data to this article can be found online at https://doi.org/10.1016/j.jvacx.2026.100829.
+
+Abbreviations:
+
+CEAL Community Engagement Alliance
+
+CI confidence interva
+
+EUA emergency use authorization
+
+FDA Food and Drug Administration
+
+ECHO environmental influences on child health outcomes
+
+GenH general health i.e. the general health/control app
+
+IRB institutional review board
+
+ISPCTN IDeA States Pediatric Clinical Trials Network
+
+ITT intention to treat
+
+mHealth mobile health
+
+mITT modified intention to treat
+
+MoVeUP mobile vaccine uptake
+
+NIH National Institutes of Health
+
+PASC post-acute sequelae of SARS-CoV-2 infection post-acute sequelae of SARS-CoV-2 infection
+
+PP per protocol
+
+RR relative risk
+
+VUp vaccine uptake i.e. the vaccine communication/intervention app
+
+Fig. 1. Timeline for trial development and conduct in the context of FDA COVID-19 vaccine authorizations.
+
+Fig. 2. Sample screenshots from the Vaccine Uptake app (intervention) and General Health app (control).
+
+Fig. 3. Consort diagram.
+
+Table 1 Demographic Characteristics of Randomized Caregivers.
+
+Demographic Information	Vaccine Uptake App (N = 360)	General Health App (N = 365)	Total (N = 725)	
+	
+Gender, N (%)	
+ Male	18 (5.0)	25 (6.9)	43 (5.9)	
+ Female	341 (95.0)	340 (93.1)	681 (94.1)	
+Missing	1 (0.3)	-	1 (0.1)	
+Ethnicity, N (%)	
+ Hispanic	61 (16.9)	64 (17.5)	125 (17.2)	
+ Non-Hispanic	298 (82.8)	300 (82.2)	598 (82.5)	
+ Missing	1 (0.3)	1 (0.3)	2 (0.3)	
+Race, N (%)	
+ White	179 (49.7)	167 (45.8)	346 (47.7)	
+ Black or African American	130 (36.1)	132 (36.2)	262 (36.1)	
+ American Indian or Alaskan Native	2 (0.6)	10 (2.7)	12 (1.7)	
+ Asian	0 (0)	4 (1.1)	4 (0.6)	
+ Native Hawaiian or other Pacific Islander	2 (0.6)	0 (0)	2 (0.3)	
+ Multiracial	17 (4.7)	19 (5.2)	36 (5.0)	
+ Missing	30 (8.3)	33 (9.0)	63 (8.7)	
+Caregiver education, N (%)	
+ ≤ High school or General Educational Development GED completed	94 (37.3)	60 (23.9)	154 (30.3)	
+ Some college/technical/vocational	85 (33.7)	117 (46.6)	202 (40.3)	
+ Bachelor’s degree	45 (17.9)	45 (17.9)	90 (18.0)	
+ Master’s/Doctoral degree	23 (9.1)	23 (9.2)	46 (9.2)	
+ Missing	5 (2.0)	6 (2.4)	11 (2.2)	
+Medical insurance*	
+ None	0 (0)	1 (0.4)	1 (0.2)	
+ Private	82 (32.5)	80 (31.8)	162 (32.1)	
+ Public (Medicare, Medicaid, Tricare)	159 (63.1)	161 (63.9)	320 (63.5)	
+ Don’t know	11 (4.4)	10 (4.0)	21 (4.2)	
+Rurality (self-reported), N (%)	
+ Yes	115 (31.9)	134 (36.7)	249 (34.3)	
+ No	245 (68.1)	231 (63.3)	476 (65.7)	
+Number of children	
+  Mean (SD),	1.7 (1.0)	1.6 (0.9)	1.7 (1.0)	
+  Median (Q1, Q3)	1 (1,2)	1 (1, 2)	1 (1, 2)	
+Note: SD (standard deviation); Q1 & Q3 (25th & 75th percentiles);
+
+Excluded 2 participants withdrew before randomization; 1 parent/caregiver had an only child over 18 years old; 1 parent/caregiver had an only child <6 months old;* Medical Insurance information from baseline survey asks for primary health insurance for health care plan of the child. The majority checked that the insurance was for all family children and 13 referred to individual child insurance.
+
+Table 2 COVID-19 Vaccine Primary Series Initiation and Completion Among Children of ITT Caregivers -Overall and Sub-Group Analyses.
+
+	Vaccine	Primary	Series	Initiation	Vaccine	Primary	Series	Completion	
+	Vaccine Uptake	General Health	Unadjusted Relative Risk (95% CI)	Adjusted* Relative Risk (95% CI)	Vaccine Uptake	General Health	Unadjusted Relative Risk (95% CI)	Adjusted* Reletive Risk (95% CI)	
+	
+ITT Population (N = 1205)	22/606	25/588	0.85 (0.49, 1.50)	0.84 (0.42, 1.65)	13/606	7/588	1.8 (0.72, 4.48)	1.79 (0.59, 5.35)	
+By Child Age									
+6 month-< 5 years	15/270	14/269	1.07 (0.53, 2.17)	1.05 (0.59, 1.88)	10/270	4/269	2.49 (0.79, 7.84)	2.48 (0.72, 8.51)	
+5 –11 years	6/242	6/221	0.91 (0.30, 2.79)	0.89 (0.15, 5.39)	2/242	2/221	0.91 (0.13, 6.43)	0.91 (0.08, 10.52)	
+12 –17 years	1/94	5/98	0.21 (0.02, 1.75)	0.21 (0.02, 2.09)	1/94	1/98	1.04 (0.07, 16.43)	1.04 (0.06, 18.01)	
+By Caregiver Race/Ethnicity								
+Non-Hispanic White	10/261	7/250	1.37 (0.53, 3.54)	1.31 (0.59, 2.94)	6/261	3/250	1.92 (0.48, 7.58)	1.90 (0.37, 9.71)	
+Non-Hispanic Black	8/227	10/220	0.78 (0.31, 1.93)	0.74 (0.24, 2.22)	5/227	2/220	2.42 (0.48, 12.36)	1.87 (0.29, 12.09)	
+Hispanic	2/93	5/86	0.37 (0.07, 1.86)	0.35 (0.09, 1.42)	1/93	2/86	0.46 (0.04, 5.01)	0.46 (0.02, 9.66)	
+Other	2/25	3/32	0.85 (0.15, 4.72)	0.85 (0.11, 6.55)	1/25	0/32	NA	NA	
+By Rurality of Residence								
+Rural	13/176	10/219	1.62 (0.73, 3.60)	1.59 (0.64, 3.96)	10/176	2/219	6.22 (1.38, 28.03)	6.23 (0.95, 40.82)	
+Non-rural	9/430	15/369	0.51 (0.23, 1.16)	0.50 (0.25, 1.02)	3/430	5/369	0.51 (0.12, 2.14)	0.51 (0.14, 1.93)	
+Note: For the primary predictor intervention group, General Health is the reference group. For the ITT population, the vaccine completion outcome contained 11 missing observations (5 from the Vaccine Uptake group and 6 from the General Health group).
+
+* Models adjusted for clustering within clinic.
+
+Declaration of competing interest
+
+The authors declare the following financial interests/personal relationships which may be considered as potential competing interests: All authors report financial support was provided by National Institutes of Health Office of the Director. Drs. Kerns and McCulloh receive research grant support from the Merck Investigator Studies Program for vaccine communication research and co-authored the software used to build the apps utilized in this study. Dr. Snowden had a prior advisory board role with Pfizer that concluded before this manuscript. The other authors have no conflicts of interest relevant to this article to disclose If there are other authors, they declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+CRediT authorship contribution statement
+
+Ellen K. Kerns: Writing – review & editing, Writing – original draft, Supervision, Methodology, Data curation, Conceptualization. Songthip Ounpraseuth: Writing – review & editing, Methodology, Formal analysis, Data curation. Paul Darden: Writing – review & editing, Conceptualization. James R. Roberts: Writing – review & editing. Jeannette Lee: Writing – review & editing, Methodology. Sophia R. Newcomer: Writing – review & editing. Lisa M. Costello: Writing – review & editing. Christine W. Hockett: Writing – review & editing. Walter Dehority: Writing – review & editing. Katie Queen: Writing – review & editing. Zain Alamarat: Writing – review & editing. Delma-Jean Watts: Writing – review & editing. Melody Greer: Writing – review & editing. Ly T. Phan: Writing – review & editing. Di Chang: Writing – review & editing, Formal analysis, Data curation. Jessica Snowden: Writing – review & editing, Supervision, Conceptualization. Russell J. McCulloh: Writing – review & editing, Writing – original draft, Supervision, Methodology, Conceptualization.
+
+
+References
+
+[1] Office of the Commissioner FDA takes key action in fight against COVID-19 by issuing emergency use authorization for first COVID-19 vaccine. FDA December 14, 2020. Accessed January 20, 2025. https://www.fda.gov/news-events/press-announcements/fda-takes-key-action-fight-against-covid-19-issuing-emergency-use-authorization-first-covid-19.
+[2] Woodworth KR . The advisory committee on immunization practices’ interim recommendation for use of Pfizer-BioNTech COVID-19 vaccine in children aged 5–11 years—United States, November 2021. MMWR Morb Mortal Wkly Rep 2021; 70. Accessed January 20, 2025, https://www.cdc.gov/mmwr/volumes/70/wr/mm7045e1.htm.
+[3] Committee on Infectious Diseases, Maldonado YA , O’Leary ST , COVID-19 vaccines in children and adolescents. Pediatrics 2021;148(2):e2021052336. 10.1542/peds.2021-052336.33980697
+[4] Rahmani K , Shavaleh R , Forouhi M , The effectiveness of COVID-19 vaccines in reducing the incidence, hospitalization, and mortality from COVID-19: a systematic review and meta-analysis. Front Public Health 2022;10:873596. 10.3389/fpubh.2022.873596.36091533 PMC9459165
+[5] Creech CB , Anderson E , Berthaud V , Evaluation of mRNA-1273 Covid-19 vaccine in children 6 to 11 years of age. N Engl J Med 2022;386(21):2011–23. 10.1056/NEJMoa2203315. 35544369 PMC9127699
+[6] Gao P , Cai S , Liu Q , Du M , Liu J , Liu M . Effectiveness and safety of SARS-CoV-2 vaccines among children and adolescents: a systematic review and meta-analysis. Vaccines 2022;10(3):3. 10.3390/vaccines10030421.
+[7] Byambasuren O , Stehlik P , Clark J , Alcorn K , Glasziou P . Effect of covid-19 vaccination on long covid: systematic review. BMJ Med 2023;2(1):e000385. 10.1136/bmjmed-2022-000385.
+[8] Murthy BP . COVID-19 vaccination coverage among adolescents aged 12–17 years — United States, December 14, 2020–July 31, 2021. MMWR Morb Mortal Wkly Rep. 2021;70. 10.15585/mmwr.mm7035e1.
+[9] Saelee R Disparities in COVID-19 vaccination coverage between urban and rural counties — United States, December 14, 2020–January 31, 2022. MMWR Morb Mortal Wkly Rep. 2022;71. 10.15585/mmwr.mm7109a2.
+[10] Singh GK , Lee H , Azuine RE . Marked disparities in COVID-19 vaccination among US children and adolescents by racial/ethnic, socioeconomic, geographic, and health characteristics, United States, December 2021 – April 2022. Int J MCH AIDS 2022;11(2):e598. 10.21106/ijma.598.36506109 PMC9730738
+[11] Santibanez TA , Nguyen KH , Greby SM , Parental vaccine hesitancy and childhood influenza vaccination. Pediatrics 2020;146(6):e2020007609. 10.1542/peds.2020-007609.33168671 PMC8097955
+[12] Peters MDJ . Addressing vaccine hesitancy and resistance for COVID-19 vaccines. Int J Nurs Stud 2022;131:104241. 10.1016/j.ijnurstu.2022.104241.35489108 PMC8972969
+[13] Fadda M , Galimberti E , Fiordelli M , Romanò L , Zanetti A , Schulz PJ . Effectiveness of a smartphone app to increase parents’ knowledge and empowerment in the MMR vaccination decision: a randomized controlled trial. Hum Vaccin Immunother 2017;13(11):2512–21. 10.1080/21645515.2017.1360456.29125783 PMC5703372
+[14] About Community Engaged Research and CEAL | Community Engagement Alliance | NIH Community Engagement Alliance (CEAL). Accessed January 20, 2025. https://nihceal.org/about-community-engaged-research-and-ceal.
+[15] Annett RD , Chervinskiy S , Chun TH , IDeA states pediatric clinical trials network for underserved and rural communities. Pediatrics 2020;146(4): e20200290. 10.1542/peds.2020-0290.32943534 PMC7786822
+[16] McCulloh RJ , Darden PM , Snowden J , Correction: improving pediatric COVID-19 vaccine uptake using an mHealth tool (MoVeUp): study protocol for a randomized, controlled trial. Trials 2024;25:111. doi:10.1186/s13063-024-07951-y.38331823 PMC10854149
+[17] Rural-Urban Commuting Area Codes - Documentation | Economic Research Service. Accessed January 20, 2025. https://www.ers.usda.gov/data-products/rural-urban-commuting-area-codes/documentation.
+[18] Harris PA , Taylor R , Minor BL , The REDCap consortium: building an international community of software platform partners. J Biomed Inform 2019;95: 103208. 10.1016/j.jbi.2019.103208.31078660 PMC7254481
+[19] Dawley E , Figliomeni J , McCulloh R , Efforts to enhance recruitment and engagement of caregivers from medically underserved communities in a randomized controlled trial of a vaccine promotion app. Journal of Clinical and Translational Science 2025;9(1):e260. 10.1017/cts.2025.10164.41496785 PMC12766511
+[20] Glanz K , Rimer BK , Lewis FM . The Health Belief Model. 2002.
+[21] Honcoop A , Roberts JR , Davis B , COVID-19 vaccine hesitancy among parents: a qualitative study. Pediatrics 2023;152(5):e2023062466. doi:10.1542/peds.2023-062466.37867449 PMC10598621
+[22] Dai H , Saccardo S , Han MA , Behavioural nudges increase COVID-19 vaccinations. Nature 2021;597(7876):404–9. 10.1038/s41586-021-03843-2.34340242 PMC8443442
+[23] Shourie S , Jackson C , Cheater FM , A cluster randomised controlled trial of a web based decision aid to support parents’ decisions about their child’s measles mumps and rubella (MMR) vaccination. Vaccine 2013;31(50):6003–10. 10.1016/j.vaccine.2013.10.025.24148574 PMC3898271
+[24] Costello LM , Kerns EK , McCulloh RJ , Hesitancy and confidence in pediatric COVID-19 vaccination among diverse caregivers of unvaccinated children. Vaccine 2025;61:127245. doi:10.1016/j.vaccine.2025.127245.40472668 PMC13160452
+[25] Flores LE , Frontera WR , Andrasik MP , Assessment of the inclusion of racial/ethnic minority, female, and older individuals in vaccine clinical trials. JAMA Netw Open 2021;4(2):e2037640. 10.1001/jamanetworkopen.2020.37640.33606033 PMC7896193
+[26] Bencheva V , Mann NK , Rombey T , Pieper D , Schmiedl S . Barriers and facilitators to enrollment in pediatric clinical trials: an overview of systematic reviews. Syst Rev 2024;13(1):283. 10.1186/s13643-024-02698-8.39568091 PMC11577732
+[27] Watson SE , Smith P , Snowden J , Facilitators and barriers to pediatric clinical trial recruitment and retention in rural and community settings: a scoping review of the literature. Clin Transl Sci 2022;15(4):838–53. 10.1111/cts.13220.35037409 PMC9010274
+[28] Pereira JA , Quach S , Heidebrecht CL , Barriers to the use of reminder/recall interventions for immunizations: a systematic review. BMC Med Inform Decis Mak 2012;12(1):145. doi:10.1186/1472-6947-12-145.23245381 PMC3541955
+[29] Mobile fact sheet. Pew Research Center November 13, 2024. Accessed January 20, 2025. https://www.pewresearch.org/internet/fact-sheet/mobile/.
+[30] Office of the Commissioner. FDA approves and authorizes updated mRNA COVID-19 vaccines to better protect against currently circulating variants. FDA August 23, 2024. Accessed January 20, 2025. https://www.fda.gov/news-events/press-announcements/fda-approves-and-authorizes-updated-mrna-covid-19-vaccines-better-protect-against-currently.

@@ -1,0 +1,371 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Nat Sci Sleep
+Journal ID: Nat Sci Sleep
+NLM Journal ID: 101537767
+Journal ID: nss
+
+Nature and Science of Sleep
+
+EISSN: 1179-1608
+Publisher: Dove Press
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13496143
+PMID: 42630933
+DOI: 10.2147/NSS.S614574
+Article ID: 614574
+Article version: 1
+Subjects: Original Research
+
+Development and Internal Evaluation of a Nomogram for Clinically Significant Depressive Symptoms in Obstructive Sleep Apnea-Hypopnea Syndrome
+
+Yi et al
+
+Yi et al
+
+Yi Fan 1
+Zhang Jie 2
+Feng Qing 2
+Wang Xiaopei 2
+Zhang Rongrong 2
+Zhang Jinqiao 2
+Song Lingyu 2
+Zhang Jihua 2
+1 Graduate School, Hebei Medical University , Shijiazhuang , Hebei , People’s Republic of China
+2 Department of Otolaryngology, The First Hospital of Hebei Medical University , Shijiazhuang , Hebei , People’s Republic of China
+Correspondence: Jihua Zhang, Department of Otolaryngology, The First Hospital of Hebei Medical University, 89# Donggang Road, Shijiazhuang, Hebei, 050031, People’s Republic of China, Tel +86311-87156763, Email 57801532@hebmu.edu.cn
+Electronic publication date: 2026 Aug 17
+Publication date: 2026
+Volume: 18
+Electronic Location ID: 614574
+Received 2026 Apr 4; Accepted 2026 Aug 2
+Copyright: © 2026 Yi et al.
+Copyright year: 2026
+Copyright holder: Yi et al.
+License: This work is published and licensed by Dove Medical Press Limited. The full terms of this license are available at https://www.dovepress.com/terms.php and incorporate the Creative Commons Attribution – Non Commercial (unported, v4.0) License (http://creativecommons.org/licenses/by-nc/4.0/). By accessing the work you hereby accept the Terms. Non-commercial uses of the work are permitted without any further permission from Dove Medical Press Limited, provided the work is properly attributed. For permission for commercial use of this work, please see paragraphs 4.2 and 5 of our Terms (https://www.dovepress.com/terms.php).
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: obstructive sleep apnea-hypopnea syndrome, depressive symptoms, nomogram, oxygen desaturation index, prediction model, thyroid axis
+
+Funding: Department of Finance of Hebei This study was sponsored by grants from the Department of Finance of Hebei (Project No. LS202215).
+
+Figure count: 7
+Table count: 6
+Reference count: 35
+Page count: 16
+
+==============================
+Purpose
+
+To develop and internally evaluate a nomogram for identifying clinically significant depressive symptoms in hospitalized patients with obstructive sleep apnea-hypopnea syndrome (OSAHS).
+
+Methods
+
+A single-center retrospective study included adults hospitalized at the First Hospital of Hebei Medical University between January and December 2025. OSAHS was confirmed by overnight polysomnography (PSG) and defined as an apnea-hypopnea index (AHI) ≥5 events/h. Depressive symptoms were assessed using the Zung Self-Rating Depression Scale (SDS), with a standardized score ≥53 defining clinically significant depressive symptoms. Thirty-six candidate predictors were extracted from electronic medical records and laboratory information systems. The cohort was randomly divided into a training cohort (n=574) and an internal validation cohort (n=246). Least absolute shrinkage and selection operator (LASSO) logistic regression with 10-fold cross-validation, followed by post-LASSO multivariable logistic regression, was used to select predictors and construct the nomogram. Discrimination, calibration, and clinical utility were assessed using the area under the curve (AUC), calibration analyses, and decision curve analysis.
+
+Results
+
+Among 820 patients, 88 (10.7%) had clinically significant depressive symptoms, including 62 events in the training cohort and 26 in the internal validation cohort. LASSO initially retained seven candidate predictors. Five predictors remained statistically significant after post-LASSO multivariable logistic regression and were included in the final nomogram: oxygen desaturation index (ODI), Pittsburgh Sleep Quality Index (PSQI), Epworth Sleepiness Scale (ESS), thyroid-stimulating hormone (TSH), and free triiodothyronine (FT3). The model showed favorable discrimination in the training cohort (AUC=0.910, 95% confidence interval [CI] 0.869–0.950) and internal validation cohort (AUC=0.915, 95% CI 0.853–0.977). Calibration was acceptable, with calibration intercepts of approximately 0.000 and −0.438 and calibration slopes of 1.000 and 0.814, respectively.
+
+Conclusion
+
+This internally evaluated nomogram integrating ODI, PSQI, ESS, TSH, and FT3 showed favorable performance for identifying SDS-defined clinically significant depressive symptoms in hospitalized patients with OSAHS. Prospective multicenter and temporal external validation is required to assess its generalizability and clinical applicability.
+
+Introduction
+
+Obstructive sleep apnea-hypopnea syndrome (OSAHS) is characterized by recurrent upper-airway obstruction during sleep, leading to intermittent hypoxia, sleep fragmentation, sympathetic activation, systemic inflammation, and oxidative stress. These pathophysiological disturbances have been associated with multisystem impairment, reduced quality of life, and an increased burden of mental health symptoms.1 In particular, depressive symptoms are common and clinically relevant among patients with OSAHS. Previous population-based and clinical studies have reported associations between OSA risk or severity and depressive symptom burden, suggesting that mental health assessment should be considered as part of comprehensive OSAHS care.2–4 Moreover, treatment of OSAHS has been associated with improvement in depressive symptoms in some patients, supporting the clinical value of identifying individuals with elevated depressive symptom burden who may benefit from targeted psychological screening and follow-up.5
+
+Although the relationship between OSAHS and depressive symptoms has been widely reported, conventional respiratory severity indices, particularly the apnea-hypopnea index (AHI), do not consistently correspond to the severity of patient-reported depressive symptoms. This discrepancy suggests that AHI alone may be insufficient for identifying patients with elevated mental health risk. Hypoxemia-related measures, such as the oxygen desaturation index (ODI), may provide complementary information by capturing nocturnal oxygenation instability. In addition, patient-reported sleep measures, including the Epworth Sleepiness Scale (ESS) and the Pittsburgh Sleep Quality Index (PSQI), reflect daytime sleepiness, subjective sleep quality, and functional impairment, which may be clinically relevant to depressive symptom burden.6–8 Routinely available endocrine-metabolic markers, including thyroid-axis indicators such as free triiodothyronine (FT3) and thyroid-stimulating hormone (TSH), may also provide additional predictive information, although their mechanistic role in OSAHS-related depressive symptoms remains uncertain.9
+
+Several studies have explored multivariable or machine-learning approaches for identifying depressive symptoms in OSAHS populations.10 However, many existing approaches are limited by reduced interpretability, reliance on public-database variables, or uncertain feasibility for bedside use. A regression-based nomogram may complement these approaches by providing a transparent and visually intuitive tool that integrates routinely available polysomnographic, questionnaire-based, and laboratory variables.11 Therefore, this study aimed to develop and internally evaluate an interpretable nomogram for identifying SDS-defined clinically significant depressive symptoms among hospitalized patients with PSG-confirmed OSAHS. In addition, the potential value of hypoxemia-related burden, subjective sleep measures, and thyroid-axis markers for risk stratification in this single-center cohort was examined.
+
+Material and Methods
+
+Study Design and Participants
+
+This single-center, retrospective observational study screened eligible adult patients with OSAHS from consecutive inpatient cases admitted to the Department of Otolaryngology, The First Hospital of Hebei Medical University, between January 2025 and December 2025, and retrospectively extracted data from the hospital electronic medical record (EMR) system and laboratory information system (LIS). Inclusion criteria were: (1) age ≥18 years; (2) completion of overnight polysomnography (PSG) with a confirmed diagnosis of OSAHS (AHI ≥5 events/h); and (3) completion of patient-reported outcome questionnaires, including the Zung Self-Rating Depression Scale (SDS), ESS, and PSQI, on the day of PSG or within the routine clinical assessment window. Exclusion criteria were: (1) a prior diagnosis of severe psychiatric disorders (eg, schizophrenia or bipolar disorder) or current antidepressant use; (2) prior treatment for OSAHS with continuous positive airway pressure (CPAP) or upper-airway surgery; (3) severe organ failure, malignancy, or acute infection that could substantially affect mood status or laboratory measurements; and (4) missing or incomplete key clinical data (eg, PSG reports or SDS scores). No formal a priori sample-size calculation was performed because this was a retrospective study based on a fixed study period. The study sample was determined by including all consecutive eligible hospitalized patients with PSG-confirmed OSAHS who met the predefined inclusion and exclusion criteria between January 2025 and December 2025. The adequacy of the available sample and number of outcome events was therefore evaluated post hoc by reporting the number of clinically significant depressive symptom events and the events-per-variable ratio.
+
+Ethical Considerations
+
+The study was approved by the Ethics Committee of the First Hospital of Hebei Medical University (Approval No.: [2025] Yanshen No. (270)). Written informed consent was waived due to the retrospective design and the use of de-identified data. The study was conducted in accordance with the Declaration of Helsinki, and the study flow is shown in Figure 1.Figure 1 Flowchart of patient selection and study design. Adult hospitalized patients with polysomnography-confirmed OSAHS were screened according to the predefined inclusion and exclusion criteria. The final cohort was randomly divided into a training cohort and an internal validation cohort at a ratio of 7:3 for model development and internal evaluation.
+
+Flowchart of patient selection and model development for predicting depressive symptoms in OSAHS patients.The flowchart outlines the process of patient selection and model development for predicting depressive symptoms in patients with PSG-confirmed OSAHS. Patients admitted from January 2025 to December 2025 totaled 1041. Exclusions included severe psychiatric disorders, prior CPAP/surgery, severe organ failure/malignancy/acute infection and missing key data, reducing the cohort to 820. These were divided into a training set of 574 and a validation set of 246. Model establishment involved LASSO regression and post-LASSO multivariable logistic regression, leading to a nomogram. Model validation included ROC, calibration and DCA. The nomogram model demonstrated good discrimination and accuracy for predicting depressive symptoms in OSAHS patients.
+
+Data Extraction and Clinical Assessments
+
+All variables were independently extracted from the EMR and LIS by two investigators and cross-checked; discrepancies were resolved by a third investigator. No additional specimens were collected and no extra tests were performed solely for the purposes of this study. Extracted variables comprised:
+
+Demographic and clinical characteristics: age, gender, disease duration, body mass index (BMI), smoking status, alcohol consumption, and comorbidities including memory impairment, hypertension, diabetes mellitus, cardiovascular disease, inferior turbinate hypertrophy, fatty liver disease, abnormal pulmonary imaging findings, chronic rhinitis, and hyperlipidemia.
+
+Polysomnography and Diagnostic Criteria
+
+PSG data were obtained from the overnight PSG report at the time of initial diagnosis, conducted in a standard sleep laboratory. Respiratory events were manually scored by experienced technicians according to the American Academy of Sleep Medicine (AASM) Scoring Manual (Version 3.0). Apnea was defined as a ≥90% reduction in oronasal airflow lasting ≥10 s, and hypopnea as a ≥30% reduction in airflow lasting ≥10 s accompanied by either a ≥3% oxygen desaturation or an arousal. OSAHS was diagnosed when AHI was ≥5 events/h. PSG-derived indices included the AHI, oxygen desaturation index (ODI), longest obstructive apnea duration, and minimum oxygen saturation (min SpO2).
+
+Laboratory Measurements
+
+Laboratory results closest to the PSG date (typically within ±24 h; predominantly fasting samples) were retrieved from the LIS, including metabolic and biochemical parameters (HDL-C, fasting blood glucose, triglycerides, LDL-C, total cholesterol, urinary creatinine, and uric acid), thyroid function tests (FT4, FT3, and TSH), and hematological indices (hemoglobin, platelet count, and white blood cell count).
+
+Thyroid function data were obtained from routine clinical laboratory testing; no additional blood samples were collected and no additional thyroid function assays were performed specifically for this study. Serum TSH, FT3, and FT4 were measured in the hospital clinical laboratory using a UniCel DxI 800 automated chemiluminescent immunoassay analyzer with matched calibrators and reagents from Beckman Coulter, Inc. (Brea, CA, USA). Routine internal quality control was performed using three-level Immunoassay Plus Control materials from Bio-Rad Laboratories, Inc. The laboratory reference intervals were as follows: TSH, 0.56–5.91 mIU/L; FT3, 3.53–7.37 pmol/L; and FT4, 7.98–16.02 pmol/L. The reportable analytical ranges were 0–49.10 mIU/L for TSH, 0–46.08 pmol/L for FT3, and 0–77.10 pmol/L for FT4. All TSH, FT3, and FT4 results included in the analysis were valid released results from the laboratory information system, had passed routine laboratory quality-control procedures, and were within the corresponding reportable analytical ranges.
+
+Derived indices were calculated as follows: neutrophil-to-lymphocyte ratio (NLR) = absolute neutrophil count / absolute lymphocyte count; estimated glomerular filtration rate (eGFR) was calculated using the CKD-EPI equation.
+
+Patient-Reported Questionnaires and Outcome Definition
+
+Patient-reported questionnaire scores routinely assessed on the day of PSG and clinical evaluation were retrospectively extracted from the electronic medical record system, including the Zung Self-Rating Depression Scale (SDS) for depressive symptom severity, the Epworth Sleepiness Scale (ESS) for daytime sleepiness, and the Pittsburgh Sleep Quality Index (PSQI) for sleep quality over the preceding month.12–14 The SDS, ESS, and PSQI were administered in Chinese as part of routine clinical assessment for hospitalized patients undergoing evaluation for OSAHS. These questionnaires were completed using paper-based forms under the guidance of trained clinical staff and were subsequently recorded in the electronic medical record system; no questionnaires were newly administered for research purposes.
+
+The SDS is a 20-item self-report instrument designed to assess depressive symptom severity, with each item scored on a 4-point Likert scale and a raw score range of 20–80. Raw scores were converted to standardized index scores by multiplying the raw score by 1.25, yielding a standardized score range of 25–100, with higher scores indicating more severe depressive symptoms. In accordance with Chinese normative references and prior use in Chinese populations, a standardized SDS score ≥53 was used to define clinically significant depressive symptoms; this cutoff was used to identify clinically relevant depressive symptom burden rather than to establish a psychiatric diagnosis.15,16
+
+The ESS consists of 8 items assessing the likelihood of dozing in common daily situations, with each item scored from 0 to 3 and a total score range of 0–24; higher scores indicate greater daytime sleepiness. The ESS was used under the appropriate license obtained through Mapi Research Trust/ePROVIDE (License no: 134575) on behalf of the copyright holder.17 The Chinese version of the ESS has been reported to have acceptable reliability and validity in Chinese populations, including patients with obstructive sleep apnea.18,19
+
+The PSQI includes 19 self-rated items that generate seven component scores-subjective sleep quality, sleep latency, sleep duration, habitual sleep efficiency, sleep disturbances, use of sleep medication, and daytime dysfunction-which are summed to generate a global score ranging from 0 to 21; higher scores indicate poorer sleep quality. The Chinese version of the PSQI has demonstrated acceptable reliability and validity in Chinese populations.20,21
+
+Missing Data Handling
+
+Missingness was assessed for all 36 candidate predictors after the 7:3 data split and before imputation. The variable-level missing-data summary is provided in Supplementary Table S9. No candidate predictor exceeded the prespecified missingness threshold of 30%. Overall, missingness was low; the highest missingness was observed for urinary creatinine, with 38 missing values in the training cohort (6.62%) and 17 missing values in the internal validation cohort (6.91%). In the primary analysis, missing values were imputed after data splitting using information from the training cohort only. Continuous variables were imputed using the median value calculated from the training cohort, whereas categorical variables were imputed using the mode calculated from the training cohort. The same training-derived median or mode was then applied to the internal validation cohort. This strategy was used to avoid information leakage and to provide a simple, reproducible imputation procedure for model development and internal validation.
+
+Statistical Analysis and Model Development
+
+All statistical analyses were performed using R software (version 4.3.1). Baseline characteristics were summarized using the tableone package. Continuous variables are presented as mean ± standard deviation (SD) for approximately normally distributed data or as median (interquartile range [IQR]) for non-normally distributed data, whereas categorical variables are reported as n (%). Between-group comparisons were performed using Student’s t test or the Mann–Whitney U-test for continuous variables and the χ2-test or Fisher’s exact test for categorical variables, as appropriate.
+
+The full cohort was randomly divided into a training cohort and an internal validation cohort at a 7:3 ratio. Because both cohorts were derived from the same single-center retrospective dataset and study period, the held-out cohort was considered an internal split-sample validation cohort rather than an external validation cohort. To develop a model for identifying clinically significant depressive symptoms, univariable logistic regression was first performed in the training cohort to examine associations between each candidate predictor and the outcome. Predictor selection was then performed in two steps. First, least absolute shrinkage and selection operator (LASSO) logistic regression with 10-fold cross-validation was used for dimensionality reduction and to identify candidate predictors with non-zero coefficients. Second, all LASSO-retained variables were entered into a post-LASSO multivariable logistic regression model. Variables that remained statistically significant in the post-LASSO multivariable model were retained in the final nomogram to improve parsimony and clinical interpretability.
+
+Model discrimination was assessed using the area under the receiver operating characteristic curve (AUC) and concordance index. Calibration was evaluated using calibration plots, calibration intercept, calibration slope, Brier score, and the Hosmer–Lemeshow goodness-of-fit test. Clinical utility was assessed using decision curve analysis (DCA). Bootstrap resampling with 1,000 repetitions was performed for internal validation. Sensitivity analyses were conducted to compare the seven-variable LASSO-retained model with the final five-variable model, to evaluate the selection of ODI rather than AHI, and to examine the potential predictor-outcome overlap between ESS/PSQI and SDS-defined depressive symptoms. Multicollinearity was assessed using variance inflation factors and correlation analyses. All statistical tests were two-sided, and P<0.05 was considered statistically significant.
+
+Results
+
+Baseline Characteristics
+
+A total of 820 patients with OSAHS were included. The mean age was 40.0 years, and 89.6% were male. Participants were stratified into a depressive symptoms group and a non-depressive symptoms group based on the SDS standardized score (cutoff ≥53). Compared with the non-depressive symptoms group, the depressive symptoms group differed significantly in several demographic characteristics (including age, smoking status, and BMI) and laboratory parameters (including TG, UA, TSH, WBC, and eGFR) (all P<0.05). The prevalence of fatty liver disease and chronic rhinitis was also higher in the depressive symptoms group. Moreover, patients with depressive symptoms exhibited a greater burden of sleep-disordered breathing, with higher AHI and ODI, longer longest obstructive apnea duration, lower minimum oxygen saturation (min SpO2), and higher PSQI and ESS scores (Table 1).Table 1 Demographics and Baseline Data
+
+Variables	Total	Non-Depression	Depression	p Value	t/(Z)/[χ2] Value	
+N	820	732	88			
+Demographic and clinical characteristics:	
+Disease duration (year)	10.00 (3.00, 10.00)	10.00 (3.00, 10.00)	10.00 (4.50, 10.00)	0.965	(−0.044)	
+Age (year)	40.00 (36.00, 46.00)	41.00 (36.00, 46.00)	38.00 (34.00, 42.25)	0.001	(−3.423)	
+Gender/ n (%)				0.087	[3.594]	
+Female	85 (10.4)	81 (11.1)	4 (4.5)			
+Male	735 (89.6)	651 (88.9)	84 (95.5)			
+Smoking History/ n (%)	
+No	542 (66.1)	497 (67.9)	45 (51.1)	0.003	[9.847]	
+Yes	278 (33.9)	235 (32.1)	43 (48.9)			
+Alcohol Consumption History/ n (%)	
+No	492 (60.0)	445 (60.8)	47 (53.4)	0.222	[1.784]	
+Yes	328 (40.0)	287 (39.2)	41 (46.6)			
+BMI (kg/m2)	28.37 (25.94, 31.14)	28.07 (25.71, 30.86)	30.77 (28.63, 33.10)	<0.001	(−6.263)	
+Hypertension/ n (%)	
+No	539 (65.7)	487 (66.5)	52 (59.1)	0.204	[1.930]	
+Yes	281 (34.3)	245 (33.5)	36 (40.9)			
+DM/ n (%)	
+No	761 (92.8)	679 (92.8)	82 (93.2)	1.000	[0.021]	
+Yes	59 (7.2)	53 (7.2)	6 (6.8)			
+Cardiovascular Disease/ n (%)	
+No	705 (86.0)	631 (86.2)	74 (84.1)	0.707	[0.290]	
+Yes	115 (14.0)	101 (13.8)	14 (15.9)			
+Inferior Turbinate Hypertrophy/ n (%)	
+No	47 (5.7)	41 (5.6)	6 (6.8)	0.825	[0.215]	
+Yes	773 (94.3)	691 (94.4)	82 (93.2)			
+Fatty Liver Disease/ n (%)	
+No	541 (66.0)	496 (67.8)	45 (51.1)	0.003	[9.670]	
+Yes	279 (34.0)	236 (32.2)	43 (48.9)			
+Abnormal Pulmonary Imaging Findings/ n (%)	
+No	101 (12.3)	90 (12.3)	11 (12.5)	1.000	[0.003]	
+Yes	719 (87.7)	642 (87.7)	77 (87.5)			
+Chronic Rhinitis/ n (%)	
+No	673 (82.1)	608 (83.1)	65 (73.9)	0.048	[4.516]	
+Yes	147 (17.9)	124 (16.9)	23 (26.1)			
+Hyperlipidemia/ n (%)	
+No	539 (65.7)	487 (66.5)	52 (59.1)	0.204	[1.930]	
+Yes	281 (34.3)	245 (33.5)	36 (40.9)			
+Memory Impairment/ n (%)	
+No	167 (20.4)	154 (21.0)	13 (14.8)	0.215	[1.901]	
+Yes	653 (79.6)	578 (79.0)	75 (85.2)			
+OSA-related parameters:	
+AHI (events/h)	56.65 (41.05, 69.60)	56.62 (38.85, 66.03)	79.30 (65.62, 86.73)	<0.001	(−9.503)	
+Longest Obstructive Apnea Duration (s)	73.25 (61.80, 86.00)	73.25 (61.60, 84.53)	77.50 (65.18, 95.05)	0.026	(−2.222)	
+ODI (events/h)	53.70 (39.85, 65.32)	53.70 (36.65, 59.37)	89.90 (65.33, 101.65)	<0.001	(−11.174)	
+MinSpO2 (%)	67.00 (55.00, 78.00)	67.00 (57.00, 79.00)	51.00 (40.00, 62.25)	<0.001	(−8.158)	
+Patient-reported outcomes:	
+PSQI	8.00 (7.00, 10.00)	8.00 (6.00, 10.00)	10.00 (8.00, 11.00)	<0.001	(−5.257)	
+ESS	7.00 (5.00, 11.00)	7.00 (4.00, 10.00)	12.00 (7.00, 15.00)	<0.001	(−7.914)	
+Laboratory parameters	
+Urinary Creatinine (mmol/L)	17.70 (8.80, 26.50)	17.70 (8.80, 26.50)	17.70 (15.47, 26.50)	0.730	(−0.345)	
+HDL-C (mmol/L)	1.13 (0.98, 1.29)	1.14 (0.98, 1.31)	1.07 (0.95, 1.25)	0.064	(−1.850)	
+FBG (mmol/L)	5.16 (4.78, 5.65)	5.16 (4.79, 5.63)	5.09 (4.69, 5.83)	0.849	(−0.191)	
+TG (mmol/L)	1.94 (1.34, 2.86)	1.89 (1.28, 2.77)	2.50 (1.70, 3.61)	<0.001	(−4.536)	
+FT4 (pmol/L)	11.15 (10.23, 12.15)	11.16 (10.22, 12.14)	11.04 (10.24, 12.31)	0.602	(−0.522)	
+FT3 (pmol/L)	5.55 (5.13, 6.01)	5.54 (5.13, 5.99)	5.64 (5.18, 6.11)	0.318	(−0.998)	
+TC (mmol/L)	5.06 (4.47, 5.85)	5.04 (4.44, 5.84)	5.24 (4.70, 6.00)	0.062	(−1.865)	
+UA (μmol/L)	402.35 ± 92.56	399.00 ± 92.89	430.25 ± 85.22	0.003	−3.008	
+TSH (mIU/L)	1.75 (1.25, 2.44)	1.71 (1.24, 2.37)	2.04 (1.50, 2.75)	0.004	(−2.909)	
+LDL-C (mmol/L)	3.10 (2.65, 3.58)	3.09 (2.62, 3.57)	3.20 (2.75, 3.74)	0.111	(−1.594)	
+NLR	1.87 (1.49, 2.47)	1.86 (1.48, 2.46)	1.99 (1.55, 2.51)	0.327	(−0.979)	
+Hb (g/L)	155.00 (146.00, 163.00)	155.00 (146.00, 163.00)	156.00 (149.00, 163.00)	0.291	(−1.056)	
+Platelet Count (×109/L)	233.50 (202.75, 274.00)	233.00 (202.00, 273.00)	237.00 (211.75, 286.00)	0.158	(−1.411)	
+WBC (×109/L)	6.50 (5.50, 7.70)	6.50 (5.40, 7.60)	7.20 (6.10, 8.50)	<0.001	(−3.589)	
+eGFR (mL/min/1.73m2)	116.15 (107.55, 123.69)	116.00 (107.09, 123.20)	120.47 (112.78, 127.19)	0.001	(−3.326)	
+Notes: Data are presented as mean ± standard deviation, median (interquartile range), or number (percentage), as appropriate. P values were calculated using Student’s t test or Mann–Whitney U-test for continuous variables and χ2-test or Fisher’s exact test for categorical variables.
+
+Abbreviations: AHI, Apnea-Hypopnea Index; ODI, Oxygen Desaturation Index; PSQI, Pittsburgh Sleep Quality Index; ESS, Epworth Sleepiness Scale; HDL-C, high-density lipoprotein cholesterol; LDL-C, low-density lipoprotein cholesterol; eGFR, estimated glomerular filtration rate; NLR, neutrophil-to-lymphocyte ratio; WBC, white blood cell count.
+
+Using R, the cohort was randomly split into a training cohort (n=574) and an internal validation cohort (n=246) at a 7:3 ratio. Baseline characteristics were compared to ensure comparability between the two cohorts, and no statistically significant differences were observed (all P>0.05) (Table S1).
+
+Selection of Predictors of Depressive Symptoms in Patients with OSAHS Using LASSO Regression
+
+The overall cohort included 88 patients with clinically significant depressive symptoms among 820 patients, corresponding to an event rate of 10.7%. After random splitting, the training cohort included 62 events among 574 patients, and the internal validation cohort included 26 events among 246 patients. Given the relatively small number of events compared with the 36 candidate predictors, LASSO regression was used for dimensionality reduction before multivariable modeling. In the training cohort, the LASSO regression was applied to select candidate predictors associated with depressive symptoms. Ten-fold cross-validation was used to determine the optimal penalty parameter (λ) in the LASSO model. The coefficient profiles and cross-validation results are presented in Figures 2 and 3, respectively. Under the λ_min criterion, LASSO regression ultimately retained seven candidate predictors with non-zero coefficients: ODI, PSQI, ESS, TSH, FT3, platelet count, and chronic rhinitis.Figure 2 Coefficient profile plot of predictors in the LASSO model. Each curve represents a predictor’s regression coefficient as a function of the log-transformed penalty parameter (log λ). As λ increases, coefficients are progressively shrunk toward zero, illustrating the variable selection process used to identify the most informative predictors for depressive symptoms in OSAHS.
+
+A line graph showing coefficient profiles versus log lambda in a lasso model.A line graph with multiple curves. The horizontal axis is labeled Log Lambda, ranging from about -9 to -2, with tick marks at -8, -6, -4 and -2. The vertical axis is labeled Coefficients, ranging from -1.5 to 1.5, with tick marks at -1.5, -1.0, -0.5, 0.0, 0.5, 1.0 and 1.5. Numbers 34, 27, 6 and 1 are aligned above the plot. As Log Lambda approaches -2, all curves converge toward 0.0. The lowest curve starts near (-9, -1.5) and rises to 0.0 by (-2, 0.0). The highest curve starts near (-9, 1.6) and declines to 0.0 by (-2, 0.0). Mid-level curves begin between (-9, 1.5) and (-9, 0.6), declining to 0.0 by (-2, 0.0). Negative mid-level curves start between (-9, -0.8) and (-9, -0.2), rising to 0.0 by (-2, 0.0).
+
+Figure 3 Cross-validation plot for selecting the optimal penalty parameter (λ) in the LASSO model. The plot shows the mean cross-validated binomial deviance (±1 standard error) across a grid of λ values. The dotted vertical lines indicate the λ values selected by the minimum criterion (λ_min) and the 1-standard-error rule (λ_1se), and the final model was built using predictors with non-zero coefficients at the selected λ.
+
+A line plot of binomial deviance versus log lambda with a U shaped curve and two reference lines.A line graph with error bars showing binomial deviance across log lambda values. The x-axis label is, Log(lambda), with tick labels at minus 8, minus 6, minus 4 and minus 2. The y-axis label is, Binomial Deviance, with tick labels at 0.4, 0.5, 0.6 and 0.7. A series of points forms a U shaped curve: about 0.56 at log lambda near minus 9, decreasing to a minimum near 0.42 around log lambda near minus 4.5, then rising to about 0.69 by log lambda near minus 2. Each point has a vertical error bar. Two dotted vertical reference lines appear near log lambda about minus 4.5 and about minus 3.0. Numbers along the top margin run from 36 at the far left down to 0 at the far right.
+
+Post-LASSO Multivariable Model
+
+All these predictors retained by LASSO selection were entered into a post-LASSO multivariable logistic regression model. After mutual adjustment, ODI (OR=1.105, 95% CI 1.071–1.141, P<0.001), PSQI (OR=1.301, 95% CI 1.055–1.603, P=0.014), ESS (OR=1.208, 95% CI 1.083–1.348, P=0.001), TSH (OR=1.607, 95% CI 1.029–2.508, P=0.037) and FT3 (OR=0.474, 95% CI 0.230–0.978, P=0.043) remained statistically significant and were retained as final predictors for nomogram construction. Platelet count (OR=1.006, 95% CI 0.997–1.014, P=0.181) and chronic rhinitis (OR=2.286, 95% CI 0.778–6.715, P=0.133) did not remain statistically significant and were therefore not included in the final nomogram (Table 2).Table 2 Multivariable Logistic Regression Analysis in the Training Cohort
+
+Predictors	B Value	SE Value	Wald χ2 Values	p Value	OR Value	95% CI	
+ODI	0.100	0.016	38.925	<0.001	1.105	1.071–1.141	
+PSQI	0.263	0.107	6.071	0.014	1.301	1.055–1.603	
+ESS	0.189	0.056	11.531	0.001	1.208	1.083–1.348	
+FT3	−0.747	0.370	4.078	0.043	0.474	0.230–0.978	
+TSH	0.474	0.227	4.351	0.037	1.607	1.029–2.508	
+Chronic rhinitis	0.827	0.550	2.263	0.133	2.286	0.778–6.715	
+Platelet count	0.006	0.004	1.790	0.181	1.006	0.997–1.014	
+Constant	−12.008	2.642	20.663	0.000	0.000		
+Notes: All seven variables were retained by LASSO and entered into the post-LASSO multivariable logistic regression model. Only variables with P<0.05 were included in the final nomogram. Odds ratios (ORs) and 95% confidence intervals (CIs) were estimated using multivariable logistic regression analysis.
+
+Abbreviations: OR, odds ratio; CI, confidence interval; SE, standard error.
+
+Sensitivity Analyses and Multicollinearity Diagnostics
+
+The seven-variable model containing all LASSO-retained predictors showed discrimination comparable to that of the final five-variable model in both the training cohort (AUC, 0.915 vs 0.910; DeLong P=0.387) and the internal validation cohort (AUC, 0.906 vs 0.915; DeLong P=0.203). The events-per-variable ratio increased from 8.86 to 12.40 after model simplification, supporting selection of the more parsimonious five-variable model. Variance inflation factors for the final predictors ranged from 1.024 to 1.176, and those for the sleep-related variables were all below 2, indicating no substantial multicollinearity. The ODI-alone model showed higher discrimination than the AHI-alone model in the training cohort (AUC, 0.862 vs 0.801) and internal validation cohort (AUC, 0.858 vs 0.829). Detailed results are presented in Supplementary Tables S2–S7 and Supplementary Figures S1 and S2.
+
+To assess potential overlap between the patient-reported sleep scales and the SDS-defined outcome, the full model was compared with reduced models. After exclusion of ESS and PSQI, the model comprising ODI, TSH, and FT3 retained discrimination, with AUCs of 0.871 and 0.863 in the training and internal validation cohorts, respectively. The questionnaire-only model comprising ESS and PSQI yielded lower AUCs of 0.755 and 0.779, respectively, whereas the full five-variable model yielded AUCs of 0.910 and 0.915. Calibration of the model excluding ESS and PSQI remained acceptable in the internal validation cohort. These findings suggest that the discrimination of the full model was not solely driven by questionnaire–outcome overlap. Detailed results are provided in Supplementary Table S8.
+
+Nomogram Development for Predicting Depressive Symptoms in OSAHS
+
+Based on the post-LASSO multivariable logistic regression model, we constructed a nomogram to estimate the individual risk of clinically significant depressive symptoms in patients with OSAHS. Each predictor is assigned a point value on the “Points” scale; the points corresponding to a patient’s predictor values are summed to obtain the “Total points.” The total points are then mapped to the “Predicted probability” scale at the bottom of the nomogram to yield the estimated risk of depressive symptoms. Higher total points indicate a higher predicted probability of depressive symptoms (Figure 4).Figure 4 Nomogram for identifying clinically significant depressive symptoms in hospitalized patients with OSAHS. The nomogram was developed based on the final multivariable logistic regression model and incorporated ODI, PSQI, ESS, TSH, and FT3. For each predictor, the corresponding number of points is assigned according to its value, and the total points correspond to the estimated probability of clinically significant depressive symptoms. **P<0.01; ***P<0.001.
+
+A nomogram estimating clinically significant depressive symptoms risk in OSAHS patients using five predictors.A nomogram titled fit lrm lrm estimates risk of clinically significant depressive symptoms in patients with obstructive sleep apnea hypopnea syndrome. A shared points ruler at the top spans 0 to 100. Five predictors each have a density distribution curve mapped to this ruler. Thyroid stimulating hormone ranges 0 to 12, free triiodothyronine ranges 8.5 to 3.5, Epworth Sleepiness Scale marked with three asterisks ranges 0 to 24 with peak near 8, Pittsburgh Sleep Quality Index marked with two asterisks ranges 2 to 18 with peak near 10 and oxygen desaturation index marked with three asterisks ranges 0 to 160 with a sharp peak near 55. Total points span 120 to 260, with a distribution peak near 170. The predicted probability axis at the bottom ranges from 0.002 to 0.994. Two asterisks indicate P less than 0.01 and three asterisks indicate P less than 0.001.
+
+Evaluation and Validation of the Nomogram in the Training and Internal Validation Cohorts
+
+Discrimination of the nomogram was assessed using receiver operating characteristic (ROC) curves and the area under the ROC curve (AUC). The AUC was 0.910 (95% CI 0.869–0.950) in the training cohort and 0.915 (95% CI 0.853–0.977) in the internal validation cohort, indicating good discriminative performance (Figure 5).Figure 5 Receiver operating characteristic (ROC) curves of the nomogram in the training cohort (A) and internal validation cohort (B). The model showed favorable discrimination in both cohorts.
+
+Two line graphs showing receiver operating characteristic curves for training and validation sets.
+
+Calibration was evaluated using bootstrap resampling (1,000 iterations) and calibration plots. In both the training and internal validation cohorts, the calibration curves demonstrated close agreement between predicted and observed probabilities. The Hosmer-Lemeshow goodness-of-fit test further suggested acceptable calibration (training: P=0.334; validation: P=0.173) (Figure 6). Calibration intercepts were approximately 0.000 and −0.438 in the training and internal validation cohorts, respectively, and calibration slopes were 1.000 and 0.814, respectively (Table S2).Figure 6 Calibration curves of the nomogram in the training cohort (A) and internal validation cohort (B). The diagonal dashed line represents perfect agreement between predicted and observed probabilities. The solid line represents the apparent model performance, and the bias-corrected line was obtained using 1,000 bootstrap resamples.
+
+Two line graphs showing calibration curves of actual probability versus nomogram predicted probability.Image and B both display line graphs with axes labeled Nomogram Predicted Probability and Actual Probability, ranging from 0.0 to 1.0. Each graph includes a legend for Ideal, Apparent and Bias-corrected lines. The Ideal line is a diagonal from (0.0, 0.0) to (1.0, 1.0). Apparent and Bias-corrected curves start at (0.0, 0.0), rise to about 0.15 actual probability at 0.2 predicted probability, pass near 0.5 actual probability at 0.45 predicted probability and approach 1.0 actual probability at 1.0 predicted probability. Both images show similar curve patterns.
+
+Clinical utility was examined using decision curve analysis (DCA). The nomogram yielded a favorable net benefit across threshold probabilities of 0.02–0.89 in the training cohort and 0.04–0.85 in the internal validation cohort, supporting its potential value for risk stratification and informing early intervention strategies in clinical practice (Figure 7).Figure 7 Decision curve analysis of the nomogram in the training cohort (A) and internal validation cohort (B). The nomogram showed positive net benefit across a range of clinically relevant threshold probabilities.
+
+Two line graphs showing decision curve analysis net benefit versus high risk threshold for a nomogram.
+
+Discussion
+
+In this single-center retrospective cohort of hospitalized patients with PSG-confirmed OSAHS, we developed and internally evaluated an interpretable nomogram for identifying SDS-defined clinically significant depressive symptoms. From 36 candidate predictors covering demographic characteristics, OSAHS-related polysomnographic indices, patient-reported sleep measures, comorbidities, and routinely collected laboratory markers, LASSO regression followed by post-LASSO multivariable logistic regression retained five predictors in the final model: ODI, PSQI, ESS, TSH, and FT3. The final nomogram showed favorable discrimination and acceptable calibration in both the training cohort and the internal validation cohort. However, because the held-out validation cohort was derived from the same single-center retrospective dataset, these findings should be interpreted as internal model evaluation rather than evidence of external generalizability.
+
+The clinical value of the present model lies in its integration of objective hypoxemia-related information, patient-reported symptom burden, and routinely available thyroid-axis markers. Such a structure may be useful for identifying patients with elevated current risk of clinically significant depressive symptoms in similar inpatient OSAHS settings and for prioritizing targeted psychological screening. Nevertheless, the model should be regarded as a preliminary risk-stratification tool rather than a clinically ready instrument. The calibration slope in the internal validation cohort was below 1, suggesting that some model optimism may remain. Therefore, multicenter, temporal, and prospective external validation is required before the nomogram can be recommended for routine potential clinical applicability.
+
+One important finding was that ODI, rather than AHI, was retained in the final model. AHI was not excluded a priori; AHI, ODI, minimum SpO2, and longest obstructive apnea duration were all entered as candidate polysomnographic variables during the initial selection procedure. The retention of ODI and exclusion of AHI should therefore be interpreted as a data-driven result within this multivariable prediction framework, not as evidence that AHI lacks diagnostic or clinical relevance. Additional model-comparison analyses supported this interpretation. The ODI-alone model showed higher discrimination than the AHI-alone model in both the training cohort (AUC: 0.862 vs 0.801) and the internal validation cohort (AUC: 0.858 vs 0.829). Adding AHI to ODI resulted in only limited incremental improvement, whereas the final multivariable model achieved the highest overall discrimination. Although AHI and ODI were strongly correlated (Spearman r=0.711), the variance inflation factors for sleep-related variables were all below 2, suggesting no substantial multicollinearity.
+
+These findings suggest that ODI and AHI capture overlapping but not identical aspects of OSAHS severity. AHI quantifies the frequency of apnea and hypopnea events but does not fully describe the depth, duration, or physiological consequences of oxygen desaturation. ODI reflects repeated desaturation events and may therefore provide a clinically accessible marker of nocturnal oxygenation instability. This interpretation is consistent with growing interest in hypoxemia-related metrics, including sleep apnea-specific hypoxic burden, which may better characterize the physiological stress of OSAHS than event frequency alone.22,23 However, ODI should not be considered equivalent to hypoxic burden, because ODI mainly captures the frequency of desaturation events and does not incorporate the depth and duration of each desaturation. Thus, ODI should be interpreted as a practical, routinely available hypoxemia-related marker rather than a comprehensive measure of cumulative hypoxic burden.
+
+The association between oxygen desaturation and depressive symptom burden is biologically plausible but should not be interpreted causally in the present study. Prior studies have linked nocturnal hypoxemia with neurocognitive and affective outcomes in sleep-disordered breathing.24,25 Intermittent hypoxia has also been associated with oxidative stress, systemic inflammation, endothelial dysfunction, and neuroinflammatory responses, which may be relevant to mood-related symptom burden.26 Functional neuroimaging studies have further suggested that oxygenation-related indices, including ODI and minimum SpO2, may be associated with altered connectivity in brain networks involved in emotion regulation.27 Taken together, these data support the inclusion of ODI as a meaningful hypoxemia-related predictor in the present nomogram. Future studies incorporating more refined oxygenation metrics, such as hypoxic burden, time below 90% oxygen saturation, arousal burden, and external validation cohorts, are needed to determine whether oxygen-desaturation metrics consistently add value beyond AHI for mental health risk stratification in OSAHS.
+
+Patient-reported sleep measures were also retained in the final model. ESS and PSQI may capture dimensions of symptom burden that are not fully represented by respiratory event indices. ESS reflects excessive daytime sleepiness and daytime functional impairment, whereas PSQI reflects subjective sleep quality, sleep continuity, sleep efficiency, and daytime dysfunction. These patient-centered dimensions may be clinically relevant for identifying OSAHS patients with elevated depressive symptom burden. Previous studies have reported associations between excessive daytime sleepiness, poor sleep quality, and depressive symptoms in patients with OSAHS, supporting the clinical relevance of these measures.28,29
+
+At the same time, ESS and PSQI require cautious interpretation because they may partially overlap with SDS-defined depressive symptoms. In patients with OSA, sleep disturbance, depressive symptoms, and anxiety symptoms have been shown to be closely interconnected at the symptom-network level, and excessive daytime sleepiness in depression and OSA has been described as more than a simple overlapping symptom.30 Fatigue, poor sleep, reduced daytime functioning, and subjective distress are shared domains across sleep and mood symptom scales, and recent OSAHS studies further support the close relationship between perceived sleep quality, depressive symptoms, and quality of life.30 To address this concern, we performed sensitivity analyses excluding ESS and PSQI and compared the full model with questionnaire-only and simpler objective models. The reduced model including ODI, TSH, and FT3 retained good discrimination in the internal validation cohort, whereas the questionnaire-only model showed lower discrimination. These findings suggest that the final model was not driven solely by patient-reported symptom overlap, although ESS and PSQI contributed additional predictive information. Therefore, ESS and PSQI should be interpreted as pragmatic clinical screening signals rather than mechanistic predictors of depressive symptoms.
+
+The thyroid-axis markers TSH and FT3 were also retained in the final model, but their interpretation should remain exploratory. FT3 was not significantly different in the univariable comparison between patients with and without clinically significant depressive symptoms, yet it showed an inverse adjusted association in the post-LASSO multivariable logistic regression model. This pattern does not support a simple cohort-level low-T3 phenotype, which is consistent with evidence that the relationship between OSAHS and thyroid function remains heterogeneous and controversial.31 Instead, FT3 may provide additional predictive information after accounting for nocturnal hypoxemia, patient-reported sleep symptoms, and TSH. A variable that is not significant in crude comparisons may become informative after multivariable adjustment if confounding, suppression effects, or the joint distribution of covariates obscures its association in univariable analysis.
+
+The additional collinearity analyses support a cautious statistical interpretation of the FT3 finding. Variance inflation factors for the final model predictors were close to 1, and FT3 showed only weak correlations with TSH, ODI, ESS, and PSQI, suggesting that the adjusted FT3 association was not primarily driven by severe multicollinearity. Biologically, thyroid-axis markers may reflect endocrine-metabolic adaptation, peripheral thyroid hormone availability, or systemic stress related to OSAHS.32–35 However, the present cross-sectional data cannot establish whether thyroid-axis alterations contribute mechanistically to depressive symptoms or simply serve as adjusted predictive markers. Future studies with repeated thyroid function testing, reverse T3, thyroid autoantibodies, inflammatory markers, longitudinal follow-up, and external validation are needed to clarify the role of thyroid-axis markers in OSAHS-related depressive symptom burden.
+
+Overall, the present nomogram provides an intuitive and interpretable framework for integrating polysomnographic, questionnaire-based, and laboratory information to identify hospitalized patients with OSAHS who have elevated current risk of clinically significant depressive symptoms. Compared with less interpretable machine-learning approaches, a regression-based nomogram can display the relative contribution of each predictor and may be easier to use in bedside risk communication. However, the model was developed in a single-center retrospective cohort with marked male predominance and was evaluated only through bootstrap internal validation and internal split-sample validation. Therefore, its transportability to other hospitals, women, community-based populations, patients with milder OSAHS, and prospective clinical workflows remains uncertain. The model should be considered a preliminary risk-stratification tool, and prospective multicenter external validation is warranted before potential clinical applicability.
+
+Limitations
+
+This study has several limitations. First, this was a single-center retrospective study of hospitalized patients with OSAHS, with marked male predominance (89.6%). Selection bias may therefore exist, and the findings may not be generalizable to community-based populations, women, or patients with milder OSAHS. Second, clinically significant depressive symptoms were defined using the SDS alone, without confirmation by structured psychiatric interview or clinician diagnosis. Although the SDS cutoff was selected according to Chinese normative references, self-report assessment may introduce outcome misclassification and timing-related bias. Thus, the model should be interpreted as identifying elevated depressive symptom burden rather than diagnosing clinically significant depressive symptoms. Third, overfitting and limited validation should be considered. Although 36 candidate predictors were initially evaluated, only 88 depressive events were observed overall and 62 events were available for model development. LASSO-based dimensionality reduction, post-LASSO simplification, bootstrap internal validation, and internal split-sample validation were used to reduce optimism, but these methods cannot replace external validation. The held-out validation cohort came from the same single-center dataset, and the calibration slope below 1 in this cohort suggests possible model optimism. Therefore, the favorable performance estimates should be interpreted cautiously, and the nomogram should be regarded as a preliminary risk-stratification tool until validated in larger prospective, multicenter, temporal, and more diverse external cohorts. Fourth, residual confounding may remain despite inclusion of 36 candidate variables. Unmeasured psychosocial factors, incomplete medication information, CPAP adherence, and comorbid sleep disorders were not fully captured. In addition, differences in measurement windows between laboratory tests and questionnaire-based assessments may have affected estimate stability. Fifth, because this was a cross-sectional prediction modeling study, causal inferences regarding hypoxemia metrics, thyroid-axis markers, patient-reported sleep symptoms, and depressive symptoms cannot be drawn. Thyroid function was measured only once near PSG, and reverse T3, thyroid autoantibodies, inflammatory markers, and longitudinal thyroid data were unavailable; therefore, the adjusted association between FT3 and depressive symptoms should be interpreted as a predictive signal rather than evidence of a causal low-T3 mechanism. Finally, ESS and PSQI may partially overlap conceptually with SDS-defined depressive symptoms through shared domains such as fatigue, sleep disturbance, and daytime dysfunction. Although sensitivity analyses excluding ESS and PSQI suggested that objective and biological predictors retained predictive information, the high discrimination of the full model may still partly reflect shared patient-reported symptom variance. Future studies using synchronized psychiatric assessments, clinician-confirmed depressive outcomes, repeated thyroid testing, and external validation are needed to clarify these findings.
+
+Conclusions
+
+In summary, the internally evaluated nomogram integrating ODI, PSQI, ESS, TSH, and FT3 demonstrated favorable discrimination and acceptable calibration for identifying clinically significant depressive symptoms among hospitalized patients with OSAHS. The model may serve as an intuitive and interpretable tool to support targeted psychological screening and risk stratification in similar clinical settings. Nevertheless, because it was developed and internally evaluated in a single-center retrospective cohort, its transportability and clinical utility require confirmation through prospective multicenter and temporal external validation before routine implementation.
+
+Acknowledgments
+
+The authors acknowledge Dr Murray W. Johns, the copyright holder of the Epworth Sleepiness Scale (ESS). The ESS was used with the appropriate license obtained through Mapi Research Trust/ePROVIDE (License No.134575). All rights reserved.
+
+Data Sharing Statement
+
+The data are available upon reasonable request from the corresponding author.
+
+Ethics Statement
+
+The Medical Ethics Committee of the First Hospital of Hebei Medical University approved this study (Approval No.: [2025] Yanshen No. (270)). Informed consent was waived by the Medical Ethics Committee of the First Hospital of Hebei Medical University since it was a retrospective study.
+
+Author Contributions
+
+Fan Yi: Conceptualization, Methodology, Data curation, Investigation, Writing – original draft, Writing – review & editing.
+
+Jie Zhang: Methodology, Data curation, Formal analysis, Software, Writing – original draft, Writing – review & editing.
+
+Qing Feng: Formal analysis, Software, Visualization, Validation, Writing – review & editing.
+
+Xiaopei Wang: Validation, Investigation, Writing – review & editing.
+
+Rongrong Zhang: Investigation, Writing – review & editing.
+
+Jinqiao Zhang: Investigation, Resources, Writing – review & editing.
+
+Lingyu Song: Investigation, Writing – review & editing.
+
+Jihua Zhang: Conceptualization, Methodology, Resources, Supervision, Project administration, Writing – review & editing.
+
+Fan Yi and Jie Zhang independently extracted and cross-checked the EMR/LIS data. All authors gave final approval of the version to be published; have agreed on the journal to which the article has been submitted; and agree to be accountable for all aspects of the work.
+
+Disclosure
+
+The authors declare no competing interests.
+
+
+References
+
+1. Lv R, Liu X, Zhang Y, et al. Pathophysiological mechanisms and therapeutic approaches in obstructive sleep apnea syndrome. Signal Transduct Target Ther. 2023;8(1):218. doi:10.1038/s41392-023-01496-3 37230968 PMC10211313
+2. Kendzerska T, Mallick R, Li W, et al. Obstructive sleep apnea risk and mental health conditions among older Canadian adults in the Canadian Longitudinal Study on Aging. JAMA Network Open. 2025;8(12):e2549137. doi:10.1001/jamanetworkopen.2025.49137 41632160 PMC12743280
+3. Li M, Zou X, Lu H, et al. Association of sleep apnea and depressive symptoms among US adults: a cross-sectional study. BMC Public Health. 2023;23(1):427. doi:10.1186/s12889-023-15358-8 36879197 PMC9987095
+4. Lee MS, Lee H. The risk of obstructive sleep apnea is highly correlated with depressive symptoms among the Korean adults population: results from the 2020 Korea National Health and Nutrition Examination Survey. BMC Psychiatry. 2023;23(1):467. doi:10.1186/s12888-023-04983-7 37370095 PMC10294313
+5. Pattison E, Tolson J, Barnes M, et al. Improved depressive symptoms, and emotional regulation and reactivity, in individuals with obstructive sleep apnea after short- and long-term CPAP therapy use. Sleep Med. 2023;111:13–16. doi:10.1016/j.sleep.2023.08.024 37714031
+6. Durak B, Özol D, Saraç S. Predictors of depression among individuals with OSAS: a cross-sectional study from Turkiye. Niger J Clin Pract. 2025;28(10):1199–1205. doi:10.4103/njcp.njcp_14_25 41307377
+7. Conenna M, Point C, Wacquier B, et al. Risk of major depression associated with excessive daytime sleepiness in apneic individuals. Clocks Sleep. 2025;7(2):22. doi:10.3390/clockssleep7020022 40407628 PMC12101287
+8. Chen J, Xie S, Zhou J, et al. The role of depression in linking sleep quality and life quality in OSAHS patients. Int J Gen Med. 2025;18:2185–2195. doi:10.2147/IJGM.S516422 40259933 PMC12009744
+9. Zhou B, Wang Y, Wang Y, et al. Sex-specific associations between obstructive sleep apnea and thyroid hormone sensitivity in euthyroid adults. Biol Sex Differ. 2026;17(1):23. doi:10.1186/s13293-025-00821-5 41508106 PMC12870024
+10. Li E, Ai F, Liang C. A machine learning model to predict the risk of depression in US adults with obstructive sleep apnea hypopnea syndrome: a cross-sectional study. Front Public Health. 2024;11:1348803. doi:10.3389/fpubh.2023.1348803 38259742 PMC10800603
+11. Collins GS, Moons KGM, Dhiman P, et al. TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ. 2024;385:e078378. doi:10.1136/bmj-2023-078378 38626948 PMC11019967
+12. Zung WW. A self-rating depression scale. Arch Gen Psychiatry. 1965;12:63–70. doi:10.1001/archpsyc.1965.01720310065008 14221692
+13. Johns MW. A new method for measuring daytime sleepiness: the Epworth Sleepiness Scale. Sleep. 1991;14(6):540–545. doi:10.1093/sleep/14.6.540 1798888
+14. Buysse DJ, Reynolds III CF, Monk TH, Berman SR, Kupfer DJ. The Pittsburgh Sleep Quality Index: a new instrument for psychiatric practice and research. Psychiatry Res. 1989;28(2):193–213. doi:10.1016/0165-1781(89)90047-4 2748771
+15. Dunstan DA, Scott N. Clarification of the cut-off score for Zung’s self-rating depression scale. BMC Psychiatry. 2019;19:177. doi:10.1186/s12888-019-2161-0 31185948 PMC6558728
+16. Wang XD, Wang XL, Ma H, editors. Rating Scales for Mental Health. Beijing: Chinese Mental Health Journal Press; 1999.
+17. Epworth Sleepiness Scale. Licenses. Available from: https://epworthsleepinessscale.com/licenses. Accessed Apr 14, 2026.
+18. Chung KF. Use of the Epworth Sleepiness Scale in Chinese patients with obstructive sleep apnea and normal hospital employees. J Psychosom Res. 2000;49(5):367–372. doi:10.1016/S0022-3999(00)00186-0 11164062
+19. Chen NH, Johns MW, Li HY, et al. Validation of a Chinese version of the Epworth sleepiness scale. Qual Life Res. 2002;11(8):817–821. doi:10.1023/A:1020818417949 12482165
+20. Liu XC, Tang MQ, Hu L, et al. Reliability and validity of the Pittsburgh Sleep Quality Index. Chin J Psychiatry. 1996;29(2):103–107.
+21. Tsai PS, Wang SY, Wang MY, et al. Psychometric evaluation of the Chinese version of the Pittsburgh Sleep Quality Index in primary insomnia and control subjects. Qual Life Res. 2005;14(8):1943–1952. doi:10.1007/s11136-005-4346-x 16155782
+22. Parekh A. Hypoxic burden-definitions, pathophysiological concepts, methods of evaluation, and clinical relevance. Curr Opin Pulm Med. 2024;30(6):600–606. doi:10.1097/MCP.0000000000001122 39229876 PMC11451971
+23. Martinez-Garcia MA, Sánchez-de-la-Torre M, White DP, et al. Hypoxic burden in obstructive sleep apnea: present and future. Arch Bronconeumol. 2023;59(1):36–43. doi:10.1016/j.arbres.2022.08.005 36115739
+24. Zaffanello M, Ferrante G, Zoccante L, et al. Predictive power of oxygen desaturation index (ODI) and apnea-hypopnea index (AHI) in detecting long-term neurocognitive and psychosocial outcomes of sleep-disordered breathing in children: a questionnaire-based study. J Clin Med. 2023;12(9):3060. doi:10.3390/jcm12093060 37176501 PMC10179379
+25. Lee SA, Yoon H, Kim HW. Is severe obstructive sleep apnea associated with less depressive symptoms? J Psychosom Res. 2019;122:6–12. doi:10.1016/j.jpsychores.2019.04.017 31126412
+26. Fang SK, Hu F, Zhang Y, et al. Enriched environment ameliorates neurobehavioral abnormalities, hippocampal inflammation, and synaptic dysfunction in adult male mice exposed to intermittent hypoxia during pregnancy. Brain Res Bull. 2025;231:111544. doi:10.1016/j.brainresbull.2025.111544 40935195
+27. Li L, Liu Y, Shu Y, et al. Altered functional connectivity of cerebellar subregions in male patients with obstructive sleep apnea: a resting-state fMRI study. Neuroradiology. 2024;66(6):999–1012. doi:10.1007/s00234-024-03356-5 38671339
+28. Zhang D, Zhang Z, Li H, et al. Excessive daytime sleepiness in depression and obstructive sleep apnea: more than just an overlapping symptom. Front Psychiatry. 2021;12:710435. doi:10.3389/fpsyt.2021.710435 34566713 PMC8458762
+29. Salari N, Gholami A, Jalili F, et al. Global prevalence of excessive daytime sleepiness in patients with obstructive sleep apnea: a systematic review and meta-analysis. Indian J Otolaryngol Head Neck Surg. 2025;77(1):216–223. doi:10.1007/s12070-024-05146-0 40066425 PMC11890383
+30. Luo X, Li S, Wu Q, et al. Depressive, anxiety, and sleep disturbance symptoms in patients with obstructive sleep apnea: a network analysis perspective. BMC Psychiatry. 2025;25:77. doi:10.1186/s12888-025-06532-w 39875912 PMC11773896
+31. Xiong J, Hu H, Huang Y, Zhang J, He J. Lack of associations between thyroid dysfunction and obstructive sleep apnea-hypopnea syndrome: a meta-analysis. Medicine. 2023;102(49):e36531. doi:10.1097/MD.0000000000036531 38065875 PMC10713133
+32. Zhao M, et al. Association between hypothyroidism and obstructive sleep apnea: a bidirectional Mendelian randomization study combined with the GEO database. Front Neurol. 2024;15:1420391. doi:10.3389/fneur.2024.1420391 39719972 PMC11666497
+33. Xie Y, Zhang H, Cao Z, et al. Associations among obstructive sleep apnea, thyroid function and morphology changes. Nat Sci Sleep. 2025;17:1738–1752.10.2147/NSS.S507318 PMC12317735 40756739
+34. Ma Y, Wang M, Zhang Z. The association between depression and thyroid function. Front Endocrinol. 2024;15:1454744. doi:10.3389/fendo.2024.1454744 PMC11392763 39280013
+35. Liang H, Wang J, Wei X, Su X, Zhang B. Thyroid function, renal function, and depression: an association study. Front Psychiatry. 2023;14:1182657. doi:10.3389/fpsyt.2023.1182657 38179254 PMC10765600

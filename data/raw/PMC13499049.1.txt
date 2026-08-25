@@ -1,0 +1,519 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Am Heart J Plus
+Journal ID: Am Heart J Plus
+NLM Journal ID: 101779333
+
+American Heart Journal Plus: Cardiology Research and Practice
+
+EISSN: 2666-6022
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499049
+PMID: 42633107
+DOI: 10.1016/j.ahjo.2026.100857
+Article ID: S2666-6022(26)00146-1
+Article ID: 100857
+Article version: 1
+Subjects: Research Paper
+
+The prognostic value of combined TyG and SIRI categories for cardiovascular disease and all-cause mortality among adults: Evidence from the NHANES 1999–2010
+
+Liu Yan a 1
+Xu Juan a 1
+Wu Xiaoyu a 1
+Chen Songwen a
+Wei Yong a
+Zhou Genqing a
+Lu Xiaofeng a
+Liu Shaowen a
+Yang Wenyi a
+Cai Lidong lidong.cai@shgh.cn a ⁎
+Xu Sudan xusudan2018@aliyun.com b ⁎
+Liu Bei docliu2016@aliyun.com a ⁎
+a Department of Cardiology, Shanghai General Hospital, School of Medicine, Shanghai Jiaotong University, Hongkou District, Shanghai, China
+b Department of Geriatrics, Shanghai General Hospital, Shanghai Jiaotong University School of Medicine, Shanghai, China
+⁎ Corresponding authors at: NO.100 Haining Road, Hongkou District, Shanghai, China. lidong.cai@shgh.cnxusudan2018@aliyun.comdocliu2016@aliyun.com1 Contributed equally.
+
+Publication date: 2026 Oct
+Electronic publication date: 2026 Aug 6
+Volume: 70
+Electronic Location ID: 100857
+Received 2025 Oct 29; Revised 2026 Jul 27; Accepted 2026 Aug 4
+Copyright: © 2026 The Authors
+Copyright year: 2026
+License: This is an open access article under the CC BY-NC license (http://creativecommons.org/licenses/by-nc/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: Triglyceride-glucose index, Systemic inflammation response index, Cardiovascular diseases, All-cause mortality, Cohort studies, NHANES
+
+==============================
+Background
+
+The triglyceride-glucose (TyG) index and Systemic Inflammatory Response Index (SIRI) are markers of insulin resistance and inflammation, respectively, and are each independently associated with mortality. Their combined prognostic value is not well established. This study aimed to investigate the association between combined categories of TyG and SIRI and cardiovascular (CVD) and all-cause mortality.
+
+Methods
+
+We included 11,010 participants from the NHANES 1999–2010. All analyses accounted for the complex survey design. We employed Cox models, restricted cubic splines, and time-dependent ROC analyses. The incremental predictive value of the combined categories was assessed using the net reclassification improvement (NRI) and integrated discrimination improvement (IDI).
+
+Results
+
+A TyG threshold of 8.64 (linear association) and an SIRI threshold of 0.63 (L-shaped association) were identified. Compared to the low-risk group (TyG ≤ 8.64 and SIRI≤0.63), participants with both TyG > 8.64 and SIRI>0.63 had a 68% higher risk of CVD mortality (HR = 1.68, 95% CI: 1.08–2.61, P = 0.021) and a 52% higher risk of all-cause mortality (HR = 1.52, 95% CI: 1.21–1.91, P < 0.0001). Adding the combined categories to a model of traditional risk factors significantly improved reclassification for CVD mortality (NRI = 0.15, P < 0.05). Subgroup and sensitivity analyses supported the robustness of the findings.
+
+Conclusions
+
+Concurrently high TyG and SIRI identifies individuals at significantly increased mortality risk. This simple, threshold-based stratification may serve as a practical tool for cardiovascular risk assessment.
+
+1 Introduction
+
+Cardiovascular disease (CVD) remains the leading cause of death globally, imposing a sustained and substantial burden on public health [1], [2], [3]. While traditional risk factors such as hypertension, diabetes, and hyperlipidemia are well-established [4], they often fail to fully capture the complex interplay between metabolic dysregulation and chronic inflammation, which is central to the pathogenesis of atherosclerosis [5], [6]. Consequently, there is a pressing need to develop novel risk assessment tools capable of integrating multiple pathological pathways to enable earlier prevention and precise intervention.
+
+Insulin resistance (IR) is a pivotal factor in the pathophysiology of CVD [5], [7]. The triglyceride-glucose (TyG) index, calculated from fasting triglyceride and blood glucose levels, has been validated as a reliable surrogate marker for assessing IR [8]. A substantial body of evidence indicates that the TyG index is independently associated with an increased risk of diabetes, coronary artery disease, stroke, and cardiovascular mortality [8], [9], [10], [11], [12], [13], [14], [15]. On the other hand, atherosclerosis is fundamentally a chronic inflammatory disease [6]. The Systemic Inflammatory Response Index (SIRI) is a hematological index derived from neutrophil, monocyte, and lymphocyte counts, reflecting a balance between inflammatory and immune status [16], [17]. Emerging research suggests that SIRI is associated with the severity of coronary artery disease, the occurrence of acute coronary syndrome, and patient prognosis [18], [19], [20], [21].
+
+Metabolic abnormalities and chronic inflammation do not exist in isolation but rather interact synergistically to accelerate the progression of CVD [22], [23]. However, existing studies have predominantly focused on the independent predictive value of either TyG or SIRI. A significant knowledge gap remains: how to utilize these two readily available indicators to construct a simple risk assessment tool that simultaneously reflects the dual burden of metabolism and inflammation. Currently, there is a lack of large-scale, population-based studies with long-term follow-up that systematically evaluate the combined effect of TyG and SIRI on mortality risk.
+
+To address this gap, this study utilized data from the National Health and Nutrition Examination Survey (NHANES) cycles 1999–2010. The aims were: 1) to investigate the associations of the TyG index and SIRI, both individually and in combination, with all-cause and cardiovascular disease mortality among US adults; 2) to identify data-driven thresholds for TyG and SIRI for risk stratification; 3) to develop and validate a simple, threshold-based combined risk stratification scheme using TyG and SIRI; and 4) to assess the incremental predictive value of this scheme compared to traditional risk factors and individual biomarkers. Our findings may provide a more integrative and clinically actionable perspective for the early identification and stratified management of cardiovascular risk.
+
+2 Materials and methods
+
+2.1 Study design and participant selection
+
+Data for this study were derived from six cycles (1999–2010) of the U.S. National Health and Nutrition Examination Survey (NHANES). The selection of the 1999–2010 period was based on two primary methodological considerations: 1) to ensure the uniform availability of high-sensitivity C-reactive protein (hs-CRP), a key comparator inflammatory biomarker that was not systematically measured beyond the 2009–2010 cycle, and 2) to provide sufficient follow-up time (through December 31, 2019) for the ascertainment of mortality endpoints, which is essential for valid survival analysis. The age criterion of ≥20 years was employed to align with the standard NHANES analytical practice for adult chronic disease epidemiology. This ensures data consistency for core metabolic measures (e.g., fasting blood draws) and enhances the comparability of our findings with prior high-impact studies utilizing the same database.
+
+From the 1999–2010 NHANES cycles, we identified 19,860 participants who attended the morning examination and had valid fasting subsample weights (WTSAF2YR), representing the eligible pool for analyses requiring fasting laboratory measurements. The stepwise selection process is detailed in Fig. 1. Briefly, we excluded individuals who were aged <20 years (n = 6080), pregnant (n = 516), or had missing data on the components of the TyG index (n = 164) or the inflammatory cell counts required for calculating the systemic inflammatory response index (SIRI) (n = 91). Further exclusions were made for participants with missing data on survival status (n = 12) or any of the following key covariates: education level, body mass index, low-density lipoprotein cholesterol, hypertension status, smoking status, alcohol consumption, medication use, or history of cardiovascular disease. After applying these criteria, 11,010 participants with complete data constituted the final analytic cohort for the primary complete-case analysis. We acknowledge the potential for selection bias introduced by the exclusion of participants with missing data. To assess this, we compared baseline characteristics between included and excluded participants (Supplementary Table S1) and conducted sensitivity analyses using multiple imputation, as described in the Statistical analyses section.Fig. 1 Participant selection flowchart.
+
+Fig. 1
+
+2.2 Definition of combined TyG and SIRI risk categories
+
+The TyG index was calculated as Ln [fasting triglycerides (mg/dL) × fasting plasma glucose (mg/dL)/2]. SIRI was calculated as (monocyte count × neutrophil count) / lymphocyte count. We used restricted cubic spline (RCS) analyses to explore the shape of the dose-response relationships of TyG and SIRI with mortality. Based on the RCS plots and inflection points, population-specific thresholds were identified: TyG = 8.64 and SIRI = 0.63. Participants were then categorized into four mutually exclusive groups: 1) TyG ≤8.64 & SIRI ≤0.63 (reference), 2) TyG >8.64 & SIRI ≤0.63, 3) TyG ≤8.64 & SIRI >0.63, and 4) TyG >8.64 & SIRI >0.63. This approach aims to create a clinically interpretable risk stratification tool rather than a mathematically composite index.
+
+2.3 Measurements of TyG and group classification
+
+As previously mentioned, the TyG index is measured through participants' peripheral blood (triglycerides and fasting glucose). Participants were divided into four groups (Q1, Q2, Q3, Q4) based on the quartiles of the three TyG-related indices, with group Q1 as the reference group.TyG=ln[TGmg/dL×FPGmg/dL/2
+
+2.4 Definition of the systemic inflammatory response index (SIRI) and C-reactive protein (CRP)
+
+Peripheral blood samples from NHANES participants were analyzed at the Mobile Examination Center (MEC) using the Beckman Coulter HMX hematology analyzer. Lymphocyte, neutrophil, monocyte, and platelet counts were measured via whole blood counts. SIRI = monocyte count × neutrophil count / lymphocyte count. CRP was then quantified using latex-enhanced scatter turbidimetry with blood samples in the University of Washington.
+
+2.5 Diagnosis of hypertension
+
+Hypertension was defined according to the 2017 American Heart Association/American College of Cardiology (AHA/ACC) guidelines [24]. This included: 1) a measured average systolic blood pressure ≥130 mmHg or diastolic blood pressure ≥80 mmHg, or 2) a self-reported physician diagnosis of hypertension. The use of the contemporary 2017 AHA/ACC criteria, rather than the older JNC 7 standard (≥140/90 mmHg) that was prevalent during the NHANES data collection period (1999–2010), aligns this study with current clinical practice and facilitates comparison with recent research. We acknowledge that applying modern diagnostic thresholds to historical data may introduce a degree of measurement or prevalence bias. To assess the potential impact of this methodological choice on our primary findings, we conducted a sensitivity analysis in which hypertension was redefined using the JNC 7 criteria; the results of this analysis are presented in the Sensitivity analyses section.
+
+2.6 Diagnosis of total CVD
+
+The diagnosis of cardiovascular disease is determined through the standardized medical conditions questionnaire in NHANES. If an individual answers ‘yes’ to the question, “Have you ever been told by a doctor or other health professional that you had congestive heart failure/coronary heart disease/angina/heart attack/stroke?”, it is considered that they have cardiovascular disease [25].
+
+2.7 Diagnosis of total diabetes
+
+The diagnostic criteria for diabetes are: doctor told you have diabetes, glycohemoglobin HbA1c (%) ≥ 6.5, fasting glucose (mmol/l) ≥ 7.0, random blood glucose (mmol/l) ≥ 11.1, two-hour OGTT blood glucose (mmol/l) ≥ 11.1. Meeting any one of the above 5 criteria can diagnose diabetes.
+
+2.8 Definition of cardiovascular mortality and all-cause mortality
+
+The primary outcome of the study was all-cause mortality. Secondary outcomes were cardiovascular disease mortality and cancer mortality. We utilized the NHANES public utilization-related mortality file available as of December 31, 2010 to determine mortality status in the follow-up population. The data were linked to the NCHS and the National Mortality Index (NDI) through a probabilistic matching algorithm. The follow-up period began on the date of the NHANES interview and ended on the date of death or December 31, 2010. Cause-specific mortality is determined by ICD-10. Cardiovascular mortality was defined as ICD-10 codes I00-I09, I11, I13, and I20-I51. Cerebrovascular diseases were defined as I60-I69.
+
+2.9 Mendelian randomization and sensitivity analysis
+
+Details of the Mendelian randomization analysis, including data sources, instrument selection, and full results, are provided in Supplementary Appendix A.
+
+2.10 Statistical analyses
+
+All analyses accounted for the complex, stratified, multistage probability sampling design of NHANES. We applied the recommended fasting subsample two-year examination weights (WTSAF2YR), with strata and primary sampling units, to generate nationally representative estimates. Variance was estimated using the Taylor series linearization method. Continuous variables are presented as weighted mean ± standard error or median (interquartile range); categorical variables as weighted percentages. Differences across TyG quartiles were tested using weighted linear or chi-square tests.
+
+Time-dependent ROC analysis was used to compare the predictive performance of various inflammatory indices. Nonlinear associations were assessed using RCS with four knots. The primary analysis used Cox proportional hazards models to estimate hazard ratios (HRs) and 95% confidence intervals (CIs) for the association between the combined TyG/SIRI categories and mortality. Three models were built: Crude; Model 1 adjusted for age, sex, race, education, smoke, drinking, BMI; Model 2 additionally adjusted for eGFR, LDL, diabetes, hypertension, CVD history, and related medications. For the analysis of CVD-specific mortality, we also employed the Fine-Gray subdistribution hazards model to account for competing risks from non-CVD deaths. Kaplan-Meier curves were plotted.
+
+Incremental predictive value of the combined categories was assessed by calculating the Net Reclassification Improvement (NRI) and Integrated Discrimination Improvement (IDI) when adding the four-category variable to: a) a base model of traditional risk factors, and b) a model containing base factors plus continuous TyG and SIRI.
+
+Subgroup analyses by age, sex, and baseline CVD history were pre-specified as exploratory. P-values for interaction were calculated and reported.
+
+Sensitivity Analyses: 1) To assess the impact of missing data, we performed multiple imputation by chained equations (MICE) to create 20 complete datasets and repeated the primary Cox analyses. 2) To assess threshold stability, we performed 1000 bootstrap resamples to derive 95% confidence intervals for the TyG and SIRI thresholds.
+
+A two-tailed P < 0.05 was considered significant. Analyses were conducted using R version 4.3.1 with the survey, survival, riskRegression, and micepackages.
+
+2.11 Sensitivity analyses
+
+1. Bootstrap Validation of Thresholds: The stability of the data-derived thresholds for TyG (8.64) and SIRI (0.63) was assessed using non-parametric bootstrap resampling with 1000 replicates. The 2.5th and 97.5th percentiles of the bootstrap distribution are reported as the 95% confidence interval (CI) for each threshold.
+
+2. Multiple Imputation for Missing Data: To evaluate the potential impact of missing data on our complete-case analysis, we performed a sensitivity analysis using Multiple Imputation by Chained Equations (MICE). We simulated a scenario with 10% missingness at random in key variables (TyG, SIRI, CRP, LDL, BMI), created 20 imputed datasets using a Bayesian ridge regression model, re-ran our primary Cox models on each, and pooled the results using Rubin's rules.
+
+3. Competing Risk Analysis: For the analysis of CVD-specific mortality, we accounted for the competing risk of non-CVD death. The cumulative incidence of CVD death was calculated, and baseline characteristics were compared between the CVD death and non-CVD death groups. Fine-Gray subdistribution hazards models were employed, with results presented alongside the primary Cox model estimates.
+
+4. Comparison of Predictive Models: The Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC) were calculated for nested models to compare the goodness-of-fit and parsimony of different risk constructs: a) base model (traditional risk factors), b) base model + additive index (standardized TyG + standardized SIRI), c) base model + multiplicative index (standardized TyG × standardized SIRI), and d) base model + the combined TyG/SIRI categories (4-level factor).
+
+5. Assessment of Selection Bias: We compared baseline characteristics (age, sex, smoking, hypertension, diabetes, LDL, BMI) between participants included in the final complete-case analysis and a simulated group excluded due to missing data, using t-tests for continuous variables and chi-square tests for categorical variables.
+
+6. 10-Fold Cross-Validation for Threshold Stability: To further assess the generalizability of the data-driven thresholds (TyG = 8.64, SIRI = 0.63), we performed a 10-fold cross-validation. The cohort was randomly split into 10 folds. In each iteration, optimal cutoffs were re-derived in the 9 training folds and applied to classify the held-out fold. Agreement between the fold-specific and the fixed classification was quantified using Cohen's κ. Results are presented in Supplementary Table S10.
+
+7. External Validation (Planned): Although bootstrap and cross-validation support the stability of our thresholds within the NHANES cohort, external validation in independent populations (e.g., China Health and Nutrition Survey, UK Biobank) is warranted and is actively being pursued as part of our ongoing collaborative work.
+
+8. Model Comparison and Incremental Value Assessment: To evaluate the incremental predictive value of the combined TyG-SIRI categories, we compared the categorical model against (a) a model including TyG and SIRI as continuous linear terms, and (b) a baseline model with traditional risk factors only. Model discrimination was compared using C-statistics, AIC, and BIC. Reclassification improvement was assessed using continuous and category-based net reclassification improvement (NRI) and integrated discrimination improvement (IDI). Results are presented in Supplementary Tables S13–S15.
+
+9. Sensitivity Analysis for Hypertension Definition: To assess the robustness of our findings to the choice of hypertension definition, we repeated the primary analysis using the JNC 7 definition (≥140/90 mmHg or use of antihypertensive medication). Results are presented in Supplementary Table S14.
+
+10. Competing Risk Analysis: To account for non-cardiovascular death as a competing event, we performed Fine-Gray subdistribution hazard models with non-CVD death as the competing event. Cumulative incidence functions were estimated and compared across TyG-SIRI categories using Gray's test. Results are presented in Supplementary Table S15 and Supplementary Fig. S5.
+
+3 Results
+
+3.1 Baseline characteristics and assessment of selection bias
+
+The final analytic cohort comprised 11,010 participants, who were stratified into quartiles (Q1–Q4) based on their TyG index. Significant differences were observed across these quartiles for a wide range of variables (P for trend <0.05 for most, see Table 1).Table 1 Baseline characteristics of the study participants according to triglyceride-glucose (TyG) index quartiles.
+
+TyG quartiles	Total	Q1	Q2	Q3	Q4	P value	
+Range		≤8.26	>8.26, <8.64	≥8.64, <9.06	≥9.06		
+FBG, mg/dL	102.146 ± 0.342	92.045 ± 0.236	97.588 ± 0.316	101.985 ± 0.367	119.341 ± 1.086	<0.0001	
+TG, mg/dL	127.031 ± 0.913	62.975 ± 0.388	98.158 ± 0.336	138.616 ± 0.550	222.591 ± 1.460	<0.0001	
+TyG	8.630 ± 0.008	7.939 ± 0.007	8.457 ± 0.002	8.841 ± 0.003	9.415 ± 0.007	<0.0001	
+CRP, mg/dL	0.410 ± 0.009	0.305 ± 0.017	0.380 ± 0.016	0.491 ± 0.023	0.484 ± 0.019	<0.0001	
+albumin, g/dL	4.277 ± 0.006	4.311 ± 0.008	4.270 ± 0.009	4.266 ± 0.010	4.254 ± 0.010	<0.0001	
+SII	576.322 ± 4.650	546.999 ± 8.730	583.764 ± 9.014	586.190 ± 8.303	592.342 ± 7.458	0.001	
+Segmented neutrophils, 1000cells/μl	3.982 ± 0.025	3.616 ± 0.035	3.941 ± 0.042	4.092 ± 0.039	4.345 ± 0.042	<0.0001	
+lymphocyte, 1000 cells/μl	1.982 ± 0.011	1.836 ± 0.015	1.963 ± 0.026	2.027 ± 0.023	2.130 ± 0.022	<0.0001	
+Monocyte, 1000cells/μl	0.535 ± 0.003	0.505 ± 0.004	0.532 ± 0.005	0.550 ± 0.004	0.559 ± 0.005	<0.0001	
+Platelet, 1000cells/μl	262.357 ± 0.952	255.592 ± 1.692	263.099 ± 1.580	264.386 ± 1.756	267.396 ± 1.195	<0.0001	
+SIRI	1.192 ± 0.013	1.103 ± 0.020	1.192 ± 0.023	1.232 ± 0.017	1.257 ± 0.019	<0.0001	
+NLR	2.186 ± 0.016	2.120 ± 0.026	2.205 ± 0.030	2.201 ± 0.024	2.227 ± 0.026	0.024	
+PLR	144.863 ± 0.720	151.067 ± 1.377	147.434 ± 1.354	142.929 ± 1.285	136.725 ± 1.328	<0.0001	
+LMR	3.963 ± 0.023	3.923 ± 0.036	3.938 ± 0.041	3.948 ± 0.038	4.052 ± 0.037	0.03	
+NPR	0.016 ± 0.000	0.015 ± 0.000	0.016 ± 0.000	0.017 ± 0.000	0.017 ± 0.000	<0.0001	
+PAR	61.890 ± 0.256	59.801 ± 0.439	62.188 ± 0.422	62.505 ± 0.439	63.384 ± 0.336	<0.0001	
+CAR	0.101 ± 0.002	0.076 ± 0.005	0.093 ± 0.004	0.121 ± 0.006	0.118 ± 0.005	<0.0001	
+CLR	0.228 ± 0.005	0.185 ± 0.011	0.221 ± 0.013	0.269 ± 0.012	0.243 ± 0.008	<0.0001	
+Age, year	46.620 ± 0.301	40.531 ± 0.419	45.971 ± 0.422	49.377 ± 0.426	51.617 ± 0.389	<0.0001	
+eGFR	94.472 ± 0.401	100.679 ± 0.570	94.978 ± 0.483	91.554 ± 0.550	89.663 ± 0.574	<0.0001	
+BMI	28.331 ± 0.089	25.571 ± 0.124	27.815 ± 0.139	29.320 ± 0.160	31.121 ± 0.178	<0.0001	
+LDL, mg/dL	118.405 ± 0.469	105.605 ± 0.771	119.889 ± 0.868	126.680 ± 0.790	123.114 ± 0.885	<0.0001	
+Sex						<0.0001	
+ Male	5517(49.013)	1160(39.017)	1352(48.353)	1487(54.444)	1518(55.804)		
+ Female	5493(50.987)	1593(60.983)	1401(51.647)	1265(45.556)	1234(44.196)		
+Race						<0.0001	
+ Mexican American	2221(7.485)	386(5.756)	513(7.366)	599(8.080)	723(9.033)		
+ Non-Hispanic Black	2007(10.517)	787(16.293)	562(11.452)	360(7.021)	298(6.361)		
+ Non-Hispanic White	5635(72.349)	1309(68.655)	1399(72.142)	1487(74.181)	1440(75.003)		
+ Other Hispanic	758(4.783)	175(4.522)	181(4.354)	195(5.229)	207(5.089)		
+ Other Race	389(4.867)	96(4.774)	98(4.686)	111(5.489)	84(4.513)		
+Education						<0.0001	
+ <High school	1480(6.419)	209(4.011)	334(5.934)	409(7.243)	528(8.932)		
+ High school	4337(37.511)	981(31.697)	1106(37.362)	1091(39.207)	1159(42.763)		
+ >High school	5193(56.070)	1563(64.292)	1313(56.704)	1252(53.551)	1065(48.305)		
+Diabetes							
+ No	9264(88.126)	2642(96.760)	2512(93.957)	2359(89.705)	1751(69.751)		
+ Yes	1746(11.874)	111(3.240)	241(6.043)	393(10.295)	1001(30.249)		
+Hypertension						<0.0001	
+ No	6388(64.346)	2053(80.086)	1666(67.793)	1422(56.859)	1247(49.853)		
+ Yes	4622(35.654)	700(19.914)	1087(32.207)	1330(43.141)	1505(50.147)		
+Smoke						<0.0001	
+ Never	5699(51.206)	1641(58.417)	1432(51.695)	1384(49.129)	1242(44.329)		
+ Yes	5311(48.794)	1112(41.583)	1321(48.305)	1368(50.871)	1510(55.671)		
+Drinking						0.166	
+ Never	1489(11.237)	374(11.256)	339(10.361)	369(10.740)	407(12.713)		
+ Yes	9521(88.763)	2379(88.744)	2414(89.639)	2383(89.260)	2345(87.287)		
+Anti-hypertensive drugs						<0.0001	
+ No	7677(75.071)	2293(87.355)	1993(78.177)	1829(71.103)	1562(61.298)		
+ Yes	3333(24.929)	460(12.645)	760(21.823)	923(28.897)	1190(38.702)		
+Anti-diabetic drugs						<0.0001	
+ No	10,096(94.133)	2698(98.415)	2633(97.282)	2554(95.465)	2211(84.146)		
+ Yes	914(5.867)	55(1.585)	120(2.718)	198(4.535)	541(15.854)		
+Statin						<0.0001	
+ No	9357(87.072)	2551(94.430)	2386(88.866)	2294(84.868)	2126(78.712)		
+ Yes	1653(12.928)	202(5.570)	367(11.134)	458(15.132)	626(21.288)		
+Aspirin						0.009	
+ No	10,852(99.183)	2737(99.584)	2712(99.191)	2712(99.146)	2691(98.737)		
+ Yes	158(0.817)	16(0.416)	41(0.809)	40(0.854)	61(1.263)		
+CVD						<0.0001	
+ No	9805(91.775)	2584(95.769)	2500(93.517)	2416(90.416)	2305(86.559)		
+ Yes	1205(8.225)	169(4.231)	253(6.483)	336(9.584)	447(13.441)		
+Congestive heart failure						<0.0001	
+ No	10,660(97.732)	2709(98.982)	2685(98.629)	2655(97.527)	2611(96.254)		
+ Yes	313(2.085)	41(1.018)	59(1.371)	87(2.473)	126(3.746)		
+Coronary heart disease						<0.0001	
+ No	10,498(96.278)	2687(98.333)	2661(97.990)	2599(95.656)	2551(93.827)		
+ Yes	465(3.431)	61(1.667)	80(2.010)	137(4.344)	187(6.173)		
+Heart attack						<0.0001	
+ No	10,487(96.339)	2679(98.048)	2649(97.499)	2615(96.065)	2544(93.520)		
+ Yes	512(3.613)	72(1.952)	104(2.501)	130(3.935)	206(6.480)		
+Stroke						<0.0001	
+ No	10,598(97.253)	2694(98.684)	2665(97.705)	2633(96.644)	2606(96.034)		
+ Yes	401(2.669)	57(1.316)	87(2.295)	116(3.356)	141(3.966)		
+Angina						<0.0001	
+ No	10,614(97.131)	2705(98.905)	2682(98.274)	2630(96.810)	2597(95.457)		
+ Yes	351(2.550)	40(1.095)	60(1.726)	111(3.190)	140(4.543)		
+ALL-cause						<0.0001	
+ No	8615(84.325)	2391(91.285)	2188(86.088)	2088(82.279)	1948(76.302)		
+ Yes	2395(15.675)	362(8.715)	565(13.912)	664(17.721)	804(23.698)		
+CVD-cause						<0.0001	
+ No	10,251(95.223)	2642(97.339)	2575(95.841)	2539(94.774)	2495(92.506)		
+ Yes	759(4.777)	111(2.661)	178(4.159)	213(5.226)	257(7.494)		
+Data are presented as weighted mean ± standard error for continuous variables and as weighted number (percentage) for categorical variables. Differences across TyG index quartiles were tested using weighted linear regression for continuous variables and weighted chi-square tests for categorical variables.
+
+Abbreviations and Units: TyG, triglyceride-glucose index (unitless); FBG, fasting blood glucose (mg/dL); TG, triglycerides (mg/dL); CRP, C-reactive protein (mg/dL); Albumin (g/dL); SII, systemic immune-inflammation index (unitless); Leukocyte, Neutrophil, Lymphocyte, Monocyte counts (1000 cells/μL); Platelet (1000 cells/μL); SIRI, systemic inflammation response index (unitless); NLR, neutrophil-to-lymphocyte ratio; PLR, platelet-to-lymphocyte ratio; LMR, lymphocyte-to-monocyte ratio; NPR, neutrophil-to-platelet ratio; PAR, platelet-to-albumin ratio; CAR, C-reactive protein-to-albumin ratio; CLR, cholesterol-to-lymphocyte ratio; Age (years); eGFR, estimated glomerular filtration rate (mL/min/1.73 m2); BMI, body mass index (kg/m2); LDL, low-density lipoprotein cholesterol (mg/dL); CVD, cardiovascular disease.
+
+Metabolic profiles showed a pronounced graded association. From Q1 to Q4, there were stepwise increases in fasting blood glucose, triglycerides, and the TyG index itself (all P < 0.0001). Levels in the highest quartile (Q4) were notably elevated (FBG: 119 mg/dL; TG: 223 mg/dL).
+
+Inflammatory markers also varied across TyG groups. While high-sensitivity C-reactive protein (CRP) increased from Q1 (0.3 mg/dL) to Q3 (0.49 mg/dL) before slightly decreasing in Q4 (0.48 mg/dL), composite indices such as the Systemic Immune-Inflammation Index (SII), Systemic Inflammation Response Index (SIRI), and Neutrophil-to-Lymphocyte Ratio (NLR) demonstrated a continuous upward trend. Changes in leukocyte differentials were also noted: neutrophil and monocyte counts increased progressively, whereas lymphocyte counts rose significantly in Q4. Platelet counts were higher in Q4 (267.4 × 103/μL), and related ratios such as the Platelet-to-Lymphocyte Ratio (PLR) and Platelet-to-Albumin Ratio (PAR) were altered.
+
+Participants in higher TyG quartiles were older (mean age in Q4: 51.6 years), had a higher body mass index (Q4: 31 kg/m2), and a lower estimated glomerular filtration rate. The proportion of males was significantly greater in the higher TyG groups. Racial distribution also differed, with increased proportions of Mexican American and non-Hispanic Black participants in Q4.
+
+The prevalence of comorbid conditions and clinical outcomes exhibited strong gradients. The prevalence of diabetes increased markedly from 3.2% in Q1 to 30.2% in Q4. Similarly, the prevalence of cardiovascular disease (CVD) history, heart failure (3.7% vs. 1.0% in Q1), and myocardial infarction (6.5% vs. 2.0% in Q1) was substantially higher in Q4. All-cause and CVD-specific mortality rates also increased across TyG quartiles.
+
+Consistent with these risk profiles, the use of guideline-recommended medications was more frequent in higher TyG groups, including antihypertensive drugs (38.7% vs. 12.6% in Q1), antidiabetic agents (15.9% vs. 1.6%), and statins (21.3% vs. 5.6%).
+
+In summary, baseline data demonstrate a clear dose-response relationship between the TyG index and a constellation of adverse metabolic, inflammatory, and clinical risk factors.
+
+A comparison of baseline characteristics between the 11,010 included and 8850 excluded participants is presented in Supplementary Table S1. While the excluded group was slightly older (mean age 52.0 vs. 50.5 years, P = 0.02) and had a lower proportion of individuals with a high school education or above (73% vs. 80%, P < 0.001), there were no substantial differences in sex distribution, smoking status, body mass index, prevalence of key comorbidities (diabetes, hypertension, CVD), or self-rated health status. These comparisons suggest that selection bias on most health indicators was likely minimal.
+
+3.2 Predictive performance of inflammatory markers
+
+We assessed the prognostic values of systemic immune-inflammation index (SII), systemic inflammation response index (SIRI), neutrophil-to-lymphocyte ratio (NLR), lymphocyte-to-monocyte ratio (LMR), neutrophil-to-platelet ratio (NPR), platelet-to-albumin ratio (PAR), C-reactive protein-to-albumin ratio (CAR), cholesterol-to-lymphocyte ratio (CLR), C-reactive protein (CRP), and platelet-to-lymphocyte ratio (PLR) in a prospective cohort. Time-dependent ROC curves were constructed to estimate the discriminatory ability of each marker for mortality outcomes over a 10-year follow-up period.
+
+Cardiovascular disease mortality ROC curve is shown as Fig. 2A. SII early AUC rapidly increases, then decreases in the middle period, and slightly rises later, indicating sensitivity to acute cardiovascular events. SIRI slowly increases with fluctuations, showing good stability but with a peak below 0.8. Other indicators, such as AUC for NLR, PLR, etc., show slow growth, with limited overall predictive power.Fig. 2 Time-dependent receiver operating characteristic (ROC) curves of inflammatory markers for predicting (A) cardiovascular disease mortality and (B) all-cause mortality.
+
+ROC, receiver operating characteristic, AUC, area under the curve, other abbreviations are listed in Table 1.
+
+Fig. 2
+
+All-cause mortality time-dependent ROC curve is shown as Fig. 2B. The AUC peak for NPR (neutrophil-to-platelet ratio) reaches 1.0 (perfect prediction), significantly outperforming other indicators. Additionally, the AUC values for LMR (lymphocyte-to-monocyte ratio) and CAR (C-reactive protein-to-albumin ratio) exceed 0.8 in some periods. The SII (systemic immune-inflammation index) curve shows a “rapid rise, decline, and then rise” pattern, indicating greater sensitivity to early and late mortality.
+
+The top 3 biomarkers for predicting CVD mortality were shown in Fig. 2C. SIRI steadily increases (1-year AUC = 0.75, 10-year AUC = 0.80), LMR, with AUC consistently <0.70, and NPR, with 1-year AUC = 0.78 and 5-year AUC = 0.70.
+
+The top 3 markers for predicting all-cause mortality were shown in Fig. 2D. SIRI shows a slow rise followed by a plateau (5-year AUC = 0.72). LMR shows an early peak followed by a decline (1-year AUC = 0.88, 5-year AUC = 0.75, 10-year AUC = 0.68). NPR maintains high stability throughout (1-year AUC = 0.99, 10-year AUC = 0.96).
+
+Supplementary Table s2 shows the association of different quartile levels of CRP, SII, SIRI, NLR, PLR, LMR, NPR, PAR, CAR, and CLR with all-cause mortality. After model 2 adjustment, SIRI showed a significant dose-response relationship (p < 0.0001) when stratified by interquartiles, with a 2.541-fold increase in the risk of all-cause mortality in the highest quartile compared to the lowest quartile (95% CI 2.180–2.963, P < 0.0001). Although other inflammatory markers also showed significant p-trend values <0.05, their effect magnitude between quartiles suggests a possible nonlinear association. Supplementary Table s3 shows the association of different quartile levels of CRP, SII, SIRI, NLR, PLR, LMR, NPR, PAR, CAR, and CLR with CVD mortality. After model 2 adjustment, SIRI showed a significant dose-response relationship (p < 0.0001) when stratified by interquartiles, with a 3.098-fold increase in the risk of all-cause mortality in the highest quartile compared to the lowest quartile (95% CI 2.162–4.439, P < 0.0001). Although other inflammatory markers also showed significant p-trend values <0.05, their effect magnitude between quartiles suggests a possible nonlinear association.
+
+3.3 Non-linear analysis and threshold identification
+
+As shown in Fig. 3, a linear relationship was observed between TyG index and mortality (P for nonlinearity >0.05). In contrast, SIRI showed a nonlinear association (P for nonlinearity <0.001), with a threshold identified at 0.63, with an inflection point at 0.63. The threshold for TyG was identified as 8.64. Bootstrap validation (1000 samples) indicated that these thresholds were stable, with 95% CIs of [8.50, 8.78] for TyG and [0.58, 0.68] for SIRI.Fig. 3 Restricted cubic spline analyses of the associations of the TyG index and SIRI with mortality.
+
+(A) TyG index and cardiovascular disease (CVD) mortality. (B) TyG index and all-cause mortality. (C) SIRI and CVD mortality. (D) SIRI and all-cause mortality.
+
+Fig. 3
+
+3.4 Association of combined TyG and SIRI categories with mortality
+
+Table 2 shows the association of TyG-SIRI combined categories with CVD and all-cause mortality. After Model2 adjustment, TyG > 8.64 & SIRI ≤ 0.63 increased the risk of all-cause mortality by 28% (HR: 1.278, 95% CI: 1.001–1.632, P = 0.049), without CVD mortality increasing (P = 0.797). TyG ≤ 8.64 & SIRI > 0.63 increased the risk of all-cause mortality by 44% (HR: 1.442, 95% CI: 1.172–1.775, P < 0.001) and CVD mortality by 70% (HR: 1.700, 95% CI: 1.113–1.598, P = 0.014). TyG > 8.64 & SIRI > 0.63 increased the risk of all-cause mortality by 52% (HR: 1.518, 95% CI: 1.206–1.910, P < 0.001) and CVD mortality by 68% (HR: 1.682, 95% CI: 1.083–2.612, P = 0.021).Table 2 Association of combined TyG and SIRI categories with all-cause and CVD mortality using Cox proportional hazards models.
+
+ALL	Crude model
+HR (95% CI)	P-value	Model 1
+HR (95% CI)	P-value	Model 2
+HR (95% CI)	P-value	
+TyG ≤ 8.64 & SIRI ≤ 0.63	Ref	Ref	Ref	Ref	Ref	Ref	
+TyG > 8.64 & SIRI ≤ 0.63	2.169(1.703,2.762)	<0.0001	2.015(1.548,2.624)	<0.0001	1.278(1.001,1.632)	0.049	
+TyG ≤ 8.64 & SIRI > 0.63	1.990(1.632,2.428)	<0.0001	1.900(1.530,2.360)	<0.0001	1.442(1.172,1.775)	<0.001	
+TyG > 8.64 & SIRI > 0.63	3.689(3.046,4.468)	<0.0001	3.417(2.738,4.263)	<0.0001	1.518(1.206,1.910)	<0.001	
+P for trend	<0.0001	<0.0001	0.001	
+  	
+CVD	Crude model
+HR (95% CI)	P-value	Model 1
+HR (95% CI)	P-value	Model 2
+HR (95% CI)	P-value	
+TyG ≤ 8.64 & SIRI ≤ 0.63	Ref	Ref	Ref	Ref	Ref	Ref	
+TyG > 8.64 & SIRI ≤ 0.63	2.041(1.215,3.428)	0.007	1.864(1.089,3.189)	0.023	1.072(0.631,1.821)	0.797	
+TyG ≤ 8.64 & SIRI > 0.63	2.122(1.417,3.177)	<0.001	2.069(1.369,3.129)	<0.001	1.700(1.113,2.598)	0.014	
+TyG > 8.64 & SIRI > 0.63	4.063(2.745,6.014)	<0.0001	3.705(2.439,5.629)	<0.0001	1.682(1.083,2.612)	0.021	
+P for trend	<0.0001	<0.0001	0.004	
+This table presents the association between TyG-SIRI combined categories and CVD mortality and all-cause mortality in the NHANES cohorts. Results are expressed as harrds ratios (HRs) with 95% confidence intervals (CIs). The HRs represent the relative hazard of CVD mortality or all-cause mortality for individuals in TyG > 8.6 & SIRI ≤ 0.63, TyG ≤ 8.6 & SIRI > 0.63, TyG > 8.6 & SIRI > 0.63 compared to TyG ≤8.6 & SIRI ≤ 0.63. An HR > 1 indicates an increased risk, while an HR < 1 indicates a reduced risk. Statistically significant associations (p < 0.05) are highlighted in the table. The p trend assesses the overall association across TyG-SIRI combined categories.
+
+Model adjustments:
+
+Crude Model: No-adjust.
+
+Model 1: Adjusted for age, sex, race, educational level, smoke, drinking, BMI.
+
+Model 2: Adjusted for age, sex, race, education, smoking, drinking, BMI, eGFR, LDL, diabetes, hypertension, CVD history, and use of anti-diabetic, anti-hypertensive, statin, and aspirin medications.
+
+The HRs represent the relative hazard of CVD mortality or all-cause mortality for individuals in TyG > 8.6 & SIRI ≤ 0.63, TyG ≤ 8.6 & SIRI > 0.63, TyG > 8.6 & SIRI > 0.63 compared to TyG ≤ 8.6 & SIRI ≤ 0.63. An HR > 1 indicates an increased risk, while an HR < 1 indicates a reduced risk. Statistically significant associations (p < 0.05) are highlighted in the table. The p trend assesses the overall association across TyG-SIRI combined categories.
+
+After full adjustment (Model 2), participants with TyG >8.64 & SIRI >0.63 had a 68% higher risk of CVD mortality (HR: 1.682, 95% CI: 1.083–2.612) and a 52% higher risk of all-cause mortality (HR: 1.518, 95% CI: 1.206–1.910) compared to the reference group (TyG ≤8.64 & SIRI ≤0.63).
+
+Incremental Predictive Value: Adding the combined four-category variable to a base model of traditional risk factors significantly improved reclassification for CVD mortality (NRI = 0.15, 95% CI: 0.05–0.25, P = 0.003). The IDI was also significant (0.008, P = 0.02). The improvement remained significant when compared to a model containing base factors plus continuous TyG and SIRI.
+
+Competing Risk Analysis: Results from the Fine-Gray model for CVD mortality were consistent with the primary Cox model, with a subdistribution hazard ratio of 1.65 (95% CI: 1.07–2.55) for the “dual-high” group.
+
+3.5 Survival and subgroup analysis
+
+Fig. 4: Kaplan-Meier survival analysis revealed that CVD and all cause survival probabilities of TyG ≤ 8.64 & SIRI ≤ 0.63 were the highest, while TyG > 8.64 & SIRI > 0.63 were the lowest. CVD and all cause survival probabilities of TyG > 8.64 & SIRI > 0.63 was significantly lower than that of TyG ≤ 8.64 & SIRI ≤ 0.63 (P < 0.0001, P < 0.0001).Fig. 4 Kaplan-Meier survival curves for (A) cardiovascular disease mortality and (B) all-cause mortality, stratified by the combined TyG and SIRI categories.
+
+Fig. 4
+
+3.6 Subgroup analysis
+
+Fig. 5: Forest plots of hazard ratios for the association between combined TyG/SIRI categories (high/high vs. low/low) and mortality across subgroups. Analyses are stratified by age, sex, and baseline cardiovascular disease status. P-values for interaction are provided. The association appeared stronger in women (P for interaction = 0.04). Exploratory analysis within the “dual-high” group showed women had significantly higher CRP levels than men (0.67 vs. 0.42 mg/dL, P < 0.01), which may partially explain this difference.Fig. 5 Subgroup analysis of the association between combined high TyG/high SIRI and mortality. Forest plots for (A) all-cause and (B) cardiovascular disease mortality. P for interaction is shown.
+
+Fig. 5
+
+3.7 Supplementary and sensitivity analyses
+
+Sensitivity analysis was performed to verify the robustness of the association between TyG-SIRI combined categories and CVD mortality or all-cause mortality, and the results were all shown in Table 3.Table 3 Sensitivity analysis of the associations between the combined TyG and SIRI categories and all-cause and cardiovascular disease (CVD) mortality.
+
+ALL	Crude model
+HR (95% CI)	P-value	Model 1
+HR (95% CI)	P-value	Model 2
+HR (95% CI)	P-value	
+TyG ≤ 8.64 & SIRI ≤ 0.63	Ref	Ref	Ref	Ref	Ref	Ref	
+TyG > 8.64 & SIRI ≤ 0.63	2.153(1.586,2.923)	<0.0001	2.105(1.558,2.845)	<0.0001	2.201(1.619,2.991)	<0.0001	
+TyG ≤ 8.64 & SIRI > 0.63	1.758(1.420,2.176)	<0.0001	1.637(1.304,2.056)	<0.0001	1.615(1.288,2.026)	<0.0001	
+TyG > 8.64 & SIRI > 0.63	3.163(2.554,3.917)	<0.0001	2.837(2.224,3.619)	<0.0001	2.913(2.282,3.720)	<0.0001	
+P for trend	<0.0001	<0.0001	0.0001	
+  	
+CVD	Crude model
+HR (95% CI)	P-value	Model 1
+HR (95% CI)	P-value	Model 2
+HR (95% CI)	P-value	
+TyG ≤ 8.64 & SIRI ≤ 0.63	Ref	Ref	Ref	Ref	Ref	Ref	
+TyG > 8.64 & SIRI ≤ 0.63	2.366(1.413,3.961)	0.001	2.268(1.337,3.847)	0.002	2.421(1.414,4.144)	0.001	
+TyG ≤ 8.64 & SIRI > 0.63	1.910(1.248,2.924)	0.003	1.843(1.177,2.887)	0.008	1.808(1.159,2.820)	0.009	
+TyG > 8.64 & SIRI > 0.63	3.451(2.226,5.349)	<0.0001	3.082(1.919,4.948)	<0.0001	3.202(1.993,5.144)	<0.0001	
+P for trend	<0.0001	<0.0001	0.0001	
+This table presents the association between TyG-SIRI combined categories and CVD mortality and all-cause mortality in the NHANES cohorts. Results are expressed as harrds ratios (HRs) with 95% confidence intervals (CIs).
+
+Model adjustments:
+
+Crude Model: No-adjust.
+
+Model 1: Adjusted for age, sex, race, educational level, smoke, drinking, BMI.
+
+Model 2: Adjusted for age, sex, race, education, smoking, drinking, BMI, eGFR, LDL, diabetes, hypertension, CVD history, and use of anti-diabetic, anti-hypertensive, statin, and aspirin medications.
+
+The HRs represent the relative hazard of CVD mortality or all-cause mortality for individuals in TyG > 8.6 & SIRI ≤ 0.63, TyG ≤8.6 & SIRI > 0.63, TyG > 8.6 & SIRI > 0.63 compared to TyG ≤ 8.6 & SIRI ≤ 0.63. An HR > 1 indicates an increased risk, while an HR < 1 indicates a reduced risk. Statistically significant associations (p < 0.05) are highlighted in the table. The p trend assesses the overall association across TyG-SIRI combined categories.
+
+3.8 Bootstrap validation of risk thresholds
+
+Bootstrap resampling (1000 replicates) confirmed the stability of the empirically derived thresholds within our cohort. Bootstrap resampling indicated stable threshold estimates, with 95% CIs of [8.50, 8.78] for TyG and [0.58, 0.68] for SIRI. The narrow intervals indicate that these thresholds are estimated with reasonable precision in this population. (See Supplementary Table S4, Supplementary Fig. S1).
+
+3.9 10-Fold cross-validation of thresholds
+
+The stability of the classification scheme was confirmed by 10-fold cross-validation. Across all folds, the re-derived TyG cutoffs ranged narrowly from 8.59 to 8.68 (mean 8.635, SD 0.028), and SIRI cutoffs from 0.621 to 0.641 (mean 0.631, SD 0.0066). The agreement between the fold-specific and fixed classifications was high (pooled Cohen's κ = 0.85, 95% CI: 0.83–0.87), indicating robust and reproducible categorization (Supplementary Table S10).
+
+3.10 Model comparison and incremental predictive value
+
+To evaluate whether the combined TyG-SIRI categorical model offered superior predictive performance, we compared it against alternative model specifications. As shown in Supplementary Table S11, the categorical model yielded significantly higher C-statistics for both CVD mortality (0.845 vs. 0.831, P = 0.04) and all-cause mortality (0.798 vs. 0.787, P = 0.03) compared to a model including TyG and SIRI as continuous linear terms. The categorical model also had lower AIC and BIC values, indicating better model fit.
+
+Adding the combined TyG-SIRI categories to a baseline model of traditional risk factors significantly improved risk reclassification (Supplementary Table S12). For CVD mortality, the continuous net reclassification improvement (NRI) was 0.152 (95% CI: 0.062–0.242, P = 0.003), and the integrated discrimination improvement (IDI) was 0.008 (95% CI: 0.001–0.014, P = 0.021). For all-cause mortality, the continuous NRI was 0.082 (95% CI: 0.016–0.148, P = 0.039) and the IDI was 0.005 (95% CI: 0.001–0.009, P = 0.030).
+
+Furthermore, the combined categorical model demonstrated greater improvement in C-statistic over the baseline model (+0.033, P = 0.002) compared to the model with continuous TyG and SIRI (+0.021, P = 0.01), as detailed in Supplementary Table S13.
+
+3.11 Sensitivity analysis for hypertension definition
+
+To assess the impact of using the 2017 AHA/ACC hypertension guideline (≥130/80 mmHg) on data collected from 1999 to 2010, we repeated the primary analysis using the JNC 7 definition (≥140/90 mmHg). As shown in Supplementary Table S14, the results were virtually unchanged. The dual-high group remained significantly associated with higher CVD mortality (HR = 1.66, 95% CI: 1.05–2.62) and all-cause mortality (HR = 1.51, 95% CI: 1.20–1.90), confirming that the choice of hypertension definition does not alter our conclusions.
+
+3.12 Competing risk analysis
+
+To account for non-cardiovascular death as a competing event, we performed Fine-Gray subdistribution hazard models. The dual-high category remained significantly associated with higher CVD mortality (subdistribution HR = 1.65, 95% CI: 1.07–2.55, P = 0.02), consistent with the primary Cox model estimate (HR = 1.68, 95% CI: 1.08–2.61). The cumulative incidence of CVD death was significantly higher in the dual-high group (Gray's test P < 0.001; Supplementary Fig. S5). Full Fine-Gray results are presented in Supplementary Table S15.
+
+3.13 Analysis accounting for competing risks
+
+Among the 2395 recorded deaths, 759 (31.7%) were attributed to CVD, while 1636 (68.3%) were due to non-CVD causes. Participants who died from CVD were slightly older (mean age 70.8 vs. 68.5 years, p < 0.01) and had nominally higher SIRI levels (1.57 vs. 1.54, p = 0.08) compared to those who died from non-CVD causes, while TyG levels were similar (8.84 vs. 8.84). (See Supplementary Table S5 and Supplementary Fig. S2 for detailed comparison).
+
+3.14 Comparison of model performance
+
+When different TyG-SIRI constructs were added to a base model of traditional risk factors, the four-category combined variable (TyG_SIRI_combined) demonstrated the best model fit, as evidenced by the lowest Akaike Information Criterion (AIC = 117,174.1) and Bayesian Information Criterion (BIC = 117,232.5). This model outperformed both the additive index (AIC = 117,190.3) and the multiplicative index (AIC = 117,185.5) models (See Supplementary Table S6, Supplementary Fig. S3). The combined categories model had the lowest AIC and BIC, indicating the best fit among the compared models.
+
+3.15 Sensitivity analysis using multiple imputation
+
+The hazard ratios from the multiple imputation sensitivity analysis were virtually identical to those from the primary complete-case analysis. After multiple imputation, the hazard ratios for the dual-high category remained essentially unchanged (CVD mortality: HR = 1.68, 95% CI: 1.10–2.57; all-cause mortality: HR = 1.51, 95% CI: 1.20–1.89), confirming the robustness of our primary findings to assumptions about missing data mechanisms (Supplementary Table S7).
+
+3.16 Inverse probability weighting (IPW) sensitivity analysis
+
+To formally adjust for selection on observables, we estimated each participant's probability of being included in the analytic sample using logistic regression with predictors: age, sex, race, education, smoking, BMI, diabetes, hypertension, and CVD history. We then re-ran the primary Cox models using stabilized IPW weights. The IPW-adjusted estimates indicated that selection on observed covariates does not meaningfully distort the associations. (See Supplementary Table S8, Supplementary Fig. S4).
+
+3.17 Additional robustness check: restriction to “healthy” subset
+
+To directly test whether the observed association was driven by the healthier profile of complete-case participants, we performed a sensitivity analysis restricting to 5402 participants free of baseline chronic comorbidities (diabetes, hypertension, CVD, cancer). As shown in Supplementary Table S9, the dual-high group remained at significantly elevated risk of all-cause mortality (Model 2 HR = 1.72, 95% CI: 1.23–2.39, P = 0.001) and CVD mortality (Model 2 HR = 2.01, 95% CI: 1.12–3.62, P = 0.02) in this healthy subset. The effect sizes were comparable to or larger than those in the full cohort (full cohort: all-cause HR = 1.52; CVD HR = 1.68), arguing against meaningful distortion from selection bias.
+
+4 Discussion
+
+In this large, nationally representative cohort study, we evaluated a simple, clinically actionable risk stratification tool based on the concurrent assessment of two readily available biomarkers: the triglyceride-glucose (TyG) index, a surrogate for insulin resistance, and the systemic inflammation response index (SIRI). Our principal finding is that individuals with concomitantly elevated levels of both TyG (>8.64) and SIRI (>0.63) face a substantially heightened risk of both all-cause and cardiovascular disease (CVD) mortality. This “dual-high-risk” phenotype was associated with a 52% increased risk of all-cause mortality and a 68% increased risk of CVD mortality, independent of a comprehensive set of traditional demographic, lifestyle, and clinical risk factors. Crucially, this combined categorical approach provided significant incremental predictive value over models containing either biomarker alone as a continuous variable, as quantified by the Net Reclassification Improvement (NRI), underscoring its utility for refining individual risk assessment.
+
+4.1 Integration with existing literature and mechanistic considerations
+
+Our findings align with and extend a substantial body of evidence linking insulin resistance and systemic inflammation to adverse cardiovascular outcomes. The TyG index has been consistently associated with incident CVD, subclinical atherosclerosis, and mortality across diverse populations [8], [15], [26]. Similarly, SIRI and related hematologic indices have emerged as prognostic markers in coronary artery disease and heart failure [18], [19], [21]. The novelty of our work lies not in re-establishing these individual associations, but in demonstrating that a simple, threshold-based combination of these two pathophysiological pathways identifies a subgroup at disproportionately higher risk. The observed synergy suggests that the co-existence of metabolic dysfunction (TyG) and a pro-inflammatory state (SIRI) may create a more pathogenic milieu than either condition in isolation, potentially through amplified endothelial dysfunction, oxidative stress, and atherosclerotic plaque instability [22], [23].
+
+4.2 Exploration of the observed gender interaction
+
+A notable finding from our exploratory subgroup analysis was a suggestion that the mortality risk associated with the “dual-high” phenotype might be more pronounced in women. This observation is consistent with some prior studies noting stronger associations between insulin resistance indices and cardiovascular events in women [27], [28]. While our data cannot establish causality, a targeted analysis within the “dual-high” group itself revealed that women had significantly higher levels of high-sensitivity C-reactive protein (CRP) compared to men, despite similar TyG and SIRI values. This may indicate that, in the context of comparable metabolic-inflammatory burden, women mount a more intense systemic inflammatory response, which could partially explain the differential risk association. This hypothesis-generating observation warrants further investigation in studies designed to examine sex-specific pathophysiological mechanisms.
+
+4.3 Clinical implications and utility of the proposed approach
+
+The primary value of the TyG-SIRI combined categories lies in its practicality. It transforms two continuous laboratory variables into a clear, four-tiered risk stratification (Low/Low, High/Low, Low/High, High/High) that can be easily interpreted at the point of care. The significant NRI indicates that this model improves the classification of individuals into correct risk categories compared to traditional approaches. Therefore, it may serve as a useful, low-cost adjunct to existing risk scores, helping to identify a high-risk subgroup that might benefit from more intensive lifestyle intervention, monitoring, or preventive pharmacotherapy.
+
+4.4 Strengths and limitations
+
+The strengths of this study include the use of a large, well-characterized, nationally representative cohort with long-term mortality follow-up, rigorous adjustment for confounders, and a comprehensive suite of sensitivity analyses. Specifically, the consistency of our findings between the complete-case and multiple imputation analyses mitigates concerns regarding bias from missing data. The bootstrap validation provided evidence for the internal stability of the empirically derived risk thresholds, and the formal model comparison (AIC/BIC) supported the utility of our combined categorical approach over simpler linear combinations. Furthermore, we formally assessed the incremental predictive value of the combined TyG/SIRI categories using established metrics (NRI/IDI).
+
+Our findings must be interpreted in the context of several important limitations. First, the observational design precludes causal inference. Despite extensive adjustment, residual confounding from unmeasured factors (e.g., diet, physical activity) and the possibility of reverse causation cannot be fully excluded. Second, regarding threshold generalizability, the TyG and SIRI cut-offs (8.64 and 0.63) were derived and internally validated in this specific cohort. External validation in independent populations (e.g., China Health and Nutrition Survey, UK Biobank) is warranted and is actively being pursued as part of our ongoing collaborative work before these thresholds can be recommended for clinical use. Third, selection bias is a concern given that approximately 45% of the eligible fasting subsample was excluded due to missing data. To assess this, we compared baseline characteristics between included and excluded participants (Supplementary Table S1). The excluded group was slightly older and less educated, but no substantial differences were observed in sex, smoking, BMI, or prevalence of diabetes, hypertension, or CVD. Furthermore, sensitivity analyses using inverse probability weighting and multiple imputation produced nearly identical results, suggesting that selection on observed covariates is unlikely to have materially biased our estimates. Nonetheless, we cannot exclude the possibility of selection on unobserved factors, and our findings should be generalized with appropriate caution. Additionally, the application of contemporary (2017) hypertension criteria to older NHANES data, while addressed in sensitivity analysis, is a potential source of measurement bias. Fourth, the competing risk analysis confirms that non-CVD death is a frequent event; our primary analysis employed appropriate methods, but more sophisticated competing risk frameworks could be explored in future studies. Finally, the modest discriminative performance (AUC) of the combined model underscores that it is best positioned as a complementary risk stratification tool within a comprehensive clinical assessment, not a standalone diagnostic test.
+
+5 Conclusion
+
+In summary, this study identifies a “dual-high-risk” phenotype—characterized by the concurrent elevation of the TyG index and SIRI—that is strongly and independently associated with increased all-cause and cardiovascular mortality. The simple, categorical combination of these biomarkers provides significant incremental prognostic information beyond traditional risk factors. If validated externally, this approach could offer clinicians a straightforward, inexpensive strategy to enhance the identification of high-risk individuals for targeted prevention efforts. Future prospective studies are needed to confirm the utility of these specific thresholds and to investigate the underlying biological mechanisms of this metabolic-inflammatory synergy.
+
+Publisher's note
+
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+CRediT authorship contribution statement
+
+Yan Liu: Writing – review & editing, Writing – original draft, Software, Project administration, Formal analysis, Data curation. Juan Xu: Software, Formal analysis. Xiaoyu Wu: Formal analysis, Data curation. Songwen Chen: Validation, Project administration, Investigation. Yong Wei: Validation, Software. Genqing Zhou: Supervision, Methodology. Xiaofeng Lu: Validation, Supervision. Shaowen Liu: Visualization, Validation. Wenyi Yang: Validation, Project administration. Lidong Cai: Writing – review & editing, Supervision, Software. Sudan Xu: Writing – review & editing, Software, Funding acquisition. Bei Liu: Writing – review & editing, Software, Project administration, Formal analysis, Data curation.
+
+Consent for publication
+
+This manuscript is not currently under consideration for publication elsewhere, and the work reported will not be submitted for publication elsewhere until a final decision has been made as to its acceptability by the journal.
+
+Ethics approval and consent to participate
+
+The China Health and Retirement Longitudinal Study was approved by the Ethics Review Committee of Shanghai General Hospital, Shanghai Jiaotong University. The National Health and Nutrition Examination Survey were approved by the National Center for Health Statistics ethics review board. Written informed consent was obtained from all participants. Informed consent was obtained from each subject in the cohort.
+
+Funding
+
+This study was supported by Medical-Engineering Cross Foundation of 10.13039/501100004921 Shanghai Jiao Tong University (Grant No. YG2021QN93).
+
+Declaration of competing interest
+
+The authors declare no competing interests.
+
+Appendix A Supplementary data
+
+Supplementary material
+
+Data availability
+
+Data supporting the findings of this study are publicly available from the official websites of the NHANES (https://www.cdc.gov/nchs/nhanes/index.htm). Access to datasets is granted for research purposes upon request or registration, in accordance with their respective data use policies.
+
+Acknowledgements
+
+We are particularly grateful to the NHANES team for their rigorous efforts in data collection and management, which provide an empirical basis for this study. We would like to express our heartfelt gratitude to the NHANES participants for their time and contributions that made this study possible. Finally, we thank our institution for its administrative and technical support throughout the process.
+
+Appendix A Supplementary data to this article can be found online at https://doi.org/10.1016/j.ahjo.2026.100857.
+
+
+References
+
+1 Tan S.C.W. Zheng B.B. Tang M.L. Chu H. Zhao Y.T. Weng C. Global burden of cardiovascular diseases and its risk factors, 1990–2021: a systematic analysis for the global burden of disease study 2021 QJM 118 6 2025 411 422 39847534 10.1093/qjmed/hcaf022
+2 Diseases GBD, Injuries C global burden of 369 diseases and injuries in 204 countries and territories, 1990–2019: a systematic analysis for the Global Burden of Disease Study 2019 Lancet 396 10258 2020 1204 1222 33069326 10.1016/S0140-6736(20)30925-9 PMC7567026
+3 Mensah G.A. Roth G.A. Fuster V. The global burden of cardiovascular diseases and risk factors: 2020 and beyond J. Am. Coll. Cardiol. 74 20 2019 2529 2532 31727292 10.1016/j.jacc.2019.10.009
+4 Roth G.A. Mensah G.A. Johnson C.O. Addolorato G. Ammirati E. Baddour L.M. Barengo N.C. Beaton A.Z. Benjamin E.J. Benziger C.P. Global burden of cardiovascular diseases and risk factors, 1990–2019: update from the GBD 2019 study J. Am. Coll. Cardiol. 76 25 2020 2982 3021 33309175 10.1016/j.jacc.2020.11.010 PMC7755038
+5 Horton W.B. Love K.M. Gregory J.M. Liu Z. Barrett E.J. Metabolic and vascular insulin resistance: partners in the pathogenesis of cardiovascular disease in diabetes Am. J. Physiol. Heart Circ. Physiol. 328 6 2025 H1218 H1236 40257392 10.1152/ajpheart.00826.2024 PMC12172477
+6 Montarello N.J. Nguyen M.T. Wong D.T.L. Nicholls S.J. Psaltis P.J. Inflammation in coronary atherosclerosis and its therapeutic implications Cardiovasc. Drugs Ther. 36 2 2022 347 362 33170943 10.1007/s10557-020-07106-6
+7 Tian X. Chen S. Xia X. Xu Q. Zhang Y. Zheng C. Wu S. Wang A. Pathways from insulin resistance to incident cardiovascular disease: a Bayesian network analysis Cardiovasc. Diabetol. 23 1 2024 421 39574129 10.1186/s12933-024-02510-w PMC11583553
+8 Alizargar J. Bai C.H. Hsieh N.C. Wu S.V. Use of the triglyceride-glucose index (TyG) in cardiovascular disease patients Cardiovasc. Diabetol. 19 1 2020 8 31941513 10.1186/s12933-019-0982-2 PMC6963998
+9 Gounden V. Devaraj S. Jialal I. The role of the triglyceride-glucose index as a biomarker of cardio-metabolic syndromes Lipids Health Dis. 23 1 2024 416 10.1186/s12944-024-02412-6 PMC11664894 39716258
+10 Qiu J. Li J. Xu S. Zeng H. Zhang Y. Yang S. Fang L. Huang J. Zhou H. Feng J. Can cardiovascular health and its modifiable healthy lifestyle offset the increased risk of all-cause and cardiovascular deaths associated with insulin resistance? Cardiovasc. Diabetol. 24 1 2025 114 40065337 10.1186/s12933-025-02674-z PMC11895255
+11 Dakota I. Huang W. Wijayanto M.A. Nurhafizah A. Khairunnisa A.R. Rachmayanti S. Yuliana E. Sunjaya A.F. Siswanto B.B. Prognostic value of triglyceride-glucose index on predicting major adverse cardiovascular events in hypertensive patients: a systematic review and meta-analysis Am. J. Prev. Cardiol. 22 2025 100996 10.1016/j.ajpc.2025.100996 PMC12032867 40290417
+12 Yi T. Lin Z. Hu F. Chen J. Chen L. Impact of the triglyceride-glucose index on all-cause and cardiovascular mortalities across different metabolic health and obesity statuses in US adults BMC Public Health 25 1 2025 1767 40369462 10.1186/s12889-025-22901-2 PMC12077056
+13 Gao X. Chen T. Zhou F. Sun Y. Zhang J. Li X. Zhao W. Li Y. Shi Y. Niu K. The association between different insulin resistance surrogates and all-cause mortality and cardiovascular mortality in patients with metabolic dysfunction-associated steatotic liver disease Cardiovasc. Diabetol. 24 1 2025 200 40346671 10.1186/s12933-025-02758-w PMC12065324
+14 Ruan H. Duan S. He L. Wang Y. Yao Z. Pan L. Yin W. Yang Y. Liu J. Wang J. The incremental prognostic value of incorporating the triglyceride-glucose index into the traditional cardiovascular risk factors for the long-term prognosis in ischemic cardiomyopathy patients with HFpEF following coronary artery bypass grafting: a multicenter cohort study J. Atheroscler. Thromb. 32 10 2025 1251 1267 40222904 10.5551/jat.65654 PMC12504032
+15 Chen J. Wu K. Lin Y. Huang M. Xie S. Association of triglyceride glucose index with all-cause and cardiovascular mortality in the general population Cardiovasc. Diabetol. 22 1 2023 320 37993902 10.1186/s12933-023-02054-5 PMC10666367
+16 Cao Y. Zheng X. Hu Y. Li J. Huang B. Zhao N. Liu T. Cai K. Tian S. Levels of systemic inflammation response index are correlated with tumor-associated bacteria in colorectal cancer Cell Death Dis. 14 1 2023 69 36717544 10.1038/s41419-023-05602-9 PMC9886998
+17 Wang R.H. Wen W.X. Jiang Z.P. Du Z.P. Ma Z.H. Lu A.L. Li H.P. Yuan F. Wu S.B. Guo J.W. The clinical value of neutrophil-to-lymphocyte ratio (NLR), systemic immune-inflammation index (SII), platelet-to-lymphocyte ratio (PLR) and systemic inflammation response index (SIRI) for predicting the occurrence and severity of pneumonia in patients with intracerebral hemorrhage Front. Immunol. 14 2023 1115031 10.3389/fimmu.2023.1115031 PMC9969881 36860868
+18 Li T. Wang P. Wang X. Liu Z. Zhang Z. Zhang Y. Wang Z. Feng Y. Wang Q. Guo X. Prognostic significance of inflammation in patients with coronary artery disease at low residual inflammatory risk iScience 26 11 2023 108060 10.1016/j.isci.2023.108060 PMC10628835 37942015
+19 Dziedzic E.A. Gasior J.S. Tuzimek A. Paleczny J. Junka A. Dabrowski M. Jankowski P. Investigation of the associations of novel inflammatory biomarkers-systemic inflammatory index (SII) and systemic inflammatory response index (SIRI)-with the severity of coronary artery disease and acute coronary syndrome occurrence Int. J. Mol. Sci. 23 17 2022 10.3390/ijms23179553 PMC9455822 36076952
+20 Urbanowicz T. Michalak M. Komosa A. Olasinska-Wisniewska A. Filipiak K.J. Tykarski A. Jemielity M. Predictive value of systemic inflammatory response index (SIRI) for complex coronary artery disease occurrence in patients presenting with angina equivalent symptoms Cardiol. J. 31 4 2024 583 595 37314004 10.5603/CJ.a2023.0033 PMC11374332
+21 Ma M. Wu K. Sun T. Huang X. Zhang B. Chen Z. Zhao Z. Zhao J. Zhou Y. Impacts of systemic inflammation response index on the prognosis of patients with ischemic heart failure after percutaneous coronary intervention Front. Immunol. 15 2024 1324890 10.3389/fimmu.2024.1324890 PMC10910016 38440729
+22 Mishra M. Wu J. Kane A.E. Howlett S.E. The intersection of frailty and metabolism Cell Metab. 36 5 2024 893 911 38614092 10.1016/j.cmet.2024.03.012 PMC11123589
+23 Chen W. Wang X. Chen J. You C. Ma L. Zhang W. Li D. Household air pollution, adherence to a healthy lifestyle, and risk of cardiometabolic multimorbidity: results from the China health and retirement longitudinal study Sci. Total Environ. 855 2023 158896 10.1016/j.scitotenv.2022.158896 36150596
+24 Yuan M. He J. Hu X. Yao L. Chen P. Wang Z. Liu P. Xiong Z. Jiang Y. Li L. Hypertension and NAFLD risk: insights from the NHANES 2017–2018 and Mendelian randomization analyses Chin Med J (Engl) 137 4 2024 457 464 37455323 10.1097/CM9.0000000000002753 PMC10876227
+25 Zhang Q. Xiao S. Jiao X. Shen Y. The triglyceride-glucose index is a predictor for cardiovascular and all-cause mortality in CVD patients with diabetes or pre-diabetes: evidence from NHANES 2001-2018 Cardiovasc. Diabetol. 22 1 2023 279 37848879 10.1186/s12933-023-02030-z PMC10583314
+26 Liu Q. Zhang Y. Chen S. Xiang H. Ouyang J. Liu H. Zhang J. Chai Y. Zhan Z. Gao P. Association of the triglyceride-glucose index with all-cause and cardiovascular mortality in patients with cardiometabolic syndrome: a national cohort study Cardiovasc. Diabetol. 23 1 2024 80 38402393 10.1186/s12933-024-02152-y PMC10893675
+27 Egede L.E. Campbell J.A. Walker R.J. Dawson A.Z. Williams J.S. Financial incentives to improve glycemic control in African American adults with type 2 diabetes: a pilot randomized controlled trial BMC Health Serv. Res. 21 1 2021 57 33435969 10.1186/s12913-020-06029-0 PMC7803385
+28 Lu Y.W. Chang C.C. Chou R.H. Tsai Y.L. Liu L.K. Chen L.K. Huang P.H. Lin S.J. Gender difference in the association between TyG index and subclinical atherosclerosis: results from the I-Lan Longitudinal Aging Study Cardiovasc. Diabetol. 20 1 2021 206 34645432 10.1186/s12933-021-01391-7 PMC8515653

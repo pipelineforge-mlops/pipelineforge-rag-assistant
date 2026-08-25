@@ -1,0 +1,373 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: ADMET DMPK
+Journal ID: ADMET DMPK
+NLM Journal ID: 101660124
+Journal ID: ADMET
+
+ADMET & DMPK
+
+EISSN: 1848-7718
+Publisher: International Association of Physical Chemists
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499661
+PMID: 42633366
+DOI: 10.5599/admet.3437
+Article version: 1
+Subjects: Original Scientific Paper
+
+Titanium dioxide nanoparticle-modified screen-printed electrode for erlotinib determination
+
+Manjulabhai Pooja Das https://orcid.org/0009-0002-1695-7344
+Mundangadan Sruthi https://orcid.org/0009-0005-0528-5505
+Paul Maria https://orcid.org/0009-0000-9164-209X
+Lal Srinivedha https://orcid.org/0009-0004-7461-8847
+Ramalal Namitha https://orcid.org/0009-0009-1258-3577
+Anto Mariya https://orcid.org/0009-0009-9476-1655
+Gangadharan Dhanya https://orcid.org/0009-0002-9313-0770 *
+Department of Biotechnology, Sahrdaya College of Engineering and Technology, Affiliated to APJ Abdul Kalam Technological University , Kodakara, Thrissur, Kerala, India
+Corresponding Author: E-mail: *dhanyag@sahrdaya.ac.in, Tel: +91 4802726630
+Electronic publication date: 2026 Aug 9
+Publication date: 2026
+Volume: 14
+Electronic Location ID: 3437
+Received 2026 May 13; Revised 2026 Aug 6
+Copyright: Copyright © 2026 by the authors.
+Copyright year: 2026
+License: This article is an open-access article distributed under the terms and conditions of the Creative Commons Attribution license (http://creativecommons.org/licenses/by/4.0/).
+License URL: https://creativecommons.org/licenses/by/4.0/
+
+Keywords: Electrochemical sensing, differential pulse voltammetry, therapeutic drug monitoring
+
+Funding: APJ Abdul Kalam Kerala Technological University, established by the Government of Kerala U.O.No. 539/2021/KTU Centre for Engineering Research and Development (CERD) PhD Fellowship Programme Ms Pooja Das M. expresses her sincere thanks to APJ Abdul Kalam Kerala Technological University, established by the Government of Kerala, for providing financial assistance in the form of the Centre for Engineering Research and Development (CERD) PhD Fellowship Programme, 2020 (U.O.No. 539/2021/KTU dated 25th March 2021).
+
+Figure count: 10
+Table count: 3
+Equation count: 3
+Reference count: 75
+Page count: 21
+
+==============================
+Abstract
+
+Background and purpose
+
+Erlotinib (ERL), a first-generation epidermal growth factor receptor tyrosine kinase inhibitor drug that is used in non-small cell lung cancer treatment, requires precise therapeutic drug monitoring owing to its narrow therapeutic window and significant inter-patient pharmacokinetic variability; existing chromatographic methods, while robust, are resource-intensive and incompatible with point-of-care settings, necessitating the development of simpler, cost-effective electroanalytical alternatives.
+
+Experimental approach
+
+A titanium dioxide nanoparticle-modified screen-printed electrode (TiO2NP@SPE) was fabricated via a facile single-step modification and comprehensively characterized by scanning electron microscopy - energy dispersive X-ray Analysis, Fourier transform infrared spectroscopy, X-ray diffraction and electrochemical impedance spectroscopy; electrochemical performance was evaluated by cyclic voltammetry and differential pulse voltammetry, and analytical validation was performed in human serum using the standard addition method.
+
+Key results
+
+The TiO2NP@SPE demonstrated markedly enhanced electron transfer kinetics over the bare SPE, yielding a well-defined linear response with a competitive limit of detection, high sensitivity, and intra- and inter-day serum recoveries within acceptable precision limits, alongside excellent selectivity against physiologically relevant interferents and structurally related anticancer agents.
+
+Conclusion
+
+This work developed a disposable screen-printed electrode sufficient to achieve sensitive, selective, and accurate quantification of ERL in human serum using TiO2NP@SPE as a promising, clinically translatable platform for point-of-care therapeutic drug monitoring in oncology; future efforts should address the elevated detection limit relative to the bare electrode and extend validation to real patient plasma samples to fully confirm clinical applicability.
+
+Introduction
+
+Lung cancer, particularly non-small cell lung cancer (NSCLC), remains one of the most prevalent and lethal malignancies worldwide. Erlotinib (ERL), an epidermal growth factor receptor (EGFR) tyrosine kinase inhibitor, was approved by the U.S. Food and Drug Administration (FDA) in November 2004 for the treatment of metastatic NSCLC. At the standard therapeutic dose of 150 mg per day, ERL steady-state trough plasma concentrations in NSCLC patients exhibit marked inter-individual variability, typically ranging from approximately 0.73 μM (315.6 ng mL-1) to 10.43 μM (4480 ng mL-1), with a minimum effective threshold of around 1.16 μM (500 ng mL-1) proposed for adequate EGFR inhibition [1-3]. This wide pharmacokinetic variability, coupled with the narrow margin between therapeutic and toxic concentrations, underscores the clinical necessity for routine therapeutic drug monitoring (TDM) and an analytical platform capable of quantifying ERL across this entire concentration span [4]. Recent clinical models continue to confirm that severe inter-individual exposure and adverse outcomes, such as interstitial lung disease, are strongly driven by these variable plasma concentrations, necessitating robust patient-centric monitoring [5-7]. Despite its therapeutic efficacy, erlotinib is associated with significant adverse effects including folliculitis, diarrhoea, dry skin, and fatigue, which may necessitate dose reductions or early discontinuation [8]. Consequently, therapeutic drug monitoring (TDM) is critical for optimizing dosing, improving therapeutic outcomes, and minimizing toxicity [9-12].
+
+Conventional methods for ERL quantification, including high-performance liquid chromatography (HPLC), liquid chromatography-mass spectrometry (LC-MS), liquid chromatography-tandem mass spectrometry (LC-MS/MS) and others are characterized by high sensitivity but require sophisticated instrumentation, trained personnel, lengthy sample preparation and hazardous solvents [13-18]. Immunoassay-based platforms, while offering some multiplexing advantages, suffer from cross-reactivity, interference from endogenous biomolecules, and lower specificity [19-21]. These limitations underscore the need for rapid, low-cost, and field-deployable analytical platforms. Electrochemical methods have emerged as powerful alternatives owing to their simplicity, cost-effectiveness, miniaturisability and inherent compatibility with point-of-care settings [22-25]. Indeed, state-of-the-art voltammetric sensor development has aggressively targeted tyrosine kinase inhibitors using composite matrices to meet clinical accuracy demands in complex biological fluids [26-29]. Among these, disposable SPEs are particularly attractive because of their affordability, portability, and suitability for mass production [29-32].
+
+Titanium dioxide nanoparticles (TiO₂NP) are widely employed in electrochemical sensing due to their large surface area, excellent biocompatibility, chemical stability, and pronounced electrocatalytic properties [33-34]. Modern nano-interfaced designs increasingly leverage the high surface-to-volume ratio and catalytic properties of TiO₂ on SPEs to expedite heterogeneous electron transfer rates and boost trace-level sensor sensitivity [35]. TiO₂NPs have been shown to enhance electron-transfer kinetics and improve analyte adsorption at electrode surfaces, leading to improved detection performance. Among the metal oxide nanomaterials explored for electrochemical sensing, including ZnO, CeO₂ and Fe₃O₄, TiO₂ was specifically selected in this work for three key reasons. First, anatase-phase TiO₂ exhibits exceptional chemical stability across the neutral pH range employed in physiological sensing (pH 7.4), remaining insoluble and structurally intact in phosphate buffer, unlike ZnO which undergoes surface dissolution under similar conditions [36]. Second, TiO₂ exhibits well-documented electrocatalytic activity toward the oxidation of aromatic organic compounds, attributable to its abundant surface hydroxyl groups and high adsorptivity for π-electron-rich molecules such as erlotinib [37,38]. Third, TiO₂ is established as non-toxic and biocompatible, a critical requirement for sensors intended for clinical serum analysis, where cytotoxic modifier residues could compromise sample integrity and patient safety.
+
+In the present study, we report the fabrication and characterization of a TiO₂NP-modified SPE (TiO2NP@SPE) and evaluate its application for the ultrasensitive electrochemical determination of erlotinib. The modified sensor achieved substantially higher sensitivity and an improved electroactive surface area compared to the unmodified electrode, while shifting the linear range to a range more relevant to clinical TDM concentrations, with excellent selectivity and reproducibility in human serum samples, demonstrating its suitability for TDM in clinical practice.
+
+Experimental
+
+Reagents and materials
+
+ERL was received as a gift from a pharmaceutical company (Hyderabad, India). TiO2 nanoparticles (anatase, ≥99 %, particle size < 30 nm) were procured from (CAS No: 13463-67-7, NCZD2902, Nanochemazone, Canada). A 1 mM ERL stock solution was prepared in methanol and stored at 4 °C in a dark container. All reagents were of analytical reagent grade. Phosphate buffer (PB, 0.1 M, pH 7.4) was prepared using KH2PO4 and Na2HPO4 in deionized (DI) water and used as the supporting electrolyte throughout. Screen-printed electrodes were fabricated using conductive carbon ink (Code No: 050-Sun Chemical C2030519P4, Bangalore), conductive silver ink (Code No: 060; Siltech Corporation Inc., Bangalore), and conductive Ag/AgCl paste (CAS No: 7783-90-06, NCZ-SPI-104, Nanochemazone, Canada) on 25 μm polyethylene terephthalate (PET) sheets.
+
+Instrumentation
+
+Electrochemical experiments were performed using a DY2300 Bipotentiostat (Digi Ivy, USA). SEM-EDAX analysis was performed using a Gemini SEM 300 (Carl Zeiss, Germany). XRD was recorded using an Aeris Research benchtop X-ray diffractometer (Malvern PANalytical, UK). SPEs were directly analysed by FTIR spectroscopy using Shimadzu IRSprit-X (Serial no. A230962). EIS was performed using the CHI6005E Electrochemical Workstation of Central Instrumentation Facility of IIT Palakkad.
+
+Fabrication of the TiO₂ nanoparticles-modified screen-printed electrode
+
+Bare SPEs were fabricated by screen-printing a silver conductive layer followed by a carbon layer and an Ag/AgCl reference electrode layer on PET sheets, as described in our previous study [39]. For surface modification, TiO₂NPs were thoroughly mixed with carbon paste at a weight ratio of 1:4 (TiO₂NPs : carbon paste) to obtain a homogeneous composite. The resulting paste was then screen-printed over the working electrode surface and subsequently dried at 60 °C to ensure complete solvent evaporation and firm adhesion of the composite layer. The modified electrode (TiO₂NP @SPE) was then conditioned by running 10 consecutive cyclic voltammograms in 0.1 M PB (pH 7.4) prior to use. Conditioning was performed to stabilize the electrode surface and remove loosely adsorbed nanoparticles, ensuring reproducible baseline responses.
+
+Electrochemical characterization
+
+The electrochemically active area of the TiO2NP@SPE was determined using cyclic voltammetry in 5 mM [Fe(CN)6]3-/4- with 0.1 M KCl at scan rates ranging from 2 to 200 mV s-1, applying the Randles-Ševčík equation. Scan rate studies for ERL oxidation were conducted with 15 μM ERL in 0.1 M PB (pH 7.4) at scan rates from 5 to 200 mV s-1 (potential window: 0.2-0.9 V). The nature of the electrode process (adsorption vs. diffusion-controlled) was determined from plots of Ipa vs. v and Ipa vs. v-1/2. The supporting electrolyte pH was maintained at 7.4 throughout, as this value corresponds to the physiological pH of human serum and was established as the optimal condition for ERL oxidation at SPE in our previous study [39]; since TiO₂NP modification does not alter the fundamental redox mechanism of ERL as confirmed by the identical irreversible oxidation behaviour and consistent peak potential observed in the scan rate study and electrode kinetics below so a separate pH optimization on the modified electrode was not performed
+
+Sensitivity studies and calibration
+
+DPV measurements were performed in 0.1 M PB (pH 7.4, as described in the Results and discussion, section Sensitivity studies: calibration and detection limits) over a potential window of 0 to 0.8 V, with ERL concentrations ranging from 15 to 65 μM. DPV parameters were: pulse amplitude 50 mV, potential increment 50 mV, pulse width 50 ms, and pulse period 100 ms, which were optimized in previous experiments [39]; the parameters that afforded the maximum peak current and best peak resolution were selected. The limit of detection (LOD) and limit of quantification (LOQ) were calculated as 3σ/m and 10σ/m, respectively, where σ is the standard deviation of the current response of 10 replicate measurements of the blank (0.1 M PB, pH 7.4, in the absence of ERL) and m is the slope of the calibration curve.
+
+Selectivity studies
+
+The selectivity of the TiO2NP@SPE was evaluated in the presence of common biological interferents includeing inorganic salts (Mg2⁺, Na2⁺, K⁺, Ca2⁺), sugars (glucose, sucrose, maltose), dopamine, urea, uric acid, fluoroquinolones (moxifloxacin (MOX), levofloxacin (LEV)), antifungal drug tinidazole (TNZ), acetaminophen (ACT), pantoprazole (PNP), metformin (MET) and structurally similar anticancer drugs (imatinib (IMT), capecitabine (CAP), sunitinib (STB), dasatinib (DSB)). Voltammetric responses were recorded in the presence of each interferent at concentrations that mimic physiological conditions, together with 22 μM ERL. Interferent concentrations were selected to reflect physiological levels in human serum or to represent a 1000-fold excess over the ERL concentration tested, whichever was higher.
+
+Reproducibility, stability and recovery studies
+
+Repeatability was assessed by comparing the DPV responses of 8 runs on a single modified electrode with 55 μM ERL. Reproducibility was assessed by comparing the DPV response of 6 individually prepared TiO2NP@SPE electrodes to 55 μM ERL. Stability was evaluated over 30 days on electrodes stored at room temperature. Recovery studies were conducted on two human serum samples (obtained from healthy volunteers) spiked with ERL at three concentrations (33, 44 and 55 μM) using the standard addition method. Both intra-day (n = 6) and inter-day analyses were performed. Student's t-test (95 % confidence, degrees of freedom (df = 5)) was applied to assess statistical significance.
+
+Statistical data analysis
+
+Experimental data were collected in triplicate and analysed using the Microsoft Excel Data Analysis ToolPak. One-way analysis of variance (ANOVA) in Origin 2026b [40] was used to determine whether the ERL concentrations identified using the developed approach differed significantly.
+
+Results and discussion
+
+Fabrication of TiO₂ nanoparticles modified screen-printed electrode
+
+To fabricate the nanocomposite, TiO₂NP: carbon paste was tested in various ratios (1:1, 1:2, 1:4,4:1,2:1). A ratio of 1:4 was found to give the best results for the determination of 15 μM ERL (Figure 1). At ratios higher than 1:4 (e.g., 1:2 and 1:1), the higher TiO₂ content increased electrode resistance due to the semiconducting nature of TiO₂, decreasing conductivity; at lower ratios (2:1 and 4:1), insufficient TiO₂ reduced the available electroactive surface area. The enhanced current observed with this ratio can be attributed to the increased electroactive surface area and improved interfacial electron transfer facilitated by the TiO₂ nanoparticles, which provide an efficient electron-transfer network, while their large surface area increases the number of electroactive sites. This ratio ensures optimal dispersion of TiO₂NPs, preventing aggregation and maintaining accessibility to catalytic sites, supporting the structural integrity of the nanocomposite [41,42].
+
+Figure 1. Effect of TiO₂NP concentration on sensor response. The graph illustrates the relationship between the differential peak current (ΔIp) and the TiO₂NP: Carbon mass ratio in the presence of 15 μM ERL. Error bars represent the standard deviation for n=3 measurements
+
+Morphological and structural characterization of TiO₂ nanoparticles modified screen-printed electrode
+
+The surface morphology of the TiO2NP@SPE was examined by SEM (Figure 2a). The micrograph reveals a rough, granular surface with well-dispersed TiO2 nanoparticles. This morphology is markedly different from the relatively smooth topography typical of a bare SPE, suggesting a successful increase in the electroactive surface area. EDAX analysis (Figure 2b) confirmed the successful deposition of TiO₂NP, with titanium appearing as a prominent constituent (25.79 wt.%) [43,44]. The spectrum also shows significant peaks for carbon (52.28 wt.%) and oxygen (16.68 wt.%), corresponding to the graphite ink and the oxide phase of the nanoparticles, respectively. Trace amounts of aluminium, silicon and chlorine were detected, which are consistent with the composition of the PET substrate and the conductive ink binder.
+
+Figure 2. (a) SEM images and (b) EDAX spectrum with elemental composition (inset) confirming successful TiO₂NP deposition on the electrode surface
+
+The FTIR spectra of the bare SPE and TiO2NP@SPE (Figure 3a) were acquired to identify the functional groups, and vibrational modes present in each material and to confirm successful nanoparticle incorporation. The bare SPE (black line) displays characteristic peaks at 1580 cm-1, corresponding to C=C aromatic stretching vibrations of the graphitic carbon matrix, confirming the carbonaceous nature of the electrode substrate [41]. Upon modification with TiO₂NP (red line), a prominent new absorption band appears at 507 cm-1, which is entirely absent in the bare SPE spectrum and is unambiguously assigned to the Ti-O and Ti-O-Ti stretching vibrations characteristic of the anatase phase of TiO₂ [43,44]. The exclusive appearance of this band in the modified electrode spectrum provides definitive spectroscopic confirmation of successful TiO₂NP deposition onto the electrode surface without phase transformation. Additionally, the TiO2NP@SPE displays a broad band at 3429 cm-1 attributable to O-H stretching vibrations of surface hydroxyl groups and adsorbed water molecules on the TiO₂ surface [44,45], which are electrochemically significant as they facilitate analyte adsorption. The band at 2969 cm-1 is consistent with asymmetric C-H stretching vibrations of aliphatic hydrocarbon groups originating from the organic polymeric binder present in the conductive carbon ink matrix [46]. The absorption at 2382 cm-1 is attributable to atmospheric CO₂, a well-known artifact commonly observed in attenuated total reflectance -Fourier transform infrared (ATR-FTIR) measurements [46]. The peak at 1759 cm-1 is assigned to C=O stretching of ester or carbonyl groups within the polymeric binder resin of the conductive ink [47]. Collectively, the FTIR data confirm the chemical identities of both the carbon substrate and the TiO₂ modifier and unambiguously establish that the nanoparticle modification introduces new Ti-O bonding while preserving the electrode's graphitic carbon structure.
+
+Figure 3. Structural and chemical characterization of the modified electrodes. (a) FTIR spectra of the bare screen-printed electrode (Bare SPE, black) and the electrode modified with titanium dioxide nanoparticles (TiO2NP@SPE, red), showing characteristic vibrational bands for the functional groups and the Ti-O-Ti stretching at 507 cm-1. (b) XRD patterns comparing the crystalline structure of the TiO₂NP (red) and the modified SPE (blue), where the modified SPE shows a dominant peak at 26° associated with the carbonaceous support. (c) Detailed XRD spectrum of the modified material highlighting the sharp (002) diffraction peak of graphitic carbon at approximately 26°, with an inset displaying the broader diffraction range and higher-order peaks (100, 101, 102, 110, etc.) indexed to the electrode's substrates like silver and carbon
+
+The structural phase, crystallinity, and crystallite size of the synthesized materials were characterized by XRD (Figure 3b). The TiO₂ NPs display sharp, well-defined diffraction peaks at 2θ ≈ 25.3, 37.8, 48.0, 53.9, 55.1 and 62.7, corresponding to the (101), (004), (200), (105), (211) and (204) crystallographic planes of the anatase phase (JCPDS No. 21-1272), confirming phase-pure anatase with no detectable rutile or brookite impurities. The sharpness and high intensity of these reflections indicate good crystallinity of the nanoparticles. The average crystallite size of the TiO₂ NPs was determined using the Debye-Scherrer equation (1):
+
+(1)
+
+where K = 0.9 (dimensionless shape factor), λ = 0.15406 nm (Cu Kα radiation), β is the full width at half maximum (FWHM) of the diffraction peak in radians, and θ is the Bragg diffraction angle. Applying this to the most intense anatase reflection, the (101) peak at 2θ = 25.3° (FWHM = 0.55°) yields an average crystallite size of D = 14.8 nm. This value is in close agreement with the manufacturer-stated particle size of <30 nm, with the difference being consistent with the well-established distinction between XRD-derived coherent scattering domain size and physical particle dimensions measured by electron microscopy.
+
+The TiO₂ anatase peaks remain clearly visible in the modified SPE spectrum alongside the graphitic carbon signal, and the crystallite size derived from the (101) reflection in the modified SPE (D = 13.6 nm, FWHM ≈ 0.60°) is marginally smaller than that of the bare TiO₂ NPs, which may be attributed to slight lattice strain or confinement effects upon immobilization of the nanoparticles onto the electrode surface. Collectively, the retention of all characteristic anatase reflections, along with the graphitic carbon peak, confirms the successful integration of TiO₂ NPs onto the electrode surface without inducing any phase transformation of the nanoparticles [46,47]. In the bare SPE, a dominant high-intensity peak at 2θ = 26.5° is observed, corresponding to the (002) plane of graphitic carbon from the SPE substrate [48,49]. Applying the Debye-Scherrer Equation (1) to this (002) reflection (FWHM = 0.20°) yields a graphitic stacking crystallite height of Lc ≈ 40.8 nm, indicative of well-ordered, highly crystalline graphite layers within the SPE [50,51].
+
+Electrochemical active area determination
+
+The electrochemically active area (ECA) of the TiO2NP@SPE was calculated using the Randles-Ševčík equation applied to [Fe(CN)6]3-/4- cyclic voltammograms at varying scan rates (Figure 4). The anodic and cathodic peak currents varied linearly with the square root of scan rate (R2 = 0.99), confirming diffusion-controlled mass transfer. Based on the slope extracted from the linear regression, Ipa = 4.494 v1/2 and assuming standard parameters for a 5 mM ferricyanide solution (n = 1, D = 7.6×10-6 cm2 s-1), the calculated electrochemically active area of the TiO2NP@SPE was found to be 0.0383 cm2. All further electrochemical experiments were conducted at a scan rate of 50 mV s-1.
+
+Figure 4. Electrochemical characterization of the modified electrode. (a) Cyclic voltammograms of TiO2NP@SPE recorded in 5 mM Fe[(CN)6]3-/4-containing 0.1 M KCl at various scan rates ranging from 2 to 200 mV s-1. (b) Linear regression plots of the anodic (Ipa) and cathodic (Ipc) peak currents versus the square root of the scan rate ʋ1/2, demonstrating a diffusion-controlled redox process
+
+The calculated ECA of 0.0383 cm2 for the TiO2NP@SPE is primarily attributed to the synergistic effect of the nanomaterial modification on the carbon substrate. While the geometric area of fabricated screen-printed electrodes is typically small (approx. 0.0314 cm2 for a 2 mm diameter), the integration of TiO2 nanoparticles enhances the ECA by providing a higher density of electronic states and increasing the surface roughness factor [52,53].
+
+Scan rate study and electrode kinetics
+
+The electrochemical oxidation mechanism of ERL on TiO2NP@SPE was investigated by CV at scan rates from 5 to 200 mV s-1 in the presence of 15 μM ERL in 0.1 M PB (pH 7.4) (Figure 5a). As the scan rate increased, the anodic peak potential shifted positively, indicating an irreversible oxidation process. The linear relationship between Ipa and v1/2 (Figure 5c, R2 = 0.99) established that the electrode process is diffusion-controlled, consistent with the behaviour previously observed on the bare SPE.
+
+Figure 5. Electrochemical characterization of the modified electrode: (a) Cyclic voltammograms at varying scan rates; (b) Linear plot of anodic peak current (Ipa) vs. v (R2 = 0.976); (c) Linear plot of Ipa vs. v1/2 (R2 = 0.990) indicating a diffusion-controlled process; and (d) Linear relationship between peak potential (Epa) and log v used to calculate the kinetic parameters (αn) via Laviron’s Equation (2)
+
+The scan rate was increased, and the linear relationship between the peak potential and the logarithm of the scan rate (Figure 5d) can be described by Equation (2). Epa = 0.292 log v + 0.086, (R2 = 0.971, σ = 0.18, n = 6). Epa for an irreversible process can be defined by the Laviron Equation (2) [54,55]:
+
+(2)
+
+where ks is the charge transfer rate constant. Taking T = 298 K, R = 8.314 J K-1 mol-1 and F = 96480 C mol-1, the value of αn can be calculated to be 0.20 from the slope of Epa vs. log v (0.292). Where α is the transfer coefficient and n is the number of electrons transferred during the electrode process. Using the Bard-Faulkner equation (3) [56] for the irreversible process, the charge transfer coefficient (α) was calculated to be 0.40.
+
+(3)
+
+By substituting the value of Ep and Ep/2, the potential where the current is at half the peak value. The number of electrons n was found to be ~1 for oxidation, which agrees with the previously reported results for ERL. Further, from the intercept of the Epa versus v curve by extending to the vertical axis at v = 0, the value of E⁰ (redox potential) was found to be 0.733 V. ks is the apparent charge transfer rate constant of the reaction and was calculated to be approximately 1.2×10⁻2 s-1 [57].
+
+The incorporation of TiO2NP enhanced the electron transfer kinetics at the electrode surface relative to the bare SPE, as evidenced by improved peak definition and higher peak currents. Electrode modification enhances current sensitivity and lowers overpotential, but it does not change the intrinsic redox stoichiometry of the analyte, which is governed by the molecule's chemical structure. According to Laviron's theory, the calculated value of n reflects only the electrons involved in the rate-determining step, meaning subsequent rapid transfers will not increase the observed kinetic electron count. Consequently, the modification improves the efficiency of the interface without altering the fundamental number of electrons the molecule is thermodynamically capable of transferring [58,59].
+
+Probable electrochemical oxidation mechanism
+
+To further elucidate the pathway underlying the electrocatalytic performance of the developed sensor, a molecular oxidation mechanism for ERL is proposed based on our experimental kinetics (as shown in Figure 6) and the established quinazoline electrochemistry literature by Bakirhan et al. [60]. Structurally, ERL consists of an electron-rich quinazoline core substituted with an aniline moiety and ethoxy side chains [60]. The electrochemical oxidation occurs predominantly at the nitrogen heteroatoms of the central azaheterocyclic quinazoline ring system. The overall process is governed by a proton-coupled electron-transfer mechanism involving two electrons and two protons (2e-/2H+), proceeding in two distinct sequential steps. ERL undergoes an initial slow, irreversible loss of one electron (e-) and one proton (H+) at the nitrogen site to generate a highly reactive radical intermediate. This is fully supported by our application of the Laviron and Bard-Faulkner Equations (2) and (3), which yielded an electron count of n approximately 1 for the reaction. The unstable radical intermediate rapidly loses a second electron (2nd e-) and a second proton (2nd H+) to form a stable electro-oxidized quinazoline-derivative product.
+
+Figure 6. Schematic representation of the electrocatalytic oxidation mechanism of erlotinib on a TiO2 modified electrode surface through a sequential 2 e-/ 2 H+ PCET mechanism
+
+The integrated TiO2 nanoparticles play a dual electrocatalytic role in this pathway. First, the abundant surface hydroxyl -OH groups identified in our FTIR spectra facilitate strong hydrogen-bonding interactions with the nitrogen atoms of the incoming ERL. Second, the high density of states on the nanostructured anatase surface coordinates seamlessly with the π -electron-rich aromatic rings of the drug. This localized surface concentration pre-orients the molecules, substantially lowering the interfacial charge-transfer resistance Rct decreased from 250 to 110 Ω and leading to the enhanced current responses observed [61,62].
+
+Electrochemical characterization of the modified electrode
+
+The electrochemical behaviour of the bare SPE and the TiO2NPs-modified SPE was investigated using CV and EIS. The study was conducted in a probe solution containing 5 mM [Fe(CN)6]3-/4- and 0.1 M KCl. As illustrated in Figure 7a, both electrodes exhibited characteristic reversible redox peaks associated with the [Fe(CN)6]3-/4- couple. Significant differences were observed following surface modification. The bare SPE (blue line) showed a broader peak potential separation (ΔEp) and a lower anodic peak current, Ipa = 0.21 μA. Upon modification with TiO2NP (black line), the anodic peak current increased to approx. 0.28 μA. Furthermore, the ΔEp decreased, with the anodic peak shifting toward a more negative potential. This enhancement is attributed to the increased electroactive surface area provided by the TiO2NP and their synergistic effect in facilitating faster electron transfer between the redox probe and the electrode surface.
+
+Figure 7. Electrochemical characterization of bare SPE and TiO2NP@SPE. (a) Cyclic voltammograms and (b) Nyquist plots of the bare SPE (blue line) and TiO2NPs-modified SPE (black line) recorded in 5 mM Fe[(CN)6]3-/4- containing 0.1 M KCl. CV scan rate: 50 mV s-1. EIS measurements were performed over a frequency range from 0.1 Hz to 100 kHz at an amplitude of 5 mV
+
+To further validate the interfacial properties and charge transfer kinetics, EIS measurements were performed, and the results are presented as Nyquist plots in Figure 7b. The plots consist of a semicircular portion at higher frequencies, representing the charge transfer resistance Rct, followed by a linear portion at lower frequencies, corresponding to the diffusion-limited process (Warburg impedance). The Nyquist plot for the bare SPE displays a significantly larger semicircle diameter, indicating a higher Rct (250 Ω). In contrast, the SPE@TiO2 shows a much smaller semicircle, with an Rct value reduced to approx. 110 Ω.
+
+Sensitivity studies: calibration and detection limits
+
+DPV responses of TiO2NP@SPE were recorded for ERL concentrations from 15 to 65 μM in 0.1 M PB (pH 7.4) (Figure 8a). A well-defined anodic peak near 0.65 V vs. Ag/AgCl was observed, and the peak current increased linearly with ERL concentration across the entire range studied. The resulting calibration plot (Figure 8b) yielded the linear equation Ipa = 0.068 Cerl + 9.595, with a coefficient of determination R2 = 0.987 (n = 11), as in Figure 8b confirming excellent linearity. The residual standard error of the regression was σreg = 1.14 μA (as shown in Figure 8b), which reflects the scatter of experimental data points about the fitted line. LOD and LOQ were calculated using the standard blank-based expressions LOD = 3σblank/m and LOQ = 10σblank/m, where m = 0.068 μA μM-1 is the calibration slope and σblank = 0.2075 μA is the standard deviation of the blank current measured independently from replicate blank recordings (n = 6) in 0.1 M PB (pH 7.4) in the absence of analyte. This yielded an LOD of 9.15 μM and an LOQ of 30.52 μM. The area-normalised sensitivity, calculated by dividing the raw slope by the electroactive surface area of the TiO2NP@SPE (0.0383 cm2), was 1.775 μA μM-1 cm⁻2.
+
+Figure 8. (a) Electrochemical characterization of ERL detection. DPV showing the ERL oxidation peak current increases with concentration (15 to 65 μM) at a scan rate of 50 mV s-1; (b) calibration curve showing a linear response of peak current vs. ERL concentration described by Ipa = 0.068 Cerl + 9.595 (R2 = 0.987, n = 11, σ = 1.14); (c) Nyquist plots for different ERL concentrations, showing the decrease in Rct as the concentration increases and (d) plot of Rct vs. concentration of ERL showing a linear decrease described by Rct = -0.56 Cerl + 42.1 (R2 = 0.991, n = 11, σ = 0.85)
+
+The comparison of the analytical performance reveals that the TiO2NP@SPE provides a superior catalytic environment for ERL detection. While the bare SPE exhibited a raw calibration slope of (0.152 μA μM-1), the modified electrode demonstrated an area-normalized sensitivity of (1.775 μA μM-1 cm⁻2), marking a substantial 10.6-fold increase over the bare electrode’s normalized response (0.167 μA μM-1 cm⁻2). Although the raw slope of the modified sensor (0.068 μA μM-1) is numerically lower than that of the bare electrode, the significant gain in area-normalized sensitivity confirms that the TiO2NPs provide a high degree of intrinsic electrocatalytic enhancement, thereby fundamentally improving charge-transfer efficiency at the electrode interface.
+
+Despite this significant gain in sensitivity, the LOD for TiO2NP@SPE (9.15 μM) is higher than that of the bare SPE (LOD = 0.03 μM), a result that is primarily attributable to an increase in σblank rather than any deficiency in sensitivity. Surface modification with TiO2 nanoparticles substantially increases the double-layer capacitance (Cdl) of the electrode, which raises the non-faradaic background current and its associated fluctuations. Even a proportionally larger increase in σblank relative to m will shift the detection limit to a higher concentration. Furthermore, manual fabrication of the nanoparticle-modified electrode may introduce surface inhomogeneities or adsorbed impurities that introduce additional variability into the blank response. Together, these factors explain the superior sensitivity and a higher LOD can coexist in the modified electrode system [63-65].
+
+The EIS linearity plot (Figure 8c) demonstrates a strong inverse linear relationship between charge transfer resistance (Rct) and erlotinib concentration across the range of 15-65 μM, described by the equation Rct = −0.56 Cerl + 42.1, with an excellent coefficient of determination (R2 = 0.991) as in Figure 8d, indicating high reliability of the sensor response. As the concentration of ERL increases, the Rct values decrease consistently, suggesting that the progressive binding of ERL molecules to the electrode surface facilitates charge transfer kinetics, likely by disrupting the blocking layer or altering the interfacial properties of the modified electrode. The low standard deviation (σ = 0.85) across 11 data points confirms the reproducibility and precision of the measurements, validating the biosensor's analytical performance for quantitative detection of ERL within the tested concentration range.
+
+Selectivity studies
+
+The selectivity of the TiO2NP@SPE was rigorously evaluated against common physiological ions, sugars, neurotransmitters, and metabolic byproducts. As summarized in Table 1, the sensor demonstrated high tolerance toward inorganic ions (Mg2+, Na+, K+ and Ca2+) at concentrations as high as 0.1 M, with signal deviations remaining ≤ 0.5 %. Similarly, the addition of common sugars (glucose, sucrose, and maltose at 8.93 mM) resulted in a negligible signal change of -0.21 %, -0.24 % and -0.3 % respectively. Furthermore, key biological interferents, including dopamine (2 μM), urea (1.31 mM) and uric acid (0.5 mM), yielded minor current fluctuations of +1.0, +0.98 and +1.1 %, respectively. These results indicate that the TiO2NP@SPE platform maintains high analytical integrity in the presence of high-concentration physiological matrices.
+
+Table 1. Influence of potential interferents on the voltammetric response of 22 μM ERL at TiO2NP@SPE.
+
+Interferent	Concentration, mM	Signal change, %	
+Mg2⁺	100	+0.01	
+Na⁺	100	+0.5	
+K⁺	100	+0.01	
+Ca2⁺	100	+0.01	
+Glucose	8.93	−0.21	
+Sucrose	8.93	−0.24	
+Maltose	8.93	−0.30	
+Dopamine	0.002	+1.0	
+Urea	1.31	+0.98	
+Uric acid	0.5	+1.1	
+
+The selectivity of the TiO2NP@SPE sensor was systematically evaluated against a diverse panel of co-administered pharmaceuticals and structurally related anticancer agents. As depicted in Figure 9a, common co-administered drugs including fluoroquinolone antibiotics MOX, ACT, TNZ, LEV, PNP and MET, each at 22 μM, exhibited no discernible faradaic response across the entire potential window of 0.2-0.7 V, remaining virtually indistinguishable from the blank phosphate buffer baseline. In sharp contrast, 22 μM ERL produced a well-defined, prominent oxidation peak at approximately 0.62 V with a peak current exceeding 11 μA, unambiguously demonstrating the inherent electrochemical inactivity of these common interferents at the TiO2NP@SPE surface. The relative standard deviation (RSD) of 1.9 % obtained in the presence of these non-electroactive interferents further confirms that the sensor response to ERL remains essentially unaffected by their presence.
+
+Figure 9. Selectivity and interference studies of the electrochemical sensor: (a) DPVs of the sensor in 0.1 M PB containing 22 μM ERL compared to 22 μM concentrations of various pharmaceutical interferents (MOX, LEV, TNZ, ACT, PNP and MET), showing a distinct faradaic response only for ERL and (b) DPV responses for 55 μM of competing anti-cancer drugs (ERL, STB, CAP, IMT) and 22 μM DSB, demonstrating the resolution of oxidation peaks for multi-drug analysis
+
+The selectivity of the TiO2NP@SPE sensor was evaluated against structurally related anticancer agents that are frequently co-administered with erlotinib in clinical settings. As shown in Figure 9b, at a concentration of 55 μM, anticancer drugs including sunitinib (STB), capecitabine (CAP), and imatinib (IMT) displayed distinct oxidation peaks at approximately 0.42, 0.48 and 0.65 V, respectively, all of which are well-resolved from the characteristic ERL oxidation peak observed at ~0.68 V. Similarly, dasatinib (DSB) at 22 μM exhibited a broad redox response cantered around 0.55-0.60 V, which remains distinguishable from the ERL signal. PB confirmed negligible background current throughout the potential window. Notably, although these electroactive anticancer interferents produce their own faradaic responses, their peak potentials are sufficiently separated from that of ERL to prevent any meaningful signal overlap. RSD of 2.2 % obtained in the presence of these anticancer interferents remains well within the acceptable analytical threshold of 5 %, confirming that despite minor ionic strength variations or surface adsorption dynamics induced by co-existing electroactive species, the TiO2NP@SPE platform maintains robust electro-selectivity for the accurate and reliable detection of erlotinib in complex therapeutic matrices.
+
+Reproducibility and stability
+
+The repeatability of the TiO2NP@SPE was assessed by comparing DPV responses of 8 runs on a single TiO2NP@SPE with 55 μM ERL (Figure 10a).
+
+Figure 10. Evaluation of sensor performance for 55 μM ERL detection. (a) Intra-electrode repeatability (n = 8), (b) inter-electrode reproducibility (n = 6) using TiO2NP@SPE in 0.1 M PB (pH 7.4) and (c) Storage stability profile showing the peak current retention over a 30-day period. Error bars represent the standard deviation of triplicate measurements
+
+RSD was approximately 1.5 %, indicating excellent repeatability. The reproducibility of the TiO2NP@SPE was assessed by comparing DPV responses of 6 independently fabricated TiO2NP@SPEs with 55 μM ERL (Figure 10b). RSD was approximately 1 %, indicating excellent batch-to-batch reproducibility.
+
+The long-term stability of the TiO2NP@SPE was investigated over 30 days under ambient storage conditions (Figure 10c). The sensor retained approximately 99.9 % of its initial current response after 15 days and 97.7 % after 30 days, with the gradual decline beyond day 15 attributed to slow degradation of the TiO2NP film upon prolonged ambient exposure, as reflected by the overall RSD of 0.3 % (s = 0.031) across the entire 30-day monitoring period. It should be noted that the influence of environmental variables such as temperature fluctuations and humidity on sensor stability was not investigated in the present study and remain outside the scope of this work; these aspects warrant systematic evaluation in future studies to fully establish the storage robustness of the fabricated sensor under varied real-world conditions.
+
+Recovery studies in human serum
+
+The practical applicability of the TiO2NP@SPE was evaluated by conducting recovery studies in two human serum samples spiked with ERL at 33, 44, and 55 μM. Both intra-day and inter-day analyses were performed (n=6 for each), and the results are presented in Table 2.
+
+Table 2. Recovery results of ERL in human serum samples using TiO2NP@SPE
+
+Added
+C / μM	Measured
+C / μM ± SD	Recovery, %	RSD, %	t value	Measured
+C / μM ± SD	Recovery, %	RSD, %	t value	
+	Intra-day analysis - sample 1	Inter-day analysis - sample 1	
+33	33.48 ± 0.72	101.45	2.15	0.48	32.81 ± 0.86	99.42	2.62	0.66	
+44	43.62 ± 0.91	99.14	2.09	0.52	44.51 ± 1.07	101.56	2.40	0.71	
+55	54.21 ± 1.08	98.56	1.99	0.57	55.67 ± 1.32	101.22	2.37	0.78	
+	Intra-day analysis - Sample 2	Inter-day analysis - Sample 2	
+33	32.69 ± 0.68	99.06	2.08	0.46	33.74 ± 0.89	102.54	2.64	0.69	
+44	44.18 ± 0.95	100.41	2.15	0.54	43.36 ± 1.02	98.55	2.35	0.73	
+55	55.42 ± 1.11	100.76	2.02	0.59	54.38 ± 1.29	98.87	2.37	0.81	
+n = 6, 95 % confidence, tabulated t = 4.032
+
+For serum sample 1, intra-day recoveries ranged from 98.56 to 101.45 % (RSD: 1.99 to 2.15 %), and inter-day recoveries were 99.42-101.56 % (RSD: 2.37 to 2.62 %). For serum sample 2, intra-day recoveries were 99.06 to 100.76 % (RSD: 2.02 to 2.15 %) and inter-day recoveries were 98.55 to 102.54 % (RSD: 2.35 to 2.64 %). These results demonstrate that the TiO2NP@SPE accurately determines ERL in complex biological matrices with no significant matrix interference. Student’s t-test was applied (n = 6, df = 5, 95 % confidence). The calculated t-values were lower than the tabulated t-value (4.032), indicating no statistically significant difference between the measured and nominal concentrations.
+
+Comparison with literature
+
+Table 3 summarizes a comprehensive comparison of the TiO2NP@SPE sensor with previously reported methods for ERL detection, encompassing both conventional chromatographic techniques and electrochemical approaches. Among the chromatographic methods, LC-MS/MS [66], UPLC-MS/MS [67] and HPLC-MS/MS [69,69] have been widely employed for ERL quantification in human plasma, offering broad linear ranges (10 to 5000 ng L-1) with low detection limits. Capillary electrophoresis [70] has similarly been applied to urine matrices, demonstrating linearity over the range of 0.15 to 20 mg L-1. While these techniques provide excellent sensitivity and selectivity, they are inherently limited by their requirement for expensive instrumentation, skilled operators, extensive sample pre-treatment, and prolonged analysis times, rendering them unsuitable for rapid point-of-care or routine clinical monitoring.
+
+Table 3. Comparison of TiO2NP@SPE with reported methods for ERL detection
+
+Method	Material	Matrix	Linear range, μM	LOD, nM	Ref.	
+DPV	Bare SPE	Human serum, urine, tablet	2-34	30	[39]	
+AdSSWV	β-CD NPs/GCE	Serum, urine	0.001 to 8.000	1.07	[60]	
+LC-MS/MS	-	Human plasma	0.025 to 12.710	—	[66]	
+UPLC-MS/MS	-	Human plasma	0.025 to 12.700	—	[67]	
+LC-MS/MS	-	Human plasma	0.025 to 12.700	—	[68]	
+HPLC-MS/MS	-	Human plasma	0.254 to 5.090	—	[69]	
+Capillary electrophoresis	-	Human urine	0.38 to 50.9	—	[70]	
+DPV	MWCNT/PUFIX/HF-PGE	Nail, urine	7.70to 142.00	110×103	[71]	
+DPV	N-GQdot/CuNPs/PANI@GO-GCE	Serum, urine	0.001 to 35.000	712×103	[72]	
+DPV	DNA/AuPt/p-L-Met/SPE	Human serum	0.032×10-3 to 10-3	0.009	[73]	
+DPV	MIP-pyrogallol/SPCE	Human serum	0.05×10-3 to 800×10-3	0.016	[74]	
+DPV	CuBO2 nanosheets/GQDs/GCE	Human serum	1.0 to 60.0	500	[75]	
+DPV	TiO2NP@SPE	Human Serum	15 to 65	9150	This work	
+UPLC-MS/MS - Ultra Performance Liquid Chromatography-Tandem Mass Spectrometry; HPLC-MS/MS - High-Performance Liquid Chromatography-tandem mass spectrometry; AdSSWV - adsorptive stripping square wave voltammetry; β-CD NPs/GCE - β-cyclodextrin nanoparticles/glassy carbon electrode; MWCNT/PUFIX/HF-PGE - multi-walled carbon nanotube/polyurethane/hollow fiber-pencil graphite electrode; N-GQdot/CuNPs/PANI@GO-GCE - nitrogen-doped graphene quantum dots/copper nanoparticles/polyaniline@graphene oxide-glassy carbon electrode; DNA/AuPt/p-L-Met/SPE - DNA/gold-platinum bimetallic nanoparticles/poly-l-methionine/screen-printed electrode; MIP-pyrogallol/SPCE - molecularly imprinted polymer (pyrogallol-based)/screen-printed carbon electrode; CuBO2 nanosheets/GQDs/GCE s- cuprous delafossite copper borate (CuBO2) nanosheets/graphene quantum dots/glassy carbon electrodes
+
+Electrochemical methods have emerged as attractive alternatives owing to their simplicity, low cost, and miniaturization potential. Among the reported electrochemical sensors, the β-CD NPs/GCE-based AdSSWV sensor [60] achieved an impressive LOD of 1.07 nM with a linear range of 0.001 to 8.000 μM in serum and urine, benefiting from the host-guest recognition properties of β-cyclodextrin. The MWCNT/PUFIX/HF-PGE platform [71] reported a linear range of 7.70 to 142.00 μM with an LOD of 0.11 μM in nail and urine samples. The DPV-based sensor using N-GQdot/CuNPs/PANI@GO-GCE [72] delivered a similarly low LOD of 0.712 nM over a range of 0.001 to 35.000 μM, attributable to the synergistic electrocatalytic activity of the complex nanohybrid architecture. The DNA/AuPt/p-L-Met/SPE biosensor [73] demonstrated picomolar-level detection in human serum through the integration of bimetallic nanoparticles and a DNA recognition layer. The MIP-pyrogallol/SPCE sensor [74] achieved an ultralow LOD of 0.016 nM (0.000016 μM) across a wide dynamic range of 0.05 to 800.00 nM in serum, exploiting the molecular recognition capability of the imprinted polymer. The CuBO2 nanosheets/GQDs/GCE sensor [75] provided a linear range of 1.0 to 60.0 μM with an LOD of 0.5 μM in human serum, while the bare SPE sensor [39] offered a linear range of 2 to 4 μM with an LOD of 0.03 μM across multiple matrices including serum, urine, and tablet formulations.
+
+Although several of the above electrochemical sensors exhibit lower LOD values, they invariably rely on elaborate multi-step synthesis of complex nanohybrids, molecularly imprinted polymers, or bioreceptor functionalization, which significantly increases fabrication complexity, cost, and batch-to-batch variability. In contrast, the TiO2NP@SPE sensor proposed in this work achieves an LOD of 9.15 μM within a clinically relevant linear range of 15 to 65 μM, which encompasses the therapeutically significant ERL plasma concentration window, without necessitating intricate surface modification procedures. The screen-printed electrode platform inherently ensures disposability, portability, and low cost, while the TiO2 nanoparticle modification is achieved through a straightforward single-step process. Furthermore, the oxidation peak potential of 0.66 V observed for ERL at TiO2NP@SPE is notably lower than those reported for GCE-based sensors operating at 0.94 and 1.5 V, reflecting the superior electrocatalytic activity of the modified surface toward ERL oxidation and enabling measurements with reduced interference from co-existing electroactive species. Collectively, these attributes position the TiO2NP@SPE as a practically viable, clinically applicable, and user-friendly platform for ERL therapeutic drug monitoring.
+
+Conclusions
+
+This study demonstrates that modification of a disposable screen-printed electrode with TiO2 nanoparticles yields a highly sensitive electrochemical sensor (TiO2NP@SPE) for the determination of erlotinib, with SEM-EDAX, FTIR, and XRD characterization confirming successful nanoparticle deposition. The sensor exhibited diffusion-controlled oxidation kinetics with a LOD of 9.15 μM, LOQ of 30.52 μM and sensitivity of 1.775 μA μM-1 cm⁻2, alongside excellent selectivity against physiological interferents and structurally related anticancer agents, and intra- and inter-day serum recovery of 98.56 to 102.54 % (RSD <2.7 %). Despite the improved sensitivity, the TiO2NP modification resulted in a higher LOD compared to the bare SPE, owing to elevated background capacitance inherent to nanomaterial-modified electrode surfaces. Future work will explore TiO2-carbon nanotube or molecularly imprinted TiO2 composite modifications to synergistically lower the detection limit and enhance selectivity, alongside integration into a miniaturized lab-on-chip platform for on-chip sample preparation and point-of-care therapeutic drug monitoring of erlotinib in clinical settings.
+
+Acknowledgements
+
+The authors greatly thank Sahrdaya College of Engineering and Technology for the research facilities provided to conduct this research study. The authors are thankful to the Sophisticated Test and Instrumentation Centre, Kochi, Kerala for SEM-EDAX facilities, Mr. Shanu A.S. (Research Scholar, St. Thomas' College (Autonomous), Thrissur) for recording the XRD spectrum, and Ms. Nithya Jose (Research Scholar, St. Thomas' College (Autonomous), Thrissur) for recording the FTIR spectrum and finally Dr. Jeethu Raveendran, at IIT Palakkad for recording the EIS data.
+
+Conflict of interest: The authors declare no conflict of interest, financial or otherwise.
+
+Author contribution: P.D., M.P., S.M. and M.A. performed the measurements, D.G. was involved in planning and supervised the work, P.D., S. and N.R. processed the experimental data, performed the analysis and P.D., S.M. and M.A. drafted the manuscript, designed the figures, and performed the calculations. D.G. aided in interpreting the results and worked on the manuscript. All authors discussed the results and commented on the manuscript. P.D. wrote the paper with input from all authors. The published final version of the work has been reviewed and approved by all authors.
+
+Data availability: Data are available on request to the corresponding author.
+
+Ethics approval and consent to participate: The study was approved by the institutional committee, and all procedures were conducted in accordance with the ethical standards of the Declaration of Helsinki. Informed consent was obtained from all individual participants included in the study.
+
+Consent to publish: The authors confirm that human research participants provided informed consent for publication of data in Table 2.
+
+
+References
+
+[1] Zhang Y. Gao S. Zhu X. Fang Z. Sun J. Zhao L. . Polymorphisms of drug-metabolizing enzymes and transporters contribute to the individual variations of erlotinib steady state trough concentration, treatment outcomes, and adverse reactions in epidermal growth factor receptor-mutated non-small cell lung cancer patients. Frontiers in Pharmacology 11 (2020) 664. https://doi.org/10.3389/fphar.2020.00664 10.3389/fphar.2020.00664 32457635 PMC7225310
+[2] Verheijen R.B. Yu H. Schellens J.H.M. Beijnen J.H. Steeghs N. Huitema A.D.R. . Practical recommendations for therapeutic drug monitoring of kinase inhibitors in oncology. Clinical Pharmacology and Therapeutics 102 (2017) 765-776. https://doi.org/10.1002/cpt.787 10.1002/cpt.787 28699160 PMC5656880
+[3] Cohen M.H. Johnson J.R. Chen Y.F. Sridhara R. Pazdur R. . FDA drug approval summary: erlotinib (Tarceva) tablets. The Oncologist 10 (2005) 461-466. https://doi.org/10.1634/theoncologist.10-7-461 10.1634/theoncologist.10-7-461 16079312
+[4] Zhu V.W. Schrock A.B. Ali S.M. Ou S.I. . Differential response to a combination of full-dose osimertinib and crizotinib in a patient with EGFR-mutant non-small cell lung cancer and emergent MET amplification. Lung Cancer: Targets and Therapy 10 (2019) 21-26. https://doi.org/10.2147/LCTT.S190403 10.2147/LCTT.S190403 30881166 PMC6419586
+[5] Carter J. Tadi P. . Erlotinib, in StatPearls [Internet], Treasure Island (FL): StatPearls Publishing. 2026. https://www.ncbi.nlm.nih.gov/books/NBK554484/
+[6] Kim M. Ryu K. Kim H. Lee H. Lim J. Kim H. Chang M.J. . Population pharmacokinetics of erlotinib in patients with non-small cell lung cancer (NSCLC): a model-based meta-analysis. Computers in Biology and Medicine 186 (2025) 109682. https://doi.org/10.1016/j.compbiomed.2025.109682 10.1016/j.compbiomed.2025.109682 39862467
+[7] Brugger W. Triller N. Blasinska-Morawiec M. Curran W. Camidge D.R. Csőszi T. . Prospective molecular marker analyses of EGFR and KRAS from a randomized, placebo-controlled study of erlotinib maintenance therapy in advanced non-small-cell lung cancer. Journal of Clinical Oncology 29 (2011) 4113-4120. https://doi.org/10.1200/JCO.2010.31.8162 10.1200/JCO.2010.31.8162 21969500
+[8] Long G.H. Zalcman G. Cadranel J. Depierre A. Milleron B. Molinier O. . Side effects of long-term administration of erlotinib in patients with non-small cell lung cancer. Journal of Thoracic Oncology 5 (2000) 1477-1480. https://doi.org/10.1097/jto.0b013e3181e981d9 10.1097/jto.0b013e3181e981d9 20736807
+[9] Kang J.S. Lee M.H. . Overview of therapeutic drug monitoring. Korean Journal of Internal Medicine 24 (2009) 2687654. https://doi.org/10.3904/kjim.2009.24.1.1 10.3904/kjim.2009.24.1.1 PMC2687654 19270474
+[10] Widmer N. Bardin C. Chatelut E. Paci A. Beijnen J. Levêque D. . Review of therapeutic drug monitoring of anticancer drugs part two - targeted therapies. European Journal of Cancer 50 (2014) 2020-2036. https://doi.org/10.1016/j.ejca.2014.04.015 10.1016/j.ejca.2014.04.015 24928190
+[11] Schmidinger M. Steger G.G. . Erlotinib: another candidate for the therapeutic drug monitoring of targeted therapy of cancer? A pharmacokinetic and pharmacodynamic systematic review of literature. Therapeutic Drug Monitoring 36 (2014) 567-576. https://doi.org/10.1097/ftd.0000000000000097 10.1097/ftd.0000000000000097 24831652
+[12] García-Alvarez-Coque M.C. Baeza-Baeza J.J. Ramis-Ramos G. . Relevance of therapeutic drug monitoring of tyrosine kinase inhibitors in routine clinical practice: a pilot study. Pharmaceutics 14 (2022) 1216. https://doi.org/10.3390/pharmaceutics14061216 10.3390/pharmaceutics14061216 35745789 PMC9228468
+[13] Paci A. Veal G. Bardin C. Levêque D. Widmer N. Beijnen J. . Review of therapeutic drug monitoring of anticancer drugs part 1 - cytotoxics. European Journal of Cancer 50 (2014) 2010-2019. https://doi.org/10.1016/j.ejca.2014.04.014 10.1016/j.ejca.2014.04.014 24889915
+[14] Zhen Y. Thomas-Schoemann A. Sakji L. Boudou-Rouquette P. Dupin N. Mortier L. . An HPLC-UV method for the simultaneous quantification of vemurafenib and erlotinib in plasma from cancer patients. Journal of Chromatography B: Analytical Technologies in the Biomedical and Life Sciences 928 (2013) 93-97. https://doi.org/10.1016/j.jchromb.2013.03.017 10.1016/j.jchromb.2013.03.017 23602929
+[15] Lankheet N.A.G. Hillebrand M.J.X. Rosing H. Schellens J.H.M. Beijnen J.H. Huitema A.D.R. . Method development and validation for the quantification of dasatinib, erlotinib, gefitinib, imatinib, lapatinib, nilotinib, sorafenib and sunitinib in human plasma by liquid chromatography coupled with tandem mass spectrometry. Biomedical Chromatography 27 (2013) 466-476. https://doi.org/10.1002/bmc.2814 10.1002/bmc.2814 22987603
+[16] Huynh H.H. Pressiat C. Sauvageon H. Madelaine I. Maslanka P. Lebbé C. . Development and validation of a simultaneous quantification method of 14 tyrosine kinase inhibitors in human plasma using LC-MS/MS. Therapeutic Drug Monitoring 39 (2017) 43-54. https://doi.org/10.1097/FTD.0000000000000357 10.1097/FTD.0000000000000357 27861317
+[17] Gotze L. Hegele A. Metzelder S.K. Renz H. Nockher W.A. . Development and clinical application of a LC-MS/MS method for simultaneous determination of various tyrosine kinase inhibitors in human plasma. Clinica Chimica Acta 413 (2012) 143-149. https://doi.org/10.1016/j.cca.2011.09.012 10.1016/j.cca.2011.09.012 21945732
+[18] Rodríguez J. Castañeda G. Delgado M.C. Muñoz L. Lizcano I. Villa J.C. . Simultaneous determination of erlotinib and its metabolites in human urine and serum samples by high-performance liquid chromatography. Chromatographia 80 (2017) 793-801. https://doi.org/10.1007/s10337-017-3258-6 10.1007/s10337-017-3258-6
+[19] Sturgeon C.M. Viljoen A. . Analytical error and interference in immunoassay: minimizing risk. Annals of Clinical Biochemistry 48 (2011) 418-432. https://doi.org/10.1258/acb.2011.011073 10.1258/acb.2011.011073 21750113
+[20] Kricka L.J. . Interferences in immunoassay — still a threat. Clinical Chemistry 46 (2000) 1037-1038. https://doi.org/10.1093/clinchem/46.8.1037 10.1093/clinchem/46.8.1037 10926879
+[21] Tate J. Ward G. . Interferences in immunoassay. Clinical Biochemist Reviews 25 (2004) 105-120. PMCID: 18458713 PMC1904417
+[22] Thévenot D.R. Toth K. Durst R.A. Wilson G.S. . Electrochemical biosensors: recommended definitions and classification. Biosensors and Bioelectronics 16 (2001) 121-131. https://doi.org/10.1016/S0956-5663(01)00115-4 10.1016/S0956-5663(01)00115-4 11261847
+[23] Ronkainen N.J. Halsall H.B. Heineman W.R. . Electrochemical biosensors. Chemical Society Reviews 39 (2010) 1747-1763. https://doi.org/10.1039/b714449k 10.1039/b714449k 20419217
+[24] Li M. Li Y.T. Li D.W. Long Y.T. . Recent developments and applications of screen-printed electrodes in environmental assays — a review. Analytica Chimica Acta 734 (2012) 31-44. https://doi.org/10.1016/j.aca.2012.05.018 10.1016/j.aca.2012.05.018 22704470
+[25] Couto R.A. Lima J.L. Quinaz M.B. . Recent developments, characteristics and potential applications of screen-printed electrodes in pharmaceutical and biological analysis. Talanta 146 (2016) 801-814. https://doi.org/10.1016/j.talanta.2015.06.011 10.1016/j.talanta.2015.06.011 26695333
+[26] Cetinkaya A. Kaya S.I. Ozcelikay G. Atici E.B. Ozkan S.A. . A molecularly imprinted electrochemical sensor based on highly selective and an ultra-trace assay of anti-cancer drug axitinib in its dosage form and biological samples. Talanta 233 (2021) 122569. https://doi.org/10.1016/j.talanta.2021.122569 10.1016/j.talanta.2021.122569 34215065
+[27] Özata Ç.A. Erk N. Bouali W. Genc A.A. Ahmed H.E.H. Soylak M. . A novel electrochemical sensor based on NiCaCr-LTH@Nb₂C MXene-modified GCE for the sensitive determination of the anticancer drug gilteritinib. Electrochimica Acta 539 (2025) 147089. https://doi.org/10.1016/j.electacta.2025.147089 10.1016/j.electacta.2025.147089
+[28] Metters J.P. Kadara R.O. Banks C.E. . New directions in screen printed electroanalytical sensors: an overview of recent developments. Analyst 136 (2011) 1067-1076. https://doi.org/10.1039/c0an00894j 10.1039/c0an00894j 21283890
+[29] Yamanaka K. Vestergaard M.C. Tamiya E. . Printable electrochemical biosensors: a focus on screen-printed electrodes and their application. Sensors 16 (2016) 1761. https://doi.org/10.3390/s16101761 10.3390/s16101761 27775661 PMC5087545
+[30] Costa-Rama E. Fernández-Abedul M.T. . Paper-based screen-printed electrodes: a new generation of low-cost electroanalytical platforms. Biosensors 11 (2021) 51. https://doi.org/10.3390/bios11020051 10.3390/bios11020051 33669316 PMC7920281
+[31] Arduini F. Cinti S. Mazzaracchio V. Scognamiglio V. Amine A. Moscone D. . Carbon black as an outstanding and multifaceted material for electrochemical biosensor design. Biosensors and Bioelectronics 156 (2020) 112033. https://doi.org/10.1016/j.bios.2020.112033 10.1016/j.bios.2020.112033 32174547
+[32] Umar A. Akhtar M.S. Al-Assiri M.S. Al-Hajry A. Algarni H. de Mendonça V.R. Masuda Y. Kim S.H. Rahman Q.I. . Highly porous ZnO nanosheets self-assembled in rosette-like morphologies for dye-sensitized solar cell application. New Journal of Chemistry 39 (2015) 7961-7970. https://doi.org/10.1039/C5NJ00551E 10.1039/C5NJ00551E
+[33] Sanattalab E. Kanarya D. Ebrahimi A. Didarian R. Doğan Güzel F. Yıldırım Tirgil N. . Cutting-edge applications of titanium dioxide in biosensors. Electroanalysis 37 (2025) e70049. https://doi.org/10.1002/elan.70049 10.1002/elan.70049
+[34] Luo X. Morrin A. Killard A.J. Smyth M.R. . Application of nanoparticles in electrochemical sensors and biosensors. Electroanalysis 18 (2006) 319-326. https://doi.org/10.1002/elan.200503415 10.1002/elan.200503415
+[35] Sengupta J. Hussain C.M. . Advancements in titanium dioxide nanotube-based sensors for medical diagnostics: a two-decade review. Nanomaterials 15 (2025) 1044. https://doi.org/10.3390/nano15131044 10.3390/nano15131044 40648751 PMC12251031
+[36] Berger T. Monllor-Satoca D. Jankulovska M. Lana-Villarreal T. Gómez R. . The Electrochemistry of Nanostructured Titanium Dioxide Electrodes. ChemPhysChem 13 (2012) 2824-2875 https://doi.org/10.1002/cphc.201200073 10.1002/cphc.201200073 22753152
+[37] Pacheco da Silva E. da Silva Araujo M. Kunita M.H. Matos R. Medeiros R.A. . Electrochemical sensor based on multi-walled carbon nanotubes and N-doped TiO₂ nanoparticles for voltammetric simultaneous determination of benserazide and levodopa. Molecules 27 (2022) 8614. https://doi.org/10.3390/molecules27238614 10.3390/molecules27238614 36500705 PMC9739556
+[38] Guo Y. He D. Xie A. Qu W. Tang Y. Zhou L. Zhu R. . The electrochemical oxidation of hydroquinone and catechol through a novel poly-geminal dicationic ionic liquid (PGDIL)-TiO₂ composite film electrode. Polymers 11 (2019) 1907. https://doi.org/10.3390/polym11111907 10.3390/polym11111907 31752426 PMC6918233
+[39] Das Manjulabhai P. Warrier A. Raveendran J. Gangadharan D. . Electrochemical behavior of an anti-cancer drug erlotinib at screen-printed electrode and its analytical application. Current Analytical Chemistry 22 (2026) 417-430. https://doi.org/10.2174/0115734110318492240824112721 10.2174/0115734110318492240824112721
+[40] OriginLab Corporation, Origin 2026b, https://www.originlab.com/index.aspx?go=Products/OriginStudentVersion (accessed January 15th, 2026)
+[41] Joseph T. Thomas N. . A facile electrochemical sensor based on titanium oxide (TiO2)/reduced graphene oxide (RGO) nano composite modified carbon paste electrode for sensitive detection of epinephrine (EP) from ternary mixture. Materials Today: Proceedings 41 (2021) 606. https://doi.org/10.1016/j.matpr.2020.05.257 10.1016/j.matpr.2020.05.257
+[42] He Z. Zhou Y. Wang Y. Guo P. Jiang W. Yao C. Shu X. . Preparation and properties of Ni-WP-TiO2 nanocomposite coatings developed by a sol-enhanced electroplating method. Chinese Journal of Chemical Engineering 44 (2022) 369-376. https://doi.org/10.1016/j.cjche.2021.03.046 10.1016/j.cjche.2021.03.046
+[43] Qiu J. Zhang S. Zhao H. . Recent applications of TiO₂ nanomaterials in chemical sensing in aqueous media. Sensors and Actuators B 156 (2011) 875-890. https://doi.org/10.1016/j.snb.2011.08.077 10.1016/j.snb.2011.08.077
+[44] Sahare P. Alvarez P.G. M J. Yanez S. G J. Bárcenas L. Chakraborty S. Paul S. Estevez M. . Engineered titania nanomaterials in advanced clinical applications. Beilstein Journal of Nanotechnology 13 (2022) 201-218. https://doi.org/10.3762/bjnano.13.15 10.3762/bjnano.13.15 35223351 PMC8848344
+[45] Younis A.B. Milosavljevic V. Fialova T. Smerkova K. Michalkova H. Svec P. . Synthesis and characterization of TiO₂ nanoparticles combined with geraniol and their synergistic antibacterial activity. BMC Microbiology 23 (2023) 207. https://doi.org/10.1186/s12866-023-02955-1 10.1186/s12866-023-02955-1 37528354 PMC10394861
+[46] Nabi G. Khalid N.R. Tahir M.B. Rafique M. Rizwan M. Hussain S. . A review on novel eco-friendly green approach to synthesis TiO₂ nanoparticles using different extracts. Journal of Inorganic and Organometallic Polymers and Materials 31 (2021) 835-848. https://doi.org/10.1007/s10904-018-0812-0 10.1007/s10904-018-0812-0
+[47] Vasanth M.A. Vishnu V. Ks J. Kurian G. . Physiochemical investigation and biovaluation of TiO2 nanocrystals synthesized by chemical and green route. International Journal of Pharmacy and Pharmaceutical Sciences 6 (2014) 60-64. https://journals.innovareacademics.in/index.php/ijpps/article/view/2829
+[48] Barich H. Voet O. Sleegers N. De Wael K. . Selecting optimal carbon inks for fabricating high-performance screen-printed electrodes for diverse electroanalytical applications. Journal of Electroanalytical Chemistry 969 (2024) 118585. https://doi.org/10.1016/j.jelechem.2024.118585 10.1016/j.jelechem.2024.118585
+[49] de Oliveira Cândido T.C. Pereira A.C. da Silva D.N. . Development and characterization of conductive ink composed of graphite and carbon black for application in printed electrodes. Analytica 4 (2023) 513-526. https://doi.org/10.3390/analytica4040035 10.3390/analytica4040035
+[50] Ferrari A.G.-M. Rowley-Neale S.J. Banks C.E. . Screen-printed electrodes: transitioning the laboratory in-to-the field. Talanta Open 3 (2021) 100032. https://doi.org/10.1016/j.talo.2021.100032 10.1016/j.talo.2021.100032
+[51] Riesco F. Cosco-Salguero G.A. Nagles E. Penagos-Llanos J. Segura R. Hurtado J. . New Screen-Printed Carbon Electrodes Molecularly Modified with Methylphenidate Film for Electrochemical Determination of Dopamine by Linear Scan Voltammetry. Electroanalysis 37 (2025) e12028. https://doi.org/10.1002/elan.12028 10.1002/elan.12028
+[52] Trasatti S. Petrii O.A. . Real surface area measurements in electrochemistry. Journal of Electroanalytical Chemistry 327 (1992) 353-376. https://doi.org/10.1016/0022-0728(92)80162-W 10.1016/0022-0728(92)80162-W
+[53] García-Miranda Ferrari A. Foster C.W. Kelly P.J. Brownson D.A.C. Banks C.E. . Determination of the electrochemical area of screen-printed electrochemical sensing platforms. Biosensors 8 (2018) 53. https://doi.org/10.3390/bios8020053 10.3390/bios8020053 29890706 PMC6023085
+[54] Laviron E. . General expression of the linear potential sweep voltammogram in the case of diffusionless electrochemical systems. Journal of Electroanalytical Chemistry and Interfacial Electrochemistry 101 (1979) 19-28. https://doi.org/10.1016/S0022-0728(79)80075-3 10.1016/S0022-0728(79)80075-3
+[55] Elgrishi N. Rountree K.J. McCarthy B.D. Rountree E.S. Eisenhart T.T. Dempsey J.L. . A practical beginner's guide to cyclic voltammetry. Journal of Chemical Education 95 (2018) 197-206. https://doi.org/10.1021/acs.jchemed.7b00361 10.1021/acs.jchemed.7b00361
+[56] Bard A.J. Faulkner L.R. . Electrochemical Methods: Fundamentals and Applications, 2nd ed., John Wiley & Sons, New York, USA, 2011, p. 231-234. ISBN: 978-1-118-31280-3. https://www.wiley.com/en-be/shop/general-chemistry/electrochemical-methods-fundamentals-and-applications-2nd-edition-p-9781118312803
+[57] Randviir E.P. . A cross examination of electron transfer rate constants for carbon screen-printed electrodes using electrochemical impedance spectroscopy and cyclic voltammetry. Electrochimica Acta 286 (2018) 179-186. https://doi.org/10.1016/j.electacta.2018.08.021 10.1016/j.electacta.2018.08.021
+[58] Gusmão R. López-Puente V. Yate L. Pastoriza-Santos I. Perez-Juste J. Gonzalez-Romero E. . Screen-printed carbon electrodes doped with TiO2-Au nanocomposites with improved electrocatalytic performance. Materials Today Communications 11 (2017) 11-17. https://doi.org/10.1016/j.mtcomm.2017.02.003 10.1016/j.mtcomm.2017.02.003
+[59] Finklea H.O. . Theory of coupled electron-proton transfer with potential-dependent transfer coefficients for redox couples attached to electrodes. The Journal of Physical Chemistry B 105 (2001) 8685-8693. https://doi.org/10.1021/jp010768l 10.1021/jp010768l
+[60] Bakirhan N.K. Taskin Tok T. Ozkan S.A. . The redox mechanism investigation of non-small cell lung cancer drug: erlotinib via theoretical and experimental techniques and its host-guest detection by β-cyclodextrin nanoparticles modified glassy carbon electrode. Sensors and Actuators B 278 (2019) 172-180. https://doi.org/10.1016/j.snb.2018.09.090 10.1016/j.snb.2018.09.090
+[61] Bertel L. Miranda D.A. García-Martín J.M. . Nanostructured titanium dioxide surfaces for electrochemical biosensing. Sensors 21 (2021) 6167. https://doi.org/10.3390/s21186167 10.3390/s21186167 34577374 PMC8468921
+[62] Fujisawa J. Kato S. Hanaya M. . Aromatic-ring dependence of interfacial charge-transfer transitions between TiO2 nanoparticles and aromatic carboxylic acids. Chemical Physics Letters 788 (2022) 139274. https://doi.org/10.1016/j.cplett.2021.139274 10.1016/j.cplett.2021.139274
+[63] Crapnell R.D. Garcia-Miranda Ferrari A. Dempsey N.C. Banks C.E. . Electroanalytical overview: screen-printed electrochemical sensing platforms for the detection of vital cardiac, cancer and inflammatory biomarkers. Sensors and Diagnostics 1 (2022) 405-428. https://doi.org/10.1039/D1SD00041A 10.1039/D1SD00041A
+[64] Pereira J.F. Bertotti M. Dos Santos E.V. Martínez-Huitle C.A. . Beyond equations: experimental insights into detection limits in electroanalysis. Talanta 310 (2026) 130077. https://doi.org/10.1016/j.talanta.2026.130077 10.1016/j.talanta.2026.130077 42258921
+[65] Ott C.E. . Strategies for assessing the limit of detection in voltammetric methods: comparison and evaluation of approaches. Analyst 149 (2024) 4295-4309. https://doi.org/10.1039/d4an00636d 10.1039/d4an00636d 38990215 PMC11300140
+[66] Masters A.R. Sweeney C.J. Jones D.R. . The quantification of erlotinib (OSI-774) and OSI-420 in human plasma by liquid chromatography-tandem mass spectrometry. Journal of Chromatography B: Analytical Technologies in the Biomedical and Life Sciences 848 (2007) 379-383. https://doi.org/10.1016/j.jchromb.2006.10.046 10.1016/j.jchromb.2006.10.046 17101305
+[67] Bouchet S. Chauzit E. Ducint D. Castaing N. Canal-Raffin M. Moore N. . Simultaneous determination of nine tyrosine kinase inhibitors by 96-well solid-phase extraction and ultra performance LC/MS-MS. Clinica Chimica Acta 412 (2011) 1060-1067. https://doi.org/10.1016/j.cca.2011.02.023 10.1016/j.cca.2011.02.023 21345336
+[68] Ramarao N.T. Vidyadhara S. Basaveswara Rao M.V. Sasidhar R.L.C. Surendra Yadav R. . Liquid chromatography-tandem mass spectrometry method development and validation for the determination of erlotinib in human plasma and its application in pharmacokinetic study. Journal of Analytical Chemistry 70 (2015) 1488-1494. https://doi.org/10.1134/S1061934815120151 10.1134/S1061934815120151
+[69] van Veelen A. van Geel R. Schoufs R. de Beer Y. Stolk L.M. Hendriks L.E. . Development and validation of an HPLC-MS/MS method to simultaneously quantify alectinib, crizotinib, erlotinib, gefitinib and osimertinib in human plasma samples, using one assay run. Biomedical Chromatography 35 (2021) e5224. https://doi.org/10.1002/bmc.5224 10.1002/bmc.5224 34363425
+[70] Rodríguez J. Castañeda G. Muñoz L. Navarro D. Villa J.C. . Simultaneous determination of erlotinib and metabolites in human urine using capillary electrophoresis. Electrophoresis 35 (2014) 1489-1495. https://doi.org/10.1002/elps.201300573 10.1002/elps.201300573 24488756
+[71] Es'haghi Z. Moeinpour F. . Carbon nanotube/polyurethane modified hollow fiber-pencil graphite electrode for in situ concentration and electrochemical quantification of anticancer drugs capecitabine and erlotinib. Engineering in Life Sciences 19 (2019) 302-314. https://doi.org/10.1002/elsc.201800167 10.1002/elsc.201800167 32625010 PMC6999328
+[72] Rahmanian H. Es'haghi Z. Dadmehr M. . A robust electrochemical sensing platform for the detection of erlotinib based on nitrogen-doped graphene quantum dots/copper nanoparticles-polyaniline-graphene oxide nanohybrid. Nanotechnology 34 (2023) 015502. https://doi.org/10.1088/1361-6528/ac8996 10.1088/1361-6528/ac8996 35970142
+[73] Bayraktepe D.E. Yıldız C. Yazan Z. . The development of electrochemical DNA biosensor based on poly-l-methionine and bimetallic AuPt nanoparticles coating: picomolar detection of imatinib and erlotinib. Talanta 257 (2023) 124361. https://doi.org/10.1016/j.talanta.2023.124361 10.1016/j.talanta.2023.124361 36801759
+[74] Ahmed S.A. Roushani M. Mirzaei Karazan Z. . Development of a molecularly imprinted electrochemical sensor for erlotinib detection using a modified screen-printed carbon electrode. Microchimica Acta 192 (2025) 138. https://doi.org/10.1007/s00604-025-07012-4 10.1007/s00604-025-07012-4 39930278
+[75] Hasanpour F. Fouladgar M. . A novel electrochemical sensor for the determination of the non-small cell lung cancer drug erlotinib using p-type cuprous delafossite CuBO₂ nanosheets and graphene quantum dots. Journal of Analytical Chemistry 80 (2025) 1810-1818. https://doi.org/10.1134/S1061934825601306 10.1134/S1061934825601306

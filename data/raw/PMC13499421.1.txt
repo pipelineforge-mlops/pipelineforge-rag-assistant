@@ -1,0 +1,291 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Resusc Plus
+Journal ID: Resusc Plus
+NLM Journal ID: 101774410
+
+Resuscitation Plus
+
+EISSN: 2666-5204
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499421
+PMID: 42633257
+DOI: 10.1016/j.resplu.2026.101433
+Article ID: S2666-5204(26)00218-3
+Article ID: 101433
+Article version: 1
+Subjects: Original Article
+
+Distribution of visual attention amongst clinicians using an augmented reality-based decision support system during simulated cardiac arrest – A descriptive study
+
+Lin Yiqun jeffylin@hotmail.com a ⁎
+Masi Alexandre De alexandre.demasi@unige.ch b
+Kang Ryan rkd13951@gmail.com c
+Manzano Sergio sergio.manzano@hug.ch d
+Siebert Johan N. Johan.Siebert@hug.ch d
+Davidson Jennifer Jennifer.davidson@ahs.ca e
+Ehrler Frédéric Frederic.Ehrler@hug.ch f
+Courvoisier Delphine S. Delphine.Courvoisier@hug.ch g
+Duncan Donovan Donovan.duncan@ahs.ca h
+Rajic Ana ana.rajic@hotmail.com i
+Olanka Sharleen K. sharleenkayne@gmail.com i
+Generelli Marco generelli.m@gmail.com i
+Kim Kangsoo kangsoo.kim@ucalgary.ca c
+Cheng Adam chenger@me.com j
+for the InterFACE-AR Clinical Investigators Generelli Marco Simonot Louise Lidberg Joleen Cruickshank Delaney †
+a KidSIM Simulation Program, Alberta Children’s Hospital, 28 Oki Drive NW, Calgary, Alberta T3B 6A8, Canada
+b Faculty of Medicine, University of Geneva, Geneva, Switzerland
+c Department of Electrical and Software Engineering, Schulich School of Engineering, University of Calgary, Calgary, Canada
+d Department of Pediatric Emergency Medicine, Geneva Children’s Hospital, Geneva University Hospitals, Faculty of Medicine, University of Geneva, Geneva, Switzerland
+e KidSIM Simulation Program, Alberta Children’s Hospital, Cumming School of Medicine, University of Calgary, Canada
+f Division of Computer Sciences, Geneva University Hospitals, Faculty of Medicine, University of Geneva, Geneva, Switzerland
+g Quality of Care Division, Geneva University Hospitals, Faculty of Medicine, University of Geneva, Geneva, Switzerland
+h Departments of Pediatrics, Cumming School of Medicine, University of Calgary, Canada
+i Educational Technologies and Learning Sciences (TECFA), Faculty of Psychology and Educational Sciences, University of Geneva, Geneva, Switzerland
+j Departments of Pediatrics and Emergency Medicine, University of Calgary, KidSIM Simulation Program, Alberta Children’s Hospital, Calgary, Canada
+⁎ Corresponding author. jeffylin@hotmail.com† The members of the InterFACE-AR Clinical Investigators are listed in Acknowledgment at the end of the article.
+
+Publication date: 2026 Sep
+Electronic publication date: 2026 Aug 5
+Volume: 31
+Electronic Location ID: 101433
+Received 2026 May 28; Revised 2026 Jul 9; Accepted 2026 Jul 30
+Copyright: © 2026 The Author(s)
+Copyright year: 2026
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Cardiopulmonary resuscitation, Cognitive aid, Augmented reality, Visual attention, Visual fixation, Areas of interest
+
+Abbreviations
+
+AHA American Heart Association
+
+ALS Advanced Life Support
+
+AOI Area of Interest
+
+AR Augmented reality
+
+BLS Basic Life Support
+
+CPR Cardiopulmonary Resuscitation
+
+ILCOR International Liaison Committee on Resuscitation
+
+InterFACE-AR Interconnected and Focused mobile Applications in the patient Care Environment with Augmented Reality-based guidance
+
+LCD Liquid Crystal Display
+
+PALS Pediatric Advanced Life Support
+
+SD standard deviation
+
+==============================
+Background
+
+Augmented reality (AR)-based cognitive aids provide real-time guidance during resuscitation, but their impact on clinicians’ visual attention is not well understood. This study aimed to describe visual attention distribution among clinicians using an AR-based decision support system during simulated pediatric cardiac arrest.
+
+Methods
+
+This descriptive study was a secondary analysis of data from the intervention arm of a randomized clinical trial. Pediatric resuscitation teams from two centers participated in a standardized cardiac arrest simulation. The AR-based decision support system provided role-specific, real-time visual guidance, including task prompts, timers, and medication information displayed within the clinician’s field of view. Visual attention data from team leaders and medication nurses were collected using AR devices (HoloLens 2) with built-in eye tracking. Predefined areas of interest (AOIs) were established, and visual attention was quantified using fixation percentage, fixation count, and fixation duration.
+
+Results
+
+Nine simulation sessions were analyzed. AR components accounted for a substantial proportion of visual attention (Mean percentage (SD) team leaders: 41.9% (14.9); medication nurses: 59.0% (14.6)). Team leaders demonstrated distributed attention across multiple AOIs, whereas medication nurses showed concentrated attention on medication-related tasks. Distinct fixation patterns were observed, with some AOIs characterized by frequent, brief fixations and others by less frequent, longer fixations. A substantial proportion of attention occurred outside predefined AOIs (team leaders: 46.0% (15.2); medication nurses: 22.9% (10.7)).
+
+Conclusion
+
+Visual attention during use of the AR-based decision support system by both team leaders and medication nurses was characterized by substantial engagement and distinct role-specific attention patterns.
+
+  Clinical trial registration:ClinicalTrials.gov. Identifier: NCT06376643 https://clinicaltrials.gov/study/NCT06376643?cond=cardiac%20arrest&term=siebert&rank=1.
+
+Introduction
+
+Cardiac arrest is one of the leading causes of preventable death, with unacceptably low survival rates despite decades of research and evidenced-based clinical guidelines.1, 2, 3 Guideline-compliant basic life support (BLS) and advanced life support (ALS) improve patient outcomes following cardiac arrest.4, 5, 6, 7, 8, 9, 10 However, deviations from resuscitation guidelines are common in clinical practice.11, 12, 13 Leading resuscitation organizations, such as the American Heart Association (AHA) and the International Liaison Committee on Resuscitation (ILCOR), have called for strategies to improve the implementation of guideline-compliant care.14, 15
+
+Cognitive aids are decision support tools that provide clinical information or prompts to promote the performance of desired behaviors and have been used to support resuscitation teams during cardiac arrest.16, 17 The use of cognitive aids has been associated with improved adherence to guidelines and enhanced clinical performance during simulated neonatal, pediatric, and adult cardiac arrest.16, 17, 18, 19, 20 However, traditional cognitive aids, such as pocket cards or apps, are often static and may require clinicians to shift attention away from the clinical environment without dynamically adapting to evolving patient conditions. Augmented reality (AR) uses head-mounted devices to overlay interactive holograms onto the user’s real-world environment.19, 20 AR-based cognitive aids enable fast decision making by providing clinically relevant prompts and supporting anticipatory behaviors by listing upcoming tasks. Simulation-based studies have shown that use of an AR device providing decision support for the team leader improves compliance with pediatric19 and neonatal resuscitation guidelines.20 Understanding how clinicians visually interact with AR-based cognitive aids is therefore important because visual attention reflects how limited visual resources are allocated between the decision-support system and surrounding clinical environment during resuscitation. Despite these promising results, AR devices introduce additional visual stimuli (e.g. holograms) that may compete for visual attention during high-stakes clinical events, raising concerns about potential distraction and increased cognitive demands. Specifically, it is unknown how AR-based cognitive aids influence the distribution of visual attention between the cognitive aid and the clinical environment, and how this may differ across team roles during resuscitation. Although eye tracking provides an objective measure of gaze allocation, visual attention should not be interpreted as a direct measure of clinical performance or cognitive processing. A better understanding of this issue will inform future efforts to design and implement AR-based cognitive aids during cardiac arrest.
+
+The ‘InterFACE-AR’ (Interconnected and Focused mobile Applications in the patient Care Environment with Augmented Reality-based guidance) system is a multi-faceted clinical decision support system that provides role-specific, AR-based guidance to the team leaders and medication nurses during pediatric cardiac arrest.21, 22 In this descriptive study, we aimed to characterize the distribution of visual attention and fixation patterns amongst team leaders and medication nurses while using the augmented reality device components of the InterFACE-AR system during a simulated pediatric cardiac arrest scenario.
+
+Methods
+
+Study design
+
+This descriptive study was a secondary analysis of data collected from a previously published randomized controlled trial comparing the InterFACE-AR system with the AHA PALS pocket card during simulated pediatric cardiac arrest.23 Only data collected from participants randomized to the intervention arm (InterFACE-AR system) were included in this study. Ethical approval was obtained from both study sites and all participants provided informed consent before participation.
+
+Participants
+
+We recruited participants from the inpatient or acute care units (i.e. intensive care, emergency department) of Alberta Children’s Hospital (Calgary, Canada) and Geneva Children’s Hospital (Geneva, Switzerland). Team leaders were attending physicians or senior trainees (i.e. fellows, senior residents) in pediatric intensive care, emergency medicine, anesthesia, general pediatrics, or adult emergency medicine. Medication nurse roles were filled by nurses in pediatric intensive care, emergency medicine, anesthesia, surgery or general pediatrics. All participants were certified in pediatric advanced life support (PALS). During the preceding year, participants had been involved in a mean of 1.2 (SD 1.5) resuscitation events and 4.1 (SD 5.3) simulated resuscitation events. Most participants were naïve to augmented reality technologies (92.6%). Additional participants’ characteristics have been reported previously.23
+
+The InterFACE-AR system
+
+InterFACE-AR is a multi-faceted system designed to provide real-time clinical guidance and decision support for resuscitation teams during cardiac arrest.21, 22, 23, 24 The system is comprised of three core components: (a) a tablet-based Guiding Pad app used by the documenting nurse, designed to collect and track patient and event data (e.g. patient weight, time to clinical interventions, medication orders)24, 25, 26; (b) a large 65-in LCD TeamScreen designed to provide a clinical roadmap for the entire resuscitation team.24 The TeamScreen offers three columns of information: the active cardiac arrest PALS algorithm that tracks clinical progress, CPR and epinephrine timers with a list of current tasks and next steps, and an updated list of medications (i.e. ordered and delivered) and completed tasks24, 25, 26, 27; and (c) Augmented reality devices (Microsoft Hololens 2) for the physician team leader and medication nurse, designed to provide role-specific clinical guidance via holograms projected into the clinical space.22 The team leader’s AR display has multiple holograms providing the PALS algorithm tracking clinical case progression, current tasks, next steps, CPR and epinephrine timers, medication reference, and reversible causes. The medication nurses AR display is comprised of two holograms: one with current tasks, next steps and an epinephrine timer, and the other displaying relevant resuscitation drugs, pre-calculated doses (based on patient weight) and preparation and administration instructions (Fig. 1).Fig. 1 Predefined Areas of Interest.
+
+Study procedure and simulated scenario
+
+Participants were recruited in teams consisting of three people to fill the roles of team leader, medication nurse, and documenting nurse. The two nurses recruited determined which role they wanted to play: medication nurse or documenter. To fill out the rest of the resuscitation team, trained research actors played the highly standardized roles of airway provider, CPR provider, and CPR coach. Those actors assigned to the CPR provider and CPR coach roles switched roles every 2 min under the direction of the team leader. The CPR coach was also responsible for performing defibrillation when ordered by the team leader. All research actors were either physicians or nurses and were previously trained not to provide suggestions or clinical prompts during the simulation.
+
+Participants assigned to the InterFACE-AR group received a video-based orientation to the simulation environment and manikin features, followed by a second video describing the functionality of the entire InterFACE-AR system.23 After watching the videos, participants received hands-on training (5 min) with the AR devices. This training involved following a checklist of tasks to complete for each device. Finally, the entire team participated in a brief, 4-min verbal walk-through cardiac arrest scenario, where the team leader verbalized intended actions, providing an opportunity for the other team members to use their respective devices. No actual tasks were performed on the manikin during the verbal walk-through scenario. Training was concluded after answering any remaining questions from the participants.
+
+For the study scenario, participating teams were asked to manage a simulated cardiac arrest, depicting an 8-year-old child presenting with hyperkalemia-induced cardiac arrest secondary to hemolytic uremic syndrome. The patient presented in pulseless electrical activity, progressed to pulseless ventricular tachycardia and finally to ventricular fibrillation as the scenario progressed. Rhythm changes occurred every four minutes regardless of clinical interventions, and the diagnosis of hyperkalemia was disclosed to the team leader 6.5 min into the scenario. A Zoll R Series feedback defibrillator (Zoll Medical Corporation) was used to provide CPR feedback. Clinical tasks (e.g. intubation, defibrillation, medication administration) were only performed at the direction of the team leader.
+
+Areas of interest
+
+Areas of interest (AOI) were defined a priori and mapped using digital markers within the HoloLens devices. The predefined AOIs corresponded to the functional components of the InterFACE-AR interface, which was developed through an iterative user-centered design process involving frontline healthcare providers.21, 22 A different set of AOIs was defined for the team leader and medication nurse. Team leader AOIs included holograms visible within the AR device (i.e. PALS algorithm, medication reference, reversible causes, current task, next steps, cardiac rhythm, CPR timer, and epinephrine timer) and other objects in the room: TeamScreen LCD display, patient monitor, and the patient (i.e. simulator on stretcher). Medication nurse AOIs included holograms visible within the AR device (i.e. medication reference card, medication orders, advanced preparation and epinephrine timer), the TeamScreen LCD display and the working surface of the medication cart (i.e. countertop). Eye tracking data was collected from the AR devices of the team leaders and medication nurses using the built-in eye-tracking capability of the HoloLens devices (Fig. 1).
+
+Outcome measures
+
+Three key metrics were used: (1) fixation percentage, calculated as the total duration of fixations within an AOI divided by the total duration of the scenario; (2) fixation count: the number of fixations within an AOI during the 12-min scenario; and (3) mean fixation duration, calculated as the total duration of fixations within an AOI divided by the fixation count.
+
+Sample size
+
+This study is a secondary, exploratory analysis of data collected from a published randomized trial; therefore, a formal sample size calculation was not performed for the present analysis. Findings should be interpreted as descriptive and hypothesis-generating.
+
+Statistical analysis
+
+The unit of analysis for this descriptive study was the simulation session. Analyses were conducted to characterize visual attention patterns and fixation behavior across predefined AOIs for team leaders and medication nurses. For each AOI, fixation percentage, mean fixation duration, and fixation count were summarized at the session level. Continuous variables are presented as mean (standard deviation). No inferential comparisons were performed.
+
+Results
+
+A total of 9 simulation sessions using the InterFACE-AR system were analyzed. Visual attention data were available for 8 team leaders and 9 medication nurses, with one team leader dataset excluded due to technical issues. On average, each 12-min session included approximately 973 fixation events for team leaders and 1180 for medication nurses. Results are presented as mean (standard deviation) below.
+
+Team leader
+
+Visual attention patterns of team leaders are summarized in Table 1. Overall, 41.9% (14.9) of gaze was directed toward AR system components (i.e. holograms). The remaining attention within predefined area was distributed across the patient (6.4% (4.4)), patient monitor (2.0% (1.2)), and TeamScreen (3.7% (2.3)). The rest of attention (46.0%) was classified as outside predefined AOIs (Table 1, Fig. 2).Table 1 Visual attention patterns of team leaders using AR glasses during simulated cardiac arrest.
+
+Area of Interest (AOI)	Percentage of fixation (%)	Mean duration of fixation(s)	Count of fixation within 12 min scenario	
+AR system (overall)	41.86 (14.87)	–	–	
+ Current tasks	15.40 (9.39)	0.36 (0.12)	289.1 (143.3)	
+ Next steps	6.26 (4.06)	0.28 (0.12)	155.4 (86.9)	
+ Medication	5.16 (3.27)	0.90 (0.41)	45.3 (26.8)	
+ Epinephrine timer	5.49 (4.10)	0.24 (0.06)	158.1 (100.4)	
+ PALS algorithm	3.67 (3.31)	0.76 (0.44)	33.6 (14.4)	
+ Reversible causes	3.79 (3.52)	1.23 (0.93)	31.6 (29.1)	
+ CPR timer	1.05 (0.89)	0.14 (0.03)	51.5 (36.4)	
+ Cardiac rhythm	1.04 (0.68)	0.19 (0.06)	38.6 (21.8)	
+Patient bed space	6.35 (4.36)	0.61 (0.25)	71.9 (38.5)	
+Patient monitor	2.02 (1.15)	0.24 (0.10)	63.1 (30.1)	
+Team screen	3.74 (2.28)	0.86 (0.44)	34.8 (23.2)	
+Outside predefined AOI	46.02 (15.17)	–	–	
+
+Fig. 2 Distribution of Visual Attention by Role.
+
+Within the AR system, attention was distributed across multiple components, with the highest proportion directed toward “Current Tasks” (15.4% (9.4)), followed by “Next Steps” (6.3% (4.1)), “Epinephrine Timer” (5.5% (4.1)), and “Medication” (5.2% (3.3)). Other components, including “PALS Algorithm”, “Reversible Causes”, “Cardiac Rhythm” and “CPR Timer” each accounted for less than 4% of total gaze (Table 1, Fig. 3).Fig. 3 Distribution of Visual Attention Across AR Components: Team Leader.
+
+Fixation count and duration further characterized attention patterns. “Current Tasks” demonstrated the highest fixation count (289.1 (143.3) per 12-min scenario), but a relatively short mean fixation duration (0.36 (0.12) s). Similar patterns were observed for “Next Steps” (Fixations 155.4 (86.9) per 12-min scenario; Mean duration 0.28 (0.12) s) and “Epinephrine Timer” (Fixations 158.1 (100.4) per 12-min scenario; Mean duration 0.24 (0.06) s). In contrast, “Reversible Causes” showed the longest mean fixation duration (1.23 (0.93) s) but a relatively low fixation count (31.6 (29.1) per 12-min scenario). A similar pattern of less frequent fixation count but longer fixation duration was also observed for “Medication” (Fixations 45.3 (26.8); Mean duration 0.90 (0.41) s) and “TeamScreen” (Fixations 34.8 (23.2); Mean Duration 0.86 (0.44) s).
+
+Medication nurses
+
+Visual attention patterns of medication nurses are presented in Table 2. A greater proportion of gaze was directed toward AR system components (59.0% (14.6)). The remaining attention within predefined AOIs was distributed across the “Countertop” (17.4% (11.6)) and “TeamScreen” (0.7% (0.5)). A further 22.9% (10.7) of attention was classified as outside predefined AOIs (Fig. 2, Table 2).Table 2 Visual attention patterns of medication nurses using AR glasses during simulated cardiac arrest.
+
+Area of Interest (AOI)	Percentage of fixation (%)	Mean duration of fixation (s)	Count of fixation within 12 min scenario	
+AR system (overall)	58.96 (14.63)	–	–	
+ Medication order	36.91 (12.10)	0.59 (0.21)	469.8 (89.8)	
+ Medication reference	12.72 (4.31)	0.46 (0.14)	206.0 (49.7)	
+ Advanced preparation	7.33 (1.20)	0.21 (0.03)	260.2 (37.5)	
+ Epinephrine timer	2.00 (1.00)	0.13 (0.06)	109.6 (21.8)	
+Countertop	17.43 (11.63)	1.10 (0.36)	116.8 (87.2)	
+Team screen	0.70 (0.50)	0.25 (0.19)	17.4 (11.3)	
+Outside predefined AOI	22.91 (10.72)	–	–	
+
+Within the AR system, attention was highly concentrated on “Medication Order” (36.9% (12.1)), followed by “Medication Reference” (12.7% (4.3)) and “Advanced Preparation” (7.3% (1.2)). “Epinephrine Timer” accounted for a smaller proportion of attention (2.0% (1.0)) (Table 2, Fig. 4).Fig. 4 Distribution of Visual Attention Across AR Components: Medication Nurse.
+
+The fixation count and mean fixation durations showed similar patterns to those observed for team leaders. The highest fixation count with a moderate mean fixation duration was observed in “Medication Order” (Fixations 469.8 (89.8) per 12-min scenario, mean duration 0.59 (0.21) s). In contrast, fewer fixations but the longest mean fixation duration was observed for “Countertop”, indicating more sustained attention (Fixations 116.8 (87.2) per 12-min scenario; mean duration 1.10 (0.36) s). “TeamScreen” received minimal attention overall (Fixations 17.4 (11.3) per 12-min scenario; mean duration 0.25 (0.19) s).
+
+Discussion
+
+In this study, we characterized the visual attention patterns of team leaders and medication nurses using an AR-based decision support system during a simulated cardiac arrest. A substantial proportion of visual attention was allocated to AR components in both roles; however, the distribution and patterns of fixations differed. Team leaders demonstrated a more distributed pattern of attention across multiple AOIs, whereas medication nurses exhibited highly concentrated attention on medication-related tasks. To our knowledge, this is the first study to provide insight into how clinicians interact with AR-based cognitive aid during resuscitation.
+
+The observed visual attention patterns appeared consistent with both the role-specific responsibilities of clinicians during resuscitation and the design of the InterFACE-AR system, which was developed with input from frontline emergency physicians and nurses to align with real-world workflow and cognitive demands.21, 22, 23, 24 Key AR components were tailored to the information needs of different team members.22 For medication nurses, drug-related elements were prioritized with non-essential components removed based on user feedback. This design approach was reflected in the observed fixation patterns, with medication nurses directing most of their attention toward the “Medication Order” and “Medication Reference” holograms, which contained time-sensitive medication instructions, dosing information and preparation guidance. The relatively prolonged fixation duration observed for the countertop may similarly reflect sustained attention during the medication preparation tasks.
+
+For team leaders, AR components were designed to support situational awareness, task coordination and real-time decision making and oversight of resuscitation flow. Consistent with this intended function, the “Current Tasks” and “Next Steps” holograms received the greatest proportion of attention, likely because they displayed the most time-sensitive and action-oriented information during the scenario. In contrast, relatively little attention was directed towards the “TeamScreen” display, potentially because much of the same information was already available within the AR interface. Comparatively low attention toward the “CPR Timer” may also reflect the delegation of CPR quality monitoring and compressor switching to the CPR coach role. Distinct fixation patterns were observed across AR components, with some elements characterized by frequent but brief fixations and others by less frequent but more sustained attention, suggesting differing patterns of visual engagement with specific AR elements.28 In general, shorter, more frequent fixation may reflect rapid monitoring of dynamic or frequently updated information, whereas long fixations may indicate more sustained visual processing of complex or detailed information. However, there are no universally accepted threshold defining “short” or “long” fixation duration in resuscitation, and these patterns should be interpreted within the context of the specific clinical tasks. Importantly, findings from our prior randomized trial demonstrated that use of the InterFACE-AR system improved adherence to guideline-recommended epinephrine dosing intervals without compromising other performance metrics23 and was associated with reduced cognitive and overall workload and improved teamwork performance.29 Together, these findings suggest that clinicians were able to incorporate AR-based information into their visual attention during simulated resuscitation. These observations are consistent with, but do not directly demonstrate, cognitive offloading or improved situational awareness.
+
+Prior eye-tracking studies have demonstrated that cognitive aids can draw substantial visual attention during resuscitation. In neonatal resuscitation without cognitive aids, the majority of attention is typically directed toward the patient (approximately 60%), with smaller proportions allocated to monitors and team members.30 Similar results were observed in a pediatric trauma resuscitation study, where the patient and monitor accounted for 35% and 16% of visual attention, respectively.31, 32 However, when feedback devices are introduced, a large proportion of visual attention may shift toward the device itself, accounting for approximately 40–50% of total gaze,33 with reduced attention directed toward the patient and surrounding environment. Previous studies have raised concerns that AR overlays may contribute to attentional tunneling or inattentional blindness by drawing excessive attention toward digital information displays.34, 35 In our study, medication nurses allocated a substantial proportion of visual attention toward AR components, whereas team leaders demonstrated broader distribution of attention across multiple AOIs and the surrounding clinical environment. Importantly, unlike prior studies where increased attention to cognitive aids has been associated with increased workload or potential distraction,16, 28 our findings, together with previous trials within this research program,23, 29 suggest that clinicians were able to interact with AR-based cognitive support during simulated resuscitation without obvious evidence of visual domination by the interface. However, whether similar gaze patterns would be observed during real clinical resuscitation remains unknown.
+
+Attention classified as outside predefined AOIs should not be interpreted as noise. In our study, the use of a head-mounted AR device and built-in eye-tracking capability limited our ability to capture gaze directed toward dynamic elements such as moving team members during resuscitation. In a pediatric trauma simulation eye-tracking study, approximately 34% of team leaders’ gaze was directed toward other team members.31 Previous eye-tracking studies have similarly suggested that a proportion of gaze is directed toward team members, reflecting communication and coordination processes during resuscitation.30, 36, 37 The high proportion of gaze outside predefined AOIs likely reflects a limitation of using the HoloLens built-in eye-tracking system to study dynamic team interactions. While the system enabled objective mapping of gaze to predefined, functionally relevant interface components, gaze directed toward moving team members or other dynamic visual targets could not be reliably classified within predefined AOIs. These findings suggest that attention categorized as outside predefined AOIs may represent meaningful visual attention that was not explicitly captured. Consequently, gaze classified as outside predefined AOIs should not necessarily be interpreted as distraction of irrelevant visual behavior, but rather as part of the complex visual demands of team-based resuscitation. Even in an immersive AR-supported environment, human interaction remained central to resuscitation care.
+
+Limitations
+
+Our study has several limitations. First, gaze data were collected using an AR headset rather than a dedicated eye-tracking device, which may have lower spatial and temporal precision and could result in measurement imprecision. However, this approach enabled direct mapping of gaze to predefined, functionally relevant AOIs, facilitating interpretation of attention toward specific AR components. Second, eye-tracking measures describe visual attention allocation but do not directly assess cognitive processing, cognitive offloading, situational awareness, or distraction. Participants also received only brief familiarization with the AR system before the study. Consequently, the observed gaze patterns likely reflect clinicians during the early stages of interacting with a novel AR-based cognitive aid and may differ as users gain experience. Given the exploratory nature and limited sample size of this descriptive study, we did not examine associations between gaze patterns and other variables. Therefore, the relationship between visual attention and outcomes such as decision-making, cognitive load, and team performance remains unclear. Third, the absence of a control group limits our ability to determine how AR devices influence visual attention. Thus, it is unclear whether the observed patterns are attributable to the AR system or to underlying tasks and role characteristics. Finally, this study was conducted in a simulated pediatric cardiac arrest scenario. Visual attention patterns may differ during real resuscitation, where environmental complexity, emotional stress, competing priorities and interaction with patients and family members may further influence gaze allocation.
+
+Conclusion
+
+Resuscitation team leaders and medication nurses demonstrated substantial allocation of visual attention toward AR-based cognitive aids during simulated pediatric cardiac arrest, with distinct role-specific patterns of visual attention. These findings provide descriptive insights into how clinicians interact with role-specific AR-based cognitive aids during resuscitation. Further studies integrating eye-tracking measures with clinical performance, cognitive workload and implementation outcomes are needed to better understand the role of AR-based decision support during resuscitation.
+
+CRediT authorship contribution statement
+
+Yiqun Lin: Writing – review & editing, Writing – original draft, Visualization, Validation, Methodology, Investigation, Formal analysis, Data curation, Conceptualization. Alexandre De Masi: Writing – review & editing, Software, Methodology, Investigation, Conceptualization. Ryan Kang: Writing – review & editing, Software, Methodology, Investigation, Data curation, Conceptualization. Sergio Manzano: Writing – review & editing, Validation, Investigation, Funding acquisition, Conceptualization. Johan N. Siebert: Writing – review & editing, Validation, Methodology, Investigation, Funding acquisition, Conceptualization. Jennifer Davidson: Writing – review & editing, Validation, Investigation, Data curation, Conceptualization. Frédéric Ehrler: Writing – review & editing, Software, Investigation, Conceptualization. Delphine S. Courvoisier: Writing – review & editing, Methodology, Investigation, Conceptualization. Donovan Duncan: Writing – review & editing, Investigation, Conceptualization. Ana Rajic: Writing – review & editing, Investigation, Conceptualization. Sharleen K. Olanka: Writing – review & editing, Investigation, Conceptualization. Marco Generelli: Writing – review & editing, Investigation, Conceptualization. Kangsoo Kim: Writing – review & editing, Validation, Supervision, Software, Project administration, Methodology, Investigation, Funding acquisition, Data curation, Conceptualization. Adam Cheng: Writing – review & editing, Writing – original draft, Validation, Supervision, Software, Project administration, Methodology, Investigation, Funding acquisition, Data curation, Conceptualization.
+
+Ethics approval and consent to participate
+
+Ethical approval was obtained from the institutional ethics review boards at both study sites. All participants provided informed consent prior to participation.
+
+Consent for publication
+
+Not applicable.
+
+Availability of data and materials
+
+Data available from authors upon request.
+
+Author contributions
+
+All listed authors contributed to study design and data collection. AC and YL conducted data analysis and drafted the initial manuscript. All other authors contributed to revision of the manuscript. All authors provided final approval of the manuscript as submitted.
+
+Funding
+
+This trial was funded by the Swiss National Science Foundation, grant no. 10.002.119, the Geneva University Hospitals Private Foundation, grant no. RP07, the Alberta Children’s Hospital Foundation, and the Department of Pediatrics, Cumming School of Medicine, University of Calgary. The funders had no role in the design and conduct of the study; collection, management, analysis, or interpretation of data; and preparation, review, or approval of the manuscript.
+
+Declaration of competing interest
+
+Adam Cheng is Chair of the Education, Implementation and Teams (EIT) Task Force of the International Liaison Committee on Resuscitation (ILCOR). Yiqun Lin is a member of EIT Task Force of ILCOR. Geneva University Hospitals and University of Calgary are the shared owners of the InterFACE-AR system. Drs Siebert, Cheng, Ehrler, Manzano and Kim declare individual intellectual property rights on this system.
+
+Acknowledgment
+
+The InterFACE Clinical Investigators collaborator group includes Marco Generelli, MS; Louise Simonot, RN; Joleen Lidberg, RN; and Delaney Cruickshank, BSc.
+
+
+References
+
+1 Bray J.E. Smyth M.A. Perkins G.D. Cash R.E. Chung S.P. Considine J. Basic life support: 2025 International Liaison Committee on Resuscitation Consensus on Science With Treatment Recommendations Resuscitation 215 Suppl 2 2025 110808 10.1016/j.resuscitation.2025.110808 41117584
+2 Drennan I.R. Berg K.M. Bottiger B.W. Chia Y.W. Couper K. Crowley C. Advanced life support: 2025 International Liaison Committee on Resuscitation Consensus on Science With Treatment Recommendations Resuscitation 215 Suppl 2 2025 110806 10.1016/j.resuscitation.2025.110806 41117578
+3 Scholefield B.R. Acworth J. Ng K.C. Tiwari L.K. Raymond T.T. Christoff A. Pediatric life support: 2025 International Liaison Committee on Resuscitation Consensus on Science With Treatment Recommendations Resuscitation 215 Suppl 2 2025 110813 10.1016/j.resuscitation.2025.110813 41117581
+4 Atkins D.L. Berger S. Duff J.P. Gonzales J.C. Hunt E.A. Joyner B.L. Part 11: Pediatric basic life support and cardiopulmonary resuscitation quality: 2015 American Heart Association guidelines update for cardiopulmonary resuscitation and emergency cardiovascular care Circulation 132 2015 S519 S525 26472999 10.1161/CIR.0000000000000265
+5 de Caen A.R. Maconochie I.K. Aickin R. Atkins D.L. Biarent D. Guerguerian A.M. Part 6: Pediatric basic life support and pediatric advanced life support: 2015 international consensus on cardiopulmonary resuscitation and emergency cardiovascular care science with treatment recommendations Circulation 132 2015 S177 S203 26472853 10.1161/CIR.0000000000000275
+6 Del Rios M. Bartos J.A. Panchal A.R. Atkins D.L. Cabanas J.G. Cao D. Part 1: Executive summary: 2025 American Heart Association guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care Circulation 152 2025 S284 S312 41122893 10.1161/CIR.0000000000001372
+7 Joyner B.L. Jr. Dewan M. Bavare A. de Caen A. DiMaria K. Donofrio-Odmann J. Part 6: Pediatric basic life support: 2025 American Heart Association and American Academy of Pediatrics guidelines for cardiopulmonary resuscitation and emergency cardiovascular care Circulation 152 2025 S424 S447 41122891 10.1161/CIR.0000000000001370
+8 Kleinman M.E. Buick J.E. Huber N. Idris A.H. Levy M. Morgan S.G. Part 7: Adult basic life support: 2025 American Heart Association guidelines for cardiopulmonary resuscitation and emergency cardiovascular care Circulation 152 2025 S448 S478 41122888 10.1161/CIR.0000000000001369
+9 Lasa J.J. Dhillon G.S. Duff J.P. Hayes J. Kamath-Rayne B.D. Levy A. Part 8: Pediatric advanced life support: 2025 American Heart Association and American Academy of Pediatrics guidelines for cardiopulmonary resuscitation and emergency cardiovascular care Circulation 152 2025 S479 S537 41122885 10.1161/CIR.0000000000001368
+10 Wigginton J.G. Agarwal S. Bartos J.A. Coute R.A. Drennan I.R. Haamid A. Part 9: Adult advanced life support: 2025 American Heart Association guidelines for cardiopulmonary resuscitation and emergency cardiovascular care Circulation 152 2025 S538 S577 41122884 10.1161/CIR.0000000000001376
+11 McEvoy M.D. Field L.C. Moore H.E. Smalley J.C. Nietert P.J. Scarbrough S.H. The effect of adherence to ACLS protocols on survival of event in the setting of in-hospital cardiac arrest Resuscitation 85 2014 82 87 24103233 10.1016/j.resuscitation.2013.09.019 PMC3886248
+12 Ornato J.P. Peberdy M.A. Reid R.D. Feeser V.R. Dhindsa H.S. Investigators N. Impact of resuscitation system errors on survival from in-hospital cardiac arrest Resuscitation 83 2012 63 69 21963583 10.1016/j.resuscitation.2011.09.009
+13 Wolfe H.A. Morgan R.W. Zhang B. Topjian A.A. Fink E.L. Berg R.A. Deviations from AHA guidelines during pediatric cardiopulmonary resuscitation are associated with decreased event survival Resuscitation 149 2020 89 99 32057946 10.1016/j.resuscitation.2020.01.035
+14 Donoghue A.J. Auerbach M. Banerjee A. Blewer A.L. Cheng A. Kadlec K.D. Part 12: Resuscitation education science: 2025 American Heart Association guidelines for cardiopulmonary resuscitation and emergency cardiovascular care Circulation 152 2025 S719 S750 41122895 10.1161/CIR.0000000000001374
+15 Greif R. Cheng A. Abelairas-Gomez C. Allan K.S. Breckwoldt J. Cortegiani A. Education, implementation, and teams: 2025 International Liaison Committee on Resuscitation Consensus on Science With Treatment Recommendations Circulation 152 2025 S205 S249 41122840 10.1161/CIR.0000000000001359
+16 Corazza F. Fiorese E. Arpone M. Tardini G. Frigo A.C. Cheng A. The impact of cognitive aids on resuscitation performance in in-hospital cardiac arrest scenarios: a systematic review and meta-analysis Intern Emerg Med 17 2022 2143 2158 36031672 10.1007/s11739-022-03041-6 PMC9420676
+17 Nabecker S. Nation K. Gilfoyle E. Abelairas-Gomez C. Koota E. Lin Y. Cognitive aids used in simulated resuscitation: a systematic review Resusc Plus 19 2024 100675 10.1016/j.resplu.2024.100675 PMC11170275 38873274
+18 Corazza F. Snijders D. Arpone M. Stritoni V. Martinolli F. Daverio M. Development and usability of a novel interactive tablet app (PediAppRREST) to support the management of pediatric cardiac arrest: pilot high-fidelity simulation-based study JMIR Mhealth Uhealth 8 2020 e19070 10.2196/19070 PMC7563631 32788142
+19 Siebert J.N. Ehrler F. Gervaix A. Haddad K. Lacroix L. Schrurs P. Adherence to AHA guidelines when adapted for augmented reality glasses for assisted pediatric cardiopulmonary resuscitation: a randomized controlled trial J Med Internet Res 19 2017 e183 28554878 10.2196/jmir.7379 PMC5468544
+20 Tsang K.D. Ottow M.K. van Heijst A.F.J. Antonius T.A.J. Electronic decision support in the delivery room using augmented reality to improve newborn life support guideline adherence: a randomized controlled pilot study Simul Healthc 17 2022 293 298 35102128 10.1097/SIH.0000000000000631 PMC9553249
+21 Ehrler F. Rajic A. De Masi A. Olanka S. Generelli M. Davidson J. Overview of a user-centered, mixed-methods process for designing interconnected and focused mobile applications on patient care environment (InterFACE): augmented-reality decision support system for pediatric resuscitation JMIR Hum Factors 13 2026 e78144 10.2196/78144 PMC12904346 41687005
+22 Kang R. Cheng A. Lin Y. Nam H. Davidson J. Duncan D.C. Perceived usability, user experience, and technology acceptance of role-specific augmented reality decision support tools for cardiac arrest resuscitation: prospective observational pilot study JMIR XR Spat Comput 3 2026 e72013 10.2196/72013 PMC13202500 42205235
+23 Siebert J.N. Cheng A. De Masi A. Rajic A. Olanka S.K. Generelli M. Augmented reality-guided decision support in simulated pediatric cardiac arrest: a randomized clinical trial JAMA Netw Open 9 2026 e2614030 10.1001/jamanetworkopen.2026.14030 PMC13197869 42172032
+24 Rajic A. Kayne Olanka S. Generelli M. Davidson J. Lin Y. Kang R. Evaluating a shared decision support tool for pediatric cardiopulmonary arrest: mixed methods usability study JMIR Hum Factors 13 2026 e78736 10.2196/78736 PMC13123637 42048258
+25 Ehrler F. Del Zotto M. Rouyer F. Weinhold T. Lovis C. Siebert J. Design of InterFACE: a tool to improve collaborative work and decision making during rescucitation Stud Health Technol Inform 255 2018 117 121 30306919
+26 Ehrler F. Sahyoun C. Manzano S. Sanchez O. Gervaix A. Lovis C. Impact of a shared decision-making mHealth tool on caregivers' team situational awareness, communication effectiveness, and performance during pediatric cardiopulmonary resuscitation: study protocol of a cluster randomized controlled trial Trials 22 2021 277 33849611 10.1186/s13063-021-05170-3 PMC8042906
+27 Siebert J.N. Lacroix L. Cantais A. Manzano S. Ehrler F. The impact of a tablet app on adherence to American Heart Association guidelines during simulated pediatric cardiopulmonary resuscitation: randomized controlled trial J Med Internet Res 22 2020 e17792 10.2196/17792 PMC7287744 32292179
+28 Wilbanks B.A. Aroke E. Dudding K.M. Using eye tracking for measuring cognitive workload during clinical simulations: literature review and synthesis Comput Inform Nurs 39 2021 499 507 34495011 10.1097/CIN.0000000000000704
+29 Cheng A. Manzano S. Siebert J.N. De Masi A. Davidson J. Kim K. Impact of an augmented reality-based decision support system on teamwork, leadership, provider workload and cognitive load during simulated cardiac arrest – a simulation-based randomized controlled trial Adv Simul (Lond) 2026 10.1186/s41077-026-00444-9 PMC13281596 42067953
+30 Zehnder E.C. Schmolzer G.M. van Manen M. Law B.H.Y. Using eye-tracking augmented cognitive task analysis to explore healthcare professionals' cognition during neonatal resuscitation Resusc Plus 6 2021 100119 10.1016/j.resplu.2021.100119 PMC8244520 34223378
+31 Damji O. Lee-Nobbee P. Borkenhagen D. Cheng A. Analysis of eye-tracking behaviours in a pediatric trauma simulation CJEM 21 2019 138 140 30295219 10.1017/cem.2018.450
+32 Weinberg D.D. Newman H. Fishman C.E. Katz T.A. Nadkarni V. Herrick H.M. Visual attention patterns of team leaders during delivery room resuscitation Resuscitation 147 2020 21 25 31870924 10.1016/j.resuscitation.2019.12.008 PMC6995430
+33 Wagner M. Gropel P. Eibensteiner F. Kessler L. Bibl K. Gross I.T. Visual attention during pediatric resuscitation with feedback devices: a randomized simulation study Pediatr Res 91 2022 1762 1768 34290385 10.1038/s41390-021-01653-w PMC9270220
+34 Dixon B.J. Daly M.J. Chan H. Vescan A.D. Witterick I.J. Irish J.C. Surgeons blinded by enhanced navigation: the effect of augmented reality on attention Surg Endosc 27 2013 454 461 22833264 10.1007/s00464-012-2457-3
+35 Dixon B.J. Daly M.J. Chan H.H. Vescan A. Witterick I.J. Irish J.C. Inattentional blindness increased with augmented reality surgical navigation Am J Rhinol Allergy 28 2014 433 437 25198032 10.2500/ajra.2014.28.4067
+36 Anton N.E. Cha J.S. Hernandez E. Athanasiadis D. Yang J. Zhou G. Utilizing eye tracking to assess medical student non-technical performance during scenario-based simulation: results of a pilot study Global Surg Educ 2 2023 10.1007/s44186-023-00127-3 PMC10896278 38414559
+37 Law B.H.Y. Schmolzer G.M. Analysis of visual attention and team communications during neonatal endotracheal intubations using eye-tracking: an observational study Resuscitation 153 2020 176 182 32580005 10.1016/j.resuscitation.2020.06.019

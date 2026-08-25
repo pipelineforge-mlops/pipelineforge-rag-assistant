@@ -1,0 +1,263 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Saudi Dent J
+Journal ID: Saudi Dent J
+NLM Journal ID: 9313603
+
+The Saudi Dental Journal
+
+ISSN: 1013-9052
+EISSN: 1658-3558
+Publisher: Springer
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498526
+PMID: 42627590
+DOI: 10.1007/s44445-026-00222-3
+Article ID: 222
+Article version: 1
+Subjects: Research
+
+Perception and accuracy of an AI-based contactless wellness screening system in dental setting; a cross-sectional study
+
+https://orcid.org/0000-0002-0423-0837 Ab Malik Normaliza liza_amalik@usim.edu.my
+1
+Abdul Aziz Abdul Azim Asy 1
+Abdul Rahman Nur Faraheen 1
+Gohar Babar Muneer 2
+Jamaludin Juliza 1
+Mohamed Jali Mohamed Hisham 1
+1 https://ror.org/020ast312 grid.462995.5 0000 0001 2218 9236 Univerisiti Sains Islam Malaysia, Kuala Lumpur, Malaysia
+2 https://ror.org/04d4wjw61 grid.411729.8 0000 0000 8946 5787 IMU University, Kuala Lumpur, Malaysia
+Electronic publication date: 2026 Aug 21
+Print publication date: 2026 Sep
+Volume: 38
+Issue: 9
+Electronic Location ID: 113
+Received 2026 Feb 24; Accepted 2026 Jul 28
+Copyright: © The Author(s) 2026
+Copyright year: 2026
+License: Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Artificial intelligence, Dentistry, Perception, Remote photoplethysmography, Technology
+issue-copyright-statement: © King Saud University 2026
+
+==============================
+This study evaluates the reliability and participants’ responses to a contactless artificial intelligence (AI) device powered by Remote Photoplethysmography (rPPG) technology for screening vital signs. The contactless AI-based device was compared with automated devices and the manual method as part of its validation for potential healthcare screening applications in dental clinics. A survey was conducted to assess the participants’ perception. The Bland–Altman analysis was performed to assess agreement between methods. A total of 499 patients were recruited for this study. There were no significant differences between the contactless AI-based device system and automated or manual measurements for respiratory rate and oxygen saturation (p > 0.05). Significant differences were observed in heart rate, and systolic and diastolic blood pressure compared with the automated device (p < 0.05). Bland-Altman analysis revealed wide limits of agreement for blood pressure (± 30 mmHg for SBP, ± 20 mmHg for DBP) with proportional bias, indicating that BP measurement requires substantial algorithmic refinement before clinical implementation. Respiratory rate and oxygen saturation demonstrated excellent agreement with reference methods. Participants demonstrated high acceptance and positive perceptions of the AI-based system (all mean scores > 4.0) on a 5-point Likert scale. Participants also perceived that people and patients were generally optimistic about the potential of a contactless AI-based device used in dentistry. This study demonstrates that contactless rPPG technology shows validated clinical accuracy for respiratory rate and oxygen saturation monitoring in dental settings. However, blood pressure measurement algorithms require substantial refinement and further validation before clinical deployment. (250 words)
+
+Introduction
+
+Healthcare has evolved drastically with technology, ensuring that individuals take care of their wellness and monitoring health is essential throughout life. Vital signs, including heart rate (HR), respiratory rate (RR), blood pressure (BP), and oxygen saturation (SpO₂), in a dental clinic or other healthcare setting, play a crucial role in the early detection of underlying health conditions. Many methods have been employed at both personal and institutional levels, including clinics, hospitals and fitness centres. Most methods require a sensor to be placed on the body, which may cause discomfort, especially in children and older adults (Premkumar and Hemanth 2022). The most common methods used for monitoring vital signs are the Electrocardiogram (ECG) for HR, the sphygmomanometer for blood pressure, and the pulse oximeter for pulse and oxygen saturation, all of which require skin contact (Tamura et al. 2014). For example, standard BP measurement techniques, such as arterial lines, are reported to provide precise readings; however, they are invasive, limiting mobility and increasing the risk of infections and thrombosis (Williams et al. 2025). Issues were also reported for wearable devices such as smartwatches. Although they are considered convenient, recent studies have shown that skin contact can cause irritation (Nelson et al. 2023) and reliability issues due to sensor calibration, motion and placement precision (Min et al. 2025). All of which affect the accuracy of the reading. Nevertheless, with advances in technology, a non-contact technique based on photoplethysmography (PPG) has been developed. PPG uses optical techniques to detect changes in blood volume within tissue microvascular beds and has been used as a wearable device to measure oxygen saturation, blood pressure, and cardiac output (Kim and Baek 2023). The applications have been widely used in medical, industrial and healthcare fields (Pankaj et al. 2022). Moving on to technological advancements, Remote Photoplethysmography (rPPG) has been developed and studied. A significant feature of PPG is its capacity to continually monitor vital signs without skin contact, which is especially beneficial in clinical environments where patient comfort and mobility are essential (Chen et al. 2024).
+
+The rPPG technology has been utilised in healthcare applications to evaluate an individual’s heart and respiratory rates (Karthick et al. 2023). This technology utilises a high-resolution camera to detect faces using image processing techniques. The light source illuminates the skin, and the photodetector measures the reflected light from those tissues (Castaneda et al. 2018). The changes in blood volume can then be calculated from the reflected light. rPPG is a technique that maps the spatial blood volume in living tissue using images (Sinhal et al. 2020). rPPG is user-friendly, non-invasive and inexpensive (Kim and Baek 2023; Woelk et al. 2026).
+
+Dental visits often require a vital signs screening before commencing dental treatment, as it supports the early identification of patients with underlying or suspected medical conditions that may otherwise go undetected (Greenberg and Glick 2018). In routine dental practice, assessment of parameters such as blood pressure, pulse rate, respiratory rate, and oxygen saturation is important for clinical decision-making and risk assessment, particularly for patients with cardiovascular disease, diabetes or dental anxiety. Abnormal vital signs may indicate the need to modify the planned treatment, delay treatment, reschedule the appointment, reduce procedural stress, or refer the patient for further medical evaluation before treatment can safely proceed (Odontológicos and Prospectivo 2024). Patient management and treatment plans can also be customised and often require an individualised approach based on the patient’s overall health status (Creanor et al. 2014). Therefore, integrating a contactless, AI-based system to monitor vital signs into dental practice could enhance rapid patient assessment and support safer, more efficient clinical care by providing real-time health information. In addition, it also has significant advantages in post-pandemic healthcare settings to minimise cross-contamination and may be beneficial for anxious patients, who find traditional contact-based sensors distressing and can cause anxiety. Therefore, this study aimed to evaluate the accuracy of an AI-based contactless rPPG system for measuring vital signs compared with conventional methods and to assess patient perceptions regarding its use in dental clinics.
+
+Materials and methods
+
+Study design
+
+The study design was cross-sectional. Participants recruited for this study were patients attending the Dental Clinics at the Faculty of Dentistry, Universiti Sains Islam Malaysia, Malaysia. Participants were informed about the study, and consent was obtained prior to the start of data collection. The inclusion criteria were adult patients aged 18 or older who were scheduled for routine dental check-ups or treatments during the study period. Patients with disabilities that prevented them from remaining still during image capture by the camera or who could not tolerate bright light were excluded from the study.
+
+System architecture
+
+This AI-based device (i.e. the Roketz.ai system) employs rPPG algorithms to extract physiological signals from facial video recordings. The device captures 35-second video sequences using standard smartphone camera specifications, followed by automated face detection to isolate the region of interest. Ambient light interacting with subdermal blood vessels produces subtle variations in reflected light, which the camera captures as red, green, and blue signals (Fig. 1). These signals are subsequently processed using noise-reduction and signal-cleaning algorithms to extract periodic pulse waveforms corresponding to cardiac cycles. From this cleaned signal, physiological features are derived using peak detection and machine learning, enabling the estimation of key health indicators. Once the capture is complete, the backend system performs automated processing in a cloud or edge-computing environment, returning results within seconds via an intuitive dashboard that emphasises risk stratification through visual cues (e.g., colour-coded indicators). The system operates as edge AI, performing all computations on-device without cloud connectivity, thereby enhancing data privacy and enabling real-time results.
+
+Introduction to the contactless AI device
+
+Patients were introduced to the device and instructed to sit still and as straight as possible on a dedicated chair during the recordings. The phone was placed on a table with a standing holder at eye level to maintain consistent angulation across all participants.
+
+Environmental standardization
+
+Environmental conditions during data collection were standardised to minimise measurement variability. The recording area utilised a combination of ambient clinic lighting and supplemental standing lamps. The lighting was measured using a digital Lux Meter illuminometer (BSIDE L1 LCD pocket Lux), maintaining illumination levels between 600 and 700 lux throughout all measurements. Participants were positioned at a standardised distance of 20 to 30 cm from the camera with consistent facial framing to ensure adequate signal quality with face coverage of 70% to 80%, which supports stable region-of-interest tracking and sufficient pixel density for rPPG signal extraction in the study. This range balances image clarity and camera performance. The face should not be obstructed by a face mask, spectacles or hair.
+
+Data collection
+
+Data were collected pre-operatively, before getting their dental treatment. Data were collected using two primary methods: health vitals data collection (AI and automated or manual) and patient feedback surveys. Data collection involved the Health Vital Signs Data (Table 1). Each participant was screened using the contactless AI device. Following the AI screening, each participant was then screened using either automated devices or manual. The measurement items include a Fingertip pulse oximeter (Shenzhen Creative Industry Co., Ltd., China) for blood oxygen saturation and heart rate, and a digital BP monitor (OMRONHEM872, OMRON Healthcare Co. Ltd, Kyoto, Japan) for systolic and diastolic blood pressure. The automated devices were used as the reference because they represent current practice and are the most commonly used tool for vital sign screening in routine dental settings, including this study centre. It’s common due to its affordability and ease of acquisition. Accordingly, the primary aim of this study was to evaluate the performance of the AI-based system relative to the equipment dentists are most likely to use in real-world practice.
+
+Table 1 List of variables and items
+
+Assessment variables	Automated devices or manual measuring	Type of instrument	
+Blood oxygen saturation	Fingertip pulse oximeter	Lepu Fingertip Pulse Oximeter SpO2, Shenzhen Creative Industry Co., Ltd. China.	
+Heart Rate (HR)	Fingertip pulse oximeter	Lepu Fingertip Pulse Oximeter SpO2, Shenzhen Creative Industry Co., Ltd. China.	
+Respiration Rate (RR)	Visual	Observe breathing rate	
+Systolic Blood Pressure (SBP)	BP digital monitor device	OMRON HEM8712, OMRON Healthcare Co. Ltd, Kyoto, Japan.	
+Diastolic Blood Pressure (DBP)	BP digital monitor device	OMRON HEM8712, OMRON Healthcare Co. Ltd, Kyoto, Japan.	
+
+Patient feedback survey
+
+Patient Feedback Surveys comprised four questions that revolved around perception (Table 4). The questions were adapted from a previously validated questionnaire used in studies evaluating AI acceptance in healthcare settings. Only four questions were adapted because they are directly related to the study’s aim and to minimise respondent fatigue and time constraints during busy clinical hours. The questions used a 5-point Likert scale: completely false (score = 1), somewhat false (score = 2), cannot say either way (score = 3), somewhat True (score = 4) and completely true (Score = 5). Higher scores indicated a positive response (Tamori et al. 2022).
+
+Sample size calculation
+
+Sample size was calculated using G*Power, based on a detected difference between two measurement tools with a small effect size of 0.25, a significance level of 0.05, and 80% power, requiring a sample size of 530 subjects. (Malmberg et al. 2022).
+
+Statistical analyses
+
+Statistical Analyses (SPSS version 25, IBM Corp., USA) were performed to compare the health vitals generated by the contactless AI device system with those obtained from automated and manual devices. Agreement was assessed between the two quantitative measurement methods (95% limits of agreement). A Bland-Altman analysis was conducted to assess agreement between measurement methods, with 95% limits of agreement calculated as the mean difference ± 1.96 × the standard deviation. Visual inspection of Bland-Altman plots was performed to identify proportional bias (systematic trends across the measurement range). Paired t-tests were performed to evaluate systematic bias between methods for five vital sign parameters: HR, SBP and DBP, SpO₂ and RR. The normality of the differences for each vital sign parameter was verified before proceeding with paired t-tests.
+
+Results
+
+A total of 499 (94%) of approximately 530 patients were recruited in this study, with approximately three-quarters male (74.5%) (Table 2). Of the initial screening attempts, all 499 participants completed successful measurements with the AI device under controlled conditions. No measurements were excluded due to technical failures, inadequate lighting, or excessive motion artefacts, reflecting the standardised data-collection protocol in a clinical waiting-area environment with controlled illumination and positioning. However, the findings may not reflect real-world performance variability under suboptimal conditions such as variable ambient lighting or uncontrolled environmental factors. Furthermore, the shortfall in sample size was due to incomplete data and limited resources. Table 3 presents the results of a paired-samples t-test comparing vital sign measurements obtained by the contactless AI-based device system, automated devices, and manual measurement. There were no significant differences between the contactless AI-based device system and automated and manual measurements for respiratory rate (mean difference = 0.12, t = 0.589, p = 0.556) and SpO2 (mean difference = 0.12, t = 1.525, p = 0.128). However, significant differences were observed for HR, SBP, and DBP. The AI-based device recorded a slightly but significantly lower HR (mean difference = − 3.34) and higher BP values for both systolic (mean difference = 2.38) and diastolic (mean difference = 2.12) measurements compared to the automated device.
+
+Table 2 Sociodemographic characteristics of the participants (n = 499)
+
+Variables	Frequency (n)	Percentage (%)	
+Gender			
+ Male	372	74.5	
+ Female	127	25.5	
+Age		
+Mean (Standard Deviation)	33.31 (13.59)	
+
+Table 3 Tested variables
+
+Variable	Mean AI	Mean Standard Automated/Manual	Mean Differences	t - Value	p -value	
+Heart Rate	75.58	78.92	-3.34	-7.89	0.000*	
+Breathing Rate	18.49	18.37	0.12	0.59	0.56	
+Oxygen Saturation	97.78	97.67	0.12	1.53	0.13	
+BP Systolic	116.23	113.85	2.38	3.24	0.001*	
+BP Diastolic	76.84	74.72	2.122	4.594	0.000*	
+T-test, *p < 0.05
+
+Bland-Altman plots were conducted to assess the agreement between the two methods of measuring vital signs. For the HR measurement (Fig. 1), the mean difference in heartbeats per minute (bpm) was considered average: -3.3407 bpm and the 95% confidence interval ranged from − 21.9013 bpm to 15.2198 bpm. The AI- based measurement method recorded slightly lower HR values than the automated device method. The Bland-Altman plot revealed that most data points fell within the limits of agreement, with no evident proportional bias across the range of HR values. The dispersion of points appears relatively uniform, indicating that the magnitude of disagreement does not systematically increase or decrease with higher or lower HR levels.
+
+Fig. 1 Bland-Altman plot for heart rate
+
+The respiratory rate showed a mean difference of 0.1202 breaths per minute (bpm), with a 95% confidence interval ranging from − 8.8241 to 9.0645 bpm, indicating negligible systematic bias between the AI and manual measurement methods (Fig. 2). The Bland-Altman plot shows that most data points fall within the limits of agreement, with a relatively symmetric distribution around the mean difference line. Although there is some widening of the scatter at higher mean respiratory rates, there is no clear evidence of proportional bias, as the differences do not consistently increase or decrease across the range of mean values. This suggests that the level of disagreement between the two methods remains fairly stable across low and high respiratory rates.
+
+Fig. 2 Bland-Altman plot for breathing rate
+
+A Bland-Altman analysis of SpO₂ (Fig. 3) showed a mean difference of 0.1162% and a 95% confidence interval of -3.2205% to 3.4529%, indicating minimal systematic deviation between the two measurement approaches. Inspection of the agreement plot showed that nearly all data points lie within the limits of agreement, with a symmetrical distribution around the mean line. The differences appear relatively small across the range of mean oxygen saturation values, and no clear proportional bias is evident. The scatter of points does not increase noticeably with higher or lower oxygen saturation levels, suggesting that the level of disagreement remains consistent across the measurement spectrum.
+
+Fig. 3 Bland-Altman plot for oxygen saturation
+
+As for the SBP (Fig. 4), the mean difference between the paired SBP measurements was 2.3768 mmHg, indicating that, on average, the two methods produced highly similar values with only a small positive bias. The 95% confidence interval ranged from − 29.7512 mmHg to 34.5049 mmHg. The Bland-Altman plot demonstrated a clear negative trend, with larger mean SBP values associated with more negative differences between measurement methods. This pattern indicates a proportional bias, in which the disagreement between methods increases systematically as systolic blood pressure rises. In practical terms, the methods tend to diverge at higher blood pressure levels, with one method yielding progressively lower readings relative to the other. Although the average bias was small, the wide limits of agreement and evidence of proportional bias indicate that the two methods cannot be considered interchangeable across the full range of systolic blood pressure values. Caution is therefore warranted when comparing or substituting these methods, particularly in individuals with elevated SBP.
+
+Fig. 4 Bland-Altman plot for BP systolic
+
+As for the DBP (Fig. 5), the mean difference was 2.1222 mmHg, indicating that, on average, one method produced slightly higher DBP readings than the other. The 95% confidence interval ranged from − 18.1026 mmHg to 22.3470 mmHg. The Bland-Altman plot showed that the differences were not evenly distributed across the range of mean DBP values. Instead, a noticeable pattern emerged: the magnitude of disagreement increased with increasing mean DBP, suggesting proportional bias. Specifically, measurements at higher DBP values tended to show larger negative differences, whereas those at lower DBP values showed more positive or near-zero differences. This trend indicates that the two methods may diverge systematically depending on the underlying diastolic blood pressure level. The wide limits of agreement and evidence of proportional bias indicate that the two methods cannot be considered interchangeable for clinical or research purposes without adjustment.
+
+Fig. 5 Bland-Altman plot for BP diastolic
+
+Table 4 presents a descriptive analysis of participants’ perceptions of Roketz.ai. A total of 464 (93%) completed questionnaires were analysed; incomplete data were excluded. The four questionnaires showed positive responses regarding the integration of AI-based technology in dentistry, particularly for Roketz.ai, with all mean scores above 4.0 on a 5-point Likert scale. The highest agreement was observed for the statement “Roketz.ai in dentistry will be useful” (mean = 4.24, SD = 0.75), followed by the belief that its use could help doctors provide services more efficiently (mean = 4.10, SD = 0.81). Participants also perceived that people and patients were generally optimistic about Roketz.ai’s potential in dentistry.
+
+Table 4 Descriptive analysis – Questionnaire (n = 464)
+
+Item	Mean (SD)	
+Do you think that Roketz.ai in dentistry will be useful?	4.24 (0.75)	
+If Roketz.ai is used in dentistry, do you think doctors could provide services more efficiently?	4.10 (0.81)	
+Do you think people around you are optimistic about the potential of Roketz.ai in dentistry?	4.02 (0.78)	
+Do you think patients are optimistic about the potential of Roketz.ai in dentistry?	4.05 (0.76)	
+Note: SD - Standard Deviation
+
+Discussion
+
+This validation study assessed the accuracy and user perception of a contactless, AI-based device that uses rPPG for monitoring vital signs in a dental clinic setting. Overall, the findings demonstrated variable validation performance across the measured parameters. Excellent accuracy and agreement were observed for RR and SpO₂, with no statistically significant differences compared to manual measurements. Bland-Altman analysis further supported these results, showing that most data points fell within the limits of agreement and that the distribution was symmetric around the mean difference. In contrast, clinically unacceptable accuracy was observed in blood pressure (BP) measurements, with statistically significant differences in SBP, DBP and HR. The system tended to slightly underestimate HR while overestimating systolic and diastolic blood pressure.
+
+A prospective hospital-based study reported good accuracy and correlation between the standard electrocardiogram acquisition system and rPPG in measuring HR (Allado et al. 2022). The lower HR values observed in the present study may be influenced by the dental waiting area environment and the performance of the automated device. Anxiety associated with waiting for dental treatment may introduce greater physiological variability compared to a standard hospital outpatient clinic. Furthermore, unlike the current study, the study obtained both measurements simultaneously, which may also contribute to differences in findings. With regard to BP measurement, previous studies comparing rPPG with automated BP devices have also demonstrated greater accuracy for DBP prediction than SBP prediction (Tan et al. 2025). The study concluded that rPPG is not yet precise for clinical BP assessment standards. However, the study stated that rPPG-based BP measurement has shown considerable potential to improve convenience, efficiency, and resource conservation, particularly in predicting DBP in patients with diverse skin tones and medical comorbidities.
+
+The Bland-Altman analysis of systolic and diastolic blood pressure revealed a mean difference with 95% limits of agreement of approximately ± 20 to ± 30 mmHg, representing a major validation concern. These limits of agreement substantially exceed clinically acceptable thresholds for BP measurement devices. According to international validation standards, including the AAMI/ESH/ISO Universal Standard (ISO 81060-2:2018), acceptable blood pressure device performance typically requires mean differences < 5 mmHg (SD < 8 mmHg). The observed high variation for SBP and DBP could result in significant misclassification of hypertensive states. Furthermore, inspection of both BP Bland-Altman plots revealed clear proportional bias, where measurement accuracy systematically deteriorates at elevated blood pressure values. This negative trend indicates that as true BP increases, the device increasingly underestimates actual values. This pattern is particularly concerning because accurate measurement is most critical at elevated BP ranges where clinical decisions about hypertensive urgency or emergency are made. A measurement error of 30 mmHg could misclassify a hypertensive crisis (SBP > 180 mmHg) as stage 1 hypertension or potentially even normal blood pressure, which could delay critical medical intervention. Therefore, at this stage, this system is unsuitable for clinical BP deployment and requires substantial algorithmic refinement and neural network training to reduce prediction errors and improve overall performance (Schrumpf et al. 2021).
+
+Validating the techniques on different devices is increasingly important. Regardless of any technology, the accuracy or reliability of any method should be standardised (Di Lernia et al. 2024; Vesper et al. 2016). A decade-long review of PPG-based wearable devices for HR monitoring identified motion artefacts, computational inefficiency, and limitations in real-time monitoring as major challenges, leading to potential measurement errors (Pankaj et al. 2022). In addition, ongoing research continues to focus on improving the accuracy and reliability of the technology (Lee et al. 2024).
+
+The discrepancy in these study findings between the AI-based system’s data and the other devices’ data can be attributed to several inherent technical constraints and systematic biases identified during the study, including motion, lighting, technical and biological variables, and algorithmic limitations. Although the motion has been minimised, the rPPG technology is susceptible to motion artefacts, such as subtle facial movements, speech, blinking, or head rotation during the 35-second recording sequence, which can impair signal quality and lead to measurement errors (Qiu et al. 2025). Furthermore, the system relies on a photodetector to measure the intensity of reflected light from the tissue to calculate changes in blood volume. The study used standardised range lighting, which was checked before data collection. Variations in ambient light intensity or colour can affect the accuracy of the readings. Any deviation from these optimal conditions can cause data to differ from reference values. Moreover, other studies have acknowledged that factors such as skin pigmentation and camera performance may influence rPPG accuracy (Rivest-Hénault et al. 2024). In addition, the current BP and HR algorithms require substantial refinement and further neural network training before they can be used clinically. Continued calibration or algorithmic refinement may further support the system’s suitability for clinical and practical implementation. Conversely, previous studies have been conducted to improve the accuracy of the results by reviewing potential influencing factors, such as the range of ambient light, subject positions, and the sensitivity of the image sensor (Karthick et al. 2023). A study reported that rPPG based BP estimation should focus on end-to-end approaches, especially when different skin tones, motion and changes in illumination are involved (Lin & Lin 2017). However, a recent study also reported that rPPG remains highly susceptible to factors such as ambient lighting conditions, motion artefacts, and camera distance or angle (Mohan et al. 2024). The results of the studies further indicate that more complex rPPG extraction and signal-processing methods are required to ensure reliability and accuracy of BP estimates from facial videos, particularly under dynamic conditions. Nonetheless, this contactless method shows strong potential for continuous daily monitoring of HR and BP in real-world settings.
+
+In contrast to the RR and SpO₂, the Bland-Altman Plot analysis indicates acceptable agreement between the two measurement methods with small individual differences. The minimal bias and absence of proportional trend suggest that the methods can be considered reasonably interchangeable within the observed clinical range. Given the very small mean bias and narrow limits of agreement, the two methods may be considered effectively interchangeable for clinical or monitoring purposes within the observed clinical range. The study also benefited from a relatively large sample size and a standardised environmental setup, which strengthened the reliability of the findings.
+
+Perceptions regarding the implementation of the contactless AI device (Roketz.ai) in a dental setting, including its utility and efficiency, were obtained from participants via a simple questionnaire. All questionnaires showed a positive response towards the integration of AI technology in dentistry. These findings indicate a favourable and encouraging perception toward adopting AI-based technologies in dental settings. Respondents generally believed that this contactless AI-based device could enhance clinical efficiency and optimise services. These positive perceptions align with the growing acceptance of digital and AI-based assisted tools in healthcare settings. Hence, reflecting the patient’s readiness to embrace innovative technologies that support optimal health-related services, suggests that the patients are ready for this specific contactless screening tool. Studies have shown that integrating AI as a supportive tool alongside healthcare providers, as a decision-making tool, and in client interactions, as well as adopting AI-based health technologies in the healthcare system, increases acceptance and can help improve health outcomes (Kauttonen et al. 2025; Wong et al. 2025). In addition, a contactless AI-based device is easy to use, requires no special skills, is portable, and can be used anywhere in real time. Such systems may assist healthcare providers in maintaining health records, monitoring patient status, and identifying early signs of potential health deterioration (Dave and Patel 2023).
+
+Despite the findings, several limitations of this study warrant consideration. First, this validation study presents aggregate performance data across all participants without stratification by medical comorbidities categories. The observed proportional bias in BP measurements suggests that device accuracy varies systematically across the BP spectrum, but cannot precisely quantify performance within specific clinical categories. Future research should conduct subgroup analyses comparing device performance in normotensive (SBP < 120 mmHg), elevated BP (SBP 120–129 mmHg), stage 1 hypertension (SBP 130–139 mmHg), stage 2 hypertension (SBP ≥ 140 mmHg), and hypertensive urgency (SBP ≥ 180 mmHg) categories. Such analysis would identify precisely which BP ranges demonstrate acceptable accuracy and which require algorithmic improvement. Based on the validation findings, the following priorities for future development are to be considered: (1) Substantial refinement of BP estimation algorithms to reduce limits of agreement and eliminate proportional bias, with particular focus on accuracy at elevated BP ranges and validation against gold-standard (auscultatory or arterial line) methods before any clinical implementation; (2) Validation studies stratified by BP categories, age groups, and comorbidities; (3) Comparison against gold standard BP measurement methods (auscultatory or arterial line) rather than automated oscillometric devices; (5) Development and validation of uncertainty quantification methods to flag potentially unreliable measurements in real-time; (6) Regulatory pathway development for cleared parameters (RR, SpO₂) while continuing BP algorithm development (7) Future validation must include stratified analyses by ethnicity and skin tone to ensure the AI algorithm’s accuracy across diverse populations; (8) Further research is required to evaluate the system’s performance in less controlled settings with a more demographically representative sample such as specific conditions (e.g., cardiovascular disease, anxiety and diabetes) which may contribute to the observed variability in results.
+
+Second, the time-motion in the clinical workflow was not measured. The device captures and analyses all vital signs simultaneously within a fixed 35-second video sequence. In contrast, conventional methods are performed sequentially and take more than 35 s to obtain a complete set of vital signs (requiring separate measurements for RR, BP, and SpO₂). Moreover, the system’s edge AI architecture provides real-time results on-device. This integration strengthens the dentist’s role in non-invasive risk assessments that improve patient management. Future research in this area will focus on quantifying these time-saving benefits, automating data synchronisation with electronic health records, and ensuring the system maintains its high success rate in real-world dental environments. Third, the final number of participants included in the analysis was 499. The shortfall was primarily due to incomplete data, time constraints, and a lack of manpower. Despite that, the achieved sample size still provided approximately 80% statistical power to detect small effect sizes, thereby supporting the robustness of the findings. Fourth, the study was conducted at a single institution, which may limit the generalizability of the findings.
+
+Conclusion
+
+The rPPG technology offers continuous, low-cost, and non-contact monitoring of patients’ vital signs. While this study highlights the potential of rPPG as a non-invasive wellness screening system and a suitable tool for vital sign assessment, the findings indicate that it is not yet appropriate for clinical BP monitoring. The observed proportional bias and wide limits of agreement pose a significant clinical risk for hypertension misclassification. Therefore, at this stage, this AI-based system may serve as a supportive tool for monitoring RR and SpO₂, whereas its application for blood pressure measurement should remain restricted to research settings until substantial algorithmic refinements and validation against gold-standard methods are achieved. Overall, this study provides valuable insight into the potential role of contactless AI-based systems in dental screening using rPPG technology, while emphasising the importance of recognising and managing their current limitations.
+
+Acknowledgements
+
+This work was supported by the Industrial Agency under Grant No. USIM/ROKETZ/FPG/LUAR-S/41225. We also thank the Faculty of Dentistry, USIM, and Dr Izhar Che Mee, the CEO of Roketz Sdn. Bhd., for providing facilities and support, and all participating patients for their voluntary contribution.
+
+Author contributions
+
+All authors contributed to the study conception and design. Material preparation was performed by Normaliza Ab Malik, and Juliza Jamaluddin. Data collection was performed by Normaliza Ab Malik, Abdul Azim Asy Abdul Aziz and Mohamed Hisham Mohd Jali@Yunos. Analysis was performed by Normaliza Ab Malik, Nur Faraheen Abdul Rahman, and Muneer Gohar Babar. The first draft of the manuscript was written by Normaliza Ab Malik. All authors commented on previous versions of the manuscript. All authors read and approved the final manuscript.
+
+Funding
+
+This work was supported by the Industrial Agency under Grant No. USIM/ROKETZ/FPG/LUAR-S/41225.
+
+Data availability
+
+No datasets were generated or analysed during the current study.
+
+Declarations
+
+Informed consent
+
+Informed consent was obtained from participants prior to the commencement of the study.
+
+Competing interests
+
+The authors declare no competing interests.
+
+Publisher’s note
+
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+
+References
+
+Allado E Poussel M Moussu A Hily O Temperelli M Cherifi A Accurate and reliable assessment of heart rate in real-life clinical settings using an imaging photoplethysmography J Clin Med 2022 11 20 6101 10.3390/jcm11206101 36294422 PMC9604655
+Allado E, Poussel M, Moussu A, Hily O, Temperelli M, Cherifi A et al (2022) Accurate and reliable assessment of heart rate in real-life clinical settings using an imaging photoplethysmography. J Clin Med 11(20):6101. 10.3390/jcm1120610136294422 10.3390/jcm11206101 PMC9604655
+Castaneda D Esparza A Ghamari M Soltanpur C Nazeran H A review on wearable photoplethysmography sensors and their potential future applications in health care Int J Biosens Bioelectron 2018 4 4 195 10.15406/ijbsbe.2018.04.00125 30906922 PMC6426305
+Castaneda D, Esparza A, Ghamari M, Soltanpur C, Nazeran H (2018) A review on wearable photoplethysmography sensors and their potential future applications in health care. Int J Biosens Bioelectron 4(4):195. 10.15406/ijbsbe.2018.04.0012530906922 10.15406/ijbsbe.2018.04.00125 PMC6426305
+Chen W Yi Z Lim LJR Lim RQR Zhang A Deep learning and remote photoplethysmography powered advancements in contactless physiological measurement Front Bioeng Biotechnol 2024 12 1420100 10.3389/fbioe.2024.1420100 39104628 PMC11298756
+Chen W, Yi Z, Lim LJR, Lim RQR, Zhang A et al (2024) Deep learning and remote photoplethysmography powered advancements in contactless physiological measurement. Front Bioeng Biotechnol 12:1420100. 10.3389/fbioe.2024.142010039104628 10.3389/fbioe.2024.1420100 PMC11298756
+Creanor S Millward B Demaine A Price L Smith W Brown N Creanor S Patients’ attitudes towards screening for diabetes and other medical conditions in the dental setting Br Dent J 2014 216 1 E2 E2 10.1038/sj.bdj.2013.1247 24413142
+Creanor S, Millward B, Demaine A, Price L, Smith W, Brown N, Creanor S (2014) Patients’ attitudes towards screening for diabetes and other medical conditions in the dental setting. Br Dent J 216(1):E2–E2. 10.1038/sj.bdj.2013.124724413142 10.1038/sj.bdj.2013.1247
+Dave M Patel N Artificial intelligence in healthcare and education Br Dent J 2023 234 10 761 764 10.1038/s41415-023-5845-2 37237212 PMC10219811
+Dave M, Patel N (2023) Artificial intelligence in healthcare and education. Br Dent J 234(10):761–764. 10.1038/s41415-023-5845-237237212 10.1038/s41415-023-5845-2 PMC10219811
+Di Lernia D Finotti G Tsakiris M Riva G Naber M Remote photoplethysmography (rPPG) in the wild: Remote heart rate imaging via online webcams Behav Res Methods 2024 56 7 6904 6914 10.3758/s13428-024-02398-0 38632165 PMC11362249
+Di Lernia D, Finotti G, Tsakiris M, Riva G, Naber M (2024) Remote photoplethysmography (rPPG) in the wild: Remote heart rate imaging via online webcams. Behav Res Methods 56(7):6904–6914. 10.3758/s13428-024-02398-038632165 10.3758/s13428-024-02398-0 PMC11362249
+Greenberg BL Glick M Providing health screenings in a dental setting to enhance overall health outcomes Dent Clin 2018 62 2 269 278 10.1016/j.cden.2017.11.006 29478457
+Greenberg BL, Glick M (2018) Providing health screenings in a dental setting to enhance overall health outcomes. Dent Clin 62(2):269–278. 10.1016/j.cden.2017.11.00610.1016/j.cden.2017.11.006 29478457
+Karthick R Dawood MS Meenalochini P Analysis of vital signs using remote photoplethysmography (RPPG) J Ambient Intell Humaniz Comput 2023 14 12 16729 16736 10.1007/s12652-023-04683-w
+Karthick R, Dawood MS, Meenalochini P (2023) Analysis of vital signs using remote photoplethysmography (RPPG). J Ambient Intell Humaniz Comput 14(12):16729–16736. 10.1007/s12652-023-04683-w
+Kauttonen J Rousi R Alamäki A Trust and Acceptance Challenges in the Adoption of AI Applications in Health Care: Quantitative Survey Analysis J Med Internet Res 2025 27 e65567 10.2196/65567 40116853 PMC11971584
+Kauttonen J, Rousi R, Alamäki A (2025) Trust and Acceptance Challenges in the Adoption of AI Applications in Health Care: Quantitative Survey Analysis. J Med Internet Res 27:e65567. 10.2196/6556740116853 10.2196/65567 PMC11971584
+Kim KB Baek HJ Photoplethysmography in wearable devices: a comprehensive review of technological advances, current challenges, and future directions Electronics 2023 12 13 2923 10.3390/electronics12132923
+Kim KB, Baek HJ (2023) Photoplethysmography in wearable devices: a comprehensive review of technological advances, current challenges, and future directions. Electronics 12(13):2923. 10.3390/electronics12132923
+Lee RJ Sivakumar S Lim KH Review on remote heart rate measurements using photoplethysmography Multimedia Tools Appl 2024 83 15 44699 44728 10.1007/s11042-023-16794-9
+Lee RJ, Sivakumar S, Lim KH (2024) Review on remote heart rate measurements using photoplethysmography. Multimedia Tools Appl 83(15):44699–44728. 10.1007/s11042-023-16794-9
+Lin YC, Lin YH (2017) A study of color illumination effect on the SNR of rPPG signals. In 2017 39th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC):4301-4304. IEEE10.1109/EMBC.2017.8037807 29060848
+Malmberg S, Khan T, Gunnarsson R, Jacobsson G, Sundvall PD (2022) Remote investigation and assessment of vital signs (RIA-VS)—proof of concept for contactless estimation of blood pressure, pulse, respiratory rate, and oxygen saturation in patients with suspicion of COVID-19. Infect Dis 54(9):677-686 10.1080/23744235.2022.208024910.1080/23744235.2022.2080249 35651319
+Min S, An J, Lee JH, Kim JH, Joe DJ et al (2025) Wearable blood pressure sensors for cardiovascular monitoring and machine learning algorithms for blood pressure estimation. Nat Reviews Cardiol 1–20. 10.1038/s41569-025-01127-010.1038/s41569-025-01127-0 PMC13200057 39966649
+Mohan J, Kumar ML, Bhattacharya S, Saranya AS (2024) Non-contact blood pressure estimation using camera-based rPPG analysis. In 2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT):1–5. 10.1109/ICCCNT61001.2024.10726072
+Nelson EE Rousseau MA Black TA George MN Rashid RM Smartwatch technology in medicine: a call for future dermatologic research JMIR dermatology 2023 6 1 e47252 10.2196/47252 37843896 PMC10616727
+Nelson EE, Rousseau MA, Black TA, George MN, Rashid RM (2023) Smartwatch technology in medicine: a call for future dermatologic research. JMIR dermatology 6(1):e47252. 10.2196/4725237843896 10.2196/47252 PMC10616727
+Odontológicos P Prospectivo UE Evaluation of Anxiety and Vital Signs in Adults Undergoing Different Dental Procedures: A Prospective Study Int J Odontostomat 2024 18 1 85 93 10.4067/S0718-381X2024000100085
+Odontológicos P, Prospectivo UE (2024) Evaluation of Anxiety and Vital Signs in Adults Undergoing Different Dental Procedures: A Prospective Study. Int J Odontostomat 18(1):85–93
+Pankaj, Kumar A Komaragiri R Kumar M A review on computation methods used in photoplethysmography signal analysis for heart rate estimation Arch Comput Methods Eng 2022 29 2 921 940 10.1007/s11831-021-09597-4
+Pankaj, Kumar A, Komaragiri R, Kumar M (2022) A review on computation methods used in photoplethysmography signal analysis for heart rate estimation. Arch Comput Methods Eng 29(2):921–940. 10.1007/s11831-021-09597-4
+Premkumar S, Hemanth DJ (2022) Intelligent remote photoplethysmography-based methods for heart rate estimation from face videos: a survey. Informat 9(3):57. 10.3390/informatics9030057
+Qiu X Ye L-T Liu X-P Teng L-Z Tian S-Q Jiang S Application of imaging photoplethysmography in surgical procedures: A review article Asian J Surg 2025 48 9 5373 5379 10.1016/j.asjsur.2025.04.010
+Qiu X, Ye L-T, Liu X-P, Teng L-Z, Tian S-Q, Jiang S (2025) Application of imaging photoplethysmography in surgical procedures: A review article. Asian J Surg 48(9):5373–5379. 10.1016/j.asjsur.2025.04.010
+Rivest-Hénault D, Proulx C, Ho K, Jafari N, Yakubu T, Torres S et al (2024) Influential factors in rPPG: insights from a diverse and inclusive empirical study. In 2024 IEEE 20th International Conference on Body Sensor Networks (BSN); 1–4. IEEE. 10.1109/BSN63547.2024.10780670
+Schrumpf F, Frenzel P, Aust C, Osterhoff G, Fuchs M (2021) Assessment of deep learning based blood pressure prediction from PPG and rPPG signals. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 3820–3830
+Sinhal R, Singh K, Raghuwanshi M (2020) An overview of remote photoplethysmography methods for vital sign monitoring. Paper presented at the Computer Vision and Machine Intelligence in Medical Image Analysis: International Symposium, ISCMM 2019.992: 21–31. 10.1007/978-981-13-8798-2_3
+Tamori H Yamashina H Mukai M Morii Y Suzuki T Ogasawara K Acceptance of the use of artificial intelligence in medicine among Japan’s doctors and the public: a questionnaire survey JMIR Hum Factors 2022 9 1 e24680 10.2196/24680 35293878 PMC8968553
+Tamori H, Yamashina H, Mukai M, Morii Y, Suzuki T, Ogasawara K (2022) Acceptance of the use of artificial intelligence in medicine among Japan’s doctors and the public: a questionnaire survey. JMIR Hum Factors 9(1):e24680. 10.2196/2468035293878 10.2196/24680 PMC8968553
+Tamura T Maeda Y Sekine M Yoshida M Wearable photoplethysmographic sensors—past and present Electronics 2014 3 2 282 302 10.3390/electronics3020282
+Tamura T, Maeda Y, Sekine M, Yoshida M (2014) Wearable photoplethysmographic sensors—past and present. Electronics 3(2):282–302. 10.3390/electronics3020282
+Tan SY Chai JX Choi M Javaid U Tan BPY Chow BSY Abdullah HR Remote Photoplethysmography Technology for Blood Pressure and Hemoglobin Level Assessment in the Preoperative Assessment Setting: Algorithm Development Study JMIR Formative Res 2025 9 e60455 10.2196/60455 PMC12165443 40479628
+Tan SY, Chai JX, Choi M, Javaid U, Tan BPY, Chow BSY, Abdullah HR (2025) Remote Photoplethysmography Technology for Blood Pressure and Hemoglobin Level Assessment in the Preoperative Assessment Setting: Algorithm Development Study. JMIR Formative Res 9:e60455. 10.2196/6045510.2196/60455 PMC12165443 40479628
+Vesper HW Myers GL Miller WG Current practices and challenges in the standardization and harmonization of clinical laboratory tests Am J Clin Nutr 2016 104 907S 912S 10.3945/ajcn.115.110387 27534625 PMC5004491
+Vesper HW, Myers GL, Miller WG (2016) Current practices and challenges in the standardization and harmonization of clinical laboratory tests. Am J Clin Nutr 104:907S–912S. 10.3945/ajcn.115.11038727534625 10.3945/ajcn.115.110387 PMC5004491
+Williams C, Pasrija D, Pierre L, Keenaghan M (2025) Arterial lines. In StatPearls [Internet]: StatPearls Publishing. http://creativecommons.org/licenses/by-nc-nd/4.0/ 29763165
+Woelk SP Garfinkel SN Mayiwar L Knöferle KM Advancing remote photoplethysmography (rPPG) to facilitate cardiac monitoring in naturalistic settings using webcam technology Behav Res Methods 2026 58 5 135 10.3758/s13428-026-02953-x 42026314 PMC13106271
+Woelk SP, Garfinkel SN, Mayiwar L, Knöferle KM (2026) Advancing remote photoplethysmography (rPPG) to facilitate cardiac monitoring in naturalistic settings using webcam technology. Behav Res Methods 58(5):135. 10.3758/s13428-026-02953-x42026314 10.3758/s13428-026-02953-x PMC13106271
+Wong AKC Lee JHT Zhao Y Lu Q Yang S Hui VCC Exploring older adults’ perspectives and acceptance of AI-driven health technologies: qualitative study JMIR Aging 2025 8 e66778 10.2196/66778 39937162 PMC11837765
+Wong AKC, Lee JHT, Zhao Y, Lu Q, Yang S, Hui VCC (2025) Exploring older adults’ perspectives and acceptance of AI-driven health technologies: qualitative study. JMIR Aging 8:e66778. 10.2196/6677839937162 10.2196/66778 PMC11837765

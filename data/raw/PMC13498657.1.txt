@@ -1,0 +1,439 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Mol Biol Rep
+Journal ID: Mol Biol Rep
+NLM Journal ID: 0403234
+
+Molecular Biology Reports
+
+ISSN: 0301-4851
+EISSN: 1573-4978
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498657
+PMID: 42627547
+DOI: 10.1007/s11033-026-12629-6
+Article ID: 12629
+Article version: 1
+Subjects: Original Article
+
+Icaritin improves pregnancy outcomes in endometriosis by inhibiting ovarian granulosa cell senescence
+
+He Yalun 1 2
+Ding Jie 1
+Li Yangshuo 1
+Sun Ji 2
+Wei Cuiping 2
+Sun Na 2
+Jiang Runnan 2
+Zhao Ziming 2
+Liang Xiaolan 1
+Chen Yiming 1
+Cheng Wen 1
+Zhang Litai 2
+Song Di songdi1983@126.com
+3
+Sun Shuai susu_n115@163.com
+1
+Yu Chaoqin cqyu@smmu.edu.cn
+1
+1 https://ror.org/04tavpn47 grid.73113.37 0000 0004 0369 1660 Gynecology Department of Traditional Chinese Medicine, The First Affiliated Hospital of Naval Medical University, Shanghai, 200433 China
+2 Rehabilitation Department of Integrated Traditional Chinese and Western Medicine, Beidaihe Rest and Recuperation Center, Qinhuangdao, 066000 Hebei China
+3 https://ror.org/04tavpn47 grid.73113.37 0000 0004 0369 1660 Department of Assisted Reproduction, The First Affiliated Hospital of Naval Medical University, Shanghai, 200433 China
+Electronic publication date: 2026 Aug 21
+Print publication date: 2026
+Volume: 53
+Issue: 1
+Electronic Location ID: 1444
+Received 2026 Jun 2; Accepted 2026 Aug 17
+Copyright: © The Author(s) 2026
+Copyright year: 2026
+License: Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Endometriosis, Infertility, Icaritin, Granulosa cell, Cellular senescence, NDUFS8
+
+Funding: National Natural Science Foundation of China 82074206 Yu Chaoqin
+
+Funding: Shanghai Renowned Veteran TCM Practitioners' Academic and Clinical Experience Research Studio SHGZS-202240 Yu Chaoqin
+
+Funding: Medical innovation research Project of Science and Technology Innovation Action Plan of Shanghai Municipal Science and Technology Commission 20Z21900405 Yu Chaoqin
+issue-copyright-statement: © Springer Nature B.V. 2026
+
+==============================
+Background
+
+Endometriosis (EMS) is an oestrogen-dependent chronic inflammatory disease that primarily manifests as chronic pelvic pain and infertility. EMS-associated infertility is closely linked to diminished ovarian function and oocyte quality, with the aberrant function of granulosa cells (GCs). Cellular senescence has a nonnegligible effect on female fertility. GCs in EMS patients may undergo senescence, subsequently compromising their nutritional support to oocytes and impairing ovarian function, ultimately contributing to infertility. Icaritin (Ica) possesses various biological activities including anti-tumour, anti-inflammatory, anti-oxidation and anti-aging.
+
+Methods
+
+Follicular fluid (FF) was collected from normal control females and EMS patients. GCs were extracted from FF for RNA sequencing and bioinformatic analysis. NADH: ubiquinone oxidoreductase core subunit S8 (NDUFS8)-knockdown KGN cells were established using shRNA-mediated lentiviral transduction. Pro-oxidants and oxidation scavengers were employed to modulate reactive oxygen species (ROS) levels. Network pharmacology was employed to analyse potential mechanisms of Ica in treating EMS. Ica was employed to intervene EMS-FF-treated KGN cells and EMS mice.
+
+Results
+
+Ica significantly reduced degrees of peritoneal adhesions, decreased quantities and volumes of ectopic lesions and improved reproductive capacity in EMS mice. Moreover, Ica may inhibit ovarian GC senescence and improve ovarian function in EMS mice by regulating NDUFS8/ROS/P53/P21 axis. In vitro experiments demonstrated that Ica may inhibit EMS-FF-induced KGN cell senescence by regulating NDUFS8/ROS/P53/P21 axis.
+
+Conclusions
+
+These findings identify Ica as a GC senescence-inhibiting agent with therapeutic potential in EMS-associated infertility.
+
+Supplementary Information
+
+The online version contains supplementary material available at 10.1007/s11033-026-12629-6.
+
+Introduction
+
+Endometriosis (EMS), an oestrogen-driven chronic inflammatory disorder [1], which typically manifests as chronic pelvic pain and infertility, posing significant threats to the reproductive health of childbearing women [2]. A significant association exists between EMS and infertility, with approximately 40–50% of EMS patients exhibiting reproductive dysfunction [3]. However, the precise mechanisms linking EMS and infertility remain incompletely elucidated [4]. Studies indicate that EMS-associated infertility is closely linked to diminished ovarian function and compromised oocyte quality [5], potentially attributable to the aberrant function of granulosa cells (GCs), which constitute the primary nutrient supply system surrounding oocytes. Owing to their specialized structure and function, oocytes possess a limited capacity for glucose uptake and direct utilization, relying almost entirely on surrounding GCs for energy provision [6]. In addition, GCs establish essential microenvironment for oocyte maturation through autocrine and paracrine signalling involving steroid hormones and growth factors [7]. Consequently, the functional state of GCs is a critical determinant of oocyte quality, ovarian function, and reproductive capacity.
+
+Cellular senescence refers to a state of stable cell cycle arrest accompanied by gradual loss of proliferative capacity [8]. Recent researches increasingly implicate cellular senescence in the pathogenesis of various diseases, including osteoarthritis, atherosclerosis, and neoplasms [9–11]. Furthermore, its impact on female fertility warrants significant attention, particularly in infertility-associated conditions such as EMS, polycystic ovary syndrome, and ovarian insufficiency [12, 13]. Cellular senescence may contribute to infertility by reducing oocyte quantity and quality and by inducing uterine and placental dysfunction [14–16]. Our previous studies revealed iron overload in the follicular fluid (FF) of patients with EMS-associated infertility [17], which may trigger excessive oxidative stress in ovarian GCs, leading to elevated reactive oxygen species (ROS) levels concomitant with decreased mitochondrial membrane potential, reduced adenosine triphosphate (ATP) production [18]. Notably, ROS is a well-established hallmark of cellular senescence [19]. Therefore, it is imperative to investigate whether excessive ROS levels induce GC senescence, thereby impairing nutritional support to oocytes, compromising oocyte quality and ovarian function, and ultimately contributing to EMS-associated infertility.
+
+Icaritin (Ica), a bioactive isoprenylated flavonoid derivative, is produced by the hydrolysis of icariin derived from Epimedium species [20]. Pharmacological studies have demonstrated that Ica has diverse biological activities, including anti-tumour, anti-inflammatory, anti-oxidation and anti-aging effects [21, 22]. The main mechanisms underlying its anti-inflammatory effects include reducing the release of inflammatory cytokines, suppressing the activation of the NF-κB signaling pathway, inhibiting STAT and MAPK-mediated signaling pathways [21]. Besides, Ica contains a polyphenolic hydroxyl group, which can scavenge free radicals, enhance superoxide dismutase activity and eliminate excessive ROS by regulating the Nrf2/ARE/HO-1 signaling pathway, thereby reducing lipid peroxidation and mitochondrial dysfunction, ultimately exerting effects including anti-oxidative stress, delaying aging and protecting nerves and cells [23]. Although traditionally considered a benign condition, EMS displays multiple features resembling invasive cancer and intimate associations with chronic inflammation [24]. Meanwhile, excessive oxidative stress and senescence in ovarian GCs may lead to decreased ovarian function, which is closely related to EMS-associated infertility. Considering remarkable effects of Ica on anti-tumour, anti-inflammatory, anti-oxidation and anti-aging, we hypothesized that Ica represents a promising therapeutic candidate for EMS and EMS-associated infertility.
+
+This study aimed to investigate pathogenic mechanisms of EMS-associated infertility from the perspective of GC senescence and to explore therapeutic effects and underlying mechanisms of Ica on ovarian function and reproductive capacity in EMS.
+
+Materials and methods
+
+Human FF samples collection
+
+FF samples were obtained from the Reproductive Medicine Center of the First Affiliated Hospital of Naval Medical University between February 1, 2023 and July 30, 2023. The study cohort included 8 patients with ovarian EMS-associated infertility who were receiving assisted reproductive technology (ART) therapy and 10 normal control (CON) females who were receiving ART therapy due to male spouse infertility. Baseline characteristics of study participants are in Table S1. FF was collected during the oocyte retrieval procedures. FF and GCs were isolated at the hospital’s central laboratory. The detailed inclusion and exclusion criteria for both groups are provided in the Supplementary Material. This study was approved by the Ethics Committee of the First Affiliated Hospital of Naval Medical University (approval no. CHEC2019-100) and conducted in accordance with the Declaration of Helsinki.
+
+Isolation of human primary GCs
+
+FF was collected in sterile 50-ml centrifuge tubes and centrifuged at 2000 rpm for 10 min at 4 °C. The supernatant was stored at -80 °C. The pellet was resuspended in 5 ml of phosphate-buffered saline (PBS) (Servicebio, Wuhan, China), transferred to a 15-ml tube, and gently layered with an equal volume of human peripheral blood lymphocyte separation solution (Biosharp, Beijing, China). After centrifugation at 2000 rpm for 20 min at 4 °C, the white cloudy interphase layer was transferred to a new 15-ml tube. An equal volume of 1× red blood cell lysis buffer (Yuanye, Shanghai, China) was added, followed by gentle pipetting. Following centrifugation at 2000 rpm for 10 min at 4 °C, the pelleted GCs were resuspended in 1 ml of TRIzol reagent (Invitrogen, USA) and stored at -80 °C prior to RNA sequencing.
+
+RNA sequencing analysis
+
+Total RNA was extracted using TRIzol reagent according to the manufacturer’s protocol. mRNA libraries were constructed and subjected to quality-control procedures using a 2100 Bioanalyzer (Agilent, Beijing, China). Qualified libraries were sequenced on the Illumina HiSeq 2500 platform (Illumina, San Diego, CA, USA). Significantly differentially expressed genes (DEGs) were identified and subjected to Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses.
+
+Cell culture and proliferation assay
+
+KGN, an immortalized cell line derived from human ovarian GC tumors, is currently the most commonly used in vitro model in the field of reproductive endocrinology to study human ovarian GCs. Compared with other common ovarian tumor cell lines, its core advantage is that it retains the hormone responsiveness of GCs, such as high basal expression of functional follicle-stimulating hormone (FSH) receptors and aromatase [25]. The KGN cell line used in this study (Qui Cell, Shanghai, China) was cultured in DMEM/F12 (Qui Cell) supplemented with 10% foetal bovine serum (FBS) (Procell, Wuhan, China). FF pools were created by homogenizing equal volumes from six individual frozen FF samples. FF was diluted in DMEM/F12 to final concentrations. Ica powder (MCE, USA) was dissolved in dimethyl sulfoxide (DMSO) (Sigma, USA) and diluted in DMEM/F12 to final concentrations. Cell proliferation was assessed using a Cell Counting Kit-8 (CCK-8) (Qui Cell) according to the manufacturer’s instructions.
+
+Assessment of oxidative phosphorylation (OXPHOS)
+
+Intracellular ATP levels were quantified using an ATP assay kit (Beyotime, Shanghai, China) following the manufacturer’s protocol.
+
+KGN cells were seeded (1 × 10⁴ cells/well) into Seahorse XFe96 cell culture microplates (Agilent, USA) and incubated overnight at 37 °C for adhesion. Before analysis, the cells were washed and incubated in Seahorse XF Base Medium (Agilent, USA) for 1 h at 37 °C (non-CO₂). The real-time oxygen consumption rate (OCR) was measured using the Seahorse XFe96 Analyser (Agilent) and Seahorse XF Cell Mito Stress Test Kit (Agilent) according to the manufacturer’s protocol. Cell viability was assessed using PrestoBlue reagent (Thermo Fisher, USA), and OCR values were normalized to viable cell counts.
+
+Detection of cellular senescence markers
+
+Intracellular ROS levels were measured using an ROS assay kit (Solarbio, Beijing, China). Senescence-associated β-galactosidase (SA-β-gal) activity was assessed with an SA-β-gal staining kit (Beyotime, Shanghai, China). The cell cycle distribution was analysed using a cell cycle detection kit (Beyotime). All procedures followed manufacturers’ protocols.
+
+Real-time quantitative polymerase chain reaction (RT-qPCR)
+
+The mRNA expression levels of NADH: ubiquinone oxidoreductase core subunit S8 (NDUFS8), CDKN1A, and TP53 were quantified by RT-qPCR. The primer sequences are provided in Table S2. RNA extraction, reverse transcription, and qPCR were performed using the SteadyPure Quick RNA Extraction Kit (Accurate Biology, Hunan, China), Evo M-MLV RT Premix Kit (Accurate Biology), and SYBR Green Pro Taq HS Premix Kit (Accurate Biology), respectively, according to manufacturers’ instructions.
+
+Western blotting (WB)
+
+Cells were lysed in RIPA buffer (Epizyme, Shanghai, China) containing 1% phosphatase inhibitor (Epizyme) and 1% protease inhibitor (Epizyme). Protein concentrations were determined using a BCA assay kit (Epizyme). Equal protein amounts were separated by SDS-PAGE and transferred to PVDF membranes (Merck, Germany). After blocking with 5% nonfat milk for 2 h, membranes were incubated overnight at 4 °C with the following primary antibodies: anti-NDUFS8 (Abcam, UK; Cat# ab170936), anti-P21 (ABclonal, Wuhan, China; Cat# A19094), anti-P53 (Proteintech, Wuhan, China; Cat# 60283-2-lg), and anti-β-actin (Huabio, Hangzhou, China; Cat# JF53-10). HRP-conjugated secondary antibodies (goat anti-rabbit IgG-HRP, Abmart Cat# M21002; goat anti-mouse IgG-HRP, Abmart Cat# M21001) were applied for 1 h at room temperature. Finally, protein bands were visualized using an enhanced chemiluminescence detection system.
+
+Establishment of stable NDUFS8-knockdown KGN cell lines
+
+NDUFS8-knockdown KGN cells were generated by lentiviral shRNA transduction (shRNA sequences in Table S3; virus synthesized by Genomeditech, Shanghai, China). The lentivirus was diluted in DMEM/F12 to achieve final multiplicity of infection (MOI). The transduction efficiency was evaluated via fluorescence microscopy (Olympus, Japan). KGN cells were transduced at optimal MOI and knockdown efficiency was validated by RT-qPCR and WB.
+
+Network pharmacology analysis
+
+The canonical SMILES of Ica was retrieved from PubChem and input into SwissTargetPrediction (species: Homo sapiens) to identify Ica targets. EMS-associated targets were obtained from GeneCards using “endometriosis” as keyword. Intersection targets were identified by Venn analysis and uploaded to STRING for protein-protein interaction (PPI) analysis (confidence score > 0.4; species: Homo sapiens). PPI network was analysed using CytoScape 3.7.2 with Centiscape 2.2 plugin to identify core targets based on degree, closeness, and betweenness centrality. Intersection targets were analysed via DAVID for GO and KEGG pathway enrichment (species: Homo sapiens, identifier: official gene symbol).
+
+Establishment of the EMS mouse model
+
+Six-week-old female C57BL/6 mice (Vital River, Beijing, China) were housed under specific pathogen-free conditions with ad libitum access to food and water. Donor mice received subcutaneous injections of β-oestradiol benzoate (2 µg/mouse in sesame oil; Yuanye, Shanghai, China) three times at 48-h intervals. After one week, uterine and adipose tissues were harvested, minced into fragments 1 mm³ in size in PBS (Servicebio, Wuhan, China), and intraperitoneally injected into recipient mice (donor-to-recipient ratio, 1:2) 0.5 cm above the urethral orifice. CON mice received adipose tissue fragments only. Treatments were as follows: CON group and EMS group: sesame oil (0.2 ml/day, gavage); Ica group: Ica in sesame oil (40 mg/kg/day, 0.2 ml/day, gavage; MCE, USA); Dienogest (Die) group: Die in sesame oil (300 µg/kg/day, 0.2 ml/day, gavage; MCE, USA). Treatments were administered for 21 consecutive days starting one week postmodelling. All animal experiments were approved by the Experimental Animal Ethics Review Committee of the First Affiliated Hospital of Naval Medical University (approval no. CHEC(AE) 2022-002).
+
+Mating trial
+
+Ten-week-old male C57BL/6 mice (Vital River) were acclimated for one week. After treatment completion and 1 week washout, females were paired with males (2♀:1♂) during oestrus. Vaginal smears of sperm positive indicated gestational day (GD) 1. At GD14, dissect abdomens of mice to obtain ectopic lesions, ovaries and uteruses.
+
+Isolation of mouse primary GCs
+
+Obtained ovaries were minced in DMEM/F12 and digested with 0.1% collagenase IV (Nordmark, Germany) in TESCA buffer (Solarbio, Beijing) at 37 °C and 60 rpm for 30 min. After digestion was terminated with DMEM/F12, the mixture was filtered through a 70-µm strainer (Corning, USA) and centrifuged at 4 °C and 2000 rpm for 10 min. Obtained pellet was mouse primary GCs.
+
+Serum hormone enzyme-linked immunosorbent assay(ELISA)
+
+Serum was isolated from orbital blood (centrifugation: 3000 rpm, 15 min, 4 °C). Hormone levels were quantified using following ELISA kits according to protocols of Jiangsu Meimian Industrial Co., Ltd: anti-Müllerian hormone (AMH) (Meimian, MM-0470M1), FSH (Meimian, MM-0163M1), and luteinizing hormone (LH) (Meimian, MM-0636M1).
+
+Haematoxylin and eosin (H&E) staining of ovarian tissue
+
+Ovaries were fixed in 4% paraformaldehyde (Biolight, Shanghai), embedded in paraffin and sectioned. Sections were stained with H&E standard protocols. Morphology was analysed under an Olympus BX53 microscope (Olympus, Japan).
+
+Immunohistochemistry (IHC) of ovarian tissue
+
+Ovaries were fixed in 4% paraformaldehyde (Biolight, Shanghai), embedded in paraffin and sectioned. After deparaffinization and rehydration, endogenous peroxidase was blocked with 3% H₂O₂ (Anjet High-Tech, Shandong, China) for 30 min. Sections were incubated overnight at 4°C with the following primary antibodies: anti-NDUFS8 (Abcam, UK; Cat# ab170936), anti-p21 (ABclonal, China; Cat# A19094) and anti-p53 (Proteintech, China; Cat# 60283-2-lg). After being washed with PBS, sections were incubated with the following HRP-conjugated secondary antibodies at 37°C for 45 min: goat anti-rabbit IgG-HRP (Abmart, Cat# M21002) and goat anti-mouse IgG-HRP (Abmart, Cat# M21001). Sections were stained with 3,3’-diaminobenzidine tetrahydrochloride (Caiyou, Shanghai) for 6 min and counterstained with haematoxylin (Merck, Germany). Slides were dehydrated in ethanol, mounted with neutral resin (Aladdin, Shanghai), and imaged under an Olympus BX53 microscope (Olympus, Japan).
+
+Statistical analysis
+
+All statistical analyses were performed using SPSS 21.0. Data visualization was generated with GraphPad Prism 9. Two-group comparisons of measurement data that conformed to normal distribution and homogeneous variances were performed with Unpaired Student’s t test. Otherwise, Mann-Whitney U test was employed. Multigroup comparisons of measurement data that conformed to normal distribution and homogeneous variances were performed with One-way ANOVA test. Otherwise, Kruskal-Wallis H test was employed. Count data were statistically analyzed by Fisher’s exact test. Statistical significance was defined as P < 0.05.
+
+Results
+
+Ovarian GCs in patients with EMS-associated infertility may exhibit OXPHOS dysfunction and cellular senescence
+
+To identify specific DEGs and potential signalling pathways associated with EMS-associated infertility, RNA sequencing and functional enrichment analyses were conducted. Using the criteria of P < 0.05 and |log₂FC| ≥ 1, significant DEGs were screened from the transcriptomes of human GCs in CON group and EMS group. Principal component analysis (PCA) and clustering analysis of DEGs (Fig. 1A and B) revealed distinct transcriptional differences between the two groups, with clear clustering patterns. Compared with those in CON group, 2,872 upregulated genes and 1,883 downregulated genes were identified in EMS group (Fig. 1C). Then GO and KEGG analyses were conducted. GO annotation analysis focused on cellular and metabolic process (Fig. 1D), whereas KEGG annotation analysis pointed to energy metabolism, cell growth and death (Fig. 1E). GO enrichment analysis associated DEGs with NADH dehydrogenase complex and mitochondrial respiratory chain complex I (Fig. 1F), whereas KEGG enrichment analysis revealed differential pathways involving ROS, OXPHOS, cellular senescence, and P53 signalling pathway (Fig. 1G). Thus, we hypothesized that ovarian GCs in patients with EMS-associated infertility may exhibit OXPHOS dysfunction and cellular senescence.
+
+Fig. 1 Analysis of RNA sequencing of human GCs in CON group (n = 10) and EMS group (n = 8). (A) PCA plot of transcriptomes from the two groups. (B) Clustered heatmap of significant DEGs. (C) Volcano plot of significant DEGs. (D) GO annotation analysis plot of significant DEGs. (E) KEGG annotation analysis plot of significant DEGs. (F) GO enrichment analysis plot of significant DEGs. (G) KEGG enrichment analysis plot of significant DEGs
+
+Next, we treated KGN cells with FF to validate sequencing results. Firstly, CCK-8 assays were performed to determine optimal concentration and duration of FF. After treating KGN cells with FF from normal control females (CON-FF) or EMS patients (EMS-FF) at varying volume concentrations for 24 and 48 h, a significant decreasing trend in optical density (OD) values was observed with increasing FF concentration. Significant intergroup differences in OD values were detected at 10% volume concentration, which became more pronounced after 48 h (Fig. S1). Therefore, concentration of 10% and duration of 48 h were selected. OXPHOS-associated assays revealed that ATP concentration and OCR in EMS-FF-treated KGN cells were significantly reduced (Fig. 2A and B). Further analysis revealed that basal respiration, maximal respiration, and ATP-coupled respiration levels were significantly reduced in EMS-FF group (Fig. 2C). Additionally, ROS levels, percentages of SA-β-gal-positive cells and proportions of cells in G1 phase in EMS-FF group were significantly elevated (Fig. 2D - I). Similarly, mRNA and protein expression levels of P21 and P53 were significantly greater in EMS-FF group (Fig. 2J - O). Collectively, these findings confirmed that EMS-FF may induce both OXPHOS dysfunction and cellular senescence in KGN cells, supporting our hypothesis that ovarian GCs in patients with EMS-associated infertility may exhibit OXPHOS dysfunction and cellular senescence.
+
+Fig. 2 EMS-FF may induce OXPHOS dysfunction and senescence in KGN cells. (A) Comparison of ATP concentrations between CON-FF group and EMS-FF group (n = 3/group). (B) Comparison of OCR between CON-FF group and EMS-FF group (n = 3/group). (C) Comparison of basal respiration, maximal respiration, proton leakage, and ATP-coupled respiration levels between CON-FF group and EMS-FF group (n = 3/group). (D) Comparison of ROS levels between CON-FF group and EMS-FF group (n = 3/group). Scale bar = 100 μm. (E) Quantification of ROS levels in (D). (F) Quantitative comparison of SA-β-gal-positive cells between CON-FF group and EMS-FF group (n = 3/group). Scale bar = 100 μm. (G) Quantification of SA-β-gal-positive cells in (F). (H) Comparison of cell cycle distributions between CON-FF group and EMS-FF group (n = 3/group). (I) Quantification of cell cycle distributions in (H). (J) Comparison of P21 mRNA expression levels between CON-FF group and EMS-FF group (n = 3/group). (K) Comparison of P53 mRNA expression levels between CON-FF group and EMS-FF group (n = 3/group). (L) Comparison of P21 protein expression levels between CON-FF group and EMS-FF group (n = 3/group). (M) Comparison of P53 protein expression levels between CON-FF group and EMS-FF group (n = 3/group). (N) Quantification of P21 protein expression levels in (L). (O) Quantification of P53 protein expression levels in (M). All data are expressed as Mean ± SD and were analysed by Unpaired Student’s t test. *P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001, and ns, not significant
+
+NDUFS8 may play a critical role in the progression of OXPHOS dysfunction and cellular senescence in ovarian GCs from EMS patients
+
+Energy metabolism defects, such as those in glycolysis and OXPHOS, may occur prior to cellular senescence [26]. In this study, we hypothesized that OXPHOS dysfunction in ovarian GCs from EMS patients may be a critical factor driving cellular senescence. To validate this hypothesis, we focused on oocytes—another cell type closely associated with GCs. GCs play a vital role in oocyte quality and ovarian function [27]. A previous study published human oocytes single-cell RNA sequencing study [28]. In the present study, we intersected significant DEGs identified by oocytes single-cell RNA sequencing with those identified by GCs RNA sequencing, and screened 595 core genes for further analysis (Fig. 3A). GO enrichment analysis focused on mitochondrial respiratory chain complex I and NADH dehydrogenase activity (Fig. 3B). KEGG enrichment analysis highlighted ROS, OXPHOS, and cellular senescence (Fig. 3C). These findings suggest that GCs and oocytes from EMS patients may exhibit concurrent OXPHOS dysfunction and cellular senescence.
+
+Fig. 3 NDUFS8 may play a critical role in the progression of OXPHOS dysfunction and cellular senescence in ovarian GCs from EMS patients. (A) Venn diagram of intersecting DEGs between the human oocyte single-cell sequencing dataset (CON: EMS = 16:16) and the human GC RNA sequencing dataset (CON: EMS = 10:8). (B) GO enrichment analysis plot of intersecting DEGs. (C) KEGG enrichment analysis plot of intersecting DEGs. (D) OXPHOS-associated genes among intersecting DEGs. (E) Comparison of NDUFS8 mRNA expression levels in KGN cells after intervention with CON-FF or EMS-FF (n = 3/group). (F) Comparison of NDUFS8 protein expression levels in KGN cells after intervention with CON-FF or EMS-FF (n = 3/group). (G) Quantification of NDUFS8 protein expression levels in (F). All data are expressed as Mean ± SD and were analysed by Unpaired Student’s t test. *P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001, and ns, not significant
+
+Given that OXPHOS dysfunction may precede cellular senescence [26, 29], we focused on OXPHOS related genes among 595 intersecting genes (Fig. 3D). Comparative analysis of log2FC values revealed that these genes were significantly downregulated in ovarian GCs but upregulated in oocytes (Tables S4 and S5). Notably, NDUFS8 was the only gene with top two highest absolute log2FC values in both datasets. Then we treated KGN cells with 10% CON-FF or EMS-FF for 48 h. NDUFS8 mRNA and protein levels were significantly reduced in EMS-FF group (Fig. 3E - G). These results suggest that NDUFS8 downregulation may be critical in OXPHOS dysfunction and cellular senescence in ovarian GCs from EMS patients.
+
+NDUFS8 knockdown may induce senescence in KGN cells via ROS-dependent pathway
+
+To investigate the role of NDUFS8 in OXPHOS dysfunction and cellular senescence, this study employed lentiviral shRNA transfection to establish stable negative control (NC) and NDUFS8-knockdown (Sh-NDUFS8) KGN cells. First, optimal MOI of 10 was determined in preliminary experiments (Fig. S2). Subsequent PCR and WB analyses confirmed successful knockdown (Fig. S3). In formal experiments, OXPHOS assays revealed that ATP concentration and OCR were markedly reduced in Sh-NDUFS8 group (Fig. 4A and B). Further analysis revealed decreased basal respiration, maximal respiration, and ATP-linked respiration in Sh-NDUFS8 group (Fig. 4C), indicating that NDUFS8 knockdown impairs OXPHOS in KGN cells.
+
+Fig. 4 NDUFS8 knockdown may induce senescence in KGN cells via ROS-dependent pathway. (A) Comparison of ATP concentration between NC and Sh-NDUFS8 groups (n = 3/group). (B) Comparison of OCR between NC and Sh-NDUFS8 groups (n = 3/group). (C) Comparison of basal respiration, maximal respiration, proton leakage, and ATP-linked respiration between NC and Sh-NDUFS8 groups (n = 3/group). (D) Comparison of ROS levels among NC, Sh-NDUFS8, NC+CoCl₂, and Sh-NDUFS8 + NAC groups (n = 3/group). Scale bar = 100 μm. (E) Quantification of ROS levels in (D). (F) Quantitative comparison of SA-β-gal-positive cells in NC, Sh-NDUFS8, NC+CoCl₂, and Sh-NDUFS8 + NAC groups (n = 3/group). Scale bar = 100 μm. (G) Quantification of SA-β-gal-positive cells in (F). (H) Comparison of cell cycle distributions among NC, Sh-NDUFS8, NC+CoCl₂, and Sh-NDUFS8 + NAC groups (n = 3/group). (I) Quantification of cell cycle distributions in (H). (J) Comparison of P21 mRNA expression levels among NC, Sh-NDUFS8, NC+CoCl₂, and Sh-NDUFS8 + NAC groups (n = 3/group). (K) Comparison of P53 mRNA expression levels among NC, Sh-NDUFS8, NC+CoCl₂, and Sh-NDUFS8 + NAC groups (n = 3/group). (L) Comparison of P21 protein expression levels in among NC, Sh-NDUFS8, NC+CoCl₂, and Sh-NDUFS8 + NAC groups (n = 3/group). (M) Comparison of P53 protein expression levels among NC, Sh-NDUFS8, NC+CoCl₂, and Sh-NDUFS8 + NAC groups (n = 3/group). (N) Quantification of P21 protein expression levels in (L). (O) Quantification of P53 protein expression levels in (M). All data are expressed as Mean ± SD and were analysed by Unpaired Student’s t test (between two groups) or One-way ANOVA(between four groups). *P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001, and ns, not significant
+
+Previous studies have shown that OXPHOS inhibition leads to ROS accumulation [30]. Notably, mitochondrial Lon protease facilitates ROS production by modulating NDUFS8 expression [31]. Thus, we hypothesized that NDUFS8 knockdown may induce cellular senescence via ROS overproduction. To test this, NC group and Sh-NDUFS8 group were treated with pro-oxidant cobalt chloride hexahydrate (CoCl₂·6 H₂O) and ROS scavenger N-acetylcysteine (NAC), respectively, followed by analysis of cellular senescence markers. Compared with those in NC group, ROS levels, percentages of SA-β-gal-positive cells and proportions of cells in G1 phase were elevated in Sh-NDUFS8 group and NC+CoCl₂ group, which were reversed by NAC (Fig. 4D - I). Similarly, mRNA and protein expression levels of P21 and P53 were significantly increased in Sh-NDUFS8 group and NC+CoCl₂ group, and NAC reversed these increases (Fig. 4J - O). These findings suggest that NDUFS8 knockdown may induce senescence in KGN cells via ROS-dependent pathway.
+
+Ica can treat EMS mice and improve their reproductive capacity
+
+Given anti-inflammatory, anti-oxidation and anti-aging effects of Ica, we hypothesized that Ica has great therapeutic potential in EMS. EMS mice were established and treated with Ica or Die via gavage. Posttreatment comparisons of ectopic lesions were exhibited in Fig. 5A. Compared with CON group, EMS group presented significantly greater abdominal adhesion scores (Fig. 5B). However, abdominal adhesion scores, volumes and quantities of ectopic lesions were significantly lower in Ica group and Die group than EMS group, with comparable efficacy between these two treatments (Fig. 5B - E). These results indicated that Ica can alleviate EMS progression.
+
+Fig. 5 Therapeutic effect analysis of Ica on EMS mice and network pharmacology analysis of the mechanism of Ica in treating EMS. (A) Abdominal dissection images of mice in CON, EMS, Ica, and Die groups (n = 6/group). Red arrows indicate ectopic lesions. (B) Comparison of degrees of abdominal adhesion among CON, EMS, Ica, and Die groups (n = 6/group). (C) Histomorphological observation of ectopic lesions among CON, EMS, Ica, and Die groups (n = 6/group). (D) Quantitative comparison of ectopic lesions among CON, EMS, Ica, and Die groups (n = 6/group). (E) Comparison of volumes of ectopic lesions among CON, EMS, Ica, and Die groups (n = 6/group). (F) Comparison of foetal counts among CON, EMS, Ica, and Die groups (n = 6/group). (G) Quantification of foetal counts in (F). (H) Venn diagram of intersection targets between Ica and EMS. (I) “Ica-EMS-targets” network diagram. (J) PPI network of intersection targets. (K) Network diagram of core targets of Ica in treating EMS. (L) GO enrichment analysis of intersection targets. (M) KEGG enrichment analysis of intersection targets. All data are expressed as Mean ± SD and were analysed by Unpaired Student’s t test (between two groups) or One-way ANOVA(between three and four groups). *P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001, and ns, not significant
+
+To assess reproductive capacity, vaginal smears were employed to choose female mice in oestrus to conduct mating trials (Fig. S4A) and to confirm successful mating (Fig. S4B). At GD14, pregnant uteri were dissected, and foetal counts were recorded (Fig. 5F and G). Compared with CON, EMS mice presented significantly lower foetal counts, which were increased significantly after Ica treatment. However, Die did not exhibit improvement effects.
+
+Ica may treat EMS via regulation of energy metabolism, oestrogen metabolism, ovarian function, and ROS levels
+
+Given significant therapeutic effects of Ica in EMS mice, we employed network pharmacology to explore specific mechanism. Targets of Ica and EMS were identified through database predictions, and intersection targets were screened by Venn diagram (Fig. 5H). These intersection targets were imported into Cytoscape and STRING database to generate “Ica-EMS-targets” network diagram (Fig. 5I) and PPI network with 50 nodes and 304 edges (Fig. 5J), respectively. After PPI network was imported into Cytoscape, core targets of Ica in treating EMS were identified (Fig. 5K).
+
+To clarify primary mechanisms underlying therapeutic effects of Ica on EMS, GO and KEGG enrichment analyses were performed on intersection targets. GO enrichment analysis enriched in “ATP binding”, “oxidoreductase activity” and “oestradiol 17-β-dehydrogenase activity” (Fig. 5L). Furthermore, KEGG enrichment analysis enriched in “ROS”, “oestrogen signalling pathway”, “ovarian steroid hormone biosynthesis” and “progesterone-mediated oocyte maturation” (Fig. 5M). Thus, therapeutic effects of Ica in EMS may be associated with regulation of ROS levels, energy metabolism, oestrogen metabolism and ovarian function.
+
+Ica may inhibit KGN cell senescence by regulating NDUFS8/ROS/P53/P21 axis
+
+Based on results of network pharmacology analysis, we hypothesized that Ica may inhibit GC senescence in EMS by regulating ROS levels and energy metabolism. Furthermore, NDUFS8 may induce GC senescence via ROS-dependent pathway, and ROS/P53/P21 axis is pivotal in promoting cellular senescence [32]. Thus, we hypothesized that Ica may target NDUFS8/ROS/P53/P21 axis to inhibit GC senescence in EMS.
+
+To validate these hypotheses, KGN cells were treated with 10% CON-FF or EMS-FF for 48 h, followed by Ica intervention in EMS-FF group. To determine optimal concentration and duration of Ica, CCK-8 assays were performed. The results revealed that concentration of 16 µM and duration of 48 h were optimal (Fig. S5). Compared with CON-FF group, NDUFS8 mRNA and protein expression levels in EMS-FF group were significantly decreased, and Ica intervention reversed this situation (Fig. 6A - C). ROS levels, percentages of SA-β-gal-positive cells and proportions of G1-phase cells in EMS-FF group were significantly increased, which were reversed by Ica (Fig. 6D - I). Similarly, P21 and P53 mRNA and protein expression levels in EMS-FF group were significantly upregulated, which were significantly reduced after Ica intervention (Fig. 6J - O). In summary, Ica may inhibit KGN cell senescence by regulating NDUFS8/ROS/P53/P21 axis.
+
+Fig. 6 Ica may inhibit KGN cell senescence by regulating NDUFS8/ROS/P53/P21 axis. (A) Comparison of NDUFS8 mRNA expression levels among CON-FF, EMS-FF and EMS-FF + Ica groups (n = 3/group). (B) Comparison of NDUFS8 protein expression levels among CON-FF, EMS-FF and EMS-FF + Ica groups (n = 3/group). (C) Quantification of NDUFS8 protein expression levels in (B). (D) Comparison of ROS levels among CON-FF, EMS-FF and EMS-FF + Ica groups (n = 3/group). Scale bar = 100 μm. (E) Quantification of ROS levels in (D). (F) Quantitative comparison of SA-β-gal-positive cells among CON-FF, EMS-FF and EMS-FF + Ica groups (n = 3/group). Scale bar = 100 μm. (G) Quantification of SA-β-gal-positive cells in (F). (H) Comparison of cell cycle distributions among CON-FF, EMS-FF and EMS-FF + Ica groups (n = 3/group). (I) Quantification of cell cycle distributions in (H). (J) Comparison of P21 mRNA expression levels among CON-FF, EMS-FF and EMS-FF + Ica groups (n = 3/group). (K) Comparison of P53 mRNA expression levels among CON-FF, EMS-FF and EMS-FF + Ica groups (n = 3/group). (L) Comparison of P53 protein expression levels among CON-FF, EMS-FF and EMS-FF + Ica groups (n = 3/group). (M) Comparison of P21 protein expression levels among CON-FF, EMS-FF and EMS-FF + Ica groups (n = 3/group). (N) Quantification of P21 protein expression levels in (M). (O) Quantification of P53 protein expression levels in (L). All data are expressed as Mean ± SD and were analysed by Unpaired Student’s t test (between two groups) or One-way ANOVA (between three groups). *P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001, and ns, not significant
+
+Ica may inhibit GC senescence and improve ovarian function in EMS mice by regulating NDUFS8/ROS/P53/P21 axis
+
+To validate whether Ica can inhibit GC senescence and improve ovarian function in EMS, we established EMS mice and treated with Ica or Die. Compared with EMS group, atretic follicle rates in CON group and Ica group were significantly lower (Fig. 7A and B). Besides, CON group and Ica group presented significantly higher AMH levels and lower FSH and LH levels than EMS group (Fig. 7C - E). IHC analysis of ovarian tissues revealed that NDUFS8 expression levels were significantly greater in CON group and Ica group than EMS group, whereas P21 and P53 expression levels were significantly lower (Fig. 7F - K). Moreover, there were no significant differences in between Die group and EMS group (Fig. 7A - K). The detected results of mouse primary GCs revealed significantly greater ROS levels, percentages of SA-β-gal-positive cells and proportions of G1-phase cells in EMS group than CON group and Ica group (Fig. 7L -Q). Notably, therapeutic effects of Ica were obviously better than Die. In summary, Ica may inhibit GC senescence and improve ovarian function in EMS mice by regulating NDUFS8/ROS/P53/P21 axis.
+
+Fig. 7 Ica may inhibit GC senescence and improve ovarian function in EMS mice by regulating NDUFS8/ROS/P53/P21 axis. (A) H&E staining of ovarian tissues from CON, EMS, Ica, and Die groups (n = 6/group). Red arrows indicate atretic follicles. Original image scale bar = 200 μm. Enlarged image scale bar = 50 μm. (B) Quantification of atretic follicles in (A). (C) Comparison of serum AMH levels among CON, EMS, Ica, and Die groups (n = 6/group). (D) Comparison of serum FSH levels among CON, EMS, Ica, and Die groups (n = 6/group). (E) Comparison of serum LH levels among CON, EMS, Ica, and Die groups (n = 6/group). (F) IHC NDUFS8 expression levels in ovarian tissues from CON, EMS, Ica, and Die groups (n = 6/group). Original image scale bar = 200 μm. Enlarged image scale bar = 50 μm. (G) Quantification of NDUFS8 expression levels in (F). (H) IHC P21 expression levels in ovarian tissues from CON, EMS, Ica, and Die groups (n = 6/group). Original image scale bar = 200 μm. Enlarged image scale bar = 50 μm. (I) Quantification of P21 expression levels in (H). (J) IHC P53 expression levels in ovarian tissues from CON, EMS, Ica, and Die groups (n = 6/group). Original image scale bar = 200 μm. Enlarged image scale bar = 50 μm. (K) Quantification of P53 expression levels in (J). (L) Comparison of ROS levels in mouse primary GCs among CON, EMS, Ica, and Die groups (n = 3/group). Scale bar = 100 μm. (M) Quantification of ROS levels in (L). (N) Quantitative comparison of SA-β-gal-positive cells in mouse primary GCs among CON, EMS, Ica, and Die groups (n = 3/group). Scale bar = 100 μm. (O) Quantification of SA-β-gal-positive cells in (N). (P) Comparison of cell cycle distributions in mouse primary GCs among CON, EMS, Ica, and Die groups (n = 3/group). (Q) Quantification of cell cycle distributions in (P). All data are expressed as Mean ± SD and were analysed by Unpaired Student’s t test (between two groups) or One-way ANOVA (between four groups). *P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001, and ns, not significant
+
+Discussion
+
+EMS is an oestrogen-dependent chronic inflammatory disease characterized primarily by chronic pelvic pain and infertility [1, 2]. Although the strong association between EMS and infertility has been well documented, the causal relationship between them remains incompletely defined. Growing evidence suggests that EMS-associated infertility is linked to diminished ovarian function and reduced oocyte quality, where dysfunction of GCs, the primary nutrient support system for oocytes, plays a critical role [5]. Ovarian GCs constitute the largest cell population and main functional cells within follicles, and follicular development is characterized by rapid growth and proliferation of GCs [33]. Oocyte activation and sustained growth depend on the nutritional and paracrine functions of surrounding GCs. Therefore, the functional integrity of GCs is a key factor in determining oocyte quality, ovarian function, and reproductive capacity in EMS patients.
+
+After determining research objectives, we performed RNA sequencing on GCs extracted from FF of normal women and patients with EMS-associated infertility. Enrichment analysis revealed that significant DEGs between the two groups were enriched in pathways related to ROS, OXPHOS, cellular senescence, and P53 signalling pathway. Notably, ROS accumulation is not only a key hallmark of cellular senescence, but can also further exacerbate the process of cellular senescence [34]. Furthermore, P53, a critical regulator of cell cycle and cellular senescence, can drive cellular senescence through P53/P21 tumour suppressor pathway [35]. Given that significant inhibition of OXPHOS pathway can lead to ROS accumulation [30], we propose that OXPHOS dysfunction and subsequent cellular senescence may constitute the pathological basis in GC dysfunction in EMS-associated infertility. We subsequently treated KGN cells in vitro with FF from the two groups for indirect validation. The results exhibited abnormal OXPHOS and aggravated cellular senescence phenotypes in EMS-FF-treated KGN cells. In summary, these findings revealed a novel possible mechanism underlying the decline in reproductive capacity of EMS-associated infertility.
+
+To explore the mechanism of OXPHOS dysfunction and cellular senescence, we intersected the published single-cell RNA sequencing dataset of human oocytes with our human GC RNA sequencing dataset. Notably, OXPHOS-related genes exhibited opposite expression patterns: they were significantly downregulated in GCs of EMS patients, but significantly upregulated in oocytes. We speculated that impaired OXPHOS function in GCs may lead to insufficient energy supply to oocytes, thereby triggering compensatory increases in OXPHOS levels within oocytes. Among these OXPHOS-related genes, NDUFS8, a core subunit of the iron-sulfur fragment in mitochondrial complex I [36], was the most significantly downregulated gene in GCs. Considering that both inhibition of the OXPHOS pathway and reduced NDUFS8 expression can induce ROS accumulation [30, 31], we mechanistically linked NDUFS8 knockdown to ROS-driven cellular senescence in KGN cells by introducing shRNA lentivirus, pro-oxidants and antioxidants. Pro-oxidants exacerbated this phenotype, which was reversed by antioxidants, establishing an NDUFS8-induced ROS-dependent KGN cell senescence pathway. These results indicate that targeting NDUFS8/ROS axis may serve as a therapeutic strategy for EMS-associated infertility.
+
+Considering the remarkable effects of Ica on anti-tumour, anti-inflammatory, anti-oxidation and anti-aging, we hypothesized that Ica represents a promising therapeutic candidate for EMS and EMS-associated infertility. Network pharmacology predicted that the mechanism of Ica in treating EMS likely involves modulating energy metabolism, oestrogen metabolism, ovarian function, and ROS levels. In vivo, Ica treatment significantly suppressed ectopic lesions and improved reproductive capacity in EMS mice. Most importantly, Ica significantly improved ovarian function and inhibited GC senescence in EMS mice. Furthermore, in vivo experiments of mice and in vitro experiments of KGN cells verified the mechanism by which Ica may inhibit GC senescence through NDUFS8/ROS/P53/P21 axis. These results revealed great potential of Ica in treating EMS and EMS-associated infertility.
+
+Currently, peritoneal inflammation and ectopic lesions are main topics in EMS-related basic researches [37], which rarely targets pregnancy outcomes in EMS-associated infertility relatively. Existing studies of EMS-associated reproduction focus mainly on ovarian function and endometrial receptivity [38, 39]. In ovarian function related researches, the emphases are on oocytes, GCs, and their intercellular communication [40, 41]. Owing to ethical restrictions and stringent requirements, it is difficult to obtain human oocytes directly for research. Within researches related to GCs, researchers focus primarily on mitochondrial function and oxidative damage [42–44]. Therefore, building upon published findings and focusing on current research hotspots, we aimed to uncover novel mechanisms and therapeutic approaches for EMS-associated infertility. To the best of our knowledge, this is the first study to reveal the critical mechanisms of OXPHOS dysfunction and cellular senescence in ovarian GCs of EMS-associated infertility and to demonstrate the central role of NDUFS8/ROS axis in this process. Furthermore, this study is the first to confirm that Ica may inhibit GC senescence by regulating NDUFS8/ROS/P53/P21 axis, thereby improving ovarian function and pregnancy outcomes in EMS. These findings provide new theoretical bases and potential therapeutic strategies for EMS-associated infertility.
+
+However, certain limitations of this study need to be addressed. Firstly, mechanistic investigations in this study lacked sufficient support from a large number of clinical samples. Secondly, toxicological characteristics of Ica have not been studied to confirm whether it has toxic side effects on mice embryos, nor have its toxic doses and treatment durations been established. Finally, animal experiments lacked data on long term reproductive outcomes. Therefore, future research should involve more clinical samples for in-depth studies to confirm the pivotal role of NDUFS8/ROS/P53/P21 axis in the pathogenesis of EMS-associated infertility. Additionally, attention must be paid to biosafety characteristics of Ica to lay solid foundations for subsequent clinical trials. Undoubtedly, inhibiting GC senescence is expected to become a crucial therapeutic strategy for EMS-associated infertility.
+
+Conclusion
+
+In summary, we conclude the following (Fig. 8): ovarian GCs in patients with EMS-associated infertility may exhibit OXPHOS dysfunction and cellular senescence; NDUFS8 may induce senescence in KGN cells via ROS-dependent pathway; Ica may inhibit KGN cell senescence induced by EMS-FF, inhibit GC senescence and improve ovarian function and pregnancy outcomes in EMS mice by regulating NDUFS8/ROS/P53/P21 axis.
+
+Fig. 8 Mechanistic diagram of how Ica improves pregnancy outcomes in EMS by inhibiting ovarian GC senescence
+
+Supplementary Information
+
+Below is the link to the electronic supplementary material.
+
+Supplementary Material 1
+
+Abbreviations
+
+AMH Anti-Müllerian hormone
+
+ART Assisted reproductive technology
+
+ATP Adenosine triphosphate
+
+CCK-8 Cell Counting Kit-8
+
+CoCl₂·6H₂O Cobalt chloride hexahydrate
+
+CON Control
+
+CON-FF Follicular fluid from normal control females
+
+DEGs Differentially expressed genes
+
+Die Dienogest
+
+DMSO Dimethyl sulfoxide
+
+ELISA Enzyme-linked immunosorbent assay
+
+EMS Endometriosis
+
+EMS-FF Follicular fluid from endometriosis patients
+
+FBS Foetal bovine serum
+
+FF Follicular fluid
+
+FSH Follicle-stimulating hormone
+
+GCs Granulosa cells
+
+GD Gestational day
+
+GO Gene Ontology
+
+H&E Haematoxylin and eosin
+
+Ica Icaritin
+
+IHC Immunohistochemistry
+
+KEGG Kyoto Encyclopedia of Genes and Genomes
+
+LH Luteinizing hormone
+
+MOI Multiplicity of infection
+
+NAC N-acetylcysteine
+
+NC Negative control
+
+NDUFS8 NADH:ubiquinone oxidoreductase core subunit S8
+
+OCR Oxygen consumption rate
+
+OD Optical density
+
+OXPHOS Oxidative phosphorylation
+
+RT-qPCRPBS Phosphate-buffered saline
+
+PCA Principal component analysis
+
+PPI Protein-protein interaction
+
+ROS Reactive oxygen species
+
+RT-qPCR Real-time quantitative polymerase chain reaction
+
+SA-β-gal Senescence-associated β-galactosidase
+
+WB Western blotting
+
+Author contributions
+
+Y.H.: Writing - original draft, Investigation, Data curation, Conceptualization. J.D.: Investigation, Data curation, Conceptualization. Y.L.: Investigation, Data curation, Conceptualization. J.S.: Investigation, Data curation. C.W.: Investigation, Data curation. N.S.: Investigation, Data curation. R.J.: Formal analysis, Data curation. Z.Z.: Formal analysis, Data curation. X.L.: Formal analysis, Data curation. Y.C.: Formal analysis, Data curation. W.C.: Data curation, Project administration. L.Z.: Data curation, Project administration. D.S.: Writing - review & editing, Project administration. S.S.: Writing - review & editing, Project administration. C.Y.: Writing - review & editing, Project administration, Funding acquisition. All authors reviewed the manuscript.
+
+Funding
+
+This work was funded by National Natural Science Foundation of China (82374503, 82074206, 82305293), Clinical collaboration project of Traditional Chinese Medicine and Western Medicine for major and complex diseases (ZDYN-2024-A-158), Medical innovation research Project of Science and Technology Innovation Action Plan of Shanghai Municipal Science and Technology Commission (20Z21900405) and Shanghai Renowned Veteran TCM Practitioners’ Academic and Clinical Experience Research Studio (SHGZS-202240).
+
+Data availability
+
+Single-cell RNA sequencing data are available at NCBI BioProject PRJNA514416 (https://www.ncbi.nlm.nih.gov/bioproject/PRJNA514416). Additional datasets are available from corresponding authors upon reasonable request.
+
+Declarations
+
+Competing interests
+
+The authors declare no competing interests.
+
+Publisher’s note
+
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+Yalun He, Jie Ding and Yangshuo Li contributed equally to this work.
+
+
+References
+
+1. Taylor HS Kotlyar AM Flores VA Endometriosis is a chronic systemic disease: clinical challenges and novel innovations Lancet 2021 397 10276 839 852 10.1016/S0140-6736(21)00389-5 33640070
+Taylor HS, Kotlyar AM, Flores VA (2021) Endometriosis is a chronic systemic disease: clinical challenges and novel innovations. Lancet 397(10276):839–85233640070 10.1016/S0140-6736(21)00389-5
+2. Gruber TM Mechsner S Pathogenesis of Endometriosis: The Origin of Pain and Subfertility Cells 2021 10 6 1381 10.3390/cells10061381 34205040 PMC8226491
+Gruber TM, Mechsner S (2021) Pathogenesis of Endometriosis: The Origin of Pain and Subfertility. Cells 10(6):138134205040 10.3390/cells10061381 PMC8226491
+3. Ozkan S Murk W Arici A Endometriosis and infertility: epidemiology and evidence-based treatments Ann N Y Acad Sci 2008 1127 92 100 10.1196/annals.1434.007 18443335
+Ozkan S, Murk W, Arici A (2008) Endometriosis and infertility: epidemiology and evidence-based treatments. Ann N Y Acad Sci 1127:92–10018443335 10.1196/annals.1434.007
+4. Tanbo T Fedorcsak P Endometriosis-associated infertility: aspects of pathophysiological mechanisms and treatment options Acta Obstet Gynecol Scand 2017 96 6 659 667 10.1111/aogs.13082 27998009
+Tanbo T, Fedorcsak P (2017) Endometriosis-associated infertility: aspects of pathophysiological mechanisms and treatment options. Acta Obstet Gynecol Scand 96(6):659–66727998009 10.1111/aogs.13082
+5. Bonavina G Taylor HS Endometriosis-associated infertility: From pathophysiology to tailored treatment Front Endocrinol (Lausanne) 2022 13 1020827 10.3389/fendo.2022.1020827 36387918 PMC9643365
+Bonavina G, Taylor HS (2022) Endometriosis-associated infertility: From pathophysiology to tailored treatment. Front Endocrinol (Lausanne) 13:102082736387918 10.3389/fendo.2022.1020827 PMC9643365
+6. Fontana J Martínková S Petr J Žalmanová T Trnka J Metabolic cooperation in the ovarian follicle Physiol Res 2020 69 1 33 48 10.33549/physiolres.934233 31854191 PMC8565957
+Fontana J, Martínková S, Petr J, Žalmanová T, Trnka J (2020) Metabolic cooperation in the ovarian follicle. Physiol Res 69(1):33–4831854191 10.33549/physiolres.934233 PMC8565957
+7. Strączyńska P Papis K Morawiec E Czerwiński M Gajewski Z Olejek A Signaling mechanisms and their regulation during in vivo or in vitro maturation of mammalian oocytes Reprod Biol Endocrinol 2022 20 1 37 10.1186/s12958-022-00906-5 35209923 PMC8867761
+Strączyńska P, Papis K, Morawiec E, Czerwiński M, Gajewski Z, Olejek A et al (2022) Signaling mechanisms and their regulation during in vivo or in vitro maturation of mammalian oocytes. Reprod Biol Endocrinol 20(1):3735209923 10.1186/s12958-022-00906-5 PMC8867761
+8. Shmulevich R Krizhanovsky V Cell Senescence DNA Damage Metabolism Antioxid Redox Signal 2021 34 4 324 334 10.1089/ars.2020.8043 32212823
+Shmulevich R, Krizhanovsky V, Cell Senescence DNA, Damage (2021) Metabolism Antioxid Redox Signal 34(4):324–33432212823 10.1089/ars.2020.8043
+9. Price JS Waters JG Darrah C Pennington C Edwards DR Donell ST The role of chondrocyte senescence in osteoarthritis Aging Cell 2002 1 1 57 65 10.1046/j.1474-9728.2002.00008.x 12882354
+Price JS, Waters JG, Darrah C, Pennington C, Edwards DR, Donell ST et al (2002) The role of chondrocyte senescence in osteoarthritis. Aging Cell 1(1):57–6512882354 10.1046/j.1474-9728.2002.00008.x
+10. Campisi J Senescent cells, tumor suppression, and organismal aging: good citizens, bad neighbors Cell 2005 120 4 513 522 10.1016/j.cell.2005.02.003 15734683
+Campisi J (2005) Senescent cells, tumor suppression, and organismal aging: good citizens, bad neighbors. Cell 120(4):513–52215734683 10.1016/j.cell.2005.02.003
+11. Schmitt CA Wang B Demaria M Senescence and cancer - role and therapeutic opportunities Nat Rev Clin Oncol 2022 19 10 619 636 10.1038/s41571-022-00668-4 36045302 PMC9428886
+Schmitt CA, Wang B, Demaria M (2022) Senescence and cancer - role and therapeutic opportunities. Nat Rev Clin Oncol 19(10):619–63636045302 10.1038/s41571-022-00668-4 PMC9428886
+12. Yu TN Cheng EH Lin YP Chen YC Huang CC Lee TH Significantly shortened telomere length and altered androgen receptor level in cumulus cells from women with polycystic ovary syndrome Taiwan J Obstet Gynecol 2023 62 6 845 851 10.1016/j.tjog.2023.07.035 38008503
+Yu TN, Cheng EH, Lin YP, Chen YC, Huang CC, Lee TH et al (2023) Significantly shortened telomere length and altered androgen receptor level in cumulus cells from women with polycystic ovary syndrome. Taiwan J Obstet Gynecol 62(6):845–85138008503 10.1016/j.tjog.2023.07.035
+13. Yao Y Wang B Yu K Song J Wang L Yang X Nur77 ameliorates cyclophosphamide-induced ovarian insufficiency in mice by inhibiting oxidative damage and cell senescence J Ovarian Res 2024 17 1 203 10.1186/s13048-024-01532-y 39407305 PMC11476119
+Yao Y, Wang B, Yu K, Song J, Wang L, Yang X et al (2024) Nur77 ameliorates cyclophosphamide-induced ovarian insufficiency in mice by inhibiting oxidative damage and cell senescence. J Ovarian Res 17(1):20339407305 10.1186/s13048-024-01532-y PMC11476119
+14. Wang X Wang J Zhao X Wu H Li J Cheng Y METTL3-mediated m6A modification of SIRT1 mRNA inhibits progression of endometriosis by cellular senescence enhancing J Transl Med 2023 21 1 407 10.1186/s12967-023-04209-0 37353804 PMC10288727
+Wang X, Wang J, Zhao X, Wu H, Li J, Cheng Y et al (2023) METTL3-mediated m6A modification of SIRT1 mRNA inhibits progression of endometriosis by cellular senescence enhancing. J Transl Med 21(1):40737353804 10.1186/s12967-023-04209-0 PMC10288727
+15. Hu M Zhang Y Zhang X Zhang X Huang X Lu Y Defective Uterine Spiral Artery Remodeling and Placental Senescence in a Pregnant Rat Model of Polycystic Ovary Syndrome Am J Pathol 2023 193 12 1916 1935 10.1016/j.ajpath.2023.08.008 37689383
+Hu M, Zhang Y, Zhang X, Zhang X, Huang X, Lu Y et al (2023) Defective Uterine Spiral Artery Remodeling and Placental Senescence in a Pregnant Rat Model of Polycystic Ovary Syndrome. Am J Pathol 193(12):1916–193537689383 10.1016/j.ajpath.2023.08.008
+16. Harada M Cellular senescence in the pathogenesis of ovarian dysfunction J Obstet Gynaecol Res 2024 50 5 800 808 10.1111/jog.15918 38412992
+Harada M (2024) Cellular senescence in the pathogenesis of ovarian dysfunction. J Obstet Gynaecol Res 50(5):800–80838412992 10.1111/jog.15918
+17. Ni Z Li Y Song D Ding J Mei S Sun S Iron-overloaded follicular fluid increases the risk of endometriosis-related infertility by triggering granulosa cell ferroptosis and oocyte dysmaturity Cell Death Dis 2022 13 7 579 10.1038/s41419-022-05037-8 35787614 PMC9253011
+Ni Z, Li Y, Song D, Ding J, Mei S, Sun S et al (2022) Iron-overloaded follicular fluid increases the risk of endometriosis-related infertility by triggering granulosa cell ferroptosis and oocyte dysmaturity. Cell Death Dis 13(7):57935787614 10.1038/s41419-022-05037-8 PMC9253011
+18. Li Y He Y Cheng W Zhou Z Ni Z Yu C Double-edged roles of ferroptosis in endometriosis and endometriosis-related infertility Cell Death Discov 2023 9 1 306 10.1038/s41420-023-01606-8 37607902 PMC10444804
+Li Y, He Y, Cheng W, Zhou Z, Ni Z, Yu C (2023) Double-edged roles of ferroptosis in endometriosis and endometriosis-related infertility. Cell Death Discov 9(1):30637607902 10.1038/s41420-023-01606-8 PMC10444804
+19. Qi Z Yang W Xue B Chen T Lu X Zhang R ROS-mediated lysosomal membrane permeabilization and autophagy inhibition regulate bleomycin-induced cellular senescence Autophagy 2024 20 9 2000 2016 10.1080/15548627.2024.2353548 38762757 PMC11346523
+Qi Z, Yang W, Xue B, Chen T, Lu X, Zhang R et al (2024) ROS-mediated lysosomal membrane permeabilization and autophagy inhibition regulate bleomycin-induced cellular senescence. Autophagy 20(9):2000–201638762757 10.1080/15548627.2024.2353548 PMC11346523
+20. Huong NT Son NT Icaritin A phytomolecule with enormous pharmacological values Phytochemistry 2023 213 113772 10.1016/j.phytochem.2023.113772 37356700
+Huong NT, Son NT, Icaritin (2023) A phytomolecule with enormous pharmacological values. Phytochemistry 213:11377237356700 10.1016/j.phytochem.2023.113772
+21. Bi Z Zhang W Yan X Anti-inflammatory and immunoregulatory effects of icariin and icaritin Biomed Pharmacother 2022 151 113180 10.1016/j.biopha.2022.113180 35676785
+Bi Z, Zhang W, Yan X (2022) Anti-inflammatory and immunoregulatory effects of icariin and icaritin. Biomed Pharmacother 151:11318035676785 10.1016/j.biopha.2022.113180
+22. Gao L, Zhang SQ (2022) Antiosteoporosis Effects, Pharmacokinetics, and Drug Delivery Systems of Icaritin: Advances and Prospects. Pharmaceuticals (Basel) 15(4):397 10.3390/ph15040397 PMC9032325 35455393
+23. Fan J Miao Y Zhao Y Guan Y Zhang L Pan L Icaritin inhibits oxidative stress in murine astrocytes by binding to Orai1 to block store-operated calcium channel Chem Biol Drug Des 2023 101 4 873 882 10.1111/cbdd.14193 36527176
+Fan J, Miao Y, Zhao Y, Guan Y, Zhang L, Pan L et al (2023) Icaritin inhibits oxidative stress in murine astrocytes by binding to Orai1 to block store-operated calcium channel. Chem Biol Drug Des 101(4):873–88236527176 10.1111/cbdd.14193
+24. Somigliana E Vigano P Parazzini F Stoppelli S Giambattista E Vercellini P Association between endometriosis and cancer: a comprehensive review and a critical analysis of clinical and epidemiological evidence Gynecol Oncol 2006 101 2 331 341 10.1016/j.ygyno.2005.11.033 16473398
+Somigliana E, Vigano P, Parazzini F, Stoppelli S, Giambattista E, Vercellini P (2006) Association between endometriosis and cancer: a comprehensive review and a critical analysis of clinical and epidemiological evidence. Gynecol Oncol 101(2):331–34116473398 10.1016/j.ygyno.2005.11.033
+25. Nishi Y Yanase T Mu Y Oba K Ichino I Saito M Establishment and characterization of a steroidogenic human granulosa-like tumor cell line, KGN, that expresses functional follicle-stimulating hormone receptor Endocrinology 2001 142 1 437 445 10.1210/endo.142.1.7862 11145608
+Nishi Y, Yanase T, Mu Y, Oba K, Ichino I, Saito M et al (2001) Establishment and characterization of a steroidogenic human granulosa-like tumor cell line, KGN, that expresses functional follicle-stimulating hormone receptor. Endocrinology 142(1):437–44511145608 10.1210/endo.142.1.7862
+26. Sakamuri S Sure VN Kolli L Liu N Evans WR Sperling JA Glycolytic and Oxidative Phosphorylation Defects Precede the Development of Senescence in Primary Human Brain Microvascular Endothelial Cells Geroscience 2022 44 4 1975 1994 10.1007/s11357-022-00550-2 35378718 PMC9616994
+Sakamuri S, Sure VN, Kolli L, Liu N, Evans WR, Sperling JA et al (2022) Glycolytic and Oxidative Phosphorylation Defects Precede the Development of Senescence in Primary Human Brain Microvascular Endothelial Cells. Geroscience 44(4):1975–199435378718 10.1007/s11357-022-00550-2 PMC9616994
+27. Zhang X Zhang W Wang Z Zheng N Yuan F Li B Enhanced glycolysis in granulosa cells promotes the activation of primordial follicles through mTOR signaling Cell Death Dis 2022 13 1 87 10.1038/s41419-022-04541-1 35087042 PMC8795455
+Zhang X, Zhang W, Wang Z, Zheng N, Yuan F, Li B et al (2022) Enhanced glycolysis in granulosa cells promotes the activation of primordial follicles through mTOR signaling. Cell Death Dis 13(1):8735087042 10.1038/s41419-022-04541-1 PMC8795455
+28. Ferrero H Corachán A Aguilar A Quiñonero A Carbajo-García MC Alamá P Single-cell RNA sequencing of oocytes from ovarian endometriosis patients reveals a differential transcriptomic profile associated with lower quality Hum Reprod 2019 34 7 1302 1312 10.1093/humrep/dez053 31211846
+Ferrero H, Corachán A, Aguilar A, Quiñonero A, Carbajo-García MC, Alamá P et al (2019) Single-cell RNA sequencing of oocytes from ovarian endometriosis patients reveals a differential transcriptomic profile associated with lower quality. Hum Reprod 34(7):1302–131231211846 10.1093/humrep/dez053
+29. Stöckl P Hütter E Zwerschke W Jansen-Dürr P Sustained inhibition of oxidative phosphorylation impairs cell proliferation and induces premature senescence in human fibroblasts Exp Gerontol 2006 41 7 674 682 10.1016/j.exger.2006.04.009 16713693
+Stöckl P, Hütter E, Zwerschke W, Jansen-Dürr P (2006) Sustained inhibition of oxidative phosphorylation impairs cell proliferation and induces premature senescence in human fibroblasts. Exp Gerontol 41(7):674–68216713693 10.1016/j.exger.2006.04.009
+30. Wang W Su Y Qi R Li H Jiang H Li F Indoxacarb triggers autophagy and apoptosis through ROS accumulation mediated by oxidative phosphorylation in the midgut of Bombyx mori Pestic Biochem Physiol 2024 200 105812 10.1016/j.pestbp.2024.105812 38582584
+Wang W, Su Y, Qi R, Li H, Jiang H, Li F et al (2024) Indoxacarb triggers autophagy and apoptosis through ROS accumulation mediated by oxidative phosphorylation in the midgut of Bombyx mori. Pestic Biochem Physiol 200:10581238582584 10.1016/j.pestbp.2024.105812
+31. Cheng CW Kuo CY Fan CC Fang WC Jiang SS Lo YK Overexpression of Lon contributes to survival and aggressive phenotype of cancer cells through mitochondrial complex I-mediated generation of reactive oxygen species Cell Death Dis 2013 4 6 e681 10.1038/cddis.2013.204 23788038 PMC3702277
+Cheng CW, Kuo CY, Fan CC, Fang WC, Jiang SS, Lo YK et al (2013) Overexpression of Lon contributes to survival and aggressive phenotype of cancer cells through mitochondrial complex I-mediated generation of reactive oxygen species. Cell Death Dis 4(6):e68123788038 10.1038/cddis.2013.204 PMC3702277
+32. Biswas P Swaroop S Dutta N Arya A Ghosh S Dhabal S IL-13 and the hydroperoxy fatty acid 13(S)HpODE play crucial role in inducing an apoptotic pathway in cancer cells involving MAO-A/ROS/p53/p21 signaling axis Free Radic Biol Med 2023 195 309 328 10.1016/j.freeradbiomed.2022.12.103 36592660
+Biswas P, Swaroop S, Dutta N, Arya A, Ghosh S, Dhabal S et al (2023) IL-13 and the hydroperoxy fatty acid 13(S)HpODE play crucial role in inducing an apoptotic pathway in cancer cells involving MAO-A/ROS/p53/p21 signaling axis. Free Radic Biol Med 195:309–32836592660 10.1016/j.freeradbiomed.2022.12.103
+33. Hsueh AJ Kawamura K Cheng Y Fauser BC Intraovarian control of early folliculogenesis Endocr Rev 2015 36 1 1 24 10.1210/er.2014-1020 25202833 PMC4309737
+Hsueh AJ, Kawamura K, Cheng Y, Fauser BC (2015) Intraovarian control of early folliculogenesis. Endocr Rev 36(1):1–2425202833 10.1210/er.2014-1020 PMC4309737
+34. Gao H Nepovimova E Heger Z Valko M Wu Q Kuca K Role of hypoxia in cellular senescence Pharmacol Res 2023 194 106841 10.1016/j.phrs.2023.106841 37385572
+Gao H, Nepovimova E, Heger Z, Valko M, Wu Q, Kuca K et al (2023) Role of hypoxia in cellular senescence. Pharmacol Res 194:10684137385572 10.1016/j.phrs.2023.106841
+35. Huang Y Che X Wang PW Qu X p53/MDM2 signaling pathway in aging, senescence and tumorigenesis Semin Cancer Biol 2024 101 44 57 10.1016/j.semcancer.2024.05.001 38762096
+Huang Y, Che X, Wang PW, Qu X (2024) p53/MDM2 signaling pathway in aging, senescence and tumorigenesis. Semin Cancer Biol 101:44–5738762096 10.1016/j.semcancer.2024.05.001
+36. Wang S, Kang Y, Wang R, Deng J, Yu Y, Yu J et al (2022) Emerging Roles of NDUFS8 Located in Mitochondrial Complex I in Different Diseases. Molecules 27(24):8754 10.3390/molecules27248754 PMC9783039 36557887
+37. Sarsenova M Lawarde A Pathare ADS Saare M Modhukur V Soplepmann P Endometriotic lesions exhibit distinct metabolic signature compared to paired eutopic endometrium at the single-cell level Commun Biol 2024 7 1 1026 10.1038/s42003-024-06713-5 39169201 PMC11339455
+Sarsenova M, Lawarde A, Pathare ADS, Saare M, Modhukur V, Soplepmann P et al (2024) Endometriotic lesions exhibit distinct metabolic signature compared to paired eutopic endometrium at the single-cell level. Commun Biol 7(1):102639169201 10.1038/s42003-024-06713-5 PMC11339455
+38. Ricci A, Bengochea T, Olivares C, Del Valle S, Simone J, Gemzell-Danielsson K et al (2025) Peritoneal Endometriosis Impairs Ovarian Reserve and Increases Atresia in a Rat Model. Biomedicines 13(2):348 10.3390/biomedicines13020348 PMC11853728 40002761
+39. Wang M Sun F Zhang S Zhang X Sun Y Yu T NEK2 promotes the development of ovarian endometriosis and impairs decidualization by phosphorylating FOXO1 Cell Mol Life Sci 2024 81 1 237 10.1007/s00018-024-05270-8 38795132 PMC11127904
+Wang M, Sun F, Zhang S, Zhang X, Sun Y, Yu T et al (2024) NEK2 promotes the development of ovarian endometriosis and impairs decidualization by phosphorylating FOXO1. Cell Mol Life Sci 81(1):23738795132 10.1007/s00018-024-05270-8 PMC11127904
+40. Diao X Huang J Xiang R Zhuang S Liang Q Liang X Single-cell dual-omics reveals translational and transcriptional landscapes and regulations in oocytes from ovarian endometriosis patients Front Endocrinol (Lausanne) 2025 16 1534648 10.3389/fendo.2025.1534648 40034233 PMC11872718
+Diao X, Huang J, Xiang R, Zhuang S, Liang Q, Liang X et al (2025) Single-cell dual-omics reveals translational and transcriptional landscapes and regulations in oocytes from ovarian endometriosis patients. Front Endocrinol (Lausanne) 16:153464840034233 10.3389/fendo.2025.1534648 PMC11872718
+41. Ge L Yang Y Gao Y Xiao T Chang W Wang H Ovarian Endometrioma Disrupts Oocyte-Cumulus Communication and Mitochondrial Function, With Melatonin Mitigating the Effects Cell Prolif 2025 58 4 e13800 10.1111/cpr.13800 39837534 PMC11969245
+Ge L, Yang Y, Gao Y, Xiao T, Chang W, Wang H et al (2025) Ovarian Endometrioma Disrupts Oocyte-Cumulus Communication and Mitochondrial Function, With Melatonin Mitigating the Effects. Cell Prolif 58(4):e1380039837534 10.1111/cpr.13800 PMC11969245
+42. Li S Fan Y Shu C Zhou Y Shu J Methyl 3,4-dihydroxybenzoate alleviates oxidative damage in granulosa cells by activating Nrf2 antioxidant pathway J Ovarian Res 2024 17 1 87 10.1186/s13048-024-01412-5 38664755 PMC11044314
+Li S, Fan Y, Shu C, Zhou Y, Shu J (2024) Methyl 3,4-dihydroxybenzoate alleviates oxidative damage in granulosa cells by activating Nrf2 antioxidant pathway. J Ovarian Res 17(1):8738664755 10.1186/s13048-024-01412-5 PMC11044314
+43. Hu R Li L Liang L Qi Y Ma X Yang Y 25(OH)D3 improves granulosa cell proliferation and IVF pregnancy outcomes in patients with endometriosis by increasing G2M + S phase cells Reprod Biol Endocrinol 2023 21 1 115 10.1186/s12958-023-01165-8 38053145 PMC10696887
+Hu R, Li L, Liang L, Qi Y, Ma X, Yang Y (2023) 25(OH)D3 improves granulosa cell proliferation and IVF pregnancy outcomes in patients with endometriosis by increasing G2M + S phase cells. Reprod Biol Endocrinol 21(1):11538053145 10.1186/s12958-023-01165-8 PMC10696887
+44. Widyanugraha MA Widjiati W Hendarto H Effect of Endometriosis on Cumulus ATP, Number of Mitochondria and Oocyte Maturity in Cumulus Oocyte Complex in Mice Rev Bras Ginecol Obstet 2023 45 7 e393 e400 10.1055/s-0043-1772186 37595596 PMC10438966
+Widyanugraha MA, Widjiati W, Hendarto H (2023) Effect of Endometriosis on Cumulus ATP, Number of Mitochondria and Oocyte Maturity in Cumulus Oocyte Complex in Mice. Rev Bras Ginecol Obstet 45(7):e393–e40037595596 10.1055/s-0043-1772186 PMC10438966

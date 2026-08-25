@@ -1,0 +1,369 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Invest Ophthalmol Vis Sci
+Journal ID: Invest Ophthalmol Vis Sci
+NLM Journal ID: 7703701
+Journal ID: IOVS
+
+Investigative Ophthalmology & Visual Science
+
+ISSN: 0146-0404
+EISSN: 1552-5783
+Publisher: Association for Research in Vision and Ophthalmology
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499033
+PMID: 42615799
+DOI: 10.1167/iovs.67.10.48
+Article ID: IOVS-26-46507
+Article version: 1
+Subjects: Clinical, Data Science and Population Health Research; Clinical, Data Science and Population Health Research
+
+Triglyceride-Glucose–Related Indexes as Risk Factors for Vision-Threatening Ocular Diseases: A Prospective UK Biobank Study
+
+Link Between TyG-Related Indices and Ocular Diseases
+
+Huang Zhiqian 1 2 3 4
+Jian Linge 1 2 3 4
+Xiang Jing 1 2 3 4
+Du Yu 1 2 3 4
+Liu Shuyu 1 2 3 4
+Lu Yi 1 2 3 4
+Zhu Xiangjia 1 2 3 4
+1 Eye Institute and Department of Ophthalmology, Eye & ENT Hospital, Fudan University, Shanghai, China
+2 NHC Key laboratory of Myopia and Related Eye Diseases; Key Laboratory of Myopia and Related Eye Diseases, Chinese Academy of Medical Sciences, Shanghai, China
+3 Key Laboratory of Myopia, Chinese Academy of Medical Science, Shanghai, China
+4 Shanghai Key Laboratory of Visual Impairment and Restoration, Shanghai, China
+# Correspondence: Xiangjia Zhu, Eye Institute and Department of Ophthalmology, Eye & ENT Hospital, Fudan University, Shanghai 200031, China; zhuxiangjia1982@126.com.* ZH, LJ, and JX share joint first co-authorship.
+
+Electronic publication date: 2026 Aug 19
+Publication date: 2026 Aug
+Volume: 67
+Issue: 10
+Electronic Location ID: 48
+Accepted 2026 Jul 29; Received 2026 Mar 8
+Copyright: Copyright 2026 The Authors
+Copyright year: 2026
+License: This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: TyG index, obesity indicators, ocular diseases, nonlinear association
+Page count: 13
+
+==============================
+Background
+
+To evaluate the associations of the triglyceride-glucose (TyG) index and related obesity-combined indexes with the incidence of major vision-threatening ocular diseases.
+
+Methods
+
+This prospective population-based cohort study included 400,237 participants from the UK Biobank. The TyG index and derived indexes (combined with waist circumference, waist-to-height ratio, and body mass index) were calculated using baseline laboratory and anthropometric data. The outcomes were incident cases of cataract, POAG, AMD, and diabetic retinopathy (DR), ascertained using self-reported data, hospital inpatient records, and primary care records. Cox proportional hazards models were used, with restricted cubic splines fitted to characterize dose-response relationships. Secondary analyses assessed the associations with retinal thicknesses and vascular features.
+
+Results
+
+Over a median follow-up of 13.0 years, 46,151 cataract, 6317 POAG, 8276 AMD, and 5220 DR incident cases were identified. Distinct nonlinear associations were observed: the TyG index exhibited a reverse L-shaped relationship with cataract and DR, a J-shaped association with AMD, and a U-shaped relationship with POAG (all P total < 0.01, all P nonlinear < 0.05), suggesting an estimated optimal range from 8.6 to 9.1. Furthermore, elevated TyG-obesity indexes exhibited monotonic positive associations with the risk of cataract, AMD, and DR (all P total < 0.001), whereas moderate elevation was associated with a reduced risk of POAG (all P total < 0.01, all P nonlinear < 0.05). Elevated TyG-obesity indexes were also associated with retinal thinning and vascular abnormalities, providing supportive discrimination and risk-stratification information for incident DR.
+
+Conclusions
+
+The TyG index and related obesity-combined indexes show disease-specific associations with major sight-threatening conditions, accompanied by retinal structural alterations. Maintaining these parameters within optimal ranges could help mitigate the risk of vision impairment.
+
+Cataract is the foremost cause of blindness, whereas glaucoma, AMD, and diabetic retinopathy (DR) are the three most common causes of irreversible blindness worldwide.1 Current clinical practice in these ocular diseases predominantly focuses on treatment at advanced stages, with a lack of effective early preventive strategies.2 Previous evidence has suggested a strong association between these ocular diseases and systemic metabolic disturbances.3–8 Therefore it is imperative to identify relevant risk indicators that can signal the likelihood of these diseases before the onset of pathological changes, guiding early lifestyle interventions to mitigate the burden of these vision-threatening conditions.
+
+Insulin resistance is a central pathophysiological feature of metabolic syndrome and contributes to dysglycemia, dyslipidemia, and vascular dysfunction.9,10 Conventional glycemic markers, including fasting glucose and glycated hemoglobin (HbA1c), are widely used to assess glycemic status and guide diabetes management, but they are not direct surrogates for insulin sensitivity.11,12 The hyperinsulinemic-euglycemic clamp serves as the reference standard for assessing insulin resistance but is labor-intensive, costly, and impractical for routine clinical use.11,13,14 In recent years, the triglyceride-glucose (TyG) index, which combines blood triglyceride and glucose levels, has been suggested as a simpler and reliable surrogate for insulin resistance.15–17 It demonstrates strong correlations with the hyperinsulinemic-euglycemic clamp and is more feasible for both clinical practice and epidemiological studies.18 Compared with isolated cardiometabolic measures, the TyG index integrates lipid and glucose metabolic information without requiring additional insulin measurement. This practical advantage supports its potential scalability in future risk assessment settings.19,20 Recent research indicates that the TyG index has been associated with multiple cardiometabolic and systemic outcomes.21–25 However, existing ocular studies have mostly been cross-sectional, case-control, small-scale, or focused on a single disease.8,26,27 Consequently, large-scale prospective evidence linking these indexes to multiple major vision-threatening ocular diseases, particularly with respect to nonlinear risk patterns and potential thresholds, remains limited.
+
+Because adiposity may amplify insulin-resistance-related metabolic risk,28,29 further combining the TyG index with anthropometric obesity indicators, including the triglyceride-glucose-waist circumference (TyG-WC), triglyceride-glucose-waist-to-height ratio (TyG-WHtR), and triglyceride-glucose-body mass index (TyG-BMI) may more accurately reflect the body's overall metabolic risk.30–34 These indicators are often more effective than the TyG index alone for risk stratification and disease discrimination.31,33,34 Therefore the potential of these metrics to assess the risk of vision-threatening ocular diseases warrants further investigation.
+
+To explore this further, we conducted a prospective study based on the UK Biobank cohort to examine both linear and nonlinear associations between the TyG index, its combination with obesity indexes, and the incidence of major vision-threatening ocular diseases over an extended follow-up period. This study may refine risk assessment for major vision-threatening ocular diseases and provide insight into their metabolic underpinnings.
+
+Material and Methods
+
+Study Design and Participants
+
+The UK Biobank is a large-scale prospective cohort study that enrolled over 500,000 participants from across the United Kingdom between 2006 and 2010. At recruitment, participants were aged 37 to 73 years. Data collection incorporated touchscreen questionnaires, interviews, physical examinations, biological samples, and imaging procedures, following detailed protocols available at https://www.ukbiobank.ac.uk/. The study received ethical approval from the North West Multi-Centre Research Ethics Committee. All participants provided electronic informed consent at enrollment. The present analysis adheres to the Strengthening the Reporting of Observational Studies in Epidemiology guidelines and was conducted under UK Biobank application number 93118.
+
+Participants lacking data on blood triglycerides, glucose, or obesity-related indicators were excluded (N = 75,048), as were those with a history of any of the four major vision-threatening ocular diseases at baseline (N = 32,640) or a history of eye injury or trauma (N = 3033). After applying these exclusion criteria, 400,237 participants were eligible and included in the present study.
+
+Assessment of TyG, TyG-WC, TyG-WHtR, and TyG-BMI
+
+Biochemical indicators, including glucose and blood triglycerides, were measured from peripheral blood samples collected at baseline. These samples were obtained with informed consent and subsequently processed by separation into individual components before storage at −80°C. All biochemical analyses were conducted in the UK Biobank central laboratory using a Beckman Coulter AU5800 automated clinical chemistry analyzer. Glucose and blood triglyceride concentrations were determined using enzymatic methods. The corresponding field IDs used in this study are listed in Supplementary Table S1. Comprehensive protocols detailing sample collection, processing, and quality control procedures are publicly accessible in previous publications.35 Based on established formulas from prior studies,16,17,30 four TyG-related indexes were calculated as follows:1. TyG = ln [triglycerides (mg/dL) × glucose (mg/dL)/2]
+
+2. Body mass index (BMI) = body mass (kg) /height2 (m2)
+
+3. Waist-to-height ratio (WHtR) = waist circumference (WC) (cm)/height (cm)
+
+4. TyG-WC = TyG × WC (in cm); TyG-WHtR = TyG × WHtR; TyG-BMI = TyG × BMI
+
+Assessment of Vision-Threatening Ocular Diseases
+
+In this study, we investigated four major vision-threatening ocular diseases: cataract, POAG, AMD, and DR. Consistent with the methods used in previous research,36–38 incidence dates for these conditions were ascertained using self-reported data, hospital inpatient records, and primary care data. Hospital diagnoses were identified via International Classification of Diseases (ICD) codes for both ICD-10 and ICD-9 (Category ID 2002). Primary care data were recorded by healthcare professionals including general practitioners and nurse practitioners. Self-reported data was collected through verbal interviews (Field ID 20002) and touchscreen questionnaires, such as the query “Has a doctor told you that you have any of the following problems with your eyes?” (Field ID 6148). Detailed diagnostic coding criteria are provided in Supplementary Table S2.
+
+Follow-up data were available through October 31, 2022, for England, August 31, 2022, for Scotland, and May 31, 2022, for Wales. The duration of follow-up was calculated from the date of recruitment to the date of the first diagnosis of the ocular disease of interest or censoring. The primary endpoint was defined as the first recorded diagnosis of each ocular disease. Participants were right-censored at the earliest occurrence of: (1) death from any cause, (2) loss to follow-up, or (3) the country-specific administrative censoring date.
+
+Covariates
+
+A broad range of potential confounders across multiple domains, including sociodemographic variables, lifestyle factors, and health-related status, were accounted for in the analyses. Detailed information is provided in the Supplementary Methods.
+
+Retinal Layer Thicknesses and Vascular Features
+
+To provide complementary structural context and a refined anatomical basis for the observed disease associations, we quantified the associations of TyG-related indexes with retinal layer thicknesses and vascular features available in the UK Biobank. Specifically, we used the thicknesses of seven retinal layers, including retinal nerve fiber layer, ganglion cell-inner plexiform layer, inner nuclear layer, outer plexiform plus outer nuclear layer, photoreceptor segment (comprising both the inner and outer segments of photoreceptors), retinal pigment epithelium-Bruch's membrane complex, and overall macular thickness, as well as eight quantitative retinal vascular features that comprehensively quantify the fractal dimension, tortuosity, and caliber of the retinal vasculature. Details can be found in Supplementary Methods section.
+
+Statistical Analysis
+
+Baseline characteristics were summarized as frequencies and percentages for categorical variables, and as means with standard deviations (SDs) for non-normally distributed continuous variables. Associations between TyG-related indexes and vision-threatening ocular diseases were evaluated using Cox proportional hazards regression models, with results reported as hazard ratios (HRs) and 95% confidence intervals (CIs). The proportional hazards assumption was verified using Schoenfeld residuals. To ensure robustness and transparency, confounding factors were stepwise adjusted for across three models:36,37 Model 1 included age and sex; Model 2 added ethnicity, Townsend Deprivation Index, alcohol intake frequency, smoking status, and physical activity; Model 3 further included history of hypertension and diabetes mellitus. Missing covariate data were imputed using multiple imputation by chained equations (five imputations), with all other covariates as predictors, as implemented in the “mice” R package.
+
+To assess dose-response relationships, restricted cubic spline (RCS) models with four knots within the Cox regression framework were applied, with knot selection and model fit assessment based on the minimum Akaike Information Criterion. Thresholds for variables with nonlinear associations were determined using piecewise regression, with the optimal cutpoint selected based on the maximum log-likelihood. All spline models were adjusted according to model 3 covariates.
+
+Cross-sectional associations of the TyG index, TyG-WC, TyG-WHtR, and TyG-BMI with retinal layer thicknesses and retinal vascular features were assessed using linear regression models. These analyses were adjusted for model 3 covariates, and multiple testing was controlled using the false discovery rate (FDR) method.
+
+Receiver operating characteristic (ROC) curve analysis was conducted using the “pROC” package, and the area under the curve (AUC) was calculated to evaluate model discrimination. To assess the supportive discriminative information of TyG-related indexes for incident DR, we compared baseline models with extended models. The baseline models incorporated either demographic variables alone (age and sex) or in combination with the corresponding anthropometric measure (WC, WHtR, or BMI). The extended models were constructed by additionally including the respective TyG-related index (TyG index, TyG-WC, TyG-WHtR, or TyG-BMI). Differences in AUCs between models were evaluated using DeLong's test. Furthermore, additional ROC analyses compared the TyG-related indexes with models incorporating their corresponding individual components, including triglycerides, glucose, and the relevant anthropometric measure (Supplementary Fig. S1). The component-variable models showed higher AUCs than the corresponding TyG-related indexes, which is statistically expected because models containing the original variables are more flexible than a single formula-derived index.39–43 Importantly, this finding does not negate the supportive discrimination and risk-stratification value of these composite indexes, as our study aimed to evaluate them as accessible and parsimonious metabolic risk markers rather than to develop a high-dimensional clinical prediction model.
+
+Participants were classified into quintiles for each TyG-related index, including TyG index, TyG-WC, TyG-WHtR, and TyG-BMI. For incident DR, Kaplan–Meier curves were generated for Q1, Q3, and Q5 to visualize risk stratification. Differences across curves in the unweighted analysis were evaluated using the log-rank test. To assess the robustness of these patterns after covariate balancing, inverse probability of treatment weighting (IPTW) was performed using multinomial propensity scores, with quintile group as the exposure and age, sex, ethnicity, Townsend deprivation index, smoking status, drinking frequency, physical activity, hypertension, and diabetes as covariates. Stabilized IPTW weights were then applied to generate weighted Kaplan–Meier curves.
+
+Interaction and stratified analyses were undertaken according to age at baseline (≤ 60 years vs. > 60 years) and sex (male vs. female). Potential interaction effects were assessed using likelihood ratio tests, comparing models with and without the interaction term between the stratification factor and exposure. Five sensitivity analyses were conducted to assess the robustness of results. These included the following: (a) excluding participants with less than two years of follow-up to reduce potential reverse causality; (b) excluding participants with any missing covariate data; (c) further adjusting for age squared to account for possible nonlinear age effects on outcomes; (d) restricting analyses to cases confirmed by hospital-based clinical diagnoses, thereby excluding those identified solely via self-report or primary care records44; and (e) performing exploratory cross-sectional analyses using UK Biobank Reading Centre-graded image-derived ocular phenotypes. Further details are provided in the Supplementary Methods. Because these image-derived phenotypes were assessed in a selected retinal imaging subset and did not represent longitudinal incident outcomes, they were interpreted as exploratory sensitivity analyses rather than confirmatory evidence.
+
+All statistical analyses were performed using R version 4.3.0 (R Foundation for Statistical Computing). Tests were two-sided, and a P value < 0.05 was considered statistically significant.
+
+Results
+
+Baseline Characteristics of the Study Population
+
+Among 502,132 participants at baseline in the UK Biobank, 400,237 participants were eligible for analysis. An overview flow chart of the study design is presented in Figure 1A. During a median follow-up of 13.0 years, 46,151 cataract cases (11.54%), 6317 POAG cases (1.58%), 8276 AMD cases (2.07%), and 5220 DR cases (1.30%) were documented. A Venn diagram (Fig. 1B) visualizes the case overlaps, whereas Figure 1C shows the proportion of incident cases during follow-up for each ocular disease across baseline age groups. Table 1 summarized the baseline characteristics of study participants stratified by the occurrence of the four diseases during follow-up. Compared to participants who did not develop these diseases, those who did were more likely to have a history of hypertension or diabetes, and exhibited higher baseline levels of the four TyG-related indexes (all P < 0.001).
+
+Figure 1. (A) Flow chart of the study design. (B) Venn plot of incident cases of the four major vision-threatening ocular diseases. (C) Proportion of incident cases during follow-up for each ocular disease across baseline age groups.
+
+Table 1. Baseline Characteristics of the Study Population
+
+Characteristics	No Incident Ocular Diseases	Incident Ocular Diseases	P Value	
+Number of participants	346,587 (86.6%)	53,650 (13.4%)		
+Age at baseline (years), mean (SD)	55.38 (8.03)	61.57 (6.07)	<0.001	
+Sex			<0.001	
+ Female	184,980 (53.4%)	30,627 (57.0%)		
+ Male	161,607 (46.6%)	23,122 (43.0%)		
+Ethnicity			0.745	
+ British	308,278 (88.9%)	47,782 (88.9%)		
+ Others	38,309 (11.1%)	5,967 (11.1%)		
+Townsend deprivation index, mean (SD)	−1.34 (3.07)	−1.29 (3.12)	0.001	
+Alcohol intake frequency			<0.001	
+ Low	64,035 (18.5%)	12,298 (22.9%)		
+ Moderate	130,377 (37.6%)	18,626 (34.7%)		
+ High	152,175 (43.9%)	22,825 (42.5%)		
+Smoking status			<0.001	
+ Never	192,526 (55.5%)	27,116 (50.4%)		
+ Former	116,523 (33.6%)	21,504 (40.0%)		
+ Current	37,538 (10.8%)	5,129 (9.5%)		
+Physical activity			<0.001	
+ Low	66,835 (19.3%)	10,998 (20.5%)		
+ Moderate	173,321 (50.0%)	26,364 (49.1%)		
+ High	106,431 (30.7%)	16,387 (30.5%)		
+History of hypertension			<0.001	
+ No	258,445 (74.6%)	33,204 (61.8%)		
+ Yes	88,142 (25.4%)	20,545 (38.2%)		
+History of diabetes			<0.001	
+ No	333,522 (96.2%)	47,627 (88.6%)		
+ Yes	13,065 (3.8%)	6,122 (11.4%)		
+TyG-related indexes, mean (SD)				
+ TyG index	8.70 (0.56)	8.81 (0.58)	<0.001	
+ TyG-WC	785.29 (146.13)	813.43 (153.07)	<0.001	
+ TyG-WHtR	4.65 (0.82)	4.86 (0.87)	<0.001	
+ TyG-BMI	238.43 (49.11)	247.33 (52.13)	<0.001	
+BMI, body mass index; SD, standard deviation; TyG, triglyceride-glucose; WC, waist circumference; WHtR, waist-to-height ratio.
+
+Associations Between the TyG Index and Ocular Diseases
+
+Table 2 shows the relationships between the TyG index and cataract, POAG, AMD and DR in different models. Compared with the lowest quartile, the fully adjusted HRs for participants in the highest TyG quartile were 1.04 (95% CI 1.01–1.07; P = 0.013; model 3) for cataract, 2.27 (95% CI, 2.04–2.51; P < 0.001; model 3) for DR, 0.90 (95% CI, 0.84–0.97; P = 0.003; model 3) for POAG, and 0.92 (95% CI, 0.86–0.98; P = 0.003; model 3) for AMD. To explore potential nonlinear associations between the TyG index and the four diseases, we performed RCS regression. A reverse L-shaped association was observed between the TyG index and both cataract (P nonlinear < 0.001, Fig. 2A) and DR (P nonlinear = 0.027, Fig. 2D), with inflection points at 8.876 and 8.602, respectively. In contrast, a U-shaped association was found for POAG (P nonlinear = 0.004, Fig. 2B), with an inflection point at 9.032, whereas a J-shaped relationship was identified for AMD (P nonlinear = 0.002, Fig. 2C), with an inflection point at 9.110. These findings suggest that the optimal range for the TyG index is approximately between 8.6 and 9.1.
+
+Table 2. Prospective Associations Between the TyG Index and Incident Ocular Diseases
+
+	TyG Index	
+	Quartile 1	Quartile 2	Quartile 3	Quartile 4	
+Median	8.07	8.50	8.86	9.37	
+Cataract					
+ No. of cases/person-years	9202/1300497	11568/1277477	12426/1268260	12955/1259104	
+ Model 1, HR (95% CI)	1[Ref]	1.03 (1.00–1.05)	1.05 (1.02–1.08)	1.14 (1.11–1.17)	
+ Model 2, HR (95% CI)	1[Ref]	1.02 (0.99–1.05)	1.04 (1.01–1.07)	1.11 (1.08–1.14)	
+ Model 3, HR (95% CI)	1[Ref]	1.02 (0.99–1.04)	1.02 (0.99–1.05)	1.04 (1.01–1.07)	
+POAG					
+ No. of cases/person-years	1363/1337540	1624/1324152	1676/1319271	1654/1312407	
+ Model 1, HR (95% CI)	1[Ref]	0.98 (0.91–1.06)	0.95 (0.89–1.02)	0.95 (0.88–1.02)	
+ Model 2, HR (95% CI)	1[Ref]	0.98 (0.91–1.06)	0.95 (0.88–1.02)	0.94 (0.87–1.01)	
+ Model 3, HR (95% CI)	1[Ref]	0.98 (0.91–1.05)	0.94 (0.88–1.01)	0.90 (0.84–0.97)	
+AMD					
+ No. of cases/person-years	1707/1336731	2134/1322377	2223/1317362	2212/1310248	
+ Model 1, HR (95% CI)	1[Ref]	1.00 (0.94–1.07)	0.99 (0.93–1.06)	1.03 (0.96–1.09)	
+ Model 2, HR (95% CI)	1[Ref]	1.00 (0.93–1.06)	0.97 (0.91–1.04)	0.99 (0.93–1.06)	
+ Model 3, HR (95% CI)	1[Ref]	0.99 (0.93–1.05)	0.95 (0.89–1.01)	0.92 (0.86–0.98)	
+DR					
+ No. of cases/person-years	453/1341824	732/1328423	1149/1321757	2886/1306160	
+ Model 1, HR (95% CI)	1[Ref]	1.41 (1.26–1.59)	2.09 (1.88–2.34)	5.19 (4.69–5.73)	
+ Model 2, HR (95% CI)	1[Ref]	1.37 (1.22–1.55)	1.97 (1.77–2.20)	4.63 (4.18–5.12)	
+ Model 3, HR (95% CI)	1[Ref]	1.31 (1.16–1.47)	1.60 (1.43–1.78)	2.27 (2.04–2.51)	
+Incident ocular diseases were identified using self-reported data, hospital inpatient records, and primary care records. Model 1 was adjusted for age and sex. Model 2 was further adjusted for ethnicity, Townsend Deprivation Index, alcohol intake frequency, smoking status, and physical activity. Model 3 was additionally adjusted for history of hypertension and diabetes mellitus.
+
+Figure 2. Restricted cubic splines of the associations of TyG index with incident (A) cataract, (B) POAG, (C) AMD and (D) DR. Data were fully adjusted for model 3.
+
+Sensitivity and Subgroup Analysis
+
+To further assess the robustness of the observed associations, we conducted several sensitivity analyses by excluding participants with a follow-up time of less than two years, excluding those with missing covariate data, adjusting for age-squared, restricting the analysis to cases confirmed through clinical diagnoses, and performing exploratory cross-sectional analyses using image-derived ocular phenotypes. The first four sensitivity analyses supported the robustness of the primary longitudinal findings (Supplementary Figs. S2–S5). The image-derived ocular phenotype analyses, which were based on a selected retinal imaging subset, did not fully reproduce statistical significance but showed broadly similar trends, thereby providing cross-sectional supportive evidence (Supplementary Fig. S6).
+
+The results of the interaction analyses stratified by age and sex are shown in Supplementary Table S3. Age was found to significantly modify the association between the TyG index and four diseases (all P for interaction < 0.001). In addition, sex significantly influences the relationships of the TyG index with both POAG (P for interaction = 0.002) and DR (P for interaction < 0.001). The specific subgroup RCS results are shown in Supplementary Figure S7. Notably, the effects of an increased TyG index were consistently more pronounced in the younger subpopulation across all four diseases. Regarding sex, males were more susceptible to the risk of POAG associated with a decrease in the TyG index, whereas females were more likely to develop DR in response to an elevated TyG index.
+
+Relationships Between the TyG-Obesity Indexes and Ocular Diseases
+
+The associations between TyG-WC, TyG-WHtR, and TyG-BMI with the four diseases are depicted in Figure 3. For cataract (Fig. 3A) and DR (Fig. 3D), higher levels of all three indexes were associated with a greater risk. Specifically, for cataract, compared with the third quintile, the fully adjusted HRs of the highest quintile were 1.09 for TyG-WC, 1.10 for TyG-WHtR, and 1.07 for TyG-BMI (all P < 0.001). For DR, the fully adjusted HRs for the highest quintile reached 1.78 for TyG-WC, 1.84 for TyG-WHtR, and 1.69 for TyG-BMI (all P < 0.001). No significant associations were observed for POAG across quintiles (Fig. 3B), although TyG-BMI showed borderline positive associations in Q1 and Q2 (both P = 0.050) and a suggestive protective association in Q4 (P = 0.053). Moreover, for AMD, the highest quintiles of TyG-WHtR and TyG-BMI were significantly associated with an increased risk (Fig. 3C), with corresponding HRs of 1.10 (P = 0.007) and 1.10 (P = 0.004), respectively. We further assessed the nonlinear associations of the four diseases with TyG-WC (Fig. 4A), TyG-WHtR (Fig. 4B), and TyG-BMI (Fig. 4C), all of which demonstrated significant nonlinear associations (all P for total < 0.01, all P for nonlinear < 0.05). Most associations showed monotonic patterns, with risk remaining relatively stable at lower index levels before increasing gradually. TyG-BMI and POAG were the main exception, showing a J-shaped relationship. Across outcomes, the steepest risk gradient was observed for DR, whereas associations with cataract, POAG, and AMD were comparatively more gradual.
+
+Figure 3. Associations of TyG-obesity indexes with incident (A) cataract, (B) POAG, (C) AMD, and (D) DR. Hazard ratios are presented across quintiles of each index. The third quintile was used as the reference category. Data were fully adjusted for model 3.
+
+Figure 4. Restricted cubic spline analyses of the associations of (A) TyG-WC, (B) TyG-WHtR, and (C) TyG-BMI with incident cataract, POAG, AMD, and DR. Data were fully adjusted for model 3.
+
+Correlations Between the TyG-Obesity Indexes and Retinal Structural Parameters
+
+To provide structural evidence for the aforementioned associations, we further examined the relationships between TyG-derived indexes and retinal layer thickness as well as vascular features. Figure 5A shows a schematic representation of retinal layers together with the correlation results. The three TyG-obesity indexes (TyG-WC, TyG-WHtR, and TyG-BMI) were associated with thinning of the retinal nerve fiber layer (β ranging from −0.131 to −0.200; all FDR < 0.001). All four indexes were associated with thinning of the outer plexiform plus outer nuclear layer (β from −0.104 to −0.213; all FDR < 0.05), photoreceptor segment (β from −0.114 to −0.343; all FDR < 0.001), and overall macular thickness (β from −0.320 to −0.784; all FDR < 0.001). Figure 5B illustrates the workflow for retinal vascular feature extraction and the corresponding results. All four indexes were negatively correlated with the fractal dimension of arteries (β from −0.011 to −0.041; all FDR < 0.05) and the central retinal arteriolar caliber (β from −0.011 to −0.018; all FDR < 0.05), while showing positive correlations with the central retinal venular caliber (β from 0.040 to 0.085; all FDR < 0.001). In addition, the three TyG-obesity indexes were associated with increased tortuosity density of the combined vasculature (β from 0.020 to 0.024; all FDR < 0.01) and veins (β from 0.016 to 0.022; all FDR < 0.05). These findings may reflect underlying retinal neurodegeneration and vascular dysfunction.
+
+Figure 5. Retinal structural correlates of TyG-related indexes and their discriminative and risk-stratification value for incident DR. (A) Correlations between TyG and its derived indexes and the thickness of individual retinal layers. The left panel shows a schematic representation of retinal layer anatomy, and the right panel presents the correlation results. (B) Associations between TyG and its derived indexes and retinal vascular features. The left panel illustrates the feature extraction workflow, and the right panel displays the analytical results. (C) ROC curves comparing the discriminative ability of baseline models and extended models incorporating TyG-related indexes for incident DR. The baseline models included age and sex alone, or age, sex, and the corresponding anthropometric measure (WC, WHtR, or BMI). The extended models additionally included the TyG index, TyG-WC, TyG-WHtR, or TyG-BMI, respectively. (D) Kaplan–Meier curves for incident DR according to Q1, Q3, and Q5 of the TyG index, TyG-WC, TyG-WHtR, and TyG-BMI. *FDR < 0.05, **FDR < 0.01, ***FDR < 0.001.
+
+Discriminative and Risk-Stratification Value of TyG-Related Indexes for Incident DR
+
+Given the strong correlation between the TyG-related indexes and DR, we performed ROC analysis to further assess their additional discriminative information for incident DR beyond demographic and anthropometric factors (Fig. 5C). Adding the TyG index to the baseline model including age and sex improved discrimination for incident DR, increasing the AUC from 0.664 to 0.776 (DeLong's test, P < 0.001). Similar improvements were observed for the TyG-obesity indexes when added to models that included age, sex, and the corresponding anthropometric measure (all DeLong's test P < 0.001): the AUC increased from 0.775 to 0.806 after adding TyG-WC, from 0.783 to 0.813 after adding TyG-WHtR, and from 0.762 to 0.795 after adding TyG-BMI. These results support the discrimination and risk-stratification potential of these parsimonious composite indexes but do not imply that they constitute superior prediction models.
+
+To illustrate the risk-stratification performance of TyG-related indexes, Kaplan–Meier curves were plotted across representative quintiles (Fig. 5D). Across the TyG index, TyG-WC, TyG-WHtR, and TyG-BMI, cumulative incidence showed a clear stepwise increase from Q1 to Q3 to Q5, with Q5 consistently exhibiting the highest risk. The divergence between quintiles became more pronounced with longer follow-up, and the differences across Q1, Q3, and Q5 were statistically significant for all four indexes (all log-rank P < 0.001). As a sensitivity analysis, IPTW-weighted Kaplan–Meier curves showed highly consistent patterns, supporting the robustness of the observed risk gradient after balancing baseline covariates (Supplementary Fig. S8).
+
+Discussion
+
+The present study leveraged data from 400,237 participants to comprehensively investigate the prospective associations between the TyG index and the incidence of vision-threatening ocular diseases. We observed distinct dose-response relationships: an inverse L-shaped association for cataract and DR, a J-shaped association for AMD, and a U-shaped association for POAG. Similar associations between TyG-obesity metrics and ocular diseases further reinforce the robustness of the observed patterns.
+
+The TyG index and its obesity-related derivatives exhibited a generally consistent pattern for cataract, AMD and DR, with risk remaining stable at lower levels and gradually increasing beyond a certain threshold. This nonlinear pattern aligns with findings from previous epidemiological studies. For instance, a study based on National Health and Nutrition Examination Survey reported a suggestive association between higher TyG index and the presence of cataract (odds ratio = 1.28; 95% CI, 0.99–1.67).26 Similarly, an investigation conducted in Singapore reported a significant association between the TyG index and DR prevalence (odds ratio = 1.4; 95% CI, 1.1–1.7).27 Moreover, a small-scale case-control study involving 71 participants found that the TyG index was significantly higher in individuals with exudative AMD compared to controls.8 However, these cross-sectional or case-control studies were limited by small sample sizes and the susceptibility to reverse causality. To address these limitations, the present study provides novel population-based prospective evidence, thereby consolidating TyG as an independent metabolic risk factor of these outcomes, and identifying potential threshold effects. For AMD and POAG, the associations with the TyG index became more apparent after further adjustment for socioeconomic, lifestyle, and cardiometabolic factors, suggesting that more comprehensive covariate control may better isolate its independent metabolic association in these etiologically complex diseases.
+
+The relationships between TyG-related indexes and retinal structural alterations further validate the above associations, meanwhile providing clues to the underlying mechanisms. Specifically, elevated indexes co-occurred with thinning of multiple retinal layers, reduced vascular fractal dimension, increased vessel tortuosity, narrower arterioles, and dilated venules—changes that may indicate neurodegeneration and compromised vascular function.45–49 Mechanistically, elevated TyG index levels are indicative of increased insulin resistance and dysregulation of glucose and lipid metabolism.18,50 These metabolic disturbances may accelerate lens damage and promote cataract development by triggering chronic inflammation and oxidative stress pathways.51,52 In the retina, persistent hyperglycemia and lipid metabolism disorders could compromise vascular endothelial cells and retinal pigment epithelial cells, leading to apoptosis, increased vascular permeability, and pathological neovascularization—key processes in the pathogenesis of both AMD and DR.4,6,53–55 Furthermore, obesity may synergize with or exacerbate these pathological mechanisms. Visceral adipose tissue in obese individuals secretes proinflammatory cytokines such as IL-6 and Tumor Necrosis Factor-alpha, and up regulates Vascular Endothelial Growth Factor and Intercellular Adhesion Molecule-1.56–58 These molecules activate monocytes, macrophages, and neutrophils, fueling an inflammatory cascade that further impairs endothelial function and accelerates ocular vascular damage.7,30,54,59,60
+
+Our ROC analyses further showed that TyG-related indexes provided additional discriminative information for incident DR beyond demographic and anthropometric factors. Notably, among the extended models, the model incorporating TyG-WHtR achieved the highest AUC (0.813), suggesting that the combination of glucolipid metabolism and central adiposity may capture clinically relevant metabolic risk information associated with DR. By incorporating a direct measure of central adiposity, such composite indexes serve as surrogate markers of adipose tissue-driven inflammatory burden.58 Consistent with the ROC findings, the Kaplan-Meier curves demonstrated clear separation in cumulative DR incidence across representative quintiles of TyG-related indexes, which remained evident after IPTW-based covariate balancing. These results further support the utility of TyG-related indexes for preliminary DR risk stratification. The discriminative utility of TyG-based composite indexes has also been validated in other disease contexts.17,31–33,61–63 From a practical perspective, waist circumference and height are routinely collected in electronic health records, allowing for low-cost, scalable preliminary risk stratification, a potential complement to fundus photography-based screening programs, particularly in resource-limited settings. Together, these findings support the potential of TyG-related indexes for preliminary discrimination and risk stratification, while emphasizing their role as accessible and parsimonious composite risk markers rather than as superior prediction models.43,64
+
+Notably, the spline analysis suggested a U-shaped association between the TyG index and the risk of POAG. This counter-intuitive pattern suggests a more complex underlying pathophysiology. Specifically, extremely low TyG levels may reflect hypoglycemia or hypotriglyceridemia. Hypoglycemia can trigger counterregulatory hormonal responses such as increased epinephrine release, which promotes vasoconstriction and platelet aggregation, potentially impairing microvascular perfusion of the optic nerve.65 And several metabolomics studies have identified elevated triglyceride levels as a protective factor against POAG.66–68 Additionally, lower TyG levels may co-occur with malnutrition and inadequate energy supply, particularly in individuals with chronic debilitating conditions, further compromising optic nerve perfusion.69 More importantly, body composition may also affect cerebrospinal fluid pressure (CSFP), a key factor in optic nerve head biomechanics. Previous studies have shown that individuals with lower BMI tend to have reduced intracranial pressure and CSFP.70–72 A UK Biobank study reported that lower BMI was associated with a higher cup-to-disc ratio and a 10% increased likelihood of glaucoma.72 In the Canadian Longitudinal Study of Ageing, lower BMI was associated with greater vertical cup-to-disc ratio changes.72 Mechanistically, reduced adipose tissue may lead to epidural fat pad atrophy and diminished spinal CSF reserves, as well as lower circulating leptin levels, which can impair CSF production by the choroid plexus. This may reduce CSFP, disrupting the translaminar pressure gradient across the lamina cribrosa.3,71–73 As CSFP represents the counterpressure opposing intraocular pressure (IOP), an abnormally low CSFP—even in the presence of normal IOP—can increase the translaminar pressure difference (IOP − CSFP), potentially leading to posterior bowing of the lamina, axoplasmic flow stasis, and subsequent optic nerve damage characteristic of POAG.74–78 In addition to these potential biological mechanisms, survivorship bias may also contribute to this pattern, as older individuals with very low BMI may have higher mortality before reaching the typical age for POAG detection.73
+
+Of note, younger individuals exhibited a more pronounced association between the TyG index and the four ocular diseases. This pattern may reflect age-related increases in baseline TyG levels, or selective survival bias, whereby individuals with severe insulin resistance may have succumbed to competing risks (e.g., cardiovascular events) before developing advanced ocular pathologies.79,80 Subgroup analyses also revealed that elevated TyG index levels were more strongly associated with DR risk in female participants. This may relate to sex-specific inflammatory responses, as women with metabolic syndrome tend to exhibit higher levels of C-reactive protein and IL-6.81,82 Postmenopausal estrogen decline may also exacerbate oxidative stress in the retina, increasing susceptibility to DR.83,84 In contrast, male participants showed greater vulnerability to POAG at very low TyG levels. This may be due to estrogen's vasoregulatory effects and sex differences in fat distribution pattern, which may impact venous return and alter CSFP dynamics.85–87
+
+Our study has several notable strengths. Leveraging a large population-based cohort, we provide novel prospective evidence that TyG-related indexes are associated with the incidence of vision-threatening ocular diseases, supported by corresponding retinal structural alterations. The integration of TyG with anthropometric measures provided measurable discriminative information for DR risk, highlighting the potential of TyG-related indexes as simple, accessible, and clinically informative markers for metabolic risk assessment. Furthermore, the identification of nonlinear associations underscores the importance of maintaining TyG levels and body composition within optimal ranges to preserve ocular health, providing actionable targets for metabolic risk modification.
+
+However, several limitations should be acknowledged. First, the study relies on single-timepoint measurements of exposures. Future research should incorporate multiple measurements to capture longitudinal variations. Second, the study population consisted predominantly of British Caucasians, which may limit the generalizability of the findings to other ethnic groups. Third, the biological mechanisms underlying the observed associations remain speculative and require further experimental validation. Fourth, the cross-sectional image-derived ocular phenotype analyses did not fully reproduce the statistical significance observed in the main longitudinal analyses, likely reflecting differences in outcome definition, limited case numbers, and selection into the UK Biobank retinal imaging subset; larger longitudinal ophthalmic imaging cohorts are warranted for further validation.88–91 Fifth, because risk-factor studies and prediction-model studies serve distinct purposes, our ROC analyses should be interpreted as supportive assessments of discrimination and risk stratification rather than as formal prediction-model development.39–41,64 Future prediction-model studies integrating clinical, anthropometric, metabolic, proteomic, and ocular imaging features may facilitate the development of optimized risk-prediction models for these vision-threatening ocular diseases.92,93
+
+Conclusions
+
+This study identified distinct, disease-specific associations between the TyG index and major vision-threatening ocular diseases, demonstrating a reverse L-shaped pattern for cataract and DR, a J-shaped curve for AMD, and a U-shaped association for POAG, suggesting an estimated optimal range from 8.6 to 9.1. Our findings underscore the potential harm associated with elevated TyG-obesity indexes, particularly in relation to DR risk. As accessible and parsimonious markers of metabolic dysfunction and adiposity, TyG-related indexes may support preliminary risk stratification and inform targeted metabolic interventions aimed at preventing vision loss.
+
+Supplementary Material
+
+Supplement 1
+
+Acknowledgments
+
+The authors thank the participants of the UK Biobank. This research has been conducted using the UK Biobank Resource under the project number of 93118.
+
+Supported by research grants from the National Key Research and Development Program of China (2022YFC2502800, 2024YFC2510800), National Natural Science Foundation of China (82271069, 82371040, 82122017, 81870642, 81970780, 81470613 and 81670835), Science and Technology Innovation Action Plan of Shanghai Science and Technology Commission (23Y11909800), Outstanding Youth Medical Talents of Shanghai “Rising Stars of Medical Talents” Youth Development Program (20244Z0015), Shanghai Municipal Health Commission Project (2024ZZ1025 and 20244Z0015), Clinical Research Plan of Shanghai Shenkang Hospital Development Center (SHDC12026129).
+
+AI Disclosure Statements: The authors used ChatGPT (GPT-4; OpenAI) for minor language editing during manuscript preparation (March 2026). The AI tool was used solely for language polishing and did not contribute to the scientific content of the study. All outputs were reviewed and verified by the authors.
+
+Ethics Approval: The UK Biobank study is conducted in accordance with the principles of the Declaration of Helsinki and has received ethical approval from the North West Haydock Research Ethics Committee (#21/NW/0157). The project is registered under the Integrated Research Application System with the ID 299116. Informed consent was obtained from all individual participants during the recruitment process.
+
+Author Contribution Statements: X.Z. and Z.H. designed the study; Z.H., L.J. and J.X. curated the data and performed the formal analysis; Z.H., L.J. and J.X. performed the visualization; S.L. and Y.D. accessed and verified the underlying data; Z.H. and L.J. drafted the manuscript; X.Z. and Y.L. critically reviewed the manuscript. All authors approved the final version of the draft. All authors had full access to all the data in the study and X.Z. had final responsibility to submit for publication.
+
+Availability of Data and Materials: Data from the UK Biobank are available from the UK Biobank Institutional Data Access/Ethics Committee (contact via http://www.ukbiobank.ac.uk or contact by email at access@ukbiobank.ac.uk) for researchers who meet the criteria for access to confidential data.
+
+Disclosure: Z. Huang, None; L. Jian, None; J. Xiang, None; Y. Du, None; S. Liu, None; Y. Lu, None; X. Zhu, None
+
+
+References
+
+1. Collaborators GBaVI. Causes of blindness and vision impairment in 2020 and trends over 30 years, and prevalence of avoidable blindness in relation to VISION 2020: the Right to Sight: an analysis for the Global Burden of Disease Study. Lancet Glob Health. 2021; 9(2): e144–e160.33275949 10.1016/S2214-109X(20)30489-7 PMC7820391
+2. Trends in prevalence of blindness and distance and near vision impairment over 30 years: an analysis for the Global Burden of Disease Study. Lancet Glob Health. 2021; 9(2): e130–e143.33275950 10.1016/S2214-109X(20)30425-3 PMC7820390
+3. Macri CZ, Wong CX, Tu SJ, et al. Association of obesity and metabolic syndrome with incident primary open angle glaucoma in the UK Biobank. Clin Exp Ophthalmol. 2025; 53: 133–139.39557423 10.1111/ceo.14467
+4. Yang Y, Hayden MR, Sowers S, Bagree SV, Sowers JR. Retinal redox stress and remodeling in cardiometabolic syndrome and diabetes. Oxid Med Cell Longevity. 2010; 3: 392–403.10.4161/oxim.3.6.14786 PMC3154050 21307645
+5. Shang X, Zhu Z, Zhang X, et al. Adiposity by differing measures and the risk of cataract in the UK Biobank: the importance of diabetes. Invest Ophthalmol Vis Sci. 2021; 62(14): 19.10.1167/iovs.62.14.19 PMC8606797 34797907
+6. Rao H, Jalali JA, Johnston TP, Koulen P. Emerging roles of dyslipidemia and hyperglycemia in diabetic retinopathy: molecular mechanisms and clinical perspectives. Front Endocrinol. 2021; 12: 620045.10.3389/fendo.2021.620045 PMC8020813 33828528
+7. Zhang Q-Y, Tie L-J, Wu S-S, et al. Overweight, obesity, and risk of age-related macular degeneration. Invest Ophthalmol Visual Sci. 2016; 57: 1276.26990164 10.1167/iovs.15-18637
+8. Çalışkan B . Metabolic stress in exudative age-related macular degeneration: potential role of lipid index. Int Ophthalmol. 2025; 45: 281.40632162 10.1007/s10792-025-03665-5
+9. Saklayen MG . The global epidemic of the metabolic syndrome. Curr Hypertens Rep. 2018; 20(2): 12.29480368 10.1007/s11906-018-0812-z PMC5866840
+10. Petersen MC, Shulman GI. Mechanisms of insulin action and insulin resistance. Physiol Rev. 2018; 98: 2133–2223.30067154 10.1152/physrev.00063.2017 PMC6170977
+11. Tam CS, Xie W, Johnson WD, Cefalu WT, Redman LM, Ravussin E. Defining insulin resistance from hyperinsulinemic-euglycemic clamps. Diabetes Care. 2012; 35: 1605–1610.22511259 10.2337/dc11-2339 PMC3379600
+12. Stumvoll M, Goldstein BJ, van Haeften TW. Type 2 diabetes: principles of pathogenesis and therapy. Lancet. 2005; 365(9467): 1333–1346.15823385 10.1016/S0140-6736(05)61032-X
+13. Bonora E, Targher G, Alberiche M, et al. Homeostasis model assessment closely mirrors the glucose clamp technique in the assessment of insulin sensitivity: studies in subjects with various degrees of glucose tolerance and insulin sensitivity. Diabetes Care. 2000; 23: 57–63.10857969 10.2337/diacare.23.1.57
+14. Le DS, Brookshire T, Krakoff J, Bunt JC. Repeatability and reproducibility of the hyperinsulinemic-euglycemic clamp and the tracer dilution technique in a controlled inpatient setting. Metabolism. 2009; 58: 304–310.19217443 10.1016/j.metabol.2008.09.029 PMC2692526
+15. Nayak SS, Kuriyakose D, Polisetty LD, et al. Diagnostic and prognostic value of triglyceride glucose index: a comprehensive evaluation of meta-analysis. Cardiovasc Diabetol. 2024; 23: 310.39180024 10.1186/s12933-024-02392-y PMC11344391
+16. Zhang H, Tu Z, Liu S, et al. Association of different insulin resistance surrogates with all-cause and cardiovascular mortality among the population with cardiometabolic multimorbidity. Cardiovasc Diabetol. 2025; 24: 33.39844261 10.1186/s12933-025-02576-0 PMC11755928
+17. Liu K, Hu J, Huang Y, He D, Zhang J. Triglyceride-glucose-related indices and risk of cardiovascular disease and mortality in individuals with cardiovascular–kidney–metabolic (CKM) syndrome stages 0–3: a prospective cohort study of 282,920 participants in the UK Biobank. Cardiovasc Diabetol. 2025; 24: 277.40640813 10.1186/s12933-025-02842-1 PMC12243434
+18. Kurniawan LB . Triglyceride-glucose index as a biomarker of insulin resistance, diabetes mellitus, metabolic syndrome, and cardiovascular disease: a review. EJIFCC. 2024; 35: 44–51.38706737 PMC11063788
+19. Gastaldelli A . Measuring and estimating insulin resistance in clinical and research settings. Obesity. 2022; 30: 1549–1563.35894085 10.1002/oby.23503 PMC9542105
+20. Mohd Nor NS, Lee S, Bacha F, Tfayli H, Arslanian S. Triglyceride glucose index as a surrogate measure of insulin sensitivity in obese adolescents with normoglycemia, prediabetes, and type 2 diabetes mellitus: comparison with the hyperinsulinemic-euglycemic clamp. Pediatr Diabetes. 2016; 17: 458–465.26251318 10.1111/pedi.12303
+21. Yu R, Xie W, Peng H, et al. Diagnostic value of triglyceride-glucose index and related parameters in metabolism-associated fatty liver disease in a Chinese population: a cross-sectional study. BMJ Open. 2023; 13(9): e075413.10.1136/bmjopen-2023-075413 PMC10546149 37775293
+22. Xue Y, Xu J, Li M, Gao Y. Potential screening indicators for early diagnosis of NAFLD/MAFLD and liver fibrosis: triglyceride glucose index-related parameters. Front Endocrinol. 2022; 13: 951689.10.3389/fendo.2022.951689 PMC9478620 36120429
+23. Padovani A, Galli A, Bazzoli E, et al. The role of insulin resistance and APOE genotype on blood-brain barrier integrity in Alzheimer's disease. Alzheimers Dement. 2025; 21(2): e14556.39992249 10.1002/alz.14556 PMC11849409
+24. Cao H, Zhao Y, Chen Z, et al. Triglyceride-glucose index predicts cognitive decline and striatal dopamine deficiency in Parkinson disease in two cohorts. NPJ Parkinsons Dis. 2025; 11: 240.40804303 10.1038/s41531-025-01100-1 PMC12350777
+25. Hong S, Han K, Park CY. The insulin resistance by triglyceride glucose index and risk for dementia: population-based study. Alzheimers Res Ther. 2021; 13: 9.33402193 10.1186/s13195-020-00758-4 PMC7786939
+26. Wei B, Hu X, Shu BL, et al. Association of triglyceride-glucose index and derived indices with cataract in middle-aged and elderly Americans: NHANES 2005-2008. Lipids Health Dis. 2025; 24: 48.39953544 10.1186/s12944-025-02470-4 PMC11827319
+27. Neelam K, Aung KCY, Ang K, Tavintharan S, Sum CF, Lim SC. Association of triglyceride glucose index with prevalence and incidence of diabetic retinopathy in a Singaporean population. Clin Ophthalmol. 2023; 17: 445–454.36755892 10.2147/OPTH.S382336 PMC9901446
+28. Kahn SE, Hull RL, Utzschneider KM. Mechanisms linking obesity to insulin resistance and type 2 diabetes. Nature. 2006; 444(7121): 840–846.17167471 10.1038/nature05482
+29. Nolan CJ, Damm P, Prentki M. Type 2 diabetes across generations: from pathophysiology to prevention and management. Lancet. 2011; 378(9786): 169–181.21705072 10.1016/S0140-6736(11)60614-4
+30. Huang Y, Zhou Y, Xu Y, et al. Inflammatory markers link triglyceride-glucose index and obesity indicators with adverse cardiovascular events in patients with hypertension: insights from three cohorts. Cardiovasc Diabetol. 2025; 24: 11.39780176 10.1186/s12933-024-02571-x PMC11716003
+31. Zhou S, Yu Y, Zhang Z, et al. Association of obesity, triglyceride-glucose and its derivatives index with risk of hyperuricemia among college students in Qingdao, China. Front Endocrinol. 2022; 13: 1001844.10.3389/fendo.2022.1001844 PMC9583912 36277703
+32. Wu J, Lin X, Yin X, et al. Comparison of incidence of metabolic syndrome and five obesity- and lipid-linked indicators for predicting metabolic syndrome among normal-weight and overweight adults. Diabetes Metab Syndr Obes. 2024; 17: 3509–3520.39319305 10.2147/DMSO.S483497 PMC11421436
+33. Lim J, Kim J, Koo SH, Kwon GC. Comparison of triglyceride glucose index, and related parameters to predict insulin resistance in Korean adults: an analysis of the 2007-2010 Korean National Health and Nutrition Examination Survey. PloS One. 2019; 14(3): e0212963.30845237 10.1371/journal.pone.0212963 PMC6405083
+34. Dang K, Wang X, Hu J, et al. The association between triglyceride-glucose index and its combination with obesity indicators and cardiovascular disease: NHANES 2003–2018. Cardiovasc Diabetol. 2024; 23: 8.38184598 10.1186/s12933-023-02115-9 PMC10771672
+35. Elliott P, Peakman TC, Biobank UK. The UK Biobank sample handling and storage protocol for the collection, processing and archiving of human blood and urine. Int J Epidemiol. 2008; 37: 234–244.18381398 10.1093/ije/dym276
+36. Huang Z, Chen C, Meng J, et al. Associations among sleep duration, sleep quality, and age-related ocular diseases: insights from longitudinal and mediation analyses. Invest Ophthalmol Vis Sci. 2025; 66(11): 15.10.1167/iovs.66.11.15 PMC12347150 40767441
+37. Huang Z, Liu S, Chen C, Zhang K, Du Y, Zhu X. Optimizing serum 25(OH)D levels to mitigate the risk of age-related ocular diseases: insights from a large-scale prospective cohort study. Nutr J. 2025; 24: 88.40450331 10.1186/s12937-025-01156-y PMC12126878
+38. Chua SYL, Warwick A, Peto T, et al. Association of ambient air pollution with age-related macular degeneration and retinal thickness in UK Biobank. Br J Ophthalmol. 2021; 106: 705–711.33495162 10.1136/bjophthalmol-2020-316218
+39. Riley RD, Hayden JA, Steyerberg EW, et al. Prognosis Research Strategy (PROGRESS) 2: prognostic factor research. PLoS Med. 2013; 10(2): e1001380.23393429 10.1371/journal.pmed.1001380 PMC3564757
+40. Collins GS, Reitsma JB, Altman DG, Moons KG. Transparent Reporting of a multivariable prediction model for Individual Prognosis or Diagnosis (TRIPOD): the TRIPOD statement. Ann Intern Med. 2015; 162: 55–63.25560714 10.7326/M14-0697
+41. Moons KG, Altman DG, Reitsma JB, et al. Transparent reporting of a multivariable prediction model for Individual Prognosis or Diagnosis (TRIPOD): explanation and elaboration. Ann Intern Med. 2015; 162(1): W1–W73.25560730 10.7326/M14-0698
+42. Lee SJ, Smith AK, Diaz-Ramirez LG, et al. A novel metric for developing easy-to-use and accurate clinical prediction models: the time-cost information criterion. Med Care. 2021; 59: 418–424.33528231 10.1097/MLR.0000000000001510 PMC8026517
+43. Lee TC, Shah NU, Haack A, Baxter SL. Clinical implementation of predictive models embedded within electronic health record systems: a systematic review. Informatics. 2020; 7(3): 25.33274178 10.3390/informatics7030025 PMC7710328
+44. Schoeler T, Pingault JB, Kutalik Z. The impact of self-report inaccuracy in the UK Biobank and its interplay with selective participation. Nat Hum Behav. 2025; 9: 584–594.39695248 10.1038/s41562-024-02061-w PMC11936832
+45. Zekavat SM, Sekimitsu S, Ye Y, et al. Photoreceptor layer thinning is an early biomarker for age-related macular degeneration: epidemiologic and genetic evidence from UK Biobank OCT Data. Ophthalmology. 2022; 129: 694–707.35149155 10.1016/j.ophtha.2022.02.001 PMC9134644
+46. Li W, Schram MT, Berendschot T, et al. Type 2 diabetes and HbA(1c) are independently associated with wider retinal arterioles: the Maastricht study. Diabetologia. 2020; 63: 1408–1417.32385602 10.1007/s00125-020-05146-z PMC7286946
+47. Xiao X, Zhao J, Lin S, et al. Relationships between retinal vascular characteristics and systemic indicators in patients with diabetes mellitus. Invest Ophthalmol Vis Sci. 2025; 66(4): 72.10.1167/iovs.66.4.72 PMC12032846 40272369
+48. Ikram MK, Cheung CY, Lorenzi M, Klein R, Jones TL, Wong TY. Retinal vascular caliber as a biomarker for diabetes microvascular complications. Diabetes Care. 2013; 36: 750–759.23431093 10.2337/dc12-1554 PMC3579354
+49. Jabs DA, Van Natta ML, Trang G, et al. Association of systemic inflammation with retinal vascular caliber in patients with AIDS. Invest Ophthalmol Vis Sci. 2019; 60(6): 2218–2225.31108552 10.1167/iovs.18-26070 PMC6528842
+50. Reaven G . Insulin resistance, type 2 diabetes mellitus, and cardiovascular disease: the end of the beginning. Circulation. 2005; 112: 3030–3032.16286599 10.1161/CIRCULATIONAHA.105.504670
+51. Guo Z, Ma X, Zhang RX, Yan H. Oxidative stress, epigenetic regulation and pathological processes of lens epithelial cells underlying diabetic cataract. Adv Ophthalmol Pract Res. 2023; 3: 180–186.38106550 10.1016/j.aopr.2023.10.001 PMC10724013
+52. Yang M, Shangguan Q, Xie G, Sheng G, Yang J. Oxidative stress mediates the association between triglyceride-glucose index and risk of cardiovascular and all-cause mortality in metabolic syndrome: evidence from a prospective cohort study. Front Endocrinol. 2024; 15: 1452896.10.3389/fendo.2024.1452896 PMC11368748 39229375
+53. Antonetti DA, Klein R, Gardner TW. Diabetic retinopathy. N Engl J Med. 2012; 366: 1227–1239.22455417 10.1056/NEJMra1005073
+54. Perez VL, Caspi RR. Immune mechanisms in inflammatory and degenerative eye disease. Trends Immunol. 2015; 36: 354–363.25981967 10.1016/j.it.2015.04.003 PMC4563859
+55. Tang J, Kern TS. Inflammation in diabetic retinopathy. Prog Retin Eye Res. 2011; 30: 343–358.21635964 10.1016/j.preteyeres.2011.05.002 PMC3433044
+56. Kern PA, Ranganathan S, Li C, Wood L, Ranganathan G. Adipose tissue tumor necrosis factor and interleukin-6 expression in human obesity and insulin resistance. Am J Physiol Endocrinol Metab. 2001; 280(5): E745–E751.11287357 10.1152/ajpendo.2001.280.5.E745
+57. Zhang W, Mottillo EP, Zhao J, et al. Adipocyte lipolysis-stimulated interleukin-6 production requires sphingosine kinase 1 activity. J Biol Chem. 2014; 289: 32178–32185.25253697 10.1074/jbc.M114.601096 PMC4231693
+58. Chait A, den Hartigh LJ. Adipose tissue distribution, inflammation and its metabolic consequences, including diabetes and cardiovascular disease. Front Cardiovasc Med. 2020; 7: 22.32158768 10.3389/fcvm.2020.00022 PMC7052117
+59. Chen M, Luo C, Zhao J, Devarajan G, Xu H. Immune regulation in the aging retina. Prog Retin Eye Res. 2019; 69: 159–172.30352305 10.1016/j.preteyeres.2018.10.003 PMC6373845
+60. Ng Yin Ling C, Lim SC, Jonas JB, Sabanayagam C. Obesity and risk of age-related eye diseases: a systematic review of prospective population-based studies. Int J Obes. 2021; 45: 1863–1885.10.1038/s41366-021-00829-y 33963292
+61. Xuan W, Liu D, Zhong J, Luo H, Zhang X. Impacts of triglyceride glucose-waist to height ratio on diabetes incidence: a secondary analysis of a population-based longitudinal data. Front Endocrinol. 2022; 13: 949831.10.3389/fendo.2022.949831 PMC9354460 35937805
+62. Ren Q, Huang Y, Liu Q, Chu T, Li G, Wu Z. Association between triglyceride glucose-waist height ratio index and cardiovascular disease in middle-aged and older Chinese individuals: a nationwide cohort study. Cardiovasc Diabetol. 2024; 23: 247.38992634 10.1186/s12933-024-02336-6 PMC11241990
+63. Fu C, Li X, Wang Y, Chen J, Yang Y, Liu K. Association between triglyceride glucose index-related indices with gallstone disease among US adults. Lipids Health Dis. 2024; 23: 203.38937793 10.1186/s12944-024-02194-x PMC11210093
+64. Pencina MJ, D'Agostino RBSr., D'Agostino RBJr., Vasan RS. Evaluating the added predictive ability of a new marker: from area under the ROC curve to reclassification and beyond. Stat Med. 2008; 27: 157–172; discussion 207–212.17569110 10.1002/sim.2929
+65. Amiel SA . The consequences of hypoglycaemia. Diabetologia. 2021; 64: 963–970.33550443 10.1007/s00125-020-05366-3 PMC8012317
+66. Zeleznik OA, Kang JH, Lasky-Su J, et al. Plasma metabolite profile for primary open-angle glaucoma in three US cohorts and the UK Biobank. Nat Commun. 2023; 14: 2860.37208353 10.1038/s41467-023-38466-w PMC10199010
+67. Ma Y, Wu Y, Hu L, et al. Associations between serum lipids and glaucoma: a cohort study of 400 229 UK Biobank participants. Br J Ophthalmol. 2025; 109: 775–783.39904580 10.1136/bjo-2024-326062
+68. Madjedi KM, Stuart KV, Chua SYL, et al. The association between serum lipids and intraocular pressure in 2 large United Kingdom cohorts. Ophthalmology. 2022; 129: 986–996.35500606 10.1016/j.ophtha.2022.04.023 PMC10444694
+69. Jiang Y, Shen J, Chen P, et al. Association of triglyceride glucose index with stroke: from two large cohort studies and Mendelian randomization analysis. Int J Surg. 2024; 110: 5409–5416.38896856 10.1097/JS9.0000000000001795 PMC11392123
+70. Fleischman D, Berdahl JP, Zaydlarova J, Stinnett S, Fautsch MP, Allingham RR. Cerebrospinal fluid pressure decreases with older age. PLoS One. 2012; 7(12): e52664.23300737 10.1371/journal.pone.0052664 PMC3530461
+71. Berdahl JP, Fleischman D, Zaydlarova J, Stinnett S, Allingham RR, Fautsch MP. Body mass index has a linear relationship with cerebrospinal fluid pressure. Invest Ophthalmol Visual Sci. 2012; 53: 1422.22323469 10.1167/iovs.11-8220 PMC3339912
+72. Marshall H, Berry EC, Torres SD, et al. Association between body mass index and primary open angle glaucoma in three cohorts. Am J Ophthalmol. 2023; 245: 126–133.35970205 10.1016/j.ajo.2022.08.006
+73. Zhao X, Bo Q, Sun J, et al. The association between obesity and glaucoma in older adults: evidence from the China Health and Retirement Longitudinal Study. Epidemiol Health. 2023; 45: e2023034.36915268 10.4178/epih.e2023034 PMC10586925
+74. Fleischman D, Allingham RR. The role of cerebrospinal fluid pressure in glaucoma and other ophthalmic diseases: a review. Saudi J Ophthalmol. 2013; 27: 97–106.24227969 10.1016/j.sjopt.2013.03.002 PMC3809480
+75. Wang B, Tran H, Smith MA, et al. In-vivo effects of intraocular and intracranial pressures on the lamina cribrosa microstructure. PLos One. 2017; 12(11): e0188302.29161320 10.1371/journal.pone.0188302 PMC5697865
+76. Berdahl JP, Allingham RR, Johnson DH. Cerebrospinal fluid pressure is decreased in primary open-angle glaucoma. Ophthalmology. 2008; 115(5): 763–768.18452762 10.1016/j.ophtha.2008.01.013
+77. Morgan WH, Yu DY, Cooper RL, Alder VA, Cringle SJ, Constable IJ. The influence of cerebrospinal fluid pressure on the lamina cribrosa tissue pressure gradient. Invest Ophthalmol Visual Sci. 1995; 36: 1163–1172.7730025
+78. Wang N, Xie X, Yang D, et al. Orbital cerebrospinal fluid space in glaucoma: the Beijing intracranial and intraocular pressure (iCOP) study. Ophthalmology. 2012; 119: 2065–2073.22749084 10.1016/j.ophtha.2012.03.054
+79. McGuinness MB, Karahalios A, Kasza J, Guymer RH, Finger RP, Simpson JA. Survival bias when assessing risk factors for age-related macular degeneration: a tutorial with application to the exposure of smoking. Ophthalmic Epidemiol. 2017; 24: 229–238.28287849 10.1080/09286586.2016.1276934
+80. Mayeda ER, Banack HR, Bibbins-Domingo K, et al. Can survival bias explain the age attenuation of racial inequalities in stroke incidence? A simulation study. Epidemiology. 2018; 29: 525–532.29621058 10.1097/EDE.0000000000000834 PMC6289512
+81. Bentley-Lewis R, Koruda K, Seely EW. The metabolic syndrome in women. Nat Clin Pract Endocrinol Metab. 2007; 3: 696–704.17893688 10.1038/ncpendmet0616 PMC4428566
+82. July M, Faiz S, Yaqub A, et al. Role of adipokines and inflammatory markers in postmenopausal hypertension. Minerva Endocrinol. 2018; 43: 101–108.28565888 10.23736/S0391-1977.17.02595-0
+83. Wang XX, Myakala K, Libby AE, et al. Estrogen-related receptor agonism reverses mitochondrial dysfunction and inflammation in the aging kidney. Am J Pathol. 2023; 193: 1969–1987.37717940 10.1016/j.ajpath.2023.07.008 PMC10734281
+84. Wang J, Liu M, Hou W, et al. N-myc downstream-regulated gene 2 (Ndrg2): a critical mediator of estrogen-induced neuroprotection against cerebral ischemic injury. Mol Neurobiol. 2022; 59: 4793–4804.35622273 10.1007/s12035-022-02877-5
+85. Moreau KL, Clayton ZS, DuBose LE, Rosenberry R, Seals DR. Effects of regular exercise on vascular function with aging: Does sex matter? Am J Physiol Heart Circ Physiol. 2024; 326(1): H123–H137.37921669 10.1152/ajpheart.00392.2023 PMC11208002
+86. Shi Y, Yu C, Hu L, et al. Visceral adiposity index and sex differences in relation to peripheral artery disease in normal-weight adults with hypertension. Biol Sex Differ. 2022; 13: 22.35551654 10.1186/s13293-022-00432-4 PMC9102597
+87. Palmer BF, Clegg DJ. The sexual dimorphism of obesity. Mol Cell Endocrinol. 2015; 402: 113–119.25578600 10.1016/j.mce.2014.11.029 PMC4326001
+88. van Alten S, Domingue BW, Faul J, Galama T, Marees AT. Reweighting UK Biobank corrects for pervasive selection bias due to volunteering. Int J Epidemiol. 2024; 53(3): dyae054.38715336 10.1093/ije/dyae054 PMC11076923
+89. Schoeler T, Speed D, Porcu E, Pirastu N, Pingault JB, Kutalik Z. Participation bias in the UK Biobank distorts genetic associations and downstream analyses. Nat Hum Behav. 2023; 7: 1216–1227.37106081 10.1038/s41562-023-01579-9 PMC10365993
+90. Fry A, Littlejohns TJ, Sudlow C, et al. Comparison of sociodemographic and health-related characteristics of UK Biobank participants with those of the general population. Am J Epidemiol. 2017; 186: 1026–1034.28641372 10.1093/aje/kwx246 PMC5860371
+91. Copeland KT, Checkoway H, McMichael AJ, Holbrook RH. Bias due to misclassification in the estimation of relative risk. Am J Epidemiol. 1977; 105: 488–495.871121 10.1093/oxfordjournals.aje.a112408
+92. Dai L, Sheng B, Chen T, et al. A deep learning system for predicting time to progression of diabetic retinopathy. Nat Med. 2024; 30: 584–594.38177850 10.1038/s41591-023-02702-z PMC10878973
+93. Yang S, Xin Z, Xiong R, et al. Proteome atlas for mechanistic discovery and risk prediction of diabetic retinopathy. Nat Commun. 2025; 16(1): 9636.41173922 10.1038/s41467-025-64634-1 PMC12578989

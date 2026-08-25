@@ -1,0 +1,352 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: J Pharm Anal
+Journal ID: J Pharm Anal
+NLM Journal ID: 101579451
+
+Journal of Pharmaceutical Analysis
+
+ISSN: 2095-1779
+EISSN: 2214-0883
+Publisher: Xi'an Jiaotong University
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499481
+PMID: 42633271
+DOI: 10.1016/j.jpha.2026.101590
+Article ID: S2095-1779(26)00045-6
+Article ID: 101590
+Article version: 1
+Subjects: Original Article
+
+NAT10 aggravates psoriasis by promoting keratinocytes fatty acid synthesis via stable FASN transcription
+
+Tang Weibo a b 1
+Shen Jingling c 1
+Liu Jiaxin b 1
+Jiang Chunhui a
+Liu Wenya a
+Xiao Mengyao a
+Dai Jindan a
+Gao Wenjie a
+Lu Junjie a
+Hu Chunyi a
+Song Yonghuan d
+Xu Ye xuye@jlmu.edu.cn b ⁎⁎⁎
+Zhu Zhongxin zhongxinzhu@wmu.edu.cn a ⁎⁎
+Cong Weitao cwt97126@wmu.edu.cn a ⁎
+a State Key Laboratory of Macromolecular Drugs and Large-scale Manufacturing, School of Pharmaceutical Science, Wenzhou Medical University, Wenzhou, Zhejiang, 325000, China
+b Translational Medicine Laboratory, Jilin Medical University, Jilin, Jilin, 132013, China
+c Institute of Life Sciences, College of Life and Environmental Sciences, Wenzhou University, Wenzhou, Zhejiang, 325000, China
+d Department of Orthopaedics, The Second Affiliated Hospital and Yuying Children's Hospital of Wenzhou Medical University, Wenzhou, Zhejiang, 325027, China
+⁎ Corresponding author. cwt97126@wmu.edu.cn⁎⁎ Corresponding author. zhongxinzhu@wmu.edu.cn⁎⁎⁎ Corresponding author. xuye@jlmu.edu.cn1 These authors contributed equally to this work.
+
+Print publication date: 2026 Sep
+Electronic publication date: 2026 Feb 17
+Volume: 16
+Issue: 9
+Electronic Location ID: 101590
+Received 2025 Sep 27; Revised 2026 Feb 14; Accepted 2026 Feb 15
+Copyright: © 2026 The Authors
+Copyright year: 2026
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: NAT10, Psoriasis, Proliferation, Fatty acid synthase, ac4C modification
+
+==============================
+RNA modifications have emerged as critical regulators of cellular function and disease pathogenesis; however, their contribution to psoriasis remains unclear. Here, we report that N-acetyltransferase 10 (NAT10) expression is markedly elevated in the epidermis of patients with psoriasis and in imiquimod (IMQ)-induced lesions. Single-cell RNA sequencing further identifies NAT10 upregulation in hyperproliferative and basal keratinocyte subsets. Keratinocyte-specific deletion of NAT10 attenuates IMQ-induced psoriatic phenotypes in mice. Integrative profiling of RNA sequencing and N4-acetylcytidine (ac4C) immunoprecipitation sequencing reveals fatty acid synthase (FASN) as a direct downstream target of NAT10. Mechanistically, NAT10 catalyzes ac4C RNA modification to enhance the stability of FASN mRNA, thereby driving fatty acid metabolic reprogramming and promoting keratinocyte proliferation. This metabolic shift contributes to epidermal hyperplasia and inflammation in psoriasis. Notably, pharmacological inhibition of NAT10 with remodelin alleviates disease severity in vivo and in vitro. Together, these findings identify a NAT10-dependent ac4C regulatory axis that links epitranscriptomic control to metabolic dysregulation in keratinocytes and highlight NAT10 as a promising therapeutic target for psoriasis.
+
+Graphical abstract
+
+N-acetyltransferase 10 (NAT10) aggravates psoriasis by promoting keratinocytes fatty acid synthesis via stable fatty acid synthase (FASN) transcription. NAT10 regulates keratinocyte proliferation via N4-acetylcytidine (ac4C) modification. The transcriptional and translational levels of NAT10 are significantly increased during the onset of psoriasis. Overexpressed NAT10 directly interacts with its downstream target gene FASN, enhancing the stability of FASN mRNA and promoting fatty acid synthesis. This process, in turn, regulates keratinocyte hyperproliferation.Image 1
+
+Highlights
+
+• NAT10 and ac4C are elevated in psoriatic keratinocytes.
+
+• NAT10 stabilizes FASN mRNA via ac4C to drive fatty acid metabolic reprogramming.
+
+• Genetic or pharmacological inhibition of NAT10 alleviates psoriatic pathology.
+
+1 Introduction
+
+Psoriasis, affecting approximately 2%−5% of the global population, is a chronic inflammatory skin disorder characterized by immune-cell infiltration, epidermal hyperproliferation, and aberrant keratinocyte differentiation [[1], [2], [3]]. Keratinocytes actively contribute to both the initiation and exacerbation of psoriasis through uncontrolled proliferation and impaired differentiation. Despite substantial research advances, there remains an urgent need to identify robust genetic biomarkers to improve early diagnosis and therapeutic intervention [4].
+
+Emerging evidence indicates that dysregulated fatty acid metabolism plays a critical role in keratinocyte dysfunction [5,6]. Fatty acid synthase (FASN), a rate-limiting enzyme in de novo lipogenesis, is frequently overexpressed in multiple cancers and participates in energy storage, membrane biogenesis, and intracellular signaling. Aberrant FASN activity modulates downstream pathways, including mechanistic target of rapamycin (mTOR) signaling, thereby enhancing tumor growth, invasion, and cellular stemness [7,8]. Altered lipid metabolism has also been implicated in psoriasis-like inflammation and epidermal abnormalities [[9], [10], [11]]; however, the specific contribution of FASN to psoriatic pathogenesis remains insufficiently defined.
+
+Epigenetic regulation provides an additional layer of metabolic control [[12], [13], [14]]. Among these mechanisms, RNA modifications, particularly N4-acetylcytidine (ac4C), have emerged as key modulators of gene expression by stabilizing mRNA transcripts and enhancing translation efficiency. N-acetyltransferase 10 (NAT10), the sole known mammalian ac4C “writer”, has been implicated in cancer progression [15,16], stem-cell maintenance, and cellular stress responses [17]. Nevertheless, its relevance to psoriasis has not been previously explored.
+
+In this study, we identified a previously unrecognized NAT10-dependent mechanism underlying psoriatic pathology. NAT10 expression was markedly elevated and displayed cellular heterogeneity in patient lesions, with enrichment in hyper-proliferative and basal keratinocyte subsets based on single-cell RNA sequencing analysis. Keratinocyte-specific NAT10 ablation or pharmacological inhibition using remodelin significantly mitigated psoriasis-like dermatitis in mouse models. Mechanistically, NAT10 enhanced ac4C modification of FASN mRNA, thereby promoting its stability and translation. This NAT10-mediated elevation of FASN drove increased fatty acid synthesis, metabolic reprogramming, and excessive lipid accumulation, ultimately supporting hyperproliferation of keratinocytes and amplifying disease progression.
+
+Collectively, our findings reveal NAT10 as a critical regulator of FASN-driven lipid metabolic reprogramming in keratinocytes and highlight both NAT10 and FASN as promising therapeutic targets for psoriasis.
+
+2 Materials and methods
+
+2.1 Ethical compliance
+
+2.1.1 Human research
+
+The study was conducted in accordance with the ethical principles of the Declaration of Helsinki (1975). Human skin samples from psoriasis patients and healthy control were from the First Affiliated Hospital of Wenzhou Medical University. All procedures were performed in compliance with relevant laws and institutional guidelines with ethical approval (Approval number: KY2021-106) for researcher-initiated clinical research. The donors (or their relatives) of the samples used in this study provided written informed consent.
+
+2.1.2 Animal experimentation
+
+The Nat10flox/flox mouse line was previously reported and was kindly provided by Zhejiang University (Approval number: ZJU20210252 to H.-Y.F.) and was generated and supplied by GemPharmatech Co., Ltd. (Nanjing, China). KRT14-CreERT2 mice were obtained from Shanghai Model Organisms Center, Inc (Shanghai, China). Male C57BL/6 mice were obtained from Shanghai Slac Laboratory Animal Co., Ltd. (Shanghai, China). All the animals were maintained under pathogen-free conditions. The facility maintained a controlled temperature environment with 12-h light/dark cycles, and the animals had ad libitum access to food and water. All experimental procedures were approved by the Institutional Animal Care and Use Committee at Wenzhou Medical University (Approval number: xmsq2023-0369).
+
+2.2 Cell clustering and cell type annotation
+
+Single-cell transcriptomic data from GSE162183, including skin samples from three healthy donors (two male, one female) and three psoriasis patients (two male, one female), were analyzed using Seurat v3.1.2. Gene expression matrices were normalized, variable features identified, and data scaled. Principal component analysis (PCA) was performed on variable genes, followed by uniform manifold approximation and projection (UMAP) and t-distributed stochastic neighbor embedding (t-SNE) for dimensionality reduction. Cell clustering was conducted using FindNeighbors and FindClusters, and marker genes were identified with FindAllMarkers. Cell types were annotated by comparing cluster-specific markers with canonical signatures. Disease composition was calculated as the proportion of each cell type per condition. Differential expression was assessed using FindMarkers. Abundant populations were further subclustered and annotated based on known lineage markers. Gene expression patterns were additionally examined using psoriasis datasets (GDS4602/217884_at and GDS4807/A_23_P87329) to support prediction and interpretation of disease-related transcriptional changes.
+
+2.3 Adeno-associated virus (AAV) production
+
+AAV9-GFP or AAV9-Cre vector virus driven by the keratinocyte-specific Krt14 promoter (Genechem, Shanghai, China) were injected subcutaneously into the dorsal skin using a 35-gauge needle. Six injections of ∼10 μL each (1.2 × 1013 vg total) were administered every other day. Gene knockdown in epidermal tissue was verified three weeks later by immunofluorescence and Western blot.
+
+2.4 Topical remodelin administration
+
+The remodelin formulation (Sellect, Beijing, China) was dissolved in dimethyl sulfoxide (DMSO) and diluted with physiological saline. It was administered subcutaneously via a 35-gauge needle, based on mouse body weight (final concentration 1.0 mg/kg), once daily for 21 consecutive days (chronic model injected for 14 consecutive days). The control group received the same solvent without the inhibitor. The final cell therapy concentration of remodelin was 40 μM. The effect of functional inhibition was ultimately determined by detecting the expression level of ac4C in skin tissue or cultured cells proteins.
+
+2.5 Cell culture
+
+HaCaT cells (Cat. No.: CVCL_0038, Procell, Wuhan, China) were cultured in minimal essential medium (MEM) (Cat. No.: PM150478, Procell, Wuhan, China). Normal human epidermal keratinocytes (NHEK) were acquired from the American Type Culture Collection (ATCC; PS-200-010, Manassas, VA, USA) and were grown in dermal cell basal medium (Cat. No.: PCS-200-030, ATCC, Manassas, VA, USA). Human embryonic kidney 293T (HEK293T) cells, also purchased from ATCC (Cat. No.: CRL-1573), were maintained in Dulbecco's modified Eagle's medium (DMEM) (Cat. No.: 26010074, Gibco, Shanghai, China). All cell culture media were supplemented with 10% (v/v) fetal bovine serum (FBS) (Cat. No.: 15140122, Thermo Fisher Scientific, Shanghai, China) to support cell growth. The cells were incubated under standard conditions at 37 °C with 5% CO2 to maintain a physiologically relevant environment conducive to their growth and proliferation. Actinomycin D (Sellect, Beijing, China) or cycloheximide (Sellect, Beijing, China) was dissolved in DMSO to prepare a 1000 × concentrated stock solution, and the final concentration in the culture medium was 5 μg/mL or 40 μM, respectively.
+
+2.6 Induction of the in vitro and in vivo psoriatic models
+
+Cells were stimulated with a cytokine mixture M5 (10 ng/mL each of interleukin-17A (IL-17A), oncostatin M (OSM), tumor necrosis factor-alpha (TNF-α), interleukin-22 (IL-22), and interleukin-1 alpha (IL-1α); Prospec Protein Specialists, Beijing, China) in medium supplemented with 2% FBS to simulate psoriasis in vitro. The animal model used was the imiquimod (IMQ)-induced psoriasis mouse model. Mice were shaved and treated with Aldara cream containing 5% IMQ cream (Sichuan Ming Xin Pharmaceutical, Chengdu, China), 55 mg for 5 consecutive days. A chronic psoriasis-like mouse model was induced by subcutaneous administration of interleukin-23 (IL-23; eBioscience, San Diego, CA, USA) (500 ng/day/mouse) for 14 consecutive days [18].
+
+2.7 Co-culture of primary fibroblasts and keratinocytes
+
+Fibroblasts and keratinocytes were isolated from sterile skin samples collected from either volunteers or patients. The skin fragments were minced and digested overnight with a 0.5% dispase II solution (Gibco, Shanghai, China), followed by rapid separation of the dermal layer. Culture flasks were pre-coated with FBS before seeding the cells. Once the tissue adhered to the flask, the skin was removed, and fibroblast growth medium (DMEM supplemented with 10% FBS) was added. After fibroblasts have migrated out of the explants on day 4−5, the medium was replaced with Eagle's minimum essential medium (EMEM) supplemented with 10% FBS.
+
+2.8 Plasmid construction, lentivirus production, and cell transduction
+
+The overexpression plasmids designed for lentivirus-mediated NAT10 expression interference were synthesized, annealed, and cloned by Limibio (Hefei, China). A site-directed mutant plasmid (NAT10G641E) was obtained from Genechem (Shanghai, China), and primer sequences for plasmid construction are listed in Table S1. The NAT10 wild-type (NAT10Flag) and NAT10G641E expression plasmids were constructed in the GV230 vector. All siRNAs were designed and synthesized by Limibio (Hefei, China), and their sequences are provided in Table S1. Cell transduction was performed using the D-Nano Therapeutics Transfection Kit and CALNPTM RNAi in vitro transfection reagent (D-Nano Therapeutics, Beijing, China) according to the manufacturer's instructions. To generate a stable cell line expressing NAT10, the NAT10 coding sequence was inserted into the GV230 vector by Genechem (Shanghai, China). Approximately 10 single-cell-derived clones were established and confirmed by polymerase chain reaction (PCR), with transduction efficiency verified by Western blot.
+
+2.9 RNA isolation, cDNA preparation, and quantitative real-time PCR (qRT-PCR)
+
+The total RNA from skin tissue or cells was extracted using TRIzol reagent (Cat. No.: 15596018, Thermo Fisher Scientific, Shanghai, China) following the guidelines provided by the manufacturer. Reverse transcription was carried out using ReverTra Ace® qPCR RT Master Mix (Vazyme, Nanjing, China) as per the manufacturer's instructions. qRT-PCR was performed using SYBR Green Master Mix (Vazyme, Nanjing, China). The mRNA expression levels of the analyzed genes were normalized to the reference gene and quantified using the 2−ΔΔCt method. The primer sequences used for PCR amplification are provided in Table S1.
+
+2.10 Western blot analysis
+
+Total protein was extracted from keratinocytess or epidermal tissue using radioimmunoprecipitation assay (RIPA) buffer (Beyotime, Shanghai, China). Protein concentration was determined using the BCA Protein Assay Kit (Cat. No.: 23228, Thermo Fisher Scientific, Shanghai, China). Protein lysates were separated by sodium dodecyl sulfatepolyacrylamide gel electrophoresis (SDS-PAGE) and transferred to nitrocellulose membranes (Millipore, Bedford, MA, USA). After blocking, membranes were incubated with primary antibodies overnight at 4 °C, followed by secondary antibody incubation. Protein expression was visualized using an ImageQuant LAS 4000 system. The primary antibodies used in this study are listed in Table S2.
+
+2.11 RNA ac4C dot blot
+
+To detect ac4C-modified RNA, total RNA was isolated and transferred onto a nylon membrane. The membrane was blocked with 5% milk for 1 h, then incubated overnight at 4 °C with an anti-ac4C antibody (Abcam, Cambridge, UK). After washing three times with phosphate-buffered saline (PBS)/0.05% Tween-20, the membrane was incubated with horseradish peroxidase (HRP)-conjugated anti-rabbit IgG (ZSGB-Bio, Beijing, China). Signals were detected using a ChemiDoc MP system (Bio-Rad Laboratories, Hercules, CA, USA), and membrane loading was normalized by methylene blue staining.
+
+2.12 RNA electrophoretic mobility shift assay (RNA-EMSA) analysis
+
+For RNA-EMSA, 5% polyacrylamide gels were prepared with 10 × tris-borate- ethylenediaminetetraacetic acid (TBE), diethyl pyrocarbonate (DEPC) water, 40% acrylamide/bisacrylamide, 20% glycerol, 10% ammonium persulfate, and N,N,N′,N′-tetramethylethylenediamine (TEMED). Binding reactions (20 μL) included 10 × binding buffer, RNase inhibitor, tRNA, biotin-labeled probe, and/or cell lysates, incubated at 37 °C for 60 min. Electrophoresis was run in 0.5 × TBE, followed by semi-dry transfer to nylon membranes. UV cross-linking (254 nm, 0.15 J/cm2) and chemiluminescence detection with streptavidin-HRP and enhanced chemiluminescence (ECL) plus reagent (Vazyme, Nanjing, China) were performed for imaging.
+
+2.13 Gene ontology (GO) enrichment analysis and gene set enrichment analyses (GSEA)
+
+GSEA and GO functional enrichment (over-representation) of differential gene expression (DEGs) at P < 0.05 were analyzed using the R package clusterProfiler version 3.18.1. A cutoff-adjusted P value of 0.05 was used to filter the significant enrichment results.
+
+2.14 Protein-nucleic acid docking and analysis of protein-nucleic acid interactions
+
+Based on the RNA1F base sequence and protein amino acid sequence, structure prediction was performed using AlphaFold3, and the structure ranked first based on predicted local distance difference test (pLDDT) value was selected as the experimental model. Protein-nucleic acid docking was performed using a local HDOCKlite v1.1 server. The protein-ligand interaction profiler (PLIP) interaction analysis platform was used to comprehensively describe and systematically analyze the binding interface of the protein-nucleic acid complex. Further details regarding the interaction were supplemented using pyMOL.
+
+2.15 Immunohistochemistry and immunofluorescence
+
+Skin sections were fixed, embedded, and sliced, followed by dewaxing with xylene, rehydration, and antigen retrieval. Primary antibodies were applied overnight at 4 °C, and secondary antibodies (Cat. No.: PV-6000, ZSGB-Bio, Beijing, China) were applied the next day. Sections were then stained with 3,3′-diaminobenzidine (DAB) and hematoxylin, imaged, and analyzed. For cells, fixation with 4% paraformaldehyde (PFA) for 10 min at room temperature was followed by PBS with Triton X-100 (PBST) washes. After dewaxing, rehydration, and antigen retrieval, cells were blocked for 1 h at room temperature, then incubated with primary antibodies overnight at 4 °C. Following three PBST washes, secondary antibodies were applied for 1 h at room temperature, and nuclei were counterstained with 4′,6-diamidino-2-phenylindole (DAPI). Primary and secondary antibodies are listed in Table S2.
+
+2.16 5-Ethynyl-2′-deoxyuridine (EdU) assay
+
+Cell proliferation was assessed using a cytochemical assay, as per the manufacturer's protocol (Beyotime, Shanghai, China). HaCaT cells were first incubated with EdU staining buffer (Beyotime, Shanghai, China) for 2 h to allow incorporation into newly synthesized DNA. Following the incubation, cells were fixed with 4% PFA to preserve cellular structures. The cell nuclei were then stained with DAPI for visualization. After staining, the cells were examined and imaged using a microscope to evaluate proliferation levels.
+
+2.17 RNA sequencing (RNA-seq)
+
+RNA-seq was performed at Guangzhou Epibiotek (Guangzhou, China). Total RNA was isolated using Trizol reagent (Invitrogen, Carlsbad, CA, USA). VAHTS Stranded mRNA-seq Library Prep Kit for Illumina V2 (Cat. No.: NR612-02, Vazyme, Nanjing, China) was used for library preparation according to the instructions. Reads were aligned to the human ensemble genome GRCh38 using Hisat2 aligner (v2.1.0) under parameters: “RNA-strandness RF”. The reads mapped the genome were calculated using feature Counts (v1.6.3). DEGs analysis was performed using the DESeq2 R-package. Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway and GO terms enrichment analysis of DEGs were carried out by cluster Profiler R Bioconductor package with a P-value <0.05 as statistically significant cutoffs.
+
+2.18 Cell cycle flow cytometry
+
+Cells were dissociated into single-cell suspensions using 0.05% trypsin and washed with PBS. The cells were fixed with 70% alcohol for 30 min, washed with PBS, and incubated with propidium iodide (PI) staining solution (Beyotime, Shanghai, China) for 30 min. Flow cytometry was performed using a CytoFLEX flow cytometer (Beckman Coulter, Brea, CA, USA), and data were analyzed using FlowJo_v10.8.1 software.
+
+2.19 RNA and protein stability assay
+
+To evaluate RNA and protein stability, cells were treated with actinomycin D (Act-D) to inhibit transcription or cycloheximide (CHX) to block translation. Samples were collected at different time points post-treatment for qRT-PCR and Western blot analysis.
+
+2.20 Co-immunoprecipitation (Co-IP)
+
+Cells were lysed with ice-cold IP buffer (Cat. No.: P10013J, Beyotime, Shanghai, China) with phenylmethylsulfonyl fluoride (PMSF). Total lysates (200 μg) were incubated with primary antibodies (1 μg) overnight at 4 °C with gentle shaking followed by protein A/G magnetic beads (Thermo Fisher Scientific, Shanghai, China) for 4 h. Then the co-IP complexes were boiled with sodium dodecyl sulfate (SDS) loading buffer at 95 °C for 10 min, followed by Western blot.
+
+2.21 ac4C-RNA immunoprecipitation sequencing (acRIP-seq)
+
+In brief, 4 μg of anti-ac4 C antibody (Abcam, Cambridge, UK) was prebound to 25 μL of Dyna beads protein G (Invitrogen, Carlsbad, CA, USA) in PBS at room temperature for 1 h. RNA fragments were incubated with an anti-ac4C antibody (Abcam, Cambridge, UK) or IgG (Abcam, Cambridge, UK). The RNA-antibody-beads complex was then washed with IP buffer for three times, and ac4 C-containing RNAs were lastly eluted with ac4 cytidine triphosphate (CTP) nucleoside. Both input and IP products were subjected to library construction for ac4C enrichment analysis by qRT-PCR. The libraries were generated and sequenced according to the manufacturer's protocol (Epibiotek, Guangzhou, China).
+
+2.22 Nuclear and cytoplasmic separation
+
+Nuclear and cytoplasmic fractions were isolated using the Nuclear and Cytoplasmic Extraction Kit (Millipore Sigma, Burlington, MA, USA). Protein fractions were analyzed by Western blot to assess the localization of specific proteins, using glyceraldehyde-3-phosphate dehydrogenase (GAPDH) and lamin B1 as cytoplasmic and nuclear marker.
+
+2.23 Statistical analyses
+
+All statistical analyses in this study were performed with GraphPad Prism 9.0 (GraphPad Software, San Diego, CA, USA). All data are expressed as the mean ± standard error of the mean (SEM). Statistical analyses used two-tailed student unpaired t-test for comparisons between two groups, and one-way analysis of variance (ANOVA) followed by Tukey's multiple comparison test for comparisons between multiple groups. P < 0.05 is considered to be statistically significant.
+
+3 Results
+
+3.1 NAT10 is increased in the epidermis of patients with psoriasis
+
+To investigate NAT10 expression in psoriasis, we first examined skin tissues from patients clinically diagnosed with the disease. Immunohistochemistry analysis of clinical psoriasis patient tissues demonstrated that NAT10 expression was significantly higher in psoriasis epidermis (Figs. 1A–C). Consistently, analysis of gene expression omnibus (GEO) datasets showed upregulated NAT10 expression in psoriasis, although some inter-dataset variability was observed (Figs. 1D and S1A). To further assess cellular heterogeneity, we analyzed single-cell RNA-sequencing (scRNA-seq) datasets derived from psoriatic skin and identified eight major cell clusters (Figs. 2A and S1B). The relative abundance of these populations differed between healthy and psoriatic skin (Figs. 2B and C). Among them, keratinocytes and fibroblasts displayed significant alterations in abundance (Fig. 2D), with enhanced intercellular interactions demonstrated by CellChat analysis (Fig. 2E). To experimentally validate these interactions, we evaluated the clonogenic potential of primary skin cell explants (Fig. S1C). Immunofluorescence further indicated that the presence of fibroblasts between explants promoted keratinocyte clonal expansion (Figs. 2F and S1D). However, no significant changes in GCN5-related N-acetyltransferase (GNAT) family gene transcription were observed in fibroblasts, melanocytes, T cells, or macrophages (Figs. 2G–J). Given that aberrant keratinocyte proliferation is a hallmark of psoriasis [19], we subsequently performed keratinocyte sub-clustering and identified four main subtypes (Figs. 2K and S1E). We next compared the expression of GNAT family members across these subpopulations (Fig. 2L). NAT10 exhibited the highest expression in basal (Fig. 2M) and hyperproliferative keratinocytes (Fig. 2N). Collectively, these results demonstrate that NAT10 expression is elevated in keratinocytes with high proliferative potential in psoriatic epidermis.Fig. 1 Immunohistochemical analysis of N-acetyltransferase 10 (NAT10) expression in human skin tissues. (A) Representative images of NAT10 staining in skin samples from healthy donors (Healthy 1–4) and patients with psoriasis (Psoriasis 1–4). (B) Quantification of epidermal (Epi) thickness in healthy and psoriatic skin tissues (n = 5). (C) Semi-quantitative analysis of NAT10 immunostaining intensity in the epidermis of healthy skin and psoriatic lesions (n = 5). (D) Transcript levels of NAT10 derived from the public dataset (GDS4602/217884_at). Data are presented as mean ± standard error of the mean (SEM). ∗∗P < 0.01; ∗∗∗∗P < 0.0001. Der: dermis; GDS: gene expression omnibus (GEO) dataset; GSM: GEO sample.
+
+Fig. 1
+
+Fig. 2 Cell type identification by single-cell RNA sequencing (scRNA-seq) analysis of skin in psoriasis patients. (A) Uniform manifold approximation and projection (UMAP) plots for cellular heterogeneity with eight distinct cell clusters identified and color-coded among the total samples. (B) UMAP projection comparing the cell type clusters in control (Ctrl) and psoriasis (Pso) samples. (C) Analysis of expression ratio differences between each cell type. (D) Bar plots illustrating the proportion of major cell lineages. (E) Visualization of global intercellular communication network inferred by CellChat analysis. (F) Co-culture of fibroblasts and keratinocytes to assess the influence of fibroblasts on keratinocyte proliferation (n = 5). (G) Volcano plot of differentially expressed genes in fibroblasts from psoriatic skin vs. normal controls. (H) Volcano plot of differentially expressed genes in melanocytes from psoriatic skin vs. normal controls. (I) Volcano plot of differentially expressed genes in T cells from psoriatic skin vs. normal controls. (J) Volcano plot of differentially expressed genes in macrophages from psoriatic skin vs. normal controls. (K) T-distributed stochastic neighbor embedding (t-SNE) plot displaying keratinocytes single cells profiled, color-coded by clusters. (L) Normalized expression of marker genes is color coded and projected on the t-SNE plot to identify each cell cluster. (M) N-acetyltransferase 10 (NAT10) expression in basal versus non-basal keratinocyte populations. Normalized expression levels are significantly higher in basal keratinocytes. (N) NAT10 expression across distinct keratinocyte subtypes, including basal, differentiating, hyperproliferative, and stress-response subtypes. HDF: human dermal fibroblasts; NHEK: normal human epidermal keratinocytes; NS: not significant; FC: fold change.
+
+Fig. 2
+
+3.2 Upregulated NAT10 and ac4C modification in psoriasis-like models
+
+To investigate the association between psoriasis and NAT10, we established a mouse model of dermatitis using IMQ to closely mimic human psoriasis (Figs. S2A-D). Western blot analysis further revealed markedly increased NAT10 expression in IMQ-induced psoriasis-like mice compared with normal controls (Fig. 3A). A progressive increase in NAT10 expression was observed at various disease progression time points (Figs. 3B and C). Consistently, immunofluorescence analysis demonstrated that NAT10 primarily colocalized with keratinocytes (Fig. 3D), but not macrophages, melanocytes, and T cells (Figs. S2E–G). We examined NAT10 expression in psoriasis-like keratinocytes (HaCaT) stimulated in vitro with the M5 cytokine cocktail, and observed a marked upregulation at both the mRNA and protein levels (Figs. 3E and F), further validated by immunofluorescence analysis (Fig. S2H). Primary keratinocytes NHEK treated with M5 also showed increased NAT10 expression (Fig. 3G). Additionally, Western blot analysis revealed that NAT10 expression was significantly elevated in keratinocytes co-cultured with fibroblasts derived from scleroderma patients (Fig. 3H). Furthermore, NAT10 protein levels were increased in HaCaT cells treated with secretion-conditioned medium (Figs. S2I and J). Consistent with the fact that NAT10 is the only known enzyme responsible for catalyzing ac4C modification [20], dot blot assays demonstrated a marked increase in ac4C abundance in IMQ-induced skin lesions (Fig. S2K). Together, these findings suggest that NAT10 expression and ac4C modification are heightened in psoriasis-like models.Fig. 3 Upregulated N-acetyltransferase 10 (NAT10) expression in in vitro and in vivo psoriasis models. (A) Western blot and gray value analysis of NAT10, keratin 10 (K10), proliferating cell nuclear antigen (PCNA), and interleukin-6 (IL-6) protein expression (n = 6). (B) Time-course immunohistochemical analysis of NAT10 and PCNA expression in a mouse model of psoriasis induced by imiquimod cream (IMQ) (n = 5). (C) Western blot and gray value analysis of NAT10 protein expression (n = 3). (D) Immunofluorescence staining was conducted to evaluate the colocalization of NAT10 with the keratinocyte differentiation marker keratin 14 (KRT14). (E) Expression analysis of NAT10 protein in an cytokine mixture M5 (M5)-induced in vitro model of psoriasis (n = 3). (F) Expression analysis of NAT10 mRNA in an M5-induced in vitro model of psoriasis (n = 3). (G) Western blot and gray value analysis of NAT10 and inflammatory proliferation-related protein expression (n = 5). (H) Knockdown of NAT10 significantly reduced inflammatory proliferation-related genes protein expression in normal human epidermal keratinocytes (NHEK). Error bars represent the mean ± standard error of the mean (SEM). ∗P < 0.05; ∗∗P < 0.01; ∗∗∗P < 0.001; ∗∗∗∗P < 0.0001. Ctrl: control; Epi: epidermis; Der: dermis; si-NAT10: small interfering RNA of NAT10.
+
+Fig. 3
+
+3.3 NAT10 facilitates the keratinocyte proliferation in vitro
+
+To investigate the role of NAT10 in psoriasis pathogenesis, we first silenced NAT10 in HaCaT cells (Fig. S3A). Western blot analysis showed that NAT10 knockdown markedly reduced cyclin A1, cyclin A1, interleukin-6 (IL-6), and proliferating cell nuclear antigen (PCNA) protein levels (Fig. 4A), which was further supported by immunofluorescence analysis of Ki67 and PCNA (Figs. 4B and C). EdU incorporation assays revealed a significant decrease in DNA synthesis following NAT10 silencing (Fig. 4D), and flow cytometry confirmed reduced S-phase cell proportion (Fig. 4E), indicating diminished proliferative activity. Colony formation assays demonstrated that NAT10 knockdown significantly attenuated M5-induced clonogenic capacity (Fig. 4F). Given the reported role of NAT10 in RNA modification [21], we performed RNA-seq to compare transcriptomic profiles of NAT10-silenced and control HaCaT cells under M5 stimulation (Fig. S3B). Genes associated with proliferation were significantly altered in response to M5 (Figs. S3C and D), and NAT10 expression was consistently upregulated (Fig. 4G). Overlap analysis revealed that genes upregulated by M5 but downregulated upon NAT10 knockdown were enriched in pathways related to RNA processing (Fig. 4H). To further validate its pro-proliferative effect, NAT10 was overexpressed in keratinocytes, resulting in increased Ki67 and PCNA expression (Fig. 4I). Western blotting and flow cytometry demonstrated that NAT10 overexpression accelerated cell cycle progression (Figs. 4J and K). Moreover, treatment with remodelin, a selective NAT10 inhibitor (Fig. S3E), effectively reversed M5-induced upregulation of PCNA, IL-6, and cyclin A1 (Figs. S3F and G) and suppressed colony formation (Fig. S3H). Consistently, both NAT10 silencing and remodelin treatment inhibited M5-induced NHEK proliferation (Fig. S3I). Collectively, these findings identify NAT10 as a key driver of keratinocyte hyperproliferation in psoriasis.Fig. 4 Loss- and gain-of-function analyses demonstrate that N-acetyltransferase 10 (NAT10) promotes keratinocyte proliferation in vitro. (A) Western blot and gray value analysis of NAT10, cyclin A1, cyclin E1, proliferating cell nuclear antigen (PCNA), and interleukin-6 (IL-6) protein levels in keratinocytes of different treatment groups (n = 3). (B) Immunofluorescence staining of PCNA and NAT10 was analyzed by treating cells with small interfering RNA of NAT10 (si-NAT10) (n = 5). (C) Immunofluorescence staining of Ki67 was analyzed by treating cells with si-NAT10 (n = 5). (D) Immunofluorescence staining of 5-ethynyl-2′-deoxyuridine (EdU) was analyzed by treating cells with si-NAT10 (n = 5). (E) Flow cytometry analysis of transfected si-RNA groups, cytokine mixture M5 (M5) induction group, and control (Ctrl) groups. The representative results are on the left. Histogram represents statistical result of the proportion of cells in each cell cycle phases (n = 5). (F) Clonogenic assay assessing the proliferation ability of keratinocytes in different treatment groups (n = 5). (G) Heatmap illustrating the differential expression of GCN5-related N-acetyltransferase (GNAT) family genes between M5 induction group and the control group keratinocyte samples. (H) Venn diagram and metascape analysis illustrating the intersecting differentially expressed genes identified in M5-stimulated cells and in cells with siRNA-mediated NAT10 knockdown. (I) Immunofluorescence staining of NAT10, Ki67 and PCNA in keratinocytes (n = 5). (J) Western blot and gray value analysis of NAT10, cyclin A1, cyclin E1, PCNA, and IL-6 protein levels in keratinocytes of different treatment groups (n = 3). (K) Cell cycle analysis by flow cytometry. Error bars represent the mean ± standard error of the mean (SEM). ∗P < 0.05; ∗∗P < 0.01; ∗∗∗P < 0.001; ∗∗∗∗P < 0.0001; ns, not significant. -LV-OENAT10: lentiviral overexpression of NAT10.
+
+Fig. 4
+
+3.4 Identification of NAT10-mediated ac4C modified transcripts
+
+To further examine this mechanism, we conducted acRIP-seq in HaCaT cells (Figs. 5A and S4A). Motif analysis identified a C-rich ac4C consensus with four conserved cytidines separated by cysteine-X-X (CXX) (Fig. 5B). A total of 6935 ac4C peaks were detected, and 2472 transcripts showed reduced ac4C levels after NAT10 knockdown (Fig. 5C), while peak distribution in long non-coding RNAs remained largely unchanged (Fig. S4B). In both conditions, ac4C peaks were mainly enriched in coding sequence (CDS) and 3′-untranslated region (3′UTRs) (Fig. 5D). NAT10 depletion also caused a chromosome-wide reduction in ac4C burden (Fig. S4C). Despite this global decrease, NAT10 loss minimally affected transcript abundance or peak positioning (Figs. 5E–G), indicating that ac4C modification by NAT10 does not directly regulate mRNA abundance in keratinocytes. GO analysis showed that transcripts with reduced ac4C modification were enriched in positive regulation of cell cycle and RNA localization (Fig. 5H). KEGG pathway analysis highlighted pathways including cell cycle, RNA transport, and glycerolipid metabolism (Fig. S4D), while downregulated transcripts were associated with lipid biosynthesis (Fig. 5I). Metascape analysis of overlapping acRIP-seq and RNA-seq targets further supported enrichment in cell cycle regulation pathways (Fig. S4E). Additional altered ac4C peaks occurred in genes involved in lipid and atherosclerosis pathways in NAT10-silenced cells (Fig. S4F). These findings indicate that NAT10-dependent ac4C modification modulates key metabolic and cellular pathways in keratinocytes through post-transcriptional mechanisms.Fig. 5 Analysis of N-acetyltransferase 10 (NAT10)-dependent RNA N4-acetylcytidine (ac4C) profiles in keratinocytes. (A) Schematic overview of the ac4C RNA immunoprecipitation sequencing (ac4C-RIP-seq) workflow. (B) Enriched sequence motifs of ac4C peaks in cytokine mixture M5 (M5)-stimulated keratinocytes transfected with small interfering RNA of control (si-Ctrl) or small interfering RNA of NAT10 (si-NAT10). (C) Distribution of ac4C peaks within acetylated transcripts in both groups. (D) Proportions of ac4C peak localization across transcript regions. (E) Volcano plot depicting NAT10 knockdown-induced changes in ac4C-modified genes. (F) Cumulative distribution function (CDF) analysis of ac4C (−) versus ac4C (+) transcripts in control and NAT10-silenced keratinocytes. (G) CDF curves showing expression changes of protein-coding genes for ac4C (−) and ac4C (+) transcripts, stratified by peak location (CDS, 5′UTR, 3′UTR). (H) Bubble plots showing functional enrichment of acetylated transcripts. (I) Bubble plots showing functional enrichment of acetylated mRNAs. CDS: coding DNA sequence; UTR: untranslated region; TSS: transcription start site; FC: fold change.
+
+Fig. 5
+
+3.5 NAT10-mediated ac4C modification stabilizes FASN mRNA
+
+NAT10 is the only known mammalian ac4C “writer” [15] and enhances RNA stability and translation [16]. To identify NAT10-dependent targets, we performed four-quadrant screening of RNA-seq and acRIP-seq datasets after NAT10 silencing (Fig. 6A), followed by qRT-PCR validation (Fig. S5A). Integrative genomics viewer (IGV) visualization showed markedly reduced ac4C modification on FASN transcripts in NAT10-depleted HaCaT cells (Fig. 6B). Western blot analysis, immunofluorescence, and ELISA further confirmed elevated FASN expression in the M5-induced psoriasis-like model (Figs. S5B–D). Given that abnormal lipid accumulation promotes cell proliferation [11,22], we hypothesized that NAT10 drives keratinocyte hyperproliferation by regulating FASN. The limited extranuclear localization of NAT10 suggested the diversity of its substrates (Fig. S5E). Following M5 stimulation, abnormal cytoplasmic accumulation of NAT10 (Fig. 6C), together with co-immunoprecipitation findings (Fig. S5F), indicated a potential NAT10-FASN interaction. Although NAT10 overexpression increased global protein ubiquitination (Fig. S5G), it did not induce FASN degradation (Fig. 6D) but instead increased FASN mRNA and protein levels (Figs. 6E–G). Conversely, a catalytically inactive NAT10 mutant (G641E) failed to alter FASN protein levels, suggesting that NAT10-mediated ac4C modification is key to regulating stable FASN expression. AlphaFold3 and PLIP analysis further supported direct NAT10-FASN mRNA interactions (Figs. 6H and I and S5H). Moreover, RNA decay assays showed that NAT10 silencing accelerated the degradation of FASN mRNA, whereas NAT10 overexpression markedly enhanced its stability (Fig. 6J). However, mutation of the conserved catalytic residue required for ac4C modification largely abolished this effect (Figs. 6K and L). RIP-qRT-PCR confirmed direct NAT10 interaction to FASN transcripts in HEK293T cells (Fig. 6M). Next, we explored how NAT10-mediated ac4C acetylation modulates FASN mRNA expression. PACES prediction identified conserved ac4C sites within the FASN coding sequence (Fig. 6N). Next, we designed mutant biotin-labeled probes targeting the conserved ac4C modification sites in FASN and performed RNA-EMSA analysis (Figs. 6O and P). Mutations at these sites abolished ac4C modification on FASN mRNA, and NAT10 silencing similarly reduced ac4C levels (Fig. 6Q). In contrast, NAT10 overexpression markedly increased ac4C modification of FASN mRNA (Fig. 6R). Consistently, point mutations within the conserved catalytic domain of NAT10 also attenuated its ability to mediate ac4C modification on FASN transcripts (Fig. 6R). These results demonstrate that NAT10-mediated ac4C modification enhances the stability of FASN mRNA.Fig. 6 Functional characterization of N-acetyltransferase 10 (NAT10)-mediated N4-acetylcytidine (ac4C) modification on regulation of fatty acid synthase (FASN) expression. (A) Four-quadrant plot depicting genes with differential acetylation and expression patterns. (B) Integrative genomics viewer (IGV) tracks showing ac4C peak enrichment within the coding DNA sequence (CDS) and 5′-untranslated region (5′UTR) of fibronectin 1 (FN1) and FASN in keratinocytes. (C) Western blot and gray value analysis of NAT10 protein levels in the nucleus and cytoplasm of keratinocytes (n = 3). (D) Western blot and gray value analysis showing FASN protein degradation in HEK293T cells (n = 3). (E) Protein expression levels of FASN in HEK293T cells transfected with different NAT10 overexpression plasmids (n = 6). (F) mRNA expression levels of FASN in HEK293T cells transfected with different NAT10 overexpression plasmids (n = 3). (G) Western blot and gray analysis of NAT10, FASN, proliferating cell nuclear antigen (PCNA), and interleukin-6 (IL-6) expression in keratinocytes (n = 5). (H) Predicted docking interaction between NAT10 protein and FASN mRNA using AlphaFold3. (I) The NAT10 molecule and surrounding residues responsible for its binding are shown in ball-and-stick representation. (J) Quantitative real-time polymerase chain reaction (qRT-PCR) showing FASN mRNA degradation in keratinocytes (n = 3). (K) Multiple sequence alignment of NAT10 from different species. The green sequence represents extremely conserved residues. The red box indicates the mutated amino acid site. (L) QRT-PCR showing FASN mRNA degradation in HEK293T cells (n = 3). (M) NAT10 RNA immunoprecipitation quantitative real-time PCR (RIP-qPCR) analysis in HEK293T cells following transfection with different NAT10 plasmids (n = 4). (N) Prediction of conserved acetylation sites within the FASN coding DNA sequence (CDS) using PACES (http://rnanut.net/paces/). (O) mRNA probe sequences of wide type FASN or mutated NAT10-mediated ac4C modification sites of FASN respectively. (P) Schematic diagram of RNA electrophoretic mobility shift assay (RNA-EMSA) experimental procedure. (Q) RNA-EMSA analysis of FASN probe content binding to ac4C in keratinocytes. (R) Probe binding content after mutation of the NAT10 locus in RNA-EMSA analysis. Error bars represent the mean ± standard error of the mean (SEM). ∗P < 0.05; ∗∗P < 0.01; ∗∗∗P < 0.001; ∗∗∗∗P < 0.0001; ns, not significant. FC: fold change; si-NAT10: small interfering RNA of NAT10; M5: cytokine mixture M5; LV-OE: lentiviral overexpression; Act-D: actinomycin D; Ctrl: control; WT: wild type; MT: mutant type; Bio: biotin; CHX: cycloheximide.
+
+Fig. 6
+
+3.6 Therapeutic targeting of FASN effectively suppresses the keratinocyte proliferation by regulating fatty acid metabolic reprogramming
+
+FASN, a key enzyme in lipid metabolism [23], catalyzes free fatty acid synthesis and regulates lipid biosynthesis (Fig. 7A). Oil Red O and lipid droplet staining, together with triglyceride and free fatty acid quantification, demonstrated that M5-induced keratinocyte proliferation was accompanied by a marked increase in lipid accumulation (Figs. S5I–L). In contrast, NAT10 deletion or pharmacological inhibition significantly reduced lipid deposition (Figs. 7B and C). Given that metabolic reprogramming toward fatty acid metabolism supports the proliferative phenotype of dysplastic cells [24], our metascape analysis (Figs. S4E and F) and the positive correlation between NAT10 and FASN (Fig. S5M) suggest that FASN may functions as a major effector downstream of NAT10. To validate this, FASN-targeting siRNA was introduced into M5-treated HaCaT cells (Figs. 7D and E). FASN knockdown reversed M5-induced lipid accumulation (Figs. 7F–H), reduced PCNA expression in NAT10-overexpressing cells (Fig. 7I), and impaired colony formation despite elevated NAT10 levels (Fig. 7J), accompanied by diminished lipid deposition (Fig. S5N). Ki67 staining also showed fewer positive cells after FASN depletion (Fig. 7K), and S-phase arrest was alleviated (Fig. 7L). Together, these findings identify FASN as a critical downstream mediator of NAT10 and a potential therapeutic target for limiting keratinocyte proliferation.Fig. 7 Fatty acid synthase (FASN) acts downstream of N-acetyltransferase 10 (NAT10) to promote keratinocyte proliferation. (A) Schematic diagram of FASN regulating lipid metabolism. (B) Immunofluorescence staining of NAT10 and FASN was analyzed by treating cells with small interfering RNA of NAT10 (si-NAT10) (n = 5). (C) Oil Red staining analysis of lipid accumulation in keratinocytes. (D) Western blot analysis of FASN screening the FASN small interfering RNA (siRNA) fragments. (E) Enzyme-linked immunosorbent assay (ELISA) analysis showing the inhibitory effects of FASN knockdown on cytokine mixture M5 (M5)-induced keratinocyte FASN content (n = 4). (F) ELISA analysis demonstrating the inhibitory effects of FASN knockdown on M5-induced triglyceride content in keratinocytes (n = 4). (G) ELISA analysis illustrating the inhibitory effects of FASN knockdown on M5-induced free fatty acid content in keratinocytes (n = 4). (H) Lipid droplet staining showing FASN knockdown inhibited M5-induced keratinocyte lipid synthesis (n = 5). (I) Western blot analysis showing knockdown of FASN inhibits proliferating cell nuclear antigen (PCNA) expression in keratinocytes induced by NAT10 overexpression (n = 4). (J) Clonogenic assay showing knockdown of FASN inhibits keratinocyte proliferation induced by NAT10 overexpression (n = 5). (K) Immunofluorescence staining showing knockdown of FASN inhibits keratinocyte proliferation induced by NAT10 overexpression (n = 5). (L) Cell cycle analysis by flow cytometry. Error bars represent the mean ± standard error of the mean (SEM). ∗∗P < 0.01; ∗∗∗P < 0.001; ∗∗∗∗P < 0.0001. LV-OENAT10: lentiviral overexpression of NAT10.
+
+Fig. 7
+
+3.7 Genetic or pharmacologic inhibition of NAT10 mitigates psoriasis progression
+
+To investigate the role of NAT10 in psoriasis, we generated keratinocyte-specific NAT10 conditional knockout (CKO) mice (KRT14-CreERT2; Nat10flox/flox) (Figs. 8A and S6A–C). NAT10-specific deletion in keratinocytes was confirmed by immunofluorescence staining (Figs. S6D–G). Under physiological conditions, Ki67 and KRT14 staining showed that NAT10 loss did not alter epidermal proliferation or differentiation (Figs. S6H–J). However, IMQ-induced epidermal thickening and lesion area were markedly reduced in NAT10CKO mice compared with WT controls (Figs. 8B, C and S6J). Inflammatory angiogenesis, reflected by terminal micro-vessel formation, was also attenuated (Fig. 8D). Moreover, IMQ-treated NAT10CKO mice exhibited fewer Ki67+ and PCNA + keratinocytes (Figs. 8E and F), along with decreased PCNA, IL-6 and FASN expression by Western blot (Fig. 8G). NAT10 deficiency also mitigated IMQ-induced weight loss (Fig. 8H), and FASN downregulation was further confirmed by immunofluorescence (Fig. 8I). These findings indicate that keratinocyte-specific NAT10 deletion alleviates epidermal responses in the IMQ model. We next evaluated remodelin in IMQ-induced psoriasis (Figs. 8J and K). Topical remodelin reduced epidermal thickness and microvascular formation (Figs. 8L–N). Western blot and immunohistochemistry confirmed lower Ki67, PCNA, IL-6 and FASN levels following treatment (Fig. 8O). To complement pharmacological inhibition, AAV-K14-Cre-VEGF was used to knock down NAT10 in basal keratinocytes (Fig. S6K), resulting in reduced NAT10 expression (Fig. S6L), ameliorated skin lesions, decreased epidermal thickness (Fig. S6M), and suppressed Ki67, PCNA, IL-6 and FASN expression (Fig. S6N). This approach also attenuated IMQ-induced weight loss (Fig. S6O). Collectively, these data demonstrate that both remodelin treatment and NAT10 knockdown effectively mitigate psoriasis-like pathology.Fig. 8 Gene deletion and functional inhibition of N-acetyltransferase 10 (NAT10) alleviate psoriasis progression. (A) Schematic of NAT10 epidermal knockout in imiquimod (IMQ)-induced psoriasis-like mice driven by tamoxifen-induced Cre expression. (B) Dorsal skin diagram. (C) Hematoxylin-eosin (H&E) staining in mouse skin tissue. (D) Representative image of subcutaneous blood vessels in the mouse back. (E) Immunohistochemical analysis of Ki67 expression in a mouse skin tissue (n = 5). (F) Immunohistochemical analysis of proliferating cell nuclear antigen (PCNA) expression in a mouse skin tissue (n = 5). (G) Western blot and gray value analysis of Fatty acid synthase (FASN), NAT10, PCNA, and interleukin-6 (IL-6) protein levels in mouse skin epidermal tissue (n = 5). Dot blot analysis of N4-acetylcytidine (ac4C) expression in mouse epidermal tissue. (H) Body weight monitoring of mice at different time points (n = 5). (I) Immunofluorescence staining of NAT10 and FASN was analyzed in mouse skin epidermal tissue. (J) Dot blot analysis of ac4C protein expression for screening the subcutaneous injection concentration of remodelin. (K) Schematic diagram of functional inhibition of NAT10 induced by remodelin in IMQ-induced psoriasis-like mice. (L) Dorsal skin diagram and H&E staining in mouse skin tissue. (M) Immunohistochemical analysis of Ki67 expression in a mouse skin tissue (n = 5). (N) Representative image of subcutaneous blood vessels in the mouse back (n = 5). (O) Western blot and gray value analysis of FASN, NAT10, PCNA, and IL-6 protein expression (n = 5). Error bars represent the mean ± standard error of the mean (SEM). ∗∗∗P < 0.001; ∗∗∗∗P < 0.0001; ns, not significant. CKO: conditional knockout; WT: wild type; Epi: epidermis; Der: dermis.
+
+Fig. 8
+
+To further validate the role of NAT10 in chronic psoriasis, we employed an IL-23 induced mouse model (Fig. S7), given that IMQ primarily reproduces acute pathological changes [18,25,26]. After establishing an IL-23 induced chronic psoriasis model (Fig. S7A), Western blot analysis showed that NAT10 knockout markedly reduced the expression of FASN, cyclin A1, cyclin E1, PCNA, and IL-6 (Figs. S7B and I). Histological examination further confirmed that NAT10 deficiency alleviated IL-23 induced epidermal thickening and keratinocyte hyperproliferation, and mitigated the IMQ-like inflammatory weight loss (Figs. S7C–E and G). Consistently, pharmacological inhibition of NAT10 catalytic activity produced similar effects in the chronic model (Figs. S7J and F), as evidenced by decreased protein levels of FASN, cyclin A1, cyclin E1, PCNA, and IL-6 (Figs. S7K and I). Histology and Ki67 staining indicated that NAT10 inhibition attenuated epidermal hyperproliferation in psoriasis (Figs. S7L, M and H). Importantly, the inhibitor exhibited no detectable toxicity (Fig. S7N), as neither visceral histology nor proliferation and apoptosis markers exhibited significant abnormalities (Figs. S7O-R). These results provide evidence for the therapeutic benefit of targeting NAT10 in psoriasis.
+
+4 Discussion
+
+Psoriasis is a multifactorial disease, influenced by both genetic predisposition and environmental triggers [27]. Epidermal thickening, primarily due to keratinocyte hyperproliferation, is a hallmark of psoriasis [28]. Psoriasis pathophysiology is complex, encompassing both autoimmune and autoinflammatory mechanisms that drive disease progression [29,30]. Although the environmental factors are not yet fully elucidated, they are recognized as significant contributors alongside well-established genetic susceptibility. Clinical treatments such as methotrexate, cyclosporine, apremilast, and biologics (e.g., ixekizumab, brodalumab, and secukinumab) are available, and adverse effects often limit their broader clinical use [31,32].
+
+In psoriatic lesions, infiltrating immune cells secrete inflammatory mediators that activate keratinocytes [33]. Co-culture experiments using THP-1 macrophages and HaCaT cells have demonstrated that macrophages can directly promote keratinocyte inflammation [34]. Keratinocytes act as “initiators” in psoriasis, proliferating and releasing cytokines upon stimulation, which further recruit and activate immune cells. Key cytokines, including IL-17, TNF-α, and IL-22, establish a positive feedback loop that amplifies keratinocyte activation and plaque formation [35]. In our own experiments, fibroblasts promoted keratinocyte explant clonal formation in co-culture systems, simulating disease-associated intercellular communication. Notably, single-cell analysis revealed no significant differential expression of GNAT family genes in fibroblasts, highlighting that keratinocytes remain the primary cellular drivers of psoriasis pathogenesis. This distinction underscores the importance of directly targeting keratinocytes rather than relying solely on modulating fibroblast activity.
+
+ac4C modification on mRNA, catalyzed exclusively by NAT10, has recently emerged as a key post-transcriptional regulatory mechanism [36,37]. NAT10 has been implicated in aging and various cancers, often correlating with adverse clinical outcomes [17,38,39]. However, its role in psoriasis remains unexplored. Our single-cell RNA sequencing and CellChat analysis of clinical psoriasis samples revealed that NAT10 is highly expressed in a keratinocyte subpopulation with elevated proliferative potential. Genetic ablation or pharmacological inhibition of NAT10 markedly attenuated psoriasis-like phenotypes, as evidenced by reductions in Ki67+ and EdU+ cells and downregulation of PCNA, IL-6, and cyclin A1. Critically, a catalytically inactive NAT10 mutant failed to regulate proliferation, confirming that its pro-proliferative effect is ac4C-dependent.
+
+Mechanistically, we performed acRIP-seq following NAT10 knockdown to identify mRNAs with reduced abundance and ac4C modification, intersecting these results to select FASN as a candidate target. FASN, a central enzyme in fatty acid synthesis, has been increasingly implicated in psoriasis pathogenesis [40]. Metabolic reprogramming, including enhanced glycolysis, glutaminolysis, and de novo lipogenesis, is a hallmark of proliferative cells [[41], [42], [43]]. Moreover, gut microbiota dysbiosis exacerbates psoriasis partly via alterations in lipid metabolism [10], suggesting that keratinocyte metabolic modulation contributes to disease progression [44]. In our study, M5-treated keratinocytes exhibited increased lipid accumulation. NAT10-mediated ac4C acetylation stabilized FASN mRNA and enhanced its translation, leading to increased FASN expression. Functional assays demonstrated that silencing FASN reversed NAT10-induced keratinocyte proliferation, confirming the role of FASN in mediating NAT10-driven metabolic and proliferative reprogramming.
+
+Despite the valuable insights our study provides into both acute and chronic psoriatic pathogenesis, several limitations should be acknowledged. First, although NAT10 is the only known mRNA ac4C acetyltransferase, a small fraction of ac4C-modified transcripts persisted after NAT10 knockdown. This residual acetylation suggests the possible existence of compensatory pathways or auxiliary regulatory factors, which remain to be identified and should be explored in future studies. Second, while we elucidated the mechanistic role of NAT10 in stabilizing FASN mRNA and identified the functional ac4C modification site, deeper mechanistic interrogation—such as polysome profiling or direct assessment of translation initiation complex recruitment—could further refine the understanding of NAT10-dependent translational regulation. Third, although both IMQ-induced acute and IL-23 induced chronic psoriasis models were included to strengthen the translational relevance of our findings [45,46], additional validation in broader clinical cohorts is still necessary, as patient heterogeneity in disease stage, treatment history, and comorbidities may influence NAT10 signaling.
+
+While our study establishes NAT10 as a key driver of keratinocyte dysfunction in psoriasis via the ac4C-FASN axis, it is crucial to contextualize this finding within the current therapeutic landscape. First-line biologic therapies (anti-TNF-α, IL-23/IL-17 inhibitors) and small-molecule (TYK2 inhibitor) primarily function by neutralizing inflammatory cytokines, targeting the dysregulated immune system in an “outside-in” manner [47,48]. In contrast, our data demonstrate that NAT10 operates intrinsically within keratinocytes, orchestrating a pathogenic metabolic reprogramming via RNA acetylation. Thus, NAT10 inhibition represents an “inside-out” strategy, aiming to correct the cell-autonomous metabolic engine driving proliferation. This fundamental distinction suggests that targeting NAT10 could address a more proximal, keratinocyte-specific pathological node complementary to cytokine blockade. Consequently, NAT10 inhibition may offer a novel therapeutic avenue for patients with inadequate response to existing immunomodulators.
+
+5 Conclusion
+
+Our findings provide compelling evidence that the upregulation and activation of NAT10 play a central role in keratinocyte proliferation in psoriasis, and targeting the NAT10-FASN axis directly influences keratinocyte intrinsic metabolism and proliferation, offering a complementary therapeutic strategy.
+
+CRediT authorship contribution statement
+
+Weibo Tang: Writing – original draft, Conceptualization, Project administration, Supervision. Jingling Shen: Conceptualization, Project administration, Supervision. Jiaxin Liu: Software, Data curation, Investigation, Methodology. Chunhui Jiang: Methodology, Investigation, Data curation, Software. Wenya Liu: Project administration, Data curation, Methodology, Software. Mengyao Xiao: Visualization, Formal analysis. Jindan Dai: Formal analysis, Visualization. Wenjie Gao: Data curation, Investigation, Methodology, Software. Junjie Lu: Formal analysis, Visualization. Chunyi Hu: Formal analysis, Visualization. Yonghuan Song: Resources. Ye Xu: Resources, Conceptualization, Project administration, Supervision. Zhongxin Zhu: Supervision, Conceptualization, Project administration, Writing – review & editing. Weitao Cong: Writing – review & editing, Funding acquisition, Conceptualization, Project administration, Supervision.
+
+Data availability statement
+
+The data that support the findings of this study are available from the corresponding author upon reasonable request.
+
+Declaration of competing interest
+
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+Appendix A Supplementary data
+
+The following are the Supplementary data to this article:Multimedia component 1
+
+Multimedia component 1
+
+Multimedia component 2
+
+Multimedia component 2
+
+Multimedia component 3
+
+Multimedia component 3
+
+figs1 figs1
+
+figs2 figs2
+
+figs3 figs3
+
+figs4 figs4
+
+figs5 figs5
+
+figs6 figs6
+
+figs7 figs7
+
+Acknowledgments
+
+This work was supported by the 10.13039/100007847 Natural Science Foundation of Jilin Province (Grant No.: YDZJ202201ZYTS286) and the 10.13039/501100001809 National Nature Science Foundation of China (Grant Nos.: 82272284, and 82370297). We thank Scientific Research Center of Wenzhou Medical University for providing excellent consultation and instrumental supports. We also sincerely thank Prof. Hengyu Fan (Zhejiang University) for generously providing the NAT10flox/flox transgenic mice.
+
+Peer review under responsibility of Xi'an Jiaotong University.
+
+Appendix A Supplementary data to this article can be found online at https://doi.org/10.1016/j.jpha.2026.101590.
+
+
+References
+
+1 Kshirsagar S.J. Adhav P.S. Laddha U.D. Navigating psoriasis: from immune mechanisms to natural healing approaches Int. Immunopharmacol. 144 2025 113626 10.1016/j.intimp.2024.113626 39608171
+2 Dainichi T. Kitoh A. Otsuka A. The epithelial immune microenvironment (EIME) in atopic dermatitis and psoriasis Nat. Immunol. 19 2018 1286 1298 30446754 10.1038/s41590-018-0256-2
+3 Malik B. Vokic I. Mohr T. FAM3C/ILEI protein is elevated in psoriatic lesions and triggers psoriasiform hyperproliferation in mice EMBO Mol. Med. 15 2023 EMMM202216758 10.15252/emmm.202216758 PMC10331587 37226685
+4 Guo J. Zhang H. Lin W. Signaling pathways and targeted therapies for psoriasis Signal Transduct. Targeted Ther. 8 2023 437 10.1038/s41392-023-01655-6 PMC10679229 38008779
+5 Röhrig F. Schulze A. The multifaceted roles of fatty acid synthesis in cancer Nat. Rev. Cancer 16 2016 732 749 27658529 10.1038/nrc.2016.89
+6 Wei W. Qin B. Wen W. FBXW7β loss-of-function enhances FASN-Mediated lipogenesis and promotes colorectal cancer growth Signal Transduct. Target Ther. 8 2023 187 37202390 10.1038/s41392-023-01405-8 PMC10195794
+7 Ye M. Hu C. Chen T. FABP5 suppresses colorectal cancer progression via mTOR-mediated autophagy by decreasing FASN expression Int. J. Biol. Sci. 19 2023 3115 3127 37416772 10.7150/ijbs.85285 PMC10321282
+8 Wang L. Zhu H. Shi Z. MK8722 initiates early-stage autophagy while inhibiting late-stage autophagy via FASN-Dependent reprogramming of lipid metabolism Theranostics 14 2024 75 95 38164137 10.7150/thno.83051 PMC10750195
+9 De Martino M. Daviaud C. Minns H.E. Radiation therapy promotes unsaturated fatty acids to maintain survival of glioblastoma Cancer Lett. 570 2023 216329 10.1016/j.canlet.2023.216329 37499741
+10 Zhao Q. Yu J. Zhou H. Intestinal dysbiosis exacerbates the pathogenesis of psoriasis-like phenotype through changes in fatty acid metabolism Signal Transduct. Targeted Ther. 8 2023 40 10.1038/s41392-022-01219-0 PMC9884668 36710269
+11 Seiringer P. Hillig C. Schäbitz A. Spatial transcriptomics reveals altered lipid metabolism and inflammation-related gene expression of sebaceous glands in psoriasis and atopic dermatitis Front. Immunol. 15 2024 1334844 10.3389/fimmu.2024.1334844 PMC10904577 38433843
+12 Slack F.J. Chinnaiyan A.M. The role of non-coding RNAs in oncology Cell 179 2019 1033 1055 31730848 10.1016/j.cell.2019.10.017 PMC7347159
+13 Shao S. Gudjonsson J.E. Epigenetics of psoriasis Chang C. Lu Q. Epigenetics in Allergy and Autoimmunity. Advances in Experimental Medicine and Biology 2020 Springer Singapore 9 221
+14 Chen C. Wang Z. Lin Q. NAT10 promotes gastric cancer liver metastasis by modulation of M2 macrophage polarization and metastatic tumor cell hepatic adhesion Adv. Sci. 12 2025 2410263 10.1002/advs.202410263 PMC12005778 39985269
+15 Sleiman S. Dragon F. Recent advances on the structure and function of RNA acetyltransferase Kre33/NAT10 Cells 8 2019 1035 31491951 10.3390/cells8091035 PMC6770127
+16 Zhang S. Liu Y. Ma X. Recent advances in the potential role of RNA N4-acetylcytidine in cancer progression Cell Commun. Signal. 22 2024 49 38233930 10.1186/s12964-023-01417-5 PMC10795262
+17 Balmus G. Larrieu D. Barros A.C. Targeting of NAT10 enhances healthspan in a mouse model of human accelerated aging syndrome Nat. Commun. 9 2018 1700 29703891 10.1038/s41467-018-03770-3 PMC5923383
+18 Hedrick M.N. Lonsdorf A.S. Shirakawa A.K. CCR6 is required for IL-23-induced psoriasis-like inflammation in mice J. Clin. Investig. 119 2009 2317 2329 19662682 10.1172/JCI37378 PMC2719919
+19 Zhou X. Chen Y. Cui L. Advances in the pathogenesis of psoriasis: from keratinocyte perspective Cell Death Dis. 13 2022 81 35075118 10.1038/s41419-022-04523-3 PMC8786887
+20 Jin G. Xu M. Zou M. The processing, gene regulation, biological functions, and clinical relevance of N4-acetylcytidine on RNA a systematic review Mol. Ther. Nucleic Acids 20 2020 13 24 32171170 10.1016/j.omtn.2020.01.037 PMC7068197
+21 Sharma S. Langhendries J.L. Watzinger P. Yeast Kre33 and human NAT10 are conserved 18S rRNA cytosine acetyltransferases that modify tRNAs assisted by the adaptor Tan1/THUMPD1 Nucleic Acids Res. 43 2015 2242 2258 25653167 10.1093/nar/gkv075 PMC4344512
+22 Li W. Mao X. Xie J. N-acetyltransferase 10 is implicated in the pathogenesis of cycling T cell-mediated autoimmune and inflammatory disorders in mice Nat. Commun. 15 2024 9388 39477944 10.1038/s41467-024-53350-x PMC11525920
+23 Gong Z. Zhu J. Chen J. CircRREB1 mediates lipid metabolism related senescent phenotypes in chondrocytes through FASN post-translational modifications Nat. Commun. 14 2023 5242 37640697 10.1038/s41467-023-40975-7 PMC10462713
+24 Won Y. Jang B. Lee S.H. Oncogenic fatty acid metabolism rewires energy supply chain in gastric carcinogenesis Gastroenterology 166 2024 772 786 e14 38272100 10.1053/j.gastro.2024.01.027 PMC11040571
+25 Kabashima K. Nomura T. Revisiting murine models for atopic dermatitis and psoriasis with multipolar cytokine axes Curr. Opin. Immunol. 48 2017 99 107 28915378 10.1016/j.coi.2017.08.010
+26 Lian N. Chen Y. Chen S. Gasdermin D-mediated keratinocyte pyroptosis as a key step in psoriasis pathogenesis Cell Death Dis. 14 2023 595 37673869 10.1038/s41419-023-06094-3 PMC10482869
+27 Gudjonsson J.E. Elder J.T. Psoriasis: epidemiology Clin. Dermatol. 25 2007 535 546 18021890 10.1016/j.clindermatol.2007.08.007
+28 Huang Y. Wang Y. Zhen Y. LPCAT1 facilitates keratinocyte hyperproliferation and skin inflammation in psoriasis by regulating GLUT3 J. Invest. Dermatol. 144 2024 1479 1490 e14 38246582 10.1016/j.jid.2024.01.004
+29 Uppala R. Tsoi L.C. Harms P.W. “Autoinflammatory psoriasis”: genetics and biology of pustular psoriasis, cell Mol. Immunol. 18 2021 307 317 10.1038/s41423-020-0519-3 PMC8027616 32814870
+30 Yu Y. Chen W. Li B. Cutaneous calcium/calmodulin-dependent protein kinase II-γ–positive sympathetic nerves secreting norepinephrine dictate psoriasis Adv. Sci. 11 2024 2306772 10.1002/advs.202306772 PMC11187923 38544478
+31 Jiang B. Zhang W. Wang Y. Convallatoxin induces HaCaT cell necroptosis and ameliorates skin lesions in psoriasis-like mouse models Biomed. Pharmacother. 121 2020 109615 10.1016/j.biopha.2019.109615 31707343
+32 Tan E. Wan T. Pan Q. Dual-responsive nanocarriers for efficient cytosolic protein delivery and CRISPR-Cas9 gene therapy of inflammatory skin disorders Sci. Adv. 10 2024 eadl4336 10.1126/sciadv.adl4336 PMC11023524 38630829
+33 Ma F. Plazyo O. Billi A.C. Single cell and spatial sequencing define processes by which keratinocytes and fibroblasts amplify inflammatory responses in psoriasis Nat. Commun. 14 2023 3455 37308489 10.1038/s41467-023-39020-4 PMC10261041
+34 Jiang W. Zhang T. Qiu Y. Keratinocyte-to-macrophage communication exacerbate psoriasiform dermatitis via LRG1-enriched extracellular vesicles Theranostics 14 2024 1049 1064 38250043 10.7150/thno.89180 PMC10797285
+35 Huang C. Li W. Shen C. YAP1 facilitates the pathogenesis of psoriasis via modulating keratinocyte proliferation and inflammation Cell Death Dis. 16 2025 186 40108109 10.1038/s41419-025-07521-3 PMC11923178
+36 Cai S. Liu X. Zhang C. Autoacetylation of NAT10 is critical for its function in rRNA transcription activation Biochem. Biophys. Res. Commun. 483 2017 624 629 27993683 10.1016/j.bbrc.2016.12.092
+37 Liu X. Cai S. Zhang C. Deacetylation of NAT10 by Sirt1 promotes the transition from rRNA biogenesis to autophagy upon energy stress Nucleic Acids Res. 46 2018 9601 9616 30165671 10.1093/nar/gky777 PMC6182161
+38 Larrieu D. Britton S. Demir M. Chemical inhibition of NAT10 corrects defects of laminopathic cells Science 344 2014 527 532 24786082 10.1126/science.1252651 PMC4246063
+39 Xu T. Wang J. Wu Y. Ac4C enhances the translation efficiency of vegfa mRNA and mediates central sensitization in spinal dorsal horn in neuropathic pain Adv. Sci. 10 2023 2303113 10.1002/advs.202303113 PMC10724395 37877615
+40 Xiao Y. Yang Y. Xiong H. The implications of FASN in immune cell biology and related diseases Cell Death Dis. 15 2024 88 38272906 10.1038/s41419-024-06463-6 PMC10810964
+41 Chen X. Hao Y. Liu Y. NAT10/ac4C/FOXP1 promotes malignant progression and facilitates immunosuppression by reprogramming glycolytic metabolism in cervical cancer Adv. Sci. 10 2023 2302705 10.1002/advs.202302705 PMC10646273 37818745
+42 Cheng C. Geng F. Cheng X. Lipid metabolism reprogramming and its potential targets in cancer Cancer Commun. 38 2018 27 10.1186/s40880-018-0301-4 PMC5993136 29784041
+43 Xiang K. Kunin M. Larafa S. α-Ketoglutarate supplementation and NAD+ modulation enhance metabolic rewiring and radiosensitization in SLC25A1 inhibited cancer cells Cell Death Discov. 10 2024 27 38225236 10.1038/s41420-024-01805-x PMC10789775
+44 Zhang Z. Zi Z. Lee E.E. Differential glucose requirement in skin homeostasis and injury identifies a therapeutic target for psoriasis Nat. Med. 24 2018 617 627 29662201 10.1038/s41591-018-0003-0 PMC6095711
+45 Gangwar R.S. Gudjonsson J.E. Ward N.L. Mouse models of psoriasis: a comprehensive review J. Invest. Dermatol. 142 2022 884 897 34953514 10.1016/j.jid.2021.06.019 PMC10190156
+46 Armstrong A.W. Read C. Pathophysiology, clinical presentation, and treatment of psoriasis: a review JAMA 323 2020 1945 32427307 10.1001/jama.2020.4006
+47 Francis L. McCluskey D. Ganier C. Single-cell analysis of psoriasis resolution demonstrates an inflammatory fibroblast state targeted by IL-23 blockade Nat. Commun. 15 2024 913 38291032 10.1038/s41467-024-44994-w PMC10828502
+48 Furue K. Ito T. Tsuji G. Psoriasis and the TNF/IL23/IL17 axis G. Ital. Dermatol. Venereol. 154 2019 418 424 30648836 10.23736/S0392-0488.18.06202-8

@@ -1,0 +1,460 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Mol Biol Rep
+Journal ID: Mol Biol Rep
+NLM Journal ID: 0403234
+
+Molecular Biology Reports
+
+ISSN: 0301-4851
+EISSN: 1573-4978
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498631
+PMID: 42627418
+DOI: 10.1007/s11033-026-12642-9
+Article ID: 12642
+Article version: 1
+Subjects: Original Article
+
+Network-based prioritization of sepsis-associated metabolites and in vivo validation of diosmetin in sepsis-associated acute kidney injury
+
+Ye Mingliang 2 4
+Hong Yinghui 1 3
+Li Xi 2
+Huang Lei lei_huang_pku@163.com
+1
+1 https://ror.org/03kkjyb15 grid.440601.7 0000 0004 1798 0578 Department of Intensive Care, Peking University Shenzhen Hospital, Shenzhen, 518036 P. R. China
+2 https://ror.org/03kkjyb15 grid.440601.7 0000 0004 1798 0578 Department of Gastroenterology, Peking University Shenzhen Hospital, Shenzhen, 518036 P. R. China
+3 https://ror.org/00xjwyj62 Department of Emergency, the Eighth Affiliated Hospital of Sun Yat-sen University, Shenzhen, 518003 Guangdong P. R. China
+4 https://ror.org/0064kty71 grid.12981.33 0000 0001 2360 039X State Key Laboratory of Oncology in South China, Cancer Center, Sun Yat-sen University, Guangzhou, 510060 P. R. China
+Electronic publication date: 2026 Aug 21
+Print publication date: 2026
+Volume: 53
+Issue: 1
+Electronic Location ID: 1439
+Received 2026 Apr 21; Accepted 2026 Aug 17
+Copyright: © The Author(s) 2026
+Copyright year: 2026
+License: Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Sepsis, Gut microbial metabolites, Diosmetin, PI3K/AKT signaling, Systems pharmacology
+
+Funding: Peking University Shenzhen Hospital Scientific Research Fund KYQD2024428 Hong Yinghui
+
+Funding: Shenzhen High-level Hospital Construction Fund and the Key Program for Clinical Research at Peking University Shenzhen Hospital LCYJZD2021006 Huang Lei
+issue-copyright-statement: © Springer Nature B.V. 2026
+
+==============================
+Background
+
+Gut microbiota dysbiosis and microbiota-associated metabolites contribute to the development of sepsis and sepsis-related organ dysfunction, however, the key metabolites and host targets remain poorly understood. Diosmetin is a bioactive flavonoid that can be generated from dietary flavonoid glycosides through gut microbiota-mediated biotransformation. This study aimed to identify sepsis-associated microbiota-related candidate metabolites and to perform preliminary in vivo validation of diosmetin in sepsis-associated acute kidney injury (AKI).
+
+Methods and results
+
+A network pharmacology framework was used to construct a sepsis-related microbiota–metabolite–target–pathway network. Pharmacodynamic analysis, absorption, distribution, metabolism, excretion, and toxicity (ADMET) evaluation, and molecular docking were performed to prioritize candidate metabolites and assess the potential interaction between diosmetin and AKT1. Diosmetin was evaluated in a cecal ligation and puncture (CLP)-induced mouse model of sepsis-associated AKI. Network analysis predicted 19 core metabolites and 45 sepsis-associated targets, with IL-6, TNF-α, AKT1, TP53, IL-1β, and PPAR-γ as central nodes. The network was enriched in inflammation- and immune-related pathways, particularly the Toll-like receptor, PI3K/AKT, and mitogen-activated protein kinase signaling pathways. ADMET assessments identified 12 metabolites with favorable predicted pharmacokinetic and safety profiles. Molecular docking predicted potential binding between diosmetin and AKT1. In CLP-induced septic mice, diosmetin alleviated renal histopathological injury, reduced serum IL-6, TNF-α and creatinine levels, and was associated with increased PI3K and AKT phosphorylation in kidney tissue compared with untreated CLP mice.
+
+Conclusions
+
+This study identified sepsis-associated microbiota-related candidate metabolites through network-based analysis. In vivo evidence suggested that diosmetin attenuated inflammatory responses in a sepsis-associated AKI model.
+
+Supplementary Information
+
+The online version contains supplementary material available at 10.1007/s11033-026-12642-9.
+
+Introduction
+
+Sepsis is a heterogeneous and life-threatening syndrome characterized by a dysregulated host response to infection, and contributes to more than 11 million deaths worldwide each year [1]. Acute kidney injury (AKI) is one of the most frequent sepsis-related organ injuries with clinically consequential complications. Although bundled management strategies have improved outcomes, current treatment for AKI remains largely supportive, including antibiotic therapy, fluid resuscitation, and organ support. Mechanism-directed therapies have not yet produced consistent clinical benefits in sepsis, highlighting the need for a clearer understanding of AKI pathobiology [2].
+
+Gut microbiota dysbiosis plays a central role in sepsis development, immune imbalance, and multi-organ injury [3, 4]. A healthy gut microbiota protects the host by maintaining mucosal barrier integrity and providing colonization resistance against pathogenic invasion. Infection and broad-spectrum antibiotics can disrupt this microbial equilibrium, transforming the gut into a major source of pathogenic translocation during sepsis [5, 6]. Organ dysfunction is a major determinant of poor prognosis in sepsis, and injury to critical organs is closely linked to gut microbiota dysbiosis. Restoration of microbial balance mitigates organ injury in septic mice, supporting the relevance of the gut–organ axis in sepsis [7–9]. In sepsis, microbiota dysbiosis and altered microbial metabolites may contribute to renal inflammation, immune dysregulation, and tissue injury through the gut–kidney axis. Despite these insights, clinical management of sepsis-associated AKI remains predominantly supportive rather than mechanism-directed.
+
+Microbiota-associated metabolites serve as key mediators linking microbial dysbiosis to host immune responses and organ injury [10–12]. However, the spectrum of microbiota-related metabolites involved in sepsis remains incompletely characterized. Levels of aromatic metabolites, such as tryptophan and tyrosine, are reduced in patients with sepsis and correlate with disease severity and prolonged hospitalization [13–15]. Supplementation with short-chain fatty acids mitigates blood–brain barrier disruption and neuroinflammation, suggesting that microbial metabolites may regulate inflammation and protect organ function [9]. Diosmetin (3′,5,7-trihydroxy-4′-methoxyflavone) is a bioactive flavonoid aglycone that can be generated from dietary flavonoid glycosides through gut microbiota-mediated biotransformation. Diosmetin has been reported to exert antioxidant and anti-inflammatory effects in various pathological conditions [16–18]. However, its biological activity in sepsis-associated AKI remains unclear.
+
+Network pharmacology integrates multidimensional biological information to explore relationships among metabolites, targets, pathways, and diseases, and provides a useful strategy for prioritizing candidates within complex microecological networks [19]. Although increasing evidence links gut microbiota dysbiosis and microbiota-related metabolites to sepsis-associated organ failure, the key microbiota-associated metabolites and their potential host targets remain poorly defined. In addition, few studies have combined microbiota-related metabolite prioritization with host-level in vivo validation in sepsis-associated organ injury.
+
+In this study, we constructed a multi-level microbiota–substrate–metabolite–target–signaling pathway (MMTS) framework linking gut microbiota, candidate metabolites, host targets, and enriched signaling pathways in sepsis. Diosmetin was selected as a representative candidate for limited proof-of-concept in vivo validation in sepsis-associated AKI. The experimental component was designed to test whether a network-prioritized candidate showed biologically relevant host-level activity in vivo. Other prioritized metabolites identified by the same framework remain important leads for future validation.
+
+Materials and methods
+
+Selection of microbiota-associated metabolites and potential targets
+
+Microbiota-associated metabolites and their corresponding target genes were retrieved from the gutMGene v2.0 database (https://bio-computing.hrbmu.edu.cn/gutmgene), which curates experimentally validated microbial genes, metabolites, and gene-metabolite interactions [20]. The Simplified molecular input line entry system (SMILES) format of each metabolite was obtained from PubChem (https://pubchem.ncbi.nlm.nih.gov/). Potential downstream targets were predicted using both the Similarity Ensemble Approach (SEA, https://sea.kslab.org) and SwissTargetPrediction (STP, http://www.swisstargetprediction.ch).
+
+Target genes for sepsis-related metabolites
+
+Sepsis-related targets were retrieved by searching GeneCards (https://www.genecards.org/) and the Comparative Toxicogenomics Database (CTD) (https://ctdbase.org/) using “sepsis” as the keyword. Duplicate entries were removed, retaining only direct disease-associated targets. Target names were standardized via UniProt (https://www.uniprot.org/). Potential targets of gut microbial metabolites in sepsis were then predicted through alignment in R 4.5.0 and cross-referenced with gutMGene entries to determine direct gene-metabolite associations.
+
+GO and KEGG analysis of target genes
+
+Core targets were subjected to Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analyses using R 4.5.0, with results visualized via bubble and circle plots. GO analysis characterized targets across three domains: cellular components (CC), molecular functions (MF), and biological processes (BP), while KEGG analysis predicted key signaling pathways associated with these targets.
+
+Protein-protein Interaction network construction
+
+Intersecting genes were uploaded to the STRING database (https://string-db.org/) to retrieve protein-protein interaction (PPI) data. Hub genes were predicted based on node connectivity and interaction degree. The resulting PPI network was visualized as a circular diagram using Cytoscape 3.10.4.
+
+Construction of the MMTS network
+
+Files detailing microbiota-metabolite, metabolite-target, and target-pathway interactions were imported into R 4.5.0 for key node analysis. The resulting microbiota-substrates-metabolites-targets-signaling pathways (MMTS) network was visualized using Cytoscape 3.10.4 to depict relationships among gut microbiota, substrates, metabolites, targets, and signaling pathways in sepsis. Pathway-metabolite-target connections are summarized in Table S1 and S2.
+
+Evaluation of drug-likeness
+
+The physicochemical properties, pharmacokinetics, drug-likeness, and medicinal chemistry friendliness of metabolites were assessed using the SwissADME tool (http://www.swissadme.ch/) [21]. Metabolites were screened according to molecular weight (MW), number of H-bond donors and acceptors, MlogP, Lipinski’s rule violations, bioavailability score, and topological polar surface area (TPSA).
+
+Molecular docking of metabolites and targets
+
+Drug-like metabolites were docked with target proteins to estimate potential binding. Three-dimensional metabolite structures were obtained from PubChem (https://pubchem.ncbi.nlm.nih.gov/), and protein structures were downloaded from the Protein Data Bank (https://www.rcsb.org). Docking, visualization, and analysis were performed using CB-Dock (https://cadd.labshare.cn/cb-dock2/index.php). Docking scores were reported in kcal·mol⁻¹. Potential binding sites were visualized.
+
+Toxicological evaluation of metabolites
+
+Drug-like metabolites were evaluated for absorption, distribution, metabolism, excretion, and toxicity (ADMET) using ADMETlab 2.0 (https://admetmesh.scbdd.com/) [22]. Eight toxicity endpoints were scored: hERG inhibition, drug-induced liver injury, carcinogenicity, respiratory toxicity, human hepatotoxicity, neurotoxicity-DI, hematotoxicity, and nephrotoxicity-DI. Scores ranged from 0 to 0.1 (--), 0.1–0.3 (-), 0.3–0.5 (-+), 0.5–0.7 (+), 0.7–0.9 (++), to 0.9–1.0 (+++). A score of +++ indicates high predicted clinical risk.
+
+Strategy for screening and prioritizing candidates for in vivo validation
+
+A comprehensive prioritization strategy was applied to select candidate metabolites for in vivo validation. The following factors were considered: the degree of network association with key targets and enriched pathways, predicted docking affinity for core targets, drug-likeness and ADMET properties, predicted toxicity risks, biological plausibility based on previously reported anti-inflammatory activities, and the feasibility of in vivo administration.
+
+Based on this integrated assessment, diosmetin was selected as the representative candidate for proof-of-concept validation. This selection was supported by its association with AKT1/PI3K-AKT-related module, relatively favorable predicted docking with AKT1, acceptable predicted pharmacokinetic and toxicological profiles, and consistency between its reported anti-inflammatory activities and the inflammatory pathways prioritized in the network analysis. Therefore, diosmetin was used to provide preliminary biological validation of the proposed prioritization framework.
+
+Construction of CLP-induced sepsis model
+
+Male C57BL/6 mice (6–8 weeks old) were obtained from Beijing Vital River Laboratory Animal Technology Co. Ltd. (Charles River Laboratories, China). After a 7-day acclimatization period, sepsis was induced using the cecal ligation and puncture (CLP) procedure. All animal experiments were designed, conducted, and reported in accordance with the ARRIVE 2.0 guidelines, and were approved by the Animal Ethics Committee of Peking University Shenzhen Hospital (Approval No. 2025 − 293). Briefly, mice were anesthetized with inhaled isoflurane. Following hair removal, a 1–1.5 cm midline laparotomy was performed. The cecum was exteriorized and ligated at approximately 50% of its distal portion using 5 − 0 silk sutures. The ligated cecum was punctured once or twice through both walls with a 22-gauge needle, and a small quantity of fecal content was gently expressed. The cecum was returned to the peritoneal cavity, and the abdominal wall was closed in layers using standard surgical techniques.
+
+For the experimental design, mice were randomly assigned to the Control, CLP, or CLP+diosmetin groups. Five mice were included in each group. The Control group underwent sham surgery and received an equivalent volume of normal saline at the same time points as the treatment groups. The CLP group underwent CLP surgery and received an equivalent volume of normal saline immediately, 3 h, and 6 h after surgery. The CLP+diosmetin group underwent CLP surgery and received intraperitoneal injections of diosmetin at a dose of 100 µg/g immediately, 3 h, and 6 h after surgery. Diosmetin was purchased from Shanghai Yuanye Bio-Technology Co., Ltd. (Shanghai, China; CAS No. 520-34-3; lot No. T22F7 × 9844; purity: 99.3%). A 10 mg/mL diosmetin working solution was freshly prepared before use. The injection volume was adjusted according to body weight to ensure a final dose of 100 µg/g for each mouse.
+
+After surgery, all mice were monitored until the 24 h endpoint. Twelve hours after CLP, mice were evaluated for characteristic signs of sepsis, including hunched posture, markedly reduced activity, lethargy, decreased responsiveness, piloerection, and diarrhea. Septic status after CLP was determined based on these qualitative observational signs. No deaths occurred in the Control, CLP, or CLP+diosmetin groups during this period. Blood and organ samples were collected 24 h after surgery for further analyses.
+
+Histomorphological analysis
+
+Tissue samples were fixed in 4% paraformaldehyde for 24 h, embedded in paraffin, and sectioned for hematoxylin and eosin (H&E) staining. Sections were stained with hematoxylin for 5 min, differentiated in 0.6% ammonia water, counterstained with eosin, and dehydrated through a graded ethanol series. Slides were scanned using a Pannoramic Scan 150 system. Renal histopathological injury was evaluated using a semi-quantitative tubular injury score. H&E-stained kidney sections were independently assessed by two experienced pathologists who were blinded to group allocation. The percentage of injured tubules in each field was graded as follows: 0, no obvious injury; 1, < 10% injured tubules; 2, 10%–25% injured tubules; 3, 26%–50% injured tubules; 4, 51%–75%; and 5, > 75%. Five randomly selected non-overlapping fields from each kidney section were evaluated, and the mean score was used for statistical analysis.
+
+Assessment of inflammatory cytokines
+
+Serum concentrations of IL-6 (Elabscience, Wuhan, China, CAS No. E-EL-M0044), TNF-α (Elabscience, Wuhan, China, CAS No. E-EL-M3063), and creatinine (Bio-swamp, Wuhan, China, CAS No. MU30834) were measured using commercial enzyme-linked immunosorbent assay (ELISA) kits. Serum levels were determined according to the manufacturer’s protocol. Absorbance was measured at 450 nm. Each sample was measured in triplicate. A standard curve was generated, and R² > 0.99 was considered acceptable for quantitative analysis.
+
+Protein extraction and western blot analysis
+
+Tissues were lysed in radioimmunoprecipitation assay buffer (Beyotime Biotechnology, Shanghai, China) supplemented with phosphatase and protease inhibitors (MCE, USA). Samples were homogenized on ice and centrifuged to obtain clarified lysates. Protein concentrations were determined using a bicinchoninic acid assay (Beyotime Biotechnology, Shanghai, China). Equal amounts of protein were denatured at 100 °C, separated by sodium dodecyl sulfate polyacrylamide gel electrophoresis, and transferred to membranes. Membranes were incubated with primary antibodies overnight at 4 °C, followed by appropriate secondary antibodies. Protein bands were visualized by enhanced chemiluminescence using a ChemiDoc XRS+ system (Bio-Rad). Band intensity was quantified using ImageJ software and expressed as integrated optical density (IOD). Phosphorylated PI3K and phosphorylated AKT were normalized to their corresponding total protein levels, and the ratios of p-PI3K/PI3K and p-AKT/AKT were used for statistical analysis. Total PI3K and total AKT were normalized to β-actin when applicable. Normalized values were expressed relative to the mean value of the Control group. The original western blot images and detailed antibody information are provided in Figure S1 and Table S3, respectively.
+
+Quantitative and statistical analysis
+
+All experiments were independently repeated three times, and data are presented as mean ± standard deviation (SD). Statistical analyses were performed using GraphPad Prism 9.0. Data normality was confirmed prior to analysis. Comparison between two groups was performed using Student’s t-test. Comparison between multiple groups was performed using one-way ANOVA followed by Tukey’s multiple comparisons test for post-hoc pairwise analysis. A p-value < 0.05 was considered statistically significant.
+
+Results
+
+Identification of microbiota-related metabolites
+
+In total, 206 gut microbiota-related metabolites with corresponding SMILES structures were retrieved from the gutMGene database. Target prediction using the SEA and STP databases yielded 1291 and 797 potential targets, respectively, among which 570 were shared. Overall, 1518 potential targets associated with microbiota-related metabolites were predicted (Fig. 1A, Table S4).
+
+Fig. 1 The screening of target genes for gut microbiota metabolites. (A) The Venn diagram of gut microbiota target genes derived from SwissTargetPrediction (STP) and Similarity Ensemble Approach (SEA) databases. (B) The Venn diagram of sepsis target genes derived from GeneCards and Comparative Toxicogenomics databases. (C) The Venn diagram of overlapping targets between the disease targets and targets of gut microbiota. (D) The network of the final overlapping 45 targets
+
+Prediction of core targets in sepsis
+
+In total, 1559 sepsis-related targets were retrieved from the GeneCards and CTD databases (Table S4). Among these, 367 targets were closely associated with gut microbiota metabolites (Fig. 1B–C). After cross-referencing with gut microbiota-related targets, 45 target genes were predicted as potential links between microbiota-associated metabolites and sepsis (Fig. 1D).
+
+Functional enrichment analysis and core target screening
+
+We investigated the functional roles of the 45 sepsis-associated target genes by performing GO and KEGG pathway enrichment analyses. GO analysis showed that the targets were primarily involved in immune and inflammatory processes, including responses to bacterial components, regulation of inflammation, and apoptotic signaling. At the cellular level, the targets were enriched in membrane microdomains, vesicles, luminal compartments, and inflammation-related complexes. In terms of molecular function, the targets were associated with transcription regulation, receptor and enzyme activities, and protein binding (Fig. 2A–D). KEGG enrichment analysis suggested associations with immune- and inflammation-related signaling, with Toll-like receptor, PI3K/AKT, and MAPK pathways among the top modules (Fig. 3A–B).
+
+Fig. 2 Functional enrichment analysis and core target screening. (A) Gene Ontology (GO) sphere diagram: Outer circle: GO ID; Second circle: Number of genes on each GO; Third circle: Number of intersecting genes in each process; Inner circle: Proportion of intersecting genes. The bubble charts of GO analysis: Biological Process (BP). (B), Cellular Component (CC). (C) and Molecular Function (MF) (D)
+
+Fig. 3 The circle (A) and bubble chart (B) of Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis. (C). The protein-protein interaction (PPI) network of 45 key target genes. Node size represents the number of interactions. (D) The rank of the number of adjacent nodes in the PPI network
+
+A protein–protein interaction network was constructed using the STRING database, and comprised 45 nodes and 532 edges. Within this database-derived network, six hub genes were predicted based on node connectivity: IL-6, TNF, AKT1, TP53, IL1B, and PPARG (Fig. 3C–D).
+
+Microbiota–substrate–metabolite–target–signaling pathways network in sepsis
+
+Based on these enrichment results and hub target screening, subsequent analyses focused on interactions among gut microbiota, metabolites, and core signaling pathways. The MMTS network comprised 136 nodes and 175 edges, including 45 microbial nodes, 32 substrates, 53 metabolites, and six core targets (Fig. 4). Network analysis indicated that three major pathways, Toll-like receptor, PI3K/AKT, and MAPK signaling, were linked to multiple metabolites and core targets. Representative hub gene-metabolite links are provided in Table S1, and pathway-hub gene connections are provided in Table S2. These metabolites and their corresponding targets were selected for subsequent prioritization and experimental evaluation.
+
+Fig. 4 The microbiota-substrates-metabolites-targets-signaling pathways (MMTS) network. Green triangle: gut microbiota; purple triangle: substrates; orange rectangle: metabolites; red oval: targets; blue diamond: signaling pathways
+
+Prediction of drug-likeness properties of microbiota-related metabolites
+
+The ADME properties of the 32 metabolites associated with the five core targets involved in the three key signaling pathways were assessed. Nineteen metabolites exhibited favorable predicted physicochemical profiles and were retained for further prioritization (Table 1).
+
+Table 1 The physicochemical properties of the metabolites from gut microbiota
+
+No.	Metabolite	MW ≤ 500	H-bond donors ≤ 5	H-bond acceptor ≤ 10	MlogP ≤ 4.15	Lipinski’s violations < 1	Bioavailability Score > 0.1	TPSA < 140	
+1	Tryptamine	160.22	2	1	1.26	0	0.55	41.81	
+2	3-Indolepropionic acid	189.21	2	2	1.4	0	0.85	53.09	
+3	Tyrosine	181.19	3	4	-1.7	0	0.55	83.55	
+4	Phenylalanine	165.19	2	3	-1.11	0	0.55	63.32	
+5	2-Hydroxy-3-(4-hydroxyphenyl)propanoic acid	182.17	3	4	0.52	0	0.56	77.76	
+6	3-(4-Hydroxyphenyl)propionic acid	166.17	2	3	1.37	0	0.85	57.53	
+7	N-Acetyl-L-aspartic acid	175.14	3	5	-1.09	0	0.56	103.7	
+8	Indole-3-lactic acid	205.21	3	3	0.55	0	0.85	73.32	
+9	Arachidonic Acid	304.47	1	2	3.6	0	0.55	37.3	
+10	Doconexent	328.49	1	2	3.6	0	0.55	37.3	
+11	(10-[(Acetyloxy)methyl]-9-anthryl)methyl acetate	322.35	0	4	3.45	0	0.55	52.6	
+12	3-(1 H-indol-3-yl)propanoate	188.2	1	2	1.4	0	0.85	55.92	
+13	Apigenin	270.24	3	5	0.52	0	0.55	90.9	
+14	Luteolin	286.24	4	6	-0.03	0	0.55	111.13	
+15	Linoleic Acid	280.45	1	2	-0.03	0	0.55	37.3	
+16	Naringenin chalcone	272.25	4	5	1.02	0	0.55	97.99	
+17	Diosmetin	300.26	3	6	0.22	0	0.55	100.13	
+18	Icaritin	368.38	3	6	1.31	0	0.55	100.13	
+19	(R)-3-(4-Hydroxyphenyl)lactate	181.17	2	4	0.52	0	0.56	80.59	
+
+Molecular docking analysis
+
+After filtering, 19 key metabolites and four core targets were retained for molecular docking. The complete docking results are summarized in Table S5. Docking was used to estimate potential ligand–target binding between prioritized metabolites and candidate targets. These computational scores do not establish direct binding, functional target engagement, or biological activity, and therefore require validation in dedicated experimental systems. The representative predicted docking pairs included diosmetin – AKT1 (− 9.6 kcal·mol⁻¹; Fig. 5A), 2-hydroxy-3-(4-hydroxyphenyl) propanoic acid – IL-1β (− 5.5 kcal·mol⁻¹; Fig. 5B), linoleic acid – IL-6 (− 6.1 kcal·mol⁻¹; Fig. 5C), and arachidonic acid – TP53 (− 6.8 kcal·mol⁻¹; Fig. 5D). The predicted binding sites are presented in Fig. 5.
+
+Fig. 5 Representative molecular docking models of selected high-affinity metabolite-target pairs from the complete docking dataset. (A) diosmetin - AKT1, (B) 2-hydroxy-3-(4-hydroxyphenyl) propanoic acid - IL-1β, (C) linoleic acid - IL-6, and (D) arachidonic acid - TP53
+
+Toxicological evaluation of metabolites
+
+The nineteen candidate metabolites were assessed for toxicity using ADMETlab to complement the evaluation of their overall safety profiles. Twelve metabolites exhibited relatively favorable predicted toxicological profiles and were therefore retained as higher-priority candidates for subsequent consideration. (Table 2). Several candidates showed potential safety concerns: arachidonic acid, doconexent, and (10-[(Acetyloxy)methyl]-9-anthryl)methyl acetate showed hepatotoxicity; N-Acetyl-L-aspartic acid showed predicted nephrotoxicity; luteolin and linoleic acid showed predicted skin sensitization, and icaritin showed predicted respiratory effects. Although luteolin showed a predicted docking score with AKT1 comparable to that of diosmetin, its less favorable predicted skin sensitization profile reduced its priority for the current in vivo validation stage.
+
+Table 2 Molecular docking results of metabolites and core targets
+
+Protein	PDB ID	Metabolites	PubChem ID	Binding energy (kcal mol–1)	Grid box centre (x, y, z)	Grid box centre (x, y, z)	Contact residues	
+AKT1	7WM2	(10-[(acetyloxy)methyl]-9-anthryl) methyl acetate	613,145	-8.2	2073	149, 115, 95	21, 21, 28	
+3-(1 H-indol-3-yl)propanoate	3,292,996	-8.3	2073	149, 115, 95	21, 21, 28	
+3-indolepropionic acid	3744	-7.7	2073	149, 115, 95	19, 19, 28	
+Apigenin	5,280,443	-9.1	1926	109, 140, 85	21, 21, 35	
+Diosmetin	5,281,612	-9.6	1926	109, 140, 85	22, 22, 35	
+Icaritin	5,318,980	-8.1	6672	134, 130, 134	30, 35, 21	
+Indole-3-lactic acid	92,904	-8	2073	149, 115, 95	19, 19, 28	
+Luteolin	5,280,445	-9.6	1926	109, 140, 85	21, 21, 35	
+Naringenin chalcone	5,280,960	-7.9	1441	118, 152, 88	22, 28, 31	
+Phenylalanine	6140	-6.5	1441	118, 152, 88	18, 28, 31	
+Tryptamine	1150	-6.8	2073	149, 115, 95	18, 18, 28	
+IL-1β	8RYS	(R)-3-(4-hydroxyphenyl) lactate	9,548,632	-5.1	158	-16, 9, -14	19, 19, 19	
+2-hydroxy-3-(4-hydroxyphenyl) propanoic acid	9378	-5.5	158	-16, 9, -14	19, 19, 19	
+3-(4-hydroxyphenyl) propionic acid	10,394	-5	158	-16, 9, -14	19, 19, 19	
+N-acetyl-L-aspartic acid	65,065	-5.1	158	-16, 9, -14	17, 17, 17	
+Tyrosine	6057	-5.2	158	-16, 9, -14	18, 18, 18	
+IL6	8QY5	Linoleic acid	5,280,450	-6.1	1795	275, 225, 238	23, 23, 32	
+TP53	1XNI	Arachidonic acid	444,899	-6.8	2339	20, -13, 7	35, 20, 20	
+Doconexent	445,580	-6.5	1672	-15, 25, -36	32, 21, 21	
+
+Diosmetin reduces inflammatory responses and is associated with increased PI3K/AKT phosphorylation in sepsis-associated AKI
+
+Based on the integrated prioritization results, PI3K/AKT phosphorylation was selected as a representative pathway-associated readout for preliminary in vivo validation of diosmetin (Fig. 6A). Serum concentrations of the pro-inflammatory cytokines IL-6 and TNF-α were markedly increased in septic mice, whereas diosmetin administration significantly reduced these levels. Serum creatinine levels increased after CLP and decreased after diosmetin treatment (Fig. 6B). Semi-quantitative histological scoring confirmed the renal pathological changes observed in H&E-stained sections. The renal tubular injury score was significantly increased in the CLP group compared with the Control group, whereas diosmetin treatment significantly reduced this score compared with the CLP group (Fig. 6C). Western blot analysis showed that phosphorylated PI3K and AKT levels were reduced in septic mice compared with sham controls. Diosmetin treatment was associated with higher PI3K and AKT phosphorylation than in untreated CLP mice (Fig. 6D).
+
+Fig. 6 Diosmetin attenuates inflammation and is associated with increased PI3K and AKT phosphorylation in cecal ligation and puncture (CLP)-induced septic mice. (A) Experimental design of the in vivo study. Mice were subjected to cecal ligation and puncture to induce sepsis and treated with diosmetin via intraperitoneal injection at 0, 3, and 6 h post-surgery. Samples were collected 24 h after CLP for analysis. (B) Serum levels of the pro-inflammatory cytokines IL-6, TNF-α, and creatinine were measured by ELISA. (C) Representative hematoxylin and eosin (H&E) staining of kidney tissues. Scale bar: 50 μm, semiquantitative renal tubular injury scores were calculated. (D) Western blot analysis of PI3K/AKT signaling proteins in kidney tissues. β-actin served as the loading control. Data are presented as mean ± SD (n = 5 per group). Statistical analysis was performed using one-way ANOVA followed by Tukey’s multiple comparisons test. *p < 0.05 and **p < 0.01 versus the Control group; #p < 0.05 versus the CLP group
+
+Discussion
+
+Sepsis is a life-threatening systemic inflammatory syndrome that frequently leads to multi-organ dysfunction. Gut microbiota dysbiosis contributes to its onset and progression by promoting opportunistic pathogen overgrowth, disrupting immune homeostasis, and altering microbial metabolite profiles. In this study, we integrated gut microbiota databases with network pharmacology to characterize microbiota-related metabolites and their potential downstream targets. Twelve drug-like metabolites with relatively favorable predicted toxicological profiles were prioritized, and six core targets were identified. These metabolites were mainly linked to Toll-like receptor, PI3K/AKT, and MAPK signaling pathways. In vivo evaluation provided preliminary host-level evidence that diosmetin reduced systemic inflammatory cytokines and attenuated renal histopathological injury, accompanied by increased PI3K and AKT phosphorylation.
+
+The network pharmacology workflow used in this study depended on public databases and target-prediction platforms. Target prediction algorithms are largely based on chemical similarity, known ligand–target relationships, and previously curated bioactivity data; therefore, they may generate false-positive associations or miss context-specific targets that are active only under septic conditions. Similarly, disease databases are influenced by literature and annotation bias, whereby extensively studied inflammatory genes may be overrepresented. As a result, highly investigated targets may be preferentially identified as hub nodes, and enrichment analysis may amplify well-characterized inflammatory pathways.
+
+The MMTS network yielded a set of drug-like, and toxicologically favorable metabolites linked to multiple pathways relevant to sepsis biology. Network and docking analyses results also identified testable leads in addition to diosmetin. For example, IL-1β, IL-6, and TP53 were predicted as highly connected targets, and representative metabolite-target pairs were identified in the docking analysis and are summarized in Table S5 and Fig. 5. These candidates align with the pathway clusters enriched in TLR, PI3K/AKT, and MAPK signaling.
+
+ADMETlab-based toxicity assessment was used as a computational screening tool to support candidate prioritization rather than as definitive evidence of in vivo or clinical toxicity. Several metabolites showed predicted safety liabilities, including hepatotoxicity, nephrotoxicity, skin sensitization, or respiratory toxicity. These predicted risks reduced their priority for the present in vivo validation stage. These in silico toxicity results remain predictive and require confirmation through dose–response studies, organ-specific toxicity evaluation, and long-term safety assessment.
+
+Intestinal dysfunction is a major contributor to sepsis-associated multiple organ dysfunction. Understanding changes in the gut microbiota and their metabolites is therefore an important focus in critical care medicine. A healthy gut microbiota protects the host through several mechanisms, including colonization resistance, microbial metabolite-mediated regulation, and the maintenance of immune homeostasis [23]. Both the underlying disease process and clinical interventions have been found to play important roles in shaping microbial dysbiosis. Patients with sepsis often show reduced commensal bacterial abundance, overgrowth of pathogenic or drug-resistant organisms, and decreased levels of tryptophan- and tyrosine-derived metabolites; these changes correlate with disease severity [24–26]. Experimental studies further support the role of gut microbiota in modulating host responses during sepsis [27]. Short-chain fatty acids, such as acetate, exert pronounced anti-inflammatory and organ-protective effects by inhibiting NOX2/ROS signaling and restoring the intracellular oxidant–antioxidant balance in T cells [28, 29]. Several metabolites prioritized in this study are implicated in neuroimmune regulation or other organ systems, supporting the network-level nature of predicted candidates. Organ-specific validation is still required.
+
+The gut microbiota maintains immune homeostasis through interactions between intestinal epithelial cells and Toll-like receptors expressed on immune cells. Among the TLR family, TLR4 is a key pattern-recognition receptor whose activation triggers an inflammatory cascade via the downstream NF-κB signaling pathway, compromises intestinal barrier integrity, and exacerbates sepsis-associated acute lung injury [30]. Other members of the TLR family, including TLR5, TLR7, and TLR9, also modulate gut microbial diversity and contribute to anti-inflammatory responses and the maintenance of immune homeostasis [31–33].
+
+The PI3K/AKT signaling pathway is the major intracellular signaling cascade that regulate cell proliferation, migration, apoptosis, autophagy, and immune responses. Metabolites produced by probiotic genera may activate PI3K/AKT signaling, promote epithelial repair gene transcription, and maintain epithelial barrier integrity [34–38]. In this study, PI3K/AKT phosphorylation was selected as a representative pathway-associated readout for preliminary in vivo validation of diosmetin. This selection was based on the identification of AKT1 as a hub target, the predicted diosmetin–AKT1 docking profile, and the known relevance of PI3K/AKT signaling to inflammation and organ injury responses. Diosmetin treatment was associated with increased PI3K and AKT phosphorylation in CLP mice. However, the current data do not exclude contributions from other inflammatory pathways.
+
+In the MMTS network, several metabolites showed favorable predicted docking and safety profiles. Diosmetin was identified as a microbiota-associated candidate metabolite based on gutMGene annotations and showed a relatively favorable predicted docking score with AKT1, acceptable predicted toxicological characteristics, and reported anti-inflammatory, antioxidant, and antimicrobial activitie [39, 40]. Diosmetin was selected as a proof-of-concept candidate because its integrated profile aligned with the inflammatory and host-response pathways prioritized in the network analysis. In addition, 3-(4-Hydroxyphenyl)propionic acid showed predicted affinity for TP53, a potential MAPK pathway-associated target. In vivo studies have indicated that this metabolite mitigates inflammation by modulating MAPK and NF-κB signaling while maintaining a favorable safety profile [41].
+
+In summary, this study used network pharmacology to prioritize sepsis-associated microbiota-related candidate metabolites and potential host targets. The findings provide a hypothesis-generating framework for subsequent validation. However, further in vitro and in vivo studies are required to confirm the predicted metabolite–target interactions, clarify organ-specific mechanisms, and evaluate the translational relevance of candidate metabolites.
+
+This study has several limitations. First, the network pharmacology analysis was based on public databases and target-prediction platforms. These database-driven analyses are inherently static and cannot fully capture the dynamic and complex biological processes involved in sepsis. Therefore, the predicted metabolite–target–pathway relationships should be interpreted as hypothesis-generating rather than definitive mechanistic evidence. Second, the target-retrieval strategy used “sepsis” as the disease keyword to capture the broader host-response network associated with sepsis. Thus, the computationally predicted targets should be interpreted as sepsis-associated rather than AKI-specific targets. Future studies using sepsis-associated AKI-specific datasets and kidney-focused omics data are needed to refine the organ-specific target network. Third, the animal experiment did not include fecal microbiota profiling or metabolite abundance measurement. Accordingly, the current in vivo data reflect host-level biological activity after exogenous diosmetin administration and do not establish that the observed effects were microbiota-mediated or dependent on microbial metabolism. Future studies incorporating fecal 16 S rRNA sequencing, metagenomics, metabolomics, antibiotic-treated or germ-free animal models, and fecal microbiota transplantation are required to clarify microbiota-dependent effects. Fourth, no standardized quantitative severity score was applied after CLP, which may affect model reproducibility and interpretation of treatment effects. Fifth, the experimental validation was limited to a single candidate metabolite, one organ injury model, and a short 24-h endpoint. The renal findings should therefore be interpreted primarily as histopathological, inflammatory, and early functional evidence rather than definitive evidence of durable renal protection. Finally, the molecular docking protocol was not fully validated by re-docking co-crystallized ligands for all protein targets, and the absence of pathway-specific inhibition, genetic knockdown, or other loss-of-function experiments prevents causal assessment of whether PI3K/AKT activation is required for the observed effects of diosmetin.
+
+Conclusion
+
+In this study, we used a network pharmacology framework to identify sepsis-associated microbiota-related candidate metabolites and potential host targets. Twelve metabolites were prioritized based on predicted pharmacokinetic, toxicological, and pathway-related profiles. Among them, diosmetin was selected for preliminary in vivo validation in a CLP-induced sepsis-associated AKI model. Diosmetin reduced inflammatory cytokine levels, attenuated renal histopathological injury, and was associated with increased PI3K and AKT phosphorylation compared with untreated CLP mice. These findings provide preliminary host-level evidence supporting diosmetin as a candidate metabolite for further investigation.
+
+Supplementary Information
+
+Below is the link to the electronic supplementary material.
+
+Supplementary Material 1
+
+Abbreviations
+
+ADMET Absorption, distribution, metabolism, excretion, and toxicity
+
+AKI Acute kidney injury
+
+AKT Protein kinase B
+
+BP Biological process
+
+CC Cellular component
+
+CLP Cecal ligation and puncture
+
+CTD Comparative Toxicogenomics Database
+
+ELISA Enzyme-linked immunosorbent assay
+
+GO Gene Ontology
+
+H&E Hematoxylin and eosin
+
+hERG Human ether-à-go-go-related gene
+
+IL-1β Interleukin-1 beta
+
+IL-6 Interleukin-6
+
+IOD Integrated optical density
+
+KEGG Kyoto Encyclopedia of Genes and Genomes
+
+MAPK Mitogen-activated protein kinase
+
+MF Molecular function
+
+MMTS Microbiota-substrates-metabolites-targets-signaling pathways
+
+MW Molecular weight
+
+NF-κB Nuclear factor kappa B
+
+PDB Protein Data Bank
+
+PI3K Phosphoinositide 3-kinase
+
+PPI Protein-protein interaction
+
+PPARG Peroxisome proliferator-activated receptor gamma
+
+ROS Reactive oxygen species
+
+SD Standard deviation
+
+SEA Similarity Ensemble Approach
+
+SMILES Simplified Molecular Input Line Entry System
+
+STP SwissTargetPrediction
+
+TLR Toll-like receptor
+
+TP53 Tumor protein p53
+
+TNF-α Tumor necrosis factor alpha
+
+TPSA Topological polar surface area
+
+Acknowledgements
+
+None.
+
+Author contributions
+
+Mingliang Ye: Conceptualization, Methodology, Software, Data curation, Writing-Original draft preparation, Software, Validation, Revision; Yinghui Hong: Conceptualization, Methodology, Software, Data curation, Writing-Original draft preparation, Software, Validation; Xi Li, Lei Huang: Supervision, Funding, Revision.
+
+Funding support
+
+This work was supported by Shenzhen High-level Hospital Construction Fund and the Key Program for Clinical Research at Peking University Shenzhen Hospital (No. LCYJZD2021006), and Peking University Shenzhen Hospital Scientific Research Fund (No. KYQD2024428).
+
+Data availability
+
+No datasets were generated or analysed during the current study.
+
+Declarations
+
+Conflict of interest
+
+The authors declare that they have no competing interests.
+
+Ethics approval
+
+This study utilized data exclusively derived from publicly available databases and involved no direct participation of human subjects. Therefore, neither institutional ethical approval nor informed consent was required. All animal experiments were designed, conducted, and reported in accordance with the ARRIVE 2.0 guidelines, institutional guidelines for the care and use of laboratory animals, and applicable national regulations on laboratory animal welfare. The animal care and experimental procedures were approved by the Animal Ethics Committee of Peking University Shenzhen Hospital (Approval No. 2025 − 293).
+
+Consent for publication
+
+Not applicable.
+
+Clinical trial number
+
+Not applicable.
+
+Mingliang Ye and Yinghui Hong—Co-authors. Xi Li and Lei Huang —Co-corresponding authors.
+
+Publisher’s note
+
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+
+References
+
+1. Wise J Sepsis: Patients to get quicker, tailored treatment under new guidelines BMJ 2025 391 r2463 10.1136/bmj.r2463 41265903
+Wise J (2025) Sepsis: Patients to get quicker, tailored treatment under new guidelines. BMJ 391:r2463. 10.1136/bmj.r246341265903 10.1136/bmj.r2463
+2. You W Roles of cytokine storm in sepsis progression: biomarkers, and emerging therapeutic strategies Front Immunol 2025 16 1696366 10.3389/fimmu.2025.1696366 41262247 PMC12623314
+You W (2025) Roles of cytokine storm in sepsis progression: biomarkers, and emerging therapeutic strategies. Front Immunol 16:1696366. 10.3389/fimmu.2025.169636641262247 10.3389/fimmu.2025.1696366 PMC12623314
+3. Xiong J Liu G Jia T Targeting gut microbiotasu-derived butyrate for Ferroptosis inhibition in Sepsis-induced myocardial dysfunction J Mol Cell Cardiol 2025 209 119 127 10.1016/j.yjmcc.2025.10.005 41138937
+Xiong J, Liu G, Jia T et al (2025) Targeting gut microbiotasu-derived butyrate for Ferroptosis inhibition in Sepsis-induced myocardial dysfunction. J Mol Cell Cardiol 209:119–127. 10.1016/j.yjmcc.2025.10.00541138937 10.1016/j.yjmcc.2025.10.005
+4. Wang Z Lin X Wu J Radix Pseudostellaria polysaccharides alleviate sepsis-induced liver injury by modulating the gut microbiota via the TLR4/NF-kappaB pathway Front Pharmacol 2025 16 1658147 10.3389/fphar.2025.1658147 41069598 PMC12504199
+Wang Z, Lin X, Wu J et al (2025) Radix Pseudostellaria polysaccharides alleviate sepsis-induced liver injury by modulating the gut microbiota via the TLR4/NF-kappaB pathway. Front Pharmacol 16:1658147. 10.3389/fphar.2025.165814741069598 10.3389/fphar.2025.1658147 PMC12504199
+5. de Kroon RR Kreulen IAM Davids M The gut as a source of infection for fungal pathogens: increased fecal Candida albicans precedes onset of Candida late-onset sepsis in very preterm infants J Infect Dis 2025 233 2 e570 e581 10.1093/infdis/jiaf524 PMC13017767 41071924
+de Kroon RR, Kreulen IAM, Davids M et al (2025) The gut as a source of infection for fungal pathogens: increased fecal Candida albicans precedes onset of Candida late-onset sepsis in very preterm infants. J Infect Dis 233(2):e570–e581. 10.1093/infdis/jiaf52410.1093/infdis/jiaf524 PMC13017767 41071924
+6. Wiersinga WJ, van der Poll T (2025) Biological drivers of the host response in sepsis. Thorax 222012. 10.1136/thorax-2024-22201210.1136/thorax-2024-222012 40603006
+7. Winner KM Chanderraj R Nuppnau M Anti-Anaerobic Antibiotics, Gut Microbiota, and Sepsis-associated Acute Kidney Injury Am J Respir Crit Care Med 2025 10.1164/rccm.202411-2281OC 40737346 PMC13138235
+Winner KM, Chanderraj R, Nuppnau M et al (2025) Anti-Anaerobic Antibiotics, Gut Microbiota, and Sepsis-associated Acute Kidney Injury. Am J Respir Crit Care Med. 10.1164/rccm.202411-2281OC40737346 10.1164/rccm.202411-2281OC PMC13138235
+8. Zhou ZK Yu MM Shou ST Interaction between gut-heart axis in sepsis-induced cardiomyopathy Pharmacol Res 2025 217 107806 10.1016/j.phrs.2025.107806 40449812
+Zhou ZK, Yu MM, Shou ST et al (2025) Interaction between gut-heart axis in sepsis-induced cardiomyopathy. Pharmacol Res 217:107806. 10.1016/j.phrs.2025.10780640449812 10.1016/j.phrs.2025.107806
+9. Shang W Zhang S Yang L Gut microbiota: A novel target for sepsis treatment Chin Med J (Engl) 2025 138 13 1513 1515 10.1097/CM9.0000000000003630 40419445 PMC12233922
+Shang W, Zhang S, Yang L et al (2025) Gut microbiota: A novel target for sepsis treatment. Chin Med J (Engl) 138(13):1513–1515. 10.1097/CM9.000000000000363040419445 10.1097/CM9.0000000000003630 PMC12233922
+10. Yu G Xie W Xiang J Gut microbiota remodelling alleviates elderly sepsis by microbiota-derived acetic acid via FFAR2/NLRP3 pathway Eur J Pharmacol 2025 1007 178229 10.1016/j.ejphar.2025.178229 41072839
+Yu G, Xie W, Xiang J et al (2025) Gut microbiota remodelling alleviates elderly sepsis by microbiota-derived acetic acid via FFAR2/NLRP3 pathway. Eur J Pharmacol 1007:178229. 10.1016/j.ejphar.2025.17822941072839 10.1016/j.ejphar.2025.178229
+11. Yang L Shang W Chen D Identifying propionate metabolism-related genes as biomarkers of sepsis development and therapeutic targets Sci Rep 2025 15 1 24531 10.1038/s41598-025-06463-2 40628770 PMC12238408
+Yang L, Shang W, Chen D et al (2025) Identifying propionate metabolism-related genes as biomarkers of sepsis development and therapeutic targets. Sci Rep 15(1):24531. 10.1038/s41598-025-06463-240628770 10.1038/s41598-025-06463-2 PMC12238408
+12. Luo Y, Gao J, Su X et al (2025) Unraveling the immunological landscape and gut microbiome in sepsis: a comprehensive approach to diagnosis and prognosis. EBioMedicine. 113:105586. 10.1016/j.ebiom.2025.10558610.1016/j.ebiom.2025.105586 PMC11835619 39893935
+13. Sun S Wang D Dong D Altered intestinal microbiome and metabolome correspond to the clinical outcome of sepsis Crit Care 2023 27 1 127 10.1186/s13054-023-04412-x 36978107 PMC10044080
+Sun S, Wang D, Dong D et al (2023) Altered intestinal microbiome and metabolome correspond to the clinical outcome of sepsis. Crit Care 27(1):127. 10.1186/s13054-023-04412-x36978107 10.1186/s13054-023-04412-x PMC10044080
+14. Li Q Song XC Li K Gut-lung immunometabolic crosstalk in sepsis: from microbiota to respiratory failure Front Med (Lausanne) 2025 12 1685044 10.3389/fmed.2025.1685044 41244772 PMC12613236
+Li Q, Song XC, Li K et al (2025) Gut-lung immunometabolic crosstalk in sepsis: from microbiota to respiratory failure. Front Med (Lausanne) 12:1685044. 10.3389/fmed.2025.168504441244772 10.3389/fmed.2025.1685044 PMC12613236
+15. Zhao L Huang Y Ye Z Short-chain fatty acids attenuate sepsis-induced gut dysbiosis and hippocampal neuroinflammation via NLRP6 inflammasome activation in mice Int J Surg 2025 112 1 570 582 10.1097/JS9.0000000000003554 41159411 PMC12825554
+Zhao L, Huang Y, Ye Z et al (2025) Short-chain fatty acids attenuate sepsis-induced gut dysbiosis and hippocampal neuroinflammation via NLRP6 inflammasome activation in mice. Int J Surg 112(1):570–582. 10.1097/JS9.000000000000355441159411 10.1097/JS9.0000000000003554 PMC12825554
+16. Li HL Wei YY Li XH Diosmetin has therapeutic efficacy in colitis regulating gut microbiota, inflammation, and oxidative stress via the circ-Sirt1/Sirt1 axis Acta Pharmacol Sin 2022 43 4 919 932 10.1038/s41401-021-00726-0 34262136 PMC8976001
+Li HL, Wei YY, Li XH et al (2022) Diosmetin has therapeutic efficacy in colitis regulating gut microbiota, inflammation, and oxidative stress via the circ-Sirt1/Sirt1 axis. Acta Pharmacol Sin 43(4):919–932. 10.1038/s41401-021-00726-034262136 10.1038/s41401-021-00726-0 PMC8976001
+17. Meephat S Prasatthong P Potue P Diosmetin ameliorates vascular dysfunction and remodeling by modulation of Nrf2/HO-1 and p-JNK/p-NF-κB expression in hypertensive rats Antioxid (Basel) 2021 10 9 1487 10.3390/antiox10091487 PMC8469706 34573119
+Meephat S, Prasatthong P, Potue P et al (2021) Diosmetin ameliorates vascular dysfunction and remodeling by modulation of Nrf2/HO-1 and p-JNK/p-NF-κB expression in hypertensive rats. Antioxid (Basel) 10(9):1487. 10.3390/antiox1009148710.3390/antiox10091487 PMC8469706 34573119
+18. Mei Z Du L Liu X Diosmetin alleviated cerebral ischemia/reperfusion injury in vivo and in vitro by inhibiting oxidative stress via the SIRT1/Nrf2 signaling pathway Food Funct 2022 13 1 198 212 10.1039/d1fo02579a 34881386
+Mei Z, Du L, Liu X et al (2022) Diosmetin alleviated cerebral ischemia/reperfusion injury in vivo and in vitro by inhibiting oxidative stress via the SIRT1/Nrf2 signaling pathway. Food Funct 13(1):198–212. 10.1039/d1fo02579a34881386 10.1039/d1fo02579a
+19. Zhang P Zhang D Zhou W Network pharmacology: towards the artificial intelligence-based precision traditional Chinese medicine Brief Bioinform 2023 25 1 bbad518 10.1093/bib/bbad518 38197310 PMC10777171
+Zhang P, Zhang D, Zhou W et al (2023) Network pharmacology: towards the artificial intelligence-based precision traditional Chinese medicine. Brief Bioinform 25(1):bbad518. 10.1093/bib/bbad51838197310 10.1093/bib/bbad518 PMC10777171
+20. Qi C He G Qian K gutMGene v2.0: an updated comprehensive database for target genes of gut microbes and microbial metabolites Nucleic Acids Res 2025 53 D1 D783 DD788 10.1093/nar/gkae1002 39475181 PMC11701569
+Qi C, He G, Qian K et al (2025) gutMGene v2.0: an updated comprehensive database for target genes of gut microbes and microbial metabolites. Nucleic Acids Res 53(D1):D783–DD788. 10.1093/nar/gkae100239475181 10.1093/nar/gkae1002 PMC11701569
+21. Daina A Michielin O Zoete V SwissADME: a free web tool to evaluate pharmacokinetics, drug-likeness and medicinal chemistry friendliness of small molecules Sci Rep 2017 7 42717 10.1038/srep42717 28256516 PMC5335600
+Daina A, Michielin O, Zoete V (2017) SwissADME: a free web tool to evaluate pharmacokinetics, drug-likeness and medicinal chemistry friendliness of small molecules. Sci Rep 7:42717. 10.1038/srep4271728256516 10.1038/srep42717 PMC5335600
+22. Xiong G Wu Z Yi J ADMETlab 2.0: an integrated online platform for accurate and comprehensive predictions of ADMET properties Nucleic Acids Res 2021 49 W1 W5 W14 10.1093/nar/gkab255 33893803 PMC8262709
+Xiong G, Wu Z, Yi J et al (2021) ADMETlab 2.0: an integrated online platform for accurate and comprehensive predictions of ADMET properties. Nucleic Acids Res 49(W1):W5–W14. 10.1093/nar/gkab25533893803 10.1093/nar/gkab255 PMC8262709
+23. Wu Q Tang AL Dong QQ Picroside II-Encapsulated Nanoformulations as Pyroptosis Inhibitor Alleviate Cytokine Storms and Remodel Gut Microbiota Disturbances ACS Nano 2025 19 36 32569 32584 10.1021/acsnano.5c09760 40889346
+Wu Q, Tang AL, Dong QQ et al (2025) Picroside II-Encapsulated Nanoformulations as Pyroptosis Inhibitor Alleviate Cytokine Storms and Remodel Gut Microbiota Disturbances. ACS Nano 19(36):32569–32584. 10.1021/acsnano.5c0976040889346 10.1021/acsnano.5c09760
+24. Garcia ER Vergara A Aziz F Changes in the gut microbiota and risk of colonization by multidrug-resistant bacteria, infection, and death in critical care patients Clin Microbiol Infect 2022 28 7 975 982 10.1016/j.cmi.2022.01.004 35066206
+Garcia ER, Vergara A, Aziz F et al (2022) Changes in the gut microbiota and risk of colonization by multidrug-resistant bacteria, infection, and death in critical care patients. Clin Microbiol Infect 28(7):975–982. 10.1016/j.cmi.2022.01.00435066206 10.1016/j.cmi.2022.01.004
+25. Ma X Jin H Chu X The Host CYP1A1-Microbiota Metabolic Axis Promotes Gut Barrier Disruption in Methicillin-Resistant Staphylococcus aureus-Induced Abdominal Sepsis Front Microbiol 2022 13 802409 10.3389/fmicb.2022.802409 35572636 PMC9093654
+Ma X, Jin H, Chu X et al (2022) The Host CYP1A1-Microbiota Metabolic Axis Promotes Gut Barrier Disruption in Methicillin-Resistant Staphylococcus aureus-Induced Abdominal Sepsis. Front Microbiol 13:802409. 10.3389/fmicb.2022.80240935572636 10.3389/fmicb.2022.802409 PMC9093654
+26. Carvalho MJ Sands K Thomson K Antibiotic resistance genes in the gut microbiota of mothers and linked neonates with or without sepsis from low- and middle-income countries Nat Microbiol 2022 7 9 1337 1347 10.1038/s41564-022-01184-y 35927336 PMC9417982
+Carvalho MJ, Sands K, Thomson K et al (2022) Antibiotic resistance genes in the gut microbiota of mothers and linked neonates with or without sepsis from low- and middle-income countries. Nat Microbiol 7(9):1337–1347. 10.1038/s41564-022-01184-y35927336 10.1038/s41564-022-01184-y PMC9417982
+27. Zhang J Ankawi G Sun J Gut-kidney crosstalk in septic acute kidney injury Crit Care 2018 22 1 117 10.1186/s13054-018-2040-y 29724256 PMC5934860
+Zhang J, Ankawi G, Sun J et al (2018) Gut-kidney crosstalk in septic acute kidney injury. Crit Care 22(1):117. 10.1186/s13054-018-2040-y29724256 10.1186/s13054-018-2040-y PMC5934860
+28. Al-Harbi NO Nadeem A Ahmad SF Short chain fatty acid, acetate ameliorates sepsis-induced acute kidney injury by inhibition of NADPH oxidase signaling in T cells Int Immunopharmacol 2018 58 24 31 10.1016/j.intimp.2018.02.023 29544198
+Al-Harbi NO, Nadeem A, Ahmad SF et al (2018) Short chain fatty acid, acetate ameliorates sepsis-induced acute kidney injury by inhibition of NADPH oxidase signaling in T cells. Int Immunopharmacol 58:24–31. 10.1016/j.intimp.2018.02.02329544198 10.1016/j.intimp.2018.02.023
+29. Li N Gong Y Zhu Y Exogenous acetate attenuates inflammatory responses through HIF-1alpha-dependent glycolysis regulation in macrophage Cell Mol Life Sci 2024 82 1 21 10.1007/s00018-024-05521-8 39725781 PMC11671453
+Li N, Gong Y, Zhu Y et al (2024) Exogenous acetate attenuates inflammatory responses through HIF-1alpha-dependent glycolysis regulation in macrophage. Cell Mol Life Sci 82(1):21. 10.1007/s00018-024-05521-839725781 10.1007/s00018-024-05521-8 PMC11671453
+30. Kaur H Ali SA Probiotics and gut microbiota: mechanistic insights into gut immune homeostasis through TLR pathway regulation Food Funct 2022 13 14 7423 7447 10.1039/d2fo00911k 35766374
+Kaur H, Ali SA (2022) Probiotics and gut microbiota: mechanistic insights into gut immune homeostasis through TLR pathway regulation. Food Funct 13(14):7423–7447. 10.1039/d2fo00911k35766374 10.1039/d2fo00911k
+31. Minaya DM Turlej A Joshi A Consumption of a high energy density diet triggers microbiota dysbiosis, hepatic lipidosis, and microglia activation in the nucleus of the solitary tract in rats Nutr Diabetes 2020 10 1 20 10.1038/s41387-020-0119-4 32518225 PMC7283362
+Minaya DM, Turlej A, Joshi A et al (2020) Consumption of a high energy density diet triggers microbiota dysbiosis, hepatic lipidosis, and microglia activation in the nucleus of the solitary tract in rats. Nutr Diabetes 10(1):20. 10.1038/s41387-020-0119-432518225 10.1038/s41387-020-0119-4 PMC7283362
+32. Zegarra-Ruiz DF El Beidaq A Iniguez AJ A Diet-Sensitive Commensal Lactobacillus Strain Mediates TLR7-Dependent Systemic Autoimmunity Cell Host Microbe 2019 25 1 113 127e 10.1016/j.chom.2018.11.009 30581114 PMC6377154
+Zegarra-Ruiz DF, El Beidaq A, Iniguez AJ et al (2019) A Diet-Sensitive Commensal Lactobacillus Strain Mediates TLR7-Dependent Systemic Autoimmunity. Cell Host Microbe 25(1):113–127e. 10.1016/j.chom.2018.11.00930581114 10.1016/j.chom.2018.11.009 PMC6377154
+33. Wang P Yang X Zhang L Tlr9 deficiency in B cells leads to obesity by promoting inflammation and gut dysbiosis Nat Commun 2024 15 1 4232 10.1038/s41467-024-48611-8 38762479 PMC11102548
+Wang P, Yang X, Zhang L et al (2024) Tlr9 deficiency in B cells leads to obesity by promoting inflammation and gut dysbiosis. Nat Commun 15(1):4232. 10.1038/s41467-024-48611-838762479 10.1038/s41467-024-48611-8 PMC11102548
+34. Wang L Li S Fan H Bifidobacterium lactis combined with Lactobacillus plantarum inhibit glioma growth in mice through modulating PI3K/AKT pathway and gut microbiota Front Microbiol 2022 13 986837 10.3389/fmicb.2022.986837 36147842 PMC9486703
+Wang L, Li S, Fan H et al (2022) Bifidobacterium lactis combined with Lactobacillus plantarum inhibit glioma growth in mice through modulating PI3K/AKT pathway and gut microbiota. Front Microbiol 13:986837. 10.3389/fmicb.2022.98683736147842 10.3389/fmicb.2022.986837 PMC9486703
+35. Mohseni AH Casolaro V Bermudez-Humaran LG Modulation of the PI3K/Akt/mTOR signaling pathway by probiotics as a fruitful target for orchestrating the immune response Gut Microbes 2021 13 1 1 17 10.1080/19490976.2021.1886844 33615993 PMC7899637
+Mohseni AH, Casolaro V, Bermudez-Humaran LG et al (2021) Modulation of the PI3K/Akt/mTOR signaling pathway by probiotics as a fruitful target for orchestrating the immune response. Gut Microbes 13(1):1–17. 10.1080/19490976.2021.188684433615993 10.1080/19490976.2021.1886844 PMC7899637
+36. Huang N Wei Y Wang M Dachaihu decoction alleviates septic intestinal epithelial barrier disruption via PI3K/AKT pathway based on transcriptomics and network pharmacology J Ethnopharmacol 2025 337 Pt 3 118937 10.1016/j.jep.2024.118937 39419306
+Huang N, Wei Y, Wang M et al (2025) Dachaihu decoction alleviates septic intestinal epithelial barrier disruption via PI3K/AKT pathway based on transcriptomics and network pharmacology. J Ethnopharmacol 337(Pt 3):118937. 10.1016/j.jep.2024.11893739419306 10.1016/j.jep.2024.118937
+37. Lee H Son YS Lee MO Low-dose interleukin-2 alleviates dextran sodium sulfate-induced colitis in mice by recovering intestinal integrity and inhibiting AKT-dependent pathways Theranostics 2020 10 11 5048 5063 10.7150/thno.41534 32308767 PMC7163458
+Lee H, Son YS, Lee MO et al (2020) Low-dose interleukin-2 alleviates dextran sodium sulfate-induced colitis in mice by recovering intestinal integrity and inhibiting AKT-dependent pathways. Theranostics 10(11):5048–5063. 10.7150/thno.4153432308767 10.7150/thno.41534 PMC7163458
+38. Cheng X Cao Z Luo J Baicalin ameliorates APEC-induced intestinal injury in chicks by inhibiting the PI3K/AKT-mediated NF-kappaB signaling pathway Poult Sci 2022 101 1 101572 10.1016/j.psj.2021.101572 34844111 PMC8633683
+Cheng X, Cao Z, Luo J et al (2022) Baicalin ameliorates APEC-induced intestinal injury in chicks by inhibiting the PI3K/AKT-mediated NF-kappaB signaling pathway. Poult Sci 101(1):101572. 10.1016/j.psj.2021.10157234844111 10.1016/j.psj.2021.101572 PMC8633683
+39. Chen M Meng J Jin Y Diosmetin ameliorates inflammation and apoptosis in the pathomechanism of PCOS through the NRF2/AKT/PPARgamma signalling pathway J Ovarian Res 2025 18 1 203 10.1186/s13048-025-01788-y 40999493 PMC12465927
+Chen M, Meng J, Jin Y et al (2025) Diosmetin ameliorates inflammation and apoptosis in the pathomechanism of PCOS through the NRF2/AKT/PPARgamma signalling pathway. J Ovarian Res 18(1):203. 10.1186/s13048-025-01788-y40999493 10.1186/s13048-025-01788-y PMC12465927
+40. Peng M Fu J Song Y Diosmetin Alleviates Cerebral Ischemia/Reperfusion Injury by Modulating Tryptophan Metabolism through the Microbiota-Gut-Brain Axis J Agric Food Chem 2025 73 36 22448 22465 10.1021/acs.jafc.5c08004 40864983
+Peng M, Fu J, Song Y et al (2025) Diosmetin Alleviates Cerebral Ischemia/Reperfusion Injury by Modulating Tryptophan Metabolism through the Microbiota-Gut-Brain Axis. J Agric Food Chem 73(36):22448–22465. 10.1021/acs.jafc.5c0800440864983 10.1021/acs.jafc.5c08004
+41. Zhang B Zhang Y Liu X Distinctive anti-inflammatory effects of resveratrol, dihydroresveratrol, and 3-(4-hydroxyphenyl)-propionic acid on DSS-induced colitis in pseudo-germ-free mice Food Chem 2023 400 133904 10.1016/j.foodchem.2022.133904 36055136
+Zhang B, Zhang Y, Liu X et al (2023) Distinctive anti-inflammatory effects of resveratrol, dihydroresveratrol, and 3-(4-hydroxyphenyl)-propionic acid on DSS-induced colitis in pseudo-germ-free mice. Food Chem 400:13390436055136 10.1016/j.foodchem.2022.133904

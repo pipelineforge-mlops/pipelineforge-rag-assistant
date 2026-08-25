@@ -1,0 +1,338 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Alzheimers Dement (N Y)
+Journal ID: Alzheimers Dement (N Y)
+NLM Journal ID: 101650118
+Journal ID: TRC2
+
+Alzheimer's & Dementia : Translational Research & Clinical Interventions
+
+EISSN: 2352-8737
+Publisher: Wiley
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499011
+PMID: 42633094
+DOI: 10.1002/trc2.70303
+Article ID: TRC270303
+Article version: 1
+Subjects: Research Article, Research Article
+
+Sex‐ and APOE‐specific transcriptomic drug repurposing identifies four candidate therapeutics for Alzheimer's disease
+
+VITALI et al.
+
+Vitali Francesca https://orcid.org/0000-0003-2916-6402 1 2 3 francescavitali@arizona.edu
+
+Raikes Adam C. 1
+Merlini Simona 1 4
+Shang Yuan 1
+Torrandell‐Haro Georgina 1
+Hernandez Gerson D. 1 2
+Yin Fei 1 5
+1 Center for Innovation in Brain Science University of Arizona Tucson Arizona USA
+2 Department of Neurology, College of Medicine University of Arizona Tucson Arizona USA
+3 Center for Biomedical Informatics and Biostatistics, College of Medicine University of Arizona Tucson Arizona USA
+4 Department of Biomedical Engineering, College of Engineering University of Arizona Tucson Arizona USA
+5 Department of Pharmacology, College of Medicine University of Arizona Tucson Arizona USA
+* Correspondence
+Francesca Vitali, Center for Innovation in Brain Science, University of Arizona, 1230 North Cherry Avenue, Tucson, AZ 85721, USA.
+Email: francescavitali@arizona.edu
+
+Electronic publication date: 2026 Aug 22
+Publication date: 2026 Jul-Sep
+Volume: 12
+Issue: 3
+Electronic Location ID: e70303
+Revised 2026 Jun 2; Received 2026 Mar 13; Accepted 2026 Jun 30
+Copyright: © 2026 The Author(s). Alzheimer's & Dementia: Translational Research & Clinical Interventions published by Wiley Periodicals LLC on behalf of Alzheimer's Association.
+License: This is an open access article under the terms of the http://creativecommons.org/licenses/by-nc-nd/4.0/ License, which permits use and distribution in any medium, provided the original work is properly cited, the use is non‐commercial and no modifications or adaptations are made.
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Alzheimer's disease, apolipoprotein E genotype, drug repurposing, medical informatics, sex differences, transcriptomics
+
+Funding: National Institutes of Health (NIH)/National Institute on Aging (NIA) P30AG072980 P30AG019610 P01AG026572 R01AG057931 RC‐202305‐2024892 R01AG075122 R01AG063826 RF1AG068175 RF1AG079157 Center for Innovation in Brain Science
+Figure count: 4
+Table count: 2
+Page count: 11
+
+source-schema-version-number: 2.0
+cover-date: July/September 2026
+details-of-publishers-convertor: Converter:WILEY_ML3GV2_TO_JATSPMC version:6.8.6 mode:remove_FC converted:22.08.2026
+
+==============================
+Abstract
+
+Introduction
+
+Alzheimer's disease (AD) risk is strongly modified by biological sex and apolipoprotein E (APOE) genotype, yet these factors are rarely incorporated into drug discovery efforts. We hypothesized that sex‐ and APOE‐specific transcriptomic signatures define distinct molecular endotypes of AD which can be therapeutically targeted through precision drug repurposing using an integrative data framework.
+
+Methods
+
+We analyzed frontal cortex RNA sequencing data from 369 individuals in the Religious Orders Study Rush Memory and Aging Project cohort (APOE ε3/ε3 and APOE ε3/ε4) to derive sex‐ and genotype‐specific AD gene expression signatures. Differential expression and Gene Ontology enrichment analyses identified biological processes uniquely or differentially perturbed across groups. Drug‐induced perturbation signatures from the Library of Integrated Network‐Based Cellular Signatures database were queried to identify US Food and Drug Administration–approved compounds predicted to reverse AD‐associated signatures. Top candidates were validated using the PearlDiver‐Mariner claims database to assess AD risk associations.
+
+Results
+
+Transcriptomic dysregulation varied markedly across groups. Female APOE ε3/ε3 AD brains exhibited the greatest number of differentially expressed genes (n = 8903), whereas male APOE ε3/ε3 showed the fewest (n = 640). APOE ε4 carriers demonstrated enrichment of immune and inflammatory pathways, including cytokine signaling and extracellular signal‐regulated kinase cascade activation, whereas APOE ε3/ε3 groups exhibited downregulation of synaptic organization, vesicle trafficking, and bioenergetic processes. Drug reversal analysis identified four candidates: riluzole, chloroquine, acetazolamide, and anagrelide. In population‐level validation, riluzole (relative risk [RR] = 0.52; 95% confidence interval [CI]: 0.40–0.68), chloroquine (RR = 0.56; 95% CI: 0.55–0.58), and acetazolamide (RR = 0.76, 95% CI: 0.73–0.79) were associated with significantly reduced AD risk, whereas anagrelide exhibited increased risk. Protective associations for riluzole, chloroquine, and acetazolamide held in both sexes, with stronger effects in women.
+
+Discussion
+
+Sex and APOE genotype define biologically distinct AD transcriptomic states, with subgroup‐specific and shared pharmacologic reversibility. Integrating stratified transcriptomics with population‐scale validation identified clinically actionable candidates supporting an AD precision drug repurposing framework.
+
+Highlights
+
+Sex and apolipoprotein E (APOE) genotype define distinct transcriptomic signatures in Alzheimer's disease (AD) brains.
+
+APOE ε3/ε4 carriers exhibit predominant immune and inflammatory dysregulation, while APOE ε3/ε3 carriers show synaptic and metabolic impairments.
+
+Transcriptome‐drug reversal analysis identified US Food and Drug Administration–approved candidates with sex‐ and genotype‐specific effects.
+
+Riluzole, chloroquine, and acetazolamide are associated with reduced AD risk in real‐world claims data.
+
+Integrating transcriptomics with real‐world evidence enables precision drug repurposing strategies for AD.
+
+1 BACKGROUND
+
+Alzheimer's disease (AD), characterized by memory loss and cognitive decline, is the leading cause of dementia, affects > 55 million people worldwide, and is the fifth leading cause of death. 1 Currently, nine drugs have been approved by the US Food and Drug Administration (FDA) to treat AD. 1 Six of these drugs focus on alleviating AD symptoms, 2 while the three newly approved monoclonal antibodies (lecanemab, aducanumab, and donanemab 3 , 4 , 5 ) are considered disease modifying but present challenges including risk of amyloid‐related imaging abnormalities and significant economic burden. 5 However, none treats AD by reversing its course or targeting upstream risk factors to prevent disease onset.
+
+AD risk is strongly influenced by three major unmodifiable factors: age, sex, and apolipoprotein E (APOE) genotype. The APOE ε4 variant, which encodes a protein central to lipid metabolism and transportation, 6 , 7 is the strongest genetic risk factor for late‐onset AD. APOE ε4 allele prevalence in AD patients ranges from 37% to 64%, 8 though the prevalence and effect size varies across ancestral backgrounds. 7 Women exhibit approximately a 2‐fold increased lifetime AD risk compared to men. While higher risk is partially explained by females’ longer life span, 9 APOE genotype further modifies this risk: women carrying a single APOE ε4 copy have an equivalent AD risk to men carrying two copies. 10 , 11
+
+In this context, precision medicine approaches for AD necessitate accounting for both sex and APOE genotype to enable development of personalized therapeutics targeting specific biological pathways driving AD. Although individual sex and APOE genotype effects have been extensively studied, genes and biological pathways commonly or uniquely altered by these two factors remain poorly characterized. 6 , 12 , 13 , 14 , 15 , 16 , 17 Identifying pathways that are shared or specific to these risk factors is therefore essential for advancing precision therapeutic discovery in AD. To this end, computational drug repositioning offers a powerful strategy to accelerate discovery by identifying therapeutics reversing disease transcriptomic signatures, leveraging disease‐specific and drug‐induced gene expression profiles. 18 , 19 , 20
+
+In this study, we developed a bioinformatics framework to identify sex‐ and APOE‐specific drug repositioning therapies for AD (Figure 1). First, we identified transcriptomic fingerprints differentiating individuals with and without AD stratified by sex and APOE genotype. These analyses were conducted using brain transcriptome data from the Religious Orders Study or the Rush Memory and Aging Project (ROSMAP) 21 dataset, enabling identification of sex‐ and APOE‐specific differentially expressed genes (DEGs). We subsequently queried the Library of Integrated Network‐Based Cellular Signatures (LINCS) data 22 to prioritize FDA‐approved drug candidates reversing these group‐specific AD‐associated gene expression signatures. The top‐ranked drugs were evaluated using US‐based Mariner insurance claims data to determine whether population‐level use of these compounds was associated with reduced AD incidence.
+
+RESEARCH IN CONTEXT
+
+Systematic Review: Previous research has established biological sex and apolipoprotein E (APOE) genotype as major modifiers of Alzheimer's disease (AD) risk and progression, yet few studies have integrated these factors into transcriptomic‐based therapeutic discovery. Prior drug repurposing efforts lack consideration of sex‐ and genotype‐specific transcriptomic differences, limiting precision medicine applications.
+
+Interpretation: Our integrative analysis reveals distinct sex‐ and APOE‐specific molecular signatures in AD and identifies US Food and Drug Administration–approved drugs predicted to reverse these signatures. Three drugs—riluzole, chloroquine, and acetazolamide—demonstrate transcriptomic reversal potential and are associated with reduced AD risk in real‐world claims data.
+
+Future Directions: Prospective preclinical and clinical validation of these candidates across sex and APOE subgroups is needed, alongside mechanistic studies to understand genotype‐specific therapeutic effects and optimal combination strategies.
+
+FIGURE 1 Overview of the sex‐ and APOE‐informed drug repurposing framework for AD. Brain RNA‐seq data from the ROSMAP cohort were stratified by sex and APOE genotype (APOE ε3/ε3 and APOE ε3/ε4) to derive AD‐associated transcriptomic signatures. DEG and GSEA identified sex‐ and genotype‐specific biological processes. These signatures were queried against FDA‐approved drug signature profiles from the LINCS database to identify compounds predicted to reverse AD‐associated expression patterns. Top candidate drugs were subsequently evaluated to determine whether use of these compounds was associated with reduced AD risk in insurance claims data from PearlDiver‐Mariner. AD, Alzheimer's disease; APOE, apolipoprotein E; DEG, differentially expressed gene; FDA, US Food and Drug Administration; GSEA, gene set enrichment analysis; LINCS, Library of Integrated Network‐Based Cellular Signatures; ROSMAP, Religious Orders Study and Rush Memory and Aging Project
+
+2 METHODS
+
+2.1 ROSMAP RNA‐seq data
+
+ROSMAP Brain RNA‐Seq data (syn8456637; 634 samples) were obtained from the RNA‐Seq Harmonization Study on Accelerating Medicines Partnership Program for Alzheimer's Disease (AMP‐AD). 23 , 24 After excluding samples with incomplete demographics, including APOE genotype, post mortem interval (PMI), and age of death (AOD), we retained 369 frontal cortex samples from APOE ε3/ε3 and APOE ε3/ε4 individuals with AD (n = 209; 143 females) or cognitively normal controls (n = 160; 92 females; Figure S1 in supporting information). AD cases were defined as cogdx 4 or 5 and controls as cogdx 1; mild cognitive impairment (MCI) cases (cogdx 2 or 3) were excluded (Figure S1). APOE ε2/ε2, APOE ε2/ε3, APOE ε2/ε4, and APOE ε4/ε4 groups were excluded as sex‐stratified case–control sample sizes were insufficient for stable differential‐expression and downstream analyses (Table S1 in supporting information). The retained APOE ε3/ε3 and APOE ε3/ε4 samples assess the effect of a single APOE ε4 allele on the most prevalent APOE background. Demographic, clinical, and neuropathological characteristics of samples are reported in Table S2 in supporting information.
+
+RNA‐Seq gene counts were normalized using the trimmed mean of M values (TMM) method of the R package edgeR. 25 For each sex–genotype condition, DEGs between individuals with AD and matched cognitively normal controls were identified using the limma R package 26 with a generalized linear regression model (GLM) with Batch, PMI, RNA integrity number (RIN), and AOD as covariates. Genes not mapping to standard gene names were excluded. DEGs were defined at nominal p < 0.05 to provide a sufficient gene set for downstream signature‐based analyses. Fold changes (FCs) were computed as AD versus control within each sex–APOE group; with positive values indicating higher expression in AD, and negative values indicating lower expression in AD. These stratified contrasts preserved subgroup‐specific directionality required for drug‐reversal scoring in section 2.3.
+
+Hereafter, conditions will be referred to as F33, F34, M33, and M34, corresponding to each sex and APOE genotype comparison between AD cases and their respective controls.
+
+2.2 Gene set enrichment analysis
+
+Gene set enrichment analysis (GSEA) 27 was performed using Gene Ontology Biological Processes (GO‐BP) 28 accounting for FC within each sex–APOE condition. Normalized enrichment score (NES) and false discovery rate (FDR) were calculated via permutation (n = 100,000 label shuffles). Significant GO‐BP terms (p < 0.05) were retained, redundant terms were collapsed using collapsePathways from the fgsea Bioconductor package (similarity threshold > 0.7), and shared and unique terms across the four sex–genotype conditions were compared.
+
+2.3 LINCS
+
+LINCS data 22 were mined to identify FDA‐approved drugs with perturbation signatures predicted to reverse directionality of sex‐ and APOE‐specific DEGs from ROSMAP. LINCS contains treatment‐induced expression profiles for 33,609 small molecules, including approved drugs and candidate compounds, across human cell lines. 29 Because LINCS signatures are derived from non‐neuronal human cell lines, they were used as system‐agnostic readout of compound‐induced transcriptomic remodeling, on the assumption that reversal of disease‐associated expressions may enrich for activity against corresponding pathways in vivo. 18 , 19 , 20 Level 5 consensus drug expression signatures were obtained from LINCS Data Portal 22 ,  30 and filtered for FDA‐approved drugs using Drugbank's API. 31
+
+For each drug, cosine similarity was computed between the LINCS drug‐induced and AD‐associated gene expression signatures within each sex‐ and APOE‐specific condition (F33, F34, M33, and M34). Genes were represented as signed FC vectors, and cosine similarity was computed on overlapping genes. When multiple LINCS signatures were available for the same compound across cell lines or time points, scores were averaged to generate a final drug‐level similarity score.
+
+Because cosine similarity measures directional concordance between two vectors, values close to +1 indicate alignment between drug‐induced and AD‐associated expression changes, whereas values close to −1 indicate opposite (reversing) effects. Transcriptomic reversal was therefore defined as: ReversalScored=1−cosθ
+
+where cos(θ) is the cosine similarity between the drug‐induced and AD‐associated fold‐change vectors. Candidate drugs were filtered to include only therapeutics predicted to cross the blood–brain barrier (BBB) and to exclude those administered exclusively via topical routes. 31 For each condition, compounds in the top 10% of reversal scores were selected for further analysis.
+
+2.4 Mariner claim insurance database
+
+To evaluate whether the identified candidate drugs were associated with reduced AD risk in the population, we analyzed the PearlDiver‐Mariner insurance claims database, which includes claims information on 170 million patients from January 1, 2010 to December 30, 2023. We included individuals aged > 50 years with a non‐melanoma skin cancer diagnosis as (1) this condition is not associated with neurodegenerative disease, (2) its treatment does not require chemotherapy or surgery impacting AD risk, and (3) it occurs with sufficient frequency in the population to enable robust analyses.
+
+Patients were stratified by drug exposure based on the presence of at least one prescription claim for each candidate drug. Subsequent diagnosis of AD after 1 year from the index date was assessed using International Classification of Diseases, 9th and 10th edition (ICD‐9 and ICD‐10) codes. The index date was the first prescription claim for exposed patients and the first non‐melanoma skin cancer diagnosis for unexposed patients. AD diagnoses occurring within 1 year of the index date were excluded to mitigate reverse causation; diagnoses after 1 year were counted as incident events. The control population included patients whose medical claims record did not include any of the identified drugs. Patients with a history of neurosurgery or brain cancer, or neurodegenerative disease (including AD, dementia, multiple sclerosis, Parkinson's disease, and amyotrophic lateral sclerosis [ALS]) prior to the index date were excluded from this analysis. 32 , 33 , 34 , 35 , 36 As a sensitivity analysis, we repeated the association analysis excluding patients with prior cerebrovascular disease. ICD codes are reported in Table S3 in supporting information.
+
+Statistical analyses were performed using GraphPad Prism 8. AD incidence was compared between exposed and unexposed groups using chi‐squared tests with Yates correction. Relative risk (RR), 95% confidence intervals (CIs), and p values were estimated using Fisher exact test, with p < 0.05 considered significant. Pairwise, three‐way, and four‐way co‐exposure among candidate drugs was quantified to assess potential confounding by overlapping prescriptions.
+
+Furthermore, sex‐stratified RRs and 95% CIs were computed separately for male and female patients.
+
+3 RESULTS
+
+3.1 Sex‐ and APOE‐specific gene signatures for AD
+
+ROSMAP frontal cortex RNA‐Seq analyses revealed marked differences in transcriptomic dysregulation across the four sex–genotype conditions. Female APOE ε3/ε3 AD brains (F33) exhibited the greatest number of DEGs (n = 8903) while male APOE ε3/ε3 (M33) showed the fewest (n = 640) compared to sex‐ and genotype‐matched controls (Figure 2A, Table 1). Intermediate DEG counts were observed in female APOE ε3/ε4 (F34) and male APOE ε3/ε4 (M34) brains (n = 902 and 593, respectively; Figure 2A, Table 1). The full DEG lists, including p values, adjusted p values, and FC values, are reported in Table S4 in supporting information.
+
+FIGURE 2 Sex‐ and APOE‐specific differential gene expression signatures in AD. A, Number of DEGs (p < 0.05) identified for each sex–APOE genotype comparison between AD cases and cognitively normal controls. B–H, Heatmaps of fold‐change expression for the DEGs shared across all four groups, shared across three groups, or unique to specific sex–genotype conditions. Shared DEGs highlight convergent molecular alterations, whereas group‐specific DEGs reflect distinct transcriptomic mechanisms associated with sex and APOE genotype. The fold‐change color scale represents AD versus control: positive (red) = up in AD; negative (blue) = down in AD. AD, Alzheimer's disease; APOE, apolipoprotein E; DEG, differentially expressed gene; F33, female apolipoprotein E ε3/ε3 carrier; F34, female apolipoprotein E ε3/ε4 carrier; M33, male apolipoprotein E ε3/ε3 carrier; M34, male apolipoprotein E ε3/ε4 carrier
+
+TABLE 1 Summary of differentially expressed genes and pathway enrichment across sex‐ and APOE‐specific AD comparisons. Number of DEGs (p < 0.05), total enriched GO‐BP terms, and non‐redundant GO‐BP terms identified for each sex‐ and APOE‐specific comparison between AD cases and cognitively normal controls. Redundant GO‐BP terms were removed based on GO term similarity filtering. The table highlights marked differences in the extent of transcriptomic dysregulation across sex and APOE genotype groups.
+
+AD vs. controls	# DEGs (p < 0.05)	#GSEA GO‐BP terms	# non‐redundant GSEA GO‐BP terms	
+F33	8903	947	208	
+F34	902	1285	286	
+M33	640	464	79	
+M34	593	1338	271	
+Abbreviations: 33, apolipoprotein E ε3/ε3; 34, apolipoprotein E ε3/ε4; AD, Alzheimer's disease; APOE, apolipoprotein E; DEG, differentially expressed gene; F, female; GO‐BP, Gene Ontology Biological Process; GSEA, gene set enrichment analysis; M, male.
+
+John Wiley & Sons, Ltd.
+
+Nine DEGs were shared across all four sex–genotype conditions: TMCC2, TAPT1‐AS1, SLC6A12, PRELP, PITPNM1, MRGPRF, KIF5A, ARHGEF10, and APLN (Figure 2B). These genes are involved in metabolic processes, synaptic function, myelination, and gene protein‐coupled receptor signaling. None of the nine shared genes are targets of FDA‐approved drugs, supporting the signature‐reversal approach. Heatmaps illustrating FC values for DEGs shared across all four, three, or at least two conditions are shown in Figure 2B–H and Figure S2 in supporting information.
+
+GSEA identified comparable numbers of AD‐enriched GO‐BP terms in female groups (n = 208 and n = 286 for APOE ε4 carriers and non‐carriers, respectively, Table 1) and male APOE ε3/ε4 carriers (n = 271, Table 1), whereas male APOE ε3/ε3 carriers exhibited the fewest enriched terms (n = 73, Table 1), consistent with its smaller DEG set. Full GO‐BP enrichment results are reported in Table S4.
+
+Enriched GO‐BP terms were largely related to metabolic regulation, cellular signaling, immune processes, and synaptic activity. No GO‐BP terms were shared across all four sex–genotype conditions (Figure 3A). Among terms shared by at least three conditions, APOE ε3/ε3 groups showed widespread downregulation, whereas APOE ε3/ε4 groups showed upregulation of the same processes, independent of sex (Figure 3B). Among pairwise comparisons, female and male APOE ε4 carriers (F34 and M34) shared the highest number of GO‐BP terms with concordant directionality (n = 110, Figure 3C). In contrast, comparisons involving APOE ε3/ε3 carriers (Figure 3D–G) revealed several pathways with opposite enrichment directions, highlighting distinct transcriptomic mechanisms driven by sex and APOE genotype.
+
+FIGURE 3 Functional pathway enrichment reveals divergent biological processes across sex‐ and APOE‐specific AD signatures. A, UpSet plot illustrating the number of GO‐BP terms enriched in each sex–APOE condition. B–G, Heatmaps of NES for representative GO‐BP terms shared across multiple conditions or unique to specific group comparisons. APOE ε4 carriers predominantly exhibited upregulation of immune, inflammatory, and stress‐response pathways, whereas APOE ε3/ε3 carriers exhibited downregulation of synaptic, metabolic, and bioenergetic processes. The color scale represents AD versus control: positive (red) = up in AD; negative (blue) = down in AD. ** the full list of GO term labels shared between the F34 and M34 groups for (C) is provided in Figure S2 in supporting information. AD, Alzheimer's disease; APOE, apolipoprotein E; F33, female apolipoprotein E ε3/ε3 carrier; F34, female apolipoprotein E ε3/ε4 carrier; GO‐BP, Gene Ontology Biological Process; M33, male apolipoprotein E ε3/ε3 carrier; M34, male apolipoprotein E ε3/ε4 carrier; NES, normalized enrichment score
+
+APOE ε4‐associated downregulated pathways were predominantly associated with immune activation and inflammatory signaling, such as cytokine‐mediated responses, extracellular signal‐regulated kinase 1 (ERK1)/ERK2 cascade, and apoptotic signaling, whereas APOE ε3/ε3‐associated downregulated pathways were enriched for synaptic organization, vesicle trafficking, and bioenergetic processes. These opposing enrichment patterns suggest distinct molecular drivers of AD pathology: neuroinflammatory dysregulation in APOE ε4 carriers versus synaptic and metabolic impairments in APOE ε3/ε3 individuals (Figure 3 and Table S5 in supporting information). Taken together, these results reveal converging yet distinct sex‐ and APOE‐specific AD transcriptomic states, supporting subgroup‐informed drug‐reversal analysis.
+
+3.2 Drugs reversing sex‐ and APOE‐specific AD gene signatures
+
+Reversal scores were computed for 1704 LINCS drug signatures against each sex‐ and APOE‐specific transcriptomic profile (Table S6 in supporting information). Among these, 168 drugs scored in the top decile for F33, while 171 scored in the top decile for each of F34, M33, and M34 (Table S8 in supporting information). DEG overlap with the LINCS gene panel is reported in Table S7 in supporting information, and drug target, BBB permeability, and route of administration information provided in Table S8. After excluding compounds not crossing the BBB or administered exclusively via topical routes, most candidate compounds identified were group specific: 52, 74, 50, and 64 therapeutics were specific to F33, F34, M33, and M34, respectively, resulting in 187 unique drugs across all groups (Table S9 in supporting information).
+
+The number of drugs common and unique to each sex‐ and APOE‐genotype conditions are reported in Figure 4 (details in Table S10 in supporting information). No drugs were common between M33 and M34 or across all four conditions. Drug overlap reflected transcriptomic similarity: the strongest intersection occurred between female APOE ε3/ε4 and APOE ε3/ε3 groups, while male groups showed minimal overlap, suggesting that pharmacologic reversal strategies may require sex‐ and genotype‐specific tailoring (Figure 4).
+
+FIGURE 4 Overlap of FDA‐approved drugs predicted to reverse sex‐ and APOE‐specific AD transcriptomic signatures. UpSet plot illustrating the number of FDA‐approved drugs predicted to reverse AD‐associated gene expression signatures in each sex–APOE genotype condition. Bar plots indicate the total number of candidate drugs per group. Four drugs, that is anagrelide, riluzole, chloroquine, and acetazolamide, were common to three conditions (F33, F34, and M34), highlighting common pharmacologic reversal opportunities despite transcriptomic heterogeneity. AD, Alzheimer's disease; APOE, apolipoprotein E; F33, female apolipoprotein E ε3/ε3 carrier; F34, female apolipoprotein E ε3/ε4 carrier; FDA, US Food and Drug Administration; M33, male apolipoprotein E ε3/ε3 carrier; M34, male apolipoprotein E ε3/ε4 carrier
+
+Four drugs overlapped across all three conditions (F33+F34+M34, Table S10, Figure 4): anagrelide, riluzole, chloroquine, and acetazolamide. These shared candidates map onto biological domains that converge across groups, for example, glutamatergic and synaptic transmission, neuroinflammatory and immune signaling, and bioenergetic and ion homeostasis, whereas group‐specific candidates target upstream sex‐ and genotype‐specific drivers. We advanced the four shared compounds for proof‐of‐concept validation in PearlDiver‐Mariner, which records sex but not APOE genotype and is therefore best suited to compounds whose predicted effect is APOE independent.
+
+3.3 Validation in PearlDiver‐Mariner claim insurance database
+
+To assess whether the four top‐ranked drugs were associated with altered AD risk in a real‐world population we analyzed 10,303,147 patients aged ≥ 50 years with non‐melanoma skin cancer who met inclusion criteria in PearlDiver‐Mariner (Figure S3 in supporting information). Drug codes used to select patients treated with anagrelide, riluzole, chloroquine, and acetazolamide are listed in Table S11 in supporting information. Demographic and clinical characteristics of the exposed and unexposed groups for each drug are reported in Table S12 in supporting information.
+
+Riluzole (RR = 0.52; 95% CI: 0.40–0.68; p < 0.001, Table 2), chloroquine (RR = 0.56; 95% CI: 0.55–0.58; p < 0.001, Table 2), and acetazolamide (RR = 0.76; 95% CI: 0.73–0.79; p < 0.001, Table 2) were associated with significantly reduced AD risk, whereas anagrelide was associated with a modest non‐significant increase in risk (RR = 1.18; 95% CI: 0.99–1.41; p = 0.066, Table 2). To assess whether these associations were confounded by overlapping prescriptions, pairwise, three‐way, and four‐way co‐exposure among the candidate drugs was quantified (Table S13 in supporting information). Co‐exposure was rare: the largest overlap, between chloroquine and acetazolamide (n = 8226), represented 2.4% of the chloroquine‐exposed and 4.9% of the acetazolamide‐exposed patients, while other combinations included < 11 patients or none (Table S13). These findings indicate that the RR estimates were unlikely to be driven by co‐prescription.
+
+TABLE 2 Association between exposure to candidate drugs and AD incidence in the PearlDiver Mariner insurance claims database. Relative risk values and 95% CIs were calculated using a Fisher exact test, comparing the incidence of new AD diagnoses among patients exposed versus unexposed to each candidate drug. The analysis cohort comprised 10,303,147 individuals (see Figure S3 in supporting information for the cohort‐selection flow).
+
+ 	Anagrelide	Riluzole	Chloroquine	Acetazolamide	
+AD cases among treated, n	123	55	4546	2919	
+%	2.7%	1.2%	1.31%	1.74%	
+AD cases among untreated, n	235,386	235,449	231,044	232,625	
+%	2.29%	2.29%	2.32%	2.30%	
+Relative risk	1.18	0.52	0.56	0.76	
+95% CI	0.99–1.41	0.40–0.68	0.55–0.58	0.73–0.79	
+p value	0.066	<0.001	<0.001	<0.001	
+Abbreviations: AD, Alzheimer's disease; CI, confidence interval.
+
+John Wiley & Sons, Ltd.
+
+Overall, these population‐level results support the translational potential of riluzole, chloroquine, and acetazolamide as transcriptomic reversal candidates associated with significant reduced AD risk. Sensitivity analyses excluding patients with cerebrovascular disease confirmed that associations were essentially unchanged (Table S14 in supporting information).
+
+Sex‐stratified analyses revealed protective associations for riluzole, chloroquine, and acetazolamide that were significant in both sexes (all p < 0.001), with numerically stronger effects in women. Anagrelide exhibited a non‐significant, directionally increased risk in both sexes (Table S15 in supporting information).
+
+4 DISCUSSION
+
+This study establishes that biological sex and APOE genotype jointly define distinct transcriptomic profiles in AD brains, with differential pathway regulation and pharmacological reversibility across groups. Integrating stratified brain transcriptomics, computational drug repurposing, and population‐scale claims validation across nearly 10 million individuals, we identified three FDA‐approved compounds—riluzole, chloroquine, and acetazolamide—associated with significantly reduced AD risk, supporting their prioritization for prospective clinical evaluation.
+
+Transcriptomic dysregulation varied markedly across sex–APOE groups in both magnitude and biological direction. Female APOE ε3/ε3 carriers exhibited the greatest number of DEGs, while male APOE ε3/ε3 carriers showed the fewest, suggesting that sex‐specific differences exist even within the same APOE background. Despite comparable numbers of enriched biological processes across groups, the directionality and functional nature of pathway dysregulation varied substantially. APOE ε4 carriers exhibited upregulated immune and stress‐response pathways, with neuroinflammatory signatures emerging as prominent features in female carriers. Conversely, APOE ε3/ε3 carriers were characterized by downregulated synaptic and bioenergetic pathways, including neurotransmitter transport, vesicle organization, and oxidative phosphorylation, consistent with progressive synaptic dysfunction and metabolic failure. The partial overlap and opposite directionality of pathways between APOE ε4 and APOE ε3/ε3 groups indicates that genetic contexts drive AD pathobiology through mechanistically distinct, though partially convergent, trajectories. Furthermore, these transcriptomic patterns are consistent with large‐scale proteomic studies of the AD brain. Johnson et al. identified AD‐associated protein modules converging on synaptic, microglial/inflammatory, and APOE‐influenced MAPK/metabolic pathways, 37 while Mei et al. reported sex‐specific proteomic enrichment in estrogen response, inflammation, and mitochondrial biology. 38 Together, these studies support the sex‐divergent immune and bioenergetic signatures observed in our analyses.
+
+Leveraging LINCS, we screened 1704 compounds and identified 187 unique FDA‐approved therapeutics predicted to reverse at least one sex‐ and APOE‐specific AD signature. Four compounds (anagrelide, riluzole, chloroquine, and acetazolamide) were shared across three sex–genotype groups (F33, F34, and M34), despite substantial transcriptomic heterogeneity between groups. Critically, none of these compounds are currently indicated for AD, underscoring their drug repurposing potential: anagrelide is approved for thrombocythemia, 39 riluzole for ALS, 40 chloroquine for malaria and autoimmune conditions, 41 , 42 and acetazolamide for glaucoma and epilepsy. 43
+
+Population‐level validation in PearlDiver‐Mariner supported three of the four candidate compounds. Riluzole (RR = 0.52; 95% CI: 0.40–0.68; p < 0.001), chloroquine (RR = 0.56; 95% CI: 0.55–0.58; p < 0.001), and acetazolamide (RR = 0.76; 95% CI: 0.73–0.79; p < 0.001) were associated with significantly reduced AD risk, consistent with predicted reversal of AD‐associated transcriptomic signatures. These associations remained significant in sex‐stratified analysis, with stronger protective effects in women. In contrast, anagrelide showed no protective association and a modest, non‐significant increase in AD risk (RR = 1.18; 95% CI: 0.99–1.41; p = 0.066). Its divergence from the three protective compounds may reflect its primarily hematologic and vascular mechanism, emphasizing the need for mechanism‐aware validation rather than assuming uniform benefit from transcriptomic reversal alone.
+
+Riluzole provided the strongest mechanistic alignment with our transcriptomic findings. It modulates glutamatergic transmission, enhances neuronal survival, and reduces excitotoxic stress, pathways identified in female APOE ε4 carriers. 40 In preclinical models, riluzole protected against age‐related cognitive decline, improved glutamate homeostasis, and reversed aging‐ and AD‐associated gene expression changes. 44 In transgenic AD mouse models, riluzole additionally reduced amyloid beta (Aβ) pathology and reversed gene expression changes in immune and microglial pathways. 45 In a phase 2 randomized placebo‐controlled trial in mild AD, riluzole was associated with significantly slower decline in cerebral glucose metabolism, with metabolic preservation correlating with cognitive measures. 46 These findings align with the excitotoxic, metabolic, and synaptic stress pathways identified in our transcriptomic analyses.
+
+Chloroquine exerts immunomodulatory and lysosomal effects mechanistically relevant to neuroinflammatory dysregulation identified in our transcriptomic analyses and AD neuroinflammation. 47 Chloroquine shares its core mechanism of action with hydroxychloroquine, and converging evidence further supports its biological plausibility in AD. Specifically, hydroxychloroquine modulates microglial activation, enhances clearance of Aβ, reduces tau phosphorylation, and attenuates JAK/STAT signaling in neurons and astrocytes in preclinical models, with real‐world evidence showing reduced AD risk in rheumatoid arthritis patients. 48 These data support chloroquine's relevance to immune and stress‐response pathways identified across sex–APOE groups.
+
+Acetazolamide, a carbonic anhydrase inhibitor, regulates neuronal pH and ion balance by modulating bicarbonate transport, with downstream effects on mitochondrial function, neuronal excitability, and cerebrovascular integrity, which are processes critically disrupted in AD. In a transgenic AD mouse model, acetazolamide reduced cerebral and vascular Aβ accumulation, diminished neuroinflammation and gliosis, while improving microvascular fitness and cognitive performance. 49 These effects align with the bioenergetic, mitochondrial, and synaptic dysregulation identified in our analyses.
+
+This study has several limitations. First, transcriptomic analyses were limited to the dorsolateral prefrontal cortex, and regional heterogeneity in AD pathology may limit generalizability. Second, sex‐stratified analyses were restricted to APOE ε3/ε3 and APOE ε3/ε4 individuals because APOE ε2 and APOE ε4/ε4 case–control sample sizes and findings may therefore not extend to these genotypes. Third, the ROSMAP cohort was predominantly of European ancestry, limiting extension to ancestrally diverse populations. Fourth, PearlDiver‐Mariner relies on diagnostic and prescription codes, which may not fully capture medication adherence, dose, duration, or off‐label use, and lacks APOE genotype data, precluding genotype‐stratified validation. Fifth, the four therapeutics advanced for population‐level analysis act across multiple sex–APOE groups and do not exhaust the candidate landscape as the majority of repurposing candidates mapped onto sex‐ and APOE‐specific synaptic, bioenergetic, and immune dysregulation. Sixth, LINCS signatures are derived from non‐neuronal cell lines and therefore capture transcriptome‐wide activity rather than direct effects in brain tissue. Finally, the observational nature of the study precludes causal inference.
+
+Future work will expand this approach to include additional ‐omics (proteomics, metabolomics, and epigenomics) to broadly characterize sex‐ and APOE‐specific biology. Specifically, integration of our sex‐ and APOE‐stratified transcriptomic signatures with matched proteomic data to test protein‐level concordance and refine the candidate–drug ranking at the protein layer will be considered in future work. Inclusion of APOE ε2 and APOE ε4/ε4 carriers, more diverse ancestral backgrounds, and external datasets such as UK Biobank, All of Us, and AMP‐AD will be essential to improve generalizability. Formal sex‐by‐diagnosis and APOE‐by‐diagnosis interaction testing remains a complementary direction, as this study used within‐group contrasts to preserve directional signatures required for drug‐reversal scoring. Finally, the elevated‐risk signal for anagrelide underscores the need for mechanism‐aware and network‐based modeling of drug synergy to support combination strategies tailored to individual risk profiles.
+
+In conclusion, this study demonstrates that biological sex and APOE genotype jointly define distinct AD‐associated transcriptomic profiles, with differential pathway regulation and pharmacological reversibility across groups. By combining stratified transcriptomic profiling, computational drug repurposing, and population‐scale validation across nearly 10 million individuals, we identified three FDA‐approved drugs—riluzole, chloroquine, and acetazolamide—that consistently emerged as candidate therapeutics and were associated with a lower risk of AD in real‐world populations. These findings provide a proof of concept for a precision drug repurposing framework, and underscore the importance of incorporating sex and genetic background into therapeutic discovery for AD.
+
+CONFLICT OF INTEREST STATEMENT
+
+G.D.H. holds a leadership position with NeuTherapeutics. A.R. is a paid consultant for ADM Diagnostics. All other authors declare no conflicts of interest relevant to this work. Author disclosures are available in the Supporting Information.
+
+CONSENT STATEMENT
+
+All human subjects whose data were included in this study provided informed consent under protocols approved by their respective institutional review boards. The ROSMAP study participants provided written informed consent for participation and data sharing. Analyses of de‐identified insurance claims data from the PearlDiver‐Mariner database did not require additional informed consent.
+
+Supporting information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+Supporting Information
+
+ACKNOWLEDGMENTS
+
+We thank the participants of the Religious Orders Study and Memory and Aging (ROSMAP) projects for the generous donation, the Rush Alzheimer's Disease Center, Rush University Medical Center, Chicago, and the National Institutes of Health (NIH) for supporting this research (grants U01AG061356, P30AG10161, and others as applicable). ROSMAP data were provided by the Rush Alzheimer's Disease Center and made available through the AMP‐AD Knowledge Portal. We are grateful to Roberta Diaz Brinton for her scientific guidance, intellectual contributions, and continued support throughout the development of this work. We also acknowledge the LINCS Consortium and the Ma'ayan Laboratory for providing access to processed drug perturbation signatures, and PearlDiver Technologies for access to the Mariner insurance claims database used for real‐world validation. Research reported in this publication was supported by the National Institute on Aging (NIA) of the National Institutes of Health (NIH) under award numbers P30AG072980 and P30AG019610 to the Arizona Alzheimer's Disease Research Center. Additional support was provided by NIA grants P01AG026572, R01AG057931, RC‐202305‐2024892, R01AG075122, R01AG063826, and by the Center for Innovation in Brain Science. This work was also supported by NIH/NIA grants RF1AG068175 and RF1AG079157 awarded to F.Y. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.
+
+
+REFERENCES
+
+1 2024 Alzheimer's disease facts and figures. Alzheimers Dement. 2024;20:3708‐3821.38689398 10.1002/alz.13809 PMC11095490
+2 Martorana A , Esposito Z , Koch G . Beyond the cholinergic hypothesis: do current drugs work in Alzheimer's disease?. CNS Neurosci Ther. 2010;16:235‐245.20560995 10.1111/j.1755-5949.2010.00175.x PMC6493875
+3 van Dyck CH , Swanson CJ , Aisen P , et al. Lecanemab in Early Alzheimer's Disease. N Engl J Med. 2022;388:9‐21.36449413 10.1056/NEJMoa2212948
+4 Budd Haeberlein S , Aisen PS , Barkhof F , et al. Two Randomized Phase 3 Studies of Aducanumab in Early Alzheimer's Disease. J Prev Alzheimers Dis. 2022;9:197‐210.35542991 10.14283/jpad.2022.30
+5 EL R , Weinberg MS , Arnold SE . Cost‐effectiveness of Aducanumab and Donanemab for Early Alzheimer Disease in the US. JAMA Neurol. 2022;79:478‐487.35344024 10.1001/jamaneurol.2022.0315 PMC8961406
+6 Riedel BC , Thompson PM , Brinton RD . Age, APOE and sex: triad of risk of Alzheimer's disease. J Steroid Biochem Mol Biol. 2016;160:134‐147.26969397 10.1016/j.jsbmb.2016.03.012 PMC4905558
+7 Belloy ME , Andrews SJ , Le Guen Y , et al. APOE genotype and Alzheimer disease risk across age, sex, and population ancestry. JAMA Neurol. 2023;80:1284‐1294.37930705 10.1001/jamaneurol.2023.3599 PMC10628838
+8 Crean S , Ward A , Mercaldi CJ , et al. Apolipoprotein E ε4 prevalence in Alzheimer's disease patients varies across global populations: a systematic literature review and meta‐analysis. Dement Geriatr Cogn Disord. 2011;31:20‐30.21124030 10.1159/000321984
+9 Tom SE , Hubbard RA , Crane PK , et al. Characterization of dementia and Alzheimer's disease in an older population: updated incidence and life expectancy with and without dementia. Am J Public Health. 2015;105:408‐413.25033130 10.2105/AJPH.2014.301935 PMC4318311
+10 Farrer LA , Cupples LA , van Duijn CM , et al. Apolipoprotein E genotype in patients with Alzheimer's disease: implications for the risk of dementia among relatives. Ann Neurol. 1995;38:797‐808.7486872 10.1002/ana.410380515
+11 Payami H , Zareparsi S , Montee KR , et al. Gender difference in apolipoprotein E‐associated risk for familial Alzheimer disease: a possible clue to the higher incidence of Alzheimer disease in women. Am J Hum Genet. 1996;58:803‐811.8644745 PMC1914663
+12 Jett S , Dyke JP , Boneu Yepez C , et al. Effects of sex and APOE ε4 genotype on brain mitochondrial high‐energy phosphates in midlife individuals at risk for Alzheimer's disease: a 31Phosphorus MR spectroscopy study. PLoS One. 2023;18:e0281302.36787293 10.1371/journal.pone.0281302 PMC9928085
+13 Dagliati A , Peek N , Brinton RD , Geifman N . Sex and APOE genotype differences related to statin use in the aging population. Alzheimers Dement (N Y). 2021;7:e12156.33969178 10.1002/trc2.12156 PMC8088592
+14 Jones NS , Rebeck GW . The Synergistic Effects of APOE Genotype and Obesity on Alzheimer's Disease Risk. Int J Mol Sci. 2018;20:63.30586872 10.3390/ijms20010063 PMC6337558
+15 McLean JW , Bhattrai A , Vitali F , Raikes AC , Wiegand J‐PL , Brinton RD . Contributions of sex and genotype to exploratory behavior differences in an aged humanized APOE mouse model of late‐onset Alzheimer's disease. Learn Mem. 2022;29:321‐331.36206387 10.1101/lm.053588.122 PMC9488030
+16 Merlini S , Bedrick EJ , Brinton RD , Vitali F . Multisystem failure, tipping points, and risk of Alzheimer's disease. Alzheimers Dement. 2025;21:e70249.40346724 10.1002/alz.70249 PMC12064414
+17 Mishra A , Wang Y , Yin F , et al. A tale of two systems: lessons learned from female mid‐life aging with implications for Alzheimer's prevention & treatment. Ageing Res Rev. 2022;74:101542.34929348 10.1016/j.arr.2021.101542 PMC8884386
+18 Luo H , Li M , Yang M , Wu F‐X , Li Y , Wang J . Biomedical data and computational models for drug repositioning: a comprehensive review. Briefings Bioinf. 2021;22:1604‐1619.10.1093/bib/bbz176 32043521
+19 Pilarczyk M , Fazel‐Najafabadi M , Kouril M , et al. Connecting omics signatures and revealing biological mechanisms with iLINCS. Nat Commun. 2022;13:4678.35945222 10.1038/s41467-022-32205-3 PMC9362980
+20 Chen B , Ma L , Paik H , et al. Reversal of cancer gene expression correlates with drug efficacy and reveals therapeutic targets. Nat Commun. 2017;8:16022.28699633 10.1038/ncomms16022 PMC5510182
+21 Bennett DA , Buchman AS , Boyle PA , Barnes LL , Wilson RS , Schneider JA . Religious orders study and rush memory and aging project. J Alzheimers Dis. 2018;64:S161‐S89.29865057 10.3233/JAD-179939 PMC6380522
+22 Subramanian A , Narayan R , Corsello SM , et al. A next generation connectivity map: l1000 platform and the first 1,000,000 profiles. Cell. 2017;171:1437‐1452.e17.29195078 10.1016/j.cell.2017.10.049 PMC5990023
+23 Hodes RJ , Buckholtz N . Accelerating medicines partnership: alzheimer's disease (AMP‐AD) knowledge portal aids Alzheimer's drug discovery through open data sharing. Expert Opin Ther Targets. 2016;20:389‐391.26853544 10.1517/14728222.2016.1135132
+24 De Jager PL , Ma Y , McCabe C , et al. A multi‐omic atlas of the human frontal cortex for aging and Alzheimer's disease research. Sci Data. 2018;5:1‐13.30084846 10.1038/sdata.2018.142 PMC6080491
+25 Robinson MD , McCarthy DJ , Smyth GK . edgeR: a Bioconductor package for differential expression analysis of digital gene expression data. Bioinformatics. 2010;26:139‐140.19910308 10.1093/bioinformatics/btp616 PMC2796818
+26 Ritchie ME , Phipson B , Wu D , et al. limma powers differential expression analyses for RNA‐sequencing and microarray studies. Nucleic Acids Res. 2015;43:e47.25605792 10.1093/nar/gkv007 PMC4402510
+27 Subramanian A , Tamayo P , Mootha VK , et al. Gene set enrichment analysis: a knowledge‐based approach for interpreting genome‐wide expression profiles. Proc Natl Acad Sci. 2005;102:15545‐15550.16199517 10.1073/pnas.0506580102 PMC1239896
+28 Aleksander SA , Balhoff J , Carbon S , et al. The gene ontology knowledgebase in 2023. Genetics. 2023;224:iyad031.36866529 10.1093/genetics/iyad031 PMC10158837
+29 Keenan AB , Jenkins SL , Jagodnik KM , et al. The library of integrated network‐based cellular signatures NIH program: system‐level cataloging of human cells response to perturbations. Cell Syst. 2018;6:13‐24.29199020 10.1016/j.cels.2017.11.001 PMC5799026
+30 Stathias V , Turner J , Koleti A , et al. LINCS Data Portal 2.0: next generation access point for perturbation‐response signatures. Nucleic Acids Res. 2020;48:D431‐d9.31701147 10.1093/nar/gkz1023 PMC7145650
+31 Knox C , Wilson M , Klinger CM , et al. Drugbank 6.0: the drugbank knowledgebase for 2024. Nucleic Acids Res. 2024;52:D1265‐D75.37953279 10.1093/nar/gkad976 PMC10767804
+32 Cortes‐Flores H , Torrandell‐Haro G , Brinton RD . Association between CNS‐active drugs and risk of Alzheimer's and age‐related neurodegenerative diseases. Front Psychiatry. 2024;15:1358568.38487578 10.3389/fpsyt.2024.1358568 PMC10937406
+33 Torrandell‐Haro G , Branigan GL , Brinton RD , Rodgers KE . Association Between Specific Type 2 Diabetes Therapies and Risk of Alzheimer's Disease and Related Dementias in Propensity‐Score Matched Type 2 Diabetic Patients. Front Aging Neurosci. 2022;14:878304.35601622 10.3389/fnagi.2022.878304 PMC9120543
+34 Torrandell‐Haro G , Branigan GL , Vitali F , Geifman N , Zissimopoulos JM , Brinton RD . Statin therapy and risk of Alzheimer's and age‐related neurodegenerative diseases. Alzheimers Dement (N Y). 2020;6:e12108.33283039 10.1002/trc2.12108 PMC7687291
+35 Vitali F , Torrandell‐Haro G , Arias JC , et al. Carotid endarterectomy mitigates Alzheimer's disease and non‐Alzheimer's disease dementia risk linked to asymptomatic carotid stenosis. Alzheimers Dement. 2025;21:e70674.40922111 10.1002/alz.70674 PMC12417316
+36 Vitali F , Torrandell‐Haro G , Branigan G , et al. Asymptomatic carotid artery stenosis is associated with increased Alzheimer's disease and non‐Alzheimer's disease dementia risk. Stroke Vasc Neurol. 2024;10(3):289‐296.10.1136/svn-2024-003164 PMC12230220 39266210
+37 Johnson EC , Carter EK , Dammer EB , et al. Large‐scale deep multi‐layer analysis of Alzheimer's disease brain reveals strong proteomic disease‐related changes not observed at the RNA level. Nat Neurosci. 2022;25:213‐225.35115731 10.1038/s41593-021-00999-y PMC8825285
+38 Mei Z , Liu J , Bennett DA , Seyfried N , Wingo AP , Wingo TS . Unraveling sex differences in Alzheimer's disease and related endophenotypes with brain proteomes. Alzheimers Dement. 2025;21:e70206.40346727 10.1002/alz.70206 PMC12064417
+39 Group AS . Anagrelide, a therapy for thrombocythemic states: experience in 577 patients. Am J Med. 1992;92:69‐76.1731512 10.1016/0002-9343(92)90017-6
+40 Doble A . The pharmacology and mechanism of action of riluzole. Neurology. 1996;47:233S‐41S.10.1212/wnl.47.6_suppl_4.233s 8959995
+41 Savarino A , Boelaert JR , Cassone A , Majori G , Cauda R . Effects of chloroquine on viral infections: an old drug against today's diseases. Lancet Infect Dis. 2003;3:722‐727.14592603 10.1016/S1473-3099(03)00806-5 PMC7128816
+42 Schilling WH , Mukaka M , Callery JJ , et al. Evaluation of hydroxychloroquine or chloroquine for the prevention of COVID‐19 (COPCOV): a double‐blind, randomised, placebo‐controlled trial. PLoS Med. 2024;21:e1004428.39264960 10.1371/journal.pmed.1004428 PMC11392261
+43 Van Berkel MA , Elefritz JL . Evaluating off‐label uses of acetazolamide. Am J Health Syst Pharm. 2018;75:524‐531.29626002 10.2146/ajhp170279
+44 Pereira AC , Gray JD , Kogan JF , et al. Age and Alzheimer's disease gene expression profiles reversed by the glutamate modulator riluzole. Mol Psychiatry. 2017;22:296‐305.27021815 10.1038/mp.2016.33 PMC5042881
+45 Okamoto M , Gray JD , Larson CS , et al. Riluzole reduces amyloid beta pathology, improves memory, and restores gene expression changes in a transgenic mouse model of early‐onset Alzheimer's disease. Transl Psychiatry. 2018;8:153.30108205 10.1038/s41398-018-0201-z PMC6092426
+46 Matthews DC , Mao X , Dowd K , et al. Riluzole, a glutamate modulator, slows cerebral glucose metabolism decline in patients with Alzheimer's disease. Brain. 2021;144:3742‐3755.34145880 10.1093/brain/awab222 PMC8719848
+47 Pedrioli G , Patani R , Paganetti P . Chloroquine, the Coronavirus Crisis, and Neurodegeneration: a Perspective. Front Neurol. 2020;11:596528.33281734 10.3389/fneur.2020.596528 PMC7691290
+48 Varma VR , Desai RJ , Navakkode S , et al. Hydroxychloroquine lowers Alzheimer's disease and related dementias risk and rescues molecular phenotypes related to Alzheimer's disease. Mol Psychiatry. 2023;28:1312‐1326.36577843 10.1038/s41380-022-01912-0 PMC10005941
+49 Canepa E , Parodi‐Rullan R , Vazquez‐Torres R , et al. FDA‐approved carbonic anhydrase inhibitors reduce amyloid β pathology and improve cognition, by ameliorating cerebrovascular health and glial fitness. Alzheimers Dement. 2023;19:5048‐5073.37186121 10.1002/alz.13063 PMC10600328

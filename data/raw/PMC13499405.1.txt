@@ -1,0 +1,339 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Poult Sci
+Journal ID: Poult Sci
+NLM Journal ID: 0401150
+
+Poultry Science
+
+ISSN: 0032-5791
+EISSN: 1525-3171
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499405
+PMID: 42603403
+DOI: 10.1016/j.psj.2026.107555
+Article ID: S0032-5791(26)01188-0
+Article ID: 107555
+Article version: 1
+Subjects: MICROBIOLOGY AND FOOD SAFETY
+
+Prevalence, serotype diversity, and antibiotic resistance of non-typhoidal Salmonella in East African poultry: A systematic review and meta-analysis
+
+Mebratie Dinku Yigezaw a
+Wang Xinyu a
+Guo Weiqi a
+Zhang Beibei a
+Liu Chang a
+Deng Lei a
+Hu Jiangang a
+Qi Jingjing a
+Bao Yanqing a
+Tian Mingxing a
+Dejene Haileyesus b
+Wang Shaohui shwang0827@126.com a ⁎
+a Shanghai Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Shanghai, 200241, China
+b Department of Veterinary Epidemiology and Public Health, College of Veterinary Medicine and Animal Sciences, University of Gondar, Ethiopia
+⁎ Corresponding author. shwang0827@126.com
+Publication date: 2026 Nov
+Electronic publication date: 2026 Aug 3
+Volume: 105
+Issue: 11
+Electronic Location ID: 107555
+Received 2026 Jun 5; Accepted 2026 Aug 2
+Copyright: © 2026 The Authors
+Copyright year: 2026
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Antibiotic resistance, East Africa, Non-typhoidal Salmonella, Poultry, Systematic review and meta-analysis
+
+==============================
+Non-typhoidal salmonellosis, caused by Salmonella enterica, threatens poultry production and food safety in East Africa, where poultry is vital for livelihoods. This systematic review and meta-analysis assessed the pooled prevalence, serotype distribution, and antimicrobial resistance patterns of non-typhoidal Salmonella in East African poultry. Following PRISMA guidelines, we searched on PubMed, Web of Science, Scopus, African Journals Online, and Google Scholar for studies published up to December, 2025. A random-effects model was used to calculate pooled prevalence with 95% confidence intervals in R (Version 4.6.0). Subgroup analyses and I2 statistics were used to explore the source of heterogeneity, and a heatmap visualized the antibiotic resistance patterns. Thirteen studies comprising 422 positive isolates were included. The pooled prevalence of non-typhoidal Salmonella in East Africa was 6% (95% CI: 4-8%), with high heterogeneity (I2 = 95.3%). The subgroup analysis showed prevalence was highest in Uganda (11%, 95% CI: 7-16%) and lowest in Tanzania (1%, 95% CI: 0-6%). By diagnostic method, slide agglutination was higher (7%, 95% CI: 5-10%) than PCR (4%, 95% CI: 1-8%). By sample type, internal organs had the highest prevalence (17%, 95% CI: 12-21%) and environmental samples had the lowest (1%, 95% CI: 0-3%). By source, slaughterhouses recorded the highest rate (12%, 95% CI: 7-18%) and extensive farms the lowest rate (3%, 95% CI: 0-8%). The pooled antibiotic resistance was 65% (95% CI: 55-79%). Oxytetracycline is the most resistant antibiotic (84%, 95% CI: 70-98%). S. Typhimurium exhibited the highest pooled prevalence (18%, 95% CI: 15-22%), and S. Kentucky was the most multidrug-resistant serotype and had the highest number of resistance genes. In conclusion, non-typhoidal Salmonella is prevalent in East African poultry, with multidrug-resistant serotypes distributed across the region. Therefore, collaborative interventions are urgently needed to address this zoonotic threat.
+
+Background
+
+Non-typhoidal Salmonellosis is a zoonotic disease caused by Gram-negative, broad-host-range serotypes of the genus Salmonella, commonly referred to as non-typhoidal Salmonella (NTS) (Bangera et al., 2019). NTS is a major food safety concern in both developed and developing countries, most commonly associated with acute gastroenteritis, bacteremia, and focal infections in humans and animals (Chousalkar and Willson, 2022). It is the major cause of invasive bacteremia in the world, especially in sub-Saharan Africa (in immunocompromised and malnourished children and the elderly). It can also lead to chronic disorders, such as neoplasms and autoimmune disorders (Feasey et al., 2012; Lamichhane et al., 2024; Sánchez-Vargas et al., 2011; Se Eun et al., 2021; Sima et al., 2024). The 2017 report showed that the invasive form of NTS has caused approximately half a million illnesses and 77,500 deaths worldwide, particularly in sub-Saharan Africa, reaching 78.9% of the total cases and 85.9% of deaths (Crump et al., 2023; Stanaway JD et al., 2019). Zoonotically, NTS is transmitted to humans from poultry, beef, pork, fish, dairy, and dairy products throughout the farm-to-fork chain (Lamichhane et al., 2024). Poultry is the most common reservoir, and its products (eggs and meat) are the most common sources of foodborne non-typhoidal salmonellosis outbreaks in humans (Shaji et al., 2023).
+
+Even though Poultry is the most significant source of protein in the world, East African countries are still not achieving this. Likely due to infectious diseases, lack of genetic improvement, traditional management systems, and a shortage of formulated feed (De Bruyn et al., 2015; Pius et al., 2021; Vernooij et al., 2018). Diseases, especially salmonellosis, are the main constraint for the poultry production industry and an important public health concern (Grace et al., 2024). According to the 2023 European Union One Health report, Salmonellosis is the second most reported human zoonosis, after campylobacteriosis (EFSA, 2024). Salmonellosis is transmitted both horizontally and vertically, causing high mortality among young chickens and leading to significant production losses. It is characterised by asymptomatic infection in adult chickens, non-host-specific colonization, and high zoonotic potential (Shaji et al., 2023; Wang et al., 2018).
+
+In poultry, several Salmonella serotypes are of major concern. They can be divided into two groups based on their host range and public health impact. The first group, Salmonella Gallinarum and Salmonella Pullorum, are avian-specific pathogenic Salmonella serotypes that cause severe systemic infections in poultry, resulting in economic losses due to mortality and production reductions (Hu et al., 2024; Zhou et al., 2022). The second and more critical group is the NTS serotypes; unlike host-specific serotypes, they are zoonotic and significantly impact both poultry production and public health, contributing to food spoilage and food poisoning (Peter et al., 2023). Worldwide, Salmonella Typhimurium and Salmonella Enteritidis are the two common NTS responsible for this dual burden (Arya et al., 2017; Billah and Rahman, 2024). Across the African continent, the prevalence of poultry salmonellosis is approximately 14.4%. Specifically, several zoonotic NTS serotypes are widely reported in Africa, including Salmonella Enteritidis, Salmonella Typhimurium, Salmonella Kentucky, and Salmonella Virchow (Kabeta et al., 2024).
+
+Antibiotic therapy is the first-line treatment for salmonellosis; however, improper antibiotic use is common on poultry farms. As a result, antibiotic resistance is becoming a critical challenge. Antibiotic residues also contaminate chicken products, which are a source of emerging public health diseases (Castro-Vargas et al., 2020; Punchihewage-Don et al., 2022). Research in sub-Saharan Africa indicates that 70% of NTS isolates have developed resistance to ampicillin, trimethoprim-sulfamethoxazole, chloramphenicol, cephalosporin, and fluoroquinolone (Tack et al., 2020). Despite numerous studies in East African countries, no consolidated evidence has been summarized on the overall burden, serotypes, and antibiotic resistance patterns of NTS in poultry across the region. Therefore, this systematic review and meta-analysis study addresses this gap by providing pooled data on prevalence, serotype distribution, and antibiotic resistance of NTS in this region.
+
+Methods
+
+Data sources and search strategy
+
+We conducted the systematic review and meta-analysis following the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines (supplementary Table 1) as previously described (Shamseer et al., 2015). The outcomes of interest were the pooled prevalence, serotype diversity, and antibiotic resistance in NTS in East African poultry. This was conducted by systematically searching peer-reviewed articles in PubMed, Web of Science, Scopus, Google Scholar, and African Journals Online (AJOL) databases. A search strategy employed the following keywords and Boolean operators: (“Poultry” OR “Chicken” OR “Broiler” OR “Layer”) AND (“Salmonella” OR “Salmonellosis” OR “Salmonella enterica” OR “Nontyphoidal”) AND (“Prevalence” OR “Seroprevalence” OR “Epidemiology” OR “Sero-epidemiology”) AND (“Antibiotic resistance” OR “Antimicrobial resistance” OR “Drug resistance”) AND (“East Africa” OR “Ethiopia” OR “Kenya” OR “Uganda” OR “Tanzania” OR “Rwanda” OR “Sudan” OR “South Sudan” OR “Burundi” OR “Somalia” OR “Eritrea” OR “Djibouti”) covering the period from January 2000 to December 2025.
+
+Inclusion and exclusion criteria
+
+The study included Primary research articles (cross-sectional, cohort, case-control, and surveillance reports) from 11 East African countries (Ethiopia, Kenya, Uganda, Tanzania, Rwanda, Burundi, South Sudan, Somalia, Sudan, Djibouti, Eritrea) reporting prevalence, serotype identification, and antibiotic resistance of NTS in poultry, published between 2000 and 2025. Studies were excluded if they were outside East Africa, lacked serological or molecular diagnosis, serotype distribution, or antibiotic resistance profile, involved non-poultry sources, or were experimental in design. Additionally, we excluded non-English-language publications, as well as reviews, editorials, preprints, theses, government reports, and opinion pieces.
+
+Study selection and data extraction
+
+Two reviewers independently conducted a manual screening of the search results based on article titles and abstracts. Whenever disagreements arose regarding study relevance, a third reviewer intervened to reach a final decision. Studies that passed this initial screening proceeded to a full-text review. During that review, the complete articles were obtained to confirm they fully met the inclusion criteria. Once confirmed, we assessed for risk of bias, extracted key information, and organized it into a Microsoft Excel sheet. The collected data included authors, title, publication year, study area, study design, sample size, management systems involved, sample sources, diagnostic methods, prevalence rates, identified serotypes, antibiotic resistance patterns, any related resistance genes, and the study's main conclusions.
+
+Quality assessment of the selected studies
+
+The quality, reporting, and risk of bias of the selected papers were assessed by two independent authors using the appraisal tool for cross-sectional studies (AXIS tool) (Downes et al., 2016), shown in supplementary Table 2. This appraisal checklist comprises 20 items that evaluate the title, abstract, introduction, methods, results, and discussion sections. It covers study objectives, methodological aspects, results, limitations, and funding declarations.
+
+Data management and statistical analysis
+
+All data extracted from the included studies were managed and organized using Microsoft Excel. Statistical analyses, including pooled prevalence, serotype distribution, antibiotic resistance patterns, and subgroup analyses, were conducted in R software (version 4.6.0) using the meta and metafor packages. The pooled prevalence was calculated using a random effects model with the Restricted Maximum Likelihood (REML) method. Forest plots were generated using the metaprop function in R, with raw proportions (Balduzzi et al., 2019). Heterogeneity among studies was assessed using Cochran’s Q test, with a p-value < 0.05 indicating significant heterogeneity. To identify potential sources of heterogeneity, subgroup meta-analyses were conducted based on study area, sample source, sample type, and diagnostic method. The inverse -variance index (I2) and true -variance index (τ2) were estimated to quantify heterogeneity, with significance set at p < 0.05. The heatmap analysis was used to illustrate the relationship between the serotypes and their antibiotic resistance rates. Publication bias was assessed qualitatively using funnel plots (effect size versus standard error) and statistically using a regression test and a rank correlation test. All results were reported with 95% confidence intervals, and a p-value < 0.05 was considered statistically significant.
+
+Results
+
+Literature search and PRISMA flow diagram
+
+The selection process was conducted in accordance with the PRISMA 2020 guidelines (supplementary Table 1). From the initial identification of 562 articles, 58 duplicates were excluded. After screening titles and abstracts, 47 reports were selected for full-text evaluation. Following rigorous review, 34 articles were excluded for failing to meet the inclusion criteria. As a result, 13 articles were included in the final analysis (Figure 1).Fig. 1 PRISMA flowchart for the selection of studies. The prevalence, serotype diversity, and antibiotic resistance of poultry NTS in East Africa.
+
+Fig 1 dummy alt text
+
+Study characteristics and quality assessment
+
+A total of 13 studies published between 2003 and 2024 met the inclusion criteria, including those from Ethiopia (n = 6), Uganda (n = 2), Tanzania (n = 2), Kenya (n = 1), Sudan (n = 1), and South Sudan (n = 1). No studies were identified from Rwanda, Burundi, Somalia, Djibouti, or Eritrea. All included studies were cross-sectional in design and were conducted across various countries in East Africa, with sample sizes ranging from 208 to 1515. The characteristics of the studies included in this systematic review and meta-analysis are summarized in Table 1.Table 1 Descriptive statistics of the studies included in the systematic review and meta-analysis.
+
+Table 1 dummy alt textAuthor, year (Ref)	Study period	Study Area	Study design	Sample
+Source	Sample type	Diagnostic technique	Sample size	
+(Eguale, 2018)	July 2013–January 2014	Ethiopia	cross-sectional	Intensive farm	Fecal droppings	Slide agglutination	549	
+(Waktole et al., 2024)	January 2021 - June 2022	Ethiopia	cross-sectional	Intensive farm	Cloacal swabs, faecal droppings, litter samples, and feed and drinking water	PCR	1515	
+(Dagnew et al., 2020)	November 2017 -May 2018	Ethiopia	cross-sectional	Intensive farm	Cloacal swabs, faecal droppings, feed samples, and floor swabs	Slide agglutination	836	
+(Zewdu and Cornelius, 2009)	September 2003- February 2004	Ethiopia	cross-sectional	Supermarkets	Chicken meat	Slide agglutination	208	
+(Molla et al., 2003)	October 2001 - April 2002	Ethiopia	cross-sectional	Slaughter house	Liver, gizzard, heart, muscle, and skin	Slide agglutination	378	
+(Abayneh et al., 2023)	December 2020 - May 2021	Ethiopia	cross-sectional	Intensive farm	Cloacal swab and faecal dropping	Slide agglutination	390	
+(Rukambile et al., 2021)	September 2017 - February 2018	Tanzania	cross-sectional	Extensive farm	Fecal dropping	PCR	810	
+(Thye et al., 2025)	April 2019 - June 2020	Tanzania	cross-sectional	Intensive farm	Fecal dropping	Slide agglutination	777	
+(Odoch et al., 2018)	June 2015 - August 2016	Uganda	cross-sectional	Intensive farm	Fecal droppings	PCR	796	
+(Ball et al., 2020)	March 2017 -August 2018	Uganda	cross-sectional	Intensive farm	Cloacal swab	Slide agglutination	379	
+(Saad et al., 2022)	September 2019- December 2019.	South Sudan	cross-sectional	Extensive farm	Cloacal swab	Slide agglutination	270	
+(Hag Elsafi et al., 2022)	October 2004 - May 2005.	Sudan	cross-sectional	Slaughter house	Livers, intestinal contents, skin swabs and egg specimens	Slide agglutination	679	
+(Nyabundi et al., 2017)	December 2013 - October 2014	Kenya	cross-sectional	Local market	Cloacal swabs and eggs	PCR	408	
+
+The evaluation of the selected studies used the AXIS tool, which comprises 20 questions to assess quality, reporting, and risk of bias. Among 13 studies, total scores ranged from 12 to 17. One study scored 17, five scored 16, three scored 14, three scored 13, and one scored 12. Consequently, no studies fulfilled all 20 criteria (supplementary Table 2).
+
+Pooled prevalence of NTS
+
+The pooled prevalence of NTS was calculated from 13 studies across 6 of the 11 East African countries, comprising a total sample size of 7995. The estimated pooled effect size was 6% (95% CI: 4-8%). The analysis revealed significant heterogeneity across the studies (Q (12) = 253.29; p < 0.001; I2 = 95.3%; τ2 = 0.0009). Despite this heterogeneity, weights under the random-effects model were evenly distributed (5.4-8.7%), as shown in Fig. 2.Fig. 2 Forest plot of the pooled prevalence of NTS in East African poultry.
+
+Fig 2 dummy alt text
+
+Subgroup meta-analysis and sources of heterogeneity
+
+The results of the subgroup meta-analysis across different moderators are summarized in Table 2, and the corresponding forest plots are provided in supplementary Figs. 1, 2, 3, and 4. Subgroup analysis revealed substantial variability across categories. Based on study region, Uganda had the highest pooled prevalence of 11% (95% CI: 7-16%) with substantial heterogeneity (I2 =74.5%; τ2 = 0.0009; p = 0.0475), while Tanzania reported the lowest pooled prevalence at 1% (95% CI: 0–6%) with high heterogeneity (I2 = 82.6%; τ2 = 0.0009; p = 0.0167) (supplementary Figure 1). For diagnostic methods, the pooled estimate for slide agglutination was higher at 7% (95% CI: 5-10%) with the greatest heterogeneity (I2 = 95.9%; τ2 = 0.0012; p < 0.0001) compared to PCR, which was 4% (95% CI: 1-8%) with heterogeneity (I2 =94.7%; τ2 =0.0012; p < 0.0001) (supplementary Figure 2). Sample types were categorized into five main groups: intestinal content (faecal drops and cloacal swabs), environmental (feed, water, litter, and floor swabs), egg, meat (muscle and skin), and internal organs (liver, heart, and gizzard). Internal organs exhibited the highest estimated pooled prevalence at 17% (95% CI: 12-21%) with heterogeneity (I2 = 93.6%; τ2 = 0.0006; p < 0.0001), while environmental types recorded the lowest pooled prevalence at 1% (95% CI: 0-3%) with the lowest heterogeneity (I2=28.6%; τ2=0.0006; p = 0.2309) (supplementary Figure 3). The analysis based on the sample source revealed that slaughterhouses recorded the highest pooled prevalence of 12% (95% CI: 7-18%) with heterogeneity (I2 = 97.9; τ2 = 0.0009; p < 0.0001), while sample from extensive farms were recorded the lowest pooled estimate at 3% (95% CI: 0-8%) without heterogeneity (I2 = 0: τ 2 = 0.0009; p = 0.3581) (supplementary Figure 4).Table 2 Pooled prevalence of NTS, stratified by subgroup analysis.
+
+Table 2 dummy alt textModerators	K	Category	N	Case	Pooled Prevalence (95% CI)	Heterogeneity	Test for subgroup
+difference (CE)	
+I2 (%)	τ2	P-value	Q	P-value	
+Pooled prevalence	13	Overall	7995	422	6% (95% CI: 4-8%)	95.3	0.0009	<0.001	253.29	<0.0001	
+Study area	6	Ethiopia	5901	205	7% (95% CI: 5-10%)	95.8	0.0009	<0.001	123.68	<0.0001	
+2	Uganda	1175	126	11% (95% CI: 7-16%)	74.5	0.0009	0.0475	
+2	Tanzania	1587	24	1% (95% CI: 0-8%)	82.6	0.0009	0.0167	
+1	Kenya	408	20	5% (95% CI: 3-7%)	-	-	-	
+1	South Sudan	270	8	3% (95% CI: 2-6%)	-	-	-	
+1	Sudan	679	38	6% (95% CI: 2-8%)	-	-	-	
+Diagnostic Method	4	PCR	3529	138	4% (95% CI: 1-8%)	94.7	0.0012	<0.0001	1.6	=0.2058	
+9	Slide agglutination	4466	284	7% (95% CI: 5-19%)	95.9	0.0012	<0.0001	
+Sample type	11	Intestinal content	5991	269	5 (95% CI: 3-6%)	93.1	0.0006	<0.0001	100.18	<0.0001	
+4	Internal Organ	269	61	17 (95% CI: 12-21%)	93.6	0.0006	<0.0001	
+2	Egg	316	20	6 (95% CI: 2-11%)	0	0.0006	0.7223	
+2	Environmental	682	5	1 (95% CI: 0-3%)	28.6	0.0006	0.2309	
+3	Meat	616	61	9 (95% CI: 6-12%)	80.3	0.0006	0.0016	
+Sample source	7	Intensive farm	5242	228	5 (95% CI: 3-7%)	95.4	0.0009	<0.0001	75.57	<0.0001	
+2	Extensive Farm	1080	27	3 (95% CI: 0-7%)	0	0.009	0.3581	
+2	Slaughterhouse	1057	118	12 (95% CI: 8-17%)	97.9	0.0009	<0.0001	
+1	Local Market	408	20	5 (95% CI: 3-7%)	-	-	-	
+1	Supermarket	208	29	14 (95% CI: 10-19%)	-	-	-	
+K=number of included studies, N=total number of poultry population, Case=positive for non-typhoidal Salmonella, CE=common effect.
+
+Fig. 3 Forest plot of serotype-specific proportions from meta-analysis.
+
+Fig 3 dummy alt text
+
+Fig. 4 Heat map presentation of the geographical distribution of NTS in East Africa. The rows represent a list of isolated serotypes (n), and columns represent countries where serotypes are distributed. The burden of distribution is represented by a white-to-deep-red sequential colour intensity (0% to 100%).
+
+Fig 4 dummy alt text
+
+Prevalence of individual serotypes
+
+Across the 13 studies, a total of 422 NTS were identified, representing 34 distinct serotypes. Among these, S. Typhimurium exhibited the highest pooled prevalence at 18% (95% CI: 15-22%), followed by S. Braenderup at 11% (95% CI: 9-15%), S. Enteritidis at 8% (95% CI: 6-11%), S. Kentucky at 8% (95% CI: 5-11%), S. Newport and S. Saintpaul each at 6% (95% CI: 4-9%). Together, these top 6 serotypes accounted for the majority of the NTS burden in East Africa. In contrast, S. Havana, S. Barranquilla, S. Haardt, S. Tarshyne, S. Millesi, S. Montevideo, and S. Kiambu showed significantly lower pooled prevalence, each below 1%. The remaining serotypes were detected sporadically, with wide confidence intervals indicating high variability across studies. Despite this heterogeneity, weights under the random-effects model were evenly distributed (ranging from 2.3% to 3.1%), as shown in Fig. 3.
+
+Geographical distribution of serotypes
+
+Of the 422 NTS serotype isolates, 48.6% were from Ethiopia, followed by 29.9% from Uganda, with the remaining 21.5% from Kenya, Tanzania, Sudan, and South Sudan. S. Typhimurium, S. Enteritidis, and S. Saintpaul were the most common serotypes in Ethiopia, while S. Enteritidis and S. Newport were highly prevalent in Uganda. S. Typhimurium was found across all six countries, whereas S. Enteritidis was detected in every country except Sudan. In third place, S. Kentucky was identified in Ethiopia, Uganda, Tanzania, and Sudan. S. Hadar appeared in three countries (Ethiopia, Uganda, Tanzania). Four serotypes, such as S. Newport, S. Virchow, S. Aberdeen, and S. Uganda, were present in two countries, while the other 25 serotypes were country-specific, as shown in Fig. 4.
+
+Pooled antibiotic resistance prevalence
+
+A total of 13 articles were included in the meta-analysis to estimate the antibiotic resistance of poultry-derived NTS in East Africa. Fig. 5 indicates that the pooled antibiotic resistance was 67% (95% CI: 55-79%). The analysis showed substantial heterogeneity among the studies (I2 = 94.4%; Q test = 4050.42; df = 12; p < 0.001). Despite significant heterogeneity between studies, they were weighted roughly equally, with individual study weights ranging from 4.8% to 8.9%. Three studies from Ethiopia, including Eguale, 2018, Waktole et al., 2024, and Dagnew et al., 2020, reported 100% resistance to a given antibiotic.Fig. 5 A forest plot of pooled antibiotic resistance prevalence across selected studies.
+
+Fig 5 dummy alt text
+
+Proportion of antibiotic resistance
+
+A random-effect meta-analysis was conducted to estimate resistance proportion across 35 antibiotic agents. While 13 studies were included in the overall pooled prevalence of antibiotic resistance, one study was excluded from the drug-specific analysis because it lacked drug-specific reporting. Substantial heterogeneity was observed across all antibiotic agents (I2 =97.5; τ2 =0.00053; p < 0.0001). Resistance proportions varied widely, ranging from 0% to 84%. oxytetracycline is the most resistant antibiotic (84%, 95% CI: 70-98%), followed by sulfisoxazole (54%, 95% CI: 47-60%), spectinomycin (46%, 95% CI: 37-56%), streptomycin (37%, 95% CI: 31-42%), and tetracycline (37%, 95% CI: 32-42%). All the isolated serotypes were 100% susceptible to ceftiofur, cefoperazone, cefotaxime, apramycin, meropenem, enrofloxacin, ceftriaxone, and ceftazidime, as shown in Fig, 6.Fig. 6 A forest plot of antibiotic resistance proportions.
+
+Fig 6 dummy alt text
+
+Antibiotic-serotype resistance patterns
+
+The integration of 34 NTS serotypes with the commonly used 11-antibiotic panel in a heatmap (Fig. 7) identifies distinct phenotypic clusters. Of the 34 serotypes, 38% were resistant to at least one of the selected antibiotics, with a resistance rate greater than 50%. S. Kentucky is >50% resistant to five different antibiotics, such as nalidixic acid, streptomycin, sulfisoxazole, tetracycline, and ciprofloxacin, whereas S. Saintpaul is highly resistant to streptomycin, sulfisoxazole, and chloramphenicol. S. Typhimurium has high resistance to ampicillin only, but moderate resistance to amoxicillin and clavulanic acid, chloramphenicol, sulfisoxazole, and tetracycline. Despite their low prevalence, S. Mbandaka and S. Havana exhibited an extreme resistance profile (100%) to 3 different antibiotics individually. Resistance to at least one antibiotic was observed in 24 of the 34 isolated serotypes. All highly prevalent and multidrug-resistant serotypes were still susceptible to ceftriaxone.Fig. 7 Heat map visualization of serotype-specific resistance to commonly used antibiotics in NTS serovars. Rows represent individual serotypes, columns represent antibiotics. A white- to-deep red sequential colour scale indicates the percentage of resistance from 0% to 100%. The grey colour indicates serotypes that are not detected by the respective antibiotics.
+
+Fig 7 dummy alt text
+
+Antibiotic resistance genes
+
+Among the 13 studies reviewed, only 4 reported specific antibiotic resistance genes (ARGs). Overall, 41.1% (60 out of 145) of the tested isolates carried at least one ARG. S. Kentucky exhibited the highest number of resistance genes, with tetA being the most frequently detected, as shown in Fig. 8.Fig. 8 Heat map presentation of serotype-specific abundance of antibiotic resistance genes. Rows represent the number of detected isolates and the percentage of ARGs, and columns represent a list of ARGs. White colour indicates absence of ARGs, red indicates the presence of ARGs, and grey indicates non-detected serotypes.
+
+Fig 8 dummy alt text
+
+Publication bias assessment
+
+Publication bias and small-study effects were assessed using a logit-transformed funnel plot, a regression test and a rank correlation test (Fig. 9). Although the funnel plot suggested asymmetry in the slope distribution, neither test indicated significant publication bias. The mixed effects meta-regressions test was not significant (z = 1.1290; p = 0.2589; b = 0.0228; 95% CI: 0.0514, 0.0970), and the rank correlation test similarly showed no evidence of bias (τ2 =−0/0769, P = 0.7650).Fig. 9 Funnel plot showing publication bias and small study effects.
+
+Fig 9 dummy alt text
+
+Discussion
+
+This systematic review and meta-analysis provide the first consolidated report on the prevalence, serotype distribution and antibiotic resistance patterns of NTS in East African poultry. Based on 13 studies with a total population of 7995 and 422 positive samples, the estimated pooled prevalence was 6% (95% CI: 4-8%). This finding is lower than the continental African estimate of 14.4% (Kabeta et al., 2024) and reports from Vietnam (45.6%) (Trung et al., 2017), Egypt (33.3%) (Barac et al., 2024), the USA (17.9%) (Diaz et al., 2022), and Iran (14.64%) (Bangera et al., 2019). However, these studies report higher rates than those in Brazil (5,3%) (Voss-Rech et al., 2015), Chile (<4%) (Alegria-Moran et al., 2017), and Ghana (4.69%) (Sarkodie-Addo et al., 2025). The variation in prevalence across regions may reflect differences in production systems, sampling technique, diagnostic method, or true epidemiological differences in NTS distribution.
+
+A subgroup meta-analysis based on the region indicated that the highest estimated pooled NTS prevalence in East Africa was recorded in Uganda at 11%. In contrast, this figure is much lower than the prevalence reported in Nigeria (31.6%) and Cameroon (71.9%) (Kabeta et al., 2024). The higher prevalence of NTS in Nigeria may be associated with the larger poultry population and inadequate biosecurity protocols (Sanni et al., 2022). The pooled prevalence of NTS in Ethiopia identified in this study is lower than the previously reported figure of 12.46% (Basazinew et al., 2025). This discrepancy may show the earlier report did not differentiate between serotypes, potentially including avian-specific serotypes in its overall prevalence estimate. Based on the diagnostic technique, our analysis revealed that the slide agglutination technique yielded a higher pooled prevalence of NTS (7%) than the PCR-detection method (4%), reflecting its high sensitivity for serotype- specific antigen detection in the included studies.
+
+Subgroup analysis by sample type showed that internal organs, including the heart, gizzard, and liver had a higher pooled prevalence of NTS (17%). This study reflects a similar pattern observed in Egypt. Although a cross-sectional study in Egypt reported the highest contamination rate of 30% (Barac et al., 2024), both studies highlight the gizzard and liver as high-risk tissues within the poultry carcass. The isolated number of NTS from eggs was 6%, which is notably higher than the rates of 2.3% reported in Korea (Jung and Lee, 2024), 2.2% reported in Southwest Benin (Hinson et al., 2026), and 5.5% reported in Ghana (Sarkodie-Addo et al., 2025). The high prevalence of NTS in eggs from East Africa might be associated with improper vaccination of layers, high stocking density, faecal contamination, and poor egg storage conditions.
+
+The pooled prevalence from intestinal contents, such as cloacal swabs and faecal droppings, was estimated at 5%, which was lower than the prevalence from internal organs. Similarly, studies from Egypt showed that the prevalence in internal organs was almost double that of cloacal swabs (Salem et al., 2025). A 22% prevalence was also detected in studies from India (Sudhanthirakodi et al., 2016). In the present subgroup analysis, environmental samples (feed, water, and floor swabs) recorded the lowest estimated pooled prevalence at 1%. This finding significantly deviates from recorded data in the USA, where the environmental prevalence was reported at 29,5%, higher than that detected in live birds and products (Diaz et al., 2022), and in Nepal, where pooled prevalence from environmental samples was 9% (Sharma et al., 2021). This difference is likely due to poultry in East Africa being predominantly raised under extensive production systems, in which the environment may not be conducive for the survival and multiplication of Salmonella.
+
+The estimated prevalence of NTS from poultry meat in this study ranked second (9%), just after internal organ records, but remains far lower than the 35.03 % reported in Israel (Malkiely et al., 2025). This underscores why poultry meat is a common source of NTS and poses a serious public health risk. Subgroup analysis by sample source revealed that samples from supermarkets had a 14% positivity rate, higher than those detected in slaughterhouses (9%) and local markets (5%). These higher-prevalence reports from supermarket samples revealed that chickens might be sourced from outside formal slaughterhouses, with contamination occurring during transport and storage in East Africa. In contrast, it is much lower than the report of Mexico’s slaughterhouses at 27.2% (Regalado-Pineda et al., 2020) and Vietnam at 42.8% (Xin et al., 2025). In the USA, 7.67% of retail chicken samples were reported as positive for NTS (Sodagari et al., 2024). The prevalence of intensive farms was 5%, higher than that of extensive farms (3%). These results showed that intensive farms were favorable environments for the horizontal transmission of NTS.
+
+In the current study, the heat map visualization showed that 34 NTS serotypes were distributed across East Africa. Among these, S. Typhimurium, S. Braenderup, S. Enteritidis, S. Kentucky, S. Newport, and S. Saintpaul were the most dominant serotypes, accounting for around 57% of the total number of isolated serotypes. Specifically, S. Typhimurium shared 19% of the pooled prevalence. The current data align with a meta-analysis conducted in African poultry, which reported S. Typhimurium and S. Enteritidis as the dominant serotypes (Kabeta et al., 2024). Likewise, S. Typhimurium and S. Chester (19.05% for each serotype) in Morocco (Zahli et al., 2022). Similarly, S. Typhimurium was the dominant serotype in India at 58% and in Uganda at 36.7% (Sarkodie-Addo et al., 2025), but at higher rates than in the current study (Grakh et al., 2026). Additionally, a study from a poultry breeding farm in China indicated that S. Typhimurium is the second most abundant serotype (29%), next to S. Thompson at 38% (Ju et al., 2023). In contrast, studies from the USA reported a different serotype distribution, with S. Kentucky (35%), S. Infantis (19%), S. Enteritidis (15%), and S. Typhimurium (13.8%) (Sodagari et al., 2024), and from Iran, S. Infantis (43.1%) (Bangera et al., 2019). In Vietnam, S. Typhimurium was the predominant serotype, but at a relatively lower rate (10.1%) (Nhung et al., 2024). Across specific regions in East Africa, among 34 identified strains, the majority (73.5%) showed high geographic specificity; meanwhile, only 26.5% of serotypes were regionally non-specific, detected from two or more study areas. This 26.5% might have arisen from the broad host range and adaptability, regional trade pathways, or poor biosecurity measures across borders. The other scenario for regional specificity may be due to limited research being done in most regions of East Africa, environmental factors, and the narrow host range of the strains.
+
+The meta-analysis of pooled antibiotic resistance prevalence of NTS in the current study revealed 65%, with heterogeneity (94.4%) across the included studies. This data aligns with the findings of a systematic review and meta-analysis conducted in the USA, which reported that the prevalence of antibiotic resistance to at least one antibiotic was 64.6% (Yin et al., 2021). These similarities may reflect comparable patterns of antibiotic usage, particularly the routine use of antibiotics as growth promoters. In contrast, the current results are significantly higher than the pooled resistance reported from the Middle East and North Africa (14.4%) (Bellil et al., 2023). This discrepancy could be attributed to regional variations in antibiotic stewardship, including stricter regulations on antibiotic use on poultry farms and better access to alternative interventions, such as vaccines and probiotics. Furthermore, the pooled prevalence of specific antibiotic agents in the current study showed the highest pooled resistance was recorded for oxytetracycline (84%), followed by sulfisoxazole (54%), spectinomycin (46%), streptomycin (37%), and tetracycline (37%). Similarly, a meta-analysis report from Ethiopia showed that the highest pooled resistance rates were observed for tetracycline (75%) and oxytetracycline (64%) (Basazinew et al., 2025). A study in China showed that resistance to nalidixic acid is 72.3%, followed by ampicillin (55.3%) and streptomycin (48.7%) (Yang et al., 2020). This finding showed that the wide availability of tetracycline, aminoglycosides, and sulfonamides in East African markets often leads to frequent use for both therapeutic and prophylactic purposes. Additionally, an inadequate number of veterinarians in the region leads to the use of antibiotics without prescription, a factor that likely drives the significant resistance patterns identified in this study. By contrast, resistance to third-generation cephalosporins (ceftriaxone, ceftiofur) and carbapenems (meropenem) was notably absent, likely because the high cost of these drugs limits their use in poultry production. This finding offers a window of opportunity: preserving susceptibility to these critically important antibiotics should be a priority.
+
+The Heatmap analysis of serotype-antibiotic resistance patterns revealed distinct clustering among the isolated serotypes based on susceptibility to 11 commonly used antibiotics. Of the 34 serotypes, 38% were resistant to at least one of the selected antibiotics, with a resistance rate greater than 50%. Among these, S. Kentucky was recorded as resistant to five different antibiotics, all at rates exceeding 50%. This finding is in line with the surveillance in France, England and Wales, Denmark, and the United States, which identified S. Kentucky as MDR and alarmingly increased resistance to ciprofloxacin (Le Hello et al., 2011). Additionally, a highly multidrug-resistant strain of S. Kentucky sequence type (ST) 198 emerged in North Africa (Regalado-Pineda et al., 2020). In China, this strain carried even higher antibiotic resistance genes (Ju et al., 2023). Although all MDR strains in the present study remained susceptible to ceftriaxone, the emergence of S. Kentucky as a multidrug-resistant serotype in East African poultry warrants close monitoring. Additionally, S. Kentucky exhibited the highest number of resistance genes, with tetA being the most frequently detected.
+
+This study has some limitations, including high heterogeneity (95.3%) across studies, which reflects substantial variability in sampling strategies, diagnostic methods, and study populations. It included only 6 of the 11 East African countries; no eligible studies were found for Rwanda, Burundi, Eritrea, Somalia, and Djibouti, and the review protocol was not prepared and registered in PROSPERO before commencement.
+
+Conclusion and recommendations
+
+In conclusion, the pooled prevalence, serotype distribution, and antibiotic resistance patterns indicate that NTS from poultry sources pose a major threat to public and poultry production. High resistance to commonly used antibiotics represents a significant risk to humans through the direct and indirect consumption of contaminated poultry and poultry products. Therefore, policymakers and governments must apply One Health strategies for prevention and control. Implementation of a robust antibiotic stewardship program, adoption of One Health approaches, enforcing stricter policies on agricultural antibiotic use, and launching public awareness campaigns on safe handling and cooking of poultry and poultry products.
+
+List of abbreviations
+
+ARG: antibiotic resistance gene, CI: confidence interval, df: degree of freedom, MDR: multidrug-resistant, NTS: non-typhoidal Salmonella, PRISMA: Preferred Reporting Items for Systematic Reviews and Meta-Analyses.
+
+Declarations
+
+Ethics approval and consent to participate
+
+Not applicable.
+
+Consent for publication
+
+All authors have read and approved the final manuscript.
+
+Availability of data and materials
+
+All data generated or analyzed in this study are available in the main text and supplementary files.
+
+Competing interests
+
+The authors declared no competing interests.
+
+Author contributions
+
+Dinku Yigezaw Mebratie conceived and designed the study, developed the search strategy, performed literature searches, screened records, extracted data, assessed study quality, conducted the meta-analysis, interpreted the data, and drafted the manuscript. Xinyu Wang, Weiqi Guo, Beibei Zhang, and Chang Liu participated in literature searching, screening, and data extraction, and contributed to data interpretation. Lei Deng, Jiangang Hu, Jingjing Qi, Yanqing Bao, Mingxing Tian, and Haileyesus Dejene performed quality assessment, statistical analysis, and meta-analysis. Shaohui Wang conceptualized the study, designed the methodology, interpreted the data, supervised the project, and acquired the funding. All authors critically revised the manuscript for important intellectual content and approved the final version.
+
+Disclosures
+
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+Appendix Supplementary materials
+
+Image, application 1
+
+Image, image 2 dummy alt text
+
+Image, image 3 dummy alt text
+
+Image, image 4 dummy alt text
+
+Image, image 5 dummy alt text
+
+Acknowledgements
+
+This work was supported by the Shanghai Agricultural Science and Technology Innovation Project (2025-02-08-00-12-F00042), the Guangxi Key Research and Development Program (FN2600640468), Central Public-interest Scientific Institution Basal Research Fund (Y2026YC46, 2026JB13, 2026JB17), and the Agricultural Science and Technology Innovation Program (CAAS-ASTIP-2026-SHVRI).
+
+Supplementary material associated with this article can be found, in the online version, at doi:10.1016/j.psj.2026.107555.
+
+
+References
+
+Abayneh E. Goba H. Shurbe M. Salmonellosis prevalence and risk factors in chicken breeding farms in and around Arba Minch town, Gamo Zone, Ethiopia J. Infect. Dev. Ctries. 17 2023 226 235 36897905 10.3855/jidc.17553
+Alegria-Moran R. Rivera D. Toledo V. Moreno-Switt A.I. Hamilton-West C. First detection and characterization of Salmonella spp. in poultry and swine raised in backyard production systems in central Chile Epidemiol. Infect. 145 2017 3180 3190 28927474 10.1017/S0950268817002175 PMC9148768
+Arya G. Holtslander R. Robertson J. Yoshida C. Harris J. Parmley J. Nichani A. Johnson R. Poppe C. Epidemiology, pathogenesis, genoserotyping, antimicrobial resistance, and prevention and control of non-typhoidal Salmonella serovars Curr. Clin. Microbiol. Rep. 4 2017 43 53
+Balduzzi S. Rücker G. Schwarzer G. How to perform a meta-analysis with R: a practical tutorial Evid. Based. Ment. Health 22 2019 153 160 31563865 10.1136/ebmental-2019-300117 PMC10231495
+Ball T. Monte D. Aidara-Kane A. Matheu J. Ru H. Thakur S. Ejobi F. Fedorka-Cray P. International lineages of Salmonella enterica serovars isolated from chicken farms, Wakiso District, Uganda PLoS. One 15 2020 e0220484 10.1371/journal.pone.0220484 PMC6986767 31990938
+Bangera S.R. Umakanth S. Chowdhury G. Saha R.N. Mukhopadhyay A.K. Ballal M. Poultry: a receptacle for non-typhoidal salmonellae and antimicrobial resistance Iran. J. Microbiol. 11 2019 31 38 30996829 PMC6462268
+Barac D. Mansour H. Awad S. Ghazy M.A. Abdel-Mawgood A. Prevalence of non-typhoidal salmonellae in the retail chicken meat in Alexandria, Egypt Indian J. Microbiol. 64 2024 1680 1684 39678989 10.1007/s12088-024-01210-z PMC11645339
+Basazinew E. Dejene H. Dagnaw G.G. Lakew A.Z. Gessese A.T. A systematic review and meta-analysis of salmonellosis in poultry farms in Ethiopia: prevalence, risk factors, and antimicrobial resistance Front. Vet. Sci. 12 2025 1538963 10.3389/fvets.2025.1538963 PMC12153448 40502393
+Bellil Z. Mairi A. Kendi S. Touati A. Nontyphoid Salmonella in farm animals and food products in the Middle East and North Africa: a systematic review Future Microbiol. 18 2023 521 534 37309775 10.2217/fmb-2022-0239
+Billah M.M. Rahman M.S. Salmonella in the environment: a review on ecology, antimicrobial resistance, seafood contaminations, and human health implications J Hazard Mater Adv 13 2024 100407
+Castro-Vargas R.E. Herrera-Sánchez M.P. Rodríguez-Hernández R. Rondón-Barragán I.S. Antibiotic resistance in Salmonella spp. Isolated from poultry: a global overview Vet. World 13 2020 2070 2084 33281339 10.14202/vetworld.2020.2070-2084 PMC7704309
+Chousalkar K.K. Willson N.L. Nontyphoidal Salmonella infections acquired from poultry Curr. Opin. Infect. Dis. 35 2022 431 435 36098261 10.1097/QCO.0000000000000876
+Crump J.A. Nyirenda T.S. Kalonji L.M. Phoba M.F. Tack B. Platts-Mills J.A. Gordon M.A. Kariuki S.M. Nontyphoidal Salmonella invasive disease: challenges and solutions Open. Forum. Infect. Dis. 10 2023 S32 S37 S32-s37 37274526 10.1093/ofid/ofad020 PMC10236517
+Dagnew B. Alemayehu H. Medhin G. Eguale T. Prevalence and antimicrobial susceptibility of Salmonella in poultry farms and in-contact humans in Adama and Modjo towns, Ethiopia Microbiologyopen 9 2020 e1067 10.1002/mbo3.1067 PMC7424249 32510864
+De Bruyn J. Wong J. Bagnol B. Pengelly B. Alders R. Family poultry production and food CAB Rev. 10 2015 1 9
+Diaz D. Hernandez-Carreño P.E. Velazquez D.Z. Chaidez-Ibarra M.A. Montero-Pardo A. Martinez-Villa F.A. Canizalez-Roman A. Ortiz-Navarrete V.F. Rosiles R. Gaxiola S.M. Prevalence, main serovars and anti-microbial resistance profiles of non-typhoidal Salmonella in poultry samples from the Americas: a systematic review and meta-analysis Transbound. Emerg. Dis. 69 2022 2544 2558 34724337 10.1111/tbed.14362
+Downes M.J. Brennan M.L. Williams H.C. Dean R.S. Development of a critical appraisal tool to assess the quality of cross-sectional studies (AXIS) BMJ Open. 6 2016 e011458 10.1136/bmjopen-2016-011458 PMC5168618 27932337
+EFSA The European union one health 2023 zoonoses report EFSa J. 22 2024 e9106 10.2903/j.efsa.2024.9106 PMC11629028 39659847
+Eguale T. Non-typhoidal Salmonella serovars in poultry farms in central Ethiopia: prevalence and antimicrobial resistance BMC. Vet. Res. 14 2018 217 29980208 10.1186/s12917-018-1539-4 PMC6035434
+Feasey N.A. Dougan G. Kingsley R.A. Heyderman R.S. Gordon M.A. Invasive non-typhoidal Salmonella disease: an emerging and neglected tropical disease in Africa Lancet 379 2012 2489 2499 22587967 10.1016/S0140-6736(11)61752-2 PMC3402672
+Grace D. Knight-Jones T.J.D. Melaku A. Alders R. Jemberu W.T. The public health importance and management of infectious poultry diseases in smallholder systems in Africa Foods 13 2024 411 38338547 10.3390/foods13030411 PMC10855203
+Grakh K. Jadhav V.J. Joshi V.G. Khurana R. Jindal N. Meta-analysis of the prevalence of non-typhoidal Salmonella (NTS) in layer poultry eggs and feces in India J. Consum. Prot. Food Saf. 21 2026 127 137
+Hag Elsafi H. Siddig M.A.M. Muckle A. Martinez-Urtaza J. Antimicrobial resistance and molecular typing of Salmonella spp. Isolated from poultry in Khartoum State, Sudan Bacterial Empire 5 2022 e340
+Hinson C. Sessou P. Azokpota P. Daube G. Korsak N. Antibiotic resistance of Escherichia coli and Salmonella isolates from table eggs, poultry sausages, and clinical samples in Southwest Benin Hygiene 6 2026 9
+Hu Z. Ojima S. Zhu Z. Yu X. Sugiyama M. Haneda T. Okamura M. Ono H.K. Hu D.L. Salmonella pathogenicity island-14 is a critical virulence factor responsible for systemic infection in chickens caused by Salmonella Gallinarum Front. Vet. Sci. 11 2024 1401392 10.3389/fvets.2024.1401392 PMC11153813 38846788
+Ju Z. Cui L. Lei C. Song M. Chen X. Liao Z. Zhang T. Wang H. Whole-genome sequencing analysis of non-typhoidal Salmonella isolated from breeder poultry farm sources in China, 2020-2021 Antibiotics (Basel) 12 2023 1642 37998844 10.3390/antibiotics12111642 PMC10669045
+Jung H.R. Lee Y.J. Prevalence and characterization of non-typhoidal Salmonella in egg from grading and packing plants in Korea Food Microbiol. 120 2024 104464 10.1016/j.fm.2024.104464 38431312
+Kabeta T. Tolosa T. Duchateau L. Van Immerseel F. Antonissen G. Prevalence and serotype of poultry salmonellosis in Africa: a systematic review and meta-analysis Avian Pathol. 53 2024 325 349 38639048 10.1080/03079457.2024.2344549
+2nd Lamichhane B. Mawad A.M.M. Saleh M. Kelley W.G. Harrington P.J. Lovestad C.W. Amezcua J. Sarhan M.M. El Zowalaty M.E. Ramadan H. Salmonellosis: an overview of epidemiology, pathogenesis, and innovative approaches to mitigate the antimicrobial resistant infections Antibiotics (Basel) 13 2024 76 38247636 10.3390/antibiotics13010076 PMC10812683
+Le Hello S. Hendriksen R.S. Doublet B. Fisher I. Nielsen E.M. Whichard J.M. Bouchrif B. Fashae K. Granier S.A. Jourdan-Da Silva N. International spread of an epidemic population of Salmonella enterica serotype Kentucky ST198 resistant to ciprofloxacin J. Infect. Dis. 204 2011 675 684 21813512 10.1093/infdis/jir409
+Malkiely Y. Endeshaw G. Maler I. Elnekave E. Non-typhoidal Salmonella contamination of food sources from animal origin in Israel between 2007 and 2021 Prev. Vet. Med. 239 2025 106508 10.1016/j.prevetmed.2025.106508 40081183
+Molla B. Mesfin A. Alemayehu D. Multiple antimicrobial-resistant Salmonella serotypes isolated from chicken carcass and giblets in Debre Zeit and Addis Ababa, Ethiopia Ethiop. J. Health Dev. 17 2003 131 140
+Nhung N.T. Phu D.H. Carrique-Mas J.J. Padungtod P. A review and meta-analysis of non-typhoidal Salmonella in Vietnam: challenges to the control and antimicrobial resistance traits of a neglected zoonotic pathogen One Health 18 2024 100698 10.1016/j.onehlt.2024.100698 PMC10926303 38468610
+Nyabundi D. Onkoba N. Kimathi R. Nyachieo A. Juma G. Kinyanjui P. Kamau J. Molecular characterization and antibiotic resistance profiles of Salmonella isolated from fecal matter of domestic animals and animal products in Nairobi Trop. Dis. Travel. Med. Vaccines 3 2017 2 28883972 10.1186/s40794-016-0045-6 PMC5530968
+Odoch T. Sekse C. L'Abee-Lund T.M. Høgberg Hansen H.C. Kankya C. Wasteson Y. Diversity and antimicrobial resistance genotypes in non-typhoidal Salmonella isolates from poultry farms in Uganda Int. J. Environ. Res. Public Health 15 2018 324 29438292 10.3390/ijerph15020324 PMC5858393
+Peter S.K. Mutiso J.M. Ngetich M. Mbae C. Kariuki S. Seroprevalence of non-typhoidal Salmonella disease and associated factors in children in Mukuru settlement in Nairobi County, Kenya PLoS. One 18 2023 e0288015 10.1371/journal.pone.0288015 PMC10351689 37459317
+Pius L.O. Strausz P. Kusza S. Overview of poultry management as a key factor for solving food and nutritional security with a special focus on chicken breeding in East African countries Biology (Basel) 10 2021 810 34440042 10.3390/biology10080810 PMC8389547
+Punchihewage-Don A.J. Hawkins J. Adnan A.M. Hashem F. Parveen S. The outbreaks and prevalence of antimicrobial-resistant Salmonella in poultry in the United States: an overview Heliyon 8 2022 e11571 10.1016/j.heliyon.2022.e11571 PMC9668525 36406693
+Regalado-Pineda I.D. Rodarte-Medina R. Resendiz-Nava C.N. Saenz-Garcia C.E. Castañeda-Serrano P. Nava G.M. Three-year longitudinal study: prevalence of Salmonella enterica in chicken meat is higher in supermarkets than wet markets from Mexico Foods. 9 2020 264 32121659 10.3390/foods9030264 PMC7143798
+Rukambile E. Sintchenko V. Muscatello G. Wang Q. Kiiru J. Maulaga W. Magidanga B. Banda G. Kock R. Alders R. Campylobacter and Salmonella in scavenging indigenous chickens in rural central Tanzania: prevalence, antimicrobial resistance, and genomic features Microbiol. Res. (Pavia) 12 2021 440 454
+Saad S. Jubara A. Wani C. Munyeme M. Taha A. Mudenda S. Zulu M. Mwasinga W. Samutela M. Tembo R. Antimicrobial susceptibility of Salmonella isolated from chickens and humans in Wau, South Sudan Int. J. Microbiol. 2022 2022 8570081 10.1155/2022/8570081 PMC10287519 37362785
+Salem M. Ghabbour R. Mostafa N.F. Awad A. Younis G. Molecular characterization of Salmonella isolates from poultry in Egypt: detection of virulence, ESBLs genes and antimicrobial resistance profiling Vet. Res. Commun. 50 2026 44 10.1007/s11259-025-10936-0 PMC12627184 41251873
+Sánchez-Vargas F.M. Abu-El-Haija M.A. Gómez-Duarte O.G. Salmonella infections: an update on epidemiology, management, and prevention Travel. Med. Infect. Dis. 9 2011 263 277 22118951 10.1016/j.tmaid.2011.11.001
+Sanni A.O. Onyango J. Usman A. Abdulkarim L.O. Jonker A. Fasina F.O. Risk factors for persistent infection of non-typhoidal Salmonella in poultry farms, North Central Nigeria Antibiotics (Basel) 11 2022 1121 36009991 10.3390/antibiotics11081121 PMC9405283
+Sarkodie-Addo P. Aglomasa B.C. Donkor E.S. Prevalence and antimicrobial resistance patterns of non-typhoidal Salmonella in Ghana: a systematic review and meta-analysis Trop. Med. Health 53 2025 91 40597407 10.1186/s41182-025-00731-7 PMC12210744
+Se Eun P. Thanh P.D. Gi Deok P. Ursula P. Ligia Maria Cruz E. Vera von K. Justin I. Ondari D.M. Heidi S.G. John A.C. The genomic epidemiology of multi-drug resistant invasive non-typhoidal Salmonella in selected sub-Saharan African countries BMJ Glob. Health 6 2021 e005659 10.1136/bmjgh-2021-005659 PMC8330565 34341020
+Shaji S. Selvaraj R.K. Shanmugasundaram R. Salmonella infection in poultry: a review on the pathogen and control strategies Microorganisms 11 2023 2814 38004824 10.3390/microorganisms11112814 PMC10672927
+Shamseer L. Moher D. Clarke M. Ghersi D. Liberati A. Petticrew M. Shekelle P. Stewart L.A. Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015: elaboration and explanation BMJ 349 2015 g7647 10.1136/bmj.g7647 25555855
+Sharma S. Fowler P.D. Pant D.K. Singh S. Wilkins M.J. Prevalence of non-typhoidal Salmonella and risk factors on poultry farms in Chitwan, Nepal Vet. World 14 2021 426 436 33776308 10.14202/vetworld.2021.426-436 PMC7994134
+Sima C.M. Buzilă E.R. Trofin F. Păduraru D. Luncă C. Duhaniuc A. Dorneanu O.S. Nastase E.V. Emerging strategies against non-typhoidal Salmonella: from pathogenesis to treatment CIMB 46 2024 7447 7472 39057083 10.3390/cimb46070442 PMC11275306
+Sodagari H.R. Sohail M.N. Varga C. Differences in the prevalence and antimicrobial resistance among non-typhoidal Salmonella serovars isolated from retail chicken meat across the United States of America, 2013–2020 Food Control 165 2024 110701
+Stanaway J.D. Parisi A. Sarkar K. Blacker B.F. Reiner R.C. Hay S.I. The global burden of non-typhoidal Salmonella invasive disease: a systematic analysis for the Global Burden of Disease study 2017 Lancet Infect. Dis. 19 2019 1312 1324 31562022 10.1016/S1473-3099(19)30418-9 PMC6892270
+Sudhanthirakodi S. Jain P. Chattopadhyay U.K. Dutta S. Isolation, serotype distribution and antimicrobial resistance profiles of non-typhoidal Salmonella isolates from animals, poultry and food samples in and around Kolkata, India J. Microbiol. Infect. Dis. 6 2016 113 120
+Tack B. Vanaenrode J. Verbakel J.Y. Toelen J. Jacobs J. Invasive non-typhoidal Salmonella infections in sub-Saharan Africa: a systematic review on antimicrobial resistance and treatment BMC. Med. 18 2020 212 32677939 10.1186/s12916-020-01652-4 PMC7367361
+Thye T. Krumkamp R. Lusingu J.P.A. Ofori L.A. Minja D.T.R. Flieger A. Gesase S. Phillips R. Simon S. Obiri-Danso K. Non-typhoidal Salmonella transmission reservoirs in Sub-Saharan Africa: a genomic assessment from a one health perspective Antimicrob. Resist. Infect. Control 14 2025 46 40361223 10.1186/s13756-025-01561-2 PMC12070793
+Trung N.V. Carrique-Mas J.J. Nghia N.H. Tu L.T. Mai H.H. Tuyen H.T. Campbell J. Nhung N.T. Nhung H.N. Minh P.V. Non-typhoidal Salmonella colonization in chickens and humans in the Mekong Delta of Vietnam Zoonoses. Public Health 64 2017 94 99 27152998 10.1111/zph.12270 PMC5324551
+Vernooij A. Masaki M.N. Meijer-Willems D. Regionalisation in Poultry Development in Eastern Africa 2018 Wageningen Livestock Research Number 1121
+Voss-Rech D. Vaz C.S. Alves L. Coldebella A. Leão J.A. Rodrigues D.P. Back A. A temporal study of Salmonella enterica serotypes from broiler farms in Brazil Poult. Sci. 94 2015 433 441 25595481 10.3382/ps/peu081
+Waktole H. Ayele Y. Ayalkibet Y. Teshome T. Muluneh T. Ayane S. Borena B.M. Abayneh T. Deresse G. Asefa Z. Prevalence, molecular detection, and antimicrobial resistance of Salmonella isolates from poultry farms across central Ethiopia: a cross-sectional study in urban and peri-urban areas Microorganisms 12 2024 767 38674711 10.3390/microorganisms12040767 PMC11051739
+Wang Y. Saelao P. Mon K.K.Z. Kim T.-H. Kelly T. Zhou H. 15 - Using genetic approaches to improve host responses to environmental stressors Mench J.A. Advances in Poultry Welfare editor 2018 Woodhead Publishing 323 338
+Xin C. Hoang T.T. Truong D.Q. Tran N.T. Pham H.T.T. Dang S.T.T. Luu H.Q. Le N.T.H. Butt S. Tran H.T.T. Prevalence of Campylobacter and non-typhoidal Salmonella along broiler chicken production and distribution networks, Northern Vietnam PLoS. Negl. Trop. Dis. 19 2025 e0013615 10.1371/journal.pntd.0013615 PMC12637993 41191621
+Yang X. Huang J. Zhang Y. Liu S. Chen L. Xiao C. Zeng H. Wei X. Gu Q. Li Y. Prevalence, abundance, serovars and antimicrobial resistance of Salmonella isolated from retail raw poultry meat in China Sci. Total. Environ. 713 2020 136385 10.1016/j.scitotenv.2019.136385 31955074
+Yin X. M'Ikanatha N.M. Nyirabahizi E. McDermott P.F. Tate H. Antimicrobial resistance in non-typhoidal Salmonella from retail poultry meat by antibiotic usage-related production claims – United States, 2008–2017 Int. J. Food Microbiol. 342 2021 109044 10.1016/j.ijfoodmicro.2021.109044 33529874
+Zahli R. Scheu A.K. Abrini J. Copa-Patiño J.L. Nadia A. Nadia S.S. Soliveri J. Salmonella spp: prevalence, antimicrobial resistance and molecular typing of strains isolated from poultry in Tetouan-Morocco LWT 153 2022 112359
+Zewdu E. Cornelius P. Antimicrobial resistance pattern of Salmonella serotypes isolated from food items and personnel in Addis Ababa, Ethiopia Trop. Anim. Health Prod. 41 2009 241 249 18516698 10.1007/s11250-008-9181-y
+Zhou X. Kang X. Zhou K. Yue M. A global dataset for prevalence of Salmonella Gallinarum between 1945 and 2021 Sci. Data 9 2022 495 35963862 10.1038/s41597-022-01605-x PMC9376096

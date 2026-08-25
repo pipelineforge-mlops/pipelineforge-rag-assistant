@@ -1,0 +1,297 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Noncoding RNA Res
+Journal ID: Noncoding RNA Res
+NLM Journal ID: 101688191
+
+Non-coding RNA Research
+
+EISSN: 2468-0540
+Publisher: KeAi Publishing
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499208
+PMID: 42633203
+DOI: 10.1016/j.ncrna.2026.06.002
+Article ID: S2468-0540(26)00045-4
+Article version: 1
+Subjects: Original Research Article
+
+LncRNA-driven alternative splicing landscapes associate with survival outcomes in ovarian cancer
+
+Cao Yan a b 1
+Zhao Jian a 1
+He Shan a 1
+Wu Qiong a
+Wang Yixuan a
+Wu Jing c
+Liu Jingjing a
+Xie Yuan cheryl050914@163.com d ⁎
+Song Xiaofeng xfsong@nuaa.edu.cn a ⁎⁎
+a Department of Biomedical Engineering, Nanjing University of Aeronautics and Astronautics, Nanjing, 211106, China
+b Department of Nuclear Medicine, Nanjing First Hospital, Nanjing Medical University, Nanjing, 210006, China
+c School of Biomedical Engineering and Informatics, Nanjing Medical University, Nanjing, 211166, China
+d Department of Radiology, Women's Hospital of Nanjing Medical University, Nanjing Women and Children's Healthcare Hospital, Nanjing, 210018, China
+⁎ Corresponding author. cheryl050914@163.com⁎⁎ Corresponding author. xfsong@nuaa.edu.cn1 These authors contributed equally to this work.
+
+Publication date: 2026 Oct
+Electronic publication date: 2026 Aug 13
+Volume: 20
+First page: 113
+Last page: 122
+Received 2025 Oct 13; Revised 2026 Jun 15; Accepted 2026 Jun 20
+Copyright: © 2026 The Authors
+Copyright year: 2026
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Ovarian cancer, Alternative splicing, lncRNA, Splicing-regulatory network
+
+==============================
+Ovarian cancer (OV) has the highest mortality rate among gynecological malignancies, with limited improvement in survival despite emerging treatments, underscoring an urgent need for novel diagnostic and therapeutic targets. Alternative splicing (AS) plays critical roles in OV progression, and long non-coding RNAs (lncRNAs) have recently been implicated as splicing regulators in tumor development. However, the landscape of lncRNA-mediated splicing dysregulation in OV remains unexplored. Here, we performed a genome-wide analysis integrating 207 differentially expressed lncRNAs and 1201 abnormal AS events from OV transcriptomes, identifying 2545 co-expression pairs. By constructing multi-layer regulatory networks incorporating splicing factors, transcription factors, and microRNAs, and applying a restart random walk algorithm seeded with oncogenes, we prioritized 29 hub splicing-regulatory lncRNAs, of which 15 are significantly associated with OV survival. This study provides novel lncRNA biomarkers and mechanistic insights into splicing dysregulation in OV.
+
+1 Introduction
+
+Ovarian cancer (OV), one of the most common gynecological malignancies, has the highest mortality rate of all the female cancers. Due to no noticeable symptoms, early-stage OV is hard to detect [1]. In addition, the high degree of OV heterogeneity at the molecular and cellular levels poses diagnostic and therapeutic challenges [2]. Currently, over 70% of OV patients are diagnosed in advanced stages, and only about 30% of female patients are expected to survive for 5 years [3]. Despite new and emerging treatments, the overall survival rate of OV is still low. Therefore, it remains an urgent need to explore the underlying molecular mechanism and find diagnosis and treatment targets of OV.
+
+Alternative splicing (AS) is a ubiquitous regulatory mechanism of gene expression and plays critical roles in the progression of many types of cancer [4]. AS allows one gene to generate multiple distinct mRNA isoforms through different splicing modes, enriching the diversity of protein [5]. Previous studies have shown that splicing dysregulation is closely related to the occurrence, development, invasion, metastasis, and prognosis of OV [6]. For example, extracellar matrix proton-1 (ECM1) generates two subtypes (ECM1a and ECM1b) through AS, among which ECM1a can induce ovarian tumor growth and its high expression leads to low survival [7]. BCL2L12 can produce two distinct isoforms: BCL2L12-L and BCL2L12-S. Overexpression of spliceosome component BUD31 stimulates BCL2L12 to produces more BCL2L12-L but less BCL2L12-S, which then promotes ovarian cancer progression [8]. Although numerous abnormal splicing events have been detected in OV, the detailed regulatory mechanism is still poorly understood.
+
+Recently, increasing evidence shows that long non-coding RNA (lncRNA) participates in the splicing process as a regulator to promote cancer progression [9]. For instance, lncRNA 5S-OT regulates alternative splicing of multiple genes in trans via Alu/anti-Alu pairing with target genes [10]. CCAT2, as a protein-binding RNA, modulates CD44 alternative splicing in metastatic gastric cancer [11]. LINC01089, a super enhancer-driven lncRNA, induces DIAPH3 alternative splicing in hepatocellular carcinoma [12]. LncRNA CRNDE directly binds SRSF6 to regulate PICALM alternative splicing, attenuating chemoresistance in gastric cancer [13]. A number of lncRNAs have been found to be associated with OV, however, their functions mostly remain unknown, especially in the dysregulation of alternative splicing.
+
+Due to the lack of genome-wide analysis of lncRNAs in the alternative splicing regulation of OV, we collected RNA-seq data for OV to assess the correlation between AS events and lncRNAs, established splicing regulatory network, and performed network analysis. Through restart random walk algorithm (RWR) [14], we screened out hub lncRNAs as potential biomarkers. Further, we investigated their pathogenic characteristics, thus identifying splicing-regulatory lncRNAs associated with ovarian cancer survival. The findings of this study will help reveal the underlying mechanism of OV and provide new insights on diagnosis and treatment strategies.
+
+2 Materials and methods
+
+2.1 Data source and preprocessing
+
+The total RNA-seq data are derived from our previous study [15], which have been deposited in the National Genomics Data Center (Access: HRA000420). The total RNA was extracted from three pairs of ovarian tumor samples and normal ovarian samples. After quality control by FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), Salmon [16] is used to produce the transcript expression matrix.
+
+2.2 Identification of differentially expressed lncRNAs
+
+The differential expression of transcripts between tumor (T) and normal (N) ovarian tissues is analyzed by limma [17]. Protein-coding and non-coding transcripts are distinguished by the annotations in gencode.v39.annotation.gtf (https://www.gencodegenes.org/). With the statistical cut-off value of p < 0.001 and |fold-change| > 2, differentially expressed lncRNAs are filtered out and used in the following analysis. Both LncSEA (http://bio.liclab.net/LncSEA) [18] and Metascape (http://metascape.rog) [19] are used for enrichment analysis of lncRNA sets.
+
+2.3 Identification of differential alternative splicing events
+
+Alternative splicing events, including seven types: skipping exon (SE), alternative 5′ splice-site (A5), alternative 3′ splice-site (A3), retained intron (RI), mutually exclusive exons (MX), alternative first exon (AF), and alternative last exon (AL), are identified and quantified by SUPPA2 [20]. For each splicing event, the PSI value and the dPSI value (Cond1_Cond2_dPSI: Event PSI difference (ΔPSI) between Cond1 and Cond2 (ΔPSI = PSI_2 - PSI_1)) are calculated. The differential splicing events are then screened out with the statistical cut-off value: p < 0.05 and mean_ TPM_ events > 0. Functional enrichment analysis of differentially spliced genes is performed through Metascape.
+
+2.4 Identification of isoform switches with functional consequences
+
+The individual isoform switches between the tumor and normal tissues (T/N) are analyzed using R package of "IsoformSwitchAnalyzeR" [21]. The isoform usage is quantified via isoform fraction (IF) value, which is defined as the fraction of the parent gene expression originating from a specific isoform (i.e., isoform_exp/gene_exp). The difference of isoform usage is thus measured by the difference of isoform fraction (dIF) calculated as IF2 - IF1, which also represents the effect size. In final, the switched isoforms between T and N are determined by the following criteria: dIF > 0.1 and FDR-corrected q-value <0.05. The functional consequences of isoform switches are further analyzed through protein coding potential (CPC2) [22], unintentionally mediated decay (NMD), protein domain (Pfam), and open reading frame (ORF). The splicing summary and enrichment analysis is performed for seven splicing types: alternative 3′ acceptor sites (A3), alternative 5′ acceptor sites (A5), alternative first exon (AF), alternative last exon (AL), skipping exon (SE), retention intron (RI), and mutually exclusive exons (MX) (Using the SUPPA2 nomenclature).
+
+2.5 Analysis of protein-protein interactions affected by differential splicing
+
+For proteins produced by genes with differential splicing, their protein-protein interactions are extracted from the STRING [23] database. The interaction network is then constructed by Cytoscape [24], and cytoHubba [25] is used to identify hub proteins from the complex interactions. The biological roles of the top ten hub proteins in tumor is investigated through reviewing published studies. In addition, MCODE (https://baderlab.org/Software/MCOD) [26] is used to find functional clusters.
+
+2.6 Co-expression analysis between lncRNAs and splicing events
+
+The expression of lncRNA transcripts is quantified by Salmon with the TPM value, and the splicing events are quantified by SUPPA with the PSI value. The co-expression relationship between 207 lncRNAs and 1201 differential splicing events is estimated by Spearman's rank correlation analysis across the six samples (three tumor and three normal tissues) using the following criteria: correlation coefficient |r | ≥ 0.95 and FDR p < 0.001. The co-expressed relationship is then represented by a network diagram, which is constructed through Cytoscape.
+
+2.7 Construction of regulatory network of lncRNA on differential splicing events
+
+To investigate the co-effectors of lncRNAs on regulating splicing events, their targets (e.g., SF, TF, and miRNA) are mainly collected from public resources (ENCORI [27], NPInter [28], and ChipBase [29]). These lncRNA-target interactions have been proved by experimental validation, neighboring gene pairs, gene fusions, and co-occurrence. Besides that, the potential lncRNA-miRNA interactions predicted by TargetScan [30] and RNAHybrid [31] are also used to construct the regulatory network.
+
+Furthermore, for the interactions between miRNA, TF, and SF, the targets of miRNA are collected from miRTarBase [32] and the targets of TF were manually curated from Cistrome Cancer [33], TRRUST [34], Harmonizome [35], and GTRD [36]. For the interactions between SF and splicing events, the targets of SF is identified by the spearman's rank correlation analysis with the following criteria: correlation coefficient |r | ≥ 0.90 and FDR p < 0.005. Through consolidating the above interactions, the regulatory network that starts with lncRNAs and ends with splicing events are constructed. In final, Cytoscape is used to analyze the hub genes and regulatory modules in this network.
+
+2.8 Identification of lncRNA biomarkers for ovarian cancer
+
+As the regulatory network of lncRNA on differential splicing events is too complicated to analysis, it is split into four separate networks: (1) co-expression network between lncRNAs and splicing events; (2) Regulatory network between lncRNAs, TFs, and SFs; (3) Regulatory network between lncRNAs, miRNAs, TFs, and SFs; (4) co-expression network between SFs and splice events. After that, the Random Walk with Restart (RWR) algorithm is implemented on these networks through R packages: dnet [37], igraph (https://igraph.org/) [38], and Matrix (https://CRAN.R-project.org/package=Matrix) [39], in which the restart probability is set to 0.5 and the seed point is set to OV related genes with differential splicing events.
+
+In order to optimize the effect of the RWR model, different random walk strategies are simulated. OV related genes with experimental evidence are manually collected from published literature and used as true positive (TP) genes, while randomly selected genes are used as true negative (TN) genes. In order to avoid the deviation caused by the class imbalance, the same number of TN genes are randomly selected as TP genes, and bootstrap resampling technology is used to repeat this process ten times. Each stochastic process is independent of each other, and the performance indicators calculated in the 10 processes are finally averaged to describe the overall performance of the model.
+
+We use the following indicators to evaluate the performance of the RWR model: receiver operating characteristic curve (ROC), true positive rate (TPR), and false positive rate (FPR), area under ROC (AUC), precision recall curve (PR), precision rate (Precision), recall rate (Recall), and area under PR (AUPR). In addition, Youden's index [40] and F1-score [41] are used to select thresholds. Youden's index = sensitivity + specificity −1, and F1-score = 2 × Precision × Recall/(Precision + Recall). Both of them range from 0 to 1, and the closer they are to 1, the better the model performance is.
+
+2.9 Survival analysis
+
+In order to investigate the pathogenic characteristics of the lncRNA biomarkers, cox proportional risk regression model is used to evaluate the relationship between the selected lncRNAs and the overall survival results. Kaplan-Meier Plotter [42] is used to perform the analysis. This web-based tool integrates gene expression data and clinical survival information from public repositories, including Gene Expression Omnibus (GEO), European Genome-phenome Archive (EGA), and The Cancer Genome Atlas (TCGA). The patient cohort is stratified into high-risk and low-risk groups based on the median expression of each candidate lncRNA, and the overall survival and relapse-free survival outcomes are visualized by Kaplan-Meier curves.
+
+2.10 Cell culture and experimental validation
+
+The human ovarian cancer cell line HO-8910 was obtained from the Cell Bank of the Chinese Academy of Sciences (Shanghai, China) and cultured in RPMI-1640 medium supplemented with 10% fetal bovine serum (FBS) at 37°C in a 5% CO2 atmosphere. Total RNA was extracted using TRIzol reagent (Invitrogen), and cDNA was synthesized using a PrimeScript RT reagent kit (TaKaRa). Quantitative real-time PCR (qPCR) was performed on the Roche Cobas 4800 system (Roche) using SYBR Green Master Mix (Vazyme). GAPDH was used as the internal reference, and relative expression was calculated using the 2^(−ΔΔCt) method.
+
+For siRNA-mediated knockdown, HO-8910 cells were transfected with siRNA targeting LINC00958 (si-LINC00958) or negative control siRNA (si-NC) using Lipo 8000 (Beyotime) according to the manufacturer's instructions. Knockdown efficiency was verified by qPCR at 48 h post-transfection. Alternative splicing of LINC00958 targets MTHFD2(MTHFD2-FL, MTHFD2-S)and BIRC5 (BIRC5-WT, BIRC5-2α) was evaluated by qPCR 48 h post-transfection of si 958. Cell proliferation was assessed using the CCK-8 assay (Dojindo) at 24, 48, and 72 h after transfection. For the wound-healing assay, a scratch was created in confluent cell monolayers using a sterile 200 μL pipette tip, and images were captured at 0, 24, and 48 h. The wound healing was quantified with Image J software and expressed as Wound closure (%), which was calculated with the following formula: Wound closure (%) = (wound area0h-wound area24h or 48h)/wound area0h*100%. All experiments were performed in triplicate and repeated at least three independent times. Data are expressed as mean ± SD, and statistical significance was determined by Student's t-test.
+
+3 Results
+
+3.1 Changes of lncRNA expression and alternative splicing in ovarian cancer
+
+Transcriptomic differential analysis was performed as the initial step to investigate the impact of lncRNA on the abnormal splicing in OV. As shown in Fig. 1A, a total of 207 lncRNA transcripts are differentially expressed between tumor and normal tissues, of which 72 lncRNAs are significantly up-regulated and 135 lncRNAs are down-regulated in ovarian cancer. Next, differential splicing analysis was performed for seven types of alternative splicing (Fig. 1B). Comparing with the normal tissues, the tumor tissues show little change in the fraction of each splicing type (Fig. S1A and B). However, differential splicing events are detected in all of the splicing type, including 566 AF, 270 SE, 106 AL, 103 A3, 95 A5, 40 RI, and 21 MX events (Fig. 1C). In total, 1201 differential splicing events are found, among which 608 are upregulated and 593 are downregulated (Fig. S1C). AF is the major type of differential splicing events, of which the alternative promoter is considered as a major source of transcriptomic and functional diversity in cancer [43]. These differential splicing events locate in 557 genes, of which most contains only one splicing type (Fig. 1D).Fig. 1 (A) LncRNA isoforms differentially expressed in tumor and normal samples. (B) Schematic diagram of alternative splicing modes. (C) MA diagram of differential splicing events. (D) Upset statistical chart of differential splicing events. (E) Heatmap map of differentially expressed lncRNA isoform. (F) Heatmap of differential splicing events. (G) GO and LncSEA enrichment analysis of differentially expressed lncRNA isoform. (H) GO enrichment analysis of differentially expressed splicing events. (I) KEGG enrichment analysis of differentially expressed splicing events.
+
+The changes and cluster membership of differentially expressed lncRNAs and abnormal splicing events are respectively visualized by heatmap plots (Fig. 1E and F). In addition to different groups, lncRNAs and splicing events also show differential expression pattern within samples in the same group, indicating individual-specific changes. The enrichment analysis of these differentially expressed lncRNAs also supports that they are correlated to ovarian cancer, in particular the ovarian serous cystadenocarcinoma (Fig. 1G). In particular, the result shows that they are significantly enriched in the cellular processes of invasion, prognosis, proliferation, migration, metastasis, apoptosis, EMT, etc. Furthermore, they also show relatively weak association with gene silencing.
+
+For differential splicing events, their host genes are enriched in the 20 GO terms and 13 KEGG pathways, which are mainly related to autophagy, cell adhesion, homeostasis, and signaling pathways (Fig. 1H and I). Among them, “PI3K-Akt signaling pathway” has been reported in regulating various cell processes (cell apoptosis, cell cycle, cell growth, glucose metabolism, and transcription) [44]. In particular, it is one of the most common abnormal pathways in OV, and is highly correlated to OV treatment intervention [45]. For the pathway of “Protein processing in endoplasmic reticulum”, the accumulation of misfolded proteins in the endoplasmic reticulum would lead to endoplasmic reticulum stress and activate the UPR pathways. UPR has been validated as a key factor in malignant transformation and tumor growth, affecting most characteristics of cancer [46]. Furthermore, the cellular process of autophagy plays a dual role in tumor promotion and inhibition, and contributes to the development and proliferation of cancer cells [47]. The above findings indicate that the abnormal splicing of genes is one of the major contributions to the genesis and development of OV.
+
+3.2 Isoform switches and their functional consequences
+
+Isoform switch refers to differential usage of transcript isoforms under distinct conditions (Fig. 2A), which is crucial for determining cell identity. It is measured by the change of isoform composition. Isoform switch occurs in multiple types of transcripts, including protein-coding, retained intron, processed transcript, nonsense mediated decay, and lncRNA (Fig. 2B). The major type of switched isoform is protein coding, while the minor types are lncRNA and nonsense mediated decay. The magnitude (|dIF|) of isoform switch versus their statistical significance (q-value) is shown in Fig. 2C. Among the significant isoform switches, those with |dIF| > 0.1 account for 78.49%, and those with |dIF| > 0.2 account for 40.9%.Fig. 2 (A) Isoform switch schematic diagram. (B) Proportion of isoform switches. (C) Statistical analysis of isoforms used differently between tumor and normalsamples. (D, E) Consequence summary and consequence enrichment of switched isoforms. (F) Visualization of switched isoform structures, using gene CRISPLD2 as an example. (G, H) Splicing summary and summary enrichment results. (I) Vennydiagram of switched isoforms and abnormal splicing isoforms.
+
+Through genome-wide analysis of isoform switching, the general patterns of isoform switches with functional consequences are analyzed and summarized in Fig. 2D. The most frequent changes affect open reading frame (ORF), protein domains, and protein coding potential. The further systematically analysis shows the fraction of switches that results in the consequence indicated (Fig. 2E). It is clear that the opposing consequences of ORF, protein domains, and protein coding potential are unevenly distributed, which indicates the functional consequences of isoform switches are cancer-specific.
+
+From the genes with the largest changes in isoform usage, CRISPLD2 is selected and analyzed individually, as it is reported as a characteristic gene for prognosis prediction of OV [48]. The gene of CRISPLD2 is transcribed into nine distinct isoforms of three different biotypes (Fig. 2F, top panel). The gene expression of CRISPLD2 shows no clear changes between tumor and normal groups (bottom-left panel), however, the isoform usage of CRISPLD2 shows highly significant switch (Fig. 2F, bottom panel). The shorter isoforms (ENST00000565561 and ENST00000569090) are switched to the longer ones (ENST00000262424 and ENST00000567845) in OV. As all of the switched isoforms encode proteins, this isoform switching would change the expression of proteins.
+
+Comparing with the patterns of switch consequences (Fig. 2D), the patterns of genome-wide splicing events show minor changes between tumor and normal groups (Fig. 2G). Three of the seven splicing types occurs more frequently in OV than in normal tissue, and they are A3, A5, and ES. The further enrichment analysis also show that these three splicing types are unevenly distributed with statistical significance (Fig. 2H). However, the differential usage of splicing patterns does not seem to promote isoform switches with functional consequences. As shown in Fig. 2I, the overlapping isoforms only account for a small fraction of both the abnormal splicing group and the isoform switching group, yet they may play more important roles than the other ones in OV.
+
+3.3 Interaction networks of lncRNAs in regulating differential splicing events
+
+The linkages between lncRNAs and splicing events are determined by their expression correlations. Accordingly, a co-expression network is constructed, which contains 515 nodes and 2545 edges. As shown in Fig. 3A, the nodes of lncRNA commonly connect multiple nodes of splicing events. In contrast, the nodes of splicing events mostly connect only one lncRNA node. The centrality of lncRNAs in the co-expression network indicates that lncRNAs regulate splicing events and not vice versa. And previous studies have proven that lncRNA can regulate gene splicing in a variety of ways [[49], [50], [51]].Fig. 3 (A) Visualization of the co expression network of lncRNA and abnormal splicing events. (B) Regulatory network involved with co-effectors miRNA, TF and alternative splicing factors (SF) interactions. (C) Protein-protein interaction (PPI)network of abnormal splicing events. (D) Top 10 genes ranked by degree in PPI. (E,F) Module 1 was associated with biological processes of cytoplasmic translation and ribosomes. Module 2 was associated with the regulation of cysteine-type endopeptidase activity involved in apoptotic process and mRNA surveillance pathway.
+
+To investigate the modes of action of lncRNAs in regulating splicing, the potential interactions between lncRNAs and other splicing regulators were analyzed. SF is the key factor in splicing regulation, lncRNAs can directly interact with them to affect alternative splicing. In addition, lncRNAs can also indirectly affect splicing through regulating the expression of SF via miRNA. Similarly, TF is another known factor in splicing regulation, lncRNA can also directly or indirectly interact with them to affect splicing. Given the above potential modes of action of lncRNAs in regulating splicing events, the co-factors (e.g., SF, TF, miRNA) of lncRNAs co-expressed with differential AS events were manually collected and used to construct regulatory networks, respectively (Fig. 3B).
+
+As the final target of the above regulatory networks, differential AS events commonly lead to the changes of amino acid sequences or expression levels of proteins encoded by their host gene. Thus, the protein-protein interaction (PPI) network of the differentially spliced genes was analyzed to reveal the potential impact of the splicing regulatory network (Fig. 3C). Within the PPI network, the hub genes and functional modules were further identified (Fig. 3D, E, and F). The top 10 hub genes are RPS3, RPL17, RPL8, RPL13, RPS24, RPL7, RPL21, RPL11, RPL35A, and GNB2L1 (RACK1), all of which are associated with ribosome [52,53].
+
+Consistent with the previous results of enrichment analysis (Fig. 1G–I), differentially spliced genes regulated by the module 1 (Fig. 3E) in PPT network are enriched in Cytoplasmic translation (GO: 0070934) and Ribosome (KEGG: hsa03010). This suggests that the function of ribosomes is affected by the abnormal splicing events regulated by lncRNAs in OV. Dysregulated ribosomal biogenesis has been widely reported to be closely related to tumor growth and proliferation [54]. For example, RPL23 is a ribosomal protein whose disorder has been shown to be closely related to ovarian cancer [55]. Differentially spliced genes regulated by the module 2 are mainly enriched in the regulation of cysteine-type endopeptidase activity within apoptotic process (GO:0043281) and mRNA surveillance pathway (KEGG: hsa03015). Among them, tumor cells may inhibit apoptosis and promote progression by limiting the activity of cysteine type endopeptidases, while abnormalities in the mRNA surveillance pathway would lead failures in monitoring the defective proteins caused by translation errors [56].
+
+3.4 Identification of splicing regulation-related lncRNAs as biomarkers for ovarian cancer
+
+Based on the multiple interaction networks of lncRNAs in regulating abnormal splicing events, Random Walk with Restart algorithm (RWR) was used to prioritize lncRNAs of interest. The whole screening process is shown in Fig. 4, and its performance was validated on experimentally validated OV oncogenes. To achieve the best performance, multiple sets of seed points were tested. ROC curves are used for performance evaluation. The AUC of RWR without seed points is 0.804, while that of RWR with optimal seed points is 0.905 (Fig. 5A). The usage of seed points significantly improves the identification performance.Fig. 4 Schematic diagram of the process of using RWR to screen key genes.
+
+Fig. 5 (A) ROC curve for the predictive model evaluation. (B) Precision-Recall curve for the predictive model evaluation. (C)Cutoff between the sensitivity and specificity with the number of top n genes. (D) Cutoff between the precision and recall with the number of top n genes. (E–G) K-M curve of known ovarian cancer related lncRNA. (H–J) K-M curve of "new" lncRNA with potential functional significance.
+
+For the identification of characteristic lncRNA biomarkers for ovarian cancer, the choice of the threshold number of corresponding top-ranking genes is very crucial. The optimal number is determined by the Youden Index to achieve the best identification performance with balanced sensitivity and specificity. As shown in Fig. 5B, the Youden Index reaches the maximum at the number of 134. Accordingly, the top 134 genes were selected as potential OV biomarkers, of which 29 are ovarian cancer AS related lncRNAs. Table 1 provides the top 29 lncRNAs ranked according to the prediction score of the RWR algorithm applied in multiplayer networks.Table 1 The predicted top-ranked lncrnas associated with alternative splicing were statistically summarized by random walk-based multi-graph scoring.
+
+Table 1Gene_symbol	Ranking	Score	
+PCBP1-AS1	1	0.003809097	
+SNHG15	2	0.003225695	
+LINC02482	3	0.003071444	
+LUCAT1	4	0.003014132	
+SOX9-AS1	5	0.00301307	
+LINC01089	6	0.002990778	
+LINC00910	7	0.002969809	
+SNHG29	8	0.00294161	
+RNF139-AS1	9	0.002913401	
+MINCR	10	0.002901129	
+SNHG5	11	0.002859995	
+LINC00958	12	0.002770395	
+FLNB-AS1	13	0.002675468	
+DANCR	14	0.002550467	
+PRSS30P	15	0.002543847	
+NR2F2-AS1	16	0.002531444	
+ADAMTS9-AS2	17	0.002487977	
+NEAT1	18	0.002446387	
+HEIH	19	0.002431206	
+MIR202HG	20	0.002341317	
+CERNA2	21	0.002268476	
+DICER1-AS1	22	0.002149476	
+LINC00271	23	0.002122596	
+MIR4435-2HG	24	0.00211525	
+GAS5	25	0.001999675	
+TARID	26	0.00199404	
+MIR3142HG	27	0.001926474	
+LINC00667	28	0.00186407	
+MIR100HG	29	0.001795457	
+
+Among the top 29 lncRNAs, nearly half of them (e.g., SNHG15, LUCAT1, SNHG29, SNHG5, LINC00958, DANCR, NR2F2-AS1, ADAMTS9-AS2, NEAT1, CERNA2, MIR4435-2HG, GAS5init, MIR100HG) [[57], [58], [59], [60], [61], [62], [63]] have been reported to regulate ovarian cancer progression. And the majority of the remaining ones are shown to play roles in other types of cancer, yet their roles in ovarian cancer is still unclear. To further investigate the effect of these 29 lncRNAs on survival in ovarian cancer, their clinical significance is assessed through Kaplan Meier plotter. The results show that 11 lncRNAs are significantly associated with the relapse-free survival and the same number of lncRNAs are significantly associated with the overall survival. Seven lncRNAs are found to be associated with both of the two types of survival, they are LINC02482, LINC00958, DANCR, NEAT1, HEIH, LINC00271, and GAS5 (Fig. 5C–I). Except for them, MINCR, SNHG5, DICER1-AS1, and LINC00667 are only associated with overall survival, while ADAMTS9-AS2, SOX9-AS1, SNHG15, and LINC00910 are only associated with relapse-free survival. In addition, several of the known ones are firstly reported to be associated with abnormal splicing in OV.
+
+3.5 Experimental validation of candidate lncRNAs
+
+To experimentally validate our bioinformatic predictions, three highly expressed lncRNAs (HEIH, CERNA2 and LINC00958) were prioritized and selected for subsequent validation. Their expression levels were quantified via qPCR in the ovarian cancer HO-8910 cell line. Consistent with the in silico predictions, all three lncRNAs exhibited markedly elevated expression in HO-8910 cells (Fig. 6A).Fig. 6 (A) Expression of CERNA2,HEIH and LINC00958 detected by qPCR in HO-8910 cells. GAPDH was used as the internal reference. (B) Transcriptional levels of LINC00958 following siRNA 958 mediated knockdown, ***P < 0.001. (C) Expression changes of BIRC5 transcript variants. BIRC5-WT, P = 0.0467; BIRC5-2α, P = 0.0035. (D) Expression changes of MTHFD2 transcript variants. MTHFD2-FL, P = 0.243; MTHFD2-S, P = 0.0045. (E) Comparison of cell proliferation after LINC00958 knockdown at 24h, 48h and 72h, ***p < 0.001. (F) Representative images of wound healing at 24 h and 48 h after LINC00958 knockdown. (G) Quantitative analysis of wound closure rates at different time points. **P < 0.01, ***P < 0.001.
+
+To dissect the functional roles of lncRNA LINC00958 in modulating alternative splicing of downstream target genes, as well as regulating ovarian cancer cell proliferation and migration, small interfering RNA (siRNA) was utilized to silence endogenous LINC00958 in HO-8910 cells. Transfection with siRNA-958 achieved robust knockdown efficiency against LINC00958 (Fig. 6B).
+
+We next selected two downstream effector genes of LINC00958, BIRC5 and MTHFD2, to characterize the regulatory effects of LINC00958 on their alternative splicing events. As illustrated in Fig. 6C, LINC00958 depletion significantly upregulated two distinct BIRC5 transcript isoforms, namely wild-type BIRC5 (BIRC5-WT) and BIRC5-2α, with a stronger induction observed for BIRC5-2α. Similarly, Fig. 6D demonstrated that silencing LINC00958 led to prominent upregulation of both full-length MTHFD2 (MTHFD2-FL) and short-form MTHFD2 (MTHFD2-S), among which MTHFD2-S displayed a more dramatic elevation.
+
+Cell proliferation assays revealed no statistically significant differences among the blank control, si-NC and si-958 groups at 24 h post-transfection. However, cell proliferative capacity was substantially suppressed in the si-958 group at 48 h and 72 h after transfection (Fig. 6E). Scratch wound healing assays further demonstrated that LINC00958 knockdown remarkably reduced wound closure rates, indicating impaired migratory ability of HO-8910 cells (Fig. 6F). At 24 h post-transfection, the wound healing rates reached 60% in the blank control group, 58% in the si-NC group and merely 25% in the si-958 group. At 48 h post-transfection, the wound healing rates were 98% (blank control), 97.1% (si-NC) and 55% (si-958), respectively (Fig. 6G).
+
+Collectively, these in vitro functional assays demonstrate that LINC00958 exerts oncogenic effects by facilitating the proliferation and migration of ovarian cancer cells, which further corroborates the correlation between high LINC00958 expression and unfavorable patient survival identified in our computational analyses.
+
+4 Discussion
+
+With the rapid development of high-throughput sequencing technology and transcriptome studies, a large number of lncRNAs have been discovered and annotated in the past decade. LncRNAs are no longer transcriptional noises but important regulatory molecules in various biological processes. Although many functions of lncRNAs have been identified, the roles of lncRNAs in cancer progression still remain unclear [64]. Splicing disorder is one of the key factors driving the occurrence and development of cancer [65]. Recently, increasing evidence has shown that lncRNAs are involved in regulating alternative splicing of genes through diverse molecular mechanisms. Thus, in order to uncover the functional mechanism of differentially expressed lncRNAs in ovarian cancer, their roles and potential action modules in gene splicing regulations are paid main attention and studied.
+
+In this paper, 207 differentially expressed lncRNAs and 1201 abnormal splicing events are identified in OV. Functional analyses show that they are involved in the proliferation, apoptosis, and invasion of ovarian tumor. Besides, we also investigate the functional consequences of differential splicing events in transcription products (i.e., isoforms), which indicates that abnormal splicing significantly changes the protein domain, NMD, and ORF of OV mRNAs. Through retrieving potential splicing co-effectors of lncRNAs from public databases and literature, we further explored the action modules of splicing regulation. Finally, by applying RWR to multiple distinct splicing regulatory networks of lncRNA, critical lncRNAs with AS regulation function are screened out and further demonstrated to be significantly associated with OV survival. In summary, out study provide novel lncRNA biomarkers or therapeutic targets for OV, and would help to further understand the molecular mechanism of OV progression.
+
+Data availability statement
+
+The datasets supporting the conclusions of this article are available in the Genome Sequence Archive repository, https://ngdc.cncb.ac.cn/gsa-human/browse/HRA000420.
+
+Funding
+
+This work was supported by 10.13039/501100013058 Jiangsu Provincial Key Research and Development Program (No. BE2022843), 10.13039/501100001809 National Natural Science Foundation of China (No. 62273175, No. 623022150), Fundamental Research Funds for the Central Universities (No. NS2023017), and Postdoctoral Fellowship Program of CPSF: GZC20233494.
+
+CRediT authorship contribution statement
+
+Yan Cao: Conceptualization, Methodology. Jian Zhao: Funding acquisition, Methodology, Project administration. Shan He: Formal analysis, Writing – review & editing. Qiong Wu: Visualization, Writing – original draft. Yixuan Wang: Software. Jing Wu: Validation. Jingjing Liu: Data curation. Yuan Xie: Conceptualization, Supervision. Xiaofeng Song: Funding acquisition, Supervision.
+
+Declaration of competing interest
+
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+Appendix A Supplementary data
+
+The following is the Supplementary data to this article.Fig. S1
+
+(A, B) Pie chart showing the proportion of alternative splicing modes indifferent groups. (C) Stacked bar plots of differential alternative splicing events.
+
+Peer review under the responsibility of Editorial Board of Non-coding RNA Research.
+
+Appendix A Supplementary data to this article can be found online at https://doi.org/10.1016/j.ncrna.2026.06.002.
+
+
+References
+
+1 Rodriguez I.V. Ghezelayagh T. Pennington K.P. Norquist B.M. Prevention of ovarian cancer: where are we now and where are we going? Curr. Oncol. Rep. 26 2024 1355 1366 39115678 10.1007/s11912-024-01587-6
+2 Balan D. Kampan N.C. Plebanski M. Abd Aziz N.H. Unlocking ovarian cancer heterogeneity: advancing immunotherapy through single-cell transcriptomics Front. Oncol. 14 2024 1388663 10.3389/fonc.2024.1388663 PMC11169633 38873253
+3 Sideris M. Menon U. Manchanda R. Screening and prevention of ovarian cancer Med. J. Aust. 220 2024 264 274 38353066 10.5694/mja2.52227 PMC7617385
+4 Sun Y. Hu X. Aberrant alternative splicing in cancer: splicing events and their regulatory mechanisms Int. J. Oncol. 65 2024 (Review) 10.3892/ijo.2024.5678 39129306
+5 Marasco L.E. Kornblihtt A.R. The physiology of alternative splicing Nat. Rev. Mol. Cell Biol. 24 2023 242 254 36229538 10.1038/s41580-022-00545-z
+6 Wei L. Li Y. Chen J. Wang Y. Wu J. Yang H. Zhang Y. Alternative splicing in ovarian cancer Cell Commun. Signal. 22 2024 507 39425166 10.1186/s12964-024-01880-8 PMC11488268
+7 Yin H. Wang J. Li H. Yu Y. Wang X. Lu L. Lv C. Chang B. Jin W. Guo W. Extracellular matrix protein-1 secretory isoform promotes ovarian cancer through increasing alternative mRNA splicing and stemness Nat. Commun. 12 2021 4230 34244494 10.1038/s41467-021-24315-1 PMC8270969
+8 Wang Z. Wang S. Qin J. Zhang X. Lu G. Liu H. Guo H. Wu L. Shender V.O. Shao C. Kong B. Liu Z. Splicing factor BUD31 promotes ovarian cancer progression through sustaining the expression of anti-apoptotic BCL2L12 Nat. Commun. 13 1 2022 Oct 21 6246 10.1038/s41467-022-34042-w PMID: 36271053; PMCID: PMC9587234 36271053 PMC9587234
+9 Kwas K. Szubert M. Wilczyński J.R. Latest update on lncRNA in epithelial ovarian Cancer-A scoping review Cells 14 2025 10.3390/cells14070555 PMC11988607 40214508
+10 Hu S. Wang X. Shan G. Insertion of an alu element in a lncRNA leads to primate-specific modulation of alternative splicing Nat. Struct. Mol. Biol. 23 11 2016 Nov 1011 1019 10.1038/nsmb.3302 Epub 2016 Oct 3. PMID: 27694840 27694840
+11 Deng H. Gao J. Cao B. Qiu Z. Li T. Zhao R. Li H. Wei B. LncRNA CCAT2 promotes malignant progression of metastatic gastric cancer through regulating CD44 alternative splicing Cell. Oncol. 46 2023 1675 1690 10.1007/s13402-023-00835-4 PMC12974630 37354353
+12 Su T. Zhang N. Wang T. Zeng J. Li W. Han L. Yang M. Super enhancer-regulated LncRNA LINC01089 induces alternative splicing of DIAPH3 to drive hepatocellular carcinoma metastasis Cancer Res. 83 2023 4080 4094 37756562 10.1158/0008-5472.CAN-23-0544
+13 Zhang F. Wang H. Yu J. Yao X. Yang S. Li W. Xu L. Zhao L. LncRNA CRNDE attenuates chemoresistance in gastric cancer via SRSF6-regulated alternative splicing of PICALM Mol. Cancer 20 2021 6 33397371 10.1186/s12943-020-01299-y PMC7780690
+14 Köhler S. Bauer S. Horn D. Robinson P.N. Walking the interactome for prioritization of candidate disease genes Am. J. Hum. Genet. 82 2008 949 958 18371930 10.1016/j.ajhg.2008.02.013 PMC2427257
+15 Zhuang M. Zhao J. Wu J. Fu S. Han P. Song X. The circular RNA expression profile in ovarian serous cystadenocarcinoma reveals a complex circRNA-miRNA regulatory network BMC Med Genomics 14 2021 276 34857007 10.1186/s12920-021-01132-5 PMC8638095
+16 Patro R. Duggal G. Love M.I. Irizarry R.A. Kingsford C. Salmon provides fast and bias-aware quantification of transcript expression Nat. Methods 14 2017 417 419 28263959 10.1038/nmeth.4197 PMC5600148
+17 Ritchie M.E. Phipson B. Wu D. Hu Y. Law C.W. Shi W. Smyth G.K. Limma powers differential expression analyses for RNA-sequencing and microarray studies Nucleic Acids Res. 43 2015 e47 10.1093/nar/gkv007 PMC4402510 25605792
+18 Chen J. Zhang J. Gao Y. Li Y. Feng C. Song C. Ning Z. Zhou X. Zhao J. Feng M. LncSEA: a platform for long non-coding RNA related sets and enrichment analysis Nucleic Acids Res. 49 2021 D969 D980 33045741 10.1093/nar/gkaa806 PMC7778898
+19 Zhou Y. Zhou B. Pache L. Chang M. Khodabakhshi A.H. Tanaseichuk O. Benner C. Chanda S.K. Metascape provides a biologist-oriented resource for the analysis of systems-level datasets Nat. Commun. 10 2019 1523 30944313 10.1038/s41467-019-09234-6 PMC6447622
+20 Trincado J.L. Entizne J.C. Hysenaj G. Singh B. Skalic M. Elliott D.J. Eyras E. SUPPA2: fast, accurate, and uncertainty-aware differential splicing analysis across multiple conditions Genome Biol. 19 2018 40 29571299 10.1186/s13059-018-1417-1 PMC5866513
+21 Vitting-Seerup K. Sandelin A. IsoformSwitchAnalyzeR: analysis of changes in genome-wide patterns of alternative splicing and its functional consequences Bioinformatics 35 2019 4469 4471 30989184 10.1093/bioinformatics/btz247
+22 Kang Y.J. Yang D.C. Kong L. Hou M. Meng Y.Q. Wei L. Gao G. CPC2: a fast and accurate coding potential calculator based on sequence intrinsic features Nucleic Acids Res. 45 2017 W12 W16 28521017 10.1093/nar/gkx428 PMC5793834
+23 Szklarczyk D. Morris J.H. Cook H. Kuhn M. Wyder S. Simonovic M. Santos A. Doncheva N.T. Roth A. Bork P. The STRING database in 2017: quality-controlled protein-protein association networks, made broadly accessible Nucleic Acids Res. 45 2017 D362 D368 27924014 10.1093/nar/gkw937 PMC5210637
+24 Shannon P. Markiel A. Ozier O. Baliga N.S. Wang J.T. Ramage D. Amin N. Schwikowski B. Ideker T. Cytoscape: a software environment for integrated models of biomolecular interaction networks Genome Res. 13 2003 2498 2504 14597658 10.1101/gr.1239303 PMC403769
+25 Chin C.H. Chen S.H. Wu H.H. Ho C.W. Ko M.T. Lin C.Y. cytoHubba: identifying hub objects and sub-networks from complex interactome BMC Syst. Biol. 8 Suppl 4 2014 S11 25521941 10.1186/1752-0509-8-S4-S11 PMC4290687
+26 Bader G.D. Hogue C.W. An automated method for finding molecular complexes in large protein interaction networks BMC Bioinf. 4 2003 2 10.1186/1471-2105-4-2 PMC149346 12525261
+27 Li J.H. Liu S. Zhou H. Qu L.H. Yang J.H. starBase v2.0: decoding miRNA-ceRNA, miRNA-ncRNA and protein-RNA interaction networks from large-scale CLIP-Seq data Nucleic Acids Res. 42 2014 D92 D97 24297251 10.1093/nar/gkt1248 PMC3964941
+28 Teng X. Chen X. Xue H. Tang Y. Zhang P. Kang Q. Hao Y. Chen R. Zhao Y. He S. NPInter v4.0: an integrated database of ncRNA interactions Nucleic Acids Res. 48 2020 D160 D165 31670377 10.1093/nar/gkz969 PMC7145607
+29 Zhou K.R. Liu S. Sun W.J. Zheng L.L. Zhou H. Yang J.H. Qu L.H. ChIPBase v2.0: decoding transcriptional regulatory networks of non-coding RNAs and protein-coding genes from ChIP-seq data Nucleic Acids Res. 45 2017 D43 D50 27924033 10.1093/nar/gkw965 PMC5210649
+30 Lewis B.P. Shih I.H. Jones-Rhoades M.W. Bartel D.P. Burge C.B. Prediction of mammalian microRNA targets Cell 115 2003 787 798 14697198 10.1016/s0092-8674(03)01018-3
+31 Krüger J. Rehmsmeier M. RNAhybrid: microRNA target prediction easy, fast and flexible Nucleic Acids Res. 34 2006 W451 W454 16845047 10.1093/nar/gkl243 PMC1538877
+32 Huang H.Y. Lin Y.C. Li J. Huang K.Y. Shrestha S. Hong H.C. Tang Y. Chen Y.G. Jin C.N. Yu Y. miRTarBase 2020: updates to the experimentally validated microRNA-target interaction database Nucleic Acids Res. 48 2020 D148 D154 31647101 10.1093/nar/gkz896 PMC7145596
+33 Mei S. Meyer C.A. Zheng R. Qin Q. Wu Q. Jiang P. Li B. Shi X. Wang B. Fan J. Cistrome cancer: a web resource for integrative gene regulation modeling in cancer Cancer Res. 77 2017 e19 e22 29092931 10.1158/0008-5472.CAN-17-0327 PMC5826647
+34 Han H. Cho J.W. Lee S. Yun A. Kim H. Bae D. Yang S. Kim C.Y. Lee M. Kim E. TRRUST v2: an expanded reference database of human and mouse transcriptional regulatory interactions Nucleic Acids Res. 46 2018 D380 D386 29087512 10.1093/nar/gkx1013 PMC5753191
+35 Rouillard A.D. Gundersen G.W. Fernandez N.F. Wang Z. Monteiro C.D. McDermott M.G. Ma'ayan A. The harmonizome: a collection of processed datasets gathered to serve and mine knowledge about genes and proteins Database (Oxford) 2016 2016 10.1093/database/baw100 PMC4930834 27374120
+36 Yevshin I. Sharipov R. Valeev T. Kel A. Kolpakov F. GTRD: a database of transcription factor binding sites identified by ChIP-seq experiments Nucleic Acids Res. 45 2017 D61 D67 27924024 10.1093/nar/gkw951 PMC5210645
+37 Fang H. Gough J. The 'dnet' approach promotes emerging research on cancer patient survival Genome Med. 6 2014 64 25246945 10.1186/s13073-014-0064-8 PMC4160547
+38 Csardi G. Nepusz T. The igraph software package for complex network research InterJournal 1695 2005
+39 Bates D. Mächler M. Matrix: sparse and dense matrix classes and methods R package version 2014
+40 Schisterman E.F. Perkins N.J. Liu A. Bondell H. Optimal cut-point and its corresponding Youden Index to discriminate individuals using pooled blood samples Epidemiology 16 2005 73 81 15613948 10.1097/01.ede.0000147512.81966.ba
+41 DeVries Z. Locke E. Hoda M. Moravek D. Phan K. Stratton A. Kingwell S. Wai E.K. Phan P. Using a national surgical database to predict complications following posterior lumbar surgery and comparing the area under the curve and F1-score for the assessment of prognostic capability Spine J. 21 2021 1135 1142 33601012 10.1016/j.spinee.2021.02.007
+42 Nagy Á. Munkácsy G. Győrffy B. Pancancer survival analysis of cancer hallmark genes Sci. Rep. 11 2021 6047 33723286 10.1038/s41598-021-84787-5 PMC7961001
+43 Demircioğlu D. Cukuroglu E. Kindermans M. Nandi T. Calabrese C. Fonseca N.A. Kahles A. Lehmann K.V. Stegle O. Brazma A. A pan-cancer transcriptome analysis reveals pervasive regulation through alternative promoters Cell 178 2019 1465 1477.e17 31491388 10.1016/j.cell.2019.08.018
+44 Glaviano A. Foo A.S.C. Lam H.Y. Yap K.C.H. Jacot W. Jones R.H. Eng H. Nair M.G. Makvandi P. Geoerger B. PI3K/AKT/mTOR signaling transduction pathway and targeted therapies in cancer Mol. Cancer 22 2023 138 37596643 10.1186/s12943-023-01827-6 PMC10436543
+45 Ediriweera M.K. Tennekoon K.H. Samarakoon S.R. Role of the PI3K/AKT/mTOR signaling pathway in ovarian cancer: biological and therapeutic significance Semin. Cancer Biol. 59 2019 147 160 31128298 10.1016/j.semcancer.2019.05.012
+46 Limia C.M. Sauzay C. Urra H. Hetz C. Chevet E. Avril T. Emerging roles of the endoplasmic reticulum associated unfolded protein response in cancer cell migration and invasion Cancers (Basel) 11 2019 10.3390/cancers11050631 PMC6562633 31064137
+47 Yun C.W. Lee S.H. The roles of autophagy in cancer Int. J. Mol. Sci. 19 2018 10.3390/ijms19113466 PMC6274804 30400561
+48 Zou J. Li Y. Liao N. Liu J. Zhang Q. Luo M. Xiao J. Chen Y. Wang M. Chen K. Identification of key genes associated with polycystic ovary syndrome (PCOS) and ovarian cancer using an integrated bioinformatics analysis J. Ovarian Res. 15 2022 30 35227296 10.1186/s13048-022-00962-w PMC8886837
+49 Yu X.M. Li S.J. Yao Z.T. Xu J.J. Zheng C.C. Liu Z.C. Ding P.B. Jiang Z.L. Wei X. Zhao L.P. N4-acetylcytidine modification of lncRNA CTC-490G23.2 promotes cancer metastasis through interacting with PTBP1 to increase CD44 alternative splicing Oncogene 42 2023 1101 1116 36792757 10.1038/s41388-023-02628-3
+50 Jin Y. Ivanov M. Dittrich A.N. Nelson A.D. Marquardt S. LncRNA FLAIL affects alternative splicing and represses flowering in Arabidopsis EMBO J. 42 2023 e110921 10.15252/embj.2022110921 PMC10233378 37051749
+51 Martín-Villanueva S. Galmozzi C.V. Ruger-Herreros C. Kressler D. de la Cruz J. The beak of eukaryotic ribosomes: life, work and miracles Biomolecules 14 7 2024 Jul 22 882 10.3390/biom14070882 PMID: 39062596; PMCID: PMC11274626 39062596 PMC11274626
+52 Kolosov P. Biziaev N. Alkalaeva E. A duality of function: an integrative model of RACK1 as a switch between translational and signaling hubs Int. J. Mol. Sci. 26 23 2025 Dec 4 11733 10.3390/ijms262311733 PMID: 41373878; PMCID: PMC12692388 PMC12692388 41373878
+53 Nilsson J. Sengupta J. Frank J. Nissen P. Regulation of eukaryotic translation by the RACK1 protein: a platform for signalling molecules on the ribosome EMBO Rep. 5 2004 1137 1141 15577927 10.1038/sj.embor.7400291 PMC1299186
+54 Elhamamsy A.R. Metge B.J. Alsheikh H.A. Shevde L.A. Samant R.S. Ribosome biogenesis: a central player in cancer metastasis and therapeutic resistance Cancer Res. 82 2022 2344 2353 35303060 10.1158/0008-5472.CAN-21-4087 PMC9256764
+55 Kang H. Choi M.C. Kim S. Jeong J.Y. Kwon A.Y. Kim T.H. Kim G. Joo W.D. Park H. Lee C. USP19 and RPL23 as candidate prognostic markers for advanced-stage high-grade serous ovarian carcinoma Cancers (Basel) 13 2021 10.3390/cancers13163976 PMC8391231 34439131
+56 Jamar N.H. Kritsiligkou P. Grant C.M. Loss of mRNA surveillance pathways results in widespread protein aggregation Sci. Rep. 8 2018 3894 29497115 10.1038/s41598-018-22183-2 PMC5832753
+57 Wang Y. Ding M. Yuan X. Jiao R. Zhu D. Huang W. Deng W. Liu Y. lncRNA SNHG15 promotes ovarian cancer progression through regulated CDK6 via sponging miR-370-3p Biomed Res. Int. 2021 2021 9394563 10.1155/2021/9394563 PMC8560251 34734088
+58 Zhao J. Song X. Xu T. Yang Q. Liu J. Jiang B. Wu J. Identification of potential prognostic competing triplets in high-grade serous ovarian cancer Front. Genet. 11 2020 607722 10.3389/fgene.2020.607722 PMC7839966 33519912
+59 Lin H. Shen L. Lin Q. Dong C. Maswela B. Illahi G.S. Wu X. SNHG5 enhances Paclitaxel sensitivity of ovarian cancer cells through sponging miR-23a Biomed. Pharmacother. 123 2020 109711 10.1016/j.biopha.2019.109711 31884343
+60 Chen B.J. Byrne F.L. Takenaka K. Modesitt S.C. Olzomer E.M. Mills J.D. Farrell R. Hoehn K.L. Janitz M. Transcriptome landscape of long intergenic non-coding RNAs in endometrial cancer Gynecol. Oncol. 147 2017 654 662 29050779 10.1016/j.ygyno.2017.10.006
+61 Li X. Yu S. Yang R. Wang Q. Liu X. Ma M. Li Y. Wu S. Identification of lncRNA-associated ceRNA network in high-grade serous ovarian cancer metastasis Epigenomics 12 2020 1175 1191 32462930 10.2217/epi-2020-0097
+62 Wang M. Ouyang J. Li H. CERNA2: a predictor for clinical progression and poor prognosis in cervical carcinoma J. Cell. Biochem. 120 2019 11216 11221 30793356 10.1002/jcb.28397
+63 Braga E.A. Fridman M.V. Moscovtsev A.A. Filippova E.A. Dmitriev A.A. Kushlinskii N.E. LncRNAs in ovarian cancer progression, metastasis, and main pathways: ceRNA and alternative mechanisms Int. J. Mol. Sci. 21 2020 10.3390/ijms21228855 PMC7700431 33238475
+64 Tan Y.T. Lin J.F. Li T. Li J.J. Xu R.H. Ju H.Q. LncRNA-mediated posttranslational modifications and reprogramming of energy metabolism in cancer Cancer Commun. 41 2021 109 120 10.1002/cac2.12108 PMC7896749 33119215
+65 Qi F. Li Y. Yang X. Wu Y.P. Lin L.J. Liu X.M. Significance of alternative splicing in cancer cells Chin. Med. J. (Engl.) 133 2020 221 228 31764175 10.1097/CM9.0000000000000542 PMC7028187

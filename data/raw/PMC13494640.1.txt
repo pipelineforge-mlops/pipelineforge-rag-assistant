@@ -1,0 +1,114 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Patterns (N Y)
+Journal ID: Patterns (N Y)
+NLM Journal ID: 101767765
+
+Patterns
+
+EISSN: 2666-3899
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13494640
+PMID: 42630809
+DOI: 10.1016/j.patter.2026.101615
+Article ID: S2666-3899(26)00124-8
+Article ID: 101615
+Article version: 1
+Subjects: Opinion
+
+From data to value in multimodal learning
+
+Tang Chunlei 1 2 5
+Jia Xing xjia@dhu.edu.cn 3 4 5 ∗
+Xiong Yun 3 5
+1 DataLattice Research, Boston, MA, USA
+2 Harvard Medical School, Boston, MA, USA
+3 Shanghai Key Laboratory of Data Science, School of Computer Science, Fudan University, Shanghai, China
+4 School of Computer Science and Technology, Donghua University, Shanghai, China
+∗ Corresponding author xjia@dhu.edu.cn5 These authors contributed equally
+
+Publication date: 2026 Aug 14
+Electronic publication date: 2026 Aug 14
+Volume: 7
+Issue: 8
+Electronic Location ID: 101615
+Copyright: © 2026 The Author(s)
+Copyright year: 2026
+License: This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+License URL: https://creativecommons.org/licenses/by/4.0/
+
+==============================
+Multimodal learning enables the integration of heterogeneous data, but value emerges only when data are transformed into stable, reusable evidence. Such evidence can reduce interpretive cost, support trust across contexts, and accumulate into data capital.
+
+Multimodal learning enables the integration of heterogeneous data, but value emerges only when data are transformed into stable, reusable evidence. Such evidence can reduce interpretive cost, support trust across contexts, and accumulate into data capital.
+
+Main text
+
+Health care operates as a fundamentally multimodal system. Clinical decisions depend on heterogeneous sources of information: clinical narratives, radiology images, laboratory measurements, physiological signals, genomic profiles, and, increasingly, behavioral and environmental data collected over time.1 These data are produced in different settings, by different actors, and under different conditions. They do not naturally align. What exists in practice is not a unified dataset but a fragmented evidence landscape that must be continually reconstructed.
+
+In everyday clinical work, this reconstruction is not abstract. A single diagnosis may require the integration of imaging findings, laboratory trends, prior notes, and evolving symptoms. These sources often disagree, arrive at different times, or carry different levels of reliability. Clinicians resolve these inconsistencies through judgment, experience, and repeated verification. The process is labor intensive and inherently contextual, consistent with long-standing models of human interaction with complex systems.2 Multimodal systems are expected to reduce this burden. In many cases, they add to it. Healthcare therefore illustrates a broader challenge: heterogeneous data alone are not sufficient unless they can be transformed into stable evidence that supports trust and reuse.
+
+Multimodal learning is often presented as a natural response to this reality and has been widely studied as a framework for integrating heterogeneous data across modalities.3,4 It also reflects a deeper ambition. Integrating heterogeneous data is an attempt to make information usable across contexts, to move from isolated observations toward something that can be accumulated and reused. In our prior work on clinical data systems and evidence-centered data infrastructures, we observed that increasing data heterogeneity often raises interpretive burden rather than improving decision reliability.5 Yet, the outcomes have been uneven. As more modalities are introduced, systems become harder to interpret, more costly to maintain, and less aligned with clinical workflows. More data do not reliably translate into more value.
+
+This contrast is visible in clinical adoption. Systems built on a single modality, especially text, are more likely to be used. They fit existing workflows. They require less coordination across data sources. They are easier to interpret and to validate. Their success is not a function of representational power alone but of lower interpretive burden. In many settings, simpler systems produce more usable results because they reduce the effort required to make sense of the output.
+
+The difficulty is not simply that multimodal data are different. It is that they are different in incompatible ways. Laboratory values are structured and standardized. Clinical narratives are unstructured and context dependent. Imaging data are high dimensional and often ambiguous. Physiological signals evolve over time. These differences reflect distinct measurement processes, clinical meanings, and temporal scales. Bringing them together does not just increase information. It expands the number of relationships that must be interpreted, reconciled, and trusted.
+
+In practice, this expansion has concrete consequences. Multimodal systems often require extensive data preprocessing, alignment across modalities, and manual curation to ensure consistency. Missing data, temporal misalignment, and conflicting signals are common. Even in well-studied settings such as image-to-text integration in radiology, ensuring factual consistency and completeness remains challenging.6,7 Even after model development, outputs must be reviewed and contextualized before use. In some settings, this leads to parallel workflows in which automated outputs are checked against traditional interpretations, effectively duplicating effort rather than reducing it. The system does not replace work. It reorganizes and often amplifies it.
+
+Explainability is often proposed as a solution. In multimodal systems, it rarely resolves the problem. Explanations inherit the same heterogeneity as the data. Different modalities support different interpretations. A model may be internally coherent within each modality while remaining difficult to reconcile across them. The burden shifts to the user, who must interpret not only the result but also the relationships among modalities. The result is not clarity but additional work, even under human-centered artificial intelligence (AI) frameworks that emphasize reliability and interpretability.8 This shift of burden points to a more fundamental constraint.
+
+The limitation is not technical; it is economic
+
+What is missing is not more data but a more reliable way to turn data into evidence. As illustrated in Figure 1, practical value emerges not from the accumulation of modalities alone but from the stabilization of evidence that supports trust and reuse. The production of evidence is inseparable from the production of data, unfolding through processes that are often fragmented, iterative, and context dependent. In practice, evidence does not emerge fully formed but is gradually stabilized through stages of data generation, alignment, and verification before it can support consistent interpretation. Rather than being an abstract property, trust emerges as a structural condition when heterogeneous data are crystallized into stable evidence.Figure 1 The path from fragmented multimodal data to data capital
+
+Multimodal data do not automatically generate value. The figure illustrates two possible trajectories. In the fragmented path, heterogeneous data are aggregated with limited integration, increasing interpretive burden and producing unstable outputs. In the stabilization path, alignment, evidence formation, and evidence stabilization transform heterogeneous inputs into stable evidence. Under these conditions, trust emerges as a structural condition that enables the reuse, accumulation, and amplification of value across contexts, allowing data to function as a form of capital. Google Gemini was used to assist with graphical refinement and visual rendering of certain elements. The conceptual framework, scientific content, interpretation, and final figure design were developed and validated by the authors.
+
+This progression can be observed in practical multimodal applications. In radiology report generation, for example, imaging data and textual descriptions must be aligned to produce clinically meaningful outputs. Although recent systems have achieved impressive technical performance, ensuring factual consistency, completeness, and contextual reliability remains challenging.6,7,8 Outputs often require human review against the original images before they can be trusted and reused in clinical workflows. The challenge is therefore not simply one of multimodal integration but of transforming heterogeneous data into stable evidence that can support consistent interpretation across contexts.
+
+This cost is not evenly distributed. It falls on clinicians, data engineers, and institutions that must absorb the effort required to make systems usable. In resource-constrained settings, this burden becomes a barrier to adoption. In more advanced settings, it leads to selective use, where only parts of a multimodal system are trusted or routinely applied. In both cases, the gap between technical capability and practical value persists.
+
+This transformation follows a progression. Raw data are first aligned across modalities, enabling comparison. From there, evidence can be formed to support consistent interpretation rather than isolated readings. Only when this evidence becomes stable can it be reused across contexts. At each step, the burden of interpretation is reduced and the meaning of outputs becomes more consistent.
+
+Without this progression, multimodal outputs remain fragile. They depend on context and must be reinterpreted each time they are used. They do not accumulate. When evidence is stabilized, it behaves differently: it can move across settings, persist over time, and support consistent interpretation among different users. Decisions can then build on prior results rather than restarting from scratch. In this sense, trust is not added at the end but emerges from the stabilization of evidence within the system.
+
+This also clarifies how value emerges. Unstable outputs generate work. They require repeated interpretation and verification. Their use is local and temporary. Stable evidence reduces that burden. It supports reuse. It allows decisions to extend beyond a single encounter. In clinical practice, this may take the form of standardized interpretations that can be applied across patient populations or validated outputs that reduce the need for repeated review. Under these conditions, value can be preserved, reused, and further enhanced rather than repeatedly recreated. Data begin to function as capital: cumulative rather than disposable, transferable rather than local, and capable of generating value beyond a single use.
+
+The integration of AI with multimodal data is often framed as a question of capability.9,10,11 The harder question is how to make such systems usable. Increasing model complexity does not resolve this. What matters is whether heterogeneous data can be organized into evidence that remains stable across contexts. Without that stability, more data increases uncertainty. With it, data can support trust, coordination, and repeated use.
+
+Multimodal learning is therefore more than a technical advance. It is an attempt to reorganize how data function within complex systems. The challenge is not to integrate more modalities but to establish the conditions under which data can be crystallized into stable evidence. Only under these conditions can trust be sustained. Trust then becomes a structural condition for reuse, enabling value not only to persist but also to generate additional value through repeated use over time. In this sense, data capital is not created through the collection of more data but through the stabilization of evidence that allows value to be preserved, enhanced, accumulated, and reused across contexts.
+
+Acknowledgments
+
+This work was supported by the Fundamental Research Funds for the Central Universities (no. 2232025D-34) and the Noncommunicable Chronic Diseases – National Science and Technology Major Project (nos. 2024ZD0532400 and 2024ZD0532403).
+
+Declaration of interests
+
+The authors declare no competing interests.
+
+About the authors
+
+Chunlei Tang is a data scientist working at the intersection of data science, healthcare, and complex systems. She received her PhD in computer science from Fudan University and is affiliated with DataLattice Research in Boston and Harvard Medical School. Her work focuses on rethinking data as an active form of evidence and capital in modern scientific and medical systems. She introduced the concept of data capital, framing data as human-created resources that function through production, accumulation, and governance.
+
+Xing Jia received a PhD degree in computer science from Fudan University, Shanghai, China. He is currently with the School of Computer Science and Technology, Donghua University, Shanghai, China, and the Shanghai Key Laboratory of Data Science. His research interests include medical image analysis, multimodal learning, and AI for healthcare. His work bridges advanced machine learning methods and real-world medical applications, contributing to more robust, reliable, and interpretable AI systems for healthcare.
+
+Yun Xiong is a professor at the Shanghai Key Laboratory of Data Science, College of Computer Science and Artificial Intelligence, Fudan University, China. She received her PhD from Fudan University. Her research interests include data mining and data science, particularly in large-scale data analysis and intelligent systems. Her work advances both theoretical and applied methodologies in data science, with broad impact across academia and industry.
+
+
+References
+
+1 Miller K.L. Alfaro-Almagro F. Bangerter N.K. Thomas D.L. Yacoub E. Xu J. Bartsch A.J. Jbabdi S. Sotiropoulos S.N. Andersson J.L.R. Multimodal population brain imaging in the UK Biobank prospective epidemiological study Nat. Neurosci. 19 2016 1523 1536 27643430 10.1038/nn.4393 PMC5086094
+2 Parasuraman R. Sheridan T.B. Wickens C.D. A model for types and levels of human interaction with automation IEEE Trans. Syst. Man Cybern. A Syst. Hum. 30 2000 286 297 11760769 10.1109/3468.844354
+3 Baltrušaitis T. Ahuja C. Morency L.-P. Multimodal machine learning: A survey and taxonomy IEEE Trans. Pattern Anal. Mach. Intell. 41 2018 423 443 29994351 10.1109/TPAMI.2018.2798607
+4 Acosta J.N. Falcone G.J. Rajpurkar P. Topol E.J. Multimodal biomedical AI Nat. Med. 28 2022 1773 1784 36109635 10.1038/s41591-022-01981-2
+5 Tang C. Data Capital: How Data Is Reinventing Capital for Globalization 2021 Springer
+6 Chen Z. Shen Y. Song Y. Wan X. Cross-modal memory networks for radiology report generation Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing 1 2021 5904 5914
+7 Miura Y. Zhang Y. Tsai E.B. Langlotz C. Jurafsky D. Improving factual completeness and consistency of image-to-text radiology report generation Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies 2021 5288 5304
+8 Wang X. Figueredo G. Li R. Zhang W.E. Chen W. Chen X. A survey of deep-learning-based radiology report generation using multimodal inputs Med. Image Anal. 103 2025 103627 10.1016/j.media.2025.103627 40382855
+9 Shneiderman B. Human-centered artificial intelligence: Reliable, safe, & trustworthy Int. J. Hum. Comput. Interact. 36 2020 495 504
+10 Tu T. Azizi S. Driess D. Schaekermann M. Amin M. Chang P.C. Carroll A. Lau C. Tanno R. Ktena I. Towards generalist biomedical AI NEJM AI 1 2024 AIoa2300138
+11 Truhn D. Eckardt J.N. Ferber D. Kather J.N. Large language models and multimodal foundation models for precision oncology npj Precis. Oncol. 8 2024 72 38519519 10.1038/s41698-024-00573-2 PMC10959931

@@ -1,0 +1,106 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: eClinicalMedicine
+Journal ID: EClinicalMedicine
+NLM Journal ID: 101733727
+
+eClinicalMedicine
+
+EISSN: 2589-5370
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499450
+PMID: 42633408
+DOI: 10.1016/j.eclinm.2026.104157
+Article ID: S2589-5370(26)00410-4
+Article ID: 104157
+Article version: 1
+Subjects: Correspondence
+
+Authors’ reply: Concerns about “BIOFIRE FILMARRAY Meningitis/Encephalitis panel for the aetiological diagnosis of central nervous system infections: a systematic review and diagnostic test accuracy meta-analysis” by Trujillo-Gomez, et al
+
+Trujillo-Gomez Juliana a b
+Tsokani Sofia c d
+Veroniki Areti-Angeliki e
+Florez Ivan D. ivan.florez@udea.edu.co a f g ∗
+a Department of Paediatrics, Universidad de Antioquia, Medellín, Antioquia, Colombia
+b Hospital General de Medellín, Carrera 48 # 32-102, Medellín, Antioquia, Colombia
+c Department of Primary Education, School of Education, University of Ioannina, Greece
+d Laboratory of Hygiene, Social & Preventive Medicine and Medical Statistics, School of Medicine, Aristotle University of Thessaloniki, Greece
+e Center for Evidence Synthesis in Health, Department of Health Services, Policy, and Practice, School of Public Health, Brown University, Providence, RI, USA
+f Department of Preventive & Restorative Sciences, University of Pennsylvania, Philadelphia, USA
+g Pediatric Intensive Care Unit, Clínica Las Americas/AUNA, Medellin, Colombia
+∗ Corresponding author. Department of Paediatrics, Universidad de Antioquia, Medellín, Antioquia, Colombia. ivan.florez@udea.edu.co
+Publication date: 2026 Sep
+Electronic publication date: 2026 Aug 15
+Volume: 99
+Electronic Location ID: 104157
+Received 2025 Sep 25; Revised 2026 Jul 29; Accepted 2026 Aug 4
+Copyright: © 2026 The Author(s)
+Copyright year: 2026
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+10.1016/j.eclinm.2026.104160
+Biofire FilmArray Meningitis/Encephalitis panel for the aetiological diagnosis of central nervous system infections: A systematic review and diagnostic test accuracy meta-analysis 44 14 2 2022 101275 EClinicalMedicine 10.1016/j.eclinm.2022.101275 PMC8851290 35198914
+10.1016/j.eclinm.2026.104097
+
+==============================
+We have carefully reviewed the letter submitted by Hueth and colleagues regarding our Article1 published in 2022. In this letter, we respond to the authors' concerns.
+
+Regarding the use of 0.5 continuity correction, for our analysis, we used the mada R package,2 which implements the Reitsma bivariate random-effects model for diagnostic test accuracy meta-analysis. This model jointly synthesizes logit-transformed sensitivity and specificity while accounting for their correlation across studies. The mada R package applies a continuity correction when required to enable estimation in the presence of zero cells (even when this results in either n1 = TP + FN = 0 or n2 = TN + FP = 0) by applying a 0.5 continuity correction to each cell of the corresponding 2 × 2 table. This is a common approach in meta-analysis, given that logit-transformed sensitivity or specificity and the within-study variance are undefined when there are zero cells.3
+
+The cited papers by Tsujimoto et al.4 and Sweeting et al.5 both refer to intervention studies, not diagnostic test accuracy (DTA) studies; their general observations regarding the influence of continuity corrections in sparse data settings are relevant. However, their conclusions cannot be directly transferred to DTA meta-analysis because the underlying statistical structure differs substantially (e.g., the bivariate nature of the data, the two effect sizes – sensitivity and specificity – should be simultaneously considered rather than a single effect size) and induced correlation across studies due to the threshold effect, among others. The mada R package is a widely used, well-established package designed explicitly for conducting DTA meta-analyses. It applies established bivariate methods and is not equivalent to either naïve pooling of individuals across studies or separate pooling of sensitivity and specificity using univariate meta-analytic techniques.6,7
+
+Simple aggregation of 2 × 2 tables across studies is strongly discouraged under all circumstances, as it ignores between-study heterogeneity, the diseased/non-diseased likelihood, imbalances within studies, and ultimately treats the data as if from one ‘mega-study’, ignoring the hierarchical structure of the evidence and thereby introducing bias.
+
+Furthermore, Hueth and colleagues state in their letter that “Using the extracted data, we applied GLMMs via the R (version 4.5) “meta” package to determine fixed-effect and random-effect estimates of sensitivity and specificity”. This approach corresponds to separate pooling of sensitivity and specificity estimates across studies (univariate meta-analytic techniques) and is also inappropriate for two main reasons. First, as outlined in the Cochrane Handbook, heterogeneity is expected in meta-analyses of DTA studies, and therefore, random-effects models are recommended.6 The appropriateness of a statistical model depends on whether it reflects the structure of DTA data. A GLMMs that separately pools sensitivity and specificity estimates treat these as independent outcomes and does not model their within-study correlation. Meta-analysis of DTA studies requires statistical methods that account for the (joint) bivariate structure of the data, where sensitivity and specificity must be modeled jointly rather than as separate, independent outcomes (single proportions). As already commented above, ignoring this joint structure fails to capture the correlation between sensitivity and specificity across studies, often driven by threshold effects, and may lead to biased or misleading results.6
+
+Finally, in our review we used GRADE (Grading of Recommendations Assessment, Development and Evaluation) to assess the certainty of evidence in the primary analyses, explicitly considering imprecision due to high uncertainty in effect estimates, which can occur because of small sample sizes, zeros in the 2 × 2 tables, low power, etc., and considering other potential sources of bias in the body of evidence (e.g., study risk of bias).8 This framework ensures that limitations such as those raised are factored into the interpretation of findings.
+
+Lastly, given that our 2022 review may be considered outdated, we plan to update it with newly available evidence from the literature. Following the newest methodological guidance outlined in the 2023 Cochrane Handbook for Diagnostic Test Accuracy Reviews,6 we will also apply a generalized linear mixed model (GLMM) approach using the glmer function from the R package lme4.9 This choice is further supported by evidence from a recent large-scale empirical evaluation comparing LMMs and GLMMs.10 Importantly, this differs from separately fitting univariate GLMMs for sensitivity and specificity. The proposed approach using glmer will explicitly model the paired binary outcomes from the 2 × 2 tables within a single hierarchical framework, preserving the dependence structure inherent to DTA data.
+
+Regarding the disagreements with included studies, we agree that a potential selective inclusion may influence DTA estimates in DTA meta-analyses. Fortunately, this is not the case in our meta-analysis. We had very strict inclusion criteria, as our objective was to evaluate DTA rather than mere concordance. This criterion was defined a priori and stated in our PROSPERO registration (CRD42020139285) and detailed in our Methods section: “studies had to simultaneously apply the reference standard (e.g., CSF/blood culture for bacteria, specific PCR, or laboratory-developed tests for viruses) and the index test (i.e., FA/ME) in patients with suspected CNS infections”. Articles that were excluded either did not meet these criteria or lacked sufficient and explicit methodological details. For instance, studies in which the Fa/ME was performed only to a specific subset of patients of the total population, e.g., those that had a particular result in any other test, were excluded because they did not represent the population of interest, i.e., the patients with suspected CNS infection. As specified also in the text: “We excluded studies with unclear information and those whose authors did not respond to our email inquiries; studies that included only immunocompromised patients were also excluded.”
+
+Appendix 3 of the supplementary material of the Article provides detailed explanations for the exclusion of 45 articles that had initially passed screening. Moreover, based on the same principles of eligibility mentioned above, it is worth clarifying that not all the included articles were used for the analysis of every microorganism. Table 1 presents the specific reasons why some studies in the review were excluded from some of the microorganism analyses. The reasons described in Table 1 explain most of the concerns raised by Hueth and colleagues. Nonetheless, in response to the concerns raised per microorganism, we provide specific explanations in Table 2.Table 1 Studies included in the review but not included in the analyses of all the pathogens.
+
+Study	Reason for not including in specific analyses	Specific quote in original study	
+Lindström 2022	This study only informed viral analyses because it focused on viral outcomes.	“As the remaining (non-virus) pathogens in the ME panel were not uniformly tested with routine diagnostic procedures, additional false negatives could not be adequately determined."	
+Tarai 2019	This study was used only for S. pneumoniae analyses. This study only presented information for estimating sensitivity and specificity for bacteria S. pneumoniae and Cryptococcus (pathogen not included in our review). Viral testing was not systematically conducted across all samples, and thus, this data was not included for those pathogens' analyses.	Not applicable	
+Piccirilli 2018	This study only informed the analyses for the following pathogens: S. pneumoniae, L. monocytogenes, N. meningitidis, and VZV. Although 77 samples were included, only 14 were prospective. We included the data from the prospective phase, but the remaining 63 retrospective samples did not meet our inclusion criteria, as the FA and reference tests were not applied simultaneously.	“The CSF samples … were selected based on microbiological results obtained by conventional microbiological procedures … to evaluate the analytical performance and clinical utility of the FA ME Panel test."	
+
+Table 2 Responses to comments on specific microorganisms.
+
+Microorganism	Comment from Hueth et al.	Response and explanation	
+S. pneumoniae	“…we noted that several eligible studies were not included in their analysis for some species […] Lindstrom et al., Tarai et al., Piccirilli et al. and Lopez-amor et al. for Streptococcus pneumoniae	Lindström et al., Piccirilli et al. were excluded for S. pneumoniae as per the explanation in Table 1. Lopez-Amor et al. and Tarai et al. were indeed included, as can be seen in the manuscript as references #34 and #32
+Of note, in table 3, there was a minor error in the citations: Although the reference #32 (Lopez-Amor et al.) was indeed included in the analyses, it was not listed in the citations, The studies that were included in the analyses for S pneumoniae were: Leber 2016, Hanson 2016, Piccirilli 2018, Barnes 2018, Leli 2019, Lopez-amor 2019, Radmard 2019, Tarai 2019, Bailu 2019, Eichenger 2019, Boudet 2019, Domingues 2020, Vincent 2020, Ena 2021, Peñata 2020, Chong 2021
+A Corrigendum to the original Article will be issued to correct this error.	
+H. influenzae, L. monocytogenes, E. coli & N. meningitidis	“…we noted that several eligible studies were not included in their analysis for some species […] Lindstrom et al., and Tarai et al. for Haemophilus influenzae, Listeria monocytogenes, Escherichia coli, Neisseria meningitidis	Lindström et al. and Tarai et al.: were excluded for H influenzae, L. monocytogenes, E. coli, and N. meningitidis as per the explanation in Table 1	
+S.agalactiae	“…we noted that several eligible studies were not included in their analysis for some species […] Lindstrom et al., Tarai et al. and Piccirilli et al. for Streptococcus agalactiae	Lindstrom et al., Piccirilli et al., and Tarai et al.: were excluded for S. agalactiae as per the explanation in Table 1	
+
+In this letter, we aimed to clarify the methodological standards for DTA meta-analysis and to explain why the approaches we applied are statistically appropriate and preferable to naïve data aggregation. Therefore, we consider the results of the previous meta-analysis valid and reliable.
+
+Contributors
+
+JT-G and IDF verified the data. ST and A-AV verified the statistical analyses. JT-G and IDF wrote the first draft of this manuscript. All the authors approved the final version as it is.
+
+Declaration of interests
+
+The authors have no relevant conflicts to declare related to this manuscript or the original Article published in 2022.
+
+
+References
+
+1 Trujillo-Gómez J. Tsokani S. Arango-Ferreira C. Biofire FilmArray Meningitis/Encephalitis panel for the aetiological diagnosis of central nervous system infections: a systematic review and diagnostic test accuracy meta-analysis EClinicalMedicine 44 2022 101275 10.1016/j.eclinm.2022.101275 PMC8851290 35198914
+2 Philipp D. mada: Meta-Analysis of diagnostic accuracy. Version R Package https://cran.r-project.org/web/packages/mada/mada.pdf Version 0.5.12 ed2025
+3 Takwoingi Y. Guo B. Riley R.D. Deeks J.J. Performance of methods for meta-analysis of diagnostic test accuracy with few studies or sparse data Stat Methods Med Res 26 4 2017 1896 1911 26116616 10.1177/0962280215592269 PMC5564999
+4 Tsujimoto Y. Tsutsumi Y. Kataoka Y. Shiroshita A. Efthimiou O. Furukawa T.A. The impact of continuity correction methods in Cochrane reviews with single-zero trials with rare events: a meta-epidemiological study Res Synth Methods 15 5 2024 769 779 38750630 10.1002/jrsm.1720
+5 Sweeting M.J. Sutton A.J. Lambert P.C. What to add to nothing? Use and avoidance of continuity corrections in meta-analysis of sparse data Stat Med 23 9 2004 1351 1375 15116347 10.1002/sim.1761
+6 Deeks J.J. Bossuyt P.M. Leeflang M.M. Takwoingi Y. Cochrane handbook for systematic reviews of diagnostic test accuracy 2023 John Wiley & Sons 10.1002/14651858.ED000163 PMC10408284 37470764
+7 Holling H. Böhning W. Böhning D. Meta-analysis of diagnostic studies based upon SROC-curves: a mixed model approach using the Lehmann family Stat Model Int J 12 4 2012 347 375
+8 Schünemann H.J. Mustafa R.A. Brozek J. GRADE guidelines: 21 part 1. Study design, risk of bias, and indirectness in rating the certainty across a body of evidence for test accuracy J Clin Epidemiol 122 2020 129 141 32060007 10.1016/j.jclinepi.2019.12.020
+9 Bates D. Maechler M. Bolker B. Linear Mixed-Effects Models using 'Eigen' and S4 https://cran.r-project.org/web/packages/lme4/lme4.pdf Version 1.1-37 ed2025
+10 Rosenberger K.J. Chu H. Lin L. Empirical comparisons of meta-analysis methods for diagnostic studies: a meta-epidemiological study BMJ Open 12 5 2022 e055336 10.1136/bmjopen-2021-055336 PMC9086644 35534072

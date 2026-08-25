@@ -1,0 +1,443 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Digit Health
+Journal ID: Digit Health
+NLM Journal ID: 101690863
+Journal ID: DHJ
+
+Digital Health
+
+EISSN: 2055-2076
+Publisher: SAGE Publications
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13494340
+PMID: 42630406
+DOI: 10.1177/20552076261456525
+Article ID: 10.1177_20552076261456525
+Article version: 1
+Subjects: Original Research Article
+
+Attitudes towards personalised nutrition recommendations in health apps: Results of a cross-sectional online survey
+
+https://orcid.org/0000-0002-2541-8505 Antor Sabrina 1 2
+Strüven Anna 3 4 5
+Gemesi Kathrin 2
+Weis Georges 3 4 5
+Lotz Katja 1
+Hauner Hans 2 6
+Brunner Stefan 3 4 5
+Holzapfel Christina 2 7
+1 Department of Health and Technology – Personalised Nutrition, 435162 Baden-Württemberg Cooperative State University , Heilbronn, Germany
+2 Institute for Clinical Nutritional Medicine, School of Medicine & Health, TUM University Hospital 9184 Technical University of Munich , Munich, Germany
+3 Department of Medicine I, LMU University Hospital, 9183 LMU Munich , Munich, Germany
+4 Partner Site: Munich Heart Alliance, 470123 German Centre for Cardiovascular Research (DZHK) , Munich, Germany
+5 Centre for Sports Medicine, LMU University Hospital, 9183 LMU Munich , Munich, Germany
+6 Senior Professorship of the Else-Kröner-Fresenius-Foundation, 9184 Technical University of Munich , Munich, Germany
+7 Department of Nutritional, Food and Consumer Sciences, 38883 Fulda University of Applied Sciences , Fulda, Germany
+Christina Holzapfel, PhD, Institute for Clinical Nutritional Medicine, School of Medicine & Health, TUM University Hospital, Technical University of Munich, Am Olympiacampus 11, Munich 80809, Germany. Email: christina.holzapfel@tum.de
+Electronic publication date: 2026 Aug 20
+Publication date: 2026 Jan-Dec
+Volume: 12
+Electronic Location ID: 20552076261456525
+Received 2026 Mar 17; Revised 2026 May 5; Accepted 2026 May 18
+Copyright: © The Author(s) 2026
+Copyright year: 2026
+Copyright holder: SAGE Publications Ltd, unless otherwise noted. Manuscript content on this site is licensed under Creative Commons Licenses
+License: This article is distributed under the terms of the Creative Commons Attribution-NonCommercial 4.0 License (https://creativecommons.org/licenses/by-nc/4.0/) which permits non-commercial use, reproduction and distribution of the work without further permission provided the original work is attributed as specified on the SAGE and Open Access pages (https://us.sagepub.com/en-us/nam/open-access-at-sage).
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: mobile apps, precision nutrition, target group, digital tools, behavioural intention
+
+Funding: German Federal Ministry of Education and Research 01EA1709 Dieter Schwarz Foundation
+typesetter: ts10
+cover-date: January-December 2026
+
+==============================
+Objective
+
+Dietary advice is increasingly shifting towards personalisation enabled by digital technologies. As personalised nutrition recommendation applications rely on user data, little is known about how users differ in attitudes towards data sharing, desired app features, and expected benefits.
+
+Methods
+
+In a cross-sectional survey conducted in Germany, adults aged ≥18 years completed a standardised online-questionnaire assessing participant characteristics and attitudes towards personalised nutrition in health applications. Behavioural intention (BI) was measured using the Technology Acceptance Model 3 questionnaire. Four items yielded count-based outcomes (number of selected options). Descriptive statistics, generalised additive models, and exploratory cluster analysis based on age, body mass index (BMI), and BI were conducted using RStudio.
+
+Results
+
+In total, 1,070 participants completed this cross-sectional survey (42.4 ± 15.3 years; BMI 25.6 ± 6.0 kg/m2; 75% female). An exploratory cluster analysis (age, BMI, BI) identified three user groups. Clusters differed in expected benefits, willingness to share parameters, core aspects of personalised advice, and perceived importance of app features (all P ≤ 0.01), with small to moderate effect sizes (η2 = 0.006 – 0.10).
+
+Conclusion
+
+Age, BMI, and BI modify users’ attitudes towards personalised dietary advice in health apps, while their overall explanatory power was limited. Responses varied within similar clusters, suggesting apps should be flexible and modular to accommodate individual preferences.
+
+Introduction
+
+There is a paradigm shift from generalised dietary recommendations to personalised approaches aiming at optimising individual health outcomes. 1 Although there is currently no consistently accepted definition of the term 'personalised nutrition’, 2 it is broadly understood as an approach that provides tailored dietary recommendations based on individual characteristics, such as genetic, phenotypic, and behavioural factors.3–5 Studies show that personalised nutrition recommendations, whether face-to-face or digital, lead to more sustainable dietary changes than general recommendations.5–8 By employing innovative methods such as machine learning and deep neural networks, AI-based systems can process these inputs to provide highly personalised guidance.8–10 Therefore AI plays an increasing role in digital health technologies, 11 including personalised nutrition, by enabling the integration and analysis of complex data, such as genetic, phenotypic, and behavioural data, thereby supporting the generation of tailored recommendations. 12 Moreover, these developments enable the efficient automation and remote provision of personalised nutrition recommendations.13,14 Digital platforms offer a scalable and cost-effective way to implement personalised nutrition without compromising effectiveness. 7
+
+These advances are increasingly reflected in nutrition-related mobile applications (apps), which support users in monitoring dietary intake, generating personalised feedback, and integrating vital and lifestyle data.15–17 However, the successful implementation of personalised nutrition solutions critically depends on the availability of and willingness to share individual data. 18 Users must provide detailed information about their health, behaviour, and preferences.
+
+Previous research has examined user acceptance and behavioural intention towards digital health and nutrition applications, often drawing on technology acceptance models to explain uptake and continued use.19–21 These studies generally report a moderate to high willingness to use nutrition-related apps, while also demonstrating substantial variability depending on perceived usefulness, ease of use, and personal relevance.21,22 Additionally, several studies have explored users’ willingness to share health-related data with digital apps. The acceptance differs markedly by data type, with a higher willingness to share lifestyle-related information compared to more sensitive health or biometric data.23,24 Further work has investigated user expectations towards personalised nutrition, due to the fact that individuals differ widely in the aspects they consider important and in their expectations of personalised dietary advice.2,25 Most existing studies have addressed these dimensions in isolation or within specific subgroups. Integrated evidence that jointly examines expectations towards personalised nutrition, perceived relevance of app features, and willingness to share data within a heterogeneous population remains limited.2,21,26
+
+This cross-sectional survey aimed to gain a differentiated understanding of users’ expectations and preferences regarding personalised nutrition recommendations in health apps, operationalised as the breadth of expected app features, willingness to share health-related parameters, and expectations towards personalised nutrition advice. In particular, we examined whether user characteristics, such as gender, age, Body Mass Index (BMI), and Behavioural Intention (BI), are associated with differences in these outcomes. In a further step, we applied an exploratory cluster analysis to identify distinct user profiles and to explore patterns in user expectations and preferences in personalised nutrition recommendations in health apps.
+
+Methods
+
+Survey
+
+This open online cross-sectional survey was accessible from June 2023 to June 2025. During this period, participants were recruited online and completed the questionnaire immediately upon accessing the survey link. Participants were recruited through multiple channels (e.g., outpatient clinics, universities, public events, newsletters, and social media) in Germany. Recruitment was supported by printed flyers containing a QR code; additionally, the survey link was disseminated online, enabling access independent of location. Interested individuals were directed to the online survey hosted on the SoSci Survey platform (Version 3.6.11). The participants were required to confirm the data privacy statement and provide informed consent before participating in the survey. Furthermore, they had to confirm that they were of legal age (≥18 years). No additional inclusion or exclusion criteria were applied beyond the ability to participate in the online survey. The survey results were anonymised. No incentives were offered to participants.
+
+Questionnaire
+
+The standardised German-language questionnaire was developed ad hoc for this study by a team that included nutritionists and medical practitioners (Supplement 1). The questionnaire consisted of both previously validated 27 and newly developed items. The non-validated items capturing preferences, expectations, and willingness to share data, were newly developed for this study. The ad hoc questionnaire was not pilot-tested, and no formal reliability or validity assessments were conducted. These items were designed to explore a broad range of user perspectives regarding personalised nutrition in health apps.
+
+The survey consists of 40 questions (closed, open, single, or multiple choice) on demographic and anthropometric factors (9 questions), nutrition behaviour and personality (8 questions), the personalisation of nutritional recommendations (5 questions), technology usage (11 questions), and personalised nutritional recommendations via app (7 questions). The survey could be answered in about five minutes. Each question had to be answered before continuing. Participants were free to withdraw from the survey at any time.
+
+The main outcomes of this study were derived from four questionnaire items assessing participants’ preferences and expectations regarding a hypothetical health app and personalised nutrition recommendations. The first two questions addressed the domain “personalised nutritional recommendations via app”, whereas the other two questions addressed the domain “personalisation of nutritional recommendations”. Within each question, participants could select multiple predefined options. For the analyses, the number of selected options per participant was calculated and used as the outcome measure. This approach provides a standardised and comparable metric reflecting the breadth of preferences and expectations across participants and allows a quantitative analysis of multiple-response items.
+
+The following brief description of a hypothetical health app that provides personalised nutrition recommendations was presented to the participants. “This app would contain scientifically based information on nutrition, exercise, and weight development. Potential users could use the app to record their health data (e.g., diet, exercise, weight, blood pressure) and set personal goals. At regular intervals, they would receive feedback, tips, and motivational messages to assist them in optimising their health.” Based on this hypothetical app, participants were asked to answer the following questions: “Which features are important to you in a health app?” and “Which parameters would you be willing to share with this app to enable and improve personalised nutrition recommendations?”. In addition, two questions explored participants’ preferences regarding personalised nutrition more generally: “How important are the following aspects for your personalised nutrition recommendations?” and “What are your expectations of personalised nutrition recommendations?”.
+
+Demographic and anthropometric variables were used to describe participant characteristics. Disease status was assessed as a single dichotomous item (“having a disease”: yes/no) and reported as part of the sample characteristics.
+
+Technology acceptance model 3 (TAM 3)
+
+The dimension BI from the validated Technology Acceptance Model 3 (TAM 3) questionnaire 27 was included in the questionnaire (domain: personalised nutritional recommendations via app) and completed by all participants. The BI captured participants’ intention (i.e., likelihood and plans) to use the hypothetical health app and was assessed using three items rated on a 5-level Likert scale. Mean BI scores were calculated, ranging from 1 to 5, with higher scores indicating a greater intention to use the hypothetical app. Based on BI tertiles, participants were categorised into three equally sized groups (low BI: n = 357, medium BI: n = 357, high BI: n = 356) to facilitate the comparison across low, medium, and high levels of BI.
+
+Statistical analysis
+
+For statistical analysis, four questions were rephrased. The rephrased questions reflect the primary outcomes: A) the number of app features rated as important, B) the number of shared parameters in a health app, C) the number of core aspects considered important for personalised nutritional recommendations, and D) the number of expected benefits of such recommendations (Figure 1).Figure 1. Original and rephrased questions, the corresponding item labels, and the predefined response options from the questionnaire.
+
+In total, 1,593 people confirmed the data privacy statement and gave informed consent. Of these, 1,070 completed the survey fully and were included in the final analysis. The description of population characteristics included calculating means for the total sample and for female and male participants separately.
+
+A Generalised Additive Model (GAM) was fitted to the data to account for potential non-linear associations among age, BMI, and BI as continuous variables, gender as a categorical variable, and participants’ responses. To obtain adjusted means (estimated marginal means), each variable of interest was treated as categorical (e.g., age groups, BMI categories, BI tertiles), while the remaining variables were entered as continuous covariates. Estimated marginal means were calculated using the R package “emmeans”. 28 The overall significance of each categorical variable was assessed using a joint F-test, as implemented in the “emmeans” package. P-values lower than 0.05 were considered statistically significant. The proportion of deviance explained was calculated from a GAM including smoothed continuous variables (BMI, age, and BI), and gender as the only categorical variable.
+
+The k-means clustering algorithm, 29 was applied to cluster participants based on age, BMI, and BI. The Elbow method 30 was used to determine the optimal number of clusters. The normality assumption was tested and violated (P < 0.05 for all clusters); therefore, the Kruskal-Wallis test was conducted to assess cluster differences. Eta2 (η2) was calculated as a measure of effect size, indicating the proportion of variance explained by the clusters. For the effect size of “having a disease”, Cramer’s V was used. All analyses were performed using RStudio version 4.3.2.
+
+Results
+
+Population characteristics
+
+The characteristics of the survey population (N = 1,070) are presented in Table 1. Most participants were female (802/1,070, 75.0%). The participants’ ages ranged from 18 to 84 years, with an average of 42.4 ± 15.3 years. The mean BMI was 25.6 ± 6.0 kg/m2, ranging from 16.6 to 53.3 kg/m2. A total of 40.1% (429/1,070) of participants reported having at least one disease (e.g., hypertension, diabetes mellitus, cancer). A health or nutrition app was used by 48.9% (523/1,070) of the participants (Table 1). Information on app features, shared parameters, core aspects and expected benefits is provided in Supplements 2 to 5.Table 1. Population characteristics.
+
+Characteristics	Total
+N = 1,070	Female	Male	
+n or mean	percentage or SD	n or mean	percentage or SD	n or mean	percentage or SD	
+Gender a	1070	​	802	75.0%	268	25.0%	
+Age [years]	42.4	15.3	41.3	14.9	45.5	16.1	
+ 18 - 35	410	38.3%	324	79.0%	86	21.0%	
+ 36 - 59	487	45.5%	370	76.0%	117	24.0%	
+ > 60	173	16.2%	108	62.4%	65	37.6%	
+BMI [kg/m2]	25.6	6.0	25.4	6.4	26.1	4.4	
+ < 25	658	61.5%	518	78.7%	140	21.3%	
+ ≥ 25	412	38.5%	284	68.9%	128	31.1%	
+School education b [years]	​	​	​	​	​	​	
+ up to 9	50	4.7%	36	72.0%	14	28.0%	
+ 10 - 13	474	44.3%	366	77.2%	108	22.8%	
+ more than 13	536	50.1%	391	72.9%	145	27.1%	
+ other	10	0.9%	9	90.0%	1	10.0%	
+Disease presence c	429	40.1	325	75.8%	104	24.2%	
+Using a health or nutrition app	523	48.9%	398	76.1%	125	23.9%	
+BI Scores	3.9	0.9	3.9	0.9	3.8	1.0	
+ Low	2.9	0.7	256	71.7%	101	28.3%	
+ Medium	4.0	0.0	265	74.2%	92	25.8%	
+ High	4.8	0.3	281	78.9%	75	21.1%	
+Number of app features d	8.2	2.8	8.3	2.7	8.1	3.0	
+Number of shared parameters e	7.0	3.1	7.0	3.0	7.2	3.3	
+Number of core aspects f	8.7	2.4	8.9	2.3	8.0	2.5	
+Number of expected benefits g	5.0	1.3	5.0	1.4	5.0	1.3	
+Abbreviation: SD, standard deviation. BI, behavioural intention. BMI, Body Mass Index.
+
+a Gender was assessed via a single-item question: ‘What is your gender?’ with response options ‘female’ and ‘male’.
+
+b “What is your highest school qualification?” For analysis, educational levels were grouped as follows: Up to 9 years: no school-leaving certificate or lower secondary education (Hauptschulabschluss) 10–13 years: upper secondary education (Realschulabschluss, Fachhochschulreife, or general university entrance qualification/Abitur). More than 13 years: degree from a university or a university of applied sciences.
+
+c “Do you have a disease?”
+
+d “Which features are important to you in a health app?” was reframed to measure the number of app features rated as important in a health app.
+
+e “Which parameters would you be willing to share with this app to enable and improve personalised recommendations?” was reframed to measure the number of shared parameters with this app to enable and improve personalised recommendations.
+
+f “How important are the following aspects for your personalised nutritional recommendations?” was reframed to measure the number of aspects rated as important for personalised nutritional recommendations.
+
+g “What are your expectations of personalised nutritional recommendations?” was reframed to measure the number of expectations of personalised nutritional recommendations.
+
+Number of app features, rated as important in a health app
+
+Table 2 shows the number of app features (including reminders, dietary log, body weight log, blood pressure log, heart rate log, recipes, step counter, goal setting, feedback, motivational notifications, dietary advice, and physical activity advice; Figure 1) participants rated as important, considering the adjusted group means for gender, age, BMI, and BI. There was statistically significant evidence of an association between BI and the number of app features rated as important in a health app. Individuals with higher BI scores reported a greater number of app features as important (P < 0.001). The BMI had a positive effect, with individuals with a higher BMI rated a greater number of app features as important (P < 0.02). In contrast, gender (P = 0.77) and age (P = 0.63) were not significantly associated with the number of app features considered important. The deviance explained by GAM was 14.1% (Table 2).Table 2. Number of app features, rated as important in a health app. a
+
+Variable	Adjusted marginal	95%- Confidence	P-value	
+Mean	SE	interval	
+Gender b	
+ Female	8.4	0.2	8.1 – 8.7	0.77	
+ Male	8.4	0.2	8.0 -8.8	
+Age c [years]	
+ 18 - 35	8.5	0.2	8.1 – 8.9	0.63	
+ 36 - 59	8.4	0.2	8.0 – 8.7	
+ ≥ 60	8.3	0.2	7.8 – 8.7	
+BMI d [kg/m2]	
+ < 25	8.2	0.2	7.9 – 8.6	0.02	
+ ≥ 25	8.6	0.2	8.3 – 9.0	
+BI Score e	
+ Low	7.0	0.2	6.7 – 7.4	< 0.001	
+ Medium	8.5	0.2	8.1 – 8.8	
+ High	8.9	0.2	8.6 – 9.3	
+Abbreviation: BI, behavioural intention. BMI, Body Mass Index. SE, standard error.
+
+a “Which features (reminders, dietary log, body weight log, blood pressure log, heart rate log, recipes, step counter, goal setting, feedback, motivational notifications, dietary advice, physical activity advice) are important to you in a health app?” was reframed to measure the number of app features rated as important in a health app. Participants rated predefined response options based on their perceived importance. Responses were initially collected on a 5-level Likert scale (“not at all important” to “very important”) and later transformed into a 3-level scale: “Not important” (combining “not at all important” and “rather not important”), “important” (combining “rather important” and “very important”), while “neither nor” remained. unchanged.
+
+b Marginal mean adjusted for BMI, age, and BI.
+
+c Marginal mean adjusted for BMI, gender, and BI.
+
+d Marginal mean adjusted for age, gender, and BI.
+
+e Marginal mean adjusted for BMI, age, and gender.
+
+Number of shared parameters with the health app
+
+Table 3 reports the number of shared parameters (including heart rate, blood pressure, body weight via Bluetooth scale, self-reported body weight, step count via smartwatch/smartphone data transfer, self-reported step count, physical activity, blood glucose measured by upper-arm sensor, food and beverage intake, sleep behaviour, and stress level; Figure 1) with the hypothetical app. Significant differences in the number of shared parameters were found across gender, age, and BI groups. Individuals with higher BI scores reported a greater number of shared parameters (P < 0.001). Age also showed statistically significant evidence (P < 0.001), with younger individuals (18-35 years) being willing to share a greater number of parameters compared to middle-aged (36-59 years) and older individuals (≥ 60 years). Male participants were willing to share more parameters than female participants (P = 0.01). Further, BMI was not associated with the number of shared parameters (P = 0.37). The deviance explained by GAM was 16.7% (Table 3).Table 3. Number of shared parameters with the health app. a
+
+Variable	Adjusted marginal	95%- Confidence	P-value	
+Mean	SE	interval	
+Gender b	
+ Female	6.8	0.1	6.5 – 7.0	0.01	
+ Male	7.3	0.2	6.9 – 7.7	
+Age c [years]	
+ 18 - 35	8.1	0.2	7.8 – 8.4	< 0.001	
+ 36 - 59	6.8	0.1	6.5 – 7.0	
+ ≥ 60	6.1	0.2	5.7 – 6.5	
+BMI d [kg/m2]	
+ < 25	7.0	0.2	6.7 – 7.3	0.37	
+ ≥ 25	7.2	0.2	6.8 – 7.5	
+BI Score e	
+ Low	5.9	0.2	5.5 – 6.2	< 0.001	
+ Medium	7.1	0.2	6.8 – 7.5	
+ High	8.1	0.2	7.7 – 8.4	
+Abbreviation: SE, standard error. BMI, Body Mass Index. BI, behavioural intention.
+
+a “Which parameters (pulse, blood pressure, body weight via Bluetooth scale, self-reported body weight, step count via smartwatch/smartphone data transfer, self-reported step count, physical activity, blood glucose measured by upper-arm sensor, food and beverage intake, sleep behaviour, stress level) would you share with this app to enable and improve personalised recommendations?” was reframed to measure the number of shared parameters with this app to enable and improve personalised recommendations. Responses were analysed by counting the number of parameters participants indicated they would be willing to share (answered with “yes”).
+
+b Marginal mean adjusted for BMI, age, and BI.
+
+c Marginal mean adjusted for BMI, gender, and BI.
+
+d Marginal mean adjusted for Age, gender, and BI.
+
+e Marginal mean adjusted for BMI, age, and gender.
+
+Number of core aspects rated as important for personalised nutrition recommendations
+
+Table 4 presents the number of core aspects (including body weight, age, gender, genetic predisposition, blood markers, stool analysis, diseases, allergies/intolerances physical activity behaviour, dietary preferences, stress level, sleep quality, and other; Figure 1) participants rated as important for personalised nutrition recommendations, considering the adjusted group means for the variables gender, age, BMI, and BI. Female participants reported significantly more core aspects as important for personalised nutrition recommendations than male participants (P < 0.001). The BI showed statistically significant effects on the number of core aspects rated as important for personalised nutrition (P < 0.01). Age and BMI were not significantly associated with the number of core aspects (P = 0.11 and P = 0.67, respectively). The deviance explained by GAM was 6.36% (Table 4).Table 4. Number of core aspects rated as important for personalised nutrition recommendations. a
+
+Variable	Adjusted marginal	95%- Confidence	P-value	
+Mean	SE	interval	
+Gender b	
+ Female	9.0	0.1	8.7 – 9.3	< 0.001	
+ Male	8.2	0.2	7.8 – 8.5	
+Age c [years]	
+ 18 - 35	8.7	0.2	8.4 – 9.0	0.11	
+ 36 - 59	8.6	0.2	8.3 – 8.9	
+ ≥ 60	8.3	0.2	7.6 – 8.7	
+BMI d [kg/m2]	
+ < 25	8.7	0.1	8.4 – 9.0	0.67	
+ ≥ 25	8.6	0.2	8.3 – 8.9	
+BI Score e	
+ Low	8.1	0.1	7.9 – 8.4	0.01	
+ Medium	8.7	0.1	8.4 – 8.9	
+ High	8.5	0.1	8.3 – 8.8	
+Abbreviation: SE, standard error. BMI, Body-Mass-Index. BI, behavioural intention.
+
+a “How important are the following aspects (body weight, age, gender, genetic predisposition, blood markers, stool analysis, diseases, allergies/intolerances, physical activity behaviour, dietary preferences, stress level, sleep quality, other) for your personalised nutritional recommendations?“ was reframed to measure the number of core aspects rated important for personalised nutritional recommendations. Participants rated predefined response options based on their perceived importance. Responses were initially collected on a 5-level Likert scale (“not at all important” to “very important”) and later transformed into a 3-level scale: “Not important” (combining “not at all important” and “rather not important”), “important” (combining “rather important” and “very important”), while “neither nor” remained unchanged.
+
+b Marginal mean adjusted for BMI, age, and BI.
+
+c Marginal mean adjusted for BMI, gender, and BI.
+
+d Marginal mean adjusted for age, gender, and BI.
+
+e Marginal mean adjusted for BMI, age, and gender.
+
+Number of expected benefits of personalised nutrition recommendations
+
+Table 5 shows the results on the number of expected benefits regarding personalised nutrition recommendations (body weight reduction, sustained body weight control, healthier lifestyle, improved fitness, improved quality of life, improved blood pressure, other; Figure 1), with the adjusted group means for the variables gender, age, BMI, and BI. Higher BMI and higher BI were associated with more expected benefits concerning personalised nutrition recommendations (both P < 0.001). Age also showed statistically significant evidence (P < 0.01), with older individuals (≥ 60 years) expected more benefits of personalised nutrition recommendations compared to middle-aged (36-59 years) and younger individuals (18-35 years). Gender (P = 0.25) did not show any statistically significant evidence. The deviance explained by GAM was 15.9% (Table 5).Table 5. Number of expected benefits of personalised nutrition recommendations. a
+
+Variable	Adjusted marginal	95%- Confidence	P-value	
+Mean	SE	interval	
+Gender b	
+ Female	5.1	0.1	4.9 – 5.2	0.25	
+ Male	5.0	0.1	4.8 – 5.2	
+Age c	
+ 18 - 35	5.1	0.1	4.9 – 5.3	0.01	
+ 36 - 59	5.1	0.1	4.9 – 5.3	
+ ≥ 60	5.4	0.1	5.2 – 5.6	
+BMI d	
+ < 25	4.7	0.1	4.5 - 4.9	< 0.001	
+ ≥ 25	5.4	0.1	5.2 – 5.5	
+BI Score e	​	​	​	​	
+ Low	4.6	0.1	4.5 – 4.8	< 0.001	
+ Medium	5.1	0.1	4.9 – 5.3	
+ High	5.1	0.1	4.9 – 5.3	
+Abbreviation: SE, standard error. BI, behavioural intention. BMI, Body Mass Index.
+
+a “What are your expectations (body weight reduction, sustained body weight control, healthier lifestyle, improved fitness, improved quality of life, improved blood pressure, other) of personalised nutritional recommendations?” was reframed to measure the number of expected benefits of personalised nutritional recommendations. Participants rated predefined response options based on their perceived importance. Responses were initially collected on a 5-level Likert scale (“not at all important” to “very important”) and later transformed into a 3-level scale: “Not important” (combining “not at all important” and “rather not important”), “important” (combining “rather important” and “very important”), while “neither nor” remained unchanged.
+
+b Marginal mean adjusted for BMI, age, and BI.
+
+c Marginal mean adjusted for BMI, gender, and BI.
+
+d Marginal mean adjusted for age, gender, and BI.
+
+e Marginal mean adjusted for BMI, age, and gender.
+
+Cluster characteristics
+
+Cluster analysis based on age, BMI, and BI identified three distinct potential app user groups (Table 6). Cluster 1 (n = 447) represented the youngest group of participants, with a mean age of 30.7 ± 8.6 years, a mean BMI of 22.3 ± 2.7 kg/m2, and a mean BI score of 4.2 ± 0.5. Cluster 2 (n = 202) included participants with a mean age of 43.0 ± 15.5 years, a slightly higher mean BMI of 23.6 ± 3.9 kg/m2, and the lowest mean BI score of 2.5 ± 0.7. Cluster 3 (n = 421) was characterised by a mean age of 54.5 ± 10.4 years, the highest mean BMI of 30.0 ± 6.6 kg/m2, and a mean BI score of 4.3 ± 0.6. The prevalence of disease differed significantly across clusters (Cluster 1: 27.7%, Cluster 2: 17.2%, Cluster 3: 55.0%, P < 0.001, Cramer’s V = 0.27). The number of app features considered important for personalised nutrition apps significantly varied across clusters (P < 0.001, η2 = 0.06). Cluster 3 rated the greatest number of app features as important (8.9 ± 2.5), followed by cluster 1 (8.3 ± 2.4), whereas cluster 2 (6.6 ± 3.5) rated the fewest features as important. Significant differences were found in the willingness to share parameters with the hypothetical health app (P < 0.001, η2 = 0.07). Cluster 1 reported the highest number of shared parameters (7.8 ± 2.7), followed by cluster 3 (7.1 ± 2.6), while cluster 2 showed the lowest number of shared parameters (5.1 ± 3.9). The analysis of the number of core aspects rated as important for personalised nutrition recommendations also showed statistically significant differences between the clusters (P = 0.01, η2 = 0.006). Cluster 1 reported the highest number of core aspects as important for personalised nutrition recommendations (8.9 ± 2.1), followed by cluster 3 (8.7 ± 2.4), while cluster 2 showed the lowest number of core aspects, rated as important (8.2 ± 2.8) In addition the number of expected benefits of personalised nutrition recommendations significantly differed between clusters (P < 0.001, η2 = 0.1). Cluster 3 reported the highest number of expected benefits of personalised nutrition recommendations (5.5 ± 1.2), followed by cluster 1 (4.8 ± 1.3) and cluster 2 (4.4 ± 1.4) (Table 6).Table 6. Cluster characteristics.
+
+Variable	Cluster (age, BMI, and BI)	Group difference	Effect size	
+Cluster 1 (n = 447)	Cluster 2 (n = 202)	Cluster 3 (n = 421)	P-value	
+mean or n	Percentage or SD	mean or n	Percentage or SD	mean or n	Percentage or SD	
+Age [years]	30.7	8.6	43.0 ± 15.5	​	54.5 ± 10.4	​	​	​	
+BMI [kg/m2]	22.3	2.7	23.6	3.9	30.0 ± 6.6	6.6	​	​	
+BI Score	4.2	0.5	2.5	0.7	4.3 ± 0.6	0.6	​	​	
+​	Cramer`s V	
+Disease presence a	119	27.7%	74	17.2%	236	55.0%	< 0.001	0.27	
+​	η 2	
+Number of app featuresb,f	8.3	2.4	6.6	3.5	8.9	2.5	< 0.001	0.06	
+Number of shared parameters c	7.8	2.7	5.1	3.9	7.1	2.6	< 0.001	0.07	
+Number of core aspectsd,f	8.9	2.1	8.2	2.8	8.7	2.4	0.01	0.006	
+Number of expected benefitse,f	4.8	1.3	4.4	1.4	5.5	1.2	< 0.001	0.1	
+Abbreviation: SD, standard deviation. BMI, Body Mass Index. BI, behavioural intention.
+
+a “Do you have a disease?”
+
+b “Which features are important to you in a health app?” was reframed to measure the number of app features rated as important.
+
+c “Which parameters would you share with this app to enable and improve personalised recommendations?” was reframed to measure the number of shared parameters with this app to enable and improve personalised recommendations. Responses were analysed by counting the number of parameters participants indicated they would be willing to share (answered with “yes”).
+
+d “How important are the following aspects for your personalised nutritional recommendations?” was reframed to measure the number of core aspects considered important for personalised nutritional recommendations.
+
+e “What are your expectations of personalised nutrition recommendations?” was reframed to measure the number of expected benefits of personalised nutrition recommendations.
+
+f Participants rated predefined response options based on their perceived importance. Responses were initially collected on a 5-level Likert scale (“not at all important” to “very important”) and later transformed into a 3-level scale: “Not important” (combining “not at all important” and “rather not important”), “important” (combining “rather important” and “very important”), while “neither nor” remained unchanged.
+
+Figure 2 displays the adjusted means for each cluster along with the distribution of individual data points for A) the number of app features rated as important for personalised nutrition recommendations, B) the number of shared parameters with the health app, C) the number of core aspects rated as important for personalised nutrition recommendations, and D) the number of expected benefits of personalised nutrition recommendations. There are differences between the clusters. However, there is a large inter-individual variation within one cluster (Figure 2).Figure 2. Mean values and distribution of individual data points for each question
+
+Individual data points are shown as cluster-specific symbols (e.g., circles, triangles, squares), visualising the spread within each cluster, while means indicate cluster-level trends.
+
+Discussion
+
+This survey examined attitudes regarding personalised nutrition recommendations in health apps and showed differences between gender, age, BMI, and BI groups. As preferences and expectations towards personalised nutrition advice may differ across age groups, our findings are consistent with previous research. 31 In our sample, younger participants rated more app features and core aspects of personalised nutrition advice as important, whereas individuals older than 60 years were willing to share fewer parameters but expressed more expected benefits regarding personalised nutrition recommendations. The lower number of shared parameters aligns with explanations from the literature, may reflect heightened concerns about privacy.21,32
+
+The findings also raise important ethical considerations related to the use of personal health data in digital nutrition applications. Personalised nutrition relies on the collection and processing of potentially sensitive information, including behavioural and health-related data. While participants in this study indicated a willingness to share certain types of data, this should be interpreted in the context of broader issues such as user autonomy, data security, and the potential misuse of personal information. Balancing the benefits of personalised recommendations with the protection of user privacy remains a key challenge in the development of digital health applications. These considerations align with growing calls in the digital health literature for transparent data governance frameworks and ethical guidelines that prioritise user rights alongside technological innovation. 33
+
+Gender-related differences were observed, though inconsistently, aligning with mixed findings in the literature.21,34 Furthermore, BMI was associated with differences in expected benefits of personalised dietary advice. This finding is consistent with previous studies.31,35,36 Participants with a high BI indicated a greater number of shared parameters with the app, a higher number of expected benefits from personalised nutrition recommendations, and rated more app features as important. In contrast, individuals in the low BI group rated fewer expected benefits of personalised nutrition recommendations, fewer app features in a health app as important and shared fewer parameters with the app. This pattern can be interpreted in light of the TAM 3, 25 in which BI reflects an individual’s motivation and readiness to use a technology. Higher BI may be associated with a greater perceived usefulness and acceptance of app functionalities, which could explain why these individuals reported a broader range of expected benefits, valued more app features as important, and were more willing to share personal data. Unlike gender, age, or BMI, the BI represents a potentially modifiable factor. Previous research suggests that flexible personalisation options, allowing users to decide which app features to use and what data to provide, can help increase app acceptance and improve app usability. 32
+
+While age, gender, BMI, and BI shape individuals’ preferences and expectations towards personalised dietary advice in health apps, unmeasured factors or individual differences likely contribute substantially to the observed variation in responses. In addition, the relatively low proportion of explained deviance in the GAMs indicates that a considerable part of the variability in the outcome measures remains unexplained. This suggests that additional factors not captured in the present study may contribute to individual differences in attitudes towards personalised nutrition in health apps. Potential factors that may warrant consideration in future research include digital literacy, socioeconomic characteristics, trust in technology, and attitudes towards data privacy. Furthermore, these results highlight the complex nature of personalised nutrition recommendations.
+
+To further explore patterns in user characteristics, a cluster analysis was conducted based on age, BMI, and BI to identify user groups with similar characteristics that are potentially relevant for app development. Clusters 1 and 3 both showed higher BI scores, but differed substantially in age and BMI. Cluster 1 consisted of younger participants with lower BMI, while cluster 3 included older individuals with higher BMI. This suggests that a higher BI score is not confined to a specific demographic profile but is shaped by motivational and contextual factors, as highlighted in previous research37,38 and conceptualised in technology acceptance models such as TAM 3. 27 To increase engagement among individuals with lower BI, additional motivation and technical support may be needed to foster trust and confidence in the app. 38 This underlines the critical role of motivation and intention in shaping user behaviour and implies that interventions targeting BI could enhance the adoption and use of personalised nutrition tools. An Indian study 37 found that behavioural intention to use dietary and fitness apps was influenced by users’ attitudes, those who perceived the apps as helpful and reliable were more likely to adopt them. Hence, it is essential to clearly communicate the potential benefits to users of such apps.
+
+Disease prevalence was highest in cluster 3 (P < 0.001), consistent with prior research indicating that chronic conditions are linked to higher engagement with health apps. 39 All four response items showed significant differences between the clusters. Clusters differed in the number of app features rated as important, the number of expected benefits, core aspects rated as important for personalised recommendations, and the number of shared parameters. While these findings indicate potential for group-based segmentation in the development of personalised nutrition apps, they should be interpreted with caution. The clustering was based on a limited set of variables (age, BMI, and BI), and the observed low to moderate effect sizes, together with the high variability within clusters, suggest that the identified groups are not clearly distinct. Rather than representing well-defined user profiles, the clusters reflect general patterns in a heterogeneous population. Additional variables not captured in the present study may be required to identify more robust and meaningful user segments. Beyond the number of desired app features or the number of health parameters, the variation in user expectations and preferences (Supplements 2-5) further indicates that the features users consider relevant and the parameters they are willing to share differ substantially between individuals. These results align with Cai and Li (2023), who argue that tailoring app features solely based on broad user profiles may be insufficient. 40 Instead, they highlight the need to dynamically adapt features to individual characteristics such as motivation, emotional responsiveness, and self-regulation, to prevent user disengagement. 40
+
+This perspective is supported by a systematic review by König et al., 32 which identifies personalisation as a key factor in user engagement with nutrition apps. Their findings suggest that users value content reflecting their personal goals and preferences. Failure to adapt app content accordingly can lead to a loss of motivation and reduced usage over time. 41 Other research similarly indicates that insufficient responsiveness to changing user needs can negatively affect sustained engagement with digital health applications. 42 In line with this body of literature, the present findings highlight substantial heterogeneity in users’ expectations and preferences regarding personalised nutrition apps. Notably, considerable variability was observed even within the identified clusters, suggesting that uniform or one-size-fits-all approaches may be insufficient to reflect the diversity of user expectations. Rather than supporting specific design solutions, these results underscore the relevance of flexibility and user-centred conceptualisation of digital applications for personalised nutrition.
+
+Previous research has proposed a range of adaptive and customisable elements in digital health applications, such as personalised feedback, behavioural tracking, and goal-oriented functionalities, to accommodate diverse user needs. 42 Similarly, conceptual approaches emphasise the potential value of modular or configurable app structures that allow users to align app functionality with their individual preferences and expectations.40,41,43,44 In this context, allowing users to indicate which parameters they are willing to share and how personalised nutrition support is structured may contribute to better alignment with user expectations and perceived relevance. Overall, while personalised dietary recommendations rely on algorithmic processing of individual input data, 12 the present findings suggest that user expectations regarding personalisation and data sharing are heterogeneous. These results reinforce previous work highlighting the importance of customisability and adaptability in health app concepts, while also indicating the need for further research to evaluate how specific design features influence user engagement and long-term use.
+
+Strengths and limitations
+
+The rather large sample size and the focussed analyses strengthen our results. Summarising responses into numeric scores helps to capture the complexity of personalised dietary recommendations and serves as an adjunct to specifying individual expectations and preferences. Therefore, this study provides valuable insight into user preferences regarding personalised nutrition apps.
+
+However, this approach does not account for differences in the relative importance of individual options and may therefore simplify complex user preferences. The findings thus reflect the breadth rather than the prioritisation of preferences.
+
+While BI was assessed using a validated instrument (TAM 3), the remaining questionnaire items were developed ad hoc and were not formally validated. Consequently, no information on internal consistency or construct validity is available for these measures. This should be considered when interpreting the findings, which are therefore primarily exploratory and hypothesis-generating.
+
+A response bias may have occurred, as individuals with a particular interest in the topic may have been more likely to participate. Participants were recruited through a non-probabilistic, online-based approach, and the sample showed a predominance of female respondents. In addition, the study was conducted exclusively in Germany. Consequently, the sample is not representative of the general population, and the findings may not be generalisable to other populations. This should be taken into account when interpreting the results. However, the observed sample structure (e.g., more females than males) aligns with patterns commonly reported in other nutrition and health app studies.34,45 In addition, a population-based survey 39 reported similar age-related patterns in mobile technology use, supporting the relevance of our findings despite limited representativeness. Furthermore, it is important to mention that the app-related outcome in our study was assessed based on hypothetical scenarios rather than actual usage.
+
+Conclusion
+
+Personalised nutrition recommendations in health apps rely on access to relevant user data, which can be processed by AI to generate tailored dietary advice. Our findings suggest that preferences and expectations regarding such recommendations in apps are associated with age, gender, BMI, and BI. Cluster analysis revealed groups with shared characteristics, yet considerable variation within clusters highlights that group-based profiling is insufficient to fully capture individual user needs. Consistent with this heterogeneity, the design of health apps may benefit from avoiding a one-size-fits-all approach and instead adopting a modular, toolbox-like structure that allows users to decide which app features to use and which parameters to share. This level of personalisation appears necessary to reflect the individual preferences identified in our study and to support a more user-centred app experience. Further research is needed on these individual components.
+
+Supplemental material
+
+Supplemental material - Attitudes towards personalised nutrition recommendations in health apps: Results of a cross-sectional online survey
+
+Supplemental material for Attitudes towards personalised nutrition recommendations in health apps: Results of a cross-sectional online survey by Sabrina Antor, Anna Strüven, Kathrin Gemesi, Georges Weis, Katja Lotz, Hans Hauner, Stefan Brunner, and Christina Holzapfel in Digital Health.
+
+Acknowledgements
+
+We thank all survey participants for providing data for our research.
+
+ORCID iD
+
+Sabrina Antor https://orcid.org/0000-0002-2541-8505
+
+Ethical considerations
+
+This study was conducted according to the guidelines laid down in the Declaration of Helsinki, and all procedures involving research study participants were approved by the ethical committee of the Ludwig Maximilian University of Munich (project number 22-0701; 2nd September 2022).
+
+Consent to participate
+
+Informed consent to participate was obtained electronically from all participants prior to the start of the online questionnaire. Participants provided consent by actively confirming their agreement before accessing the survey.
+
+Data Availability Statement
+
+The data supporting this study’s findings are available from the corresponding author upon reasonable request.*
+
+Author contributions: SA performed data analysis, wrote the manuscript, and recruited participants. KG, CH, AS, GW, and SB developed the survey and recruited participants. All authors were involved in the conduction of the survey and reviewed the manuscript.
+
+Funding: The authors disclosed receipt of the following financial support for the research, authorship, and/or publication of this article: This work is funded by a grant from the German Federal Ministry of Education and Research (BMBF, grant no. 01EA1709) and partly funded by Dieter Schwarz Foundation (Heilbronn, Germany).
+
+The authors declared the following potential conflicts of interest with respect to the research, authorship, and/or publication of this article: SA, KG, GW, AS, and SB declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article. CH is a member of the scientific advisory board of the 4sigma GmbH (Oberhaching, Germany) and received speaker´s honorary from Novo Nordisk Pharma GmbH and Eli Lilly & Company. HH is a member of the scientific advisory board of Oviva Deutschland AG. KL is a scientific advisor to the gastronomic rating system of GESOCA GmbH.
+
+Trial registration: This survey was registered in the German Clinical Trials Register (registration number: DRKS00033241, registration date: 2024-06-12).
+
+Supplemental material: Supplemental material for this article is available online.
+
+
+References
+
+1 Bush CL Blumberg JB El-Sohemy A , et al. Toward the definition of personalized nutrition: a Proposal by The American Nutrition Association. J Am Coll Nutr 2020; 39(1): 5–15. 10.1080/07315724.2019.1685332 31855126
+2 Bayer S Drabsch T Schauberger G , et al. Knowledge, opinions and expectations of adults concerning personalised genotype-based dietary recommendations: a German survey. Public Health Nutr 2021; 24(7): 1916–1926. 10.1017/S1368980020004152 33070793 PMC8094433
+3 Renner B Buyken AE Gedrich K , et al. Perspective: a conceptual framework for adaptive personalized nutrition advice systems (APNASs). Adv Nutr 2023; 14(5): 983–994. 10.1016/j.advnut.2023.06.009 37419418 PMC10509404
+4 Hoevenaars FPM Berendsen CMM Pasman WJ , et al. Evaluation of food-intake behavior in a healthy population: personalized vs. one-size-fits-all. Nutrients 2020; 12(9): 1–16. 10.3390/nu12092819 PMC7551874 32942627
+5 Zenun Franco R Fallaize R Weech M , et al. Effectiveness of web-based personalized nutrition advice for adults using the eNutri web app: evidence from the EatWellUK randomized controlled trial. J Med Internet Res 2022; 24(4): e29088. 10.2196/29088 35468093 PMC9154737
+6 Celis-Morales C Livingstone KM Marsaux CFM , et al. Design and baseline characteristics of the Food4Me study: a web-based randomised controlled trial of personalised nutrition in seven European countries. Genes Nutr 2015; 10(1): 450. 10.1007/s12263-014-0450-2 25491748 PMC4261071
+7 Jinnette R Narita A Manning B , et al. Does personalized nutrition advice improve dietary intake in healthy adults? A systematic review of randomized controlled trials. Adv Nutr 2021; 12(3): 657–669. 10.1093/advances/nmaa144 33313795 PMC8166555
+8 Ebadi AG Selamoglu Z . Personalized Nutrition in the Genomics and Digital Age: Current Issues, Future Directions, and Evidence. WAJHN 2025; 1(1): 34–39. 10.63954/sns00e14
+9 Kirk D Catal C Tekinerdogan B . Precision nutrition: a systematic literature review. Comput Biol Med 2021; 133: 104365. 10.1016/j.compbiomed.2021.104365 33866251
+10 Vegesna V . AI-driven personalized nutrition: a system for tailored dietary recommendations. International Research Journal of Computer Science 2024; 11(7): 545–550. 10.26562/irjcs.2024.v1107.02
+11 Naeem MY Danebekovna KG Selamoglu M , et al. The Use and Importance of Artificial Intelligence in Vaccine Research, Development, and Production. Archives of Razi Institute 2025; 5(80): 1103–1112.10.32598/ARI.80.5.3442 PMC13222437 42226986
+12 Ngugi MJ . The role of artificial intelligence in personalized nutrition. Research Invention Journal of Public Health and Pharmacy 2024; 3(2): 22–25. 10.59298/RIJPP/2024/322225
+13 Hart K Wilson-Barnes S Lanham-New SA , et al. Can a mobile application deliver appropriate, acceptable and usable personalised nutrition advice to UK adults. Proc Nutr Soc 2023; 82(OCE5): E314. 10.1017/S0029665123004135
+14 Stefanidis K Tsatsou D Konstantinidis D , et al. PROTEIN AI advisor: a knowledge-based recommendation framework using expert-validated meals for healthy diets. Nutrients 2022; 14(20): 4435. 10.3390/nu14204435 36297118 PMC9612332
+15 Hinojosa-Nogueira D Ortiz-Viso B Navajas-Porras B , et al. Stance4Health nutritional app: a path to personalized smart nutrition. Nutrients 2023; 15(2): 276. 10.3390/nu15020276 36678148 PMC9864275
+16 Franco RZ Fallaize R Lovegrove JA , et al. Popular nutrition-related mobile apps: a feature assessment. JMIR Mhealth Uhealth 2016; 4(3): e85. 10.2196/mhealth.5846 27480144 PMC4985610
+17 Franco RZ Fallaize R Hwang F , et al. Strategies for online personalised nutrition advice employed in the development of the eNutri web app. Proc Nutr Soc 2019; 78(3): 407–417. 10.1017/S0029665118002707 30560739
+18 Linseisen J Renner B Gedrich K , et al. Data in personalized nutrition: bridging biomedical, psycho-behavioral, and food environment approaches for population-wide impact. Adv Nutr 2025; 16(7): 100377. 10.1016/j.advnut.2025.100377 39842719 PMC12281445
+19 Adnan A Irvine RE Williams A , et al. Improving acceptability of mHealth apps-The use of the Technology Acceptance Model to assess the acceptability of mHealth apps: systematic review. J Med Internet Res 2025; 27: e66432. 10.2196/66432 40334265 PMC12096023
+20 Schomakers E-M Lidynia C Vervier LS , et al. Applying an extended UTAUT2 model to explain user acceptance of lifestyle and therapy mobile health apps: survey study. JMIR Mhealth Uhealth 2022; 10(1): e27095. 10.2196/27095 35040801 PMC8808343
+21 Baer N-R Vietzke J Schenk L . Middle-aged and older adults' acceptance of mobile nutrition and fitness apps: a systematic mixed studies review. PLoS One 2022; 17(12): e0278879. 10.1371/journal.pone.0278879 36520839 PMC9754197
+22 Dias SB Oikonomidis Y Diniz JA , et al. Users' perspective on the AI-based smartphone PROTEIN app for personalized nutrition and healthy living: a modified technology acceptance model (mTAM) Approach. Front Nutr 2022; 9: 898031. 10.3389/fnut.2022.898031 35879982 PMC9307489
+23 Grande D Mitra N Iyengar R , et al. Consumer willingness to share personal digital information for health-related uses. JAMA Netw Open 2022; 5(1): e2144787. 10.1001/jamanetworkopen.2021.44787 35072717 PMC8787615
+24 Seltzer E Goldshear J Guntuku SC , et al. Patients' willingness to share digital health and non-health data for research: a cross-sectional study. BMC Med Inform Decis Mak 2019; 19(1): 157. 10.1186/s12911-019-0886-9 31395102 PMC6686530
+25 Stewart-Knox B Kuznesof S Robinson J , et al. Factors influencing European consumer uptake of personalised nutrition. Results of a qualitative analysis. Appetite 2013; 66: 67–74. 10.1016/j.appet.2013.03.001 23500415
+26 Benevento M Mandarelli G Carravetta F , et al. Measuring the willingness to share personal health information: a systematic review. Front Public Health 2023; 11: 1213615. 10.3389/fpubh.2023.1213615 37546309 PMC10397406
+27 Venkatesh V Bala H . Technology acceptance model 3 and a research agenda on interventions. Decision Sciences 2008; 39(2): 273–315. 10.1111/j.1540-5915.2008.00192.x
+28 Lenth RV . emmeans: estimated marginal means, aka Least-Squares Means. R package version 1.10.5-0900001 [cited: 28.11.2024]. Available from. https://rvlenth.github.io/emmeans/ (2024).
+29 Chong B . K-means clustering algorithm: a brief review. AJCIS 2021; 4(5): 37–40. DOI: 10.25236/AJCIS.2021.040506.
+30 Kodinariya TM Makawana PR . Review on determining number of cluster in k-means clustering. Int J Adv Res Comput Sci Manag Stud 2013: 90–95.
+31 Krebs P Duncan DT . Health app use among US mobile phone owners: a national survey. JMIR Mhealth Uhealth 2015; 3(4): e101. 10.2196/mhealth.4924 26537656 PMC4704953
+32 König LM Attig C Franke T , et al. Barriers to and facilitators for using nutrition apps: systematic review and conceptual framework. JMIR Mhealth Uhealth 2021; 9(6): e20037. 10.2196/20037 34254938 PMC8409150
+33 Shojaei P Vlahu-Gjorgievska E Chow Y-W . Enhancing privacy in mHealth applications: a user-centric model identifying key factors influencing privacy-related behaviours. Int J Med Inform 2025; 199: 105907. 10.1016/j.ijmedinf.2025.105907 40209320
+34 Scarry A Rice J O'Connor EM , et al. Usage of mobile applications or mobile health technology to improve diet quality in adults. Nutrients 2022; 14(12). 10.3390/nu14122437 PMC9230785 35745167
+35 Elavsky S Smahel D Machackova H . Who are mobile app users from healthy lifestyle websites? Analysis of patterns of app use and user characteristics. Transl Behav Med 2017; 7(4): 891–901. 10.1007/s13142-017-0525-x 28929368 PMC5684086
+36 Laranjo L Quiroz JC Tong HL , et al. A mobile social networking app for weight management and physical activity promotion: results from an experimental mixed methods study. J Med Internet Res 2020; 22(12): e19991. 10.2196/19991 33289670 PMC7755540
+37 Dahiya H Saini AK . Assessing individuals’ attitude and behavioural intention to use dietary and fitness mobile applications: evidence from India. J Indian Bus Res 2024; 16(3): 329–352. 10.1108/JIBR-12-2022-0302
+38 Joyce G Lilley M Barker T , et al. Mobile application tutorials: perception of usefulness from an HCI expert perspective. , 2016, pp. 302–308.
+39 Ernsting C Dombrowski SU Oedekoven M , et al. Using smartphones and health apps to change and manage health behaviors: a population-based survey. J Med Internet Res 2017; 19(4): e101. 10.2196/jmir.6838 28381394 PMC5399221
+40 Cai J Li G . Exercise or lie down? The impact of fitness app use on users' wellbeing. Front Public Health 2023; 11: 1281323. 10.3389/fpubh.2023.1281323 38269388 PMC10806118
+41 Simblett S Greer B Matcham F , et al. Barriers to and facilitators of engagement with remote measurement technology for managing health: systematic review and content analysis of findings. J Med Internet Res 2018; 20(7): e10480. 10.2196/10480 30001997 PMC6062692
+42 Mohd Johari NF Mohamad Ali N Mhd Salim MH , et al. Factors driving the use of mobile health app: insights from a survey. Mhealth 2025; 11: 12. 10.21037/mhealth-24-44 40248757 PMC12004308
+43 Sharpe EE Karasouli E Meyer C . Examining factors of engagement with digital interventions for weight management: rapid review. JMIR Res Protoc 2017; 6(10): e205. 10.2196/resprot.6059 29061557 PMC5673884
+44 Lyzwinski LN Caffery LJ Bambling M , et al. Consumer perspectives on mHealth for weight loss: a review of qualitative studies. J Telemed Telecare 2018; 24(4): 290–302. 10.1177/1357633X17692722 28181859
+45 Vasiloglou MF Christodoulidis S Reber E , et al. Perspectives and preferences of adult smartphone users regarding nutrition and diet apps: web-based survey study. JMIR Mhealth Uhealth 2021; 9(7): e27885. 10.2196/27885 34328425 PMC8367144

@@ -1,0 +1,225 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Asian Pac J Cancer Prev
+Journal ID: Asian Pac J Cancer Prev
+NLM Journal ID: 101130625
+Journal ID: APJCP
+
+Asian Pacific Journal of Cancer Prevention : APJCP
+
+ISSN: 1513-7368
+EISSN: 2476-762X
+Publisher: Shahid Beheshti University of Medical Sciences
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499580
+PMID: 41660927
+DOI: 10.31557/APJCP.2026.27.2.685
+Article version: 1
+Subjects: Research Article
+
+A Multidimensional Assessment of the Aperture Shape Controller in VMAT for Ca Tongue: Implications for Plan Complexity and Quality Assurance
+
+M Ajithkumar 1 *
+Show Subhankar 1
+Jha Sneha 1
+Prakash Aaditya 2
+S Chitra 1
+1 Department of Radiotherapy, Meherbai Tata Memorial Hospital, Jamshedpur, India.
+2 Department of Radiotherapy, Tata Main Hospital, Jamshedpur, India.
+* For Correspondence: makumar735@gmail.com
+Print publication date: 2026
+Electronic publication date: 2026 Feb 6
+Volume: 27
+Issue: 2
+First page: 685
+Last page: 691
+Received 2025 Aug 6; Accepted 2026 Feb 5
+License: This work is licensed under a Creative Commons Attribution-Non Commercial 4.0 International License.https://creativecommons.org/licenses/by-nc/4.0/
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: Radiotherapy optimization, dose modulation, quality assurance, treatment delivery efficiency
+
+==============================
+Purpose:
+
+This study aims to evaluate the impact of varying Aperture Shape Controller (ASC) settings on the optimization of VMAT plans for tongue carcinoma (Ca-Tongue), focusing on their role in modulating plan complexity, maintaining dosimetric integrity, and ensuring accurate treatment delivery.
+
+Materials and Methods:
+
+Twenty Ca-Tongue patients were retrospectively planned using four ASC settings: Off, Very Low, Moderate, and Very High, totaling 80 plans. Complexity metrics such as Modulation Complexity Score (MCSv), Small Aperture Score (SAS), and Monitor Units per cGy (MU/cGy) were computed using MATLAB from exported DICOM RT files. Each plan underwent portal dosimetry QA with gamma analysis (3%/3mm and 2%/2mm). Dosime tric quality was evaluated using Conformity Index (CI), Homogeneity Index (HI), and PTV D98%, along with doses to organs-at-risk (OARs). Statistical analysis included the Wilcoxon signed-rank test and linear regression.
+
+Results:
+
+Increasing ASC level significantly reduced plan complexity: MCSv increased from 0.32±0.02 (Off) to 0.38±0.03 (Very High), SAS decreased from 0.47±0.04 to 0.37±0.07, and MU/cGy dropped from 2.25±0.09 to 2.03±0.12 (p < 0.05). However, higher ASC levels were associated with minor but consistent reductions in PTV coverage (D98%: 96.66% to 94.94%) and increases in OAR doses (e.g., spinal cord Dmax: 30.46 Gy to 34.90 Gy). CI and HI remained clinically acceptable across all settings. Gamma pass rates were uniformly high (≥98.85%), with no significant improvement across ASC levels. Weak or negligible correlations (R² < 0.323) were found between complexity metrics and gamma outcomes.
+
+Conclusion:
+
+The ASC effectively reduces plan complexity in VMAT for Ca-Tongue without compromising delivery accuracy. While Very High ASC yields the greatest complexity reduction, it also introduces modest trade-offs in PTV coverage and OAR sparing. The Moderate ASC setting appears optimal, offering a balance between complexity control and dosimetric quality. Clinical implementation of ASC should be tailored to tumor site and anatomy, with Moderate ASC recommended for head and neck VMAT to ensure safety, efficiency, and robust QA performance.
+
+Introduction
+
+The dosimetric uncertainty of a treatment plan, even without considering patient geometry, is significantly influenced by plan complexity [1]. This complexity introduces three key sources of uncertainty: (1) dose calculation errors due to limitations in the beam model and algorithms in the treatment planning system (TPS); (2) variations between planned and delivered machine parameters such as MLC or jaw positions; and (3) dynamic uncertainties inherent to VMAT delivery, such as those arising from the acceleration and deceleration of moving MLC leaves [1].
+
+Advanced radiotherapy techniques like Intensity-Modulated Radiotherapy (IMRT) and Volumetric Modulated Arc Therapy (VMAT) rely heavily on beam modulation to shape dose distributions conformally around target volumes while minimizing dose to organs at risk (OARs) [2-3]. However, small and irregularly shaped MLC apertures in VMAT plans have been associated with increased plan complexity, which in turn reduces the accuracy of predicted dose distributions and may lead to failures in delivery quality assurance (QA) [2, 4].
+
+To address this challenge, Varian Medical Systems (Palo Alto, CA) introduced the Aperture Shape Controller (ASC), a tool within the Photon Optimizer (PO) algorithm of the Eclipse TPS, starting from version 15.6 onwards [2, 5-10]. The ASC is designed to smooth aperture shapes during optimization, thereby reducing unnecessary complexity. It offers six selectable intensity levels, ranging from "Off" to "Very High", allowing planners to adjust the degree of modulation control applied during optimization [5].
+
+Plans with higher modulation tend to use more monitor units (MU) and present greater leaf movement variability, both of which contribute to increased delivery uncertainties [6-7]. Additionally, very small MLC apertures can lead to high MU per Gray ratios, increased head scatter, and enhanced tongue-and-groove effects, which may result in poor QA outcomes [7]. The ASC reduces these risks by promoting more uniform aperture shapes and larger average field openings [9]. In this study, we evaluate VMAT plans for carcinoma of the tongue (Ca-Tongue) generated using various ASC levels (Off, Very Low, Moderate, and Very High). We analyze how the Aperture Shape Controller (ASC) influences key plan complexity metrics, including MU per Gy, modulation complexity score (MCSv), leaf travel, and aperture area variability. To assess the clinical relevance of these changes, we correlate the complexity metrics with patient-specific quality assurance (QA) results using Portal Dosimetry gamma analysis. The goal is to determine the optimal ASC setting that balances plan quality with delivery accuracy, improving the overall reliability and safety of VMAT treatment for head and neck cancer cases.
+
+Materials and Methods
+
+Study Design and Patient Selection
+
+This retrospective study evaluated the impact of different Aperture Shape Controller (ASC) settings on the complexity and deliverability of Volumetric Modulated Arc Therapy (VMAT) plans in patients with carcinoma of the tongue (Ca-Tongue). A total of 20 patients were included, all of whom had T3 disease with nodal involvement (N+) according to the American Joint Committee on Cancer (AJCC) 8th Edition staging criteria for carcinoma of the oral tongue, representing locally advanced tumors typically treated with definitive radiotherapy. The Planning target volume (PTV) encompassed the midline and extended bilaterally. For each patient, four treatment plans were generated using different ASC strengths: Off, Very Low, Moderate, and Very High, resulting in a total of 80 RapidArc VMAT beams.
+
+Treatment Planning and ASC Settings
+
+All treatment plans were generated using the Eclipse Treatment Planning System (Varian Medical Systems, Palo Alto, USA), version 15.6, using the Photon Optimizer (PO) algorithm. Dose calculations were performed using the Anisotropic Analytical Algorithm (AAA) [8]. The VMAT technique involved two full arcs per plan, with fixed collimator angles of 45° and 315°, and used 6 MV photon beams on a Varian True Beam SVC linear accelerator equipped with a Millennium 120 MLC. Plans were created to deliver 60 Gy in 30 fractions, and care was taken to ensure that target coverage and dose to organs at risk (OARs) remained clinically acceptable across all ASC settings. The ASC tool, integrated within the Photon Optimizer, modifies the fluence map by penalizing small, irregular MLC apertures during optimization. It offers six selectable levels None, Very Low, Low, Moderate, High, and Very High which progressively constrain MLC modulation and aperture shape [2, 11-20]. As ASC level increases, the optimizer promotes larger, more uniform apertures, reducing plan modulation and mechanical complexity.
+
+Complexity Metrics and Data Analysis
+
+The resulting DICOM RT Plan files were exported from Eclipse and processed using MATLAB 2023b (MathWorks Inc., Natick, MA, USA) to extract a comprehensive set of plan complexity metrics.
+
+These included: MU--Monitor unit, MU per cGy (MU/cGy) -- total monitor units normalized to prescription dose, Leaf Travel (LT) -- total MLC motion, Leaf Travel per Arc Length (LTAL) -- travel normalized to gantry span, Mean Dose Rate Variation (mDRV) -- variability in dose rate, Mean Gantry Speed Variation (mGSV) -- speed fluctuations across control points, Predicted Delivery Time (dt) -- total beam-on time based on dynamic parameters, Mean Aperture Area (A) -- average open field size over the arc, Small Aperture Score (SAS50mm) -- % of control points with aperture < 50 mm [17], Edge Metric (EM) -- ratio of aperture perimeter to area [11], Plan Irregularity (PI) and Plan Modulation (PM) -- shape and complexity indicators [16], Modulation Complexity Score (MCSv) -- composite score of aperture regularity and sequence smoothness [12-13]. All metrics were computed at the control point level, with data averaged per beam. The MCSv was calculated by combining Aperture Area Variability (AAV) and Leaf Sequence Variability (LSV) across all control points, following the formulation adapted from McNiven et al. [12].
+
+Quality Assurance and Dosimetric Evaluation
+
+Each plan was delivered on the treatment machine and evaluated using Portal Dosimetry for patient-specific QA. Gamma analysis was performed using both 3%/3mm and 2%/2mm global criteria, and the gamma pass rate (%) was recorded for each plan. These values served as deliverability metrics to correlate with calculated complexity scores. To assess dose distribution quality, each plan's Conformity Index (CI) and Homogeneity Index (HI) were calculated following the ICRU Report 83 definitions [19].
+
+Radiation conformity index (RCI) defined as:
+
+RCIi = VPTV/Vi
+
+where Vi is the volume of the PTV receiving ≥95% of the prescribed dose(i.e., V95%) , VPTV is the volume of the Planning Target Volume (PTV) [15, 20].
+
+HI defined as the difference between D2% and D98% of the Planning Target Volume (PTV), normalized to the median dose (D50%), using the formula:
+
+HI = (D2% - D98%)/ D50%
+
+Statistical Analysis
+
+Statistical analysis was performed using Origin software. The Wilcoxon signed-rank test was used for pairwise comparisons between ASC levels in terms of plan complexity and QA outcomes. In addition, linear regression analysis was applied to explore correlations between selected complexity metrics (e.g., MCSv, SAS, EM) and gamma pass rates. The coefficient of determination (R²) was used to assess the strength of these correlations. A p-value < 0.05 was considered statistically significant [10]. This methodology allowed for a robust evaluation of the relationship between ASC strength, plan complexity, and actual deliverability in a high-modulation clinical site.
+
+Results
+
+Table 1 summarizes the complexity metrics and dosimetric outcomes for VMAT plans optimized using different ASC settings: Off, Very Low, Moderate, and Very High. A consistent reduction in plan complexity was observed with increasing ASC level. The MCSv increased from 0.32 ± 0.02 (ASC Off) to 0.38 ± 0.03 (ASC Very High), while the SAS50mm decreased from 0.47 ± 0.04 to 0.37 ± 0.07, reflecting smoother and less modulated MLC shapes. Additional indicators, including MU/Gy, LT, and PM, also demonstrated a downward trend with increasing ASC level, suggesting reduced modulation and improved delivery efficiency.
+
+Table 1 Plan Complexity Metrics for Each ASC Levels
+
+Metric	ASC Off	ASC Very Low	ASC Moderate	ASC Very High	
+MU	465±25	454±23	453±25	423±42	
+MU/cGy	2.25±0.09	2.21±0.11	2.16±0.12	2.03±0.12	
+LT	271±15	259±14	254±14	228±17	
+LTAL	134±7	128±6.6	126±7	113±8	
+mDRV	2.68±0.37	2.8±0.52	2.84±0.54	3.95±0.83	
+mGSV	0	0	0	1.8*10-4	
+MCSv	0.32±0.02	0.34±0.02	0.35±0.02	0.38±0.03	
+PI	12±0.88	9.52±0.61	7.8±0.56	5.5±0.51	
+PM	0.65±0.01	0.64±0.01	0.64±0.02	0.61±0.03	
+SAS50mm	0.47±0.04	0.46±0.04	0.45±0.05	0.37±0.07	
+EM	0.08±0.01	0.06±0.01	0.05±0.01	0.04±0.01	
+dt	119.33	119.33	119.33	119.37±0.13	
+
+Table 2 highlights the dosimetric parameters and QA outcomes associated with each ASC setting. Key dosimetric outcomes, including PTV D98% and OAR Dmax values, are reported with 95% confidence intervals to reflect precision; other parameters are reported as mean ± SD. While complexity reduction was evident, some dosimetric variations were observed. The CI remained relatively stable across ASC Off, Very Low, and Moderate levels (~0.95), but dropped slightly to 0.93 ± 0.05 in the Very High group. The HI showed a modest increase from 1.10 ± 0.01 to 1.12 ± 0.02, and PTV D98% decreased from 96.66 ± 0.85% (ASC Off) to 94.94 ± 1.57% (ASC Very High), indicating a minor reduction in target coverage (Figure 1). Organ-at-risk (OAR) doses showed a slight increase with higher ASC levels. For the spinal cord, Dmax dose from 30.46 ± 2.53 Gy to 34.90 ± 4.83 Gy, and D2cc increased from 27.57 ± 2.58 Gy to 32.79 ± 4.91 Gy. Similarly, brainstem Dmax increased from 31.28 ± 5.52 Gy to 34.09 ± 5.90 Gy between ASC Off and Very High levels (Figure 2). Despite these changes, Gamma Pass Rates (GPR) remained consistently high. At 3%/3mm, GPR ranged from 99.9 ± 0.07% (ASC Off) to 99.80 ± 0.14% (ASC Very High), while at 2%/2mm, it ranged from 99.38 ± 0.25% to 98.85 ± 0.52%. These results indicate that delivery accuracy was well maintained. Although higher ASC settings reduced plan complexity and improved modulation efficiency, they were associated with minor compromises in target coverage and OAR sparing particularly at the Very High ASC level.
+
+Table 2 Dosimetric Parameters and Gamma Pass Rates for Each ASC Level
+
+Metric	ASC Off	ASC Very Low	ASC Moderate	ASC Very High	
+CI	0.95 ±0.03	0.95 ±0.03	0.95 ±0.03	0.93 ±0.05	
+HI	1.10 ± 0.01	1.10 ± 0.01	1.11 ± 0.01	1.12 ± 0.02	
+D98% (%)	96.66 ± 0.85	96.63 ± 0.85	96.24 ± 1.07	94.94 ± 1.57	
+Spinalcord Dmax (Gy)	30.46 ± 2.53	30.01 ± 3.00	30.67 ± 3.15	34.90 ± 4.83	
+Spinalcord D2cc (Gy)	27.57 ± 2.58	27.44 ± 2.93	28.27 ± 3.20	32.79 ± 4.91	
+Brainstem Dmax (Gy)	31.28 ± 5.52	31.02 ± 5.99	31.39 ± 5.50	34.09 ± 5.90	
+Brainstem D2cc (Gy)	25.16 ± 5.87	25.15 ± 6.35	25.22 ± 5.75	28.55 ± 6.96	
+GPR 3%/3mm (%)	99.9±0.07	99.87±0.10	99.80±0.13	99.80±0.14	
+GPR 2%/2mm (%)	99.38±0.25	99.27±0.30	98.98±0.40	98.85±0.52	
+
+Table 3 presents the results of pairwise comparisons of plan complexity metrics across different ASC levels using the Wilcoxon signed-rank test. Statistically significant differences (p < 0.05) were observed between ASC-Off and ASC-Very High for all complexity metrics analyzed particularly MCSv for VMAT and SAS50mm demonstrating that higher ASC levels effectively reduce plan complexity.
+
+Table 3 Wilcoxon Signed-Rank Test Results Comparing Complexity Metrics Between ASC-Off and Other Levels
+
+Metric	Comparison of ASC Levels	Z-Value	p-Value	
+MCSv	Off vs Very Low	-2.669	0.0056†	
+MCSv	Off vs Moderate	-3.528	<0.0001‡	
+MCSv	Off vs Very High	-3.901	<0.0001‡	
+SAS50mm	Off vs Very Low	0.541	0.5958	
+SAS50mm	OFF vs Moderate	1.101	0.2774	
+SAS50mm	Off vs Very High	3.379	0.0002†	
+
+MCSv showed statistically significant reductions in all ASC comparisons:
+
+Off vs. Very Low: Z = -2.669, p = 0.0056, Off vs. Moderate: Z = -3.528, p < 0.0001, Off vs. Very High: Z = -3.901, p < 0.0001
+
+SAS50mm showed significance only in the ASC Off vs. Very High comparison:
+
+Off vs. Very High: Z = +3.379, p = 0.0002, Off vs. Very Low: Z = +0.541, p = 0.5958 (Not significant), Off vs. Moderate: Z = +1.101, p = 0.2774 (Not significant)
+
+No statistically significant difference was observed between ASC-Very Low and ASC-Moderate, suggesting minimal incremental benefit at intermediate levels of complexity control. These findings support the utility of higher ASC levels particularly the Very High setting in effectively reducing plan modulation and complexity in VMAT optimization
+
+Figure 1 Dosimetric Indices Across ASC Levels. (A) CI, (B) HI, (C) MU and (D) PTV D98 (%) for ASC Off, Very Low, Moderate, and Very High levels. Error bars indicate standard deviation.
+
+Figure 2 Organ-at-Risk Doses by ASC Level. (A) Spinal cord Dmax and D2cc. (B) Brainstem Dmax and D2cc. Error bars indicate standard deviation.
+
+Linear Regression Analysis
+
+Linear regression was performed to assess the relationship between plan complexity metrics (MCSv, SAS, and EM) and GPR at 3%/3mm and 2%/2mm criteria. For MCSv vs. GPR, the strongest relationship was found in ASC-Very Low plans (R² = 0.2971), showing a moderate negative correlation. Other ASC levels demonstrated weak or negligible correlations (R² < 0.06). For SAS vs. GPR, ASC-Off showed the highest correlation (R² = 0.323), suggesting that smaller apertures are modestly associated with reduced gamma pass rates. However, ASC-Very High showed no significant correlation (R² ≈ 0.13). For EM vs. GPR, all ASC levels yielded very weak or no correlation, with R² ranging from 0.00001 to 0.06, indicating that EM does not predict deliverability. Overall, these findings suggest that higher complexity metrics weakly influence gamma pass rates, particularly when ASC is turned off. Increasing the ASC level reduces both complexity and the sensitivity of GPR to those complexity metrics. These results demonstrate that ASC reduces plan complexity and stabilizes plan deliverability, as evidenced by weaker correlations between complexity metrics and QA outcomes at higher ASC levels.
+
+Discussion
+
+This study evaluated the influence of the ASC on VMAT plan complexity and dosimetric quality in head and neck radiotherapy. Results showed that increasing the ASC level from Off to Very High significantly reduced plan complexity, evidenced by improvements in MCSv: 0.32 ± 0.02 to 0.38 ± 0.03), SAS50mm: 0.47 ± 0.04 to 0.37 ± 0.07), and MU per cGy (2.25 ± 0.09 to 2.03 ± 0.12) (Figure 3). These reductions were statistically significant based on the Wilcoxon signed-rank test (p < 0.05), consistent with prior studies [5, 13-14], confirming that ASC promotes smoother, less modulated MLC behavior.
+
+Figure 3 Representative MLC Opening Patterns Extracted from the Treatment Planning System (TPS) for the Same Beam Across four ASC Settings: (A) ASC Off, (B) Very Low, (C) Moderate, and (D) Very High. The images demonstrate progressively smoother and more uniform leaf shapes with increasing ASC level.
+
+Despite reduced complexity, plan quality was largely preserved across ASC levels. The CI remained stable (~0.95) for Off to Moderate but decreased slightly to 0.93 ± 0.05 for Very High. Similarly, D98% dropped modestly from 96.66 ± 0.85% to 94.94 ± 1.57%, while HI showed a minor increase. These findings mirror those of Hui et al. and Scaggion et al. [13-14], who observed complexity reductions without compromising dose distributions.
+
+However, dosimetric trade-offs emerged at the Very High ASC setting, with slight increases in organ-at-risk (OAR) doses. For example, spinal cord Dmax increased from 30.46 ± 2.53 Gy to 34.90 ± 4.83 Gy and brainstem Dmax from 31.28 ± 5.52 Gy to 34.09 ± 5.90 Gy. Though still within QUANTEC safety thresholds, this suggests that aggressive complexity reduction may come at the cost of marginal OAR sparing.
+
+GPR remained high and stable across all ASC levels 99.9 ± 0.07% to 99.80 ± 0.14% for 3%/3mm, and 99.38 ± 0.25% to 98.85 ± 0.52% for 2%/2mm indicating preserved delivery accuracy. No statistically significant improvements in GPR were observed, aligning with findings by Binny et al. [7] and supporting the notion that portal dosimetry may lack sensitivity to detect subtle improvements in delivery reproducibility [6]. Weak correlations (R² < 0.323) between complexity metrics and GPR further reinforce this conclusion, consistent with the work of Hernandez [1] and Chiavassa [2]. These results support the clinical use of intermediate ASC levels particularly Moderate as an effective compromise between reducing complexity and maintaining dosimetric quality. Moderate ASC showed notable MCSv improvement (0.35 ± 0.02, p < 0.0001 vs. Off), while preserving CI (~0.95) and acceptable OAR doses. Prior studies, including those by Strandell et al. [5], Quintero et al. [3], and Scaggion et al. [12], echo these findings, highlighting Moderate ASC's advantages in deliverability, treatment time, and plan robustness.
+
+Additionally, recent work suggests that combining ASC with control modes (CM) can enhance outcomes. For example, studies in prostate and oropharynx treatments report that pairing ASC with CM 'on' produced optimal plans in terms of PTV coverage, OAR sparing, and complexity reduction [11-12]. Conversely, using ASC alone with CM 'off' may risk increased complexity or compromised quality. Thus, ASC settings should be individualized based on site, plan characteristics, and delivery modality.
+
+In summary, ASC is a valuable tool for reducing VMAT plan complexity without compromising delivery accuracy. While Very High ASC achieves the greatest reduction in complexity, it may introduce slight trade-offs in coverage and OAR sparing. Therefore, Moderate ASC settings appear optimal for head and neck VMAT, offering balanced improvements in complexity, efficiency, and clinical safety. Further studies exploring ASC in combination with other optimization tools and using more sensitive QA metrics are warranted to refine its clinical application.
+
+In conclusion, this study demonstrates that the ASC is an effective tool for reducing VMAT plan complexity in head and neck radiotherapy. Wilcoxon signed-rank tests confirmed statistically significant differences in complexity metrics particularly MCSv and SAS between ASC Off and higher ASC settings, indicating that ASC meaningfully reduces unnecessary modulation. However, linear regression analysis showed weak or negligible correlations between complexity metrics and GPR, suggesting that plan complexity does not strongly influence delivery accuracy under standard QA conditions. Importantly, dosimetric evaluation revealed a consistent trend: as ASC levels increased from Off to Very High, target coverage (PTV D98%) decreased and OAR doses increased. These findings highlight a trade-off between plan simplicity and dosimetric quality. Notably, ASC Moderate achieved a balance effectively reducing complexity while maintaining acceptable conformity, homogeneity, and OAR sparing making it a clinically favorable option. In line with previous studies, our results suggest that ASC can improve MLC modulation consistency and MU control point distribution without compromising deliverability. However, due to the observed decline in dosimetric quality at Very High ASC levels, based on our findings, we recommend using ASC at Moderate settings for CA tongue VMAT planning. This setting offers a practical compromise that ensures treatment efficiency, safety, and dosimetric robustness across a range of patient anatomies.
+
+Author Contribution Statement
+
+All authors have reviewed the final version to be published and agreed to be accountable for all aspects of the work. Concept and design: Subhankar Show, Ajithkumar M (Corresponding Author). Acquisition, analysis, or interpretation of data: Ajithkumar M. Manuscript drafting and critical revision: Ajithkumar M, Subhankar Show, Aaditya Prakash, Sneha Jha, Chitra S. Final approval of the version to be published: All authors
+
+Conflict of Interest
+
+None.
+
+Acknowledgements
+
+Ethics
+
+The procedure followed were in accordance with the ethical standards of the responsible committee on human experimentation and the Helsinki Declaration of 1964, as revised in 2013. The study was approved by the institutional Ethics Committee of Meherbai Tata Memorial Hospital, Jamshedpur(IEC/2025/August 06), dated August 06, 2025 and waiver of consent was obtained as this was retrospective study.
+
+
+References
+
+1 Hernandez V Hansen CR Widesott L Bäck A Canters R Fusella M What is plan quality in radiotherapy? The importance of evaluating dose metrics, complexity, and robustness of treatment plans Radiother Oncol 2020 153 26 33 10.1016/j.radonc.2020.09.038 32987045
+2 Chiavassa S Bessieres I Edouard M Mathot M Moignier A Complexity metrics for imrt and vmat plans: A review of current literature and applications Br J Radiol 2019 92 1102 20190270 10.1259/bjr.20190270 31295002 PMC6774599
+3 Quintero P Cheng Y Benoit D Moore C Beavis A Effect of treatment planning system parameters on beam modulation complexity for treatment plans with single-layer multi-leaf collimator and dual-layer stacked multi-leaf collimator Br J Radiol 2021 94 1122 20201011 10.1259/bjr.20201011 33882242 PMC8173683
+4 Andrén Cederholm V Evaluating aperture shape controller (ASC) in modulated radiation treatments 2023 Available from: https://hdl.handle.net/2077/78641
+5 Strandell L Edvardsson A Benedek H Pommer T Wieslander E Impact of MLC shape smoothing on VMAT plan complexity and agreement between planned and delivered dose 2021
+6 Miura H Matsuura T Nakao M Hayata M Ozawa S Ishihara S Influence of aperture shape controller settings on dose distribution and treatment efficiency in lung stereotactic body radiation therapy with a 10 mv flattening filter-free beam Med Dosim 2025 50 2 185 190 10.1016/j.meddos.2025.01.001 39915195
+7 Binny D Spalding M Crowe SB Jolly D Kairn T Trapp JV Investigating the use of aperture shape controller in vmat treatment deliveries Med Dosim 2020 45 3 284 292 10.1016/j.meddos.2020.02.003 32223971
+8 Terzidis E Nordström F Götstedt J Bäck A Different aspects of plan complexity in prostate VMAT plans Journal of Physics: Conference Series 2023 2630 1 012031 10.1088/1742-6596/2630/1/012031
+9 Scaggion A PO-1434: Thorough assessment of a new commercial tool to reduce plan complexity Radiother Oncol 2020 152 S762 10.1016/s0167-8140(21)01452-3
+10 Peng Q Fan P Wang X Tao F Niu R Chen L The impact of plan complexity on dose delivery deviations resulting from multileaf collimator positioning errors in volumetric modulated arc therapy Br J Radiol 2025 98 1169 785 792 10.1093/bjr/tqaf053 40059330 PMC12012339
+11 Rossi M Boman E The use of aperture shape controller and convergence mode in radiotherapy treatment planning Journal of Radiotherapy in Practice 2022 21 2 171 178 10.1017/s1460396920001028
+12 Scaggion A Fusella M Agnello G Bettinelli A Pivato N Roggio A Limiting treatment plan complexity by applying a novel commercial tool J Appl Clin Med Phys 2020 21 8 27 34 10.1002/acm2.12908 PMC7484888 32436656
+13 Lambri n Optimization of replanning processes for volumetric modulated arc therapy plans at risk of qa failure predicted by a machine learning model Applied sciences 2024 14 14 6103 10.3390/app14146103
+14 Erraoudi M Performance of different strength aperture shape controller in optimization with vmat technique for head and neck, pelvic and breast cancer using halcyon machine Iran j med phys 2023 21 167 185 10.22038/ijmp.2023.68586.2201
+15 Hansen CR Hussein M Bernchou U Zukauskaite R Thwaites D Plan quality in radiotherapy treatment planning - review of the factors and challenges J Med Imaging Radiat Oncol 2022 66 2 267 278 10.1111/1754-9485.13374 35243775
+16 Posters from ESTRO38 congress: ES: DRAFT EDITORS S.L. 2019 Available from: 10.3252/pso.eu.ESTRO38.2019
+17 Crowe SB Kairn T Middlebrook N Sutherland B Hill B Kenny J Examination of the properties of imrt and vmat beams and evaluation against pre-treatment quality assurance results Phys Med Biol 2015 60 6 2587 2601 10.1088/0031-9155/60/6/2587 25761616
+18 Ezzell GA Burmeister JW Dogan N LoSasso TJ Mechalakos JG Mihailidis D Imrt commissioning: Multiple institution planning and dosimetry comparisons, a report from aapm task group 119 Med Phys 2009 36 11 5359 5373 10.1118/1.3238104 19994544
+19 Menzel HG The international commission on radiation units and measurements Journal of the ICRU 2010 10 1 NP.2 NP 10.1093/jicru/ndq001 24173704
+20 Knöös T Kristensen I Nilsson P Volumetric and dosimetric evaluation of radiation treatment plans: Radiation conformity index Int J Radiat Oncol Biol Phys 1998 42 5 1169 1176 10.1016/s0360-3016(98)00239-9 9869245

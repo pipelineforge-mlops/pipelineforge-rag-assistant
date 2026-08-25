@@ -1,0 +1,406 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Med Sci Monit
+Journal ID: Med Sci Monit
+NLM Journal ID: 9609063
+Journal ID: Medical Science Monitor
+
+Medical Science Monitor: International Medical Journal of Experimental and Clinical Research
+
+ISSN: 1234-1010
+EISSN: 1643-3750
+Publisher: International Scientific Information, Inc.
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499432
+PMID: 42608891
+DOI: 10.12659/MSM.953365
+Article ID: 953365
+Article version: 1
+Subjects: Database Analysis
+
+Exploration of the Prediction of the Survival Cycle and Influencing Factors of Chinese Patients With Advanced Cancer Based on Multi-Model Analysis
+
+Jiang Li 1 A B E
+Fan Wangdong 1 C E F
+Zhang Chuan 2 A D E G
+1 Department of Pharmacy, West China School of Public Health and West China Fourth Hospital, Sichuan University, Chengdu, Sichuan, PR China
+2 Department of Palliative Care, West China School of Public Health and West China Fourth Hospital, Sichuan University, Chengdu, Sichuan, PR China
+Corresponding Author: Chuan Zhang, Department of Palliative Care, West China School of Public Health and West China Fourth Hospital, Sichuan University, 18 Renmin South Road, Chengdu, Sichuan, China, Phone: +86-028-85502625, e-mail: chuan_zhang@medicine.gz.cnA Study Design
+
+B Data Collection
+
+C Statistical Analysis
+
+D Data Interpretation
+
+E Manuscript Preparation
+
+F Literature Search
+
+G Funds Collection
+
+Publication date: 2026
+Electronic publication date: 2026 Aug 18
+Publication date: 2026 Jun 15
+Volume: 32
+Electronic Location ID: e953365
+Received 2026 Mar 9; Accepted 2026 May 22
+Copyright: © Med Sci Monit, 2026
+Copyright year: 2026
+License: This work is licensed under Creative Common Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Survival, Prognosis, Cancer Care Facilities
+
+Funding: Science and Technology Department of Sichuan Province SCJJ25RKX129
+
+==============================
+Background
+
+Accurate prediction of survival in patients with advanced cancer is essential for optimizing end-of-life care and allocating palliative resources. However, fragmented clinical data and limited prognostic tools make reliable survival estimation challenging in real-world clinical practice.
+
+Material/Methods
+
+This retrospective study analyzed data from 842 patients with advanced cancer admitted to the palliative care department of a tertiary hospital in China between 2018 and 2020. Multiple clinical and laboratory indicators were collected, including electrolyte levels, hematological parameters, and biochemical markers. Survival prediction models were developed using traditional Cox regression, LASSO-Cox regression, and forward likelihood ratio (Forward-LR) Cox regression, with 80% of the dataset used for training and 20% for validation. Model performance was evaluated using receiver operating characteristic (ROC) curves and area under the ROC curve (AUC) values for predicting survival at 1 to 4 weeks.
+
+Results
+
+The median survival time of the cohort was 9.7 days, with most patients dying within 4 weeks. Age significantly influenced survival risk (HR = 1.010). Several clinical indicators were independently associated with mortality, including potassium, chloride, iron, magnesium, platelet count, and inflammatory markers. Elevated potassium and iron levels increased mortality risk, whereas higher chloride and platelet levels showed protective effects. In model comparisons, LASSO-Cox demonstrated better performance in short-term survival prediction (1–2 weeks), while Forward-LR Cox regression showed superior accuracy for longer-term prediction (3–4 weeks).
+
+Conclusions
+
+A multi-model prognostic framework based on routine clinical indicators can effectively predict short-term survival in advanced cancer patients. These models may support clinical decision-making in palliative care and improve end-of-life resource allocation pending external validation.
+
+Introduction
+
+As China’s economy has steadily expanded and living standards have steadily improved, a pronounced transformation has taken place in the nation’s disease spectrum. Chronic noncommunicable diseases, intricately linked to lifestyle, behavioral patterns, and environmental contamination, have emerged as the major health threats to urban and rural inhabitants [1]. Over the past decade, the incidence and mortality rates of malignant tumors in China have been consistently increasing, positioning them as the leading cause of mortality among Chinese citizens. Moreover, China, due to its population size, is among the countries with the highest cancer incidence and mortality rates globally. The aging of the population in China has become a major demographic challenge, which has intensified over time and requires an immediate response from the nation’s medical and healthcare system. Against the background of rapid population aging, the incidence of cancer in China continues to increase. The incidence of malignant tumors experiences a sharp upsurge after the age of 40 years, reaches its peak at the age of 80, and by the age of 85, the cumulative risk of cancer occurrence is 36% [2]. Unfortunately, China lags considerably behind developed countries in the areas of cancer screening, diagnosis, and treatment. China’s cancer mortality rate holds the 48th position globally [3]. Owing to inadequate public health awareness, the lack of effective preventive measures, and the restricted coverage of early-stage cancer screening, approximately two-thirds of patients with cancer are diagnosed at an advanced stage. The diagnoses are frequently accompanied by various complications, thereby missing the optimal treatment window. Given the current medical technology level and conditions, the possibility of curative treatment is extremely remote [4].
+
+In the analysis of the survival cycle, the following problems are encountered. First, the collection of patients’ diagnosis and treatment data by medical and health institutions can better provide auxiliary support for patients’ clinical diagnosis and treatment services. However, the clinical diagnosis and treatment data of patients at the end of life are characterized by fragmentation and localization, making it difficult to determine the patients’ current disease status from these data [5,6]. Second, it is difficult to effectively integrate the clinical data of patients at the end of life [7]. As a result, it is impossible to use the current big data analysis technology to determine the patients’ survival cycle, let alone discuss how to provide palliative care for patients at the end of life. On the one hand, due to the deep-rooted preference of patients for medical treatment behavior, many patients and families are reluctant to discuss end-of-life issues, despite limited clinical benefit. On the other hand, without relevant data, physicians find it difficult to use advanced information technology to scientifically determine the patients’ survival cycle and cannot accurately implement palliative treatment [8].
+
+Therefore, in the present study, we focused on patients with advanced cancer as the primary study population. Using integrated clinical diagnostic and treatment data, this study investigated survival prediction in patients with advanced cancer. Taking the prediction of the survival period as an important reference for formulating end-of-life palliative treatment decisions, it comprehensively considers the real preferences of patients at the end of life and their families, explores which factors affect the preferences for end-of-life palliative treatment, and establishes an end-of-life care model that conforms to the real preferences of patients and improves the quality of death. Thus, further measures can be taken to improve and enhance the quality of end-of-life care, enabling patients with advanced cancer to “die peacefully and with dignity.” This will help to allocate health resources more rationally, provide end-of-life medical and health services that are closer to the needs of patients, and provide scientific basis and practical support for exploring end-of-life care models tailored to the Chinese context.
+
+Material and Methods
+
+Study Population and Data Selection
+
+This study utilized data from patients admitted to the palliative care department of a class III grade A hospital in China between 2018 and 2020. A total of 842 patients with advanced cancer were included. Clinical indicators such as potassium, chloride, iron, magnesium, phosphorus, calcium, platelets, albumin, alanine aminotransferase, aspartate aminotransferase, direct bilirubin, creatinine, urea, uric acid, alkaline phosphatase, neutrophils, percentage of neutrophils, partial thromboplastin time (PTT), and heart rate were selected as the dataset for evaluating survival cycles in these patients.
+
+Data Partitioning and Classifier Considerations
+
+Different machine learning algorithms can generate varying predictive performances because of differences in feature selection strategies, model structures, and sampling approaches. Therefore, multiple modeling approaches were evaluated in the present study. Additionally, the recognition capabilities of the same classifier varied across sample types in the dataset. These observations underscore that no single classifier is universally effective, as each has inherent limitations. However, the differences and diversity among classifiers provide a theoretical basis for enhancing classification performance through integration and ensemble methods. The study allocated 80% of the data as the training set and 20% as the validation set [8,9].
+
+Model performance was evaluated at fixed time points of 1, 2, 3, and 4 weeks using receiver operating characteristic (ROC) curves and the area under the ROC curve (AUC). Given the very short median survival time (9.7 days) and high event rate in this palliative cohort, binary survival status (alive or dead) at each landmark time point was used to compute time-specific ROC and AUC. In addition, Harrell’s concordance index (C-index) was calculated to provide an overall measure of the model’s discriminative ability that accounts for censoring across the entire follow-up period.
+
+Although more advanced machine learning approaches, such as random survival forests and neural network-based models like DeepSurv, have gained popularity in recent prognostic research, we deliberately selected regularized and stepwise Cox models. These approaches offer excellent clinical interpretability through explicit hazard ratios (HRs), are computationally efficient with moderate sample sizes, and are readily implementable using routinely available laboratory parameters in real-world palliative care settings.
+
+Traditional Cox Regression Model
+
+The traditional Cox regression model is a widely used method in survival analysis for examining the effect of various factors on survival time [10]. Its core assumption is the proportional hazards principle, wherein the HR for each risk factor remains constant over time. This model does not require assumptions about the survival time distribution and is classified as semi-parametric. Its strengths include flexibility, but limitations encompass reliance on the proportional hazards assumption and susceptibility to overfitting in high-dimensional data scenarios with numerous predictor variables [11].
+
+LASSO-Cox Regression Model
+
+The LASSO (Least Absolute Shrinkage and Selection Operator) technique is a regularization method that adds an L1 penalty term to the loss function, shrinking some coefficients to zero to achieve variable selection and prevent overfitting [12]. The LASSO-Cox model integrates the Cox framework with LASSO regularization, making it suitable for high-dimensional data, such as genetic or biomarker studies [13]. Advantages include automated variable selection and model simplification, although it can compromise predictive accuracy, particularly with highly correlated variables [14].
+
+Forward-LR Cox Regression Model
+
+The Forward-LR (forward likelihood ratio) Cox regression model uses a stepwise regression approach. It progressively adds variables to the model, selecting at each step the one that maximizes the likelihood ratio. This traditional variable selection method is appropriate when the number of variables is moderate [15]. Benefits include stepwise model construction to mitigate overfitting; however, drawbacks involve high computational demands with many variables, reduced efficiency, and potential entrapment in local optima.
+
+Analysis
+
+Patient Demographics and Survival Characteristics
+
+Table 1 provides an overview of the baseline characteristics for the 842 patients with advanced cancer admitted to the palliative care department between 2018 and 2020. Of these, 444 (52.7%) were men and 398 (47.3%) were women. Patient ages ranged from 20 to 101 years, with a mean of 67.3 ± 14.3 years.
+
+The median survival time for the entire cohort was 9.7 days. The distribution of survival periods was as follows: (1) 318 patients (37.8%) survived for less than 1 week; (2) 243 patients (28.9%) survived for 1 to 2 weeks; (3) 133 patients (15.8%) survived for 2 to 3 weeks; (4) 85 patients (10.1%) survived for 3 to 4 weeks; and (5) 63 patients (7.4%) survived for 4 weeks or longer.
+
+Median survival times differed slightly by sex, with men at 8.8 days and women at 10.4 days. However, no statistically significant differences in survival outcomes were observed between sexes (χ2 = 1.432, P = 0.232) (Figure 1).
+
+Comparability of Training and Validation Datasets
+
+To ensure the reliability of model development and evaluation, the dataset was divided into a training set (n = 600) and a validation set (n = 242). Table 2 compares the demographic and clinical characteristics between these 2 sets, confirming their statistical comparability. This balance is crucial for validating the generalizability of predictive models and minimizing bias in performance assessments.
+
+Determination of Optimal Cutoff Values for Prognostic Indicators
+
+Optimal cutoff values for continuous variables were determined using X-tile software exclusively on the training set (n = 600) to minimize the risk of overfitting. These cutoffs were subsequently applied to both the training and validation sets (n = 242) for model development and performance evaluation (Table 3). This software is a standard tool in survival analysis for identifying thresholds in continuous variables, which aids in risk stratification and enhances the prognostic utility of these indicators in clinical settings.
+
+Visualization of Cutoff Value Optimization Process
+
+Figure 2 illustrates the step-by-step process of determining optimal cutoff values for continuous variables in survival analysis through X-tile software. The core objective is to stratify patients with advanced cancer into meaningful subgroups based on these thresholds. This stratification facilitates robust comparisons of survival differences, providing a foundation for more precise prognostic modeling and personalized patient management. All cutoff optimizations were performed solely within the training cohort to avoid data leakage and overfitting.
+
+Multivariate Cox Regression Analysis and Variable Selection
+
+A multivariate Cox regression analysis was conducted using the Forward-LR method, incorporating 21 indicators that were statistically significant in univariate analysis, along with age (where P < 0.20). The analysis revealed that 8 variables—sodium, phosphorus, hemoglobin, aspartate aminotransferase, albumin, creatinine, urea, and alkaline phosphatase—which had initially shown significance in univariate assessments, were excluded from the final model due to lack of independent predictive value.
+
+In contrast, 14 factors, including age, potassium, chloride, iron, and magnesium, demonstrated statistically significant associations with survival time. These findings highlight the independent prognostic roles of these variables in advanced cancer. Detailed results, including HRs and confidence intervals (CIs), are presented in Tables 4 and 5, offering insights into the relative impact of each factor on patient outcomes.
+
+LASSO-Cox Regression Model: Variable Selection and Prognostic Insights
+
+Table 6 summarizes the outcomes of the LASSO-Cox regression model, which was used to predict survival in patients with advanced cancer. This hybrid approach combines LASSO regularization—to select the most relevant predictors by shrinking coefficients of less important variables toward zero—with Cox proportional hazards regression, which models the relationship between survival time and predictor variables.
+
+The key columns in Table 6 are interpreted as follows. The regression coefficient (B) and standard error (SE) describe the direction and precision of the association between each predictor and the outcome. A positive coefficient indicates an increased hazard (associated with worse survival), whereas a negative coefficient suggests a protective effect. The Wald statistic tests the significance of each variable, with higher values providing stronger evidence against the null hypothesis of no effect. The P value indicates statistical significance, with values < 0.05 generally considered significant. The hazard ratio (HR) quantifies the relative risk of an event (eg, death) associated with each unit increase in the predictor, after adjustment for the other variables in the model. The model effectively identified critical variables, such as blood biomarkers and vital signs, that significantly influence survival time, thereby simplifying the prognostic framework while maintaining predictive accuracy.
+
+Results
+
+ROC Curves for Survival Prediction in the Training Set
+
+Time-specific ROC curves and AUC values at fixed 1- to 4-week time points were used to evaluate short-term survival prediction performance. Figures 3 and 4 illustrate the ROC curves for 1- to 4-week survival predictions using the traditional Cox regression model and the LASSO-Cox regression model in the training set.
+
+ROC Curves for Survival Prediction in the Validation Set
+
+Time-specific ROC curves and AUC values at fixed 1- to 4-week time points were used to evaluate short-term survival prediction performance. Figures 5 and 6 depict the ROC curves for 1- to 4-week survival predictions using the traditional Cox regression model and the LASSO-Cox regression model in the validation set.
+
+Comparison of Predictive Performance Between LASSO-Cox and Forward-LR Cox Models
+
+Table 7 and Figure 7 compare the predictive performance of 2 survival models—LASSO-Cox regression and Forward-LR Cox regression—at 4 time points: 1, 2, 3, and 4 weeks. Model performance was evaluated using the AUC, which assesses the model’s ability to discriminate between survival and death. AUC values range from 0.5 (no discrimination) to 1.0 (perfect discrimination), with higher values indicating better performance. The 95% CI reflects the precision and stability of the AUC estimate, with narrower intervals indicating greater reliability. Differences between the models were assessed using Z and P values, with P < 0.05 considered statistically significant.
+
+Note that AUC values were calculated at fixed time points (1–4 weeks).
+
+Comparison of Prediction Performance Among LASSO-5, LASSO-8, and Forward-LR Models
+
+Figure 8 and Table 8 compare the prediction performance of 3 models (LASSO-5, LASSO-8, and Forward-LR) at the 4 time points: 1, 2, 3, and 4 weeks. The primary objective is to evaluate the strengths and weaknesses of these models in short-term and long-term survival prediction. In terms of performance indicators, AUC (95% CI) measures the model’s ability to distinguish between survival and death (ranging from 0.5 to 1, with higher values preferred). The Z value serves as a statistic for testing AUC differences between models, where a larger absolute value indicates greater significance. The P value represents the significance level, with P < 0.05 confirming statistical significance. The AUCs of LASSO-8 and Forward-LR were marginally higher than that of LASSO-5, although differences are not significant (P > 0.05).
+
+First, all models exhibited similar performance in 1-week predictions (AUC ≈ 0.65–0.69), with limited discriminatory power. Second, the AUC of LASSO-8 was significantly higher than that of Forward-LR (P = 0.019), indicating superiority in short-to medium-term predictions. The AUC of Forward-LR (0.738) was higher than that of LASSO-5 (0.681), but without reaching significance. Third, the AUC of Forward-LR (0.802) was higher than that of LASSO-8 (0.760), yet the difference lacked significance (P = 0.125). LASSO-8 remained higher than LASSO-5, although the advantage diminished with extended prediction times. Fourth, the AUC of Forward-LR was significantly higher than that of LASSO-8 (P = 0.043), suggesting greater reliability in long-term predictions. No significant difference existed between LASSO-8 and LASSO-5 (P = 0.923), implying that increasing the variable count may not enhance long-term predictive capability.
+
+Insights on Prediction Time, Variable Impact, and Clinical Management
+
+Regarding prediction time, LASSO-8 performed best in the short term (1–2 weeks), likely due to retaining more short-term–related variables, such as acute inflammation indicators. In the long term (3–4 weeks), Forward-LR showed higher predictive performance, possibly because traditional methods better capture long-term risk factors, such as markers of chronic complications. Concerning variable count, LASSO-8 (with 8 variables) outperformed LASSO-5 (with 5 variables) in short-term predictions, but additional variables may introduce long-term noise. The Forward-LR variable selection strategy (based on significance) appears more suited to long-term complex risk modeling. For clinical management, LASSO-8 is preferable for early hospitalization risk stratification (eg, ICU resource allocation), while the Forward-LR model is recommended for post-discharge survival assessments (eg, hospice and palliative care planning).
+
+Discussion
+
+The present study addresses survival prediction in patients with advanced cancer using clinical indicators and multiple regression models. The present findings provide several clinically relevant insights into model applications, the relationship between survival prediction and quality of death, and comparisons with domestic and international research. This broader analysis aims to contextualize findings, highlight implications for palliative care, and suggest avenues for future refinement.
+
+Survival Characteristics of Patients With Advanced Cancer
+
+Among the 842 patients analyzed, the median survival time was only 9.7 days. Approximately 66.7% survived 2 weeks or less, while just 7.4% reached 4 weeks or more. Sex did not significantly influence survival time, but increased age (HR = 1.010) correlated with increased mortality risk. These patterns align with global trends in advanced cancer, in which short survival periods are common due to late-stage diagnoses and comorbidities. Domestically in China, similar observations emerge from studies describing the impact of an aging population and delayed interventions on exacerbating poor prognoses [3,6,9]. Internationally, studies from the United States and Europe report median survival of 1 to 3 months in palliative settings, underscoring the need for timely prognostic tools to guide care [13,14].
+
+The present cohort represents a highly selected end-of-life population admitted to a palliative care unit, with extremely short median survival (9.7 days). Therefore, the developed models are primarily intended for short-term prognostic assessment in similar palliative and hospice settings rather than for broader advanced cancer populations at earlier stages.
+
+Key Survival Predictors
+
+Multi-model analyses identified several independent predictors of survival time. Risk factors included elevated potassium (HR = 1.511), iron (HR = 1.481), magnesium (HR = 1.804), calcium (HR = 1.254), heart rate (HR = 1.419), direct bilirubin (HR = 1.356), neutrophils (HR = 1.251), and partial thromboplastin time (PTT, HR = 1.555). Protective factors were higher chloride (HR = 0.730) and platelet count (HR = 0.770). Biologically, hyperkalemia and hypermagnesemia commonly reflect terminal renal impairment, tissue breakdown, and cachexia-induced metabolic derangements in the final days of life [5,11]. Elevated serum iron may indicate hemolysis or inflammation-driven iron sequestration, while hypercalcemia is frequently associated with paraneoplastic syndromes or bone metastases. Tachycardia and neutrophilia represent systemic inflammatory response and sympathetic activation, and prolonged PTT signals coagulopathy secondary to liver dysfunction or disseminated intravascular coagulation. Conversely, higher chloride levels may indicate relative volume depletion or less severe metabolic alkalosis, and preserved platelet count reflects less advanced bone marrow suppression or consumptive coagulopathy. Clinically, these readily available laboratory parameters enable real-time bedside risk stratification in palliative units. For example, severe electrolyte imbalances may prompt targeted symptom management (eg, cautious potassium correction to avoid arrhythmia) rather than aggressive interventions, while low platelets can inform decisions on transfusion or bleeding precautions. These predictors thus not only enhance prognostic accuracy but also directly inform individualized end-of-life care plans [7,9,10].
+
+Model Performance Comparison and Applications
+
+In short-term predictions (1–2 weeks), the LASSO-Cox model (AUC = 0.725) performed similarly to the Forward-LR model (AUC = 0.738), with LASSO-8 (8 variables) achieving slightly higher AUC values, potentially due to retaining inflammation-related variables. For long-term predictions (3–4 weeks), Forward-LR achieved higher AUC values than did LASSO-Cox (AUC at 4 weeks = 0.754 vs 0.715, P = 0.043), suggesting that it may better capture chronic risk factors. LASSO suits high-dimensional data reduction, while Forward-LR offers stability with fewer variables. Clinically, these models can be applied in resource allocation: LASSO-8 for acute inpatient triage, such as ICU prioritization, and Forward-LR for outpatient planning, such as hospice referrals. Domestically, studies from China have adapted Cox variants for cancer prognostics, emphasizing LASSO for biomarker-heavy datasets. Internationally, studies from the United States have compared Cox regression with machine learning approaches, finding that hybrid models such as LASSO-Cox may improve predictive accuracy in colorectal and lung cancers, although concerns about overfitting remain [4,13]. Recent advancements integrate neural networks with Cox for superior discrimination, suggesting potential enhancements to our models [12,15].
+
+We acknowledge that recent literature has increasingly employed more advanced machine learning and deep learning survival models, such as random survival forests and DeepSurv, which have demonstrated promising performance in short-term survival prediction for patients with advanced cancer [16,17]. These methods can capture complex non-linear interactions and sometimes outperform traditional Cox models in large datasets. However, in the context of palliative care—where physicians must rapidly interpret results to guide end-of-life discussions and resource allocation—model transparency and explainability remain critical. Our LASSO-Cox and Forward-LR Cox models provide directly interpretable coefficients and HRs while achieving clinically acceptable discrimination (AUC 0.65–0.80). Systematic reviews also indicate that the incremental benefit of machine learning over well-tuned Cox models is often modest in small-to-moderate palliative cohorts with high event rates [18,19]. Thus, our multi-model framework prioritizes practical clinical utility over methodological complexity.
+
+Relationship Between Death Prediction and Quality of Death
+
+Accurate death prediction is integral to improving quality of death in palliative care, as it enables timely interventions that align with patient preferences, reducing unnecessary aggressive treatments and fostering dignified end-of-life experiences [1,3,11,14]. Our models facilitate this by stratifying risks, allowing clinicians to shift focus from curative to comfort-oriented care, which studies link to better quality-of-death metrics, such as pain control and family satisfaction [5,7]. Domestically, Chinese palliative models often overlook psychosocial integration, leading to fragmented care; predictions could bridge this by informing holistic plans. Internationally, evidence from the United States and Europe shows early palliative involvement, guided by prognostic tools, correlates with home deaths and higher quality-of-death scores, as patients avoid hospital readmissions [6]. However, clinician predictions are often inaccurate, emphasizing the value of data-driven models such as ours to enhance quality of death [2,7].
+
+Clinical Practice Significance and Future Directions
+
+Survival predictions offer individualized decision support for end-of-life care in palliative units, optimizing resources such as ICU beds and palliative priorities [8,13]. Monitoring electrolytes, such as high potassium and magnesium, and inflammation, with neutrophils and PTT, is vital for short-term assessments in patients approaching the terminal phase, while liver and kidney indicators, including direct bilirubin and uric acid, aid long-term forecasts [11,15]. Domestically, integrating these into China’s hospice frameworks could address gaps in advanced cancer care. Internationally, models such as integrated palliative care teams in oncology reduce readmissions and improve quality of life, with early integration extending survival.
+
+Study Limitations
+
+Several limitations of this study should be acknowledged. First, although the cohort included 842 patients, this was still a single-center retrospective study with a relatively limited sample size for prognostic modeling research. In addition, the median survival time of the enrolled patients was extremely short (9.7 days), and the study mainly focused on short-term survival outcomes in a highly selected palliative care population. Therefore, the generalizability of the findings to broader advanced cancer populations, particularly those in earlier disease stages or outpatient settings, remains limited. Larger prospective multicenter studies with longer observation periods are warranted to further validate the robustness and clinical applicability of the proposed models.
+
+Second, several potentially important variables were not included in the present analysis, particularly psychosocial factors, symptom burden, performance status scales, nutritional assessments, and quality-of-life indicators, all of which may substantially influence survival outcomes in patients receiving palliative care. The absence of these variables may have reduced the comprehensiveness of the prognostic framework.
+
+Third, the optimal cutoff values for continuous variables were determined using X-tile software in the training cohort. Although internal validation was performed using an independent validation dataset, this data-driven approach may still introduce a degree of optimism bias and potential overfitting. External validation using independent cohorts from different institutions and regions is therefore necessary before wider clinical implementation.
+
+Fourth, although conventional ROC analysis at fixed time points was adopted because of the extremely high short-term event rate and limited survival duration in this cohort, this approach does not fully account for censoring and the dynamic nature of survival data. In addition, while the present study employed interpretable Cox-based regression models that are practical for routine clinical use, more advanced machine learning approaches such as random survival forests and DeepSurv were not directly evaluated. Future studies incorporating larger datasets, time-dependent survival metrics, and modern machine learning algorithms may further improve predictive performance and methodological rigor.
+
+Conclusions
+
+This study developed and validated prognostic models for predicting short-term survival in patients with advanced cancer using routinely available clinical and laboratory indicators. Several biomarkers, including potassium, chloride, iron, magnesium, platelet count, and inflammatory parameters, were identified as significant predictors of mortality risk. Comparative analyses demonstrated that different modeling strategies have distinct advantages: the LASSO-Cox model showed better performance in short-term survival prediction, whereas the Forward-LR Cox model showed greater stability for longer-term prognostic assessment. These findings highlight the potential value of integrating multi-model analytical approaches with routinely collected clinical data to improve short-term prognostic accuracy, specifically in palliative care and hospice settings, for patients with very limited life expectancy. The proposed multi-model framework, grounded in routinely available clinical indicators and interpretable Cox-based methods, offers a pragmatic and clinically actionable tool for short-term survival prediction in palliative care and hospice settings.
+
+Acknowledgements
+
+This research was supported by the Science and Technology Department of Sichuan Province under the project entitled “Research on Quality of Death Assessment and Construction of Palliative/Hospice Care Service System for the Elderly in Sichuan Province” (Project No. SCJJ25RKX129).
+
+Availability of Data and Materials
+
+The data that support the findings of this study are available from the corresponding author upon reasonable request.
+
+Figure 1 Survival curves of patients with terminal cancer by sex.
+
+Figure 2 Schematic diagram of X-tile software for determining cutoff values of variables (performed on the training set).
+
+Figure 3 Receiver operating characteristic (ROC) curves for 1- to 4-week survival prediction using the traditional Cox regression model (time-specific ROC curves at fixed 1- to 4-week time points).
+
+Figure 4 Receiver operating characteristic (ROC) for 1- to 4-week survival prediction using the LASSO-Cox regression model (time-specific ROC curves at fixed 1- to 4-week time points).
+
+Figure 5 Receiver operating characteristic (ROC) curves for 1- to 4-week survival prediction using the traditional Cox regression model (time-specific ROC curves at fixed 1- to 4-week time points).
+
+Figure 6 Receiver operating characteristic (ROC) curves for 1- to 4-week survival prediction using the LASSO-Cox regression model (time-specific ROC curves at fixed 1- to 4-week time points).
+
+Figure 7 Comparison of predictive performance between LASSO-Cox regression and traditional Forward-LR Cox regression (time-specific receiver operating characteristic curves at fixed 1- to 4-week time points).
+
+Figure 8 Comparison of receiver operating characteristic (ROC) curves for LASSO-5, LASSO-8, and Forward-LR models at 1 to 4 weeks (time-specific ROC curves at fixed 1- to 4-week time points).
+
+Table 1 Survival time of patients with terminal cancer.
+
+Survival time (days)	Cases (n)	Ratio (%)	
+< 7	318	37.8	
+~7	243	28.9	
+~14	133	15.8	
+~21	85	10.1	
+≥-28	63	7.4	
+
+Table 2 Comparison of training set and validation set characteristics.
+
+Variable	Training set (n = 600)	Validation set (n = 242)	χ2/t	P	
+Sex			1.270	0.260	
+Male	309 (51.5)	135 (55.8)			
+Female	291 (48.5)	107 (44.2)			
+Age	67.2 ± 14.6	67.7 ± 13.5	0.530	0.596	
+Survival time (days)			0.946	0.918	
+ < 7	230 (38.3)	88 (36.4)			
+ ~ 7	168 (28.0)	75 (31.0)			
+ ~ 14	96 (16.0)	37 (15.3)			
+ ~ 21	62 (10.3)	23 (9.5)			
+ ≥28	44 (7.4)	19 (8.0)			
+
+Table 3 Optimal cutoff values for each indicator identified by X-tile software.
+
+Index	Cutoff value	
+Potassium	> 5.13	
+Chloride	> 93.1	
+Iron	> 18.21	
+Magnesium	> 0.94	
+Sodium	> 141.3	
+Phosphorus	> 1.56	
+Calcium	> 2.30	
+Hemoglobin	> 128.0	
+Platelet	> 133.0	
+Albumin	> 28.7	
+Alanine aminotransferase	> 78.8	
+Aspartate aminotransferase	> 240.0	
+Direct bilirubin	> 51.3	
+Creatinine	> 82.4	
+Urea	> 11.7	
+Uric acid	> 342.7	
+Alkaline phosphatase	> 284.0	
+Neutrophils	> 13.4	
+Neutrophil percentage	> 90.9	
+Partial thromboplastin time	> 36.2	
+Heart rate	> 108.0	
+
+Table 4 Univariate Cox regression analysis of factors influencing survival time in patients with terminal cancer.
+
+Variable	B	S.E	Wald	P	HR	95% CI	
+Lower	Upper	
+Sex	−0.083	0.069	1.431	0.232	0.920	0.804	1.054	
+Age	0.004	0.003	2.155	0.142	1.004	0.999	1.009	
+Potassium	0.800	0.112	51.488	< 0.001	2.227	1.789	2.771	
+Chloride	−0.308	0.095	10.491	0.001	0.735	0.610	0.886	
+Iron	0.454	0.115	15.474	< 0.001	1.574	1.256	1.973	
+Magnesium	0.775	0.085	83.542	< 0.001	2.170	1.838	2.562	
+Sodium	0.247	0.090	7.563	0.006	1.280	1.073	1.525	
+Phosphorus	0.695	0.100	48.443	< 0.001	2.004	1.648	2.437	
+Calcium	0.221	0.091	5.878	0.015	1.247	1.043	1.491	
+Hemoglobin	0.231	0.113	4.174	0.041	1.260	1.009	1.573	
+Platelet	−0.352	0.071	24.632	< 0.001	0.703	0.612	0.808	
+Albumin	−0.233	0.071	10.760	0.001	0.792	0.689	0.910	
+ALT	0.550	0.092	35.818	< 0.001	1.733	1.447	2.075	
+AST	0.687	0.173	15.686	< 0.001	1.988	1.415	2.792	
+Direct bilirubin	0.409	0.087	22.094	< 0.001	1.506	1.270	1.786	
+Creatinine	0.495	0.071	48.539	< 0.001	1.641	1.428	1.887	
+Urea	0.637	0.072	78.358	< 0.001	1.892	1.643	2.178	
+Uric acid	0.551	0.071	59.746	< 0.001	1.735	1.508	1.995	
+ALP	0.243	0.074	10.790	0.001	1.275	1.103	1.473	
+Neutrophils	0.415	0.077	29.336	< 0.001	1.515	1.303	1.760	
+Neutrophil (%)	0.438	0.076	33.620	< 0.001	1.550	1.336	1.797	
+PTT	0.557	0.090	38.489	< 0.001	1.745	1.464	2.081	
+Heart rate	0.379	0.076	24.902	< 0.001	1.461	1.259	1.696	
+Abbreviations: ALT, alanine aminotransferase; AST, aspartate aminotransferase; ALP, alkaline phosphatase; PTT, partial thromboplastin time.
+
+Table 5 Multivariate Cox regression analysis of factors influencing survival time in patients with terminal cancer.
+
+Variable	B	S.E	Wald	P	HR	95% CI	
+Lower	Upper	
+Age	0.010	0.003	13.949	< 0.001	1.010	1.005	1.015	
+Potassium	0.413	0.120	11.925	0.001	1.511	1.196	1.911	
+Chloride	−0.314	0.098	10.284	0.001	0.730	0.603	0.885	
+Iron	0.393	0.120	10.772	0.001	1.481	1.171	1.872	
+Magnesium	0.590	0.089	43.572	< 0.001	1.804	1.514	2.149	
+Calcium	0.226	0.094	5.842	0.016	1.254	1.044	1.506	
+Platelet	−0.261	0.074	12.467	< 0.001	0.770	0.666	0.890	
+ALT	0.271	0.108	6.357	0.012	1.312	1.062	1.619	
+Direct bilirubin	0.304	0.104	8.481	0.004	1.356	1.105	1.664	
+Uric acid	0.437	0.075	33.907	< 0.001	1.549	1.337	1.794	
+Neutrophils	0.224	0.089	6.390	0.011	1.251	1.052	1.488	
+Neutrophil (%)	0.222	0.087	6.565	0.010	1.248	1.054	1.479	
+PTT	0.441	0.093	22.493	< 0.001	1.555	1.296	1.866	
+Heart rate	0.350	0.078	19.996	< 0.001	1.419	1.217	1.655	
+Abbreviations: ALT, alanine aminotransferase; PTT, partial thromboplastin time.
+
+Table 6 Survival prediction model based on Lasso-Cox regression.
+
+Variable	B	S.E	Wald	P	HR	95% CI	
+Lower	Upper	
+Potassium	0.313	0.149	4.422	0.035	1.368	1.022	1.832	
+Chloride	−0.243	0.113	4.603	0.032	0.784	0.628	0.979	
+Iron	0.454	0.138	10.761	0.001	1.575	1.201	2.066	
+Magnesium	0.527	0.108	23.705	< 0.001	1.693	1.370	2.093	
+Phosphorus	0.291	0.140	4.307	0.038	1.338	1.016	1.762	
+Calcium	0.273	0.114	5.778	0.016	1.314	1.052	1.641	
+Platelet	−0.307	0.088	12.263	< 0.001	0.735	0.619	0.873	
+ALT	0.242	0.123	3.915	0.048	1.274	1.002	1.620	
+Direct bilirubin	0.308	0.119	6.648	0.010	1.360	1.077	1.719	
+Creatinine	0.054	0.119	0.207	0.649	1.056	0.836	1.334	
+Urea	−0.006	0.121	0.003	0.959	0.994	0.784	1.260	
+Uric acid	0.433	0.102	18.167	< 0.001	1.542	1.264	1.882	
+Neutrophil count	0.191	0.106	3.240	0.072	1.210	0.983	1.490	
+Neutrophil (%)	0.202	0.103	3.860	0.049	1.224	1.000	1.498	
+PTT	0.384	0.108	12.602	< 0.001	1.468	1.188	1.815	
+Heart rate	0.410	0.093	19.294	< 0.001	1.507	1.255	1.810	
+
+Table 7 Comparison of predictive performance between the 2 methods at 4 time points.
+
+Models	1 Week	2 Weeks	3 Weeks	4 Weeks	
+LASSO	0.679 (0.616, 0.738)	0.725 (0.665, 0.781)	0.786 (0.729, 0.836)	0.715 (0.654, 0.771)	
+Forward-LR	0.687 (0.625, 0.745)	0.738 (0.678, 0.793)	0.802 (0.746, 0.850)	0.754 (0.695, 0.807)	
+Z	0.958	1.472	1.284	2.023	
+P	0.338	0.141	0.199	0.043	
+Note: The LASSO model exhibited abnormally wide confidence intervals at 3 and 4 weeks, likely due to insufficient sample size or skewed data distribution.
+
+Table 8 Comparison of predictive performance among 3 models (validation set).
+
+Time	LASSO-5	LASSO-8	Forward-LR	LASSO-5 vs LASSO-8	LASSO-5 vs Forward-LR	LASSO-8 vs Forward-LR	
+Z	P	Z	P	Z	P	
+1 Wk	0.650 (0.586, 0.710)	0.681 (0.618, 0.739)	0.687 (0.625, 0.745)	1.444	0.149	1.250	0.211	0.292	0.771	
+2 Wk	0.681 (0.618, 0.739)	0.729 (0.669, 0.784)	0.738 (0.678, 0.793)	2.350	0.019	2.044	0.041	0.420	0.675	
+3 Wk	0.720 (0.659, 0.775)	0.760 (0.701, 0.812)	0.802 (0.746, 0.850)	1.535	0.125	2.669	0.008	1.839	0.066	
+4 Wk	0.692 (0.629, 0.749)	0.688 (0.626, 0.746)	0.754 (0.695, 0.807)	0.096	0.924	1.316	0.188	1.857	0.063	
+
+Financial support: This study was supported by the Science and Technology Department of Sichuan Province (No. SCJJ25RKX129)
+
+Conflict of interest: None declared
+
+Publisher’s note: All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher
+
+Patient Permission/Consent Declarations: The requirement for informed consent was waived by the ethics committee due to the retrospective nature of the study and the use of anonymized clinical data.
+
+Ethics Approval and Consent to Participate: This retrospective study was approved by the Ethics Committee of West China Fourth Hospital, Sichuan University (approval No. Gwll2023205). The requirement for informed consent was waived due to the retrospective nature of the study and the use of anonymized clinical data. All procedures were conducted in accordance with the principles of the Declaration of Helsinki.
+
+Declaration of Figures’ Authenticity: All figures submitted have been created by the authors who confirm that the images are original with no duplication and have not been previously published in whole or in part.
+
+
+References
+
+1 Allemani C Matsuda T Di Carlo V CONCORD Working Group Global surveillance of trends in cancer survival 2000-14 (CONCORD-3): Analysis of individual records for 37 513 025 patients diagnosed with one of 18 cancers from 322 population-based registries in 71 countries Lancet 2018 391 10125 1023 75 29395269 10.1016/S0140-6736(17)33326-3 PMC5879496
+2 Antonacci R Baxter S Henderson JD Hospice Palliative Care (HPC) and Medical Assistance in Dying (MAiD): Results from a Canada-wide survey J Palliat Care 2021 36 3 151 56 31411105 10.1177/0825859719865548
+3 Beng TS Ghee WK Hui NY Happiness at the end of life: A qualitative study Palliat Support Care 2022 20 1 69 75 33715663 10.1017/S1478951521000262
+4 Bradley NM Dowrick CF Lloyd-Williams M A survey of hospice day services in the United Kingdom & Republic of Ireland: How did hospices offer social support to palliative care patients, pre-pandemic? BMC Palliat Care 2022 21 1 170 36195870 10.1186/s12904-022-01061-9 PMC9532229
+5 Cagle JG Munn JC Hong S Validation of the Quality of Dying-Hospice Scale J Pain Symptom Manage 2015 49 2 265 76 25057986 10.1016/j.jpainsymman.2014.06.009 PMC4303538
+6 Chang LF Wu LF Lin CK Inpatient hospice palliative care unit and palliative consultation service enhance comprehensive quality of life outcomes in terminally ill cancer patients: A prospective longitudinal study Int J Environ Res Public Health 2021 18 17 8992 34501599 10.3390/ijerph18178992 PMC8431183
+7 Eloranta S Smedby KE Dickman PW Andersson TM Cancer survival statistics for patients and healthcare professionals – A tutorial of real-world data analysis J Intern Med 2021 289 1 12 28 32656940 10.1111/joim.13139
+8 Finkelstein EA Bhadelia A Goh C Cross country comparison of expert assessments of the quality of death and dying 2021 J Pain Symptom Manage 2022 63 4 e419 e29 34952169 10.1016/j.jpainsymman.2021.12.015
+9 Hattori K McCubbin MA Ishida DN Concept analysis of good death in the Japanese community J Nurs Scholarsh 2006 38 2 165 70 16773921 10.1111/j.1547-5069.2006.00095.x
+10 Johansen H Helgesen AK Palliative care in the community – The role of the resource nurse, a qualitative study BMC Palliat Care 2021 Oct 14 20 1 157 34645424 10.1186/s12904-021-00860-w PMC8515638
+11 Joolaee S Ho A Serota K Medical assistance in dying legislation: Hospice palliative care providers’ perspectives Nurs Ethics 2022 29 1 231 44 34538192 10.1177/09697330211012049 PMC8866752
+12 Kim M Cho C Lee C A concept analysis of Quality of Dying and Death (QODD) for non-cancer patients from the perspective of palliative care Asian Journal of Human Services 2015 9 96 106
+13 Mah K Hales S Weerakkody I Measuring the quality of dying and death in advanced cancer: Item characteristics and factor structure of the Quality of Dying and Death Questionnaire Palliat Med 2019 33 3 369 80 30561236 10.1177/0269216318819607
+14 Patrick DL Engelberg RA Curtis JR Evaluating the quality of dying and death J Pain Symptom Manage 2001 22 3 717 26 11532585 10.1016/s0885-3924(01)00333-5
+15 Pérez-Cruz PE Padilla Pérez O Bonati P Validation of the Spanish Version of the Quality of Dying and Death Questionnaire (QODD-ESP) in a Home-Based Cancer Palliative Care Program and Development of the QODD-ESP-12 J Pain Symptom Manage 2017 53 6 1042 1049e3 28323080 10.1016/j.jpainsymman.2017.02.005
+16 Guo J Dai Y Jiang S Machine learning model for prediction of palliative care phases in patients with advanced cancer: A retrospective study BMC Palliat Care 2025 24 1 148 40413472 10.1186/s12904-025-01785-4 PMC12102986
+17 Jung EH Park Y Kim YJ A machine learning-based prognostic model to predict short-term survival in patients with advanced cancer ESMO Open 2023 8 101234
+18 Bjerregaard-Michelsen S Poulsen L Bjerrum A Bøgsted M Vesteghem C Machine learning for prediction of 30-day mortality in patients with advanced cancer: Comparing pan-cancer and single-cancer models ESMO Real World Data Digit Oncol 2025 8 100146 41647716 10.1016/j.esmorw.2025.100146 PMC12836737
+19 Huang Y Bazzazzadehgan S Li J Comparison of machine learning methods versus traditional Cox regression for survival prediction in cancer using real-world data: A systematic literature review and meta-analysis BMC Med Res Methodol 2025 25 1 243 41152747 10.1186/s12874-025-02694-z PMC12570641

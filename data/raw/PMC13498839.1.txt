@@ -1,0 +1,296 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Dose Response
+Journal ID: Dose Response
+NLM Journal ID: 101308899
+Journal ID: DOS
+
+Dose-Response
+
+EISSN: 1559-3258
+Publisher: SAGE Publications
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498839
+PMID: 42633077
+DOI: 10.1177/15593258261481921
+Article ID: 10.1177_15593258261481921
+Article version: 1
+Subjects: Review
+
+The LNT Model and ALARA in Diagnostic Imaging: A Critical Review of Scientific Evidence in the Low-Dose Range
+
+https://orcid.org/0000-0003-1008-6103 Soliman Khaled PhD, MIPEM, DABMP 1
+Alhazmi Abdulaziz PhD 2
+1 Radiation Physics Consulting , Ottawa, ON, Canada
+2 King Saud University Medical City, Medical Physics Section , Riyadh, Saudi Arabia
+Abdulaziz Alhazmi, King Saud University Medical City, Medical Physcis Section, Imam Abdulaziz bin Mohammed bin Saud Street, Postal Code: 12746, P.O. Box: 2897, Riyadh 11196, Saudi Arabia. Email: abdulazizsa@hotmail.com
+Electronic publication date: 2026 Aug 21
+Publication date: 2026 Jul-Sep
+Volume: 24
+Issue: 3
+Electronic Location ID: 15593258261481921
+Received 2026 May 25; Revised 2026 Jul 9; Accepted 2026 Jul 29
+Copyright: © The Author(s) 2026
+Copyright year: 2026
+Copyright holder: SAGE Publications
+License: This article is distributed under the terms of the Creative Commons Attribution-NonCommercial 4.0 License (https://creativecommons.org/licenses/by-nc/4.0/) which permits non-commercial use, reproduction and distribution of the work without further permission provided the original work is attributed as specified on the SAGE and Open Access pages (https://us.sagepub.com/en-us/nam/open-access-at-sage).
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: LNT model, ALARA principle, low-dose radiation, diagnostic imaging, radiation hormesis, radiophobia
+typesetter: ts10
+cover-date: July-September 2026
+
+==============================
+Background
+
+The Linear No-Threshold (LNT) model and the As Low As Reasonably Achievable (ALARA) principle form the cornerstone of contemporary radiation protection. Although these frameworks were designed as conservative regulatory tools, their extrapolation to the low-dose and dose-rate (LDDR) range commonly encountered in diagnostic imaging remains scientifically contentious.
+
+Objective
+
+This review critically examines the scientific basis for applying the LNT model and the ALARA principle in the LDDR range (1–50 mGy) routinely encountered in diagnostic imaging, with the aim of evaluating whether current regulatory practices are proportionate to demonstrated risks.
+
+Methods
+
+We conducted a narrative review of peer-reviewed literature published between 1995 and 2025, retrieved from PubMed, Scopus, and Web of Science using the search terms “LNT model,” “low-dose radiation,” “ALARA,” “radiation hormesis,” “adaptive response,” and “diagnostic reference levels.” Priority was given to systematic reviews, large-cohort epidemiological studies, and consensus statements from professional organizations (ICRP, UNSCEAR, AAPM, HPS, IOMP). Studies were grouped thematically into radiobiological evidence, epidemiological evidence, and clinical/policy implications. We acknowledge that this is a non-systematic review and that selection bias cannot be excluded.
+
+Results
+
+Multiple lines of radiobiological evidence—including DNA repair fidelity at low doses, adaptive cellular responses, apoptotic clearance of damaged cells, and immune surveillance—suggest that the dose-response relationship for stochastic effects in the LDDR range is unlikely to be linear. Large-scale epidemiological studies, including atomic bomb survivor reanalyses, occupational cohorts, and high-background radiation populations, generally fail to demonstrate statistically significant excess cancer risk below approximately 100 mGy, although confidence intervals remain wide. Case examples in scoliosis screening, mammography, and low-dose CT lung cancer screening illustrate scenarios in which overly conservative ALARA implementation may delay or deter clinically beneficial imaging.
+
+Conclusions
+
+Within the LDDR range, the available evidence does not support a linear dose-response relationship, and the indiscriminate application of ALARA based on hypothetical risks may produce net harm through deferred imaging, radiophobia, and inefficient resource allocation. We propose that radiation protection in medical imaging shift toward an evidence-informed framework that prioritizes image quality optimization, individualized risk assessment, and the adoption of complementary principles such as ASARA (As Safe As Reasonably Achievable) and AHARA (As High As Reasonably Achievable benefits). A linear-with-threshold (LT) model and the adverse outcome pathway (AOP) framework warrant further investigation as alternatives to LNT for regulatory purposes.
+
+Graphical Abstract
+
+1. Introduction
+
+Medical imaging using ionizing radiation remains a cornerstone of modern diagnostic medicine, offering effective tools for disease detection, staging, and treatment monitoring. In parallel, advances in radiation therapy over recent decades have improved tumor control while reducing normal-tissue toxicities, illustrating the therapeutic value of ionizing radiation in contemporary medicine.
+
+Despite this clinical track record, public and professional concerns about radiation exposure persist. A significant proportion of these concerns can be traced to the Linear No-Threshold (LNT) model, which posits a strictly proportional relationship between radiation dose and stochastic risk, extending down to zero dose without a threshold. Although the LNT model was originally adopted as a conservative regulatory tool, it has progressively been treated in clinical and public discourse as if it represented established biological reality. This conflation contributes to radiophobia among both clinicians and patients.1,2
+
+National and international radiation protection frameworks—particularly the As Low As Reasonably Achievable (ALARA) principle—were developed in the spirit of prudence. However, when ALARA is implemented as a blanket policy in the low-dose and dose-rate (LDDR) range, it may impose substantial costs without commensurate health benefits. In an era of constrained healthcare budgets worldwide, the proportionality of regulatory interventions in radiation protection deserves careful re-examination.
+
+It is important to clarify at the outset what this review does and does not argue. We do not claim that ionizing radiation is harmless at any dose, nor do we advocate for the abandonment of dose monitoring or quality assurance in medical imaging. Rather, we examine whether the specific extrapolation of the LNT model to the LDDR range (broadly defined as cumulative doses below 100 mGy and dose rates below 6 mGy/h, with a particular focus on the 1–50 mGy range typical of diagnostic imaging) is supported by current evidence, and whether the ALARA principle as currently implemented in this dose range produces net benefit.
+
+The objectives of this review are: (1) to summarize the principal scientific arguments concerning the application of the LNT model in the LDDR range; (2) to evaluate the practical implications of ALARA implementation in routine diagnostic imaging through illustrative clinical case studies; and (3) to outline alternative frameworks—including the linear-with-threshold (LT) model and the adverse outcome pathway (AOP) concept—that may better align radiation protection policy with current biological understanding.
+
+2. Methods
+
+2.1. Literature Search Strategy
+
+A narrative literature review was conducted using PubMed, Scopus, and Web of Science databases for publications between January 1995 and February 2025. The following search terms were used in various combinations: “linear no-threshold model,” “LNT,” “low-dose radiation,” “low-dose-rate,” “ALARA,” “radiation hormesis,” “adaptive response,” “radiation protection,” “diagnostic reference levels,” “medical imaging risk,” and “radiophobia.”
+
+2.2. Inclusion and Exclusion Criteria
+
+We included peer-reviewed original research articles, systematic reviews, meta-analyses, and consensus statements from recognized professional organizations. Priority was given to studies with cohorts exceeding 10,000 subjects, follow-up periods longer than 10 years, and dosimetric methods conforming to ICRU or NIST standards. Studies were excluded if they were non-peer-reviewed, lacked sufficient dosimetric detail, or addressed dose ranges substantially outside the LDDR range without relevant extrapolation.
+
+2.3. Synthesis Approach
+
+Retrieved evidence was organized thematically into three domains: (1) radiobiological mechanisms (DNA repair, adaptive response, apoptosis, dose-rate effects); (2) epidemiological evidence (atomic bomb survivors, occupational cohorts, high-background radiation populations, medical exposure cohorts); and (3) clinical and policy implications. We acknowledge that as a narrative review, this work is subject to selection bias, and we have made efforts to engage with evidence that does not support our position, particularly in the discussion section.
+
+3. The LNT Model: Origins and Limitations in the LDDR Range
+
+The Linear No-Threshold model posits that the risk of stochastic effects—principally cancer—increases linearly with absorbed dose, with no threshold below which risk is zero. The model was originally derived from high-dose, acute-exposure epidemiological data, most notably the Life Span Study (LSS) of Japanese atomic bomb survivors. Its conceptual origins, however, predate the LSS: the no-threshold assumption emerged from H. J. Muller’s 1920s studies of X-ray-induced mutations in Drosophila and was formally adopted for risk-assessment purposes by the 1956 U.S. National Academy of Sciences Biological Effects of Atomic Radiation (BEAR) Genetics Panel, which recommended replacing the prevailing threshold model with a linear, no-threshold one—a history critically documented by Calabrese. 3 Its extrapolation to all exposure levels, including the LDDR range, was adopted as a precautionary measure rather than as a positive demonstration of linearity at low doses. The model now underpins most radiation protection guidelines, including those of the International Commission on Radiological Protection (ICRP) and the National Council on Radiation Protection and Measurements (NCRP). Its validity in the LDDR range, however, has been increasingly questioned over the past two decades.1,2,4
+
+It is important to distinguish two functions of the LNT model. As a regulatory tool, LNT offers operational simplicity and a precautionary bias that may be defensible when biological uncertainty is high. As a biological hypothesis about dose-response in the LDDR range, however, LNT is not directly supported by mechanistic radiobiology and is poorly supported by epidemiology with adequate statistical power. The following subsections address the principal scientific limitations of LNT when treated as a biological model in the LDDR range.
+
+3.1. Evidence of Non-linearity at Low Doses
+
+A core assumption of LNT is that the dose-response function remains linear from approximately 100 mGy down to zero. This assumption is biologically problematic for several reasons. Carcinogenesis is a multi-step process involving the interaction of mutational events, epigenetic modifications, microenvironmental signaling, immune surveillance, and host genetic background. A linear overall dose-response would require that these mechanisms not introduce dose-dependent curvature—through saturable repair, threshold-like checkpoint activation, or a dose-dependent change in slope—across the LDDR range; the available mechanistic evidence instead points to precisely such nonlinearity.5,6
+
+Substantial data from the radiation therapy (RT) community on secondary cancer induction has accumulated over five decades, allowing for analysis of cancer incidence as a function of dose to distant healthy tissues during treatment. Multiple analyses suggest that the cancer-risk-versus-dose relationship in this context is not linear and that application of LNT in this range tends to overestimate observed risk by a substantial margin.7,8 We note an important caveat: RT cohorts are not representative of the general population, as patients differ in age, comorbidities, genetic predisposition, and concurrent therapies. RT evidence is therefore most useful for assessing the LNT model’s predictive accuracy in cancer patients, and extrapolation to screening of healthy populations should be made cautiously.
+
+The 2005 joint report of the French Academy of Sciences and the French National Academy of Medicine concluded that for low doses the LNT model lacks scientific evidence as a basis for risk estimation. 9 Siegel and colleagues reached a similar conclusion in 2019, reporting that available evidence does not support the use of LNT for radiation risk assessment or protection purposes in the LDDR range. 10 A large-scale study of children exposed to nuclear fallout found no measurable increase in leukemia incidence after peak exposure periods. 11 Recent epidemiological studies have also found no evidence of transgenerational hereditary effects following human exposure to ionizing radiation, leading to progressive downward revisions of hereditary risk estimates in successive UNSCEAR reports.12,13
+
+3.2. Dose-Rate Effects and the DDREF
+
+The LNT model in its simplest form assumes that risk depends only on cumulative absorbed dose, not on the rate at which it is delivered. This contradicts a robust body of radiobiological evidence demonstrating that protracted exposures generally produce less biological damage per unit dose than acute exposures of the same magnitude. The Dose and Dose-Rate Effectiveness Factor (DDREF), incorporated into some regulatory frameworks, partially acknowledges this phenomenon, but its application remains controversial and its magnitude debated.14-16
+
+Published studies have reported reductions in the linear component of the dose-response function at low doses or dose rates, consistent with a decrease in slope.15,16 Mutagenic effects at the cellular level reach a minimum at dose rates on the order of 1–10 mGy/min, and protracted exposures produce less damage than acute exposures of equivalent total dose.17,18 This phenomenon is exploited clinically in radiation therapy through dose fractionation, which permits recovery of normal irradiated tissues between fractions. We stress, however, that the tissue-recovery processes operating between high-dose radiotherapy fractions are mechanistically distinct from the DNA-repair and adaptive responses relevant at the low doses and dose rates of diagnostic imaging, and the two should not be equated. At low dose rates, damaged cells may be selectively removed through competition between normal and radiation-initiated cells—a mechanism referred to as recovery of cycling stem cells.19,20
+
+In humans, intra-chromosomal inversions and deletions have not been reliably observed below 100 mGy.21,22 While this could indicate biological tolerance, it is also consistent with the detection limits of current cytogenetic assays. This caveat is important: absence of detectable damage at the assay level does not unequivocally prove absence of risk, and we present this evidence with that limitation in mind. Nonetheless, the inability to detect chromosomal aberrations below 100 mGy bears directly on the proportionality of requiring routine medical examinations for radiation workers whose occupational exposures remain below current annual limits of 20 mSv (or even 50 mSv in some jurisdictions); such requirements may represent inefficient allocation of medical and financial resources without demonstrable benefit.
+
+3.3. Adaptive Response
+
+A further limitation of LNT is its disregard for protective biological responses to low-level radiation, and its implicit assumption that radiation damage is cumulative over the lifespan without compensatory mechanisms. The adaptive response—a stimulation of cellular defense mechanisms following exposure to low doses of radiation—has been documented in vitro and in some in vivo systems.23-25
+
+Repeated imaging over years may, in principle, benefit from fractionated exposures that engage adaptive response pathways. The biological response to acute radiation differs from that to fractionated cumulative exposures of the same total dose. Adaptive response involves DNA repair upregulation, antioxidant defenses, and apoptotic clearance, operating at the molecular, cellular, and immune-system levels.26,27 A frequently cited study of interventional cardiologists reported that chronic low-dose radiation was associated with stimulation of antioxidant defenses and apoptosis at the cellular level, 25 a finding interpreted in an accompanying editorial as consistent with biological responses that are protective rather than harmful at low doses. 28
+
+We note important caveats. First, the adaptive response is not universal: inter-individual variability is substantial, and some genetic backgrounds may show reduced or absent adaptive responses. 29 Second, demonstration of adaptive response at the cellular or molecular level does not automatically translate into clinically meaningful protection from cancer at the whole-organism level. Third, the evidence for adaptive response in humans, as opposed to model systems, remains less definitive than for some other radiobiological phenomena. Nonetheless, several studies indicate that LDDR exposures stimulate protective mechanisms including antitumor immune activation, antioxidant production, and DNA repair pathways that may modulate the cancer-induction risk theoretically predicted by LNT.26,27 The view that these protective pathways collectively render the LNT model inadequate as a biological description of low-dose risk has been advanced in detail by Scott and Tharmalingam 30 and by Tharmalingam and colleagues, 31 drawing on molecular and cellular mechanistic evidence. Epidemiological corroboration comes from population studies of chronically irradiated cohorts, including the Karunagappally high-background-radiation cohort in Kerala. 32
+
+3.4. DNA Repair
+
+At the molecular level, the relationship between absorbed dose and DNA double-strand break (DSB) induction is approximately linear over a wide range of doses. However, the cell’s capacity to repair these breaks is not constant: it depends on the number of concurrent lesions, the dose rate, the radiation quality, and the cell-cycle phase. DNA repair operates through homologous recombination and non-homologous end-joining, with the relative contribution depending on cell-cycle stage. Tubiana and colleagues have argued that DNA repair fidelity is highest at low doses and dose rates, with error rates increasing as dose and dose rate increase. 6 Pollycove and Feinendegen further argued that the DNA damage inflicted by low-dose radiation is small relative to the far larger burden of endogenous DNA damage arising continuously from reactive oxygen species generated by normal oxidative metabolism, and that low-dose exposure can up-regulate protective responses that mitigate this endogenous burden. 33
+
+Thomas and colleagues, using theoretical considerations of DNA repair mechanisms, demonstrated the existence of tolerance to low dose levels at each necessary step of tumor formation, supporting the concept of thresholds in carcinogenesis. 34 This finding is in direct conflict with the LNT assumption.
+
+3.5. Apoptosis and Immune Surveillance
+
+The cell cycle contains checkpoints that monitor genomic integrity; upon detection of abnormalities, cells may undergo cycle arrest and—if damage cannot be repaired—programmed cell death (apoptosis). Surviving damaged cells may also be cleared by immune surveillance at the organismal level. For radiation doses in the 5–50 mGy range, apoptosis may represent an important intrinsic mechanism reducing cancer risk. 35 Above 200 mGy, apoptotic capacity becomes saturated and the protective contribution of this mechanism diminishes. 6
+
+3.6. Methodological Limitations of Current LDDR Research
+
+Honest appraisal requires acknowledgment of methodological limitations that affect interpretation in this field. First, the predominant role of stem cells in carcinogenesis is incompletely reflected in many in vitro studies, which often use differentiated cell lines rather than stem cells. Second, concordance between radiobiological and epidemiological findings in the LDDR range is imperfect. Third, epidemiological studies in this dose range are observational rather than experimental, and may suffer from confounding (lifestyle factors, occupational co-exposures), cohort selection effects, and dose-reconstruction uncertainty.36,37 These limitations apply to both pro-LNT and anti-LNT lines of evidence. Future progress will require integration of mechanistic radiobiology with well-designed epidemiological studies using harmonized dosimetry.
+
+4. ALARA: Principle Versus Practice in the LDDR Range
+
+Before critiquing ALARA implementation, it is important to acknowledge what ALARA was designed to do. As articulated by the ICRP, ALARA is a principle of optimization: doses should be kept as low as reasonably achievable, taking economic and societal factors into account. In its original conception, ALARA is not a mandate to minimize dose at any cost; rather, it is a call for proportionate optimization. In practice, however, ALARA has often been implemented in ways that prioritize dose reduction over image quality and clinical utility, and that impose costs disproportionate to demonstrated risks in the LDDR range.
+
+Our critique therefore is not of ALARA as a principle of optimization, but of its operational implementation when (a) the underlying risk being optimized against is hypothetical and based on LNT extrapolation, and (b) the cost of compliance is high relative to demonstrated benefit. The following clinical scenarios illustrate this concern.
+
+A conceptual clarification is warranted before the case studies below, as it frames all three. The ICRP system of radiological protection rests on two distinct pillars: justification—the determination that a procedure does more good than harm and should be performed at all—and optimization, of which ALARA is the operational expression, keeping dose as low as reasonably achievable once a procedure has been justified. The scenarios that follow primarily engage justification: the concern is that LNT-derived, radiophobic risk framing distorts the benefit–risk judgment and thereby deters or delays clinically indicated imaging. A separate, optimization-level concern arises only where dose reduction is pursued past the point of diagnostic adequacy, which we treat separately in Section 4.4. We present these cases to show how misapplication of either pillar—justification skewed by exaggerated risk perception, or optimization pursued to the detriment of image quality—can produce net clinical harm.
+
+4.1. Scoliosis Radiographic Screening
+
+Patients with idiopathic scoliosis typically undergo multiple spinal radiographs over several years of monitoring, with cumulative doses estimated in the range of 10–25 mGy. 38 Oakley and colleagues argued that the clinical consequences of inadequately monitored scoliosis—including progressive curvature, respiratory compromise, and reduced quality of life—are likely to exceed any plausible radiogenic risk from the imaging required for surveillance. 38 We note that this conclusion involves a counterfactual judgment about untreated disease, and the comparison is one of risk magnitudes rather than direct causation.
+
+Application of LNT-derived risk estimates in this context may discourage appropriate imaging, with potential clinical detriment that is more concrete and immediate than the hypothetical excess cancer risk being avoided.39,40 We suggest that the appropriate response to this clinical scenario is not to reduce imaging-derived doses below already-low levels, but to ensure that imaging is performed when clinically indicated and at image quality sufficient for accurate diagnosis. In ICRP terms, this is properly a matter of justification rather than failed optimization: the surveillance imaging is clearly warranted, and the appropriate safeguard is ensuring that it is not deterred, not further dose reduction.
+
+4.2. Mammographic Breast Cancer Screening
+
+Mammographic screening provides a similar illustration. Concerns about radiation-induced breast cancer—often amplified by radiophobic discourse in popular media—may deter eligible women from participating in screening programs, with documented adverse effects on early detection rates. The typical mean glandular dose from a single screening mammogram is approximately 2.5–4 mGy, and population-based risk-benefit analyses consistently conclude that the mortality benefit of mammographic screening in appropriately selected women substantially exceeds any plausible radiogenic risk, even under conservative LNT-based assumptions.41,42 Several authors have further argued that, given evidence for thresholds and protective biological responses in the LDDR range, conventional LNT-based risk projections overestimate the small radiogenic component of screening risk. 43 This too is fundamentally a justification concern rather than an optimization failure: the benefit–risk balance clearly favours screening in eligible women, so the threat to be managed is radiophobic deterrence of a justified examination, not any deficiency of ALARA.
+
+4.3. Low-Dose CT for Lung Cancer Screening
+
+Lung cancer often remains asymptomatic until advanced stages, contributing to poor survival rates. The National Lung Screening Trial (NLST) demonstrated that annual low-dose computed tomography (LDCT) screening in high-risk individuals—primarily long-term smokers—reduces lung-cancer-specific mortality by approximately 20% compared with chest radiography. 44 The implementation of LDCT lung cancer screening is therefore a high-value intervention, and hesitancy driven primarily by cumulative-dose concerns may forfeit substantial population-level mortality benefits. As in the preceding examples, the operative ICRP pillar here is justification, not optimization: LDCT in high-risk individuals is a justified, high-value examination, and cumulative-dose anxiety threatens its uptake rather than reflecting any shortcoming of ALARA.
+
+4.4. Risks of Underexposure
+
+An often-overlooked consequence of overzealous dose reduction is degraded image quality, which can lead to false-negative findings, repeat examinations (with their own dose burden), and missed or delayed diagnoses.41,42 The patient-level harm from a missed diagnosis is concrete and immediate, whereas the harm from a small dose increment is hypothetical and statistical. Optimal practice prioritizes image quality sufficient for the diagnostic task, with dose minimization as a secondary consideration once diagnostic adequacy is assured.
+
+4.5. Diagnostic Reference Levels and Cumulative-Dose Tracking
+
+Durand and colleagues cautioned against using historical cumulative-dose records as a basis for restricting future imaging in individual patients, arguing that previous-exposure histories have limited legitimate role in clinical decision-making for new indications. 45 While dose monitoring and recording remain important for quality assurance and population-level optimization, allowing cumulative-dose totals to influence individual clinical decisions risks introducing inappropriate constraints on medically indicated imaging.46,47 We support continued use of diagnostic reference levels (DRLs) as a quality-assurance tool, but with explicit recognition that DRLs are not dose limits and should not be used as such for individual patients.
+
+5. Epidemiological Evidence at Low Doses
+
+Several large-scale epidemiological studies have failed to demonstrate statistically significant increases in cancer risk associated with low-dose radiation exposure, though it is important to recognize that absence of detected effect is not equivalent to demonstration of no effect, particularly when statistical power is limited.
+
+Ozasa and colleagues, analyzing atomic bomb survivor data with extended follow-up, reported no statistically significant rise in cancer incidence or mortality below cumulative exposures of approximately 100 mGy. 48 A 21-year South Korean cohort study of 93,920 radiologic technologists found no significant association between occupational radiation exposure and cancer incidence. 49 Boice and colleagues observed no detectable increase in cancer rates among populations in regions of high natural background radiation (100–260 mGy annually) compared with lower-exposure regions. 50 In the largest analysis of its kind, covering the entire US population (over 320 million people across 3,139 counties), David and colleagues reported that life expectancy was approximately 2.5 years longer in areas of relatively high versus low natural background radiation (p < 0.005), an effect they associated with lower mortality from several common cancers. 51
+
+These findings collectively place limits on the magnitude of any low-dose radiation effect, but they do not definitively exclude small effects below current detection limits. We acknowledge that the International Nuclear Workers Study (INWORKS) 52 has reported elevated risk estimates at low cumulative doses, although its interpretation is contested on methodological grounds. 36 Reanalyses of the LSS bearing directly on curve shape reinforce this uncertainty: Furukawa and colleagues, applying a Bayesian semiparametric dose-response model, found the low-dose LSS data compatible with departures from linearity, and Sutou has argued that the Hiroshima–Nagasaki and Fukushima experience is difficult to reconcile with a strict no-threshold assumption.53,54 A fair reading of the evidence is that any excess risk in the LDDR range, if it exists, is likely smaller than LNT projections, but the precise magnitude—and indeed whether the excess relative risk in this range is positive, zero, or negative—remains unresolved. This is precisely the zone of biological uncertainty that radiation protection policy must navigate.
+
+6. Economic and Practical Considerations
+
+Public and professional perceptions of radiation risk are frequently amplified beyond what the evidence supports, and radiophobia compounds this distortion. Rectification requires honest risk communication based on best-available evidence and regulatory frameworks proportionate to demonstrated risk. 55 We note that a fully quantitative cost-effectiveness analysis of current ALARA implementation is beyond the scope of this review and represents an important gap in the literature that we recommend for future study.
+
+Modest relaxation of overly conservative LNT-based restrictions need not diminish the role of radiation protection professionals. Rather, it could redirect expertise toward higher-value activities, including therapeutic uses of low-dose radiation for non-malignant conditions such as inflammatory and degenerative diseases, 56 advances in personalized dosimetry, refinement of radiation risk modeling incorporating individual factors, and emerging applications of ionizing radiation across medicine and biology.
+
+Wilson and colleagues noted that current radiation protection relies on the LNT model despite widespread recognition within the health physics community that it is a useful but fundamentally limited construct. 57 In their review of recent LDDR studies, approximately 62% challenged the adequacy of LNT, while 38% supported it, suggesting that the scientific basis for current policy warrants formal re-examination by relevant authorities.
+
+7. Future Directions and Recommendations
+
+Several priorities emerge from this review. First, unified methods for radiation dosimetry across radiobiological and epidemiological studies are needed; the approach proposed by Desrosiers and colleagues offers a useful starting point. 58 Closer collaboration between dosimetrists and epidemiologists would reduce dosimetric weaknesses that currently confound low-dose risk estimation.
+
+Second, regulatory bodies should explicitly distinguish between LNT as a precautionary regulatory tool and LNT as a biological claim. The ICRP itself recommends against estimating cancer deaths from collective effective dose on the grounds that such estimates are biologically and statistically uncertain 59 —a position somewhat in tension with strict LNT extrapolation as a basis for individual-patient counseling. 60 UNSCEAR has similarly cautioned against calculating numbers of cancer deaths from small doses without robust justification. 61 Professional organizations including the International Organization for Medical Physics (IOMP), the American Association of Physicists in Medicine (AAPM), and the Health Physics Society have issued position statements indicating that risks from doses below 100 mSv encountered in medical imaging are sufficiently small that discussion of speculative individual cancer risk with patients may not be appropriate.47,62,63
+
+Third, alternative dose-response models warrant serious investigation. A linear-with-threshold (LT) model is one option; threshold and hormetic models are others. The choice between models should be guided by best-available evidence rather than precautionary defaults alone.
+
+Fourth, future epidemiological studies should incorporate careful control of confounding factors known to modulate cancer incidence following radiation exposure, including lifestyle, genetic background, and competing exposures. Identifying modulating factors at the cellular and molecular levels—including thresholds for cell-cycle checkpoint activation and apoptotic initiation—would substantially advance risk modeling.
+
+Fifth, we draw attention to the framework proposed by Hendee and O’Connor, 64 which complements ALARA with two additional principles: As Safe As Reasonably Achievable (ASARA), emphasizing total procedural safety beyond radiation alone, and As High As Reasonably Achievable benefits (AHARA), emphasizing maximization of clinical benefit. This triad represents a more complete framework than dose minimization in isolation.
+
+Sixth, the adverse outcome pathway (AOP) concept offers a promising framework for next-generation radiation risk assessment by integrating individual risk variables including tissue sensitivity, cancer-related confounders, genetic background, lifestyle factors, socioeconomic factors, and individual radiosensitivity.65,66
+
+Finally, in diagnostic imaging specifically, Samei and colleagues have proposed a new quantity termed “potential radiation harm,” intended to better capture all aspects of imaging-related risk for purposes of assessment, optimization, and communication. 67 Development and validation of such metrics would enable more nuanced risk communication than current effective-dose-based approaches permit.
+
+8. Limitations of This Review
+
+Several limitations of this review should be acknowledged. First, this is a narrative rather than a systematic review, and is therefore susceptible to selection bias in the included literature. We have made efforts to engage with evidence that challenges our position, but readers should consider this manuscript alongside reviews and consensus statements that take alternative views. Second, several conclusions rest on epidemiological studies with wide confidence intervals at low doses, where statistical power is inherently limited. Third, we have not performed a quantitative economic analysis of ALARA implementation costs; cost-effectiveness claims in this review should therefore be regarded as hypotheses warranting formal investigation. Fourth, individual radiosensitivity is heterogeneous, and policy frameworks must accommodate this variability—a challenge our recommendations only partially address. Fifth, regulatory frameworks serve functions beyond strict scientific accuracy, including legal-liability stability and public trust, which we have not analyzed in detail. Sixth, our characterization of ALARA implementation as sometimes prioritizing dose reduction over image quality is illustrative and mechanism-based rather than derived from systematic institutional audits; compilation of such audit and registry data is a gap we recommend for future study.
+
+9. Conclusions
+
+Within the low-dose and low-dose-rate range relevant to most diagnostic medical imaging, the strict application of the Linear No-Threshold model and the resulting application of the ALARA principle as a blanket policy are not supported by current radiobiological and epidemiological evidence. Multiple lines of mechanistic and observational evidence suggest that the dose-response relationship in this range is unlikely to be linear, and that biological defense mechanisms—including DNA repair, adaptive response, apoptosis, and immune surveillance—provide meaningful protection at doses encountered in routine imaging.
+
+We propose that radiation protection in medical imaging evolve toward an evidence-informed framework that retains dose monitoring and quality assurance, but that explicitly distinguishes optimization (where ALARA remains useful) from minimization (where unrestricted application of LNT-derived risk estimates produces net harm). Adoption of complementary principles such as ASARA and AHARA, exploration of the linear-with-threshold model and the adverse outcome pathway framework, and development of new metrics for radiation harm assessment are all promising directions.
+
+The financial and clinical resources currently consumed by overzealous ALARA implementation in the LDDR range could be redirected toward higher-impact priorities in patient care and population health. We do not advocate abandoning radiation protection; we advocate its evolution into a more proportionate, evidence-based, and patient-centered framework.
+
+ORCID iD
+
+Khaled Soliman https://orcid.org/0000-0003-1008-6103
+
+Data Availability Statement
+
+Data sharing is not applicable to this article as no new data were created or analyzed in this study.*
+
+Author Contributions: Both authors contributed equally to the conceptualization, literature review, drafting, and critical revision of the manuscript. Both authors have read and approved the final version submitted.
+
+Funding: The authors received no financial support for the research, authorship, and/or publication of this article.
+
+The authors declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.
+
+
+References
+
+1 Doss M . Are we approaching the end of the linear no-threshold era? J Nucl Med. 2018;59(12):1788-1793.10.2967/jnumed.118.217182 30262515
+2 Siegel JA Greenspan BS Maurer AH , et al. The BEIR VII estimates of low-dose radiation health risks are based on faulty assumptions and data analyses: A call for reassessment. J Nucl Med. 2018;59:1017-1019.29475999 10.2967/jnumed.117.206219
+3 Calabrese EJ . Origin of the linearity no threshold (LNT) dose-response concept. Arch Toxicol. 2013;87(9):1621-1633.23887208 10.1007/s00204-013-1104-7
+4 Cuttler JM . Leukemia incidence of 96,000 Hiroshima atomic bomb survivors is compelling evidence that the LNT model is wrong. Arch Toxicol. 2014;88(3):847-848.24504164 10.1007/s00204-014-1207-9
+5 Siegel JA Pennington CW Sacks B Welsh J . The birth of the illegitimate linear no-threshold model: an invalid paradigm for estimating risk following low-dose radiation exposure. Am J Clin Oncol. 2018;41(2):173-177.26535990 10.1097/COC.0000000000000244
+6 Tubiana M Feinendegen LE Yang C Kaminski JM . The linear no-threshold relationship is inconsistent with radiation biologic and experimental data. Radiology. 2009;251:13-22.19332842 10.1148/radiol.2511080671 PMC2663584
+7 Sacks B Meyerson G Siegel JA . Epidemiology without biology: false paradigms, unfounded assumptions, and specious statistics in radiation sciences. Biol Theory. 2016;11:69-101.27398078 10.1007/s13752-016-0244-4 PMC4917595
+8 Cosset JM . Is the linear no-threshold (LNT) model relevant for radiotherapy? Radioprotection. 2022;57(3):189-199.
+9 Tubiana M Aurengo A Averbeck D , et al. Dose-effect relationships and the estimation of the carcinogenic effects of low doses of ionizing radiation. Academy of Medicine (Paris) and Academy of Science (Paris) Joint Report No. 2. 2005.
+10 Siegel JA Brooks AL Fisher DR , et al. A critical assessment of the linear no-threshold hypothesis: its validity and applicability for use in risk assessment and radiation protection. Clin Nucl Med. 2019;44:521-525.31107746 10.1097/RLU.0000000000002613
+11 Wakeford R Darby SC Murphy MFG . Temporal trends in childhood leukaemia incidence following exposure to radioactive fallout from atmospheric nuclear weapons testing. Radiat Environ Biophys. 2010;49(2):213-227.20309707 10.1007/s00411-010-0266-4
+12 Yeager M Machiela MJ Kothiyal P , et al. Lack of transgenerational effects of ionizing radiation exposure from the Chernobyl accident. Science. 2021;372(6543):725-729.33888597 10.1126/science.abg2365 PMC9398532
+13 Yamada M Furukawa K Tatsukawa Y , et al. Congenital malformations and perinatal deaths among the children of atomic bomb survivors: a reappraisal. Am J Epidemiol. 2021;190(11):2323-2333.33847738 10.1093/aje/kwab099 PMC8561127
+14 Brenner DJ Doll R Goodhead DT , et al. Cancer risks attributable to low doses of ionizing radiation: assessing what we really know. Proc Natl Acad Sci USA. 2003;100(24):13761-13766.14610281 10.1073/pnas.2235592100 PMC283495
+15 Loucas BD Eberle R Bailey SM Cornforth MN . Influence of dose rate on the induction of simple and complex chromosome exchanges by gamma rays. Radiat Res. 2004;162:339-349.15447049 10.1667/rr3245
+16 Rühm W Woloschak GE Shore RE , et al. Dose and dose-rate effects of ionizing radiation: a discussion in the light of radiological protection. Radiat Environ Biophys. 2015;54:379-401.26343037 10.1007/s00411-015-0613-6
+17 Hoel DG . Comments on the DDREF estimate of the BEIR VII committee. Health Phys. 2015;108:351-356.25627947 10.1097/HP.0000000000000189
+18 Haley B Paunesku T Grdina D Woloschak G . The increase in animal mortality risk following exposure to sparsely ionizing radiation is not linear quadratic with dose. PLoS One. 2015;10(12):e0140989.26649569 10.1371/journal.pone.0140989 PMC4674094
+19 Mitchel REJ . Low doses of radiation are protective in vitro and in vivo: evolutionary origins. Dose Response. 2006;4(2):75-90.18648638 10.2203/dose-response.04-002.Mitchel PMC2477669
+20 Kajita M Fujita Y . EDAC: epithelial defence against cancer—cell competition between normal and transformed epithelial cells in mammals. J Biochem. 2015;158:15-23.25991731 10.1093/jb/mvv050
+21 Hooker AM Bhat M Day TK , et al. The linear no-threshold model does not hold for low-dose ionizing radiation. Radiat Res. 2004;162(4):447-452.15447037 10.1667/rr3228
+22 Zeng G Day TK Hooker AM , et al. Nonlinear chromosomal inversion response in prostate after low dose X-radiation exposure. Mutat Res. 2006;602(1-2):65-73.16982072 10.1016/j.mrfmmm.2006.08.002
+23 Broome EJ Brown DL Mitchel REJ . Dose responses for adaption to low doses of 60Co gamma rays and 3H beta particles in normal human fibroblasts. Radiat Res. 2002;158(2):181-186.12105988 10.1667/0033-7587(2002)158[0181:drfatl]2.0.co;2
+24 Ulsh BA Miller SM Mallory FF Mitchel REJ Morrison DP Boreham DR . Cytogenetic dose-response and adaptive response in cells of ungulate species exposed to ionizing radiation. J Environ Radioact. 2004;74(1-3):73-81.15063537 10.1016/j.jenvrad.2004.01.005
+25 Russo GL Tedesco I Russo M Cioppa A Andreassi MG Picano E . Cellular adaptive response to chronic radiation exposure in interventional cardiologists. Eur Heart J. 2012;33:408-414.21862464 10.1093/eurheartj/ehr263
+26 Averbeck D Salomaa S Bouffler S Ottolenghi A Smyth V Sabatier L . Progress in low dose health risk research: novel effects and new concepts in low dose radiobiology. Mutat Res Rev Mutat Res. 2018;776:46-69.29807577 10.1016/j.mrrev.2018.04.001
+27 Guéguen Y Bontemps A Ebrahimian TG . Adaptive responses to low doses of radiation or chemicals: their cellular and molecular mechanisms. Cell Mol Life Sci. 2019;76:1255-1273.30535789 10.1007/s00018-018-2987-5 PMC11105647
+28 Gori T Münzel T . Biological effects of low-dose radiation: of harm and hormesis. Eur Heart J. 2012;33:292-295.21862465 10.1093/eurheartj/ehr288
+29 Bosi A Olivieri G . Variability of the adaptive response to ionizing radiations in humans. Mutat Res. 1989;211(1):13-17.2921997 10.1016/0027-5107(89)90102-4
+30 Scott BR Tharmalingam S . The LNT model for cancer induction is not supported by radiobiological data. Chem Biol Interact. 2019;301:34-53.30763552 10.1016/j.cbi.2019.01.013
+31 Tharmalingam S Sreetharan S Brooks AL Boreham DR . Re-evaluation of the linear no-threshold (LNT) model using new paradigms and modern molecular studies. Chem Biol Interact. 2019;301:54-67.30763548 10.1016/j.cbi.2018.11.013
+32 Jayalekshmi PA Nair RA Nair RRK , et al. Background radiation and cancer excluding leukemia in Kerala, India—Karunagappally cohort study. Radiat Environ Med. 2021;10:74-81.
+33 Pollycove M Feinendegen LE . Radiation-induced versus endogenous DNA damage: possible effect of inducible protective responses in mitigating endogenous damage. Hum Exp Toxicol. 2003;22(6):290-306.12856953 10.1191/0960327103ht365oa
+34 Thomas AD Fahrer J Johnson GE Kaina B . Theoretical considerations for thresholds in chemical carcinogenesis. Mutat Res Rev Mutat Res. 2015;765:56-67.26281768 10.1016/j.mrrev.2015.05.001
+35 Shah DJ Sachs RK Wilson DJ . Radiation-induced cancer: a modern view. Br J Radiol. 2012;85:e1166-e1173.23175483 10.1259/bjr/25026140 PMC3611719
+36 Hauptmann M Daniels RD Cardis E , et al. Epidemiological studies of low-dose ionizing radiation and cancer: summary bias assessment and meta-analysis. J Natl Cancer Inst Monogr. 2020;56:188-200.10.1093/jncimonographs/lgaa010 PMC8454205 32657347
+37 Brooks AL Dauer LT . Advances in radiation biology: effect on nuclear medicine. Semin Nucl Med. 2014;44:179-186.24832582 10.1053/j.semnuclmed.2014.03.004
+38 Oakley PA Ehsani NN Harrison DE . The scoliosis quandary: are radiation exposures from repeated X-rays harmful? Dose Response. 2019;17(2):1-10.10.1177/1559325819852810 PMC6560808 31217755
+39 Siegel JA Welsh JS . Does imaging technology cause cancer? Debunking the linear no-threshold model of radiation carcinogenesis. Technol Cancer Res Treat. 2016;15(2):249-256.25824269 10.1177/1533034615578011
+40 Siegel JA Pennington CW Sacks B . Subjecting radiologic imaging to the linear no-threshold hypothesis: a non sequitur of non-trivial proportion. J Nucl Med. 2017;58(1):1-6.27493264 10.2967/jnumed.116.180182
+41 Tubiana M Aurengo A Masse R Valleron AJ . Risk of cancer from diagnostic X-rays. Lancet. 2004;363(9424):1908.10.1016/S0140-6736(04)16370-8 15183637
+42 Zanzonico PB . The neglected side of the coin: quantitative benefit-risk analyses in medical imaging. Health Phys. 2016;110:301-304.26808890 10.1097/HP.0000000000000416 PMC5056790
+43 Cuttler JM . Evidence of a dose threshold for radiation-induced leukemia: absorbed dose and uncertainty. Dose Response. 2019;17(1):1-2.10.1177/1559325818820973 PMC6327330 30670938
+44 National Lung Screening Trial Research Team Aberle DR Adams AM , et al. Reduced lung-cancer mortality with low-dose computed tomographic screening. N Engl J Med. 2011;365(5):395-409.21714641 10.1056/NEJMoa1102873 PMC4356534
+45 Durand DJ Dixon RL Morin RL . Utilization strategies for cumulative dose estimates: a review and rational assessment. J Am Coll Radiol. 2012;9:480-485.22748788 10.1016/j.jacr.2012.03.003
+46 Walsh C Murphy D . Should the justification of medical exposures take account of radiation risks from previous examinations? Br J Radiol. 2014;87:20130682.24452059 10.1259/bjr.20130682 PMC4075532
+47 American Association of Physicists in Medicine . AAPM Position Statement on Radiation Risks from Medical Imaging Procedures. Policy PP 25-A. 2011. (Reaffirmed 2021).
+48 Ozasa K Shimizu Y Suyama A , et al. Studies of the mortality of atomic bomb survivors: report 14, 1950-2003: an overview of cancer and noncancer diseases. Radiat Res. 2012;177:229-243.22171960 10.1667/rr2629.1
+49 Lee WJ Ko S Bang YJ Choe SA Choi Y Preston DL . Occupational radiation exposure and cancer incidence in a cohort of diagnostic medical radiation workers in South Korea. Occup Environ Med. 2021;78:876-883.34039756 10.1136/oemed-2021-107452 PMC8606456
+50 Boice JDJ Hendry JH Nakamura N Niwa O Nakamura S Yoshida K . Low-dose-rate epidemiology of high background radiation areas. Radiat Res. 2010;173:849-854.20518665 10.1667/RR2161.1
+51 David E Wolfson M Fraifeld VE . Background radiation impacts human longevity and cancer mortality: reconsidering the linear no-threshold paradigm. Biogerontology. 2021;22(2):189-195.33479810 10.1007/s10522-020-09909-4
+52 Leuraud K Richardson DB Cardis E , et al. Ionising radiation and risk of death from leukaemia and lymphoma in radiation-monitored workers (INWORKS): an international cohort study. Lancet Haematol. 2015;2(7):e276-e281.26436129 10.1016/S2352-3026(15)00094-0 PMC4587986
+53 Furukawa K Misumi M Cologne JB Cullings HM . A Bayesian semiparametric model for radiation dose-response estimation. Risk Anal. 2016;36(6):1211-1223.26581473 10.1111/risa.12513
+54 Sutou S . Questioning the linear no-threshold model (LNT): lessons from Hiroshima/Nagasaki and Fukushima. Dose Response. 2025;23(3):1-19.10.1177/15593258251367588 PMC12414125 40923016
+55 Siegel JA Stabin MG . RADAR commentary: use of linear no-threshold hypothesis in radiation protection regulation in the United States. Health Phys. 2012;102(1):90-99.22134084 10.1097/HP.0b013e318228e5b4
+56 Cuttler JM . Application of low doses of ionizing radiation in medical therapies. Dose Response. 2020;18(1):1-17.10.1177/1559325819895739 PMC6945458 31933547
+57 Wilson C Adams GG Patel P Windham K Ennis C Caffrey E . A review of recent low-dose research and recommendations for moving forward. Health Phys. 2024;126(6):386-396.38568156 10.1097/HP.0000000000001808
+58 Desrosiers M DeWerd L Deye J , et al. The importance of dosimetry standardization in radiobiology. J Res Natl Inst Stand Technol. 2013;118:403-418.26401441 10.6028/jres.118.021 PMC4487307
+59 International Commission on Radiological Protection . The 2007 Recommendations of the International Commission on Radiological Protection. ICRP Publication 103. Ann ICRP. 2007;37(2-4):1.10.1016/j.icrp.2007.10.003 18082557
+60 Malone J Zölzer F . Pragmatic ethical basis for radiation protection in diagnostic radiology. Br J Radiol. 2016;89(1059):20150713.26796852 10.1259/bjr.20150713 PMC4986491
+61 United Nations Scientific Committee on the Effects of Atomic Radiation. Sources, Effects and Risks of Ionizing Radiation . UNSCEAR 2012 Report to the General Assembly with Scientific Annexes. United Nations; 2012.
+62 International Organization for Medical Physics . IOMP Policy Statement No. 3: Predictions of induced cancers and cancer deaths in a population of patients exposed to low doses (<100 mSv) of ionizing radiation during medical imaging procedures; 2013.10.4103/0971-6203.111307 PMC3683301 23776307
+63 Health Physics Society . Radiation risk in perspective: position statement of the Health Physics Society; 1996. (Revised 2010).PS010-1.10.1097/HP.0000000000001157 31703015
+64 Hendee WR O’Connor MK . Radiation risks of medical imaging: separating fact from fantasy. Radiology. 2012;264(2):312-321.22821690 10.1148/radiol.12112678
+65 Chauhan V Klokov D Gonon G , et al. Advancing the adverse outcome pathway (AOP) approach in radiation protection. Int J Radiat Biol. 2021;97(1):1-15.33196339
+66 Preston RJ Dauer LT Boreham DR , et al. Adverse outcome pathways, key events, and radiation risk assessment. Int J Radiat Biol. 2021;97(1):1-10.33211576 10.1080/09553002.2020.1853847 PMC10666972
+67 Samei E Applegate K Bouchud F , et al. Towards potential harm assessment from individual patient radiation doses in imaging procedures: a proposal for a new quantity. Med Phys Int. 2022;10(1):51-58.

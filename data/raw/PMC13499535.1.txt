@@ -1,0 +1,324 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Eur J Pain
+Journal ID: Eur J Pain
+NLM Journal ID: 9801774
+Journal ID: EJP
+
+European Journal of Pain (London, England)
+
+ISSN: 1090-3801
+EISSN: 1532-2149
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499535
+PMID: 42631657
+DOI: 10.1002/ejp.70364
+Article ID: EJP70364
+Article ID: EURJPAIN-D-26-00425
+Article version: 1
+Subjects: Original Article, Original Article
+
+IgG Glycosylation Patterns May Identify Distinct Clinical Trajectories in Fibromyalgia Patients: A Longitudinal Pilot Study
+
+Kung Ling‐Cheng 1
+Nhu Nguyen Thanh https://orcid.org/0000-0002-1636-6061 2
+Yu Yu‐Ying 1
+Tsai I‐Lin https://orcid.org/0000-0002-3951-5197 3 4 5 6 7 isabel10@tmu.edu.tw
+
+Kang Jiunn‐Horng https://orcid.org/0000-0002-7850-4140 8 9 10 jhk@tmu.edu.tw
+
+1 School of Medicine, College of Medicine Taipei Medical University Taipei Taiwan
+2 Faculty of Medicine Can Tho University of Medicine and Pharmacy Can Tho Vietnam
+3 Department of Biochemistry and Molecular Cell Biology, School of Medicine, College of Medicine Taipei Medical University Taipei Taiwan
+4 Graduate Institute of Medical Sciences, College of Medicine Taipei Medical University Taipei Taiwan
+5 Pulmonary Research Center, Wan Fang Hospital Taipei Medical University Taipei Taiwan
+6 Master Program in Clinical Genomics and Proteomics, College of Pharmacy Taipei Medical University Taipei Taiwan
+7 International Ph.D. Program for Cell Therapy and Regeneration Medicine, College of Medicine Taipei Medical University Taipei Taiwan
+8 Graduate Institute of Nanomedicine and Medical Engineering, College of Biomedical Engineering Taipei Medical University Taipei Taiwan
+9 Department of Physical Medicine and Rehabilitation, School of Medicine, College of Medicine Taipei Medical University Taipei Taiwan
+10 Department of Physical Medicine and Rehabilitation Taipei Medical University Hospital Taipei Taiwan
+* Correspondence:
+Jiunn‐Horng Kang (jhk@tmu.edu.tw)
+I‐Lin Tsai (isabel10@tmu.edu.tw)
+
+Electronic publication date: 2026 Aug 22
+Print publication date: 2026 Sep
+Volume: 30
+Issue: 8
+Electronic Location ID: e70364
+Revised 2026 Jul 5; Received 2026 Apr 24; Accepted 2026 Aug 12
+Copyright: © 2026 The Author(s). European Journal of Pain published by John Wiley & Sons Ltd on behalf of European Pain Federation ‐ EFIC ®.
+License: This is an open access article under the terms of the http://creativecommons.org/licenses/by-nc/4.0/ License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited and is not used for commercial purposes.
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: biomarker, chronic pain, fibromyalgia, IgG glycosylation, inflammation, patient stratification
+Figure count: 4
+Table count: 2
+Page count: 11
+
+source-schema-version-number: 2.0
+cover-date: September 2026
+details-of-publishers-convertor: Converter:WILEY_ML3GV2_TO_JATSPMC version:6.8.6 mode:remove_FC converted:22.08.2026
+
+==============================
+ABSTRACT
+
+Background
+
+Altered immunoglobulin G (IgG) glycosylation was implicated in various conditions, but its role in fibromyalgia (FM) remains unclear. This study investigated IgG glycosylation patterns in FM patients and associations between glycosylation changes and clinical profiles.
+
+Methods
+
+We recruited 30 FM patients and 30 healthy controls. Sleep quality (Pittsburgh Sleep Quality Index, PSQI), anxiety (Beck Anxiety Inventory, BAI), depression (Beck Depression Inventory, BDI), widespread pain (Widespread Pain Index), symptom severity (Symptom Severity Scale), functional impact (FM impact questionnaire, FIQ), pain intensity (Visual Analog Scale), and pressure pain threshold were evaluated at baseline in both groups and after 6 months in FM patients. Glycosylation traits were quantified for IgG1, IgG2, and combined IgG3/4. Partial Least Squares explored multivariate associations between glycosylation and clinical changes. Hierarchical clustering explored glycosylation‐change subgroups and compared clinical changes across them.
+
+Results
+
+FM patients had higher baseline PSQI, BAI, and BDI scores than controls, whereas the baseline IgG glycosylation differences were nominal. Nominal longitudinal differences were observed in PSQI, IgG1‐bisecting, IgG1‐sialylation, IgG3/4‐monogalactosylation, and IgG3/4‐agalactosylation. The full 20‐marker longitudinal PLS model was not significant, but in an exploratory reduced model selected from the same data, three IgG3/4 galactosylation‐axis markers were associated with affective and functional change scores. This latent dimension correlated with changes in BAI (r = −0.76), BDI (r = −0.77), and FIQ (r = −0.76). Exploratory clustering suggested three glycosylation‐change subgroups.
+
+Conclusion
+
+IgG3/4 glycosylation changes may track affective and functional symptom changes in FM, but these exploratory findings require validation in larger independent cohorts.
+
+Significance Statement
+
+This study suggested that IgG glycosylation profiles were associated with clinical trajectories in fibromyalgia and could be used to classify the patients into specific subgroups. The findings supported the potential role of immune dysregulation in FM pathophysiology and the value of glycosylation profiling for personalized medicine, in which IgG glycosylation could be considered as biomarkers supporting diagnosis, prognosis, and decision‐making in fibromyalgia management.
+
+1 Introduction
+
+Fibromyalgia (FM) is a chronic pain disorder characterized by widespread pain, fatigue, sleep disturbances, psychological distress, and cognitive dysfunction (Sarzi‐Puttini et al. 2020). Its pathophysiology remains incompletely understood, and its diagnosis relies on clinical criteria; objective laboratory or imaging biomarkers are not used (Wolfe et al. 2016). FM involves central sensitization and dysregulation of pain‐processing pathways, with contributions from autonomic dysfunction and neuroendocrine alterations (Sluka and Clauw 2016). Immune dysregulation may also contribute to its pathogenesis, with reported alterations to inflammatory markers, cytokine profiles, and immune cell functions in FM (Uceyler et al. 2011; Kadetoff et al. 2012; Rodriguez‐Pinto et al. 2014; Backryd et al. 2017; Shiao et al. 2020).
+
+Immunoglobulin G (IgG), the most abundant antibody isotype in human serum, plays a central role in humoral immunity by recognizing antigens and engaging effector functions through its fragment crystallizable (Fc) region (Dekkers et al. 2017). IgG Fc glycosylation significantly influences antibody effector functions through multiple mechanisms. The glycan structure affects the conformation of the Fc region and its affinity for activating receptors (FcγRI, FcγRIIa, and FcγRIIIa) and inhibitory receptors (FcγRIIb) on immune cells (Shields et al. 2002). Afucosylated IgG exhibits significantly stronger affinity for FcγRIIIa on natural killer cells and macrophages than nonafucosylated IgG does, resulting in higher antibody‐dependent cellular cytotoxicity and phagocytosis (Ferrara et al. 2011; Pereira et al. 2018). Galactosylation status influences the ability of IgG to activate the classical complement pathway. Agalactosylated IgG (G0 glycoform) can interact with mannose‐binding lectin and activate a complement through the lectin pathway, contributing to inflammatory responses (Malhotra et al. 1995). Sialylated IgG exhibits anti‐inflammatory activity through multiple mechanisms (Kaneko et al. 2006; Anthony et al. 2008).
+
+Altered IgG Fc glycosylation was reported in autoimmune and inflammatory diseases. Patients with rheumatoid arthritis (RA) exhibit decreased galactosylation and sialylation of total IgG and anticitrullinated protein antibodies, with the degree of agalactosylation correlating with the RA severity (Parekh et al. 1985; Su et al. 2020). Experimental studies revealed that highly sialylated arthritogenic antibodies are anti‐inflammatory molecules that suppress collagen‐induced arthritis (Ohmi et al. 2016). These findings link altered glycosylation to excessive derangement of innate immune responses.
+
+Although IgG glycosylation in autoimmune and infectious diseases has been extensively characterized, no studies have systematically assessed IgG glycosylation patterns in patients with FM or determined whether glycosylation signatures are associated with clinical phenotypes. Therefore, we conducted an exploratory longitudinal study of serum IgG glycosylation in patients with FM. We aimed to (1) compare the IgG glycosylation patterns in patients with FM versus healthy controls at baseline by using univariate and multivariate (partial least squares [PLS]–discriminant analysis [DA]) approaches and (2) explore longitudinal associations between changes in IgG glycosylation and clinical measures over 6 months in patients with FM. As an exploratory extension of the second aim, we performed unsupervised clustering to determine whether patients could be grouped by their glycosylation change profile. Our study provides preliminary exploratory evidence on whether IgG glycosylation differs in patients with FM and whether within‐patient glycosylation changes track symptom changes.
+
+2 Methods
+
+2.1 Participant Recruitment
+
+This longitudinal observational study was conducted at Taipei Medical University Hospital. The study protocol was approved by the Joint Institutional Review Board (N201701062) and conducted in accordance with the Declaration of Helsinki. All participants provided written informed consent before enrolling. We recruited patients with FM who met the following inclusion criteria: (1) age of 20–75 years, (2) meeting the 2016 American College of Rheumatology (ACR) revised diagnostic criteria for FM (Wolfe et al. 2016) at the time of FM diagnosis, and (3) having a stable medication regimen for ≥ 4 weeks before enrollment. The exclusion criteria were as follows: (1) confirmed as having inflammatory rheumatic disease (such as RA, systemic lupus erythematosus, or ankylosing spondyloarthritis), (2) having an active infection within the preceding 4 weeks, (3) undergoing immunomodulatory therapy (systemic corticosteroids, biologics, or disease‐modifying antirheumatic drugs), (4) being pregnant or lactating, (5) having a malignancy within the preceding 5 years, or (6) having a known immunodeficiency. We recruited healthy controls who matched the participants in terms of age and sex.
+
+2.2 Clinical Assessment
+
+All participants underwent a comprehensive clinical evaluation involving the Widespread Pain Index (WPI) and Symptom Severity Scale (SSS), in accordance with the 2016 ACR criteria. We also used the Fibromyalgia Impact Questionnaire‐Revised (FIQ‐R), a 21‐item instrument that assesses function, overall impact, and symptoms, with scores ranging from 0 to 100, where higher scores indicate a stronger impact of FM (Bennett et al. 2009). Moreover, we used a 0–100‐mm pain visual analog scale (VAS) to assess current pain intensity. Finally, we used the Beck Depression Inventory‐II (BDI‐II) and the Beck Anxiety Inventory (BAI) to assess mood and the Pittsburgh Sleep Quality Index (PSQI) to evaluate sleep. We reassessed these parameters and collected blood samples from the patients 6 months after the comprehensive clinical evaluation. The patients continued to receive routine clinical care between the two assessments. Treatments were not standardized or protocolized; instead, treating clinicians prescribed what treatments they deemed appropriate for each patient. Specific treatments were not controlled and could not be linked to the observed glycosylation or symptom changes.
+
+2.3 Blood Sample Collection
+
+All blood samples were collected between 8:00 and 10:00 AM after overnight fasting to minimize circadian and metabolic influences. The samples were allowed to clot at room temperature for 30 min and then centrifuged at 2000 × g for 10 min. Serum aliquots were stored at −80°C until they were analysed. Freeze–thaw cycles were limited to a maximum of two. IgG glycosylation was performed using a previously published method, with some modifications (Shiao et al. 2020; Cheng et al. 2024; described in the Supplement). A flowchart of the IgG analytical process is presented in Figure 1.
+
+FIGURE 1 Schematic of the workflow for longitudinal serum IgG glycoproteomic profiling in patients with fibromyalgia. This longitudinal observational study included patients with FM (n = 30; sampled at baseline and 6‐month follow‐up) and age‐ and sex‐matched healthy controls (n = 30). Serum IgG was purified using Protein G affinity beads and then subjected to trypsin digestion to generate glycopeptides. The resulting samples were analyzed using ultra‐high‐performance liquid chromatography–tandem mass spectrometry to characterize site‐specific (Asn‐297) IgG1, IgG2, and combined IgG3/4 glycoforms. Subsequent data analysis focused on identifying specific glycosylation traits—including bisection, fucosylation, sialylation, and galactosylation—to determine both cross‐sectional differences and longitudinal stability.
+
+2.4 Statistical Analysis
+
+The data preprocessing procedure used in this study is described in the Supplement file. Data are presented as the means ± standard deviations for all continuous variables. Differences in age and body mass index (BMI) between the FM and control groups were assessed using the Mann–Whitney U test. Because clinical characteristics (PSQI, BDI, and BAI scores) and glycosylation markers may be affected by age, linear regressions with 1000 bootstrap resamples and permutation tests were performed to assess the associations between FM and these characteristics while controlling for age. In the FM group, the differences between the baseline and 6‐month measurements were evaluated using paired Wilcoxon signed‐rank tests. A mean change was calculated as the 6‐month value minus the baseline value. Wilcoxon standardized effect sizes were also calculated.
+
+To complement the univariate baseline comparisons, PLS‐DA was performed using all 20 baseline IgG glycosylation traits to differentiate patients with FM from controls. Model significance was assessed through permutation testing (1000 permutations), and classification performance was evaluated using fivefold cross validation repeated 10 times to prevent overfitting in the moderate‐sample, high‐dimensional setting.
+
+To assess multivariate associations between changes in IgG glycosylation markers and clinical outcomes in patients with FM, PLS analysis in the canonical mode was performed. Moreover, once a candidate IgG3/4 galactosylation change axis had been identified, hierarchical clustering using Ward's minimum variance method was applied to the selected markers to identify patient subgroups. The procedures used in the PLS analyses and hierarchical clustering for exploratory grouping of glycosylation change profiles are described in the Supplement file.
+
+All analyses were performed using R version 4.2.3; p‐values < 0.05 were considered statistically significant. Given the exploratory nature of this study, corrections for multiple testing were not applied to the main univariate and multivariate analyses. For the exploratory bivariate marker‐screening step, BH‐adjusted p‐values were used to identify correlations supporting marker selection.
+
+3 Results
+
+3.1 Participant Characteristics
+
+Age (52.5 ± 9.0 vs. 48.1 ± 9.1 years, p = 0.07) and BMI (22.8 ± 3.5 vs. 23.0 ± 4.1, p = 0.854) did not differ significantly between the FM and control groups. However, the PSQI, BAI, and BDI scores in the FM group were significantly higher than those in the control group. Several glycosylation markers also differed significantly between the groups (Figure 2). To complement the univariate comparisons, we performed multivariate PLS‐DA using all 20 baseline glycosylation traits to distinguish patients with FM from controls. The model did not significantly discriminate between the FM and control groups (canonical r = 0.29, permutation p = 0.16; cross‐validated classification no better than chance, error = 0.62). Thus, although nominal differences were found in individual traits, the overall baseline glycosylation profile did not distinguish the patients with FM from the controls.
+
+FIGURE 2 Differences in clinical characteristic scores (i.e., Pittsburgh Sleep Quality Index [PSQI], Beck Anxiety Inventory [BAI], and Beck Depression Inventory [BDI] scores) and glycosylation markers between the FM and control groups, estimated through linear regression controlled for age. The bias‐corrected and accelerated 95% confidence intervals (BCa 95% CIs) were estimated using 1000 bootstrap resamples.
+
+In the FM group, the mean pain duration was 8.5 years (range, 4 months to 30 years). We noted significant changes (from baseline to 6 months later) in PSQI score and several glycosylation markers, which suggested heterogeneity in clinical changes in patients with FM (Table 1). Although the change in PSQI score was nominally significant, the mean change (−1.23; Wilcoxon standardized effect size = 0.46) was smaller than the reported minimal clinically important difference of 2–3 points (Qin et al. 2024) and was therefore not clinically meaningful at the group level.
+
+TABLE 1 Longitudinal changes in FM group (mean ± SD).
+
+Outcome	Baseline (N = 30)	Follow‐up measurement (N = 30)	p	
+Clinical characteristics				
+PSQI	11.6 (4.1)	10.3 (4.5)	0.007	
+BAI	17.7 (12.0)	16.0 (12.3)	0.186	
+BDI	14.7 (11.2)	13.4 (12.0)	0.102	
+WPI	8.0 (5.2)	8.0 (4.8)	0.593	
+SSS	5.8 (3.2)	5.3 (3.0)	0.173	
+FIQ	47.2 (16.2)	42.3 (18.1)	0.109	
+VAS	5.2 (2.4)	4.7 (2.4)	0.324	
+PPT	2.4 (1.2)	2.4 (1.2)	0.792	
+Glycosylation markers				
+IgG1‐Galactosylation	42.60 (6.57)	42.08 (6.52)	0.221	
+IgG1‐Monogalactosylation	25.02 (1.90)	25.20 (1.75)	0.105	
+IgG1‐Digalactosylation	17.59 (5.49)	16.88 (5.57)	0.109	
+IgG1‐Bisecting	23.32 (3.44)	23.54 (3.46)	0.045	
+IgG1‐Fucosylation	96.48 (1.51)	96.56 (1.51)	0.715	
+IgG1‐Sialylation	2.17 (0.72)	2.04 (0.70)	0.01	
+IgG1‐Agalactosylation	32.38 (7.97)	32.72 (7.76)	0.641	
+IgG2‐Galactosylation	31.56 (6.75)	31.22 (6.34)	0.146	
+IgG2‐Monogalactosylation	19.66 (2.53)	19.60 (2.45)	0.158	
+IgG2‐Digalactosylation	11.90 (4.49)	11.62 (4.21)	0.280	
+IgG2‐Bisecting	21.22 (3.14)	21.41 (3.26)	0.428	
+IgG2‐Fucosylation	99.38 (0.17)	99.37 (0.22)	0.935	
+IgG2‐Sialylation	2.42 (0.83)	2.39 (0.70)	0.792	
+IgG2‐Agalactosylation	48.79 (9.15)	49.18 (8.67)	0.135	
+IgG3/4‐Galactosylation	32.62 (7.10)	31.59 (6.83)	0.084	
+IgG3/4‐Monogalactosylation	23.91 (3.71)	23.09 (3.41)	0.004	
+IgG3/4‐Digalactosylation	8.72 (3.92)	8.50 (3.81)	0.516	
+IgG3/4‐Bisecting	19.03 (3.62)	19.65 (2.91)	0.109	
+IgG3/4‐Sialylation	4.36 (1.96)	4.25 (1.90)	0.516	
+IgG3/4‐Agalactosylation	43.47 (10.62)	45.32 (10.10)	0.025	
+Note: Bold values indicate statisical significance at p < 0.05.
+
+Abbreviations: BAI, beck anxiety inventory; BDI, beck depression inventory; FIQ, fibromyalgia impact questionnaire; PPT, pressure pain threshold; PSQI, Pittsburgh Sleep Quality Index; SSS, Symptom Severity Scale; VAS, Visual Analog Scale; WPI, Widespread Pain Index.
+
+3.2 Multivariate Associations Between IgG Glycosylation Markers and Clinical Outcomes in Patients With FM
+
+Initially, PLS analysis involving all 20 IgG glycosylation markers identified three latent components. However, permutation testing revealed that the overall multivariate association was nonsignificant (canonical r = 0.660, permutation p = 0.144). Therefore, as an exploratory step, we constructed a reduced PLS model focusing on IgG3/4 galactosylation traits. On the basis of convergent evidence from variable importance in projection scores (> 1.5) and multiple significant bivariate correlations (Tables S3 and S4), we selected three IgG3/4 glycosylation markers: IgG3/4 galactosylation, IgG3/4 monogalactosylation, and IgG3/4 agalactosylation. Because agalactosylation, monogalactosylation, and total galactosylation are derived from overlapping glycoforms, they are complementary descriptors of a single galactosylation axis rather than independent measures. In the reduced model, the apparent association was stronger (canonical r = 0.692, permutation p = 0.004). However, because the same dataset was used for marker selection and model evaluation, the reduced‐model permutation p value should be interpreted descriptively rather than as confirmatory evidence. These results supported the candidacy of an IgG3/4 galactosylation change axis that can be validated in future rather than indicating that a predictive model was confirmed. Component 1 explained 92.6% of the variance in the marker set and 26.1% of the variance in the clinical outcomes.
+
+Examination of variable loadings revealed the direction of the associations (Table 2). IgG3/4 galactosylation and IgG3/4 monogalactosylation loaded negatively (−0.55 and −0.61, respectively), whereas IgG3/4 agalactosylation loaded positively (0.57) on the canonical variate. Of the clinical outcomes, sleep (PSQI score), anxiety (BAI score), depression (BDI score), functional impact (FIQ score), and pain intensity (VAS score) loaded negatively, indicating that higher agalactosylation, lower galactosylation, and lower monogalactosylation were associated with greater clinical improvement (i.e., more‐negative change scores; Table 2). Bivariate correlations between the three IgG3/4 markers and individual clinical outcomes further clarified these directional associations (Figure S1). The strongest correlations were those between IgG3/4 monogalactosylation and BAI score (r = 0.65) and between IgG3/4 galactosylation and FIQ score (r = 0.60), suggesting that increases in galactosylated glycoforms were associated with less clinical improvement. By contrast, PSQI, SSS, and PPT scores showed negligible or weak bivariate correlations with the three IgG3/4 markers, whereas WPI showed a weak correlation with IgG3/4 monogalactosylation but not a consistent association across the IgG3/4 galactosylation axis. Overall, the glycosylation signature was more strongly associated with affective and functional measures than with pain‐distribution or pressure‐pain‐threshold measures.
+
+TABLE 2 Variable loadings and correlations with the canonical variate.
+
+Variable	Loading	Correlation	
+IgG3/4 Glycosylation markers	
+IgG3/4‐Galactosylation	−0.546	−0.960	
+IgG3/4‐Monogalactosylation	−0.614	−0.951	
+IgG3/4‐Agalactosylation	0.570	0.975	
+Clinical outcomes	
+PSQI_change (Sleep)	−0.023	−0.182	
+BAI_change (Anxiety)	−0.593	−0.759	
+BDI_change (Depression)	−0.447	−0.771	
+FIQ_change (Function)	−0.561	−0.755	
+VAS_change (Pain)	−0.325	−0.440	
+PPT_change	0.079	0.328	
+WPI_change	0.141	−0.083	
+SSS_change	0.040	−0.077	
+
+Variable component correlations quantified the strength of each variable's association with the latent dimension. The three IgG3/4 glycosylation markers were strongly correlated with the latent component (|r| = 0.95–0.98). Of the clinical outcomes, anxiety (r = −0.76), depression (r = −0.77), and functional impact (r = −0.76) exhibited strong associations with the latent dimension, whereas pain intensity exhibited a moderate association (r = −0.44). Sleep quality, a wide pain distribution, symptom severity, and pressure pain threshold exhibited weak associations with the latent dimension (|r| < 0.35; Table 2, Figure 3).
+
+FIGURE 3 Contribution of variables to IgG–clinical outcome associations. The figure illustrates the impacts of each variable on the associations between IgG glycosylation markers and clinical outcomes in fibromyalgia. Percentage changes in IgG3/4 agalactosylation (IgG3/4_agalactosylation_change) indicate a positive impact on IgG–clinical outcome associations, whereas percentage changes in IgG3/4 galactosylation (IgG3/4_galactosylation_change) and IgG3/4 monogalactosylation (IgG3/4_monogalactosylation_change) indicate negative impacts on IgG–clinical outcome associations. Percentage changes in visual analog scale (VAS), Beck Depression Inventory (BDI), Fibromyalgia Impact Questionnaire (FIQ), and Beck Anxiety Inventory (BAI) scores indicate negative impacts on IgG–clinical outcome associations.
+
+Sensitivity analyses using absolute change scores revealed similar directional patterns. The reduced PLS model with absolute change scores indicated an association (canonical r = 0.638, permutation p = 0.032) that was consistent in direction with the finding of the primary percentage change analysis (r = 0.692, p = 0.004). The bivariate correlations between IgG3/4 agalactosylation and clinical outcomes had consistent direction and magnitude for the two change score methods (Table S4).
+
+3.3 Exploratory Clustering of IgG3/4 Galactosylation Change Profiles
+
+Hierarchical clustering on the IgG3/4 glycosylation signature identified a three‐cluster solution (Figure S2) (average silhouette width = 0.531). The cluster sizes were as follows: Cluster 1 (n = 14, 47%), Cluster 2 (n = 12, 40%), and Cluster 3 (n = 4, 13%). Bootstrap stability analysis demonstrated borderline to good cluster stability: Cluster 1 (Jaccard coefficient = 0.73), Cluster 2 (Jaccard coefficient = 0.84), and Cluster 3 (Jaccard coefficient = 0.97). Given the small size of Cluster 3, statistical inferences for this group should be interpreted with caution.
+
+The profiles in the three clusters mainly differed along the IgG3/4 galactosylation change axis (Table S5, Figure 4). Because agalactosylation, monogalactosylation, and total galactosylation are mathematically related descriptors of overlapping glycoforms, these clusters should be interpreted as summaries of within‐cohort variation along this axis rather than as independent biological phenotypes. Cluster 2 had increased IgG3/4 galactosylation, IgG3/4 monogalactosylation, IgG3/4 digalactosylation, and IgG3/4 sialylation but decreased IgG3/4 agalactosylation and IgG1 agalactosylation. The opposite trend was discovered for Clusters 1 and 3 (Table S5). The PLS loadings (Table 2) revealed that the subgroup characterized by increased galactosylation and sialylation (Cluster 2) exhibited less favourable symptom change than did the subgroups with the opposite glycosylation direction (Clusters 1 and 3).
+
+FIGURE 4 Differences in glycosylation marker levels between three clusters. IgG3/4_agalactosylation_change = percentage change in IgG3/4 agalactosylation, IgG3/4_galactosylation_change = percentage change in IgG3/4 galactosylation, and IgG3/4_monogalactosylation_change = percentage change in IgG3/4 monogalactosylation.
+
+When the analysis was adjusted for age and disease duration, the overall cluster effects were significant for anxiety (BAI score: F = 4.30, permutation p = 0.021) and functional impairment (FIQ score: F = 4.31, permutation p = 0.027; Table S6). In post hoc pairwise comparisons, 0.749‐ and 0.488‐unit greater improvements in BAI score were discovered in Clusters 3 and 1, respectively, than in Cluster 2 (permutation p = 0.022 and 0.021, respectively). Regarding functional impairment (FIQ score), Cluster 1 exhibited significantly better outcomes than did Cluster 2 (β = 0.271, p = 0.018); however, the outcomes in Cluster 3 did not differ from those in Cluster 1 or 2 (Table S7).
+
+Given that Cluster 3 contained only four patients, which limited statistical power for direct comparisons, and given the consistent pattern of poorest outcomes across measures in Cluster 2 and similar glycosylation profiles in Clusters 1 and 3, a targeted post hoc comparison was performed in which Cluster 2 (n = 12) was compared with Clusters 1 and 3 combined (n = 18). The Cluster 1 + 3 combination exhibited more favourable changes in FIQ, BAI, and PPT scores than did Cluster 2 (Table S8, Figure S3).
+
+4 Discussion
+
+To our knowledge, this is the first study to examine IgG N‐glycosylation in FM and its longitudinal association with symptom change. Three findings were obtained. First, baseline IgG glycosylation weakly separated patients from controls, and PLS‐DA was nonsignificant. This weak static signature is informative, not merely negative: it is consistent with modest inflammatory burden, argues against profound RA‐like derangement, and reduces support for glycosylation as a diagnostic signature. Second, within‐Patient 6‐month changes along the IgG3/4 galactosylation axis were associated with affective and functional changes, supporting the possibility that longitudinal dynamics provide information distinct from cross‐sectional group differences. Third, exploratory clustering based on this axis suggested heterogeneous trajectories, but not validated biological endotypes. Given the small sample, data‐driven marker selection, and lack of independent validation, stratification or prognostic implications remain hypothesis‐generating.
+
+In RA, decreased IgG galactosylation and sialylation are hallmark features that correlate with disease activity and inflammatory markers (Parekh et al. 1985; Harre et al. 2015; Su et al. 2020). Agalactosylated IgG activates complement through the lectin pathway and exhibits increased binding to certain FcγR variants (Malhotra et al. 1995). It also induces higher levels of inflammatory cytokines from macrophages than do galactosylated forms (Harre et al. 2015). Interestingly, in our multivariate analysis, increased agalactosylation together with decreased galactosylation was associated with clinical improvement in patients with FM. This finding is counterintuitive given that agalactosylated IgG is generally considered proinflammatory and is associated with disease activity in autoimmune conditions such as RA. Our findings suggest that profound immune derangement does not occur in FM, as indicated by the IgG glycosylation pattern. This difference may also reflect a modest inflammatory burden and the heterogeneity of patients with FM. RA involves tissue‐destructive inflammation driven by autoantibodies targeting joint structures, but immunological involvement in FM may be more complex. FM is characterized by chronic low‐grade inflammation (O'Mahony et al. 2021), not acute hyperinflammation (Giorgi et al. 2023). Chronic low‐grade immune activation mediated by altered antibody glycoforms may contribute to the continuance of FM symptoms.
+
+The functional consequences of IgG glycosylation depend not only on the glycan structure but also on the antigen specificity of the antibody. If patients with FM have protective or regulatory IgG antibodies (e.g., anti‐inflammatory or anti‐idiotypic antibodies), increased agalactosylation of these antibodies may enhance their beneficial effects. Research on passive IgG transfer from patients with FM to mice has demonstrated that patients' IgG can induce pain‐like behaviours, suggesting the presence of pathogenic antibodies (Goebel et al. 2021). Glycosylation changes may modulate the activities of such antibodies in complex manners. Although FM is characterized by altered central pain processing, patients with FM also exhibit sensitization of peripheral nociceptors (Serra et al. 2014) and frequently exhibit small‐fibre pathology. Chronically elevated peripheral input plausibly drives central plasticity, and circulating IgG provides a direct peripheral target. In passive transfer studies, patient IgG has been found to sensitize primary afferents in mice (Goebel et al. 2021). An interesting question is how peripheral antibody glycosylation changes may influence the central pain processing abnormalities that characterize FM. Potential mechanisms include peripheral immune cell activation leading to the production of cytokines that sensitize nociceptive pathways and indirect effects on neuroendocrine and autonomic functions through modulation of systemic inflammation. These hypotheses require further investigation through mechanistic studies.
+
+Individual glycosylation traits are unlikely to provide sufficient specificity for the diagnosis of FM. Integration of multiple glycosylation features (galactosylation, sialylation, fucosylation, and subclass‐specific patterns) with clinical parameters and other biomarkers (inflammatory markers and metabolic measures) may improve discriminatory performance. Machine learning approaches could be used to identify the optimal biomarker combination. Although glycosylation patterns lack diagnostic specificity, they may help stratify patients with FM into subgroups with distinct pathophysiology or treatment responses. The available FM treatments such as pregabalin, duloxetine, and milnacipran primarily target neurotransmitter systems and do not directly address immune mechanisms (Giorgi et al. 2024). If altered IgG glycosylation contributes to pathophysiology in a subset of patients, these individuals may benefit from approaches that modulate antibody glycosylation or downstream inflammatory pathways. Furthermore, dietary factors may influence IgG glycosylation patterns (Plomp et al. 2017). Improving metabolic health (through weight reduction and glycemic control) could normalize a patient's glycosylation pattern (Greto et al. 2021). These approaches require extensive validation before they are considered for clinical practice.
+
+The relationship between altered IgG glycosylation and FM pathophysiology likely involves complex interactions. Our study could not establish whether glycosylation changes causally contribute to FM symptoms. Our findings may also reflect an upstream factor (genetic, environmental, or metabolic) that influences both glycosylation and pain processing. FM is increasingly recognized as a heterogeneous syndrome involving multiple pathophysiological pathways (Sluka and Clauw 2016). Furthermore, IgG glycosylation is influenced by multiple factors, including inflammatory cytokines, metabolic status, and hormones (Gudelj et al. 2018; Shkunnikova et al. 2023). The observed glycosylation changes may be secondary to other physiological changes occurring during clinical improvement, including reduced systemic inflammation, improved metabolic health, and restored immune homeostasis. In this scenario, glycosylation patterns would serve as a biomarker reflecting underlying pathophysiological changes rather than a direct causal factor. Future research combining glycosylation data with clinical, inflammatory, and other molecular markers could identify distinct patient subgroups.
+
+The present findings may have implications for future clinical research. First, if the findings can be replicated in larger independent cohorts, longitudinal IgG glycosylation profiling could contribute to multimodal models for identifying patients with less favourable symptom trajectories. Second, serial glycosylation measurements could complement patient‐reported outcomes by providing a biological correlate of symptom change; however, our findings do not establish IgG glycosylation as a treatment response biomarker. Third, understanding the mechanisms underlying various glycosylation change patterns may help clarify the immune‐related heterogeneity in FM and aid the generation of hypotheses for future mechanistic studies.
+
+This study's discovery of strong associations between the IgG3/4 galactosylation change axis and affective and functional measures—particularly anxiety, depression, and FIQ score—is noteworthy. Although FM is characterized by chronic pain, psychological comorbidities are common in patients with FM and substantially influence quality of life and clinical outcomes. In our cohort, the IgG3/4 glycosylation signature was more closely associated with affective and functional measures than with pain‐specific measures. This should not be interpreted as evidence that immune mechanisms are unrelated to nociception in FM. Patient‐derived IgG was shown to sensitize nociceptors and induce pain‐like behaviours in mice (Goebel et al. 2021), and altered cytokine profiles have been linked to FM pain (O'Mahony et al. 2021). Instead, the observed pattern may reflect the specific glycoforms, outcomes, and time interval captured in the present exploratory cohort and must be confirmed in larger studies collecting standardized treatment data and performing independent validations.
+
+As a pilot exploratory study, our study has several limitations. First, although our sample size was adequate for initial biomarker discovery, it was relatively small for obtaining definitive conclusions, particularly regarding the smallest cluster. Larger studies are warranted to confirm our findings and determine whether additional subgroups exist. Bootstrap stability analysis suggested that the cluster partitions were relatively stable within the employed dataset. However, this should not be interpreted as evidence of validated biological phenotypes, particularly considering the small sample size and the magnitude of the smallest cluster. Second, we used a data‐driven variable selection procedure to identify a reduced set of glycosylation markers after the initial full model was found to not reach statistical significance. Although this approach identified a candidate IgG3/4 galactosylation change axis, the p values in the reduced model should be interpreted cautiously because they do not account for the selection process. The present exploratory analysis generated hypotheses that must be tested in independent cohorts. Third, the comparison was limited to healthy controls; individuals with inflammatory disease or chronic pain conditions other than FM were excluded. We did not assess antigen‐specific or autoantibody glycosylation, which may be pathophysiologically relevant. Moreover, we did not perform functional assays (FcγR binding, complement activation, and cytokine induction) to confirm the biological significance of the observed glycosylation changes. Furthermore, several potentially relevant sources of variation could not be fully evaluated, including metabolic status, sex or oestrogen‐related effects, absolute subclass recovery, the season in which the assessment was performed, and the temporal stability of the glycosylation in the controls. The controls were sampled once; therefore, the temporal stability of the glycosylation in the individuals without FM could not be assessed. Future studies should explicitly record and assess these factors. Finally, we examined the changes that occurred over 6 months and did not control for specific treatments. The participants in our cohort received various standard treatments as prescribed by their clinicians, creating a naturalistic but heterogeneous therapeutic context. Although this reflected real‐world clinical practice, it limited our ability to attribute glycosylation changes to specific interventions. Future research should assess glycosylation changes within controlled treatment trials.
+
+5 Conclusion
+
+In this study's exploratory longitudinal cohort, baseline IgG glycosylation could only weakly separate patients with FM from healthy controls. In the patients with FM, changes along the IgG3/4 galactosylation axis were descriptively associated with changes in affective and functional outcomes in a reduced PLS model selected from the same dataset. Exploratory clustering suggested the existence of glycosylation change subgroups; however, these findings should not be interpreted as confirmed FM endotypes. Larger independent studies with repeated control sampling, standardized treatment data, metabolic and hormonal profiling, and subclass recovery assessment are warranted to validate whether IgG glycosylation dynamics have implications for FM stratification or prognosis.
+
+Author Contributions
+
+Ling‐Cheng Kung contributed to the conceptualization, methodology, investigation, and writing – draft. Nguyen Thanh Nhu contributed to the conceptualization, methodology, software, and visualization. Yu‐Ying Yu contributed to the conceptualization, methodology, investigation, and writing – draft. I‐Lin Tsai contributed to the methodology and writing – reviewing and editing. Jiunn‐Horng Kang contributed to the conceptualization, methodology, writing – reviewing and editing, supervision, and funding acquisition.
+
+Funding
+
+The study was supported by the National Science and Technology Council, Taiwan (MOST106‐2314‐B‐038‐067 & MOST108‐2314‐B‐038‐101).
+
+Ethics Statement
+
+This longitudinal observational study was conducted at Taipei Medical University Hospital. The study protocol was approved by the Joint Institutional Review Board (N201701062) and conducted in accordance with the Declaration of Helsinki. All participants provided written informed consent before being enrolled.
+
+Consent
+
+The authors have nothing to report.
+
+Conflicts of Interest
+
+The authors declare no conflicts of interest.
+
+Supporting information
+
+Table S1: Optimized multiple reaction monitoring (MRM) acquisition parameters for targeted analytes.
+
+Table S2: Calculation formula of derived glycosylation traits. Each glycopeptide's response is normalized to a percentage by dividing its individual response by the cumulative response of all glycopeptides at the respective N‐glycosylation sites.
+
+Table S3: Variable Importance in Projection (VIP) scores in the initial PLS analysis.
+
+Table S4: Bivariate correlations between selected IgG3/4 galactosylation‐axis markers and clinical outcome changes using percentage and absolute change scores.
+
+Table S5: IgG3/4‐Glycosylation profiles among the three clusters from the reduced PLS analysis.
+
+Table S6: Overall cluster differences in clinical changes over time among the three clusters.
+
+Table S7: Pairwise comparisons in changes overtime in clinical characteristics among three clusters.
+
+Table S8: Post hoc binary comparison of clinical change scores between Cluster 2 and combined Clusters 1 and 3.
+
+Figure S1: Bivariate correlations between IgG3/4 glycosylation markers and clinical percentage change scores. Heatmap displaying Pearson correlation coefficients between three IgG3/4 glycosylation markers and eight clinical outcome percentage change scores. Colour intensity represents correlation strength, with red indicating positive and blue indicating negative correlations. For all clinical outcomes except PPT, negative percentage change scores indicate improvement; for PPT (pressure pain threshold), positive change indicates improvement. The strongest associations were observed between the glycosylation markers and affective/functional outcomes (BAI, BDI, FIQ), while sleep quality, symptom severity, and pressure‐threshold measures (PSQI, SSS, and PPT) showed negligible or weak correlations with the three markers. Pain distribution (WPI) showed a weak correlation with IgG3/4 monogalactosylation but did not show a consistent association across the IgG3/4 galactosylation axis. BAI = beck anxiety inventory; BDI = beck depression inventory; FIQ = fibromyalgia impact questionnaire; PPT = pressure pain threshold; PSQI = Pittsburgh Sleep Quality Index; SSS = Symptom Severity Scale; VAS = Visual Analog Scale for pain; WPI = Widespread Pain Index.
+
+Figure S2: Patient clustering dendrogram using the IgG3/4 glycosylation signature.
+
+Figure S3: Over time, clinical changes by biomarker‐defined subgroup.
+
+Figure S4: Individual paired trajectories from baseline to 6 months for BAI, FIQ, and PSQI. Grey lines = individual patients, red = group mean. Although mean change is small, patients move in both directions.
+
+Acknowledgements
+
+This manuscript was edited by Wallace Academic Editing.
+
+Artificial Intelligence: During the preparation of this manuscript, the authors used Grammarly for language editing and improving readability, and all suggested edits were subsequently reviewed by the authors. The authors also used Claude (Anthropic) to assist with debugging and correcting R code. All Claude‐assisted code was reviewed and verified by the authors and subsequently executed within the internal R environment. The authors take full responsibility for the content of the published article.
+
+Data Availability Statement
+
+Data are available from the corresponding author on reasonable request.
+
+
+References
+
+Anthony, R. M. , F. Nimmerjahn , D. J. Ashline , V. N. Reinhold , J. C. Paulson , and J. V. Ravetch . 2008. “Recapitulation of IVIG Anti‐Inflammatory Activity With a Recombinant IgG Fc.” Science 320: 373–376.18420934 10.1126/science.1154315 PMC2409116
+Backryd, E. , L. Tanum , A. L. Lind , A. Larsson , and T. Gordh . 2017. “Evidence of Both Systemic Inflammation and Neuroinflammation in Fibromyalgia Patients, as Assessed by a Multiplex Protein Panel Applied to the Cerebrospinal Fluid and to Plasma.” Journal of Pain Research 10: 515–525.28424559 10.2147/JPR.S128508 PMC5344444
+Bennett, R. M. , R. Friend , K. D. Jones , R. Ward , B. K. Han , and R. L. Ross . 2009. “The Revised Fibromyalgia Impact Questionnaire (FIQR): Validation and Psychometric Properties.” Arthritis Research & Therapy 11: R120.19664287 10.1186/ar2783 PMC2745803
+Cheng, Y. H. , C. H. Lee , S. Y. Wang , et al. 2024. “Multiplexed Antibody Glycosylation Profiling Using Dual Enzyme Digestion and Liquid Chromatography‐Triple Quadrupole Mass Spectrometry Method.” Molecular & Cellular Proteomics 23: 100710.38154690 10.1016/j.mcpro.2023.100710 PMC10844133
+Dekkers, G. , L. Treffers , R. Plomp , et al. 2017. “Decoding the Human Immunoglobulin G‐Glycan Repertoire Reveals a Spectrum of Fc‐Receptor‐ and Complement‐Mediated‐Effector Activities.” Frontiers in Immunology 8: 877.28824618 10.3389/fimmu.2017.00877 PMC5539844
+Ferrara, C. , S. Grau , C. Jager , et al. 2011. “Unique Carbohydrate‐Carbohydrate Interactions Are Required for High Affinity Binding Between FcgammaRIII and Antibodies Lacking Core Fucose.” Proceedings of the National Academy of Sciences of the United States of America 108: 12669–12674.21768335 10.1073/pnas.1108455108 PMC3150898
+Giorgi, V. , L. Bazzichi , A. Batticciotto , et al. 2023. “Fibromyalgia: One Year in Review 2023.” Clinical and Experimental Rheumatology 41: 1205–1213.37378487 10.55563/clinexprheumatol/257e99
+Giorgi, V. , P. Sarzi‐Puttini , G. Pellegrino , et al. 2024. “Pharmacological Treatment of Fibromyalgia Syndrome: A Practice‐Based Review.” Current Pain and Headache Reports 28: 1349–1363.39042299 10.1007/s11916-024-01277-9 PMC11666752
+Goebel, A. , E. Krock , C. Gentry , et al. 2021. “Passive Transfer of Fibromyalgia Symptoms From Patients to Mice.” Journal of Clinical Investigation 131: e144201.10.1172/JCI144201 PMC8245181 34196305
+Greto, V. L. , A. Cvetko , T. Štambuk , et al. 2021. “Extensive Weight Loss Reduces Glycan Age by Altering IgG N‐Glycosylation.” International Journal of Obesity 45: 1521–1531.33941843 10.1038/s41366-021-00816-3 PMC8236401
+Gudelj, I. , G. Lauc , and M. Pezer . 2018. “Immunoglobulin G Glycosylation in Aging and Diseases.” Cellular Immunology 333: 65–79.30107893 10.1016/j.cellimm.2018.07.009
+Harre, U. , S. C. Lang , R. Pfeifle , et al. 2015. “Glycosylation of Immunoglobulin G Determines Osteoclast Differentiation and Bone Loss.” Nature Communications 6: 6651.10.1038/ncomms7651 PMC4389255 25825024
+Kadetoff, D. , J. Lampa , M. Westman , M. Andersson , and E. Kosek . 2012. “Evidence of Central Inflammation in Fibromyalgia‐Increased Cerebrospinal Fluid Interleukin‐8 Levels.” Journal of Neuroimmunology 242: 33–38.22126705 10.1016/j.jneuroim.2011.10.013
+Kaneko, Y. , F. Nimmerjahn , and J. V. Ravetch . 2006. “Anti‐Inflammatory Activity of Immunoglobulin G Resulting From Fc Sialylation.” Science 313: 670–673.16888140 10.1126/science.1129594
+Malhotra, R. , M. R. Wormald , P. M. Rudd , P. B. Fischer , R. A. Dwek , and R. B. Sim . 1995. “Glycosylation Changes of IgG Associated With Rheumatoid Arthritis Can Activate Complement via the Mannose‐Binding Protein.” Nature Medicine 1: 237–243.10.1038/nm0395-237 7585040
+Ohmi, Y. , W. Ise , A. Harazono , et al. 2016. “Sialylation Converts Arthritogenic IgG Into Inhibitors of Collagen‐Induced Arthritis.” Nature Communications 7: 11205.10.1038/ncomms11205 PMC4822049 27046227
+O'Mahony, L. F. , A. Srivastava , P. Mehta , and C. Ciurtin . 2021. “Is Fibromyalgia Associated With a Unique Cytokine Profile? A Systematic Review and Meta‐Analysis.” Rheumatology (Oxford) 60: 2602–2614.33576773 10.1093/rheumatology/keab146 PMC8213433
+Parekh, R. B. , R. A. Dwek , B. J. Sutton , et al. 1985. “Association of Rheumatoid Arthritis and Primary Osteoarthritis With Changes in the Glycosylation Pattern of Total Serum IgG.” Nature 316: 452–457.3927174 10.1038/316452a0
+Pereira, N. A. , K. F. Chan , P. C. Lin , and Z. Song . 2018. “The ‘Less‐Is‐More’ in Therapeutic Antibodies: Afucosylated Anti‐Cancer Antibodies With Enhanced Antibody‐Dependent Cellular Cytotoxicity.” MAbs 10: 693–711.29733746 10.1080/19420862.2018.1466767 PMC6150623
+Plomp, R. , L. R. Ruhaak , H.‐W. Uh , et al. 2017. “Subclass‐Specific IgG Glycosylation Is Associated With Markers of Inflammation and Metabolic Health.” Scientific Reports 7: 12325.28951559 10.1038/s41598-017-12495-0 PMC5615071
+Qin, Z. , Y. Zhu , D. D. Shi , R. Chen , S. Li , and J. Wu . 2024. “The Gap Between Statistical and Clinical Significance: Time to Pay Attention to Clinical Relevance in Patient‐Reported Outcome Measures of Insomnia.” BMC Medical Research Methodology 24: 177.39118002 10.1186/s12874-024-02297-0 PMC11308508
+Rodriguez‐Pinto, I. , N. Agmon‐Levin , A. Howard , and Y. Shoenfeld . 2014. “Fibromyalgia and Cytokines.” Immunology Letters 161: 200–203.24462815 10.1016/j.imlet.2014.01.009
+Sarzi‐Puttini, P. , V. Giorgi , D. Marotto , and F. Atzeni . 2020. “Fibromyalgia: An Update on Clinical Characteristics, Aetiopathogenesis and Treatment.” Nature Reviews Rheumatology 16: 645–660.33024295 10.1038/s41584-020-00506-w
+Serra, J. , A. Collado , R. Sola , et al. 2014. “Hyperexcitable C Nociceptors in Fibromyalgia.” Annals of Neurology 75: 196–208.24243538 10.1002/ana.24065
+Shiao, J. Y. , Y. T. Chang , M. C. Chang , et al. 2020. “Development of Efficient On‐Bead Protein Elution Process Coupled to Ultra‐High Performance Liquid Chromatography‐Tandem Mass Spectrometry to Determine Immunoglobulin G Subclass and Glycosylation for Discovery of Bio‐Signatures in Pancreatic Disease.” Journal of Chromatography A 1621: 461039.32295703 10.1016/j.chroma.2020.461039
+Shields, R. L. , J. Lai , R. Keck , et al. 2002. “Lack of Fucose on Human IgG1 N‐Linked Oligosaccharide Improves Binding to Human Fcgamma RIII and Antibody‐Dependent Cellular Toxicity.” Journal of Biological Chemistry 277: 26733–26740.11986321 10.1074/jbc.M202069200
+Shkunnikova, S. , A. Mijakovac , L. Sironic , M. Hanic , G. Lauc , and M. M. Kavur . 2023. “IgG Glycans in Health and Disease: Prediction, Intervention, Prognosis, and Therapy.” Biotechnology Advances 67: 108169.37207876 10.1016/j.biotechadv.2023.108169
+Sluka, K. A. , and D. J. Clauw . 2016. “Neurobiology of Fibromyalgia and Chronic Widespread Pain.” Neuroscience 338: 114–129.27291641 10.1016/j.neuroscience.2016.06.006 PMC5083139
+Su, Z. , Q. Xie , Y. Wang , and Y. Li . 2020. “Abberant Immunoglobulin G Glycosylation in Rheumatoid Arthritis by LTQ‐ESI‐MS.” International Journal of Molecular Sciences 21: 2045.32192063 10.3390/ijms21062045 PMC7139372
+Uceyler, N. , W. Hauser , and C. Sommer . 2011. “Systematic Review With Meta‐Analysis: Cytokines in Fibromyalgia Syndrome.” BMC Musculoskeletal Disorders 12: 245.22034969 10.1186/1471-2474-12-245 PMC3234198
+Wolfe, F. , D. J. Clauw , M. A. Fitzcharles , et al. 2016. “2016 Revisions to the 2010/2011 Fibromyalgia Diagnostic Criteria.” Seminars in Arthritis and Rheumatism 46: 319–329.27916278 10.1016/j.semarthrit.2016.08.012
