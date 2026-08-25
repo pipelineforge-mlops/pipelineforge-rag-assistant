@@ -1,0 +1,232 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: ACS Meas Sci Au
+Journal ID: ACS Meas Sci Au
+NLM Journal ID: 9918232604306676
+Journal ID: tg
+
+ACS Measurement Science Au
+
+EISSN: 2694-250X
+Publisher: American Chemical Society
+pubs.acs.org/measureau
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13495733
+PMID: 42630878
+DOI: 10.1021/acsmeasuresciau.5c00207
+Article version: 1
+Subjects: Article
+
+A Single-Enzyme Electrochemical Biosensor for Lactose Detection in Human Breastmilk and Dairy Products
+
+6327115 https://orcid.org/0000-0002-5335-1088 Sánchez-Salcedo Raquel
+5171805 Geddes Donna T.
+1659217 https://orcid.org/0000-0002-1536-7804 Voelcker Nicolas H.
+† Drug Delivery, Disposition and Dynamics, Monash Institute of Pharmaceutical Sciences , 2541 Monash University , Parkville , Victoria 3052 , Australia
+‡ Melbourne Centre for Nanofabrication, Victorian Node of the Australian National Fabrication Facility , Clayton , Victoria 3168 , Australia
+§ Australian Research Council Training Centre for Next-Gen Biomedical Analysis , Perth , Western Australia 6009 , Australia
+∥ School of Molecular Science , The University of Western Australia , Perth , Western Australia 6009 , Australia
+⊥ UWA Centre for Human Lactation Research and Translation , The University of Western Australia , Crawley , Perth , Western Australia 6009 , Australia
+# Materials Science and Engineering , Monash University , Clayton , Victoria 3168 , Australia
+* Email: nicolas.voelcker@monash.edu.
+Electronic publication date: 2026 Mar 18
+Publication date: 2026 Aug 19
+Volume: 6
+Issue: 4
+First page: 949
+Last page: 956
+Received 2025 Dec 18; Accepted 2026 Mar 10; Revised 2026 Mar 7; 2026 Mar 18
+Copyright: © 2026 The Authors. Published by American Chemical Society
+Copyright year: 2026
+Copyright holder: The Authors
+
+License: This article is licensed under CC-BY-NC-ND 4.0
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: electrochemical sensor, point-of-care diagnostics, lactose detection, human breast milk, dairy products, single-enzyme sensing platform
+
+Funding: Australian Research Council 10.13039/501100000923 FL220100185
+
+Funding: Australian Research Council 10.13039/501100000923 IC210100056
+document-id-old-9: tg5c00207
+document-id-new-14: tg5c00207
+production-flag-MathML-config-version: 3
+production-flag-journal-citation-display-style: acs-titles
+production-flag-journal-date-display-style: dates-used-rcd-rvd-acc
+production-flag-si-avail: yes
+document-id-alt-64: 9bb9b9000db29d05ee50c7462935fdd2ae34d8d5697f038afeb97d424a96e830
+
+==============================
+Lactose, a disaccharide found predominantly in human breast milk and dairy products, plays a vital role in human health and nutrition. While lactose is an essential energy source particularly for infant growth, it is also a biomarker of low milk production in breastfeeding women. Furthermore, lactose intolerance affects a substantial portion of the global population, impacting the quality of life. Therefore, the ability to detect and quantify lactose is important as a biomarker for both milk production and nutritional content. Here, we report on the development of a single-enzyme electrochemical biosensor for lactose employing lactose oxidase (LOx), which converts lactose to lactobionic acid and hydrogen peroxide. The sensor showed high specificity, achieving a limit of detection of 1.4 μM. The analytical performance of the sensor was verified in human breast milk as well as bovine milk. This approach allows for a rapid, reliable, and potentially portable platform for lactose detection, making it ideal for both clinical applications and routine controls in the food industry.
+
+1 Introduction
+
+Lactose, formed by a β-1,4-glycosidic bond between monosaccharides glucose and galactose, constitutes the major disaccharide in milk and plays an important role in human nutrition and health. Lactose accounts for 7% of human breast milk (HBM), whereas it constitutes 4.8% in bovine milk. The level of lactose is important for optimal infant development and growth but also for defining the nutritional value and functional properties of dairy products consumed by the general population. Lactose serves as a key energy source (approximately 40% of total energy HBM) while contributing to the osmotic balance of the milk and acting as a natural prebiotic due to intestinal fermentation processes. Moreover, it has been described as facilitating the absorption of vitamin D and minerals such as calcium and magnesium. −
+
+These multifaceted biological roles underline the importance of sensitive and reliable analytical methods for lactose quantification across various matrices and milk sources. In the case of the dairy industry, the detection of lactose content is necessary for quality assurance, detection of milk adulteration, or/and verification of dairy products labeled as lactose-free or low lactose aimed at individuals who suffer from lactose intolerance. This is a common dietary concern arising from a deficiency in the production of enzyme lactase, which impairs the digestion of lactose in the intestine, causing bad absorption and leading to symptoms such as bloating, abdominal pain, diarrhea, and nausea. − Additionally, lactose levels can serve as an indicator of milk authenticity, and their reliable determination is vital for regulatory compliance and consumer protection.
+
+While lactose analysis is essential for dairy products, the significance of lactose analysis extends to HBM. Beyond infant growth, recent studies have highlighted the bioactive role of lactose in promoting gut health and immune function. These findings fuel an increased focus on lactose quantification. Moreover, dysregulation or changes in lactose levels in HBM have been associated with delayed initiation of lactation and low milk production. − Perceived or actual low milk supply is the main reason for the introduction of infant formula or the cessation before six months postnatal, the period of time recommended for exclusive breastfeeding by the WHO. , Early weaning increases the risk of both acute diseases such as respiratory and gastrointestinal infection, which are major causes of child mortality as well as chronic disease later in life. Thus, lactose emerges as an important biomarker for monitoring not only energy content but also lactation performance, necessitating a precise and accessible analytical tool for its monitoring.
+
+Current analytical methods for lactose present notable limitations. Traditional analytical methods include high-performance liquid chromatography (HPLC), near-infrared spectroscopy (NIR), nuclear magnetic resonance (NMR) spectroscopy, or enzymatic methods, each with advantages and drawbacks. While HPLC and NMR are highly accurate, their cost and reliance on specialized equipment and highly qualified professionals limit their widespread use. , NIR is a rapid and noninvasive technique although still requires calibration and validation against a reference method such as HPLC and requires relatively large sample volumes (3 mL). Meanwhile, enzymatic methods such as ELISA, although they are routinely used for quality control, are time-consuming, require laboratory facilities and suffer from reduced accuracy due to some interferences such as casein micelles, cytokines and chemokines, fat globules, or proteins present in the sample particularly at low lactose concentration. − Therefore, to assess these challenges, it is critical to explore new approaches that overcome the limitations of current measurement techniques with respect to cost, speed of analysis, portability, and miniaturizability. The development of a biosensor is a promising alternative and would provide valuable insights into milk composition, enhancing food safety and supporting personalized nutritional interventions for both infants and adults.
+
+Electrochemical biosensors align well with the concept of portability, low cost, and reduced analysis time while maintaining high sensitivity and selectivity. Previous efforts have explored these enzymatic electrochemical sensors for lactose detection, often incorporating complex multienzyme reactions and nanomaterials to enhance sensitivity. For instance, Halpin et al. described an enzymatic sensor for lactose in dairy products using platinum and glassy carbon electrodes modified with chitosan, β-galactosidase (β-gal), and glucose oxidase (GOx) and a cross-linker built using a layer-by-layer (LbL) approach. Further, de Brito and co-workers developed an amperometric sensor in which the enzyme is embedded in a carbon nanotubes matrix. Although these strategies achieved sufficient sensitivity, they introduced design complexities, susceptibility to interferences, and increased manufacturing cost. The requirement for the incorporation of nanomaterials or polymers limits their practical deployment, especially for large-scale or disposable applications.
+
+In contrast to lactose measurement employing a double or triple enzyme reaction along with complex modifications, this study reports on an approach employing a single enzyme, lactose oxidase (LOx), to catalyze the conversion of lactose to lactobionic acid and hydrogen peroxide, which can be easily detected by amperometry, allowing the indirect detection of lactose. Unlike multienzyme cascade approaches, which depend on sequential catalytic steps and are therefore governed by the slowest enzymatic reaction and potentially affected by intermediate species, a single-enzyme strategy reduces to a minimum the cumulative kinetic limitations. This approach enhances stability and reliability, which is crucial in complex matrices. The enzyme used in this study has previously only been described and employed as an antimicrobial to inhibit the growth of Listeria monocytogenes in inoculated UHT skim milk.
+
+Hence, we report here the first enzymatic sensor employing LOx-modified gold disc electrodes for the analysis of lactose in both HBM and bovine milk with high sensitivity and selectivity. This alternative method provides a simpler and more direct process, and the results obtained demonstrate an excellent correlation with conventional HPLC detection, showcasing the potential of this biosensor to enable lactose analysis in both clinical and commercial applications. This approach promises to enhance health monitoring, supporting more personalized and accurate nutritional interventions, and potentially improve quality control of dairy product.
+
+2 Materials and Methods
+
+2.1 Materials and Reagents
+
+LactoYield, commonly named lactose oxidase (LOx), was provided by the Novozymes Group Entity (Novozymes Australia). Disodium hydrogen phosphate (Na2HPO4), sodium dihydrogen phosphate monohydrate (NaH2PO4), potassium chloride (KCl), sodium chloride (NaCl), glutaraldehyde, phosphate buffer saline 10x concentrate pH 7.4 (10xPBS), and cysteamine were purchased from Sigma-Aldrich Chemical Co. Ultrapure water (resistivity: 18.2 MΩ·cm) was obtained from a Milli-Q System and used to prepare all aqueous solutions unless specifically noted otherwise. Human milk oligosaccharides (lacto-N-tetraose) were synthesized in Dr. Keith Stubbs’ research group at the University of Western Australia. HBM samples were collected from lactating women at the University of Western Australia for milk composition analysis. This study was approved by the University of Western Australia Human Research Ethics Committee (2019/RA/4/20/6134). Informed written consent was obtained from all of the participants. Regular full cream milk, skim milk, lactose-free milk, and soy milk were acquired in local supermarkets.
+
+2.2 Enzyme Assay Design
+
+Standard gold disc electrodes (CH instruments Inc., USA; diameter: 2 mm) were mechanically polished with a 0.05 μm alumina slurry using a soft pad. Afterward, the gold surface was electrochemically conditioned in 0.5 M H2SO4 by applying 10 potential cycles from 0 to 1.6 V vs. a reference electrode Ag/AgCl. Then, the electrodes were washed thoroughly with Milli-Q water and dried with nitrogen before the functionalization. The electrodes were covered with 100 mM cysteamine for 1 h at room temperature (RT). Subsequently, a 45 min incubation step was performed with 2.5% glutaraldehyde in 0.1 M PBS buffer. Afterward, the immobilization of 0.5 U/mL of LOx enzyme was carried out overnight at 4 °C. Volumes of 6 μL were used for the coverage of the electrode surface via drop-casting; after each step, the electrode was washed with the buffer used in the next step and dried under N2 gas.
+
+2.3 Electrochemical Measurements
+
+All electrochemical measurements were performed using the CHI 650E electrochemical analyzer (CH Instruments, USA) controlled by Chi 650e software. Cyclic voltammetry (CV) and electrochemical impedance spectroscopy (EIS) measurements for characterization and amperometry for detection were carried out in a conventional three-electrode cell with a gold disc electrode as the working electrode (WE), a Ag/AgCl as the reference electrode, and a platinum wire as the counter electrode. CV and EIS measurements were performed in 5 mM Fe­(CN)6 –3/–4 in 0.1 M PBS; for the EIS measurements, a frequency range of 0.1 Hz–10 kHz was applied and for the CV, the voltage was cycled from −0.3 to 0.7 V. Lactose detection was performed amperometrically by applying a constant potential of 0.7 V to measure the enzymatically generated H2O2. , Increasing volumes of lactose standard solutions were sequentially added to the electrochemical cell (V cel = 5 mL) under continuous stirring to construct calibration curves. Similarly, breast milk samples, dairy products, and potential interfering species for selectivity assays were introduced into the three-electrode cell under identical experimental conditions.
+
+2.4 Extraction and Calculation of the Signal for the Standard Calibration Curve
+
+All electrochemical measurements were carried out by means of amperometry, using sequential additions of lactose standards into the electrochemical cell. For each addition step, the analytical response was defined as the incremental current change (ΔI, A), calculated as the difference between the steady-state current recorded after the addition and the baseline current measured immediately before the addition. Accordingly, the calibration data were constructed using ΔI values for each concentration step rather than the absolute current intensity I(A) observed at individual time points in Figure a. To reduce the impact of interelectrode variability and day-to-day experimental fluctuations, the incremental signals were normalized within each individual experiment. Specifically, the ΔI value obtained at the highest lactose concentration in each experiment was defined as 100%, and all other ΔI responses from that same experiment were expressed as a percentage of the maximum value. Thus, the data presented in Figure b correspond to normalized ΔI(A) and do not represent ratios of absolute I(A).
+
+1 (a) Amperometric response of the lactose biosensor to the consecutive additions of lactose recorded in 0.1 M PBS at an applied potential of 0.7 V. (b) Calibration curve derived from the amperometric measurements, showing the linear response of the biosensor within the tested lactose concentration range up to 0.35 mM. The regression equation is I currentl(%) = 310.6 ± 4.2 [lactose]­(mM) + 2.9 ± 0.6 (R 2 = 0.997) (SD of n = 3).
+
+Each data set was processed using the same ΔI calculation and normalization procedure described above. The plotted values in Figure b represent the mean normalized response ±SD of three independent assay (n = 3). Data set for the standard calibration curve including the absolute I(A) values are reported in Table S2.
+
+2.5 Treatment of Human Breast Milk Samples
+
+HBM samples were centrifuged at 12000 rpm for 5 min, and the up-fat layer was carefully removed. The samples were further diluted 1:10 in ultrapure H2O prior to analysis.
+
+2.6 Selectivity and Control Studies for the Lactose Sensor
+
+The selectivity of the developed lactose sensor was assessed against human milk oligosaccharides (HMOs), glucose, and lactate, natural interferences found in HBM, with the latter occurring at much lower concentration. Further negative control tests were conducted analyzing commercial samples of lactose-free bovine milk in which the lactose has been digested adding lactase enzyme during the manufacturing process and vegan soy milk, which does not contain lactose.
+
+2.7 Storage and Stability Studies
+
+Stability studies were performed monitoring the response of the sensor in the presence of 100 μM lactose over time up to 2 weeks. Two different storage approaches were assessed. First, for wet conditions, the electrodes were kept in 1xPBS in the fridge at 4 °C. Second, for dry conditions, following a procedure previously described with some modifications, the electrodes were incubated in a solution of 2.5% BSA and 1% of glucose in 1xPBS for 30 min, dried under a N2 flow, and kept in a sealed container at 4 °C. Prior to the measurements, the electrodes were rehydrated in buffer for 10 min.
+
+2.8 Ultrahigh Performance Liquid Chromatography (UHPLC) Lactose Analysis
+
+HBM samples were also analyzed by UHPLC employing a Shimadzu UHPLC system with a refractive index detector RID-10A and an oven temperature set to 85 °C and a mobile phase flow of 0.7 mL/min. Water was used as the mobile phase previously sonicated for 10 min. The lactose standards were prepared at a concentration of 0, 50, 100, 150, 200, 250, and 300 mM in water. The volume injected for both standards and samples was 10 μL and the total run time was 15 min, the average retention time of lactose being 8.86 min. The lactose concentration of the samples was quantified by interpolating the response peak areas in the external calibration curve obtained. Further details and the results of the analysis by UHPLC can be found in the Supporting Information (Table S2).
+
+3 Results and Discussion
+
+This work reports the development of a single-enzyme electrochemical sensor for the detection of lactose in milk from different sources. The capability to accurately quantify lactose in these matrices is highly valuable for quality control, nutritional monitoring, and clinical assessment of lactation performance. The sensor was designed as a POC platform, focusing on portability and ease of use, thus making it suitable for low resource settings or at-home testing without the need of expertise or further equipment.
+
+3.1 Sensor Fabrication
+
+The surface modification of the electrode was electrochemically characterized by CV and EIS recording the signal in 5 mM K4[Fe­(CN)6]/K3[Fe­(CN)6] solution in 0.1 M PBS. The modification protocol followed the procedure described in Section , briefly, electrode functionalization with 100 mM cysteamine and cross-linking with 2.5% glutaraldehyde followed by immobilization of 0.5 U/mL LOx.
+
+The sensor was characterized by means of EIS, and the resulting Nyquist plots (shown in Figure S1) were fitted to a Randles equivalent circuit (R(C[RW])) obtaining the charge transfer resistance (R ct(Ω)) for each stage. The bare gold electrode exhibited an R ct of 0.385 ± 0.002 kΩ. Upon modification with cysteamine, the Rct slightly decreased to 0.12 ± 0.01 kΩ due to the amine groups being highly protonated at the pH of 7.5, leading to electrostatic interactions with the negatively charged redox probe ([Fe­(CN)6]−3/–4). Following the application of glutaraldehyde, the Rct increased to 0.77 ± 0.02 kΩ, consistent with the known behavior of increasing interfacial resistance to outer-sphere redox probes. The immobilization of LOx subsequently led to a sharp increase in R ct to 7.7 ± 0.2 kΩ, confirming the successful formation of an enzyme layer with inherently insulating characteristics, which impedes direct electron transfer between the redox mediator and the electrode surface. These electrochemical signatures validated each modification step and the efficient anchoring of the enzyme. The electrode functionalization steps were further characterized by CV. The voltammograms were recorded (Figure S2) after each modification step. The bare electrode exhibited well-defined redox peaks typical of [Fe­(CN)6]−3/–4 electron transfer, whereas after enzyme functionalization, a marked decrease in peak intensity was observed, consistent with increased charge-transfer resistance confirming the successive deposition of organic layers on the gold electrode surface.
+
+Furthermore, to support the electrochemical evidence, ATR-FTIR spectroscopy was performed on gold-sputtered glass substrates after each surface modification step (Figure S3). The modification followed the same protocol as described in Section , and the gold-side substrate was placed in direct contact with the ATR crystal for spectra acquisition. The spectra for the modification of the surface with cysteamine revealed characteristics peaks due to stretching vibrations at 955 cm–1 (C–O stretch), 1380 cm–1 (C–C stretch), 1434 cm–1 (C–H stretch), 1504 cm–1 (N–H bend), 1569 cm–1 (CN stretch), 2928–2990 cm–1 (CH2 stretch), and 3406 cm–1 (N–H stretch). After incubation with glutaraldehyde, a distinct carbonyl stretching band at 1720 cm–1 appeared, confirming successful cross-linking, accompanied by additional bands at 1116 and 1158 cm–1 (C–OH hydroxyl and C–O epoxy stretch, respectively). Upon LOx immobilization, the characteristic bands indicative of enzyme attachment at 1656 cm–1 (carbonyl amide I) and 1530 cm–1 (amide II) were observed. Additionally, the band at 1080 cm–1 can be attributed to the C–O–C bonds of glycosylated residues, consistent with the glycoprotein nature of LOx.
+
+3.2 Evaluating Assay Performance in Buffer
+
+The analytical performance of the lactose sensor was first evaluated under controlled conditions using amperometry measurements applying 0.7 V in 0.1 M PBS. The sensor showed a dynamic range up to 0.35 mM lactose, as shown in Figure a. Incremental additions of lactose resulted in proportionally increasing current responses, confirming the sensor’s ability to record the enzymatic oxidation product of lactose. The calibration curve obtained by amperometry in 0.1 M PBS is shown in Figure b. The signalcalculated as the difference between the current measured after the addition and the baseline current before the additionwas normalized by expressing the percentage of the maximum ΔI (A) to account for interday variations (more information about calculation of the signal in Section ). The resulting calibration curves obtained on successive days largely overlapped, demonstrating the robustness of the normalization procedure. Accordingly, Figure b presents the averaged calibration curve derived from all measurements. The calibration curve exhibited a linear range that fits to the equation I current(%) = 310.6 ± 4.2 [lactose]­(mM) + 2.9 ± 0.6 (R 2 = 0.997) with a limit of detection (LOD) of 1.4 × 10–3 mM. The LOD was calculated as 3S b/m, where S b represents the deviation of the blank and m represents the sensitivity. Once the analytical range was stablished, we further assessed the robustness and reusability of the sensor. The reusability was investigated over 15 consecutive measurements cycles. The current response was retained at 95% of the initial signal for the first 9 uses and remained above 80% after 15 uses (data plotted in Figure a), demonstrating the robustness of the immobilized enzyme layer.
+
+3.3 Selectivity and Storage Stability of the Sensor
+
+After verifying a positive and reproducible response of the developed enzymatic sensor, selectivity experiments were carried out by challenging the lactose sensor with potential interferents commonly found in HBM, including 1 mM of glucose and lactate, and HMOs, each at 100 μM concentration. The responses to these compounds were significantly lower than the specific response to lactose, which is noteworthy given that they are naturally present at lower concentrations (Figure ). This confirms the high specificity and minimal cross-reactivity of the LOx platform.
+
+2 Interference study of the lactose biosensor in buffer at an applied potential of 0.7 V when using 100 μM of each of the following: HMOs, lactate, and 1 mM of glucose. (a) I(A) vs. t(s) curve. (b) Response of the sensor in % of current. Error bars represent the SD of three independent measurements (n = 3). Statistical significance was assessed using one-way ANOVA with Tukey’s multiple comparison test. Asterisks denote statistical significance levels: ns: not significant, *p < 0.05, **p < 0.01, ****p < 0.0001.
+
+The storage stability of the sensor in different environmental conditions was tested following the protocols described in the Materials and Methods section (Section ). The signal of 100 μM lactose was measured and recorded over a period of 14 days (Figure b). When stored in PBS, the sensor retained its analytical performance with no statistically significant degradation, reflecting the chemical stability of the biofunctionalized interface. Conversely, under dry storage conditions, a significant decrease in current response was observed from day 10 onward (**p < 0.01), suggesting that maintaining hydration helps preserve enzyme conformation and activity of the sensing phase.
+
+3 (a) Reproducibility and reusability of the sensor up to 15 times. (b) Relative response of the lactose biosensor for 14 days of wet storage (black bars) and dry storage (blue bars). SD presented (n = 3). Statistically significant differences between %Signal Day 0 control and all other days were assessed using one-way ANOVA: ns: not significant, *p < 0.05, **p < 0.01, ****p < 0.0001.
+
+3.4 Evaluating Assay Performance in Complex Samples
+
+After its analytical performance was validated in a simple buffer, the biosensor was evaluated in HBM samples. The amperometric measurements were conducted under the same conditions as in PBS. The analysis of a batch of 13 real sample was achieved with minimum treatment unlike other methods described in the literature where the samples needed to undergo a more complex pretreatment regimen.
+
+The lactose concentrations measured with the developed sensor correlated strongly with the values obtained by the standard method UHPLC, validating its accuracy and reliability (detailed data from the analysis of the samples by UHPLC are reported in the Supporting Information Table S3). Additionally, the results were coherent with the data provided externally obtained by enzymatic spectroscopy assay using the commercial kit of Megazyme© K-LOLAC. All the results obtained for the lactose determination in HMB using the developed sensor are summarized and compared in Table and Figure .
+
+1 Results of Lactose Detection by the Developed Sensor in HBM
+
+ID sample	[lactose] (mM) (this biosensor)	RSD (%)	UHPLC (mM)	enzymatic assay (mM)	
+L07028	224.1 ± 29.5	13.1	219.7	232.3	
+L06085	159.0 ± 25.6	16.1		168.6	
+R06085	184.3 ± 50.6	27.5	179.2	172.3	
+L15075	218.2 ± 15.1	6.9	223.2	222.1	
+R15075	222.0 ± 44.8	20.1	225.6	213.8	
+L07027	219.3 ± 24.5	11.2	222.4	211.3	
+R07233	195.3 ± 37.2	19.1	196.0	196.3	
+R06122	182.4 ± 8.9	4.9	222.75	159.9	
+SFL	206.5 ± 20.5	9.9	217.9	211.0	
+R07263	206.6 ± 50.1	24.3	221.2	209.0	
+L07263	213.9 ± 35.3	16.5		209.0	
+R16084	234.8 ± 21.6	9.2	229.3	223.8	
+L16084	215.2 ± 14.6	6.8	208.8	227.8	
+a Comparison against standard analytical methods.
+
+b Measurements were not performed due to limited sample volume. RSD expressed the relative standard deviation of the results obtained by the reported biosensor.
+
+4 (a) Correlation scatter plot with linear fit between sensor-derived lactose concentrations and values determined by reference methods: enzymatic assay (black triangles, R 2 = 0.97) and UHPLC (blue circles, R 2 = 0.96). (b) Correlation index analysis across 13 independent samples. Together, the results validate the sensor’s analytical agreement and reliability for lactose quantification in complex matrices.
+
+For further evaluation of the operational robustness of the sensor for deployment in a real-world scenario, the biosensor was exposed to open-air environments without temperature or humidity control, simulating scenarios encountered during breastfeeding or milk collection. After 90 min of exposure, the amperometric response to subsequent HBM additions showed no statistically significant difference compared with initial measurements (Figure a), confirming its remarkable environmental stability. Moreover, with a view to integrating the biosensor into breast pumps, the electrochemical response of the biosensor for continuous monitoring was assessed. The signal was recorded for different fluctuations in the concentration either diluting the buffer in the cell or adding known concentrations of lactose. This dynamic amperometric assay mimics inline sensing under flow conditions simulating realistic variations in concentration, matrix composition, and flow that could occur in an integrated setup such as a breastmilk pump line or a flowmeter-controlled channel. The current recorded correlated well with each dilution and addition, and stable steady-state plateaus after each perturbation were observed, indicating that the biosensor is suited for continuous monitoring applications (Figure b).
+
+5 (a) Validation of the robustness of the lactose biosensor for the detection of lactose in HBM before and after 90 min, leaving the electrode completely uncovered and dry. SD presented (n = 3) (b) I(A) vs t(s) curve of the continuous monitoring study with different dilution and addition of lactose showing operational behavior of the sensor under dynamic state.
+
+The biosensor’s applicability was further demonstrated using bovine milk (both full cream and skim) after a simple 1:10 dilution in Milli-Q water. The system yielded consistent and proportional current responses with each addition of milk (Figure a). The averaged calibration curve derived from all measurements exhibited a linear range that fits to the equation I current(A) = 7.9 × 10–7 ± 0.2 × 10–7 [lactose]­(mM) + 4.2 × 10–9 ± 1.4 × 10–9 (R 2 = 0.994) and is presented in Figure b. While the sensing response for regular bovine milk was positive, lactose-free and soy milk samples produced negligible signals, reinforcing their high selectivity and matrix tolerance (Figure ).
+
+6 (a) Amperometric response of the lactose biosensor to the consecutive additions of skim milk 1:10 recorded in 0.1 M PBS at an applied potential of 0.7 V. (b) Calibration curve derived from the amperometric measurements, showing the linear response of the biosensor within the tested range. I currentl(A) = 7.9 × 10–7 ± 0.2 × 10–7 [lactose]­(mM) + 4.2 × 10–9 ± 1.4 × 10–9 (R 2 = 0.994) (SD of n = 4).
+
+7 Interference study of the lactose biosensor for the analysis of the following dairy and nondairy products: full cream, skim and lactose-free bovine milk, and soy milk. (a) I(A) vs t(s) curve of the interference study. (b) % Signal obtained; error bars represent the SD (n = 5). Statistical significance was assessed using one-way ANOVA with Tukey’s multiple comparison test. Asterisks denote statistical significance levels: ns: not significant, *p < 0.05, **p < 0.01, ****p < 0.0001.
+
+A detailed comparison of this sensor’s analytical performance with existing technologies is provided in Table S1. Whereas most of the reported biosensors rely on multienzyme cascades or complex nanostructures interfaces, the sensor presented in this work achieved a comparable or lower LOD and exhibits a broad linear range spanning physiologically relevant lactose level while maintaining a simple single-enzyme configuration. Furthermore, it is the only sensor validated directly in HBM demonstrating a robust performance in a complex biological matrix and underscoring its suitability for lactation monitoring.
+
+4 Conclusions
+
+An electrochemical single-enzyme sensor for the detection of lactose was designed and developed providing a robust, selective, and sensitive platform for lactose detection showing high sensitivity and reproducibility. Efficient enzyme immobilization was verified by spectroscopy and electrochemical methods, and the analytical performance was evaluated achieving a LOD of 1.4 μM and a good correlation with standard methods. The sensor’s stability, reusability, and strong performance in both human and bovine milk highlight its viability for practical deployment in portable or online lactose monitoring systems, representing a significant advance toward accessible, real-time milk composition analysis.
+
+Supplementary Material
+
+This work was performed in part at the Melbourne Centre for Nanofabrication (MCN) in the Victorian Node of the Australian National Fabrication Facility (ANFF). The authors would like to acknowledge Dr. Leon R. Mitoulas for his valuable feedback and Dr. Keith Stubbs for providing the HMOs samples. We acknowledge funding from the ARC Training Centre for Biomedical Analysis (IC210100056). N.H.V. acknowledges support from the Australian Research Council Laureate Fellowship scheme (FL220100185).
+
+The Supporting Information is available free of charge at https://pubs.acs.org/doi/10.1021/acsmeasuresciau.5c00207.Comparative overview of previously reported lactose biosensors; electrochemical impedance spectroscopy (EIS), cyclic voltammetry (CV), and ATR-FTIR characterization of the sensing interface; calibration data across the investigated lactose concentration range; and UHPLC reference analysis of human breast milk samples supporting the accuracy and practical applicability of the proposed single-enzyme amperometric lactose (PDF)
+
+Raquel Sánchez-Salcedo: Methodology, validation, visualization, formal analysis, data curation, and writingoriginal draft and editing. Donna Geddes: Review and editing. Nicolas H. Voelcker: Writingreview and editing, conceptualization, supervision, and funding acquisition. CRediT: Raquel Sánchez-Salcedo data curation, formal analysis, methodology, validation, visualization, writing - original draft, writing - review & editing; Donna Geddes writing - review & editing; Nicolas H. Voelcker conceptualization, funding acquisition, supervision, writing - review & editing.
+
+The authors declare no competing financial interest.
+
+
+Kim S. Y. Yi D. Y. Components of Human Breast Milk: From Macronutrient to Microbiome and MicroRNA Clin. Exp. Pediatr. 2020 63 8 301 309 10.3345/cep.2020.00059 32252145 PMC7402982
+Taylor, S. L. ; Kabourek, J. Food Intolerance: Milk Allergy; Encyclopedia of Food Sciences and Nutrition, 2003; pp 2631–2634.
+Venema K. Intestinal Fermentation of Lactose and Prebiotic Lactose Derivatives, Including Human Milk Oligosaccharides Int. Dairy J. 2012 22 2 123 140 10.1016/j.idairyj.2011.10.011
+Ilesanmi-Oyelere B. L. Kruger M. C. The Role of Milk Components, pro-Pre-and Synbiotic Foods in Calcium Absorption and Bone Health Maintenance Front. Nutr. 2020 7 578702 10.3389/fnut.2020.578702 33072800 PMC7539038
+Ramasamy I. Vitamin D Metabolism and Guidelines for Vitamin D Supplementation Clin. Biochem. Rev. 2020 41 3 103 126 10.33176/AACB-20-00006 33343045 PMC7731935
+Maurya V. K. Aggarwal M. Factors Influencing the Absorption of Vitamin D in GIT: An Overview J. Food Sci. Technol. 2017 54 12 3753 3765 10.1007/s13197-017-2840-0 29085118 PMC5643801
+Mattar R. Mazo D. F. de C. Carrilho F. J. Lactose Intolerance: Diagnosis, Genetic, and Clinical Factors Clin. Exp. Gastroenterol. 2012 5 1 113 121 10.2147/CEG.S32368 22826639 PMC3401057
+Deng Y. Misselwitz B. Dai N. Fox M. Lactose Intolerance in Adults: Biological Mechanism and Dietary Management Nutrients 2015 7 9 8020 8035 10.3390/nu7095380 26393648 PMC4586575
+Corgneau M. Scher J. Ritie-Pertusa L. Le D. t. l. Petit J. Nikolova Y. Banon S. Gaiani C. Recent Advances on Lactose Intolerance: Tolerance Thresholds and Currently Available Answers Crit. Rev. Food Sci. Nutr. 2017 57 15 3344 3356 10.1080/10408398.2015.1123671 26713460
+Shawky E. Nahar L. Nassief S. M. Sarker S. D. Ibrahim R. S. Dairy Products Authentication with Biomarkers: A Comprehensive Critical Review Trends Food Sci. Technol. 2024 147 104445 10.1016/j.tifs.2024.104445
+Cheema A. S. Stinson L. F. Rea A. Lai C. T. Payne M. S. Murray K. Geddes D. T. Gridneva Z. Human Milk Lactose, Insulin, and Glucose Relative to Infant Body Composition during Exclusive Breastfeeding Nutrients 2021 13 11 3724 10.3390/nu13113724 34835980 PMC8625960
+Cederlund A. Kai-Larsen Y. Printz G. Yoshio H. Alvelius G. Lagercrantz H. Strömberg R. Jörnvall H. Gudmundsson G. H. Agerberth B. Lactose in Human Breast Milk an Inducer of Innate Immunity with Implications for a Role in Intestinal Homeostasis PLoS One 2013 8 1 e53876 10.1371/journal.pone.0053876 23326523 PMC3542196
+Jin X. Lai C. T. Perrella S. L. Zhou X. Hassan G. M. McEachran J. L. Gridneva Z. Taylor N. L. Wlodek M. E. Geddes D. T. Milk Composition Is Predictive of Low Milk Supply Using Machine Learning Approaches Diagnostics 2025 15 2 191 10.3390/diagnostics15020191 39857075 PMC11764425
+Parker L. A. Cacho N. Bendixen M. M. Sullivan S. Magãlhaes M. Krueger C. Mueller M. Measures of Lactation Outcomes in Women Delivering Preterm Infants Nurs. Res. 2021 70 3 193 199 10.1097/NNR.0000000000000502 33891382 PMC8075005
+Parker L. A. Sullivan S. Cacho N. Engelmann C. Krueger C. Mueller M. Indicators of Secretory Activation in Mothers of Preterm Very Low Birth Weight Infants J. Hum. Lactation 2021 37 3 581 592 10.1177/0890334420980424 33351691
+World Health Organization WHO: Breastfeeding. https://www.who.int/health-topics/breastfeeding#tab=tab_2 (accessed Dec 05, 2025).
+Butte, N. F. ; Lopez-Alarcon, M. G. ; Garza, C. Nutrient Adequacy of Exclusive Breastfeeding for the Term Infant During the First Six Months of Life; WHO, 2002.
+Garballo-Rubio A. Soto-Chinchilla J. Moreno A. Zafra-Gómez A. Determination of Residual Lactose in Lactose-Free Cow Milk by Hydrophilic Interaction Liquid Chromatography (HILIC) Coupled to Tandem Mass Spectrometry J. Food Compos. Anal. 2018 66 39 45 10.1016/j.jfca.2017.11.006
+Pinto P. A. Anconi A. C. S. A. de Abreu L. R. Magalhães E. J. Nunes C. A. Strategies to Determine Lactose in Cow Milk by Mid Infrared Spectroscopy J. Food Compos. Anal. 2021 104 104176 10.1016/j.jfca.2021.104176
+Monakhova Y. B. Kuballa T. Leitz J. Andlauer C. Lachenmeier D. W. NMR Spectroscopy as a Screening Tool to Validate Nutrition Labeling of Milk, Lactose-Free Milk, and Milk Substitutes Based on Soy and Grains Dairy Sci. Technol. 2012 92 2 109 120 10.1007/s13594-011-0050-5
+Lynch J. M. Barbano D. M. Fleming J. R. Determination of the Lactose Content of Fluid Milk by Spectrophotometric Enzymatic Analysis Using Weight Additions and Path Length Adjustment: Collaborative Study J. AOAC Int. 2007 90 1 196 216 10.1093/jaoac/90.1.196 17373452
+Bertino E. Prandi G. M. Fabris C. Cavaletto M. Martino S. D. Cardaropoli S. Calderone V. Conti A. Human Milk Proteins May Interfere in ELISA Measurements of Bovine β-Lactoglobulin in Human Milk Acta Paediatr. 1996 85 5 543 549 10.1111/j.1651-2227.1996.tb14083.x 8827096
+Rainard P. Consequences of Interference of Milk with Chemoattractants for Enzyme-Linked Immunosorbent Assay Quantifications Clin. Vaccine Immunol. 2010 17 5 848 852 10.1128/CVI.00447-09 20237202 PMC2863396
+Trani A. Gambacorta G. Loizzo P. Cassone A. Fasciano C. Zambrini A. V. Faccia M. Comparison of HPLC-RI, LC/MS-MS and Enzymatic Assays for the Analysis of Residual Lactose in Lactose-Free Milk Food Chem. 2017 233 385 390 10.1016/j.foodchem.2017.04.134 28530589
+Wijayanti S. D. Tsvik L. Haltrich D. Recent Advances in Electrochemical Enzyme-Based Biosensors for Food and Beverage Analysis Foods 2023 12 18 3355 10.3390/foods12183355 37761066 PMC10529900
+Halpin G. McEntee S. Dwyer C. Lawless F. Dempsey E. Lactose Biosensor Development and Deployment in Dairy Product Analysis J. Electrochem. Soc. 2022 169 3 037528 10.1149/1945-7111/ac5e41
+de Brito A. R. de Jesus R. S. Tavares I. M. de C. Silva F. N. Santana N. B. Barbosa Ferrão S. P. Bilal M. de Santana Santos A. Salay L. C. de Oliveira J. R. Franco M. Application of the Electrochemical Biosensor in the Detection of Lactose in Skimmed Milk Surf. Interfaces 2021 22 100839 10.1016/j.surfin.2020.100839
+Kucherenko I. S. Soldatkin O. O. Dzyadevych S. V. Soldatkin A. P. Electrochemical Biosensors Based on Multienzyme Systems: Main Groups, Advantages and Limitations – A Review Anal. Chim. Acta 2020 1111 114 131 10.1016/j.aca.2020.03.034 32312388
+Flynn B. T. Kozak S. M. Lawton M. R. Alcaine S. D. Lactose Oxidase: An Enzymatic Approach to Inhibit Listeria Monocytogenes in Milk J. Dairy Sci. 2021 104 10 10594 10608 10.3168/jds.2021-20450 34334205
+Carriere V. M. Rodrigues J. P. Tan C. Arumugam P. Poh S. In Vitro Electrochemical Detection of Hydrogen Peroxide in Activated Macrophages via a Platinum Microelectrode Array Sensors 2021 21 16 5607 10.3390/s21165607 34451050 PMC8402354
+Sitta E. Gómez-Marín A. M. Aldaz A. Feliu J. M. Electrocatalysis of H2O2 Reduction/Oxidation at Model Platinum Surfaces Electrochem. Commun. 2013 33 39 42 10.1016/j.elecom.2013.04.014
+Miranda-Castro R. Sánchez-Salcedo R. Suárez-Álvarez B. de-los-Santos-Álvarez N. Miranda-Ordieres A. J. Jesús Lobo-Castañón M. Thioaromatic DNA Monolayers for Target-Amplification-Free Electrochemical Sensing of Environmental Pathogenic Bacteria Biosens. Bioelectron. 2017 92 January 162 170 10.1016/j.bios.2017.02.017 28213329
+Serjeant, E. P. ; Dempsey, B. Ionisation Constants of Organic Acids in Aqueous Solution; Pergamon Press, 1979.

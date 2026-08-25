@@ -1,0 +1,1143 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: J Natl Cancer Cent
+Journal ID: J Natl Cancer Cent
+NLM Journal ID: 9918334970706676
+
+Journal of the National Cancer Center
+
+ISSN: 2096-8663
+EISSN: 2667-0054
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13494630
+PMID: 42630545
+DOI: 10.1016/j.jncc.2025.12.003
+Article ID: S2667-0054(25)00136-X
+Article version: 1
+Subjects: Review
+
+Technical review of artificial intelligence in TCR-T therapy
+
+Lee Inbum a
+Joo Minsoo a
+Chung Jong-Moon jmc@yonsei.ac.kr a b ⁎
+a School of Electrical and Electronic Engineering, College of Engineering, Yonsei University, Seoul, Republic of Korea
+b Department of Emergency Medicine, College of Medicine, Yonsei University, Seoul, Republic of Korea
+⁎ Corresponding author. jmc@yonsei.ac.kr
+Publication date: 2026 Aug
+Electronic publication date: 2025 Dec 21
+Volume: 6
+Issue: 4
+First page: 345
+Last page: 360
+Received 2025 Jun 17; Revised 2025 Dec 18; Accepted 2025 Dec 18
+Copyright: © 2025 Chinese National Cancer Center. Published by Elsevier B.V.
+Copyright year: 2025
+Copyright holder:
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Immunotherapy, T cell, Artificial intelligence, Cancer, Oncology
+
+==============================
+Advances in T cell-based immunotherapy for cancer treatment, coupled with breakthroughs in artificial intelligence (AI), have led to a surge in AI-driven analysis and prediction algorithms. However, significant challenges remain in translating these computational methods into clinical practice. This paper reviews the technical trends in AI-based approaches for T cell-based immunotherapy, identifies key limitations and potentials for improvement, and proposes future research directions to bridge the gap between computational methods and clinical implementation.
+
+1 Introduction
+
+In immunotherapy, immune checkpoint inhibitors (ICIs) have been considered as a standard of care across multiple solid tumors, acting on inhibitory pathways directly linked to T cell reinvigoration. Clinically, the approved ICIs have been categorized as CTLA-4, PD-1, and PD-L1 inhibitors; and more recently, the LAG-3-blocking antibody relatlimab in fixed-dose combination with nivolumab1 received US Food and Drug Administration (FDA) approval in unresectable and metastatic melanoma, further expanding this class.2 In addition, as the uptake of ICIs has risen sharply for non-small-cell lung cancer (NSCLC), ICIs seem to demonstrate therapeutic efficacy.3 However, as ICIs primarily restore pre-existing tumor-reactive T cell function, thus efficacy often depends on restrictive biomarkers that are suggestive of responsiveness (e.g., hot tumor microenvironment (TME), high PD-L1 expression).
+
+Adoptive cell therapy (ACT), including chimeric antigen receptor (CAR)-T cells, tumor-infiltrating lymphocytes (TIL) therapy, and T cell receptor-engineered T cells (TCR-T), enhances antitumor immunity by supplying defined, high-avidity effector T cells. CAR-T cells are ex vivo engineered autologous T cells that bind to tumor-associated antigens (TAAs) or tumor-specific antigens (TSAs) on the surface of the target. This method has demonstrated examples in treating hematological malignancies (e.g., B-cell lymphoma,4 B-acute lymphoblastic leukemia,5 multiple myeloma6,7) but do not target intracellular neoantigens.8
+
+For TIL therapy, TIL refer to lymphocytes, including T cells, B cells, natural killer cells, located within the tumor or the TME. The potential of TIL therapy was first demonstrated in the late 1980s by Rosenberg et al.,9 who reported significant efficacy in treating metastatic melanoma using TIL therapy in combination with IL-2. More recently, Rohaan et al.10 have further elucidated the superiority of TIL therapy in cancer treatment. In 2024, AMTAGVI(lifileucel)11 received FDA accelerated approval for adult patients with unresectable or metastatic melanoma, marking a significant milestone in TIL therapy. Specifically, AMTAGVI has shown activity after anti-PD-1 failure in metastatic melanoma. However, TIL therapy has challenges due to the required time consumption in harvesting and expanding the lymphocytes population.12
+
+TCR-T therapy employs T cells engineered with TCRs that recognize peptide-human leukocyte antigen (pHLA) complexes, to enable targeting both exogenous and endogenous antigens.13 Recently, TECELRA(afamitresgene autoleucel)14 received FDA accelerated approval for adults with unresectable or metastatic synovial sarcoma who have received prior chemotherapy, are HLA-A02:01P, -A02:02P, -A02:03P, or -A02:06P positive, and whose tumor expresses the MAGE-A4. It is the first regulatory approval of a TCR-T therapy for a solid tumor, providing proof-of-concept for TCR-T therapy in solid tumors. In addition, this highlights the clinical significance of TCR-T for ICI-poor indications.
+
+While these suggest advantages over ICIs and related research are growing, ACT development requires substantial time and resources. In response, studies are increasingly applying artificial intelligence (AI) to accelerate development.15,16 For example, KSH01/KSX01 TCR-T products17 (NCT05539833, NCT05811975, NCT06150365) from TCRx Therapeutics are designed using the TCR-XFinder AI platform. These have first entered phase I trials for advanced solid tumors as AI-designed TCR-T and show promising initial safety and efficacy results.18 In addition, TCRact19 has used AI to optimize high-throughput TCR-pHLA pairing, enabling antigen-agnostic identification of tumor-reactive T cells, while formal registration for clinical trials is pending, observational protocols are in preparation. MixTRTpred,20 developed by Ludwig Cancer Research, ranks high-avidity TIL TCRs using deep learning and has demonstrated strong preclinical results for patient-specific TCR selection.
+
+While most work remains pre-clinical or at the early-clinical (phase I) stage, these platforms exemplify how AI is driving the transition from laboratory discovery to personalized therapies. If AI can improve the proportion of genuinely effective drug candidates among the top N predicted combinations, it would reduce the number of repetitive experiments, enable reallocation of specialized personnel, and ultimately enhance verification and safety processes with greater efficiency.
+
+This review aims to identify the technical factors that critically influence the practicality and performance of recently developed AI-based algorithms for TCR-T therapy. Accordingly, it summarizes the performance comparison results based on benchmark results presented in the original papers for each algorithm, discusses their fundamental limitations, and review ongoing efforts to overcome these challenges.
+
+2 Review
+
+2.1 Recent comprehensive review
+
+There have been comprehensive reviews about applying AI to TCR-T therapy. These include discussions on the essential components and directions for improvement needed to predict T cell specificity using ML-based algorithms,21 an introduction to the overall workflow and AI-based algorithms for applying AI to personalized immunotherapy,22 a comprehensive review of various attempts to apply AI to immunotherapy and their limitations,23 a comprehensive review of the origins of neoantigens and their use in immunotherapy,24 and an introduction to neoantigen prediction and TCR-epitope binding prediction tools used in TCR-T therapy, as well as workflows for clinical applications and a comprehensive review of clinical trials.25
+
+In this technical review, the remaining parts are organized as follows. The remaining parts of Section 2 are examinations of the elements that constitute the latest AI-based technologies and describe the research stages of TCR-T therapy that new AI technologies are primarily being applied to. Section 3 analyzes the limitations of recent studies based on the findings from the analysis. Section 4 introduces various research efforts aimed at overcoming the limitations. Finally, Section 5 summarizes this review and concludes with future research expectations.
+
+2.2 AI models
+
+Recent AI-driven research trends are centered around keywords such as transformers,26, 27, 28, 29, 30 graph neural networks (GNN),31, 32, 33, 34 transfer learning,18,35,36 multi-task learning,37,38 and multi-modal AI.39
+
+Based on model architecture, transformers40 enable improved data efficiency through self-supervised learning, and their self-attention mechanism allows for more effective predictions by considering not only local patterns but also the global context of the data.41,42 GNN is a representative network architecture capable of directly processing graph-structured biological data.43 The level of effectiveness that a GNN system may have in interpreting complex physicochemical interactions between molecules as structural relationships is still being investigated in recent research.44,45
+
+Among AI learning methods, transfer learning46 is an approach that aims to achieve high performance quickly and efficiently by reusing the patterns and features learned by a pre-trained model for a new problem. The advantage of this method is that it can achieve a high performance even with limited data and computational resources. Multi-task learning is a type of transfer learning that simultaneously trains on multiple related tasks, allowing useful information to be shared and enables to achieve a better generalized performance than single-task learning. This approach also has the advantage of improving the performance in environments with limited data. Multi-modal learning47 involves learning from different types of data simultaneously and understanding the interactions between them, which allows for the utilization of contextual information to more accurately grasp complex situations and make more sophisticated predictions. In context of the complex immune system, multi-modal AI can enable more accurate predictions of neoantigens and immune responses. For example, there have been developed integrated pipelines with the goal of utilizing contextual information obtained from multi-modal data.48,49 These approaches predict immunogenic neoantigens and immune responses by integrating features acquired from existing single-stage prediction algorithms.
+
+However, despite the proliferation of algorithms that utilize similar model architectures, learning methods, and datasets, there remains a lack of comprehensive technical review that systemically compares and analyzes the effectiveness of various model architectures, learning methods, and evaluation metrics. Therefore, it is crucial to explore system analyses to find AI applicable points, and comparative analyses, to determine which approaches are most effective and to identify promising directions for future research.
+
+2.3 Evaluation metrics
+
+Most studies use diverse performance metrics to capture different aspects of model effectiveness and must be interpreted in context. In candidate screening pipelines (e.g., TCR-T therapy peptide or TCR selection), precision (also known as positive predictive value, PPV) is crucial when false positives impose high experimental costs. For binding prediction task where missing a true signal is unacceptable, recall (which is equivalent to sensitivity and true positive rate, TPR) is essential. Although accuracy is intuitive, it can be misleading in imbalanced datasets; a classifier that predicts all negatives may achieve high accuracy while offering no clinical utility. F1-score balances precision and recall but may be less informative collapsing distinct error costs into a single number. In clinical prioritization with limited wet-lab capacity, rank-focused metrics such as PPV@N or recall@N are often more decision-aligned. In addition, metrics addressing class imbalance, including Matthews correlation coefficient (MCC), provide more holistic assessment but are harder to interpret and unstable. The area under the curve (AUC), based on false positive rate (FPR) and specificity, remains widely used but can overestimate performance for rare positives, making area under the precision-recall (AUPR) a more meaningful metric in highly imbalanced datasets.
+
+These performance metrics are based on the confusion matrix parameters of true positive (TP), true negative (TN), false positive (FP), false negative (FN), false positive rate (FPR), and Matthews correlation coefficient (MCC), which are defined in (1), (2), (3), (4), (5), (6), (7).(1) Precision=TP/(TP+FP)
+
+(2) Recall=TP/(TP+FN)
+
+(3) FPR=FP/(FP+TN)
+
+(4) Specificity=TN/(TN+FP)
+
+(5) Accuracy=(TP+TN)/(TP+TN+FP+FN)
+
+(6) F1=TP/{TP+(FP+FN)/2}=2×(Precision×Recall)/(Precision+Recall)
+
+(7) MCC=(TP×TN−FP×FN)/(TP+FP)(TP+FN)(TN+FP)(TN+FN)
+
+These parameters highlight complementary trade-offs, and careful selection is necessary to align evaluation with practical constraints.
+
+2.4 System analysis
+
+Before applying AI in TCR-T therapy, understanding the overall flow of in-vivo immune response is helpful. The entire T cell-based immune response process can be divided into five stages; antigen processing and presentation, T cell priming and initial clonal expansion, trafficking and infiltration, target engagement and effector function, and regulation and exhaustion.50, 51, 52, 53
+
+The antigen processing and presentation stage can be separated into the HLA-I and HLA-II pathways.54 In the HLA-I pathway, peptides are processed mainly from endogenous proteins by the proteasome/immunoproteasome, which typically establishes the C-termini of antigenic peptides. The peptides are then transported into the endoplasmic reticulum (ER) by the transporter associated with antigen processing (TAP).55 The endoplasmic reticulum aminopeptidase 1/2 (ERAP 1/2) trim N-termini to optimal length, and with the assistance of the peptide-loading complex (PLC) (e.g., tapasin, calreticulin, ERp57), peptides are loaded onto HLA-I and transported to the cell surface.56 Meanwhile, in cross-presentation, exogenous antigens are either routed through a cytosolic pathway, escaping endosomes to undergo proteasomal processing followed by TAP/ERAP-dependent ER loading, or processed and loaded within endosomal/vacuolar compartments, where insulin-regulated aminopeptidase (IRAP) contributes to N-terminal trimming.57 In the HLA-II pathway, exogenous antigens are predominantly degraded by endosomal/lysosomal cathepsins.58,59 The invariant chain bound to HLA-II (e.g., HLA-DR, HLA-DQ, and HLA-DP)60 in the ER is partially degraded, leaving class II-associated invariant chain peptide (CLIP). HLA-DM then removes CLIP and performs peptide editing to replace with higher-affinity peptides, while HLA-DO fine-tunes HLA-DM activity.61,62 As illustrated in Fig. 1, these pathways are intrinsically complex and obtaining observable data across the detailed steps of antigen processing remain limited in practice.Fig. 1 Antigen presentation pathway of HLA class I and HLA class II within the TME. (A) For HLA class I, cytosolic or nucleic proteins (including tumor neoantigens) are degraded by the proteasome, with transport into the ER by TAP and trimming by ERAP for optimal binding. Extracellular proteins can also be processed in endosomes or IRAP before HLA class I loading. (B) For HLA class II, exogenous proteins are internalized by APCs, degraded in endosomal/lysosomal compartments by cathepsins, and loaded onto HLA class II after invariant chain removal and HLA-DM-mediated peptide exchange. APC, antigen presenting cell; ER, endoplasmic reticulum; ERAP, endoplasmic reticulum aminopeptidase; HLA, human leukocyte antigen; IRAP, insulin-regulated aminopeptidase; MIIC, major histocompatibility complex class II compartment; TAP, transporter associated with antigen processing; TME, tumor microenvironment. Figure adapted from images created with BioRender.com.
+
+Fig 1 dummy alt text
+
+In the T cell priming and initial clonal expansion stage, naïve T cells encounter professional APCs (e.g., cDC1, cDC2) within secondary lymphoid organs. The cDC1 supports both HLA-I and HLA-II antigen presentation but is specialized for HLA-I cross-presentation to prime CD8⁺ T cells, whereas cDC2 is relatively specialized for HLA-II mediated CD4⁺ T priming. The APCs deliver three signals; TCR-pHLA binding,63 co-stimulation (CD-28-B7 for initiation, 4-1BB/OX40 for survival/persistence),64 and cytokines (e.g., IL-12, type I IFN, IL-2) that imprint effector and memory fates.65 Integrating these signals triggers proximal TCR signaling, metabolic reprogramming, and entry into cell cycle for initial clonal expansion. In TCR-T, much of this priming and initial clonal expansion is done ex vivo.
+
+In the trafficking and infiltration stage, activated T cells are recruited to tumors under the vascular adhesion programs and chemokine axes. For example, in solid tumors, CXCL9/10/11-CXCR3 and CCL5-CCR5 are well known recruitment pathways.66,67 However, redundant or compensatory routes vary by organ and disease context, so the essentiality of any single receptor is context dependent.68 In addition, within the TME, interstitial pressure, aberrant vasculature, TGF-β signaling, and fibrotic barriers act as physical and immunologic obstacles that hinder infiltration.69,70
+
+In the target engagement and effector function stage, pHLA complexes are re-engaged by TCRs, to form an immunological synapse, which triggers proximal signaling and activates transcriptional programs that upregulate cytokines and cytotoxic machinery. The CD8⁺ T cells execute cytolysis predominantly via granule exocytosis71,72 and death receptor pathway (e.g., caspase cascades by Fas-FasL engagement).72 The CD4⁺ T cells amplify antitumor immunity by secreting cytokines (e.g., IFN-γ, TNF-α), enhancing antigen presentation, promoting vascular normalization, and driving M1 polarization.73 Recently, pyroptosis74 and ferroptosis75 have been implicated in tumor cell killing, broadening the effector repertoire.
+
+In the regulation and exhaustion stage, immunosuppression arises from regulatory T cells (Tregs)76 and myeloid-derived suppressor cells (MDSCs),77 PD-L1 on tumor/stromal cells,78,79 and adenosine80 and lactate-driven81 metabolic inhibition. Chronic antigen exposure then enforces T cell exhaustion, characterized by functional decline, impaired proliferation, metabolic rewiring, and persistent inhibitory receptor upregulation.82,83
+
+In patients, this cascade is frequently incomplete, culminating in weak activation, expansion, or dominant exhaustion within the TME. TCR-T therapy addresses this by defining and expanding antigen-specific T cells ex vivo and reinfusing them to raise precursor frequency and antigen recognition competence. Although TCR-T does not inherently block suppressive checkpoints, its activity is augmented by lymphodepleting preconditioning, which creates a cytokine environment (e.g. IL-7 and IL-15).84 In addition, combination strategies (e.g., cytokine support,85 checkpoint blockade86) can be used to mitigate regulatory pressure. In this way, TCR-T partially compensates for the incomplete cascade, while antigen/HLA down-modulation and a hostile TME remain key challenges for durable responses.
+
+2.5 Protocol of TCR-T therapy with AI
+
+With the understanding of the T cell-based immune response process, Fig. 2 links the entire workflow for developing TCR-T therapy. The data collection stage with peptide processing along the HLA-I and HLA-II pathways clarifies that patient material is obtained by biopsy from TME (yielding tumor cells, and intratumoral/peritumoral APCs such as dendritic cells, macrophages, and B cells) and by blood draw for peripheral blood mononuclear cells (PBMCs). TILs isolated from tumor tissue are used for TCR sequencing. Data collection thus encompasses detecting somatic mutations, inferring the sequences of mutated proteins based on mutation calling, analyzing peptide-generation patterns to derive candidate peptides, identifying the individual’s HLA types, and finally predicting whether the peptide will bind to the HLA molecule. Mutations detection87 and HLA typing88 are typically performed based on whole-exome/genome sequencing (WES/WGS), or RNA- sequencing.89 Mutated protein sequence inference is generally conducted using tools such as ANNOVAR90 or variant effect predictor,91 which reconstruct protein sequences; recent studies have also utilized Alphafold92 to consider isoforms of the same sequence.93 For peptide candidate generation, in addition to experimentally validated peptides obtained by methods such as MS, AI-based analysis of peptide generation patterns, including proteasome cleavage prediction,94 is still being studied.95, 96, 97, 98 In parallel, RNA-seq from tumor/APC samples supports transcript expression checks and detection of fusion/splice events, and copy-number analysis can identify HLA-LOH to contextualize HLA typing. In addition, there are additional steps including antigen processing,99 peptide-HLA binding prediction, TCR-pHLA binding prediction, and immunogenicity prediction.Fig. 2 End-to-end workflow for developing TCR-T therapy. Samples from patient (TIL, PBMC, tumor, and intratumoral/peritumoral APCs) feed data collection (mutation calling, transcript checks, fusion/splice detection, HLA typing) and proceed to antigen processing through HLA-I and HLA-II pathways. Immunopeptidomics validates predicted peptide-HLA combination, followed by TCR-pHLA binding/immunogenicity prediction, TCR screening, and post screening (trafficking, metabolism, exhaustion). Colored boxes mark current AI applied components (e.g., processing aware peptide generation, peptide-HLA presentation prediction, TCR-pHLA binding/immunogenicity scoring). CDR, complementarity-determining region; ER, endoplasmic reticulum; HLA, human leukocyte antigen; MS, mass spectrometry; PBMC, peripheral blood mononuclear cells; pHLA, peptide-HLA; RNA, ribonucleic acid; TAP, transporter associated with antigen processing; TCR, T cell receptor; TPM, transcripts per million; WES, whole exome sequencing; WGS, whole genome sequencing. Figure adapted from images created with BioRender.com.
+
+Fig 2 dummy alt text
+
+2.5.1 Antigen processing
+
+In the HLA-I pathway, prior to peptide-HLA binding and surface presentation, AI has been applied in several areas, including proteasomal cleavage, TAP transport, and ER trimming. Proteasomal cleavage aims to predict where the N-terminal or C-terminal ends of epitopes are generated from antigenic proteins, and there have been many AI algorithms developed for cleavage site prediction, including Pepsickle,100 PUUPL,101 and NetCleave.102 Pepsickle is an ensemble deep learning algorithm, trained on in-vitro proteasome digestion data from 35 studies, including constitutive and immunoproteasome, and in-vivo HLA-I complex data. It uses both amino acids identity and physicochemical property encodings, achieving an AUC of 0.82-0.88. However, due to label noise, the C-terminus of HLA-I ligands is often used as a proxy for proteasome cleavage sites, but this may not reflect the true cleavage position and can limit the prediction accuracy. In addition, the lack of large-scale immunoproteasome data and reliance on synthetic negative examples restricts model generalizability. PUUPL is a multi-layer perceptron (MLP) based deep learning model trained on large scale HLA-I ligand datasets. It addresses the lack of true negative data in HLA ligandomics using positive unlabeled learning to iteratively pseudo-label negatives based on model confidence. Although it achieves a high AUC of 0.87 on C-terminal cleavage sites, it is limited by the absence of experimentally confirmed negatives. NetCleave is an MLP-based neural network algorithm designed to predict C-terminal antigen processing for both HLA-I and HLA-II pathways. It is trained on MS-identified eluted peptides from the IEDB,103 using residues around assumed cleavage sites encoded with physicochemical amino acids descriptors. NetCleave achieved high accuracy for HLA-I based on an AUC of 0.91. However, it still has challenges with synthetic non-cleavage sites and modeling biological complexity of antigen processing. In addition, Ziegler et al. in 202395 showed that, even with state-of-the-art neural architectures, there is little performance difference compared to traditional methods.
+
+For TAP transport, there are TAPPred104 and DeepTAP.105 TAPPred is a support vector machine (SVM) based peptide-TAP binding affinity prediction model, trained on experimentally validated TAP-binding and non-binding peptides from public databases (e.g., JenPep,106 AntiJen,107 MHCBN108). It achieved an AUC of 0.78-0.82 showing a robust performance for small datasets, and therefore is widely used as a baseline. DeepTAP is a recurrent neural network (RNN)109 based peptide prediction which binds to TAP, trained on curated TAP-binding and non-binding peptides datasets, including public databases (e.g., JenPep, AntiJen, MHCBN). It achieved an AUC of 0.95 outperforming TAPPred.
+
+For ER trimming, there is no AI algorithm, but only the position weight matrix-based ERAMER,110 which scores peptides using experimentally derived residue preferences at each position for ERAP1 trimming likelihood. On the one hand, MHCflurry 2.0 AP111 is a neural network-based allele-independent antigen processing predictor trained on MS-identified HLA-I, developed for modeling proteasomal cleavage, TAP transport, and ER trimming that influence which peptides are available for peptide-HLA binding, beyond binding affinity alone. The model shows a mean AUC of 0.85-0.86 on held-out multiallelic MS benchmarks, although trained on monoallelic MS datasets.
+
+In the HLA-II pathway, AI applications prior to peptide-HLA binding or presentation are still limited, without NetCleave. NetCleave, which covers C-terminal processing by cathepsins in HLA-II pathway, has shown a relatively low AUC of 0.66.
+
+2.5.2 Peptide-HLA binding prediction
+
+Peptide-HLA binding prediction aims to predict which HLA a peptide (presumed to be generated from a neoantigen) will bind to. Table 1 includes benchmark results from recent papers proposing state-of-the-art models. GraphMHC112 is a model that combines a GNN with a convolutional neural network (CNN), utilizing molecular structural information to classify whether a peptide binds to major histocompatibility (MHC). For both MHC class I and II, benchmark tests were performed using NetMHCpan-4.1 and NetMHCpanII-4.0113 with IEDB data. While GraphMHC showed superior AUC and sensitivity, it did not outperform in specificity and F1-score. Based on these results, GraphMHC tends to predict many peptide-MHC combinations as positive in order not to miss true binders, but this also means that it predicts non-binding combinations as positive. This characteristic can be advantageous in scenarios where missing a true binder is unacceptable, but if the number of FPs increases, it can lead to unnecessary additional validation work.Table 1 Performance evaluation of recent AI-based algorithm developed for peptide-HLA prediction.
+
+Table 1 dummy alt textMethods	Dataset	Performance ranking	Ref	
+Proposed method
+GraphMHC (2024)
+
+Compared methods
+for MHC class I
+NetMHCpan-4.1 (2020)
+
+for MHC class II
+NetMHCIIpan-4.0 (2020)	IEDB	AUC
+1. GraphMHC
+2. NetMHCpan-4.1
+Recall
+1. GraphMHC
+2. NetMHCpan-4.1	Specificity
+1. NetMHCpan-4.1
+2. GraphMHC
+F1-score
+1. NetMHCpan-4.1
+2. GraphMHC	112	
+AUC
+1. GraphMHC
+2. NetMHCIIpan-4.0
+Recall
+1. GraphMHC
+2. NetMHCIIpan-4.0	Specificity
+1. NetMHCIIpan-4.0
+2. GraphMHC
+F1-score
+Equivalent	
+Proposed method
+TranspMHC (2025)
+
+Compared methods
+for MHC class I
+NetMHCpan-4.0 (2017),
+ACME (2019),
+pMTnet (2019),
+TransPHLA (2022),
+BigMHC (2023),
+CapsNet-MHC (2023),
+STMHCpan (2023)	IEDB	AUC
+1. TranspMHC
+2. BigMHC
+3. STMHCpan
+4. CapsNet-MHC
+5. pMTnet
+6. NetMHCpan-4.0
+7. TransPHLA
+8. ACME	Accuracy
+1. STMHCpan
+2. TranspMHC
+3. BigMHC
+4. TransPHLA
+5. pMTnet
+6. ACME
+7. NetMHCpan-4.0
+8. CapsNet-MHC	F1-score
+1. TranspMHC
+2. TransPHLA
+3. BigMHC
+4. STMHCpan
+5. pMTnet
+6. ACME
+7. NetMHCpan-4.0
+8. CapsNet-MHC	28	
+AUPR
+1. TranspMHC
+2. BigMHC
+3. CapsNet-MHC
+4. NetMHCpan-4.0
+5. pMTnet
+6. TranPHLA
+7. ACME
+8. STMHCpan	Balanced accuracy
+1. TranspMHC
+2. STMHCpan
+3. TransPHLA
+4. BigMHC
+5. ACME
+6. pMTnet
+7. NetMHCpan-4.0
+8. CapsNet-MHC	MCC
+1. TranspMHC
+2. STMHCpan
+3. ACME
+4. TransPHLA
+5. BigMHC
+6. NetMHCpan-4.0
+7. pMTnet
+8. CapsNet-MHC	
+Proposed method
+TransHLA (2025)
+
+Compared methods
+for HLA-I
+MHCflurry (2020),
+MHCnuggets (2020),
+NetMHCpan-4.1 (2020),
+Anthem (2021),
+TransPHLA (2022),
+MixMHCpred (2025)
+
+for HLA-II
+MHCnuggets (2020),
+NetMHCIIpan-4.3 (2020),
+DeepSeqPanII (2022),
+MixMHC2pred (2025)	CEDAR
+VDJdb
+ImmuneCode
+dbPepNeo2.0	Accuracy
+1. TransHLA
+2. MHCflurry
+3. NetMHCpan-4.1
+4. MixMHCpred
+5. Anthem
+6. TransPHLA
+7. MHCnuggets	MCC
+1. TransHLA
+2. MHCflurry
+3. NetMHCpan-4.1
+4. MixMHCpred
+5. Anthem
+6. TransPHLA
+7. MHCnuggets	Specificity
+1. TransHLA
+2. MHCflurry
+3. NetMHCpan-4.1
+4. MixMHCpred
+5. Anthem
+6. TransPHLA
+7. MHCnuggets	30	
+F1-score
+1. MHCflurry
+2. TransHLA
+3. NetMHCpan-4.1
+4. MixMHCpred
+5. Anthem
+6. TransPHLA
+7. MHCnuggets	Recall
+1. MHCnuggets
+2. TransPHLA
+3. MixMHCpred
+4. NetMHCpan-4.1
+5. Anthem
+6. MHCflurry
+7. TransHLA	Precision
+1. TransHLA
+2. MHCflurry
+3. NetMHCpan-4.1
+4. MixMHCpred
+5. Anthem
+6. TransPHLA
+7. MHCnuggets	
+Accuracy
+1. TransHLA
+2. MixMHC2pred
+3. NetMHCIIpan-4.3
+4. MHCnuggets
+5. DeepSeqPanII	MCC
+1. TransHLA
+2. MixMHC2pred
+3. NetMHCIIpan-4.3
+4. MHCnuggets
+5. DeepSeqPanII	Specificity
+1. TransHLA
+2. MixMHC2pred
+3. NetMHCIIpan-4.3
+4. DeepSeqPanII
+5. MHCnuggets	
+F1-score
+1. MHCnuggets
+2. TransHLA
+3. NetMHCIIpan-4.3
+4. MixMHC2pred
+5. DeepSeqPanII	Recall
+1. MHCnuggets
+2. NetMHCIIpan-4.3
+3. MixMHC2pred
+4. TransHLA
+5. DeepSeqPanII	Precision
+1. TransHLA
+2. MixMHC2pred
+3. NetMHCIIpan-4.3
+4. MHCnuggets
+5. DeepSeqPanII	
+Abbreviations: AI, artificial intelligence; AUC, area under curve; AUPR, area under precision recall; HLA, human leukocyte antigen; MCC, Matthews correlation coefficient.
+
+TranspMHC28 is a transformer-based model. When benchmarked using NetMHCpan-4.0,114 ACME,115 BigMHC,116 pMTnet,117 CapsNet-MHC,118 TransPHLA,119 and STMHCpan120 with IEDB data, TranspMHC achieved the highest performance in AUC, AUPR, balanced accuracy, F1-score, and MCC, except for accuracy. Various architectures such as CNN, attention mechanism, capsule network, and transformer were compared, and transformer-based models generally showed a superior performance. In particular, the use of AUPR, balanced accuracy, and MCC as performance metrics allowed for more reliable evaluation under data imbalance. However, since models like NetMHCpan, CapsNet-MHC, and STMHCpan could not adapt to peptides of certain lengths, it cannot be definitively concluded that TranspMHC is the best performer.
+
+TransHLA30 is a model that utilizes features obtained from both transformers and CNN. For the HLA-I case, it was compared to MHCflurry,111 MHCnuggets,121 TransPHLA,119 Anthem,122 NetMHCpan-4.1,113 and MixMHCpred.123 For HLA-II case, it was compared to DeepSeqPanII,124 MHCnuggets, NetMHCIIpan-4.3,113 and MixMHC2pred.125 Data from CEDAR,126 VDJdb,127 ImmuneCode,128 and dbPepNeo2.0129 are used for benchmarks. TransHLA showed a decent performance in accuracy, F1-score, MCC, precision, and specificity, but had a lower recall. This suggests that it may misclassify true peptide-HLA binders as negative. This could be due to insufficient representation of positive cases in the training data or a lack of data diversity, leading to poor learning of patterns involved in peptide-HLA binding.
+
+2.5.3 TCR-pHLA binding prediction
+
+TCR-pHLA binding prediction primarily aims to predict whether a TCR will bind to a pHLA complex. Table 2 includes benchmark results from recent papers that have proposed state-of-the-art models. PISTE42 is a transformer-based model that takes the combination of peptide, HLA and TCR as input to predict whether the TCR binds to the pHLA. Additionally, PISTE is described as a physics-inspired model, claiming that its sliding attention mechanism can identify the optimal binding positions. Benchmarks were conducted with pMTnet for TCR-peptide-HLA binding prediction, as well as TEIM130, ImRex,131 PanPep,132 NetTCR,133 ERGO-ae,134 ERGO-lstm,134 and TEINet135 for TCR-peptide binding prediction. The evaluation metrics used were AUC, AUPR, and PPV at n, and PISTE demonstrated a significantly superior performance compared to other models in all cases.Table 2 Performance evaluation of recent AI-based algorithm developed for TCR-pHLA prediction.
+
+Table 2 dummy alt textMethods	Dataset	Performance ranking	Ref.	
+Proposed method
+PISTE (2024)
+
+Compared algorithms
+for TCR-pHLA binding
+pMTnet
+
+for TCR-peptide binding
+ERGO-ae (2020),
+ERGO-lstm (2020),
+ImRex (2021),
+NetTCR (2021),
+TEIM (2023),
+PanPep (2023),
+TEINet (2023)	Lu T. et al. (2021)	AUC
+1. PISTE
+2. pMTnet	AUPR
+1. PISTE
+2. pMTnet	PPV@n
+1. PISTE
+2. pMTnet	42	
+AUC
+1. PISTE
+2. TEIM
+3. ImRex
+4. ERGO-ae
+5. TEINet
+6. ERGO-lstm
+7. PanPep
+8. NetTCR	AUPR
+1. PISTE
+2. TEIM
+3. ImRex
+4. ERGO-lstm
+5. ERGO-ae
+6. NetTCR
+7. PanPep
+8. TEINet	PPV@n
+1. PISTE
+2. ImRex
+3. TEIM
+4. ERGO-lstm
+5. NetTCR
+6. PanPep
+7. TEINet
+8. ERGO-ae	
+Carreno et al. (2015)
+Gros et al. (2016)
+Strønen et al. (2016)
+Prickett et al. (2016)
+Parkhurst et al. (2017)
+Fuchs et al. (2017)
+Zamora et al. (2019)
+Takeda et al. (2018)
+Linette et al. (2019)
+Wei et al. (2021)
+Gao et al. (2023)	AUC
+1. PISTE
+2. pMTnet	AUPR
+1. PISTE
+2. pMTnet	PPV@n
+1. PISTE
+2. pMTnet	
+AUC
+1. PISTE
+2. ImRex
+3. TEIM
+4. ERGO-ae
+5. TEINet
+6. NetTCR
+7. PanPep
+8. ERGO-lstm	AUPR
+1. PISTE
+2. ImRex
+3. ERGO-ae
+4. TEIM
+5. TEINet
+6. NetTCR
+7. PanPep
+8. ERGO-lstm	PPV@n
+1. PISTE
+2. ImRex
+3. ERGO-ae
+4. TEIM
+5. TEINet
+6. PanPep
+7. NetTCR
+8. ERGO-lstm	
+Proposed method
+STAG (2025)
+(STAG evt, STAG trans)
+
+Compared algorithms
+for TCR-pMHC binding
+ERGOII-ae (2021),
+ERGOII-lstm (2021),
+RACER (2021),
+NetTCR 2.2 (2023),
+3D-CNN (2025)	McPAS-TCR
+VDJdb
+IEDB
+10xGenomics	AUC
+1. STAG evt
+2. STAG trans
+3. NetTCR 2.2
+4. ERGOII-ae
+5. 3D-CNN
+6. ERGOII-lstm
+7. RACER	AUPR
+1. STAG evt
+2. STAG trans
+3. NetTCR 2.2
+4. ERGOII-ae
+5. RACER
+6. 3D-CNN
+7. ERGOII-lstm	33	
+Proposed method
+TransTCR (2025)
+
+Compared algorithms
+for TCR-pMHC-I binding
+ERGO-ae (2020),
+ERGO-lstm (2020),
+pMTnet (2021),
+PanPep (2023)	IEDB	AUC
+1. TransTCR
+2. PanPep
+3. pMTnet
+4. ERGO-lstm
+5. ERGO-ae
+
+AUPR
+1. PanPep
+2. TransTCR
+3. ERGO-lstm
+4. pMTnet
+5. ERGO-ae	Accuracy
+1. TransTCR
+2. PanPep
+3. ERGO-lstm
+4. pMTnet
+5. ERGO-ae
+
+Balanced accuracy
+1. TransTCR
+2. PanPep
+3. pMTnet
+4. ERGO-lstm
+5. ERGO-ae	F1-score
+1. TransTCR
+2. PanPep
+3. pMTnet
+4. ERGO-ae
+5. ERGO-lstm
+
+MCC
+1. TransTCR
+2. pMTnet
+3. PanPep
+4. ERGO-ae
+5. ERGO-lstm	28	
+Abbreviations: AI, artificial intelligence; AUC, area under curve; AUPR, area under precision recall; MCC, Matthews correlation coefficient; PPV@n, positive predictive value at top-n; pHLA, peptide-HLA; TCR, T cell receptor; HLA, human leukocyte antigen.
+
+STAG33 is a GNN-based model that takes the 3D structural data of TCR-pMHC complexes as a graph input to predict binding affinity. Benchmarks were conducted with NetTCR 2.2,136 ERGOII-ae,137 ERGOII-lstm,137 3D-CNN,33 and RACER138 using data from McPAS,139 VDJdb,127 IEDB,103 and 10xGenomics.140 The STAG evt model, which combines GNN and transformer, showed the best performance in terms of AUC and AUPR. However, model and metrics that predict whether a TCR binds well to a specific peptide cannot account for on-target-off-tumor effect, so additional experiments and validations are required.
+
+TransTCR28 is a transformer-based model developed alongside TranspMHC. This model adopts a differential learning method which aims to mitigate the reduced generalization ability caused by the distribution of the datasets, and uses the sequences of the peptide, MHC class I, and TCR complementarity-determining region (CDR)3 as input. When benchmarked with ERGO-ae,134 ERGO-lstm,134 PanPep,132 and pMTnet,117 TransTCR demonstrated its superior performance in all metrics (i.e., AUC, accuracy, balanced accuracy, F1-score, and MCC) except for AUPR. In addition, the paper showed that differential learning has a significant impact on performance.
+
+2.6 Integrated pipeline
+
+Single-step prediction of antigen processing, peptide-HLA or TCR-pHLA binding cannot account for context information from a complex system, protein variants that arise during the immune response process, nor do they consider tumor immune escape mechanisms. To overcome the limitations of these single-step prediction algorithms, recent studies have focused on developing integrated pipelines that acquire and utilize features from multiple stages of data processing to predict neoantigen, predict the potential of neoantigens to elicit an immune response, and assess through experimental validation. Table 3 summarizes the performance evaluation results reported in each paper that proposed a neoantigen prediction algorithm or surface presentation prediction algorithm.Table 3 Performance evaluation of integrated pipelines.
+
+Table 3 dummy alt textMethods	Dataset	Performance ranking	Ref.	
+Proposed method
+TruNeo (2020)
+Compared methods
+netMHCpan4.0 (2017),
+PSSMHCpan (2017),
+Edge (2018),
+MHCflurry (2018),
+DeepHLA (2019)	Tran et al. (2015)
+Gros et al. (2016)
+Strønen et al. (2016)	Recall@201. Edge
+
+2. TruNeo
+
+3. DeepHLA
+
+4 .netMHCpan4.0
+
+5 .MHCflurry
+
+6. PSSMHCpan
+
+	Recall@101. Edge
+
+2. TruNeo
+
+3. DeepHLA
+
+4. PSSMHCpan
+
+5. netMHCpan4.0
+
+6. MHCflurry
+
+	Recall@51. Edge
+
+2. TruNeo
+
+3. DeepHLA
+
+4. PSSMHCpan
+
+5. netMHCpan4.0
+
+6. PSSMHCpan
+
+	48	
+Proposed method
+BigMHC (2023)
+Compared methods
+MHCflurry2.0 (2020)
+MHCnuggets (2020)
+NetMHCpan4.1 (2020)
+HLAthena (2020)
+TransPHLA (2022)
+PRIME (2023)
+MixMHCpred2.2(2023)	Reynisson et al. (2020)
+O’Donnell et al. (2020)
+Schmidt et al. (2021)
+Gfeller et al. (2023)
+IEDB
+Neopepsee (2018)
+TESLA (2023)
+MANAFEST (2018)	PPV@n1. BigMHC
+
+2. HLAthena
+
+3. MixMHCpred2.2
+
+4. NetMHCpan4.1
+
+5. PRIME
+
+6. MHCflurry2.0
+
+7. TransPHLA
+
+8. MHCnuggets
+
+	AUC1. MHCnuggets
+
+2. BigMHC
+
+3. MixMHCpred2.2
+
+4. PRIME
+
+5. HLAthena
+
+6. NetMHCpan-4.1
+
+7. TransPHLA
+
+8. MHCflurry2.0
+
+	AUPR1. BigMHC
+
+2. MHCnuggets
+
+3. HLAthena
+
+4. MixMHCpred2.2
+
+5. PRIME
+
+6. NetMHCpan4.1
+
+7. TransPHLA
+
+8. MHCflurry2.0
+
+	116	
+Proposed method
+NeoDisc (2024)
+(Rule/ML-based)
+Compared methods
+pVACseq (2020)
+pTuneos (2019)
+Gartner et al. (2021)	Gartner et al. (2021)
+Müller et al. (2023)	Number of immunogenic peptides1. NeoDisc-ML
+
+2. NeoDisc-Rule
+
+3. Gartner et al.
+
+4. pVACseq
+
+5. pTuneos
+
+	49	
+Proposed method
+CapHLA (2025)
+Compared methods
+MHCflurry (2018),
+NetMHCpan (2020),
+DeepNeo-MHC (2020),
+TransPHLA (2022),
+BigMHC (2023),
+MixMHCpred (2023),
+TripHLApan (2024)	IEDB
+Mei et al. (2021)	AUC1. CapHLA
+
+2. TripHLApan
+
+3. BigMHC
+
+4. MHCflurry
+
+5. NetMHCpan
+
+6. TransPHLA
+
+7. MixMHCpred
+
+8. DeepNeo-MHC
+
+	F1-score1. CapHLA
+
+2. BigMHC
+
+3. TripHLApan
+
+4. MHCflurry
+
+5. NetMHCpan
+
+6. TransPHLA
+
+7. MixMHCpred
+
+8. DeepNeo-MHC
+
+	MCC1. CapHLA
+
+2. BigMHC
+
+3. TripHLApan
+
+4. MHCflurry
+
+5. NetMHCpan
+
+6. TrnasPHLA
+
+7. MixMHCpred
+
+8. DeepNeo-MHC
+
+	154	
+Proposed method
+HLAIImaster (2024)
+Compared methods
+MARIA (2019),
+DeepNeo-TCR(2020)
+MixMHC2pred (2015)
+NetMHCIIpan4.0(2020)	Ott et al. (2017)
+Sahin et al. (2017)
+Tran et al. (2015)
+Veatch et al. (2019)
+Veatch et al. (2018)
+Yossef et al. (2018)
+Zacharakis et al. (2018)	PPV2%1. HLAIImaster
+
+2. MARIA
+
+3. DeepNeo-TCR
+
+4. MixMHC2pred
+
+5. NetMHCIIpan4.0
+
+	156	
+Abbreviations: AUC, area under curve; AUPR, area under precision recall; MCC, Matthews correlation coefficient; PPV2%; positive predictive value at top 2 % ; PPV@n, positive predictive value at top-n; Recall@n (n = 5, 10, 20), recall at top-n.
+
+TruNeo48 is an integrated pipeline that combines existing algorithms, especially NetMHCpan-3.0141 for peptide-HLA binding prediction. It identifies high-confidence neoantigens by considering peptide-MHC class I binding affinity, proteasomal cleavage, TAP transport efficiency, expression abundance, tumor heterogeneity, clonality, and HLA-LOH. Benchmark datasets are collected from published literature.142, 143, 144 The performance of TruNeo is compared with NetMHCpan-4.0,114 MHCflurry,145 PSSMHCpan,146 DeepHLA,147 and EDGE.148 Additionally, the performance of TruNeo was compared to MHCflurry using WES and RNA-seq data from an actual small cell lung cancer patient. Notably, when comparing TruNeo to the use of only the NetMHCpan-4.0 algorithm, TruNeo achieved higher recall, and in real lung cancer patient data, it also significantly outperformed the MHCflurry algorithm. This demonstrates that TruNeo is more effective at identifying neoantigens with true immunogenicity than single-step prediction methods.
+
+BigMHC116 is an ensemble model composed of seven pan-allelic deep neural networks. It is designed to predict both peptide binding to MHC class I molecules and immunogenicity. Since experimentally obtaining pHLA data recognized by T cells is very difficult and the amount of accumulated data is limited, BigMHC addresses this by first pre-training on large-scale MS-based MHC class I eluted ligand data and then conducts fine-tuning on a small set of immunogenic data using a transfer learning approach. This strategy is significant in that it enables the model to learn immunogenic features associated with T cell recognition during training. In benchmark tests, BigMHC demonstrated a significantly superior performance in PPV at n and AUPR metrics. However, a limitation of BigMHC is that it does not consider the TCR binding process in its immunogenicity predictions.
+
+NeoDisc49 is a proteogenomics-integrated pipeline for personalized neoantigen discovery. It builds upon existing ML-based algorithms149 by incorporating peptide-HLA binding affinity, presentation probability, mutation information, and immunogenicity data as inputs to train a model that predicts the immunogenicity of candidate neoantigens. A key point is that NeoDisc performs neoantigen prediction through integrated multi-omics data analysis and can account for tumor heterogeneity. When benchmarked against other algorithms, which include pVACseq,150,151 pTuneos,152 and Gartner et al.,153 NeoDisc demonstrates a significantly superior performance in predicting immunogenic neoantigens.
+
+CapHLA154 is a convolution and attention-based deep learning algorithm that predicts peptide-HLA binding affinity and surface presentation probability for both HLA class I and II. It outperforms the ensemble model BigMHC,116 TripHLApan,35 MixMHC2pred,149 TransPHLA,119 DeepNeo-MHC,155 NetMHCpan-EL,113 and MHCflurry146 in terms of accuracy, F1-score, and MCC. The significance of CapHLA lies in its ability to simultaneously predict the peptide-HLA binding affinity and surface presentation probability by utilizing EL data. However, it only uses the sequence information of peptide-HLA pairs and does not directly incorporate additional biological factors that affect presentation, such as peptide processing, abundance, TAP transport, or proteasome cleavage. Like BigMHC, it also has the limitation that it cannot predict T cell recognition, which is necessary for immunogenicity prediction.
+
+HLAIImaster156 is a multi-modal two-stage attention-based deep learning model for HLA-II antigen presentation and immunogenicity prediction. The first stage is based on a transformer and attention mechanism to predict the peptide-HLA presentation using the peptide sequence, HLA-II gene sequence, protein expression values, and protease cleavage score, while the second stage uses transfer learning and domain adaptation to estimate the immunogenicity of presented peptides with additional immune response data. This model has shown the highest performance in differentiating experimentally validated melanoma associated peptides using the PPV@N(2%) metric over MARIA,157 which is also a multi-modal AI scheme based on a RNN network. However, this model has limitations such as data bias (exception of HLA-DP allele because of data scarcity) and uses experimentally set weights for multi-modal data.
+
+2.7 Summary
+
+AI algorithms have evolved from independent, single-step models toward integrated pipelines that jointly consider antigen processing, peptide–HLA (pHLA) binding, TCR–pHLA recognition, and immunogenicity.
+
+In antigen processing, Pepsickle, PUUPL, NetCleave, DeepTAP, and MHCflurry 2.0 AP address proteasomal cleavage, TAP transport, and ER trimming, though proxy labeling and data scarcity still limit generalization. For peptide-HLA and TCR-pHLA binding, major performance gains now come from attention-based architectures, transfer learning on large eluted ligand datasets, and fine-tuning with limited immunogenicity labels. However, performance highly depends on dataset choice and evaluation metrics. After collecting the benchmark results proposed in each paper, the results reveal that the same algorithm can show widely varying performance metrics (e.g., AUC) depending on the dataset in different studies. For example, in the result of PISTE, the ERGO showed an AUC lower than 0.6, but in that of TranspMHC, the ERGO showed over 0.8. The validation dataset was different, underscoring the need for balanced, robust indicators such as PPV@n and further in-depth research. In addition, current AI research remains unexplored in areas such as T cell trafficking, infiltration, and exhaustion due to the scarcity of available data and lack of standardized benchmarks.
+
+At the pre-clinical level, integrated pipelines such as TruNeo, BigMHC, NeoDisc, and CapHLA demonstrate practical advantages by combining antigen processing, clonality, tumor heterogeneity, and HLA binding into unified scores, improving the recall and prioritization of clinically actionable neoantigens. Specifically, EDGE, trained directly on tumor HLA ligandome MS data, achieved a PPV up to nine-fold higher than the binding affinity-based models with or without expression filtering at matched recall, highlighting substantial wet-lab savings per top-N ranked peptides. By contrast, while the integrated pipeline, TruNeo, improved prioritization over affinity-only baselines, EDGE consistently achieved the highest recall@5 to 20 candidate sets on a shared benchmark, IFN-γ ELISpot.158 These results have shown that presentation-aware or multi-modal integration, rather than affinity alone, is critical for decision-level metrics such as recall@N and wet-lab saves per top-N. In addition, Fig. 3 shows schematic vignettes where AI yields a net benefit over affinity-only heuristics or clinician judgment.Fig. 3 Schematic vignettes linking AI approaches to decision-aligned metrics and downstream impact in TCR-T therapy workflows. (A) Presentation-aware method improves PPV@N, recall@N, and AUPR, increasing true-positive density within the experimentally testable top-N set and reducing wet-lab burden. (B) Multi-modal fusion method yield gains in AUPR and MCC, enabling improved responder likelihood estimation and decision threshold based on net benefit. AUC, area under the curve; AUPR, area under the precision-recall; EL, eluted ligand; MCC, Matthews correlation coefficient; MS, mass spectrometry; PPV, positive predictive value.
+
+Fig 3 dummy alt text
+
+However, end-to-end models to integrate TCR recognition, functional activity, off-tumor risks, and tumor microenvironmental heterogeneity remain incomplete and require experimental validation (e.g., MS immunopeptidomics, tetramer assays, functional T cell assays).
+
+3 Limitations
+
+This chapter provides a more detailed discussion of the current limitations of existing AI models and highlight areas where further improvements are needed.
+
+3.1 Evaluation
+
+3.1.1 Metrics
+
+Although AUC and AUPR are widely used metrics for AI performance evaluation, the metrics do not properly reflect the deterministic characteristics of screening. For example, in binding models, the AUC evaluates only the probability that a randomly selected binding pair will receive a higher score than a random non-binding pair159 and does not account for the accuracy of prediction or the actual effectiveness within the top-N selection. Moreover, model-predicted probability values often serve merely as scores, not the desired value (e.g., binding probability). In the development of TCR-T therapy, wet-lab resources are limited. Therefore, the objective of current AI research is focused on identifying a manageable top-N subset from millions of candidates with top-N metrics such as PPV@N and recall@N.160 In addition, evaluating the reliability of predicted probabilities via calibrated risk metrics (e.g., expected or maximum calibration error),161 assessing clinical and economic value through the net benefit using decision curve analysis,162 and measuring direct work efficiency improvements, such as wet-lab saves per top-N,163 should be included.
+
+3.1.2 Data
+
+Current AI systems are fundamentally constrained by datasets. For antigen processing, many labels are intrinsically unobservable at scale. Proteasome cleavage, TAP transport or ER trimming are typically inferred indirectly or sampled sparsely by MS, so training labels are incomplete, noisy, and biased toward abundant peptides.164,165 For binding prediction, most TCR-pHLA resources record binders while non-binding pairs are often synthetically generated by random or heuristic re-pairing rather than assay-verification.160,166 This may inflates the AUC or AUPR and undermine generalization to unseen epitopes or HLAs, and the recent benchmarks and reviews repeatedly report this negative label gap in TCR specificity datasets. In addition, model generalizability is also constrained by HLA restriction, as datasets and clinical trials are enriched for frequent alleles (e.g., HLA-A*02:01).160
+
+In the context of HLA-II, challenges on data are even more pronounced. Unlike HLA-I, which have closed ends, where most models treat binding as a binding classification problem, HLA-II prediction should consider several points; (i) identification of the 9-mer binding core and register within variable-length peptides167; (ii) prediction of peptide-HLA II binding and presentation across diverse combinations113; (iii) evaluation of HLA-DM mediated editing sensitivity and kinetic stability61; and (iv) assessment of CD4⁺ responses.168 However, current labels are largely derived by MS which only take a subset of presented peptides and functional assays for HLA-II presentation and immunogenicity, which remain limited and imbalanced.
+
+Moreover, the risk of data leakage leads to performance overestimation. If data from the same epitope are mixed between training and test datasets, epitope frequency or patterns could be major features rather than true TCR specificity. Benchmark studies have shown that models with high AUC and AUPR under random splits frequently perform poorly under “leave-one-epitope-out” evaluations,160,166 indicating that a good performance is only obtainable for commonly observed targets but fails for rare ones.169 Likewise, overlap of similar CDR3 sequences or identical pairs from different databases or publications can induce memorization effects, necessitating rigorous curation to remove duplicate or closely related data.170,171 Overestimation also arises when data from the same donor, laboratory, or batch are split between train and test datasets, stressing the importance of “leave-one-study-out” or donor-level splits. The recent IMMREP23 benchmarking challenge highlights that a split design is paramount for valid model assessment.172
+
+3.2 Complexity
+
+Single-step predictions cannot capture the full contextual complexity of the immune system. Immunogenicity is not solely dependent on high binding affinity.173,174 Binding stability has been shown to be a more effective predictor of cytotoxic T lymphocyte immunogenicity for peptides and HLA class I175 and combining the dissociation rate and affinity is far more effective for predicting peptide immunogenicity than considering affinity alone.176,177 In addition, NetMHCstabpan178 have shown that half-life of pHLA is more related to immunogenicity than affinity. Furthermore, even when the same peptide binds to multiple HLA alleles, immune responses may be induced by some alleles but not others.167 Finally, an analysis using ML techniques revealed that features such as proteasomal cleavage, TAP import into ER, and binding stability are more strongly associated with immunogenicity than binding affinity.149
+
+Recently, studies have been conducted to predict the immunogenicity of cancer neoantigens,179, 180, 181 which include machine learning179,181 and deep learning180 approaches that predict immunogenicity by considering several biological features (e.g., binding core, surface, structure, expression, TME). In addition, the study proposed by tumor neoantigen selection alliance (TESLA)182 identified several key parameters that influence tumor epitope immunogenicity. Among the parameters, the study demonstrated that MHC-I binding affinity, abundance in the TME, binding stability, fractional hydrophobicity, and mutation position are key immunogenic parameters for development of prediction algorithms, with validation across multiple cohort experiments. Table 4 presents categorized features, including sequence-based, structure-based, mutation-specific, patient-specific, expression, presentation, similarity, and foreignness features, to be considered in the immunogenicity prediction step.Table 4 Critical features to consider in immunogenicity prediction.
+
+Table 4 dummy alt textCategory	Features	
+Sequence-based	Hydrophobicity, aromaticity, charge distribution, amino acids composition, HLA binding peptide core site, and pHLA binding anchor position	
+Structure-based	pHLA complex total energy, structural stability, TCR binding energy potential, and surface accessibility	
+Mutation-specific	BLOSUM mutation score, codon mutation score, differential agretopicity index, mutational clonality, variant allele fraction, mutation position, and anchor mutation	
+Patient-specific	Cytolytic activity, TME cell populations, immune cell infiltration, HLA expression, and loss of heterozygosity	
+Expression and presentation	Antigen expression, gene expression, peptide-HLA binding affinity, TAP efficiency, proteasomal cleavage	
+Similarity and foreignness	Mutant-wildtype similarity, similarity to pathogen epitope	
+Abbreviations: BLOSUM, blocks substitution matrix; HLA, human leukocyte antigen; pHLA, peptide-HLA; TAP, transporter associated with antigen processing; TCR, T cell receptor; TME, tumor microenvironment.
+
+3.3 Immune response and safety
+
+While current AI prioritizes predicting immunogenic peptide-HLA-TCR combinations, studies that systematically address adverse effects such as on-target-off-tumor toxicity are limited.
+
+In 2013, an affinity-enhanced TCR targeting MAGE-A3 triggered fatal cardiotoxicity because the engineered receptor cross-recognized a homologous HLA-A*01-presented Titin peptide in a human heart. This issue arose because the Titin peptide of a mouse did not cross-react in pre-clinical studies.183 A separate 2013 report described severe neurologic toxicity from MAGE-A-directed TCR-T, likely due to unappreciated MAGE-A12 expression in the human brain.184 These cases have shown that high-affinity TCRs can convert subtle normal-tissue presentation into clinical toxicity and that animal models may miss human-specific risks, emphasizing prospective, multi-tier TCR specificity screening mandatory before clinical deployment.185
+
+From AI for TCR-T perspectives, these safety related cases translate into requirements for model development and evaluation; incorporating presentation and normal-tissue evidence beyond affinity and penalizing candidate TCRs with predicted recognition of benign ligands.186
+
+4 Advanced TCR-T therapy
+
+Developing an all-in-one model that can comprehensively reflect all of the massive number of variables and highly complex steps of TCR-T therapy is currently not possible. This is why recent research has been focused on applying AI to accelerate specific stages of the therapeutic process or to simulate the phenomena that are otherwise intractable through conventional mathematical modeling. While such task-specific approaches have yielded meaningful advances, relying solely on data that is observable within each isolated stage is insufficient to reflect the complexity of the immune response as an integrated system. Moreover, most AI models remain primarily data-driven, where the vastness of the solution space leads to an overwhelming number of candidate predictions. Consequently, experimental validation remains indispensable and demands substantial time and resources.
+
+Looking forward, this section introduces a set of strategies aimed at mitigating these limitations, in which Table 5 maps various strategy types to their limitations that have been described in Sections 4.1-4.5.Table 5 Summarized description of AI applications, limitations, and emerging mitigation strategies in this review.
+
+Table 5 dummy alt textApplication	Limitations	Proposed / Emerging Mitigation Strategies	
+Antigen Processing & Presentation	(1) Label noise due to imprecise C-terminal cleavage definitions
+
+(2) Sparse or synthetic negative samples limit discrimination power
+
+(3) Poor generalization for immunoproteasome and HLA-II
+
+(4) Insufficient diversity in multi-allelic datasets
+
+	(1) Integrate multi-omics datasets to refine cleavage annotation
+
+(2) Apply transfer learning from large-scale ligandome datasets
+
+(3) Incorporate physics-informed modeling for proteasomal kinetics
+
+(4) Employ federated learning framework to harmonize rare allele data across institutions
+
+	
+Peptide–HLA Binding	(1) Over-representation of frequent alleles skews prediction bias
+
+(2) Imbalanced positive/negative sample ratios
+
+(3) Limited correlation between binding affinity and immunogenicity
+
+	(1) Employ balanced benchmarking and stratified evaluation metrics
+
+(2) Apply domain adaptation and transfer learning for underrepresented alleles
+
+(3) Incorporate multiple features (e.g., peptide stability and half-life) into model objectives
+
+	
+TCR–pHLA Binding	(1) Data leakage between training and test datasets
+
+(2) Use of synthetic non-binders leads to unrealistic negatives
+
+(3) Poor generalization to unseen epitopes
+
+(4) Off-tumor toxicity not explicitly modeled
+
+	(1) Implement leave-one-epitope-out or donor-level cross-validation
+
+(2) Multi-modal fusion of structural and sequence features
+
+(3) Adopt de novo TCR design using reinforcement learning or physics-informed learning
+
+(4) Include safety filters using large ligandome datasets
+
+	
+Integrated pipeline	(1) Manual weighting of heterogeneous modalities
+
+(2) Dataset bias and missing data across modalities
+
+	(1) Adopt physics-informed generative AI for synthetic data completion
+
+(2) Employ federated learning framework to harmonize rare allele data across institutions
+
+	
+Trafficking & Infiltration	(1) Data scarcity prevents supervised learning
+
+(2) In vivo validation remains technically challenging
+
+(3) Complex relationship between spatial diffusion, adhesion, and immune suppression
+
+	(1) ODE/PDE based digital twin framework for spatial modeling
+
+(2) Integrate mechanistic parameters into ML
+
+(3) Employ reinforcement learning to optimize dosing and cell-type composition dynamically
+
+	
+Abbreviations: AI, artificial intelligence; HLA, human leukocyte antigen; ML, machine learning; ODE, ordinary differential equation; PDE, partial differential equation; pHLA, peptide-HLA.
+
+4.1 Federated learning
+
+Federated learning (FL) is a collaborative training paradigm that enables institutions to develop a model without a centralized raw database.187 It may provide a viable strategy to overcome the data-related challenges. For example, by allowing each site to train locally and share only model parameters, FL facilitates the inclusion of geographically and demographically diverse cohorts, thereby mitigating allele skew and improving model generalization across under-represented HLA. Furthermore, because each institution can serve as an independent validation domain, FL naturally supports leave-one-study-out or leave-one-epitope-out evaluation schemes. Finally, the decentralized aggregation of model updates from heterogeneous MS pipelines may also reduce site-specific bias and enhance robustness against incomplete or noisy antigen processing labels.188
+
+4.2 De novo TCR design
+
+Most current AI models related to TCR stand for binding affinity prediction and finding candidate TCR from a database. Nevertheless, research on de novo TCR generation189, 190, 191, 192 is also increasingly being conducted. A recent study based on reinforcement learning189 utilized PanPep,132 a model with a high performance in binding prediction, to generate TCR sequences optimized for binding. Although PanPep has primarily been used as the reward model in reinforcement learning, incorporating additional biological factors involved in immune response into the reward model could enable accurate TCR sequence generation.
+
+In addition, recently, physics-informed neural network193 has demonstrated the effectiveness of seamlessly integrating physical knowledge into data-driven learning, and a physics-informed diffusion model,194 which combines these principles with a generative diffusion model195 has been proposed. A generative model,196 including diffusion model, can serve as a powerful alternative in the data scarce field (e.g., TCR-pHLA binding prediction). However, the immune system is highly complex and involves many variables that must be considered. If mathematical modeling of a biological phenomena, along with structural and physical constraints and other available prior knowledge, is incorporated into the diffusion model, it should enable faster identification of candidate TCR sequences that are more clinically relevant and reliable.
+
+4.3 Explainable AI and large language models
+
+While large language models (LLMs) are driving global transformation, attempts to apply them to various research fields are underway. This expansion has already reached fields closely related to immunotherapy, including RNA-protein interaction,197 protein-protein interaction,198 and drug-target interaction prediction.199 This can be attributed to LLM’s advantage in comprehensively modeling the complex relationships between sequence, structure, and function. 200,201 First, LLMs enable improved data efficiency through self-supervised learning. Second, the self-attention mechanism of LLMs allows for more effective predictions by considering not only local patterns but also the global context of the data. Furthermore, recent advancements have seen LLMs incorporate the Chain of Though (CoT) reasoning technique,202 enabling evidence-based inference from unstructured data. Unlike conventional LLMs, which generate immediate responses to queries, the CoT approach allows models to explicitly outline intermediate reasoning steps, thereby clarifying how they arrive at specific conclusions. For instance, in generative AI models designed to predict TCR-pHLA binding affinity, CoT can be utilized to explain whether a particular sequence enhances or weakens the binding affinity. Additionally, when generating novel sequences, CoT ensures that the model does not merely propose optimized sequences but also provides insights into how its choices account for physiological functions, immunological properties, or correlations with TCR-pHLA interactions. It enhances the reliability of predictions by providing insights into how specific sequences may influence immune responses, ultimately achieving the objective of explainable AI.
+
+In addition, by leveraging retrieval-augmented generation (RAG),203 LLMs can reference newly discovered data or information related to immune responses. This helps mitigate the hallucination problem inherent to conventional LLMs, which operate on static data, and enables the delivery of domain-specific customized responses. By providing up-to-date information on immune responses, RAG can improve the accuracy of neoantigen and immune response prediction.204
+
+4.3.1 Foundation model in medicine
+
+Recently, as efforts to build LLM in the field of medicine have increased,205, 206, 207, 208 research on foundation models for medicine has also been actively pursued.209,210 A foundation model in medicine refers to a large-scale AI model that is pre-trained on vast amounts of unlabeled medical data using self-supervised or unsupervised learning. This model learns generalized knowledge and patterns from diverse types of data, including natural language-type inputs such as protein sequences, DNA sequences, or simplified molecular input entry system (SMILES) codes211; images such as magnetic resonance imaging (MRI), computed tomography (CT), or positron emission tomography (PET); mathematical analyses, and clinical reports. It can then be easily adapted to various downstream or specific tasks through fine-tuning or in-context learning. The foundation model can be considered an initial digital twin of the human body system, and in the medical field, it can be referred to as a digital patient twin.212
+
+4.4 Simulation program
+
+Although there are currently no studies that apply AI to predict trafficking and infiltration in TCR-T therapy, computational modeling approaches have been proposed to address these dynamics. Joslyn et al., 2024, employs an ordinary differential equation (ODE) based system to reflect proliferation, differentiation, trafficking and death of multiple T cell subsets, including both therapeutic TCR-T cells and endogenous T cells over time.213 Using clinical data as input, this model allows for patient-specific parameter estimation as a digital twin simulation framework. The simulation results demonstrated that an infusion product enriched in stem cell-like memory T cells yields substantially greater expansion and persistence compared with effector memory or effector T cell dominated compositions, and that therapeutic efficacy can be achieved even at lower doses. This provides a rational basis for optimizing the infusion product composition in TCR-T therapy.
+
+In addition, mathematical modeling has been applied to quantify the intra-tumoral infiltration dynamics of T cells to evaluate both efficacy and safety.214 In this study, a microfluidic organ-on-a-chip-based 3-D intestinal tissue model was established, co-culturing patient-derived PBMC with macrophages and intestinal epithelial cells. The system enabled direct observation of T cell penetration into tissue compartments, and development of a partial differential equation (PDE) model for characterization of the reaction-diffusion-chemotaxis dynamics. This provides a simultaneous simulation of spatio-temporal variations in PBMC density and chemokine concentrations, enabling quantitative analysis of the interplay between T cell infiltration and cell death within the TME.
+
+These studies highlight the potential of mechanistic and mathematical modeling as complementary tools for understanding and predicting T cell trafficking and infiltration in TCR-T therapy. While AI has not yet been directly applied in this context, integrating ML with ODE/PDE-based digital twin simulations may offer many benefits towards enhancing clinical translation.
+
+4.5 Quantum computing
+
+Since the advent of the noisy intermediate-scale quantum (NISQ) era in 2017, efforts to leverage quantum supremacy,215 defined as achieving exponential speedup over classical computing in specific problems have grown substantially in the field of bioinformatics. For example, D-Wave Quantum’s quantum annealing system has been applied to optimize the reconstruction of CT images.216 Hybrid quantum-classical computing has also been utilized for peptide design targeting microplastics,217 and a hybrid generative model identified potential KRAS inhibitors that were later validated experimentally.218 Furthermore, quantum algorithms have been employed to tackle protein and peptide design challenges, particularly in searching for low-energy conformational states.219
+
+Efforts to adapt classical neural networks into quantum frameworks have also emerged. Examples include quantum long short-term memory (LSTM),220 quantum generative adversarial network (GAN),221 and quantum variational autoencoder (VAE).222 More recently, a quantum neural network was successfully applied to identify a novel genetic biomarker associated with mutational activation of CTLA-4 related pathways.223
+
+In the context of TCR-T therapy, quantum computing offers advantages for managing enormous combinatorial and structural complexity. Quantum algorithms can efficiently explore the vast search space of TCR-pHLA interactions, identifying high-affinity and clinically relevant pairs faster than classical methods. Moreover, quantum generative models can be used to design novel TCR sequences or peptide candidates that satisfy predefined biophysical constraints, while quantum optimization enables rapid selection of pairs by minimizing energy or binding uncertainty.
+
+Despite current limitations, including noise in quantum devices, restricted hardware scalability, and need for advanced quantum algorithms, the eventual development of large-scale quantum computers and computing algorithms hold promise for breakthroughs in TCR-T therapy.
+
+5 Conclusions
+
+AI is rapidly transforming the development of TCR-T therapy by enhancing the precision of antigen processing, peptide-HLA, and TCR-pHLA predictions. Despite current constraints in data quality, model generalizability, and safety validation, emerging approaches, including multi-modal integration, federated learning, digital twin, and physics-informed generative AI, may progressively bridge the gap between computational prediction and clinical translation. Through these efforts, AI can enable faster, safer, and more personalized TCR-T therapy development.
+
+CRediT author contribution statement
+
+Inbum Lee: Conceptualization, Investigation, Writing – original draft. Minsoo Joo: Writing – review & editing. Jong-Moon Chung: Writing – review & editing, Supervision.
+
+Declaration of competing interest
+
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+Acknowledgments
+
+This work has been supported by Global Education and Research Center for Convergence Technology, a Brain Korea 21 four program of Yonsei University.
+
+
+References
+
+1 Tawbi H.A. Schadendorf D. Lipson E.J. Relatlimab and nivolumab versus nivolumab in untreated advanced melanoma N Engl J Med 386 1 2022 24 34 10.1056/NEJMoa2109970 34986285 PMC9844513
+2 Frey C. Etminan M. Adverse events of PD-1, PD-L1, CTLA-4, and LAG-3 immune checkpoint inhibitors: an analysis of the FDA adverse events database Antibodies 13 3 2024 59 10.3390/antib13030059 39051335 PMC11270294
+3 Voruganti T. Soulos P.R. Mamtani R. Presley C.J. Gross C.P. Association between age and survival trends in advanced non–small cell lung cancer after adoption of immunotherapy JAMA Oncol 9 3 2023 334 341 10.1001/jamaoncol.2022.6901 36701150 PMC9880865
+4 Trando A. Ter-Zakarian A. Yeung P. Outcomes of chimeric antigen receptor (CAR) T-cell therapy in patients with large B-cell lymphoma (LBCL): A single-institution experience Cancers 15 18 2023 4671 10.3390/cancers15184671 37760639 PMC10527363
+5 Kantarjian H. Stein A. Gökbuget N. Blinatumomab versus chemotherapy for advanced acute lymphoblastic leukemia N Engl J Med 376 9 2017 836 847 10.1056/NEJMoa1609783 28249141 PMC5881572
+6 Johnson L.A. June C.H. Driving gene-engineered T cell immunotherapy of cancer Cell Res 27 1 2017 38 58 10.1038/cr.2016.154 28025979 PMC5223234
+7 Zhao Z. Chen Y. Francisco N.M. Zhang Y. Wu M. The application of CAR-T cell therapy in hematological malignancies: advantages and challenges Acta Pharm Sin B 8 4 2018 539 551 10.1016/j.apsb.2018.03.001 30109179 PMC6090008
+8 Sterner R.C. Sterner R.M. CAR-T cell therapy: current limitations and potential strategies Blood Cancer J 11 4 2021 69 10.1038/s41408-021-00459-7 33824268 PMC8024391
+9 Rosenberg S.A. Packard B.S. Aebersold P.M. Use of tumor-infiltrating lymphocytes and interleukin-2 in the immunotherapy of patients with metastatic melanoma N Engl J Med 319 25 1988 1676 1680 10.1056/NEJM198812223192527 3264384
+10 Rohaan M.W. Borch T.H. Berg JH van den Tumor-infiltrating lymphocyte therapy or Ipilimumab in advanced melanoma N Engl J Med 387 23 2022 2113 2125 10.1056/NEJMoa2210233 36477031
+11 Parums D.V. Editorial: first regulatory approval for adoptive cell therapy with autologous tumor-infiltrating lymphocytes (TILs) – lifileucel (Amtagvi) Med Sci Monit 30 2024 e944927 10.12659/MSM.944927 PMC11071689 38689550
+12 Kazemi M.H. Sadri M. Najafi A. Tumor-infiltrating lymphocytes for treatment of solid tumors: it takes two to tango? Front Immunol 13 2022 1018962 10.3389/fimmu.2022.1018962 PMC9651159 36389779
+13 Zhao Q. Jiang Y. Xiang S. Engineered TCR-T cell immunotherapy in anticancer precision medicine: pros and cons Front Immunol 12 2021 658753 10.3389/fimmu.2021.658753 PMC8042275 33859650
+14 D’Angelo S.P. Araujo D.M. Razak A.R.A. Afamitresgene autoleucel for advanced synovial sarcoma and myxoid round cell liposarcoma (SPEARHEAD-1): an international, open-label, phase 2 trial Lancet 403 10435 2024 1460 1471 10.1016/S0140-6736(24)00319-2 38554725 PMC11419333
+15 Chen I. Chen M.Y. Goedegebuure S.P. Gillanders W.E. Challenges targeting cancer neoantigens in 2021: a systematic literature review Expert Rev Vaccines 20 7 2021 827 837 10.1080/14760584.2021.1935248 34047245 PMC8410655
+16 Zhang K. Zhang Y. Xiang P. Advances in T cell-based cancer immunotherapy: from fundamental mechanisms to clinical prospects Mol Pharm 22 6 2025 2807 2829 10.1021/acs.molpharmaceut.4c01502 40359327
+17 Wang S. Ma P. Liu J. A phase I study of personalized KSX01-TCRT therapy for advanced solid tumor and its mechanisms Ann Oncol 35 suppl 1 2024 S694 10.1016/j.annonc.2024.08.1087
+18 Wang S. Ma P. Ding J. Phase I trial of personalized AI-identified TCR-transduced T cell therapy in advanced solid tumors J Clin Oncol 43 suppl 16 2025 2535 10.1200/JCO.2025.43.16_suppl.2535
+19 Bujak J. Kłęk S. Balawejder M. Creating an innovative artificial intelligence–based technology (TCRact) for designing and optimizing T cell receptors for use in cancer immunotherapies: protocol for an observational trial JMIR Res Protoc 12 2023 e45872 10.2196/45872 PMC10375398 37440307
+20 Pétremand R. Chiffelle J. Bobisse S. Identification of clinically relevant T cell receptors for personalized T cell therapy using combinatorial algorithms Nat Biotechnol 43 3 2025 323 328 10.1038/s41587-024-02232-0 38714897 PMC11919687
+21 Hudson D. Fernandes R.A. Basham M. Ogg G. Koohy H. Can we predict T cell specificity with digital biology and machine learning? Nat Rev Immunol 23 8 2023 511 521 10.1038/s41577-023-00835-3 36755161 PMC9908307
+22 Cai Y. Chen R. Gao S. Artificial intelligence applied in neoantigen identification facilitates personalized cancer immunotherapy Front Oncol 12 2023 1054231 10.3389/fonc.2022.1054231 PMC9868469 36698417
+23 Bulashevska A. Nacsa Z. Lang F. Artificial intelligence and neoantigens: paving the path for precision cancer immunotherapy Front Immunol 15 2024 1394003 10.3389/fimmu.2024.1394003 PMC11167095 38868767
+24 Xie N. Shen G. Gao W. Huang Z. Huang C. Fu L. Neoantigens: promising targets for cancer therapy Sig Transduct Target Ther 8 1 2023 1 38 10.1038/s41392-022-01270-x PMC9816309 36604431
+25 Pang Z. Lu M.M. Zhang Y. Neoantigen-targeted TCR-engineered T cell immunotherapy: current advances and challenges Biomark Res 11 1 2023 104 10.1186/s40364-023-00534-0 38037114 PMC10690996
+26 Zhang J. Ma W. Yao H. Accurate TCR-pMHC interaction prediction using a BERT-based transfer learning method Brief Bioinform 25 1 2024 bbad436 10.1093/bib/bbad436 PMC10783865 38040492
+27 Chen J.Y. Wang J.F. Hu Y. Li X.H. Qian Y.R. Song C.L. Evaluating the advancements in protein language models for encoding strategies in protein function prediction: a comprehensive review Front Bioeng Biotechnol 13 2025 1506508 10.3389/fbioe.2025.1506508 PMC11790633 39906415
+28 Niu R. Wang J. Li Y. Zhou J. Guo Y. Shang X. Attention-aware differential learning for predicting peptide-MHC class I binding and T cell receptor recognition Brief Bioinform 26 1 2025 bbaf038 10.1093/bib/bbaf038 PMC11781218 39883517
+29 Long X. Yang Q. Dong W. THLANet: A deep learning framework for predicting TCR-pHLA binding in immunotherapy applications PLoS Comput Biol 21 9 2025 e1013050 10.1371/journal.pcbi.1013050 PMC12449017 40939018
+30 Lu T. Wang X. Nie W. Huo M. Li S. TransHLA: a hybrid transformer model for HLA-presented epitope detection GigaScience 14 2025 giaf008 10.1093/gigascience/giaf008 40036690 PMC11878767
+31 Xie Y. Tang L. Zhou G. Hua R. Liu L. Tαβ-bphg: a dual-branch heterogeneous graph neural network for tcrαβ-peptide binding prediction SSRN preprint 2025 10.2139/ssrn.5144732
+32 Deleuran S.N. Nielsen M. NetTCR-struc, a structure driven approach for prediction of TCR-pMHC interactions Front Immunol 16 2025 1616328 10.3389/fimmu.2025.1616328 PMC12311634 40746534
+33 Slone J.K. Conev A. Rigo M.M. Reuben A. Kavraki L.E. TCR-pMHC binding specificity prediction from structure using graph neural networks IEEE Trans Comput Biol Bioinform 22 1 2025 171 179 10.1109/TCBBIO.2024.3504235 40811222 PMC12356035
+34 Jiang D. Wu Z. Hsieh C.Y. Could graph neural networks learn better molecular representation for drug discovery? A comparison study of descriptor-based and graph-based models J Cheminform 13 1 2021 12 10.1186/s13321-020-00479-8 33597034 PMC7888189
+35 Wang M. Lei C. Wang J. Li Y. Li M. TripHLApan: predicting HLA molecules binding peptides based on triple coding matrix and transfer learning Brief Bioinform 25 3 2024 bbae154 10.1093/bib/bbae154 38600667 PMC11006794
+36 Zhang Y. Wang Z. Jiang Y. Epitope-anchored contrastive transfer learning for paired CD8+ T cell receptor–antigen recognition Nat Mach Intell 6 11 2024 1344 1358 10.1038/s42256-024-00913-8
+37 Su L. Wang D. Xu D. Bridging peptide presentation and T cell recognition with multi-task learning Nat Mach Intell 7 2 2025 170 171 10.1038/s42256-025-01004-y
+38 Ikkyu K. Nikaido I. The effect of Multi-task learning on the prediction of Neoantigen–MHC class II binding IEEE Trans on Comput Biol Bioinform 22 2 2025 570 580 10.1109/TCBBIO.2025.3526707 40811385
+39 Jin R. Ge J. Zhang G. A multi-modal deep learning framework with both sequence and structure for tumor antigens prediction bioRxiv preprint 2024 10.1101/2024.11.06.622193
+40 Vaswani A, Shazeer N, Parmar N, et al. Attention is all you need. arXiv preprint 2017. doi:10.48550/arXiv.1706.03762.
+41 Valentini G. Malchiodi D. Gliozzo J. The promises of large language models for protein design and modeling Front Bioinform 3 2023 1304099 10.3389/fbinf.2023.1304099 PMC10701588 38076030
+42 Feng Z. Chen J. Hai Y. Sliding-attention transformer neural architecture for predicting T cell receptor–antigen–human leucocyte antigen binding Nat Mach Intell 6 10 2024 1216 1230 10.1038/s42256-024-00901-y
+43 Scarselli F. Gori M. Tsoi A.C. Hagenbuchner M. Monfardini G. The graph neural network model IEEE Trans Neural Netw 20 1 2009 61 80 10.1109/TNN.2008.2005605 19068426
+44 Reiser P. Neubert M. Eberhard A. Graph neural networks for materials science and chemistry Commun Mater 3 1 2022 93 10.1038/s43246-022-00315-6 36468086 PMC9702700
+45 van der Weg K. Merdivan E. Piraud M. Gohlke H. TopEC: prediction of enzyme commission classes by 3D graph neural networks and localized 3D protein descriptor Nat Commun 16 1 2025 2737 10.1038/s41467-025-57324-5 40108108 PMC11923149
+46 Zhuang F. Qi Z. Duan K. A comprehensive survey on transfer learning arXiv preprint 2020 10.48550/arXiv.1911.02685
+47 Yin S. Fu C. Zhao S. A survey on multimodal large language models Nat Sci Rev 11 12 2024 nwae403 10.1093/nsr/nwae403 PMC11645129 39679213
+48 Tang Y. Wang Y. Wang J. TruNeo: an integrated pipeline improves personalized true tumor neoantigen identification BMC Bioinformatics 21 1 2020 532 10.1186/s12859-020-03869-9 33208106 PMC7672179
+49 Huber F. Arnaud M. Stevenson B.J. A comprehensive proteogenomic pipeline for neoantigen discovery to advance personalized cancer immunotherapy Nat Biotechnol 43 8 2025 1360 1372 10.1038/s41587-024-02420-y 39394480 PMC12339364
+50 Liu Y. Yan X. Zhang F. TCR-T immunotherapy: the challenges and solutions Front Oncol 11 2022 794183 10.3389/fonc.2021.794183 PMC8822241 35145905
+51 Waldman A.D. Fritz J.M. Lenardo M.J. A guide to cancer immunotherapy: from T cell basic science to clinical practice Nat Rev Immunol 20 11 2020 651 668 10.1038/s41577-020-0306-5 32433532 PMC7238960
+52 Alnefaie A. Albogami S. Asiri Y. Chimeric antigen receptor T-cells: an overview of concepts, applications, limitations, and proposed solutions Front Bioeng Biotechnol 10 2022 797440 10.3389/fbioe.2022.797440 PMC9256991 35814023
+53 Chandran S.S. Klebanoff C.A. T cell receptor-based cancer immunotherapy: emerging efficacy and pathways of resistance Immunol Rev 290 1 2019 127 147 10.1111/imr.12772 31355495 PMC7027847
+54 Pishesha N. Harmand T.J. Ploegh H.L. A guide to antigen processing and presentation Nat Rev Immunol 22 12 2022 751 764 10.1038/s41577-022-00707-2 35418563
+55 Cruz F.M. Orellano L.A.A. Chan A. Rock K.L. Alternate MHC I antigen presentation pathways allow CD8+ T-cell recognition and killing of cancer cells in the absence of β2M or TAP Cancer Immunol Res 13 1 2025 98 108 10.1158/2326-6066.CIR-24-0320 39485834 PMC11717633
+56 Lan B.H. Becker M. Freund C. The mode of action of tapasin on major histocompatibility class I (MHC-I) molecules J Biol Chem 299 4 2023 102987 10.1016/j.jbc.2023.102987 PMC10040737 36758805
+57 Adiko A.C. Babdor J. Gutiérrez-Martínez E. Guermonprez P. Saveanu L. Intracellular transport routes for MHC I and their relevance for antigen cross-presentation Front Immunol 6 2015 335 10.3389/fimmu.2015.00335 26191062 PMC4489332
+58 Bania J. Gatti E. Lelouard H. Human cathepsin S, but not cathepsin L, degrades efficiently MHC class II-associated invariant chain in nonprofessional APCs Proc Natl Acad Sci USA 100 11 2003 6664 6669 10.1073/pnas.1131604100 12748383 PMC164504
+59 Gfeller D. Bassani-Sternberg M. Predicting antigen presentation—What could we learn from a million peptides? Front Immunol 9 2018 1716 10.3389/fimmu.2018.01716 30090105 PMC6068240
+60 Gebe J.A. Swanson E. Kwok W.W. HLA class II peptide-binding and autoimmunity Tissue Antigens 59 2 2002 78 87 10.1034/j.1399-0039.2002.590202.x 12028533
+61 Schulze M.S.E. Wucherpfennig K.W. The mechanism of HLA-DM induced peptide exchange in the MHC class II antigen presentation pathway Curr Opin Immunol 24 1 2012 105 111 10.1016/j.coi.2011.11.004 22138314 PMC3288754
+62 Budeus B. Álvaro-Benito M. Crivello P. HLA-DM and HLA-DO interplay for the peptide editing of HLA class II in healthy tissues and leukemia Best Pract Res Clin Haematol 37 2 2024 101561 10.1016/j.beha.2024.101561 39098801
+63 Coles C.H. Mulvaney R.M. Malla S. TCRs with distinct specificity profiles use different binding modes to engage an identical peptide–HLA complex J Immunol 204 7 2020 1943 1953 10.4049/jimmunol.1900915 32102902 PMC7086387
+64 Redmond W.L. Ruby C.E. Weinberg A.D. The role of OX40-mediated co-stimulation in T-cell activation and survival Crit Rev Immunol 29 3 2009 187 201 10.1615/CritRevImmunol.v29.i3.10 19538134 PMC3180959
+65 Bachmann M.F. Oxenius A. Interleukin 2: from immunostimulation to immunoregulation and back again EMBO Rep 8 12 2007 1142 1148 10.1038/sj.embor.7401099 18059313 PMC2267244
+66 Jung H. Paust S. Chemokines in the tumor microenvironment: implications for lung cancer and immunotherapy Front Immunol 15 2024 1443366 10.3389/fimmu.2024.1443366 PMC11304008 39114657
+67 Peske J.D. Woods A.B. Engelhard V.H. Control of CD8 T-cell infiltration into tumors by vasculature and microenvironment Adv Cancer Res 128 2015 263 307 10.1016/bs.acr.2015.05.001 26216636 PMC4638417
+68 Lanitis E. Dangaj D. Irving M. Coukos G. Mechanisms regulating T-cell infiltration and activity in solid tumors Ann Oncol 28 2017 xii18 xii32 10.1093/annonc/mdx238 29045511
+69 Chen T.T. Li X. Zhang Y. Breaking down physical barriers: strategies to improve lymphocyte infiltration for effective neoantigen-based therapies Front Immunol 16 2025 1614228 10.3389/fimmu.2025.1614228 PMC12198227 40574854
+70 Bu M.T. Chandrasekhar P. Ding L. Hugo W. The roles of TGF-β and VEGF pathways in the suppression of antitumor immunity in melanoma and other solid tumors Pharmacol Ther 240 2022 108211 10.1016/j.pharmthera.2022.108211 PMC10956517 35577211
+71 Pardo J. Aguilo J.I. Anel A. The biology of cytotoxic cell granule exocytosis pathway: granzymes have evolved to induce cell death and inflammation Microbes Infect 11 4 2009 452 459 10.1016/j.micinf.2009.02.004 19249384
+72 De Vries J.F. Von Dem Borne P.A. Van Luxemburg-Heijs S.A.P. Differential activation of the death receptor pathway in human target cells induced by cytotoxic T lymphocytes showing different kinetics of killing Haematologica 92 12 2007 1671 1678 10.3324/haematol.11308 18055991
+73 Zhao H. Wu L. Yan G. Inflammation and tumor progression: signaling pathways and targeted intervention Signal Transduct Target Ther 6 1 2021 263 10.1038/s41392-021-00658-5 34248142 PMC8273155
+74 Huang C. Li J. Wu R. Li Y. Zhang C. Targeting pyroptosis for cancer immunotherapy: mechanistic insights and clinical perspectives Mol Cancer 24 1 2025 131 10.1186/s12943-025-02344-4 40319304 PMC12049004
+75 Liang Y. Zhao Y. Qi Z. Li X. Zhao Y. Ferroptosis: CD8+T cells’ blade to destroy tumor cells or poison for self-destruction Cell Death Discov 11 1 2025 128 10.1038/s41420-025-02415-x 40169575 PMC11962101
+76 Dikiy S. Rudensky A.Y. Principles of regulatory T cell function Immunity 56 2 2023 240 255 10.1016/j.immuni.2023.01.004 36792571
+77 Srivastava M.K. Sinha P. Clements V.K. Rodriguez P. Ostrand-Rosenberg S. Myeloid-derived suppressor cells inhibit T-cell activation by depleting cystine and cysteine Cancer Res 70 1 2010 68 77 10.1158/0008-5472.CAN-09-2587 20028852 PMC2805057
+78 O’Malley G. Treacy O. Lynch K. Stromal cell PD-L1 inhibits CD8+ T-cell antitumor immune responses and promotes colon cancer Cancer Immunol Res 6 11 2018 1426 1441 10.1158/2326-6066.CIR-17-0443 30228206
+79 Kleinovink J.W. Van Hall T. Ossendorp F. Fransen M.F. PD-L1 immune suppression in cancer: tumor cells or host cells? Oncoimmunology 6 7 2017 e1325982 10.1080/2162402X.2017.1325982 PMC5543902 28811961
+80 Wang L. Zhang J. Zhang W. The inhibitory effect of adenosine on tumor adaptive immunity and intervention strategies Acta Pharm Sinica B 14 5 2024 1951 1964 10.1016/j.apsb.2023.12.004 PMC11119508 38799637
+81 Gu X.Y. Yang J.L. Lai R. Impact of lactate on immune cell function in the tumor microenvironment: mechanisms and therapeutic perspectives Front Immunol 16 2025 1563303 10.3389/fimmu.2025.1563303 PMC11979165 40207222
+82 Chow A. Perica K. Klebanoff C.A. Wolchok J.D. Clinical implications of T cell exhaustion for cancer immunotherapy Nat Rev Clin Oncol 19 12 2022 775 790 10.1038/s41571-022-00689-z 36216928 PMC10984554
+83 Wherry E.J. Kurachi M. Molecular and cellular insights into T cell exhaustion Nat Rev Immunol 15 8 2015 486 499 10.1038/nri3862 26205583 PMC4889009
+84 Klebanoff C. Khong H. Antony P. Palmer D. Restifo N. Sinks, suppressors and antigen presenters: how lymphodepletion enhances T cell-mediated tumor immunotherapy Trends Immunol 26 2 2005 111 117 10.1016/j.it.2004.12.003 15668127 PMC1388277
+85 Lickefett B. Chu L. Ortiz-Maldonado V. Lymphodepletion – an essential but undervalued part of the chimeric antigen receptor T-cell therapy cycle Front Immunol 14 2023 1303935 10.3389/fimmu.2023.1303935 PMC10770848 38187393
+86 Pardoll D.M. The blockade of immune checkpoints in cancer immunotherapy Nat Rev Cancer 12 4 2012 252 264 10.1038/nrc3239 22437870 PMC4856023
+87 Rajasagi M. Shukla S.A. Fritsch E.F. Systematic identification of personal tumor-specific neoantigens in chronic lymphocytic leukemia Blood 124 3 2014 453 462 10.1182/blood-2014-04-567933 24891321 PMC4102716
+88 Szolek A. Schubert B. Mohr C. Sturm M. Feldhahn M. Kohlbacher O. OptiType: precision HLA typing from next-generation sequencing data Bioinformatics 30 23 2014 3310 3316 10.1093/bioinformatics/btu548 25143287 PMC4441069
+89 Joo M.S. Pyo K.H. Chung J.M. Cho B.C. Artificial intelligence-based non-small cell lung cancer transcriptome RNA-sequence analysis technology selection guide Front Bioeng Biotechnol 11 2023 1081950 10.3389/fbioe.2023.1081950 PMC9975749 36873350
+90 Wang K. Li M. Hakonarson H. ANNOVAR: functional annotation of genetic variants from high-throughput sequencing data Nucleic Acids Res 38 16 2010 e164 10.1093/nar/gkq603 20601685 PMC2938201
+91 McLaren W. Gil L. Hunt S.E. The Ensembl variant effect predictor Genome Biol 17 1 2016 122 10.1186/s13059-016-0974-4 27268795 PMC4893825
+92 Jumper J. Evans R. Pritzel A. Highly accurate protein structure prediction with AlphaFold Nature 596 7873 2021 583 589 10.1038/s41586-021-03819-2 34265844 PMC8371605
+93 Cheng J. Novati G. Pan J. Accurate proteome-wide missense variant effect prediction with AlphaMissense Science 381 6664 2023 eadg7492 10.1126/science.adg7492 37733863
+94 Schneidman-Duhovny D. Khuri N. Dong G.Q. Predicting CD4 T-cell epitopes based on antigen cleavage, MHCII presentation, and TCR recognition PLoS One 13 11 2018 e0206654 10.1371/journal.pone.0206654 PMC6219782 30399156
+95 Ziegler I, Ma B, Bischl B, Dorigatti E, Schubert B. Proteasomal cleavage prediction: state-of-the-art and future directions. bioRxiv preprint 2023. doi:10.1101/2023.07.17.549305.
+96 Ozols M. Eckersley A. Platt C.I. Predicting proteolysis in complex proteomes using deep learning Int J Mol Sci 22 6 2021 3071 10.3390/ijms22063071 33803033 PMC8002881
+97 Engelhard V.H. Altrich-Vanlith M. Ostankovitch M. Zarling A.L. Post-translational modifications of naturally processed MHC-binding epitopes Curr Opin Immunol 18 1 2006 92 97 10.1016/j.coi.2005.11.015 16343885
+98 de Wit A.S. Bianchi F. van den Bogaart G. Antigen presentation of post-translationally modified peptides in major histocompatibility complexes Immunol Cell Biol 103 2 2025 161 177 10.1111/imcb.12839 39609891 PMC11792782
+99 Peters B. Bulik S. Tampe R. van Endert P.M. Holzhütter H.G. Identifying MHC Class I epitopes by predicting the TAP transport efficiency of epitope precursors J Immunol 171 4 2003 1741 1749 10.4049/jimmunol.171.4.1741 12902473
+100 Weeder B.R. Wood M.A. Li E. Nellore A. Thompson R.F. pepsickle rapidly and accurately predicts proteasomal cleavage sites for improved neoantigen identification Bioinformatics 37 21 2021 3723 3733 10.1093/bioinformatics/btab628 34478497
+101 Dorigatti E, Bischl B, Schubert B. Improved proteasomal cleavage prediction with positive-unlabeled learning. arXiv preprint 2022. doi:10.48550/arXiv.2209.07527.
+102 Amengual-Rigo P. Guallar V. NetCleave: an open-source algorithm for predicting C-terminal antigen processing for MHC-I and MHC-II Sci Rep 11 1 2021 13126 10.1038/s41598-021-92632-y PMC8222286 34162981
+103 Vita R. Blazeska N. Marrama D. The immune epitope database (IEDB): 2024 update Nucleic Acids Res 53 D1 2025 D436 D443 10.1093/nar/gkae1092 39558162 PMC11701597
+104 Bhasin M. Raghava G.P.S. Analysis and prediction of affinity of TAP binding peptides using cascade SVM Protein Sci 13 3 2004 596 607 10.1110/ps.03373104 14978300 PMC2286721
+105 Zhang X. Wu J. Baeza J. DeepTAP: an RNN-based method of TAP-binding peptide prediction in the selection of tumor neoantigens Comput Biol Med 164 2023 107247 10.1016/j.compbiomed.2023.107247 37454505
+106 Blythe M.J. Doytchinova I.A. Flower D.R. JenPep: a database of quantitative functional peptide data for immunology Bioinformatics 18 3 2002 434 439 10.1093/bioinformatics/18.3.434 11934742
+107 Toseland C.P. Clayton D.J. McSparron H. AntiJen: a quantitative immunology database integrating functional, thermodynamic, kinetic, biophysical, and cellular data Immunome Res 1 1 2005 4 10.1186/1745-7580-1-4 16305757 PMC1289288
+108 Bhasin M. Singh H. Raghava G.P.S. MHCBN: a comprehensive database of MHC binding and non-binding peptides Bioinformatics 19 5 2003 665 666 10.1093/bioinformatics/btg055 12651731
+109 Chung J.M. Emerging metaverse XR and video multimedia technologies: modern streaming and multimedia systems and applications 2023 Apress Berkeley, CA
+110 Al-okaily A. Abu Khashabeh R. Alsmadi O. ERAMER: a novel in silico tool for prediction of ERAP1 enzyme trimming J Immunol Methods 531 2024 113713 10.1016/j.jim.2024.113713 38925438
+111 O’Donnell T.J. Rubinsteyn A. Laserson U. MHCflurry 2.0: improved pan-allele prediction of MHC Class I-presented peptides by incorporating antigen processing Cell Syst 11 1 2020 42 48.e7 10.1016/j.cels.2020.06.010 32711842
+112 Jeong H. Cho Y.R. Gim J. Cha S.K. Kim M. Kang D.R. GraphMHC: neoantigen prediction model applying the graph neural network to molecular structure PLoS One 19 3 2024 e0291223 10.1371/journal.pone.0291223 PMC10971776 38536842
+113 Reynisson B. Alvarez B. Paul S. Peters B. Nielsen M. NetMHCpan-4.1 and NetMHCIIpan-4.0: improved predictions of MHC antigen presentation by concurrent motif deconvolution and integration of MS MHC eluted ligand data Nucleic Acids Res 48 W1 2020 W449 W454 10.1093/nar/gkaa379 32406916 PMC7319546
+114 Jurtz V. Paul S. Andreatta M. Marcatili P. Peters B. Nielsen M. NetMHCpan-4.0: improved peptide–MHC class I interaction predictions integrating eluted ligand and peptide binding affinity data J Immunol 199 9 2017 3360 3368 10.4049/jimmunol.1700893 28978689 PMC5679736
+115 Hu Y. Wang Z. Hu H. ACME: pan-specific peptide–MHC class I binding prediction through attention-based deep neural networks Bioinformatics 35 23 2019 4946 4954 10.1093/bioinformatics/btz427 31120490
+116 Albert B.A. Yang Y. Shao X.M. Deep neural networks predict class I major histocompatibility complex epitope presentation and transfer learn neoepitope immunogenicity Nat Mach Intell 5 8 2023 861 872 10.1038/s42256-023-00694-6 37829001 PMC10569228
+117 Lu T. Zhang Z. Zhu J. Deep learning-based prediction of the T cell receptor–antigen binding specificity Nat Mach Intell 3 10 2021 864 875 10.1038/s42256-021-00383-2 36003885 PMC9396750
+118 Kalemati M. Darvishi S. Koohi S. CapsNet-MHC predicts peptide-MHC class I binding based on capsule neural networks Commun Biol 6 1 2023 1 16 10.1038/s42003-023-04867-2 37147498 PMC10162658
+119 Chu Y. Zhang Y. Wang Q. A transformer-based model to predict peptide–HLA class I binding and optimize mutated peptides for vaccine design Nat Mach Intell 4 3 2022 300 311 10.1038/s42256-022-00459-7
+120 Ye Z. Li S. Mi X. STMHCpan, an accurate Star-Transformer-based extensible framework for predicting MHC I allele binding peptides Brief Bioinform 24 3 2023 bbad164 10.1093/bib/bbad164 37122066
+121 Shao X.M. Bhattacharya R. Huang J. High-throughput prediction of MHC class I and II neoantigens with MHCnuggets Cancer Immunol Res 8 3 2020 396 408 10.1158/2326-6066.CIR-19-0464 31871119 PMC7056596
+122 Mei S. Li F. Xiang D. Anthem: a user customised tool for fast and accurate prediction of binding between peptides and HLA class I molecules Brief Bioinform 22 5 2021 bbaa415 10.1093/bib/bbaa415 33454737
+123 Tadros D.M. Racle J. Gfeller D. Predicting MHC-I ligands across alleles and species: how far can we go? Genome Med 17 1 2025 25 10.1186/s13073-025-01450-8 40114147 PMC11927126
+124 Liu Z. Jin J. Cui Y. DeepSeqPanII: an interpretable recurrent neural network model with attention mechanism for peptide-HLA class II binding prediction IEEE/ACM Trans Comput Biol Bioinform 19 4 2022 2188 2196 10.1109/TCBB.2021.3074927 33886473
+125 Racle J. Guillaume P. Schmidt J. Machine learning predictions of MHC-II specificities reveal alternative binding mode of class II epitopes Immunity 56 6 2023 1359 1375.e13 10.1016/j.immuni.2023.03.009 37023751
+126 Koşaloğlu-Yalçın Z. Blazeska N. Vita R. The cancer epitope database and analysis resource (CEDAR) Nucleic Acids Res 51 D1 2023 D845 D852 10.1093/nar/gkac902 36250634 PMC9825495
+127 Shugay M. Bagaev D.V. Zvyagin I.V. VDJdb: a curated database of T-cell receptor sequences with known antigen specificity Nucleic Acids Res 46 D1 2018 D419 D427 10.1093/nar/gkx760 28977646 PMC5753233
+128 Nolan S. Vignali M. Klinger M. A large-scale database of T-cell receptor beta sequences and binding associations from natural and synthetic exposure to SARS-CoV-2 Front Immunol 16 2025 1488851 10.3389/fimmu.2025.1488851 PMC11873104 40034696
+129 Lu M. Xu L. Jian X. dbPepNeo2.0: a database for human tumor neoantigen peptides from mass spectrometry and TCR recognition Front Immunol 13 2022 855976 10.3389/fimmu.2022.855976 PMC9043652 35493528
+130 Peng X. Lei Y. Feng P. Characterizing the interaction conformation between T-cell receptors and epitopes with deep learning Nat Mach Intell 5 4 2023 395 407 10.1038/s42256-023-00634-4
+131 Moris P. De Pauw J. Postovskaya A. Current challenges for unseen-epitope TCR interaction prediction and a new perspective derived from image classification Brief Bioinform 22 4 2021 bbaa318 10.1093/bib/bbaa318 33346826 PMC8294552
+132 Gao Y. Gao Y. Fan Y. Pan-peptide meta learning for T-cell receptor–antigen binding recognition Nat Mach Intell 5 3 2023 236 249 10.1038/s42256-023-00619-3
+133 Montemurro A. Schuster V. Povlsen H.R. NetTCR-2.0 enables accurate prediction of TCR-peptide binding by using paired tcrα and β sequence data Commun Biol 4 1 2021 1 13 10.1038/s42003-021-02610-3 34508155 PMC8433451
+134 Springer I. Besser H. Tickotsky-Moskovitz N. Dvorkin S. Louzoun Y. Prediction of specific TCR-peptide binding from large dictionaries of TCR-peptide pairs Front Immunol 11 2020 1803 10.3389/fimmu.2020.01803 32983088 PMC7477042
+135 Jiang Y. Huo M. Cheng Li S. TEINet: a deep learning framework for prediction of TCR–epitope binding specificity Brief Bioinform 24 2 2023 bbad086 10.1093/bib/bbad086 36907658
+136 Jensen M.F. Nielsen M. NetTCR 2.2 - improved TCR specificity predictions by combining pan- and peptide-specific training strategies, loss-scaling and integration of sequence similarity eLife 12 2024 10.7554/eLife.93934.2 PMC10942633 38437160
+137 Springer I. Tickotsky N. Louzoun Y. Contribution of T cell receptor alpha and beta CDR3, MHC typing, V and J genes to peptide binding prediction Front Immunol 12 2021 664514 10.3389/fimmu.2021.664514 PMC8107833 33981311
+138 Lin X. George J.T. Schafer N.P. Rapid assessment of T-cell receptor specificity of the immune repertoire Nat Comput Sci 1 5 2021 362 373 10.1038/s43588-021-00076-1 36090450 PMC9455901
+139 Tickotsky N. Sagiv T. Prilusky J. Shifrut E. Friedman N. McPAS-TCR: a manually curated catalogue of pathology-associated T cell receptor sequences Bioinformatics 33 18 2017 2924 2929 10.1093/bioinformatics/btx286 28481982
+140 10x Genomics. Technical note: resolving cell types as a function of read depth and cell number. Accessed December 09, 2025. https://www.10xgenomics.com/support/universal-three-prime-gene-expression/documentation/steps/sample-prep/resolving-cell-types-as-a-function-of-read-depth-and-cell-number/.
+141 Nielsen M. Andreatta M. NetMHCpan-3.0; improved prediction of binding to MHC class I molecules integrating information from multiple receptor and peptide length datasets Genome Med 8 1 2016 33 10.1186/s13073-016-0288-x 27029192 PMC4812631
+142 Gros A. Parkhurst M.R. Tran E. Prospective identification of neoantigen-specific lymphocytes in the peripheral blood of melanoma patients Nat Med 22 4 2016 433 438 10.1038/nm.4051 26901407 PMC7446107
+143 Tran E. Ahmadzadeh M. Lu Y.C. Immunogenicity of somatic mutations in human gastrointestinal cancers Science 350 6266 2015 1387 1390 10.1126/science.aad1253 26516200 PMC7445892
+144 Strønen E. Toebes M. Kelderman S. Targeting of cancer neoantigens with donor-derived T cell receptor repertoires Science 352 6291 2016 1337 1341 10.1126/science.aaf2288 27198675
+145 O’Donnell T.J. Rubinsteyn A. Bonsack M. Riemer A.B. Laserson U. Hammerbacher J. MHCflurry: open-source class I MHC binding affinity prediction Cell Syst 7 1 2018 129 132.e4 10.1016/j.cels.2018.05.014 29960884
+146 Liu G. Li D. Li Z. PSSMHCpan: a novel PSSM-based software for predicting class I peptide-HLA binding affinity GigaScience 6 5 2017 gix017 10.1093/gigascience/gix017 PMC5467046 28327987
+147 Wu J. Wang W. Zhang J. DeepHLApan: a deep learning approach for neoantigen prediction considering both HLA-peptide binding and immunogenicity Front Immunol 10 2019 2559 10.3389/fimmu.2019.02559 31736974 PMC6838785
+148 Bulik-Sullivan B. Busby J. Palmer C.D. Deep learning using tumor HLA peptide mass spectrometry datasets improves neoantigen identification Nat Biotechnol 37 1 2019 55 63 10.1038/nbt.4313 30556813
+149 Müller M. Huber F. Arnaud M. Machine learning methods and harmonized datasets improve immunogenic neoantigen prediction Immunity 56 11 2023 2650 2663.e6 10.1016/j.immuni.2023.09.002 37816353
+150 Hundal J. Carreno B.M. Petti A.A. pVAC-Seq: a genome-guided in silico approach to identifying tumor neoantigens Genome Med 8 1 2016 11 10.1186/s13073-016-0264-5 26825632 PMC4733280
+151 Hundal J. Kiwala S. McMichael J. pVACtools: a computational toolkit to identify and visualize cancer neoantigens Cancer Immunol Res 8 3 2020 409 420 10.1158/2326-6066.CIR-19-0401 31907209 PMC7056579
+152 Zhou C. Wei Z. Zhang Z. pTuneos: prioritizing tumor neoantigens from next-generation sequencing data Genome Med 11 1 2019 67 10.1186/s13073-019-0679-x 31666118 PMC6822339
+153 Gartner J.J. Parkhurst M.R. Gros A. A machine learning model for ranking candidate HLA class I neoantigens based on known neoepitopes from multiple human tumor types Nat Cancer 2 5 2021 563 574 10.1038/s43018-021-00197-6 34927080 PMC8680775
+154 Chang Y. Wu L. CapHLA: a comprehensive tool to predict peptide presentation and binding to HLA class I and class II Brief Bioinform 26 1 2025 bbae595 10.1093/bib/bbae595 PMC11650860 39688477
+155 Kim K. Kim H.S. Kim J.Y. Predicting clinical benefit of immunotherapy by antigenic or functional mutations affecting tumour immunogenicity Nat Commun 11 1 2020 951 10.1038/s41467-020-14562-z 32075964 PMC7031381
+156 Yang Q. Xu L. Dong W. HLAIImaster: a deep learning method with adaptive domain knowledge predicts HLA II neoepitope immunogenic responses Brief Bioinform 25 4 2024 bbae302 10.1093/bib/bbae302 38920343 PMC11200192
+157 Chen B. Khodadoust M.S. Olsson N. Predicting HLA class II antigen presentation through integrated deep learning Nat Biotechnol 37 11 2019 1332 1343 10.1038/s41587-019-0280-2 31611695 PMC7075463
+158 Janetzki S. Price L. Schroeder H. Britten C.M. Welters M.J.P. Hoos A. Guidelines for the automated evaluation of Elispot assays Nat Protoc 10 7 2015 1098 1115 10.1038/nprot.2015.068 26110715
+159 Li J. Area under the ROC curve has the most consistent evaluation for binary classification PLoS One 19 12 2024 e0316019 10.1371/journal.pone.0316019 PMC11666033 39715186
+160 Drost F. Chernysheva A. Albahah M. Kocher K. Schober K. Schubert B. Benchmarking of T cell receptor-epitope predictors with ePytope-TCR Cell Genom 5 8 2025 100946 10.1016/j.xgen.2025.100946 PMC12366652 40628266
+161 Guo C, Pleiss G, Sun Y, Weinberger KQ. On calibration of modern neural networks. arXiv preprint 2017. doi:10.48550/arXiv.1706.04599.
+162 Zhang Z. Rousson V. Lee W.C. Decision curve analysis: a technical note Ann Transl Med 6 15 2018 308 10.21037/atm.2018.07.02 30211196 PMC6123195
+163 Tian T. Li S. Zhang Z. Benchmarking compound activity prediction for real-world drug discovery applications Commun Chem 7 1 2024 127 10.1038/s42004-024-01204-4 38834746 PMC11150475
+164 Klatt M.G. Mack K.N. Bai Y. Solving an MHC allele–specific bias in the reported immunopeptidome JCI Insight 5 19 2020 e141264 10.1172/jci.insight.141264 PMC7566711 32897882
+165 Blum J.S. Wearsch P.A. Cresswell P. Pathways of antigen processing Annu Rev Immunol 31 1 2013 443 473 10.1146/annurev-immunol-032712-095910 23298205 PMC4026165
+166 Gfeller D. Predicting TCR-epitope recognition: how good are we? Cell Genom 5 8 2025 100975 10.1016/j.xgen.2025.100975 PMC12366649 40812291
+167 Nguyen A.T. Szeto C. Gras S. The pockets guide to HLA class I molecules Biochem Soc Trans 49 5 2021 2319 2331 10.1042/BST20210410 34581761 PMC8589423
+168 Dhanda S.K. Karosiene E. Edwards L. Predicting HLA CD4 immunogenicity in human populations Front Immunol 9 2018 1369 10.3389/fimmu.2018.01369 29963059 PMC6010533
+169 Grazioli F. Mösch A. Machart P. On TCR binding predictors failing to generalize to unseen peptides Front Immunol 13 2022 1014256 10.3389/fimmu.2022.1014256 PMC9634250 36341448
+170 Weber A. Pélissier A. Rodríguez Martínez M. T-cell receptor binding prediction: A machine learning revolution Immunoinformatics 15 2024 100040 10.1016/j.immuno.2024.100040
+171 Meysman P. Barton J. Bravi B. Benchmarking solutions to the T-cell receptor epitope prediction problem: IMMREP22 workshop report Immunoinformatics 9 2023 100024 10.1016/j.immuno.2023.100024
+172 Nielsen M. Eugster A. Jensen M.F. Lessons learned from the IMMREP23 TCR-epitope prediction challenge ImmunoInformatics 16 2024 100045 10.1016/j.immuno.2024.100045
+173 Gálvez J. Gálvez J.J. García-Peñarrubia P. Is TCR/pMHC affinity a good estimate of the T-cell response? An answer based on predictions from 12 phenotypic models Front Immunol 10 2019 349 10.3389/fimmu.2019.00349 30886616 PMC6410681
+174 Martinez R.J. Evavold B.D. Lower affinity T cells are critical components and active participants of the immune response Front Immunol 6 2015 468 10.3389/fimmu.2015.00468 26441973 PMC4564719
+175 Harndahl M. Rasmussen M. Roder G. Peptide-MHC class I stability is a better predictor than peptide affinity of CTL immunogenicity Eur J Immunol 42 6 2012 1405 1416 10.1002/eji.201141774 22678897
+176 Feltkamp M.C.W. Vierboom M.P.M. Kast W.M. Melief C.J.M. Efficient MHC class I-peptide binding is required but does not ensure MHC class I-restricted immunogenicity Mol Immunol 31 18 1994 1391 1401 10.1016/0161-5890(94)90155-4 7823965
+177 van der Burg S.H. Visseren M.J. Brandt R.M. Kast W.M. Melief C.J. Immunogenicity of peptides bound to MHC class I molecules depends on the MHC-peptide complex stability J Immunol 156 9 1996 3308 3314 8617954
+178 Rasmussen M. Fenoy E. Harndahl M. Pan-specific prediction of peptide–MHC Class I complex stability, a correlate of T cell immunogenicity J Immunol 197 4 2016 1517 1524 10.4049/jimmunol.1600582 27402703 PMC4976001
+179 Borch A. Carri I. Reynisson B. IMPROVE: a feature model to predict neoepitope immunogenicity through broad-scale validation of T-cell recognition Front Immunol 15 2024 1360281 10.3389/fimmu.2024.1360281 PMC11021644 38633261
+180 Jiang D. Xi B. Tan W. NeoaPred: a deep-learning framework for predicting immunogenic neoantigen based on surface and structural features of peptide–human leukocyte antigen complexes Bioinformatics 40 9 2024 btae547 10.1093/bioinformatics/btae547 39276157 PMC11419954
+181 Wan Y.R. Koşaloğlu-Yalçın Z. Peters B. Nielsen M. A large-scale study of peptide features defining immunogenicity of cancer neo-epitopes NAR Cancer 6 1 2024 zcae002 10.1093/narcan/zcae002 38288446 PMC10823584
+182 Wells D.K. Van Buuren M.M. Dang K.K. Key parameters of tumor epitope immunogenicity revealed through a consortium approach improve neoantigen prediction Cell 183 3 2020 818 834.e13 10.1016/j.cell.2020.09.015 33038342 PMC7652061
+183 Linette G.P. Stadtmauer E.A. Maus M.V. Cardiovascular toxicity and titin cross-reactivity of affinity-enhanced T cells in myeloma and melanoma Blood 122 6 2013 863 871 10.1182/blood-2013-03-490565 23770775 PMC3743463
+184 Morgan R.A. Chinnasamy N. Abate-Daga D. Cancer regression and neurological toxicity following anti-MAGE-A3 TCR gene therapy J Immunother 36 2 2013 133 151 10.1097/CJI.0b013e3182829903 23377668 PMC3581823
+185 Bijen H.M. der Steen DM van Hagedoorn R.S. Preclinical strategies to identify off-target toxicity of high-affinity TCRs Mol Ther 26 5 2018 1206 1214 10.1016/j.ymthe.2018.02.017 29567312 PMC5993934
+186 Marcu A. Bichmann L. Kuchenbecker L. HLA Ligand Atlas: a benign reference of HLA-presented peptides to improve T-cell-based cancer immunotherapy J Immunother Cancer 9 4 2021 e002071 10.1136/jitc-2020-002071 PMC8054196 33858848
+187 Teo Z.L. Jin L. Liu N. Federated machine learning in healthcare: a systematic review on clinical applications and technical architecture Cell Rep Med 5 2 2024 101419 10.1016/j.xcrm.2024.101419 PMC10897620 38340728
+188 Zhang B. Bassani-Sternberg M. Current perspectives on mass spectrometry-based immunopeptidomics: the computational angle to tumor antigen discovery J Immunother Cancer 11 10 2023 e007073 10.1136/jitc-2023-007073 PMC10619091 37899131
+189 Lin Y, Zhang D, Liu Y. TCR-GPT: integrating autoregressive model and reinforcement learning for T-cell receptor repertoires generation. arXiv prepint 2024. doi:10.48550/arXiv.2408.01156.
+190 Zhou J. Wu Z. Man M. Llama-TCR: generate de novo TCR with large language model Proc IEEE Conf Artif Intell 2024 IEEE 845 850 10.1109/CAI59869.2024.00158
+191 Papanikolaou A, Sivtsov V, Zereik E, Ruggiero E, Bonini C, Bonsignorio F. A simple generative model for the prediction of T-cell receptor - peptide binding in T-cell therapy for cancer. bioRxiv preprint 2025. doi:10.1101/2025.03.18.643937.
+192 Visani GM, Pun MN, Minervina AA, Bradley P, Thomas P, Nourmohammad A. T-cell receptor specificity landscape revealed through de novo peptide design. bioRxiv preprint 2025. doi:10.1101/2025.02.28.640903.10.1073/pnas.2504783122 PMC12557503 41100668
+193 Raissi M. Perdikaris P. Karniadakis G.E. Physics-informed neural networks: a deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations J Comput Phys 378 2019 686 707 10.1016/j.jcp.2018.10.045
+194 Bastek JH, Sun W, Kochmann DM. Physics-informed diffusion models. arXiv preprint 2025. doi:10.48550/arXiv.2403.14404.
+195 Ho J, Jain A, Abbeel P. Denoising diffusion probabilistic models. arXiv preprint 2020. doi:10.48550/arXiv.2006.11239.
+196 Chung J.M. Emerging secure networks, blockchains and smart contract technologies 2024 Springer Nature Cham, Switzerland
+197 Liu H. Jian Y. Zeng C. Zhao Y. RNA-protein interaction prediction using network-guided deep learning Commun Biol 8 1 2025 1 14 10.1038/s42003-025-07694-9 39956833 PMC11830795
+198 Sargsyan K. Lim C. Using protein language models for protein interaction hot spot prediction with limited data BMC Bioinformatics 25 1 2024 115 10.1186/s12859-024-05737-2 38493120 PMC10943781
+199 Ahmed K.T. Ansari M.I. Zhang W. DTI-LM: language model powered drug–target interaction prediction Bioinformatics 40 9 2024 btae533 10.1093/bioinformatics/btae533 39221997 PMC11520403
+200 Slone J.K. Zhang M. Jiang P. STAG-LLM: predicting TCR-pHLA binding with protein language models and computationally generated 3D structures Comput Struct Biotechnol J 27 2025 3885 3896 10.1016/j.csbj.2025.09.004 41542080 PMC12800378
+201 Ferruz N. Schmidt S. Höcker B. ProtGPT2 is a deep unsupervised language model for protein design Nat Commun 13 1 2022 4348 10.1038/s41467-022-32007-7 35896542 PMC9329459
+202 Wei J, Wang X, Schuurmans D, et al. Chain-of-thought prompting elicits reasoning in large language models. arXiv preprint 2023. doi:10.48550/arXiv.2201.11903.
+203 Lewis P, Perez E, Piktus A, et al. Retrieval-augmented generation for knowledge-intensive NLP tasks. arXiv preprint 2021. doi:10.48550/arXiv.2005.11401.
+204 Hachey S.J. Forsythe A.G. Keshava H.B. Hughes C.C.W. ImmuniT platform for improved neoantigen prediction in lung cancer Vaccines 13 9 2025 921 10.3390/vaccines13090921 41012124 PMC12474151
+205 Thirunavukarasu A.J. Ting D.S.J. Elangovan K. Gutierrez L. Tan T.F. Ting D.S.W. Large language models in medicine Nat Med 29 8 2023 1930 1940 10.1038/s41591-023-02448-8 37460753
+206 Shool S. Adimi S. Saboori Amleshi R. Bitaraf E. Golpira R. Tara M. A systematic review of large language model (LLM) evaluations in clinical medicine BMC Med Inform Decis Mak 25 1 2025 117 10.1186/s12911-025-02954-4 40055694 PMC11889796
+207 Qiu J. Lam K. Li G. LLM-based agentic systems in medicine and healthcare Nat Mach Intell 6 12 2024 1418 1420 10.1038/s42256-024-00944-1
+208 Rouzrokh P. Khosravi B. Faghani S. A current review of generative AI in medicine: core concepts, applications, and current limitations Curr Rev Musculoskelet Med 18 7 2025 246 266 10.1007/s12178-025-09961-y 40304941 PMC12185825
+209 Moor M. Banerjee O. Abad Z.S.H. Foundation models for generalist medical artificial intelligence Nature 616 7956 2023 259 265 10.1038/s41586-023-05881-4 37045921
+210 Bommasani R, Hudson DA, Adeli E, et al. On the opportunities and risks of foundation models. arXiv preprint 2022. doi:10.48550/arXiv.2108.07258.
+211 Weininger D. SMILES, a chemical language and information system. 1. Introduction to methodology and encoding rules J Chem Inf Comput Sci 28 1 1988 31 36 10.1021/ci00057a005
+212 Ali S, Arcaini P, Arrieta A. Foundation models for the digital twin creation of cyber-physical systems. arXiv preprint 2024. doi:10.48550/arXiv.2407.18779.
+213 Joslyn L.R. Huang W. Miles D. Hosseini I. Ramanujan S. Digital twins elucidate critical role of Tscm in clinical persistence of TCR-engineered cell therapy npj Syst Biol Appl 10 1 2024 11 10.1038/s41540-024-00335-7 38278838 PMC10817974
+214 Lewin T.D. Avignon B. Tovaglieri A. Cabon L. Gjorevski N. Hutchinson L.G. An in silico model of T cell infiltration dynamics based on an advanced in vitro system to enhance preclinical decision making in cancer immunotherapy Front Pharmacol 13 2022 837261 10.3389/fphar.2022.837261 PMC9108393 35586042
+215 Arute F. Arya K. Babbush R. Quantum supremacy using a programmable superconducting processor Nature 574 7779 2019 505 510 10.1038/s41586-019-1666-5 31645734
+216 Dremel K. Prjamkov D. Firsching M. Utilizing quantum annealing in computed tomography image reconstruction IEEE Trans Quantum Eng 6 2025 1 10 10.1109/TQE.2025.3549305
+217 Vendrell R.C. Ajagekar A. Bergman M.T. Hall C.K. You F. Designing microplastic-binding peptides with a variational quantum circuit–based hybrid quantum-classical approach Sci Adv 10 51 2024 eadq8492 10.1126/sciadv.adq8492 39693432 PMC11654670
+218 Ghazi Vakili M. Gorgulla C. Snider J. Quantum-computing-enhanced algorithm unveils potential KRAS inhibitors Nat Biotechnol 43 12 2025 1954 1959 10.1038/s41587-024-02526-3 39843581 PMC12700792
+219 Khatami M.H. Mendes U.C. Wiebe N. Kim P.M. Gate-based quantum computing for protein design PLoS Comput Biol 19 4 2023 e1011033 10.1371/journal.pcbi.1011033 PMC10124842 37043517
+220 Chen SYC, Yoo S, Fang YLL. Quantum long short-term memory. arXiv preprint 2020. doi:10.48550/arXiv.2009.01783.
+221 Zoufal C. Lucchi A. Woerner S. Quantum generative adversarial networks for learning and loading random distributions npj Quantum Inf 5 1 2019 1 9 10.1038/s41534-019-0223-2
+222 Khoshaman A. Vinci W. Denis B. Andriyash E. Sadeghi H. Amin M.H. Quantum variational autoencoder Quantum Sci Technol 4 1 2018 014001 10.1088/2058-9565/aada1f
+223 Nguyen P.N. Biomarker discovery with quantum neural networks: a case-study in CTLA4-activation pathways BMC Bioinformatics 25 1 2024 149 10.1186/s12859-024-05755-0 38609844 PMC11265126

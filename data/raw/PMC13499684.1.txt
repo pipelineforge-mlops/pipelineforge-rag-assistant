@@ -1,0 +1,322 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Int J Epidemiol
+Journal ID: Int J Epidemiol
+NLM Journal ID: 7802871
+Journal ID: ije
+
+International Journal of Epidemiology
+
+ISSN: 0300-5771
+EISSN: 1464-3685
+Publisher: Oxford University Press
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499684
+DOI: 10.1093/ije/dyag177
+Article ID: dyag177
+Article version: 1
+Subjects: Original Article, AcademicSubjects/MED00860
+
+Prenatal fluoride exposure and pregnancy outcomes in two US pregnancy cohorts
+
+https://orcid.org/0000-0002-7557-7977 Goin Dana E Department of Epidemiology, Mailman School of Public Health, Columbia University, New York, NY, United States
+
+https://orcid.org/0000-0001-6695-3291 Eick Stephanie M Gangarosa Department of Environmental Health, Rollins School of Public Health, Emory University, Atlanta, GA, United States
+
+Parsons Patrick J Laboratory of Inorganic and Nuclear Chemistry, Wadsworth Center, New York State Department of Health, New York, NY, United States
+Department of Environmental Health Sciences, College of Integrated Health Sciences, University at Albany, Albany, NY, United States
+
+Padula Amy M Program on Reproductive Health and the Environment, Department of Obstetrics, Gynecology, and Reproductive Sciences, University of California, San Francisco, San Francisco, CA, United States
+
+Geiger Sarah Dee Beckman Institute for Advanced Science and Technology, University of Illinois at Urbana-Champaign, Urbana, IL, United States
+Department of Health and Kinesiology, University of Illinois at Urbana-Champaign, Champaign, IL, United States
+
+Schantz Susan L Beckman Institute for Advanced Science and Technology, University of Illinois at Urbana-Champaign, Urbana, IL, United States
+Department of Comparative Biosciences, University of Illinois at Urbana-Champaign, Urbana, IL, United States
+
+Woodruff Tracey J Program on Reproductive Health and the Environment, Department of Obstetrics, Gynecology, and Reproductive Sciences, University of California, San Francisco, San Francisco, CA, United States
+
+https://orcid.org/0000-0003-1153-7287 Morello-Frosch Rachel Department of Environmental Science, Policy, and Management and School of Public Health, University of California, Berkeley, Berkeley, CA, United States
+
+Corresponding author. Department of Epidemiology, Mailman School of Public Health, Columbia University, 722 W 168th St., New York, NY, 10032, United States. E-mail: dg3369@cumc.columbia.edu
+Publication date: 2026 Oct
+Electronic publication date: 2026 Aug 22
+Volume: 55
+Issue: 5
+Electronic Location ID: dyag177
+Received 2026 Jan 29; Accepted 2026 Aug 6
+Copyright: © The Author(s) 2026. Published by Oxford University Press on behalf of the International Epidemiological Association.
+Copyright year: 2026
+License: This is an Open Access article distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivs licence (https://creativecommons.org/licenses/by-nc-nd/4.0/), which permits non-commercial reproduction and distribution of the work, in any medium, provided the original work is not altered or transformed in any way, and that the work is properly cited. For commercial re-use, please contact reprints@oup.com for reprints and translation rights for reprints. All other permissions can be obtained through our RightsLink service via the Permissions link on the article page on our site—for further information please contact journals.permissions@oup.com.
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: pregnancy complications, birth outcomes, fluoride, reproductive health
+
+Funding: National Institute of Environmental Health Sciences at the National Institutes of Health
+Page count: 9
+
+==============================
+Abstract
+
+Background
+
+Our goal was to evaluate the relationship between prenatal fluoride exposure and pregnancy outcomes.
+
+Methods
+
+We measured urinary fluoride collected during the second trimester among pregnant people recruited from California and Illinois from 2014 to 2020 (N = 949). We evaluated risk differences (RDs) of preterm birth (PTB), small-for-gestational age (SGA), large-for-gestational age (LGA), gestational diabetes, and differences in birthweight, birthweight-for-gestational age z-scores, and gestational age associated with a 0.1 mg/l increase in fluoride using linear regression to estimate effects on the additive scale. We also used modified treatment policies with machine learning to estimate the effects of hypothetical interventions to reduce urinary fluoride by 0.1 and 0.5 mg/l on pregnancy outcomes. In the Illinois cohort, we estimated effects by trimester.
+
+Results
+
+In our main analyses, we found no associations between urinary fluoride levels and pregnancy outcomes. For instance, for a 0.1 mg/l increase in fluoride, we saw no change in the risk of PTB, SGA, or gestational diabetes. We also found no differences associated with hypothetical reductions of prenatal fluoride by 0.1 mg/l or 0.5 mg/l for any outcomes. In the trimester-specific analyses for Illinois participants, we found increased LGA risk during the first (RD = 0.004, 95% CI −0.001, 0.009) and third trimesters (RD = 0.007, 95% CI 0.001, 0.012), and reduced LGA risk during the second trimester (RD = −0.006, 95% CI −0.011, 0.000), associated with 0.1 mg/l higher urinary fluoride.
+
+Conclusions
+
+Prenatal fluoride exposure does not appear to affect pregnancy outcomes, but preliminary evidence suggests that higher fluoride levels may affect the risk of LGA depending on timing of exposure during pregnancy.
+
+Key Messages We hypothesized that prenatal fluoride exposure is associated with gestational diabetes, preterm birth, large-for-gestational age, and small-for-gestational age.
+
+We did not find associations between fluoride exposure during pregnancy and risk for gestational diabetes or birth outcomes.
+
+This lack of association adds important evidence about whether there are health risks of fluoride consumption during pregnancy for birth and pregnancy outcomes.
+
+Introduction
+
+Fluoride has been added to community water supplies to promote dental health in the USA since 1945. Due to increased fluid consumption, pregnant people have been identified as a potentially sensitive subpopulation with respect to fluoride [1], yet the effect of prenatal fluoride exposure on pregnancy outcomes is understudied. Prior studies among pregnant people who lived in areas with fluoridated water show that fetuses are exposed to fluoride in utero from cord blood [2] and amniotic fluid [3, 4], and fluoride consumption in early life can adversely affect neurodevelopment among children [5–7]. Many adverse pregnancy outcomes, like preterm birth (PTB) and small-for-gestational age (SGA), are on the pathway to delayed infant neurodevelopment [8, 9], underscoring the need to assess whether fluoride is associated with pregnancy outcomes.
+
+However, there is limited and conflicting evidence about whether in utero fluoride exposure affects birth outcomes or pregnancy complications. For instance, a study in Sweden found a higher risk of large-for-gestational age (LGA) among pregnant people with higher levels of urinary fluoride [10]. Similarly, a study in California found that higher water fluoride was associated with higher birthweight, increased risk for LGA and fetal macrosomia, although associations were small [11]. In contrast, a study using the US National Health and Nutrition Examination Survey (NHANES), a nationally representative survey of adults and children including interviews and collection of biologic samples, found that higher water fluoride during pregnancy was associated with an increased risk of low birthweight [12]. In India, researchers found 8.7 higher odds of PTB and 10.6 higher odds of low birthweight among mothers with serum fluoride levels >1 ppm [13], and researchers in Senegal found increased risk of low birthweight among mothers with dental fluorosis and those who consumed well water during pregnancy in areas of endemic fluoride contamination [14]. A study in Mexico found differential associations with birthweight depending on the timing of exposure during pregnancy [15]. On the other hand, in Massachusetts, researchers found a protective association of the joint effects of water fluoridation and dental cleaning on risk of PTB [16], while a study in Canada measuring urinary fluoride, fertility, PTB, and SGA did not find any associations [17]. These mixed findings motivate additional research, with greater attention paid to potential mechanisms, dosage, and timing of exposure.
+
+While epidemiologic evidence in the USA is limited, some studies suggest potential mechanisms linking fluoride exposure to adverse pregnancy outcomes. For instance, high levels of fluoride in water have been linked to hypertension [18] and other adverse cardiovascular outcomes [19], which may increase systemic inflammation and oxidative stress, leading to adverse birth outcomes [20, 21]. Fluoride exposure may also disrupt thyroid hormone levels [22–24]. Many other endocrine-disrupting chemicals have been linked to adverse birth outcomes due to the key role of hormones in regulating the normal processes of gestation and parturition [25, 26].
+
+In this study, we evaluated whether prenatal fluoride exposure affects birth outcomes and gestational diabetes in two places where water is fluoridated to the 0.7 mg/l level recommended by the US Public Health Service. We also assessed whether reducing prenatal fluoride exposure would reduce the risk of adverse pregnancy outcomes.
+
+Data and methods
+
+This study used two pregnancy cohorts, the Chemicals in Our Bodies (CiOB) cohort based in the San Francisco Bay Area, California, and the Illinois Kids Development Studies (IKIDS) cohort, based in Champaign-Urbana, Illinois. Both cohorts enrolled pregnant people and collected participant urine during the second trimester.
+
+Chemicals in Our Bodies
+
+Participants were eligible for inclusion in the CiOB cohort if they were English- or Spanish-speaking pregnant people from the prenatal patient population at Chan-Zuckerberg San Francisco General and the Moffitt Long or Mission Bay Hospitals at University of California, San Francisco (UCSF) Mission Bay. Participants had to be at least 18 years old and in their second trimester of pregnancy (between 13 and 27 weeks) to be eligible. Spot urine samples were collected at the second trimester study visit and frozen at −80° Celsius until fluoride measurement.
+
+Illinois Kids Development Study (IKIDS)
+
+Participants were eligible for the IKIDS cohort if they received prenatal care at the Carle Physician Group or Christie Clinic in Champaign-Urbana, Illinois. Participants were recruited at their first prenatal appointment, and first-morning urine was collected from participants during the first, second, and third trimesters. Urine was frozen at −80° Celsius until fluoride measurement. Additional details on CiOB and IKIDS recruitment methods are provided elsewhere [27]. The Institutional Review Boards at the UCSF (10–00861), UC Berkeley (2010–05-04), and University of Illinois (IRB24-0727) approved this study, and all participants provided written, informed consent prior to enrollment.
+
+We included all participants with a urinary fluoride measurement, resulting in a sample size of 949; 598 were from CiOB and 351 from IKIDS.
+
+Fluoride measurement
+
+Urinary fluoride for both cohorts was measured by Ion Selective Electrode (ISE) in the New York State Department of Health, Wadsworth Center’s Laboratory of Inorganic and Nuclear Chemistry. Briefly, an Orion Star A214 meter was used with a Thermo Scientific combination fluoride ion electrode (ThermoFisher Scientific, Waltham, MA). A five-point calibration curve was established with calibration standards diluted from a National Institute of Standards and Technology (NIST)-traceable fluoride standard solution. Urine samples were thawed to room temperature and mixed on a laboratory rocker for 1 hour. After thawing and mixing at room temperature, a 1-ml aliquot of urine was diluted with 1 ml of a total-ionic strength adjustment buffer (TISAB) solution in an 8-ml polypropylene tube and then placed on a lab rocker for 30 minutes to allow for complete mixing. Two concentration levels of urine-based quality control (QC) materials were analyzed with each batch of urine samples as well as a reagent blank. During the analysis, each urine sample was placed on a magnetic stirrer to ensure continued sample mixing. The analysis time was 2 minutes per sample. Wadsworth Center is one of three NIH-funded Human Health Exposure Analysis Resource (HHEAR) laboratory hubs specializing in targeted analysis of biospecimens. The laboratory follows all HHEAR QC protocols. External QC was monitored via satisfactory participation in the proficiency testing (PT) program (PCI) operated by L’Institut National de Santé Publique du Québec (INSP), Centre de Toxicologie du Québec (CTQ), and in the German External Quality Assurance Scheme (G-EQUAS) for trace elements. Bias between the measured (i.e. reported) value and assigned value was ≤ ±15% for all samples. Method precision, expressed as the percent relative standard deviation (%RSD), was estimated using internal QC data and was 4.3% and 2.4% for the low (2.17 mg/l) and high (7.50 mg/l) levels, respectively. The method limit of detection (LOD) was 0.049 mg/l. The method was periodically validated during the study using archived PT samples provided by CTQ.
+
+Pregnancy outcomes
+
+Gestational age at delivery, birthweight, fetal sex, and diagnoses of gestational diabetes were abstracted from the participant medical record. We analyzed gestational age at birth in completed weeks, birthweight in grams, and sex-specific birthweight for gestational age z-scores using a population reference [28]. Each of these was analyzed continuously. We also examined PTB (delivery <37 weeks gestation), SGA, LGA, and gestational diabetes. SGA and LGA were defined as sex-specific birthweight below the 10th percentile and above the 90th percentile, respectively, based on a population reference [28].
+
+Covariates
+
+We controlled for maternal age at delivery, parity, marital status, employment, educational attainment, race/ethnicity, pre-pregnancy BMI, cohort, fetal sex, season of conception, gestational age at sample collection, health insurance type, and urinary specific gravity [29]. Covariates came from the participant medical record and surveys; the source for each variable is listed in the Supplemental Material. The hypothesized data generating mechanism is shown in a directed acyclic graph (DAG) (Supplementary Fig. S1). A simplified DAG limiting to variables included in the analysis is shown in Supplementary Fig. S2. Details on how covariates were classified are provided in the Supplemental Material.
+
+Statistical analysis
+
+To address covariate missingness, we used multiple imputation with 30 imputed datasets. We used Rubin’s combining rules to calculate standard errors [30, 31]. We used linear regression to estimate additive associations for increases in 0.1 mg/l of urinary fluoride in mid-gestation with each of the pregnancy outcomes. We used a linear regression model for both continuous and binary outcomes because we were interested in estimating effects on the additive scale. We evaluated the model residuals to ensure the model fit was appropriate.
+
+We also estimated the effects of hypothetical interventions to reduce urinary fluoride by 0.1 and 0.5 mg/l among those who had urinary fluoride levels above 0.1 or 0.5 mg/l, respectively, on each of our pregnancy outcomes. To do this, we used the modified treatment policies framework [32], which models the effects of hypothetical interventions with continuous exposures using machine learning, and is able to get theoretically-valid inference based on the efficient influence function. This approach allows us to make fewer assumptions about the data-generating distribution, minimize bias due to model misspecification, reduce bias due to positivity violations or extrapolation, and respect the bounds of the outcome distribution. To model the exposure-outcome relationship, we used Super Learner [33], which uses cross-validation to select the combination of algorithms that minimize prediction error. We included the following algorithms in our library: generalized linear models (glm), Bayes glm, big LASSO, glm interaction, and step interaction.
+
+Sensitivity analyses
+
+To evaluate whether we could identify critical windows of exposure to fluoride using the IKIDS cohort, we estimated the effects of a 0.1 mg/l increase in fluoride levels on pregnancy outcomes for exposure during the first, second, and third trimester. Each trimester fluoride and specific gravity level were included in the model to mitigate potential seasonal confounding or correlation between exposures in different trimesters [34]. For comparison with other studies, we also present risk ratios for the binary outcomes.
+
+Results
+
+The CiOB cohort had more participants who were less than age 25 and older than 40 compared to the IKIDS cohort (Table 1). The CiOB cohort was also more likely to be nulliparous, not currently working, have high school education or less, have public health insurance, and be Hispanic/Latina than the IKIDS cohort. The distribution of fluoride levels was similar between the two cohorts, although IKIDS had a slightly higher mean level (0.97 mg/l vs. 0.87 mg/l in CiOB) (Table 2).
+
+Table 1 Descriptive statistics of CiOB and IKIDS study participants.
+
+	CiOB (N = 598)	IKIDS (N = 351)	
+N (%)	N (%)	
+Maternal age			
+ Less than 25	47 (7.9)	12 (3.5)	
+ 25–less than 30	61 (10.2)	105 (30.0)	
+ 30–less than 35	238 (39.8)	170 (48.3)	
+ 35–less than 40	211 (35.3)	56 (15.8)	
+ 40 or older	41 (6.9)	8 (2.3)	
+Parity			
+ 0	310 (51.9)	80 (22.8)	
+ 1	174 (29.1)	190 (54.2)	
+ 2	80 (13.3)	58 (16.4)	
+ 3 or more	34 (5.8)	23 (6.5)	
+Marital status			
+ Married or living with partner	551 (92.2)	342 (97.4)	
+ Widowed, separated, or divorced	7 (1.2)	1 (0.3)	
+ Never married	40 (6.6)	8 (2.3)	
+Employment			
+ Currently working for pay	455 (76.0)	303 (86.2)	
+ Not currently working for pay	143 (24.0)	48 (13.8)	
+Educational attainment		
+ Less than high school	53 (8.9)	0 (0.0)	
+ High school or GED	71 (11.9)	3 (0.9)	
+ Some college or associate’s degree	60 (10.1)	44 (12.5)	
+ Bachelor’s degree	157 (26.2)	130 (37.0)	
+ Graduate degree	257 (43.0)	174 (49.5)	
+Health insurance type		
+ Employer-sponsored insurance	401 (67.1)	306 (87.2)	
+ Public insurance	187 (31.3)	24 (6.8)	
+ Veteran’s affairs or military insurance	0.0	6 (1.8)	
+ Self-purchased insurance	0.0	14 (4.1)	
+ Uninsured	10 (1.7)	0 (0.0)	
+Race/ethnicity			
+ White, non-Hispanic	260 (43.5)	266 (75.7)	
+ Black, non-Hispanic	25 (4.2)	12 (3.5)	
+ Asian, non-Hispanic	104 (17.4)	52 (14.7)	
+ Native Hawaiian, other Pacific Islander, American Indian or  Alaska Native, or more than one race or other	33 (5.5)	11 (3.2)	
+ Hispanic/Latina	176 (29.4)	10 (2.9)	
+Pre-pregnancy BMI		
+ Less than 20	71 (11.9)	32 (9.1)	
+ 20–less than 25	273 (45.6)	162 (46.3)	
+ 25–less than 30	146 (24.4)	79 (22.5)	
+ 30–less than 35	64 (10.7)	41 (11.6)	
+ 35 or higher	44 (7.3)	37 (10.5)	
+Season of conception		
+ Fall	145 (24.2)	95 (27.0)	
+ Winter	161 (26.9)	80 (22.9)	
+ Spring	140 (23.4)	93 (26.4)	
+ Summer	152 (25.4)	83 (23.7)	
+Fetal sex			
+ Male	306 (51.2)	169 (48.1)	
+ Female	292 (48.8)	182 (51.9)	
+Specific gravity (mean)	1.015	1.016	
+Gestational age at sample collection (mean, in weeks)	23.0	17.1	
+Numbers within groups may not sum to the total due to rounding from multiple imputation.
+
+Table 2 Distribution of urinary fluoride in mg/l in CiOB and IKIDS participants.
+
+	Min	25th percentile	50th percentile	Mean	75th percentile	Max	
+CiOB (N = 598)	0.09	0.51	0.72	0.87	1.12	3.42	
+IKIDS (N = 351)	0.15	0.62	0.87	0.97	1.21	3.65	
+Overall (N = 949)	0.09	0.54	0.77	0.90	1.16	3.65	
+
+We observed null risk differences (RDs) for PTB (RD = 0.002, 95% CI −0.002, 0.005), SGA (RD = 0.001, 95% CI −0.002, 0.004), LGA (RD = 0.002, 95% CI −0.002, 0.006), and gestational diabetes (RD = 0.002, 95% CI −0.002, 0.006) associated with a 0.1 mg/l increase in fluoride levels (Fig. 1). The risk ratio results for these outcomes are shown in Supplementary Table S1. We also found no differences for gestational age (difference in weeks = −0.012, 95% CI −0.037, 0.013), birthweight (difference in grams = 0.13, 95% CI −6.94, 7.20), or birthweight-for-gestational age z-scores (difference = 0.004, 95% CI −0.009, 0.016) (Table 3).
+
+Figure 1 Risk differences and 95% confidence intervals for adverse pregnancy outcomes associated with a 0.1 mg/l increase in urinary fluoride levels (N = 949). These analyses controlled for maternal age at delivery, parity, marital status, employment, educational attainment, race/ethnicity, pre-pregnancy BMI, cohort, fetal sex, season of conception, gestational age at sample collection, health insurance type, and urinary specific gravity.
+
+Plot showing point estimates and 95% confidence intervals for risk differences of preterm birth, SGA, LGA, and gestational diabetes associated with a 0.1 mg/l increase in urinary fluoride levels.
+
+Table 3 Differences and 95% confidence intervals for birthweight, gestational age, and birthweight-for-gestational age z-scores associated with a 0.1 mg/l increase in urinary fluoride levels, and hypothetical interventions to reduce urinary fluoride levels by 0.1 mg/l or 0.5 mg/l among those with levels above 0.1 or 0.5 mg/l, respectively (N = 949).
+
+	Difference associated with 0.1 mg/l increase in urinary fluoride(95% CI)	Difference associated with a hypothetical intervention to reduce urinary fluoride by 0.1 mg/l	Difference associated with a hypothetical intervention to reduce urinary fluoride by 0.5 mg/l	
+	(95 % CI)	(95 % CI)	
+Birthweight (g)	0.13 (−6.94, 7.20)	−0.33 (−7.24, 6.58)	1.05 (−20.64, 22.74)	
+Gestational age (weeks)	−0.012 (−0.037, 0.013)	0.011 (−0.011, 0.033)	0.038 (−0.034, 0.110)	
+Birthweight-for-gestational age z-scores	0.004 (−0.009, 0.016)	−0.004 (−0.015, 0.009)	−0.006 (−0.046, 0.034)	
+These analyses controlled for maternal age at delivery, parity, marital status, employment, educational attainment, race/ethnicity, pre-pregnancy BMI, cohort, fetal sex, season of conception, gestational age at sample collection, health insurance type, and urinary specific gravity.
+
+We saw no associations with pregnancy outcomes for the hypothetical interventions to reduce urinary fluoride levels by 0.1 mg/l for those with levels above 0.1 mg/l. For instance, we observed RDs of −0.001 (95% CI −0.004, 0.002) for PTB, 0.000 (95% CI −0.004, 0.004) for SGA, −0.002 (95% CI −0.006, 0.002) for LGA, and −0.002 (95% CI −0.007, 0.004) for gestational diabetes associated with the hypothetical intervention to reduce fluoride by 0.1 mg/l (Fig. 2). We also observed no associations for the continuous measures of perinatal outcomes. For a hypothetical intervention to reduce fluoride by 0.1 mg/l, we observed no effects on gestational age (difference in weeks = 0.011, 95% CI −0.011, 0.033), birthweight (difference in grams = −0.33, 95% CI −7.24, 6.58), or birthweight-for-gestational age z-scores (difference = −0.003, 95% CI −0.015, 0.009) (Table 3). For the hypothetical intervention to reduce prenatal fluoride by 0.5 mg/l, we also observed null effects for PTB (RD = −0.005, 95% CI −0.015, 0.005), SGA (RD = 0.000, 95% CI −0.010, 0.010), LGA (RD = −0.008, 95% CI −0.021, 0.004), or gestational diabetes (RD = −0.003, 95% CI −0.018, 0.011) (Fig. 3). We found no effects for the hypothetical intervention to reduce fluoride by 0.5 mg/l on gestational age (difference in weeks = 0.038, 95% CI −0.034, 0.110), birthweight (difference in grams = 1.05, 95% CI −20.64, 22.74), or birthweight-for-gestational age z-scores (difference = −0.006, 95% CI −0.046, 0.034) (Table 3).
+
+Figure 2 Risk differences and 95% confidence intervals for adverse pregnancy outcomes associated with a hypothetical intervention to reduce urinary fluoride by 0.1 mg/l for those with levels above 0.1 mg/l (N = 949). These analyses controlled for maternal age at delivery, parity, marital status, employment, educational attainment, race/ethnicity, pre-pregnancy BMI, cohort, fetal sex, season of conception, gestational age at sample collection, health insurance type, and urinary specific gravity.
+
+Plot showing point estimates and 95% confidence intervals for risk differences of preterm birth, SGA, LGA, and gestational diabetes associated with a hypothetical intervention to reduce urinary fluoride levels by 0.1 mg/l.
+
+Figure 3 Risk differences and 95% confidence intervals for adverse pregnancy outcomes associated with a hypothetical intervention to reduce urinary fluoride by 0.5 mg/l for those with levels above 0.5 mg/l (N = 949). These analyses controlled for maternal age at delivery, parity, marital status, employment, educational attainment, race/ethnicity, pre-pregnancy BMI, cohort, fetal sex, season of conception, gestational age at sample collection, health insurance type, and urinary specific gravity.
+
+Plot showing point estimates and 95% confidence intervals for risk differences of preterm birth, SGA, LGA, and gestational diabetes associated with a hypothetical intervention to reduce urinary fluoride levels by 0.5 mg/l.
+
+In our trimester-specific analysis in the IKIDS cohort, we found no associations with fluoride on PTB (Supplementary Fig. S3) or birthweight (Table 4). However, we did observe a slight increase in risk of SGA associated with 0.1 mg/l higher fluoride levels during the second trimester (RD = 0.003, 95% CI −0.001, 0.008). We also observed a small increase in risk of gestational diabetes associated with higher urinary fluoride during the third trimester (RD = 0.004, 95% CI −0.002, 0.010). Finally, we observed higher risk of LGA during the first (RD = 0.004, 95% CI −0.001, 0.009) and third trimesters (RD = 0.007, 95% CI 0.001, 0.012) and lower risk during the second trimester (RD = −0.006, 95% CI −0.011, 0.000) associated with 0.1 mg/l higher urinary fluoride levels.
+
+Table 4 Risk differences and 95% confidence intervals for birthweight, gestational age, and birthweight-for-gestational age z-scores associated with a 0.1 mg/l increase in urinary fluoride levels for each trimester of pregnancy among the IKIDS cohort (N = 351).
+
+	First trimester	Second trimester	Third trimester	
+(95% CI)	(95% CI)	(95% CI)	
+Birthweight (g)	−0.43 (−13.89, 13.02)	3.35 (−11.74, 18.45)	5.15 (−8.57, 18.88)	
+Gestational age (weeks)	0.014 (−0.031, 0.058)	−0.005 (−0.055, 0.045)	0.003 (−0.043, 0.049)	
+Birthweight-for-gestational age z-scores	−0.005 (−0.032, 0.022)	0.010 (−0.021, 0.040)	0.013 (−0.015, 0.040)	
+These analyses controlled for maternal age at delivery, parity, marital status, employment, educational attainment, race/ethnicity, pre-pregnancy BMI, cohort, fetal sex, season of conception, gestational age at sample collection, health insurance type, and urinary specific gravity.
+
+Discussion
+
+We evaluated whether prenatal fluoride consumption is linked to pregnancy outcomes and estimated the effects of two hypothetical interventions to reduce fluoride exposure. We found no evidence of associations between fluoride and any pregnancy outcome in the main analysis. We also estimated null effects of hypothetical interventions to reduce fluoride consumption on all the pregnancy outcomes we considered. In the analysis limited to the Illinois cohort that had fluoride measured during each trimester, we observed increases in risk of LGA associated with higher fluoride levels during the first and third trimesters, and lower risk of LGA associated with higher fluoride in the second trimester. Fluoride levels were also higher on average in the Illinois compared with the California cohort. These findings suggest that timing and levels of exposure may be important and add important evidence to the discussion around the costs and benefits of fluoride consumption during pregnancy.
+
+There have been several other studies using pregnancy cohorts to estimate effects of urinary fluoride on birth outcomes. A study in Sweden measured urinary fluoride in the late second and early third trimesters, and found higher birthweight (84 g) and odds of LGA (1.39) for a 1 mg/l increase in fluoride levels [10]. The median fluoride level adjusted for specific gravity was 0.86 mg/l, which is similar to the levels in both our cohorts; however, the maximum was 6.4 mg/l which is almost double the maximum in our study. While Sweden does not fluoridate its water, there is natural variation in drinking water fluoride due to local geology. Drinking water fluoride levels in Sweden range from approximately 0 (i.e. non-detectable) to 2 mg/l across districts with an average of 0.35 mg/l [35]. A Canadian pregnancy cohort (with median urinary fluoride levels adjusted for specific gravity of 0.5 mg/l) found no associations between urinary fluoride averaged across pregnancy and birthweight, gestational age, PTB, or SGA [17, 24]. In this study, some participants lived in municipalities with fluoridated drinking water and some did not; the range of drinking water fluoride was 0.04 to 0.87 mg/l. A study in Mexico, where the salt is fluoridated but the water is not, found an increase of 1 mg/l in urinary fluoride in the first trimester for those with high urinary fluoride levels (1 mg/l or higher) was associated with an increase in the birthweight-for-gestational age z-score, while a 1 mg/l increase in urinary fluoride above 0.58 mg/l in the third trimester was associated with lower birthweight [15]. In our analyses of trimester-specific exposures in the IKIDS cohort, we also observed differential effects by trimester. We estimated effects on pregnancy outcomes for a smaller change in urinary fluoride than these prior studies (0.1 mg/l vs. 1 mg/l) because a 1 mg/l increase would represent more than an interquartile range increase in our data, and we had few participants with urinary fluoride levels greater than 1 mg/l. Overall, our work is consistent with several studies that have found null effects of prenatal fluoride on pregnancy outcomes, with heterogeneous findings for fetal growth outcomes depending on timing and level of exposure.
+
+Our study had several limitations. As we recruited participants at prenatal care visits, we may have missed people who experienced early fetal loss. If higher fluoride concentrations were linked to increased risk of fetal loss, our estimates may be biased toward the null [36]. There may be residual confounding between urinary fluoride levels and pregnancy outcomes from dietary factors or co-occurring chemicals in drinking water that we did not measure. We only captured recent fluoride exposure via spot urine samples; fluoride has a half-life of about 5 hours so we could not characterize chronic or cumulative exposures [37]. It is also possible that relationships exist between fluoride consumption and adverse pregnancy outcomes, but we were underpowered in this study to detect their effects. We observed effect modification by trimester among the Illinois cohort, but the California participants only had urine samples collected during the second trimester, leading to a smaller sample size to assess trimester-specific effects.
+
+Our study leveraged detailed pregnancy cohort data, including a linkage of medical records, surveys, and biologic samples for participants in areas where water is fluoridated to the 0.7 mg/l level recommended by the US Public Health Service. We measured urinary fluoride levels collected during mid-gestation and assessed whether higher fluoride levels were associated with birth and pregnancy outcomes. We also evaluated whether hypothetical interventions to reduce fluoride exposure would affect pregnancy outcomes, using doubly-robust estimators that included machine learning to better capture the complex relationships between study variables. In both cases, we did not find evidence of an effect of fluoride. Nevertheless, this study contributes important evidence about the impact of fluoride consumption on reproductive health outcomes. Future work should consider mechanisms underlying the effect modification by trimester on LGA that we observed in this study, as well as the potential for interaction between fluoride and other co-occurring chemicals.
+
+Ethics approval
+
+The Institutional Review Boards at the UCSF (10-00861), UC Berkeley (2010-05-04), and University of Illinois (IRB24-0727) approved this study and all participants provided written, informed consent prior to enrollment.
+
+Supplementary Material
+
+dyag177_Supplementary_Data
+
+Acknowledgements
+
+We would like to thank Ms Fida Kased of the Wadsworth Center’s Laboratory of Inorganic and Nuclear Chemistry for technical assistance with the urinary fluoride analyses.
+
+Author contributions
+
+D.E.G. designed the study, acquired funding for the study, wrote the statistical analysis code, conducted the statistical analysis, created the figures and tables, interpreted the results, and wrote and edited the manuscript. S.E.M. helped design the study and interpret the results and edited the manuscript. P.J.P. measured the urinary fluoride concentrations and contributed to interpreting the results and editing the manuscript. A.M.P. helped design the study and interpret the results and edited the manuscript. S.D.G. helped to manage the IKIDS study and contributed to interpreting the results and editing the manuscript. S.L.S. managed the IKIDS study, acquired funding for the measurement of urinary fluoride in the IKIDS study, and contributed to interpreting the results and editing the manuscript. T.J.W. contributed to managing the CiOB study and contributed to interpreting the results and editing the manuscript. R.M.-F. contributed to managing the CiOB study and contributed to designing the study, interpreting the results, and editing the manuscript.
+
+Supplementary material
+
+Supplementary material is available at IJE online.
+
+Conflicts of interest
+
+None declared.
+
+Funding
+
+This work was supported by R00ES033274, P42ES004705 (Superfund Research Program) and UH3 OD023272 from the National Institute of Environmental Health Sciences at the National Institutes of Health.
+
+Data availability
+
+Data are not publicly available due to privacy protections.
+
+Use of artificial intelligence (AI) tools
+
+No AI was used in the preparation of this manuscript.
+
+
+References
+
+1 National Research Council. Fluoride in Drinking Water: A Scientific Review of EPA’s Standards. Washington, D.C.: The National Academies Press, 2006. 10.17226/11571
+2 Caldera R , ChavinieJ, FermanianJ, TortratD, LaurentAM.  Maternal-fetal transfer of fluoride in pregnant women. Biol Neonate  1988;54:263–9. 10.1159/000242861 3203120
+3 Abduweli Uyghurturk D , GoinDE, Martinez-MierEA, WoodruffTJ, DenBestenPK.  Maternal and fetal exposures to fluoride during mid-gestation among pregnant women in northern California. Environ Health  2020;19:38. 10.1186/s12940-020-00581-2 32248806 PMC7132865
+4 Ron M , SingerL, MenczelJ, KidroniG.  Fluoride concentration in amniotic fluid and fetal cord and maternal plasma. Eur J Obstet Gynecol Reprod Biol  1986;21:213–8. 10.1016/0028-2243(86)90018-3 3709921
+5 Till C , GreenR, FloraD  et al  Fluoride exposure from infant formula and child IQ in a Canadian birth cohort. Environ Int  2020;134:105315. 10.1016/j.envint.2019.105315 31743803 PMC6913880
+6 Choi AL , SunG, ZhangY, GrandjeanP.  Developmental fluoride neurotoxicity: a systematic review and meta-analysis. Environ Health Perspect  2012;120:1362–8. 10.1289/ehp.1104912 22820538 PMC3491930
+7 Taylor KW , EftimSE, SibrizziCA  et al  Fluoride exposure and children’s IQ scores: a systematic review and meta-analysis. JAMA Pediatr  2025;179:282–92. 10.1001/jamapediatrics.2024.5542 39761023 PMC11877182
+8 Volpe JJ.  Brain injury in premature infants: a complex amalgam of destructive and developmental disturbances. Lancet Neurol  2009;8:110–24. 10.1016/S1474-4422(08)70294-1 19081519 PMC2707149
+9 Sacchi C , MarinoC, NosartiC, VienoA, VisentinS, SimonelliA.  Association of intrauterine growth restriction and small for gestational age status with childhood cognitive outcomes: a systematic review and meta-analysis. JAMA Pediatr  2020;174:772–81. 10.1001/jamapediatrics.2020.1097 32453414 PMC7251506
+10 Kampouri M , GustinK, StråvikM  et al  Association of maternal urinary fluoride concentrations during pregnancy with size at birth and the potential mediation effect by maternal thyroid hormones: the Swedish NICE birth cohort. Environ Res  2022;214:114129. 10.1016/j.envres.2022.114129 35998692
+11 Goin DE , PadulaAM, WoodruffTJ, SherrisA, CharbonneauK, Morello-FroschR.  Water fluoridation and birth outcomes in California. Environ Health Perspect  2024;132:57004. 10.1289/EHP13732 38752991 PMC11098007
+12 Arun AK , RustveldL, SunnyA.  Association between water fluoride levels and low birth weight: National Health and Nutrition Examination Survey (NHANES) 2013–2016. Int J Environ Res Public Health  2022;19:8956. 10.3390/ijerph19158956 35897326 PMC9332356
+13 Sm G , MohantyS, VbA, MishraA, RaoP.  Association of higher maternal serum fluoride with adverse fetal outcomes. Int J Med Public Health  2011;1:13–7. 10.5530/ijmedph.2.2011.4
+14 Diouf M , CisseD, LoCMM, LyM, FayeD, NdiayeO, Pregnant women living in areas of endemic ﬂuorosis in Senegal and low birth weight newborns: case–control study. Revue d’Epidémiologie et de Santé Publique 2012;60:103–8.10.1016/j.respe.2011.09.009 22424749
+15 Ortíz-García SG , Torres-SánchezLE, Muñoz-RochaTV  et al  Maternal urinary fluoride during pregnancy and birth weight and length: results from ELEMENT cohort study. Sci Total Environ  2022;838:156459. 10.1016/j.scitotenv.2022.156459 35660617
+16 Zhang X , LuE, StoneSL, DiopH.  Dental cleaning, community water fluoridation and preterm birth, Massachusetts: 2009–2016. Matern Child Health J  2019;23:451–8. 10.1007/s10995-018-2659-y 30542985
+17 Goodman C , HallM, GreenR  et al  Maternal fluoride exposure, fertility and birth outcomes: the MIREC cohort. Environ Adv  2022;7:100135. 10.1016/j.envadv.2021.100135 36644332 PMC9837859
+18 Sun L , GaoY, LiuH  et al  An assessment of the relationship between excess fluoride intake from drinking water and essential hypertension in adults residing in fluoride endemic areas. Sci Total Environ  2013;443:864–9. 10.1016/j.scitotenv.2012.11.021 23246666
+19 Liu H , GaoY, SunL, LiM, LiB, SunD.  Assessment of relationship on excess fluoride intake from drinking water and carotid atherosclerosis development in adults in fluoride endemic areas, China. Int J Hyg Environ Health  2014;217:413–20. 10.1016/j.ijheh.2013.08.001 24012047
+20 Ma Y , NiuR, SunZ  et al  Inflammatory responses induced by fluoride and arsenic at toxic concentration in rabbit aorta. Arch Toxicol  2012;86:849–56. 10.1007/s00204-012-0803-9 22422340
+21 Melila M , RajendranR, LumoAK  et al  Cardiovascular dysfunction and oxidative stress following human contamination by fluoride along with environmental xenobiotics (Cd & Pb) in the phosphate treatment area of Togo, West Africa. J Trace Elem Med Biol  2019;56:13–20. 10.1016/j.jtemb.2019.07.002 31442949
+22 Singh N , VermaKG, VermaP, SidhuGK, SachdevaS.  A comparative study of fluoride ingestion levels, serum thyroid hormone & TSH level derangements, dental fluorosis status among school children from endemic and non-endemic fluorosis areas. Springerplus  2014;3:7. 10.1186/2193-1801-3-7 24455464 PMC3890436
+23 Hall M , HornungR, ChevrierJ, AyotteP, LanphearB, TillC.  Fluoride exposure and thyroid hormone levels in pregnancy: the MIREC cohort. Environ Int  2024;184:108442. 10.1016/j.envint.2024.108442 38237505 PMC10973885
+24 Hall M , LanphearB, ChevrierJ  et al  Fluoride exposure and hypothyroidism in a Canadian pregnancy cohort. Sci Total Environ  2023;869:161149. 10.1016/j.scitotenv.2022.161149 36764861 PMC9992168
+25 Zlatnik MG.  Endocrine-disrupting chemicals and reproductive health. J Midwifery Womens Health  2016;61:442–55. 10.1111/jmwh.12500 27391253 PMC6701840
+26 Woodruff TJ.  Bridging epidemiology and model organisms to increase understanding of endocrine disrupting chemicals and human health effects. J Steroid Biochem Mol Biol  2011;127:108–17. 10.1016/j.jsbmb.2010.11.007 21112393 PMC6628916
+27 Eick SM , EnrightEA, GeigerSD  et al  Associations of maternal stress, prenatal exposure to per- and polyfluoroalkyl substances (PFAS), and demographic risk factors with birth outcomes and offspring neurodevelopment: an overview of the ECHO.CA.IL prospective birth cohorts. Int J Environ Res Public Health  2021;18:742. 10.3390/ijerph18020742 33467168 PMC7830765
+28 Talge NM , MuddLM, SikorskiiA, BassoO.  United States birth weight reference corrected for implausible gestational age estimates. Pediatrics  2014;133:844–53. 10.1542/peds.2013-3285 24777216
+29 Barr DB , WilderLC, CaudillSP, GonzalezAJ, NeedhamLL, PirkleJL.  Urinary creatinine concentrations in the U.S. population: implications for urinary biologic monitoring measurements. Environ Health Perspect  2005;113:192–200. 10.1289/ehp.7337 15687057 PMC1277864
+30 Rubin DB.  Multiple Imputation for Nonresponse in Surveys. New York, NY: John Wiley & Sons, Inc., 1987.
+31 Harel O , MitchellEM, PerkinsNJ  et al  Multiple imputation for incomplete data in epidemiologic studies. Am J Epidemiol  2018;187:576–84. 10.1093/aje/kwx349 29165547 PMC5860387
+32 Hoffman KL , Salazar-BarretoD, WilliamsNT, RudolphKE, DíazI.  Studying continuous, time-varying, and/or complex exposures using longitudinal modified treatment policies. Epidemiology (Fairfax)  2024;35:667–75. 10.1097/EDE.0000000000001764 39109818
+33 Laan MJvd , PolleyEC, HubbardAE.  Super Learner. Stat Appl Genet Mol Biol  2007;6:1–21. 10.2202/1544-6115.1309 17910531
+34 Wilson A , ChiuYHM, HsuHHL, WrightRO, WrightRJ, CoullBA.  Potential for bias when estimating critical windows for air pollution in children’s health. Am J Epidemiol  2017;186:1281–9. 10.1093/aje/kwx184 29206986 PMC5860147
+35 Aggeborn L , ÖhmanM.  The effects of fluoride in drinking water. J Polit Econ  2021;129:465–91. 10.1086/711915
+36 Goin DE , CaseyJA, KioumourtzoglouMA, CushingLJ, Morello-FroschR.  Environmental hazards, social inequality, and fetal loss: implications of live-birth bias for estimation of disparities in birth outcomes. Environ Epidemiol  2021;5:e131. 10.1097/EE9.0000000000000131 33870007 PMC8043739
+37 Ekstrand J , EhrneboM.  The relationship between plasma fluoride, urinary excretion rate and urine fluoride concentration in man. J Occup Med  1983;25:745–8. 10.1097/00043764-198310000-00014 6631559

@@ -1,0 +1,362 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Int Dent J
+Journal ID: Int Dent J
+NLM Journal ID: 0374714
+
+International Dental Journal
+
+ISSN: 0020-6539
+EISSN: 1875-595X
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499149
+PMID: 42594712
+DOI: 10.1016/j.identj.2026.109817
+Article ID: S0020-6539(26)00410-7
+Article ID: 109817
+Article version: 1
+Subjects: Artificial intelligence (AI) in dentistry
+
+Vision-Language Model as a ‘Zero-Shot’ Assistant for Evaluating Condylar Osseous Changes in Cone-beam Computed Tomography
+
+Chen Ke dentistfrankchen@outlook.com a
+Zhang Andrew b
+Xie Xianju dentistxxj@mail.ccmu.edu.cn a
+Bai Yuxing byuxing@ccmu.edu.cn a ⁎
+a Department of Orthodontics, Beijing Stomatological Hospital, Capital Medical University, Beijing, China
+b Department of Biophysics, Johns Hopkins University, Baltimore, Maryland, USA
+⁎ Corresponding author. Department of Orthodontics, Beijing Stomatological Hospital, Capital Medical University, No.9 Fanjiacun Road, FengTai District, Beijing 100070, China. byuxing@ccmu.edu.cn
+Publication date: 2026 Oct
+Electronic publication date: 2026 Aug 13
+Volume: 76
+Issue: 5
+Electronic Location ID: 109817
+Copyright: © 2026 The Authors
+Copyright year: 2026
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Cone-beam computed tomography, Temporomandibular Joint, Artificial Intelligence, Vision-language model, LLM
+
+Abbreviations
+
+AI Artificial intelligence
+
+CBCT Cone-beam computed tomography
+
+CI Confidence intervals
+
+CLAIM Checklist for Artificial Intelligence in Medical Imaging
+
+CNN Convolutional Neural Networks
+
+DC/TMD Diagnostic Criteria for Temporomandibular Disorders
+
+F1 F1-score
+
+FN False negative
+
+FP False positive
+
+IRB Institutional Review Board
+
+ML Machine Learning
+
+NPV Negative predictive value
+
+PPV Positive predictive value
+
+QAMAI Quality Assessment of Medical AI-Generated Information
+
+STARD-AI Standards for Reporting of Diagnostic Accuracy Studies – Artificial Intelligence
+
+TMJ Temporomandibular joint
+
+TN True negative
+
+TP True positive
+
+VLM Vision-language models
+
+==============================
+Introduction and aims
+
+Interpreting condylar osseous changes on CBCT is challenging for general practitioners. This study evaluated the ‘zero-shot’ diagnostic performance and utility of Vision-Language Models (VLMs) as AI assistants for detecting condylar abnormalities.
+
+Methods
+
+We analysed 72 CBCT images from the EHPN study for internal validation and constructed a balanced sample of 70 images from the MMDental dataset for external validation, with dual-radiologist consensus as the ground truth. Three frontier VLMs (Gemini-3, GPT-5.2, and Qwen3-VL) were used to evaluate representative sagittal slices without prior fine-tuning. Performance was measured by diagnostic accuracy, sensitivity, specificity, and balanced accuracy, while the Quality Assessment of Medical AI-generated Information (QAMAI) framework assessed the quality of AI-generated structured reports. This study was reported following STARD-AI and CLAIM guidelines as primary checklists, with TRIPOD-LLM as a supplementary framework.
+
+Results
+
+Gemini-3 achieved the highest diagnostic accuracy (90.3%; 95% CI: 81.0%-95.5%), outperforming GPT-5.2 (75.0%) and Qwen3-VL (55.6%). External validation on a constructed balanced sample from the MMDental dataset confirmed these findings, with Gemini-3 achieving 90.00% accuracy. Regarding report generation, Gemini-3 surpassed the other models across five QAMAI dimensions, providing more accurate, clear, and clinically useful justifications aligned with diagnostic standards.
+
+Conclusion
+
+VLMs, particularly Gemini-3, exhibit zero-shot capabilities in identifying condylar changes and generating high-quality diagnostic reports. While these models maintain a conservative diagnostic tendency, they demonstrate potential as preliminary, training-free screening aids in oral maxillofacial radiology. Further multicentre validation is warranted to establish clinical utility.
+
+Clinical Relevance
+
+Cloud-based VLMs could offer accessible screening assistance by allowing general practitioners to query condylar findings via simple web interfaces without specialized hardware. These tools may contribute to structured reporting workflows, though their diagnostic consistency in routine practice remains to be established, and they should complement rather than replace expert clinical judgment.
+
+Introduction
+
+Cone-beam computed tomography (CBCT) has emerged as a cornerstone of maxillofacial imaging, providing high-resolution, three-dimensional diagnostic data essential for modern dentistry.1,2 In the context of the temporomandibular joint (TMJ), CBCT excels in detecting condylar osseous changes, such as erosion, flattening, and osteophyte formation,3, 4, 5 thereby enabling clinicians to mitigate progressive risks and tailor individualized treatment plans.
+
+Despite the increasing prevalence of CBCT scanners in dental clinics across the United States, interpreting the nuances of the condylar osseous status remains challenging for those without specialized radiologic training. This diagnostic gap can lead to clinical pitfalls, including misdiagnosis or a lack of diagnostic confidence. Given that TMJ osteoarthritis and its related pathologies are relatively common and require timely intervention,6 accessible tools that empower general practitioners to accurately identify these signs and ensure high-quality patient care are needed.
+
+To address this problem, some machine learning (ML) algorithms, particularly convolutional neural networks (CNNs), have been developed to automate the detection of condylar abnormalities.7,8 Although these models have demonstrated acceptable accuracy, they are often hindered by significant limitations, such as labour-intensive labelling by human experts, substantial computational power, namely, graphical processing units (GPUs), and complex software installations.9,10 These factors pose financial and technical barriers, particularly for private clinics and practitioners in resource-limited regions.
+
+The recent evolution of vision-language models (VLMs), such as Gemini-3, represents a potentially important development. Unlike traditional ML models that rely on task-specific training, VLMs exhibit ‘zero-shot’ or ‘few-shot’ learning capabilities, allowing them to interpret pathological features without prior exposure to a labelled dataset.11,12 Furthermore, as cloud-based platforms, these models eliminate the need for expensive local hardware, potentially lowering access barriers for advanced diagnostic assistance via simple web interfaces.13
+
+Beyond simple classifications, VLMs possess the unique ability to generate nuanced textual interpretations. Although conventional artificial intelligence (AI) often operates as a ‘black box’, providing only a binary diagnosis, VLMs can produce descriptive reports that assist practitioners in decision-making and facilitate patient communication by translating complex radiographic findings into understandable reports.14
+
+Recent studies have highlighted the expanding role of artificial intelligence in oral and maxillofacial radiology. The landscape of dentomaxillofacial imaging is shifting from traditional convolutional neural networks toward sophisticated, multimodal, and predictive AI frameworks. Building upon established research in CBCT-based diagnostics and clinical decision support,15, 16, 17, 18, 19 recent advancements in predictive mandibular modelling and multimodal large language models have underscored the transformative potential of foundation models. These milestones establish a useful framework for investigating the application of zero-shot Vision-Language Models (VLMs) as candidate automated assistants for the assessment of condylar osseous changes in CBCT imaging.
+
+This study aimed not to replace practitioners but to evaluate the potential of VLMs as candidate decision-support tools under controlled conditions. We focused on two core objectives: assessing whether VLMs can assist in the diagnostic detection of condylar osseous changes on CBCT and evaluating their capacity to produce high-quality diagnostic reports.
+
+Methods
+
+The use of open datasets is a safe and ethical method for testing VLMs. We utilized a specialized TMJ osteoarthritis (OA) dataset from the University of Michigan’s Ensemble via Hierarchical Predictions through Nested cross-validation (EHPN) study, which was originally approved by the University of Michigan IRB (Approval No. HUM00113199) with informed consent obtained from all participants. This publicly available dataset includes high-resolution cone-beam computed tomography (hr-CBCT) images, providing superior visualization of condylar morphology.20 The EHPN dataset was acquired using a 3D Accuitomo 170 scanner (J. Morita, Kyoto, Japan) with the following parameters: 90 kVp, 5 mA, 30.8-second scan time, and a field of view of 40 × 40 mm, yielding an isotropic voxel size of 0.08 mm. This high resolution enables detailed visualization of subtle cortical changes critical for early osteoarthritis detection.
+
+A total of 72 patients were identified in the ‘Baseline.zip’ file downloaded from Deep Blue Data at the University of Michigan in November 2025 and included in this study sample. Following a rigorous quality control process, no patients were excluded, yielding a final study population of 72. This study sample features a spectrum of common radiographic signs of condylar osseous changes, including flattening, sclerosis, erosion, subchondral cysts, and osteophytes.
+
+In clinical practice, practitioners typically identify the most representative pathological slices from a 3D CBCT volume to establish a diagnostic impression. To simulate this real-world scenario, two senior oral and maxillofacial radiologists (each with >10 years of clinical imaging interpretation experience) performed independent blinded reviews of the full 3D volume (using 3D Slicer v5.10.0). The interobserver agreement was quantified using Cohen’s kappa coefficient (κ = 0.89), indicating excellent initial agreement. Discordant cases were subsequently resolved through consensus discussion to establish the final ground truth. Rather than replacing the clinician, the VLMs were evaluated as diagnostic assistants, tasked with interpreting the selected slices and generating clinical reports, a workflow designed to test their utility in streamlining routine diagnostic tasks and assisting general practitioners.
+
+All CBCT images in this study were screened at Beijing Stomatological Hospital in 2025 based on predefined inclusion and exclusion criteria to ensure quality and consistency of this study.
+
+Inclusion Criteria: (1) CBCT scans encompassing the complete temporomandibular joint (TMJ) region; (2) availability of sagittal reformatted images allowing for standardized slice selection; and (3) clear visibility of the condylar head and articular eminence.
+
+Exclusion Criteria: (1) Presence of significant motion or metal streak artifacts (eg, from orthodontic appliances) that obscured the condylar bony cortex; (2) incomplete field of view (FOV) where the entire condyle was not captured; and (3) a documented history of condylar fractures or previous TMJ surgery.
+
+A single representative sagittal slice was extracted from each of the 72 cases (32 pathological and 40 controls). In cases of unilateral pathology, the affected side was selected; for bilateral involvement, the side with the most prominent osseous change was selected. This ‘one patient, one slice’ protocol was strictly enforced not only to simulate the clinical scenario but also to ensure statistical independence and eliminate potential clustering bias. The sagittal plane was selected as the primary view for evaluation, as it represents the classic perspective for TMJ assessment, providing critical information on anteroposterior bone contour and joint space – key features for identifying osteoarthritis (OA). This single-slice analysis aligns with the routine viewing habits of general practitioners using panoramic radiographs, facilitating rapid clinical screening. We acknowledge that this approach may introduce selection bias and cannot fully replace the comprehensiveness of 3D volumetric analysis. The current study is positioned to validate the zero-shot efficacy of VLMs as ‘rapid auxiliary screening tools’ rather than systematic radiographic diagnosis. Future studies will explore multiview fusion and 3D input models. To provide a standardized baseline for the VLMs’ zero-shot performance, all images were exported and clipped to 330 × 330 images, showing the entire structure of the condyle. The sample slices from each group are shown in Figure 1.Fig. 1 Example of condylar CBCT slices.
+
+Fig 1 dummy alt text
+
+Diagnostic criteria for condylar osseous changes
+
+The definition of ‘condylar osseous changes’ in this study strictly adhered to the Diagnostic Criteria for Temporomandibular Disorders (DC/TMD).21 The primary inclusion criteria comprised: cortical bone erosion (irregular cortical surface with focal loss of cortical continuity), condylar flattening (loss of normal convexity), osteophyte formation (marginal bony outgrowths), and subchondral sclerosis (increased bone density beneath the articular surface). These criteria represent the most commonly observed radiographic manifestations of degenerative joint disease affecting the TMJ.
+
+Model selection and experimental design
+
+We evaluated three state-of-the-art VLMs: Gemini-3, GPT-5.2, and Qwen3-VL (Qwen3-VL-235b-a22b-thinking), selected based on their frontier capabilities and wide public availability at the time of study.
+
+All models were accessed through the OpenRouter platform (https://openrouter.ai) using Python-based custom pipelines during January 3 to 15, 2026. For reproducibility, we report the following details for each model. Gemini-3 (model ID: google/gemini-3-pro-preview), GPT-5.2 (model ID: openai/gpt-5.2), and Qwen3-VL (model ID: qwen/qwen3-vl-235b-a22b-thinking) were each accessed via their respective OpenRouter API endpoints. Inference settings were held constant across all models: temperature was set to 0 to ensure deterministic outputs, and no other sampling parameters (eg, top-p, top-k) were adjusted from their API defaults. Each image was processed once per model; repeated runs were not performed because the deterministic temperature setting (temperature = 0) eliminates stochastic variation, making output stability testing redundant under these conditions. The prompt used for all evaluations (provided in full in Supplementary Material 1) was finalized prior to any model testing and remained unchanged throughout the study; no prompt refinement occurred after viewing any model results. We note that exact implementation details – such as internal preprocessing pipelines and proprietary vision encoder architectures – are unavailable due to the closed-source nature of these commercial models, which represents a limitation inherent to evaluating frontier VLMs through third-party API platforms. All images were manually verified to contain no personal or identifying information before uploading, stored on local hardware, and no data were missing in this study. The complete prompts are provided in Supplementary Material 1.
+
+Task 1: diagnostic classification and interpretation
+
+This task evaluated the ability of the model to assist dentists in detecting osseous changes. For internal validation, each model was presented with 72 radiographic slices from the EHPN dataset individually. A structured prompting strategy was used to simulate the clinical reasoning of a senior radiologist (Supplementary Material 1).
+
+To evaluate cross-dataset consistency of our diagnostic findings, we incorporated the MMDental dataset,22 which was originally approved by the Medical Ethics Committee of Lishui University (Approval No. 2022YR014), as a constructed balanced external validation set (n = 70: 35 abnormal, 35 normal). For the external validation (MMDental dataset), images were acquired using HiRes 3D-Plus/Boen scanners with age- and sex-adjusted protocols (90-100 kVp, 3-9 mA).
+
+We acknowledge that the external validation set represents a constructed balanced sample rather than a consecutive clinical cohort. From the available MMDental CBCT scans, we first screened cases for adequate TMJ/condylar field of view, excluding scans where the condylar region was incompletely captured or image quality was insufficient for reliable assessment. Given that this dataset lacked pre-existing TMJ pathology annotations, we implemented a rigorous annotation protocol: two senior oral and maxillofacial radiologists (the same evaluators as the internal validation) performed independent blinded reviews following DC/TMD criteria. Interobserver agreement was assessed (κ = 0.85), and discordant cases were resolved through consensus discussion. Random sampling was employed to ensure balanced sample distribution; once a predetermined sample size (n = 35) was reached for either category, additional scans of that category were excluded from selection. This approach ensured an objective validation set composition. A total of 106 scans were reviewed for eligibility, of which 70 cases meeting the selection criteria were included. The excluded 36 scans consisted of cases with truncated condylar anatomy (n = 8), significant image artifacts (n = 3), and normal (control) cases exceeding the target quota for balanced sampling (n = 25), consistent with a greater number of normal cases in the source dataset.
+
+The screening and selection process for the external validation dataset is summarized in Figure 2.Fig. 2 The screening and selection process for the external validation dataset.
+
+Fig 2 dummy alt text
+
+The instructions for the models are as follows:1. Systematic analysis: An anatomical assessment was performed following a predefined sequence (eg, anterior surface for osteophytes, superior surface for erosions, and medullary space for subchondral cysts).
+
+2. Diagnostic Conclusion: Provide a binary ‘yes/no’ determination regarding the presence of osseous changes, supported by detailed clinical justification.
+
+Task 2: standardized report generation
+
+The models generated radiographic reports based on the Diagnostic Criteria for Temporomandibular Disorders (DC/TMD) guidelines for the 32 patients with confirmed osseous changes from the internal validation set (EHPN).21 Critically, this report-generation evaluation was conducted exclusively on these positive/abnormal cases; the quality of reports for normal cases was not assessed. Therefore, the QAMAI scores reported herein reflect the linguistic and structural quality and potential clinical usefulness of AI-generated reports for known abnormal cases only and should not be interpreted as evidence of report quality for normal condylar findings. This scope of assessment represents an important study limitation. We assigned models to adopt the role as senior experts in oral and maxillofacial radiology. Two experienced radiologists independently assessed the quality of the generated reports using the Quality Assessment of Medical AI-Generated Information (QAMAI) framework (1-5 scale).23
+
+The QAMAI framework was originally developed and validated for assessing AI-generated medical information quality across multiple dimensions. While it was not specifically designed for dental radiology reporting, its five core dimensions (Accuracy, Clarity, Relevance, Completeness, and Usefulness) are broadly applicable to evaluating structured medical reports. It is important to note that these QAMAI dimensions evaluate three related but distinct outcomes that should not be conflated: (1) diagnostic correctness – the factual accuracy of the report content, which overlaps with but is not equivalent to the binary diagnostic classification assessed in Task 1; (2) linguistic and structural quality of the generated text – captured by the Clarity and Completeness dimensions, reflecting how well the report is organized and articulated; and (3) potential clinical usefulness – captured by the Relevance and Usefulness dimensions, reflecting whether the report would be actionable in a clinical setting. These three outcomes are related but separate, and no single QAMAI dimension should be treated as equivalent to another or to the diagnostic accuracy metrics from Task 1.
+
+To minimize bias, the evaluators were asked to rate using a specific Python Gradio rating interface to keep them blinded to the model identities.
+
+Statistical analysis
+
+To evaluate the diagnostic performance of the three VLMs in Task 1, we calculated the sensitivity, specificity, positive predictive value, negative predictive value, and overall accuracy, using radiologist consensus as the gold standard. The 95% confidence intervals (CIs) for these proportions were estimated using the Wilson score method.24
+
+To compare the diagnostic accuracy of the three models, the McNemar test was used for pairwise comparisons.25 This method is specifically designed for paired-sample designs where the same test set is evaluated by different models, analysing discordant pairs (ie, cases where Model A was correct while Model B was incorrect, denoted as n₀₁ and n₁₀) to determine the statistical significance of performance differences.
+
+Given that the VLMs were instructed to provide binary diagnostic conclusions (‘yes/no’ for the presence of condylar osseous changes) rather than continuous probability scores, a conventional threshold-based ROC analysis was not feasible. Instead, we calculated balanced accuracy, defined as the average of sensitivity and specificity: Balanced accuracy = (Sensitivity + Specificity) / 2. This metric represents the model’s overall discriminative ability at its single operating point. The 95% confidence intervals for balanced accuracy were estimated using a nonparametric bootstrap percentile method (2000 resamples; random seed = 42). For pairwise model comparisons, we applied Bonferroni correction to control the family-wise error rate, setting the adjusted significance threshold at P < .0167 (0.05/3).
+
+For Task 2, the internal consistency between the two independent evaluators was first assessed using weighted Cohen’s kappa to ensure the reliability of the ordinal QAMAI scores. To compare the performance differences among the three models (Gemini, GPT, and Qwen), the Friedman test was employed across five QAMAI dimensions: Accuracy, Clarity, Relevance, Completeness, and Usefulness. This nonparametric approach was selected to account for the ordinal nature of the data and the repeated-measures design.
+
+For dimensions demonstrating significant differences (P < .05), posthoc pairwise comparisons were conducted using the Wilcoxon signed-rank test with Bonferroni correction to control for Type I error, setting the adjusted significance threshold (α) at 0.0167 (0.05/3). Furthermore, effect sizes (r) were calculated to quantify the magnitude of the differences, with |r| > 0.5 interpreted as a large effect. All statistical analyses were performed using Python (v3.11), and a P-value < .05 (precorrected) was considered statistically significant.
+
+To ensure methodological rigor and prevent data leakage, the following measures were implemented: (1) Prompt development was finalized before any model evaluation commenced; no cases from either the internal or external validation datasets informed prompt tuning. (2) The external validation set (MMDental) was entirely isolated from all prompt and model-development decisions; it was accessed and annotated only after the experimental protocol was locked. (3) Patient-level independence was ensured through the ‘one patient, one slice’ protocol, preventing any clustering effects. (4) All three VLMs were evaluated using identical prompts and procedures to ensure fair comparison. All procedures were conducted in accordance with the ethical standards of the institutional and national research committees and the Declaration of Helsinki.
+
+Furthermore, the study design and manuscript preparation followed STARD-AI (Standards for Reporting of Diagnostic Accuracy – Artificial Intelligence) as the primary reporting checklist for AI-based diagnostic accuracy studies,26 complemented by CLAIM (Checklist for Artificial Intelligence in Medical Imaging) for medical imaging AI-specific considerations.27 TRIPOD-LLM guidelines were retained as a supplementary framework given the large language model components of this study.28 The completed STARD-AI, CLAIM, and TRIPOD-LLM checklists are provided in Supplementary Material 2.
+
+Results
+
+Task 1: diagnostic classification and interpretation
+
+The diagnostic performance of the three VLMs in identifying condylar osseous changes is summarized in Table 1. Under zero-shot conditions, the models demonstrated varying degrees of diagnostic potential without prior task-specific fine-tuning. Confusion matrices for all three models are provided in Supplementary Material 3.Table 1 Diagnostic performance of three vision-language models in detecting condylar osseous changes.
+
+Table 1 dummy alt textModel	Accuracy (95% CI)	Sensitivity (95% CI)	Specificity (95% CI)	PPV	NPV	Balanced Accuracy	
+Gemini-3	90.3% (81-95)	84.4% (68-93)	95.0% (83-99)	0.93	0.88	0.90	
+GPT-5.2	75.0% (64-84)	65.6% (48-80)	82.5% (68-91)	0.75	0.75	0.74	
+Qwen3-VL-235b	55.6% (44-66)	34.4% (20-52)	72.5% (57-84)	0.50	0.58	0.53	
+Note: Balanced Accuracy = (Sensitivity + Specificity) / 2; CI, confidence interval; Gemini-3, Gemini-3 Pro Preview; NPV, negative predictive value; PPV, positive predictive value; Qwen3-VL, Qwen3-VL-235b-a22b-thinking.
+
+Gemini-3 achieved the highest diagnostic accuracy among the tested models at 90.3% (95% CI: 81.0%-95.5%), with a balanced accuracy of 0.90 (95% CI: 0.82-0.96) and F1-score of 0.89. A notable characteristic of this model was its specificity of 95.0% (95% CI: 83.5%-98.6%) and sensitivity of 84.4% (95% CI: 68.2%-93.1%). These findings suggest that the model has the potential to identify normal condylar morphology while maintaining a moderate ability to detect osseous abnormalities.
+
+Across all models, the most common error type was false negatives (missed pathology), particularly in cases with subtle cortical irregularities or early-stage sclerosis without overt morphological changes. Gemini-3 produced 5 false negatives (15.6% of positive cases) and 2 false positives (5.0% of negative cases). GPT-5.2 showed higher false negative rates (11 cases, 34.4%), while Qwen3-VL demonstrated both high false negative (21 cases, 65.6%) and false positive rates (11 cases, 27.5%), suggesting poor discrimination ability.
+
+Figure 3 illustrates a representative case in which Gemini-3 successfully identified osseous changes in the condyle. Beyond providing a correct binary classification, the model accurately localizes pathological features by following structured prompting logic. This systematic approach, which simulates a real-world clinical workflow, allowed the model to specifically identify erosive areas and osteophyte formation, further validating its potential for clinical decision support.Fig. 3 Representative diagnostic process of Gemini-3 for condylar osseous changes. The purple arrows indicate the specific pathological features described in the corresponding text of the AI response (labelled in purple). The final judgment is indicated in green text.
+
+Fig 3 dummy alt text
+
+Comparisons using McNemar’s test revealed differences in the diagnostic accuracy among models. The detailed contingency table results are shown in Supplementary Material 3. Gemini-3’s performance was different from Qwen3-VL (P < .001) after Bonferroni correction. The comparison between Gemini-3 and GPT-5.2 showed a trend toward significance at the unadjusted level (P = .0266), though this did not reach the Bonferroni corrected threshold of P < .0167. Compared to Gemini-3, GPT-5.2 exhibited lower sensitivity (65.6%), yielding an accuracy of 75.0% (95% CI: 63.9%-83.6%), a balanced accuracy of 0.74 (95% CI: 0.64-0.84), and an F1-score of 0.70. Qwen3-VL demonstrated limited diagnostic utility in this specific task, with an accuracy of 55.6% (95% CI: 44.0%-66.5%), a balanced accuracy of 0.53 (95% CI: 0.43-0.65), and an F1-score of 0.41, indicating a lack of ability to perform reliable diagnostic tasks.
+
+To assess cross-dataset consistency, we validated the three VLMs on a constructed balanced external dataset (MMDental, n = 70: 35 abnormal, 35 normal). The external validation results are summarized in Supplementary Material 4. Gemini-3 maintained consistent performance with an accuracy of 90.00% (95% CI: 81.2%-95.0%), sensitivity of 85.71%, specificity of 94.29%, and balanced accuracy of 0.90 (95% CI: 0.83-0.97), demonstrating good cross dataset consistency. GPT-5.2 achieved an accuracy of 74.29% (95% CI: 63.0%-83.2%), sensitivity of 65.71%, specificity of 82.86%, and balanced accuracy of 0.74 (95% CI: 0.64-0.84). Qwen3-VL showed limited performance with an accuracy of 52.86% (95% CI: 41.4%-64.0%), sensitivity of 34.29%, specificity of 71.43%, and balanced accuracy of 0.53 (95% CI: 0.42-0.64).
+
+McNemar tests on the external dataset revealed pairwise differences among the three models. Gemini-3 outperformed Qwen3-VL (P < .0001) after Bonferroni correction. The comparison between Gemini-3 and GPT-5.2 showed a trend toward significance at the unadjusted level (P = .0192), though this did not reach the Bonferroni-corrected threshold of P < .0167. GPT-5.2 also outperformed Qwen3-VL (P = .0107) after Bonferroni correction. The detailed pairwise comparison results are presented in Supplementary Material 4.
+
+These results provide preliminary support for cross-dataset consistency of our primary findings, though the constructed balanced composition of the external sample should be considered.
+
+Task 2: report generation
+
+Radiographic reporting is an important component of the clinical workflow and serves as both a basis for clinical decision-making and a tool for patient communication. The evaluation of generative performance across the three VLMs provided insights into their clinical utility. It should be underscored that this evaluation assessed reports generated exclusively for the 32 abnormal cases from the internal dataset; therefore, the QAMAI scores reflect the quality of AI-generated reports for known pathological findings and do not evaluate report generation for normal condylar anatomy.
+
+Table 2 presents an illustrative structured example of a diagnostic report generated by Gemini-3 for the representative abnormal case shown in Figure 3. It shows the structured formatting of the generated report, including anatomical categorization, alignment with the DC/TMD guidelines, and clinical recommendations (eg, advising MRI and conservative management). This structured output suggests that VLMs may contribute beyond binary classification by providing contextual radiographic descriptions, which may support clinical communication under supervised conditions.Table 2 llustrative example of a VLM-generated diagnostic report from an abnormal internal case: Components and excerpts.
+
+Table 2 dummy alt textReport Component	Excerpts from the Gemini-3 report	
+Report header	IMAGING MODALITY: Cone Beam Computed Tomography (CBCT)
+REGION OF INTEREST: Temporomandibular Joint (Sagittal View)	
+Systematic anatomical analysis	Condylar Morphology:
+Shape: The mandibular condyle exhibits a significant alteration in morphology. It has lost its typical rounded or convex superior contour.
+Cortical Integrity: There is a distinct discontinuity and irregularity of the cortical bone on the anterior aspect of the condylar head.
+Osteophyte Formation: A prominent, beak-like bony projection (osteophyte) is visible on the anterior surface of the condyle. This is a classic sign of marginal bone proliferation associated with joint loading and remodelling.
+Erosions: There is evidence of surface erosion, particularly on the superior-anterior aspect, characterized by a loss of cortical continuity.
+Subchondral Bone: The subchondral trabecular pattern appears somewhat sclerotic in areas adjacent to the cortical irregularities, suggesting reactive bone formation.	
+Guideline-based inference	Primary Diagnosis: Degenerative Joint Disease (DJD)/Osteoarthritis
+Radiographic Evidence Supporting Diagnosis:
+According to the DC/TMD imaging criteria for Degenerative Joint Disease, the diagnosis is confirmed by the presence of at least one of the following: subchondral cyst, erosion, generalized sclerosis, or osteophyte.
+This image specifically demonstrates:
+1. Osteophyte: Clear anterior marginal bone proliferation (lipping/beaking).
+2. Erosion: Loss of cortical continuity on the articular surface.
+3. Flattening: Deformation of the condylar head (though flattening alone is considered indeterminate for DJD, in conjunction with the above, it supports the diagnosis).	
+Clinical recommendations	1. Clinical Correlation: Correlate findings with clinical symptoms such as crepitus (grating/grinding noises), joint pain, and limitation in range of motion.
+2. MRI Assessment (Optional): If the patient is symptomatic and conservative management fails, an MRI may be indicated to evaluate the status of the articular disc (position, morphology, and reduction status) and the presence of joint effusion or marrow edema.
+3. Management: Conservative management is typically the first line of defence, including occlusal appliance therapy, physical therapy, and pharmacologic management for inflammation.	
+
+Two senior radiologists independently evaluated the reports using the QAMAI framework. The weighted Cohen’s kappa coefficient for the overall scoring was 0.879, indicating a high degree of interobserver agreement. The Friedman test was used to reveal highly significant differences among the models across all five QAMAI dimensions (P < .001). Evaluating radiologists generally characterized the outputs from the top-performing model as well-structured and clinically relevant, meeting the minimum requirements for the assessed QAMAI dimensions.
+
+The details of the comparison between the five dimensions are shown in Figure 4. The post hoc analysis confirmed that Gemini-3 outperformed both GPT-5.2 and Qwen3-VL, with large effect sizes. Gemini-3 maintained superior scores across all five QAMAI domains.Fig. 4 Qualitative performance comparison of the three VLMs across five QAMAI dimensions.
+
+Fig 4 dummy alt text
+
+Specifically, Relevance (4.00 ± 0.72) and Completeness (3.91 ± 0.82) exceeded those of GPT-5.2 and Qwen3-VL (P < .002, r > 0.80). Regarding Usefulness, Gemini-3 was rated higher (3.75 ± 0.80) than GPT-5.2 (3.19 ± 0.47, P = .0015) and Qwen3-VL (2.69 ± 0.54, P < .001), with all pairwise comparisons reaching statistical significance after Bonferroni correction.
+
+Discussion
+
+This proof-of-concept study evaluated whether frontier VLMs can assist in identifying condylar osseous changes from expert-selected CBCT sagittal slices under controlled conditions. Our findings demonstrate that VLMs, particularly Gemini-3, achieved promising zero-shot diagnostic performance without task-specific fine-tuning. However, it is essential to interpret these results within the context of the simplified study design, which evaluates single expert-selected slices rather than true volumetric CBCT interpretation.
+
+The superior performance of Gemini-3 over GPT-5.2 and Qwen3-VL in terms of both diagnostic accuracy and reporting quality is noteworthy. Although all three were top-tier VLMs, Gemini-3’s higher sensitivity (84.4%) indicated a greater ability to detect subtle osseous changes. This may reflect differences in multimodal image processing capabilities across frontier VLMs, as suggested by comparative evaluations in radiology,29 enabling a finer analysis of radiographic contrast, a critical factor in bone pathology, where the distinction between healthy cortical bone and early sclerosis is subtle. In task 2, Gemini-3’s reports achieved the highest QAMAI scores, particularly in ‘Clarity’ and ‘Accuracy’. The structured prompt-based textual justifications generated by the model reflect its capacity to follow DC/TMD diagnostic reasoning patterns, though such prompted outputs should not be equated with formal explainability or interpretability methods (eg, attention maps or saliency-based techniques) that reveal internal model decision processes. It is important to reiterate that this report-generation assessment was limited to the 32 abnormal cases from the internal dataset, so the QAMAI scores reflect report quality for known pathological findings only and do not address report generation for normal anatomy.
+
+Our findings align with recent advances in AI-assisted dental radiography. Kim et al10 demonstrated the feasibility of deep learning for automated cortical thickness measurement of the mandibular condyle on CBCT images. Similarly, studies employing convolutional neural networks for TMJ osteoarthritis detection have reported comparable accuracy metrics.30,31 The emergence of large language models with visual capabilities represents the next possible step, offering the unique advantage of providing interpretable diagnostic reasoning alongside classification outputs.32 The consistency between internal and external validation results supports the stability of the observed performance patterns across these two datasets, despite the constructed balanced composition of the external sample. All three models demonstrated stable performance on the external dataset compared to the internal validation. Gemini-3 maintained comparable accuracy from 90.3% (internal) to 90.0% (external), with balanced accuracy remaining stable at 0.90. Similarly, GPT-5.2 showed consistent performance with 75.0% (internal) to 74.3% (external) accuracy, and Qwen3-VL from 55.6% to 52.9%. These consistent results across two independent datasets, despite the constructed balanced composition of the external sample, suggest that the observed performance differences among models are not attributable to overfitting on the primary dataset.
+
+From a clinical perspective, the high specificity observed across models (particularly Gemini-3) suggests potential utility as a preliminary screening tool. For general practitioners who may encounter TMJ abnormalities but lack specialized training in oral and maxillofacial radiology, VLMs may serve as a ‘second opinion’ to flag cases warranting specialist referral.30 However, the zero-shot performance reported here was achieved under highly controlled conditions with expert-selected representative slices, which may not reflect the challenges of routine clinical practice. The accessibility of cloud-based VLMs via simple web interfaces could lower technical barriers for resource-limited settings,33 though prospective reader-assistance studies are needed to establish real-world utility.
+
+One of the notable advantages of VLMs over traditional ML is their ability to generate descriptive justifications.34 In our study, the models were instructed to perform a systematic anatomical assessment (anterior surface, superior surface, and medullary space). This structured output extends AI’s function beyond binary classification. By providing a ‘why’ behind the ‘yes/no’ diagnosis, VLMs may enhance clinician trust and facilitate patient communication, as complex radiographic findings are translated into understandable language according to standardized guidelines.
+
+Limitations
+
+Spectrum bias and dataset composition. The use of balanced datasets with approximately equal proportions of abnormal and normal cases introduces spectrum bias. In clinical practice, the prevalence of condylar osseous changes may differ in general dental settings. The artificially elevated disease prevalence affects positive and negative predictive values, and future validation studies should incorporate consecutive clinical cohorts reflecting the true disease spectrum.
+
+Single-slice analysis versus volumetric interpretation. The evaluation of single expert-selected sagittal slices rather than complete volumetric CBCT interpretation represents a fundamental departure from clinical workflow. In routine practice, radiologists examine multiple planes throughout the entire volume to identify pathological features. Our study design required expert preselection of diagnostically relevant images, a task demanding radiological expertise that general practitioners may lack. Consequently, the reported performance likely represents an upper bound estimate constrained by current VLM architecture limitations that process only single two-dimensional images.
+
+Report-generation scope. The report-generation evaluation using the QAMAI framework was conducted exclusively on the 32 positive/abnormal cases from the internal dataset. Therefore, the QAMAI scores reflect the linguistic and structural quality of AI-generated reports for known pathological findings only.
+
+Closed-source model transparency. The three VLMs evaluated in this study are proprietary, closed-source models accessed via a third-party API platform. Exact details regarding model training data, architecture specifications, and alignment procedures are unavailable, which may lead to unstable long-term accuracy. This limitation is inherent to evaluating frontier commercial AI systems and should be considered when interpreting the reproducibility of these findings.
+
+Demographic considerations (SAGER)
+
+In accordance with the SAGER guidelines, attempts were made to evaluate the demographic characteristics of the study population. However, because the source data were obtained from open-access third-party repositories with incomplete demographic indexing, granular metadata (such as standardized sex and age labels) could not be reliably verified for the entire cohort. Consequently, sex-disaggregated subgroup analyses were omitted – a limitation common to the retrospective secondary use of public datasets. This technical evaluation thus focuses strictly on the models’ core algorithmic performance.
+
+Summary
+
+This proof-of-concept study provides preliminary evidence that zero-shot VLMs may have potential as auxiliary screening aids for identifying condylar osseous changes under controlled conditions. Gemini-3 achieved the highest diagnostic accuracy among tested models. However, the simplified study design – evaluating single expert-selected slices rather than full volumetric interpretation – represents a substantial difference from clinical practice.
+
+These results should be interpreted as an initial benchmark rather than evidence supporting immediate clinical implementation. Future prospective, multicentre studies with consecutive clinical cohorts and real-world reader-assistance testing are essential to establish whether VLM-assisted diagnosis can provide meaningful clinical benefit in routine dental practice.
+
+Conflict of interest
+
+None disclosed. No author has received consulting fees, honoraria, or other payments from AI model providers (Google, OpenAI, Alibaba) or related entities.
+
+Appendix Supplementary materials
+
+Image, application 1
+
+Image, application 2
+
+Image, application 3
+
+Image, application 4
+
+Author contributions
+
+Ke Chen: Methodology, Software, Writing – Original draft preparation. Andrew Zhang: Methodology, Writing – Original draft preparation. Xianju Xie: Investigation, Supervision, Reviewing and Editing, Funding Acquisition. Yuxing Bai: Conceptualization, Investigation, Supervision, Reviewing and Editing, Funding Acquisition
+
+Ethics statement
+
+The study protocol was approved by the Institutional Review Board of Beijing Stomatological Hospital (Review Reference: CMUSH-IRB-KJ-PJ-2024-72; Date of Approval: 2024-11-08). This research involved the secondary analysis of two publicly available, deidentified datasets: (1) the EHPN dataset from the University of Michigan, originally approved by its IRB (No. HUM00113199); and (2) the MMDental dataset, originally approved by the Medical Ethics Committee of Lishui University (No. 2022YR014).
+
+Declaration of generative AI and AI-assisted technologies in the manuscript preparation process
+
+During the preparation of this work the authors used DeepSeek-V3.1 in order to check and fix grammatical errors. After using this tool/service, the authors reviewed and edited the content as needed and take full responsibility for the content of the published article.
+
+Funding
+
+This research was funded by Development Program for Government-to-Government International Scientific and Technological Cooperation (no.2024YFE0107100), the Beijing Municipal Natural Science Foundation (grant number Z222024), and National Natural Science Foundation of China (grant number 62276174). The funders had no role in study design, data collection, data analysis, interpretation, manuscript writing, or the decision to submit the manuscript for publication.
+
+Acknowledgements
+
+The authors appreciate the collaboration and efforts of our colleagues and team members in completing this study. The authors thank the University of Michigan and Lishui University for providing open-access CBCT datasets.
+
+Data availability
+
+The two source datasets (EHPN and MMDental) used in this study are publicly available on https://deepblue.lib.umich.edu/data/concern/data_sets/2v23vv279 and https://springernature.figshare.com/articles/dataset/MMDental_-_A_multimodal_dataset_of_tooth_CBCT_images_with_expert_medical_records/28505276. The extracted sagittal slice images used in this experiment cannot be publicly redistributed due to the terms of the original datasets. Researchers interested in accessing these slices may submit a reasonable request to the corresponding author (including a brief statement of intended use). Requests will be evaluated on a case-by-case basis in compliance with the original dataset usage agreements.
+
+The Python scripts, annotations, model outputs, evaluation files, and QAMAI scoring data are publicly available on GitHub at https://github.com/dentistfrankchen/condyle-project.
+
+Supplementary material associated with this article can be found in the online version at doi:10.1016/j.identj.2026.109817.
+
+
+References
+
+1 Fontenele R.C. Gaêta-Araujo H. Jacobs R. Cone beam computed tomography in dentistry: clinical recommendations and indication-specific features J Dent 159 2025 105781 10.1016/j.jdent.2025.105781 40280537
+2 Adibi S. Zhang W. Servos T. Cone beam computed tomography in dentistry: what dental educators and learners should know J Dent Educ 76 2012 1437 1442 10.1002/j.0022-0337.2012.76.11.tb05404.x 23144478
+3 de Boer E.W.J. Dijkstra P.U. Stegenga B. Value of cone-beam computed tomography in the process of diagnosis and management of disorders of the temporomandibular joint Br J Oral Maxillofac Surg 52 2014 241 246 10.1016/j.bjoms.2013.12.007 24434112
+4 Ma R. Yin S. Li G. The detection accuracy of cone beam CT for osseous defects of the temporomandibular joint: a systematic review and meta-analysis Sci Rep 6 2016 34714 10.1038/srep34714 PMC5052594 27708375
+5 Campos D.E.S. de Araújo Ferreira Muniz I. de Souza Villarim N.L. Is there an association between rheumatoid arthritis and bone changes in the temporomandibular joint diagnosed by cone-beam computed tomography? A systematic review and meta-analysis Clin Oral Invest 25 2021 2449 2459 10.1007/s00784-021-03817-8 33547580
+6 Delpachitra S.N. Dimitroulis G. Osteoarthritis of the temporomandibular joint: a review of aetiology and pathogenesis Br J Oral Maxillofac Surg 60 2022 387 396 10.1016/j.bjoms.2021.06.017 35307273
+7 Yadav U. Srivastava A. Ahmed J. Application of artificial intelligence in the diagnosis and management of temporomandibular joint osteoarthritis using cone-beam computed tomography: an evidence-based systematic review Imaging Sci Dent 55 2025 223 233 10.5624/isd.20250077 41070252 PMC12505434
+8 Lee K.S. Kwak H.J. Oh J.M. Automated detection of TMJ osteoarthritis based on artificial intelligence J Dent Res 99 2020 1363 1367 10.1177/0022034520936950 32609562
+9 Mourad L. Aboelsaad N. Talaat W.M. Automatic detection of temporomandibular joint osteoarthritis radiographic features using deep learning artificial intelligence. A diagnostic accuracy study J Stomatol Oral Maxillofac Surg 126 2025 102124 10.1016/j.jormas.2024.102124 39488247
+10 Kim Y.H. Shin J.Y. Lee A. Automated cortical thickness measurement of the mandibular condyle head on CBCT images using a deep learning method Sci Rep 11 2021 14852 10.1038/s41598-021-94362-7 PMC8295413 34290333
+11 Chen R.J. Ding T. Lu M.Y. Towards a general-purpose foundation model for computational pathology Nat Med 30 2024 850 862 10.1038/s41591-024-02857-3 38504018 PMC11403354
+12 Mine Y. Okazaki S. Taji T. Benchmarking multimodal large language models on the dental licensing examination: challenges with clinical image interpretation J Dent Sci 20 2025 2427 2435 10.1016/j.jds.2025.03.018 41040605 PMC12485424
+13 Shujaat S. Aljadaan H. Alrashid H. FDA-approved AI solutions in dental imaging: a narrative review of applications, evidence, and outlook Int Dent J 76 2026 109315 10.1016/j.identj.2025.109315 PMC12775797 41421004
+14 Wu C. Zhang X. Zhang Y. Towards generalist foundation model for radiology by leveraging web-scale 2D&3D medical data Nat Commun 16 2025 7866 10.1038/s41467-025-62385-7 40849424 PMC12375113
+15 Mao W-Y Fang Y-Y Wang Z-Z Automated diagnosis and classification of temporomandibular joint degenerative disease via artificial intelligence using CBCT imaging J Dent 154 2025 105592 10.1016/j.jdent.2025.105592 39870190
+16 Hassanein F.E.A. Hussein R.R. Elgarhy M.R. Artificial intelligence versus human dental expertise in diagnosing periapical pathosis on periapical radiographs: a multicenter study Bioengineering (Basel) 13 2026 232 10.3390/bioengineering13020232 41749771 PMC12937961
+17 Hassanein F.E.A. Ahmed Y. Maher S. Prompt-dependent performance of multimodal AI model in oral diagnosis: a comprehensive analysis of accuracy, narrative quality, calibration, and latency versus human experts Sci Rep 15 2025 37932 10.1038/s41598-025-22979-z PMC12575769 41168327
+18 Talaat W.M. Shetty S. Al Bayatti S. An artificial intelligence model for the radiographic diagnosis of osteoarthritis of the temporomandibular joint Sci Rep 13 2023 15972 10.1038/s41598-023-43277-6 PMC10519983 37749161
+19 Shetty S.R. Al-Bayatti S. AlKawas S. Analysis of the volumetric asymmetry of the mandibular condyles using CBCT Int Dent J 72 2022 797 804 10.1016/j.identj.2022.06.019 35931561 PMC9676531
+20 Al Turkestani N. Li T. Bianchi J. A comprehensive patient-specific prediction model for temporomandibular joint osteoarthritis progression Proc Natl Acad Sci U S A 121 2024 e2306132121 10.1073/pnas.2306132121 PMC10895339 38346188
+21 Schiffman E. Ohrbach R. Truelove E. Diagnostic criteria for temporomandibular disorders (DC/TMD) for clinical and research applications: recommendations of the international RDC/TMD consortium network and orofacial pain special interest group J Oral Facial Pain Headache 28 2014 6 27 10.11607/jop.1151 24482784 PMC4478082
+22 Wang C. Zhang Y. Wu C. MMDental – a multimodal dataset of tooth CBCT images with expert medical records Sci Data 12 2025 1172 10.1038/s41597-025-05398-7 40634413 PMC12241571
+23 Vaira L.A. Lechien J.R. Abbate V. Validation of the Quality Analysis of Medical Artificial Intelligence (QAMAI) tool: a new tool to assess the quality of health information provided by AI platforms Eur Arch Otorhinolaryngol 281 2024 6123 6131 10.1007/s00405-024-08710-0 38703195 PMC11512889
+24 Newcombe RG. Two-sided confidence intervals for the single proportion: comparison of seven methods Stat Med 17 1998 857 872 10.1002/(sici)1097-0258(19980430)17:8<857::aid-sim777>3.0.co;2-e 9595616
+25 Mcnemar Q. Note on the sampling error of the difference between correlated proportions or percentages Psychometrika 12 1947 153 157 10.1007/BF02295996 20254758
+26 Sounderajah V. Guni A. Liu X. The STARD-AI reporting guideline for diagnostic accuracy studies using artificial intelligence Nat Med 31 2025 3283 3289 10.1038/s41591-025-03953-8 40954311
+27 Tejani A.S. Klontzas M.E. Gatti A.A. Checklist for artificial intelligence in medical imaging (CLAIM): 2024 update Radiol Artif Intell 6 2024 e240300 10.1148/ryai.240300 PMC11304031 38809149
+28 Gallifant J. Afshar M. Ameen S. The TRIPOD-LLM reporting guideline for studies using large language models Nat Med 31 2025 60 69 10.1038/s41591-024-03425-5 39779929 PMC12104976
+29 Suh P.S. Shim W.H. Suh C.H. Comparing diagnostic accuracy of radiologists versus GPT-4V and Gemini Pro Vision using image inputs from diagnosis please cases Radiology 312 2024 e240273 10.1148/radiol.240273 38980179
+30 Farook T.H. Dudley J. Automation and deep (machine) learning in temporomandibular joint disorder radiomics: a systematic review J Oral Rehabil 50 2023 501 521 10.1111/joor.13440 36843391
+31 Math SY, Ameli N, Stefani CM, et al. Augmented intelligence in oral and maxillofacial radiology: a systematic review. Oral Surg Oral Med Oral Pathol Oral Radiol 2025;140:237-50. doi:10.1016/j.oooo.2025.03.015.10.1016/j.oooo.2025.03.015 40263038
+32 Hartoonian S, Hosseini M, Yousefi I, et al. Applications of artificial intelligence in dentomaxillofacial imaging: a systematic review. Oral Surg Oral Med Oral Pathol Oral Radiol 2024;138:641-55. doi:10.1016/j.oooo.2023.12.790.10.1016/j.oooo.2023.12.790 38637235
+33 Huang H. Zheng O. Wang D. ChatGPT for shaping the future of dentistry: the potential of multi-modal large language model Int J Oral Sci 15 2023 29 10.1038/s41368-023-00239-y 37507396 PMC10382494
+34 Nam Y. Kim D.Y. Kyung S. Multimodal large language models in medical imaging: current state and future directions Korean J Radiol 26 2025 900 923 10.3348/kjr.2025.0599 41015856 PMC12479233

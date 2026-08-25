@@ -1,0 +1,553 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Oncol Res
+Journal ID: Oncol Res
+NLM Journal ID: 9208097
+Journal ID: OR
+
+Oncology Research
+
+ISSN: 0965-0407
+EISSN: 1555-3906
+Publisher: Tech Science Press
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13494504
+PMID: 42630702
+DOI: 10.32604/or.2026.082432
+Article ID: 82432
+Article version: 1
+Subjects: Review
+
+Mitochondrial Dysfunction in Renal Cell Carcinoma: A Comprehensive Review of Pathogenic Mechanisms and Emerging Therapeutic Opportunities
+
+Mitochondrial Dysfunction in Renal Cell Carcinoma: A Comprehensive Review of Pathogenic Mechanisms and Emerging Therapeutic Opportunities
+
+Mitochondrial Dysfunction in Renal Cell Carcinoma: A Comprehensive Review of Pathogenic Mechanisms and Emerging Therapeutic Opportunities
+
+Wang Yanhong 1 #
+Liu Junbo 2 #
+Xu Qiaoping 3 #
+Ma Zhao 4 mazhao@stu.xjtu.edu.cn
+1 Department of Pharmacy, the Second Affiliated Hospital, Zhejiang University School of Medicine , Hangzhou , China
+2 Department of Pharmacy, the Eighth Affiliated Hospital, Sun Yat-sen University , Shenzhen , China
+3 Department of Pharmacy, Affiliated Hangzhou First People’s Hospital, School of Medicine, Westlake University , Hangzhou , China
+4 Department of Pharmacy, Hangzhou Third People’s Hospital, Hangzhou Third Hospital Affiliated to Zhejiang Chinese Medical University , Hangzhou , China
+* Corresponding Author: Zhao Ma. Email: mazhao@stu.xjtu.edu.cn#These authors contributed equally to this work
+
+Publication date: 2026
+Electronic publication date: 2026 Aug 13
+Volume: 34
+Issue: 9
+Electronic Location ID: 14
+Received 2026 Mar 16; Accepted 2026 Jul 20
+Copyright: © 2026 The Authors. Published by Tech Science Press.
+Copyright year: 2026
+Copyright holder: The Authors
+License: This work is licensed under a Creative Commons Attribution 4.0 International License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
+License URL: https://creativecommons.org/licenses/by/4.0/
+
+Keywords: Kidney cancer, mitochondrial metabolism, oxidative phosphorylation, apoptosis evasion, mitochondrial quality control, targeted therapy, drug resistance
+
+Funding: the Key Medical Discipline of Hangzhou City 2021-21 the Key Medical Discipline of Zhejiang Province 2018-2-3 the Key Laboratory of Clinical Cancer Pharmacology and Toxicology Research of Zhejiang Province 2020E10021
+
+==============================
+In renal cell carcinoma (RCC), alterations in cellular metabolism are a defining feature, among which impaired mitochondrial function stands out as a key factor influencing both tumor aggressiveness and patient responses to therapy. The aim of this review is to systematically synthesize current knowledge on the role of mitochondrial dysfunction in RCC pathogenesis and to explore emerging therapeutic strategies targeting mitochondrial vulnerabilities. This comprehensive analysis examines the integrated dysregulation of core mitochondrial processes—bioenergetic metabolism, organelle dynamics, programmed cell death pathways, redox homeostasis, and selective autophagy—in driving RCC pathogenesis. Our synthesis reveals how genetic drivers, molecular regulators, and microenvironmental cues converge to remodel mitochondrial function, creating both adaptive advantages and therapeutic vulnerabilities. A paradoxical duality emerges in mitochondrial biology: processes such as fission, mitophagy, and reactive oxygen species (ROS) generation can simultaneously support tumor adaptation while rendering cells susceptible to targeted interventions. We evaluate emerging therapeutic approaches directed at mitochondrial vulnerabilities, including metabolic inhibitors, nanoscale delivery systems, and phytochemical agents, while addressing current limitations in specificity and resistance mechanisms. Based on current preclinical evidence, this integrated perspective establishes mitochondrial dysfunction as a central determinant of RCC malignancy and suggests potential combinatorial strategies for precision oncology approaches that warrant further investigation.
+
+1 Introduction
+
+Renal Cell Carcinoma (RCC) persists as a major urological malignancy, representing a significant and often lethal threat to global health. It accounts for approximately 2–3% of all adult cancers, with its incidence notably rising over recent decades [1,2]. Epidemiological data from 2022 highlighted over 431,000 new RCC cases and nearly 180,000 deaths worldwide, underscoring its substantial disease burden [3]. A critical challenge in RCC management is the frequent absence of specific early-warning signs; a considerable proportion of patients are consequently diagnosed with advanced or metastatic disease, often discovered incidentally [4]. The ineffectiveness of conventional radiotherapy and chemotherapy against the most common histological subtype, clear cell renal cell carcinoma (ccRCC), complicates treatment, leaving surgical resection as the primary curative option for localized tumors [5]. Despite advancements in surgical techniques and the integration of targeted therapies (e.g., tyrosine kinase inhibitors) and immunotherapies (e.g., immune checkpoint inhibitors [ICIs]), outcomes for patients with advanced or metastatic RCC remain suboptimal, characterized by high risks of recurrence and the eventual development of therapy resistance [6]. The 5-year survival rate for patients with distant metastases remains disappointingly low, hovering below 15% [7]. This stark reality necessitates a deeper exploration of the molecular drivers of RCC pathogenesis to identify novel therapeutic vulnerabilities and improve clinical prognoses.
+
+The development of RCC is influenced by a complex interplay of risk factors. Well-established determinants include smoking, obesity, hypertension, and certain hereditary genetic syndromes, such as von Hippel-Lindau (VHL) disease, which is intricately linked to the pathogenesis of sporadic ccRCC [7].
+
+In recent years, mitochondria have emerged as important players in the pathogenesis and progression of RCC, extending far beyond their traditional role as cellular powerhouses. Mounting evidence underscores that mitochondrial dysfunction is a critical enabler of hallmark malignant behaviors in RCC, such as sustained proliferative signaling, invasive growth, metastatic dissemination, and resistance to conventional and targeted therapies [8,9].
+
+However, an unresolved question persists in the field: under what conditions does mitochondrial dysfunction act as a driver versus a suppressor of RCC malignancy, and how do the five core mitochondrial processes—energy metabolism, dynamics, apoptosis, redox homeostasis, and mitophagy—differentially contribute to these opposing outcomes? From one vantage point, studies have illuminated how metabolic reprogramming and dynamic morphological shifts fuel the aggressive phenotype of RCC cells [10]. Conversely, other research highlights the potent tumor-suppressive capacity of mitochondria through apoptosis regulation. These ostensibly conflicting observations underscore the intricate and context-dependent nature of mitochondrial involvement in RCC.
+
+To reconcile these controversies and provide a coherent conceptual framework, this article systematically synthesizes current literature on how five core mitochondrial processes—energy metabolism, dynamics, apoptosis, oxidative stress (OS), and mitophagy—are dysregulated in RCC. We further investigate how genetic alterations, key regulatory factors, and the tumor microenvironment (TME) converge to reshape mitochondrial function, and critically evaluate emerging therapeutic strategies targeting mitochondrial vulnerabilities, with the aim of providing insights for future clinical approaches for RCC management.
+
+2 Overview of Mitochondria
+
+Mitochondria are double-membraned organelles that carry their own genome (mitochondrial DNA, mtDNA) and function with a degree of independence from the nucleus. They house the oxidative phosphorylation (OXPHOS) machinery, whose core components—13 polypeptide subunits—are encoded by mtDNA [11]. Beyond their conventional role as adenosine triphosphate (ATP)—generating powerhouses, mitochondria in RCC have emerged as key signaling hubs that integrate metabolic inputs, trigger apoptosis, and sustain redox balance. Disruption of these functions is frequently observed during RCC progression [9,12,13].
+
+In RCC, mitochondrial bioenergetics is often rewired to fuel tumor growth, and mitochondrial morphology is highly adaptable, shaped by the continuous balance between fusion and fission [5,9,10]. These alterations span five interconnected domains: energy metabolism, dynamics, apoptosis, redox homeostasis, and mitophagy (summarized in Fig. 1).
+
+Figure 1 Schematic Illustrations of Five Key Mitochondrial Dysfunctions in Renal Cell Carcinoma (RCC). (a) Reprogramming of mitochondrial energy metabolism in RCC. (b) Dysregulated mitochondrial dynamics in RCC. (c) Evasion of mitochondria-mediated apoptosis in RCC cells. (d) Mitochondria-mediated oxidative stress (OS) network in RCC cells. (e) Regulation of mitophagy in RCC cells.
+
+Most current evidence on mitochondrial dysfunction in RCC comes from studies of ccRCC, the most prevalent subtype [5]. Limited data indicate that other subtypes, such as papillary RCC (pRCC) and chromophobe RCC (chRCC), may display distinct mitochondrial metabolic profiles. For example, pRCC has been linked to alterations in mtDNA and OXPHOS enzymes [14], while chRCC is characterized by abundant mitochondrial and ultrastructural abnormalities, including tubulovesicular cristae [15]. These subtype-specific differences remain poorly understood and warrant further investigation [16].
+
+3 Mitochondrial Dysfunction: A Direct Driver of Malignant Progression in RCC
+
+Mitochondria commonly exhibit profound functional impairments in RCC. In ccRCC, these defects are often initiated by VHL loss, which dysregulates hypoxic signaling and leads to metabolic reprogramming [17]. Beyond this canonical pathway, mitochondrial dysfunction in RCC can also stem from tricarboxylic acid (TCA) cycle enzyme deficiencies, electron transport chain (ETC) defects, persistent oxidative stress (OS), and mutations in both nuclear and mitochondrial DNA [18]. Collectively, these adaptive mechanisms fuel uncontrolled proliferation, metastatic dissemination, and therapy resistance (Fig. 2).
+
+Figure 2 Mitochondrial dysfunction and malignant progression in RCC.
+
+While the Warburg effect is a recognized feature, ccRCC maintains functional OXPHOS fueled by glutamine and fatty acids, particularly in advanced or treatment-resistant disease [18,19]. A shift toward glycolysis mitigates OS-induced damage, while resistance to Tyrosine Kinase Inhibitors (TKIs) is associated with enhanced OXPHOS dependency [20].
+
+Metabolically distinct subpopulations—quiescent cells, stem cells, and invasive cells—frequently depend on OXPHOS fueled by fatty acid oxidation and glutamine metabolism [18,19]. During metastasis, transient metabolic shifts occur upon adhesion to secondary sites. Notably, studies using intraoperative 13C-labeled nutrient infusions in kidney cancer patients have demonstrated that ccRCC metastases unexpectedly exhibit enhanced TCA cycle labeling compared to primary tumors, indicating a divergent metabolic program during metastatic progression [21].
+
+Dysregulation of TCA cycle enzymes is a hallmark of RCC. Enhanced palmitoylation of Malate Dehydrogenase 2 (MDH2) sustains mitochondrial respiration and promotes tumor growth [22]. Isocitrate Dehydrogenase (IDH) maintains TCA cycle flux; its inhibition depletes Reduced Nicotinamide Adenine Dinucleotide (NADH), increases ROS, and induces senescence [13]. Elevated IDH expression correlates with poor prognosis [23]. Succinate dehydrogenase (SDH) is frequently dysregulated; Succinate Dehydrogenase Subunit B (SDHB) deficiency leads to succinate accumulation, pseudohypoxia, and Epithelial-Mesenchymal Transition (EMT) [24]. IDH2 mutations have also been reported in aggressive RCC cases [25]. Furthermore, TCA intermediates can act as signaling molecules via retrograde signaling, propelling RCC development.
+
+In summary, the available evidence indicates that metabolic reprogramming in RCC predominantly acts as a driver of malignancy by supporting tumor growth, metastasis, and therapy resistance.
+
+4 Mitochondrial Dynamics
+
+The equilibrium between mitochondrial fusion and fission is pathologically skewed in RCC, fostering adaptations that underpin tumor survival, metabolic plasticity, and disease progression [26,27].
+
+A pro-fusion state, characterized by elongated mitochondria and altered cristae morphology, is associated with enhanced invasive potential and therapy resistance in RCC. Elevated Optic Atrophy 1 (OPA1) levels narrow cristae junctions, optimizing respiratory supercomplex assembly to boost OXPHOS efficiency while sequestering cytochrome c to raise the apoptotic threshold [28,29]. Overlapping Activity with m-AAA Protease 1 (OMA1) cleaves L-OPA1 to S-OPA1, inhibiting fusion and promoting fragmentation under stress. In RCC, the Stomatin-like Protein 2/Prohibitin 2 (STOML2/PHB2) complex suppresses OMA1 activity, preserving L-OPA1 and fostering a fused network that confers resistance to cell death [30,31]. Downregulation of Dynamin-related Protein 1 (Drp1) and upregulation of Mitofusin 2 (MFN2) have also been linked to therapy resistance, as this pro-fusion balance stabilizes mitochondrial membrane potential and attenuates ROS production, blunting apoptosis [32,33]. Nuclear receptors such as estrogen-related receptor α can induce MFN1/2 expression, facilitating EMT and metastasis [34].
+
+Conversely, excessive fission is often a hallmark of apoptosis commitment, leading to network fragmentation, bioenergetic collapse, and release of apoptotic factors. In therapy-sensitive cells, genotoxic stress promotes p53 translocation to mitochondria, facilitating Drp1 activation and Bax oligomerization, culminating in fission and apoptosis [35]. In resistant cells, however, survival pathways such as PI3K-AKT inhibit Drp1, while OMA1-mediated OPA1 processing is suppressed, stabilizing the mitochondrial network and promoting survival [31,35].
+
+Paradoxically, excessive fission also plays a pro-tumorigenic role in RCC. Drp1-driven fission supports cell survival and proliferation [36] and instigates a metabolic shift toward glycolysis [37]. This metabolic flexibility aids RCC cells in tolerating microenvironmental fluctuations [9,38]. Fission also facilitates invasion by accumulating fragmented mitochondria at the leading edge of migrating cells, localizing ATP production to fuel actin dynamics [39].
+
+Mitochondrial fragmentation serves as an adaptive response to microenvironmental stress, functioning as a “metabolic circuit-breaker” that maintains viability under duress [26]. RCC cells can dynamically reverse this process at specific subcellular locations through integrin-mediated adhesion signaling, restoring elongated networks near focal adhesion sites to provide sustained energy for invasion [39].
+
+Thus, mitochondrial dynamics in RCC exhibits a context-dependent duality: a pro-fusion state promotes survival and therapy resistance (driver), whereas excessive fragmentation can sensitize cells to apoptosis (potential suppressor under specific conditions) [33,36].
+
+5 Mitochondria-Mediated Apoptosis in RCC
+
+Evasion of mitochondria-mediated apoptosis constitutes a fundamental mechanism in the pathogenesis of RCC, enabling the survival and accumulation of genetically compromised cells. This apoptotic resistance primarily manifests through two interconnected mechanisms. First, a pronounced imbalance within the B-cell Lymphoma/leukemia-2 (Bcl-2) protein family is frequently observed in RCC, particularly the clear cell subtype. While Bcl-2 expression itself is variable, the consistent upregulation of potent anti-apoptotic members such as B-cell Lymphoma-extra Large (Bcl-xL) and myeloid cell leukemia-1 (Mcl-1) is considered a critical event that shifts the cellular equilibrium away from programmed cell death. This dysregulation may directly underpin the notorious resistance of RCC to conventional chemotherapy and targeted agents, with high levels of Mcl-1 and Bcl-xL being strongly correlated with advanced disease stage, metastatic progression, and inferior patient survival [40,41]. Second, the downstream apoptotic execution machinery is frequently impaired. Alterations in the expression and activity of executioner caspases disrupt the final stages of the cell death pathway, rendering RCC cells unresponsive to intrinsic pro-apoptotic signals [42]. Thus, it appears that the collective failure of the mitochondrial apoptotic pathway is intrinsically linked to the uncontrolled proliferation, metastatic dissemination, and profound treatment resistance that characterize advanced RCC [43,44].
+
+Therefore, evasion of mitochondria-mediated apoptosis represents a well-established driver of RCC malignancy by enabling uncontrolled cell survival, proliferation, and resistance to therapy.
+
+6 Mitochondrial OS in RCC
+
+OS plays a context-dependent, dual role in the pathogenesis of RCC, critically influencing tumor behavior and therapeutic responses [38,45]. Mitochondria are the primary source of ROS in RCC cells, primarily through electron leakage from complexes I and III of the ETC [45,46]. The balance between ROS generation and elimination is frequently disrupted in RCC, contributing to malignant progression [47,48,49].
+
+Building upon this network, OS exerts both pro-tumorigenic and therapy-modulating effects. OS may promote RCC proliferation, invasion, and therapy resistance through ROS-dependent cascades [50]. A key mechanism involves the hypoxic RCC microenvironment, where elevated ROS can activate Hypoxia-Inducible Factors (HIFs) even under normoxic conditions (pseudohypoxia), reinforcing oncogenic signaling [51]. Hypoxia-induced ROS also promotes adaptive changes such as Drp1 phosphorylation, inducing mitochondrial fragmentation associated with enhanced survival and TKI resistance [26].
+
+The Glutathione (GSH) system plays a context-dependent dual role in RCC drug resistance. In the short term, elevated GSH levels detoxify chemotherapeutic agents and neutralize ROS, promoting cell survival and drug tolerance. Over prolonged exposure, sustained GSH consumption leads to depletion, impairing H2O2 scavenging and creating persistent oxidative stress that selects for resistant clones adapted to survive under high ROS conditions, ultimately exacerbating treatment failure [12].
+
+Conversely, sustained ROS elevation can create therapeutic vulnerabilities. ROS may sensitize RCC cells by exacerbating DNA damage and disrupting mitochondrial membrane potential, lowering the death threshold for targeted therapies [50]. ROS is also a central executor of ferroptosis, an iron-dependent cell death distinct from apoptosis [52,53]. Ferroptosis is characterized by iron-dependent lipid peroxidation via the Fenton reaction, executed through Glutathione Peroxidase 4 (GPX4) inactivation or system Xc-inhibition [53,54]. Cancer cells with high iron metabolism, including ccRCC, exhibit increased ferroptosis sensitivity [55]. Research in RCC indicates that hydroxyl radicals generated via the Fenton reaction induce lethal lipid peroxidation, suppressing tumor proliferation and invasion. Importantly, targeting ferroptosis may overcome therapy resistance, as mesenchymal therapy-resistant cells often display enhanced ferroptosis susceptibility due to dysregulated iron homeostasis [56]. This highlights ferroptosis induction as a potential RCC therapeutic strategy. Notably, RCC tumors with high OXPHOS activity may develop chronic low-level OS, rendering them more susceptible to agents that further disrupt metabolic homeostasis [9].
+
+During metastasis, RCC cells exhibit precise ROS regulation. Upon encountering microenvironmental stress, upregulation of Superoxide Dismutase 2 (SOD2) represents a critical early event for metastatic success. Located within mitochondria, SOD2 converts superoxide to H2O2, alleviating oxidative burden and facilitating survival and colonization of distant organs [57,58]. Successful metastatic RCC cells must maintain ROS within a narrow optimal window—leveraging ROS for pro-proliferative signaling while avoiding thresholds that induce senescence, apoptosis, or ferroptosis [53,59].
+
+In summary, ROS functions as a double-edged sword in RCC: low-to-moderate ROS levels activate adaptive survival pathways and drive tumor progression (driver), whereas excessive ROS overwhelms antioxidant defenses, inducing irreversible damage and cell death (suppressor).
+
+7 Mitophagy
+
+In RCC, mitophagy can function as a tumor-suppressive mechanism by eliminating dysfunctional mitochondria. This quality control process is tightly coupled to mitochondrial dynamics, as fission-mediated fragmentation is a prerequisite for efficient autophagic recognition and clearance [1]. The PINK1-Parkin axis and Drp1 centrally regulate this pathway, exerting significant influence over RCC progression and therapeutic responses [60,61].
+
+For instance, targeting the CRL4CUL4A/DDB1 E3 ubiquitin ligase complex activates the PINK1-Parkin pathway in RCC models, inducing Mitochondrial Fission Factor (MFF) phosphorylation and Drp1 dephosphorylation at Ser637, enhancing fission activity. Activated Drp1 interacts with Voltage-Dependent Anion Channel 1, triggering extensive fission and augmenting mitophagic clearance, ultimately suppressing RCC proliferation and restoring chemosensitivity [62].
+
+Mitophagy demonstrates a context-dependent dual role in RCC, serving as a critical survival mechanism under stressful conditions. Under hypoxic and nutrient-deprived conditions characteristic of RCC, mitophagy is upregulated, promoting tumor cell survival by eliminating damaged organelles and maintaining a healthy mitochondrial pool [63,64]. This process is closely linked to therapy resistance: hypoxia-induced Hypoxia-Inducible Factor 1-alpha (HIF-1α) stabilization in resistant cells upregulates BNIP3, driving excessive fission and clearance, reducing cytochrome c release, and blocking apoptosis [56]. Consequently, inhibiting mitophagy presents a promising strategy for treatment-resistant RCC cells. Resistant RCC cells typically exhibit a more pronounced oxidative metabolic profile, relying on efficient mitophagic turnover to sustain functional mitochondrial populations [9]. During metabolic transitions such as reoxygenation or Extracellular Matrix adhesion, Bcl-2/adenovirus E1B 19-kDa Interacting Protein 3 (BNIP3) and Microtubule-associated Protein 1 Light Chain 3-II (LC3-II) expression is upregulated, supporting RCC cell survival during colonization via synergistic interactions with Peroxisome Proliferator-activated Receptor Gamma Coactivator 1-alpha (PGC-1α) [65]. Pro-tumorigenic macrophages in the TME also utilize mitophagy to alleviate their own oxidative stress, maintaining high OXPHOS activity and creating a supportive niche that enhances cancer cell survival under cytotoxic stress [66].
+
+Similar to other malignancies, the Parkin/PINK1-dependent mitophagy pathway demonstrates tumor-suppressive potential in RCC by eliminating dysfunctional mitochondria and modulating HIF-1α/ROS signaling [67]. BNIP3 displays a stage-dependent expression pattern, typically upregulated in early disease but downregulated in advanced RCC [68]. Distinctive features of mitophagy regulation in RCC include: (1) synergistic interaction between constitutive HIF-1α stabilization (from VHL loss) and BNIP3-mediated mitophagy promoting survival under therapeutic stress, contributing to TKI resistance [69]; (2) unique cellular crosstalk within the RCC TME, particularly with lipid-laden macrophages and Cancer-Associated Fibroblasts, creating specialized niches that modulate mitophagic activity [70,71]; (3) dynamic regulation during metabolic transition phases supporting colonization competence [68]. These RCC-specific characteristics position mitophagy as a promising therapeutic target for overcoming treatment resistance and suppressing metastasis, though further in vivo and clinical studies are required [67].
+
+Thus, mitophagy displays a dual role in RCC: transient, low-level mitophagy serves a homeostatic function and supports cell survival under stress (driver), whereas persistent or excessive mitophagy may deplete the mitochondrial pool beyond a viable threshold, leading to cell death (potential suppressor).
+
+8 Upstream Regulatory Mechanisms Contributing to Mitochondrial Dysfunction in RCC
+
+This section explores how aberrant mitochondrial activity in RCC drives tumor malignancy through three principal pathways: genetic alterations, regulatory factors, and the TME (Fig. 3).
+
+Figure 3 The Major Mechanisms of Mitochondrial Dysregulation in RCC Progression. This figure summarizes three upstream mechanisms driving mitochondrial dysfunction in RCC: (1) genetic/epigenetic alterations (nuclear DNA (nDNA) mutations, copy number variations, epigenetic silencing, and non-coding RNAs (ncRNAs)); (2) regulatory factors (p53, heat shock proteins (HSPs), and sirtuins); and (3) the tumor microenvironment (T cells, tumor-associated macrophages (TAMs), cancer-associated fibroblasts, endothelial cells, growth factors, cytokines, and extracellular vesicles). All three converge on mitochondrial dysfunction, promoting malignant behaviors such as proliferation, metastasis, and therapy resistance.
+
+8.1 Genomic Contributions to Mitochondrial Dysfunction
+
+The genetic landscape of RCC is characterized by a complex constellation of alterations, including point mutations in both nuclear and mtDNA (nDNA and mtDNA), copy number variations, and epigenetic silencing. These modifications induce significant structural and functional remodeling of mitochondria, ultimately driving RCC tumorigenesis and progression by influencing cancer cell metabolism, proliferation, invasiveness, and therapy responses.
+
+8.1.1 mtDNA Copy Number Variations
+
+Alterations in mtDNA copy number represent a key genetic event in the pathogenesis of RCC [72,73]. Circulating cell-free mtDNA levels in RCC patients’ plasma change significantly following nephrectomy or targeted therapy, underscoring the dynamic role of mtDNA as a potential biomarker [74,75]. Mechanistically, enhanced mitochondrial biogenesis—reflected by increased ETC activity and citrate synthase levels—correlates with elevated mtDNA content in RCC tissues [51]. Genomic analyses further reveal specific alterations in SDH subunits in certain RCC subtypes, with SDHB mutations or loss of expression being a hallmark of hereditary RCC [16].
+
+MtDNA content demonstrates considerable intratumoral heterogeneity in RCC, mirroring the metabolic reprogramming and variable proliferative rates across different tumor regions [76,77]. Paradoxically, some aggressive RCC variants exhibit lower average mtDNA copy numbers than less aggressive ones [72]. This may reflect that low-grade tumors engage compensatory mtDNA biogenesis to maintain energy production, while high-grade, rapidly proliferating tumors accumulate mitochondrial OS, leading to mtDNA damage and eventual depletion [72,78,79].
+
+8.1.2 mtDNA Mutations
+
+Beyond alterations in copy number, mutations and genomic instability of mtDNA are increasingly recognized as critical factors in the pathogenesis and progression of RCC. Comprehensive sequencing analyses indicate a high mutational burden in the mitochondrial genome of RCC tissues compared to adjacent normal kidney tissue, with frequent somatic mutations identified in key regions including the D-loop regulatory region, rRNA genes (12S and 16S), and protein-coding genes such as Cytochrome b [80]. These mutations, often characterized by specific transition patterns, may contribute to the acquisition of aggressive traits, including enhanced stemness and metastatic potential in RCC cells [81]. The role of mtDNA mutations in RCC metastasis is supported by studies analyzing different biological samples. For instance, the detection landscape of specific mtDNA mutations can differ between primary tumor tissue, peripheral blood, and urine sediments in RCC patients, reflecting distinct routes of disease dissemination and offering non-invasive diagnostic potential [82]. Notably, certain mutation signatures, such as an increased ratio of T > C transitions, have been associated with metastatic disease, suggesting their utility as molecular markers of tumor progression [82]. Evolutionary analysis of mtDNA in RCC reveals a complex, adaptive pattern. To preserve essential respiratory function, protein-coding genes critical for OXPHOS, particularly those in Complex V (ATP6/ATP8), often undergo negative (purifying) selection, minimizing deleterious mutations. Conversely, mutations in genes encoding for Complex III subunits may be under positive selection, potentially conferring a metabolic advantage that supports tumor survival under stress conditions, such as hypoxia [83,84]. A broader profiling study in ccRCC identified numerous mtDNA variants affecting tRNA genes and OXPHOS components (e.g., COI, COIII, ATP6), which are postulated to alter energy metabolism and fuel malignant behavior, correlating with adverse patient outcomes [80]. Furthermore, mtDNA mutations are implicated in treatment resistance. In metastatic RCC patients receiving TKI therapy, the pattern of mtDNA mutations may differ between responding and non-responding cases. The presence of non-synonymous (missense) mutations, which can impair respiratory chain efficiency and promote a glycolytic shift, has been linked to a higher likelihood of therapeutic resistance and disease recurrence, highlighting their role in driving adaptive metabolic remodeling [44,85].
+
+8.1.3 nDNA Genetic Alterations
+
+The phenotypic aggressiveness of RCC is fundamentally shaped by nuclear genetic alterations that control mitochondrial activity. nDNA-encoded proteins dictate the metabolic and signaling functions of mitochondria, thereby determining key pathological features of RCC, including its characteristic metabolic reprogramming and propensity for metastasis [86].
+
+In ccRCC, the metabolic landscape is profoundly shaped by alterations in nuclear DNA-encoded mitochondrial regulators. For instance, the Mitochondrial Pyruvate Carrier responsible for pyruvate import, is frequently downregulated due to VHL loss and HIF activation [85]. This loss impedes the flux of pyruvate into oxidative phosphorylation, disrupting normal metabolic cycles and promoting a glycolytic phenotype that supports tumor growth and invasion [83]. Concurrently, inactivating mutations in genes such as ARID1A and PBRM1, key subunits of the SWI/SNF chromatin-remodeling complex found in a significant subset of RCCs, lead to significant mitochondrial rewiring [9,79]. These genetic alterations are associated with changes in mitochondrial morphology and function, often coupled with stabilization of the oncoprotein cellular myelocytomatosis oncogene, which further drives proliferative metabolism [9,83]. The dependency of such tumors on specific metabolic pathways creates vulnerabilities; for example, tumors with distinct metabolic signatures may show heightened sensitivity to inhibitors of mitochondrial complex I [83]. Beyond central carbon metabolism, variations in genes governing mitochondrial dynamics and OS response are also implicated in influencing RCC pathogenesis, prognosis, and response to therapeutic agents [9,83].
+
+8.1.4 Epigenetic Regulation
+
+Epigenetic modifications—including DNA methylation, histone post-translational modifications, and non-coding RNA networks—are pivotal regulators of tumor cell behavior, often exerting their effects through mitochondrial reprogramming [87]. The ten-eleven translocation family of methylcytosine dioxygenases, which are frequently dysregulated in RCC, can enhance mitochondrial biogenesis and OXPHOS capacity by mediating demethylation of nuclear genes encoding mitochondrial proteins [88]. This process, potentially involving alterations in metabolites like α-ketoglutarate (α-KG), may modulate mitochondrial complex activity and energy production, influencing tumor cell fitness under specific microenvironmental conditions. Conversely, promoter hypermethylation is a common mechanism for silencing critical tumor suppressors in RCC. The loss of genes such as VHL (a hallmark of ccRCC) or other factors disrupts mitochondrial metabolism, stabilizing HIF-α subunits and driving a potent glycolytic shift that promotes progression and therapeutic resistance [89]. The histone methyltransferase EZH2, which catalyzes the repressive H3K27me3 mark, is overexpressed in aggressive RCC, silencing differentiation and tumor suppression genes [90]. Additionally, long non-coding RNAs (lncRNAs) contribute to RCC pathogenesis. Some lncRNAs can form regulatory axes that suppress mitochondrial apoptosis pathways (e.g., by influencing Bcl-2/Bax balance), thereby fostering cell survival and conferring resistance to systemic therapies [91,92].
+
+8.2 Regulatory Factors Shaping Mitochondrial Activity
+
+Mitochondrial function is orchestrated by a complex interplay of regulatory factors beyond genetic alterations. These multi-layered mechanisms—encompassing epigenetic, transcriptional, and metabolic adaptations—ultimately converge to dictate RCC cell fate [83,93]. Critical modulators include non-coding RNAs (ncRNAs), p53, heat shock proteins (HSPs), and the Sirtuin family, which often interact with canonical pathways like the VHL-HIF axis.
+
+8.2.1 ncRNAs in Mitochondrial Regulation
+
+ncRNAs constitute the vast majority of the human transcriptome and are key players in RCC pathogenesis. They are broadly classified into miRNAs, lncRNAs, and circRNAs [94]. miRNAs post-transcriptionally regulate gene expression, targeting a large proportion of protein-coding genes involved in metabolism and apoptosis [95,96]. lncRNAs participate in transcriptional regulation and chromatin remodeling. circRNAs, with stable closed-loop structures, function as post-transcriptional regulators [97]. Many lncRNAs and circRNAs act as ceRNAs or “sponges,” sequestering miRNAs and attenuating their repression of target genes [98].
+
+In RCC, a network of ncRNAs exerts precise control over mitochondrial function to influence tumor behavior. For instance, the tumor suppressor miR-145 is frequently downregulated in RCC. Its restoration has been shown to inhibit cancer cell proliferation by targeting key mitochondrial proteins, potentially reducing mitochondrial membrane potential (MMP) and promoting Cytochrome c release, thereby impairing energy metabolism and inducing apoptosis [99]. Conversely, oncomiRs such as the miR-221/222 cluster are upregulated and promote RCC progression by enhancing OXPHOS and suppressing apoptotic pathways, thereby boosting tumor cell survival and invasion [100]. Similarly, the downregulation of miR-340 in RCC contributes to metabolic reprogramming by failing to restrain the expression of mitochondrial metabolic enzymes, facilitating a pro-tumorigenic shift in energy production [101]. Among long non-coding RNAs, LINC00460 is highly expressed in ccRCC and acts as a molecular sponge for miR-149-5p, leading to increased expression of its target gene MYB Proto-oncogene, transcription factor (MYB). This axis promotes mitochondrial biogenesis and OXPHOS, fueling RCC growth [102]. In contrast, the lncRNA MEG3 functions as a tumor suppressor. Its expression induces mitochondrial apoptosis by modulating the Bax/Bcl-2 ratio and caspase activity, thereby inhibiting RCC proliferation and migration [103]. Furthermore, the lncRNA SNHG12 drives Warburg effect by disrupting normal mitochondrial metabolism, highlighting how ncRNAs can rewire central carbon metabolism in RCC [104]. Circular RNAs also play a role; for example, circ-AKT3 has been reported to inhibit glycolysis and promote mitochondrial respiration in RCC, influencing the metabolic phenotype of the tumor [105]. These findings collectively underscore the pivotal role of ncRNAs in regulating mitochondrial dynamics and metabolism in RCC (Table 1).
+
+Table 1 Non-coding RNAs involved in mitochondrial regulation of renal cell carcinoma.
+
+ncRNA	Targets/Interacting Molecules	Affected Mitochondrial Function	Impact on RCC Malignant Behavior	References	
+miR-145	ABHD4, HEXIM1	Energy Metabolism ↓, Apoptosis ↑	Inhibits	[106]	
+miR-221/222	PTEN, p27	Energy Metabolism ↑, Apoptosis Resistance ↑	Promotes	[100]	
+miR-340	PKM2	Energy Metabolism ↑ (Warburg Effect)	Promotes (when downregulated)	[101]	
+LINC00460	miR-149-5p/MYB	Energy Metabolism ↑ (OXPHOS)	Promotes	[102]	
+MEG3	miR-21/PTEN, Bax/Bcl-2 Ratio	Apoptosis ↑	Inhibits	[103]	
+SNHG12	miR-129-5p/PKM2	Energy Metabolism ↑ (Warburg Effect)	Promotes	[104]	
+circ-AKT3	miR-516b-5p/PDK1	Energy Metabolism ↓ (Glycolysis ↓, OXPHOS ↑)	Inhibits	[105]	
+Abb: ncRNA, non-coding RNA; miR, microRNA; ABHD4, abhydrolase domain containing 4; HEXIM1, hexamethylene bis-acetamide inducible 1; PTEN, phosphatase and tensin homolog; p27, cyclin-dependent kinase inhibitor 1B; PKM2, pyruvate kinase M2; MYB, MYB proto-oncogene, transcription factor; PDK1, pyruvate dehydrogenase kinase 1; Bax, Bcl-2-associated X protein; Bcl-2, B-cell lymphoma/leukemia-2; LINC00460, long intergenic non-protein coding RNA 460; MEG3, maternally expressed gene 3; SNHG12, small nucleolar RNA host gene 12; circ-AKT3, circular RNA AKT3; OXPHOS, oxidative phosphorylation.
+
+8.2.2 Additional Regulatory Factors (PGC-1α, HIF-1α, PPARα, CPT1A)
+
+Metabolic reprogramming is a hallmark of RCC, driven significantly by alterations in mitochondrial function and substrate utilization. As a master regulator of mitochondrial biogenesis, PGC-1α is implicated in enhancing OXPHOS in certain RCC subtypes. This metabolic shift increases the reliance on mitochondrial energy production, potentially facilitating evasion of cell death and supporting tumor survival. The canonical metabolic profile of ccRCC is orchestrated by the HIF-1α pathway. Stabilization of HIF-1α promotes glycolytic metabolism and suppresses OXPHOS, a key mechanism driving RCC progression and resistance to therapeutic agents [18,107]. Conversely, strategies to knock down or degrade HIF-1α can redirect metabolic flux back towards mitochondrial OXPHOS, which has been shown to re-sensitize cancer cells to apoptosis and cytotoxic drugs [108]. The Peroxisome Proliferator-Activated Receptor Alpha (PPARα) pathway also contributes to the metabolic plasticity of RCC. The PPARα inhibitor GW6471 was shown to significantly suppress oxygen consumption in renal cancer models. This inhibition reduces the cellular dependence on fatty acids, glucose, and glutamine for energy, leading to suppressed tumor growth in vivo, underscoring PPARα‘s role in regulating RCC metabolism via mitochondrial activity [109]. Furthermore, fatty acid metabolism is critically involved. Carnitine Palmitoyltransferase 1A (CPT1A), the rate-limiting enzyme for mitochondrial fatty acid β-oxidation, promotes the succinylation of MFF at a specific lysine residue. This post-translational modification shields MFF from Parkin-mediated ubiquitination and proteasomal degradation. The subsequent stabilization of MFF protein levels enhances mitochondrial fission, a process that accelerates tumor proliferation and progression in RCC [9,110].
+
+8.2.3 Interplay among p53, HSPs, and Sirtuins
+
+p53 promotes mitochondrial dysfunction; its activation has been linked to the suppression of key mitochondrial chaperones like HSPA9, while also inducing pro-apoptotic mitochondrial peptides. Conversely, HSP70 preserves mitochondrial integrity and counteracts p53-mediated cell death by inhibiting Bax activation [111]. The metabolic landscape of RCC is further shaped by a delicate balance between sirtuins and molecular chaperones. SIRT3, a major mitochondrial deacetylase, acts as a metabolic checkpoint by promoting OXPHOS and sensitizing cells to apoptosis [112]. In opposition, the mitochondrial chaperone TRAP1 fosters a glycolytic state, even under nutrient stress, by repressing OXPHOS and suppressing mitochondrial respiration, thereby enhancing tumor cell survival [113]. Adding another layer of regulation, non-coding RNAs directly target mitochondrial components. miR-145, a frequently downregulated tumor suppressor in RCC, has been shown to impair mitochondrial function and suppress cell proliferation by directly targeting and downregulating the expression of mitochondrial proteins such as HSP60, leading to disrupted OXPHOS [99]. These intricate interactions suggest that simultaneously targeting multiple nodes (e.g., combining a TRAP1 inhibitor with a SIRT3 activator) might be more effective than single-target interventions.
+
+8.3 The TME as a Modulator of Mitochondrial Function
+
+The RCC TME possesses distinctive characteristics that play an essential role in disease development and progression [114]. This ecosystem comprises not only cancer cells but also a heterogeneous population of stromal and immune elements, including tumor-associated macrophages (TAMs), T lymphocytes, cancer-associated fibroblasts, and endothelial cells [18,115]. In addition to these cellular components, the acellular fraction contains abundant cytokines, growth factors, and extracellular vesicles that enable intercellular signaling. A primary mechanism through which the TME drives RCC malignancy involves the induction of mitochondrial and metabolic adaptation, thereby promoting cancer cell survival, proliferation, and invasive capacity [114,115].
+
+RCC, particularly ccRCC, is characterized by a high propensity for metastatic spread to distant organs such as lung, bone, and liver. Emerging evidence indicates that stromal cells within the tumor niche, including cancer-associated fibroblasts, can enhance tumor heterogeneity and metastatic capacity through the intercellular transfer of mitochondria to RCC cells exhibiting mitochondrial dysfunction. This mitochondrial donation phenotypically rescues the recipient cancer cells, reinstating their proliferative capacity, chemoresistance, and oxidative phosphorylation [116]. The RCC TME, rich in lipids and cytokines, inflicts oxidative damage upon surrounding endothelial and normal renal tubular cells, triggering mitochondrial superoxide overproduction, reducing mitochondrial membrane potential, and upregulating PGC-1α activity. These alterations collectively stimulate cancer cell proliferation and invasive behavior [117]. TAMs in RCC display remarkable metabolic plasticity in response to local cues, shifting from a glycolytic, pro-inflammatory (M1-like) phenotype to an OXPHOS-dependent, immunoregulatory (M2-like) state that supports tumor growth. M2-polarized TAMs often demonstrate increased mitochondrial mass and elevated oxygen consumption rates, which are instrumental in their tumor-promoting functions [118,119]. MtDNA released into the circulation or tumor interstitial fluid serves as a potential biomarker and active player in the RCC TME. It acts as a damage-associated molecular pattern that can trigger pro-inflammatory responses in immune cells like neutrophils. Elevated levels of circulating mtDNA are associated with advanced disease stage and poorer survival outcomes in RCC patients, potentially by fostering a pro-metastatic environment and compromising anti-tumor immunity [120].
+
+Extracellular vesicles (EVs) have been reported to play a pivotal role in the progression of RCC by mediating intercellular communication through the transfer of mitochondrial constituents, nucleic acids, and proteins. Within the TME of RCC, EVs may facilitate crosstalk among stromal, immune, and tumor cells, thereby potentially enhancing chemotherapy resistance, metastatic dissemination, and immune evasion [121]. Accumulating evidence indicates that RCC-derived EVs drive malignant progression through multiple distinct mechanisms: (1) Chemoresistance—EVs from drug-resistant RCC cells carry specific molecular cargo, such as the long non-coding RNA lncARSR, which enhances sunitinib resistance by functioning as a competing endogenous RNA in recipient cells [122]; (2) Angiogenesis Induction—RCC-secreted EVs deliver pro-angiogenic miRNAs, including miR-23a, to endothelial cells, where they stabilize HIF-1α by targeting Prolyl Hydroxylase Domain-containing protein 1, thereby stimulating tumor neovascularization [123]; (3) Immune Evasion—Tumor-derived exosomes express immunosuppressive molecules such as Programmed Cell Death-Ligand 1 (PD-L1) on their surface, which can bind to PD-1 on T cells, leading to inhibition of T cell activation and fostering an immunosuppressive microenvironment [124].
+
+8.4 Potential Strategies for Regulating Mitochondrial Function in RCC Treatment
+
+Given the pivotal role of mitochondrial function in RCC, targeting mitochondrial dysfunction holds significant clinical promise. A variety of agents modulating mitochondrial processes have been investigated, including herbal monomers, natural compounds, small-molecule inhibitors, and gene therapy approaches. Table 2 summarizes the primary therapeutic strategies currently under investigation, with detailed mechanisms and outcomes discussed in Section 9, Section 10, Section 11 and Section 12.
+
+Table 2 Therapeutic strategies targeting mitochondrial dysfunction in RCC.
+
+Therapeutic Strategy	Materials/Agents	Sources/Types	Research Type (Model Systems)	Key Targets & Effects (↑ Increase, ↓ Decrease)	Proposed Mechanisms	Main Outcomes	Tested Concentration/Dosage	References	
+Herbal Monomers	Ginsenoside Rg3	Panax ginseng	In vitro (786-O, ACHN cells)	↑ H3K9ac, ↑ H3K27ac, ↓ DNMT1, ↓ DNMT3a, ↓ DNMT3b, ↑ Caspase-3, ↑ Bax, ↓ Bcl-2	Promotes histone acetylation and DNA demethylation; Induces mitochondrial apoptosis	Inhibited RCC cell migration, invasion, colony formation, and tube formation; Enhanced apoptosis	In vitro: 0, 25, 50, 100 μM	[125]	
+Cryptotanshinone	Salvia miltiorrhiza	In vitro (786-O, Caki-1 cells); In vivo (BALB/c nude mice)	↓ p-STAT3 (Tyr705), ↓ Cyclin D1, ↓ Bcl-2, ↓ Survivin, ↑ Cleaved Caspase-3, ↑ PARP cleavage	Suppresses STAT3 signaling pathway; Induces cell cycle arrest and mitochondrial apoptosis	Inhibited RCC cell proliferation and tumor growth; Induced G0/G1 phase cell cycle arrest and apoptosis	In vitro: 0, 2.5, 5, 10 μM; In vivo: 10 mg/kg	[126]	
+Berberine	Coptis chinensis	In vitro (786-O, ACHN cells)	↑ ROS, ↑ γ-H2AX, ↓ Bcl-2, ↑ Bax, ↑ Cleaved Caspase-3, ↑ Cleaved PARP	Induces OS and DNA damage; Triggers mitochondrial apoptosis	Inhibited RCC cell proliferation, migration, and invasion; Induced G2/M phase cell cycle arrest and apoptosis	In vitro: 0, 25, 50, 100 μM	[127]	
+Natural Compounds	Quercetin	Widely in fruits & vegetables	In vitro (786-O, Caki-1 cells)	↑ TP53/p53, ↑ p21, ↓ Cyclin D1, ↓ CDK4, ↓ MMP-2, ↓ MMP-9	Regulates TP53 gene expression; Induces G1 phase cell cycle arrest; Inhibits MMP activity	Inhibited proliferation and migration of clear cell RCC cells	In vitro: 0, 25, 50, 100 μM	[128]	
+Silibinin	Silybum marianum (Milk Thistle)	In vitro (Caki-1, ACHN, 786-O cells)	↑ Caspase-3/7 activity, ↓ Survivin, ↓ p-EGFR, ↓ p-ERK	Activates caspase cascade; Down-regulates anti-apoptotic protein; Blocks EGFR-ERK survival signaling	Inhibited RCC cell growth and induced apoptosis	In vitro: 50–200 μM	[129]	
+Small-Molecule Inhibitors	ABT-737 (in combination with Chloroquine)	Bcl-2 inhibitor (synthetic)	In vitro (786-O, ACHN cells)	↓ Bcl-2, ↓ Bcl-xL, ↑ Caspase-3 cleavage, ↑ PARP cleavage, ↑ LC3-II (inhibited by CQ)	Antagonizes Bcl-2/Bcl-xL to promote mitochondrial apoptosis; Chloroquine blocks compensatory autophagy	Synergistically induced apoptotic cell death in RCC cells	In vitro: ABT-737 (0.1–10 μM), Chloroquine (10 μM)	[130]	
+Gene Therapy	p53 Pathway Reactivation	Synthetic/Viral Vectors	Review Article (Preclinical models)	↑ p53, ↑ p21, ↑ Bax, ↑ PUMA, ↓ Bcl-2, ↓ MDM2/MDMX	Restores wild-type p53 tumor suppressor function; Induces cell cycle arrest and mitochondrial apoptosis; Overcomes resistance to conventional therapy	Suppresses tumor growth and progression; Enhances sensitivity to chemotherapy and targeted therapy in RCC	N/A (Therapeutic Strategy)	[131]	
+Abb: Bax, Bcl-2-associated X protein; Bcl-2, B-cell lymphoma/leukemia-2; Bcl-xL, B-cell lymphoma-extra large; CDK4, cyclin-dependent kinase 4; CQ, chloroquine; Cyclin D1, G1/S-specific cyclin D1; DNMT1, DNA methyltransferase 1; DNMT3a, DNA methyltransferase 3 alpha; DNMT3b, DNA methyltransferase 3 beta; EGFR, epidermal growth factor receptor; ERK, extracellular signal-regulated kinase; H3K9ac, histone H3 lysine 9 acetylation; H3K27ac, histone H3 lysine 27 acetylation; LC3-II, microtubule-associated protein 1 light chain 3-II; MDM2, murine double minute 2; MDMX, murine double minute X; MMP-2, matrix metalloproteinase 2; MMP-9, matrix metalloproteinase 9; N/A, not applicable; OS, oxidative stress; p21, cyclin-dependent kinase inhibitor 1A; PARP, poly(ADP-ribose) polymerase; p-STAT3 (Tyr705), phosphorylated signal transducer and activator of transcription 3 at tyrosine 705; PUMA, p53-upregulated modulator of apoptosis; RCC, renal cell carcinoma; ROS, reactive oxygen species; STAT3, signal transducer and activator of transcription 3; Survivin, baculoviral inhibitor of apoptosis repeat-containing 5; TP53/p53, tumor protein 53; γ-H2AX, phosphorylated histone H2AX.
+
+9 Therapeutic Strategies Targeting Mitochondrial Dysfunction in RCC
+
+Based on the five core mitochondrial processes discussed in Section 3, Section 4, Section 5, Section 6 and Section 7, therapeutic strategies targeting mitochondrial dysfunction in RCC can be categorized by their primary mechanisms of action. Below, we summarize representative agents according to the specific mitochondrial process they modulate.
+
+9.1 Targeting Mitochondrial Energy Metabolism
+
+Metabolic reprogramming in RCC involves a flexible interplay between glycolysis and OXPHOS, making both pathways potential therapeutic targets.
+
+Ginsenoside Rg3, derived from Panax ginseng, promotes histone acetylation and DNA demethylation, leading to mitochondrial apoptosis and inhibition of RCC cell migration, invasion, colony formation, and tube formation (786-O, ACHN cells; 0–100 μM) [125].
+
+Berberine, isolated from Coptis chinensis, triggers oxidative stress and DNA damage, activating mitochondrial apoptosis and suppressing RCC cell proliferation, migration, and invasion (786-O, ACHN cells; 0–100 μM) [127].
+
+Quercetin, a flavonoid widely found in fruits and vegetables, regulates TP53 expression, induces G1 phase arrest, and inhibits MMP activity, suppressing proliferation and migration of clear cell RCC cells (786-O, Caki-1 cells; 25–100 μM) [132].
+
+Silibinin, from milk thistle (Silybum marianum), activates caspase-3/7, downregulates Survivin, and blocks EGFR-ERK survival signaling, inhibiting RCC cell growth and inducing apoptosis (Caki-1, ACHN, 786-O cells; 50–200 μM) [129].
+
+9.2 Targeting Mitochondrial Dynamics
+
+Mitochondrial dynamics, particularly the balance between fusion and fission, influences tumor behavior and therapy response. Modulating this balance represents an emerging therapeutic avenue.
+
+Cryptotanshinone, from Salvia miltiorrhiza, suppresses STAT3 signaling, inducing G0/G1 phase arrest and mitochondrial apoptosis, thereby inhibiting RCC proliferation in vitro (786-O, Caki-1 cells; 0–10 μM) and tumor growth in vivo (BALB/c nude mice; 10 mg/kg) [133].
+
+9.3 Targeting Mitochondrial Apoptosis
+
+Evasion of mitochondrial apoptosis is a hallmark of RCC. Restoring apoptotic pathways through Bcl-2 family inhibitors represents a direct therapeutic strategy.
+
+The Bcl-2 inhibitor ABT-737, combined with chloroquine, antagonizes Bcl-2/Bcl-xL to promote mitochondrial apoptosis while chloroquine blocks compensatory autophagy, resulting in synergistic apoptotic cell death in RCC models (786-O, ACHN cells; ABT-737 0.1–10 μM, chloroquine 10 μM) [130].
+
+p53 pathway reactivation using engineered viral or synthetic vectors restores wild-type p53 function, upregulating p21, Bax, and PUMA while downregulating Bcl-2 and MDM2/MDMX. This induces cell cycle arrest and mitochondrial apoptosis, overcoming conventional treatment resistance in preclinical RCC models [134].
+
+10 Discussion
+
+10.1 An Integrative Network of Mitochondrial Dysfunctions in RCC
+
+A systematic examination of mitochondrial impairment mechanisms in RCC reveals an elaborate interactive network rather than isolated pathological events. These pathways engage in cross-talk, establishing a self-perpetuating cycle that promotes RCC advancement and treatment resistance.
+
+As detailed in Section 3, Section 4, Section 5, Section 6 and Section 7, OXPHOS, mitochondrial dynamics, apoptosis, ROS, and mitophagy each exhibit context-dependent dual roles in RCC. This duality reflects the remarkable adaptive plasticity of mitochondrial function [107]. Both potentiation and suppression of mitochondrial activities can produce strikingly divergent, and sometimes opposing, biological outcomes, necessitating deeper exploration of the regulatory circuits that control mitochondrial behavior [37].
+
+10.2 Driver versus Suppressor: Resolving the Central Question
+
+Returning to the central question posed in the Introduction—whether mitochondrial dysfunction acts as a driver or a suppressor of RCC malignancy—the evidence reviewed in Section 3, Section 4, Section 5, Section 6 and Section 7 supports a context-dependent answer. Mitochondrial energy metabolism and dynamics predominantly function as drivers when reprogrammed to support proliferation, metastasis, and therapy resistance. Apoptosis evasion unequivocally acts as a driver by enabling uncontrolled cell survival. In contrast, ROS and mitophagy exhibit dual roles: low-to-moderate ROS or transient mitophagy promote adaptation and survival (driver), whereas excessive ROS or persistent mitophagy can trigger cell death (suppressor). Thus, the net effect depends on the specific pathway, signal intensity, and microenvironmental context, reframing the question as “under what conditions does each process drive or suppress malignancy?”
+
+A critical analysis of this regulatory framework reveals three foundational concepts: (1) Mitochondrial bioenergetics is widely recognized as a fundamental driver of RCC pathogenesis [10]; (2) Mitochondrial apoptosis typically represents the convergence point of elaborate signaling networks that ultimately dictate cellular survival [135]; (3) Mitochondrial redox balance dynamically interfaces with various organellar functions, often instigating progressive decline associated with mitochondrial dysfunction [50]. These interconnected pathological mechanisms may collectively accelerate RCC progression.
+
+10.3 Mitochondrial Fission: A Double-Edged Sword
+
+The dual nature of mitochondrial fission—promoting cell death in treatment-sensitive contexts while reinforcing survival in resistant clones—warrants particular attention [29]. We hypothesize that nutrient availability in the TME (including glutamine scarcity) could dictate the functional consequences of fission by influencing Drp1 post-translational modifications. Future research should focus on delineating the complex interplay between mitophagy and mitochondrial bioenergetics, alongside clarifying the bidirectional regulation between mitophagy and apoptosis in RCC [29]. A systems-level understanding of these processes may provide a sophisticated conceptual paradigm for interpreting RCC pathobiology and formulating precision oncology strategies [136].
+
+10.4 Upstream Drivers: Genetic Alterations, Regulatory Factors, and the TME
+
+Emerging research has delineated three core mechanisms—genomic alterations, regulatory factors, and the TME—that underpin the aggressive phenotype of RCC and converge on mitochondrial activity [9,137]. Genomic instability (e.g., VHL, PBRM1 mutations), and epigenetic remodeling act as primary instigators of mitochondrial aberrations [79,93], fueling malignant traits [10,137]. A network of regulatory factors, including ncRNAs, p53, HSPs, sirtuins, and central metabolic regulators (PGC-1α, HIF-1α, PPAR-α, CPT1A), fine-tunes mitochondrial function and contributes to chemoresistance and metastasis [65,93,131,138,139,140]. The TME, through cellular components (TAMs, T lymphocytes, CAFs, adipocytes) and acellular factors (cytokines, EVs), imposes metabolic pressures that reshape mitochondrial function and promote tumor growth, immune evasion, and angiogenesis [141,142,143,144].
+
+10.5 Clinical Translation: Therapeutic Opportunities and Challenges
+
+In-depth exploration of mitochondria-related molecules holds clinical promise for RCC management, offering potential biomarkers for risk stratification and therapeutic targeting [9]. Recent years have witnessed a diversification of mitochondrial-targeting strategies for RCC treatment, encompassing natural compounds, synthetic small-molecule inhibitors, conventional chemotherapeutics, gene therapy, and nanotechnology applications [145,146]. Although these approaches show preclinical efficacy, their clinical translation faces key challenges: limited specificity, systemic toxicity, and resistance development often driven by adaptive metabolic shifts [146].
+
+From a translational perspective, these strategies could be deployed at different disease stages [147]. Early-stage interventions might restore mitochondrial homeostasis; for advanced RCC, OXPHOS inducers or apoptosis inducers have shown promise [145,148]. Combining mitochondrial modulators with standard TKIs or immunotherapies may overcome adaptive resistance [146]. Future efforts should prioritize patient stratification using mitochondrial biomarkers to guide stage-specific and mechanism-based combination regimens [147,149].
+
+Exemplifying these challenges, tthe Bcl-2 inhibitor ABT-737 causes dose-limiting thrombocytopenia, a toxicity that can be mitigated by nanocarrier-based delivery [150,151]. Sunitinib, while established in RCC treatment, can provoke severe adverse reactions [152]. Platinum-based therapies carry substantial toxicity and rapid resistance; natural compounds are being explored as adjuvants [153]. Gene therapy faces bottlenecks in safe and efficient delivery; nanoparticle systems offer promising solutions [154,155,156,157]. Natural compounds and traditional Chinese medicine monomers exhibit anti-RCC activity but are limited by poor bioavailability; advanced nanocarriers address instability and solubility issues [158,159]. Nanotechnology’s clinical implementation is hindered by the heterogeneous TME, multidrug resistance, and manufacturing complexity [160].
+
+10.6 Future Perspectives: Emerging Technologies and Precision Oncology
+
+While further clinical validation is needed, the evolving understanding of mitochondrial metabolism is fostering interdisciplinary precision therapeutics. High-throughput screening has identified novel inhibitors of carbonic anhydrase IX [161,162], and cryo-electron microscopy has resolved VHL-HIF architectures, enabling structure-based drug design [163]. Cutting-edge genomic and transcriptomic profiling (whole-genome sequencing, single-cell RNA-seq, spatial transcriptomics) is uncovering novel vulnerabilities. Functional precision medicine platforms (patient-derived organoids, ctDNA analysis) enable real-time assessment of drug sensitivity [161]. Integrating data from exceptional responder analyses and real-world evidence is accelerating biomarker discovery and clinical decision-making [164]. The synergistic implementation of these technologies is advancing personalized RCC management, with the potential to improve survival and patient-reported outcomes.
+
+11 Critical Appraisal of the Context-Dependent Roles of Mitochondrial Processes in RCC
+
+To move beyond descriptive duality toward mechanistic integration, it is essential to specify the precise conditions under which mitochondrial processes switch between pro-tumor and anti-tumor functions. Based on the evidence reviewed, three key determinants can be identified.
+
+The first determinant is signal intensity or duration, which governs the outcomes of ROS and mitophagy. Available evidence suggests that ROS levels may follow a bell-shaped response: low-to-moderate ROS can activate adaptive survival pathways such as HIF-1α and nuclear factor kappa-B (NF-κB), promoting survival and proliferation. In contrast, excessive ROS appear to overwhelm cellular defenses, causing macromolecular damage and triggering apoptosis or ferroptosis [165,166]. Similarly, it is plausible that transient, low-level mitophagy serves a homeostatic function by removing damaged organelles, thereby supporting cell survival under mild stress [167]. Conversely, one might speculate that persistent or hyperactivated mitophagy could deplete the mitochondrial pool beyond a viable threshold, potentially leading to bioenergetic collapse and cell death.
+
+The second determinant is the genetic and metabolic context, which dictates the role of OXPHOS. In VHL-deficient ccRCC, HIF-1α stabilization suppresses glucose oxidation, yet OXPHOS is sustained by alternative fuels such as glutamine or fatty acids [168]. Based on current experimental data, under nutrient-replete conditions, this may support proliferation (pro-tumor). However, it is conceivable that when glutamine is restricted or when complex I is pharmacologically inhibited, the same OXPHOS dependency could become a liability, potentially sensitizing cells to apoptosis (anti-tumor) [110]. This context-dependent vulnerability has been observed in ccRCC, where mitochondrial complex I activity is limiting for metastasis but not for primary tumor growth [110]. Thus, OXPHOS may act as a driver only when compensatory fuel sources are available.
+
+The third determinant is the cellular spatial context, which determines the impact of mitochondrial fission. In therapy-sensitive cells, stress-induced Drp1 activation can lead to fragmentation and may facilitate apoptosis (anti-tumor). This interpretation is supported by observations linking this pro-apoptotic role of fission to ROS-dependent DRP1 activation, where excessive fission has been reported to trigger mitochondrial dysfunction and cell death [167]. In contrast, in resistant clones, emerging evidence suggests that the same fission machinery can be co-opted to generate metabolically fit fragments that localize to the leading edge of migrating cells, fueling invasion and metastasis (pro-tumor) [110,169]. The outcome might depend on the concomitant activation of survival pathways such as PI3K-AKT, which may override the pro-apoptotic consequences of fission [170].
+
+In summary, the available evidence is consistent with the view that the switch between pro-tumor and anti-tumor functions could be governed by signal intensity (ROS/mitophagy), fuel availability (OXPHOS), and co-activated survival pathways (fission). If confirmed by future studies, recognizing these context-specific triggers moves the field from descriptive duality toward a predictive, mechanism-based framework.
+
+12 Limitations
+
+We acknowledge that the majority of the evidence discussed in this review is derived from preclinical studies, including in vitro cell line models and in vivo xenograft experiments. Furthermore, most studies have focused on ccRCC, leaving other RCC subtypes—such as pRCC and chRCC—underexplored [5,16]. Recent transcriptomic analyses have revealed that chRCC exhibits a distinct mitochondrial gene signature characterized by abundant abnormal mitochondria and downregulation of ETC components due to decreased mtDNA content, rather than complex I mutations [14,171]. Conversely, pRCC displays compromised oxidative phosphorylation and rewired glutathione metabolism [14]. These subtype-specific differences suggest that the generalizability of the discussed mitochondrial targeting strategies to non-ccRCC subtypes remains uncertain [62]. While the findings discussed herein provide important mechanistic insights into the role of mitochondrial dysfunction in RCC, their direct translation to clinical practice requires further validation in patient-derived samples, prospective clinical trials, and comparative studies across RCC subtypes. Therefore, the therapeutic implications discussed should be interpreted with caution.
+
+13 Conclusion
+
+In this review, we synthesize current knowledge on how mitochondrial dysfunction contributes to renal cell carcinoma (RCC), with a focus on its impact on tumor development, disease advancement, and treatment failure. Across five key areas—bioenergetics, organelle dynamics, programmed cell death, redox control, and selective mitophagy—the available evidence points to an interconnected regulatory network rather than a set of discrete events. Notably, mitochondrial activities often display opposing effects depending on the context: fission, ROS signaling, and mitophagy can either promote survival or facilitate elimination, influenced by signal strength, nutrient availability, and spatial cues. This contextual plasticity challenges rigid classifications and emphasizes the importance of mechanism-based stratification in both laboratory studies and clinical trial design.
+
+The growing recognition of mitochondrial weaknesses has prompted the exploration of various interventions, including natural products, targeted inhibitors, gene-based approaches, and nanocarrier platforms. Nonetheless, major hurdles such as inadequate selectivity, adverse effects, and resistance arising from metabolic reprogramming continue to impede clinical translation. Mitochondrial impairment stands as a defining feature of RCC biology and a viable avenue for therapeutic innovation. Advancing the field will require a deeper understanding of mitochondrial–microenvironment crosstalk, subtype-specific metabolic traits, and the effective translation of fundamental discoveries into strategies that meaningfully enhance patient care and survival.
+
+None.
+
+Funding Statement
+
+The present study was funded by the Key Medical Discipline of Hangzhou City (grant No. 2021-21); the Key Medical Discipline of Zhejiang Province (grant No. 2018-2-3); the Key Laboratory of Clinical Cancer Pharmacology and Toxicology Research of Zhejiang Province (grant No. 2020E10021).
+
+Author Contributions
+
+Yanhong Wang and Junbo Liu: Writing original draft and Supervision. Qiaoping Xu: Preparing the figures and Project administration. Zhao Ma: Manuscript revision and Investigation. All authors reviewed and approved the final version of the manuscript.
+
+Availability of Data and Materials
+
+No datasets were generated or analysed during the current study.
+
+Ethics Approval
+
+Not applicable.
+
+Conflicts of Interest
+
+The authors declare no conflicts of interest.
+
+Abbreviations
+
+RCC	Renal Cell Carcinoma	
+ROS	Reactive oxygen species	
+ccRCC	Clear cell Renal Cell Carcinoma	
+ICIs	Immune checkpoint inhibitors	
+VHL	Von Hippel-Lindau	
+TME	The tumor microenvironment	
+mtDNA	Mitochondrial DNA	
+OXPHOS	Oxidative phosphorylation	
+ATP	Adenosine triphosphate	
+pRCC	Papillary RCC	
+chRCC	Chromophobe RCC	
+TCA	Tricarboxylic acid	
+ETC	Electron transport chain	
+OS	Oxidative stress	
+TKIs	Tyrosine Kinase Inhibitors	
+MDH2	Malate Dehydrogenase 2	
+IDH	Isocitrate Dehydrogenase	
+NADH	Nicotinamide Adenine Dinucleotide	
+SDH	Succinate dehydrogenase	
+SDHB	Succinate Dehydrogenase Subunit B	
+EMT	Epithelial-Mesenchymal Transition	
+OPA1	Optic Atrophy 1	
+OMA1	Overlapping Activity with m-AAA protease 1	
+STOML2/PHB2	Stomatin-like Protein 2/Prohibitin 2	
+Drp1	Dynamin-related protein 1	
+MFN2	Mitofusin 2	
+Bcl-2	B-cell lymphoma/leukemia-2	
+Bcl-xL	B-cell Lymphoma-extra Large	
+Mcl-1	Myeloid cell leukemia-1	
+HIFs	Hypoxia-inducible factors	
+GSH	Glutathione	
+GPX4	Glutathione Peroxidase 4	
+SOD2	Superoxide dismutase 2	
+MFF	Mitochondrial Fission Factor	
+HIF-1α	Hypoxia-Inducible Factor 1-alpha	
+BNIP3	Bcl-2/adenovirus E1B 19-kDa interacting protein 3	
+LC3-II	Microtubule-associated Protein 1 Light Chain 3-II	
+PGC-1α	Peroxisome Proliferator-activated Receptor Gamma Coactivator 1-alpha	
+CPT1A	Carnitine Palmitoyltransferase 1A	
+HSPs	Heat shock proteins	
+MMP	Mitochondrial membrane potential	
+TAMs	Tumor-associated macrophages	
+EVs	Extracellular vesicles	
+PD-L1	Programmed Cell Death-Ligand 1	
+
+
+References
+
+1. Sung H , Ferlay J , Siegel RL , Laversanne M , Soerjomataram I , Jemal A , et al. Global cancer statistics 2020: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries. CA Cancer J Clin. 2021; 71( 3): 209– 49. doi:10.3322/caac.21660. 33538338
+2. Siegel RL , Giaquinto AN , Jemal A . Cancer statistics, 2024. CA Cancer J Clin. 2024; 74( 1): 12– 49. doi:10.3322/caac.21820. 38230766
+3. Bray F , Laversanne M , Sung H , Ferlay J , Siegel RL , Soerjomataram I , et al. Global cancer statistics 2022: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries. CA Cancer J Clin. 2024; 74( 3): 229– 63. doi:10.3322/caac.21834. 38572751
+4. Pandey J , Syed W . Renal cancer. In: StatPearls. Treasure Island, FL, USA: StatPearls Publishing; 2025.
+5. Yang J , Wang K , Yang Z . Treatment strategies for clear cell renal cell carcinoma: Past, present and future. Front Oncol. 2023; 13: 1133832. doi:10.3389/fonc.2023.1133832. 37025584 PMC10070676
+6. Rini BI , Plimack ER , Stus V , Gafanov R , Waddell T , Nosov D , et al. Pembrolizumab plus axitinib versus sunitinib for advanced clear cell renal cell carcinoma: 5-year survival and biomarker analyses of the phase 3 KEYNOTE-426 trial. Nat Med. 2025; 31( 10): 3475– 84. doi:10.1038/s41591-025-03867-5. 40750932 PMC12532709
+7. Bex A , Abu Ghanem Y , Albiges L , Bonn S , Campi R , Capitanio U , et al. European association of urology guidelines on renal cell carcinoma: The 2025 update. Eur Urol. 2025; 87( 6): 683– 96. doi:10.1016/j.eururo.2025.02.020. 40118739
+8. Hu J , Wang SG , Hou Y , Chen Z , Liu L , Li R , et al. Multi-omic profiling of clear cell renal cell carcinoma identifies metabolic reprogramming associated with disease progression. Nat Genet. 2024; 56( 3): 442– 57. doi:10.1038/s41588-024-01662-5. 38361033 PMC10937392
+9. Wettersten HI , Hakimi AA , Morin D , Bianchi C , Johnstone ME , Donohoe DR , et al. Grade-dependent metabolic reprogramming in kidney cancer revealed by combined proteomics and metabolomics analysis. Cancer Res. 2015; 75( 12): 2541– 52. doi:10.1158/0008-5472.can-14-1703. 25952651 PMC4470795
+10. Courtney KD , Bezwada D , Mashimo T , Pichumani K , Vemireddy V , Funk AM , et al. Isotope tracing of human clear cell renal cell carcinomas demonstrates suppressed glucose oxidation in vivo. Cell Metab. 2018; 28( 5): 793– 800.e2. doi:10.1016/j.cmet.2018.07.020. 30146487 PMC6221993
+11. Anderson S , Bankier AT , Barrell BG , de Bruijn MHL , Coulson AR , Drouin J , et al. Sequence and organization of the human mitochondrial genome. Nature. 1981; 290( 5806): 457– 65. doi:10.1038/290457a0. 7219534
+12. Molina JR , Sun Y , Protopopova M , Gera S , Bandi M , Bristow C , et al. An inhibitor of oxidative phosphorylation exploits cancer vulnerability. Nat Med. 2018; 24( 7): 1036– 46. doi:10.1038/s41591-018-0052-4. 29892070
+13. Zhu Y , Yu S , Yang D , Yu T , Liu Y , Du W . Integrated multi-omics analysis unveils distinct molecular subtypes and a robust immune–metabolic prognostic model in clear cell renal cell carcinoma. Int J Mol Sci. 2025; 26( 7): 3125. doi:10.3390/ijms26073125. 40243888 PMC11988429
+14. Xiao Y , Clima R , Busch J , Rabien A , Kilic E , Villegas SL , et al. Decreased mitochondrial DNA content drives OXPHOS dysregulation in chromophobe renal cell carcinoma. Cancer Res. 2020; 80( 18): 3830– 40. doi:10.1158/0008-5472.CAN-20-0754. 32694149
+15. Henske EP , Cheng L , Hakimi AA , Choueiri TK , Braun DA . Chromophobe renal cell carcinoma. Cancer Cell. 2023; 41( 8): 1383– 8. doi:10.1016/j.ccell.2023.07.006. 37541245
+16. Salem S , Alchoueiry M , Xu W , Henske EP . Chromophobe renal cell carcinoma: Emerging vulnerabilities as a promise for a new therapeutic landscape. Crit Rev Oncol Hematol. 2025; 216: 104985. doi:10.1016/j.critrevonc.2025.104985. 41135781
+17. Abramov P , Mazur A , Starshin A , Zhenilo S , Prokhortchouk E . Manipulation with mutational status of VHL regulates hypoxic metabolism and pro-angiogenic phenotypes in ccRCC caki-1 cells. Int J Mol Sci. 2025; 26( 21): 10629. doi:10.3390/ijms262110629. 41226668 PMC12608846
+18. Zhang Y , Zhang S , Sun H , Xu L . The pathogenesis and therapeutic implications of metabolic reprogramming in renal cell carcinoma. Cell Death Discov. 2025; 11: 186. doi:10.1038/s41420-025-02479-9. 40253354 PMC12009291
+19. Edo ET . Metabolic reprogramming in kidney cancer: Implications for therapy. Ann Urol Oncol. 2025; 8( 2): 76– 87. doi:10.32948/auo.2025.06.02.
+20. Teisseire M , Sahu U , Parola J , Tsai MC , Vial V , Durivault J , et al. De novo serine synthesis is a metabolic vulnerability that can be exploited to overcome sunitinib resistance in advanced renal cell carcinoma. Cancer Res. 2025; 85( 10): 1857– 73. doi:10.1158/0008-5472.can-24-1393. 40029310 PMC12079101
+21. Yong C , Schmidt C , Yang M , Von Kriegsheim A , Warren AY , Anand S , et al. Tumour sampling conditions perturb the metabolic landscape of clear cell renal cell carcinoma. Nat Commun. 2025; 16: 9896. doi:10.1038/s41467-025-65676-1. 41213938 PMC12603277
+22. Zhang D , Zhang K , Deng M , Ma J , Zhu J , Shen S , et al. Integrated genomic and functional characterization of palmitoylation in clear cell renal cell carcinoma. Hum Mutat. 2025; 2025: 4647115. doi:10.1155/humu/4647115. 41357761 PMC12681404
+23. Miklovicova S , Volpini L , Sanovec O , Monaco F , Vanova KH , Novak J , et al. Mitochondrial respiratory complex II is altered in renal carcinoma. Biochim Biophys Acta BBA Mol Basis Dis. 2025; 1871( 1): 167556. doi:10.1016/j.bbadis.2024.167556. 39486656
+24. Pan X , Wei Y , Sui X , Yin X , Zheng L , Zeng H , et al. Succinate dehydrogenase-deficient renal cell carcinoma: Clinicopathological analysis of 11 cases. J Sichuan Univ Med Sci. 2024; 55( 5): 1099– 106. (In Chinese). 10.12182/20240960101 PMC11536229 39507957
+25. Zhao M , Xia Y , Wang W . Aggressive renal cell carcinoma with biphasic papillary and solid clear cell features harboring IDH2 (R172M) mutation. Pathol Res Pract. 2024; 253: 155090. doi:10.1016/j.prp.2024.155090. 38181579
+26. Willems PH , Rossignol R , Dieteren CE , Murphy MP , Koopman WJ . Redox homeostasis and mitochondrial dynamics. Cell Metab. 2015; 22( 2): 207– 18. doi:10.1016/j.cmet.2015.06.006. 26166745
+27. Du H , Xu T , Yu S , Wu S , Zhang J . Mitochondrial metabolism and cancer therapeutic innovation. Sig Transduct Target Ther. 2025; 10: 245. doi:10.1038/s41392-025-02311-x. PMC12319113 40754534
+28. Rossi T , Torcasio R , Ganino L , Valentino I , Boni C , Gentile M , et al. Dysregulated mitochondrial dynamics in cancer: Unlocking new strategies to combat drug resistance. Biochim Biophys Acta BBA Rev Cancer. 2026; 1881( 1): 189510. doi:10.1016/j.bbcan.2025.189510. 41360306
+29. Wu MJ , Chang YT , Chuang TY , Ko WS , Lu CC , Shieh JJ . Targeting mitophagy using isoliensinine as a therapeutic strategy for renal cell carcinoma treatment. Free Radic Biol Med. 2025; 233: 132– 47. doi:10.1016/j.freeradbiomed.2025.03.037. 40139412
+30. Liu X , Hajnóczky G . Altered fusion dynamics underlie unique morphological changes in mitochondria during hypoxia–reoxygenation stress. Cell Death Differ. 2011; 18( 10): 1561– 72. doi:10.1038/cdd.2011.13. 21372848 PMC3172112
+31. Wai T , García-Prieto J , Baker MJ , Merkwirth C , Benit P , Rustin P , et al. Imbalanced OPA1 processing and mitochondrial fragmentation cause heart failure in mice. Science. 2015; 350( 6265): aad0116. doi:10.1126/science.aad0116. 26785494
+32. Jin JY , Wei XX , Zhi XL , Wang XH , Meng D . Drp1-dependent mitochondrial fission in cardiovascular disease. Acta Pharmacol Sin. 2021; 42( 5): 655– 64. doi:10.1038/s41401-020-00518-y. 32913266 PMC8115655
+33. Kashatus JA , Nascimento A , Myers LJ , Sher A , Byrne FL , Hoehn KL , et al. Erk2 phosphorylation of Drp1 promotes mitochondrial fission and MAPK-driven tumor growth. Mol Cell. 2015; 57( 3): 537– 51. doi:10.1016/j.molcel.2015.01.002. 25658205 PMC4393013
+34. Feng C , Kong D , Tong B , Liang Y , Xu F , Yang Y , et al. Hypoxia-triggered ERRα acetylation enhanced its oncogenic role and promoted progression of renal cell carcinoma by coordinating autophagosome-lysosome fusion. Cell Death Dis. 2025; 16: 23. doi:10.1038/s41419-025-07345-1. 39820331 PMC11739407
+35. Kim YY , Um JH , Shin DJ , Jeong DJ , Bin Hong Y , Yun J . p53-mediated regulation of mitochondrial dynamics plays a pivotal role in the senescence of various normal cells as well as cancer cells. FASEB J. 2021; 35( 2): e21319. doi:10.1096/fj.202002007r. 33433933
+36. Wang Y , Lu M , Xiong L , Fan J , Zhou Y , Li H , et al. Drp1-mediated mitochondrial fission promotes renal fibroblast activation and fibrogenesis. Cell Death Dis. 2020; 11: 29. doi:10.1038/s41419-019-2218-5. 31949126 PMC6965618
+37. Mishra P , Chan DC . Metabolic regulation of mitochondrial dynamics. J Cell Biol. 2016; 212( 4): 379– 87. doi:10.1083/jcb.201511036. 26858267 PMC4754720
+38. Lehuédé C , Dupuy F , Rabinovitch R , Jones RG , Siegel PM . Metabolic plasticity as a determinant of tumor growth and metastasis. Cancer Res. 2016; 76( 18): 5201– 8. doi:10.1158/0008-5472.can-16-0266. 27587539
+39. Cunniff B , McKenzie AJ , Heintz NH , Howe AK . AMPK activity regulates trafficking of mitochondria to the leading edge during cell migration and matrix invasion. Mol Biol Cell. 2016; 27( 17): 2662– 74. doi:10.1091/mbc.E16-05-0286. 27385336 PMC5007087
+40. Mahmoud N , Qin X , Bzeih W , Khabibullin D , Alchoueiry M , Safi S , et al. BCL-xL dependency in chromophobe renal cell carcinoma. Cancer Gene Ther. 2025; 32( 10): 1133– 43. doi:10.1038/s41417-025-00953-1. 40819113
+41. Singh R , Letai A , Sarosiek K . Regulation of apoptosis in health and disease: The balancing act of BCL-2 family proteins. Nat Rev Mol Cell Biol. 2019; 20( 3): 175– 93. doi:10.1038/s41580-018-0089-8. 30655609 PMC7325303
+42. Kale J , Osterlund EJ , Andrews DW . BCL-2 family proteins: Changing partners in the dance towards death. Cell Death Differ. 2018; 25( 1): 65– 80. doi:10.1038/cdd.2017.186. 29149100 PMC5729540
+43. Kowalewski A , Borowczak J , Maniewski M , Gostomczyk K , Grzanka D , Szylberg Ł . Targeting apoptosis in clear cell renal cell carcinoma. Biomed Pharmacother. 2024; 175: 116805. doi:10.1016/j.biopha.2024.116805. 38781868
+44. Sánchez-Gastaldo A , Kempf E , González del Alba A , Duran I . Systemic treatment of renal cell cancer: A comprehensive review. Cancer Treat Rev. 2017; 60: 77– 89. doi:10.1016/j.ctrv.2017.08.010. 28898679
+45. Yameny A , Fekry T . Oxidative stress and malignancy: The central role of reactive oxygen species (ROS) in cancer. BJBMB. 2026; 3( 1): 1– 10. doi:10.71428/bjbmb.2026.0101.
+46. Quinlan CL , Orr AL , Perevoshchikova IV , Treberg JR , Ackrell BA , Brand MD . Mitochondrial complex II can generate reactive oxygen species at high rates in both the forward and reverse reactions. J Biol Chem. 2012; 287( 32): 27255– 64. doi:10.1074/jbc.M112.374629. 22689576 PMC3411067
+47. Sies H , Jones DP . Reactive oxygen species (ROS) as pleiotropic physiological signalling agents. Nat Rev Mol Cell Biol. 2020; 21( 7): 363– 83. doi:10.1038/s41580-020-0230-3. 32231263
+48. Dixon SJ , Stockwell BR . The role of iron and reactive oxygen species in cell death. Nat Chem Biol. 2014; 10( 1): 9– 17. doi:10.1038/nchembio.1416. 24346035
+49. Badran O , Cohen I , Bar-Sela G . The impact of iron on cancer-related immune functions in oncology: Molecular mechanisms and clinical evidence. Cancers. 2024; 16( 24): 4156. doi:10.3390/cancers16244156. 39766056 PMC11674619
+50. Sena LA , Chandel NS . Physiological roles of mitochondrial reactive oxygen species. Mol Cell. 2012; 48( 2): 158– 67. doi:10.1016/j.molcel.2012.09.025. 23102266 PMC3484374
+51. Wang H , Fan Y , Liang Q , Tao W , Chen X , Wang J , et al. MAVS/CMTM6 axis couples mitochondrial homeostasis to immunogenic senescence via CCL3-driven T-cell recruitment in renal carcinoma. J Immunother Cancer. 2025; 13( 12): e011477. doi:10.1136/jitc-2025-011477. 41469142 PMC12766799
+52. Dixon SJ , Lemberg KM , Lamprecht MR , Skouta R , Zaitsev EM , Gleason CE , et al. Ferroptosis: An iron-dependent form of nonapoptotic cell death. Cell. 2012; 149( 5): 1060– 72. doi:10.1016/j.cell.2012.03.042. 22632970 PMC3367386
+53. Wang Z , Kong D , Wei W . The role of ferroptosis in renal cell carcinoma: Molecular mechanisms and therapeutic implications. J Mol Med. 2026; 104( 1): 22. doi:10.1007/s00109-025-02635-9. 41491742
+54. Yang WS , SriRamaratnam R , Welsch ME , Shimada K , Skouta R , Viswanathan VS , et al. Regulation of ferroptotic cancer cell death by GPX4. Cell. 2014; 156( 1–2): 317– 31. doi:10.1016/j.cell.2013.12.010. 24439385 PMC4076414
+55. Pan B , Kang J , Zheng R , Wei C , Zhi Y . Molecular mechanism of ferroptosis and its application in the treatment of clear cell renal cell carcinoma. Pathol Res Pract. 2024; 260: 155324. doi:10.1016/j.prp.2024.155324. 38905897
+56. Wang Y , Liu B , Zhuang Y , Zhang Y , Dan W , Ding P , et al. USP20 governs tyrosine kinase inhibitors resistance through ferroptosis evasion by targeting GPX4 in cancers. Redox Biol. 2026; 92: 104086. doi:10.1016/j.redox.2026.104086. 41844497 PMC13010945
+57. Porporato PE , Payen VL , Pérez-Escuredo J , De Saedeleer CJ , Danhier P , Copetti T , et al. A mitochondrial switch promotes tumor metastasis. Cell Rep. 2014; 8( 3): 754– 66. doi:10.1016/j.celrep.2014.06.043. 25066121
+58. Piskounova E , Agathocleous M , Murphy MM , Hu Z , Huddlestun SE , Zhao Z , et al. Oxidative stress inhibits distant metastasis by human melanoma cells. Nature. 2015; 527( 7577): 186– 91. doi:10.1038/nature15726. 26466563 PMC4644103
+59. Park WH . The mitochondrial nexus: Targeting metabolic vulnerabilities, oxidative stress, and immunomodulation to induce cancer cell death. Biochim Biophys Acta Rev Cancer. 2025; 1880( 6): 189491. doi:10.1016/j.bbcan.2025.189491. 41177183
+60. Wang Q , Sun Y , Li TY , Auwerx J . Mitophagy in the pathogenesis and management of disease. Cell Res. 2026; 36( 1): 11– 37. doi:10.1038/s41422-025-01203-7. 41486294 PMC12765899
+61. Huang L , Wang L , Yuan D , Xu Y , Wang Y , Yao K , et al. Overexpression of BNIP3 in renal carcinoma cells can promote apoptosis of renal carcinoma cells through HIF-1α-BNIP3-mediated autophagy. Front Oncol. 2025; 15: 1614378. doi:10.3389/fonc.2025.1614378. 40837014 PMC12361231
+62. Yang K , Yang K , Lei Z , Wu K , Li J , Peng Q , et al. Identification of molecular subtypes and a prognostic risk model based on mitochondrial dynamic related genes in clear cell renal cell carcinoma. Biochem Biophys Res Commun. 2025; 767: 151911. doi:10.1016/j.bbrc.2025.151911. 40318378
+63. Zhang J , Ney PA . Role of BNIP3 and NIX in cell death, autophagy, and mitophagy. Cell Death Differ. 2009; 16( 7): 939– 46. doi:10.1038/cdd.2009.16. 19229244 PMC2768230
+64. Chourasia AH , Boland ML , MacLeod KF . Mitophagy and cancer. Cancer Metab. 2015; 3: 4. doi:10.1186/s40170-015-0130-8. 25810907 PMC4373087
+65. LaGory EL , Giaccia AJ . The ever-expanding role of HIF in tumour and stromal biology. Nat Cell Biol. 2016; 18( 4): 356– 65. doi:10.1038/ncb3330. 27027486 PMC4898054
+66. Li H , Li Y , Chen Z , He C . HOXA3 activates USP15 to suppress autophagy and promote M2-type macrophage polarization in renal cell carcinoma via facilitating the deubiquitination of SQSTM1. Am J Physiol Cell Physiol. 2025; 328( 2): C576– 94. doi:10.1152/ajpcell.00712.2024. 39740793
+67. Xiang J , Liu W , Liu S , Wang T , Tang H , Yang J . Deciphering the implications of mitophagy-related signatures in clinical outcomes and microenvironment heterogeneity of clear cell renal cell carcinoma. J Cancer Res Clin Oncol. 2023; 149( 17): 16015– 30. doi:10.1007/s00432-023-05349-y. 37689589 PMC11796656
+68. Poole LP , MacLeod KF . Mitophagy in tumorigenesis and metastasis. Cell Mol Life Sci. 2021; 78( 8): 3817– 51. doi:10.1007/s00018-021-03774-1. 33580835 PMC8259496
+69. Li Y , Chen H , Xie X , Yang B , Wang X , Zhang J , et al. PINK1-mediated mitophagy promotes oxidative phosphorylation and redox homeostasis to induce drug-tolerant persister cancer cells. Cancer Res. 2023; 83( 3): 398– 413. doi:10.1158/0008-5472.can-22-2370. 36480196
+70. Tang H , Xu W , Lu J , Anwaier A , Ye D , Zhang H . Heterogeneity and function of cancer-associated fibroblasts in renal cell carcinoma. J Natl Cancer Cent. 2023; 3( 2): 100– 5. doi:10.1016/j.jncc.2023.04.001. 39035728 PMC11256550
+71. Anwaier A , Xu W , Liu W , Wei S , Tian X , Qu Y , et al. Tumor microenvironment-based signatures distinguish intratumoral heterogeneity, prognosis, and immunogenomic features of clear cell renal cell carcinoma. J Natl Cancer Cent. 2023; 3( 3): 236– 49. doi:10.1016/j.jncc.2023.08.003. 39035192 PMC11256720
+72. Melkonian SC , Wang X , Gu J , Matin SF , Tannir NM , Wood CG , et al. Mitochondrial DNA copy number in peripheral blood leukocytes and the risk of clear cell renal cell carcinoma. Carcinogenesis. 2015; 36( 2): 249– 55. doi:10.1093/carcin/bgu248. 25524925 PMC4322190
+73. Lin CS , Lee HT , Lee MH , Pan SC , Ke CY , Chiu A , et al. Role of mitochondrial DNA copy number alteration in human renal cell carcinoma. Int J Mol Sci. 2016; 17( 6): 814. doi:10.3390/ijms17060814. 27231905 PMC4926348
+74. Qu Y , Feng J , Wu X , Bai L , Xu W , Zhu L , et al. A proteogenomic analysis of clear cell renal cell carcinoma in a Chinese population. Nat Commun. 2022; 13: 2052. doi:10.1038/s41467-022-29577-x. 35440542 PMC9019091
+75. Salfer B , Li F , Wong DTW , Zhang L . Urinary cell-free DNA in liquid biopsy and cancer management. Clin Chem. 2022; 68( 12): 1493– 501. doi:10.1093/clinchem/hvac122. 36213956 PMC10423312
+76. Carney EF . Accumulation of pathogenic mitochondrial DNA mutations in the kidney. Nat Rev Nephrol. 2025; 21( 10): 649. doi:10.1038/s41581-025-01002-8. 40883604
+77. Zhang L , Xu Z , Jing J , Chai G , Xie G , Ru Y , et al. Age-dependent accumulation of mitochondrial tRNA mutations in mouse kidneys linked to mitochondrial kidney diseases. Nat Aging. 2025; 5( 7): 1317– 39. doi:10.1038/s43587-025-00909-y. 40579478
+78. Selak MA , Armour SM , MacKenzie ED , Boulahbel H , Watson DG , Mansfield KD , et al. Succinate links TCA cycle dysfunction to oncogenesis by inhibiting HIF-α prolyl hydroxylase. Cancer Cell. 2005; 7( 1): 77– 85. doi:10.1016/j.ccr.2004.11.022. 15652751
+79. Ricketts CJ , De Cubas AA , Fan H , Smith CC , Lang M , Reznik E , et al. The cancer genome atlas comprehensive molecular characterization of renal cell carcinoma. Cell Rep. 2018; 23( 1): 313– 26.e5. doi:10.1016/j.celrep.2018.03.075. 29617669 PMC6075733
+80. Meierhofer D , Mayr JA , Fink K , Schmeller N , Kofler B , Sperl W . Mitochondrial DNA mutations in renal cell carcinomas revealed no general impact on energy metabolism. Br J Cancer. 2006; 94( 2): 268– 74. doi:10.1038/sj.bjc.6602929. 16404428 PMC2361126
+81. Acharyya A , Dhar R . Pan-cancer analysis reveals mtDNA copy number as a key determinant of mutational load and disease progression in cancer. bioRxiv:11.18.689019. 2025. doi:10.1101/2025.11.18.689019.
+82. Zhou K , Liu Y , Yuan Q , Lai D , Guo S , Wang Z , et al. Next-generation sequencing–based analysis of urine cell-free mtDNA reveals aberrant fragmentation and mutation profile in cancer patients. Clin Chem. 2022; 68( 4): 561– 73. doi:10.1093/clinchem/hvab268. 34993545
+83. Linehan WM , Schmidt LS , Crooks DR , Wei D , Srinivasan R , Lang M , et al. The metabolic basis of kidney cancer. Cancer Discov. 2019; 9( 8): 1006– 21. doi:10.1158/2159-8290.CD-18-1354. 31088840
+84. Kim M , Gorelick AN , Vàzquez-García I , Williams MJ , Salehi S , Shi H , et al. Single-cell mtDNA dynamics in tumors is driven by coregulation of nuclear and mitochondrial genomes. Nat Genet. 2024; 56( 5): 889– 99. doi:10.1038/s41588-024-01724-8. 38741018 PMC11096122
+85. Ozawa M , Naito S , Makinoshima H , Ito H , Tsuya A , Narisawa T , et al. Metabolic landscape of clear cell renal cell carcinoma and search for metabolites predictive of drug response. BMC Cancer. 2025; 25( 1): 1357. doi:10.1186/s12885-025-14661-4. 40846916 PMC12372187
+86. Lucarelli G , Loizzo D , Franzin R , Battaglia S , Ferro M , Cantiello F , et al. Metabolomic insights into pathophysiological mechanisms and biomarker discovery in clear cell renal cell carcinoma. Expert Rev Mol Diagn. 2019; 19( 5): 397– 407. doi:10.1080/14737159.2019.1607729. 30983433
+87. de Cubas AA , Rathmell WK . Epigenetic modifiers: Activities in renal cell carcinoma. Nat Rev Urol. 2018; 15( 10): 599– 614. doi:10.1038/s41585-018-0052-7. 30030490 PMC8366903
+88. Wu X , Zhang Y . TET-mediated active DNA demethylation: Mechanism, function and beyond. Nat Rev Genet. 2017; 18( 9): 517– 34. doi:10.1038/nrg.2017.33. 28555658
+89. Johnson M , Turcotte S . The fall of the genome protectors triad: PBRM1, SETD2, and BAP1’s impact on metabolism and immunity in clear cell renal cell carcinoma. Front Cell Dev Biol. 2025; 13: 1713830. doi:10.3389/fcell.2025.1713830. 41602827 PMC12832883
+90. Gilardini Montani MS , Benedetti R , Cirone M . Targeting EZH2 in cancer: Mechanisms, pathways, and therapeutic potential. Molecules. 2024; 29( 24): 5817. doi:10.3390/molecules29245817. 39769907 PMC11678268
+91. Zou Y , Zhong Y , Wu J , Xiao H , Zhang X , Liao X , et al. Long non-coding PANDAR as a novel biomarker in human cancer: A systematic review. Cell Prolif. 2018; 51: e12422. doi:10.1111/cpr.12422. 29226461 PMC6528858
+92. Du L , Wang B , Wu M , Chen W , Wang W , Diao W , et al. LINC00926 promotes progression of renal cell carcinoma via regulating miR-30a-5p/SOX4 axis and activating IFNγ-JAK2-STAT1 pathway. Cancer Lett. 2023; 578: 216463. doi:10.1016/j.canlet.2023.216463. 37866544
+93. Creighton CJ , Morgan M , Gunaratne PH , Wheeler DA , Gibbs RA , Robertson AG , et al. Comprehensive molecular characterization of clear cell renal cell carcinoma. Nature. 2013; 499( 7456): 43– 9. doi:10.1038/nature12222. 23792563 PMC3771322
+94. Anastasiadou E , Jacob LS , Slack FJ . Non-coding RNA networks in cancer. Nat Rev Cancer. 2018; 18( 1): 5– 18. doi:10.1038/nrc.2017.99. 29170536 PMC6337726
+95. Márton É , Varga A , Domoszlai D , Buglyó G , Balázs A , Penyige A , et al. Non-coding RNAs in cancer: Structure, function, and clinical application. Cancers. 2025; 17( 4): 579. doi:10.3390/cancers17040579. 40002172 PMC11853212
+96. O’Brien J , Hayder H , Zayed Y , Peng C . Overview of microRNA biogenesis, mechanisms of actions, and circulation. Front Endocrinol. 2018; 9: 402. doi:10.3389/fendo.2018.00402. PMC6085463 30123182
+97. Chodurska B , Kunej T . Long non-coding RNAs in humans: Classification, genomic organization and function. Non Coding RNA Res. 2025; 11: 313– 27. doi:10.1016/j.ncrna.2025.01.004. PMC11833636 39967600
+98. Song Z , Zhou M , Lin J , You J , Huang C . Translatable circular RNAs: Mechanism, function and clinical application. Int J Biol Macromol. 2026; 335: 149185. doi:10.1016/j.ijbiomac.2025.149185. 41274470
+99. Gan L , Li W , Chen Q , Cheng L , Zhang F , Zhong H , et al. microRNA-145 in urologic tumors: Biological roles, regulatory networks, and clinical translation. Front Pharmacol. 2025; 16: 1609646. doi:10.3389/fphar.2025.1609646. 40689207 PMC12271111
+100. Di Martino MT , Arbitrio M , Caracciolo D , Cordua A , Cuomo O , Grillone K , et al. miR-221/222 as biomarkers and targets for therapeutic intervention on cancer and other diseases: A systematic review. Mol Ther Nucleic Acids. 2022; 27: 1191– 224. doi:10.1016/j.omtn.2022.02.005. 35282417 PMC8891816
+101. Xiang M , Huang Y , Dai C , Zou G . miR-340 regulates the growth and metabolism of renal cell carcinoma cells by targeting frizzled class receptor 3. Arch Pharm Res. 2021; 44( 2): 219– 29. doi:10.1007/s12272-021-01310-0. 33609235
+102. Zhou FJ , Meng S , Wu XF , Hou PF , Li ML , Chu SF , et al. LncRNA LINC00460 facilitates the proliferation and metastasis of renal cell carcinoma via PI3K/AKT signaling pathway. J Cancer. 2022; 13( 9): 2844– 54. doi:10.7150/jca.73758. 35912013 PMC9330462
+103. Assal RA , Rashwan HH , Zakaria ZI , Sweillam JH , Fouda YM , Abdelhamid AM , et al. Deciphering the mysteries of MEG3 LncRNA and its implications in genitourinary cancers. Front Oncol. 2025; 15: 1519103. doi:10.3389/fonc.2025.1519103. 40242248 PMC12000830
+104. Yu H , Liu J , Zhang Z , Zhu Y , Bi J , Kong C . SNHG12 promotes carcinogenesis of human renal cell cancer via functioning as a competing endogenous RNA and sponging miR-30a-3p. J Cellular Molecular Medi. 2021; 25( 10): 4696– 708. doi:10.1111/jcmm.16417. PMC8107103 33787057
+105. Xue D , Wang H , Chen Y , Shen D , Lu J , Wang M , et al. Circ-AKT3 inhibits clear cell renal cell carcinoma metastasis via altering miR-296-3p/E-cadherin signals. Mol Cancer. 2019; 18( 1): 151. doi:10.1186/s12943-019-1072-5. 31672157 PMC6824104
+106. Luo HL , Lee YC , Chang YL , Hsu WC , Wu YT , Jhan JH , et al. microRNA-145-5p suppresses cell proliferation, migration, and invasion in upper tract urothelial carcinoma by targeting 5-aminoimidazole-4-carboxamide ribonucleotide formyltransferase/IMP cyclohydrolase. J Cell Biochem. 2023; 124( 9): 1324– 45. doi:10.1002/jcb.30449. 37475541
+107. Wei Z , Ye Y , Liu C , Wang Q , Zhang Y , Chen K , et al. MIER2/PGC1A elicits sunitinib resistance via lipid metabolism in renal cell carcinoma. J Adv Res. 2025; 70: 287– 305. doi:10.1016/j.jare.2024.04.032. 38702028 PMC11976417
+108. Tian Z , Zhang R , Ma Y , Li J , Li Y , Lv L . D-mannose suppresses HIF-1α mediated metabolic reprogramming in clear cell renal cell carcinoma. Discover Oncol. 2025; 16( 1): 1934. doi:10.1007/s12672-025-03695-6. PMC12540231 41118022
+109. Abu Aboud O , Donohoe D , Bultman S , Fitch M , Riiff T , Hellerstein M , et al. PPARα inhibition modulates multiple reprogrammed metabolic pathways in kidney cancer and attenuates tumor growth. Am J Physiol Cell Physiol. 2015; 308( 11): C890– 8. doi:10.1152/ajpcell.00322.2014. 25810260 PMC4451352
+110. Bezwada D , Perelli L , Lesner NP , Cai L , Brooks B , Wu Z , et al. Mitochondrial complex I promotes kidney cancer metastasis. Nature. 2024; 633( 8031): 923– 31. doi:10.1038/s41586-024-07812-3. 39143213 PMC11424252
+111. Ferré CA , Thouard A , Bétourné A , Le Dorze AL , Belenguer P , Miquel MC , et al. HSPA9/Mortalin mediates axo-protection and modulates mitochondrial dynamics in neurons. Sci Rep. 2021; 11( 1): 17705. doi:10.1038/s41598-021-97162-1. 34489498 PMC8421332
+112. Juszczak F , Arnould T , Declèves AE . The role of mitochondrial sirtuins (SIRT3, SIRT4 and SIRT5) in renal cell metabolism: Implication for kidney diseases. Int J Mol Sci. 2024; 25( 13): 6936. doi:10.3390/ijms25136936. 39000044 PMC11241570
+113. Gutierrez A , Archdeacon J , Blagg BSJ . TRAP1 and its therapeutic potential. Bioorg Med Chem Lett. 2025; 129: 130395. doi:10.1016/j.bmcl.2025.130395. 40915392 PMC12994375
+114. Hsieh JJ , Purdue MP , Signoretti S , Swanton C , Albiges L , Schmidinger M , et al. Renal cell carcinoma. Nat Rev Dis Primers. 2017; 3: 17009. doi:10.1038/nrdp.2017.9. 28276433 PMC5936048
+115. Lai Y , Tang F , Huang Y , He C , Chen C , Zhao J , et al. The tumour microenvironment and metabolism in renal cell carcinoma targeted or immune therapy. J Cell Physiol. 2021; 236( 3): 1616– 27. doi:10.1002/jcp.29969. 32783202
+116. Cruz-Gregorio A , Aranda-Rivera AK , Amador-Martinez I , Maycotte P . Mitochondrial transplantation strategies in multifaceted induction of cancer cell death. Life Sci. 2023; 332: 122098. doi:10.1016/j.lfs.2023.122098. 37734433
+117. Wettersten HI , Aboud OA , Lara PN Jr , Weiss RH . Metabolic reprogramming in clear cell renal cell carcinoma. Nat Rev Nephrol. 2017; 13( 7): 410– 9. doi:10.1038/nrneph.2017.59. 28480903
+118. Shi N , Chen S , Wang D , Wu T , Zhang N , Chen M , et al. MDK promotes M2 macrophage polarization to remodel the tumour microenvironment in clear cell renal cell carcinoma. Sci Rep. 2024; 14: 18254. doi:10.1038/s41598-024-69183-z. 39107475 PMC11303797
+119. Baardman J , Verberk SGS , Prange KHM , van Weeghel M , van der Velden S , Ryan DG , et al. A defective pentose phosphate pathway reduces inflammatory macrophage responses during hypercholesterolemia. Cell Rep. 2018; 25( 8): 2044– 52.e5. doi:10.1016/j.celrep.2018.10.092. 30463003
+120. Kato T , Shiota M , Nishimoto K , Matsubara N , Osawa T , Abe T , et al. Prognostic significance of circulating tumor DNA alterations in advanced renal cell carcinoma from SCRUM-Japan MONSTAR-SCREEN: A nationwide genomic profiling project. Br J Cancer. 2025; 133( 1): 111– 20. doi:10.1038/s41416-025-02985-8. 40325148 PMC12238367
+121. Kumar N , Bohra D , Rana R , Rana DS , Gupta A , Sachdeva MP . Role of extracellular vesicles in renal cell carcinoma. In: Advances in Cancer Biomarkers Research. Amsterdam, The Netherlands: Elsevier; 2025. p. 205– 18. doi:10.1016/b978-0-323-95258-3.00012-6.
+122. Saimaiti W , Ma J , Dilimulati P , Wang Y . Sunitinib-resistant renal cell carcinoma cell-derived exosomes promote facilitation of tumor progression via secretion of the lncRNA SNHG16. Hum Cell. 2025; 38( 4): 100. doi:10.1007/s13577-025-01228-5. 40358820
+123. Rui R , Zhou L , He S . Advances in the research of exosomes in renal cell carcinoma: From mechanisms to applications. Front Immunol. 2023; 14: 1271669. doi:10.3389/fimmu.2023.1271669. 37942325 PMC10628008
+124. Liu T , Cheng S , Peng B , Zang H , Zhu X , Wang X , et al. PD-L2 of tumor-derived exosomes mediates the immune escape of cancer cells via the impaired T cell function. Cell Death Dis. 2024; 15( 11): 800. doi:10.1038/s41419-024-07191-7. 39511147 PMC11544247
+125. Ma Z , Zuo Y , Wang W . Ginsenoside Rg3 inhibits renal cell carcinoma cell migration, invasion, colony formation, and tube formation and enhances apoptosis through promoting the DNA demethylation and histone acetylation. J Pharm Pharmacol. 2023; 75( 1): 76– 86. doi:10.1093/jpp/rgac072. 36264186
+126. Li H , Gao C , Liu C , Liu L , Zhuang J , Yang J , et al. A review of the biological activity and pharmacology of cryptotanshinone, an important active constituent in Danshen. Biomed Pharmacother. 2021; 137: 111332. doi:10.1016/j.biopha.2021.111332. 33548911
+127. Zhao Y , Lin X , Zeng W , Qin X , Miao B , Gao S , et al. Berberine inhibits the progression of renal cell carcinoma cells by regulating reactive oxygen species generation and inducing DNA damage. Mol Biol Rep. 2023; 50( 7): 5697– 707. doi:10.1007/s11033-023-08381-w. 37217616
+128. Gao J , Ye K , Wu J . Quercetin inhibits proliferation and migration of clear cell renal cell carcinoma cells by regulating TP53 gene. Nan Fang Yi Ke Da Xue Xue Bao. 2025; 45( 2): 313– 21. (In Chinese). 40031975 10.12122/j.issn.1673-4254.2025.02.12 PMC11875859
+129. Li L , Gao Y , Zhang L , Zeng J , He D , Sun Y . Silibinin inhibits cell growth and induces apoptosis by caspase activation, down-regulating survivin and blocking EGFR–ERK activation in renal cell carcinoma. Cancer Lett. 2008; 272( 1): 61– 9. doi:10.1016/j.canlet.2008.06.033. 18723275
+130. Yin P , Jia J , Li J , Song Y , Zhang Y , Chen F . ABT-737, a bcl-2 selective inhibitor, and chloroquine synergistically kill renal cancer cells. Oncol Res. 2016; 24( 1): 65– 72. doi:10.3727/096504016x14587366983838. 27178823 PMC7838628
+131. Amendolare A , Marzano F , Petruzzella V , Vacca RA , Guerrini L , Pesole G , et al. The underestimated role of the p53 pathway in renal cancer. Cancers. 2022; 14( 23): 5733. doi:10.3390/cancers14235733. 36497215 PMC9736171
+132. Srivastava S , Somasagara RR , Hegde M , Nishana M , Tadi SK , Srivastava M , et al. Quercetin, a natural flavonoid interacts with DNA, arrests cell cycle and causes tumor regression by activating mitochondrial pathway of apoptosis. Sci Rep. 2016; 6: 24049. doi:10.1038/srep24049. 27068577 PMC4828642
+133. Liu X , Gao Y , Yang F , Qian M , You S , Wang X , et al. A review of cryptotanshinone and its nanoformulation in cancer therapy. Anti-Cancer Agents Med Chem. 2025; 25( 16): 1188– 97. doi:10.2174/0118715206372305250319064431. 40176695
+134. Hornsby BD , Tuekpe JKK , Steele CA , Devereaux AA , Bowman KER , Lim CS . Mitochondrially targeted p53-bad* fusion gene therapy promotes apoptosis in hepatocellular carcinoma by pan-bcl-2 inhibition. Mol Pharm. 2025; 22( 9): 5652– 68. doi:10.1021/acs.molpharmaceut.5c00773. 40815287 PMC13196832
+135. Aguiari G , Dell’atti L . Clinical practice and prognostic molecular biomarkers in clear cell renal cell carcinoma: Latest advancements. Anticancer Res. 2025; 45( 10): 4131– 49. doi:10.21873/anticanres.17767. 41006038
+136. Qi X , Ge Y , Yang A , Liu Y , Wang Q , Wu G . Potential value of mitochondrial regulatory pathways in the clinical application of clear cell renal cell carcinoma: A machine learning-based study. J Cancer Res Clin Oncol. 2023; 149( 19): 17015– 26. doi:10.1007/s00432-023-05393-8. 37749329 PMC10657316
+137. Linehan WM , Ricketts CJ . The Cancer Genome Atlas of renal cell carcinoma: Findings and clinical implications. Nat Rev Urol. 2019; 16( 9): 539– 52. doi:10.1038/s41585-019-0211-5. 31278395
+138. Zhang B , Qi R . The dual-function of HSP70 in immune response and tumor immunity: From molecular regulation to therapeutic innovations. Front Immunol. 2025; 16: 1587414. doi:10.3389/fimmu.2025.1587414. 40297581 PMC12034705
+139. Jin Q , Ma F , Liu T , Yang L , Mao H , Wang Y , et al. Sirtuins in kidney diseases: Potential mechanism and therapeutic targets. Cell Commun Signal. 2024; 22( 1): 114. doi:10.1186/s12964-023-01442-4. 38347622 PMC10860260
+140. Xu Y , Li X , Han Y , Wang Z , Han C , Ruan N , et al. A new prognostic risk model based on PPAR pathway-related genes in kidney renal clear cell carcinoma. PPAR Res. 2020; 2020: 6937475. doi:10.1155/2020/6937475. 33029112 PMC7527891
+141. Chevrier S , Levine JH , Zanotelli VRT , Silina K , Schulz D , Bacac M , et al. An immune atlas of clear cell renal cell carcinoma. Cell. 2017; 169( 4): 736– 49.e18. doi:10.1016/j.cell.2017.04.016. 28475899 PMC5422211
+142. Wen H , Zheng S , Zhu X , Wang L , Chen D . Characteristics of the tumor microenvironment and potential immunotherapy strategies in renal cell carcinoma. Front Immunol. 2025; 16: 1643533. doi:10.3389/fimmu.2025.1643533. 40963620 PMC12436424
+143. Hakimi AA , Reznik E , Lee CH , Creighton CJ , Brannon AR , Luna A , et al. An integrated metabolic atlas of clear cell renal cell carcinoma. Cancer Cell. 2016; 29( 1): 104– 16. doi:10.1016/j.ccell.2015.12.004. 26766592 PMC4809063
+144. Shapiro DD , Dolan B , Laklouk IA , Rassi S , Lozar T , Emamekhoo H , et al. Understanding the tumor immune microenvironment in renal cell carcinoma. Cancers. 2023; 15( 9): 2500. doi:10.3390/cancers15092500. 37173966 PMC10177515
+145. Eckenstein K , Cengiz B , Chang MEK , Cartier JM , Flory MR , Thomas GV . Mitochondrial translation inhibition uncovers a critical metabolic-epigenetic interface in renal cell carcinoma. Metabolites. 2025; 15( 6): 393. doi:10.3390/metabo15060393. 40559417 PMC12195425
+146. Akkuş E , Lyakhovich A . Targeting the bioenergetics of a resistant tumor: Clinical insights into OXPHOS inhibition for cancer therapy. Redox Exp Med. 2025; 2025( 1): e250003. doi:10.1530/rem-25-0003.
+147. Cheng G , Zhou Z , Li S , Peng F , Yang S , Ren C . Machine learning-derived prognostic signature integrating programmed cell death and mitochondrial function in renal clear cell carcinoma: Identification of PIF1 as a novel target. Cancer Immunol Immunother. 2025; 74( 4): 113. doi:10.1007/s00262-025-03967-8. 39998680 PMC11861773
+148. Ge Z , Xu J , Meng F , Sun M , He L , Fan Z , et al. Peptide Hydrogels for Renal Carcinoma Therapy via Synergistic Inhibition of Glycolysis and Mitochondrial Metabolism Reprogramming. ACS Appl Mater Interfaces. 2025; 17( 25): 36487– 96. doi:10.1021/acsami.5c06429. 40518708
+149. Li W , Pan H , Zhou B , Cao Y , Shen B , Li N , et al. Exploration of a prognostic signature for mitochondria-related genes and the therapeutic prospects of vorinostat in clear cell renal cell carcinoma. Transl Androl Urol. 2025; 14( 2): 360– 78. doi:10.21037/tau-24-565. 40114844 PMC11921268
+150. Hafezi S , Rahmani M . Targeting BCL-2 in cancer: Advances, challenges, and perspectives. Cancers. 2021; 13( 6): 1292. doi:10.3390/cancers13061292. 33799470 PMC8001391
+151. Schmid D , Jarvis GE , Fay F , Small DM , Greene MK , Majkut J , et al. Nanoencapsulation of ABT-737 and camptothecin enhances their clinical potential through synergistic antitumor effects and reduction of systemic toxicity. Cell Death Dis. 2014; 5( 10): e1454. doi:10.1038/cddis.2014.413. 25299779 PMC4649518
+152. Jin J , Xie Y , Zhang JS , Wang JQ , Dai SJ , He WF , et al. Sunitinib resistance in renal cell carcinoma: From molecular mechanisms to predictive biomarkers. Drug Resist Updat. 2023; 67: 100929. doi:10.1016/j.drup.2023.100929. 36739809
+153. Chen Z , Liu M . Natural Compounds in Cancer Therapy: Revealing the Role of Flavonoids in Renal Cell Carcinoma Treatment. Biomolecules. 2025; 15( 5): 620. doi:10.3390/biom15050620. 40427513 PMC12108870
+154. Barata PC , Rini BI . Treatment of renal cell carcinoma: Current status and future directions. CA Cancer J Clin. 2017; 67( 6): 507– 24. doi:10.3322/caac.21411. 28961310
+155. Zu H , Gao D . Non-viral vectors in gene therapy: Recent development, challenges, and prospects. AAPS J. 2021; 23( 4): 78. doi:10.1208/s12248-021-00608-7. 34076797 PMC8171234
+156. Doghish AS , Abd-Elmawla MA , Aborehab NM , Radwan AF , Ghaiad HR , Nassar K , et al. Natural products and lncRNAs in renal cell carcinoma: Emerging therapeutic approaches. J Gene Med. 2025; 27( 6): e70026. doi:10.1002/jgm.70026. 40474350
+157. Wu R , Wang K , Gai Y , Li M , Wang J , Wang C , et al. Nanomedicine for renal cell carcinoma: Imaging, treatment and beyond. J Nanobiotechnol. 2023; 21( 1): 3. doi:10.1186/s12951-022-01761-7. PMC9809106 36597108
+158. Ashour AA , Ramadan AA , Abdelmonsif DA , El-Kamel AH . Enhanced oral bioavailability of Tanshinone IIA using lipid nanocapsules: Formulation, in-vitro appraisal and pharmacokinetics. Int J Pharm. 2020; 586: 119598. doi:10.1016/j.ijpharm.2020.119598. 32629068
+159. Li XR , Qi L , Zhang XW , Wei C , Yu B , Pei TL . Quercetin and nano-derivatives: Potential and challenges in cancer therapy. Int J Nanomed. 2025; 20: 6701– 20. doi:10.2147/ijn.s509877. PMC12120254 40444010
+160. Deng X , Zhang Z , Ren T , Chen L . Regulation of oxidative stress and inflammation caused by drug accumulation in the TME based on EPR-passive strategy and active targeting. Cancer Nanotechnol. 2025; 16( 1): 40. doi:10.1186/s12645-025-00342-1.
+161. Jonasch E , Walker CL , Rathmell WK . Clear cell renal cell carcinoma ontogeny and mechanisms of lethality. Nat Rev Nephrol. 2021; 17( 4): 245– 61. doi:10.1038/s41581-020-00359-2. 33144689 PMC8172121
+162. Becker HM . Carbonic anhydrase IX and acid transport in cancer. Br J Cancer. 2020; 122( 2): 157– 67. doi:10.1038/s41416-019-0642-z. 31819195 PMC7051959
+163. Crowe C , Salerno A , Sathe G , Marsh G , Maple H , Ciulli A . Linker-rigidified VHL homodimerizers convert degraders into stabilizers of non-ubiquitinable ternary complexes. bioRxiv:11.18.689129. 2025. doi:10.1101/2025.11.18.689129.
+164. Saliby RM , Labaki C , Jammihal T , Soulati H , Gallegos J , Peris A , et al. Metabolic determinants of exceptional response to immune checkpoint inhibition in renal cell carcinoma. J Clin Oncol. 2025; 43( 5 Suppl): 571. doi:10.1200/jco.2025.43.5_suppl.571. PMC12121501 39789182
+165. Luo Y , Medina Bengtsson L , Wang X , Huang T , Liu G , Murphy S , et al. UQCRH downregulation promotes Warburg effect in renal cell carcinoma cells. Sci Rep. 2020; 10: 15021. doi:10.1038/s41598-020-72107-2. 32929120 PMC7490363
+166. Lucarelli G , Rutigliano M , Sallustio F , Ribatti D , Giglio A , Lepore Signorile M , et al. Integrated multi-omics characterization reveals a distinctive metabolic signature and the role of NDUFA4L2 in promoting angiogenesis, chemoresistance, and mitochondrial dysfunction in clear cell renal cell carcinoma. Aging. 2018; 10( 12): 3957– 85. doi:10.18632/aging.101685. 30538212 PMC6326659
+167. Kubala JM , Laursen KB , Schreiner R , Williams RM , van der Mijn JC , Crowley MJ , et al. NDUFA4L2 reduces mitochondrial respiration resulting in defective lysosomal trafficking in clear cell renal cell carcinoma. Cancer Biol Ther. 2023; 24( 1): 2170669. doi:10.1080/15384047.2023.2170669. 36722045 PMC9897797
+168. Gopal RK , Calvo SE , Shih AR , Chaves FL , McGuone D , Mick E , et al. Early loss of mitochondrial complex I and rewiring of glutathione metabolism in renal oncocytoma. Proc Natl Acad Sci U S A. 2018; 115( 27): E6283– 90. doi:10.1073/pnas.1711888115. 29915083 PMC6142220
+169. Tang Y , Dai C , Yang H , Yang X , Chen Z , Dou J , et al. KAT8-mediated MDH2 lactylation promotes renal cancer progression by enhancing mitochondrial function and stress resistance. Int J Biol Macromol. 2025; 322: 146571. doi:10.1016/j.ijbiomac.2025.146571. 40769364
+170. Gu YR , Kim J , Na JC , Han WK . Mitochondrial metabolic reprogramming by SIRT3 regulation ameliorates drug resistance in renal cell carcinoma. PLoS One. 2022; 17( 6): e0269432. doi:10.1371/journal.pone.0269432. 35671305 PMC9173632
+171. Joshi S , Tolkunov D , Aviv H , Hakimi AA , Yao M , Hsieh JJ , et al. The genomic landscape of renal oncocytoma identifies a metabolic barrier to tumorigenesis. Cell Rep. 2015; 13( 9): 1895– 908. doi:10.1016/j.celrep.2015.10.059. 26655904 PMC4779191

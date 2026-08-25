@@ -1,0 +1,436 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: iScience
+Journal ID: iScience
+NLM Journal ID: 101724038
+
+iScience
+
+EISSN: 2589-0042
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499136
+PMID: 42633178
+DOI: 10.1016/j.isci.2026.117158
+Article ID: S2589-0042(26)02536-8
+Article ID: 117158
+Article version: 1
+Subjects: Article
+
+HopRatio: Profiling single-sample transcriptomic dysregulation using stable gene-ordering relationships
+
+Zhao Yue 1 2
+Gao Bo gaobo@ccmu.edu.cn 1 2 ∗
+Chen Rui ruichen@ccmu.edu.cn 1 2 3 4 5 6 ∗∗
+1 School of Public Health, Capital Medical University, Beijing 100069, P.R. China
+2 Beijing Key Laboratory of Environment and Aging, Capital Medical University, Beijing 100069, P.R. China
+3 Beijing Laboratory of Allergic Diseases, Beijing Municipal Education Commission, Beijing 100069, P.R. China
+4 Laboratory for Environment Health and Allergic Nasal Diseases, Laboratory for Clinical Medicine, Capital Medical University, Beijing 100069, P.R. China
+5 Department of Gastroenterology, Beijing Friendship Hospital, Capital Medical University, Beijing 100050, P.R. China
+∗ Corresponding author gaobo@ccmu.edu.cn∗∗ Corresponding author ruichen@ccmu.edu.cn6 Lead contact
+
+Publication date: 2026 Sep 18
+Electronic publication date: 2026 Aug 13
+Volume: 29
+Issue: 9
+Electronic Location ID: 117158
+Received 2026 Feb 5; Revised 2026 Apr 2; Accepted 2026 Jul 27
+Copyright: © 2026 The Authors
+Copyright year: 2026
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: single-sample transcriptomics, rank-based disruption, HopRatio, cancer biomarkers, precision oncology
+
+==============================
+Summary
+
+Single-sample transcriptomic analysis can provide gene-level views of how individual tumors deviate from matched reference states, complementing cohort-level differential expression. Here, we present HopRatio, a rank-based framework that quantifies, for each gene in each sample, the fraction of stable reference gene-ordering relationships inverted relative to a context-matched reference cohort. By relying on within-sample ranks rather than cross-sample expression magnitudes, HopRatio enables sample-specific scoring without cross-sample normalization for score calculation. Across 16 cancer types from The Cancer Genome Atlas with tissue-matched Genotype-Tissue Expression references, HopRatio generated individualized dysregulation profiles that supported tumor-normal discrimination using single genes and compact multi-gene panels. Recurrent high-performing features defined a 246-gene set enriched for developmental, membrane-associated, and ion-transport programs and associated with poor survival across cancers. Benchmarking in the Sequencing Quality Control dataset supported its robustness relative to commonly used differential expression methods, highlighting a scalable route for interpretable individualized transcriptomic analysis.
+
+Graphical abstract
+
+Highlights
+
+• HopRatio quantifies sample-level dysregulation using stable gene orderings
+
+• HOP scores enable robust tumor-normal discrimination across 16 cancer types
+
+• Compact HOP-derived genes and panels capture interpretable cancer signals
+
+• HopRatio complements differential expression analysis for cohort studies
+
+Biological sciences; Computational bioinformatics; Cancer
+
+Introduction
+
+Transcriptional heterogeneity is a defining feature of complex diseases such as cancer and contributes to divergent clinical outcomes and variable responses to treatment.1,2,3,4 Differential expression analysis remains a central tool in transcriptomics, and widely used frameworks such as limma, edgeR, DESeq2, and related methods provide robust solutions for cohort-level inference across transcriptomic platforms.5,6,7,8,9,10,11,12 However, these approaches are designed primarily to detect group-level differences and do not naturally provide a per-sample measure of how strongly each gene deviates from a stable reference context. This limits their ability to characterize individualized transcriptomic disruption, which is increasingly important in precision-oriented analysis.
+
+A range of methodological extensions has sought to improve differential expression analysis under heterogeneity, sparsity, or subgroup structure,13,14,15,16,17,18,19,20,21,22 but these approaches remain fundamentally grounded in comparisons between predefined groups. We therefore sought a complementary representation that operates at the level of an individual expression profile. Our premise was that highly conserved within-sample gene-ordering relationships can define a stable reference structure even when absolute expression magnitudes vary across cohorts. Disruption of these reference-stable ordering constraints could thus provide an interpretable representation of sample-specific dysregulation.
+
+Rank-based transcriptomic methods can reduce direct dependence on absolute expression scales by focusing on within-sample gene ordering. Previous approaches have used relative gene ordering for sample classification, including Top Scoring Pair23 and k-Top Scoring Pair24 classifiers. HopRatio builds on this rank-based tradition but addresses a distinct analytical unit and output: instead of deriving a sample-level class rule, it generates gene-level, sample-specific dysregulation scores by quantifying how frequently the stable ordering relationships of each gene are inverted relative to a context-matched reference cohort.
+
+On this basis, we developed HopRatio, a context-aware framework for single-sample transcriptomic disruption analysis. HopRatio introduces the Hopping Ratio (HOP), a rank-based metric that quantifies, for each gene in each sample, the fraction of reference-stable ordering relationships that are inverted relative to a context-matched reference cohort. Unlike conventional group-level differential expression methods or rank-based testing procedures, HopRatio operates within an individual sample and yields a gene-level, sample-specific disruption score. Because HOP is defined from within-sample ordering rather than cross-sample expression magnitude, its score calculation is less directly dependent on cross-sample normalization than magnitude-based approaches. Nevertheless, standard preprocessing, quality control, and comparable processing of reference and target datasets remain important. In principle, the same mathematical formulation could be explored in either bulk or cell-resolved settings, although its practical behavior in single-cell data remains to be formally evaluated.
+
+Applied here to 16 TCGA cancer types with matched GTEx reference cohorts, HopRatio generated individualized gene-level scores that supported strong tumor-normal discrimination at both the single-gene and compact multi-gene levels. These HOP-derived signals could also be summarized at the cohort level, enabling comparison with conventional differential expression workflows and evaluation against orthogonal benchmarks such as the SEQC dataset. Together, these results support HopRatio as an interpretable framework for single-sample transcriptomic analysis and suggest its utility as a complement to conventional cohort-level workflows for biomarker discovery in heterogeneous disease settings.
+
+Results
+
+Overview of the HopRatio framework and study design
+
+To provide a unified view of individualized transcriptomic analysis, we first summarize the HopRatio framework and its evaluation design (Figure 1). HopRatio comprises three interconnected modules. Module 1 constructs context-matched reference cohorts and defines reference-stable within-sample ordering patterns for each focal gene. Module 2 quantifies sample-specific rank disruption relative to this reference structure. For a focal gene i in target sample k, HOP measures the proportion of reference-stable pairwise ordering relationships that are inverted in the target sample, thereby generating a gene-level disruption score for each sample. Module 3 summarizes these primary gene-by-sample HOP values for downstream interpretation, including sample-level summaries, group-level comparisons, and derived statistics used to evaluate whether individual genes or gene sets show consistently elevated disruption in one biological condition relative to another. These downstream summaries should therefore be interpreted as secondary analyses built on the primary HOP scores. We then assessed discrimination performance, reference-design behavior, and benchmarking context across 16 TCGA cancer types using matched GTEx reference cohorts.Figure 1 Overview of the HopRatio framework and study design
+
+(A) Three-module workflow of HopRatio. Module 1 constructs context-matched reference cohorts and defines reference-stable within-sample ordering relations. Module 2 quantifies rank disruption through HOP, generating per-gene and per-sample disruption scores. Module 3 summarizes these scores for downstream discrimination analysis, feature prioritization, and comparative evaluation.
+
+(B) Downstream applications of sample-specific HOP profiles, including tumor-normal discrimination, compact feature prioritization, and biological contextualization. Performance was evaluated across 16 TCGA cancer types with matched GTEx references and benchmarked in external settings including SEQC.
+
+Pan-cancer single-gene and compact-panel discrimination
+
+We first evaluated whether HOP could distinguish tumors from normal samples across 16 TCGA cancer types using reciprocal TCGA-GTEx reference designs (Figure S1 and Tables S1 and S2). For single-gene analyses, genes were ranked by the area under the receiver operating characteristic curve (AUC) calculated from the per-sample HOP value of each gene, with tumor status treated as the positive class. For compact multi-gene panels, the per-sample decision score was defined as the mean HOP across genes in the panel, and panels were ranked by panel-level AUC. Thus, the top features shown in the figures were selected by AUC-based tumor-normal discrimination rather than by group-level mean HOP values.
+
+In the merged TCGA–GTEx analysis, individual genes often showed strong tumor-normal discrimination (Figure 2 and Table S3). All cancer types except PRAD contained at least one gene with AUC greater than 0.99, and both READ and KICH contained multiple genes with AUC equal to 1.00 under the evaluated design. Even in PRAD, the top-ranked gene LMX1B reached an AUC of 0.9771, and eight genes exceeded 0.97. Similar trends were observed in the GTEx-referenced analysis (Figure S2 and Table S4), indicating that strong sample-level discrimination was not limited to a single reference configuration.Figure 2 Distribution of HOP values for the top 10 single-gene features across 16 cancers in the merged TCGA–GTEx analysis
+
+Within each cancer type, genes are ranked by single-gene AUC, calculated using the per-sample HOP value of each gene as the decision score and tumor status as the positive class. Each row represents one gene, and each dot represents one sample positioned according to the HOP value of the indicated gene on the x axis. Dot colors denote sample source and class: GTEx normal (gray), TCGA normal (blue), and TCGA tumor (red). Right-shifted tumor distributions indicate higher gene-level rank disruption in tumors and stronger tumor-normal separation. The displayed HOP distributions are used for visualization and interpretation, whereas AUC is used as the ranking criterion. AUC values for the displayed top 10 genes are provided in Table S3. All cancer types except PRAD contained at least one gene with AUC > 0.99; READ and KICH contained multiple genes with AUC = 1.00. In PRAD, the top-ranked gene, LMX1B, reached an AUC of 0.9771, and eight genes had AUC > 0.97.
+
+Discrimination remained strong when the analysis was extended to compact multi-gene panels, and in several cancer types approached or reached complete separation within the exploratory screening framework used here (Figures 3, S3, and S4 and Tables S5–S8). In the merged analysis, KICH and READ maintained AUC = 1.00 across all tested panel sizes. COAD was already near-perfect with CDH3 alone and reached AUC = 1.00 with two-gene panels such as CDH3–COL10A1. UCEC and KIRP also achieved AUC = 1.00 for panels of two to five genes. Comparable trends were observed in the GTEx-referenced setting, including LUSC, which reached AUC = 1.00 for panels of size two to five (Figure S3).Figure 3 Distribution of mean HOP values for the top 10 two-gene panels across 16 cancers in the merged TCGA–GTEx analysis
+
+Within each cancer type, two-gene panels are ranked by panel-level AUC, calculated using the per-sample mean HOP value of the two genes as the decision score and tumor status as the positive class. These panels represent compact HOP-based feature sets rather than co-expression pairs, correlation-based pairs, or inferred molecular interactions. Each row represents one two-gene panel, and each dot represents one sample positioned according to the mean HOP value of the two genes in that sample on the x axis. Dot colors denote sample source and class: GTEx normal (gray), TCGA normal (blue), and TCGA tumor (red). Right-shifted tumor distributions indicate stronger tumor-associated rank disruption and better tumor-normal separation. The displayed HOP distributions are used for visualization and interpretation, whereas panel-level AUC is used as the ranking criterion. AUC values for the displayed top 10 two-gene panels are provided in Table S4. In the compact-panel analysis, KICH and READ maintained AUC = 1.00 across all evaluated panel sizes; COAD reached AUC = 1.00 with two-gene panels such as CDH3–COL10A1; and UCEC and KIRP reached AUC = 1.00 for panels of two to five genes.
+
+Two-dimensional HOP projections of the highest-performing two-gene panels further illustrated the compactness of the discriminative signal (Figures 4 and S5). These panels were selected by panel-level AUC calculated from the per-sample mean HOP of the two genes. Thus, the paired genes should be interpreted as compact discriminative features rather than co-expression pairs, correlation-based pairs, or inferred molecular interactions. The best-performing pair achieved AUC greater than 0.999 in 15 of 16 cancer types, whereas PRAD reached 0.9896. The number of gene pairs achieving AUC = 1.00 varied markedly across cancer types, ranging from 13 in KIRP to more than 24,000 in KICH among the evaluated candidates, consistent with substantial heterogeneity in transcriptomic separability across diseases.Figure 4 Two-dimensional HOP projections of the top-ranking two-gene panel in each cancer type in the merged TCGA–GTEx analysis
+
+Each panel shows the highest-AUC two-gene panel for one cancer type. These panels represent compact HOP-based feature sets rather than co-expression pairs, correlation-based pairs, or inferred molecular interactions. Each dot represents one sample, with coordinates given by the HOP value of the first gene in the panel on the x axis and that of the second gene on the y axis. Dot colors indicate sample source and class: GTEx normal (gray), TCGA normal (blue), and TCGA tumor (red). Tumor and normal samples occupy distinct regions of the two-dimensional HOP space in nearly all cancer types, consistent with the strong discriminative performance of these top-ranking two-gene panels. Gene names displayed in bold black denote panels in which the selected two-gene panel achieved AUC = 1.00. Overall, 15 of the 16 top-ranking two-gene panels achieved AUC > 0.999, whereas the best PRAD panel reached AUC = 0.9896.
+
+Biological and clinical characterization of discriminative genes
+
+To contextualize the recurrent features emerging from these individualized discrimination analyses, we compiled a non-redundant set of 246 genes by combining, within each cancer type, the top 10 single-gene features and the genes contained in the top 10 high-ranking gene pairs. This recurrent feature set showed clear functional and clinical coherence (Figure 5).Figure 5 Functional and clinical characterization of 246 tumor-signature genes
+
+(A) Overlap with CancerSEA functional sets (sets with ≥ 3 overlapping genes shown).
+
+(B) Human Protein Atlas prognostic annotations (FDR-adjusted p = 0.0368, chi-square).
+
+(C) TCGA pan-cancer survival associations (Stouffer’s Z), stronger than other protein-coding genes (FDR-adjusted p = 5.71 × 10−11, Wilcoxon rank-sum).
+
+(D) Significant negative survival associations in 20/33 cancer types (FDR-adjusted p < 0.05, Wilcoxon rank-sum; see Table S9).
+
+(E–G) Top 10 enriched GO terms (BP/CC/MF; FDR < 0.01), implicating tissue development, morphogenesis, membrane localization, and ion transport.
+
+CancerSEA25 analysis indicated enrichment for invasion-related programs (Figure 5A). Human Protein Atlas26 annotations further showed that 52.0% of these genes were significantly associated with unfavorable survival in at least one cancer type (Figure 5B). Using TCGA pan-cancer survival data,27 the 246-gene set showed significantly stronger associations with poor outcome than other protein-coding genes (Stouffer’s Z, FDR-adjusted p = 5.71 × 10−11; Figure 5C), with significant negative survival associations observed in 20 of 33 cancer types (FDR < 0.05; Figure 5D).
+
+Functional enrichment analyses converged on a coherent biological theme. GO biological process terms were enriched for tissue development, organ morphogenesis, and transmembrane transport (Figure 5E), whereas cellular component and molecular function annotations highlighted plasma membrane localization, ion channel and transporter complexes, transmembrane transporter activity, ion channel regulation, and ATPase-coupled transport (Figures 5F and 5G). STRING28 analysis supported non-random connectivity within the set (PPI enrichment p = 2.76 × 10−12), with hubs including CDKN2A, MMP11, COL10A1 and GABRD, suggesting coordinated involvement of cell-cycle regulation, extracellular matrix remodeling, membrane-associated transport, and signaling programs (Figure S6).
+
+Literature inspection further showed that many of the high-confidence genes prioritized by HopRatio have previously been implicated as cancer-associated biomarkers or drivers. In colorectal cancer, CDH3,29 CLDN1,30 COL10A1,31,32 ETV4,33,34 and CEMIP35,36,37,38 have documented links to tumor progression, epithelial integrity, stromal remodeling, transcriptional activation, and invasiveness. In kidney cancer, CDH2,39,40 TAGLN,41,42 TCF21,43 and CXCL1444 are implicated in epithelial-mesenchymal transition, cytoskeletal remodeling, tumor suppression, and immune modulation. Endometrial cancer signatures included PRAME,45,46 CDCA5,47 and TRPM2,48 which have been associated with immune evasion, cell cycle control, and oxidative stress response.
+
+Effects of reference size and source composition on HOP stability
+
+We next examined how two properties of reference design, reference size and source composition, influence the stability of HOP profiles in controlled simulations (Figure 6). Here, source composition refers to the mixing proportion of reference samples drawn from two independently generated sources during construction of the reference cohort. It is therefore a property of the reference set itself and not a measure of tumor heterogeneity. Stability was quantified by Spearman correlation between perturbed HOP vectors and their corresponding baseline HOP vectors across genes.Figure 6 Effects of reference size and source composition on HOP stability
+
+For each simulation setting, a baseline HOP profile was first computed under the unperturbed reference design, and perturbed HOP profiles were then recomputed after repeated perturbations of reference selection. Rank-level concordance was quantified as the Spearman correlation across genes between each perturbed HOP profile and the corresponding baseline HOP profile.
+
+(A and B), Sensitivity to reference size across N = 10 to 3000. Results are summarized across 30 independent simulated datasets in (A) and shown for one representative replicate in (B). Concordance increased monotonically with reference size and approached unity once the reference became sufficiently large.
+
+(C and D), Sensitivity to source composition at a fixed total reference size (N = 1000). Source composition is defined as the mixing ratio (p, 1-p), where p is the fraction of reference samples drawn from source 1, and 1-p is the fraction drawn from source 2. The extreme settings p = 0 and p = 1 correspond to single-source reference cohorts, whereas intermediate values correspond to mixed-source reference cohorts. Results are aggregated across 30 independent simulations in (C) and shown for one representative replicate in (D). Shaded ribbons denote uncertainty. In (A and C), ribbons represent two-sided 95% confidence intervals across 30 replicate-level summaries, calculated using the Student’s t-distribution. In (B and D), ribbons represent empirical 5th–95th percentile bands across 50 perturbations within the representative replicate.
+
+Increasing reference size markedly improved stability (Figures 6A and 6B). Across 30 independently simulated datasets, the mean Spearman correlation increased from 0.7843 ± 0.0355 at N = 10 to 0.9670, 0.9834, and 1.0000 at N = 1000, 2000, and 3000, respectively, indicating near-complete reproducibility once the reference exceeded approximately 1000 samples. A representative single-replicate analysis showed the same monotonic trend. Similar conclusions were obtained with additional concordance and distance metrics, including L1, L2, and L∞ distances, Wasserstein distance, cosine similarity, concordance correlation coefficient, Kendall’s τ, Jaccard overlap, and the stable fraction (|Δ| ≤ 0.02) (Figures S7 and S8, and Tables S10 and S11).
+
+We then assessed sensitivity to source composition while fixing the total reference size at N = 1000 (Figures 6C and 6D). Reference cohorts were generated by mixing samples from two independently simulated sources at varying proportions p∈[0,1], where p denotes the fraction drawn from source 1 and 1-p the fraction drawn from source 2. The extremes p = 0 and p = 1 therefore represent single-source reference cohorts, whereas intermediate values represent mixed-source references. Rank concordance was lowest near balanced mixtures and increased progressively as one source became dominant, yielding a sigmoidal recovery pattern. Other concordance metrics showed the same qualitative behavior, with similarity measures increasing and distance measures decreasing as compositional coherence increased (Figures S9 and S10, and Tables S12 and S13). These findings indicate that even moderate heterogeneity within the reference cohort can perturb rank-based stability, whereas a more compositionally coherent reference improves reproducibility.
+
+Uncertainty was quantified explicitly. In Figures 6A and 6C, shaded ribbons denote two-sided 95% confidence intervals across 30 replicate-level summaries; in Figures 6B and 6D, ribbons denote empirical 5th–95th percentile bands across 50 perturbations within a representative replicate. Because HOP is deterministic for a fixed target profile and reference set, these intervals reflect variability induced by perturbation of the reference design rather than uncertainty in a fixed HOP value. Together, these analyses show that stable HOP estimation depends strongly on reference design, with larger and more compositionally coherent reference cohorts yielding more reproducible HOP profiles.
+
+Benchmarking against conventional DEG and normalization workflows
+
+We next benchmarked HopRatio-derived cohort summaries against Wilcoxon, DESeq2, edgeR, and limma-voom using the SEQC A/B dataset with qPCR-derived truth sets. This comparison was intended to contextualize HOP-derived summaries relative to conventional DEG workflows, rather than to imply identical inferential targets. HopRatio is intrinsically a sample-specific framework, whereas Wilcoxon and the count-based DEG methods are designed for group-level inference. Under this benchmark design, HOP-derived summaries showed stronger ROC and precision-recall performance than the compared methods (Figures 7A and 7B). Running times for all methods are summarized in Table S14.Figure 7 Benchmarking of HopRatio-derived summaries against conventional workflows
+
+(A and B) Gene-level benchmarking in the SEQC A/B dataset with qPCR-derived truth sets, where cohort summaries of HOP values were evaluated alongside Wilcoxon, DESeq2, edgeR, and limma-voom.
+
+(C and D) Sample-level conceptual comparison in merged TCGA-GTEx data using one aggregate score per sample. These analyses contextualize HopRatio relative to conventional workflows under matched output granularity and do not imply identical inferential targets across methods.
+
+We then performed a sample-level conceptual comparison between normalization-dependent summaries and rank-based summaries using merged TCGA–GTEx matrices. For this purpose, each sample was reduced to a single aggregate score, defined as the mean HOP across all genes for HopRatio and as the mean normalized expression for the DESeq2- and TMM-based baselines. These analyses were intended to contextualize HopRatio relative to conventional workflows under matched output granularity rather than to represent optimized implementations of normalization-based classifiers. Under this simplified matched-summary setting, the HopRatio summary yielded higher AUC and area under the precision-recall curve (AUPR) than the normalization-derived baselines in 13 of 16 cancer types (Figures 7C and 7D and Table S15). Consistent with this pattern, normalization-only baselines showed weaker tumor-normal contrast in score distributions (Figures S11A and S11B, and Tables S16 and S17), whereas HOP-based summaries retained significant tumor-associated dysregulation (Wilcoxon rank-sum p < 1 × 10−4; Figure S11C and Table S18).
+
+Together, these analyses suggest that HOP-derived summaries can perform favorably under the benchmark settings examined here, while reinforcing that HopRatio and conventional DEG workflows address related but non-identical analytical questions.
+
+Discussion
+
+This study presents HopRatio, a rank-based framework for single-sample transcriptomic analysis that quantifies deviations from conserved within-sample ordering patterns. By converting reference-stable gene-ordering relationships into per-gene, per-sample disruption scores, HopRatio provides an interpretable representation of transcriptomic disruption at the level of individual profiles.
+
+A central consideration in this study is the interpretation of the TCGA-GTEx analyses. Because HopRatio is computed from within-sample ranks rather than cross-sample expression magnitudes, it reduces dependence on scaling and normalization choices. However, this property should not be interpreted as evidence of complete immunity to cross-cohort artifacts. TCGA and GTEx were generated by distinct consortia, and residual cohort-specific effects cannot be fully excluded in this setting. We therefore interpret the observed tumor-normal separation as evidence that stable-ordering disruption is strongly informative in this widely used cross-consortium context, while recognizing that further validation in more tightly harmonized datasets will be important.
+
+Across 16 TCGA cancer types with matched GTEx references, HopRatio yielded strong tumor-normal discrimination at both the single-gene and compact multi-gene levels. In many cancers, sparse HOP-based signatures retained clear discriminatory structure, indicating that individualized rank-disruption profiles can often be distilled into compact and interpretable features. These findings suggest that transcriptomic dysregulation, when represented through stable-ordering disruption, can remain informative even after substantial feature compression.
+
+The reference-design simulations further provide practical guidance for constructing stable HopRatio baselines. Increasing reference size improved agreement with the full-reference baseline and approached saturation at approximately 1000 samples, whereas mixed-source references at fixed size were least stable near balanced compositions and became more reproducible as one source became dominant. These results support two practical principles for reference construction: prioritize source consistency when possible, and expand reference size until stability gains begin to plateau.
+
+To position HopRatio relative to prevailing RNA-seq workflows, we performed complementary comparisons in cohort-level and sample-level settings. In the SEQC A/B benchmark with qPCR-derived truth sets, cohort summaries derived from HOP values performed favorably relative to Wilcoxon, edgeR, limma-voom, and DESeq2 under the evaluation design used here. In a deliberately simplified sample-level setting based on merged TCGA–GTEx cohorts, global HOP summaries also often yielded clearer tumor-normal separation than normalization-derived baselines. These comparisons are best interpreted as contextual benchmarks rather than head-to-head replacements, because HopRatio is fundamentally a single-sample framework whereas conventional DEG methods target group-level inference. The very high AUC values observed for some compact signatures in the TCGA–GTEx setting should therefore be interpreted with appropriate caution. Although they indicate that stable-ordering disruption can be highly informative in this cross-consortium context, residual consortium-specific effects cannot be fully excluded. In addition, the normalization-dependent baselines used in the sample-level comparison were constructed as global aggregate summaries rather than optimized classification pipelines. Differences in performance may therefore reflect both the distinct information captured by rank-based versus magnitude-based summaries and the effects of reducing each method to a single aggregate score.
+
+The recurrent features prioritized by HopRatio were also biologically and clinically coherent. The 246-gene recurrent feature set was enriched for membrane-associated, ion-transport, extracellular matrix, and developmental programs, formed a significantly connected protein-protein interaction network, and contained genes with frequent unfavorable prognostic associations across cancers. Together with prior literature support for many of these genes, these findings strengthen the biological plausibility of individualized rank disruption as a proxy for disease-relevant dysregulation.
+
+An additional strength of HopRatio is its single-profile formulation. Because HOP is defined for an individual expression profile, the same conceptual framework could in principle be extended to cell-resolved transcriptomic settings by treating each cell as a separate profile. This possibility is particularly relevant in cancer, where intratumoral heterogeneity is biologically central. At the same time, practical application in single-cell data will require dedicated evaluation, because sparsity, dropout, and tied ranks may alter within-cell ordering structure and affect score stability.
+
+Methodological extensions remain possible. Although HOP is defined here as an unsigned measure of disruption magnitude, the underlying set decomposition also permits direction-aware extensions. For example, the contributions of reversals arising from Ai∩Dik and Bi∩Cik could be quantified separately to distinguish opposite directions of deviation from the reference ordering context. Such direction-aware summaries were not pursued in the present study but represent a natural extension of the framework. More flexible but still interpretable aggregation strategies may also capture higher-order structure in HOP profiles. In addition, incorporating orthogonal information such as reference support, variance stability, or network structure may improve feature prioritization. These extensions were not pursued here and should be considered future work rather than validated components of the present framework.
+
+In summary, HopRatio links population-level evaluation with individualized interpretation by transforming conserved reference orderings into per-sample disruption scores. The resulting single-gene and compact multi-gene summaries provide an interpretable lens for studying transcriptomic dysregulation and offer a useful complement to conventional cohort-level analyses.
+
+Limitations of the study
+
+Several limitations define the current scope of HopRatio. First, HopRatio depends on context-matched reference cohorts to define stable gene-ordering relationships, so applications beyond the TCGA–GTEx setting require careful attention to reference size, cohort composition, preprocessing consistency, sequencing depth, and sample quality. Although HopRatio is not inherently restricted to tumor-normal contrasts, applications in other biological or disease settings require an appropriate reference cohort. Very small control cohorts may not provide sufficient support for stable reference construction and should therefore be interpreted with caution. Because HopRatio is calculated from within-sample rank relationships, its scores are less directly dependent on cross-sample expression magnitudes than magnitude-based approaches. However, HopRatio should not be viewed as a substitute for standard preprocessing or quality control, nor does it imply complete insensitivity to library size, data sparsity, or platform-specific effects. When sequencing depth is very low, increased zero counts or tied ranks may reduce the stability of within-sample ordering and thereby affect HOP scores. Accordingly, comparable processing of reference and target datasets, together with appropriate quality-control thresholds and reference support criteria, remains important.
+
+Second, the rank-based formulation emphasizes ordering changes and may underweight amplitude shifts that do not alter gene ranks. Third, although compact feature sets can be identified through AUC-based screening, these rankings should not be interpreted as finalized predictive models. Independent validation will be necessary before any clinical use of minimal HOP-derived signatures is considered. Fourth, this study focused primarily on tumor-normal discrimination and did not systematically evaluate the influence of tumor molecular subtypes or sample purity on HOP-derived features. Because subtype annotations and purity estimates are not uniformly available, standardized, or directly comparable across all analyzed TCGA cancer types, subtype- and purity-aware analyses will require additional harmonization. Future studies should investigate whether HOP-derived signatures can distinguish clinically or molecularly defined tumor subtypes and whether gene-level or aggregate HOP values correlate with tumor purity, cellular composition, or tumor microenvironmental variation. Finally, the variability in performance across cancer types likely reflects multiple interacting factors, including biological separability, reference coherence, sample size, and cross-cohort heterogeneity. These lower-performing settings may therefore be particularly informative for defining the conditions under which stable-ordering disruption becomes less discriminative.
+
+Resource availability
+
+Lead contact
+
+Requests for further information and resources should be directed to and will be fulfilled by the lead contact, Rui Chen (ruichen@ccmu.edu.cn).
+
+Materials availability
+
+This study did not generate new unique reagents.
+
+Data and code availability
+
+• This paper does not report newly generated datasets.
+
+• This paper analyzes existing, publicly available data from The Cancer Genome Atlas (TCGA), the Genotype-Tissue Expression (GTEx) project, and the Sequencing Quality Control (SEQC) project. The data sources and access information are listed in the key resources table.
+
+• The custom code used to implement HopRatio has been deposited on Zenodo and is publicly available at https://doi.org/10.5281/zenodo.21484985.
+
+• Any additional information required to reanalyze the data reported in this paper is available from the lead contact upon request.
+
+Acknowledgments
+
+This work was supported by the Key Program of the 10.13039/501100001809 National Natural Science Foundation of China (82230109 and 82530101 to Dr. R.C.), the Beijing Outstanding Young Scientist Program (JWZQ20240101024 to Dr. R.C.), the Young Beijing Scholars Project (to Dr. R.C.), Fundamental and Interdisciplinary Disciplines Breakthrough Plan of the 10.13039/501100002338 Ministry of Education of China (JYB2025XDXM606 to Dr. R.C.), and the Chinese Institutes for Medical Research, Beijing (CX23YZ01 to Dr. R.C.).
+
+The sponsors had no role in the design and conduct of the study; collection, management, analysis, and interpretation of the data; preparation, review, or approval of the manuscript; and decision to submit the manuscript for publication.
+
+Author contributions
+
+Conceptualization, B.G., Y.Z., and R.C.; methodology, investigation, writing – original draft, Y.Z. and B.G.; writing – review and editing, Y.Z., B.G., and R.C.; funding acquisition, supervision, R.C.
+
+Declaration of interests
+
+The authors declare no competing interests.
+
+Declaration of generative AI and AI-assisted technologies in the writing process
+
+During the preparation of this work, the authors used ChatGPT for language editing and polishing only. ChatGPT was not used to generate data, perform analyses, or draw scientific conclusions. After using this tool, the authors reviewed and edited the content as needed and take full responsibility for the content of the publication.
+
+STAR★Methods
+
+Key resources table
+
+REAGENT or RESOURCE	SOURCE	IDENTIFIER	
+Deposited data	
+	
+TCGA RNA-seq data	TCGA Research Network49	TCGAbiolinks R package	
+GTEx RNA-seq data	Lonsdale et al.50	GTEx Portal	
+SEQC benchmark data	SEQC/MAQC-III Consortium51	seqc R package	
+	
+Software and algorithms	
+	
+R v4.4.1	The R Project for Statistical Computing	https://www.r-project.org/	
+TCGAbiolinks v2.26.0	Colaprico et al.52	https://github.com/BioinformaticsFMRP/TCGAbiolinks	
+seqc v1.42.0	SEQC/MAQC-III Consortium51	https://bioconductor.org/packages/seqc/	
+DESeq2 v1.46.0	Love et al.11	https://github.com/thelovelab/DESeq2	
+edgeR v4.4.2	Robinson et al.10	https://bioconductor.org/packages/edgeR/	
+limma v3.62.2	Ritchie et al.7	https://bioconductor.org/packages/limma/	
+DescTools v0.99.60	Signorell et al.	https://github.com/AndriSignorell/DescTools/	
+STRING v12.0	Szklarczyk et al.28	https://string-db.org/	
+HopRatio source code	This paper	https://doi.org/10.5281/zenodo.21484985	
+
+Method details
+
+Data acquisition and preprocessing
+
+RNA-seq datasets were compiled from TCGA and GTEx using TCGAbiolinks (v2.26.0). Benchmark datasets were obtained from the SEQC consortium via the seqc package (v1.42.0), focusing on Samples A and B, which were sequenced independently at six centers (AGR, BGI, CNL, COH, MAY, and NVS). To establish a unified benchmark baseline, count matrices from all six centers were merged after cross-site concordance checks following the SEQC consortium protocol. In HopRatio analyses, Sample A served as the reference cohort for constructing stable expression hierarchies. Consistent with the rank-based nature of the method, normalization was not applied before HOP calculation. All analyses were performed in R v4.4.1, and software dependencies are listed in the key resources table and summarized in the Software and reproducibility section.
+
+Overview of the HopRatio framework
+
+HopRatio is a framework for individualized transcriptomic analysis that quantifies deviations from reference-stable within-sample gene ordering. The framework comprises three components: construction of a context-matched reference cohort, estimation of stable ordering relationships for each focal gene, and computation of per-gene HOP scores that can subsequently be summarized for downstream interpretation, discrimination analysis, and benchmarking.
+
+Reference cohorts and definition of reference-stable ordering contexts
+
+Analyses were performed across 16 TCGA cancer types and their tissue-matched normal cohorts from GTEx. For each cancer type, GTEx normal samples were used as the reference cohort for computing HOP values in TCGA samples, whereas TCGA normal samples were used as the reference cohort for computing HOP values in GTEx normal samples. This reciprocal design provided matched disease and non-disease reference contexts within the tumor–normal setting examined here. More generally, HopRatio does not require paired normal samples from the same study, but rather a context-matched reference cohort suitable for defining stable ordering relationships in the biological setting of interest.
+
+For HOP calculation, genes were ranked within each sample using raw read counts, with a consistent quantification scale maintained across reference and target cohorts. Within each sample, genes were ordered according to their expression values to define a within-sample rank structure. For a focal gene i, we then quantified across the reference cohort how often another gene j was observed above or below i. Genes ranked above i in more than 99% of reference samples defined the stable-above set Ai, whereas genes ranked below i in more than 99% of reference samples defined the stable-below set Bi. These stable relations were defined empirically from ordering frequencies across the reference cohort and did not assume a parametric distribution for gene-expression values.
+
+Tied expression values were not modeled as a separate state in the current implementation. The HOP formulation was based on strict pairwise ordering relations, so ties did not contribute to the definition of stable-above or stable-below sets and were not counted as reversals in target samples. Their potential influence should therefore be considered when interpreting results in low-depth or highly sparse data.
+
+Definition of the hopping ratio (HOP)
+
+For a focal gene i,let Ai denote the genes ranked above i in more than 99% of reference samples, and let Bi denote the genes ranked below i in more than 99% of reference samples. In a test sample k, let Cik denote the genes ranked above i in that sample, and let Dik denote the genes ranked below i in that sample. A reference-stable relation was considered disrupted if a gene expected to be above i in the reference cohort was instead below it in the test sample, that is, Ai∩Dik, or if a gene expected to be below i was instead above it in the test sample, that is, Bi∩Cik. The Hopping Ratio (HOP) was defined asHOP(i,k)=∣Ai∩Dik∣+∣Bi∩Cik∣∣Ai∣+∣Bi∣,
+
+where |X| denotes the cardinality of set X. This score ranges from 0 to 1 and summarizes the fraction of reference-stable ordering relations that are inverted for gene i in sample k.
+
+By construction, HOP depends only on within-sample ordering information and therefore does not rely on cross-sample normalization for score calculation. This reduces dependence on absolute expression scaling and enables transcriptomic disruption to be summarized at the level of individual samples. However, this property should not be interpreted as automatic immunity to batch effects or platform differences, and cross-cohort applications still benefit from harmonized preprocessing and context-matched reference design.
+
+Because HOP is defined for an individual expression profile, its mathematical form is not intrinsically restricted to bulk RNA-seq. In principle, the same framework could be extended to cell-resolved data by treating each cell as an individual profile. However, the present study validates the method only in bulk data, and extension to single-cell settings would require dedicated evaluation because sparsity, dropout, and tied ranks may affect within-profile ordering stability and the resulting HOP estimates.
+
+Single-gene and compact multi-gene discrimination analysis
+
+HopRatio was evaluated at both the single-gene and compact multi-gene levels. For single-gene analyses, the HOP value of a given gene in each individual sample was used as the per-sample decision score. AUC was calculated from these per-sample HOP values to quantify how well that gene separated tumor samples from normal samples. Within each cancer type, genes were ranked by single-gene AUC, and the top-ranked genes were used for visualization and downstream compact-feature analysis.
+
+For compact multi-gene panels of size k (1 ≤ k ≤ 10), the per-sample panel score was defined as the mean HOP across the k genes in that panel. Panel-level AUC was then calculated from these per-sample mean-HOP scores. Thus, AUC, rather than group-level mean HOP, was used as the threshold-independent criterion for ranking single-gene features and compact multi-gene panels.
+
+For two-gene panels, each pair was treated as a compact HOP-based feature set rather than a co-expression pair, correlation-based pair, or inferred molecular interaction. Accordingly, two genes could form a high-performing panel even if their HOP profiles were not correlated with each other, provided that their combined mean-HOP score produced strong tumor-normal discrimination.
+
+To maintain computational tractability during exhaustive multi-gene screening, candidate pools were first restricted using a tumor-enrichment summary score, defined as the mean HOP in tumors plus one minus the mean HOP in normals. This summary score was used only to define computationally tractable candidate pools for panel construction. Final reported single-gene features and compact panels were ranked by AUC computed from the corresponding per-sample HOP-based decision scores. Specifically, the top 2000, 200, 80, 40, 30, 25, and 20 genes were retained for k = 2, 3, 4, 5, 6, 7–8, and 9–10, respectively, and all combinations within each tier were evaluated. This procedure was intended as an exploratory analysis of the discriminative compactness of HOP features rather than as a finalized model-selection strategy for deployment-ready classifiers.
+
+Functional and prognostic characterization of recurrent features
+
+For biological interpretation, the top 10 single-gene features and the genes contained in the top 10 gene-pair features across the 16 cancer types were combined into a non-redundant set of 246 genes. Functional characterization included overlap with curated CancerSEA gene sets, Gene Ontology enrichment analyses for biological process, cellular component, and molecular function using STRING v12.0, and protein–protein interaction enrichment using STRING’s built-in framework. Prognostic significance was assessed using annotations from the Human Protein Atlas and TCGA pan-cancer survival datasets. Associations with adverse outcomes were evaluated using chi-square and Wilcoxon rank-sum tests, and cross-cancer meta-analysis was performed using Stouffer’s Z score method.
+
+Simulation analysis of reference size and source composition
+
+To examine how reference design influences HOP stability, we conducted an independent simulation study comprising two orthogonal components: variation of reference size at fixed composition, and variation of source composition at fixed total reference size. Both analyses used 50 perturbations per configuration and 30 independent data-generation replicates.
+
+Simulation framework for RNA-seq datasets
+
+The simulation comprises two stages: generation of differential-expression patterns across genes and samples, followed by simulation of RNA-seq counts from a negative binomial model with gene- and sample-specific parameters.
+
+For differential-expression pattern generation, let G be the total number of genes and J the total number of samples. Heterogeneity was controlled by four probabilities: gene.rate, up.rate, sample.rate, and active.rate. For each gene i ∈ {1, …, G}, we drew Zi ∼ Bernoulli(gene.rate) indicating whether gene i was differentially expressed. Conditional on Zi = 1, we drew a direction indicator Ui ∼ Bernoulli(up.rate), where Ui = 1 denotes up-regulation and Ui = 0 denotes down-regulation. For each sample j ∈ {1, …, J}, drew Aj ∼ Bernoulli(sample.rate) to indicate whether sample j was abnormal. For each gene–sample pair, we then drew an activation indicator Rij ∼ Bernoulli(active.rate), where Rij = 1 indicates that the differential-expression state of gene i was active in sample j, and Rij = 0 indicates that it was inactive.
+
+The fold-change matrix C ∈ RG×J was defined as:Cij={fc,ifZi=1,Aj=1,Rij=1,Ui=1,1fc,ifZi=1,Aj=1,Rij=1,Ui=0,1,otherwise.
+
+This design yields homogeneous differential-expression patterns when sample.rate = 1 and active.rate = 1, and heterogeneous disruptions otherwise.
+
+RNA-seq counts were generated from a negative binomial model with gene-specific means μi, sample-specific size factors sj, and gene-specific dispersion parameters θi. Baseline means were generated as:log2(μi)∼N(μ0,σ02),
+
+with default values μ0 = 8 and σ0 = 2. Sample-specific size factors sj were modeled on the log scale as:sj∼2N(0,σs2),
+
+where σs controls library-size variability and was set to 0.1 by default. Gene-specific dispersion was defined as:θi=4μi+0.1.
+
+For reference samples (Group A), counts were generated as:gijA∼NB(μisj,θi),
+
+whereas for perturbed samples (Group B), counts were generated as:gijB∼NB(Cijμisj,θi).
+
+Here NB(μ,θ) denotes a negative binomial distribution with mean μ and dispersion parameter θ.
+
+Unless otherwise stated, simulations used G = 1000 genes and J as specified in each experiment. Default parameters were sample.rate = 1.0, active.rate = 1.0, gene.rate = 0.3, up.rate = 0.5, and fc = 2, corresponding to 2-fold up-regulation or reciprocal down-regulation.
+
+Reference size sensitivity analysis
+
+To isolate the effect of reference size, we permuted the full reference pool (N = 3000) in each data-generation replicate and constructed nested subsets of sizes:nref∈{10,20,30,50,100,200,500,1000,2000,3000}.
+
+For each nref, HOP scores were recomputed using the corresponding subset and compared against the baseline derived from the full reference (N = 3000). At each nref, n = 50 perturbations were performed via resampling without replacement to quantify within-size variability. The entire analysis was repeated for R = 30 independent data-generation replicates to assess across-replicate consistency.
+
+Reference composition sensitivity analysis
+
+To assess sensitivity to reference composition, we fixed the total reference size at N = 1000 and mixed two independent sources, source 1 and source 2, at proportions:p∈{0,0.1,0.3,0.5,0.7,0.9,0.95,0.99,1}.
+
+Within each data-generation replicate, samples from both sources were independently permuted. Mixtures were constructed using nested prefixes to ensure monotonic inclusion across p: each reference contained nint(pN) samples from source 1 and N − nint(pN) from source 2, where nint(x) = argminn∈Z|x-n|. The baseline vector ℎ was computed from the pure source-1 reference (p = 1). For each value of p, HOP scores were recalculated under n = 50 perturbations of reference selection by resampling without replacement at the specified counts, generating one perturbed HOP vector per perturbation. Each perturbed vector was then compared with the baseline vector ℎ using the concordance metrics described below. The entire composition analysis was repeated for R = 30 independent data-generation replicates.
+
+In this setting, source composition refers to the fraction of the reference cohort drawn from source 1, with the remainder drawn from source 2. It was used to quantify heterogeneity of the reference set rather than tumor heterogeneity.
+
+Benchmarking against conventional DEG and normalization workflows
+
+To position HopRatio relative to established RNA-seq workflows, we performed two benchmarking analyses spanning cohort-level and sample-level settings.
+
+At the gene level, HopRatio-derived cohort summaries were compared with the Wilcoxon rank-sum test, DESeq2, edgeR, and limma-voom using the SEQC A/B dataset with qPCR-derived truth sets. Wilcoxon was included as a rank-based nonparametric baseline. Unlike HopRatio, which quantifies sample-specific disruption of reference-stable gene ordering relative to a reference cohort, Wilcoxon evaluates whether the expression ranks of a gene differ between predefined groups at the cohort level. Because HopRatio is intrinsically defined at the level of an individual sample, HOP values were aggregated to the cohort level solely for benchmarking purposes.
+
+At the sample level, we performed a conceptual comparison between rank-based and normalization-dependent summaries by reducing each sample to a single aggregate score. For HopRatio, the sample-level score was defined as the mean HOP across all genes. For DESeq2- and TMM-based baselines, the sample-level score was defined as the mean normalized expression across genes. These analyses were intended to contextualize HopRatio relative to conventional workflows under matched output granularity, not to imply identical inferential targets or to serve as a full replacement test for conventional differential expression pipelines.
+
+For DESeq2 normalization, we used DESeq2 (v1.46.0). A DESeqDataSet object was constructed using DESeqDataSetFromMatrix() with design formula ∼1. Size factors were estimated via estimateSizeFactors(). Normalized counts were obtained using counts(…, normalized = TRUE). For TMM normalization, we used edgeR (v4.4.2). A DGEList object was created via DGEList(), and library sizes were adjusted by calling calcNormFactors(method = “TMM”). Normalized expression values were then computed as counts per million using cpm(…,normalized.lib.sizes = TRUE).
+
+For large-scale tumor–normal benchmarking, matrices normalized by DESeq2 and TMM were each converted to sample-level baseline scores using the same aggregation rule as for HOP-based sample scores (mean across genes). This allowed direct AUC and AUPR comparison between normalization-dependent frameworks and HopRatio’s rank-based model. In all benchmarking analyses, HOP scores were computed directly from raw count matrices without cross-sample normalization; normalization procedures were applied only to the conventional DESeq2- and TMM-based baselines.
+
+Computational considerations
+
+HopRatio comprises a reference-construction stage and a scoring stage. During reference construction, empirical ordering frequencies across the reference cohort were used to define the stable-above and stable-below sets for each focal gene; computational cost therefore increased with both the number of reference samples and the number of genes evaluated. Once these reference-stable relations had been precomputed, HOP scores for additional samples could be calculated directly by counting rank reversals relative to the precomputed stable sets, without iterative optimization, model retraining, or repeated resampling. Empirical runtimes on the SEQC benchmark dataset are reported in Table S14.
+
+Quantification and statistical analysis
+
+Discrimination and benchmarking metrics
+
+AUC was used as the primary threshold-independent metric for evaluating tumor-normal discrimination by single-gene features, compact multi-gene panels, cohort-level benchmarking summaries, and sample-level aggregate scores. Tumor status was treated as the positive class in all tumor-normal discrimination analyses. AUPR was additionally used in benchmarking analyses where precision-recall performance was evaluated.
+
+Simulation concordance metrics and uncertainty estimation
+
+For simulation analyses, let x denote the HOP vector obtained from a given reference-size or reference-composition setting, and let h denote the baseline HOP vector. Concordance was quantified after pairwise removal of missing values using complementary magnitude-based distances and similarity-based measures.
+
+Magnitude-based distances included L1 deviation, L2 deviation, L∞ deviation, and one-dimensional Wasserstein distance. These were defined as:L1(x,h)=∑i|xi−hi|,
+
+L2(x,h)=∑i(xi−hi)2,
+
+L∞(x,h)=maxi|xi−hi|
+
+The one-dimensional Wasserstein distance was calculated between the empirical distributions of x and h. Magnitude-based distances were summarized so that lower values indicated closer agreement with the baseline.
+
+Similarity-based measures included cosine similarity, Spearman rank correlation, Kendall’s τ, Lin’s concordance correlation coefficient, top-k Jaccard overlap, and stable fraction. Cosine similarity was defined as:⟨x,h⟩‖x‖2‖h‖2+10−12.
+
+Lin’s concordance correlation coefficient was estimated using the CCC function in DescTools v0.99.60 on finite entries. Top-k Jaccard overlap was calculated between the sets of top-ranked genes by descending HOP, with k ∈ {50, 100, 200}. Stable fraction was defined as:1G∑i=1G1{|xi−hi|≤τ},
+
+with tolerance τ = 0.02. Similarity and association metrics were summarized so that higher values indicated closer agreement with the baseline.
+
+For each configuration and metric, within-replicate variability was summarized by the arithmetic mean across n perturbations and an empirical 5th–95th percentile ribbon. Across R independent data-generation replicates, the across-replicate mean and two-sided 95% confidence intervals were computed using Student’s t-distribution:μˆ±t0.975,R−1sR,
+
+where μˆ and s are the sample mean and standard deviation of the R replicate-level means, respectively.
+
+Software and reproducibility
+
+All analyses were performed in R v4.4.1. Key packages included TCGAbiolinks v2.26.0, seqc v1.42.0, DESeq2 v1.46.0, edgeR v4.4.2, limma v3.62.2, DescTools v0.99.60, and STRING v12.0. The code repository provides the HopRatio source code and a demo workflow illustrating the main computational steps, including reference construction and HOP calculation.
+
+Supplemental information
+
+Document S1. Figures S1–S11 and Tables S1–S9, S12–S18
+
+Table S10. Comprehensive evaluation of reference-sample number effects on concordance with the baseline across 30 simulated datasets
+
+Table S11. Comprehensive evaluation of reference-sample number effects on concordance with the baseline within a single simulated dataset
+
+Supplemental information can be found online at https://doi.org/10.1016/j.isci.2026.117158.
+
+
+References
+
+1 Jacquemin V. Antoine M. Dom G. Detours V. Maenhaut C. Dumont J.E. Dynamic Cancer Cell Heterogeneity: Diagnostic and Therapeutic Implications Cancers 14 2022 280 10.3390/cancers14020280 35053446 PMC8773841
+2 Patel A.S. Yanai I. A developmental constraint model of cancer cell states and tumor heterogeneity Cell 187 2024 2907 2918 10.1016/j.cell.2024.04.032 38848676 PMC11256907
+3 MacDonald W.J. Purcell C. Pinho-Schwermann M. Stubbs N.M. Srinivasan P.R. El-Deiry W.S. Heterogeneity in Cancer Cancers 17 2025 441 10.3390/cancers17030441 39941808 PMC11816170
+4 Proietto M. Crippa M. Damiani C. Pasquale V. Sacco E. Vanoni M. Gilardi M. Tumor heterogeneity: preclinical models, emerging technologies, and future applications Front. Oncol. 13 2023 1164535 10.3389/fonc.2023.1164535 PMC10175698 37188201
+5 Shahjaman M. Manir Hossain Mollah M. Rezanur Rahman M. Islam S.M.S. Nurul Haque Mollah M. Robust identification of differentially expressed genes from RNA-seq data Genomics 112 2020 2000 2010 10.1016/j.ygeno.2019.11.012 31756426
+6 Rosati D. Palmieri M. Brunelli G. Morrione A. Iannelli F. Frullanti E. Giordano A. Differential gene expression analysis pipelines and bioinformatic tools for the identification of specific biomarkers: A review Comput. Struct. Biotechnol. J. 23 2024 1154 1168 10.1016/j.csbj.2024.02.018 38510977 PMC10951429
+7 Ritchie M.E. Phipson B. Wu D. Hu Y. Law C.W. Shi W. Smyth G.K. limma powers differential expression analyses for RNA-sequencing and microarray studies Nucleic Acids Res. 43 2015 e47 10.1093/nar/gkv007 25605792 PMC4402510
+8 Tusher V.G. Tibshirani R. Chu G. Significance analysis of microarrays applied to the ionizing radiation response Proc. Natl. Acad. Sci. USA 98 2001 5116 5121 10.1073/pnas.091062498 11309499 PMC33173
+9 Breitling R. Armengaud P. Amtmann A. Herzyk P. Rank products: a simple, yet powerful, new method to detect differentially regulated genes in replicated microarray experiments FEBS Lett. 573 2004 83 92 10.1016/j.febslet.2004.07.055 15327980
+10 Robinson M.D. McCarthy D.J. Smyth G.K. edgeR: a Bioconductor package for differential expression analysis of digital gene expression data Bioinformatics 26 2010 139 140 10.1093/bioinformatics/btp616 19910308 PMC2796818
+11 Love M.I. Huber W. Anders S. Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2 Genome Biol. 15 2014 550 10.1186/s13059-014-0550-8 25516281 PMC4302049
+12 Law C.W. Chen Y. Shi W. Smyth G.K. voom: precision weights unlock linear model analysis tools for RNA-seq read counts Genome Biol. 15 2014 R29 10.1186/gb-2014-15-2-r29 24485249 PMC4053721
+13 Finak G. McDavid A. Yajima M. Deng J. Gersuk V. Shalek A.K. Slichter C.K. Miller H.W. McElrath M.J. Prlic M. MAST: a flexible statistical framework for assessing transcriptional changes and characterizing heterogeneity in single-cell RNA sequencing data Genome Biol. 16 2015 278 10.1186/s13059-015-0844-5 26653891 PMC4676162
+14 Kim M.C. Gate R. Lee D.S. Tolopko A. Lu A. Gordon E. Shifrut E. Garcia-Nieto P.E. Marson A. Ntranos V. Ye C.J. Method of moments framework for differential expression analysis of single-cell RNA sequencing data Cell 187 2024 6393 6410.e16 10.1016/j.cell.2024.09.044 39454576 PMC11556465
+15 Zhang M. Liu S. Miao Z. Han F. Gottardo R. Sun W. IDEAS: individual level differential expression analysis for single-cell RNA-seq data Genome Biol. 23 2022 33 10.1186/s13059-022-02605-1 35073995 PMC8784862
+16 Cui W. Xue H. Wei L. Jin J. Tian X. Wang Q. High heterogeneity undermines generalization of differential expression results in RNA-Seq analysis Hum. Genomics 15 2021 7 10.1186/s40246-021-00308-5 33509298 PMC7845028
+17 Vinga S. Structured sparsity regularization for analyzing high-dimensional omics data Brief. Bioinform. 22 2021 77 87 10.1093/bib/bbaa122 32597465
+18 Nguyen H.C.T. Baik B. Yoon S. Park T. Nam D. Benchmarking integration of single-cell differential expression Nat. Commun. 14 2023 1570 10.1038/s41467-023-37126-3 36944632 PMC10030080
+19 MacDonald J.W. Ghosh D. COPA—cancer outlier profile analysis Bioinformatics 22 2006 2950 2951 10.1093/bioinformatics/btl433 16895932
+20 Tibshirani R. Hastie T. Outlier sums for differential gene expression analysis Biostatistics 8 2007 2 8 10.1093/biostatistics/kxl005 16702229
+21 Wu B. Cancer outlier differential gene expression detection Biostatistics 8 2007 566 575 10.1093/biostatistics/kxl029 17021278
+22 Lian H. MOST: detecting cancer differential gene expression Biostatistics 9 2008 411 418 10.1093/biostatistics/kxm042 18048648
+23 Geman D. d’Avignon C. Naiman D.Q. Winslow R.L. Classifying gene expression profiles from pairwise mRNA comparisons Stat. Appl. Genet. Mol. Biol. 3 2004 Article19 10.2202/1544-6115.1071 PMC1989150 16646797
+24 Tan A.C. Naiman D.Q. Xu L. Winslow R.L. Geman D. Simple decision rules for classifying human cancers from gene expression profiles Bioinformatics 21 2005 3896 3904 10.1093/bioinformatics/bti631 16105897 PMC1987374
+25 Yuan H. Yan M. Zhang G. Liu W. Deng C. Liao G. Xu L. Luo T. Yan H. Long Z. CancerSEA: a cancer single-cell state atlas Nucleic Acids Res. 47 2019 D900 D908 10.1093/nar/gky939 30329142 PMC6324047
+26 Uhlen M. Zhang C. Lee S. Sjöstedt E. Fagerberg L. Bidkhori G. Benfeitas R. Arif M. Liu Z. Edfors F. A pathology atlas of the human cancer transcriptome Science 357 2017 eaan2507 10.1126/science.aan2507 28818916
+27 Smith J.C. Sheltzer J.M. Genome-wide identification and analysis of prognostic features in human cancers Cell Rep. 38 2022 110569 10.1016/j.celrep.2022.110569 PMC9042322 35354049
+28 Szklarczyk D. Kirsch R. Koutrouli M. Nastou K. Mehryary F. Hachilif R. Gable A.L. Fang T. Doncheva N.T. Pyysalo S. The STRING database in 2023: protein–protein association networks and functional enrichment analyses for any sequenced genome of interest Nucleic Acids Res. 51 2023 D638 D646 10.1093/nar/gkac1000 36370105 PMC9825434
+29 Song J. Jin Y. Fan S. Wei Y. Dong D. Jia L. Fan S. Zhang A. Zhou W. Jiang W. Ren L. CDH3 Is an Effective Serum Biomarker of Colorectal Cancer Distant Metastasis Patients J. Cancer 15 2024 5218 5229 10.7150/jca.98337 39247592 PMC11375550
+30 Cox K.E. Liu S. Hoffman R.M. Batra S.K. Dhawan P. Bouvet M. The Expression of the Claudin Family of Proteins in Colorectal Cancer Biomolecules 14 2024 272 10.3390/biom14030272 38540693 PMC10967842
+31 He C. Liu W. Xiong Y. Wang Y. Pan L. Luo L. Tu Y. Song R. Chen W. VSNL1 Promotes Cell Proliferation, Migration, and Invasion in Colorectal Cancer by Binding with COL10A1 Ann. Clin. Lab. Sci. 52 2022 60 72 35181619
+32 Kahlert U.D. Shi W. Strecker M. Scherpinski L.A. Wartmann T. Dölling M. Perrakis A. Relja B. Mengoni M. Braun A. Croner R.S. COL10A1 allows stratification of invasiveness of colon cancer and associates to extracellular matrix and immune cell enrichment in the tumor parenchyma Front. Oncol. 12 2022 1007514 10.3389/fonc.2022.1007514 PMC9577326 36267978
+33 Yao D. Bao Z. Qian X. Yang Y. Mao Z. ETV4 transcriptionally activates HES1 and promotes Stat3 phosphorylation to promote malignant behaviors of colon adenocarcinoma Cell Biol. Int. 45 2021 2129 2139 10.1002/cbin.11669 34270850
+34 Fonseca A.S. Ramão A. Bürger M.C. de Souza J.E.S. Zanette D.L. de Molfetta G.A. de Araújo L.F. de Barros E Lima Bueno R. Aguiar G.M. Plaça J.R. ETV4 plays a role on the primary events during the adenoma-adenocarcinoma progression in colorectal cancer BMC Cancer 21 2021 207 10.1186/s12885-021-07857-x 33648461 PMC7919324
+35 Liu L. Zhang C. Yang B. Wang M. MARCH8 ubiquitinates and degrades CEMIP to induce colorectal cancer cell ferroptosis through inactivating PI3K/AKT pathway Pathol. Res. Pract. 269 2025 155909 10.1016/j.prp.2025.155909 40107011
+36 Hua Q. Zhang B. Xu G. Wang L. Wang H. Lin Z. Yu D. Ren J. Zhang D. Zhao L. Zhang T. CEMIP, a novel adaptor protein of OGT, promotes colorectal cancer metastasis through glutamine metabolic reprogramming via reciprocal regulation of β-catenin Oncogene 40 2021 6443 6455 10.1038/s41388-021-02023-w 34608265
+37 Domanegg K. Sleeman J.P. Schmaus A. CEMIP, a Promising Biomarker That Promotes the Progression and Metastasis of Colorectal and Other Types of Cancer Cancers 14 2022 5093 10.3390/cancers14205093 36291875 PMC9600181
+38 Xu G. Zhao L. Hua Q. Wang L. Liu H. Lin Z. Jin M. Wang J. Zhou P. Yang K. CEMIP, acting as a scaffold protein for bridging GRAF1 and MIB1, promotes colorectal cancer metastasis via activating CDC42/MAPK pathway Cell Death Dis. 14 2023 167 10.1038/s41419-023-05644-z 36849460 PMC9971195
+39 Zhang Y. Narayanan S.P. Mannan R. Raskind G. Wang X. Vats P. Su F. Hosseini N. Cao X. Kumar-Sinha C. Single-cell analyses of renal cell cancers reveal insights into tumor microenvironment, cell of origin, and therapy response Proc. Natl. Acad. Sci. USA 118 2021 e2103240118 10.1073/pnas.2103240118 PMC8214680 34099557
+40 Xu H. Xu W.H. Ren F. Wang J. Wang H.K. Cao D.L. Shi G.H. Qu Y.Y. Zhang H.L. Ye D.W. Prognostic value of epithelial-mesenchymal transition markers in clear cell renal cell carcinoma Aging 12 2020 866 883 10.18632/aging.102660 31915310 PMC6977664
+41 Kwon S. Cheon S. Kim K.H. Seo A. Bae E. Lee J.W. Cha R.H. Hwang J.H. Kim Y.C. Kim D.K. Unveiling the role of transgelin as a prognostic and therapeutic target in kidney fibrosis via a proteomic approach Exp. Mol. Med. 56 2024 2296 2308 10.1038/s12276-024-01319-7 39375532 PMC11542076
+42 Bouchalova P. Beranek J. Lapcik P. Potesil D. Podhorec J. Poprach A. Bouchal P. Transgelin Contributes to a Poor Response of Metastatic Renal Cell Carcinoma to Sunitinib Treatment Biomedicines 9 2021 1145 10.3390/biomedicines9091145 34572331 PMC8467952
+43 Gooskens S.L. Klasson T.D. Gremmels H. Logister I. Pieters R. Perlman E.J. Giles R.H. van den Heuvel-Eibrink M.M. TCF21 hypermethylation regulates renal tumor cell clonogenic proliferation and migration Mol. Oncol. 12 2018 166 179 10.1002/1878-0261.12149 29080283 PMC5792742
+44 Pan Q. Liu R. Zhang X. Cai L. Li Y. Dong P. Gao J. Liu Y. He L. CXCL14 as a potential marker for immunotherapy response prediction in renal cell carcinoma Ther. Adv. Med. Oncol. 15 2023 17588359231217966 10.1177/17588359231217966 PMC10752123 38152696
+45 Coppock J.D. Gradecki S.E. Mills A.M. PRAME Expression in Endometrioid and Serous Endometrial Carcinoma: A Potential Immunotherapeutic Target and Possible Diagnostic Pitfall Int. J. Gynecol. Pathol. 42 2023 35 42 10.1097/PGP.0000000000000864 35512215
+46 Kaczorowski M. Chłopek M. Kruczak A. Ryś J. Lasota J. Miettinen M. PRAME Expression in Cancer. A Systematic Immunohistochemical Study of >5800 Epithelial and Nonepithelial Tumors Am. J. Surg. Pathol. 46 2022 1467 1476 10.1097/PAS.0000000000001944 35973038 PMC9588667
+47 Yu K. Tian Q. Feng S. Zhang Y. Cheng Z. Li M. Zhu H. He J. Li M. Xiong X. Integration analysis of cell division cycle-associated family genes revealed potential mechanisms of gliomagenesis and constructed an artificial intelligence-driven prognostic signature Cell. Signal. 119 2024 111168 10.1016/j.cellsig.2024.111168 38599441
+48 Huang W. Wu Y. Luo N. Shuai X. Guo J. Wang C. Yang F. Liu L. Liu S. Cheng Z. Identification of TRPM2 as a prognostic factor correlated with immune infiltration in ovarian cancer J. Ovarian Res. 16 2023 169 10.1186/s13048-023-01225-y 37608401 PMC10463424
+49 Cancer Genome Atlas Research NetworkWeinstein J.N. Collisson E.A. Mills G.B. Shaw K.R.M. Ozenberger B.A. Ellrott K. Shmulevich I. Sander C. Stuart J.M. The Cancer Genome Atlas Pan-Cancer analysis project Nat. Genet. 45 2013 1113 1120 10.1038/ng.2764 24071849 PMC3919969
+50 Lonsdale J. Thomas J. Salvatore M. Phillips R. Lo E. Shad S. Hasz R. Walters G. Garcia F. Young N. The Genotype-Tissue Expression (GTEx) project Nat. Genet. 45 2013 580 585 10.1038/ng.2653 23715323 PMC4010069
+51 SEQC/MAQC-III Consortium A comprehensive assessment of RNA-seq accuracy, reproducibility and information content by the Sequencing Quality Control Consortium Nat. Biotechnol. 32 2014 903 914 10.1038/nbt.2957 25150838 PMC4321899
+52 Colaprico A. Silva T.C. Olsen C. Garofano L. Cava C. Garolini D. Sabedot T.S. Malta T.M. Pagnotta S.M. Castiglioni I. TCGAbiolinks: an R/Bioconductor package for integrative analysis of TCGA data Nucleic Acids Res. 44 2016 e71 10.1093/nar/gkv1507 PMC4856967 26704973

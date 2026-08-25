@@ -1,0 +1,572 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Cancer Biol Med
+Journal ID: Cancer Biol Med
+NLM Journal ID: 101588850
+Journal ID: CBM
+
+Cancer Biology & Medicine
+
+ISSN: 2095-3941
+Publisher: Chinese Anti-Cancer Association
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498884
+PMID: 42046345
+DOI: 10.20892/j.issn.2095-3941.2025.0829
+Article ID: j.issn.2095-3941.2025.0829
+Article version: 1
+Subjects: Review
+
+Tumor microenvironment-driven natural killer cell diversity: mechanisms and therapeutic opportunities
+
+Duan Yue 1 2
+Zhou Mingzhen 2
+Guo Xingxian 2
+Cao Tianyu 2
+Lu Yuanyuan 2
+https://orcid.org/0000-0002-1817-803X Zhao Xiaodi 2
+1 Key Laboratory of Resource Biology and Biotechnology in Western China, Ministry of Education, School of Medicine, Northwest University, Xi’an 710069, China
+2 State Key Laboratory of Holistic Integrative Management of Gastrointestinal Cancers, National Clinical Research Center for Digestive Diseases, Xijing Hospital of Digestive Diseases, Xijing Hospital, Fourth Military Medical University, Xi’an 710032, China
+Correspondence to: Yuanyuan Lu and Xiaodi Zhao, E-mail: luyuandreamer@aliyun.com and leedyzhao@fmmu.edu.cn
+Print publication date: 2026 Aug 15
+Electronic publication date: 2026 Apr 25
+Volume: 23
+Issue: 8
+First page: 1087
+Last page: 1107
+Received 2025 Dec 24; Accepted 2026 Mar 11
+Copyright: Copyright: © 2026, The Authors
+Copyright year: 2026
+Copyright holder: The Authors
+License: This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: Tumor microenvironment, natural killer cell subsets, regulatory mechanism, treatment strategies
+
+Funding: National Natural Science Foundation of China 82573226 This work was supported by grants from the National Natural Science Foundation of China (Grant No. 82573226).
+
+Figure count: 3
+Table count: 3
+Reference count: 139
+Page count: 21
+
+==============================
+Natural killer (NK) cells are key effector cells involved in tumor immune surveillance, yet their function within the tumor microenvironment (TME) exhibits considerable complexity and plasticity that cannot be adequately explained by the classical CD56/CD16 dichotomy. This functional diversity arises from the phenotypic adaptability and dynamic differentiation of distinct NK cell subsets shaped by the TME. In this review, we systematically examine the defining characteristics and functional roles of recently identified NK cell subsets in the TME; elucidate the molecular mechanisms governing their regulation; and highlight the functional transitions and cooperative interactions among these subsets. Moreover, building on current evidence, we summarize emerging immunotherapeutic approaches targeting specific NK cell subsets. Together, these perspectives offer new insights and strategic directions for deciphering the multifaceted roles of NK cells in antitumor immunity and advancing the development of subset-targeted therapies.
+
+Introduction
+
+Natural killer (NK) cells play central roles in antitumor immunity, because of their unique direct cytotoxicity independent of prior antigen sensitization1. Through recognition of “missing-self” or “induced-self” signals, they rapidly eliminate target cells while secreting cytokines such as interferon-gamma (IFN-γ) that bridge innate and adaptive immune responses2. However, this critical function is substantially shaped by the complex tumor microenvironment (TME)3.
+
+The conventional classification of NK cells into CD56brightCD16dim (immunoregulatory) and CD56dimCD16bright (cytotoxic) subsets, which is based primarily on peripheral blood studies4, does not reflect their functional heterogeneity and phenotypic plasticity within the TME. Emerging evidence indicates that TME-specific factors, such as hypoxia, metabolic stress, and upregulated immune checkpoint molecules, not only suppress NK cell function but also drive the formation of specialized subsets with distinct profiles. These subsets include tumor-infiltrating NK (TiNK) cells, tissue-resident NK (TrNK) cells, and adaptive NK cells5–8, each of which has unique differentiation pathways, surface marker signatures, and antitumor capabilities.
+
+This review systematically examines how the TME shapes NK cell diversity and function. We provide a comprehensive analysis of the characteristics and regulatory mechanisms of specialized NK cell subsets, highlight their functional plasticity and cooperative networks. Furthermore, we explore emerging subset-specific immunotherapeutic strategies, thereby offering new perspectives for developing targeted interventions against cancer.
+
+NK cell biology: from ontogeny and spatial distribution to functional subset classification
+
+NK cells are critical innate effectors whose antitumor functions are rooted in their developmental biology and functional specialization. This section reviews their ontogeny, spatial distribution, and subset classification, to provide a framework for decoding their complex behaviors within the TME.
+
+Immune localization and lineage signatures
+
+NK cells were first identified in 1975 as a distinct lymphocyte population with innate cytotoxic capabilities9. Despite lacking T-cell receptor (TCR) and CD3 expression, and developing outside the classical T-cell lineage, NK cells form a functionally integrated network with T cells and natural killer T (NKT) cells. Phenotypically defined as CD56+CD16+CD3−, NK cells act as rapid innate responders that eliminate abnormal cells via “missing-self” recognition without prior antigen sensitization10.
+
+In contrast, T cells, the central mediators of adaptive immunity, are CD3+TCR+ and require antigen presentation via major histocompatibility complex (MHC) molecules for activation. CD8+ cytotoxic T lymphocytes (CTLs) mediate precise target cell killing, whereas CD4+ helper T cells orchestrate immune responses and establish immunological memory11.
+
+Bridging innate and adaptive immunity, NKT cells uniquely co-express T-cell markers (CD3 and TCR) and NK-cell markers such as CD56. Their restricted TCR repertoire recognizes lipid antigens presented by CD1d, thereby enabling rapid cytokine release that supports antitumor, antimicrobial, and immunoregulatory functions12. The differences and synergies among these lymphocytes in antigen recognition, activation requirements, and effector functions highlight the complexity of the immune network. The distinct role of NK cells is closely tied to their unique developmental pathway and spatial distribution.
+
+Spatial ontogeny of NK cells
+
+NK cell heterogeneity arises from their complex ontogeny and spatial origins. Conventionally, NK cells develop from bone marrow common lymphoid progenitors (CLPs) and undergo a tightly regulated multistage differentiation process culminating in mature effector cells and characterized by stage-specific marker expression (Table 1)13. This development depends on key cytokines and transcription factors, including IL-1514, nuclear factor interleukin-3-regulated protein (NFIL3), and Eomesodermin (EOMES)15,16. In mouse models, maturation follows a defined sequence from CD27+CD11b−, through CD27+CD11b+, to terminally differentiated CD27−CD11b+ cells representing an effector pool with elevated inhibitory receptors such as killer cell lectin-like receptor G117,18. Human NK cell development parallels this trajectory, progressing from CD34+ progenitors that gradually downregulate CD34 and upregulate CD5619. Immature cells express early activation receptors such as natural killer group 2, member D (NKG2D), whereas inhibitory/activating receptors such as killer-cell immunoglobulin-like receptors (KIRs) and natural killer group 2, member A/C (NKG2A/C) remain minimal or undetectable20. Mature human NK cells ultimately differentiate into major subsets defined by CD56 and CD16 expression, thus forming the basis for their functional specialization (Figure 1)4.
+
+Figure 1 Developmental trajectories and functional subset diversification of NK cells. This schematic illustrates NK cell ontogeny from CLPs to mature subsets, as well as their subsequent tissue-specific diversification. A. NK cell developmental differentiation. Derived from CLP, NK cells progress through a sequential series of differentiation stages and mature into functionally distinct subsets: CD56bright and CD56dim NK cells. Key transcription factors and changes in cell surface markers across differentiation stages are shown. The functional significance of each marker is summarized in Table 1. B. Three novel functional subsets of NK cells formed in specific microenvironments, and their primary characteristics. Left: Tumor-infiltrating NK (TiNK) cells originate from CD56bright NK cells and are characterized by upregulation of inhibitory receptors (such as PD-1, TIGIT, and NKG2A), downregulation of activating receptors (such as NKG2D and NKp30), and impaired metabolic functions. Middle: Tissue-resident NK (TrNK) cells also derive from CD56bright NK cells and reside in particular tissues and express CD69/CD103 with tissue-specific and dual functionality. Right: Adaptive NK cells originate from CD56dim NK cells and can be further divided into virus-induced types (triggered by HCMV infection, mediating potent ADCC) and cytokine-induced types (triggered by cytokines such as IL-12/15/18, demonstrating high-effector functions and unique epigenetic features). ADCC, antibody-dependent cellular cytotoxicity; CILCP, common innate-like cell progenitor; CLP, common lymphoid progenitor; E4BP4, E4-binding protein 4; FcεRγ, Fc epsilon receptor I gamma chain; GLUT1hi, high expression of glucose transporter 1; HCMV, human cytomegalovirus; ID proteins, inhibitor of DNA-binding proteins/inhibitor of differentiation proteins; IFN-γ, interferon-gamma; IL-12/15/18, interleukin-12/15/18; iNK, immature natural killer cell; KIR, killer-cell immunoglobulin-like receptor; NKG2A/C/D, natural killer group 2, member A/C/D; NKP, natural killer progenitor; NKp30, natural killer p30-related protein; PD-1, programmed cell death protein 1; RGS1, regulator of G-protein signaling 1; TIGIT, T-cell immunoreceptor with Ig and ITIM domains. The scientific illustrations were generated in BioRender (https://BioRender.com).
+
+Table 1 Summary of the expression and functional significance of key markers defining human NK cell development
+
+Key marker	Primary stage*	Functional significance	
+ID proteins	Early development (CLP)	HLH transcriptional regulators that antagonize E-proteins at the CLP stage
+
+Inhibits commitment to the B- and T-cell lineages
+
+Directs progenitors toward the innate lymphoid/NK cell pathway
+
+	
+CD122	From NKP through iNK to mature stages	Critical subunit for IL-2/IL-15 signaling
+
+Supports survival, proliferation, and maturation from the NKP stage onward
+
+	
+CD56	CD56bright: early mature
+
+CD56dim: terminally mature
+
+	Definitive surface marker for human NK cells
+
+CD56bright cells are potent cytokine producers
+
+CD56dim cells are mature cytotoxic effectors
+
+	
+NKG2D	From iNK onward; sustained in all mature NK cells	Potent activating receptor expressed from iNK to mature stages
+
+Recognizes stress ligands (e.g., MICA or ULBP) on abnormal cells
+
+Triggers direct cytotoxicity for anti-tumor/viral responses
+
+	
+KIR	Mature stages	Central to NK cell “education” and establishment of self-tolerance
+
+Inhibitory KIRs prevent attack on healthy cells
+
+Activating KIRs trigger killing after loss of MHC class I
+
+	
+NKG2A	Mature stages	Inhibitory receptor that forms a CD94 heterodimer
+
+Recognizes the non-classical MHC-I molecule HLA-E
+
+Dampens excessive immune activation and fine-tunes immune responses
+
+	
+NKG2C	Mature stages	Activating receptor that forms a CD94 heterodimer
+
+Recognizes HLA-E with peptide requirements distinct from NKG2A
+
+Drives expansion of adaptive NK cells
+
+	
+CD16	Terminally mature	Low-affinity FcγR expressed on mature CD56dim NK cells
+
+Mediates ADCC
+
+Hallmark of terminal maturation and cytotoxic competence
+
+	
+*See Figure 1A for the developmental stages. ADCC, antibody-dependent cellular cytotoxicity; CLP, common lymphoid progenitor; FcγR, Fc gamma receptor; HLH, helix-loop-helix; HLA-E, human leukocyte antigen-E; ID proteins, inhibitor of DNA-binding proteins/inhibitor of differentiation proteins; iNK, immature natural killer cell; KIRs, killer-cell immunoglobulin-like receptors; MHC, major histocompatibility complex; MICA, MHC class I polypeptide-related sequence A; NKG2A/C/D, natural killer group 2, member A/C/D; NKP, natural killer progenitor; ULBP, UL16-binding protein.
+
+However, recent studies have expanded this paradigm and revealed alternative developmental pathways in non-lymphoid peripheral tissues. Less differentiated CD56bright NK cells can be recruited into tissues via chemotactic signals, locally differentiate into TrNK cells under microenvironmental influences, and acquire specialized functions. Moreover, tissue-committed precursor cells have been suggested to contribute to TrNK populations in various organs21. Most human organs bear NK cells expressing the residency markers CD69, CD103, and CD49a, which promote tissue retention and position-specific adaptation22. These TrNK cells play crucial roles in local homeostasis and immune surveillance.
+
+In summary, NK cell development involves diverse origins and differentiation pathways. Elucidating the regulatory mechanisms underlying their heterogeneity and spatial organization is essential for understanding their roles in homeostasis and disease.
+
+Trajectories of functional subsets
+
+The established dichotomy classifies mature human NK cells into two functionally distinct populations, according to peripheral blood studies. The CD56brightCD16dim subset (approximately 10%) demonstrates potent immunoregulatory functions and produces substantial cytokines such as IFN-γ while exhibiting relatively weak direct cytotoxicity. In contrast, the CD56dimCD16bright subset constitutes the majority (approximately 90%) and is the primary cytotoxic effector population, characterized by high expression of cytotoxic receptors (KIRs and NKG2A/C) and effector molecules (perforin and granzymes) (Figure 1)23.
+
+Although this classification effectively describes circulating NK cell functions, its main limitation emerges in the context of the TME24. The highly heterogeneous and immunosuppressive TME substantially remodels NK cell phenotypes and functions through local signals; therefore, the conventional classification cannot capture the dynamic plasticity and functional diversity of NK cells within tissue contexts.
+
+This limitation has driven a paradigm shift toward context-dependent classification. Beyond recruiting circulating conventional NK (cNK) cells, the TME reprograms TrNK cells and endows adaptive NK cell subsets with memory-like features, and gives rise to distinct populations such as exhausted TiNK cells5, organ-specialized TrNK cells6, and adaptive NK cells induced by cytomegalovirus (CMV) infection7 or cytokine pre-activation8.
+
+Therefore, understanding NK cells in the TME requires moving beyond the CD56/CD16 dichotomy toward a new paradigm centered on tissue localization, microenvironmental signals, and functional states. This refined perspective is essential for elucidating their roles in tumor immunity and developing effective therapeutic approaches that account for their contextual diversity.
+
+Novel NK cell subsets in the TME: definitions and functional characteristics
+
+In the complex TME, NK cells display functional diversity that extends beyond conventional classifications. This section outlines the defining characteristics of these newly identified NK cell subsets.
+
+TiNK cells
+
+TiNK cells are defined as NK cells recruited from peripheral blood into the tumor parenchyma25. Their recruitment is mediated primarily by the C-X-C motif chemokine ligand 9/10/11-C-X-C motif chemokine receptor 3 (CXCL9/10/11-CXCR3) axis, which preferentially recruits the cytokine-productive CD56bright subset26. In contrast to those in the peripheral blood, where CD56dim cells dominate, TiNK populations in solid tumors, such as melanoma and breast cancer, are often enriched in CD56bright cells and typically express the early activation marker CD69 (Figure 1, Table 2)27.
+
+Table 2 Classification and characteristics of NK cell functional subsets
+
+	TiNK cells	TrNK cells	CMV-NK cells	CIML-NK cells	
+Core definition	NK cells recruited from peripheral blood into the tumor parenchyma	Resident NK subset that settles in specific tissues and does not recirculate	Adaptive-like NK subset induced by specific pathogens (e.g., CMV)	CIML-NK subset generated via cytokine pre-activation (e.g., IL-12/15/18)	
+Key identifiers	CD56brightCD69+
+
+High PD-1, TIGIT, and NKG2A
+
+	Constitutive CD69 and CD103
+
+Tissue-specific phenotype
+
+	NKG2C+NKG2A–KIR+CD57+
+
+Frequent FcεRγ or SYK deficiency
+
+	High CD25, CD94, and NKG2A
+
+Upregulated NKG2D and NKp46
+
+	
+Functional status	Functional exhaustion
+
+Impaired cytotoxicity and IFN-γ production
+
+Metabolic dysregulation
+
+	Anti-tumor or pro-tumor
+
+Key modulator of tissue-immune homeostasis
+
+	Enhanced, sustained functionality
+
+Potent antigen-specific recall response and ADCC
+
+	Hyper-responsive after restimulation with cytokines (e.g., IL-12, IL-15, IL-18) restimulation
+
+Enhanced cytotoxicity and cytokine production
+
+Favorable in vivo persistence
+
+	
+Clinical significance	Prognostic biomarker: intratumoral abundance correlates with patient outcomes	Potential therapeutic target	Mediates long-term pathogen-specific surveillance	Ideal “off-the-shelf” candidate for adoptive cell therapy	
+ADCC, antibody-dependent cellular cytotoxicity; CIML-NK cell, cytokine-induced memory-like natural killer cell; CMV-NK cell, cytomegalovirus-induced natural killer cell; FcεRγ, Fc epsilon receptor I gamma chain; IFN-γ, interferon-gamma; KIR, killer-cell immunoglobulin-like receptor; NKG2A, natural killer group 2, member A; NKG2C, natural killer group 2, member C; NKG2D, natural killer group 2, member D; NKp46, natural killer p46-related protein; PD-1, programmed cell death protein 1; SYK, spleen-associated tyrosine kinase; TIGIT, T-cell immunoreceptor with Ig and ITIM domains; TiNK cell, tumor-infiltrating natural killer cell; TrNK cell, tissue-resident natural killer cell.
+
+However, after entry into the TME, TiNK cells frequently become dysfunctional because of immunosuppressive signals. This state is characterized by downregulated activating receptors, such as NKG2D and NK cell activating receptor 30 (NKp30); upregulated inhibitory receptors, including programmed cell death protein 1 (PD-1), T cell immunoreceptor with Ig and ITIM domains (TIGIT), NKG2A; impaired IFN-γ production and diminished cytotoxicity5. Metabolically, TiNK cells exhibit impaired glycolysis and dysfunctional mitochondrial respiration, in alignment with their suppressed function (Figure 1, Table 2)28.
+
+Notably, TiNK cell abundance has substantial clinical relevance. Increased TiNK cell infiltration generally correlates with prolonged overall survival in patients with cancers such as gastric cancer (GC), colorectal cancer (CRC), and lung cancer (LC) (Table 2)29. Moreover, the combination of high heat shock protein 70 (Hsp70) expression and low TiNK cell number demonstrates the strongest negative predictive value for poor outcomes in patients with head and neck squamous cell carcinoma (HNSCC) after surgery and chemoradiotherapy30. This specific combination is a promising prognostic biomarker, thus underscoring the critical clinical importance of TiNK cells.
+
+TrNK cells
+
+Recent studies have identified TrNK cells as a distinct population that resides in specific organs rather than circulating in the blood31. Their developmental origins are not fully clarified; they may arise from local precursors or from circulating NK cells that have homed to tissues. TrNK cells are defined by the expression of residency markers, such as CD69 and/or CD10332, which mediate tissue retention partly through CD69-induced downregulation of the sphingosine-1-phosphate receptor 1 (S1PR1)33. Pan-cancer analyses have further identified regulator of G protein signaling 1 (RGS1) as a novel marker that is highly expressed in tumor-associated CD56bright NK cells but absent in their circulating counterparts (Figure 1, Table 2)24.
+
+TrNK cells exhibit considerable tissue specificity. Their development and transcriptional programming differ by location. For example, liver TrNK cells depend on NFIL3 but not T-box expressed in T cells, whereas uterine TrNK cells rely on EOMES32,34. This specialization enables functional adaptation to local microenvironments. Within the TME, TrNK cells display functional plasticity: they can inhibit tumor progression in LC and ovarian cancer (OC) models by secreting cytotoxic molecules35,36, yet they may also acquire pro-tumorigenic potential and potentially differentiate into group 1 innate lymphoid cell (ILC1)-like cells (Table 2)37,38. However, given that these findings were derived largely from mouse studies, their clinical relevance in human TME requires further validation.
+
+Notably, this functional plasticity extends beyond TrNK cells and encompasses other innate lymphocytes, particularly NKT cells, which exhibit dual regulatory ability within the TME. Type I NKT cells recognize CD1d-presented lipid antigens and rapidly secrete IFN-γ, thereby enhancing adaptive antitumor immunity. In contrast, type II NKT cells or exhausted invariant NKT cells may promote pro-tumorigenic outcomes through mechanisms such as IL-13-mediated recruitment of myeloid-derived suppressor cells (MDSCs). The functional outcome is shaped by the dynamic balance among NKT subsets and the local signaling milieu39.
+
+Among these populations, TrNK cells have emerged as a critical focus, because of their prominent tissue-homing and microenvironment-reprogramming ability. Notably, the TrNK signature score serves as an independent and valuable prognostic classifier. High TrNK scores correlate with enhanced immune infiltration, greater responses to immunotherapy, and more favorable patient outcomes. (Table 2)40. These findings underscore TrNK cells as critical regulators of the tumor immune microenvironment and a key focus for understanding NK cell mediated antitumor immunity.
+
+Adaptive NK cells
+
+Adaptive NK cells, by exhibiting antigen-specific responses and features of immunological memory akin to those of T cells, challenge the traditional paradigm of NK cells as solely innate immune effectors.
+
+Viral antigen-induced adaptive NK cells
+
+The response to human cytomegalovirus (HCMV) infection is a well-established example. HCMV infection drives the development of a distinct adaptive NK cell population characterized by an NKG2C+NKG2A−KIR+CD57+ phenotype41,42. These cells frequently lack intracellular signaling proteins such as Fc epsilon receptor gamma chain (FcεRγ) and spleen tyrosine kinase (SYK)43. The NKG2C receptor recognizes the non-classical MHC class I molecule human leukocyte antigen-E (HLA-E), which presents HCMV-derived UL40 peptides, thereby activating and promoting clonal expansion of these adaptive NK cells44. Compared with cNK cells, this subset frequently expresses a limited KIR repertoire, thereby enhancing sensitivity to “missing-self” signals45. Moreover, they express relatively low levels of inhibitory ITIM-containing receptors, which confers intrinsic resistance to MDSC-mediated suppression and enhances antibody-dependent cellular cytotoxicity (ADCC) (Figure 1, Table 2)46. Collectively, these properties indicate that adaptive NK cells can maintain effector function within the TME, even in the presence of immunosuppressive cells47.
+
+Cytokine-induced memory-like NK cells
+
+NK cells can integrate and respond to cytokine signals as well as antigen-specific stimuli such as those elicited during CMV infection, highlighting their ability to dynamically adapt to environmental cues. Pre-activation of NK cells with cytokines such as IL-12, IL-15, and IL-18 drives their differentiation into memory-like NK (MLNK) cells. This process entails a series of phenotypic transitions associated with the memory-like state, including the upregulation of nutrient transporters—[CD71, CD98, glucose transporter 1/3 (GLUT1/3)], alongside activation receptors [NKG2D, NKp30, natural killer cell p44 (NKp44)-related protein], as well as the downregulation of inhibitory receptors, such as KIRs and the transforming growth factor-beta (TGF-β) receptor48,49.
+
+Epigenetic profiling has further revealed that MLNK cells share DNA methylation patterns with memory CD8+ T cells, thus supporting their classification as an adaptive subset50. These cells exhibit elevated expression of CD25, CD94, NKG2A, CD69, and NKp4651,52. Functionally, they demonstrate enhanced IFN-γ and tumor necrosis factor (TNF) production, elevated granzyme B (GZMB) and perforin expression, and superior cytotoxicity against tumor targets such as K562 cells. Moreover, they can persist in vivo for months and maintain potent antitumor activity even within the TME (Figure 1, Table 2)53–55.
+
+Mechanisms of TME-regulated heterogeneity in NK cell function
+
+NK cells’ considerable functional heterogeneity within the TME arises from subset-specific responses to local microenvironmental signals. This section systematically delineates the regulatory networks governing TME-mediated NK cell modulation, focusing on four key aspects.
+
+Heterogeneous expression of immune checkpoint molecules
+
+Immune checkpoint molecules critically regulate NK cell function. Within the TME, TiNK cells typically show high expression of inhibitory receptors such as PD-1, TIGIT, and NKG2A. Elevated PD-1 expression correlates with impaired migratory and cytotoxic functions56. This phenotype is driven by persistent antigen exposure within the TME and is further stabilized by epigenetic modifications such as DNA methylation. However, because this finding was based on mouse models, and mouse PD-1 function is distinctly weaker than that in humans, its clinical translational value is limited. Furthermore, studies in patients with cervical cancer have revealed that TiNK cells aberrantly upregulate co-stimulatory receptors, including inducible T-cell costimulator (ICOS), tumor necrosis factor receptor superfamily member 9 (4-1BB) and tumor necrosis factor receptor superfamily member 4 (OX-40). Paradoxically, this abnormal signaling triggers dysregulated Janus kinase (JAK)/signal transducer and activator of transcription (STAT) pathway activation and mitochondrial dysfunction, which ultimately leads to loss of cytotoxic activity (Figure 2)57.
+
+Figure 2 Mechanisms of TME-regulated heterogeneity in NK cell function. This schematic delineates how complex factors within the TME differentially regulate the functional fates of NK cell subsets. A. Differential expression of immune checkpoints. (a) Inhibitory checkpoint in TrNK: TrNK cells highly express NKG2A and interact with HLA-E on tumor cells. (b) Exhaustion receptor upregulation: Under inhibitory signaling, cNK cells differentiate into TiNK cells, which upregulate PD-1, TIGIT, and co-stimulatory receptors (ICOS and 4-1BB). (c) TIGIT-deficient resistance: HCMV-NK cells lack TIGIT and resist suppression. B. Heterogeneity in metabolic reprogramming. (a) Metabolic impairment and rescue: Glucose competition and hypoxia impair cNK cell glycolysis/OXPHOS, whereas IL-12, IL-15, and IL-18 promote their differentiation into adaptive NK cells. (b) Oxidative stress and adaptation: H2O2 in the TME impairs NK cell ADCC, whereas adaptive survival is mediated partially through the lactate–CaMKK2 axis. (c) Metabolite-driven dysfunction: metabolic waste, such as lactate and adenosine, drives TrNK cell exhaustion. (d) Shuttle pathway regulation: CIML-NK cells demonstrate metabolic plasticity by regulating the citrate-malate shuttle via SREBP. C. Differential cytokine regulation. Negative regulation: (a) TGF-β-induced conversion: TGF-β drives TrNK to ILC1-like conversion, thus impairing tumor surveillance. (b) HIF-1α-mediated inhibition: HIF-1α inhibits IL-18/NF-κB in TiNK cells. Positive regulation: (c) Cytokine-induced memory programming: IL-12/IL-15/IL-18 reprograms TrNK into ML-NK cells. (d) IFN-γ-enhanced apoptosis: IFN-γ enhances caspase-mediated apoptosis via JAK/STAT1. D. Specific intercellular interactions. (a) Suppressive myeloid network: MDSCs, Tregs, and M2-TAMs suppress NK cells via TGF-β, IL-10, ARG1, and CCL20-CCR6. (b) M1-mediated activation: M1-macrophages enhance NK activity via IL-15. (c) DC-T cell crosstalk: DC-T cell crosstalk via CCL5 further modulates NK function. (d) Ligand shedding for immune evasion: Tumor cells evade NK recognition by shedding NKG2D ligands. 4-1BB, tumor necrosis factor receptor superfamily member 9; ADCC, antibody-dependent cell-mediated cytotoxicity; ADO, adenosine; ARG1, arginase-1; CaMKK2, calcium/calmodulin-dependent protein kinase kinase 2; CCL5, C–C motif chemokine ligand 5; CCL20, C–C motif chemokine ligand 20; CCR6, C–C motif chemokine receptor 6; cNK, conventional natural killer cell; CIML-NK, cytokine-induced memory-like NK cells; CTLA-4, cytotoxic T-lymphocyte-associated protein 4; DC, dendritic cell; FAS, Fas cell surface death receptor; FASL, Fas ligand; HCMV-NK, human cytomegalovirus-induced NK cells; HIF-1α, hypoxia-inducible factor 1-alpha; HLA-E, human leukocyte antigen E; ICOS, inducible T-cell co-stimulator; IDO, indoleamine; IFN-γ, interferon-gamma; IL-15, interleukin-15; ILC1, type 1 innate lymphoid cell; JAK, Janus kinase; JUNB, JunB proto-oncogene, AP-1 transcription factor subunit; M1, classically activated macrophage; M2, alternatively activated macrophage; MDSC, myeloid-derived suppressor cell; NF-κB, nuclear factor kappa-light-chain-enhancer of activated B cells; NKG2A, natural killer group 2, member A; NKG2D, natural killer group 2, member D; NKG2DL, NKG2D ligands; OX-40, tumor necrosis factor receptor superfamily member 4; OXPHOS, oxidative phosphorylation; PD-1, programmed cell death protein 1; PRDM1, PR domain zinc finger protein 1 (Blimp-1); SREBP, sterol regulatory element-binding protein; TGF-β, transforming growth factor-beta; TIGIT, T-cell immunoreceptor with Ig and ITIM domains; TiNK, tumor-infiltrating natural killer cell; Treg, regulatory T cell; TrNK, tissue-resident natural killer cell.
+
+In contrast, TrNK cells display context-dependent checkpoint expression. In the ascites of patients with OC, they express the inhibitory receptor NKG2A while maintaining substantial cytotoxic ability; this plasticity is linked to HLA-E levels and the local IL-15/IL-12 balance, and consequently enables effective tumor cell elimination36. However, in hepatocellular carcinoma (HCC), Kupffer cell contact and TGF-β1 secretion drive TrNK cells to specifically upregulate TIGIT and PD-1, thereby promoting tumor progression (Figure 2)58.
+
+The relatively focused and locally reprogrammable regulatory paradigm of TrNK cells sharply diverges from the exhaustion program of T cells in the TME. Although they cooperate in achieving antitumor immunity, TrNK cells and T cells fundamentally differ in function and regulation. Functionally, TrNK cells act as rapid innate responders by executing “missing-self” killing without prior antigen sensitization, whereas T cells require antigen-specific activation to differentiate into tissue-resident memory CTLs (e.g., CD39+CD103+). Even under chronic stimulation, CTLs retain IFN-γ and GZMB secretion, thereby sustaining long-term surveillance and enabling an NK-initiated, CTL-consolidated cooperative response59. Mechanistically, the rapid responsiveness of TrNK cells is preserved through a balanced interplay of checkpoint signaling axes, such as the NKG2A-HLA-E inhibitory axis and the CD226/TIGIT activating axis. In contrast, persistently stimulated CD8+ T cells, particularly the CD39+ CTL subset, simultaneously upregulate multiple inhibitory receptors (e.g., PD-1, TIGIT, and NKG2A), downregulate CD28, and face regulatory T cell (Treg)-mediated metabolic competition, thus driving a more complex exhaustion state59. This mechanistic divergence underscores the need for selectively targeting context-specific checkpoint axes across distinct lymphocyte populations.
+
+Notably, adaptive NK cells, particularly the HCMV-induced subset, display a unique checkpoint profile. These cells inherently lack expression of TIGIT, which confers intrinsic resistance to immunosuppressive factors within the TME (Figure 2)46. This functional persistence results from virus-induced epigenetic reprogramming characterized by modified DNA methylation patterns that facilitate chromatin closure at the TIGIT locus, alongside sustained expression of infection-specific transcription factors such as members of the interferon regulatory factor family. Concurrent metabolic remodeling, particularly enhanced oxidative phosphorylation (OXPHOS), provides the bioenergetic foundation for their long-term functional activity. Collectively, these findings highlight that substantial heterogeneity in checkpoint expression across NK cell subsets directly dictates their divergent functional states and responsiveness in the TME.
+
+Heterogeneous responses to metabolic reprogramming
+
+Metabolic stress in the TME differentially influences the functional states of various NK cell subsets. cNK cells face considerable metabolic challenges in maintaining their function. Competition for glucose with highly metabolic tumor cells deprives cNK cells of the fuel required for proliferation, activation, cytokine production, and cytotoxicity60. Concurrently, cNK cells show suppressed glycolytic and OXPHOS pathways, and consequently diminished expression of IFN-γ and Fas ligand (FasL), which ultimately impaired cytotoxic function. This mechanism substantially contributes to the progression of HCC, CRC, GC, and lung squamous cell carcinoma61,62. Notably, obesity impairs mechanistic target of rapamycin complex 1 signaling and further constrains the anti-tumor response of cNK cells. Compared with those from healthy donors, cNK cells from obese individuals exhibit blunted metabolic response to cytokine stimulation, which might contribute to obesity-associated cancer risk63. However, findings from diet-induced obesity mouse models might have limited clinical translatability, given their pathophysiological differences from spontaneous obesity in humans. Furthermore, hypoxic conditions in the TME activate the protein tyrosine phosphatase Src homology region 2 domain-containing phosphatase-1 (SHP-1), thereby suppressing phosphorylation of extracellular signal-regulated kinase (ERK) and STAT3 signaling pathway proteins, and ultimately impairing NK cell activation and cytotoxic ability (Figure 2)64.
+
+TiNK cells exhibit unique adaptive features in their metabolic profiles. In HCC, upregulated metabolic pathway genes in TiNK cells are closely associated with functional impairment, including diminished degranulation, autophagy, and glucose consumption28. In GC and esophageal cancer models, TME-derived hydrogen peroxide (H2O2) impairs ADCC and decreases the infiltration of CD56dim NK cells65. However, TiNK cells can also adapt metabolically: lactate promotes their survival and proliferation by modulating Ca2+/calmodulin-dependent protein kinase kinase 2 (CaMKK2) expression, thereby partially mitigating the suppressive effects of a lactate-rich TME (Figure 2)66. However, these findings were based on mouse models with artificially elevated lactate loads and homogeneous genetic backgrounds, which do not fully reflect human TME complexity. Therefore, the therapeutic potential of targeting CaMKK2 requires careful evaluation for safety and efficacy in clinical translation.
+
+TrNK cells show heightened sensitivity to the local metabolic environment. Tumor-derived lysophosphatidylserine (LysoPS) inhibits the antitumor activity of ILC1s through the G protein-coupled receptor 34 (GPR34)67, a pathway validated in both mouse models and human samples. In colorectal cancer liver metastases, lactate accumulation lowers intracellular pH in TrNK cells, and consequently causes mitochondrial dysfunction and apoptosis68. Moreover, TME-associated mediators such as adenosine and indoleamine contribute to the functional exhaustion of TrNK cells and decrease secretion of type-1 cytokines (Figure 2)69. This metabolic vulnerability renders TrNK cells particularly susceptible to functional suppression in metabolically stressed TME. Although mouse models have provided valuable mechanistic insights, species-specific differences in immunology and metabolism limit the direct clinical translation of these findings.
+
+In contrast, cytokine-induced memory-like NK (CIML-NK) cells demonstrate superior metabolic fitness. This subset exhibits enhanced glycolytic ability and remodeled fatty acid metabolism under hypoxia55. The enhancement of citrate-malate shuttle, which is regulated by the transcription factor sterol regulatory element-binding proteins (SREBPs), is essential for sustaining the antitumor activity of CIML-NK cells after adoptive transfer (Figure 2)70. This metabolic plasticity allows CIML-NK cells to maintain durable function within the nutrient-deprived, immunosuppressive TME. Although this mechanism has been confirmed in human NK cells and has translational promise, it awaits validation in clinical trials.
+
+Overall, NK cell subsets exhibit substantial heterogeneity in their response to TME metabolic stress, and their metabolic adaptability directly dictates their functional state and fate.
+
+Differential regulation of cytokine signaling networks
+
+The functional state of NK cells within the TME is finely tuned by a complex cytokine network, which exerts precise positive and negative regulation across distinct subsets.
+
+Immunosuppressive cytokines play a central role in negative regulation. TGF-β is a well-characterized, potent inhibitor that directly suppresses NK cell proliferation and cytotoxicity71. Notably, this inhibition exhibits subset specificity; for example, TGF-β can induce conversion of TrNK cells into pro-tumor ILC1-like populations with impaired tumor surveillance ability72. Although mouse models have elucidated key TGF-β-mediated pathways, the species-specific functional dynamics requires further validation in human primary cells or clinical specimens. Notably, extensive crosstalk occurs between physicochemical factors and the cytokine signaling network within the TME. Single-cell RNA sequencing studies have shown that, in TiNK cells, hypoxia-inducible factor-1α (HIF-1α) suppresses IL-18-driven nuclear factor-κB (NF-κB) signaling and consequently impairs their anti-tumor activity (Figure 2)73. This finding has revealed a mechanism through which the hypoxic microenvironment regulates NK cell function through interference with cytokine signaling.
+
+In contrast, the IL-15 signaling axis plays a critical positive role in regulating NK cell function. In clear cell renal cell carcinoma, the presence of TrNK cells correlates with IL-15 levels and is associated with better patient prognosis74. Meanwhile, IFN-γ is a key NK cell effector whose production reflects activation status. For example, MLNK cells exhibit a substantial increase in IFN-γ and TNF-α production after antigen re-stimulation75. Mechanistically, IFN-γ activates the JAK/STAT1 signaling pathway, which in turn promotes caspase activity and directly induces tumor cell apoptosis (Figure 2)76. However, the potency of IFN-γ-mediated responses observed in mouse models might differ from that in humans, because of divergence in immunoregulatory networks. Clinical translation therefore will require careful evaluation across tumor types and microenvironmental contexts.
+
+Preclinical studies have shown that optimized cytokine combinations (e.g., IL-12, IL-15, and IL-18) together with tailored stimulation protocols epigenetically reprogram NK cells, thus enhancing their expansion and antitumor function even in immunosuppressive settings. However, their therapeutic efficacy awaits validation in clinical trials (Figure 2)54. In summary, NK cell activity within the TME is finely regulated by a multilayered and subset-specific cytokine network that dynamically integrates with the physicochemical microenvironment.
+
+Specific patterns of cell-cell interaction
+
+The functional state of NK cells within the TME is precisely regulated by diverse stromal components through dynamic intercellular crosstalk.
+
+In cNK cells, the transcriptional regulator PR domain zinc finger protein 1 (Prdm1) is a key functional modulator that governs cytotoxicity and metabolic homeostasis by influencing the JunB proto-oncogene, AP-1 transcription factor subunit (JUNB) signaling pathway, which in turn mediates crosstalk between cNK cells and macrophages77. Furthermore, the functional potency of cNK cells correlates with their local density and is shaped by C–C motif chemokine ligand 5 (CCL5)-dependent interactions between dendritic cells and T cells (Figure 2)78. However, given the differences in immune interaction mechanisms between mouse and human TMEs, these findings should be validated in human systems.
+
+Among immunosuppressive cell populations, MDSCs and Tregs inhibit NK cell function through both direct cell contact and soluble mediators. Emerging evidence indicates that MDSCs impair NK cell antitumor activity by secreting immunosuppressive cytokines such as IL-10 and TGF-β, as well as through the arginase 1 (ARG1)/L-arginine metabolic axis79. Additionally, MDSCs disrupt the cytotoxic ability of NK cells through close-contact interactions80. Similarly, Tregs suppress NK cell activation through cytotoxic T-lymphocyte-associated protein 4 (CTLA-4)-mediated signaling, TGF-β secretion, and contact-dependent pathways (Figure 2)81. Notably, TiNK cell function is particularly sensitive to proximity-dependent modulation by MDSCs and Tregs, showing a strong inverse correlation with the abundance of these immunosuppressive cells82.
+
+Tumor-associated macrophages (TAMs) play a context-dependent role in regulating NK cell function. M1-polarized TAMs enhance NK cell survival and cytotoxicity via cytokines such as IL-1583. In contrast, M2-polarized TAMs suppress NK cell activity via the secretion of inhibitory factors, including TGF-β84. Notably, the heterogeneity and dynamics of macrophage polarization within the human TME create a complex regulatory network that poses challenges in clinical translation. In HCC, peritumoral M2 TAMs have been found to recruit liver-resident NK cells via the CCL20-C-C motif chemokine receptor 6 (CCR6) axis and subsequently impair their cytotoxicity through IL-10/TGF-β signaling (Figure 2)85. This mechanism illustrates how TAMs spatially coordinate both recruitment and pathway-specific suppression, thereby establishing a localized immunosuppressive niche.
+
+In addition, direct interactions between tumor cells and NK cells critically regulate NK cell function. To evade immune surveillance, certain tumors downregulate the activating receptor NKG2D on NK cells by releasing its soluble ligands or packaging them into exosomes86. Additionally, tumor cells of CRC and HCC can induce NK cell apoptosis by expressing FasL, which in turn engages the death receptor Fas (CD95) on NK cells and triggers intrinsic apoptosis (Figure 2)87.
+
+Dynamics of NK cell subsets: functional interconversion and cooperative regulation
+
+Prior sections systematically characterized distinct NK cell subsets and their regulatory mechanisms within the TME. But these subsets function as a dynamic and interconnected network rather than in isolation. This section focuses on their functional interconversion and cooperative regulation.
+
+Phenotypic plasticity of NK cell subsets
+
+NK cells display considerable phenotypic plasticity within the TME, and undergo interconversion driven by specific microenvironmental cues. cNK cells, primarily the CD56dim subset, are a key precursor pool. Under signals such as TGF-β and IL-15, cNK cells upregulate tissue-resident markers such as CD69 and CD103, gradually adopt a TrNK–like phenotype, adapt their transcriptional profiles to tissue-specific demands, and shift from migratory to resident state (Figure 2)34. In contrast, under conditions of persistent antigen exposure, checkpoint upregulation, and inhibitory metabolites, cNK cells acquire an exhausted TiNK phenotype with diminished antitumor function (Figure 2)88. Notably, stimulation with exogenous cytokines such as IL-12, IL-15, and IL-18 reverses this suppression, by reprogramming exhausted TiNK or TrNK cells into adaptive NK cells with memory-like properties and restoring effector activity (Figure 2)89. This plasticity indicates that although the TME can drive NK cells toward exhaustion, it also offers a therapeutic window: targeted interventions might therefore reprogram these constrained subsets into potent, sustained antitumor effectors, thereby reshaping antitumor immunity.
+
+Synergistic and antagonistic interplay among subsets
+
+Within the TME, NK cell subsets collectively shape antitumor immunity through synergistic and antagonistic interactions. Functionally, they have complementary roles: tissue-resident TrNK cells act as first-line sentinels providing rapid local surveillance. After breach of this frontline or adequate antigen presentation, adaptive NK cells are recruited to mount a more potent and sustained attack90. This hierarchical response, transitioning from “standing forces” to “specialized effectors”, illustrates the spatiotemporal cooperation between distinct subsets. In contrast, functional antagonism can arise. In an immunosuppressive TME, exhausted TiNK cells may secrete factors such as TGF-β that suppress neighboring TrNK or newly recruited cNK cells (Figure 2). Moreover, metabolic competition further modulates subset dynamics: metabolically fit adaptive NK cells outcompete constrained TiNK cells under nutrient scarcity and consequently exacerbate the latter’s functional decline. In summary, NK cells form a plastic and dynamic network in the TME, wherein cooperative and competitive interactions collectively determine the overall strength of the antitumor response.
+
+Targeting NK cell subsets: from immunotherapy strategies to clinical translation
+
+Building on an enhanced understanding of TME-mediated regulation of NK cell function, along with systematic integration and dynamic analyses, researchers have developed targeted immunotherapies for distinct NK cell subsets. This section systematically reviews these strategies and evaluates their clinical translational potential.
+
+Adoptive cell therapy strategies
+
+cNK cell infusion
+
+The infusion of cNK cells has demonstrated therapeutic potential in various hematological malignancies and solid tumors (Figure 3). Allogeneic NK cell therapy, which carries a low risk of graft-vs.-host disease, is a major focus of current research. Several clinical trials have been approved by the U.S. Food and Drug Administration, including a phase II trial investigating autologous cNK cells combined with gemcitabine and carboplatin for non-small-cell lung cancer (NSCLC)91, and a phase II trial of umbilical cord blood-derived NK cells combined with chemotherapy for relapsed solid tumors92. In the treatment of hematological malignancies, infusion of haploidentical cNK cells has shown favorable safety and efficacy in patients with acute myeloid leukemia (AML) and acute lymphoblastic leukemia (ALL)93,94. Notably, umbilical cord blood-derived NK cells are particularly promising, because of their strong proliferative ability and enhanced antitumor activity. A phase II clinical trial in relapsed/refractory multiple myeloma has achieved an objective response rate exceeding 50%, with no severe graft-vs.-host disease reported (Table 3)95. However, the clinical efficacy remains limited by poor in vivo persistence, rapid exhaustion in the hypoxic/adenosine-rich TME, and challenges in achieving effective dosing, which collectively restrict durable responses and broad applicability.
+
+Figure 3 Five core approaches to NK cell-mediated tumor immunotherapy. A. Adoptive cell therapy: Infusion of conventional NK cells or cord blood-derived NK cells; Engineering NK cells into CAR-NK cells via genetic modification; expanding and reinfusing adaptive NK cells. B. Immune checkpoint regulation: monoclonal antibodies block inhibitory receptors on NK cells. C. Immunomodulators: (a) CCR5 inhibitors suppress the CCL3 and consequently decrease MDSC infiltration. (b) Adenosine receptor inhibitors reverse functional exhaustion in TrNK cells. (c) GPR34 inhibitors antagonize LysoPS and specifically activate TrNK cells. D. Emerging strategies: (a) CRISPR-Cas9 knockout of inhibitory genes. (b) Novel engineered cells including iADAPT NK cells. (c) Innovative delivery systems such as lipid nanoparticles loaded with STING agonists. (d) Engineered cytokines exemplified by IL-15 superagonist fusion proteins. (e) Cell-derived therapies, such as extracellular vesicles from cytotoxic MLNK cells. E. Combination therapy strategies: combination treatment with targeted drugs (such as ramucirumab or sorafenib) and local treatments (such as cryoablation and radiotherapy). ADO, adenosine; CAR, chimeric antigen receptor; CCR5, C–C chemokine receptor type 5; CCL3, C–C motif chemokine ligand 3; cNK, conventional natural killer cell; CRISPR-Cas9, clustered regularly interspaced short palindromic repeats-associated protein 9; GPR34, G protein-coupled receptor 34; iADAPT, induced pluripotent stem cell-derived armored dual-adjusted and precision-engineered; LysoPS, lysophosphatidylserine; mAb, monoclonal antibody; MDSC, myeloid-derived suppressor cell; NKG2A, natural killer group 2, member A; PD-1, programmed cell death protein 1; STING, stimulator of interferon genes; TIM-3, T-cell immunoglobulin and mucin-domain containing-3; TIGIT, T-cell immunoreceptor with Ig and ITIM domains; TrNK, tissue-resident natural killer cell.
+
+Table 3 Clinical application prospects of NK cell subsets in cancer treatment
+
+Cell subtype	Source	Tumor type	Clinical trial	Regimen	References	
+cNK cells	Autologous	NSCLC	NCT04872634 (phase I/IIa)	cNK cells combined with gemcitabine and carboplatin	91	
+Umbilical cord blood	Relapsed or drug-resistant solid tumors	NCT03420963 (phase I)	cNK cells combined with chemotherapeutic agents	92	
+Haploidentical	AML and ALL	NCT00799799 (phase I)	Myeloablative conditioning and haploidentical stem cell infusion	93,94	
+Umbilical cord blood	MM	NCT01729091 (phase II)	Cord blood-derived NK cell infusion combined with chemotherapy and autologous stem cell transplantation	95	
+Umbilical cord blood	Relapsed/refractory B-cell malignancies	NCT03056339 (phase I/II)	Infusion of CD19-targeted CAR-NK cells	96	
+Healthy donors	MM	Preclinical	CRISPR-Cas9-based gene editing of the NKG2A gene in ex vivo-expanded NK cells	97	
+TiNK cells	Patients with cancer	NSCLC, UC	NCT04995523 (phase I/II), NCT05327530 (phase II)	Anti-TIGIT/anti-PD-1 bispecific antibody rilvegostomig	98	
+Patients with cancer	HNSCC, NSCLC	NCT02643550 (phase II)	Monalizumab and cetuximab combination therapy	99,100	
+Patients with cancer	HNSCC	NCT02325401 (phase I), NCT02083692 (early phase I)	Preoperative metformin treatment	101	
+TrNK cells	Healthy donors and patients with cancer	CRC and HCC	Preclinical	GPR34 inhibitors combined with anti-TIGIT antibodies	67	
+	Patients with cancer	PDAC	Preclinical	Radiotherapy combined with CCR5i/PD-1 inhibitors	102	
+Adaptive NK cells	CMV-seropositive healthy donors	AML	Preclinical	Infusion of ex vivo-expanded, terminally differentiated adaptive NK cells	103	
+	Healthy donors	Drug-resistant leukemia/lymphoma	Preclinical	MLNK cell differentiation combined with CAR engineering	104	
+	Healthy donors	Leukemia	Preclinical	Novel fusion protein scaffold 18/12/TxM	105	
+	Healthy donors	HCC	Preclinical	iRGD promotes deep tumor delivery of CIML-NK cells	106	
+	Healthy donors	OC	Preclinical	Armed CIML-NK cells with CARs targeting the mesothelin	107	
+	iPSC-derived	MM and AML	NCT04614636 (phase I)	IADAPT NK cells combined with daratumumab	108	
+	CMV-seropositive healthy donors	AML	NCT03081780 (phase I)	NKG2C+ adaptive NK cell infusion combined with lymphodepleting chemotherapy and subcutaneous IL-2	109	
+	Allogenic	HCC	NCT02849015 (phase I/II)	Cryoablation combined with allogenic NK cells	110	
+	Haploidentical	AML	NCT01898793 (phase I)	Systemic IL-15 after chemotherapy and NK cell infusion	111	
+	Haploidentical	HNC	NCT04290546 (phase I)	IL-15 super-agonist combined with CTLA-4 blockade	112	
+	Healthy donors	HCC	Preclinical	Sorafenib combined with MLNK cell immunochemotherapy	113	
+	NK-92MI cell line	HCC	Preclinical	Intravenous administration of NK-92MI cell-derived exosomes	114	
+ALL, acute lymphoblastic leukemia; AML, acute myeloid leukemia; CAR, chimeric antigen receptor; CCR5i, C–C chemokine receptor type 5 inhibitor; CRC, colorectal cancer; CRISPR-Cas9, clustered regularly interspaced short palindromic repeats-associated protein 9; CTLA-4, cytotoxic T-lymphocyte-associated protein 4; GPR34, G protein-coupled receptor 34; HCC, hepatocellular carcinoma; HNC, head and neck cancer; HNSCC, head and neck squamous cell carcinoma; IADAPT, iPSC-derived armored dual-adjusted and precision-engineered; IPSC, induced pluripotent stem cell; IRGD, internalizing RGD; MM, multiple myeloma; NKG2A, natural killer group 2, member A; NSCLC, non-small cell lung cancer; OC, ovarian cancer; PD-1, programmed cell death protein 1; PDAC, pancreatic ductal adenocarcinoma; TIGIT, T-cell immunoreceptor with Ig and ITIM domains; UC, urothelial carcinoma.
+
+Engineered NK cells
+
+Chimeric antigen receptor (CAR)-NK cell technology significantly enhances tumor-specific recognition and cytotoxicity by introducing engineered receptors that target tumor-associated antigens (Figure 3). Compared with CAR-T cells, CAR-NK cells exhibit a more favorable safety profile and lower toxicity. Moreover, compared with CAR-NKT cells, CAR-NK cells possess relative advantages in source accessibility and manufacturing feasibility, and therefore become a promising candidate for tumor immunotherapy.
+
+To date, CAR-NK cells targeting CD19 or CD20 have shown promising efficacy in B-cell malignancies. In a phase I/II trial, allogeneic CD19-targeted CAR-NK therapy has achieved a 73% overall response rate in relapsed/refractory patients, with no severe cytokine release syndrome or neurotoxicity observed96. Additionally, CAR-NK cells engineered from MLNK cells, designated CAR-ML-NK cells, exhibit enhanced persistence and antitumor activity. A preclinical study has demonstrated that CAR-ML-NK cells effectively expand in vivo and suppress drug-resistant leukemia and lymphoma progression, thus offering a novel therapeutic strategy for hematologic malignancies104.
+
+In solid tumors, mesothelin-targeted CARs engineered into CIML NK cells have been shown to significantly enhance cytotoxicity against OC cell lines and exhibit superior antitumor and antimetastatic activity in preclinical xenograft models (Table 3)107. However, most CAR-NK studies have relied on humanized mouse models. Although these models offer greater clinical relevance than conventional mouse systems, they often use artificial tumor cell lines that diverge from patient-derived tumors, and immunodeficient recipient mice cannot fully replicate human immunity or adoptive cell dynamics. Therefore, the safety and long-term efficacy of CAR-NK therapy remain to be validated clinically.
+
+Nevertheless, conventional CAR-NK therapy remains limited by antigen escape. For example, leukemia stem cells can evade immune recognition by downregulating CD33 while upregulating ligands for NKG2D and CD226, such as major histocompatibility complex class I polypeptide-related sequence A and B (MICA/B). To address this evasion, a triple-targeting strategy integrating CD33-CAR, TCR-CD1d, and NKG2D/CD226 co-stimulation has been developed. This design enables elimination of CD33-negative leukemia stem cells via natural cytotoxicity receptor pathways when CAR/TCR signals are absent. Hypomethylating agents can further enhance this axis by upregulating NKR ligands and CD1d on cancer stem cells115, combining CAR specificity with NKR–cancer stem cell interactions to provide dual-mechanism protection against antigen escape.
+
+In recent years, substantial progress has been achieved in CAR-engineered induced NK (CAR-iNK) cell technology derived from pluripotent stem cells, including human induced pluripotent stem cells and human embryonic stem cells. These cells demonstrate high homogeneity and scalability for “off-the-shelf” therapy116. Standardized protocols enable the directed differentiation of CAR-iNK cells from cord blood-derived CD34+ hematopoietic stem and progenitor cells. Through a three-step process involving expansion, organoid-based induction, and maturation amplification, tens of millions of CAR-iNK cells can be generated from a single CD34+ hematopoietic stem and progenitor cells (HSPCs), while decreasing viral vector usage to one-tenth to one-hundred-thousandth of conventional levels, thereby substantially lowering production costs117.
+
+In summary, CAR-NK technology, particularly when MLNK cells are used as a platform, is a promising therapeutic approach for hematological and solid tumors. Ongoing innovations in stem cell-derived platforms are expected to accelerate clinical translation, yet long-term immune safety monitoring, particularly regarding potential effects on autoimmune homeostasis, remains essential during clinical application.
+
+Expansion and infusion of adaptive NK cells
+
+Adoptive immunotherapy using adaptive NK cells is a major research direction in cancer biotherapy. Current efforts focus predominantly on two subsets: HCMV-induced adaptive NK cells and CIML-NK cells (Figure 3).
+
+Research on HCMV-induced adaptive NK cells has substantially advanced. Investigators have successfully isolated and expanded highly active NKG2C+ NK cells from cytapheresis products obtained from CMV-seropositive donors. The establishment of a GMP-compliant manufacturing process has provided a solid foundation for clinical translation103. Clinical studies have shown that infusing NKG2C+ adaptive NK cells has substantial therapeutic potential109. Notably, in patients experiencing CMV reactivation after hematopoietic stem cell transplantation, the expansion of adaptive NK cells significantly correlates with lower leukemia relapse rate, thus underscoring their importance in post-transplant immune protection118.
+
+Research on CIML-NK cells has also achieved important breakthroughs. In a phase I trial involving patients with AML, CIML-NK cell infusion induced remission in 44% of patients, with persistence exceeding 3 months, thereby indicating favorable durability and antitumor activity (Table 3)111. Despite this promise, the clinical translation of adaptive NK cell therapy faces substantial challenges. The NKG2C+ subset is scarce and requires 2–3 weeks of high-dose IL-15 stimulation for expansion yet remains prone to premature senescence. Additional risks include CMV reactivation and inflammatory cytokine storms. Moreover, manufacturing is complex and exhibits batch-to-batch variability. In summary, adaptive NK cell-based immunotherapy is an emerging strategy with considerable translational potential for both virally induced and cytokine-preconditioned subsets. However, systematic resolution of these challenges remains essential for successful clinical application.
+
+Strategies for modulating immune checkpoints
+
+Targeting immune checkpoints expressed on NK cells has become a major research focus (Figure 3). TiNK cells exhibit high TIGIT expression, which correlates closely with tumor progression. Anti-TIGIT monotherapy has exhibited notable antitumor efficacy in CRC, breast cancer, and melanoma models in preclinical studies119,120. Moreover, TIGIT/PD-1 bispecific antibodies have been developed and are under evaluation in phase I/II trials for NSCLC and urothelial carcinoma, with preliminary results indicated considerable clinical promise98.
+
+Concurrently, NKG2A has emerged as a key therapeutic target. In clinical studies, the combination of the anti-NKG2A antibody monalizumab with the PD-1 inhibitor durvalumab and the epidermal growth factor receptor (EGFR) inhibitor cetuximab has shown synergistic activity99. Currently, NKG2A inhibitors, as monotherapy or in combination, are being evaluated in registered clinical trials across multiple cancers, to assess their safety and efficacy (Table 3)100,121.
+
+Furthermore, T-cell immunoglobulin and mucin-domain containing-3 (TIM-3) is gaining attention in NK cell-based immunotherapy research. Anti-TIM-3 has been shown to restore cNK and liver-resident NK cell function and suppress primary HCC progression in preclinical studies122. Collectively, these findings expand the potential target repertoire for NK cell immunotherapy. Immune checkpoint blockade enhances NK cell activity but increases the risk of immune-related adverse events123. Future research should prioritize balancing potent antitumor responses with systemic immune homeostasis.
+
+Application of immunomodulatory agents
+
+Chemokine receptor inhibitors and metabolic modulators are promising immunomodulatory strategies for regulating NK cell function, particularly in targeting TrNK cells (Figure 3). In chemokine receptor-targeted therapy, C-C chemokine receptor type 5 (CCR5) inhibitors decrease immunosuppressive MDSC and Treg infiltration in the TME by blocking the CCL3-CCR5 axis, and have been shown to enhance NK cell antitumor activity in pancreatic ductal adenocarcinoma (PDAC) models102. Because this finding was based on mouse studies, its translational relevance to human pancreatic cancer requires validation in human tissue or humanized models. Regarding metabolic modulation, GPR34 inhibitors enhance TrNK cell function by antagonizing LysoPS-mediated immunosuppression. In HCC and CRC models, combining GPR34 inhibitors with anti-TIGIT antibodies has shown synergistic efficacy67. Additionally, adenosine receptor inhibitors reverse TrNK cell exhaustion and restore cytotoxicity in melanoma models by blocking the adenosine signaling pathway (Table 3)124.
+
+Although these preclinical findings are promising, most studies have been exploratory, and clinical translation pathways remain undefined. Future efforts should prioritize advancing clinical trial design to accelerate bench-to-bedside translation.
+
+Combination therapy strategies
+
+Combination strategies are critical for increasing NK cell-based antitumor efficacy (Figure 3). Among these approaches, the monoclonal antibody-NK cell cooperative strategy based on ADCC is systematically optimized through two primary pathways: antibody engineering and effector cell engineering125. In antibody engineering, the Fragment crystallizable (Fc) region is modified to enhance affinity for CD16A on NK cells, thereby amplifying ADCC. These strategies include site-specific mutations (e.g., GASDALIE, Variant 18)126,127 and glycoengineering such as afucosylation128. These optimizations have been clinically validated in agents such as margetuximab (anti-human EGFR 2)129 and obinutuzumab (anti-CD20)130. At the effector cell level, genetic modification of NK cells to express engineered Fc receptors fundamentally increases their responsiveness to antibody signals. For example, the expression of a non-cleavable CD16A prolongs cellular activation131, whereas the introduction of high-affinity chimeric receptor systems such as CD64/16A provides a platform for universal effector cell development132. Ultimately, these approaches converge on an integrated strategy that combines Fc-optimized antibodies with “off-the-shelf” NK cells engineered to express enhanced Fc receptors. When further combined with immune checkpoint inhibitors and other modalities, this multi-layered cooperative system provides a novel paradigm to overcome tumor heterogeneity and therapy resistance133.
+
+Beyond the aforementioned ADCC-based synergistic strategies, additional combination modalities have shown considerable therapeutic potential. In NK-cell/targeted-drug combinations, preclinical and clinical studies have revealed synergistic effects. In HCC studies, the combination of sorafenib with MLNK cells reprogrammed the immunosuppressive TME to enhance NK cell activation, ultimately suppressing tumor progression113. Notably, in a trial involving patients with HNSCC, preoperative metformin treatment significantly increased intratumoral NKp46+ cell infiltration. Subsequent co-culture experiments further revealed that TiNK cells from metformin-pretreated patients exhibited stronger cytotoxicity; these findings support the synergistic potential of combining targeted therapy with NK cell-based immunotherapy (Table 3)101.
+
+Substantial progress has also been achieved in combining NK cells with local therapies. A phase II trial in advanced HCC has demonstrated that combining allogeneic NK cell therapy with cryoablation significantly prolongs median progression-free survival110. Additionally, in PDAC models, radiotherapy combined with a CCR5 inhibitor and a PD-1 inhibitor has been found to activate TrNK cells. This approach, which enhances the antitumor immune response by modulating the TrNK–conventional type 1 dendritic cell (cDC1)–CD8+ T-cell axis, provides a novel rationale for combination strategies (Table 3)102. In summary, NK cell-based combination strategies, through coordinated multi-mechanistic actions, offer promising directions for improving antitumor immunotherapy.
+
+Emerging technologies and future directions
+
+Beyond the aforementioned approaches, emerging technologies are driving innovative breakthroughs in NK cell therapy, spanning genetic engineering, delivery systems, and cellular derivatives, which have demonstrated considerable translational potential (Figure 3).
+
+Genetic and cellular engineering has opened new avenues. For example, Woan et al. have used triple-gene editing to generate induced pluripotent stem cells (iPSCs)<discrbreak> that are subsequently differentiated into iPSC-derived armored dual-adjusted and precision-engineered (iADAPT) NK cells. These cells exhibit prolonged persistence without exogenous cytokines and potent cytotoxicity against multiple myeloma (MM) and AML cells108. Notably, CRISPR/Cas9 also enables precise functional engineering. For example, knockout of the killer cell lectin-like receptor subfamily C, member 1 (KLRC1) gene (encoding the inhibitory receptor NKG2A) significantly enhances NK cell cytotoxicity against MM cells (Table 3)97.
+
+Advancements in delivery systems are addressing key technical challenges. Dong et al. have engineered CIML-NK cells with the tumor-penetrating peptide iRGD, thus improving their infiltration and cytotoxicity in deep tumor tissues, as demonstrated in 3D spheroid and HCC xenograft models106. Furthermore, Khalifa et al. have developed lipid nanoparticles co-loaded with a stimulator of interferon genes (STING) agonist and cytosine-phosphate-guanine oligodeoxynucleotides, which have been found to induce long-term persistence of MLNK cells and durable antitumor immune memory, and achieve prophylactic efficacy in a melanoma lung metastasis model (Table 3)134.
+
+Innovative cytokine engineering and agent design continue to emerge. Cubitt et al. have developed a fusion protein (18/12/TxM) combining the IL-15 superagonist N-803 with IL-18/IL-12 components, which has effectively activated and enhanced MLNK cell antitumor function in preclinical studies, thereby offering a new approach for adoptive cell expansion105. Importantly, a phase I trial has confirmed that allogeneic CIML-NK cells combined with N-803 and ipilimumab achieve sustained expansion and tumor regression in advanced head and neck cancer, thus underscoring the clinical feasibility and safety of this combinatorial strategy (Table 3)112.
+
+In the application of cellular derivatives, extracellular vesicles (EVs) derived from MLNK cells present distinctive advantages. These EVs have cytotoxic and antitumor activities, including enhanced tumor cell uptake in acidic microenvironments135. Notably, in HCC models, NK cell-derived EVs selectively target and kill tumor cells while sparing normal hepatocytes, and therefore have potential as a safe and effective therapeutic strategy (Table 3)114. Together, these emerging approaches reflect the rapid advancement of NK cell therapy toward more precise, efficacious, and safer treatments, and the expansion of the therapeutic options for cancer immunotherapy.
+
+Disease heterogeneity in NK cell function and therapeutic challenges
+
+Although current therapeutic strategies are aimed at enhancing the anti-tumor activity of NK cells, their inherent functional plasticity offers both benefits and drawbacks. Under physiological conditions, NK cells maintain immune homeostasis through anti-tumor defense, anti-infection responses, and senescent cell clearance. However, in pathology, TME-derived suppressive signals drive NK cell exhaustion. In autoimmune diseases such as multiple sclerosis and rheumatoid arthritis, they might contribute to immune dysregulation through functional impairment or numerical reduction, or, in contrast, exacerbate tissue damage via excessive activation136,137. However, in chronic inflammatory settings, such as inflammatory bowel disease, persistent aberrant signaling can cause NK cells to release pro-inflammatory mediators while attempting to suppress inflammation, and ultimately exacerbate disease progression138. This context-dependent shift from physiological protection to pathological damage highlights that NK cell fate is governed by the dynamic balance of signals within the microenvironment.
+
+This functional heterogeneity complicates clinical translation. Although checkpoint inhibitors and CAR-NK therapies can reverse TME immunosuppression, their limited systemic specificity poses risks of off-target effects, such as cytokine release syndrome or autoimmune reactions139. Therefore, future efforts should focus on developing TME-selective activation strategies, including conditionally activated antibodies and localized drug delivery systems; identifying predictive biomarkers for response and toxicity to guide patient stratification; and systematically evaluating autoimmune risks as key safety endpoints in trials. These approaches would maximize anticancer efficacy while mitigating immune-related adverse events, thereby advancing NK cell-based therapies toward safer clinical application.
+
+Conclusions
+
+This review comprehensively examined the characteristics, functions, regulatory mechanisms, and therapeutic potential of novel NK cell subsets within the TME, emphasizing the dynamic and interconnected networks governing their behavior. As crucial innate immune effectors, NK cells are essential for tumor immune surveillance. However, the traditional NK cell dichotomy, which was derived primarily from peripheral blood studies, does not capture the functional diversity and phenotypic plasticity of NK cells within the TME. Through multifaceted regulation, the TME shapes functionally distinct subsets, such as TiNK, TrNK, and adaptive NK cells, each with unique differentiation pathways, phenotypes, and effector profiles. The dynamic interconversion among these subsets critically shapes immune surveillance outcomes.
+
+The complexity of the TME impedes the broad application of therapies targeting emerging NK cell subsets. Therefore, future research should prioritize elucidating how the TME shapes the in vivo functionality of these subsets, which is a critical step for effectively harnessing NK cells to enhance antitumor immunity. Although therapies based on novel NK cell subsets are advancing, their clinical implementation remains constrained by several key limitations: the lack of consistent subset biomarkers, incomplete understanding of their regulatory networks, and the immaturity of therapies designed for precise subset targeting.
+
+Future efforts should focus on identifying reliable subset-specific markers, deciphering their spatiotemporal regulatory networks, designing novel combination therapies, and establishing robust translational platforms. In summary, a pressing need exists to clarify the molecular mechanisms through which the TME drives functional transitions among NK cell subsets and, in parallel, to develop corresponding precision-targeting strategies. Such efforts would advance subset-based NK cell immunotherapy from bench to bedside, and ultimately provide more effective therapeutic options for patients with cancer.
+
+Conflict of interest statement
+
+No potential conflicts of interest are disclosed.
+
+Author contributions
+
+Conceived and designed the analysis: Xiaodi Zhao, Yuanyuan Lu, Yue Duan.
+
+Collected the data: Yue Duan, Mingzhen Zhou, Xingxian Guo, Tianyu Cao.
+
+Contributed data or analysis tools: Yue Duan, Xingxian Guo.
+
+Performed the analysis: Yue Duan.
+
+Wrote the paper: Yue Duan.
+
+
+References
+
+1. Shen Z Meng X Rautela J Chopin M Huntington ND Adjusting the scope of natural killer cells in cancer therapy Cell Mol Immunol 2025 22 699 711 40410571 10.1038/s41423-025-01297-4 PMC12206923
+2. Guillerey C NK cells in the tumor microenvironment Adv Exp Med Biol 2020 1273 69 90 33119876 10.1007/978-3-030-49270-0_4
+3. Xiao Y Yu D Tumor microenvironment as a therapeutic target in cancer Pharmacol Ther 2021 221 107753 33259885 10.1016/j.pharmthera.2020.107753 PMC8084948
+4. Mace EM Human natural killer cells: form, function, and development J Allergy Clin Immunol 2023 151 371 85 36195172 10.1016/j.jaci.2022.09.022 PMC9905317
+5. Cózar B Greppi M Carpentier S Narni-Mancinelli E Chiossone L Vivier E Tumor-infiltrating natural killer cells Cancer Discov 2021 11 34 44 33277307 10.1158/2159-8290.CD-20-0655 PMC7611243
+6. Peng H Tian Z Diversity of tissue-resident NK cells Semin Immunol 2017 31 3 10 28802693 10.1016/j.smim.2017.07.006
+7. Gao F Zhou Z Lin Y Shu G Yin G Zhang T Biology and clinical relevance of HCMV-associated adaptive NK cells Front Immunol 2022 13 830396 35464486 10.3389/fimmu.2022.830396 PMC9022632
+8. Qu Y Zeng A Cheng Y Li S Natural killer cell memory: challenges and opportunities for cancer immunotherapy Cancer Biol Ther 2024 25 2376410 38987282 10.1080/15384047.2024.2376410 PMC11238922
+9. Herberman RB Nunn ME Lavrin DH Natural cytotoxic reactivity of mouse lymphoid cells against syngeneic acid allogeneic tumors. I. Distribution of reactivity and specificity Int J Cancer 1975 16 216 29 50294 10.1002/ijc.2910160204
+10. Vojdani A Koksoy S Vojdani E Engelman M Benzvi C Lerner A Natural killer cells and cytotoxic T cells: complementary partners against microorganisms and cancer Microorganisms 2024 12 230 38276215 10.3390/microorganisms12010230 PMC10818828
+11. Hwang JR Byeon Y Kim D Park SG Recent insights of T cell receptor-mediated signaling pathways for T cell activation and development Exp Mol Med 2020 52 750 61 32439954 10.1038/s12276-020-0435-8 PMC7272404
+12. Tognarelli EI Gutiérrez-Vera C Palacios PA Pasten-Ferrada IA Aguirre-Muñoz F Cornejo DA Natural killer T cell diversity and immunotherapy Cancers (Basel) 2023 15 5737 38136283 10.3390/cancers15245737 PMC10742272
+13. Moretta L Montaldo E Vacca P Del Zotto G Moretta F Merli P Human natural killer cells: origin, receptors, function, and clinical applications Int Arch Allergy Immunol 2014 164 253 64 25323661 10.1159/000365632
+14. Stecher C Bischl R Schmid-Böse A Ferstl S Potzmann E Frank M Heterogeneity of IL-15-expressing mesenchymal stromal cells controls natural killer cell development and immune cell homeostasis Nat Commun 2025 16 5949 40595636 10.1038/s41467-025-61231-0 PMC12218584
+15. Seillet C Rankin LC Groom JR Mielke LA Tellier J Chopin M Nfil3 is required for the development of all innate lymphoid cell subsets J Exp Med 2014 211 1733 40 25092873 10.1084/jem.20140145 PMC4144736
+16. Gordon SM Chaix J Rupp LJ Wu J Madera S Sun JC The transcription factors T-bet and Eomes control key checkpoints of natural killer cell maturation Immunity 2012 36 55 67 22261438 10.1016/j.immuni.2011.11.016 PMC3381976
+17. Held W Jeevan-Raj B Charmoy M Transcriptional regulation of murine natural killer cell development, differentiation and maturation Cell Mol Life Sci 2018 75 3371 9 29959459 10.1007/s00018-018-2865-1 PMC11105435
+18. Crinier A Narni-Mancinelli E Ugolini S Vivier E SnapShot: natural killer cells Cell 2020 180 1280.e1 32200803 10.1016/j.cell.2020.02.029
+19. Stabile H Nisti P Morrone S Pagliara D Bertaina A Locatelli F Multifunctional human CD56low CD16low natural killer cells are the prominent subset in bone marrow of both healthy pediatric donors and leukemic patients Haematologica 2015 100 489 98 25596273 10.3324/haematol.2014.116053 PMC4380722
+20. Yu J Freud AG Caligiuri MA Location and cellular stages of natural killer cell development Trends Immunol 2013 34 573 82 24055329 10.1016/j.it.2013.07.005 PMC3852183
+21. Dogra P Rancan C Ma W Toth M Senda T Carpenter DJ Tissue determinants of human NK cell development, function, and residence Cell 2020 180 749 63.e13 32059780 10.1016/j.cell.2020.01.022 PMC7194029
+22. Björkström NK Strunz B Ljunggren HG Natural killer cells in antiviral immunity Nat Rev Immunol 2022 22 112 23 34117484 10.1038/s41577-021-00558-3 PMC8194386
+23. Rebuffet L Melsen JE Escalière B Basurto-Lozada D Bhandoola A Björkström NK High-dimensional single-cell analysis of human natural killer cell heterogeneity Nat Immunol 2024 25 1474 88 38956378 10.1038/s41590-024-01883-0 PMC11291291
+24. Tang F Li J Qi L Liu D Bo Y Qin S A pan-cancer single-cell panorama of human natural killer cells Cell 2023 186 4235 51.e20 37607536 10.1016/j.cell.2023.07.034
+25. Levi I Amsalem H Nissan A Darash-Yahana M Peretz T Mandelboim O Characterization of tumor infiltrating natural killer cell subset Oncotarget 2015 6 13835 43 26079948 10.18632/oncotarget.3453 PMC4537053
+26. Tokunaga R Zhang W Naseem M Puccini A Berger MD Soni S CXCL9, CXCL10, CXCL11/CXCR3 axis for immune activation – a target for novel cancer therapy Cancer Treat Rev 2018 63 40 7 29207310 10.1016/j.ctrv.2017.11.007 PMC5801162
+27. Netskar H Pfefferle A Goodridge JP Sohlberg E Dufva O Teichmann SA Pan-cancer profiling of tumor-infiltrating natural killer cells through transcriptional reference mapping Nat Immunol 2024 25 1445 59 38956379 10.1038/s41590-024-01884-z PMC11291284
+28. Zecca A Barili V Dalla Valle R Rizzo D Olivani A Biasini E Metabolic and functional recovery of tumor infiltrating NK-cells in hepatocellular carcinoma Dig Liver Dis 2020 52 E12
+29. Zhang S Liu W Hu B Wang P Lv X Chen S Prognostic significance of tumor-infiltrating natural killer cells in solid tumors: a systematic review and meta-analysis Front Immunol 2020 11 1242 32714321 10.3389/fimmu.2020.01242 PMC7343909
+30. Stangl S Tontcheva N Sievert W Shevtsov M Niu M Schmid TE Heat shock protein 70 and tumor-infiltrating NK cells as prognostic indicators for patients with squamous cell carcinoma of the head and neck after radiochemotherapy: a multicentre retrospective study of the German Cancer Consortium Radiation Oncology Group (DKTK-ROG) Int J Cancer 2018 142 1911 25 29235112 10.1002/ijc.31213 PMC5873418
+31. Hashemi E Malarkannan S Tissue-resident NK cells: development, maturation, and clinical relevance Cancers (Basel) 2020 12 1553 32545516 10.3390/cancers12061553 PMC7352973
+32. Sojka DK Plougastel-Douglas B Yang L Pak-Wittel MA Artyomov MN Ivanova Y Tissue-resident natural killer (NK) cells are cell lineages distinct from thymic and conventional splenic NK cells Elife 2014 3 e01659 24714492 10.7554/eLife.01659 PMC3975579
+33. Bankovich AJ Shiow LR Cyster JG CD69 suppresses sphingosine 1-phosophate receptor-1 (S1P1) function through interaction with membrane helix 4 J Biol Chem 2010 285 22328 37 20463015 10.1074/jbc.M110.123299 PMC2903414
+34. Li J Xiao C Li C He J Tissue-resident immune cells: from defining characteristics to roles in diseases Signal Transduct Target Ther 2025 10 12 39820040 10.1038/s41392-024-02050-5 PMC11755756
+35. Yamamoto Y Miyazato K Takahashi K Yoshimura N Tahara H Hayakawa Y Lung-resident natural killer cells control pulmonary tumor growth in mice Cancer Sci 2018 109 2670 6 29927042 10.1111/cas.13703 PMC6125475
+36. Bernson E Huhn O Karlsson V Hawkes D Lycke M Cazzetta V Identification of tissue-resident natural killer and T lymphocytes with anti-tumor properties in ascites of ovarian cancer patients Cancers (Basel) 2023 15 3362 37444472 10.3390/cancers15133362 PMC10340516
+37. Picant V Revol-Bauz L Tonon L Casini T Voissière A Poujol D Interleukin-35 impairs human NK cell effector functions and induces their ILC1-like conversion with tissue residency features Nat Commun 2025 16 6135 40610398 10.1038/s41467-025-61196-0 PMC12229632
+38. Gao Y Souza-Fonseca-Guimaraes F Bald T Ng SS Young A Ngiow SF Tumor immunoevasion by the conversion of effector NK cells into type 1 innate lymphoid cells Nat Immunol 2017 18 1004 15 28759001 10.1038/ni.3800
+39. Nelson A Lukacs JD Johnston B The current landscape of NKT cell immunotherapy and the hills ahead Cancers (Basel) 2021 13 5174 34680322 10.3390/cancers13205174 PMC8533824
+40. Lin W Ding J Li Q Lin Y Ruan S Birkeland AC Exploring a specific type of tissue-resident natural killer cell involved in the anti-tumor and immunotherapy response in human papillomavirus-positive head and neck squamous cell carcinoma using scRNA-seq Transl Cancer Res 2024 13 5550 62 39524999 10.21037/tcr-24-1535 PMC11543061
+41. Guma M Angulo A Vilches C Gomez-Lozano N Malats N Lopez-Botet M Imprint of human cytomegalovirus infection on the NK cell receptor repertoire Blood 2004 104 3664 71 15304389 10.1182/blood-2004-05-2058
+42. Guma M Budt M Saez A Brckalo T Hengel H Angulo A Expansion of CD94/NKG2C+ NK cells in response to human cytomegalovirus-infected fibroblasts Blood 2006 107 3624 31 16384928 10.1182/blood-2005-09-3682
+43. Schlums H Cichocki F Tesi B Theorell J Beziat V Holmes TD Cytomegalovirus infection drives adaptive epigenetic diversification of NK cells with altered signaling and effector function Immunity 2015 42 443 56 25786176 10.1016/j.immuni.2015.02.008 PMC4612277
+44. Hammer Q Rückert T Borst EM Dunst J Haubner A Durek P Peptide-specific recognition of human cytomegalovirus strains controls adaptive natural killer cells Nat Immunol 2018 19 453 63 29632329 10.1038/s41590-018-0082-6
+45. Béziat V Liu LL Malmberg JA Ivarsson MA Sohlberg E Björklund AT NK cell responses to cytomegalovirus infection lead to stable imprints in the human KIR repertoire and involve activating KIRs Blood 2013 121 2678 88 23325834 10.1182/blood-2012-10-459545 PMC3617633
+46. Sarhan D Cichocki F Zhang B Yingst A Spellman SR Cooley S Adaptive NK cells with low TIGIT expression are inherently resistant to myeloid-derived suppressor cells Cancer Res 2016 76 5696 706 27503932 10.1158/0008-5472.CAN-16-0839 PMC5050142
+47. Sarhan D Hippen KL Lemire A Hying S Luo X Lenvik T Adaptive NK cells resist regulatory T-cell suppression driven by IL37 Cancer Immunol Res 2018 6 766 75 29784636 10.1158/2326-6066.CIR-17-0498 PMC6030483
+48. Terren I Orrantia A Astarloa-Pando G Amarilla-Irusta A Zenarruzabeitia O Borrego F Cytokine-induced memory-like NK cells: from the basics to clinical applications Front Immunol 2022 13 884648 35603208 10.3389/fimmu.2022.884648 PMC9114299
+49. Tarannum M Romee R Cytokine-induced memory-like natural killer cells for cancer immunotherapy Stem Cell Res Ther 2021 12 592 34863287 10.1186/s13287-021-02655-5 PMC8642969
+50. Wang Q Chen S Guo Z Xia S Zhang M NK-like CD8 T cell: one potential evolutionary continuum between adaptive memory and innate immunity Clin Exp Immunol 2024 217 136 50 38651831 10.1093/cei/uxae038 PMC11239564
+51. Romee R Schneider SE Leong JW Chase JM Keppel CR Sullivan RP Cytokine activation induces human memory-like NK cells Blood 2012 120 4751 60 22983442 10.1182/blood-2012-04-419283 PMC3520618
+52. Cooper MA Elliott JM Keyel PA Yang L Carrero JA Yokoyama WM Cytokine-induced memory-like natural killer cells Proc Natl Acad Sci U S A 2009 106 1915 9 19181844 10.1073/pnas.0813192106 PMC2644138
+53. Carreira-Santos S López-Sejas N González-Sánchez M Sánchez-Hernández E Pera A Hassouneh F Enhanced expression of natural cytotoxicity receptors on cytokine-induced memory-like natural killer cells correlates with effector function Front Immunol 2023 14 1256404 37908353 10.3389/fimmu.2023.1256404 PMC10613704
+54. Uppendahl LD Felices M Bendzick L Ryan C Kodal B Hinderlie P Cytokine-induced memory-like natural killer cells have enhanced function, proliferation, and in vivo expansion against ovarian cancer cells Gynecol Oncol 2019 153 149 57 30658847 10.1016/j.ygyno.2019.01.006 PMC6430659
+55. Arellano-Ballestero H Zubiak A Dally C Orchard K Alrubayyi A Charalambous X Proteomic and phenotypic characteristics of memory-like natural killer cells for cancer immunotherapy J Immunother Cancer 2024 12 e008717 39032940 10.1136/jitc-2023-008717 PMC11261707
+56. Wagner AK Kadri N Tibbitt C van de Ven K Bagawath-Singh S Oliinyk D PD-1 expression on mouse intratumoral NK cells and its effects on NK cell phenotype iScience 2022 25 105137 36185379 10.1016/j.isci.2022.105137 PMC9523278
+57. Rojas-Diaz JM Solorzano-Ibarra F Garcia-Barrientos NT Klimov-Kravtchenko K Guitron-Aviña MS Cruz-Ramos JA Uncovering the expression pattern of the costimulatory receptors ICOS, 4-1BB, and OX-40 in exhausted peripheral and tumor-infiltrating natural killer cells from patients with cervical cancer Int J Mol Sci 2024 25 8775 39201462 10.3390/ijms25168775 PMC11354483
+58. Sun H Liu L Huang Q Liu H Huang M Wang J Accumulation of tumor-infiltrating CD49a+ NK cells correlates with poor prognosis for human hepatocellular carcinoma Cancer Immunol Res 2019 7 1535 46 31311791 10.1158/2326-6066.CIR-18-0757
+59. Brownlie D von Kries A Valenzano G Wild N Yilmaz E Säfholm J Accumulation of tissue-resident natural killer cells, innate lymphoid cells, and CD8+ T cells towards the center of human lung tumors Oncoimmunology 2023 12 2233402 37448786 10.1080/2162402X.2023.2233402 PMC10337494
+60. Borde S Matosevic S Metabolic adaptation of NK cell activity and behavior in tumors: challenges and therapeutic opportunities Trends Pharmacol Sci 2023 44 832 48 37770314 10.1016/j.tips.2023.08.009
+61. Wang Z Guan D Wang S Chai LYA Xu S Lam KP Glycolysis and oxidative phosphorylation play critical roles in natural killer cell receptor-mediated natural killer cell functions Front Immunol 2020 11 202 32153568 10.3389/fimmu.2020.00202 PMC7045049
+62. Poznanski SM Singh K Ritchie TM Aguiar JA Fan IY Portillo AL Metabolic flexibility determines human NK cell functional fate in the tumor microenvironment Cell Metab 2021 33 1205 20.e5 33852875 10.1016/j.cmet.2021.03.023
+63. Michelet X Dyck L Hogan A Loftus RM Duquette D Wei K Metabolic reprogramming of natural killer cells in obesity limits antitumor responses Nat Immunol 2018 19 1330 40 30420624 10.1038/s41590-018-0251-7
+64. Teng R Wang Y Lv N Zhang D Williamson RA Lei L Hypoxia impairs NK cell cytotoxicity through SHP-1-mediated attenuation of STAT3 and ERK signaling pathways J Immunol Res 2020 2020 4598476 33123602 10.1155/2020/4598476 PMC7584946
+65. Izawa S Kono K Mimura K Kawaguchi Y Watanabe M Maruyama T H2O2 production within tumor microenvironment inversely correlated with infiltration of CD56dim NK cells in gastric and esophageal cancer: possible mechanisms of NK cell dysfunction Cancer Immunol Immunother 2011 60 1801 10 21811786 10.1007/s00262-011-1082-7 PMC11028881
+66. Juras PK Racioppi L Mukherjee D Artham S Gao X Akullian D’Agostino L Increased CaMKK2 expression is an adaptive response that maintains the fitness of tumor-infiltrating natural killer cells Cancer Immunol Res 2023 11 109 22 36301267 10.1158/2326-6066.CIR-22-0391 PMC9812906
+67. Yan J Zhang C Xu Y Huang Z Ye Q Qian X GPR34 is a metabolic immune checkpoint for ILC1-mediated antitumor immunity Nat Immunol 2024 25 2057 67 39358444 10.1038/s41590-024-01973-z
+68. Harmon C Robinson MW Hand F Almuaili D Mentor K Houlihan DD Lactate-mediated acidification of tumor microenvironment induces apoptosis of liver-resident NK cells in colorectal liver metastasis Cancer Immunol Res 2019 7 335 46 30563827 10.1158/2326-6066.CIR-18-0481
+69. Ercolano G Garcia-Garijo A Salomé B Gomez-Cadena A Vanoni G Mastelic-Gavillet B Immunosuppressive mediators impair proinflammatory innate lymphoid cell function in human malignant melanoma Cancer Immunol Res 2020 8 556 64 32019778 10.1158/2326-6066.CIR-19-0504
+70. Assmann N O’Brien KL Donnelly RP Dyck L Zaiatz-Bittencourt V Loftus RM Srebp-controlled glucose metabolism is essential for NK cell functional responses Nat Immunol 2017 18 1197 206 28920951 10.1038/ni.3838
+71. Viel S Marçais A Guimaraes FS Loftus R Rabilloud J Grau M TGF-β inhibits the activation and functions of NK cells by repressing the mTOR pathway Sci Signal 2016 9 ra19 26884601 10.1126/scisignal.aad1884
+72. Sparano C Solís-Sayago D Zangger NS Rindlisbacher L Van Hove H Vermeer M Autocrine TGF-β1 drives tissue-specific differentiation and function of resident NK cells J Exp Med 2025 222 e20240930 39692745 10.1084/jem.20240930 PMC11654236
+73. Ni J Wang X Stojanovic A Zhang Q Wincher M Bühler L Single-cell RNA sequencing of tumor-infiltrating NK cells reveals that inhibition of transcription factor HIF-1α unleashes NK cell activity Immunity 2020 52 1075 8.e8 32445619 10.1016/j.immuni.2020.05.001
+74. Strizova Z Taborska P Stakheev D Partlová S Havlova K Vesely S NK and T cells with a cytotoxic/migratory phenotype accumulate in peritumoral tissue of patients with clear cell renal carcinoma Urol Oncol 2019 37 503 9 31030972 10.1016/j.urolonc.2019.03.014
+75. Romee R Rosario M Berrien-Elliott MM Wagner JA Jewell BA Schappe T Cytokine-induced memory-like natural killer cells exhibit enhanced responses against myeloid leukemia Sci Transl Med 2016 8 357ra123 10.1126/scitranslmed.aaf2341 PMC5436500 27655849
+76. Woznicki JA Saini N Flood P Rajaram S Lee CM Stamou P TNF-α synergises with IFN-γ to induce caspase-8-JAK1/2-STAT1-dependent death of intestinal epithelial cells Cell Death Dis 2021 12 864 34556638 10.1038/s41419-021-04151-3 PMC8459343
+77. He J Gao L Wang P Chan WK Zheng Y Zhang Y Prdm1 positively regulates liver Group 1 ILCs cancer immune surveillance and preserves functional heterogeneity Elife 2024 13 RP92948 39133873 10.7554/eLife.92948 PMC11318973
+78. Ducimetière L Lucchiari G Litscher G Nater M Heeb L Nuñez NG Conventional NK cells and tissue-resident ILC1s join forces to control liver metastasis Proc Natl Acad Sci U S A 2021 118 e2026271118 34183415 10.1073/pnas.2026271118 PMC8271692
+79. Neo SY Tong L Chong J Liu Y Jing X Oliveira MMS Tumor-associated NK cells drive MDSC-mediated tumor immune tolerance through the IL-6/STAT3 axis Sci Transl Med 2024 16 eadi2952 38748775 10.1126/scitranslmed.adi2952
+80. Wang Z Du X Xing X Xie W Xin H Liu W Myeloid-derived suppressor cells: orchestrators of tumor immune evasion and therapeutic vulnerabilities Mol Cancer Res 2025 23 829 38 40757969 10.1158/1541-7786.MCR-25-0251
+81. Tanaka A Sakaguchi S Regulatory T cells in cancer immunotherapy Cell Res 2017 27 109 18 27995907 10.1038/cr.2016.151 PMC5223231
+82. Liu K Hoover AR Sun Y Valerio TI Furrer C Adams J Anti-tumor effects on tumor-infiltrating natural killer cells by localized ablative immunotherapy and immune checkpoint inhibitors: an integrated and comparative study using scRNAseq analysis Cancer Lett 2025 627 217825 40436260 10.1016/j.canlet.2025.217825 PMC12207081
+83. Mattiola I Pesant M Tentorio PF Molgora M Marcenaro E Lugli E Priming of human resting NK cells by autologous M1 macrophages via the engagement of IL-1β, IFN-β, and IL-15 pathways J Immunol 2015 195 2818 28 26276870 10.4049/jimmunol.1500325
+84. Krneta T Gillgrass A Poznanski S Chew M Lee AJ Kolb M M2-polarized and tumor-associated macrophages alter NK cell phenotype and function in a contact-dependent manner J Leukoc Biol 2017 101 285 95 27493241 10.1189/jlb.3A1215-552R
+85. Chew V Lai L Pan L Lim CJ Li J Ong R Delineation of an immunosuppressive gradient in hepatocellular carcinoma using high-dimensional proteomic and transcriptomic analyses Proc Natl Acad Sci U S A 2017 114 E5900 9 28674001 10.1073/pnas.1706559114 PMC5530700
+86. Huang S Qin Z Wang F Kang Y Ren B A potential mechanism of tumor immune escape: regulation and application of soluble natural killer group 2 member D ligands (Review) Oncol Rep 2024 52 137 39155864 10.3892/or.2024.8796 PMC11358674
+87. Zhu Y Huang B Shi J Fas ligand and lytic granule differentially control cytotoxic dynamics of natural killer cell against cancer target Oncotarget 2016 7 47163 72 27323411 10.18632/oncotarget.9980 PMC5216932
+88. Portale F Di Mitri D NK Cells in cancer: mechanisms of dysfunction and therapeutic potential Int J Mol Sci 2023 24 9521 37298470 10.3390/ijms24119521 PMC10253405
+89. Foltz JA Tran J Wong P Fan C Schmidt E Fisk B Cytokines drive the formation of memory-like NK cell subsets via epigenetic rewiring and transcriptional regulation Sci Immunol 2024 9 eadk4893 38941480 10.1126/sciimmunol.adk4893 PMC12329699
+90. Nikzad R Angelo LS Aviles-Padilla K Le DT Singh VK Bimler L Human natural killer cells mediate adaptive immunity to viral antigens Sci Immunol 2019 4 eaat8116 31076527 10.1126/sciimmunol.aat8116 PMC6636344
+91. Choi MG Son GW Choi MY Jung JS Rho JK Ji W Safety and efficacy of SNK01 (autologous natural killer cells) in combination with cytotoxic chemotherapy and/or cetuximab after failure of prior tyrosine kinase inhibitor in non-small cell lung cancer: non-clinical mouse model and phase I/IIa clinical study J Immunother Cancer 2024 12 e008585 38538093 10.1136/jitc-2023-008585 PMC10982808
+92. Lian G Mak TS Yu X Lan HY Challenges and recent advances in NK cell-targeted immunotherapies in solid tumors Int J Mol Sci 2021 23 164 35008589 10.3390/ijms23010164 PMC8745474
+93. Ruggeri L Capanni M Urbani E Perruccio K Shlomchik WD Tosti A Effectiveness of donor natural killer cell alloreactivity in mismatched hematopoietic transplants Science 2002 295 2097 100 11896281 10.1126/science.1068440
+94. Curti A Ruggeri L D’Addio A Bontadini A Dan E Motta MR Successful transfer of alloreactive haploidentical KIR ligand-mismatched natural killer cells after infusion in elderly high risk acute myeloid leukemia patients Blood 2011 118 3273 9 21791425 10.1182/blood-2011-01-329508
+95. Shah N Li L McCarty J Kaur I Yvon E Shaim H Phase I study of cord blood-derived natural killer cells combined with autologous stem cell transplantation in multiple myeloma Br J Haematol 2017 177 457 66 28295190 10.1111/bjh.14570 PMC5856008
+96. Liu E Marin D Banerjee P Macapinlac HA Thompson P Basar R Use of CAR-transduced natural killer cells in CD19-positive lymphoid tumors N Engl J Med 2020 382 545 53 32023374 10.1056/NEJMoa1910607 PMC7101242
+97. Bexte T Alzubi J Reindl LM Wendel P Schubert R Salzmann-Manrique E CRISPR-Cas9 based gene editing of the immune checkpoint NKG2A enhances NK cell mediated cytotoxicity against multiple myeloma Oncoimmunology 2022 11 2081415 35694192 10.1080/2162402X.2022.2081415 PMC9176243
+98. Chu X Tian W Wang Z Zhang J Zhou R Co-inhibition of TIGIT and PD-1/PD-L1 in cancer immunotherapy: mechanisms and clinical trials Mol Cancer 2023 22 93 37291608 10.1186/s12943-023-01800-3 PMC10249258
+99. André P Denis C Soulas C Bourbon-Caillet C Lopez J Arnoux T Anti-NKG2A mAb is a checkpoint inhibitor that promotes anti-tumor immunity by unleashing both T and NK cells Cell 2018 175 1731 43.e13 30503213 10.1016/j.cell.2018.10.014 PMC6292840
+100. Van Hall T André P Horowitz A Ruan DF Borst L Zerbib R Monalizumab: inhibiting the novel immune checkpoint NKG2A J Immunother Cancer 2019 7 263 31623687 10.1186/s40425-019-0761-3 PMC6798508
+101. Crist M Yaniv B Palackdharry S Lehn MA Medvedovic M Stone T Metformin increases natural killer cell functions in head and neck squamous cell carcinoma through CXCL1 inhibition J Immunother Cancer 2022 10 e005632 36328378 10.1136/jitc-2022-005632 PMC9639146
+102. Go S Demetriou C Valenzano G Hughes S Lanfredini S Ferry H Tissue-resident natural killer cells support survival in pancreatic cancer through promotion of cDC1-CD8 T activity Elife 2024 13 RP92672 39656086 10.7554/eLife.92672 PMC11630822
+103. Cichocki F Valamehr B Sarhan D Zhang B Cooley S Verneris MR Development and scale-up of a novel GMP method for enrichment and expansion of terminally differentiated adaptive natural killer cells (FATE-NK100) with enhanced anti-tumor function Blood 2016 128 1225
+104. Gang M Marin ND Wong P Neal CC Marsala L Foster M CAR-modified memory-like NK cells exhibit potent responses to NK-resistant lymphomas Blood 2020 136 2308 18 32614951 10.1182/blood.2020006619 PMC7702478
+105. Cubitt CC McClain E Becker-Hapak M Foltz JA Wong P Wagner JA A novel fusion protein scaffold 18/12/TxM activates the IL-12, IL-15, and IL-18 receptors to induce human memory-like natural killer cells Mol Ther Oncolytics 2022 24 585 96 35284622 10.1016/j.omto.2022.02.009 PMC8889352
+106. Dong Y Huang Y Zhang Z Chen A Li L Tian M iRGD-modified memory-like NK cells exhibit potent responses to hepatocellular carcinoma J Transl Med 2023 21 205 36932395 10.1186/s12967-023-04024-7 PMC10022190
+107. Tarannum M Dinh K Vergara J Birch G Abdulhamid YZ Kaplan IE CAR memory-like NK cells targeting the membrane proximal domain of mesothelin demonstrate promising activity in ovarian cancer Sci Adv 2024 10 eadn0881 38996027 10.1126/sciadv.adn0881 PMC11244547
+108. Woan KV Kim H Bjordahl R Davis ZB Gaidarova S Goulding J Harnessing features of adaptive NK cells to generate iPSC-derived NK cells for enhanced immunotherapy Cell Stem Cell 2021 28 2062 75.e5 34525347 10.1016/j.stem.2021.08.013 PMC8642276
+109. Myers JA Miller JS Exploring the NK cell platform for cancer immunotherapy Nat Rev Clin Oncol 2021 18 85 100 32934330 10.1038/s41571-020-0426-7 PMC8316981
+110. Lin M Liang S Wang X Liang Y Zhang M Chen J Cryoablation combined with allogenic natural killer cell immunotherapy improves the curative effect in patients with advanced hepatocellular cancer Oncotarget 2017 8 81967 77 29137237 10.18632/oncotarget.17804 PMC5669863
+111. Berrien-Elliott MM Becker-Hapak M Cashen AF Jacobs M Wong P Foster M Systemic IL-15 promotes allogeneic cell rejection in patients treated with natural killer cell adoptive therapy Blood 2022 139 1177 83 34797911 10.1182/blood.2021011532 PMC9211446
+112. Shapiro RM Sheffer M Booker MA Tolstorukov MY Birch GC Sade-Feldman M First-in-human evaluation of memory-like NK cells with an IL-15 super-agonist and CTLA-4 blockade in advanced head and neck cancer J Hematol Oncol 2025 18 17 39948608 10.1186/s13045-025-01669-3 PMC11827236
+113. Eresen A Zhang Z Yu G Hou Q Chen Z Yu Z Sorafenib plus memory-like natural killer cell immunochemotherapy boosts treatment response in liver cancer BMC Cancer 2024 24 1215 39350084 10.1186/s12885-024-12718-4 PMC11443676
+114. Kim HY Min HK Song HW Yoo A Lee S Kim KP Delivery of human natural killer cell-derived exosomes for liver cancer therapy: an in vivo study in subcutaneous and orthotopic animal models Drug Deliv 2022 29 2897 911 36068970 10.1080/10717544.2022.2118898 PMC9467548
+115. Li YR Fang Y Niu S Zhu Y Chen Y Lyu Z Allogeneic CD33-directed CAR-NKT cells for the treatment of bone marrow-resident myeloid malignancies Nat Commun 2025 16 1248 39893165 10.1038/s41467-025-56270-6 PMC11787387
+116. Han J Jin C Hwang SB Lee IJ Baek YS Jung D Pluripotent stem cell-derived chimeric antigen receptor-natural killer cells targeting epidermal growth factor receptor 2 for cancer immunotherapy BMB Rep 2025 58 475 83 41168893 10.5483/BMBRep.2025-0137 PMC12665497
+117. Hu F Li J Wang Y Lin Y Zhang J Xu J Large-scale generation of iNK and CAR-iNK cells from CD34+ haematopoietic stem and progenitor cells for adoptive immunotherapy Nat Biomed Eng 2025 9 10.1038/s41551-025-01522-5 41057651
+118. Cichocki F Cooley S Davis Z DeFor TE Schlums H Zhang B CD56dimCD57+NKG2C+ NK cell expansion is associated with reduced leukemia relapse after reduced intensity HCT Leukemia 2016 30 456 63 26416461 10.1038/leu.2015.260 PMC4740203
+119. Nelson MA Ngamcherdtrakul W Luoh SW Yantasee W Prognostic and therapeutic role of tumor-infiltrating lymphocyte subtypes in breast cancer Cancer Metastasis Rev 2021 40 519 36 33963482 10.1007/s10555-021-09968-0 PMC8424653
+120. Zhang Q Bi J Zheng X Chen Y Wang H Wu W Blockade of the checkpoint receptor TIGIT prevents NK cell exhaustion and elicits potent anti-tumor immunity Nat Immunol 2018 19 723 32 29915296 10.1038/s41590-018-0132-0
+121. Bald T Krummel MF Smyth MJ Barry KC The NK cell-cancer cycle: advances and new challenges in NK cell-based immunotherapies Nat Immunol 2020 21 835 47 32690952 10.1038/s41590-020-0728-z PMC8406687
+122. Tan S Xu Y Wang Z Wang T Du X Song X Tim-3 hampers tumor surveillance of liver-resident and conventional NK cells by disrupting PI3K signaling Cancer Res 2020 80 1130 42 31848194 10.1158/0008-5472.CAN-19-2332
+123. Johnson DB Nebhan CA Moslehi JJ Balko JM Immune-checkpoint inhibitors: long-term implications of toxicity Nat Rev Clin Oncol 2022 19 254 67 35082367 10.1038/s41571-022-00600-w PMC8790946
+124. Busa R Bulati M Badami E Zito G Maresca DC Conaldi PG Tissue-resident innate immune cell-based therapy: a cornerstone of immunotherapy strategies for cancer treatment Front Cell Dev Biol 2022 10 907572 35757002 10.3389/fcell.2022.907572 PMC9221069
+125. Dixon KJ Wu J Walcheck B Engineering anti-tumor monoclonal antibodies and Fc receptors to enhance ADCC by human NK cells Cancers (Basel) 2021 13 312 33467027 10.3390/cancers13020312 PMC7829765
+126. Ahmed AA Keremane SR Vielmetter J Bjorkman PJ Structural characterization of GASDALIE Fc bound to the activating Fc receptor FcγRIIIa J Struct Biol 2016 194 78 89 26850169 10.1016/j.jsb.2016.02.001 PMC4769027
+127. Stavenhagen JB Gorlatov S Tuaillon N Rankin CT Li H Burke S Fc optimization of therapeutic antibodies enhances their ability to kill tumor cells in vitro and controls tumor expansion in vivo via low-affinity activating Fcγ receptors Cancer Res 2007 67 8882 90 17875730 10.1158/0008-5472.CAN-07-0696
+128. Subedi GP Barb AW The structural role of antibody N-glycosylation in receptor interactions Structure 2015 23 1573 83 26211613 10.1016/j.str.2015.06.015 PMC4558368
+129. Bang YJ Giaccone G Im SA Oh DY Bauer TM Nordstrom JL First-in-human phase 1 study of margetuximab (MGAH22), an Fc-modified chimeric monoclonal antibody, in patients with HER2-positive advanced solid tumors Ann Oncol 2017 28 855 61 28119295 10.1093/annonc/mdx002 PMC6246722
+130. Klein C Lammens A Schäfer W Georges G Schwaiger M Mössner E Epitope interactions of monoclonal antibodies targeting CD20 and their relationship to functional properties MAbs 2013 5 22 33 23211638 10.4161/mabs.22771 PMC3564883
+131. Jing Y Ni Z Wu J Higgins L Markowski TW Kaufman DS Identification of an ADAM17 cleavage region in human CD16 (FcγRIII) and the engineering of a non-cleavable version of the receptor in NK cells PLoS One 2015 10 e0121788 25816339 10.1371/journal.pone.0121788 PMC4376770
+132. Jochems C Hodge JW Fantini M Fujii R Morillon YM 2nd Greiner JW An NK cell line (haNK) expressing high levels of granzyme and engineered to express the high affinity CD16 allele Oncotarget 2016 7 86359 73 27861156 10.18632/oncotarget.13411 PMC5341330
+133. Cichocki F Bjordahl R Gaidarova S Mahmood S Abujarour R Wang H iPSC-derived NK cells maintain high cytotoxicity and enhance in vivo tumor control in concert with T cells and anti–PD-1 therapy Sci Transl Med 2020 12 eaaz5618 33148626 10.1126/scitranslmed.aaz5618 PMC8861807
+134. Khalifa AM Nakamura T Sato Y Harashima H Vaccination with a combination of STING agonist-loaded lipid nanoparticles and CpG-ODNs protects against lung metastasis via the induction of CD11bhighCD27low memory-like NK cells Exp Hematol Oncol 2024 13 36 38553761 10.1186/s40164-024-00502-w PMC10981311
+135. He S Su L Hu H Liu H Xiong J Gong X Immunoregulatory functions and therapeutic potential of natural killer cell-derived extracellular vesicles in chronic diseases Front Immunol 2024 14 1328094 38239346 10.3389/fimmu.2023.1328094 PMC10795180
+136. Ahern DJ Brennan FM The role of natural killer cells in the pathogenesis of rheumatoid arthritis: major contributors or essential homeostatic modulators? Immunol Lett 2011 136 115 21 21073898 10.1016/j.imlet.2010.11.001
+137. Liu M Liang S Zhang C NK cells in autoimmune diseases: protective or pathogenic? Front Immunol 2021 12 624687 33777006 10.3389/fimmu.2021.624687 PMC7994264
+138. Zaiatz Bittencourt V Jones F Doherty G Ryan EJ Targeting immune cell metabolism in the treatment of inflammatory bowel disease Inflamm Bowel Dis 2021 27 1684 93 33693743 10.1093/ibd/izab024 PMC8522790
+139. Wu Y Li J Jabbarzadeh Kaboli P Shen J Wu X Zhao Y Natural killer cells as a double-edged sword in cancer immunotherapy: a comprehensive review from cytokine therapy to adoptive cell immunotherapy Pharmacol Res 2020 155 104691 32070721 10.1016/j.phrs.2020.104691

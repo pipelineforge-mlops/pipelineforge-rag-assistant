@@ -1,0 +1,378 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Appl Health Econ Health Policy
+Journal ID: Appl Health Econ Health Policy
+NLM Journal ID: 101150314
+
+Applied Health Economics and Health Policy
+
+ISSN: 1175-5652
+EISSN: 1179-1896
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498653
+PMID: 42201540
+DOI: 10.1007/s40258-026-01047-1
+Article ID: 1047
+Article version: 1
+Subjects: Original Research Article
+
+Societal Preferences for Assessment Pathways of Rare Disease Drugs: A Discrete Choice Experiment
+
+http://orcid.org/0000-0002-8667-1926 Vargas Constanza Constanza.vargas@uts.edu.au
+1
+De Abreu Lourenco Richard 1
+Street Deborah J. 1
+Espinoza Manuel 2
+Goodall Stephen 1
+1 https://ror.org/03f0f6041 grid.117476.2 0000 0004 1936 7611 Centre for Health Economics Research and Evaluation, University of Technology Sydney, Level 5, Building 20, 100 Broadway, Chippendale, Broadway, PO Box 123, Sydney, NSW 2007 Australia
+2 https://ror.org/02zhqgq86 grid.194645.b 0000 0001 2174 2757 School of Public Health, LKS Faculty of Medicine, University of Hong Kong, Hong Kong, China
+Electronic publication date: 2026 May 27
+Print publication date: 2026
+Volume: 24
+Issue: 5
+First page: 857
+Last page: 867
+Received 2026 Feb 4; Accepted 2026 May 3
+Copyright: © The Author(s) 2026
+Copyright year: 2026
+License: Open Access This article is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License, which permits any non-commercial use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc/4.0/.
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Funding: University of Technology Sydney Open Access funding enabled and organized by CAUL and its Member Institutions
+
+issue-copyright-statement: © Springer Nature Switzerland AG 2026
+
+==============================
+Background
+
+Countries have implemented different assessment pathways for public funding of drugs for rare diseases, resulting in inequities in access. Understanding public preferences for these processes could enhance decision-making legitimacy and acceptance.
+
+Objective
+
+We aimed to elicit societal preferences for different assessment pathways that lead to public reimbursement to drugs for rare diseases.
+
+Methods
+
+A discrete choice experiment was conducted among adults from the general population in Australia who were asked to assume the role of a government advisor and chose between two different assessment pathways. Attributes describing the assessment pathways were identified through a literature review and expert focus groups. Each respondent completed eight choice tasks. Data were analysed using conditional logit, mixed logit and latent class models. Willingness to wait was calculated as the ratio of attribute coefficients to access time.
+
+Results
+
+There were 1099 respondents who completed the survey. Overall, respondents preferred assessment pathways that incorporated comprehensive evidence and stakeholder input. The mixed logit model revealed preference heterogeneity across four of the five attributes, with the latent class analysis identifying three groups: Class 1 (28.1%) preferred use of all available evidence, Class 3 (20.2%) opposed long wait times, and Class 2 (52%) showed no strong preferences. On average, respondents were willing to wait 32 additional months to incorporate all types of evidence into the decision-making process, and an additional 14 months for broad stakeholder involvement. Acceptable delays indicate the value placed on greater certainty and broader consultation rather than recommended policy waiting times.
+
+Conclusions
+
+This study examined societal preferences for assessment pathways for rare disease medicines. Robust evidence, covering safety, clinical effectiveness and cost effectiveness, and enhanced stakeholder involvement were the most influential factors. Respondents were also willing to delay patient access to ensure decisions were supported by strong evidence.
+
+Supplementary Information
+
+The online version contains supplementary material available at 10.1007/s40258-026-01047-1.
+
+Key Points for Decision Makers
+
+This study is the first to examine societal preferences for reimbursement assessment pathways for drugs for rare diseases.	
+The most influential factors for society are that decisions are informed by stakeholder involvement and the most robust evidence available, including safety, clinical effectiveness and cost effectiveness. Responders were prepared to delay patient access in order to obtain comprehensive evidence.	
+This study provides valuable guidance for policymakers seeking to design reimbursement assessment pathways for drugs for rare disease that are viewed as legitimate and acceptable to society.	
+
+Introduction
+
+A rare disease is generally defined as one that affects fewer than 1 in 2000 people, with most affecting significantly smaller populations [1]. Despite their rarity, the collective impact of rare diseases is substantial, with over 300 million people worldwide living with a rare condition [2]. In Australia, approximately 8% of the population — equivalent to 2 million people—have a rare disease [3].
+
+In countries like Australia, where medicines are publicly reimbursed, an underlying assessment pathway determines which therapies are funded and therefore accessible to all patients. However, when the process enables access to publicly reimbursed drugs for rare diseases, it becomes exceptionally challenging. These challenges arise not only from the limited research and development efforts, which restrict the availability of new treatments, but also from difficulties in making these drugs accessible to patients once they become available. Furthermore, drugs for rare diseases are often associated with extremely high prices which, when publicly reimbursed pose financial stress to the public health budget, and if not reimbursed represent a significant financial barrier to access. The small patient populations associated with rare diseases exacerbate these challenges, leading to: (1) a lack of expertise and comprehensive understanding of the underlying condition, which often leads to long and costly journeys to achieve a diagnosis; (2) limited access to funded treatment; and (3) low-quality clinical evidence owing to the nature of the trial design, often characterised by small single-arm studies.
+
+Existing preference-based literature on rare diseases has predominantly focused on the value of new drugs and whether rarity should influence prioritisation in a health technology assessment (HTA) [4–8]. However, to date, no studies have explored societal preferences regarding the decision-making processes for rare disease drugs. Understanding societal preferences for these processes would enhance acceptance of decisions and improve their legitimacy. Decisions about funding rare disease therapies raise fundamental questions of distributive justice, including how health systems should balance efficiency (maximising population health gains) with equity considerations (e.g. accepting greater uncertainty that would enable access of treatment to rare disease patients). Normative theories of health resource allocation acknowledge that publicly funded healthcare systems operate within a social contract, whereby decision-making processes should reflect societal values in addition to technical assessments that support efficiency (e.g. of cost effectiveness) [9]. Therefore, the way assessment pathways are designed should consider not only their impact on population health but also the broader value they generate for society. This requires a deeper understanding of the general public’s preferences for the processes that guide access to rare disease treatments.
+
+Discrete choice experiments (DCEs) are a methodology particularly useful in the healthcare setting that allows the elicitation of preferences when no revealed preferences are available (i.e. design of a new programme, predict uptake of a new drug) [10]. Discrete choice experiments operate on the principle that preferences can be revealed through hypothetical choice scenarios, in which respondents are presented with various combinations of attribute (which describe the programme or product of interest) and are asked to make a choice based on their preferences. By analysing these choices, preferences for specific attributes can be inferred, providing insights into the factors that influence the subject of choice, in this case assessment pathways for rare disease drugs.
+
+The aim of this study was to elicit societal preferences for different access assessment pathways that lead to public reimbursement for drugs to treat rare diseases. In the context of decision making for rare diseases, a better understanding of societal preferences is highly relevant for various reasons. Reimbursement decisions for rare diseases frequently involve high-cost therapies and substantial uncertainty regarding clinical effectiveness, placing considerable pressure on publicly funded healthcare systems. While patient perspectives are crucial for understanding individual needs and treatment priorities, the societal perspective is equally important because these decisions have implications for the allocation of scarce resources. Incorporating societal preferences provides insight into societal values related to equity, solidarity and the acceptability of funding treatments for very small patient populations. Moreover, general public input can enhance the transparency and legitimacy of reimbursement processes, helping ensure that policies reflect not only the interests of affected patients but also the expectations and priorities of the society that ultimately finances these treatments through taxes.
+
+Methods
+
+The results of this DCE are reported following the DIRECT checklist, which is presented in the Electronic Supplementary Material (ESM) [11]. Preference elicitation was achieved using a DCE survey.
+
+Attribute Identification
+
+The initial list of attributes was obtained from the systematic review of assessment pathways of drugs to treat rare diseases [12]. This review identified unique characteristics of assessment pathways of which some were specifically categorised as targeting the process of decision making.
+
+The initial list of attributes was supplemented with attributes identified from a targeted literature search on preference-based research in rare diseases. A summary of the attribute categories is provided in Fig. S3 in the ESM. Studies were included if they reported results from stated preference studies or were a review of the literature that aimed at identifying attributes relevant to rare diseases.
+
+Two online focus groups were conducted on 30 April, and 10 May, 2024 (Sydney, NSW, Australia), each comprising both experts and consumer representatives (discussion guide included in the ESM). The framework method was used for the thematic analysis of the transcripts obtained from the two focus groups [13]. An inductive coding approach was used, whereby codes were developed iteratively during review of the transcripts. Coding was initially conducted by one researcher and subsequently cross-checked by a second researcher to enhance analytical rigour. A total of six participants took part, with three individuals in each focus group. Among the experts, one had clinical experience with a disease classified as rare, another specialised in an ultra-rare disease, and a third had clinical and research expertise in rare cancers. The consumer representatives included a caregiver of a patient with an ultra-rare disease, a leader of an ultra-rare disease patient organisation who had also been a caregiver for a patient with an ultra-rare disease and a caregiver actively involved in public reimbursement decision making in Australia. Each session was audio recorded and transcribed using the software otter.ai [14]. The identified themes were used to inform the development of the attributes for the DCE, which were compared to those identified in the literature. Participation was voluntary and all participants provided a signed informed consent.
+
+The final list was obtained from an iterative multi-stage process within a multidisciplinary research team (four members) who considered both the plausible number of attributes and the relevance of attributes. Attributes were evaluated according to their relevance to a rare disease value assessment, conceptual distinctiveness, empirical support, and feasibility for inclusion in a DCE, while also considering the need to limit the number of attributes to reduce the cognitive burden for respondents. Overlapping or less relevant attributes were merged or excluded through consensus. Candidate attributes were then presented to ten DCE experts within the Centre for Health Economics Research and Evaluation (CHERE) at the University of Technology Sydney to refine the wording and assess the comprehensibility of the description and the levels. The attributes and levels are presented in Table 1. Table 1 Attributes and levels included in the discrete choice experiment
+
+Attributes	Description	Levels	
+Time to access
+
+Base: immediate
+
+	The time it takes the treatment to be publicly funded after it enters the market is:	0 months (immediate access)
+
+6 months
+
+12 months
+
+24 months
+
+	
+Stakeholder level of involvement
+
+Base: clinical trials only
+
+	The source of the evidence considered by decision makers to make a recommendation is:	Clinical trials only
+
+Clinical trials and input from clinicians expert in treating the rare disease
+
+Clinical trials and input from patients or carers with lived experience with the rare disease
+
+Clinical trials, input from clinicians expert in treating the disease, and patients or carers with lived experience
+
+	
+Duration of funding
+
+Base: no time limit
+
+	Patients will have subsidised access to the new drug for:	Unlimited time
+
+3 years, and then it is re-assessed
+
+	
+Source of funding
+
+Base: same funds
+
+	The government funds for rare diseases are provided from:	The same funds (e.g. PBS) as for all other conditions.
+
+A separate fund for drugs for rare diseases as that may help address the additional funding challenges of these drugs (e.g. the Australian Life Saving Drug Program)
+
+	
+Type of evidence
+
+Base: safety only
+
+	The evidence needed to assess a new drug for rare diseases should be based on:	Evidence of safety only
+
+Evidence of improved effectiveness
+
+Evidence of value for money
+
+Evidence of safety, effectiveness and value for money
+
+	
+Bold level represents the baseline level of each corresponding attribute
+
+The context, vignette and attribute description is presented in the survey included in the ESM
+
+PBS, Pharmaceutical Benefits Scheme
+
+Discrete Choice Experiment (DCE) Design
+
+A full list of all possible level combinations would have 256 items (three attributes with four levels and two attributes with two levels = 43*22). Using choice tasks with two options, the full number of choice tasks possible would be equal to 32,640 choice tasks (256*255/2). Given that not all possible combinations provide new insights into the marginal rate of substitution, or the relative utility of the question being addressed, a fractional factorial design was implemented. In this type of design, a sample of the choice tasks was selected in a way that ensures the set of effects of interest can be estimated that measures the main effects only [10]. For this purpose, a generator-developed design was used. This approach was considered appropriate as no interactions were strongly theorised and maintaining survey feasibility and reducing cognitive burden was important [15]. There were 16 options in the starting design, and five generators were used so that there would be one attribute in each choice task with an attribute-level overlap (the same level in both options). The resulting design had 80 choice sets and an efficiency of 99.7% relative to all designs with 80 choice tasks of two options each with an overlap on one attribute in each choice task. The 80 tasks were grouped into ten blocks of eight choice tasks each. Each respondent was randomly allocated to one block of choice tasks. This approach assumed that response rates are not significantly affected by which choice tasks are presented to each respondent [16]. Dominant and repeated choice tasks were not included, as recent studies have shown that these approaches provide weak indicators of response quality while also being costly in terms of statistical power and potentially inconsistent with the assumptions of random utility theory [17].
+
+Data Collection and Survey Development
+
+Respondents were recruited by Pureprofile (https://www.pureprofile.com/), an established online research panel provider that facilitates access to participants meeting predefined eligibility criteria; namely, Australian adults (aged ≥18 years). Quotas were applied for age, gender, and state or territory of residence to enhance the representativeness of the sample relative to the Australian population distribution. Pureprofile applied quality-control measures that included: excluding responses completed in less than 30% of the median completion time and responses flagged as non-sensical (e.g. inconsistent or meaningless entries). Additionally, a CAPTCHA verification step was implemented to prevent automated or bot-generated responses.
+
+A total of at least 1000 respondents was deemed appropriate to achieve statistical power based on: the number of tasks to be completed by each respondent, the number of alternatives per task and the largest number of levels for any one attribute [18]. Pureprofile randomised the order of the choice tasks but not the order of the attributes. [19]
+
+The DCE survey (administered online) included an initial section where information regarding the decision-making context and perspective (the Australian healthcare system perspective) was provided. The purpose of this section was to help respondents understand how drugs are funded in Australia, including background information on rare diseases, the challenges of funding treatments for rare diseases and the characteristics of assessment pathways (e.g. the time it takes for a drug to become available, the nature of the evidence, the duration of funding and the source of funding). This section also clarified that funded access cannot occur without drugs going through the assessment pathway and that if a drug became available, it would be at a minimal or no cost to the patient.
+
+Following the context, respondents were presented with a vignette where they were asked to assume the role as an advisor to the government and then choose their preferred alternative between two hypothetical yet realistic assessment pathways on how funding decisions for public reimbursement are made. Each choice task presented respondents with two alternatives (without an opt-out). The forced choice design was considered appropriate for this research as it reflects real-world reimbursement decision making, where choice must be made despite uncertainty. Each alternative was characterised by a full set of attributes, with each attribute shown at one of its predefined levels [10]. Finally, after respondents finished completing their allocated tasks, they were asked demographic questions as well as questions on the comprehensibility of the survey.
+
+The survey targeted adult individuals from the general population who are likely unfamiliar with the research setting; therefore, comprehensibility of the vignette and attributes was initially tested within a group of DCE experts at CHERE at the University of Technology Sydney. Further, the overall comprehensibility of the survey was evaluated in a pilot sample (N = 113). This assessment examined the direction and internal coherence of responses, including whether results aligned with expectations for the attribute rankings. To support this, directed questions at the end of each survey asked participants to identify the most and least important attributes. In addition, post-task questions explicitly assessed participants’ understanding of the survey, providing a further check on clarity and comprehensibility. The results of the pilot sample indicated that respondents found the attributes to be clear and understandable, and no changes were required. Only minor changes were required in the post-choice questions in the full sample. Figure 1 shows an example of a one-choice task. Fig. 1 Choice task example
+
+The left column presents the attributes, and the two right columns show the choice alternatives. Bolded terms in green indicate concepts with hover definitions, displayed when respondents positioned the cursor over the term. Rare disease: a disease that affects more than one patient and less than five in 10,000 people. Most rare diseases, 80%, have a genetic origin, 50% affect children and in 30% of cases the patient will die before the age of 5 years. Despite being very different in their presentation, they are generally known for being severe and having a negative impact on the patient, family and carer’s quality of life. The natural course of life gets altered as well as the day-to-day life activities such as work, social engagement and participation, hobbies and even basic self-care may become challenging, often necessitating the involvement of caregivers. Assessment pathway: the process by which access to new drugs is provided, including consideration of the funding source, the evaluation of the evidence, the allocation of resources, the recommendation and pricing. Subsidised: the government pays for a proportion of the cost of the drug, making it affordable to patients. Clinical trial: a research study that evaluates the safety and effectiveness of new drugs. The results from this study will inform whether a drug is safe and works. Unlimited time: there is no restriction on the duration of subsidy. Value for money: refers to whether the new medicine is producing additional health outcomes at a cost that is considered acceptable. Typically, health outcomes are measured in terms of years in full health (no illness, symptoms or negative impacts on quality of life) but can include other changes in health. A lower cost per health outcome means it is better value for money. Re-assessed: refers to a drug being reconsidered by the decision maker after the 3-year period is over. The reassessment follows the same process as when the drug was initially considered.
+
+Statistical Analysis
+
+The data was analysed using three models: (1) the conditional logit model; (2) the mixed logit model; and (3) the latent class model (see utility equations in the ESM). Statistical analyses were conducted in STATA 18 using the clogit, mixlogit and lclogit2 commands for each econometric model, respectively [20, 21]. The optimal number of classes for the latent class was based on the lowest Consistent Akaike’s Information Criterion. The following covariates were included in the latent class model: gender, age, income, education level, health literacy, experience as a healthcare decision maker, experience/knowledge of rare diseases, being a parent and experience as a carer. The relative importance of the attributes for the latent class model was determined by dividing the range of an attribute’s coefficients by the sum of all such ranges within each of the classes in the latent class model [22].
+
+Willingness to Wait (WTW) Analysis
+
+The relative marginal rate of substitution, expressed as the marginal willingness to wait (WTW) was estimated from the results of the mixed logit model using the Stata (Version 18) command ‘wtp’ [23]. It was assumed that the coefficients had a normal distribution and the WTW was estimated by calculating the trade-off (i.e. ratio) between the coefficient of each attribute of interest to the time to access coded as continuous. Specifically, the WTW for each attribute was calculated as the ratio of its estimated coefficient to the coefficient of the time to access attribute (expressed as a continuous variable). This ratio represents the additional waiting time respondents were willing to accept in exchange for an improvement in the attribute of interest.
+
+Results
+
+The survey was conducted between 29 November, 2024 and 4 December, 2024 and was completed by 1099 respondents. The characteristics of the respondents were broadly representative of the Australian population (Table S2 in the ESM).
+
+Conditional and Mixed Logit Analyses
+
+The results of the conditional logit and mixed logit models are presented in Table S3 of the ESM and a visual representation of the conditional logit is presented in Fig. 2. All coefficients, except for how long the drug is subsidised for and time to access, were positive in both the conditional logit and mixed logit models. As expected, respondents preferred immediate access; utility decreased progressively as waiting time increased (from 0 to 24 months). Respondents also valued broader stakeholder involvement, with higher utility associated with including multiple perspectives rather than relying solely on clinical trial evidence to inform reimbursement decisions. Additionally, the comprehensiveness of the evidence base was an important driver of preferences. Compared with having only safety data available, respondents expressed higher utility for scenarios that incorporated evidence on safety, effectiveness and value for money. The estimated standard deviations in the mixed logit model reveal heterogeneity in preferences with respect to the duration of funding, source of funding, time to access and the type of evidence considered in the assessment pathway (p < 0.000).Fig. 2 Conditional logit model results
+
+The figure shows exponentiated coefficients (odds ratios); negative coefficients correspond to odds ratios < 1.
+
+WTW
+
+The results of the mixed logit analysis for the WTW are presented in Fig. 3. All coefficients were positive, except for the attribute for making the drug available for a limited time (3 years) before reassessment. This indicates that, for most features, respondents are willing to wait to enable access to drugs for rare diseases, although the extent of their willingness varies. The analysis indicates that the highest WTW, at 32 months, is associated with having all types of evidence included in the assessment pathway process, including safety, effectiveness and cost effectiveness. The latter means that respondents are willing to wait an additional 32 months relative to immediate access for having all types of evidence informing the decision. This is followed by a WTW of an additional 14 months for involving all stakeholders, which includes clinical experts and patients/carers in addition to the clinical trial evidence. The estimated acceptable delays should be interpreted as relative preference weights within the DCE rather than literal acceptable waiting times.Fig. 3 Willingness to wait (WTW) from the mixed logit model results
+
+The figure represents the estimated WTW associated with a rare disease treatment considering all attribute levels. Points represent mean WTW estimates and error bars indicate 95% confidence intervals.
+
+Latent Class Analysis
+
+Based on the lowest Consistent Akaike’s Information Criterion, the optimal number of classes for the latent class was three (see Fig. S1 in the ESM). The results of the latent class analysis are presented in Table 2. Of the three classes, Class 1 (28.1%) and Class 3 (20.2%) consider all attributes matter with the strongest preferences towards having available all types of evidence, including effectiveness, safety, and cost effectiveness and a strong dislike for having to wait until the drug becomes accessible, respectively. As expected, the disapproval was strongest as the wait time for drug accessibility increased. Class 3 was the only group of respondents who appear to prefer a separate source of funds for drugs for rare diseases (p < 0.05), noting that the magnitude of the coefficient is low (0.2332). Class 2 (51.7%) did not appear to have a strong preference for any of the attributes. Table 2 Latent class analysis (three classes)
+
+Attribute	Levels	Mean coefficients (SE)	
+Class 1 (28.1%)	Class 2 (51.7%)	Class 3 (20.2%)	
+Stakeholder involvement (base: clinical trial only)	Trial and experts	0.6236*** (0.1474)	0.2732*** (0.067)	0.5529*** (0.1936)	
+Trial and patients	0.6171*** (0.1719)	0.3583*** (0.0685)	0.8919*** (0.2127)	
+All involved	1.1814*** (0.18)	0.3423*** (0.069)	1.0054*** (0.1937)	
+Duration of funding (base: unlimited)	Reassessment in 3 years	− 0.1837* (0.1041)	− 0.1365*** (0.0424)	−0.3408*** (0.1192)	
+Source of funding (base: same funds)	Separate funds	0.0772 (0.0902)	− 0.0087 (0.0388)	0.2332** (0.1128)	
+Type of evidence (base: value for money only)	Safety evidence	0.867*** (0.198)	0.0442 (0.0693)	0.5671*** (0.1822)	
+Evidence of effectiveness	3.313*** (0.3901)	0.1277 (0.0757)	1.511*** (0.2469)	
+Safety, effectiveness and value for money evidence	4.6594*** (0.5036)	0.3965*** (0.083)	2.5414*** (0.3139)	
+Time to access (base: immediate access)	6 months	− 0.0165 (0.1938)	− 0.1224* (0.0638)	−1.179*** (0.2521)	
+12 months	− 0.6745*** (0.2048)	− 0.1018 (0.0689)	−2.9361*** (0.3928)	
+24 months	− 1.1354*** (0.2246)	− 0.1474** (0.0732)	−5.8405*** (0.6895)	
+Respondent’s characteristicsa	
+	Gender	− 0.0761 (0.2393)	0.0605 (0.2146)		
+	Health statusa	0.1375 (0.2992)	0.6639** (0.2736)		
+	Health literacy	− 5.7569 (42.2566)	− 8.0087 (42.2665)		
+	Experience as decision maker	− 0.189 (0.2717)	− 0.0283 (0.2477)		
+	Income	0.0138 (0.2608)	− 0.3997 (0.2316)		
+	Level of education	0.2344 (0.2675)	0.1102 (0.2339)		
+	Experience with rare diseases	0.0565 (0.3586)	0.2729 (0.3254)		
+	Experience being a parent	− 0.0428 (0.2552)	− 0.6048** (0.222)		
+	Experience being a carer	− 0.6215 (0.4869)	0.2337 (0.3672)		
+	_cons	5.9741 (42.2533)		
+SE standard error
+
+SEs in parentheses; bold text indicates a statistically significant difference at the 5% level; *significant at 10%; **significant at 5%; ***significant at 1%; text in italics reflects baseline level. 
+
+aSee Table S2 in the ESM for further details on how respondents characteristics were measured
+
+The relative importance of the attributes per class by range was also calculated (see Fig. S2 in the ESM). The most strongly preferred attribute in Class 1 was the type of evidence (67%), in Class 2 it was stakeholder involvement (43%) and in Class 3 it was time to access (57%).
+
+Relative to Class 3, Class 2 had statistically significantly fewer respondents who had children and had a better health status (Table 2). No other clear distinction could be observed in respondents from Class 1 relative to Class 3.
+
+Discussion
+
+This study is the first to explore societal preferences regarding the assessment pathways a drug to treat a rare disease must undergo before becoming publicly reimbursed. The findings highlight strong societal preferences for the inclusion of comprehensive evidence, such as safety, effectiveness and cost-effectiveness data, as well as inputs from diverse sources, including clinical experts, patients and carers, in addition to clinical trial evidence. However, in the context of rare diseases, generating such extensive evidence may not always be feasible owing to the inherent limitations arising from small patient populations.
+
+There is no global agreement on the role of cost-effectiveness evidence in the context of reimbursement decisions for drugs for rare diseases. The findings in this study show that when considered individually, society places the least emphasis on evidence on value for money as part of reimbursement assessment pathways. Respondents preferred decisions based solely on safety or solely on effectiveness over those informed only by value for monetary considerations. Understanding these preference patterns is important when interpreting societal expectations of fairness and legitimacy in funding decisions, and it provides a foundation for the broader discussion on how public values may align or differ from current policy frameworks. Furthermore, economic evaluations of drugs for rare diseases are particularly challenging for several reasons: the limited understanding of these diseases, which complicates the modelling; the uncertainty of clinical evidence resulting from the very small number of patients enrolled in trials; the difficulty in measuring outcomes that matter most to patients, given the lack of research in this area; and the exceptionally high per-patient cost of these drugs. From an equity perspective, the cost-effectiveness argument does not apply because drugs for rare diseases are often not cost effective. Decision makers balance that argument of value for money with an equity question.
+
+There is limited research exploring societal preferences for strategies that prioritise access to treatments which, although effective, are not cost effective. Some studies suggest that, in these cases, the justification for granting access to new technologies that do not meet traditional value-for-money criteria lies in the ethical principle of preserving hope for patients and their families [24, 25]. This raises an important question: should efforts focus on generating more economic evidence, or would it be more effective to explore ways to reduce the gap in knowledge of rare diseases or potentially reduce the uncertainty of the evidence? If the clinical trial evidence remains limited, one approach to addressing clinical effectiveness uncertainty has been the implementation of risk-sharing agreements or contracts tied to ongoing data collection. However, given the small patient populations for rare diseases, additional data collection may still be insufficient to meaningfully reduce uncertainty.
+
+This study shows strong societal preferences for comprehensive evidence, including safety, effectiveness and cost effectiveness. Given the inherent challenges in generating this evidence for rare diseases, strengthening stakeholder engagement, particularly during the evidence-generation process, may help improve understanding of these conditions and their broader impact. A notable example of this approach is Scotland’s implementation of the Patients and Clinicians Engagement (PACE) initiative in 2014. PACE strengthens the role of patients in the Scottish Medicines Consortium decision-making process by qualitatively capturing the added value of medicines that may not be reflected in traditional added clinical value assessments or economic evaluations [26, 27]. This study’s findings support such an inclusive approach, as respondents tend to favour decision-making frameworks that incorporate input from multiple stakeholders.
+
+The latent class analysis revealed interesting and insightful results. Class 3, at one extreme, considers all attributes important, including the presence of a separate pool of funds, though the intensity of preference varies. In contrast, Class 2, which comprises 52% of respondents, shows no strong preferences for most attributes, with the exception of stakeholder involvement. The large share of respondents in Class 2 suggests that while one half of the population expresses clear preferences, the other half remains largely indifferent. Respondents in this class had comparatively better health status and were less likely to be parents, which may partially explain their apparent indifference to the study attributes. This lack of strong preferences could also indicate that respondents in this class were less engaged with the survey or that they genuinely do not hold strong views on these issues. Another possible explanation is that the task itself was challenging, and some respondents may have experienced difficulties with comprehension. However, no major concerns were raised at the post choice questionnaire when the full sample of participants were asked whether they found the task difficult to complete or hard to understand. Further research may be needed to understand whether this reflects survey disengagement, uncertainty or a broader societal lack of preference towards the attributes examined.
+
+The diversity of assessment pathways for rare disease drugs directly affects the accessibility of new drugs and contributes to inequities of access to new drugs for rare diseases both between and within countries. For instance, in Germany, a drug granted orphan designation by the European Medicines Agency is considered to have a proven benefit and can be freely priced for the first year. This policy has positioned Germany as one of the fastest countries for access to rare disease treatments [28, 29]. However, the findings of this study suggest that, while timely access is valued, there is also a willingness among the public to wait in order to ensure that appropriate evidence supports the drug’s effectiveness The estimated wait time should be interpreted as the relative societal trade-offs in this DCE rather than prescriptive real-world delays. In this case, they represent the value—in terms of potential delays in a decision—associated with greater certainty (comprehensive evidence) and broader consultation (stakeholder involvement). They do not constitute recommendations to adopt delays in decision timing for which actual implementation is impacted by disease-specific factors such as a shortened life expectancy, a high unmet need, severe progressive trajectories and equity imperatives that often justify provisional approvals.
+
+Although the current Pharmaceutical Benefits Advisory Committee process in Australia does allow for the collection of additional data following a positive recommendation, the ability of drug sponsors to meet these demands is often constrained by the availability of data. In the case of the Life Saving Drug Program, listing is often tied to data collection requirements that do not necessarily address the issue of uncertainty owing to the extremely low prevalence of patients. Given these constraints, alternative approaches to evidence generation, such as real-world data collection, patient registries and integration of qualitative evidence within an HTA to support structured stakeholder engagement, may be necessary to complement traditional clinical trial data, with further methodological development required to support the systematic incorporation of qualitative evidence into an HTA. The willingness of respondents to wait for these improvements further highlights the perceived value of a more participatory decision-making framework, where multiple perspectives and evidence sources are integrated to ensure fairer and more informed outcomes.
+
+This study has several key strengths. To our knowledge, it is the first to explore societal preferences regarding the assessment pathway that leads to access to treatments for rare diseases, offering valuable insights into public attitudes toward different drug access pathways. Importantly, eliciting societal preferences does not imply that societal views should replace established objectives such as maximising health outcomes. Rather, societal preferences can inform how trade-offs between efficiency and other relevant attributes are weighted when designing assessment pathways. By capturing these perspectives, the findings provide evidence for policymakers aiming to align healthcare decisions with broader public values. It is important to consider whose preferences are being elicited, in this case those of the society. Had this study instead drawn on experts, for instance via formal elicitation methods, it may have revealed stronger support for stringent evidentiary standards and efficiency arguments, potentially favoring decision rules anchored on standard HTA arguments (i.e. cost effectiveness). Societal and expert perspectives should be seen as complementary with experts providing insight into what is possible in terms of implementation and is also scientifically justified, and public preferences identifying which trade-offs are acceptable in a publicly funded system. Finally, the study included a large and broadly representative sample of the Australian population, though participants generally had a higher level of education. It also employed a rigorous three-stage approach to identify relevant attributes, incorporating a literature review, two focus groups and discussions with DCE experts.
+
+This study has several limitations that warrant consideration. First, the nature of the DCE task posed inherent challenges for respondents, as they were required to make trade-offs between unfamiliar and conceptually complex options. These decisions involved an understanding of drug funding processes, opportunity costs and the specific challenges associated with rare diseases. Although contextual information was provided to support understanding, the survey was intentionally kept concise to reduce the respondent burden. As a result, certain nuances may not have been fully captured.
+
+Second, while the attribute development process followed established best practice, including a literature review and stakeholder engagement, the final set of attributes required a reduction to ensure the choice tasks remained manageable. Consequently, some potentially important attributes may have been excluded, limiting the scope of preference insights. A legitimate decision-making process that enables public reimbursement needs to put patients’ voices and more generally, the members of a society, at the centre. In the context of decision making for rare diseases, this is particularly relevant given the vulnerability of the target population, which may have a greater influence on societal preferences regarding access to treatment. With respect to included attributes, some may have been difficult for the general public to interpret, particularly the source of funding within a publicly funded healthcare system such as Australia’s. However, funding arrangements may still influence preferences by signalling government priorities and societal commitment to patients with rare diseases, rather than being understood as purely technical budgetary distinctions.
+
+Last, this study investigated preferences of the general population, with the intention of capturing societal perspectives on assessment pathways for rare disease treatments. However, in framing the health-state scenario, respondents were asked to place themselves in the position of an advisor to government, which may have encouraged some participants to adopt a policy decision-maker viewpoint rather than responding solely from a personal perspective. While this framing was intended to reflect the context of publicly funded healthcare decision making, it may have influenced how some respondents interpreted the choice tasks.
+
+Conclusions
+
+This study examined societal preferences regarding the assessment pathways that new drugs to treat rare diseases must undergo before becoming accessible to patients. A key finding is that, among the attributes explored, the availability of robust evidence, including safety, clinical effectiveness and cost effectiveness, was the most influential factor, followed by having decisions informed by enhanced stakeholder involvement. It is noteworthy that responders were prepared to delay patient access in order to obtain this information.
+
+Supplementary Information
+
+Below is the link to the electronic supplementary material.Supplementary file1 (DOCX 90 KB)
+
+Acknowledgements
+
+We thank the colleagues at CHERE who participated in the DCE group for their time and valuable feedback when refining the attributes considered in this DCE.
+
+Funding
+
+Open Access funding enabled and organized by CAUL and its Member Institutions.
+
+Declarations
+
+Conflicts of interest/Competing interests
+
+Constanza Vargas, Richard De Abreu Lourenco, Deborah J. Street, Manuel Espinoza and Stephen Goodall have no conflicts of interest that are directly relevant to the content of this article.
+
+Ethical Approval
+
+This study obtained ethics approval from the University of Technology Sydney Human Research Ethics Committee (UTS HREC ETH21-6090).
+
+Consent to Participate
+
+Not applicable.
+
+Consent for Publication
+
+Not applicable.
+
+Availability of Data and Material
+
+Individual-level data underpinning this study are subject to ethical restrictions and cannot be publicly shared to protect participant privacy. Access to de-identified summary-level data may be provided to researchers upon reasonable request to the corresponding author, subject to appropriate data-sharing agreements.
+
+Code Availability
+
+Not applicable.
+
+Authors’ Contributions
+
+CV/SG/RDAL/ME conceptualised the study aim; CV/RDAL conducted the focus groups; CV conducted the thematic analysis to identify relevant attributes; CV/RDAL/SG shortlisted the attributes; CV developed the survey; CV/DS developed the DCE design; CV analysed the data; CV drafted the manuscript, RDAL/SG/DS/ME reviewed the manuscript, and SG/CV/DS/ME/RDAL agreed on the final version of the manuscript.
+
+Funding
+
+This research was conducted under the doctorate program in health economics at the University of Technology Sydney with funding from the University of Technology Sydney Research Excellence Scholarship. No other funding was received for the preparation of this article.
+
+
+References
+
+1. Nguengang Wakap S Lambert DM Olry A Estimating cumulative point prevalence of rare diseases: analysis of the Orphanet database Eur J Hum Genet 2020 28 2 165 173 10.1038/s41431-019-0508-0 31527858 PMC6974615
+Nguengang Wakap S, Lambert DM, Olry A, et al. Estimating cumulative point prevalence of rare diseases: analysis of the Orphanet database. Eur J Hum Genet. 2020;28(2):165–73. 10.1038/s41431-019-0508-0.31527858 10.1038/s41431-019-0508-0 PMC6974615
+2. The Lancet Global Health The landscape for rare diseases in 2024 Lancet Glob Health 2024 12 3 e341 10.1016/S2214-109X(24)00056-1 38365397
+The Lancet Global Health. The landscape for rare diseases in 2024. Lancet Glob Health. 2024;12(3):e341. 10.1016/S2214-109X(24)00056-1.38365397 10.1016/S2214-109X(24)00056-1
+3. Rare Voices Australia. National Strategic Action Plan for Rare Diseases. Department of Health and Aged Care. Canberra: 64. 2020.
+4. Bourke SM Plumpton CO Hughes DA Societal preferences for funding orphan drugs in the UK: an application of value based pricing using discrete choice experiment methods Value Health 2017 20 9 A559 10.1016/j.jval.2017.12.026 29753350
+Bourke SM, Plumpton CO, Hughes DA. Societal preferences for funding orphan drugs in the UK: an application of value based pricing using discrete choice experiment methods. Value Health. 2017;20(9):A559.10.1016/j.jval.2017.12.026 29753350
+5. Reckers-Droog V van Exel J Brouwer W Equity weights for priority setting in healthcare: severity, age, or both? Value Health 2019 22 12 1441 1449 10.1016/j.jval.2019.07.012 31806201
+Reckers-Droog V, van Exel J, Brouwer W. Equity weights for priority setting in healthcare: severity, age, or both? Value Health. 2019;22(12):1441–9. 10.1016/j.jval.2019.07.012.31806201 10.1016/j.jval.2019.07.012
+6. Dragojlovic N Rizzardo S Bansback N Mitton C Marra CA Lynd LD Challenges in measuring the societal value of orphan drugs: insights from a Canadian stated preference survey Patient 2015 8 1 93 101 10.1007/s40271-014-0109-5 25586645
+Dragojlovic N, Rizzardo S, Bansback N, Mitton C, Marra CA, Lynd LD. Challenges in measuring the societal value of orphan drugs: insights from a Canadian stated preference survey. Patient. 2015;8(1):93–101.25586645 10.1007/s40271-014-0109-5
+7. Linley WG Hughes DA Societal views on NICE, cancer drugs fund and value-based pricing criteria for prioritising medicines: a cross-sectional survey of 4118 adults in Great Britain Health Econ 2013 22 8 948 964 10.1002/hec.2872 22961976
+Linley WG, Hughes DA. Societal views on NICE, cancer drugs fund and value-based pricing criteria for prioritising medicines: a cross-sectional survey of 4118 adults in Great Britain. Health Econ. 2013;22(8):948–64.22961976 10.1002/hec.2872
+8. Desser AS Olsen JA Grepperud S Eliciting preferences for prioritizing treatment of rare diseases: the role of opportunity costs and framing effects Pharmacoeconomics 2013 31 11 1051 1061 10.1007/s40273-013-0093-y 24114738
+Desser AS, Olsen JA, Grepperud S. Eliciting preferences for prioritizing treatment of rare diseases: the role of opportunity costs and framing effects. Pharmacoeconomics. 2013;31(11):1051–61.24114738 10.1007/s40273-013-0093-y
+9. Schlander M Garattini S Kolominsky-Rabas P Determining the value of medical technologies to treat ultra-rare disorders: a consensus statement J Mark Access Health Policy 2016 10.3402/jmahp.v4.33039 27857828 PMC5087264
+Schlander M, Garattini S, Kolominsky-Rabas P, et al. Determining the value of medical technologies to treat ultra-rare disorders: a consensus statement. J Mark Access Health Policy. 2016. 10.3402/jmahp.v4.33039.27857828 10.3402/jmahp.v4.33039 PMC5087264
+10. Viney R Lancsar E Louviere J Discrete choice experiments to measure consumer preferences for health and healthcare Expert Rev Pharmacoecon Outcomes Res 2002 2 4 319 326 10.1586/14737167.2.4.319 19807438
+Viney R, Lancsar E, Louviere J. Discrete choice experiments to measure consumer preferences for health and healthcare. Expert Rev Pharmacoecon Outcomes Res. 2002;2(4):319–26. 10.1586/14737167.2.4.319.19807438 10.1586/14737167.2.4.319
+11. Ride J Goranitis I Meng Y LaBond C Lancsar E A reporting checklist for discrete choice experiments in health: the DIRECT checklist Pharmacoeconomics 2024 42 10 1161 1175 10.1007/s40273-024-01431-6 39227559 PMC11405421
+Ride J, Goranitis I, Meng Y, LaBond C, Lancsar E. A reporting checklist for discrete choice experiments in health: the DIRECT checklist. Pharmacoeconomics. 2024;42(10):1161–75. 10.1007/s40273-024-01431-6.39227559 10.1007/s40273-024-01431-6 PMC11405421
+12. Vargas C De Abreu Lourenco R Espinoza M Goodall S Systematic literature review of access pathways to drugs for patients with rare diseases Appl Health Econ Health Policy 2025 23 2 209 229 10.1007/s40258-024-00939-4 39731657
+Vargas C, De Abreu Lourenco R, Espinoza M, Goodall S. Systematic literature review of access pathways to drugs for patients with rare diseases. Appl Health Econ Health Policy. 2025;23(2):209–29. 10.1007/s40258-024-00939-4.39731657 10.1007/s40258-024-00939-4
+13. Gale NK Heath G Cameron E Rashid S Redwood S Using the framework method for the analysis of qualitative data in multi-disciplinary health research BMC Med Res Methodol 2013 13 117 10.1186/1471-2288-13-117 24047204 PMC3848812
+Gale NK, Heath G, Cameron E, Rashid S, Redwood S. Using the framework method for the analysis of qualitative data in multi-disciplinary health research. BMC Med Res Methodol. 2013;13:117. 10.1186/1471-2288-13-117.24047204 10.1186/1471-2288-13-117 PMC3848812
+14. WebPlotDigitizer. Version 5.2. Available from: https://automeris.io. Accessed 14 May 2026.
+15. Street D Burguess L The construction of optimal stated choice experiments 2007 Hoboken, New Jersey
+Street D, Burguess L. The construction of optimal stated choice experiments. Hoboken, New Jersey; 2007.
+16. Coast J Flynn TN Salisbury C Louviere J Peters TJ Maximising responses to discrete choice experiments: a randomised trial Appl Health Econ Health Policy 2006 5 4 249 260 10.2165/00148365-200605040-00006 17249841
+Coast J, Flynn TN, Salisbury C, Louviere J, Peters TJ. Maximising responses to discrete choice experiments: a randomised trial. Appl Health Econ Health Policy. 2006;5(4):249–60. 10.2165/00148365-200605040-00006.17249841 10.2165/00148365-200605040-00006
+17. Jonker MF Roudijk B Maas M The sensitivity and specificity of repeated and dominant choice tasks in discrete choice experiments Value Health 2022 25 8 1381 1389 10.1016/j.jval.2022.01.015 35527163
+Jonker MF, Roudijk B, Maas M. The sensitivity and specificity of repeated and dominant choice tasks in discrete choice experiments. Value Health. 2022;25(8):1381–9. 10.1016/j.jval.2022.01.015.35527163 10.1016/j.jval.2022.01.015
+18. Johnson R, Orme B. Sample size issues for conjoint analysis. Getting started with conjoint analysis: strategies for product design and pricing research. Research Publishers LLC, Madison; 2010.
+19. Mulhern B Norman R Lorgelly P Is dimension order important when valuing health states using discrete choice experiments including duration? Pharmacorconomics 2017 35 4 439 451 10.1007/s40273-016-0475-z 27873226
+Mulhern B, Norman R, Lorgelly P, et al. Is dimension order important when valuing health states using discrete choice experiments including duration? Pharmacorconomics. 2017;35(4):439–51. 10.1007/s40273-016-0475-z.10.1007/s40273-016-0475-z 27873226
+20. Stata Statistical Software: Release 18. StataCorp LLC; 2023.
+21. Yoo HI lclogit2: an enhanced command to fit latent class conditional logit models Stata J 2020 20 2 405 425 10.1177/1536867X20931003
+Yoo HI. lclogit2: an enhanced command to fit latent class conditional logit models. Stata J. 2020;20(2):405–25. 10.1177/1536867X20931003.
+22. Gonzalez JM A guide to measuring and interpreting attribute importance Patient 2019 12 3 287 295 10.1007/s40271-019-00360-3 30906968
+Gonzalez JM. A guide to measuring and interpreting attribute importance. Patient. 2019;12(3):287–95. 10.1007/s40271-019-00360-3.30906968 10.1007/s40271-019-00360-3
+23. Hole AR Fitting mixed logit models by using maximum simulated likelihood Stata J 2007 7 3 388 401 10.1177/1536867x0700700306
+Hole AR. Fitting mixed logit models by using maximum simulated likelihood. Stata J. 2007;7(3):388–401. 10.1177/1536867x0700700306.
+24. Nord E Richardson J Street A Kuhse H Singer P Who cares about cost? Does economic analysis impose or reflect social values? Health Policy 1995 34 2 79 94 10.1016/0168-8510(95)00751-d 10153484
+Nord E, Richardson J, Street A, Kuhse H, Singer P. Who cares about cost? Does economic analysis impose or reflect social values? Health Policy. 1995;34(2):79–94. 10.1016/0168-8510(95)00751-d.10153484 10.1016/0168-8510(95)00751-d
+25. McKie J Shrimpton B Richardson J Hurworth R The monetary value of a life year: evidence from a qualitative study of treatment costs Health Econ 2011 20 8 945 957 10.1002/hec.1660 20806424
+McKie J, Shrimpton B, Richardson J, Hurworth R. The monetary value of a life year: evidence from a qualitative study of treatment costs. Health Econ. 2011;20(8):945–57. 10.1002/hec.1660.20806424 10.1002/hec.1660
+26. Scottish Medicines Consortium (n.d.). Patient and Clinician Engagement (PACE) Meetings Overview. Glasgow, NHS Scotland, Scottish Medicines Consortium.
+27. Watkins MJ Hau N All QALYs are equal, but some QALYs are more equal than others; a comparison of the NICE end of life criteria and SMC PACE process Value Health 2015 18 7 A526 10.1016/j.jval.2015.09.1624
+Watkins MJ, Hau N. All QALYs are equal, but some QALYs are more equal than others; a comparison of the NICE end of life criteria and SMC PACE process. Value Health. 2015;18(7):A526.
+28. Babac A Damm K von der Schulenburg JMG Patient-reported data informing early benefit assessment of rare diseases in Germany: a systematic review Health Econ Rev 2019 10.1186/s13561-019-0251-9 31832812 PMC6909645
+Babac A, Damm K, von der Schulenburg JMG. Patient-reported data informing early benefit assessment of rare diseases in Germany: a systematic review. Health Econ Rev. 2019. 10.1186/s13561-019-0251-9.31832812 10.1186/s13561-019-0251-9 PMC6909645
+29. Bouslouk M G-BA benefit assessment of new orphan drugs in Germany: the first five years Expert Opin Orphan Drugs 2016 4 5 453 455 10.1517/21678707.2016.1166950
+Bouslouk M. G-BA benefit assessment of new orphan drugs in Germany: the first five years. Expert Opin Orphan Drugs. 2016;4(5):453–5. 10.1517/21678707.2016.1166950.

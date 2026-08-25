@@ -1,0 +1,437 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: J Asthma Allergy
+Journal ID: J Asthma Allergy
+NLM Journal ID: 101543450
+Journal ID: jaa
+
+Journal of Asthma and Allergy
+
+EISSN: 1178-6965
+Publisher: Dove Press
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499572
+PMID: 42633331
+DOI: 10.2147/JAA.S626238
+Article ID: 626238
+Article version: 1
+Subjects: Original Research
+
+Early-Life Allergen Sensitization Phenotypes and Exploratory Machine-Learning Interpretation of School-Age Asthma Risk
+
+Cao et al
+
+Cao et al
+
+Cao Mingwei 1 *
+Guan Xiaoxue 2 *
+Zhang Binghong 1
+Xiong Ge 3
+Ma Jingjing 4
+Shi Hui 1
+Zhang Haiju 1
+1 Department of Pediatrics, Renmin Hospital of Wuhan University , Wuhan , People’s Republic of China
+2 Department of Neurology, Renmin Hospital of Wuhan University , Wuhan , People’s Republic of China
+3 Department of Clinical Laboratory, Renmin Hospital of Wuhan University , Wuhan , People’s Republic of China
+4 Department of Geriatrics, Renmin Hospital of Wuhan University , Wuhan , People’s Republic of China
+Correspondence: Binghong Zhang, Email rm001985@whu.edu.cn* These authors contributed equally to this work
+
+Electronic publication date: 2026 Aug 18
+Publication date: 2026
+Volume: 19
+Electronic Location ID: 626238
+Received 2026 May 28; Accepted 2026 Jul 29
+Copyright: © 2026 Cao et al.
+Copyright year: 2026
+Copyright holder: Cao et al.
+License: This work is published and licensed by Dove Medical Press Limited. The full terms of this license are available at https://www.dovepress.com/terms.php and incorporate the Creative Commons Attribution – Non Commercial (unported, v4.0) License (http://creativecommons.org/licenses/by-nc/4.0/). By accessing the work you hereby accept the Terms. Non-commercial uses of the work are permitted without any further permission from Dove Medical Press Limited, provided the work is properly attributed. For permission for commercial use of this work, please see paragraphs 4.2 and 5 of our Terms (https://www.dovepress.com/terms.php).
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: allergen sensitization, asthma, childhood, latent class analysis, SHAP
+Figure count: 5
+Table count: 6
+Reference count: 40
+Page count: 17
+
+==============================
+Background
+
+Early-life allergen sensitization is associated with childhood asthma, but sensitization patterns are heterogeneous. This study aimed to characterize early-life sensitization phenotypes and evaluate their associations with school-age asthma, with exploratory machine-learning analyses examining model-derived allergen contributions.
+
+Methods
+
+Electronic medical records from Renmin Hospital of Wuhan University (2014–2022) were used. Two samples were derived: a phenotype discovery sample (Sample A, n = 4989) and a nested case-control sample (Sample B, n = 435; 84 cases and 351 controls). In Sample A, latent class analysis (LCA) identified population-level sensitization phenotypes. In Sample B, pre-specified multivariable logistic regression models adjusted for age and sex evaluated associations of LCA-derived phenotypes and individual inhalant allergen sensitization with school-age asthma. Random Forest and XGBoost/SHAP were used as exploratory analyses to assess allergen feature importance and model-derived contributions to predicted asthma probability.
+
+Results
+
+LCA identified four sensitization phenotypes: predominantly non-sensitized, food-dominant, inhalant-dominant, and pet dander-predominant. After adjustment for age and sex, The inhalant-dominant phenotype was associated with higher odds of school-age asthma (adjusted OR = 3.14, 95% CI: 1.43–6.91), whereas the pet dander-predominant phenotype showed a positive but non-significant association (adjusted OR = 1.75, 95% CI: 0.94–3.26). In the pre-specified multivariable allergen model, dust mite sensitization remained significantly associated with asthma (adjusted OR = 3.30, 95% CI: 1.94–5.62). Exploratory analyses identified consistent model-derived contribution patterns for dust mite, whereas dog dander sensitization showed more variable patterns. XGBoost AUC decreased from an apparent AUC of 0.859 to a mean internally validated AUC of 0.636.
+
+Conclusion
+
+Early-life sensitization showed distinct population-level phenotypes, with the inhalant-dominant phenotype associated with school-age asthma. Dust mite showed the most consistent signal across association and exploratory prediction analyses. Dog dander findings were model-dependent and should be interpreted as exploratory prediction patterns. SHAP findings require external validation before clinical application.
+
+Introduction
+
+Asthma is one of the most common chronic inflammatory airway diseases in children with a steadily increasing prevalence worldwide.1 In China, the prevalence of childhood asthma has also increased substantially over recent decades.2 Allergic asthma represents the predominant phenotype, accounting for more than 80% of pediatric cases.3 Early life has been recognized as a critical window in asthma pathogenesis, during which environmental exposures and immune development interact to determine whether immune tolerance is established or allergic disease develops.4,5 In particular, early-life allergen sensitization, especially to inhalant allergens, has been identified as a key risk factor for persistent asthma.6,7
+
+However, allergen sensitization is highly heterogeneous, and only a subset of sensitized individuals ultimately develop asthma. It has been increasingly recognized that sensitization should not be viewed as a single feature but rather as a collection of distinct patterns, some of which carry clear pathological significance while others represent “benign sensitization” associated with a favorable clinical prognosis.8 This heterogeneity extends beyond individual sensitization profiles to the broader trajectory of allergic disease development. The traditional concept of the “atopic march” describes a sequential progression from early-life eczema to food allergy and subsequently to asthma and allergic rhinitis. However, increasing evidence suggests that many children do not follow this linear trajectory, and allergic diseases may instead develop through multiple heterogeneous pathways.9,10 Together, these observations highlight the complexity of allergic disease development and the need to better characterize the diversity of sensitization patterns and their clinical implications.
+
+Latent class analysis (LCA) has been increasingly applied to identify underlying sensitization phenotypes based on multiple allergen profiles.11 Allergen sensitization patterns vary considerably across geographic regions and populations, largely because of differences in climate, vegetation, humidity, environmental exposures, and living conditions.12 Previous studies have demonstrated that distinct sensitization patterns exist across populations and may be associated with different risks of allergic diseases.13–15 In particular, persistent inhalant sensitization and early multi-sensitization have been associated with increased risks of asthma and allergic airway diseases.16 However, findings regarding specific sensitization patterns and allergens remain inconsistent across studies. While some studies have identified house dust mite, grass pollen, cat, or pet-related sensitization as strong predictors of asthma,17,18 others have reported limited or no associations for certain food or pet-related sensitization patterns.19,20 These inconsistencies may reflect substantial heterogeneity across populations, geographic regions, age groups, and sensitization profiles. Therefore, further studies are needed to better characterize the complex relationships between sensitization patterns and asthma outcomes in different populations and regional settings.21
+
+Beyond population-level sensitization patterns, allergen-specific associations with asthma also warrant further examination. Early-life house dust mite sensitization has been consistently associated with childhood asthma across diverse populations and is generally regarded as a relatively stable risk factor.22 In contrast, findings for pet-related sensitization — particularly dog allergens — have been markedly more variable across studies. Some studies report increased asthma risk associated with pet sensitization, whereas others find limited or no significant associations.23–25 These inconsistencies suggest that allergen-related associations may depend on population characteristics, exposure context, co-sensitization patterns, or other sources of heterogeneity. Conventional regression models estimate population-level associations, whereas flexible modeling approaches may provide complementary information on model-derived allergen contribution patterns.
+
+Machine learning approaches have been increasingly applied in asthma research for risk prediction and identification of important clinical features.26 However, the interpretability of these models has remained a major challenge, limiting their translational value in clinical research. SHapley Additive exPlanations (SHAP), a model interpretation framework based on cooperative game theory, quantifies the contribution of each feature to individual model predictions at both global and individual levels,27–30 providing an interpretable framework for examining how allergen features contribute to model-predicted outcomes across individual observations.
+
+Based on these considerations, this study aimed to investigate the association between early-life allergen sensitization and school-age asthma in a real-world pediatric cohort from Wuhan, China. We used routine allergen extract–based sIgE data derived from electronic medical records. In this study, we applied an integrated analytical framework combining population-level phenotype characterization and exploratory machine-learning interpretation. First, LCA was applied to identify population-level sensitization phenotypes, and multivariable logistic regression models evaluated their associations of LCA-derived phenotypes and individual inhalant allergen sensitization with school-age asthma. Second, Random Forest models were used as exploratory prediction-oriented analyses to assess the relative importance of allergen features for asthma classification rather than population-level associations. Finally, XGBoost-based SHAP analyses were performed to characterize model-derived allergen contribution patterns. These machine-learning analyses were exploratory and were not intended to infer causal effects, independent associations, or biological mechanisms.
+
+Methods
+
+Study Design and Data Collection
+
+This retrospective study was conducted between August 2025 and January 2026. Clinical records of children who underwent allergen-specific IgE testing between August 2014 and August 2022 were retrospectively reviewed. Asthma outcomes were ascertained through electronic medical record review up to August 2025.
+
+This retrospective study used electronic medical records from Renmin Hospital of Wuhan University (2014–2022). An initial database (A0, n=5500) was established by identifying all children younger than 4 years who underwent serum allergen-specific immunoglobulin E (sIgE) testing during the study period. For children with repeated sIgE measurements, only the first test result was retained, yielding a cleaned database (n = 5424) for subsequent analyses.
+
+Two analytical samples were subsequently derived from cleaned database:
+
+Sample A (n = 4989): a cross-sectional phenotype discovery sample.
+
+Sample B (n = 435): a nested case-control sample with retrospective electronic record linkage for risk modeling, which included 84 school age asthma cases (6–12 years) and 351 controls (6–12 years).
+
+Sample B was constructed as follows: To ascertain asthma outcomes, we retrospectively retrieved subsequent clinical visit records for all individuals in the cleaned database through electronic record linkage using unique patient identifiers. We reviewed pediatric outpatient and inpatient records from school age (6–12 years) up to August 2025 (all data extraction was performed after ethics approval). Potential asthma cases were identified using ICD-10 codes for bronchial asthma and cough-variant asthma, followed by manual chart review to confirm diagnostic validity. Children were excluded if they had: asthma diagnosed before 4 years of age, uncertain asthma diagnosis, congenital cardiopulmonary diseases, prior allergen immunotherapy, or long-term systemic corticosteroid/biologic treatment.
+
+Confirmed asthma cases were identified after manual chart review. Controls were frequency-matched to cases at a 1:5 ratio by sex and age at first sIgE testing. Subsequently, all candidate controls underwent manual chart review to exclude children with documented asthma diagnoses or clinical records suggestive of asthma-like symptoms (eg, recurrent wheezing, chronic cough, or dyspnea) during the period for which electronic records were available (up to August 2025). After eligibility review, 351 controls were retained, resulting in a final sample of 84 asthma cases and 351 controls.
+
+Sample A was established by removing all children included in Sample B from the cleaned database, yielding a cross-sectional dataset used exclusively for sensitization phenotype discovery (Figure 1). Figure 1 Study design and analytical workflow.
+
+The flowchart details the process of identifying asthma in children under 4 from Renmin Hospital, Wuhan University (2014 to 2022). Starting with an initial database of 5,500 children with sIgE testing, it narrows to a ′Cleaned pool′ of 5,424 after removing duplicates and invalid IDs. ′Electronic medical record linkage′ follows, tracking records up to August 2025. ′Potential asthma cases′ (n = 120) are identified using ICD-10 codes. After a ′Manual chart review′, 36 cases are excluded due to age, uncertain diagnosis, or other health issues, leaving ′Confirmed asthma cases′ (n = 84) aged 6 to 12. ′Sample A′ (n = 4,989) is the cleaned pool minus Sample B, used for phenotype discovery. ′Sample B′ (n = 435) includes 84 cases and 351 controls for a nested case-control study. ′Latent class analysis′ identifies 4 sensitization phenotypes from Sample A. Logistic regression, Random Forest, and XGBoost with SHAP analysis are applied to Sample B.A flowchart of asthma case identification and analysis process in children under 4 years.
+
+Variables and Definitions
+
+Serum allergen-specific IgE (sIgE) testing was performed in the clinical laboratory of Renmin Hospital of Wuhan University using a commercially available immunoblotting assay. The same commercial reagent manufacturer was used throughout the study period, with a panel of 19 allergens before 2019 and 29 allergens from 2019 onward. Sensitization was defined as a serum sIgE level of ≥0.35 IU/mL according to the laboratory reference standard, and the same positivity threshold was applied throughout the study period.
+
+Because the study period spanned 8 years (2014–2022) and the hospital’s allergen testing panel changed after 2019, we performed two preprocessing steps to ensure data consistency. First, pollen test results were aggregated into a single binary variable (pollen sensitization), as the specific pollen types and reporting formats (combined panels vs individual tests) differed between the two periods. Second, allergens that were measured only after 2019 (eg, peanut, soybean, silk) were excluded from the analysis, as they had no corresponding measurements in the earlier period. The final analysis included 12 core allergens that were consistently available across the entire study period.
+
+A total of 12 allergens were included in the analysis, comprising food allergens (milk, egg white, nuts, seafood, meat, and fruit) and inhalant allergens (dust mite, cat dander, dog dander, pollen, mold, and cockroach). For allergens assessed using multiple related testing items, individual allergens were aggregated into composite categories. A composite allergen category was considered positive if any constituent allergen showed sensitization. All 12 core allergen variables were measured for every participant included in the analysis, and no missing values were present for these allergen variables. Allergen sensitization variables were analyzed as binary variables (sensitized vs non-sensitized). The detailed constituent allergens included in the composite allergen categories are presented in Supplementary Table 1.
+
+Early-life clinical variables collected in Sample B included sex, age at first sIgE testing, birth status (preterm, term, or post-term), mode of delivery (cesarean versus vaginal delivery), and feeding history (breastfeeding, formula feeding, or mixed feeding). Polysensitization was defined as sensitization to two or more allergens. Asthma diagnosis was confirmed based on guideline-based clinical assessment through manual chart review.
+
+Latent Class Analysis
+
+Latent class analysis (LCA) was performed in Sample A using 12 allergen sensitization variables to identify sensitization phenotypes. Models with one to six classes were fitted using the poLCA package in R based on maximum likelihood estimation with the expectation-maximization algorithm. To reduce the risk of local maxima, multiple random starting values were used (nrep = 80), and the maximum number of iterations was increased (maxiter = 10,000). Model stability across different random seeds was additionally assessed. The optimal number of classes was determined based on Bayesian information criterion (BIC), entropy, smallest class proportion, model stability, and clinical interpretability. Individuals were assigned to latent classes according to maximum posterior probability (modal assignment). Conditional probabilities were used to characterize sensitization patterns across classes. The estimated class assignment model derived from Sample A was subsequently applied to Sample B for phenotype-based analyses without re-estimation of model parameters.
+
+Missing data were limited to three early-life clinical covariates extracted from electronic medical records. Birth status was missing for 19 children (4.37%), mode of delivery for 18 children (4.14%), and feeding history for 18 children (4.14%). No missing data were present for allergen sensitization variables, age, sex, LCA classification, or asthma outcomes. Available-case analysis was used for descriptive comparisons involving these clinical covariates, and no imputation was performed because the proportion of missing data was low.
+
+Statistical and Machine Learning Analyses
+
+All statistical analyses were performed using R (version 4.5.2). And a p-value < 0.05 was considered statistically significant.
+
+Descriptive statistics were used to summarize baseline characteristics in Sample B. Categorical variables, including age group, were presented as counts and percentages. Group comparisons between asthma and control groups were performed using the chi-square test or Fisher’s exact test, as appropriate.
+
+Univariate logistic regression analyses were first conducted to describe the crude associations between candidate variables and asthma outcomes. To avoid reliance on significance-based variable selection, multivariable logistic regression models were constructed based on clinical relevance and prior knowledge. For the phenotype-based analysis, LCA-derived sensitization phenotypes were included as the main exposure, with adjustment for age and sex. For the allergen-specific analysis, age, sex, and the six major inhalant allergen sensitizations assessed in this study (dust mite, pollen, cat dander, dog dander, mold, and cockroach) were simultaneously included in the multivariable model. Adjusted odds ratios (ORs) and 95% confidence intervals (CIs) were reported. A Random Forest model was constructed using the 12 allergen variables as predictors and asthma status as the outcome. The model was implemented using the ranger package in R with probability estimation enabled (probability = TRUE). The number of trees was set to 2000, and the random seed was set to 2026. The remaining model parameters were set to the default values of the ranger package, including mtry = floor(sqrt(p)), splitrule = “gini”, and min.node.size = 1. No formal hyperparameter tuning or additional class-imbalance handling was performed. Variable importance was evaluated using permutation importance. Model discrimination was evaluated using receiver operating characteristic (ROC) analysis and area under the curve (AUC). Internal validation was performed using 1000 bootstrap resamples to estimate optimism and derive an optimism-corrected AUC.
+
+XGBoost was implemented using the xgboost package with the same 12 allergen sensitization variables. The objective function was set to binary: logistic, the evaluation metric to logloss, and the number of boosting rounds to 100 (nrounds = 100). Other hyperparameters were set to the package defaults, including max_depth = 6, eta = 0.3, subsample = 1, colsample_bytree = 1, min_child_weight = 1, and gamma = 0. No formal hyperparameter tuning or additional class-imbalance handling was performed. Model performance was evaluated using internal five-fold cross-validation. No random seed was prespecified for the XGBoost model. SHAP values were subsequently calculated to provide exploratory, model-derived explanations of allergen contributions to XGBoost-predicted asthma probability. Because all predictors were pre-defined binary sensitization variables with no outcome-derived preprocessing or feature selection, no additional preprocessing steps were required within the cross-validation procedure.
+
+This study was approved by the Ethics Committee of Renmin Hospital of Wuhan University (approval No. WDRY2025-K193, dated August 19, 2025). Informed consent was waived due to the retrospective design. Patient data were handled confidentially and in accordance with the Declaration of Helsinki.
+
+Result
+
+Baseline Characteristics and Sensitization Patterns (Sample A)
+
+Sample A included 4989 children with a mean age of 1.54 ± 1.15 years, predominantly composed of infants and toddlers (Supplementary Table 2).
+
+The proportion of children without sensitization gradually decreased with age, whereas polysensitization increased markedly from 24.37% at 0 years to 51.58% at 3 years (P < 0.001), indicating an increasing allergic burden during early childhood. Significant age-related differences in allergen sensitization patterns were observed across age groups (Table 1). Figure 2 illustrates age-related changes in sensitization prevalence across the 12 allergens. Most inhalant allergens showed progressive increases with age, particularly dust mite sensitization. In contrast, cat and dog dander sensitization increased during early childhood and showed declines at 3 years.Table 1 Prevalence of Allergen Sensitization Across Age Groups
+
+Allergens	Age <1 Years (n=1239)	Age 1 Years (n=1297)	Age 2 Years (n=993)	Age 3 Years (n=1460)	χ2	P	
+Milk	464 (37.48%)	735 (56.67%)	536 (54.31%)	698 (47.87%)	108.10	<0.001	
+Egg white	150 (12.11%)	276 (21.30%)	326 (32.96%)	464 (31.82%)	191.11	<0.001	
+Dust mite	36 (2.91%)	73 (5.63%)	201 (20.24%)	428 (29.36%)	493.86	<0.001	
+Cat dander	168 (13.60%)	241 (18.61%)	189 (19.03%)	193 (13.24%)	27.03	<0.001	
+Dog dander	105 (8.48%)	187 (14.43%)	164 (16.55%)	191 (13.10%)	35.77	<0.001	
+Nutsa	55 (4.44%)	137 (10.56%)	115 (11.64%)	189 (12.96%)	60.33	<0.001	
+Moldb	27 (2.18%)	64 (4.93%)	88 (8.86%)	244 (16.72%)	212.33	<0.001	
+Pollenc	78 (6.30%)	118 (9.10%)	84 (8.46%)	147 (10.07%)	12.86	0.005	
+Seafoodd	14 (1.13%)	33 (2.54%)	77 (7.76%)	107 (7.34%)	93.36	<0.001	
+Meat e	6 (0.48%)	13 (1.00%)	23 (2.32%)	35 (2.40%)	22.57	<0.001	
+Cockroach	14 (1.13%)	16 (1.23%)	14 (1.41%)	23 (1.58%)	1.18	0.759	
+Fruit	12 (0.97%)	12 (0.93%)	7 (0.70%)	15 (1.03%)	0.72	0.868	
+Polysensitization status					343.19	<0.001	
+None	607 (48.99%)	364 (28.06%)	249 (25.08%)	320 (21.92%)			
+Single	330 (26.63%)	410 (31.61%)	235 (23.67%)	387 (26.51%)			
+Multiple	302 (24.37%)	523 (40.32%)	509 (51.26%)	753 (51.58%)			
+Notes: Data are presented as n (%). Polysensitization was defined as sensitization to ≥2 allergens. a–eComposite allergen categories were considered positive if sensitization was present to at least one constituent allergen within the corresponding category. Detailed constituent allergens are provided in Supplementary Table1.
+
+Abbriviations: OR, odds ratio; CI, confidence interval; χ2, chi-square statistic.
+
+Figure 2 Line chart of the prevalence of each allergen across four early-life age groups.
+
+Image displays 12 line graphs titled: cat, dog, egg, fruit, meat, milk, mite, mold, nut, pollen, roach, seafood. All graphs share x-axis labeled ′Age (years)′ with ticks at 0, 1, 2, 3 and y-axis labeled ′Positive rate (percent)′. Cat: 13-19%, ages 0-3: 14%, 19%, 19%, 13%. Dog: 10-15%, ages 0-3: 10%, 14%, 15%, 13%. Egg: 15-30%, ages 0-3: 15%, 22%, 33%, 32%. Fruit: 1%, ages 0-3: 1% consistently. Meat: 0-2%, ages 0-3: 0%, 1%, 2%, 2%. Milk: 40-55%, ages 0-3: 38%, 56%, 54%, 48%. Mite: 0-30%, ages 0-3: 3%, 6%, 20%, 30%. Mold: 0-15%, ages 0-3: 2%, 5%, 9%, 17%. Nut: 6-12%, ages 0-3: 6%, 10%, 11%, 12%. Pollen: 7-10%, ages 0-3: 7%, 9%, 8%, 10%. Roach: 0-2%, ages 0-3: 0.5%, 1%, 1.5%, 2.2%. Seafood: 0-8%, ages 0-3: 1%, 2.5%, 8%, 7.5%.A set of 12 line graphs showing allergen positive rate across age groups from 0 to 3 years.
+
+We next compared allergen sensitization patterns between male and female children (Supplementary Table 3). Males showed higher sensitization to milk (50.40% vs 45.97%, P=0.003), cat dander (17.48% vs 12.89%, P<0.001), dog dander (14.42% vs 10.31%, P<0.001), and nuts (10.83% vs 8.34%, P=0.005), but lower sensitization to mold (7.91% vs 9.55%, P=0.048). The overall distribution of sensitization patterns also differed modestly (P=0.031), with males showing a higher proportion of multiple sensitization (42.98% vs 39.68%) and a lower proportion (29.72% vs 33.01%) of no sensitization.
+
+LCA of Allergen Sensitization
+
+Latent class analysis (LCA) was performed using 12 allergen sensitization variables in Sample A to identify sensitization phenotypes. Although model fit improved with increasing class number, the 4-class model showed the lowest BIC (42667.20), high entropy (0.80), and acceptable class proportions, and was therefore selected as the optimal model (Supplementary Table 4). The heatmap and line plots demonstrated clear clustering and distinct probability distributions across classes (Figure 3). Figure 3 Latent class sensitization patterns identified in Sample A. (A) Heatmap showing the conditional probabilities of sensitization to 12 allergens within each latent class; (B) Line plots illustrating the conditional probability distribution of each allergen across the four latent classes; Class1, pet dander-predominant, Class2, inhalant-dominant, Class3, predominantly non-sensitized, Class4, food-dominant.
+
+The image A showing a heatmap of sensitization probability by allergen and class. The x-axis label is Class with categories Class 1, Class 2, Class 3, Class 4. The y-axis label is Allergen with rows fruit, roach, meat, seafood, pollen, mold, nut, dog, cat, mite, egg, milk. A legend reads Sensitization Probability with tick labels 0.25, 0.50, 0.75. Darker cells appear for milk in Class 1, egg in Class 4, cat and dog in Class 1 and mite in Class 2. The image B showing a line graph with markers of probability by allergen for four classes. The x-axis categories are milk, egg, mite, cat, dog, nut, mold, pollen, seafood, meat, roach, fruit. The y-axis label is Probability of Sensitization (Weak plus Strong) with a scale from 0.0 to 1.0. Legend entries are Class 1, Class 2, Class 3, Class 4. Class 1 is about 0.90 at milk, about 0.40 at egg, about 0.10 at mite, about 0.72 at cat, about 0.70 at dog, then near 0.13 at nut and near 0.10 or lower from mold through fruit. Class 2 is about 0.39 at milk, about 0.40 at egg, about 0.60 at mite, about 0.15 at cat, about 0.11 at dog, about 0.35 at nut, about 0.38 at mold, about 0.52 at pollen, about 0.15 at seafood, about 0.05 at meat, about 0.17 at roach, about 0.10 at fruit. Class 3 is about 0.35 at milk, about 0.05 at egg, about 0.11 at mite, about 0.04 at cat, about 0.01 at dog, about 0.03 at nut, about 0.05 at mold, about 0.04 at pollen, about 0.02 at seafood and near 0.00 from meat through fruit. Class 4 is about 0.73 at milk, about 0.97 at egg, about 0.18 at mite, about 0.02 at cat, about 0.00 at dog, about 0.27 at nut, about 0.11 at mold, about 0.10 at pollen, about 0.12 at seafood and near 0.00 from meat through fruit.A heatmap and a multi-line graph showing allergen sensitization probability across four classes.
+
+Based on conditional probability distributions (Supplementary Table 5), four distinct sensitization phenotypes were identified: pet dander–predominant, inhalant-dominant, food-dominant, and predominantly non-sensitized (Table 2). The pet dander–predominant phenotype was characterized primarily by cat and dog dander sensitization, with a high probability of milk sensitization. The inhalant-dominant phenotype showed higher probabilities of dust mite and pollen sensitization, whereas the food-dominant phenotype was characterized mainly by egg white and milk sensitization. The predominantly non-sensitized phenotype showed low conditional probabilities across most allergens.Table 2 Four Sensitization Phenotypes Identified by LCA: Names and Defining Allergen Profiles
+
+Category	Names	Characteristics	
+1	Pet dander–predominant	Cat dander, dog dander, milk	
+2	Inhalant-dominant	Dust mite, pollen, mold	
+3	Predominantly non-sensitized	Largely negative for all allergens	
+4	Food-dominant	Egg white, milk	
+
+Significant differences in allergen sensitization profiles were observed among the four phenotypes (all P < 0.001; Table 3). Polysensitization was highly prevalent in the pet dander–predominant, inhalant-dominant, and food-dominant phenotypes, whereas the predominantly non-sensitized phenotype showed substantially lower levels of polysensitization. The distribution of these sensitization patterns also varied across age at first sIgE testing (Supplementary Table 6).Table 3 Sensitization Profiles of the Four Phenotypes
+
+Variable	Pet Dander–Predominant (n=826)	Inhalant-Dominant (n=203)	Predominantly Non-Sensitized (n=3277)	Food-Dominant (n=683)	χ2	P	
+Allergens							
+ Milk	761 (92.13%)	73 (35.96%)	1073 (32.83%)	526 (77.01%)	1185.05	<0.001	
+ Egg white	328 (39.71%)	86 (42.36%)	119 (3.64%)	683 (100.00%)	3020.05	<0.001	
+ Dust mite	97 (11.74%)	132 (65.02%)	382 (11.66%)	127 (18.59%)	445.59	<0.001	
+ Cat dander	647 (78.42%)	40 (19.70%)	99 (3.03%)	5 (0.73%)	2939.76	<0.001	
+ Dog dander	609 (73.82%)	25 (12.32%)	13 (0.40%)	0 (0.00%)	3263.12	<0.001	
+ Nuts	109 (13.21%)	83 (40.89%)	124 (3.79%)	180 (26.35%)	569.76	<0.001	
+ Mold	75 (9.08%)	91 (44.83%)	177 (5.40%)	80 (11.71%)	395.10	<0.001	
+ Pollen	96 (11.62%)	140 (68.97%)	124 (3.78%)	67 (9.81%)	1053.21	<0.001	
+ Seafood	58 (7.03%)	35 (17.24%)	55 (1.68%)	83 (12.15%)	235.83	<0.001	
+ Meat	45 (5.45%)	9 (4.43%)	9 (0.27%)	14 (2.05%)	129.86	<0.001	
+ Cockroach	4 (0.48%)	55 (27.09%)	8 (0.24%)	0 (0.00%)	1059.51	<0.001	
+ Fruit	5 (0.61%)	31 (15.27%)	5 (0.15%)	5 (0.73%)	479.73	<0.001	
+Multiple Sensitization					3421.66	<0.001	
+ None	0 (0.00%)	0 (0.00%)	1540 (46.99%)	0 (0.00%)			
+ Single	1 (0.12%)	0 (0.00%)	1333 (40.68%)	28 (4.10%)			
+ Multiple	825 (99.88%)	203 (100.00%)	404 (12.33%)	655 (95.90%)			
+
+Comparison of Baseline Characteristics and Allergen Sensitization by Asthma Status (Sample B)
+
+Sample B included 435 children, including 84 children with asthma and 351 without asthma. Baseline characteristics, including sex, age group, birth status, mode of delivery, and feeding history, did not differ significantly between groups (all P > 0.05), indicating comparable baseline profiles (Table 4).Table 4 Baseline Characteristics and Comparison by Asthma Status (Sample B)
+
+Variable	Non-Asthma (n=351)	Asthma (n=84)	χ2	P	
+Sex			1.30	0.255	
+ Male	219 (62.39%)	58 (69.05%)			
+ Female	132 (37.61%)	26 (30.95%)			
+Age (years)			4.06	0.255	
+ 0	36 (10.26%)	3 (3.57%)			
+ 1	63 (17.95%)	18 (21.43%)			
+ 2	70 (19.94%)	19 (22.62%)			
+ 3	182 (51.85%)	44 (52.38%)			
+Birth status*			-	0.466	
+ Preterm	21 (6.21%)	7 (8.97%)			
+ Term	315 (93.20%)	71 (91.03%)			
+ Post-term	2 (0.59%)	0 (0.00%)			
+Mode of delivery#			1.70	0.192	
+ Cesarean section	190 (56.21%)	38 (48.10%)			
+ Vaginal delivery	148 (43.79%)	41 (51.90%)			
+Feeding history#			2.31	0.315	
+ Breastfeeding	221 (65.38%)	51 (64.56%)			
+ Formula feeding	56 (16.57%)	9 (11.39%)			
+ Mixed feeding	61 (18.05%)	19 (24.05%)			
+Positive allergens					
+ Milk	186 (52.99%)	43 (51.19%)	0.09	0.766	
+ Egg white	128 (36.47%)	32 (38.10%)	0.08	0.781	
+ Dust mite	81 (23.08%)	42 (50.00%)	24.23	<0.001	
+ Cat dander	58 (16.52%)	25 (29.76%)	7.69	0.006	
+ Dog dander	43 (12.25%)	19 (22.62%)	5.96	0.015	
+ Nuts	57 (16.24%)	20 (23.81%)	2.67	0.102	
+ Mold	50 (14.25%)	22 (26.19%)	7.00	0.008	
+ Pollen	40 (11.40%)	15 (17.86%)	2.56	0.109	
+ Seafood	27 (7.69%)	12 (14.29%)	3.61	0.057	
+ Meat	8 (2.28%)	1 (1.19%)	-	1.000	
+ Cockroach	4 (1.14%)	5 (5.95%)	-	0.016	
+ Fruit	3 (0.85%)	2 (2.38%)	-	0.248	
+Multiple sensitization			9.90	0.007	
+ None	72 (20.51%)	10 (11.90%)			
+ Single	86 (24.50%)	12 (14.29%)			
+ Multiple	193 (54.99%)	62 (73.81%)			
+LCA phenotype			12.61	0.006	
+ Pet dander–predominant	61 (17.38%)	21 (25.00%)			
+ Inhalant-dominant	21 (5.98%)	13 (15.48%)			
+ Predominantly non-sensitized	188 (53.56%)	35 (41.67%)			
+ Food-dominant	81 (23.08%)	15 (17.86%)			
+Notes: *Birth status was available for 416 participants (338 controls and 78 cases); percentages were calculated based on the available sample size for this variable. #Mode of delivery and feeding history were available for 417 participants (338 controls and 79 cases); percentages were calculated based on the available sample size for each variable.
+
+Inhalant allergen sensitization was more frequent in the asthma group, particularly sensitization to dust mite, cat dander, dog dander, mold, and cockroach (all P < 0.05). In contrast, food allergens and pollen showed no significant differences between groups.
+
+Polysensitization was significantly more common in children with asthma (P = 0.007), whereas non-sensitization and single sensitization were more common in the non-asthma group.
+
+Significant differences were also observed in LCA-defined sensitization phenotypes (P = 0.006). Compared with the non-asthma group, the asthma group showed a higher proportion of the inhalant-dominant phenotype and lower proportions of the predominantly non-sensitized and food-dominant phenotypes.
+
+Factors Associated with Asthma Risk Across Conventional Statistical Analyses
+
+Univariate logistic regression analyses were performed to describe crude associations between candidate variables and asthma risk (Table 5). Baseline characteristics, including sex, age, birth status, mode of delivery, and feeding history, were not significantly associated with asthma (all P > 0.05).Table 5 Univariate Logistic Regression Analysis of Asthma Risk
+
+Variable	OR (95% CI)	P	
+Sex			
+ Male	1	–	
+ Female	0.74 (0.45 to 1.24)	0.256	
+Age (years)		0.294	
+ 0	1	–	
+ 1	3.43 (0.94 to 12.44)	0.061	
+ 2	3.26 (0.90 to 11.74)	0.071	
+ 3	2.90 (0.85 to 9.86)	0.088	
+Birth status		0.692	
+ Preterm	1	–	
+ Term	0.68 (0.28 to 1.65)	0.391	
+ Post-term	NE	NE	
+Mode of delivery			
+ Cesarean section	1	-	
+ Vaginal delivery	1.39 (0.85 to 2.26)	0.193	
+Feeding history		0.320	
+ Breastfeeding	1	-	
+ Formula feeding	0.70 (0.32 to 1.50)	0.355	
+ Mixed feeding	1.35 (0.74 to 2.45)	0.326	
+Positive allergens			
+ Milk	0.93 (0.58 to 1.50)	0.767	
+ Egg white	1.07 (0.66 to 1.75)	0.781	
+ Dust mite	3.33 (2.03 to 5.47)	<0.001	
+ Cat dander	2.14 (1.24 to 3.70)	0.006	
+ Dog dander	2.09 (1.15 to 3.82)	0.016	
+ Nuts	1.61 (0.91 to 2.87)	0.105	
+ Mold	2.14 (1.21 to 3.78)	0.009	
+ Pollen	1.69 (0.88 to 3.23)	0.113	
+ Seafood	2.00 (0.97 to 4.14)	0.061	
+ Meat	0.52 (0.06 to 4.19)	0.536	
+ Cockroach	5.49 (1.44 to 20.91)	0.013	
+ Fruit	2.83 (0.47 to 17.21)	0.259	
+Multiple sensitization		0.008	
+ None	1	-	
+ Single	1.00 (0.41 to 2.46)	0.992	
+ Multiple	2.31 (1.13 to 4.75)	0.023	
+LCA phenotype		0.008	
+ Predominantly non-sensitized	1		
+ Food-dominant	0.99 (0.51 to 1.92)	0.987	
+ Pet dander–predominant	1.85 (1.00 to 3.41)	0.049	
+ Inhalant-dominant	3.33 (1.52 to 7.25)	0.003	
+Note: NE: not estimable because no asthma cases were observed in the post-term category.
+
+Several inhalant allergens were associated with increased asthma risk, including dust mite, cat dander, dog dander, mold, and cockroach sensitization (all P < 0.05). Among these, dust mite sensitization showed a strong association (OR = 3.33, P < 0.001). In contrast, food allergens and pollen were not significantly associated with asthma.
+
+Multiple sensitization was associated with increased asthma risk compared with no sensitization (OR=2.31, P=0.023), whereas single sensitization was not associated (P=0.992).
+
+LCA-defined sensitization phenotypes also differed in asthma risk. The inhalant-dominant phenotype was significantly associated with asthma (OR = 3.33, P = 0.003), while the pet dander–predominant phenotype showed a borderline association (OR = 1.85, P = 0.049). No significant association was observed for the food-dominant phenotype.
+
+Comparison of Regression-Based Associations and Machine Learning-Derived Feature Importance
+
+To evaluate whether allergen-related signals were consistent across analytical approaches, we compared regression-based association estimates with machine learning-derived feature importance measures.
+
+In the regression-based analyses, LCA-defined sensitization phenotypes showed different patterns of association with asthma risk after adjustment for age and sex. Compared with the predominantly non-sensitized phenotype, the inhalant-dominant phenotype was significantly associated with higher odds of asthma (adjusted OR = 3.14, 95% CI: 1.43–6.91, P = 0.004). The pet dander–predominant phenotype showed a positive but non-significant association (adjusted OR = 1.75, 95% CI: 0.94–3.26, P = 0.079), whereas no significant association was observed for the food-dominant phenotype (adjusted OR = 0.92, 95% CI: 0.47–1.79, P = 0.810) (Table 6).Table 6 Multivariable Logistic Regression Analyses of LCA-Derived Sensitization Phenotypes and Inhalant Allergen Sensitization in Relation to Childhood Asthma
+
+Variable	Adjusted OR (95% CI)	P	
+Model 1: LCA phenotype model			
+Predominantly non-sensitized	1.00	—	
+Food-dominant	0.92 (0.47–1.79)	0.810	
+Pet dander–predominant	1.75 (0.94–3.26)	0.079	
+Inhalant-dominant	3.14 (1.43–6.91)	0.004	
+Model 2: Pre-specified inhalant allergen model			
+Dust mite	3.30 (1.94–5.62)	<0.001	
+Cat dander	1.79 (0.88–3.66)	0.111	
+Dog dander	1.23 (0.56–2.70)	0.609	
+Mold	2.11 (1.14–3.90)	0.017	
+Pollen	1.04 (0.49–2.22)	0.919	
+Cockroach	5.30 (1.18–23.86)	0.030	
+Note: Adjusted ORs were estimated from multivariable logistic regression models. The LCA phenotype model was adjusted for age and sex. The pre-specified inhalant allergen model simultaneously included age, sex, and six inhalant allergen sensitizations (dust mite, cat dander, dog dander, mold, pollen, and cockroach).
+
+In the pre-specified multivariable logistic regression model including age, sex, and inhalant allergen sensitizations, dust mite sensitization remained significantly associated with higher odds of asthma (adjusted OR = 3.30, 95% CI: 1.94–5.62, P < 0.001). Mold sensitization (adjusted OR = 2.11, 95% CI: 1.14–3.90, P = 0.017) and cockroach sensitization (adjusted OR = 5.30, 95% CI: 1.18–23.86, P = 0.030) were also significantly associated with asthma. In contrast, cat dander sensitization (adjusted OR = 1.79, 95% CI: 0.88–3.66, P = 0.111), dog dander sensitization (adjusted OR = 1.23, 95% CI: 0.56–2.70, P = 0.609), and pollen sensitization (adjusted OR = 1.04, 95% CI: 0.49–2.22, P = 0.919) were not significantly associated with asthma after adjustment (Table 6).
+
+In contrast to regression-based association analyses, the Random Forest model was used as an exploratory, prediction-oriented analysis to evaluate the relative importance of allergen features for asthma prediction rather than population-average associations. The Random Forest model incorporated all 12 allergen variables. In ROC analysis, the Random Forest model showed an apparent AUC of 0.796 (Figure 4). Internal validation using bootstrap resampling (B = 1000) yielded an optimism-corrected AUC of 0.70, indicating reduced predictive performance after correction for optimism (Figure S1). Figure 4 Exploratory Random Forest model performance and feature importance for childhood asthma prediction. (A) ROC curve of the Random Forest model, showing apparent AUC = 0.796. Internal validation using 1000 bootstrap resamples yielded an optimism-corrected AUC of 0.70. (B) Variable importance rankings derived from the Random Forest model. Higher importance values indicate greater contribution to model performance.
+
+Image A depicts a receiver operating characteristic (ROC) graph with ′1 minus Specificity′ on the x-axis and ′Sensitivity′ on the y-axis, both ranging from 0.0 to 1.0. The graph includes a diagonal reference line from (0.0, 0.0) to (1.0, 1.0) and another sloping downward from (0.0, 1.0). The ROC curve starts at (0.0, 0.0), rises steeply to a sensitivity of 0.6 at 1 minus Specificity of 0.1, then gradually increases towards (1.0, 1.0). The text indicates a Random Forest AUC of 0.796. Image B shows a horizontal bar chart of permutation importance by allergen category. The x-axis is labeled ′Permutation Importance′ with ticks at 0.000, 0.005, 0.010 and 0.015. Categories on the y-axis include Dust mite, Dog, Cat, Milk, Egg, Roach, Nut, Seafood, Pollen, Meat, Fruit and Mold. Dust mite has the largest bar at about 0.017, followed by Dog at 0.007, Cat at 0.006 and others decreasing in size, with Mold extending slightly left of 0.000 to about -0.001.Two graphs showing a random forest receiver operating characteristic curve and variable importance rankings.
+
+Random Forest feature importance analysis revealed a different pattern from regression-based association estimates. Dust mite sensitization remained the highest-ranked feature, whereas dog dander sensitization ranked second despite not showing a statistically significant association with asthma in the pre-specified multivariable logistic regression model. Cat dander sensitization was also identified as an important feature in the Random Forest model (Figure 4).
+
+Overall, these findings suggest that allergen-related signals differed between association-based and prediction-oriented analyses. Dust mite sensitization showed a relatively consistent pattern across analytical approaches, being significantly associated with asthma in the pre-specified multivariable logistic regression model and ranking as the most important feature in the Random Forest analysis. In contrast, dog dander and cat dander sensitization showed model-dependent patterns: neither was significantly associated with asthma after adjustment in the pre-specified multivariable logistic regression model, whereas both ranked relatively highly in the Random Forest feature importance analysis.
+
+Exploratory SHAP Analysis of Allergen-Related Model Contributions in XGBoost Prediction
+
+To explore model-derived allergen contribution patterns within the XGBoost prediction model, SHAP analysis was performed using the XGBoost model fitted to the complete Sample B (n = 435) with 12 allergen sensitization variables. The XGBoost model achieved an apparent AUC of 0.859 (95% CI: 0.812–0.906) in the training dataset. Internal five-fold cross-validation yielded a mean AUC of 0.636 (SD = 0.047). SHAP analysis showed that dust mite sensitization had the highest mean absolute SHAP value (0.544) and was predominantly associated with positive SHAP values within the fitted XGBoost model. In contrast, dog dander sensitization showed substantial variability in SHAP contribution patterns, with both positive and negative SHAP values across observations (Figure 5). Figure 5 Exploratory SHAP summary plot of the XGBoost model for childhood asthma prediction. The SHAP summary plot illustrates the direction and magnitude of model-derived feature contributions to the XGBoost-predicted probability of asthma. Positive SHAP values indicate that a feature contributes to a higher model-predicted probability of asthma, whereas negative SHAP values indicate a lower model-predicted probability. Each dot represents one participant. The XGBoost model showed an apparent AUC of 0.859 in the training dataset, whereas five-fold cross-validation yielded a mean AUC of 0.636 (SD = 0.047).
+
+A scatter plot displays allergen features on the vertical axis: Dust mite, Milk, Dog, Cat, Mold, Egg, Nut, Pollen, Seafood, Roach, Meat, Fruit, each with a SHAP value indicating impact on model output. Dust mite (0.544) shows dense positive dots from 0 to 2, with some negative dots near -1. Milk (0.240) clusters near 0, extending to 1. Dog (0.234) has dots on both sides, from -2 to 1.5. Cat (0.218) and Mold (0.206) have positive dots up to 2, fewer near 0 and slightly negative. Egg (0.181), Nut (0.170) and Pollen (0.144) cluster near 0, extending to 1 and -1. Seafood (0.097) and Roach (0.085) cluster near 0, with positive dots up to 2. Meat (0.007) clusters near 0, while Fruit (0.000) shows a single dot at 0. The horizontal axis is labeled SHAP value, with ticks at -2, -1, 0, 1, 2 and a reference line at 0. A legend indicates dot appearance varies by feature value from Low to High.A scatter plot showing SHAP value impact on model output by allergen feature and feature value.Abbreviation: SHAP, Shapley Additive exPlanations.
+
+Discussion
+
+Sensitization Phenotypes
+
+In Sample A, we identified four distinct sensitization phenotypes, including pet dander–predominant, inhalant-dominant, food-dominant, and predominantly non-sensitized patterns, indicating substantial heterogeneity in early-life allergen sensitization. Previous latent class analyses conducted in different populations have also identified heterogeneous sensitization patterns, although the dominant allergens varied across studies. Studies from Western populations commonly reported phenotypes characterized by food allergens, pollen, or mixed inhalant sensitization,31 whereas multicenter studies from China more frequently identified dust mite- or pollen-related sensitization patterns. Regional differences within China have also been observed, with dust mite sensitization predominating in southern regions and pollen sensitization more common in northern regions.32 These findings suggest that sensitization phenotypes may be influenced by geographic environment, climate, allergen exposure profiles, and population characteristics.
+
+In our single-center cohort from central China, the predominantly non-sensitized phenotype represented the largest subgroup, whereas inhalant-related sensitization phenotypes showed stronger associations with asthma risk, particularly patterns involving dust mite sensitization. These findings are consistent with previous studies suggesting that inhalant allergen sensitization plays a more important role in childhood asthma development.
+
+Differential Patterns of Dust Mite and Pet Dander Sensitization Across Analytical Approaches
+
+Across the regression-based association analyses and exploratory machine-learning analyses, dust mite sensitization showed the most consistent allergen-related signal. In the pre-specified multivariable logistic regression model, dust mite sensitization remained significantly associated with school-age asthma. It was also ranked as the most important allergen feature in the Random Forest model and showed relatively consistent positive model-derived contributions in the SHAP analysis.
+
+This finding is consistent with previous studies identifying early-life dust mite sensitization as a major risk factor for childhood asthma.33 Compared with other allergens, previous studies have suggested that dust mite sensitization may be associated with more persistent airway inflammation and stronger type 2 immune responses, which may partly explain its relatively stable association with asthma risk.34–36
+
+In the present study, pet dander-related findings were less consistent across analytical approaches. In the pre-specified multivariable logistic regression model, neither cat nor dog dander sensitization was significantly associated with asthma. In contrast, dog dander sensitization was ranked highly by the machine-learning model despite not showing a statistically significant association in the pre-specified multivariable logistic regression model. This discrepancy should not be interpreted as evidence of an independent etiological effect. Rather, it may reflect co-sensitization patterns, collinearity between pet sensitization, nonlinear relationships, statistical interactions, or model-dependent feature importance.
+
+SHAP analysis was further used to provide an exploratory interpretation of the XGBoost model and to examine how allergen variables contributed to model-predicted asthma probability at the individual-observation level. While dust mite sensitization showed relatively consistent positive model-derived contributions, dog dander sensitization demonstrated substantial variability in both the magnitude and direction of SHAP contributions across individual observations. However, the XGBoost model showed a substantial decline in performance after internal validation, indicating potential overfitting. The SHAP-derived patterns should be interpreted as exploratory rather than definitive findings. Therefore, these SHAP patterns should be interpreted as exploratory descriptions of model prediction behavior rather than causal effects, independent associations, or biological mechanisms. In particular, the variable SHAP pattern observed for dog dander sensitization should not be interpreted as evidence that dog dander has different biological effects across individuals, or that it is protective in some children and harmful in others.
+
+Previous studies have reported inconsistent associations between pet sensitization and asthma, with some studies suggesting increased asthma risk, whereas others observed weak or no significant associations. Such variability may reflect differences in environmental exposure, co-sensitization profiles, timing of sensitization, host immune tolerance, characteristics of study populations and the strength of sensitization.37–40
+
+Interestingly, compared with other inhalant allergens, cat and dog dander sensitization did not show a consistent increase across age groups in our cross-sectional analyses, whereas most other inhalant allergens showed higher sensitization prevalence in older age groups. These findings further suggest that pet-related sensitization patterns may be more variable and context-dependent than dust mite sensitization.
+
+Taken together, these findings suggest that conventional regression and interpretable machine-learning analyses may provide complementary, but distinct, information. Regression models estimate population-level associations, whereas machine-learning methods describe model-derived prediction importance and contribution patterns.
+
+Limitations
+
+Several limitations should be considered. First, this was a retrospective study based on children who underwent serum sIgE testing at a tertiary hospital, which may introduce indication-related selection bias. These children were more likely to have allergic symptoms or clinical suspicion of allergic disease than the general pediatric population, limiting the generalizability of the findings to community-based populations. The retrospective design also limits causal inference. Second, asthma outcomes were ascertained from electronic medical records within a single tertiary hospital. Some children may have received asthma diagnoses outside this hospital system or after the available observation period, potentially leading to outcome misclassification. In addition, because the inclusion period spanned several years, follow-up opportunity may have varied across participants, which could have resulted in unequal outcome ascertainment. Because allergen sensitization patterns may change with age, the distribution of LCA-derived phenotypes may partly reflect age-related maturation of sensitization. Although the age distribution of the four phenotypes was explored descriptively, age was not incorporated into the LCA model, and residual age-related influence on phenotype assignment cannot be excluded. Third, the relatively limited number of asthma cases reduced statistical power for subgroup, interaction, and complex machine-learning analyses, particularly for pet dander-related findings and allergens with low sensitization prevalence or wide confidence intervals. Given the multiple allergen-related comparisons, borderline associations should therefore be interpreted cautiously. The XGBoost model showed reduced performance after internal validation, indicating potential overfitting, SHAP results are model-dependent and may be influenced by correlations among variables; therefore, the observed contribution patterns should be interpreted cautiously. Finally, allergen sensitization was assessed using allergen extract-based sIgE testing and dichotomized as positive or negative, rather than using component-resolved diagnostics (CRD) or semi-quantitative sIgE levels. CRD could provide more precise molecular profiles (distinguishing genuine sensitization from cross-reactivity), and sIgE titers or grades might offer additional dose-response information. Nevertheless, extract-based dichotomized testing remains the most widely used approach in routine clinical practice.
+
+Conclusion
+
+In this retrospective pediatric cohort, early-life allergen sensitization patterns were heterogeneous, and LCA identified four distinct sensitization phenotypes. The inhalant-dominant phenotype was associated with increased odds of school-age asthma, while dust mite sensitization showed the most consistent association across the pre-specified regression analyses and exploratory machine-learning analyses. In contrast, the contribution patterns observed for dog dander sensitization were model-dependent and should be interpreted as exploratory model-derived prediction patterns rather than evidence of individual-level biological heterogeneity or protective effects. Overall, these findings highlight the potential value of integrating population-level sensitization phenotyping with exploratory machine-learning approaches to characterize complex allergen-related signals, while underscoring the need for external validation before clinical application.
+
+Acknowledgments
+
+During the preparation of this manuscript, the authors used Gemini (version 1.5 Pro) for the sole purpose of English language editing, grammatical correction, and enhancing academic readability. After using this tool, the authors reviewed and edited the content as needed and take full responsibility for the final scientific accuracy and integrity of the peer-reviewed publication.
+
+Disclosure
+
+The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
+
+
+References
+
+1. Serebrisky D, Wiznia A. Pediatric asthma: a global epidemic. Ann Glob Health. 2019;85(1):6. doi:10.5334/aogh.2416 30741507 PMC7052318
+2. Subspecialty Group of Respiratory, the Society of Pediatrics, Chinese Medical Association, Editorial Board, Chinese Journal of Pediatrics, China Medicine Education Association Committee on Pediatrics. [Guidelines for the diagnosis and optimal management of asthma in children (2025)]. Zhonghua Er Ke Za Zhi. 2025;63(4):324–17. Xhosa. doi:10.3760/cma.j.cn112140-20250124-00074 40090909
+3. Akar-Ghibril N, Casale T, Custovic A, Phipatanakul W. Allergic endotypes and phenotypes of asthma. J Allergy Clin Immunol Pract. 2020;8(2):429–440. doi:10.1016/j.jaip.2019.11.008 32037107 PMC7569362
+4. Pattaroni C, Marsland BJ, Harris NL. Early-life host-microbial interactions and asthma development: a lifelong impact? Immunol Rev. 2025;330(1):e70019. doi:10.1111/imr.70019 40099971 PMC11917194
+5. Krusche J, Basse S, Schaub B. Role of early life immune regulation in asthma development. Semin Immunopathol. 2020;42(1):29–42. doi:10.1007/s00281-019-00774-z 31873782 PMC7079989
+6. Sly PD, Boner AL, Björksten B, et al. Early identification of atopy in the prediction of persistent asthma in children. Lancet. 2008;372(9643):1100–1106. doi:10.1016/S0140-6736(08)61451-8 18805338 PMC4440493
+7. Owora AH, Li R, Tepper RS, et al. Impact of time-varying confounders on the association between early-life allergy sensitization and the risk of current asthma: a post hoc analysis of a birth cohort. Allergy. 2022;77(10):3141–3144. doi:10.1111/all.15403 35686384 PMC9796543
+8. Custovic A, Custovic D, Fontanella S. Understanding the heterogeneity of childhood allergic sensitization and its relationship with asthma. Curr Opin Allergy Clin Immunol. 2024;24(2):79–87. doi:10.1097/ACI.0000000000000967 38359101 PMC10906203
+9. Lisik D, Özuygur Ermis SS, Milani GP, et al. Machine learning-derived asthma and allergy trajectories in children: a systematic review and meta-analysis. Eur Respir Rev. 2025;34(175):240160. doi:10.1183/16000617.0160-2024 39778923 PMC11707603
+10. Kalb B, Khaleva E, Giovannini M, et al. Trajectories of allergic diseases in children: destination unknown? Pediatr Allergy Immunol. 2025;36(7):e70131. doi:10.1111/pai.70131 40589146 PMC12209760
+11. Chen Q, Zhong X, Acosta L, et al. Allergic sensitization patterns identified through latent class analysis among children with and without asthma. Ann Allergy Asthma Immunol. 2016;116(3):212–218. doi:10.1016/j.anai.2016.01.006 26945495 PMC4784103
+12. Alkaya H, Altas U, Çevik S, Sarısaltık A, Özkars MY. Relationship between allergen sensitivity, laboratory values, and inflammatory markers in patients with asthma and/or allergic rhinitis. Dicle Med J. 2026;53(1):169–177. doi:10.5798/dicletip.1906475
+13. Guo Y, Wang G, Zhou C, et al. Regional differences in sensitization patterns among children with allergic asthma in China: a latent class analysis and age-related characteristics. Respir Med. 2026. doi:10.1016/j.rmed.2026.108845 42001972
+14. Havstad SL, Sitarik A, Kim H, et al. Increased risk of asthma at age 10 years for children sensitized to multiple allergens. Ann Allergy Asthma Immunol. 2021;127(4):441–445.e1. doi:10.1016/j.anai.2021.04.028 33971358 PMC8487903
+15. Siroux V, Boudier A, Bousquet J, et al. Trajectories of IgE sensitization to allergen molecules from childhood to adulthood and respiratory health in the EGEA cohort. Allergy. 2022;77(2):609–618. doi:10.1111/all.14987 34169532
+16. Lin CW, Yong SB, Kanai R, et al. Distinct regional allergen sensitization patterns in pediatric populations: a comparative latent class analysis of multiple antigen simultaneous test-derived sensitization profiles in Japan and Taiwan. Asia Pac Allergy. 2025;15(4):247–254. doi:10.5415/apallergy.0000000000000223 41346459 PMC12672179
+17. Farraia M, Mendes FC, Sokhatska O, et al. Sensitization trajectories to multiple allergen components in a population-based birth-cohort. Pediatr Allergy Immunol. 2023;34(6):e13963. doi:10.1111/pai.13963 37366209
+18. Havstad S, Johnson CC, Kim H, et al. Atopic phenotypes identified with latent class analyses at age 2 years. J Allergy Clin Immunol. 2014;134(3):722–727.e2. doi:10.1016/j.jaci.2014.01.022 24636082 PMC4149949
+19. Dharma C, Lefebvre DL, Tran MM, et al. Patterns of allergic sensitization and atopic dermatitis from 1 to 3 years: effects on allergic diseases. Clin Exp Allergy. 2018;48(1):48–59. doi:10.1111/cea.13063 29143385
+20. Hose AJ, Depner M, Illi S, et al. Latent class analysis reveals clinically relevant atopy phenotypes in 2 birth cohorts. J Allergy Clin Immunol. 2017;139(6):1935–1945.e12. doi:10.1016/j.jaci.2016.08.046 27771325
+21. Hossny E, Adachi Y, Anastasiou E, et al. Pediatric asthma comorbidities: global impact and unmet needs. World Allergy Organ J. 2024;17(5):100909. doi:10.1016/j.waojou.2024.100909 38827329 PMC11141278
+22. Gabet S, Rancière F, Just J, et al. Asthma and allergic rhinitis risk depends on house dust mite specific IgE levels in Paris birth cohort children. World Allergy Organ J. 2019;12(9):100057. doi:10.1016/j.waojou.2019.100057 31641405 PMC6796773
+23. Pinot de Moira A, Strandberg-Larsen K, Bishop T, et al. Associations of early-life pet ownership with asthma and allergic sensitization: a meta-analysis of more than 77,000 children from the EU Child Cohort Network. J Allergy Clin Immunol. 2022;150(1):82–92. doi:10.1016/j.jaci.2022.01.023 35150722
+24. Büyük Yaytokgil Ş, Alim Aydın S, Yilmaz D, et al. Dog allergy in children: a single-centered study. Int Arch Allergy Immunol. 2024;185(11):1074–1082. doi:10.1159/000540191 39079509
+25. Hon KL, Tsang KYC, Pong NHH, Leung TF. Relevance of cat and dog sensitization by skin prick testing in childhood eczema and asthma. Curr Pediatr Rev. 2017;13(2):120–125. doi:10.2174/1573396313666170615085018 28641549
+26. Lisik D, Basna R, Dinh T, et al. Artificial intelligence in pediatric allergy research. Eur J Pediatr. 2025;184(1):98. doi:10.1007/s00431-024-05925-5 PMC11662037 39706990
+27. Pasecinic V, Novacescu D, Zara F, et al. Predictors of ISUP grade group discrepancies between biopsy and radical prostatectomy: a single-center analysis of clinical, imaging, and histopathological parameters. Cancers. 2025;17(15):2595. doi:10.3390/cancers17152595 40805290 PMC12346174
+28. Rahman MM, Shokouhmand S, Rahman S, Tamzi NN, Bhatt S, Faezipour M. MicroAIbiome: decoding cancer types from microbial profiles using explainable machine learning. Microorganisms. 2025;13(9):2210. doi:10.3390/microorganisms13092210 41011541 PMC12473104
+29. Ma J, Fang Y, Li S, et al. Interpretable machine learning algorithms reveal gut microbiome features associated with atopic dermatitis. Front Immunol. 2025;16:1528046. doi:10.3389/fimmu.2025.1528046 40376006 PMC12078218
+30. Hettikankanamage N, Shafiabady N, Chatteur F, Wu RMX, Ud Din F, Zhou J. eXplainable Artificial Intelligence (XAI): a systematic review for unveiling the black box models and their relevance to biomedical imaging and sensing. Sensors. 2025;25(21):6649. doi:10.3390/s25216649 41228872 PMC12609895
+31. Kiewiet MBG, Lupinek C, Vrtala S, et al. A molecular sensitization map of European children reveals exposome- and climate-dependent sensitization profiles. Allergy. 2023;78(7):2007–2018. doi:10.1111/all.15689 36815272
+32. Luo W, Wang D, Zhang T, et al. Prevalence patterns of allergen sensitization by region, gender, age, and season among patients with allergic symptoms in mainland China: a four-year multicenter study. Allergy. 2021;76(2):589–593. doi:10.1111/all.14597 32965683 PMC7984441
+33. Akar HH, Nadir E, Beken B, Yeşil Y. Effect of early atopic sensitization in children aged 0–2 years on the development of asthma symptoms at 9–11 years of age. World J Pediatr. 2022;18(11):753–760. doi:10.1007/s12519-022-00579-5 35790707
+34. Marrugo V, Zakzuk J, Reina R, et al. Two combinations of house dust mite allergens show similar performance than extracts for asthma diagnosis. Front Allergy. 2026;7. doi:10.3389/falgy.2026.1816013 PMC13106470 42039775
+35. Caraballo L. Exploring the relationship between house dust mites and asthma. Expert Rev Clin Immunol. 2024;20(9):1019–1022. doi:10.1080/1744666X.2024.2346585 38652085
+36. Jurkiewicz K, Jutel M, Smolinska S. Update on HDM allergy: principal changes over the years. Int J Mol Sci. 2025;26(12):5660. doi:10.3390/ijms26125660 40565123 PMC12193404
+37. Tutino M, Granell R, Curtin JA, et al. Dog ownership in infancy is protective for persistent wheeze in 17q21 asthma-risk carriers. J Allergy Clin Immunol. 2023;151(2):423–430. doi:10.1016/j.jaci.2022.10.012 36273658
+38. Eidukaite A, Gorbikova E, Miskinyte M, et al. Molecular sensitization patterns to cat and dog allergens in Lithuanian children population. World Allergy Organ J. 2023;16(10):100827. doi:10.1016/j.waojou.2023.100827 37822703 PMC10562746
+39. Matricardi PM, Bockelbrink A, Keil T, et al. Dynamic evolution of serum immunoglobulin E to airborne allergens throughout childhood: results from the multi-centre allergy study birth cohort. Clin Exp Allergy. 2009;39(10):1551–1557. doi:10.1111/j.1365-2222.2009.03348.x 19954429
+40. Sharma E, Vitte J. A systematic review of allergen cross-reactivity: translating basic concepts into clinical relevance. J Allergy Clin Immunol Glob. 2024;3(2):100230. doi:10.1016/j.jacig.2024.100230 38524786 PMC10959674

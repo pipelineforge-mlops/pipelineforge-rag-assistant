@@ -1,0 +1,355 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Clin Med Insights Oncol
+Journal ID: Clin Med Insights Oncol
+NLM Journal ID: 101525771
+Journal ID: ONC
+
+Clinical Medicine Insights. Oncology
+
+EISSN: 1179-5549
+Publisher: SAGE Publications
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498802
+PMID: 42632998
+DOI: 10.1177/11795549261476196
+Article ID: 10.1177_11795549261476196
+Article version: 1
+Subjects: Original Research Article
+
+Impact of Preoperative Anemia on Short-Term Outcomes After Colorectal Cancer Surgery: How the Choice of Diagnostic Criteria Leads to Conflicting Findings
+
+https://orcid.org/0000-0002-8706-4634 Li Wangji MD, PhD 1 2
+Peng Yuanhong MD 1 2
+Ye Changda MD 1 2
+Lu Yan MD, PhD 3
+Ju Yongle PhD 1 2
+Ouyang Manzhao MD, PhD 1 2 4
+1 Department of Gastrointestinal Surgery, The Eighth Affiliated Hospital, Southern Medical University (The First People’s Hospital of Shunde, Foshan) , Shunde, Foshan, Guangdong, China
+2 The Second School of Clinical Medicine, 70570 Southern Medical University , Guangzhou, Guangdong, China
+3 GCP Center, The Eighth Affiliated Hospital, Southern Medical University (The First People’s Hospital of Shunde, Foshan) , Shunde, Foshan, Guangdong, China
+4 Jianhe People’s Hospital , Qiandongnan Miao and Dong Autonomous Prefecture, Guizhou, China
+Manzhao Ouyang, MD, PhD, Department of Gastrointestinal Surgery, The Eighth Affiliated Hospital, Southern Medical University (The First People’s Hospital of Shunde, Foshan), Foshan, Guangdong, 528300, China; The Second School of Clinical Medicine, Southern Medical University, Guangzhou, Guangdong, 510080, China. Email: doctorken@smu.edu.cn
+Publication date: 2026
+Electronic publication date: 2026 Aug 21
+Volume: 20
+Electronic Location ID: 11795549261476196
+Received 2026 Mar 21; Revised 2026 Jul 18; Accepted 2026 Jul 24
+Copyright: © The Author(s) 2026
+Copyright year: 2026
+Copyright holder: SAGE Publications Ltd unless otherwise noted. Manuscript content on this site is licensed under Creative Commons Licenses
+License: This article is distributed under the terms of the Creative Commons Attribution-NonCommercial 4.0 License (https://creativecommons.org/licenses/by-nc/4.0/) which permits non-commercial use, reproduction and distribution of the work without further permission provided the original work is attributed as specified on the SAGE and Open Access pages (https://us.sagepub.com/en-us/nam/open-access-at-sage).
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: preoperative anemia, colorectal cancer, postoperative complications, diagnostic criteria, misclassification
+
+Funding: 2024 Special Innovation Project of the Guangdong Provincial Department of Education No.2024KTSCX073 Guangdong Provincial Basic and Applied Basic Research Fund Mindray Joint Fund Project No.2023A1515220149 Southern Medical University Shunde Hospital 2022 Research Initiation Program Project No.SRSP2022006 2026 Guizhou Provincial Science and Technology Support Program Qiankehe Support-2026-General-086
+typesetter: ts10
+cover-date: January-December 2026
+
+==============================
+Background
+
+Whether preoperative anemia is independently associated with short-term postoperative outcomes in colorectal cancer (CRC) remains controversial. This study investigated the association between preoperative anemia and 30-day postoperative complications (PO30C) and evaluated how different anemia diagnostic criteria influence this association.
+
+Methods
+
+In this retrospective cohort study, patients who underwent radical CRC surgery from January 2018 to January 2021 were consecutively enrolled. Firth’s regression was used for univariate and multivariable analysis to evaluate the impact of preoperative anemia on short-term outcomes after CRC surgery. Dose-response analysis assessed the relationship between anemia severity and PO30C. Sensitivity analysis compared the association under WHO and China’s anemia criteria, and misclassification analysis characterized criteria-related differences. Population-based examination of the misclassification mechanism was performed using China Health and Retirement Longitudinal Study (CHARLS) data. Internal validation used 10-fold cross-validation and bootstrap resampling.
+
+Results
+
+Among 231 patients, 108 (46.8%) had preoperative anemia and 29 (12.6%) developed PO30C. Multivariable analysis showed that preoperative anemia (OR = 2.39, 95% CI: 1.04–5.81, P = 0.039) and male sex (OR = 3.11, 95% CI: 1.23–9.24, P = 0.015) were independently associated with PO30C. A significant dose-response relationship was observed across anemia severity groups (P-trend = 0.005), with moderate-to-severe anemia independently associated with PO30C (OR = 2.88, 95% CI: 1.04–8.03, P = 0.042). The association was significant under China criteria (P = 0.039) but not under WHO criteria (P = 0.075). Misclassification analysis revealed that WHO criteria reclassified 33 borderline patients as anemic, whose PO30C rate (9.1%) resembled the normal group (6.7%) rather than the anemia group (18.5%), thereby attenuating the association. CHARLS data corroborated this misclassification mechanism. The model showed moderate discrimination (optimism-corrected C-index = 0.704).
+
+Conclusion
+
+Preoperative anemia was independently associated with PO30C under the China criteria, whereas WHO criteria attenuated this association through misclassification of low-risk borderline patients. Population-appropriate diagnostic criteria are important for perioperative risk estimation and may explain conflicting findings in the existing literature.
+
+Introduction
+
+Colorectal cancer (CRC) is a major public health concern and is now the third most commonly diagnosed cancer globally, with 1.9 million new cases and 0.9 million deaths per year. 1 In 2024, China reported about 0.5 million new cases and 0.24 million deaths, accounting for about 25% of the global CRC burden. 2 Both incidence and mortality of CRC are estimated to keep growing in the next 20 years, placing substantial stress on the healthcare system. 3 Short-term surgical outcomes, including length of stay, early recurrence, and postoperative complications are closely associated with the perioperative management. 4 Identifying the risk factors and improving the perioperative management may reduce the incidence of complications, improve long-term prognosis, and subsequently reduce the medical cost and the burden on healthcare system. 5
+
+Preoperative anemia, defined as a reduced hemoglobin level, is common in cancer patients 6 and has been reported as high as 52.8% in CRC patients. 7 While multiple studies have demonstrated a clear association between anemia and worse long-term survival8,9 in CRC patients, the impact of anemia on short-term surgical outcomes remains controversial, with conflicting findings across studies. Several studies have reported no significant association between anemia and postoperative complications. Kwon et al. 10 found that anemia was an independent risk factor for relapse-free survival (RFS) in CRC, but not associated with 30-day postoperative complications. Yan et al. 11 analyzed 1894 Chinese CRC patients using propensity score matching and found that anemia was not associated with either morbidity or surgical complications. In contrast, other studies have reached different conclusions. Takashima et al. 7 conducted a retrospective study with 545 patients and found that severe preoperative anemia was an independent risk factor for postoperative complications. Moreover, Yamada et al. 12 analyzed a large-scale cohort from the Japanese National Clinical Database (NCD) and found that all anemia severity groups, including mild, moderate and severe groups, were associated with increased complications after rectal cancer surgery.
+
+The inconsistencies may be partially attributed to differences in study populations, confounding control, and surgical approaches. However, whether the choice of anemia diagnostic criteria affects risk assessment remains underexplored. Most previous studies, including those studies conducted in Asian cohorts, have applied the World Health Organization (WHO) criteria for anemia diagnosis (hemoglobin <130 g/L for males and <120 g/L for females). However, more and more evidence suggests that the WHO thresholds may not be universally appropriate. Wang et al. 13 compared anemia prevalence using WHO and China diagnostic criteria in a Chinese population and found that a substantial proportion of WHO-classified anemia cases had borderline hemoglobin levels, resulting in a higher prevalence estimate and raising concerns about the appropriateness of WHO thresholds in Chinese populations. More recently, Addo et al. 14 conducted a large cross-sectional analysis of 79,950 hemoglobin observations across 25 countries, demonstrated that WHO cutoffs for defining anemia were higher than the population-derived fifth percentile thresholds in nearly all countries except the United States. Of note, the survey-origin fifth percentile hemoglobin in Chinese women (11.19 g/dl) was approximately 0.9 g/dL lower than in American women (12.09 g/dL), confirming substantial inter-population variation. These findings suggest that WHO criteria, with higher thresholds, may classify patients with mild or borderline hemoglobin levels as anemic, thereby introducing non-differential misclassification of the exposure and attenuating the observed association toward the null. 15 In other words, reclassified low-risk borderline patients in the anemia group attenuate the contrast between the anemia and non-anemia groups, leading to weaker observed associations. This attenuation effect may explain why studies using WHO criteria in Chinese populations have failed to detect a significant association between anemia and short-term surgical outcomes. 11 The China cancer-associated anemia guidelines define anemia as hemoglobin <120 g/L for males and <110 g/L for females,16,17 reflecting population-specific distributions, and have been widely used in clinical practice in China. Whether the choice of diagnostic criteria affects the association between anemia and postoperative short-term outcomes in CRC patients has not been directly investigated.
+
+Furthermore, most previous studies used a binary classification (anemia and non-anemia), while patients need different assessment and treatment based on their severity in clinical practice. Dose-response relationships have been reported in other populations,7,12 while whether such a relationship exists in Chinese populations remains unclear. A binary approach may underestimate the potential dose-response relationships and risk in a specific group of patients.
+
+Therefore, the aim of this study was to evaluate the association between preoperative anemia and 30-day postoperative complications in a Chinese CRC cohort undergoing radical surgery and to determine how the choice of anemia diagnostic criteria leads to inconsistent findings in previous studies.
+
+Methods
+
+Patients
+
+This was a single-center, retrospective observational study. Patients who underwent primary CRC surgery at The Eighth Affiliated Hospital of Southern Medical University between January 2018 and January 2021 were consecutively screened based on the inclusion and exclusion criteria shown in the flow-chart (Figure 1). Inclusion criteria were: (1) patients with primary CRC who underwent radical resection (R0) and were managed by the same surgical team; and (2) at least one year of postoperative follow-up. Exclusion criteria included: (1) non-R0 resection or surgery for recurrent CRC; (2) incomplete medical records or loss to follow-up; (3) history of other primary malignancies; and (4) hematological diseases or hematopoietic dysfunction. A total of 231 patients were included in the final analysis with written informed consent obtained. All patient details were de-identified prior to analysis. This study was approved by the Ethics Committee of The Eighth Affiliated Hospital of Southern Medical University (approval number: KYLS20210601, approval date: 2021-06-04) and conducted in accordance with the Declaration of Helsinki. The reporting of this study conforms to the STROBE guidelines. 18 Figure 1. Flow chart of patient selection
+
+Definition
+
+Hemoglobin (Hb) levels were obtained from the first venous blood test at admission. Anemia was classified according to China’s anemia criteria (Hb <120 g/L in males and <110 g/L in females) for primary modeling. 16 WHO criteria (Hb <130 g/L for males, <120 g/L for females) were used for sensitivity analysis and misclassification analysis. 17 In dose-response analysis, anemia severity was further classified into Normal (Hb ≥120 g/L in males and ≥110 g/L in females), Mild anemia (90 ≤ Hb <120 g/L in males, 90 ≤ Hb <110 g/L in females) and Moderate-to-Severe anemia (Hb <90 g/L) under China criteria. Blood transfusions were administered according to the Chinese Society of Clinical Oncology (CSCO) clinical guidelines on tumor-associated anemia. 16 TNM staging was assigned based on the 8th edition of the AJCC staging system. 19 The primary outcome was 30-day postoperative complications (PO30C), including ileus, anastomotic leakage, wound infection, pneumonia, urinary tract infection (UTI), and death. In the CHARLS analysis, anemia was classified using China and WHO criteria as the surgical cohort. The primary outcome was all-cause mortality, with death dates obtained from the exit interview module or assigned as mid-year estimates when exact dates were unavailable. Variables used in CHARLS analysis were listed in Table S1.
+
+Data Collection
+
+Patients’ clinical information was retrospectively reviewed using the PACS electronic medical record system and organized in Microsoft Excel. Baseline demographic and clinical characteristics (age, sex, hemoglobin level, albumin level) and underlying diseases such as hypertension, diabetes, coronary heart disease (CHD), chronic obstructive pulmonary disease (COPD), and chronic kidney disease (CKD) were collected. Additionally, tumor characteristics (location, TNM stage), surgical outcomes (30-day postoperative complications), laboratory and pathological results, were also included. Follow-up data were recorded until the last contact date. All patients had at least one year of postoperative follow-up.
+
+CHARLS data were extracted from the China Health and Retirement Longitudinal Study (CHARLS), 20 a nationally representative longitudinal survey conducted by Peking University. The dataset (https://charls.pku.edu.cn) is publicly available after registration and the original study was approved by the Biomedical Ethics Review Committee of Peking University (approval number: IRB00001052-11015; approved in 2008-06). Hb and serum creatinine were measured from venous blood samples collected at baseline (2011) and wave 3 (2015), with administrative censoring set on December 31, 2020. Age, sex, self-reported physician-diagnosed cancer status, and vital status at each follow-up wave were extracted from the harmonized CHARLS dataset. Participants with hematological diseases based on self-reported lymphoma or leukemia diagnosis were excluded. A total of 181 participants in the cancer subgroup and 10,987 participants in the general population subgroup were included in the CHARLS analysis.
+
+Statistical Analysis and Modeling
+
+Continuous variables with normal distribution were expressed as mean ± standard deviation (SD). Independent samples t-test (equal variance) or Welch’s t-test (unequal variance) were used to compared between groups. Categorical variables were expressed as n (%) and compared using Chi-square test or Fisher’s exact test (when expected frequencies <5). Univariate regression was performed to estimate odds ratios (OR) and 95% confidence intervals for all candidate factors associated with PO30C using Firth’s regression. For multivariable analysis, anemia, age, sex, and CKD were selected based on clinical relevance and events-per-variable (EPV). The primary model was limited to 4 variables, yielding an EPV of 7.25. Firth’s regression was employed because it is specifically designed for rare-event data and provides nearly unbiased estimates with EPV between 5 and 10.21,22 Odds ratios and 95% confidence intervals were calculated using the profile likelihood method. 23
+
+Dose-Response Analysis
+
+To evaluate the dose-response relationship between anemia severity and short-term complications, patients were classified into three groups using China anemia criteria, including normal, mild, and moderate-to-severe group. Cochran-Armitage trend tests were conducted to evaluate the linear trend in complication rates among three groups. 24 ORs for each severity group relative to the normal group were estimated using Firth’s regression adjusted for age, sex, and CKD.
+
+Sensitivity Analysis
+
+To evaluate the impact of using different anemia criteria on risk stratification, multivariable Firth’s regression was used to compare between WHO and China anemia criteria. Odds ratios and P-values were compared to assess whether the WHO criteria underestimated the risk by including more lower-risk borderline patients. In addition, a Firth’s regression with hemoglobin as a continuous variable (per 10 g/L decrease) was performed to assess whether binning hemoglobin into anemia groups resulted in loss of information.
+
+Misclassification Analysis
+
+A misclassification analysis was performed using China criteria as the reference standard to better understand the potential mechanism of the dilution caused by WHO and China anemia criteria. Patients were classified into three groups, including true positives, false positives, and true negatives. Sensitivity, specificity, positive predictive value (PPV), and negative predictive value (NPV) of WHO criteria relative to China criteria were calculated. To evaluate whether the misclassification mechanism observed in our CRC cohort is generalizable, an analysis using data from the China Health and Retirement Longitudinal Study (CHARLS) was conducted. Two subgroups were analyzed, including a cancer subgroup (n=181) and a general population (n = 10,987). Misclassification matrices were constructed using China criteria as the reference and Cox proportional hazards models adjusted for age, sex, and CKD were used to compare the effect of anemia on all-cause mortality under WHO and China criteria.
+
+Model Performance and Internal Validation
+
+The 10-fold cross-validated method was used to estimate model discrimination, with 95% confidence intervals calculated using the DeLong method. 25 Bootstrap internal validation with 1000 resamples was used to evaluate optimism. 26 The model calibration was evaluated using the calibration plots, calibration slope and intercept, Hosmer-Lemeshow test and Brier score.
+
+Software
+
+All statistical analysis were performed using R software (version 4.4.2). A two-sided P-value <0.05 was considered statistically significant. P-values between 0.05 and 0.10 were reported as marginally significant. The following R packages were used: logistf, pROC, rms, ggplot2, caret, DescTools, haven, dplyr, survival. Figures were generated using R and assembled in Inkscape (1.4.3).
+
+Results
+
+Baseline Characteristics
+
+A total of 231 patients were included after applying the inclusion and exclusion criteria, including 148 males (64.1%) and 83 females (35.9%) with a mean age of 65 ± 12 years. Baseline characteristics are shown in Table 1. Preoperative anemia rate was 46.8% (108/231) and Postoperative 30-day complication (PO30C) rate was 12.6% (29/231).Table 1. Baseline Characteristics
+
+Characteristic	Normal (n = 123)	Anemia (n = 108)	P value	
+Age	65.0 [54.0–70.0]	69.0 [61.8–76.0]	0.004	
+Hb (g/L)	135.0 [124.5–142.5]	95.5 [73.8–107.0]	<0.001	
+Alb (g/L)	41.3 [39.0–44.1]	37.3 [34.7–40.4]	<0.001	
+Sex	​	​	0.641	
+ Female	42 (34.1%)	41 (38.0%)	​	
+ Male	81 (65.9%)	67 (62.0%)	​	
+Tumor location	​	​	<0.001	
+ Colon	65 (52.8%)	81 (75.0%)	​	
+ Rectum	58 (47.2%)	27 (25.0%)	​	
+T	​	​	0.001	
+ T1	7 (5.7%)	4 (3.7%)	​	
+ T2	12 (9.8%)	9 (8.3%)	​	
+ T3	32 (26.0%)	8 (7.4%)	​	
+ T4	72 (58.5%)	87 (80.6%)	​	
+N	​	​	0.659	
+ N0	70 (56.9%)	56 (51.9%)	​	
+ N1	38 (30.9%)	35 (32.4%)	​	
+ N2	15 (12.2%)	17 (15.7%)	​	
+M	​	​	0.730	
+ M0	111 (90.2%)	95 (88.0%)	​	
+ M1	12 (9.8%)	13 (12.0%)	​	
+CKD	​	​	0.183	
+ No	118 (95.9%)	98 (90.7%)	​	
+ Yes	5 (4.1%)	10 (9.3%)	​	
+CHD	​	​	0.686	
+ No	107 (87.0%)	91 (84.3%)	​	
+ Yes	16 (13.0%)	17 (15.7%)	​	
+COPD	​	​	0.054	
+ No	109 (88.6%)	104 (96.3%)	​	
+ Yes	14 (11.4%)	4 (3.7%)	​	
+Hypertension	​	​	0.484	
+ No	85 (69.1%)	69 (63.9%)	​	
+ Yes	38 (30.9%)	39 (36.1%)	​	
+Diabetes	​	​	0.580	
+ No	112 (91.1%)	95 (88.0%)	​	
+ Yes	11 (8.9%)	13 (12.0%)	​	
+PO30C	​	​	0.018	
+ No	114 (92.7%)	88 (81.5%)	​	
+ Yes	9 (7.3%)	20 (18.5%)	​	
+Note: Continuous variables are displayed as median [IQR] (non-normally distributed), Mann–Whitney U test. Categorical variables are displayed as n (%), compared by chi-squared test or Fisher’s exact test (when expected cell count < 5). PO30C: postoperative 30-day complications.
+
+Univariate and Multivariable Analysis
+
+To identify the association between anemia and 30-day postoperative complications (PO30C), univariate and multivariable analyses were performed. In univariate analysis, several variables were associated with PO30C (Table 2), including anemia (OR=2.79, P=0.011), male sex (OR=2.81, P=0.023), CKD (OR=4.12, P=0.021), and age (OR=1.03, P=0.054). In multivariable analysis adjusted for age, sex, and chronic kidney disease (Table 2), preoperative anemia (OR=2.39, P=0.039) and male sex (OR=3.11, P=0.015) remained independent risk factors for PO30C. Additionally, CKD (OR=3.35, P=0.060) exhibited a trend toward association with PO30C, despite reaching only marginal significance.Table 2. Univariate and Multivariate Analysis of PO30C (Firth’s Regression)
+
+Characteristic	N	Univariable	Multivariable	
+OR (95% CI)	P-value	Adjusted OR (95% CI)	P-value	
+Sex	
+ Female	83	​	​	​	​	
+ Male	148	2.81 (1.14–8.18)	0.023	3.11 (1.23–9.24)	0.015	
+Age	231	1.03 (1.00–1.07)	0.054	1.03 (0.99–1.07)	0.138	
+Alb	231	0.96 (0.89–1.03)	0.258	—	​	
+Tumor location	
+ Colon	146	​	​	—	​	
+ Rectum	85	0.64 (0.26–1.44)	0.289	—	​	
+Anemia	
+ Normal	123	​	​	​	​	
+ Anemia	108	2.79 (1.26–6.59)	0.011	2.39 (1.04–5.81)	0.039	
+CHD	
+ No	198	​	​	—	​	
+ Yes	33	1.04 (0.31–2.81)	0.946	—	​	
+COPD	
+ No	213	​	​	—	​	
+ Yes	18	1.03 (0.20–3.55)	0.969	—	​	
+CKD	
+ No	216	​	​	​	​	
+ Yes	15	4.12 (1.26–12.22)	0.021	3.35 (0.95–10.98)	0.060	
+Hypertension	
+ No	154	​	​	—	​	
+ Yes	77	1.76 (0.80–3.82)	0.160	—	​	
+Diabetes	
+ No	207	​	​	—	​	
+ Yes	24	1.11 (0.28–3.34)	0.860	—	​	
+T	​	​	0.731	​	​	
+ T1	11	​	​	—	​	
+ T2	21	0.72 (0.12–4.97)	​	—	​	
+ T3	40	0.72 (0.15–4.39)	​	—	​	
+ T4	159	0.50 (0.13–2.75)	​	—	​	
+N	​	​	0.917	​	​	
+ N0	126	​	​	—	​	
+ N1	73	1.19 (0.50–2.74)	​	—	​	
+ N2	32	1.14 (0.33–3.29)	​	—	​	
+M	​	​	0.210	​	​	
+ M0	206	​	​	—	​	
+ M1	25	2.00 (0.65–5.33)	​	—	​	
+P-value represents overall likelihood ratio test (global P) in T stage and N stage variables. OR, odds ratio; CI, confidence interval.
+
+Dose-Response Relationship
+
+To examine whether the risk of complications increased progressively with the severity of anemia, patients were classified into three groups (normal, mild anemia, and moderate-to-severe anemia) based on the China severity criteria. The trend of complication rates across groups showed a clear dose-response relationship (Figure 2A and Table 3). The PO30C rates increased across the normal (7.3%, 9/123), mild anemia (15.3%, 9/59), and moderate-to-severe anemia (22.4%, 11/49) groups, with a highly significant linear trend (Cochran-Armitage test, P=0.005). In multivariable analysis adjusted for age, sex, and chronic kidney disease, moderate-to-severe anemia was significantly associated with PO30C (OR=2.88, P=0.042). However, mild anemia showed a consistent direction of effect but did not achieve statistical significance with PO30C (OR=2.13, P=0.130).Figure 2. (A) Dose-response relationship between anemia severity and PO30C rate. PO30C rate and event number were shown inside the bar. (A significant linear trend was observed across severity groups (P < 0.01). (B) Sensitivity analysis: comparison of anemia prevalence, odds ratios and the association to PO30C using China and WHO diagnostic criteria. Blue bars indicated the anemia prevalence, and red dot indicated the OR and significance for the association between preoperative anemia and PO30C calculated from the Firth’s regression model
+
+Table 3. Dose-Response Relationship Between Anemia Severity and PO30C
+
+Anemia Severity	N	Events	Complication Rate	Adjusted OR (95% CI)	P value	
+Normal	123	9	7.3%	1.00 (Reference)	—	
+Mild	59	9	15.3%	2.13 (0.80–5.71)	0.130	
+Moderate-to-Severe	49	11	22.4%	2.88 (1.04–8.03)	0.042	
+Adjusted for sex, age, and chronic kidney disease using Firth’s regression. Cochran–Armitage trend test: P = 0.0051. OR, odds ratio; CI, confidence interval.
+
+Sensitivity Analysis
+
+Given the dose-response pattern suggesting that the anemia–complication association is primarily driven by patients with lower hemoglobin levels, we hypothesized that the choice of anemia diagnostic criteria potentially affected risk assessment. The same multivariable model was re-fitted using the WHO criteria (men <130 g/L, women <120 g/L) instead of the China criteria (Figure 2B and Table 4). When China anemia criteria were applied, preoperative anemia independently associated with PO30C (OR=2.39, 95% CI: 1.04–5.81, P=0.039). However, the association lost its statistical significance when WHO criteria were applied (OR=2.27, 95%CI: 0.92-6.30, P=0.075). Applying the WHO anemia criteria included an additional 33 anemia patients (n=141, 61.0%), who were considered normal under China anemia criteria. These patients likely had lower complication risk based on the dose response trend, thereby attenuating the association between anemia and short-term outcome in CRC patients. Besides, Firth’s regression with hemoglobin as a continuous variable (Table S2) showed that each 10 g/L decrease was independently associated with PO30C (OR = 1.18, 95% CI: 1.02–1.37, P = 0.032), consistent with the primary categorical model.Table 4. Sensitivity Analysis Between WHO and China Anemia Criteria
+
+Anemia Criteria	Definition	Prevalence	Adjusted OR (95% CI)	P value	
+China criteria	Male <120 g/L; Female <110 g/L	46.8%	2.39 (1.04–5.81)	0.039	
+WHO criteria	Male <130 g/L; Female <120 g/L	61.0%	2.27 (0.92–6.30)	0.075	
+Adjusted for sex, age, and chronic kidney disease using Firth penalized logistic regression. OR, odds ratio; CI, confidence interval.
+
+Misclassification Analysis
+
+The misclassification analysis compared how different criteria classified same groups of patients, allowing us to understand which part of patients were reclassified and assess how this discrepancy affects the estimated association. Of the 141 patients who were classified as anemic by WHO criteria (Figure 3 and Table S3), 108 patients (76.6%) were also defined as anemic by China criteria (true positives). The additional 33 borderline patients (23.4%) were classified as normal by China criteria (false positives) but reclassified as anemic by WHO criteria. Because China criteria have lower thresholds, no false negatives were possible. The specificity of WHO criteria relative to China criteria was 73.2%, the PPV was 76.6%, yielding an overall misclassification rate of 14.3%. Among three groups, the borderline patients had a PO30C rate of 9.1% (3/33), comparable to the true normal group (6.7%, 6/90) and substantially lower than the true anemia group (18.5%, 20/108). The inclusion of 33 borderline patients therefore reduced the overall PO30C rate of the anemia group from 18.5% to 16.3% (23/141), thereby attenuating the observed association. Borderline patients exhibited a similar proportion of the PO30C-positive and PO30C-negative group, confirming that the misclassification was non-differential with respect to the outcome.Figure 3. Misclassification analysis comparing WHO and China anemia criteria (n = 231). China criteria were used as the reference standard. True negatives (TN) and true positives (TP) were classified concordantly by both criteria; false positives (FP, borderline patients) were classified as normal by China criteria but reclassified as anemic by WHO criteria. No false negatives were identified
+
+In the analysis of the CHARLS data, both the cancer subgroup and the general population demonstrated reduced specificity (88.1% and 91.2% respectively) relative to China criteria (Figure S1 and Table S4). In the cancer subgroup, borderline patients (FP) had a crude mortality rate of 5.3%, lower than the true normal group (14.3%) and substantially lower than the true anemia group (27.3%). The hazard ratio (Table S5) showed substantial attenuation, decreasing from 1.94 (China criteria) to 0.81 (WHO criteria). In the general population, borderline patients showed intermediate mortality (14.91%) between the true normal (10.84%) and true anemia groups (19.77%), and the hazard ratio attenuated from 1.22 to 1.16 when WHO criteria were applied. The effect estimates were consistently attenuated in both groups when WHO criteria were applied, corroborating the misclassification mechanism identified in the surgical cohort.
+
+Model Performance and Internal Validation
+
+The 10-fold cross-validated AUC was 0.667 (95% CI: 0.566-0.767; Figure S2). Bootstrap internal validation (1000 resamples) showed minimal optimism in apparent model performance, with an apparent C-index of 0.737 and an optimism-corrected C-index of 0.704 (optimism=0.034). Calibration assessment indicated acceptable agreement between predicted and observed probabilities. The calibration slope was 0.887, indicating slight overfitting. The calibration intercept was -0.239, suggesting no substantial systematic prediction bias. The Hosmer-Lemeshow test showed acceptable goodness of fit (χ2=9.76, P=0.282). The Brier score was 0.100, representing modest improvement over the null model (Table S6).
+
+Discussion
+
+In this retrospective cohort study, preoperative anemia and male sex were independent risk factors for PO30C in CRC patients undergoing radical surgery. The dose-response analysis revealed a significant complication gradient across anemia severity groups. Our sensitivity and misclassification analyses further suggest that the choice of different criteria may explain the conflicting findings reported in previous studies.
+
+Our study classified patients using China anemia criteria, identifying anemia as a significant independent risk factor for PO30C (OR=2.39, P=0.039), consistent with the findings of Takashima et al. 7 The sensitivity analysis treating hemoglobin as a continuous variable also identified low hemoglobin as an independent risk factor for PO30C (OR=1.18, P=0.032). In contrast, Yan et al. 11 reported no association between anemia and surgical complications when they applied WHO criteria to a Chinese population. Inspired by a recent study by Addo et al., 14 who reported that WHO cutoffs for defining anemia were higher than population-based thresholds in nearly all countries except the US, we hypothesized that using WHO anemia criteria might classify non-anemic patients as anemic, thereby diluting the anemia group with lower-risk patients and attenuating the observed association.
+
+To evaluate this hypothesis, we first performed a dose-response analysis, which revealed a significant gradient of complication rates among different anemia severity groups (Cochran-Armitage P=0.005). The moderate-to-severe anemia group was significantly associated with complications (OR=2.88, P=0.042) compared to the normal group, consistent with studies from Yamada et al. 12 and Leichtle et al., 27 whereas the mild anemia group showed no significant association (OR=2.13, P=0.130). Notably, the 33 borderline patients reclassified by WHO criteria had hemoglobin levels above the mild anemia threshold under China criteria (Hb ≥ 110/120 g/L). Given that even mild anemia did not achieve statistical significance, the borderline patients with higher hemoglobin levels would be expected to carry even lower complication risk and behave more similarly to the non-anemic group.
+
+The subsequent sensitivity and misclassification analyses supported this reasoning. When the China criteria were applied, preoperative anemia was an independent risk factor for short-term surgical outcomes (P=0.039), whereas the association became non-significant when WHO criteria were applied to the same cohort (P=0.075). Misclassification analysis showed that the borderline patients reclassified as anemic (false positive) under WHO criteria had a complication rate of 9.1% compared to 6.7% and 18.5% in the true negative and true positive groups, respectively (Table S3), suggesting that the misclassification was non-differential with respect to the outcome. 15 These results are consistent with Wang et al. 13 and Addo et al., 14 who reported higher anemia prevalence under WHO criteria, and extend their observations by indicating that the misclassification may attenuate the observed association.
+
+To further examine whether the proposed misclassification mechanism exists beyond our surgical cohort, we performed a supporting analysis using data from the CHARLS, in which the same pattern was observed. Given that CHARLS is a population-based survey, all-cause mortality was the available outcome rather than postoperative complications. In this analysis, the application of WHO criteria reclassified a subset of non-anemic individuals as anemic, and the estimated association between anemia and all-cause mortality was attenuated when WHO rather than China criteria were applied. These findings provide corroborative evidence that the misclassification reflects a general consequence of applying WHO thresholds to Chinese populations. This corroboration helps explain how the choice of diagnostic criteria may affect the observed exposure-outcome association, rather than serving as an external validation of a clinical prediction model.
+
+These findings have three clinical implications for the perioperative management of CRC patients. First, early identification of preoperative anemia is essential for reducing blood transfusion in CRC patients. Blood transfusion itself is associated with risks such as infection and transfusion-related immunomodulation (TRIM), 28 and Takashima et al. 7 also found that blood transfusion negatively impacted short-term surgical outcomes in CRC patients. However, oral and intravenous iron require sufficient preoperative time to take effect, emphasizing the importance of timely and accurate anemia identification. Second, accurate risk stratification depends on the choice of diagnostic criteria. The 33 borderline patients reclassified by WHO criteria in our cohort had a complication rate (9.1%) closer to the rate in true negatives (6.7%) than in true anemia (18.5%), suggesting that the choice of diagnostic criteria might dilute the prognostic signal and lead to insufficient preoperative management. Third, this misclassification is not limited to CRC patients. Beyond our surgical CRC cohort, a consistent misclassification pattern was observed in two cohorts derived from CHARLS. The WHO criteria reclassified non-anemic individuals as anemic in both the cancer subgroup and the general population group, which is also consistent with the findings of Addo et al., 14 suggesting that clinicians in regions where local hemoglobin distributions diverge from WHO thresholds should be alert to this potential misclassification. Overall, our findings may improve risk stratification and perioperative management in patients with preoperative anemia, with the potential to reduce surgical complication rates and associated costs.
+
+This study has several strengths. First, to our knowledge, this is the first study to directly compare WHO and China anemia criteria in predicting short-term surgical outcomes and to characterize the misclassification mechanism underlying criteria-related differences in risk assessment. Second, Firth’s regression provided nearly unbiased estimates despite the limited EPV, and internal validation confirmed minimal overfitting (bootstrap optimism = 0.034). These performance metrics are consistent with the study’s objective of risk factor identification, rather than development of a clinical prediction tool.29,30 The cross-population consistency of our dose-response findings with large Japanese 14 and American 27 cohorts further supports the validity of the observed association. Although it was conducted in a Chinese cohort, this study highlights the importance of using population-appropriate criteria, with implications for both anemia-related outcome research and clinical risk stratification and perioperative management.
+
+Several limitations should be acknowledged. First, the sample size in our development cohort was 231 patients with 29 events, which was determined by data availability, with all consecutive eligible patients enrolled, and therefore no formal sample size calculation was performed. The resulting limited EPV (7.25) was addressed through Firth’s penalized logistic regression and bootstrap internal validation. Nevertheless, the restricted sample size may have reduced statistical power. Second, all procedures were performed by the same surgical team, which inherently controlled for surgeon-related variability, but residual confounding cannot be fully excluded. Several residual confounders that had been reported as general risk factors for postoperative complications, including BMI, operative time, neoadjuvant therapy, ASA score, smoking status and inflammatory markers were not included in the multivariable model due to EPV constraints, and these factors may also influence postoperative complications. TNM stage and albumin were not significantly associated with PO30C in univariate analysis and were therefore excluded from the multivariable model. Blood transfusion was not included in this study because anemia is the transfusion indicator in clinical guidelines and adjusting for blood transfusion may underestimate the total effect of anemia. Furthermore, recent studies suggest that transfusion likely works as a mediator in the anemia-outcome causal pathway rather than an independent confounder. Adjusting for blood transfusion requires a formal causal mediation analysis with larger sample sizes and thoroughly designed studies in the future. This retrospective study also lacked detailed iron parameters, such as serum iron or ferritin levels, limiting our ability to determine whether anemia in CRC patients is driven by iron deficiency. Third, the model showed modest discrimination (cross-validated AUC = 0.667), which is expected given the study’s objective of risk factor identification.29,30 Specifically, this study aimed to characterize the association between preoperative anemia (under two different diagnostic criteria) and postoperative complications, and to identify how the choice of diagnostic criteria influences this association, rather than to develop a deployable clinical prediction tool. In future studies, larger samples and comprehensive predictor sets are needed to develop clinical prediction tools. Fourth, as a single-center Chinese cohort, all procedures were performed by a single medical team, and different hospital settings and clinical preferences at other institutions might influence patient outcomes. Patients in this cohort all came from a regional hospital in China, which may reflect only regional patterns. Generalizability therefore requires external validation in a multi-center cohort, ideally incorporating non-Chinese data. To partially address this concern, two external cohorts were derived from CHARLS using all-cause mortality as the outcome to illustrate the misclassification mechanism beyond our surgical cohort. However, the corroborating evidence should be considered mechanistic support rather than direct clinical validation, and formally established external validation is needed in future studies.
+
+Conclusion
+
+In this Chinese CRC cohort, preoperative anemia was an independent risk factor for 30-day postoperative complications under the China criteria, whereas WHO criteria attenuated the association. This non-differential misclassification of low-risk borderline patients leads to attenuation of the observed association. Population-appropriate diagnostic criteria are important for perioperative risk estimation and may explain conflicting findings in the existing literature.
+
+Supplemental Material
+
+Supplemental Material - Impact of Preoperative Anemia on Short-Term Outcomes After Colorectal Cancer Surgery: How the Choice of Diagnostic Criteria Leads to Conflicting Findings
+
+Supplemental Material for Impact of Preoperative Anemia on Short-Term Outcomes After Colorectal Cancer Surgery: How the Choice of Diagnostic Criteria Leads to Conflicting Findings by Wangji Li, Yuanhong Peng, Changda Ye, Yan Lu, Yongle Ju, Manzhao Ouyang in Clinical Medicine Insights: Oncology.
+
+Supplemental Material - Impact of Preoperative Anemia on Short-Term Outcomes After Colorectal Cancer Surgery: How the Choice of Diagnostic Criteria Leads to Conflicting Findings
+
+Supplemental Material for Impact of Preoperative Anemia on Short-Term Outcomes After Colorectal Cancer Surgery: How the Choice of Diagnostic Criteria Leads to Conflicting Findings by Wangji Li, Yuanhong Peng, Changda Ye, Yan Lu, Yongle Ju, Manzhao Ouyang in Clinical Medicine Insights: Oncology.
+
+Supplemental Material - Impact of Preoperative Anemia on Short-Term Outcomes After Colorectal Cancer Surgery: How the Choice of Diagnostic Criteria Leads to Conflicting Findings
+
+Supplemental Material for Impact of Preoperative Anemia on Short-Term Outcomes After Colorectal Cancer Surgery: How the Choice of Diagnostic Criteria Leads to Conflicting Findings by Wangji Li, Yuanhong Peng, Changda Ye, Yan Lu, Yongle Ju, Manzhao Ouyang in Clinical Medicine Insights: Oncology.
+
+Supplemental Material - Impact of Preoperative Anemia on Short-Term Outcomes After Colorectal Cancer Surgery: How the Choice of Diagnostic Criteria Leads to Conflicting Findings
+
+Supplemental Material for Impact of Preoperative Anemia on Short-Term Outcomes After Colorectal Cancer Surgery: How the Choice of Diagnostic Criteria Leads to Conflicting Findings by Wangji Li, Yuanhong Peng, Changda Ye, Yan Lu, Yongle Ju, Manzhao Ouyang in Clinical Medicine Insights: Oncology.
+
+Supplemental Material - Impact of Preoperative Anemia on Short-Term Outcomes After Colorectal Cancer Surgery: How the Choice of Diagnostic Criteria Leads to Conflicting Findings
+
+Supplemental Material for Impact of Preoperative Anemia on Short-Term Outcomes After Colorectal Cancer Surgery: How the Choice of Diagnostic Criteria Leads to Conflicting Findings by Wangji Li, Yuanhong Peng, Changda Ye, Yan Lu, Yongle Ju, Manzhao Ouyang in Clinical Medicine Insights: Oncology.
+
+Supplemental Material - Impact of Preoperative Anemia on Short-Term Outcomes After Colorectal Cancer Surgery: How the Choice of Diagnostic Criteria Leads to Conflicting Findings
+
+Supplemental Material for Impact of Preoperative Anemia on Short-Term Outcomes After Colorectal Cancer Surgery: How the Choice of Diagnostic Criteria Leads to Conflicting Findings by Wangji Li, Yuanhong Peng, Changda Ye, Yan Lu, Yongle Ju, Manzhao Ouyang in Clinical Medicine Insights: Oncology.
+
+Supplemental Material - Impact of Preoperative Anemia on Short-Term Outcomes After Colorectal Cancer Surgery: How the Choice of Diagnostic Criteria Leads to Conflicting Findings
+
+Supplemental Material for Impact of Preoperative Anemia on Short-Term Outcomes After Colorectal Cancer Surgery: How the Choice of Diagnostic Criteria Leads to Conflicting Findings by Wangji Li, Yuanhong Peng, Changda Ye, Yan Lu, Yongle Ju, Manzhao Ouyang in Clinical Medicine Insights: Oncology.
+
+Acknowledgement
+
+We thank Foshan Gastrointestinal Tumor Diagnosis and Treatment Engineering Technology Research Center, Foshan City’s 14th Five-Year Key Specialty Project, and Guangdong Province 14th Five-Year Clinical Key Specialty Construction Project for their support. During the preparation of this manuscript, the authors used ChatGPT (OpenAI) to assist with language refinement and improving readability. The AI tool was used solely for writing assistance and readability improvement. All language suggestions were reviewed and revised by the authors. This study used data from the China Health and Retirement Longitudinal Study (CHARLS). We thank the CHARLS research team at Peking University for providing the data. CHARLS data can be obtained from https://charls.pku.edu.cn/.
+
+ORCID iD
+
+Wangji Li https://orcid.org/0000-0002-8706-4634
+
+Ethical Considerations
+
+This study was approved by the Ethics Committee of The Eighth Affiliated Hospital of Southern Medical University (approval number: KYLS20210601, approval date: 2021-06-04) and conducted in accordance with the Declaration of Helsinki. Written informed consent was obtained. The CHARLS study was approved by the Biomedical Ethics Committee of Peking University (approval number: IRB00001052-11015, approval date:2008-06), and all participants provided written informed consent.
+
+Data Availability Statement
+
+The data that support the findings of this study are not openly available due to reasons of sensitivity and are available from the corresponding author upon reasonable request.*
+
+Author Contributions: Conceptualization, W.L. and M.O.; Methodology, W.L.; Data curation, W.L., Y.P., C.Y.; Investigation, W.L., Y.P., C.Y.; Formal analysis, W.L.; Writing—original draft, W.L.; Writing—review and editing, W.L., Y.L., Y.J. and M.O. All authors have read and agreed to the published version of the manuscript.
+
+Funding: The authors disclosed receipt of the following financial support for the research, authorship, and/or publication of this article: Guangdong Provincial Basic and Applied Basic Research Fund Mindray Joint Fund Project (No.2023A1515220149), Southern Medical University Shunde Hospital 2022 Research Initiation Program Project (No.SRSP2022006), the 2024 Special Innovation Project of the Guangdong Provincial Department of Education (No.2024KTSCX073), 2026 Guizhou Provincial Science and Technology Support Program (General Project, No. Qiankehe Support-2026-General-086).
+
+The authors declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.
+
+Supplemental Material: Supplemental material for this article is available online.
+
+
+References
+
+1 Bray F Laversanne M Sung H , et al. Global cancer statistics 2022: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries. CA Cancer J Clin. 2024;74(3):229-263.38572751 10.3322/caac.21834
+2 Han B Zheng R Zeng H , et al. Cancer incidence and mortality in China, 2022. J Natl Cancer Cent. 2024;4(1):47-53.39036382 10.1016/j.jncc.2024.01.006 PMC11256708
+3 Wu S Zhang Y Lin Z Wei M . Global burden of colorectal cancer in 2022 and projections to 2050: incidence and mortality estimates from GLOBOCAN. BMC Cancer. 2025;25(1):1770.41239247 10.1186/s12885-025-15138-0 PMC12619147
+4 Park LJ Moloo H Ramsay T , et al. Associations of preoperative anaemia with healthcare resource use and outcomes after colorectal surgery: a population-based cohort study. Br J Anaesth. 2024;133(1):58-66.38644160 10.1016/j.bja.2024.03.018 PMC11213985
+5 Leeds IL Drabo EF Lehmann LS Safar B Johnston FM . On All Accounts: Cost-Effectiveness Analysis of Limited Preoperative Optimization Efforts Before Colon Cancer Surgery. Dis Colon Rectum. 2021;64(6):744-753.33955409 10.1097/DCR.0000000000001926 PMC8835996
+6 Rhodes CE Denault D Varacallo MA . Physiology, Oxygen Transport. StatPearls. Treasure Island, FL: StatPearls Publishing; 2025. [cited 2026 Jan 7].Available from. https://www.ncbi.nlm.nih.gov/books/NBK538336/ 30855920
+7 Takashima J Kobayashi H Koizumi A , et al. Impact of preoperative anemia and perioperative transfusion on short‐term outcomes in colorectal cancer surgery: The role of iron supplementation. Ann Gastroenterol Surg. 2025;9(2):288-297.40046524 10.1002/ags3.12867 PMC11877345
+8 Deng Y Weng M Zhang J . Preoperative anemia and long-term survival in patients undergoing colorectal cancer surgery: a retrospective cohort study. World J Surg Oncol. 2023;21(1):122.37013545 10.1186/s12957-023-03005-w PMC10071685
+9 Weng M Guo M Li T , et al. Anemia tolerance versus blood transfusion on long-term outcomes after colorectal cancer surgery: A retrospective propensity-score-matched analysis. Front Oncol. 2022;12:940428.36046042 10.3389/fonc.2022.940428 PMC9421070
+10 Kwon Y-H Lim H-K Kim MJ , et al. Impacts of anemia and transfusion on oncologic outcomes inpatients undergoing surgery for colorectal cancer. Int J Colorectal Dis. 2020;35(7):1311-1320.32363477 10.1007/s00384-020-03601-2
+11 Yan T Lei S Zhou B , et al. Association between preoperative anemia and postoperative short-term outcomes in patients undergoing colorectal cancer surgery - a propensity score matched retrospective cohort study. BMC Anesthesiol. 2023;23(1):307.37697231 10.1186/s12871-023-02270-2 PMC10494383
+12 Yamada T Endo H Hasegawa H , et al. Presurgical mild anemia is a risk factor for severe postoperative complications of rectal cancer surgery: A Japanese nationwide retrospective cohort study. Ann Gastroenterol Surg. 2024;8(3):471-480.38707223 10.1002/ags3.12770 PMC11066482
+13 Wang X Wu Z Chen Y , et al. Increased prevalence and incidence of anemia among adults in transforming rural China: two cross-sectional surveys. BMC Public Health. 2015;15(1):1302.26712316 10.1186/s12889-015-2671-8 PMC4693413
+14 Addo OY Yu EX Williams AM , et al. Evaluation of Hemoglobin Cutoff Levels to Define Anemia Among Healthy Individuals. JAMA Netw Open. 2021;4(8):e2119123.34357395 10.1001/jamanetworkopen.2021.19123 PMC8346941
+15 Wacholder S Hartge P Lubin JH Dosemeci M . Non-differential misclassification and bias towards the null: a clarification. Occup Environ Med. 1995;52(8):557-558.7663646 10.1136/oem.52.8.557 PMC1128296
+16 Jun M Jiejun W Li Z Shukui Q . Clinical guidelines on tumor associated anemia (Version 2015-2016). Chin J Pract Intern Med. 2016;36:1-21.
+17 Society of Chemotherapy Chinese Anti-Cancer Association Committee of Neoplastic Supportive-Care China Anti-Cancer Association . Consensus on the clinical diagnosis, treatment, and prevention of cancer related anemia in China (2023 edition). Zhonghua Zhong Liu Za Zhi. 2023;45(12):1032-1040.38110311 10.3760/cma.j.cn112152-20230711-00289
+18 von Elm E Altman DG Egger M Pocock SJ Gøtzsche PC Vandenbroucke JP . The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies. J Clin Epidemiol. 2008;61(4):344-349.18313558 10.1016/j.jclinepi.2007.11.008
+19 Amin MB Greene FL Edge SB , et al. The Eighth Edition AJCC Cancer Staging Manual: Continuing to build a bridge from a population-based to a more “personalized” approach to cancer staging. CA Cancer J Clin. 2017;67(2):93-99.28094848 10.3322/caac.21388
+20 Zhao Y Hu Y Smith JP Strauss J Yang G . Cohort profile: the China Health and Retirement Longitudinal Study (CHARLS). Int J Epidemiol. 2014;43(1):61-68.23243115 10.1093/ije/dys203 PMC3937970
+21 Puhr R Heinze G Nold M Lusa L Geroldinger A . Firth’s logistic regression with rare events: accurate effect estimates and predictions? Stat Med. 2017;36(14):2302-2317.28295456 10.1002/sim.7273
+22 Heinze G Schemper M . A solution to the problem of separation in logistic regression. Stat Med. 2002;21(16):2409-2419.12210625 10.1002/sim.1047
+23 Firth D . Bias reduction of maximum likelihood estimates. Biometrika. 1993;80(1):27-38.
+24 Armitage P . Tests for Linear Trends in Proportions and Frequencies. Biometrics. 1955;11(3):375.
+25 DeLong ER DeLong DM Clarke-Pearson DL . Comparing the Areas under Two or More Correlated Receiver Operating Characteristic Curves: A Nonparametric Approach. Biometrics. 1988;44(3):837.3203132
+26 Harrell FE . Regression Modeling Strategies: With Applications to Linear Models, Logistic and Ordinal Regression, and Survival Analysis. Cham: Springer International Publishing; 2015. doi:10.1007/978-3-319-19425-7.
+27 Leichtle SW Mouawad NJ Lampman R Singal B Cleary RK . Does Preoperative Anemia Adversely Affect Colon and Rectal Surgery Outcomes? J Am Coll Surg. 2011;212(2):187-194.21276532 10.1016/j.jamcollsurg.2010.09.013
+28 Pérez-Calatayud AA Görlinger K . Molecular Mechanisms of Transfusion-Associated Immunomodulation and Its Impact in the Critically Ill. Int J Mol Sci. 2025;27(1):30.41515909 10.3390/ijms27010030 PMC12785654
+29 Riley RD Hayden JA Steyerberg EW , et al. Prognosis Research Strategy (PROGRESS) 2: Prognostic Factor Research. PLoS Med. 2013;10(2):e1001380.23393429 10.1371/journal.pmed.1001380 PMC3564757
+30 Schooling CM Jones HE . Clarifying questions about “risk factors”: predictors versus explanation. Emerg Themes Epidemiol. 2018;15(1):10.30116285 10.1186/s12982-018-0080-z PMC6083579

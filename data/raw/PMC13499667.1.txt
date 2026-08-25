@@ -1,0 +1,323 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: ADMET DMPK
+Journal ID: ADMET DMPK
+NLM Journal ID: 101660124
+Journal ID: ADMET
+
+ADMET & DMPK
+
+EISSN: 1848-7718
+Publisher: International Association of Physical Chemists
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499667
+PMID: 42633484
+DOI: 10.5599/admet.3328
+Article version: 1
+Subjects: Original Scientific Paper
+
+Extracellular vesicles and their translational therapeutic potential
+
+Mukherjee Riya https://orcid.org/0000-0003-3796-4586 1
+Pandey Ramendra Pati https://orcid.org/0000-0002-5196-6468 2 +
+Chang Chung Ming https://orcid.org/0000-0002-8484-6905 3 *
+1 Graduate Institute of Biomedical Sciences, Chang Gung University , Taoyuan, Taiwan
+2 School of Biosciences and Bioengineering, D Y Patil International University (DYPIU) , Akurdi, Pune, Maharashtra, 411044, India
+3 Master & Ph.D. program in Biotechnology Industry, Chang Gung University , No.259, Wenhua 1 st Rd., Guishan Dist. Taoyuan City 33302, Taiwan
+Corresponding Author: E-mail: *cmchang@mail.cgu.edu.tw+Contributed equally as first authorship
+
+Electronic publication date: 2026 Jul 26
+Publication date: 2026
+Volume: 14
+Electronic Location ID: 3328
+Received 2026 Apr 5; Revised 2026 Jun 13
+Copyright: Copyright © 2026 by the authors.
+Copyright year: 2026
+License: This article is an open-access article distributed under the terms and conditions of the Creative Commons Attribution license (http://creativecommons.org/licenses/by/4.0/).
+License URL: https://creativecommons.org/licenses/by/4.0/
+
+Keywords: Mesenchymal stem cell-derived extracellular vesicles, osteoarthritis therapy, preclinical models, cartilage regeneration, regenerative medicine
+
+Funding: Ministry of Education (MOE), Taiwan ECRPD1Q0111 Academic-Industry Cooperation Project This research was supported by the Ministry of Education (MOE), Taiwan, under the Academic-Industry Cooperation Project, Grant No. ECRPD1Q0111. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+
+Figure count: 11
+Table count: 3
+Equation count: 0
+Reference count: 51
+Page count: 21
+
+==============================
+Abstract
+
+Background and purpose
+
+Mesenchymal stem cell-derived extracellular vesicles (MSC-EVs) have emerged as a promising cell-free therapy for osteoarthritis (OA). However, their transition into clinical therapeutics is constrained by unstandardized pharmacokinetics and heterogeneous preclinical reporting.
+
+Experimental approach
+
+A meta-analysis of preclinical in vivo OA models evaluating MSC-EV therapy was conducted. Study quality was rigorously assessed using MISEV 2023 (Minimal Information for Studies of Extracellular Vesicles, 2023) criteria and the SYRCLE (Systematic Review Centre for Laboratory animal Experimentation) risk-of-bias tool. Quantitative synthesis was performed for the Osteoarthritis Research Society International (OARSI) histological score, reporting pooled mean differences (MDs) and 95 % confidence intervals (95% CIs), along with heterogeneity (I2 statistic) and microRNA (miRNA) cargo analysis.
+
+Key results
+
+MSC-EV administration conferred robust structural protection against cartilage degradation. Quantitative synthesis of human-derived MSC-EVs (26 studies) significantly reduced OARSI scores (MD -3.27, 95% CI -4.66 to -1.88; p < 0.0001). Similarly, quantitative synthesis of animal-derived MSC-EVs (8 studies) demonstrated an even more profound effect (MD -5.58, 95% CI -7.13 to -4.03; p < 0.0001). Non-parametric Trim-and-Fill analysis estimated zero missing studies in both datasets, confirming that these effect sizes are highly robust to publication bias. Despite these robust efficacy signals, significant heterogeneity (I2 > 84 %) persisted. Meta-regression revealed that arbitrary dosage metrics, whether reported by particle count or protein concentration, failed to reliably predict treatment efficacy, highlighting severe gaps in dose-exposure standardization.
+
+Conclusion
+
+MSC-EVs demonstrate highly potent, cross-species efficacy in attenuating OA progression. However, clinical translation is critically bottlenecked by a lack of ADMET (absorption, distribution, metabolism, excretion and toxicity) compliance. Future research must prioritize standardized particle-based dosing, in vivo pharmacokinetic tracking, and rigorous cargo-function validation to enable regulatory approval.
+
+Introduction
+
+Osteoarthritis (OA) is a progressive degenerative joint disorder characterized by the deterioration of articular cartilage, alterations in subchondral bone, joint pain, and reduced mobility [1,2]. Its global impact is profound: as of 2020, approximately 595 million individuals (≈7.6 % of the global population) were affected by OA, with the prevalence increasing by approximately 132 % since 1990 [1]. Conventional treatments, including non-steroidal anti-inflammatory drugs (NSAIDs), intra-articular corticosteroid injections, and ultimately joint replacement, primarily focus on alleviating symptoms rather than altering fundamental disease progression [2]. Consequently, long-term, non-surgical disease modification remains elusive for the vast majority of patients.
+
+Mesenchymal stem cell (MSC) therapy has emerged as a promising regenerative strategy; however, extracellular vesicles (EVs) derived from MSCs are now recognized as a superior, cell-free alternative [3]. MSC-EVs retain the beneficial paracrine effects of their parent cells, delivering chondroprotective microRNAs, lipids, and growth factors while circumventing the risks of cellular senescence, immune rejection, and tumorigenesis [3,4]. While preliminary preclinical models indicate that MSC-EVs effectively mitigate cartilage degradation and suppress inflammatory mediators, their translation into clinical therapeutics is severely bottlenecked by a lack of fundamental pharmacokinetic (PK) and pharmacodynamic (PD) understanding [5]. Currently, EV therapies suffer from heterogeneous isolation methods that lead to variable intra-articular retention times, erratic biodistribution, and unstandardized clearance rates [5,6].
+
+To successfully transition MSC-EVs into disease-modifying biologic agents, their dosing regimens, which are currently arbitrarily defined across the literature by either bulk protein concentration or particle count, must be systematically evaluated [6]. This meta-analysis not only synthesizes the structural efficacy of MSC-EVs in osteoarthritis models but also critically assesses the preclinical landscape through a translational pharmacological lens. By rigorously quantifying effect sizes and evaluating reporting quality against MISEV 2023 standards [7], we aim to highlight critical gaps in dose-exposure relationships, administration frequency, and EV characterization, thereby establishing a benchmark for ADMET (absorption, distribution, metabolism, excretion, and toxicity)-compliant EV therapeutic development.
+
+Materials and methods
+
+Protocol and registration
+
+This meta-analysis was conducted in strict adherence to the updated Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) 2020 guidelines [8]. Flow diagrams mapping the study selection process were programmatically generated utilizing the PRISMA2020 R package to ensure reproducible reporting [9]. The study protocol was prospectively registered with the International Prospective Register of Systematic Reviews (PROSPERO; registration number CRD420251081490) [10]. The protocol defined the a priori research questions, eligibility criteria, pharmacological data extraction frameworks, and statistical methodologies.
+
+Literature search and inclusion criteria
+
+A comprehensive systematic search was executed to identify preclinical in vivo studies evaluating mesenchymal stem cell-derived extracellular vesicles (MSC-EVs) in animal models of OA. PubMed, Embase, and Web of Science were searched from January 2017 to March 2025. The search strategy combined controlled vocabulary (e.g. MeSH terms) and free-text keywords covering “extracellular vesicles”, “exosomes”, “mesenchymal stem cells” and “osteoarthritis”. Eligible studies included controlled in vivo OA models utilizing MSC-EV interventions that reported at least one quantitative structural or histological endpoint (e.g. Osteoarthritis Research Society International (OARSI) scores). In vitro only studies, non-MSC EV sources and articles lacking extractable quantitative data were excluded.
+
+Data extraction
+
+Data extraction was independently performed using a standardized template, with discrepancies resolved by consensus. To address the recognized heterogeneity in EV isolation and ensure rigorous pharmacological reproducibility, a comprehensive study-by-study methodological matrix was constructed (Supplementary material, Table S1). For each included study, this matrix systematically captures: (1) reagent names and critical solution compositions, (2) instrumentation details (e.g. transmission electron microscope (TEM) accelerating voltage, nanoparticle tracking analysis (NTA) models) and (3) specific procedural conditions including centrifugation speeds/relative centrifugal force (RCF), incubation times, temperatures, and injection routes. Where specific parameters were omitted by the original authors, they were explicitly recorded as "not reported" (NR). To align with translational pharmacokinetic (PK) evaluation standards, EV dosing parameters were rigorously extracted. Dose per injection (particles) was used as the primary metric, while protein concentration (μg mL-1) was treated as a secondary proxy when particle counts were unavailable. Variables, including injection volume, number of injections, dosing intervals, and follow-up duration, were recorded to evaluate cumulative exposure and intra-articular therapeutic retention.
+
+Risk of bias and quality assessment
+
+The methodological quality of the included preclinical studies was evaluated using the Systematic Review Center for Laboratory Animal Experimentation (SYRCLE) risk of bias tool [11]. SYRCLE risk of bias domains span selection, performance, detection, attrition and reporting biases (Supplementary Material). Studies were categorized as having a low, high or unclear risk of bias for each domain. Adherence to the Minimal Information for Studies of Extracellular Vesicles (MISEV) 2023 guidelines was also systematically audited for each study [7].
+
+Statistical analysis, meta-regression and publication bias quantitative synthesis was conducted using a random-effects model (REML estimator) to account for the anticipated inter-study heterogeneity arising from varying EV sources, animal models and dosing regimens. OARSI histological score served as the primary endpoint. Because the OARSI score represents a uniform continuous scale across the literature, pooled effect sizes were calculated as mean differences (MDs) with 95 % confidence intervals (CIs). Statistical heterogeneity was evaluated using Cochran’s Q test, the between-study variance (τ2), and the I2 statistic, with I2 > 50 % indicating substantial heterogeneity.
+
+Subgroup analyses were conducted a priori based on (i) experimental animal species, (ii) EV cellular source, and (iii) OA induction model. Mixed-effects meta-regression was utilized to investigate continuous covariates, specifically evaluating whether the administered dosage per injection or the total number of injections moderated the therapeutic effect size.
+
+Potential publication bias was assessed visually using funnel plots and formally quantified using Egger’s regression asymmetry test. To ensure the robustness of our findings against potential small-study effects, a non-parametric Trim-and-Fill analysis was performed to estimate adjusted effect sizes accounting for theoretically missing studies. Furthermore, the fragility of the overall effect was evaluated using Fail-Safe N calculations via the Rosenthal, Orwin, and Rosenberg approaches. A two-sided p-value < 0.05 was considered statistically significant for all analyses.
+
+Compliance with ethical guidelines
+
+This study is a meta-analysis of previously published preclinical studies and did not involve any new animal or human experimentation. Therefore, no additional ethical approval was required.
+
+Results
+
+Study characteristics
+
+Figure 1 provides a summary of the article selection procedure. Initially, 1,330 records were obtained through database searches. After removing duplicates (n = 238) and records deemed ineligible by automated screening (n = 50), 1,042 unique records were reviewed at the title and abstract level. Following the exclusion of 935 records, 107 articles underwent full-text review. A final cohort of 38 preclinical in vivo studies was included in the quantitative synthesis. The key characteristics of the included studies are summarized in Table 1. The 38 studies encompassed both human-derived (28 studies) [12-39] and animal-derived (10 studies) [40-49] MSC-EVs evaluated across diverse preclinical OA models. Of these, 26 human-derived studies and 8 animal-derived studies provided extractable quantitative data for the primary OARSI score meta-analysis. The remaining two animal-derived studies [48,49] met the inclusion criteria and are described in Table 1, but were excluded from the quantitative synthesis because OARSI histological score values (mean ± SD) were not reported in numerical form in the text, tables, or supplementary data of the original publications, precluding mean difference calculation. Rodent models (C57BL/6 mice and Sprague-Dawley rats) predominated, with OA primarily induced via surgical techniques (e.g. destabilization of the medial meniscus (DMM), anterior cruciate ligament transection (ACLT)) or chemical induction (e.g. monosodium iodoacetate [MIA]) [12-49]. EV cellular origins were highly heterogeneous, including bone marrow, adipose tissue, synovial membrane, umbilical cord, and induced pluripotent stem cells.
+
+Figure 1. PRISMA flow diagram of the literature search and selection of studies for meta-analysis
+
+Table 1. General characteristics included human and animal studies
+
+Study ID	EV source	Tissue origin	EV source species	Experimental subject	Age, week	Sex/n	Weight, g	OA model	Isolation method	Characterization
+method	Ref.	
+SD1	iMSC-Exo	Induced pluripotent stem cells	Human	C57B/L10 mice	6	Female/35	NR	CIOA	Ultracentrifugation	RPSA, TEM, WB	[12]	
+SMMSCs-Exo	Synovial	Human	C57B/L10 mice	6	Female/36	NR	CIOA	Ultracentrifugation	RPSA, TEM, WB	
+SD2	SMMSCs-Exo	Synovial	Human	SD rats	~ 12	Male/30	300 to 350	Complete transection of the medial collateral ligament, ACLT and DMM	NR	NR	[13]	
+SD3	ESCMSCs-Exo	Embryonic	Human	C57BL/6 J	8	NR/32	NR	DMM	Ultracentrifugation	NR	[14]	
+SD4	IPFPMSC-Exo	infrapatellar fat pad	Human	C57BL/6 mice	9	Male/39	NR	DMM	ExoQuick™ reagent kit and ultrafiltration	TEM, NTA, WB	[15]	
+SD5	ADSC-EVs	Adipose	Human	SD rats	7	Male/50	200 to 250	MIA	TFF	TEM, NTA, WB, FC, DLS	[16]	
+Adipose	Human	C57BL/6 mice	9	Male/NR	20 to 25	DMM	TFF	TEM, NTA, WB, FC, DLS	
+SD6	BMSCs-Exo	Bone Marrow	Human	C57BL/6 J mice	6	Male/23	NR	CIOA	Total exosome isolation kit		[17]	
+SD7	SMMSCs-Exo	Synovial	Human	SD rats	NR	Male/40	200 to 220	DMM	Ultracentrifugation	TEM, NTA, WB	[18]	
+SD8	SMMSCs-Exo	Synovial	Human	C57 mice	8	Male/20	25 to 30	Complete transection of the medial collateral ligament, ACLT and DMM	Ultracentrifugation	TEM, NTA	[19]	
+SD9	UCMSCs-Exo	Umbilical cord	Human	SD rats	8	Male/24	NR	ACLT	Commercial kit	TEM,FC	[20]	
+SD10	ADSCs-Exo	Adipose	Human	BALB/c mice	3	Female/35	NR	ciprofloxacin induced OA	Ultracentrifugation	TEM, DLS, FC	[21]	
+BMSCs-Exo	Bone Marrow	Human	BALB/c mice	3	Female/35	NR	ciprofloxacin induced OA	Exocib exosome extraction kit	TEM, DLS, FC	
+SD11	BMSCs-Exo	Bone Marrow	Human	SD rats	NR	Male/20	358 ± 5	ACL+MM	Gradient centrifugation	TEM, FC, WB	[22]	
+SD12	ADSC-EVs	Adipose	Human	ICR (CD-1) mice	8	Female/30	NR	Bilaterally OVX	TFF	TEM, FC	[23]	
+SD13	SMMSCs-Exo	Synovial	Human	C57BL/6 J mice	10	Male/NR	NR	DMM	Ultracentrifugation	NTA, TEM, WB	[24]	
+SD14	UCMSCs-Exo	Umbilical cord	Human	SD rats	NR	NR/18	NR	Surgically induced cartilage defect model	NR	TEM, NTA, FC	[25]	
+SD15	UCMSCs-Exo	Umbilical cord	Human	SD rats	12	Female/40	250 ± 20	ACLT and DMM	Ultracentrifugation		[26]	
+SD16	ADSCs-Exo	Adipose	Human	SD rats	NR	NR/15	230 to 280	MIA-OA	Ultracentrifugation		[27]	
+SD17	iPSCs-Exo	PBMS	Human	NZ Rabbits	NR	Female/9	400	ACLT	Sequential ultracentrifugation	TEM, WB, DLS	[28]	
+SD18	UCMSCs-Exo	Umbilical cord	Human	C57BL/6 mice	8	Male/NR	NR	DMM	Differential centrifugation	TEM, NTA, WB	[29]	
+SD19	WJMSC-Exo	Umbilical cord	Human	SD rats	8	Male/24	NR	ACLT	Sequential ultracentrifugation	TEM, AFM, SEM, FC	[30]	
+SD20	ADSC-Exo	Subcutaneous fat (SC)	Human	SD žrats	6	Male/NR	180 to 200	DMM+ACLT	Ultracentrifugation	TEM, NTA	[31]	
+ADSC-Exo	Subcutaneous fat (SC)	Human	C57BL/6 J mice	7	Male/NR	18 to 22	DMM	Ultracentrifugation	TEM, NTA	
+SD21	ADSC-Exo	Subcutaneous adipose	Human	SD rats	8	Male/30	NR	ACLT	Ultracentrifugation	TEM, NTA	[32]	
+SD22	UCMSCs-Exo	Umbilical cord	Human	SD rats	NR	Male	350g	ACL rupture-induced OA	Gradient centrifugation	TEM, NTA	[33]	
+SD23	DPSC-Exo	Dental pulp stem cell	Human	C57BL/6 mice	7	Male/15	20-25g	MIA	Sequential ultracentrifugation	TEM, NTA, WB	[34]	
+SD24	pExo	Placenta	Human	SD rats	10 to 12	Male/NR	NR	MCLT+MMT	Sequential ultracentrifugation	NTA, WB	[35]	
+SD25	UCMSCs-Exo	Umbilical cord	Human	SD rats	6 to 8	Male/24	200 ± 20	MIA	NR		[36]	
+SD26	UCMSCs-Exo	Umbilical cord	Human	SD rats	8	Male/NR	300 to 350	CIOA	TFF	TEM, NTA,FC	[37]	
+SD27	UCMSCs-Exo	Umbilical cord	Human	C57BL/6 J mice	8 to 12	Male, Female/ NR	NR	CIOA	Ultracentrifugation	NTA, FC	[38]	
+SD28	UCMSCs-Exo	Umbilical cord	Human	SD rats	12	Male/NR	300 to 350	ACLT + pMMx	Ultracentrifugation	TEM, ZS, WB	[39]	
+SD1	BMSCs-Exo	Bone marrow	C57BL/6 mice	C57BL/6 mice	3 days	NR/45	NR	CIOA	Ultracentrifugation	NTA, TEM, DLS, FC	[40]	
+SD2	BMSCs-Exo	Bone marrow	C57BL/6 mice	C57BL/6 mice	NR	NR/60	25 to 30	Surgically induce instability in the lumbar spine	Ultracentrifugation	TEM, BCA, WB	[41]	
+SD3	BMSCs-Exo	Bone marrow	C57BL/6 mice	SD rats	Adult	Male/36	200 to 250	ACLT+DMM	Ultracentrifugation	TEM, NTA, WB	[42]	
+SD4	BMSCs-Exo	Bone marrow	SD Rats	SD rats	6	Male/80	190 ± 10	ACL+MCL	Ultracentrifugation	WB	[43]	
+SD5	BMSCs-Exo	Bone marrow	SD Rats	SD rats	10	Male/24	NR	MIA-OA	Ultracentrifugation	TEM, NTA, WB	[44]	
+SD6	BMSCs-Exo	Bone marrow	SD Rats	SD rats	NR	Male/24	200 to 220	MIA-OA	ExoQuick-TC™	TEM, NTA	[45]	
+SD7	BMSCs-Exo	Bone marrow	Rabbit	NZ rabbits	NR	Male/20	2500 ± 500	ACL+MM	NR	TEM, NTA, FC	[46]	
+SD8	BMSCs-Exo	Bone marrow	C57BL/6 mice	SD rats	NR	NR/40	NR	MCL+ACL+PCL	ExoQuick Extraction Kit	TEM, NTA, WB	[47]	
+SD9	ADSCs-Exo	Adipose	C57BL/6 mice	C57BL/6 mice	8	Male/102	25 to 30	LFJ OA	NR	TEM, NTA, WB	[48]	
+SD10	BMSCs-Exo	Bone marrow	SD Rats	SD rats	10	Male/24	220	ACL+MM	Ultracentrifugation	TEM, NTA, WB	[49]	
+
+Quality of included studies
+
+To contextualize the heterogeneity observed across the included studies and to identify systematic gaps in methodological transparency, we performed a structured reporting-quality assessment of all 38 studies against the MISEV 2023 guidelines. Each study was scored across seven domains derived directly from the comprehensive methodological matrix (Supplementary material, Table S2): isolation method, characterization method (MISEV triad of morphology, particle metrics, and protein markers), size distribution, surface marker analysis, functional testing, procedural reporting clarity (centrifugation force, time, temperature, and equipment), and statistical methods. No study achieved complete adherence to MISEV 2023 reporting standards. Substantial adherence was observed in 7 of 38 studies (18.4 %), Partial adherence in 20 of 38 studies (52.6 %), and limited adherence in 11 of 38 studies (28.9 %). Domain-level analysis revealed that the strongest reporting was in surface marker characterization (32/38, 84.2 % adequate) and the MISEV characterization triad (31/38, 81.6 % adequate), reflecting widespread adoption of the basic transmission electron microscopy/nanoparticle tracking analysis/Western blot characterization framework. In contrast, the most pronounced reporting deficits were observed in numeric size distribution reporting, with only 4 of 38 studies (10.5 %) providing explicit modal diameter or size-range values in the methods or results text rather than in figure panels alone, and in procedural reporting clarity, where only 5 of 38 studies (13.2 %) reported all three of relative centrifugal force/time, isolation temperature, and ultracentrifuge or rotor model. Statistical methods were fully specified (test, software, and significance threshold) in only 10 of 38 studies (26.3 %), whereas functional validation, combining both in vivo OA model outcomes and in vitro mechanistic assays, was reported in 14 of 38 studies (36.8 %).
+
+Critical gaps were observed in the reporting of pharmacological dosing parameters. Methodological quality was further evaluated using the SYRCLE risk-of-bias tool (Figure 2). Most studies demonstrated a low risk of bias regarding random sequence generation and selective reporting.
+
+Figure 2. Evaluation of methodological quality of the included studies using the SYRCLE risk of bias tool.
+
+However, blinding of participants/personnel, allocation concealment, and blinded outcome assessments were frequently rated as high or unclear risk, highlighting persistent methodological vulnerabilities in the preclinical EV landscape that may inflate perceived efficacies.
+
+Effect size (primary outcome)
+
+Quantitative synthesis of the OARSI histological score demonstrated robust therapeutic efficacy of MSC-EV administration. For human-derived MSC-EVs, the pooled mean difference (MD) was -3.27 (95% CI: -4.66 to -1.88; p <0.0001), indicating significant structural protection of articular cartilage compared with untreated controls. Heterogeneity remained substantial (I2 = 94.64%, τ2 = 11.92), reflecting the wide variance in EV sourcing and dosing (Figure 3). Crucially, animal-derived MSC-EVs exerted an even more pronounced protective effect, yielding a pooled MD of -5.58 (95% CI: -7.13 to -4.03; p <0.0001). While statistical heterogeneity was also present in the animal-derived subgroup (I2 = 84.19%, τ2 = 4.07), the highly significant p-value confirms the potent cross-species biological activity of MSC-EVs in mitigating OA progression (Figure 4).
+
+Figure 3. Forest plot of preclinical studies [12-22,24-30,32-34,36,38] evaluating human MSC-derived exosomes in OA models using OARSI histological scoring. The random-effects model (REML) yielded a pooled estimate of -3.27 (95% CI: -4.66 to -1.88; p <0.0001), with substantial heterogeneity (I2 = 94.64%, τ2 = 11.92, Q = 265.59, df = 25)
+
+Figure 4. Forest plot of preclinical studies [38-44,46] evaluating animal-derived MSC-derived exosomes in OA models using OARSI histological scoring. The random-effects model (REML) yielded a pooled estimate of -5.58 (95% CI: -7.13 to -4.03; p <0.0001), with substantial heterogeneity (I2 = 84.19%, τ2 = 4.07, Q = 53.37, df = 7)
+
+Dosage characteristics
+
+A focused evaluation of EV dosing revealed profound heterogeneity, underscoring a major barrier to ADMET standardization (Supplementary material, Table S3). Dose per injection (particles) was established as the primary metric, while protein concentration served as a secondary proxy. As summarized in Tables 2 and 3, particle-based dosing was reported in 14 of 38 studies (37 %), spanning 8×107 to 1010 particles per injection (median ~3×108; IQR: 108 to 109). Protein-based dosing was reported in 13 of 38 studies (34 %), ranging from 0.25 μg to 500 μg per injection. Critical contextual parameters for pharmacokinetics, such as precise injection volumes, dosing intervals, and intra-articular retention times, were omitted in the majority of reports, thereby preventing precise dose-exposure modelling and highlighting an urgent need for standardization of pharmacological reporting in EV therapeutics.
+
+Table 2. Reported dosing regimens of mesenchymal stem cell-derived extracellular vesicles (EVs) in osteoarthritis models
+
+Metric	Median (IQR)	Range	Number of reporting studies	
+Dose per injection (particles), μg	~3×108 (108 to 109)	8×107 to 1010	14	
+Dose per injection (protein concentration), μg/mL	40 (10 to 100)	0.25 to 500	13	
+
+Table 3. An overview of the completeness of dose reporting across included studies
+
+Parameter	Number of reported dose (n / %)	Number of not reported dose (n / %)	
+Particles per injection	14 (37)	24 (63)	
+Protein per injection	13 (34)	25 (66)	
+
+Subgroup analysis
+
+To delineate drivers of inter-study variance, a priori subgroup analyses were conducted for both human-derived and animal-derived MSC-EVs, stratified by EV cellular source, OA induction model and experimental subject.
+
+Human-derived MSC-EVs
+
+No significant differences in therapeutic efficacy were observed across tissue origins of the EVs, as indicated by the test for subgroup differences (Q_b(8) = 12.79, p = 0.119). Adipose-derived EVs (ADSC-Exo) demonstrated a statistically significant reduction in OARSI scores (MD = -3.01, 95% CI: -4.29 to -1.73). Similarly, bone marrow-derived EVs (BMSCs-Exo) also yielded a significant pooled effect (MD = -2.79, 95% CI: -4.58 to -1.00). Furthermore, induced MSC-derived EVs (iMSC-Exo) showed a strong reduction in scores (MD = -6.23, 95% CI: -8.35 to -4.11). In contrast, Wharton's jelly-derived EVs (WJMSC-Exo) were associated with a positive mean difference (MD = 2.20, 95% CI: 0.91 to 3.48) (Figure 5). The overall random-effects model across all EV types indicated a significant overall reduction in OARSI scores (MD = -3.27, 95% CI: -4.66 to -1.88) (Figure 5).
+
+Figure 5. Meta-analysis of EV therapeutic efficacy on OARSI scores subgrouped by tissue origin [12-39]. Forest plot detailing the effect of human-derived extracellular vesicles (EVs) on OARSI scores, stratified by the tissue source of the EVs (e.g. ADSC-Exo, SMMSCs-Exo, UCMSCs-Exo, BMSCs-Exo, WJMSC-Exo, iMSC-Exo). The plot displays MD and 95% CI for individual studies and the pooled random-effects (RE) models for each subgroup. The test for subgroup differences indicates no statistically significant variation in therapeutic efficacy based on EV tissue origin (Q_b(8) = 12.79, p = 0.119). The overall random-effects model across all studies demonstrates a significant reduction in OARSI scores (MD = -3.27, 95% CI: -4.66 to -1.88)
+
+A subgroup analysis on experimental subjects (e.g. C57 mice, SD rats, NZ Rabbits) indicated that the host species did not significantly moderate the therapeutic efficacy of human-derived EVs (Q_b(6) = 9.08, p = 0.169). This suggests that the structural benefits of human MSC-EVs are conserved across various preclinical xenograft models (Figure 6).
+
+Figure 6. Meta-analysis of EV therapeutic efficacy on OARSI scores subgrouped by experimental subjects [10-37]. Forest plot of a mixed-effects meta-regression assessing the impact of host species and animal models on the therapeutic rescue of EVs, measured via OARSI scores. Subgroups represent the various preclinical xenograft models utilized across studies, including SD rats, multiple strains of mice (e.g. C57BL/6 J, C57BL/6, C57B/L10, BALB/c) and NZ rabbits. The analysis indicates that the host species does not significantly moderate the therapeutic efficacy of the EVs (Q_b(6) = 9.08, p = 0.169)
+
+Subgrouping by OA induction methodology revealed no statistically significant differences in therapeutic efficacy across the various models, as indicated by the test for subgroup differences (Q_b(10) = 6.62, p = 0.761). The MIA model yielded an effect size of MD = -4.33 (95% CI: -6.10 to -2.56). Similarly, Collagenase-Induced OA (CIOA) produced an MD of -5.87 (95% CI: -11.44 to -0.29). Surgical DMM models exhibited high internal variance and a non-significant pooled effect, as the confidence interval crossed zero (MD = -1.29, 95% CI: -2.82 to 0.24) (Figure 7).
+
+Figure 7. Meta-analysis of EV therapeutic efficacy on OARSI scores subgrouped by OA induction methodology [10-37]. Forest plot evaluating the therapeutic impact of EVs on OARSI scores, stratified by the methodology used to OA in the experimental models. Subgroups include chemically induced models (e.g. MIA, CIOA, ciprofloxacin) and surgical models (e.g. DMM, ACLT, ACL rupture). The test for subgroup differences reveals no statistically significant variance in therapeutic efficacy across the different induction methodologies (Q_b(10) = 6.62, p = 0.761)
+
+Animal-derived MSC-EVs
+
+Consistent with trends in the human subgroup, both adipose- and bone marrow-derived animal MSC-EVs exerted protective effects against cartilage degradation. While bone marrow remains the most frequently investigated source, yielding a highly reproducible significant benefit (MD: -5.21, 95% CI: -6.75 to -3.67), preliminary evidence indicates that adipose-derived EVs may yield an even more potent structural rescue (MD: -8.70, 95% CI: -11.54 to -5.87) (Figure 8).
+
+Figure 8. Meta-analysis of animal MSC-EV therapeutic efficacy on OARSI scores subgrouped by EV tissue source [38-44,46]. Forest plot detailing the effect of animal-derived extracellular vesicles (EVs) on OARSI scores, stratified by the tissue origin of the EVs: bone marrow-derived (BMSCs-Exo) and adipose-derived (ADSCs-Exo). The plot displays MD) and 95% CI for individual studies and the pooled random-effects (RE) models. The overall random-effects model across all studies demonstrates a significant reduction in OARSI scores (MD: = -5.58, 95% CI: -7.13, -4.03). The test for subgroup differences indicates no statistically significant variation in therapeutic efficacy between the two tissue sources (Q_b(1) = 1.95, p = 0.162)
+
+Therapeutic efficacy varies across induction methods. The chemically induced MIA-OA model yielded a highly significant effect size (MD: -4.49, 95% CI: -5.71 to -3.26), while specific surgical instability models, such as ACL+MM and LFJ OA, demonstrated even more profound improvements (MD: -6.46 and -8.70, respectively) (Figure 9).
+
+Figure 9. Meta-analysis of animal MSC-EV therapeutic efficacy on OARSI scores subgrouped by OA induction methodology [38-44,46]. Forest plot evaluating the therapeutic impact of animal-derived EVs on OARSI scores across OA induction models. Subgroups include chemically induced models (e.g. MIA-OA, CIOA) and multiple surgical instability models (e.g. ACL+MCL, ACL+MM, ACLT+DMM, Lumbar spine instability, LFJ OA). While the test for subgroup differences yields a statistically significant p-value (Q_b(6) = 53.33, p = 0.000), a notation clarifies that because 6 out of the 7 subgroups consist of only a single study (k = 1), the between-model comparison is descriptive rather than inferential. The overall model demonstrates a pooled MD of -5.58 (95% CI: -7.13, -4.03). Note: With k = 1 in 6 of 7 subgroups, between-model comparison is descriptive rather than inferential
+
+Animal-derived EVs successfully attenuated cartilage degeneration across diverse hosts, including C57BL/6 mice (MD: -7.50, 95% CI: -9.63 to -5.37), SD rats (MD: -3.98, 95% CI: -5.50 to -2.45), and NZ rabbits (MD: -6.46, 95% CI: -8.65 to -4.27). Efficacy was preserved across both small-rodent and larger-animal hosts, reinforcing the robust translational and cross-species potential of MSC-EV therapies (Figure 10).
+
+Figure 10. Meta-analysis of animal MSC-EV therapeutic efficacy on OARSI scores subgrouped by experimental host species [38-44,46]. Forest plot assessing the impact of different preclinical animal hosts on the therapeutic rescue of EVs, measured via OARSI scores. Subgroups represent the host species utilized across the evaluated studies, which include SD rats, C57BL/6 mice and NZ rabbits. The test for subgroup differences indicates that the choice of experimental host significantly moderates the therapeutic efficacy of the EVs (Q_b(2) = 7.55, p = 0.023). The overall random-effects model reflects a significant therapeutic benefit across all subjects (MD = -5.58, 95% CI: -7.13, -4.03).
+
+Evaluation of publication bias and sensitivity analysis
+
+Potential publication bias and small-study effects were initially evaluated using Egger’s regression test for funnel plot asymmetry. Highly significant asymmetry was detected across both datasets, with human-derived MSC-EVs (z = -7.50, p <0.0001) and animal-derived MSC-EVs (z = -4.56, p <0.0001) demonstrating a departure from symmetry (Figure 11).
+
+Figure 11. Funnel plots assessing publication bias and small-study effects. (A) Funnel plot of 26 preclinical studies evaluating human-derived MSC-EVs on OARSI scores. Visual asymmetry indicates the presence of small-study effects, formally corroborated by Egger's regression test (z = -7.50, p <0.0001). (B) Funnel plot of 8 studies evaluating animal-derived MSC-EVs. Similar asymmetry is observed, confirming significant small-study effects (z = -4.56, p <0.0001)
+
+To rigorously assess whether this potential publication bias invalidated our primary findings, we performed a nonparametric Duval and Tweedie Trim-and-Fill analysis. For both the animal-derived dataset (k = 8) and the human-derived dataset (k = 26), the model estimated 0 missing studies on the right side. Consequently, the imputed models did not alter the original effect sizes, confirming the robustness of the significant therapeutic benefits observed for both animal-derived (MD = -5.58, 95% CI: -7.13 to -4.03) and human-derived EVs (MD = -3.27, 95% CI: -4.66 to -1.88).
+
+To further test the stability of these findings against unpublished null results, Fail-safe N calculations were conducted. The Rosenthal approach indicated that 2,058 and 813 missing studies with an effect size of zero would be required to nullify the statistical significance of the human and animal datasets, respectively. Similarly, the Rosenberg Fail-safe N corroborated this high tolerance, requiring 906 and 485 missing studies to bring the significance level above. Finally, the Orwin approach demonstrated that 26 and 8 missing studies would be needed to reduce the respective average effect sizes exactly in half. Together, these sensitivity analyses indicate that although funnel plot asymmetry is present, the observed protective effects of MSC-EVs on cartilage integrity remain statistically robust and are highly unlikely to be overturned by unpublished negative data.
+
+Discussion
+
+This meta-analysis of 38 preclinical studies provides robust quantitative evidence that mesenchymal stem cell-derived extracellular vesicles (MSC-EVs) substantially attenuate osteoarthritic cartilage degeneration. In human-derived EVs, the pooled MD for OARSI histological scores was -3.27 (95 % CI: -4.66 to -1.88). Animal-derived EVs demonstrated an even more profound structural rescue, yielding an MD of -5.58 (95 % CI: -7.13 to -4.03). Importantly, the magnitude of these effects is clinically meaningful when interpreted against the global burden of disease: 595 million individuals (≈ 7.6 % of the world’s population) lived with osteoarthritis (OA) in 2020, with case numbers increasing by approximately 132 % since 1990 [1]. Rigorous publication-bias assessments support the validity of our pooled estimates: Trim-and-Fill analyses estimated zero missing studies across both datasets, and Rosenthal Fail-Safe N values of 2058 (human) and 813 (animal) establish that these therapeutic effect sizes are highly resistant to the file-drawer problem.
+
+Despite these robust efficacy signals, the pervasive heterogeneity observed across studies (I2 > 84 %) presents a critical translational barrier that must be examined through a pharmacokinetic (PK) and ADMET lens. EV therapies in preclinical OA models currently suffer from unstandardized dosing regimens arbitrarily defined by either protein concentration (ranging from 0.25 to 500 μg mL-1) or particle count (8×107 to 1010 particles). As our meta-regression indicated, arbitrary dosage metrics alone fail to significantly predict treatment efficacy. This is consistent with established intra-articular (IA) PK behaviour: small-molecule drugs and protein biologics injected into the synovial cavity are typically cleared with half-lives of only a few hours, owing to rapid synovial-fluid turnover and extensive lymphatic and venous drainage [37]. Free MSC-EVs delivered IA face the same clearance pressures, compounded by macrophage uptake within the synovial lining. Reporting a dose without defining the joint retention time, cumulative exposure (AUC), or biodistribution is therefore pharmacologically incomplete and obscures meaningful comparisons between studies.
+
+Subgroup analyses revealed distinct pharmacodynamic profiles based on EV cellular origin. While bone marrow-derived EVs (BMSC-EVs) provided highly reproducible benefits across species, adipose-derived EVs (ADSC-EVs) exhibited particularly potent structural rescue, yielding MDs of -3.01 and -8.70 in human and animal subgroups, respectively. This differential efficacy is plausibly driven by variation in EV miRNA cargo (Table S5). Among MSC-derived EV miRNAs, miR-140-5p has been most directly linked to chondroprotection: synovial-MSC exosomes engineered to overexpress miR-140-5p enhanced articular chondrocyte proliferation and migration and prevented OA progression in a rat model, indicating cargo-specific potency rather than a generic vesicle effect [11]. The frequently reported chondroprotective miRNAs (e.g. miR-100-5p, miR-140-5p, miR-26a-5p) converge on extracellular-matrix metabolism and mTOR/autophagy pathways. However, in the absence of standardized potency assays mapping specific cargo concentrations to target engagement, the precise dose-response relationship for any individual miRNA cargo remains elusive across the included studies.
+
+Methodological rigor across the included studies remains a significant vulnerability and likely contributes substantially to the heterogeneity observed in our pooled estimates. Although most studies adhered to the basic characterization triad endorsed by MISEV 2023, morphology by transmission electron microscopy, particle quantification by nanoparticle tracking analysis, and a small panel of tetraspanin markers, MISEV 2023 emphasizes that adequate EV characterization now requires multi-modal verification across morphology, particle metrics, and protein/lipid composition, together with full reporting of separation conditions [7]. Our formal MISEV 2023 adherence assessment of all 38 included studies (Table S2) revealed that no study achieved Complete adherence, and only 18 % reached Substantial adherence; the remaining 82 % were classified as Partially or Limitedly adherent. The two most pronounced reporting deficits, numeric size distribution data (adequate in only 11 % of studies) and procedural reporting clarity covering centrifugation force, temperature, and equipment (adequate in only 13 %), directly compromise reproducibility and prevent meaningful between-study comparison of EV preparations. The omission of exact ultracentrifugation speeds, temperatures, and critical solution compositions in many original reports threatens reproducibility, and the lumping of distinct vesicular populations (small EVs versus larger microvesicles) due to unstandardized isolation inevitably confounds efficacy readouts and downstream regulatory oversight. These findings provide quantitative support for the field-wide call to make MISEV 2023 compliance a standard prerequisite for publication of EV therapeutic studies.
+
+To transition MSC-EVs from promising experimental biologics to regulated advanced therapy medicinal products (ATMPs), the field must pivot toward rigorous ADMET compliance and harmonized manufacturing. EV therapeutics already fall under the regulatory umbrella of established biologics frameworks: in the United States, EV products require Investigational New Drug filings to FDA’s CBER or CDER, and in the European Union the EMA classifies EV-based medicines as ATMPs under Regulation (EC) No 1394/2007, with sponsors filing Clinical Trial Applications via the centralised Clinical Trials Information System and obtaining Committee for Advanced Therapies classification [49-51]. Meeting these standards requires moving beyond simple efficacy readouts toward in vivo imaging that quantifies intra-articular EV half-life and biodistribution, evaluation of hydrogel or scaffolding delivery systems to prolong the therapeutic window, and the establishment of standardized particle-to-biomolecule ratios for dosing. Only through methodological harmonization and integrated PK/PD modelling can MSC-EVs achieve the clinical reliability required for true disease modification in osteoarthritis.
+
+Conclusion
+
+This meta-analysis establishes the definitive structural efficacy of mesenchymal stem cell-derived extracellular vesicles (MSC-EVs) in preclinical osteoarthritis models, demonstrating profound and highly robust cartilage protection across both human- and animal-derived sources. Crucially, rigorous publication bias analyses confirm these therapeutic signals are not artifacts of selective reporting. However, the pervasive methodological heterogeneity observed, specifically the reliance on arbitrary and incomplete dosing metrics, represents a critical translational barrier. The path forward for MSC-EV therapeutics does not lie in accumulating further basic efficacy data, but rather in adopting stringent ADMET and pharmacokinetic frameworks. By standardizing isolation procedures and reporting, harmonizing particle-to-biomolecule dosing ratios, and integrating precise in vivo clearance and biodistribution tracking, the field can successfully transition MSC-EVs from promising experimental biologics to safe, reproducible, and regulatory-approved advanced medicinal products (ATMPs).
+
+Supplementary material
+
+Additional data are available at https://pub.iapchem.org/ojs/index.php/admet/article/view/3328, or from the corresponding author on request.
+
+Ethics approval and consent to participate: Not Applicable
+
+Declaration of competing interests: The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+Author contributions: R.M.: Conceptualization, methodology, data curation, formal analysis, visualization, writing - original draft. R.P.P: Supervision, writing, review, and editing, Formal analysis. C.M.C: Supervision, Investigation, Funding, Formal analysis. All authors read and approved the final manuscript.
+
+Consent to Participate: Not applicable.
+
+Consent to Publish: Not applicable.
+
+Data availability: All data analysed during this study are derived from publicly available sources and are included in this published article and its supplementary information files. Relevant sources are cited within the manuscript.
+
+
+References
+
+[1] Steinmetz J.D. Culbreth G.T. Haile L.M. Rafferty Q. Lo J. Fukutaki K.G. Cruz J.A. Smith A.E. Vollset S.E. Brooks P.M. Cross M. Woolf A.D. Hagins H. Abbasi-Kangevari M. Kopec J.A. . Global, regional, and national burden of osteoarthritis, 1990-2020 and projections to 2050: a systematic analysis for the Global Burden of Disease Study 2021. The Lancet Rheumatology 5 (2023) e508-e522. https://doi.org/10.1016/S2665-9913(23)00163-7 10.1016/S2665-9913(23)00163-7 37675071 PMC10477960
+[2] Langworthy M. Dasa V. Spitzer A.I. Knee osteoarthritis: disease burden, available treatments, and emerging options. Therapeutic Advances in Musculoskeletal Disease 16 (2024). https://doi.org/10.1177/1759720X241273009 10.1177/1759720X241273009 PMC11406648 39290780
+[3] González-Rodríguez A. De Toro F.J. Jorge-Mora A. Fernandez-Pernas P. Rivadulla C.P. Fraga M. Fafián-Labora J.A. Arufe M.C. Targeting osteoarthritis with small extracellular vesicle therapy: potential and perspectives. Frontiers in Bioengineering and Biotechnology 13 (2025) 1570526. https://doi.org/10.3389/FBIOE.2025.1570526 10.3389/FBIOE.2025.1570526 40621210 PMC12226547
+[4] Ehab S. Gaser O.A. Oyouni A.A.A. Kameli N. Alzahrani F. Abdal Dayem A. Engineered extracellular vesicles in arthritic diseases: therapeutic applications and challenges. WIREs Nanomedicine and Nanobiotechnology 17 (2025) e70031. https://doi.org/10.1002/WNAN.70031 10.1002/WNAN.70031 40830968 PMC12365376
+[5] Shimomura K. Wong K.L. Saseendar S. Muthu S. Concaro S. Fernandes T.L. Mahmood A. Exploring the potential of mesenchymal stem/stromal cell-derived extracellular vesicles as cell-free therapy for osteoarthritis: a narrative review. Journal of Cartilage & Joint Preservation 4 (2024) 100184. https://doi.org/10.1016/J.JCJP.2024.100184 10.1016/J.JCJP.2024.100184
+[6] René C.A. Parks R.J. Bioengineering extracellular vesicle cargo for optimal therapeutic efficiency. Molecular Therapy Methods & Clinical Development 32 (2024) 101259. https://doi.org/10.1016/j.omtm.2024.101259 10.1016/j.omtm.2024.101259 38770107 PMC11103572
+[7] Welsh J.A. Goberdhan D.C.I. O'Driscoll L. Buzas E.I. Blenkiron C. Bussolati B. . Minimal information for studies of extracellular vesicles (MISEV2023): from basic to advanced approaches. Journal of Extracellular Vesicles 13 (2024) e12404. https://doi.org/10.1002/JEV2.12404 10.1002/JEV2.12404 38326288 PMC10850029
+[8] Page M.J. McKenzie J.E. Bossuyt P.M. Boutron I. Hoffmann T.C. Mulrow C.D. Shamseer L. Tetzlaff J.M. Akl E.A. Brennan S.E. Chou R. Glanville J. Grimshaw J.M. Hróbjartsson A. Lalu M.M. Li T. Loder E.W. Mayo-Wilson E. McDonald S. McGuinness L.A. Stewart L.A. Thomas J. Tricco A.C. Welch V.A. Whiting P. Moher D. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. BMJ 372 (2021) n71. https://doi.org/10.1136/bmj.n71 10.1136/bmj.n71 33782057 PMC8005924
+[9] Haddaway N.R. Page M.J. Pritchard C.C. McGuinness L.A. PRISMA2020: an R package and Shiny app for producing PRISMA 2020-compliant flow diagrams, with interactivity for optimised digital transparency and open synthesis. Campbell Systematic Reviews 18 (2022) e1230. https://doi.org/10.1002/CL2.1230 10.1002/CL2.1230 36911350 PMC8958186
+[10] Mukherjee Riya Chang Chung Ming Pandey Ramendra Pati . Comparative Evaluation of Human and Animal MSC-Derived Extracellular Vesicles for Osteoarthritis Treatment. PROSPERO 2025 CRD420251081490. Available from https://www.crd.york.ac.uk/PROSPERO/view/CRD420251081490.
+[11] Hooijmans C.R. Rovers M.M. de Vries R.B. . SYRCLE’s risk of bias tool for animal studies. BMC Med Res Methodol 14, 43 (2014). https://doi.org/10.1186/1471-2288-14-43. 10.1186/1471-2288-14-43 PMC4230647 24667063
+[12] Zhu Y. Wang Y. Zhao B. Niu X. Hu B. Li Q. Zhang J. Ding J. Chen Y. Wang Y. Comparison of exosomes secreted by induced pluripotent stem cell-derived mesenchymal stem cells and synovial membrane-derived mesenchymal stem cells for the treatment of osteoarthritis. Stem Cell Research & Therapy 8 (2017) 64. https://doi.org/10.1186/s13287-017-0510-9 10.1186/s13287-017-0510-9 28279188 PMC5345222
+[13] Tao S.C. Yuan T. Zhang Y.L. Yin W.J. Guo S.C. Zhang C.Q. Exosomes derived from miR-140-5p-overexpressing human synovial mesenchymal stem cells enhance cartilage tissue regeneration and prevent osteoarthritis of the knee in a rat model. Theranostics 7 (2017) 180-195. https://doi.org/10.7150/thno.17133 10.7150/thno.17133 28042326 PMC5196895
+[14] Wang Y. Yu D. Liu Z. Zhou F. Dai J. Wu B. Zhou J. Heng B.C. Zou X.H. Ouyang H. Liu H. Exosomes from embryonic mesenchymal stem cells alleviate osteoarthritis through balancing synthesis and degradation of cartilage extracellular matrix. Stem Cell Research & Therapy 8 (2017) 189. https://doi.org/10.1186/s13287-017-0632-0 10.1186/s13287-017-0632-0 28807034 PMC5556343
+[15] Wu J. Kuang L. Chen C. Yang J. Zeng W.N. Li T. Chen H. Huang S. Fu Z. Li J. Liu R. Ni Z. Chen L. Yang L. miR-100-5p-abundant exosomes derived from infrapatellar fat pad MSCs protect articular cartilage and ameliorate gait abnormalities via inhibition of mTOR in osteoarthritis. Biomaterials 206 (2019) 87-100. https://doi.org/10.1016/j.biomaterials.2019.03.022 10.1016/j.biomaterials.2019.03.022 30927715
+[16] Woo C.H. Kim H.K. Jung G.Y. Jung Y.J. Lee K.S. Yun Y.E. Han J. Lee J. Kim W.S. Choi J.S. Yang S. Park J.H. Jo D.G. Cho Y.W. Small extracellular vesicles from human adipose-derived stem cells attenuate cartilage degeneration. Journal of Extracellular Vesicles 9 (2020) 1735249. https://doi.org/10.1080/20013078.2020.1735249 10.1080/20013078.2020.1735249 32284824 PMC7144299
+[17] Zhou X. Liang H. Hu X. An J.N. Ding S. Yu S. Liu C. Li F. Xu Y. BMSC-derived exosomes from congenital polydactyly tissue alleviate osteoarthritis by promoting chondrocyte proliferation. Cell Death Discovery 6 (2020) 96. https://doi.org/10.1038/s41420-020-00374-z 10.1038/s41420-020-00374-z 33303743 PMC7730395
+[18] Xu X. Liang Y. Li X. Ouyang K. Wang M. Cao T. Li W. Liu J. Xiong J. Li B. Xia J. Wang D. Duan L. Exosome-mediated delivery of kartogenin for chondrogenesis of synovial fluid-derived mesenchymal stem cells and cartilage regeneration. Biomaterials 269 (2021) 120539. https://doi.org/10.1016/J.BIOMATERIALS.2020.120539 10.1016/J.BIOMATERIALS.2020.120539 33243424
+[19] Wang K. Li F. Yuan Y. Shan L. Cui Y. Qu J. Lian F. Synovial mesenchymal stem cell-derived EV-packaged miR-31 downregulates histone demethylase KDM2A to prevent knee osteoarthritis. Molecular Therapy: Nucleic Acids 22 (2020) 1078-1091. https://doi.org/10.1016/j.omtn.2020.09.014 10.1016/j.omtn.2020.09.014 33294294 PMC7691165
+[20] Tang S. Chen P. Zhang H. Weng H. Fang Z. Chen C. Peng G. Gao H. Hu K. Chen J. Chen L. Chen X. Comparison of curative effect of human umbilical cord-derived mesenchymal stem cells and their small extracellular vesicles in treating osteoarthritis. International Journal of Nanomedicine 16 (2021) 8185-8202. https://doi.org/10.2147/IJN.S336062 10.2147/IJN.S336062 34938076 PMC8687685
+[21] Fazaeli H. Kalhor N. Naserpour L. Davoodi F. Sheykhhasan M. Hosseini S.K.E. Rabiei M. Sheikholeslami A. A comparative study on the effect of exosomes secreted by mesenchymal stem cells derived from adipose and bone marrow tissues in the treatment of osteoarthritis-induced mouse model. BioMed Research International 2021 (2021) 9688138. https://doi.org/10.1155/2021/9688138 10.1155/2021/9688138 34616850 PMC8490078
+[22] Jin Y. Xu M. Zhu H. Dong C. Ji J. Liu Y. Deng A. Gu Z. Therapeutic effects of bone marrow mesenchymal stem cells-derived exosomes on osteoarthritis. Journal of Cellular and Molecular Medicine 25 (2021) 9281-9294. https://doi.org/10.1111/JCMM.16860 10.1111/JCMM.16860 34448527 PMC8500984
+[23] Lee K.S. Lee J. Kim H.K. Yeom S.H. Woo C.H. Jung Y.J. Yun Y.E. Park S.Y. Han J. Kim E. Sul J.H. Jung J.M. Park J.H. Choi J.S. Cho Y.W. Jo D.-G. Extracellular vesicles from adipose tissue-derived stem cells alleviate osteoporosis through osteoprotegerin and miR-21-5p. Journal of Extracellular Vesicles 10 (2021) e12152. https://doi.org/10.1002/jev2.12152 10.1002/jev2.12152 34596354 PMC8485335
+[24] Duan A. Shen K. Li B. Li C. Zhou H. Kong R. Shao Y. Qin J. Yuan T. Ji J. Guo W. Wang X. Xue T. Li L. Huang X. Sun Y. Cai Z. Liu W. Liu F. Extracellular vesicles derived from LPS-preconditioned human synovial mesenchymal stem cells inhibit extracellular matrix degradation and prevent osteoarthritis of the knee in a mouse model. Stem Cell Research & Therapy 12 (2021) 427. https://doi.org/10.1186/s13287-021-02507-2 10.1186/s13287-021-02507-2 34321073 PMC8317426
+[25] Yan L. Liu G. Wu X. Exosomes derived from umbilical cord mesenchymal stem cells in mechanical environment show improved osteochondral activity via upregulation of LncRNA H19. Journal of Orthopaedic Translation 26 (2021) 111-120. https://doi.org/10.1016/j.jot.2020.03.005 10.1016/j.jot.2020.03.005 33437630 PMC7773952
+[26] Liu Y. Zeng Y. Si H.B. Tang L. Xie H.Q. Shen B. Exosomes derived from human urine-derived stem cells overexpressing miR-140-5p alleviate knee osteoarthritis through downregulation of VEGFA in a rat model. American Journal of Sports Medicine 50 (2022) 1088-1105. https://doi.org/10.1177/03635465221073991 10.1177/03635465221073991 35179989
+[27] Li K. Yan G. Huang H. Zheng M. Ma K. Cui X. Lu D. Zheng L. Zhu B. Cheng J. Zhao J. Anti-inflammatory and immunomodulatory effects of the extracellular vesicles derived from human umbilical cord mesenchymal stem cells on osteoarthritis via M2 macrophages. Journal of Nanobiotechnology 20 (2022) 38. https://doi.org/10.1186/S12951-021-01236-1 10.1186/S12951-021-01236-1 35057811 PMC8771624
+[28] Hsueh Y.H. Buddhakosai W. Le P.N. Tu Y.Y. Huang H.C. Lu H.E. Chen W.L. Tu Y.K. Therapeutic effect of induced pluripotent stem cell-derived extracellular vesicles in an in vitro and in vivo osteoarthritis model. Journal of Orthopaedic Translation 38 (2023) 141-155. https://doi.org/10.1016/j.jot.2022.10.004 10.1016/j.jot.2022.10.004 36381245 PMC9649362
+[29] Zhou H. Shen X. Yan C. Xiong W. Ma Z. Tan Z. Wang J. Li Y. Liu J. Duan A. Liu F. Extracellular vesicles derived from human umbilical cord mesenchymal stem cells alleviate osteoarthritis of the knee in mice model by interacting with METTL3 to reduce m6A of NLRP3 in macrophage. Stem Cell Research & Therapy 13 (2022) 322. https://doi.org/10.1186/S13287-022-03005-9 10.1186/S13287-022-03005-9 35842714 PMC9288728
+[30] Chen P. Tang S. Gao H. Zhang H. Chen C. Fang Z. Peng G. Weng H. Chen A. Zhang C. Qiu Z. Li S. Chen J. Chen L. Chen X. Wharton's jelly mesenchymal stem cell-derived small extracellular vesicles as natural nanoparticles to attenuate cartilage injury via microRNA regulation. International Journal of Pharmaceutics 623 (2022) 121952. https://doi.org/10.1016/j.ijpharm.2022.121952 10.1016/j.ijpharm.2022.121952 35753534
+[31] Zhao S. Xiu G. Wang J. Wen Y. Lu J. Wu B. Wang G. Yang D. Ling B. Du D. Xu J. Engineering exosomes derived from subcutaneous fat MSCs specially promote cartilage repair as miR-199a-3p delivery vehicles in osteoarthritis. Journal of Nanobiotechnology 21 (2023) 220. https://doi.org/10.1186/s12951-023-02086-9 10.1186/s12951-023-02086-9 37736726 PMC10515007
+[32] Chang L.H. Wu S.C. Chen C.H. Chen J.W. Huang W.C. Wu C.W. Lin Y.S. Chen Y.J. Chang J.K. Ho M.L. Exosomes derived from hypoxia-cultured human adipose stem cells alleviate articular chondrocyte inflammaging and post-traumatic osteoarthritis progression. International Journal of Molecular Sciences 24 (2023) 13414. https://doi.org/10.3390/ijms241713414 10.3390/ijms241713414 37686220 PMC10487932
+[33] Cao H. Chen M. Cui X. Liu Y. Liu Y. Deng S. Yuan T. Fan Y. Wang Q. Zhang X. Cell-free osteoarthritis treatment with sustained-release of chondrocyte-targeting exosomes from umbilical cord-derived mesenchymal stem cells to rejuvenate aging chondrocytes. ACS Nano 17 (2023) 13358-13376. https://doi.org/10.1021/acsnano.3c01612 10.1021/acsnano.3c01612 37439514
+[34] Fu Y. Cui S. Zhou Y. Qiu L. Dental pulp stem cell-derived exosomes alleviate mice knee osteoarthritis by inhibiting TRPV4-mediated osteoclast activation. International Journal of Molecular Sciences 24 (2023) 4926. https://doi.org/10.3390/ijms24054926 10.3390/ijms24054926 36902356 PMC10003468
+[35] Huang C. Zhao Y. Lin S. Li L. Guo X. Yumiseba S. Yang J. Hariri R. Ye Q. He S. Kilcoyne A. Characterization of human placenta-derived exosome (pExo) as a potential osteoarthritis disease modifying therapeutic. Arthritis Research & Therapy 25 (2023) 218. https://doi.org/10.1186/s13075-023-03219-z 10.1186/s13075-023-03219-z 38017556 PMC10683254
+[36] Pan X. Li X. Zhang L. Wu F. Zhang Q. Xu S. Shen C. Liang J. Pan R. Umbilical cord mesenchymal stem cells relieve osteoarthritis in rats through immunoregulation and inhibition of chondrocyte apoptosis. Scientific Reports 13 (2023) 15779. https://doi.org/10.1038/s41598-023-42349-x 10.1038/s41598-023-42349-x 37697034 PMC10495383
+[37] Yang H. Zhou Y. Ying B. Dong X. Qian Q. Gao S. Effects of human umbilical cord mesenchymal stem cell-derived exosomes in the rat osteoarthritis models. Stem Cells Translational Medicine 13 (2024) 803-811. https://doi.org/10.1093/stcltm/szae031 10.1093/stcltm/szae031 38913985 PMC11328936
+[38] Figueroa-Valdés A.I. Luz-Crawford P. Herrera-Luna Y. Georges-Calderón N. García C. Tobar H.E. Araya M.J. Matas J. Donoso-Meneses D. de la Fuente C. Cuenca J. Parra E. Lillo F. Varela C. Cádiz M.I. Vernal R. Ortloff A. Nardocci G. Castañeda V. Alcayaga-Miranda … F. . Clinical-grade extracellular vesicles derived from umbilical cord mesenchymal stromal cells: preclinical development and first-in-human intra-articular validation as therapeutics for knee osteoarthritis. Journal of Nanobiotechnology 23 (2025) 13. https://doi.org/10.1186/s12951-024-03088-x 10.1186/s12951-024-03088-x 39806427 PMC11730155
+[39] Li P. Lv S. Jiang W. Si L. Liao B. Zhao G. Xu Z. Wang L. Zhang J. Wu H. Peng Q. Li Z. Qi L. Chi G. Li Y. Exosomes derived from umbilical cord mesenchymal stem cells protect cartilage and regulate the polarization of macrophages in osteoarthritis. Annals of Translational Medicine 10 (2022) 976. https://doi.org/10.21037/ATM-22-3912 10.21037/ATM-22-3912 36267713 PMC9577719
+[40] Cosenza S. Ruiz M. Toupet K. Jorgensen C. Noël D. Mesenchymal stem cells derived exosomes and microparticles protect cartilage and bone from degradation in osteoarthritis. Scientific Reports 7 (2017) 16214. https://doi.org/10.1038/s41598-017-15376-8 10.1038/s41598-017-15376-8 29176667 PMC5701135
+[41] Li J. Ding Z. Li Y. Wang W. Wang J. Yu H. Liu A. Miao J. Chen S. Wu T. Cao Y. BMSCs-derived exosomes ameliorate pain via abrogation of aberrant nerve invasion in subchondral bone in lumbar facet joint osteoarthritis. Journal of Orthopaedic Research 38 (2020) 670-679. https://doi.org/10.1002/jor.24497 10.1002/jor.24497 31608495
+[42] Zhang J. Rong Y. Luo C. Cui W. Bone marrow mesenchymal stem cell-derived exosomes prevent osteoarthritis by regulating synovial macrophage polarization. Aging 12 (2020) 25138-25152. https://doi.org/10.18632/aging.104110 10.18632/aging.104110 33350983 PMC7803581
+[43] Jin Y. Ren Z. Qi S. Exosomal miR-9-5p secreted by bone marrow-derived mesenchymal stem cells alleviates osteoarthritis by inhibiting syndecan-1. Cell and Tissue Research 381 (2020) 99-114. https://doi.org/10.1007/s00441-020-03193-x 10.1007/s00441-020-03193-x 32377874
+[44] He L. He T. Xing J. Zhou Q. Fan L. Liu C. Chen Y. Wu D. Tian Z. Liu B. Rong L. Bone marrow mesenchymal stem cell-derived exosomes protect cartilage damage and relieve knee osteoarthritis pain in a rat model of osteoarthritis. Stem Cell Research & Therapy 11 (2020) 276. https://doi.org/10.1186/s13287-020-01781-w 10.1186/s13287-020-01781-w 32650828 PMC7350730
+[45] Xu H. Xu B. BMSC-derived exosomes ameliorate osteoarthritis by inhibiting pyroptosis of cartilage via delivering miR-326 targeting HDAC3 and STAT1/NF-κB p65 to chondrocytes. Mediators of Inflammation 2021 (2021) 9972805. https://doi.org/10.1155/2021/9972805 10.1155/2021/9972805 34764819 PMC8577926
+[46] Hu J. Shi Z.S. Liu X.Z. Cai H.T. Yang A.F. Sun D.M. Xu L.L. Yang Y. Li Z.H. Exosomes derived from Runx2-overexpressing BMSCs enhance cartilage tissue regeneration and prevent osteoarthritis of the knee in a rabbit model. Stem Cells International 2022 (2022) 6865041. https://doi.org/10.1155/2022/6865041 10.1155/2022/6865041 39282499 PMC11401735
+[47] Zhao J. Sun Y. Sheng X. Xu J. Dai G. He R. Jin Y. Liu Z. Xie Y. Wu T. Cao Y. Hu J. Duan C. Hypoxia-treated adipose mesenchymal stem cell-derived exosomes attenuate lumbar facet joint osteoarthritis. Molecular Medicine 29 (2023) 118. https://doi.org/10.1186/s10020-023-00709-3 10.1186/s10020-023-00709-3 37670256 PMC10478461
+[48] Shen X. Qin J. Wei Z. Liu F. Bone marrow mesenchymal stem cell exosome-derived lncRNA TUC339 influences the progression of osteoarthritis by regulating synovial macrophage polarization and chondrocyte apoptosis. Biomedicine & Pharmacotherapy 167 (2023) 115488. https://doi.org/10.1016/j.biopha.2023.115488 10.1016/j.biopha.2023.115488 37729727
+[49] Li B. Shen E. Wu Z. Qi H. Liu D. Jiang X. BMSC-derived exosomes attenuate rat osteoarthritis by regulating macrophage polarization through PINK1/Parkin signaling pathway. Cartilage 15 (2024) 1-10. https://doi.org/10.1177/19476035241245805 10.1177/19476035241245805.PMC11569690 38641989
+[50] Yang Y. Zhu Z. Gao R. Yuan J. Zhang J. Li H. Xie Z. Wang Y. Controlled release of MSC-derived small extracellular vesicles by an injectable Diels-Alder crosslinked hyaluronic acid/PEG hydrogel for osteoarthritis improvement. Acta Biomaterialia 128 (2021) 163-174. https://doi.org/10.1016/j.actbio.2021.04.003 10.1016/j.actbio.2021.04.003 33862283
+[51] Stawarska A. Bamburowicz-Klimkowska M. Rundén-Pran E. Dusinska M. Cimpan M.R. Rios-Mondragon I. Grudzinski I.P. Extracellular vesicles as next-generation diagnostics and advanced therapy medicinal products. International Journal of Molecular Sciences 25 (2024) 6533. https://doi.org/10.3390/ijms25126533 10.3390/ijms25126533 38928240 PMC11204223

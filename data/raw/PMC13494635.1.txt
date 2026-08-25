@@ -1,0 +1,217 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: J Natl Cancer Cent
+Journal ID: J Natl Cancer Cent
+NLM Journal ID: 9918334970706676
+
+Journal of the National Cancer Center
+
+ISSN: 2096-8663
+EISSN: 2667-0054
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13494635
+PMID: 42630803
+DOI: 10.1016/j.jncc.2026.06.007
+Article ID: S2667-0054(26)00086-4
+Article version: 1
+Subjects: Perspective
+
+Accelerating the clinical translation of bioengineered anticancer therapeutics
+
+Zhao Guo a b †
+Jiang Yale a b †
+Wang Caie c †
+Wang Shuhang wangshuhang@cicams.ac.cn a b ⁎
+Li Ning lining@cicams.ac.cn a b ⁎
+a Clinical Trial Center, National Cancer Center/National Clinical Research Center for Cancer/Cancer Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College, Beijing, China
+b Clinical Trial Center, National Cancer Center/National Clinical Research Center for Cancer/Cancer Hospital of Chinese Academy of Medical Sciences Langfang Campus, Langfang, China
+c Department of Pharmacy, the First Affiliated Hospital of Henan University of Science and Technology, Luoyang, China
+⁎ Corresponding authors. wangshuhang@cicams.ac.cnlining@cicams.ac.cn† These authors contributed equally to this work.
+
+Publication date: 2026 Aug
+Electronic publication date: 2026 Jun 24
+Volume: 6
+Issue: 4
+First page: 323
+Last page: 328
+Received 2026 Apr 13; Revised 2026 Jun 18; Accepted 2026 Jun 23
+Copyright: © 2026 Chinese National Cancer Center. Published by Elsevier B.V.
+Copyright year: 2026
+Copyright holder: Chinese National Cancer Center
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+==============================
+1 Introduction
+
+For decades, anticancer drug development has followed a linear, siloed trajectory, from target identification and molecular screening to preclinical animal testing and sequential clinical evaluation.1 This fragmented pipeline has contributed to a persistently high attrition rate of nearly 90% for oncology candidates, a figure that has remained largely unchanged over the past two decades despite major advances in targeted therapy and immuno-oncology.2 The root cause of this inefficiency lies not solely in the biological complexity of the tumor microenvironment (TME), but in the systemic disconnection between stages of the translational pathway: molecular design is rarely informed by in vivo delivery performance, preclinical models poorly predict clinical outcomes, and therapeutic innovation often outpaces the regulatory and manufacturing frameworks required for clinical deployment.3
+
+As cross-disciplinary integration becomes the defining feature of next-generation biomedicine, we argue that overcoming this translational deadlock requires moving beyond siloed, incremental innovation toward a fully integrated, systems-level therapeutic development framework.4 Such a framework emerges from the synergistic convergence of three core bioengineering pillars: Artificial intelligence (AI)-driven de novo molecular design and diagnostic intelligence, which enhance druggability and target specificity from the outset; synthetic biology-enabled intelligent living therapeutics, which enable precise spatiotemporal control of therapeutic activity in vivo; and nanotechnology-based advanced delivery systems, which overcome TME barriers to ensure targeted drug accumulation. These are complemented by microphysiological organ-on-a-chip platforms and AI digital twins that are reshaping preclinical and clinical validation, alongside adaptive regulatory pathways and automated Chemistry, Manufacturing, and Controls (CMC) processes that close the loop from bench to bedside.
+
+In this paper, we not only highlight the latest advances across each bioengineering domain in addressing translational bottlenecks, but more importantly, we systematically examine the synergistic mechanisms that integrate these technologies, offer critical reflections on the limitations of current paradigms, and propose an actionable, end-to-end translational roadmap designed to accelerate the clinical adoption of next-generation anticancer therapeutics.
+
+2 De novo design of small molecules and biomacromolecules for cancer therapy
+
+The high attrition of anticancer drug candidates originates first from the inherent limitations of the traditional discovery paradigm.5 To address this root-cause bottleneck, algorithmic innovation represented by generative AI has inverted the linear trial-and-error model, enabling de novo design of therapeutic molecules with predefined druggable properties, which forms the foundational cornerstone of the integrated translational roadmap we propose.6
+
+Traditional anticancer drug discovery relies on high-throughput screening of natural or synthetic compound libraries, a process that typically takes 3-5 years for lead optimization, is limited by the structural diversity of existing libraries, and consumes massive financial and human resources.7 In contrast, generative AI and deep machine learning enable the de novo design of therapeutics with programmable specificity and optimized pharmacodynamics, compressing lead optimization timelines from years to months.8 A milestone in this shift is the emergence of foundational biological models such as Evo 2, a DNA foundation model trained on 9.3 trillion nucleotides spanning diverse genomes. This scale of training enables the model to decode evolutionary patterns, predict pathogenic variants, and engineer de novo genetic sequences with tailored therapeutic functions.9
+
+In protein and peptide engineering, models such as PepMimic have achieved notable advances by translating known protein-protein interaction interfaces into highly stable, target-specific peptide topologies.10 Such algorithmic strategies not only accelerate development timelines, but also expand the druggable landscape by targeting previously inaccessible protein interaction interfaces. Beyond biologics, generative AI has also accelerated the clinical entry of highly selective small molecules. A defining case is ISM3412, an orally bioavailable Methionine adenosyltransferase 2A inhibitor currently being evaluated in a global Phase 1 trial (NCT06414460). Designed to exploit synthetic lethality in methylthioadenosine phosphorylase (MTAP)-deleted solid tumors, ISM3412 was developed using a generative chemistry engine that rapidly optimized its structure for enhanced binding affinity and pharmacokinetic properties.11 Designed to exploit synthetic lethality in MTAP-deleted solid tumors, ISM3412 was developed using a generative chemistry engine that rapidly optimized its structure for enhanced binding affinity and pharmacokinetic properties, entering clinical trials only 18 months after target identification.
+
+Currently, parallel progress in de novo protein design has expanded the repertoire of engineered modalities in clinical oncology. Innovations in the rational design of antibodies and other binding proteins have enabled the development of highly specific agents, such as antibody-drug conjugates (ADCs) and targeted protein degraders (TPDs). ADCs exemplify the power of protein engineering to combine the precise targeting of monoclonal antibodies with the potent cytotoxicity of small-molecule payloads, enabling selective tumor cell killing while minimizing systemic exposure. Similarly, TPDs harness the cell’s own degradation machinery to eliminate oncogenic proteins with catalytic efficiency, an approach that overcomes limitations of traditional occupancy-driven inhibition and expands the druggable proteome. Together, these two modalities underscore the expanding therapeutic utility of engineered proteins in precision oncology.12,13
+
+Parallel advances in AI are reshaping clinical validation and patient stratification, a critical determinant of clinical trial success. The efficacy of targeted therapeutics is highly dependent on precise diagnostic characterization and cohort selection. One example is the nuclei.io digital pathology platform, which integrates human-in-the-loop active learning with real-time pathologist feedback. This platform markedly improves diagnostic accuracy and efficiency in detecting complex histopathological features, such as colorectal cancer metastasis in lymph nodes, enabling more precise patient stratification for clinical trials.14
+
+Despite transformative progress, AI-driven drug development faces unresolved translational challenges. First, current generative AI models are mostly trained on publicly available data from successful preclinical and clinical studies, creating inherent survival bias that limits their ability to predict rare but severe off-target toxicities, a leading cause of clinical failure.15 Second, most AI-designed molecules to date are structural optimizations of known targets; their ability to develop de novo therapeutics for truly “undruggable” targets (e.g., transcription factors, non-enzymatic scaffold proteins) remains unproven in clinical settings.16 Third, there is still no AI-designed anticancer drug approved for marketing, and whether AI-generated candidates have a lower clinical attrition rate than those from traditional screening paradigms requires long-term, large-scale clinical validation.17 Finally, AI-driven diagnostic platforms face challenges in multi-center reproducibility and regulatory standardization, limiting their widespread adoption in global clinical trials.18
+
+3 Synthetic biology-driven new anticancer drug development
+
+While AI-driven rational design solves the problem of “what to deliver” by optimizing the structure and activity of therapeutic payloads, it cannot address the core challenge of “when and where to act” in the complex in vivo environment. This gap is precisely filled by synthetic biology, which endows therapeutic systems with autonomous, spatiotemporally controlled execution capabilities through genetic circuit engineering, bridging the gap between in silico design and in vivo efficacy.19
+
+Conventional adoptive cell therapies, such as standard chimeric antigen receptor (CAR)-T cells, have achieved curative effects in hematological malignancies, but face substantial challenges in solid tumors and widespread clinical adoption, primarily due to severe “on-target, off-tumor” toxicities and heterogeneous tumor antigen expression.20 By incorporating principles of Boolean logic into living cells, bioengineers are now developing intelligent immune effectors endowed with autonomous decision-making capabilities.21
+
+The clinical translational potential of this strategy was validated by interim Phase 1 results for SENTI-202, a first-in-class, off-the-shelf CAR-natural killer (NK) cell therapy granted Food and Drug Administration (FDA) Breakthrough Therapy designation and presented at the 2025 American Association for Cancer Research Annual Meeting. Traditional CD33-targeted CAR-T therapies for acute myeloid leukemia (AML) have shown clinical efficacy, but are limited by severe on-target, off-tumor toxicity against healthy hematopoietic stem cells, leading to prolonged myelosuppression and high treatment-related mortality. In contrast, SENTI-202’s dual-logic genetic circuit addresses two core limitations of conventional CAR-T simultaneously: an “OR” gate recognizing either CD33 or Fms-like tyrosine kinase 3 antigens to overcome tumor heterogeneity, coupled with a “NOT” gate targeting endomucin to actively spare healthy hematopoietic stem cells from immune-mediated destruction. This design enabled a 57% complete remission rate in patients with relapsed or refractory AML, with no dose-limiting toxicities observed (NCT06325748).
+
+Beyond immune cell engineering, synthetic biology is increasingly harnessing bacterial systems to circumvent physical barriers within the tumor microenvironment. The Coordinated Activity of Prokaryote and Picornavirus for Safe Intracellular Delivery (CAPPSID) platform exemplifies this innovative paradigm. By engineering tumor-homing bacteria to serve as synthetic delivery vehicles, the CAPPSID system enables oncolytic picornaviruses to evade host neutralizing antibodies and achieve localized release within the tumor core. This prokaryote-viral cooperation overcomes the systemic immune clearance that has historically limited the efficacy of oncolytic virotherapy.22
+
+Synthetic biology-enabled therapeutics face key translational barriers that limit their clinical scalability. First, while logic-gated cell therapies have shown exceptional safety and efficacy in hematological malignancies, their performance in solid tumors is severely constrained by the immunosuppressive TME, which drives rapid engineering-cell exhaustion and loss of effector function.23 Second, the long-term stability of synthetic genetic circuits in vivo remains unproven; genomic integration of circuit components carries a risk of insertional mutagenesis, and potential loss of logic control may lead to delayed, unpredictable toxicities.24 Third, off-the-shelf allogeneic cell therapies still carry a latent risk of host-versus-graft disease, which has not been fully evaluated in long-term follow-up studies.25 Finally, compared to traditional small molecules, synthetic biology therapeutics have vastly more complex CMC requirements, with high production costs that limit patient accessibility and widespread clinical adoption.26
+
+4 Advanced anticancer drug delivery through nanotechnology
+
+Even with optimally designed therapeutic payloads and intelligent execution systems, the clinical efficacy of anticancer agents is ultimately constrained by the final translational bottleneck: efficient penetration and retention within the TME.27 The TME functions as a fortified biological and physical barrier, characterized by dense extracellular matrix networks, elevated interstitial fluid pressure, and active immunosuppressive and drug clearance mechanisms.28 Nanotechnology-based delivery systems are engineered to overcome these multi-layered barriers, ensuring that precisely designed therapeutics can reach their target sites and exert their full efficacy.29,30
+
+Recent bioengineering studies have uncovered sophisticated active defense mechanisms deployed by tumors to intercept systemically delivered therapeutics. Notably, tumor-derived small extracellular vesicles (sEV) act as a biological decoy system, intercepting and binding to lipid nanoparticles (LNPs) before they can reach cancer cells. These intercepted LNPs are subsequently cleared by the reticuloendothelial system, substantially reducing therapeutic accumulation. In an elegant engineering countermeasure, researchers co-packaged siRNA targeting Rab27a, a key regulator of sEV secretion, alongside therapeutic mRNA within the same LNP. This dual-delivery strategy effectively dismantled the tumor’s sEV-mediated defense network and enhanced therapeutic accumulation at the tumor site.31
+
+Parallel strategies have emerged to address physical ECM barriers. Mechano-responsive chemotherapeutic approaches, including hyperbaric oxygen therapy-responsive nanorobots, have demonstrated considerable promise.32 These systems are engineered to selectively release payloads under high oxygen tension, modulating the dynamic balance between reactive oxygen species and matrix metalloproteinases.33 Complementing these experimental advances, a large-scale machine learning analysis of preclinical nanoparticle data has yielded predictive algorithms that map physicochemical properties to specific in vivo biological fates, providing a computational framework to guide the rational design of next-generation nanomedicines.34
+
+Despite decades of research, only a handful of nanomedicines have been approved for clinical oncology, with most preclinical candidates failing to translate to clinical benefit. A core limitation is that most nanomedicine designs are optimized in immunocompetent murine models, which fail to recapitulate the high inter- and intra-patient TME heterogeneity seen in human cancers, leading to poor predictability of preclinical results.35 Second, LNP-based delivery systems still face significant off-target accumulation in the liver and spleen, driving dose-limiting systemic toxicities, and repeated administration can trigger anti-carrier immune responses that reduce therapeutic efficacy.36 Third, machine learning models for nanomedicine design are mostly trained on single-center, small-sample preclinical data, with limited multi-center standardized validation, resulting in poor model generalizability across different tumor types and patient populations.37 Finally, the scalable manufacturing of stimuli-responsive nanomedicines faces challenges in batch-to-batch consistency, which hinders regulatory approval and commercialization.38
+
+5 Future perspectives and translational call-to-action
+
+The clinical success of next-generation bioengineered anticancer therapeutics will not be determined by any single technological breakthrough. Rather, it will depend on whether AI-enabled design, synthetic biology, nanotechnology, human-relevant validation systems, adaptive trials, scalable CMC, and lifecycle evidence generation can be integrated into a coherent translational ecosystem. The central challenge is therefore no longer simply how to create more sophisticated therapeutic platforms, but how to connect design, delivery, validation, regulation, manufacturing and post-market learning into a closed-loop development pathway.
+
+5.1 Treating the TME as a design variable rather than a passive barrier
+
+A major shift required for successful translation is to treat the TME as a dynamic design variable. Immune-checkpoint expression and spatial organization directly influence target selection, delivery strategy, safety engineering and clinical stratification. PD-L1 expression, for example, can provide an actionable therapeutic axis but also reflects adaptive immunosuppression and heterogeneous resistance.39 Similarly, TGF-β signalling promotes immune exclusion, stromal remodeling and fibrotic barriers that can limit cell therapy infiltration and nanomedicine penetration.40 CD276 (B7-H3) is attractive for CAR-, antibody- and nanoparticle-based targeting because of its tumour enrichment, but heterogeneous expression and possible normal-tissue distribution require spatially restricted delivery or logic-gated recognition. CD47, a macrophage-facing “do not eat me” signal, provides an innate immune checkpoint, yet systemic blockade can cause hematological toxicity, highlighting the need for localized or combination strategies.41
+
+These examples illustrate a broader principle: immune checkpoints should not be viewed only as drug targets, but also as state variables that determine whether a bioengineered therapy can function safely in vivo. Future therapeutic design should therefore integrate checkpoint expression, stromal architecture, vascular access, antigen heterogeneity and immune exclusion at the earliest stage of platform development. In this framework, AI can help predict permissive and resistant TME states, synthetic circuits can restrict activation to favorable spatial contexts, and nanocarriers can be engineered to remodel or bypass specific physical and immunological barriers.
+
+5.2 Integrated preclinical validation with new approach methodologies
+
+The traditional reliance on murine models for preclinical validation is a key contributor to the poor clinical predictability of anticancer candidates, as murine models fail to recapitulate the genetic, histological, and immunological complexity of human tumors.42 Driven by shifting global policy frameworks, new approach methodologies (NAMs) including microphysiological organ-on-a-chip systems, patient-derived organoids, and in silico AI models are rapidly replacing mandatory animal testing in preclinical development.43 In the United States, the FDA Modernization Act 2.0, alongside legislative momentum toward Modernization Act 3.0 in 2025 and 2026, explicitly authorizes and encourages the use of microphysiological systems, organoids, and in silico models in lieu of mandatory animal testing for investigational new drug applications.44 This regulatory evolution mandates that pharmaceutical developers seamlessly integrate standardized organ-on-a-chip platforms into early-stage toxicology and pharmacodynamic assessment.45 Concurrently, the European Commission and working groups led by the National Institute of Standards and Technology and CEN/CENELEC are establishing rigorous international standardization roadmaps to ensure cross-border data reproducibility and regulatory acceptance.46
+
+However, NAMs will only influence regulatory decision-making if they are standardized. Fabrication materials, fluidic interfaces, sensor readouts, endpoint definitions and context-of-use claims must be harmonized across laboratories and jurisdictions.47 Without such standardization, organ-on-a-chip and digital models risk becoming another fragmented technology layer rather than a translational bridge.48
+
+5.3 Making AI clinically accountable
+
+AI-driven drug discovery and patient stratification are likely to accelerate multiple stages of oncology development, but their limitations must be explicitly addressed. Current generative models are often trained on successful public-domain datasets, creating survival and publication biases that limit their capacity to predict rare toxicities, negative results and failure modes. Many AI-designed candidates also remain optimized around known target families, and their ability to generate clinically validated therapies against truly context-dependent or historically undruggable targets remains uncertain.49
+
+Future AI use in bioengineered cancer therapy should therefore move from performance claims to accountable evidence generation. This requires auditable design histories, uncertainty estimates, external validation across institutions, model cards, standardized benchmarks and prospective testing of whether AI-guided candidates actually reduce attrition compared with conventional discovery. Federated and privacy-preserving learning will be important for integrating multi-center molecular, pathological, imaging and clinical datasets without creating new data monopolies.50 Equally important, AI models should not remain isolated prediction engines; they should be coupled to wet-lab validation, NAMs, adaptive clinical trials and post-market surveillance so that model predictions can be continuously tested and updated.5
+
+5.4 Aligning adaptive trials, CMC and real-world implementation
+
+As logic-gated cell therapies, AI-designed molecules, engineered microbes and intelligent nanomedicines enter clinical development, conventional linear trial designs may be insufficient.51,52 These modalities often exhibit dynamic behavior in vivo, including inducible activation, evolving biodistribution, immune feedback, antigen escape and delayed toxicity. Adaptive trial designs can support real-time refinement of dosing, cohort expansion, biomarker selection and combination strategies. Digital twins may further assist patient stratification by integrating molecular, histopathological, imaging and clinical data to simulate therapeutic response before enrolment.53
+
+Yet clinical acceleration will be meaningless without manufacturability. CMC is likely to remain the decisive translational bottleneck, particularly for living drugs and stimuli-responsive nanomedicines.54 Logic-gated allogeneic cell therapies require closed-system manufacturing, real-time release testing, lot-to-lot consistency and robust control of genetic circuit stability. Nanomedicines require reproducible particle size, surface chemistry, payload loading, release kinetics and biological performance at scale. For AI-designed small molecules, the near-term translational path is comparatively smoother because they can often enter established medicinal chemistry and manufacturing frameworks. By contrast, living therapeutics and complex nanomedicines require adaptive CMC regulation that allows manufacturing processes to mature across development stages without compromising safety.55
+
+Real-world implementation also requires attention to cost and access. Technologies that depend on highly specialized infrastructure, cold-chain logistics or individualized production risk widening the gap between high-resource and low-resource settings.56 “Design for accessibility” should therefore be incorporated early: thermostable formulations, simplified allogeneic platforms, modular closed-system manufacturing, decentralized quality control and open or shared AI resources could help prevent bioengineered cancer therapy from becoming available only to a small fraction of patients.57, 58, 59
+
+5.5 From accelerated approval to lifecycle learning
+
+Faster discovery and adaptive approval pathways make Phase IV evidence generation more important, not less. Bioengineered therapeutics may produce delayed or context-dependent toxicities that are difficult to detect in small early-phase trials, including insertional mutagenesis, loss of circuit control, prolonged cytopenias, host-versus-graft reactions, anti-carrier immune responses, vector shedding and immune-related adverse events after TME reprogramming. Post-market surveillance should therefore be designed as part of the translational roadmap rather than added after approval.
+
+A lifecycle evidence system should integrate cancer registries, electronic health records, pharmacovigilance reporting, digital pathology, imaging, circulating tumour DNA, immune monitoring, manufacturing metadata and patient-reported outcomes. These data should feed back into AI models, digital twins, regulatory labelling, biomarker refinement and manufacturing process improvement. In this sense, translation should be viewed as a continuous learning process rather than a one-time passage from bench to bedside. The field also needs new governance models. Academic groups, drug developers, device companies, clinical centres and regulators must share a common evidence architecture. Drug companies may lead pharmacology, clinical strategy and pharmacovigilance; device companies may provide qualified organ-on-a-chip platforms, sensors and manufacturing hardware; academic and clinical centres may contribute mechanistic biology, patient-derived models and biospecimens; and regulators may define context-of-use standards and acceptable validation endpoints. Transparent data provenance, contribution matrices, milestone-based licensing and public–private consortia will be essential to ensure that collaboration does not recreate the very silos it seeks to overcome.60
+
+Overall, the future of bioengineered anticancer therapeutics depends on a shift from technology-centered innovation to systems-level translation. AI, synthetic biology and nanotechnology will have their greatest impact when they are connected through human-relevant validation, adaptive clinical development, scalable manufacturing, global regulatory alignment and lifecycle surveillance. Only such an integrated framework can convert sophisticated bioengineering platforms into durable, safe, affordable and broadly accessible cancer therapies (Fig. 1 and Table 1).Fig. 1 Translational roadmap of next-generation bioengineered anti-cancer therapies. The paradigm shift from bench to bedside is driven by the convergence of cross-disciplinary innovations. AI-driven molecular design facilitates de novo drug discovery and precise diagnostic intelligence; synthetic biology yields intelligent, logic-gated living therapeutics (e.g., CAR-NK cells and engineered bacteria); and nanotechnology overcomes tumor microenvironment barriers via advanced delivery systems (e.g., LNPs and nanorobots). Microfluidic multi-organ-on-a-chip platforms (NAMs) and AI-driven digital twins replace traditional models for efficient in silico and in vitro testing. The pipeline culminates in adaptive clinical trials for precise patient stratification and highly automated, closed-system CMC bioprocessing for scalable commercial manufacturing (created in figdraw.com). AI, artificial intelligence; CAR-NK, chimeric antigen receptor natural killer; CMC, chemistry, manufacturing, and controls; ECM, extracellular matrix; FDA, Food and Drug Administration; LNPs, lipid nanoparticles; NAMs, new approach methodologies; pH, potential of hydrogen; TME, tumor microenvironment.
+
+Fig 1 dummy alt text
+
+Table 1 Technology advances, translational barriers, and clinical feasibility landscape of bioengineered anticancer therapeutics.
+
+Table 1 dummy alt textBioengineering modality	Maturity level	Primary translational & CMC barriers	Clinical feasibility & adoption outlook	
+Generative AI & de novo design	Phase 1/2	Data silo integration; predicting complex in vivo toxicities; regulatory standardization of generative algorithms	High; rapid near-term adoption for structural optimization and target discovery	
+Logic-gated cell therapies	Phase 1	High CMC costs; complex closed-system bioprocessing; lot-to-lot consistency for allogeneic “off-the-shelf” cells	Moderate to high; heavily dependent on adaptive CMC regulatory frameworks and automation	
+Synthetic microbial/viral vectors	Preclinical	Host immune clearance (neutralizing antibodies); biosafety of replicating vectors; dual-biologic scale-up	Moderate; requires rigorous long-term safety validation and precise spatiotemporal control	
+Intelligent nanomedicine	Preclinical/early clinical	Scalable co-encapsulation of multi-agent payloads; batch reproducibility of stimuli-responsive materials	High; built on validated delivery platforms, though TME targeting requires refinement and validation	
+Microphysiological systems	Regulatory endorsement	Lack of standardized fabrication materials; unified fluidic interfaces; multi-organ interoperability	Very high; strongly incentivized by FDA Mod Act 2.0/3.0; critical for preclinical validation	
+Abbreviations: AI, artificial intelligence; CMC, chemistry, manufacturing, and controls; FDA, Food and Drug Administration; FDA Mod Act, FDA Modernization Act; TME, tumor microenvironment.
+
+Funding
+
+This work was supported by the National Key Research and Development Program of China (grant number: 2023YFC2508500), 10.13039/501100009592 Beijing Municipal Science & Technology Commission , Administrative Commission of Zhongquancun Science Park (grant number: Z231100004823032), and the 10.13039/501100001809 National Natural Science Foundation of China (grant numbers: 82272951, 82272953).
+
+CRediT authorship contribution statement
+
+Guo Zhao: Conceptualization, Investigation, Writing – original draft, Visualization. Yale Jiang: Conceptualization, Investigation, Writing – original draft, Visualization. Caie Wang: Investigation, Resources, Writing – review & editing. Shuhang Wang: Conceptualization, Supervision, Project administration, Writing – review & editing, Funding acquisition. Ning Li: Conceptualization, Supervision, Project administration, Writing – review & editing, Funding acquisition.
+
+Declaration of completing interest
+
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+
+References
+
+1 Lu Z. Chen Y. Liu D. The landscape of cancer research and cancer care in China Nat Med 29 12 2023 3022 3032 10.1038/s41591-023-02655-3 38087112
+2 Sun D. Gao W. Hu H. Zhou S. Why 90% of clinical drug development fails and how to improve it? Acta Pharm Sin B 12 7 2022 3049 3062 10.1016/j.apsb.2022.02.002 35865092 PMC9293739
+3 de Visser K.E. Joyce JA. The evolving tumor microenvironment: From cancer initiation to metastatic outgrowth Cancer Cell 41 3 2023 374 403 10.1016/j.ccell.2023.02.016 36917948
+4 Yan X. Liu X. Zhao C. Chen GQ. Applications of synthetic biology in medical and pharmaceutical fields Signal Transduct Target Ther 8 1 2023 199 10.1038/s41392-023-01440-5 37169742 PMC10173249
+5 Zhang K. Yang X. Wang Y. Artificial intelligence in drug development Nat Med 31 1 2025 45 59 10.1038/s41591-024-03434-4 39833407
+6 Wang F. Wang Y. Feng L. Zhang C. Lai L. Target-specific de novo peptide binder design with DiffPepBuilder J Chem Inf Model 64 24 2024 9135 9149 10.1021/acs.jcim.4c00975 39266056
+7 Yao G. Shi L. Zheng Y. The landscape of innovative oncology drug targets Drug Discov Today 31 1 2026 104571 10.1016/j.drudis.2025.104571 41352414
+8 Kim N. De Carluccio G. Zhang K. Collins JJ. Generative AI for synthetic biology: designing biological parts, circuits, and genomes Cell Syst 17 2 2026 101533 10.1016/j.cels.2026.101533 41713401
+9 Brixi G. Durrant M.G. Ku J. Genome modelling and design across all domains of life with Evo 2 Nature 652 8112 2026 1349 1361 10.1038/s41586-026-10176-5 41781614 PMC13128491
+10 Kong X. Jiao R. Lin H. Peptide design through binding interface mimicry with PepMimic Nat Biomed Eng. Published online Oct 1 2025 10.1038/s41551-025-01507-4 41034517
+11 Dharmasivam M. Kaya B. Akinware A. Azad M.G. Richardson DR. Leading artificial intelligence-driven drug discovery platforms: 2025 landscape and global outlook Pharmacol Rev 78 1 2026 100102 10.1016/j.pharmr.2025.100102 41389441
+12 Hinterndorfer M. Spiteri V.A. Ciulli A. Winter GE. Targeted protein degradation for cancer therapy Nat Rev Cancer 25 7 2025 493 516 10.1038/s41568-025-00817-8 40281114
+13 Zippelius A. Tolaney S.M. Tarantino P. Balthasar J.P. Thurber GM. Unveiling the molecular and immunological drivers of antibody-drug conjugates in cancer treatment Nat Rev Cancer 25 12 2025 925 944 10.1038/s41568-025-00869-w 41039110
+14 Huang Z. Yang E. Shen J. A pathologist-AI collaboration framework for enhancing diagnostic accuracies and efficiencies Nat Biomed Eng 9 4 2025 455 470 10.1038/s41551-024-01223-5 38898173
+15 Chakraborty C. Bhattacharya M. Pal S. Chatterjee S. Das A. Lee SS. AI-enabled language models (LMs) to large language models (LLMs) and multimodal large language models (MLLMs) in drug discovery and development J Adv Res 78 2025 377 389 10.1016/j.jare.2025.02.011 39952319 PMC12684927
+16 Pallikkavaliyaveetil N. Chandrasekaran S. Small data, big challenges: machine- and deep-learning strategies for data-limited drug discovery Adv Drug Deliv Rev 229 2026 115762 10.1016/j.addr.2025.115762 PMC13094559 41421504
+17 Tang X. Dai H. Knight E. A survey of generative AI for de novo drug design: new frontiers in molecule and protein generation Brief Bioinform 25 4 2024 bbae338 10.1093/bib/bbae338 PMC11247410 39007594
+18 Fu L. Jia G. Liu Z. Pang X. Cui Y. The applications and advances of artificial intelligence in drug regulation: a global perspective Acta Pharm Sin B 15 1 2025 1 14 10.1016/j.apsb.2024.11.006 40041903 PMC11873654
+19 Ji J. Li L. Guo W. Nanoscale synthetic biology with innovative medicinal applications Fundam Res 5 5 2025 1889 1910 10.1016/j.fmre.2024.11.006 41613444 PMC12848148
+20 Zhu D. Kim W.J. Lee H. Bao X. Kim P. Engineering CAR-T therapeutics for enhanced solid tumor targeting Adv Mater 37 23 2025 e2414882 10.1002/adma.202414882 PMC12160681 39745117
+21 Bressler E.M. Adams S. Liu R. Colson Y.L. Wong W.W. Grinstaff MW. Boolean logic in synthetic biology and biomaterials: towards living materials in mammalian cell therapeutics Clin Transl Med 13 7 2023 e1244 10.1002/ctm2.1244 PMC10310979 37386762
+22 Singer Z.S. Pabon J. Huang H. Engineered bacteria launch and control an oncolytic virus Nat Biomed Eng 10 3 2026 490 500 10.1038/s41551-025-01476-8 40817284 PMC12696630
+23 Tan X. Letendre J.H. Collins J.J. Wong WW. Synthetic biology in the clinic: engineering vaccines, diagnostics, and therapeutics Cell 184 4 2021 881 898 10.1016/j.cell.2021.01.017 33571426 PMC7897318
+24 Yi W. Hu S. Qian X. Yan W. Li Y. Synthetic biology-based engineering cells for drug delivery Exploration (Beijing) 5 2 2025 20240095 10.1002/EXP.20240095 PMC12087405 40395752
+25 Wu M.R. Jusiak B. Lu TK. Engineering advanced cancer therapies with synthetic biology Nat Rev Cancer 19 4 2019 187 195 10.1038/s41568-019-0121-0 30837696
+26 Biederstadt A. Rezvani K. Engineered natural killer cells for cancer therapy Cancer Cell 43 11 2025 1987 2013 10.1016/j.ccell.2025.09.013 41135520 PMC12631954
+27 Pitt J.M. Marabelle A. Eggermont A. Soria J.C. Kroemer G. Zitvogel L. Targeting the tumor microenvironment: removing obstruction to anticancer immune responses and immunotherapy Ann Oncol 27 8 2016 1482 1492 10.1093/annonc/mdw168 27069014
+28 Ma K. Wang L. Li W. Turning cold into hot: emerging strategies to fire up the tumor microenvironment Trends Cancer 11 2 2025 117 134 10.1016/j.trecan.2024.11.011 39730243
+29 Li Z. Xiao C. Yang X. Li Z. Progress in the mechanical properties of nanoparticles for tumor-targeting delivery Chem Soc Rev 54 11 2025 5698 5734 10.1039/d3cs00912b 40341776
+30 Gomerdinger V.F. Nabar N. Hammond PT. Advancing engineering design strategies for targeted cancer nanomedicine Nat Rev Cancer 25 9 2025 657 683 10.1038/s41568-025-00847-2 40751005
+31 Gong N. Zhong W. Alameh M.G. Tumour-derived small extracellular vesicles act as a barrier to therapeutic nanoparticle delivery Nat Mater 23 12 2024 1736 1747 10.1038/s41563-024-01961-6 39223270 PMC11838174
+32 Cai Q. Guo R. Chen D. Deng Z. Gao J. SynBioNanoDesign: pioneering targeted drug delivery with engineered nanomaterials J Nanobiotechnology 23 1 2025 178 10.1186/s12951-025-03254-9 40050980 PMC11884119
+33 Meng Y. Zhou L. Xia Y. Jia C. Huang L. Breaking the hypoxia barrier: advances and challenges of hyperbaric oxygen therapy in cancer treatment Biomed Pharmacother 193 2025 118703 10.1016/j.biopha.2025.118703 41172962
+34 Mendes B.B. Zhang Z. Conniot J. A large-scale machine learning analysis of inorganic nanoparticles in preclinical cancer research Nat Nanotechnol 19 6 2024 867 878 10.1038/s41565-024-01673-7 38750164
+35 Jia X. Wang Y. Qiao Y. Jiang X. Li J. Nanomaterial-based regulation of redox metabolism for enhancing cancer therapy Chem Soc Rev 53 23 2024 11590 11656 10.1039/d4cs00404c 39431683
+36 Ma M. Zhang Y. Pu K. Tang W. Nanomaterial-enabled metabolic reprogramming strategies for boosting antitumor immunity Chem Soc Rev 54 2 2025 653 714 10.1039/d4cs00679h 39620588
+37 Wang Q. Liu Y. Li C. Xu B. Xu S. Liu B. Machine learning-enhanced nanoparticle design for precision cancer drug delivery Adv Sci (Weinh) 12 30 2025 e03138 10.1002/advs.202503138 PMC12376635 40536233
+38 Wei X. Wang C. Chen X. Nature-inspired nanostructures from multiple-species biomembranes: Rational engineering and therapeutic applications in tumor-targeted nanomedicine Adv Sci (Weinh) 12 33 2025 e07952 10.1002/advs.202507952 PMC12412495 40600457
+39 Zhou Z. Wang H. Li J. Jiang X. Li Z. Shen J. Recent progress, perspectives, and issues of engineered PD-L1 regulation nano-system to better cure tumor: a review Int J Biol Macromol 254 Pt 2 2024 127911 10.1016/j.ijbiomac.2023.127911 37939766
+40 Zhou Z. Luo W. Zheng C. Mitochondrial metabolism blockade nanoadjuvant reversed immune-resistance microenvironment to sensitize albumin-bound paclitaxel-based chemo-immunotherapy Acta Pharm Sin B 14 9 2024 4087 4101 10.1016/j.apsb.2024.05.028 39309498 PMC11413680
+41 Li C. Xiong W. Liu J. Nanoparticles-mediated mitochondrial relocation of lipid-lowering drugs shape energy metabolism to conquer acquired immune resistance Drug Resist Updat 84 2026 101323 10.1016/j.drup.2025.101323 41202686
+42 Zhao G. Zhou J. Wang S. Li N. Policy and science at a crossroads: integrating new approach methodologies (NAMs) into anticancer drug testing frameworks Sci Bull (Beijing) 71 13 2026 3241 3243 10.1016/j.scib.2026.05.066 42251006
+43 Zhang Y. Mastouri M. Zhang Y. Accelerating drug discovery, development, and clinical trials by artificial intelligence Med 5 9 2024 1050 1070 10.1016/j.medj.2024.07.026 39173629
+44 Zushin P.H. Mukherjee S. Wu JC. FDA modernization Act 2.0: transitioning beyond animal models with human cells, organoids, and AI/ML-based approaches J Clin Invest 133 21 2023 e175824 10.1172/JCI175824 PMC10617761 37909337
+45 Lee T. SY Kyung Kwon M. Park B. Ko J. Innovations in skin microphysiological systems for nonclinical testing and FDA modernization Microsyst Nanoeng 12 1 2026 44 10.1038/s41378-025-01149-1 41593045 PMC12847839
+46 Kwon D. The age of animal experiments is waning. where will science go next? Nature 650 8103 2026 812 814 10.1038/d41586-026-00563-3 41741744
+47 Mirlohi M.S. Yousefi T. Aref A.R. Seyfoori A. Integrating new approach methodologies (NAMs) into preclinical regulatory evaluation of oncology drugs Biomimetics (Basel) 10 12 2025 796 10.3390/biomimetics10120796 41439866 PMC12730968
+48 Zhou L. Huang J. Li C. Organoids and organs-on-chips: recent advances, applications in drug development, and regulatory challenges Med 6 4 2025 100667 10.1016/j.medj.2025.100667 40220744
+49 Pun F.W. Ozerov I.V. Zhavoronkov A. AI-powered therapeutic target discovery Trends Pharmacol Sci 44 9 2023 561 572 10.1016/j.tips.2023.06.010 37479540
+50 Sarvepalli S. Vadarevu S. Role of artificial intelligence in cancer drug discovery and development Cancer Lett 627 2025 217821 10.1016/j.canlet.2025.217821 40414522
+51 Zhu Y.Y. Wang W.X. Cheuk S.K. A landscape of methodology and implementation of adaptive designs in cancer clinical trials Crit Rev Oncol Hematol 200 2024 104402 10.1016/j.critrevonc.2024.104402 38848881
+52 Saady M. Eissa M. Yacoub A.S. Hamed A.B. Azzazy HME. Implementation of artificial intelligence approaches in oncology clinical trials: a systematic review Artif Intell Med 161 2025 103066 10.1016/j.artmed.2025.103066 39837136
+53 Zhavoronkov A. Vanhaelen Q. Oprea TI. Will artificial intelligence for drug discovery impact clinical pharmacology? Clin Pharmacol Ther 107 4 2020 780 785 10.1002/cpt.1795 31957003 PMC7158211
+54 Liu Z. Chen J. Xu M. Engineered multi-domain lipid nanoparticles for targeted delivery Chem Soc Rev 54 12 2025 5961 5994 10.1039/d4cs00891j 40390667
+55 Domingues C. Santos A. Alvarez-Lorenzo C. Where is nano today and where is it headed? a review of nanomedicine and the dilemma of nanotoxicology ACS Nano 16 7 2022 9994 10041 10.1021/acsnano.2c00128 35729778
+56 Gawne P.J. Ferreira M. Papaluca M. Grimm J. Decuzzi P. New opportunities and old challenges in the clinical translation of nanotheranostics Nat Rev Mater 8 12 2023 783 798 10.1038/s41578-023-00581-x 39022623 PMC11251001
+57 Abdo L. Batista-Silva L.R. Bonamino MH. Cost-effective strategies for CAR-T cell therapy manufacturing Mol Ther Oncol 33 2 2025 200980 10.1016/j.omton.2025.200980 PMC12022644 40291594
+58 Emily M. Ioanna N. Scott B. Beat F. Reflections on FDA draft guidance for products containing nanomaterials: is the abbreviated new drug application (ANDA) a suitable pathway for nanomedicines? AAPS J 20 5 2018 92 10.1208/s12248-018-0255-0 30128758
+59 Wu Q. Yao X. Duan X. Chen X. Zhang J. Nanomedicine reimagined: translational strategies for precision tumor theranostics Adv Mater 38 8 2026 e10293 10.1002/adma.202510293 40913574
+60 Jiang Y.L. Zhao G. Wang S.H. Li N. Leveraging artificial intelligence for clinical decision support in personalized standard regimen recommendation for cancer Mil Med Res 12 1 2025 31 10.1186/s40779-025-00617-z 40537878 PMC12177993

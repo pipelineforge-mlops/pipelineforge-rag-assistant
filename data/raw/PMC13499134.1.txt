@@ -1,0 +1,450 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: J Prev Alzheimers Dis
+Journal ID: J Prev Alzheimers Dis
+NLM Journal ID: 101638820
+
+The Journal of Prevention of Alzheimer's Disease
+
+ISSN: 2274-5807
+EISSN: 2426-0266
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499134
+PMID: 42594416
+DOI: 10.1016/j.tjpad.2026.100658
+Article ID: S2274-5807(26)00182-2
+Article ID: 100658
+Article version: 1
+Subjects: Original Article
+
+Predictive value of the Alzheimer polygenic risk score on cognitive decline in patients with mild cognitive impairment and Alzheimer's disease dementia
+
+Calm Berta a
+Hinojosa-Calleja Adrián a
+García-Gutiérrez Fernando a
+Blazquez-Folch Josep a
+Alegret Montserrat a b
+Fernández Maria Victoria a
+De Rojas Itziar a b
+García-González Pablo a c
+Olivé Clàudia a c
+Valenzuela-Seba Alejandro a
+Bayón-Buján Paula a
+Cano Amanda a
+Puerta Raquel a c
+Capdevila-Bayo Maria a d
+Muñoz-Morales Álvaro a
+Miguel Andrea a
+Solivar Ariadna a
+Montrreal Laura a
+Sanz-Cartagena Pilar a
+Rosende-Roca Maitee a
+Cantero-Fortiz Yahveth a b
+Gurruchaga Miren Jone a
+Tárraga Lluís a b
+Boada Mercè a b
+Marquié Marta a b
+Ruiz Agustín a b e f
+Valero Sergi svalero@fundacioace.org a b #
+for the Alzheimer’s Disease Neuroimaging Initiative*
+a Ace Alzheimer Center Barcelona – Universitat Internacional de Catalunya, Gran Via de Carles III, 85 bis, 08028 Barcelona, Spain
+b Networking Research Center on Neurodegenerative Diseases (CIBERNED), Instituto de Salud Carlos III, Av. Monforte de Lemos, 3-5, 28029 Madrid, Spain
+c PhD Program in Biotechnology, Faculty of Pharmacy and Food Sciences, University of Barcelona, Av. De Joan XXIII, 27-31, 08028 Barcelona, Spain
+d Department of Pharmacology, Toxicology and Therapeutic Chemistry, Faculty of Pharmacy and Food Science, University of Barcelona, Av. de Joan XXIII, 27-31, 08028 Barcelona, Spain
+e Glenn Biggs Institute for Alzheimer's and Neurodegenerative Diseases, 8300 Floyd Curl Drive, San Antonio TX 78229, USA
+f Department of Microbiology, Immunology and Molecular Genetics. Long School of Medicine. University of Texas Health Science Center, 8300 Floyd Curl Drive, San Antonio TX 78229, USA
+# Corresponding author: Sergi Valero, Address: Carrer del Marquès de Sentmenat, 57, Les Corts, 08029 Barcelona, Phone: +34 934447318, Fax: +34 934101701. svalero@fundacioace.org⁎ Data used in preparation of this article were obtained from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) database (adni.loni.usc.edu). As such, the investigators within the ADNI contributed to the design and implementation of ADNI and/or provided data but did not participate in analysis or writing of this report. A complete listing of ADNI investigators can be found at: http://adni.loni.usc.edu/wp-content/uploads/how_to_apply/ADNI_Acknowledgement_List.pdf
+
+Publication date: 2026 Nov
+Electronic publication date: 2026 Aug 13
+Volume: 13
+Issue: 9
+Electronic Location ID: 100658
+Received 2026 Apr 7; Revised 2026 Jul 3; Accepted 2026 Aug 10
+Copyright: © 2026 The Authors
+Copyright year: 2026
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Alzheimer’s disease, Cognitive decline, Polygenic risk scores, Single Nucleotide Polymorphisms, Machine learning
+
+==============================
+Background
+
+Polygenic risk scores for Alzheimer’s disease (AD-PRS) are widely used to estimate genetic susceptibility to AD, but their relationship with the rate of cognitive decline (CD) after clinical onset remains insufficiently characterized.
+
+Objectives
+
+To examine the association between AD-PRS and longitudinal CD across the AD spectrum and to evaluate the predictive contribution of individual AD-PRS variants.
+
+Design
+
+Large longitudinal observational study in a single-center cohort, with an external cohort to assess generalizability.
+
+Setting
+
+Memory clinic cohort from Ace Alzheimer Center Barcelona (Ace) with external cohort using data from the Alzheimer’s Disease Neuroimaging Initiative (ADNI).
+
+Participants
+
+The study included 7,233 patients from Ace and 863 from ADNI, with a mean follow-up of 5.4 years in Ace and 3.6 years in ADNI. A biomarker sub-cohort included 1075 participants from Ace and 569 from ADNI.
+
+Measurements
+
+CD was quantified as the annual change in Mini-Mental State Examination (MMSE) scores estimated using linear mixed-effects models. Associations between AD-PRS and longitudinal MMSE trajectories were tested adjusting for clinical and sociodemographic (CSD) variables and APOE genotype. Machine learning models and SHapley Additive exPlanations (SHAP) were used to evaluate the predictive relevance of individual variants.
+
+Results
+
+Higher AD-PRS was associated with faster CD in the full clinical cohort and in biomarker subset, independently of APOE genotype. AD-PRS was not associated with baseline MMSE. APOE ε4 was associated with lower baseline MMSE and faster CD only in the full clinical sample. Genetic predictors provided limited improvement beyond CSD variables, and model performance showed limited reproducibility across cohorts.
+
+Conclusions
+
+AD-PRS is associated with longitudinal CD across the AD spectrum. Although polygenic burden contributes to variability in cognitive trajectories, its added predictive value beyond routinely available clinical variables remains modest.
+
+1 BACKGROUND
+
+Alzheimer's disease (AD) primarily affects the elderly population and is the leading cause of dementia worldwide, posing a major challenge for healthcare systems[1]. At the neuropathological level, AD is traditionally defined by the accumulation of truncated amyloid-β peptides (Aβ) and hyperphosphorylated tau protein[2]. However, AD often coexists with additional pathologies, contributing to its clinical heterogeneity[3].
+
+The onset and progression of AD involve a complex interplay of genetic predispositions, biological factors, and environmental influences. Well-characterized environmental factors include physical activity, schooling, and smoking, while aging is the strongest biological risk factor. Cognitive reserve and family history further influence variability in disease progression[1].
+
+Most AD cases follow a sporadic, non-Mendelian pattern and are influenced by a combination of genetic and non-genetic factors. Among the well-studied genetic risk factors, the apolipoprotein epsilon (APOE) ε4 allele has shown a strong association with late-onset AD and represents the most influential common genetic determinant identified to date[4]. However, AD susceptibility is highly polygenic, and the combined contribution of numerous variants with small individual effects complicates the study of their role across disease stages[5].
+
+In this context, genome-wide association studies (GWAS) have emerged as a powerful tool for investigating complex genetic contributions to diseases such as AD[[6], [7], [8]]. By analyzing large cohorts of cases and controls, GWAS can detect single-nucleotide polymorphisms (SNPs) that show significant frequency differences between groups, thereby identifying loci linked to disease susceptibility[9]. One of the main translational applications of GWAS findings is the calculation of polygenic risk scores (PRS), a weighted sum of GWAS-identified risk alleles reflecting their estimated effect on the phenotype of interest[[10], [11], [12]]. PRS for AD have been proven valuable in quantifying genetic liability and enabling individual-level risk stratification[13]. One of the most comprehensive AD-PRS to date, proposed by Bellenguez et al.[14], incorporates 83 SNPs (excluding APOE) associated with genetic susceptibility to AD, capturing pathways related to Aβ metabolism, tau binding, inflammation, and microglial activation.
+
+Many studies employing AD-PRS focus on early disease stages, particularly on estimating the risk of progression from mild cognitive impairment (MCI) to AD dementia (ADD)[15]. Although some studies have examined associations between AD-PRS and longitudinal cognitive decline (CD), these analyses are less common and often limited to preclinical or early disease populations[16,17]. Meanwhile, longitudinal studies of cognitive trajectories have frequently focused on individual genetic factors, particularly the APOE genotype, rather than the broader polygenic architecture captured by AD-PRS[18,19]. As a result, the influence of cumulative polygenic burden on the rate of CD after clinical diagnosis remains insufficiently characterized, and the contribution of individual PRS variants has rarely been explored[20]. Importantly, it remains unclear whether AD-PRS provides meaningful incremental predictive value beyond routine clinical variables and whether these effects are reproducible across independent cohorts.
+
+In contrast, increasing efforts have been dedicated to predicting CD using non-genetic markers, including neuroimaging measures, cerebrospinal fluid (CSF) biomarkers and neuropsychological tests[21,22]. Although effective, these models often omit the genetic dimension, which could further refine individual risk stratification and trajectory modeling[23].
+
+In this study, we hypothesized that the AD-PRS associated with AD susceptibility may offer insight into CD across the AD spectrum. For this purpose, using one of the largest longitudinal single-center cohorts of individuals clinically diagnosed with either MCI or ADD we analyzed the association of the AD-PRS on CD across the AD spectrum. CSF biomarkers were incorporated to account for biological evidence of AD pathology. Furthermore, leveraging machine learning (ML) techniques, we examined the predictive value of individual SNPs within the AD-PRS and identified variants associated with CD at both prodromal and dementia stages of the disease.
+
+2 METHODS
+
+2.1 Study participants
+
+This study included data from individuals evaluated at the Memory Clinic of Ace Alzheimer Center Barcelona (Ace) between February 1997 and December 2025. Patients were referred to the Memory Clinic by their general health practitioner or other healthcare professionals, or they attended the Open House Initiative without a prior referral from a physician[24]. All patients completed neurological, neuropsychological, and social worker evaluations at Ace[25,26]. Final diagnoses were established by an interdisciplinary team including neurologists, neuropsychologists, and social workers at a diagnostic consensus conference[27].
+
+For this analysis, individuals diagnosed at baseline with MCI and a Clinical Dementia Rating (CDR) of 0.5[28], as well as those clinically diagnosed with ADD with a CDR of ≥ 1 (including CDR=1 and CDR=2)[29], were included.
+
+A biomarker subanalysis was conducted in participants with available CSF AD biomarkers. Aβ status was assessed using the Aβ42/40 ratio in the Ace cohort and Aβ40 levels in ADNI due to data availability, while phosphorylated tau (p-tau) levels were also assessed. The main analyses were then repeated in this biomarker subgroup to assess whether the association between AD-PRS and CD remained after accounting for AD-related biomarker measures.
+
+Data used as external cohort to assess generalizability was obtained from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) database[30]. The ADNI was launched in 2003 as a public-private partnership, led by Principal Investigator Michael W. Weiner, MD. The primary goal of ADNI has been to test whether serial magnetic resonance imaging, positron emission tomography, other biological markers, and clinical and neuropsychological assessment can be combined to measure the progression of MCI and early AD. Diagnostic criteria in the ADNI cohort were consistent with those in the Ace cohort. Individuals in the MCI group were required to have a CDR global score of 0.5 and a memory box score of at least 0.5, supported by scores on the MMSE and the Wechsler Logical Memory II subscale (WMS-LM), adjusted for education level[31]. For ADD, a CDR global score of ≥1 was required, with diagnosis further confirmed by MMSE and WMS-LM scores, also adjusted for educational level.
+
+2.2 Genetic data
+
+Genetic data from the ACE and ADNI cohorts underwent standardized quality control and imputation. Details of the AD-PRS construction are provided in the Supplementary Material.
+
+2.3 Quantification of the cognitive decline
+
+CD was quantified as the individual annual rate of change in MMSE scores estimated from longitudinal data. All available MMSE assessments from baseline to the last follow-up visit were included, with time defined as years since baseline. A linear mixed-effects model (LMM) was fitted with participant-specific random intercepts and random slopes for time. This approach estimated individual MMSE slopes (points/year) by combining the fixed effect of time with each participant-specific random slope, while accounting for within-subject correlation and unequal numbers of visits. More negative slope values indicated faster CD. MMSE was selected due to its widespread use and availability across cohorts, ensuring methodological consistency and direct comparability[32,20].
+
+To evaluate the robustness and clinical relevance of the findings, complementary analyses were performed using neuropsychological composite domains covering memory, attention, visuospatial functions, executive functions, language, orientation, and praxis. These domain-specific measures allowed assessment of cognitive trajectories beyond the global cognitive performance captured by the MMSE. Detailed information regarding the construction and validation of these composites has been previously described by García-Gutiérrez et al.[33]. Inter-domain correlations were moderate, reflecting the expected overlap among cognitive abilities. Nevertheless, collinearity diagnostics suggested adequate differentiation among the composites, with VIF values ranging from 1.44 to 2.45 and tolerance values from 0.41 to 0.70. These findings support the inclusion of multiple cognitive domains within the same model and indicate that the associations observed between PRS and cognitive performance are unlikely to be solely explained by overlap among cognitive measures.
+
+2.4 Statistical analysis in the Ace cohort
+
+LMMs were used to examine the relationship between the AD-PRS and CD in the Ace cohort. As described in Section 2.3, longitudinal MMSE scores were modeled over time, with time defined as years since baseline. MMSE was specified as the dependent variable, and participant-specific random intercepts and random slopes for time were included to account for within-subject correlation and inter-individual variability in cognitive trajectories.
+
+An initial model included time, AD-PRS (standardized), and baseline diagnosis (MCI vs. ADD), as well as their interactions. Specifically, a three-way interaction between time, AD-PRS, and baseline diagnosis was incorporated to formally test whether the association between genetic burden and the rate of CD differed across disease stages. Models were additionally adjusted for age at baseline, sex, years of formal education, and APOE ε4 and ε2 allele count. Age and years of education were mean-centered prior to analysis.
+
+To evaluate potential effect modification, additional interactions with time were introduced for selected covariates, allowing the rate of CD to vary according to these factors. The interaction between time and APOE ε4 allele count was included to assess whether APOE ε4 influenced longitudinal trajectories independently of AD-PRS. Differences between disease stages were examined through interactions with baseline diagnosis within the LMM framework, enabling direct comparison of effect estimates across diagnostic groups without stratifying the sample.
+
+In biomarker subanalysis, models included baseline Aβ and p-tau levels as continuous covariates. Interactions between each biomarker and time were also incorporated to account for their potential influence on longitudinal cognitive trajectories.
+
+2.5 Machine learning modeling
+
+To investigate the predictive value of the individual SNPs forming the AD-PRS, ML techniques were applied. The primary goal was to identify SNPs with the highest predictive value for CD and quantify their contribution to model predictions. A wrapper-based feature selection approach was implemented for this purpose[34]. Models were trained using the Ace cohort, while the ADNI cohort was used as external cohort to assess generalizability.
+
+Feature subsets were generated and evaluated using the Non-dominated Sorting Genetic Algorithm II (NSGA-II)[34,35], to simultaneously minimize (i) the mean absolute error (MAE) of the model and (ii) the number of selected predictors. NSGA-II identifies a set of non-dominated solutions (Pareto front) representing optimal trade-offs between objectives. Early stopping was applied after 50 generations if the best feasible MAE did not improve for 30 consecutive generations (tolerance = 1 × 10⁻⁴). As a sensitivity analysis, feature selection was repeated using Random Forest feature importance and Elastic Net regularization.
+
+Analyses were conducted using CD as the dependent variable. Input variables included clinical and socio-demographic (CSD) variables (age at baseline, APOE ε2/ε4 allele count, education and sex) and gene allele counts of SNPs contributing to the AD-PRS[14]. In the biomarker subgroup, baseline CSF Aβ and p-tau measures were additionally included as candidate predictors. Baseline MMSE and follow-up time were excluded to minimize target leakage, as CD was quantified using MMSE slopes. All predictors were standardized prior to model fitting, and feature subsets were evaluated using Ridge regression (α=10) within a scaling pipeline. Ridge regression was used for feature selection due to its computational efficiency and stability in high-dimensional settings.
+
+To reduce overfitting, feature selection was embedded within a nested cross-validation (CV) framework, using five-fold CV in the inner loop for subset evaluation and five-fold CV in the outer loop for performance estimation. Candidate subsets were required to include at least two predictors, while the maximum number of selectable predictors depended on sample size. From the resulting Pareto front, the subset with the lowest MAE was selected, prioritizing smaller feature sets when performance was comparable. Given the stochastic nature of the algorithm, the entire procedure was repeated ten times with different random seeds. Feature stability was assessed by calculating the frequency with which each feature was selected across folds and repetitions. Predictors appearing in at least 50% of runs were retained as stable predictors.
+
+Subsequently, the predictive performance of the selected predictors was compared with (i) models including only CSD variables, (ii) models combining CSD variables and all SNPs, and (iii) models including CSD variables and the AD-PRS. An XGBoost regressor was used within a feature-scaling pipeline to capture non-linear effects and interactions. Hyperparameter optimization was performed by grid search within a nested CV framework in the Ace cohort, using repeated 10-fold CV in the outer loop for performance estimation and repeated 5-fold CV in the inner loop for model tuning. Model performance was assessed using MAE, explained variance, and Pearson correlation. After nested CV in Ace, the final tuned model was refitted on the full Ace cohort and evaluated once in the ADNI cohort to evaluate generalizability.
+
+Model interpretability was assessed using the SHAP (SHapley Additive exPlanations)[36,35], a method used for explaining feature contributions to model predictions[37]. SHAP values were estimated using TreeExplainer within the repeated outer CV procedure in Ace, and feature importance was summarized using mean absolute SHAP values across test-fold predictions.
+
+Finally, feature selection was repeated on the ADNI cohort to assess result reproducibility and evaluate potential variations across datasets. The similarity between the feature sets identified in the Ace and ADNI cohorts was quantified using the Jaccard index, which measures the overlap between selected feature subsets across cohorts.
+
+3 RESULTS
+
+3.1 Study participants
+
+A total of 7,233 individuals from the Ace cohort met the inclusion criteria for the primary analysis, including 2,721 participants with MCI (CDR=0.5) and 4,512 with ADD (CDR ≥1). The ADNI cohort included 863 individuals (585 MCI and 278 ADD) (Table 1).Table 1 Clinical and sociodemographic variables of the sample used for the study stratifying the whole Ace and ADNI cohorts.
+
+Table 1 dummy alt text	MCI	ADD	
+	Ace	ADNI		Ace	ADNI		
+Sample size	2721	585		4512	278		
+Age (Mean, SD)	74.03 (8.27)	73.58 (7.75)	1.25*	79.29 (7.45)	75.06 (7.47)	9.15*‡	
+Sex (% Female)	60.79	37.78	103.83†‡	70.57	44.96	80.37†‡	
+Years of schooling (Mean, SD)	7.75 (4.73)	15.86 (2.85)	54.46*‡	5.65 (4.23)	15.04 (3.06)	48.47*‡	
+Baseline MMSE (Mean, SD)	25.95 (3.00)	27.65 (1.82)	17.99*‡	19.83 (4.58)	23.55 (2.24)	24.64*‡	
+APOE ε4 carrier (% Positive)	35.72	46.5	23.81†‡	39.14	67.99	90.20†‡	
+APOE ε2 carrier (% Positive)	8.53	8.21	0.06†	7.93	4.32	4.81†‡	
+AD-PRS (Mean, SD)	5.54 (0.37)	5.54 (0.36)	0.44*	5.57 (0.38)	5.62 (0.35)	2.25*‡	
+Follow-up visits (Mean, SD)	7.19 (3.82)	6.23 (2.92)	6.86*‡	6.18 (3.37)	4.11 (1.33)	21.64*‡	
+Years of follow-up (Mean, SD)	6.12 (3.68)	4.70 (3.37)	9.09*‡	4.69 (3.10)	2.44 (1.54)	21.82*‡	
+Slope (Mean, SD)	-1.39 (1.00)	-0.79 (1.11)	11.92*‡	-2.23 (1.12)	-2.21 (1.62)	0.23*‡	
+Abbreviations: AD-PRS, Alzheimer’s disease polygenic risk score; ADD, Alzheimer’s disease dementia; MCI, mild cognitive impairment; MMSE, Mini-Mental State Examination; SD, standard deviation.
+
+⁎ Statistic obtained by performing a t-test for the comparison between the Ace and ADNI samples.
+
+† Statistic obtained by performing a chi2-test for the comparison between the Ace and ADNI samples.
+
+‡ Statistically significant value (p-value < 0.05).
+
+Across diagnostic groups, several sociodemographic differences were observed between datasets. ADNI participants had markedly higher educational attainment, whereas the Ace sample included a higher proportion of women. In the ADD group, ADNI participants were younger than those from Ace, while age differences in MCI were minimal. Baseline MMSE scores were consistently higher in ADNI. Follow-up duration and the number of visits were generally greater in Ace. APOE ε4 carrier frequency was significantly higher in ADNI in both diagnostic groups. Mean AD-PRS values were comparable between cohorts. Finally, CD was steeper in the Ace cohort among participants with MCI, whereas decline was similar between cohorts in ADD.
+
+For the biomarker subanalysis, 1075 individuals from the Ace cohort (729 MCI; 346 ADD) and 569 from ADNI (411 MCI; 158 ADD) had available baseline CSF AD biomarker data. The biomarker subgroup showed similar CSD characteristics to the full cohort (Table 1). CD remained steeper in Ace among participants with MCI (−0.97 vs −0.44), whereas slopes were nearly identical in ADD (−1.84 vs −1.85).
+
+3.2 Linear-mixed models examining the association between AD-PRS and cognitive decline
+
+LMMs were used to examine the association between AD-PRS and longitudinal MMSE trajectories in the Ace cohort (Table 2). At baseline, lower MMSE scores were observed in ADD compared with MCI (β = −5.42, p < 0.001). Older age (β = −0.03, p < 0.001) and female sex (β = −0.46, p < 0.001) were linked to lower baseline MMSE, whereas higher years of education was associated with better baseline cognitive performance (β = 0.30, p < 0.001). APOE ε4 showed a negative association with baseline MMSE (β = −0.26, p = 0.002). AD-PRS was not associated with baseline MMSE (p = 0.890), although a small interaction with diagnosis was observed (β = −0.19, p = 0.054), indicating a non-significant trend across diagnostic groups.Table 2 Linear mixed-effects model examining the association between AD-PRS and longitudinal MMSE trajectories in the Ace cohort.
+
+Table 2 dummy alt textPredictor	β (SE)	p-value	95% CI	
+MAIN EFFECTS	
+Intercept	26.27 (0.19)	<0.001	[25.89, 26.65]	
+Age (centered)	-0.03 (0.01)	<0.001	[-0.05, -0.02]	
+Sex	-0.46 (0.10)	<0.001	[-0.66, -0.25]	
+Years of education (centered)	0.30 (0.01)	<0.001	[0.26, 0.31]	
+AD-PRS (z-score)	-0.01 (0.08)	0.890	[-0.16, 0.14]	
+Diagnosis (ADD vs MCI)	-5.42 (0.10)	<0.001	[-5.62, -5.21]	
+APOE ε4 allele count	-0.26 (0.08)	0.002	[-0.42, -0.10]	
+APOE ε2 allele count	0.27 (0.16)	0.095	[-0.05, 0.59]	
+DIAGNOSIS INTERACTION	
+AD-PRS × Diagnosis*	-0.19 (0.10)	0.054	[-0.38, 0]	
+EFFECTS ON COGNITIVE DECLINE	
+Time (years)	-1.39 (0.03)	<0.001	[-1.46, -1.33]	
+Time × AD-PRS†	-0.19 (0.03)	<0.001	[-0.24, -0.13]	
+Time × Diagnosis†	-0.84 (0.04)	<0.001	[-0.91, -0.76]	
+Time × APOE ε4†	-0.27 (0.03)	<0.001	[-0.34, -0.21]	
+Time × AD-PRS × Diagnosis‡	0.05 (0.04)	0.220	[-0.03, 0.12]	
+Abbreviations: AD-PRS, Alzheimer’s disease polygenic risk score; ADD, Alzheimer’s disease dementia; MCI, mild cognitive impairment; MMSE, Mini-Mental State Examination; SE, standard error; CI, confidence interval.
+
+⁎ Tests whether the association between AD-PRS and baseline MMSE differs between MCI and ADD.
+
+† Tests whether the specified variable influences the rate of MMSE change over time.
+
+‡ Tests whether the influence of AD-PRS on longitudinal MMSE change differs between MCI and ADD.
+
+Longitudinal analyses revealed a significant decline in MMSE over time (β = −1.39 points/year, p < 0.001). Higher AD-PRS was associated with faster CD (Time × AD-PRS: β = −0.19, p < 0.001). Similarly, individuals with ADD experienced steeper CD compared with those with MCI (Time × Diagnosis: β = −0.84, p < 0.001). APOE ε4 was also linked to accelerated CD (Time × APOE ε4: β = −0.27, p < 0.001). However, no significant three-way interaction was observed (p = 0.220), indicating that the association between AD-PRS and CD did not differ between MCI and ADD.
+
+Biomarker-adjusted analysis showed comparable patterns (Table 3). At baseline, higher p-tau levels were associated with lower MMSE scores (β = −0.39, p = 0.001), whereas Aβ42/40 ratio was not significantly associated with MMSE (p = 0.230). MMSE declined significantly over time (β = −1.10 points/year, p < 0.001), and ADD diagnosis was again associated with steeper decline (Time × Diagnosis: β = −0.62, p < 0.001). In contrast to the full sample, the association between AD-PRS and CD was attenuated and no longer reached statistical significance (p = 0.083), and APOE ε4 allele count was not significantly associated with CD (p = 0.417). Consistent with the main analysis, the three-way interaction between time, AD-PRS and diagnosis was not statistically significant (p = 0.401). Regarding AD biomarkers, higher baseline p-tau levels were associated with faster CD (Time × p-tau: β = −0.44, p < 0.001), whereas lower Aβ42/40 ratios were associated with steeper CD over time (Time × Aβ42/40: β = 0.31, p < 0.001). These findings indicate that Aβ and tau pathology were associated with CD in participants with available biomarker data.Table 3 Linear mixed-effects model examining the association between AD-PRS and longitudinal MMSE trajectories the CSF biomarker subgroup.
+
+Table 3 dummy alt textPredictor	β (SE)	p-value	95% CI	
+MAIN EFFECTS	
+Intercept	26.54 (0.38)	<0.001	[25.79, 27.29]	
+Age (centered)	-0.02 (0.01)	0.094	[-0.05, 0.00]	
+Sex	-0.35 (0.20)	0.079	[-0.74, 0.04]	
+Years of education (centered)	0.28 (0.02)	<0.001	[0.23, 0.32]	
+AD-PRS (z-score)	0.03 (0.12)	0.819	[-0.21, 0.26]	
+Diagnosis (ADD vs MCI)	-4.41 (0.21)	<0.001	[-4.82, -4.00]	
+APOE ε4 allele count	-0.10 (0.18)	0.575	[-0.46, 0.26]	
+APOE ε2 allele count	0.21 (0.35)	0.541	[-0.47, 0.90]	
+Ratio Aβ 42/40 (z-score)	0.17 (0.14)	0.230	[-0.11, 0.44]	
+pTau (z-score)	-0.39 (0.12)	0.001	[-0.63, -0.15]	
+DIAGNOSIS INTERACTION	
+AD-PRS × Diagnosis*	-0.34 (0.20)	0.090	[-0.73, 0.05]	
+EFFECTS ON COGNITIVE DECLINE	
+Time (years)	-1.10 (0.07)	<0.001	[-1.24, -0.96]	
+Time × AD-PRS†	-0.09 (0.05)	0.083	[-0.20, 0.01]	
+Time × Diagnosis†	-0.62 (0.10)	<0.001	[-0.81, -0.42]	
+Time × APOE ε4†	-0.07 (0.08)	0.417	[-0.23, 0.10]	
+Time x Ratio Aβ 42/40	0.31 (0.06)	<0.001	[0.19, 0.43]	
+Time x pTau	-0.44 (0.06)	<0.001	[-0.55, -0.32]	
+Time × AD-PRS × Diagnosis‡	0.08 (0.09)	0.401	[-0.11, 0.26]	
+Abbreviations: AD-PRS, Alzheimer’s disease polygenic risk score; ADD, Alzheimer’s disease dementia; MCI, mild cognitive impairment; MMSE, Mini-Mental State Examination; SE, standard error; CI, confidence interval.
+
+⁎ Tests whether the association between AD-PRS and baseline MMSE differs between MCI and ADD.
+
+† Tests whether the specified variable influences the rate of MMSE change over time.
+
+‡ Tests whether the influence of AD-PRS on longitudinal MMSE change differs between MCI and ADD.
+
+To assess whether these findings extended beyond MMSE, complementary analyses were performed using longitudinal cognitive composite scores. Consistent with the MMSE results, higher AD-PRS was associated with faster decline in executive functions (Time × AD-PRS: β = −1.05, p < 0.001), language (β = −1.50, p < 0.001), memory (β = −0.53, p = 0.001), orientation (β = −1.62, p < 0.001), praxis (β = −0.75, p = 0.004), and visuospatial abilities (β = −0.88, p = 0.001), whereas no significant association was observed for attention (p = 0.128). No significant three-way interaction between time, AD-PRS, and diagnosis was detected for any cognitive domain. Overall, these results were consistent with the primary MMSE analyses and indicate that the association between AD-PRS and CD is not restricted to a single cognitive measure.
+
+3.3 Feature Selection and Cross-Cohort Generalizability for ADD and MCI groups
+
+As described in Section 2.5, feature selection was conducted to identify those variables with the highest predictive value for CD using ML techniques. The NSGA-II algorithm was applied to datasets from the Ace cohort stratified by diagnosis, and the same procedure was subsequently applied to the ADNI cohort to assess the reproducibility of the selected predictors. As a sensitivity analysis, feature selection was also performed using Random Forest feature importance and Elastic Net regularization. Predictive performance was broadly similar across approaches. However, NSGA-II was retained as the primary method because its multi-objective optimization framework explicitly identifies optimal trade-offs between prediction error and the number of selected predictors, enabling the selection of more parsimonious feature sets while maintaining comparable predictive performance.
+
+In the Ace cohort, the algorithm identified 12 predictors for MCI and 23 predictors for ADD in the full dataset. In the biomarker subset, 13 predictors were retained for MCI and 19 for ADD. CSD variables were frequently included among the selected predictors, particularly age, years of schooling, and APOE ε4 allele count. Several genetic variants were also selected, such as PLCG2 (rs12446759), HLA-DQA1 (rs6605556) and BIN1 (rs6733839).
+
+The same procedure yielded fewer predictors in the ADNI cohort. In the full dataset, 12 predictors were selected for MCI and 6 for ADD, whereas in the biomarker subset, 12 predictors were retained for MCI and 10 for ADD. Consistent with the Ace cohort, age and APOE ε4 allele count were among the selected predictors. PRS was also retained in both MCI analyses, suggesting a consistent contribution of aggregated genetic risk across ADNI subsets.
+
+Comparison of the selected feature sets showed limited overlap between cohorts. In the MCI analysis of the full dataset, four predictors were shared between cohorts, including age, APOE ε4 allele count, and variants in PLCG2 and HLA-DQA1. In the ADD group, two predictors overlapped (age and SNX1 variant). In the biomarker subset, two shared predictors (age and CD2AP variant) were identified for MCI, whereas two genetic variants, INPP5D (rs10933431) and SPDYE3 (rs7384878), were common predictors in ADD.
+
+Feature-set similarity was low across analyses. Jaccard similarity was 20% for MCI and 7.4% for ADD in the full dataset, and 9.1% for MCI and 9.5% for ADD in the biomarker subset.
+
+3.4 Analysis of ML Models Incorporating CSD, Genetic Features, and Selected Variables
+
+Figure 1 shows the MAE, explained variance, and Pearson correlation obtained for the four evaluated models (CSD, CSD + PRS, CSD + SNPs, and feature selection).Figure 1 Predictive performance of different feature sets for cognitive decline estimated in the Ace cohort with external validation in ADNI. Boxplots represent the distribution of model performance across Ace nested cross-validation folds for four feature configurations: clinical and demographic covariates (CSD), CSD plus polygenic risk score (PRS), CSD plus all SNPs, and predictors selected by NSGA-II. Performance is reported for mean absolute error (MAE), explained variance, and Pearson correlation. Rows correspond to the four analysis groups: all subjects with MCI, all subjects with ADD, biomarker MCI, and biomarker ADD. Black diamond markers indicate the performance obtained when the final model trained on the full Ace dataset was evaluated on the independent ADNI cohort, representing external validation.
+
+Figure 1 dummy alt text
+
+In the full dataset, model performance in the Ace cohort was similar across diagnostic groups and modeling approaches, with MAE values of approximately 0.74 in MCI and 0.88 in ADD, low explained variance (≈0.06), and modest correlations (r ≈ 0.03). In the ADNI cohort, performance was lower overall, with MAE values of approximately 1.03 in MCI and 1.32 in ADD, similar explained variance (≈0.06), and correlations of 0.25 and 0.24, respectively. No model consistently outperformed the others.
+
+In the biomarker subgroup, performance was generally modest across cohorts and models. In Ace MCI, MAE decreased to 0.60 compared to full cohort, while for ADD performance improved to 0.90, in both groups explained variance decreased to zero and correlation to 0.13. For ADNI MAE ranged from 0.81 to 0.88 across diagnostic groups, while explained variance remained close to zero and correlations were similarly low (r ≈ 0.10). Additional ML models incorporating CSF biomarkers yielded similar predictive performance and did not materially alter the relative contribution of genetic predictors.
+
+Overall, performance differences were small across models, and models including genetic predictors did not meaningfully or consistently outperform those based solely on CSD variables, particularly in the ADNI cohort. These findings indicate that SNP-level predictors of CD lack robustness across cohorts and are highly context-dependent.
+
+3.5 Feature relevance analysis
+
+Feature relevance was evaluated using SHAP values to quantify the contribution of each variable to the prediction of CD (Figure 2). Positive mean SHAP values indicate that a feature increases the predicted MMSE slope, corresponding to slower CD, whereas negative mean SHAP values indicate a decrease in the predicted slope, corresponding to faster CD.Figure 2 Cross-cohort comparison of SHAP feature importance in Ace and ADNI models. Mean absolute SHAP values (|SHAP|) for the top 15 predictors are shown for models trained separately in the Ace and ADNI cohorts across four diagnostic groups: all-sample MCI, all-sample ADD, biomarker MCI, and biomarker ADD. Bars represent the mean absolute SHAP value averaged across cross-validation folds and indicate the relative contribution of each feature to model predictions. Solid bars correspond to models trained in the Ace cohort, while hatched bars represent models trained in the ADNI cohort. Colors indicate the average direction of the SHAP effect across samples. Red bars denote predictors with a negative mean SHAP value, indicating a tendency to decrease the predicted MMSE slope (i.e., shift predictions toward more negative slopes, corresponding to faster cognitive decline). Blue bars denote predictors with a positive mean SHAP value, indicating a tendency to increase the predicted MMSE slope (i.e., shift predictions toward less negative slopes, corresponding to slower cognitive decline).
+
+Figure 2 dummy alt text
+
+In the MCI group from the full dataset, age had the largest contribution in the Ace cohort. In the ADNI cohort, APOE ε4 allele count, AD-PRS, and age emerged as the most influential predictors, with APOE ε4 showing the highest SHAP values. In both cohorts, higher APOE ε4 allele count was associated with positive SHAP values, indicating predictions of slower CD. Age showed opposite associations between datasets, contributing toward slower predicted CD in Ace (positive SHAP values) but faster predicted CD in ADNI (negative SHAP values). Several genetic variants, including HLA-DQA1 and PLCG2, also contributed to model predictions in both cohorts, although their SHAP values were substantially smaller than those of the clinical variables. Most variants showed negative contributions, indicating faster predicted CD.
+
+In the ADD group from the full dataset, years of schooling represented the strongest contributor in the Ace cohort, followed by age, whereas age was the dominant predictor in the ADNI cohort. In Ace, higher years of schooling showed positive SHAP values, consistent with slower predicted CD. Age contributed negatively in Ace but positively in ADNI, again indicating opposite effects across cohorts. Genetic variants had limited importance in Ace. In contrast, several variants showed stronger contributions in ADNI, particularly SPDYE3 and ADAM17. Most variants shifted predictions toward faster CD, except for SNX1 and SHARPIN.
+
+In the biomarker MCI subgroup, age remained the dominant predictor in Ace and APOE ε4 allele count in ADNI. In both cohorts, age exhibited negative SHAP values, indicating predictions of faster CD. Genetic contributions were reduced overall, with only SNX1 exceeding a mean SHAP value of 0.1 in the ADNI cohort. For the ADD subgroup, CSD variables showed little or no contribution to model predictions. In both cohorts, INPP5D and SPDYE3 showed the highest contribution; however, in ADNI, INPP5D presented a positive SHAP value, indicating predictions of slower CD. PTK2B and ADAMTS1 also contributed in ADNI. Aβ and p-tau contributed only in Ace, with greater importance in ADD than MCI, and were not among the main predictors in ADNI.
+
+Overall, CSD variables, particularly age and APOE ε4 allele count, were the main predictors, whereas individual genetic variants showed smaller and less consistent contributions across cohorts and diagnostic groups. As several predictors exhibited opposite SHAP directions between cohorts, SHAP values should be interpreted as measures of relative importance within each dataset rather than stable associations.
+
+4 DISCUSSION
+
+In this large longitudinal study, we show that AD-PRS is consistently associated with faster CD across the AD spectrum, while its incremental predictive value beyond routine CSD is limited. Using longitudinal data from a large clinical cohort, we observed that higher AD-PRS was associated with faster CD, as reflected by MMSE trajectories and supported by analyses of multiple neuropsychological cognitive domains. This association remained significant after adjusting for CSD variables and APOE genotype and was further evaluated in a biomarker subgroup accounting for continuous measures of Aβ and tau pathology. Together, these findings indicate that the cumulative genetic burden captured by AD-PRS contributes not only to disease susceptibility but also to the progression of CD after clinical onset.
+
+Our results indicate that higher polygenic risk captured by AD-PRS is linked to faster CD, shown by the significant interaction between PRS and time in both the full clinical cohort[20]. Notably, AD-PRS was not associated with baseline MMSE, suggesting that its influence primarily affects longitudinal disease progression rather than cross-sectional cognitive performance. Consistent associations across neuropsychological domains suggest that polygenic burden extends beyond global cognition. These findings support the notion that the cumulative association of multiple AD-related variants contributes to the rate of neurodegeneration once clinical symptoms are present, rather than determining baseline levels of cognitive impairment[38,39]. The persistence of PRS associations after adjusting for APOE genotype further indicates that polygenic risk captures genetic influences on disease progression beyond the well-established APOE ε4 associations[[40], [41], [42]].
+
+Consistent with previous literature, APOE ε4 allele count was associated with lower baseline cognitive performance and faster CD in the full clinical sample, highlighting its central role in AD pathophysiology[43]. However, these associations were attenuated after adjustment for CSF Aβ and pTau levels and were no longer statistically significant. This attenuation is consistent with the well-established role of APOE in promoting Aβ accumulation and subsequent tau pathology, suggesting that a substantial proportion of the association between APOE and CD is mediated through these downstream pathological processes[44]. Similarly, the association between AD-PRS and CD was attenuated after adjustment for CSF biomarkers, with the effect estimate decreasing and no longer reaching statistical significance. Concurrently, baseline pTau and the Aβ42/40 ratio emerged as significant predictors of longitudinal CD, indicating that biomarker measures explain a substantial proportion of the variability in CD. Together, these findings suggest that part of the association between polygenic risk and CD may be accounted for by underlying AD pathology captured by Aβ and tau biomarkers.
+
+No significant interaction between AD-PRS and diagnosis was observed for either baseline MMSE or longitudinal CD, suggesting that the influence of polygenic burden on CD is broadly consistent across the AD spectrum. These findings support the interpretation that AD-PRS contributes to variability in cognitive trajectories independently of disease stage and beyond the established effects of APOE genotype[17]. In this context, AD-PRS likely reflects the combined influence of multiple genetic variants involved in neurodegenerative processes, contributing to inter-individual heterogeneity in CD among individuals with AD[38,14].
+
+From a predictive modeling perspective, our findings indicate that the incremental predictive value of genetic information beyond routinely available CSD variables is modest. Across most analyses, predictive performance was similar whether models included only CSD variables, the AD-PRS, all PRS-related SNPs, or the subset of predictors selected through NSGA-II. Although small improvements were occasionally observed in the Ace cohort, these gains were inconsistent and were not reproduced in the external ADNI cohort. Taken together, these results suggest that although genetic predictors contain information related to CD, their incremental predictive value in this setting is limited. Accordingly, AD-PRS should be viewed as a complementary source of biological information that may contribute to understanding disease heterogeneity and could become more valuable when integrated with additional biomarkers and multimodal predictors. The limited generalizability of these findings may, however, depend strongly on cohort characteristics and study design.
+
+The limited generalizability of the ML models across cohorts likely reflects substantial differences between Ace and ADNI in sample composition and longitudinal structure[45,46]. As shown in Table 1, the cohorts differed markedly in educational attainment, sex distribution, APOE ε4 frequency, baseline MMSE, and longitudinal follow-up structure. These differences likely contributed to the limited reproducibility of the predictive models by influencing both cognitive trajectories and the relative contribution of clinical and genetic predictors. This is particularly relevant for longitudinal analyses, as estimated rates of decline depend not only on biological progression but also on baseline disease severity, visit density, and observation time. Moreover, cohort differences in CD were most evident in MCI, whereas ADD trajectories were nearly identical across cohorts, suggesting greater heterogeneity during the prodromal stage. Thus, the modest generalization performance likely reflects both heterogeneity in disease trajectories and methodological differences in cohort ascertainment and follow-up. These findings further suggest that polygenic burden mainly captures upstream disease susceptibility, whereas clinical progression may be more directly driven by downstream pathological processes such as tau accumulation and neurodegeneration.
+
+The feature selection analyses showed limited overlap between Ace and ADNI, with modest Jaccard similarity in the full-sample MCI analysis and lower values in the remaining comparisons. This indicates limited stability of the selected predictor sets across cohorts, particularly in the biomarker analyses. Across analyses, age was the most consistently selected predictor, followed by APOE ε4 allele count, whereas the overlap of individual SNPs was limited. This pattern suggests that established predictors are more robust across cohorts than individual susceptibility variants. Overall, the limited overlap across cohorts supports the interpretation that the contribution of individual SNPs to CD is modest and context-dependent, reinforcing the polygenic and heterogeneous nature of disease progression.
+
+The SHAP analyses were consistent with this interpretation. Across diagnostic groups and datasets, CSD variables (particularly age, years of education, and APOE ε4 allele count), showed the largest contributions to model predictions, whereas most individual SNPs exhibited smaller associations. Some variants contributed more strongly in specific analyses, suggesting that the influence of individual SNPs on CD may vary across cohorts or disease stages. Overall, these findings are consistent with a polygenic architecture in which individual variants have modest associations, while their combined contribution captured by AD-PRS may better explain variability in CD[47].
+
+Differences in the directional contribution of some predictors should be interpreted cautiously. Unlike regression coefficients, SHAP values do not estimate marginal associations with CD but quantify each predictor's contribution to the ML model after accounting for the remaining variables. Consequently, correlated predictors and their interactions may produce SHAP directions that do not align with the expected biological association of an individual variable. This is particularly relevant for genetic predictors such as APOE ε4, whose contribution may be distributed across correlated variables, including AD-PRS and clinical characteristics, or reflect cohort-specific patterns. Therefore, SHAP values are most informative for assessing the relative importance of predictors within a model rather than inferring biological effects or comparing association directions across cohorts.
+
+Several limitations should be considered. Although the Ace cohort was large, the biomarker subgroup and the ADNI sample were smaller, reducing statistical power for interaction analyses and feature selection. In addition, the AD-PRS was derived from variants primarily associated with AD susceptibility, some of which have also been linked to other neurodegenerative processes, and therefore may capture broader genetic influences on neurodegeneration rather than AD-specific mechanisms of progression. Potential confounding from unmeasured factors, such as medication use, comorbidities, and environmental exposures, was not addressed and may contribute to variability in cognitive trajectories. Furthermore, CD was summarized using individual linear MMSE slopes. Although this approach provides a robust and interpretable measure of longitudinal progression, cognitive trajectories, particularly in individuals with ADD, may be more heterogeneous and not always well approximated by a single linear trend. Thus, future studies incorporating more flexible longitudinal models may better capture disease progression and improve prediction accuracy. Finally, differences in recruitment, follow-up duration, and clinical assessment between Ace and ADNI may have contributed to the limited reproducibility of the predictive models across cohorts[45].
+
+Despite these limitations, this study has several strengths, including a large, single-site longitudinal clinical cohort, an external cohort to assess generalizability, analyses in both clinically defined and biomarker samples, and the integration of statistical and ML approaches to examine genetic associations with progression. The scale and longitudinal depth of the Ace cohort provide a unique opportunity to study cognitive trajectories across the full clinical spectrum within a single-center setting, minimizing heterogeneity in clinical assessment and follow-up. In addition, the use of longitudinal LMMs allowed individual cognitive trajectories to be estimated while accounting for heterogeneity in follow-up duration and number of visits. Together, these analyses indicate that polygenic burden contributes to variability in cognitive trajectories, even though the associations of individual variants are small.
+
+In conclusion, this work advances our understanding of the genetic architecture underlying CD in AD. The AD-PRS is a significant, albeit modest, contributor to cognitive trajectories across the disease spectrum, particularly when contextualized alongside CSD. These findings highlight that polygenic burden contributes to variability in cognitive trajectories, although its incremental predictive value beyond routine clinical variables remains modest. Future research should prioritize enhancing model interpretability, expanding to multi-ethnic cohorts, and incorporating additional biological, environmental, and lifestyle data to fully capture the complexity of CD in AD. These efforts will be critical for developing precise, individualized tools for prediction and intervention in the clinical management of AD.
+
+DECLARATIONS
+
+Funding
+
+Authors acknowledge the support of the Agency for Innovation and Entrepreneurship (VLAIO) grant N° PR067/21 for the HARPONE project and the ADAPTED project the EU/EFPIA Innovative Medicines Initiative Joint Undertaking Grant N° 115975. Also, the Spanish Ministry of Science and Innovation, Proyectos de Generación de Conocimiento grants PID2021-122473OA-I00, PID2021-123462OB-I00 and PID2019-106625RB-I00. ISCIII, Acción Estratégica en Salud integrated in the Spanish National R+D+I Plan and financed by ISCIII Subdirección General de Evaluación and the Fondo Europeo de Desarrollo Regional (FEDER “Una manera de hacer Europa") grants PI17/01474, PI19/00335, PI22/01403 and PI22/00258. The support of CIBERNED (ISCIII) under the grants CB06/05/2004 and CB18/05/00010. The support from PREADAPT project, Joint Program for Neurodegenerative Diseases (JPND) grant N° AC19/00097, and from DESCARTES project, German Research Foundation (DFG). The support of Fundación bancaria “La Caixa”, Fundación ADEY, Fundación Echevarne and Grífols SA (GR@ACE project). AC received support from the Instituto de Salud Carlos III (ISCIII) under the grant Sara Borrell (CD22/00125). PGG is supported by CIBERNED employment plan (CNV-304-PRF-866). IdR is supported by the ISCIII under the grant FI20/00215. CO is supported by the ISCIII under the grant FI24/00029. Additionally, AR is also supported by STAR Award. University of Texas System. Tx, United States, The South Texas ADRC. National Institute of Aging. National Institutes of Heath. USA. (P30AG066546), the Keith M. Orme and Pat Vigeon Orme Endowed Chair in Alzheimer’s and Neurodegenerative Diseases and Patricia Ruth Frederick Distinguished Chair for Precision Therapeutics in Alzheimer’s and Neurodegenerative Diseases. MM received funding support from the European Union’s Horizon 2020 research and innovation program under the Marie Skłodowska-Curie grant agreement no. 796706.
+
+Availability of data and materials
+
+The data that support the findings of this study are publicly available from the corresponding authors upon reasonable request.
+
+Ethics approval and consent to participate
+
+Written informed consent was obtained from all participants. The study was conducted in accordance with local legislation and institutional requirements. The Ethics and Scientific Committees have approved this research protocol (Acta 25/2016, Ethics Committee H., Clinic Provincial, Barcelona, Spain).
+
+Competing interests
+
+AR is member of the scientific advisory board of Landsteiner Genmed and Grifols SA. AR has stocks of Landsteiner Genmed.
+
+MB has consulted for Araclon, Avid, Grifols, Lilly, Nutricia, Roche, Eisai and Servier. She received fees from lectures and funds for research from Araclon, Biogen, Grifols, Nutricia, Roche and Servier. She reports grants/research funding from Abbvie, Araclon, Biogen Research Limited, Bioiberica, Grifols, Lilly, S.A, Merck Sharp & Dohme, Kyowa Hakko Kirin, Laboratorios Servier, Nutricia SRL, Oryzon Genomics, Piramal Imaging Limited, Roche Pharma SA, and Schwabe Farma Iberica SLU, all outside the submitted work. She has not received personal compensations from these organizations.
+
+MM has consulted for F. Hoffmann-La Roche Ltd and is a member of the Scientific Advisory Board of Biomarkers of Araclon.
+
+The rest of authors declare that they have no competing interests.
+
+Declaration of Generative AI and AI-assisted technologies in the writing process
+
+Generative AI (ChatGPT by OpenAI) was used for language editing and clarity only. It did not contribute to the scientific content or analysis. The AI-assisted input was limited, and all content was reviewed and approved by the authors.
+
+Authorship / CRediT authorship contribution statement
+
+Conceptualization: M.J.G., M.B., M.V.F., M.M., A.R. and S.V. Data curation: I.d.R., P.G.-G., F.G.-G. and B.C. Formal analysis: B.C., F.G.-G. and J.B.-F. Funding acquisition: M.B., I.d.R., P.G.-G., A.C., M.V.F., A.R., M.M., and S.V. Investigation: M.A., P.S.-C., M.R.-R, M.M., I.d.R., P.G.-G, C.O., A.V.-S, L.M. and P.B.-B. Methodology: B.C., F.G.-G., J.B.-F., A.R. and S.V. Project administration: A.R. and S.V. Software: B.C., F.G.-G. and J.B.-F. Visualization: B.C., F.G.-G. and J.B.-F. Writing – original draft: B.C., F.G.-G., J.B.-F., I.d.R, P.G.-G, C.O., M.V.F, M.M., A.R. and S.V. Writing – review and editing: all authors.
+
+CRediT authorship contribution statement
+
+Berta Calm: Writing – review & editing, Writing – original draft, Visualization, Software, Methodology, Formal analysis, Data curation. Adrián Hinojosa-Calleja: Writing – review & editing. Fernando García-Gutiérrez: Writing – review & editing, Software, Methodology, Formal analysis, Data curation. Josep Blazquez-Folch: Writing – review & editing. Montserrat Alegret: Writing – review & editing, Investigation. Maria Victoria Fernández: Writing – review & editing, Writing – original draft, Funding acquisition, Conceptualization. Itziar De Rojas: Writing – review & editing, Investigation, Funding acquisition, Data curation. Pablo García-González: Writing – review & editing, Writing – original draft, Investigation, Funding acquisition, Data curation. Clàudia Olivé: Writing – review & editing, Writing – original draft, Investigation, Funding acquisition. Alejandro Valenzuela-Seba: Writing – review & editing, Investigation. Paula Bayón-Buján: Writing – review & editing, Investigation. Amanda Cano: Writing – review & editing, Funding acquisition. Raquel Puerta: Writing – review & editing, Investigation. Maria Capdevila-Bayo: Writing – review & editing, Investigation. Álvaro Muñoz-Morales: Writing – review & editing, Investigation. Andrea Miguel: Writing – review & editing. Ariadna Solivar: Writing – review & editing. Laura Montrreal: Writing – review & editing, Investigation. Pilar Sanz-Cartagena: Writing – review & editing, Investigation. Maitee Rosende-Roca: Writing – review & editing, Investigation. Yahveth Cantero-Fortiz: Writing – review & editing. Miren Jone Gurruchaga: Writing – review & editing, Conceptualization. Lluís Tárraga: Writing – review & editing. Mercè Boada: Writing – review & editing, Conceptualization. Marta Marquié: Writing – review & editing, Investigation, Funding acquisition, Conceptualization. Agustín Ruiz: Writing – review & editing, Writing – original draft, Project administration, Funding acquisition, Conceptualization. Sergi Valero: Writing – review & editing, Writing – original draft, Project administration, Funding acquisition, Conceptualization.
+
+Declaration of competing interest
+
+The authors declare the following financial interests/personal relationships which may be considered as potential competing interests:
+
+Agustin Ruiz reports financial support was provided by Grifols SA. Agustin Ruiz reports a relationship with Landsteiner Genmed that includes: board membership and equity or stocks. Agustin Ruiz reports a relationship with Grifols SA that includes: board membership. Merce Boada reports a relationship with Araclon that includes: consulting or advisory, funding grants, and speaking and lecture fees. Merce Boada reports a relationship with Avid that includes: consulting or advisory. Merce Boada reports a relationship with Grifols SA that includes: consulting or advisory, funding grants, and speaking and lecture fees. Merce Boada reports a relationship with Lilly that includes: consulting or advisory and funding grants. Merce Boada reports a relationship with Nutricia that includes: consulting or advisory, funding grants, and speaking and lecture fees. Merce Boada reports a relationship with Roche that includes: consulting or advisory, funding grants, and speaking and lecture fees. Merce Boada reports a relationship with Eisai that includes: consulting or advisory. Merce Boada reports a relationship with Laboratorios Servier that includes: consulting or advisory, funding grants, and speaking and lecture fees. Merce Boada reports a relationship with Abbvie that includes: funding grants. Merce Boada reports a relationship with Biogen Research Limited that includes: funding grants and speaking and lecture fees. Merce Boada reports a relationship with Bioiberica that includes: funding grants. Merce Boada reports a relationship with Merck Sharp & Dohme that includes: funding grants. Merce Boada reports a relationship with Kyowa Hakko Kirin that includes: funding grants. Merce Boada reports a relationship with Nutricia SRL that includes: funding grants. Merce Boada reports a relationship with Oryzon Genomics that includes: funding grants. Merce Boada reports a relationship with Piramal Imaging Limited that includes: funding grants. Merce Boada reports a relationship with Roche Pharma SA that includes: funding grants. Merce Boada reports a relationship with Schwabe Farma Iberica SLU that includes: funding grants. Marta Marquie reports a relationship with F. Hoffmann-La Roche Ltd that includes: consulting or advisory. Marta Marquie reports a relationship with Araclon (Biomarkers) that includes: board membership. Spanish Ministry of Science and Innovation grants PID2021-122473OA-I00, PID2021-123462OB-I00, PID2019-106625RB-I00 - AC Instituto de Salud Carlos III grants PI17/01474 (MB); PI19/00335 - MM; PI22/01403 - AR; PI22/00258 - AC; FI20/00215 - IdR; FI24/00029 - CO; Sara Borrell (CD22/00125) - AC
+
+CIBERNED grants CB06/05/2004 (MB); CNV-304-PRF-866 - PGG
+
+Innovative Medicines Initiative Joint Undertaking (EU/EFPIA) grant 115975 - AR
+
+Joint Programme for Neurodegenerative Disease Research grant AC19/00097 - AR
+
+Agency for Innovation and Entrepreneurship (VLAIO) grant PR067/21 - AR
+
+University of Texas System STAR Award - AR
+
+National Institute on Aging, National Institutes of Health (USA) grant P30AG066546 - AR
+
+Marie Skłodowska-Curie Actions grant 796706 - MM If there are other authors, they declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+Appendix Supplementary materials
+
+Image, application 1
+
+Acknowledgments
+
+The authors are grateful to all patients who consented to participate for their significant contribution to making this project possible. Some control samples and 689 data from patients included in this study were provided in part by the National DNA Bank Carlos III 690 (www.bancoadn.org, University of Salamanca, Spain) and Hospital Universitario Virgen de Valme (Sevilla, 691 Spain); they were processed following standard operating procedures with the appropriate approval of the Ethical 692 and Scientific Committee.
+
+Parts of the data used in preparation of this manuscript were obtained from the ADNI database (adni.loni.usc.edu). As such, the investigators within the ADNI study contributed to the design and implementation of ADNI and/or provided data but did not participate in the analysis or writing of this article. ADNI data collection and sharing for this project was funded by the ADNI (National Institutes of Health Grant U01 AG024904) and DOD ADNI (Department of Defense award number W81XWH-12-2-0012). ADNI is funded by the National Institute on Aging, the National Institute of Biomedical Imaging and Bioengineering, and through generous contributions from the following: AbbVie, Alzheimer’s Association; Alzheimer’s Drug Discovery Foundation; Araclon Biotech; BioClinica, Inc.; Biogen; Bristol-Myers Squibb Company; CereSpir, Inc.; Cogstate; Eisai Inc.; Elan Pharmaceuticals, Inc.; Eli Lilly and Company; EuroImmun; F. Hoffmann-La Roche Ltd and its affiliated company Genentech, Inc.; Fujirebio; GE Healthcare; IXICO Ltd.; Janssen Alzheimer Immunotherapy Research & Development, LLC.; Johnson & Johnson Pharmaceutical Research & Development LLC.; Lumosity; Lundbeck; Merck & Co., Inc.; Meso Scale Diagnostics, LLC.; NeuroRx Research; Neurotrack Technologies; Novartis Pharmaceuticals Corporation; Pfizer Inc.; Piramal Imaging; Servier; Takeda Pharmaceutical Company; and Transition Therapeutics. The Canadian Institutes of Health Research is providing funds to support ADNI clinical sites in Canada. Private sector contributions are facilitated by the Foundation for the National Institutes of Health (www.fnih.org). The grantee organization is the Northern California Institute for Research and Education, and the study is coordinated by the Alzheimer’s Therapeutic Research Institute at the University of Southern California. ADNI data are disseminated by the Laboratory for Neuro Imaging at the University of Southern California.
+
+Supplementary material associated with this article can be found, in the online version, at doi:10.1016/j.tjpad.2026.100658.
+
+
+REFERENCES
+
+1 2025 Alzheimer's disease facts and figures Alzheimer's & Dementia 21 4 2025 e70235
+2 Scheltens P. De Strooper B. Kivipelto M. Holstege H. Chételat G. Teunissen C. Alzheimer's disease The Lancet 397 10284 2021 Mar 24 1577 1590 10.1016/S0140-6736(20)32205-4 PMC8354300 33667416
+3 DeTure M.A. Dickson DW. The neuropathological diagnosis of Alzheimer's disease Mol Neurodegener 14 1 2019 Aug 32 31375134 10.1186/s13024-019-0333-5 PMC6679484
+4 Coon K.D. Myers A.J. Craig D.W. Webster J.A. Pearson J.V. Lince D.H. A high-density whole-genome association study reveals that APOE is the major susceptibility gene for sporadic late-onset Alzheimer's disease J Clin Psychiatry 68 4 2007 Apr 613 618 17474819 10.4088/jcp.v68n0419
+5 Verheijen J. Sleegers K. Understanding Alzheimer Disease at the Interface between Genetics and Transcriptomics Trends Genet 34 6 2018 Jun 434 447 29573818 10.1016/j.tig.2018.02.007
+6 Moreno-Grau S. de Rojas I. Hernández I. Quintela I. Montrreal L. Alegret M. Genome-wide association analysis of dementia and its clinical endophenotypes reveal novel loci associated with Alzheimer's disease and three causality networks: The GR@ACE project Alzheimers Dement 15 10 2019 Oct 1333 1347 31473137 10.1016/j.jalz.2019.06.4950
+7 de Rojas I. Moreno-Grau S. Tesi N. Grenier-Boley B. Andrade V. Jansen I.E. Common variants in Alzheimer's disease and risk stratification by polygenic risk scores Nat Commun 12 1 2021 Jun 3417 34099642 10.1038/s41467-021-22491-8 PMC8184987
+8 Wojcik G.L. Graff M. Nishimura K.K. Tao R. Haessler J. Gignoux C.R. Genetic analyses of diverse populations improves discovery for complex traits Nature 570 7762 2019 Jun 514 518 31217584 10.1038/s41586-019-1310-4 PMC6785182
+9 Ertekin-Taner N. Genetics of Alzheimer disease in the pre- and post-GWAS era Alzheimers Res Ther 2 1 2010 Mar 3 20236449 10.1186/alzrt26 PMC2874262
+10 Escott-Price V. Sims R. Bannister C. Harold D. Vronskaya M. Majounie E. Common polygenic variation enhances risk prediction for Alzheimer's disease Brain 138 Pt 12 2015 Dec 3673 3684 26490334 10.1093/brain/awv268 PMC5006219
+11 Sleegers K. Bettens K. De Roeck A. Van Cauwenberghe C. Cuyvers E. Verheijen J. A 22-single nucleotide polymorphism Alzheimer's disease risk score correlates with family history, onset age, and cerebrospinal fluid Aβ42 Alzheimers Dement 11 12 2015 Dec 1452 1460 26086184 10.1016/j.jalz.2015.02.013
+12 Luckett E.S. Abakkouy Y. Reinartz M. Adamczuk K. Schaeverbeke J. Verstockt S. Association of Alzheimer's disease polygenic risk scores with amyloid accumulation in cognitively intact older adults Alzheimers Res Ther 14 1 2022 Sep 138 36151568 10.1186/s13195-022-01079-4 PMC9508733
+13 Lee S.H. Wray N.R. Goddard M.E. Visscher PM. Estimating missing heritability for disease from genome-wide association studies Am J Hum Genet 88 3 2011 Mar 294 305 21376301 10.1016/j.ajhg.2011.02.002 PMC3059431
+14 Bellenguez C. Küçükali F. Jansen I.E. Kleineidam L. Moreno-Grau S. Amin N. New insights into the genetic etiology of Alzheimer's disease and related dementias Nat Genet 54 4 2022 Apr 412 436 35379992 10.1038/s41588-022-01024-z PMC9005347
+15 Daunt P. Ballard C.G. Creese B. Davidson G. Hardy J. Oshota O. Polygenic Risk Scoring is an Effective Approach to Predict Those Individuals Most Likely to Decline Cognitively Due to Alzheimer's Disease J Prev Alzheimers Dis 8 1 2021 78 83 33336228 10.14283/jpad.2020.64
+16 Zimmerman S.C. Brenowitz W.D. Calmasini C. Ackley S.F. Graff R.E. Asiimwe S.B. Association of Genetic Variants Linked to Late-Onset Alzheimer Disease With Cognitive Test Performance by Midlife JAMA Netw Open 5 4 2022 Apr e225491 10.1001/jamanetworkopen.2022.5491 PMC8980909 35377426
+17 Kauppi K. Rönnlund M. Nordin Adolfsson A. Pudas S. Adolfsson R. Effects of polygenic risk for Alzheimer’s disease on rate of cognitive decline in normal aging Transl Psychiatry 10 250 2020 Jul 10.1038/s41398-020-00934-y PMC7381667 32709845
+18 Contreras A.G. Walters S. Eissman J.M. Archer D.B. Regelson A.N. Durant A. Genetic modifiers of APOE-ε4-associated cognitive decline Nat Commun 17 2982 2026 Feb 10.1038/s41467-026-68933-z PMC13036010 41720779
+19 Fan J. Tao W. Li X. Li H. Zhang J. Wei D. The Contribution of Genetic Factors to Cognitive Impairment and Dementia: Apolipoprotein E Gene, Gene Interactions, and Polygenic Risk Int J Mol Sci 20 5 2019 Mar 1177 30866553 10.3390/ijms20051177 PMC6429136
+20 Wang B. Chibnik L.B. Choi S.H. Blacker D. DeStefano A.L. Lin H. Association of genetic risk of Alzheimer’s disease and cognitive function in two European populations Sci Rep 15 1 2025 Feb 6410 39984543 10.1038/s41598-025-90277-9 PMC11845681
+21 Perrin R J. Fagan A M. Holtzman D M. Multimodal techniques for diagnosis and prognosis of Alzheimer's disease Nature 461 2009 Oct 916 922 19829371 10.1038/nature08538 PMC2810658
+22 Rubinski A. Frerich S. Malik R. Franzmeier N. Ramirez A. Dichgans M. Polygenic Effect on Tau Pathology Progression in Alzheimer's Disease Ann Neurol 93 4 2023 Apr 819 829 36571564 10.1002/ana.26588
+23 Varatharajah Y. K Ramanan V. Iyer R. Vemuri P. Initiative A.D.N. Predicting Short-term MCI-to-AD Progression Using Imaging, CSF, Genetic Factors, Cognitive Resilience, and Demographics Sci Rep. 9 1 2019 Feb 2235 30783207 10.1038/s41598-019-38793-3 PMC6381141
+24 Abdelnour C. Rodríguez-Gómez O. Alegret M. Valero S. Moreno-Grau S. Sanabria Á Impact of Recruitment Methods in Subjective Cognitive Decline J Alzheimers Dis 57 2 2017 625 632 28269773 10.3233/JAD-160915
+25 Alegret M. Espinosa A. Vinyes-Junqué G. Valero S. Hernández I. Tárraga L. Normative data of a brief neuropsychological battery for Spanish individuals older than 49 J Clin Exp Neuropsychol 34 2 2012 209 219 22149440 10.1080/13803395.2011.630652 PMC3264764
+26 Alegret M. Espinosa A. Valero S. Vinyes-Junqué G. Ruiz A. Hernández I. Cut-off scores of a brief neuropsychological battery (NBACE) for Spanish individual adults older than 44 years old PloS one 8 10 2013 Oct e76436 10.1371/journal.pone.0076436 PMC3797837 24146868
+27 Boada M. Tárraga L. Hernández I. Valero S. Alegret M. Ruiz A. Design of a comprehensive Alzheimer's disease clinic and research center in Spain to meet critical patient and family needs Alzheimers Dement 10 3 2014 May 409 415 24035148 10.1016/j.jalz.2013.03.006 PMC3951687
+28 Petersen RC. Mild cognitive impairment as a diagnostic entity J Intern Med 256 3 2004 Sep 183 194 15324362 10.1111/j.1365-2796.2004.01388.x
+29 McKhann G.M. Knopman D.S. Chertkow H. Hyman B.T. Jack C.R. Jr Kawas C.H. The diagnosis of dementia due to Alzheimer's disease: recommendations from the National Institute on Aging-Alzheimer's Association workgroups on diagnostic guidelines for Alzheimer's disease Alzheimers Dement 7 3 2011 May 263 269 21514250 10.1016/j.jalz.2011.03.005 PMC3312024
+30 Alzheimer's Disease Neuroimaging Initiative. [Online]. Available from: https://adni.loni.usc.edu.
+31 Folstein M.F. Folstein S.E. McHugh PR. "Mini-mental state". A practical method for grading the cognitive state of patients for the clinician J Psychiatr Res 12 3 1975 Nov 189 198 1202204 10.1016/0022-3956(75)90026-6
+32 Ruiz A. Hernández I. Ronsende-Roca M. González-Pérez A. Rodriguez-Noriega E. Ramírez-Lorca R. Exploratory analysis of seven Alzheimer's disease genes: disease progression Neurobiol Aging 34 4 2013 Apr 1310.e1 1310.e13107 10.1016/j.neurobiolaging.2012.08.014 PMC4097044 23036585
+33 García-Gutiérrez F. Alegret M. Marquié M. Muñoz N. Ortega G. Cano A. Unveiling the sound of the cognitive status: Machine Learning-based speech analysis in the Alzheimer's disease spectrum Alzheimers Res Ther 16 1 2024 Feb 26 38308366 10.1186/s13195-024-01394-y PMC10835990
+34 Cai J. Luo J. Wang S. Yang S. Feature selection in machine learning: A new perspective Neurocomputing 300 2018 Jul 70 79
+35 Deb K. Agrawal S. Pratap A. Meyarivan T. A Fast Elitist Non-dominated Sorting Genetic Algorithm for Multi-objective Optimization: NSGA-II Parallel Problem Solving from Nature (PPSN VI) 2000 Springer Berlin, Heidelberg
+36 Lundberg S M. Lee S.I. A Unified Approach to Interpreting Model Predictions Advances in Neural Information Processing Systems 2017
+37 Guidotti R. Monreale A. Ruggieri S. Turini F. Giannotti F. Pedreschi D. A Survey of Methods for Explaining Black Box Models 51 2018 Feb ACM Computing Surveys (CSUR) 1 42
+38 Najar J. Thorvaldsson V. Kern S. Skoog J. Waern M. Zetterberg H. Polygenic risk scores for Alzheimer's disease in relation to cognitive change: A representative sample from the general population followed over 16 years Neurobiol Dis 189 2023 Dec 106357 10.1016/j.nbd.2023.106357 37977433
+39 Chaudhury S. Brookes K.J. Patel T. Fallows A. Guetta-Baranes T. Turton J.C. Alzheimer’s disease polygenic risk score as a predictor of conversion from mild-cognitive impairment Transl Psychiatry 9 154 2019 May 10.1038/s41398-019-0485-7 PMC6534556 31127079
+40 Tomassen J. den Braber A. van der Lee S.J. Reus L.M. Konijnenberg E. Carter S.F. Amyloid-β and APOE genotype predict memory decline in cognitively unimpaired older individuals independently of Alzheimer's disease polygenic risk score BMC Neurol 22 1 2022 Dec 484 36522743 10.1186/s12883-022-02925-6 PMC9753236
+41 Pyun J.M. Park Y.H. Lee K.J. Kim S. Saykin A.J. Nho K. Predictability of polygenic risk score for progression to dementia and its interaction with APOE ε4 in mild cognitive impairment Transl Neurodegener 10 1 2021 Aug 32 34465370 10.1186/s40035-021-00259-w PMC8406896
+42 Desikan R.S. Fan C.C. Wang Y. Schork A.J. Cabral H.J. Cupples L.A. Genetic assessment of age-associated Alzheimer disease risk: Development and validation of a polygenic hazard score PLoS Med 14 3 2017 Mar e1002258 10.1371/journal.pmed.1002258 PMC5360219 28323831
+43 Qian J. Betensky R.A. Hyman B.T. Serrano-Pozo A. Association of APOE Genotype With Heterogeneity of Cognitive Decline Rate in Alzheimer Disease Neurology 96 16 2021 May e2414 e2428 33771840 10.1212/WNL.0000000000011883 PMC8166439
+44 Yamazaki Y. Zhao N. Caulfield T.R. Liu C.C. Bu G. Apolipoprotein E and Alzheimer disease: pathobiology and targeting strategies Nat Rev Neurol 15 2019 501 518 31367008 10.1038/s41582-019-0228-7 PMC7055192
+45 Veitch D.P. Weiner M.W. Miller M. Aisen P.S. Ashford M.A. Beckett L.A. The Alzheimer's Disease Neuroimaging Initiative in the era of Alzheimer's disease treatment: A review of ADNI studies from 2021 to 2022 Alzheimers Dement 20 1 2024 Jan 652 694 37698424 10.1002/alz.13449 PMC10841343
+46 Petersen R.C. Aisen P.S. Beckett L.A. Donohue M.C. Gamst A.C. Harvey D.J. Alzheimer's Disease Neuroimaging Initiative (ADNI): clinical characterization Neurology 74 3 2010 Jan 201 209 20042704 10.1212/WNL.0b013e3181cb3e25 PMC2809036
+47 Lee E. Giovanello K.S. Saykin A.J. Xie F. Kong D. Wang Y. Single-nucleotide polymorphisms are associated with cognitive decline at Alzheimer's disease conversion within mild cognitive impairment patients Alzheimers Dement (Amst). 23 8 2017 Apr 86 95 10.1016/j.dadm.2017.04.004 PMC5440281 28560309

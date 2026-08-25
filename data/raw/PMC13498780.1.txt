@@ -1,0 +1,513 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Precis Radiat Oncol
+Journal ID: Precis Radiat Oncol
+NLM Journal ID: 101718782
+Journal ID: PRO6
+
+Precision Radiation Oncology
+
+EISSN: 2398-7324
+Publisher: Wiley
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498780
+PMID: 42632996
+DOI: 10.1002/pro6.70089
+Article ID: PRO670089
+Article version: 1
+Subjects: Review, Review
+
+Effects of proton therapy on the tumor immune system and clinical implications: A review
+
+LIU et al.
+
+Liu Rundong 1
+Tao Mei 1
+Fu Min https://orcid.org/0009-0009-0744-2323 1
+Hu Yingjia 2
+Tao Zhen https://orcid.org/0000-0001-8050-9576 1 ztao@tmu.edu.cn
+
+Hu Guangyuan https://orcid.org/0000-0002-8060-4917 1 h.g.y.121@163.com
+
+1 Department of Oncology Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology Wuhan Hubei China
+2 Department of Biostatistics University of Pittsburgh Graduate School of Public Health, Pittsburgh Pennsylvania USA
+* Correspondence:
+Guangyuan Hu, M.D. and Zhen Tao, Ph.D., Department of Oncology, Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, Hubei, China.
+Email: h.g.y.121@163.com and ztao@tmu.edu.cn
+
+Electronic publication date: 2026 Aug 21
+Electronic Location ID: 10.1002/pro6.70089
+Revised 2026 Jan 9; Received 2025 Oct 11; Accepted 2026 Jul 22
+Copyright: © 2026 The Author(s). Precision Radiation Oncology published by John Wiley & Sons Australia, Ltd on behalf of Shandong Cancer Hospital & Institute.
+License: This is an open access article under the terms of the http://creativecommons.org/licenses/by/4.0/ License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.
+License URL: https://creativecommons.org/licenses/by/4.0/
+
+Keywords: bulk RNA‐sequencing, chimeric antigen receptor T cell, immunotherapy, peripheral blood immune cells, proton therapy, single cell RNA‐sequencing, tumor immune microenvironment
+
+Funding: National Health Council Foundation of China WKZX2023CX030002 2024.01‐2026.11
+Figure count: 2
+Table count: 3
+Page count: 15
+
+source-schema-version-number: 2.0
+edited-state: corrected-proof
+details-of-publishers-convertor: Converter:WILEY_ML3GV2_TO_JATSPMC version:6.8.6 mode:remove_FC converted:22.08.2026
+
+==============================
+Abstract
+
+Proton therapy, an emerging radiation therapy technique, has gained significant attention owing to its unique physical properties and biological effects. This review aims to explore the impact of proton therapy on the tumor immune system and of its combination with other therapies. This review outlines the fundamental principles and oncological applications of proton therapy, followed by an analysis of its impact on the immune system—encompassing draining lymph nodes, peripheral blood immune cells, tumor cell immune responses, and the tumor microenvironment. We further discuss current combinatorial strategies with immunotherapy and/or chemotherapy, which point toward promising clinical directions.
+
+Proton therapy is a novel radiotherapy technique. We review four aspects of proton therapy: application in various tumors, effects on the tumor immune system, combination with other therapies, and future challenges. By presenting these aspects in this review, we aim to inspire clinical interventions.
+
+Abbreviations
+
+ALC absolute lymphocyte count
+
+APA anaplastic pituitary adenoma
+
+BC breast cancer
+
+CAR‐T chimeric antigen receptor T cell
+
+CPT conventional proton therapy
+
+CTLA4 cytotoxic T‐lymphocyte associated protein 4
+
+DFS disease‐free survival
+
+DSBs DNA double‐strand breaks
+
+ECs endothelial cells
+
+EDIC effective radiation dose to immune cells
+
+EndMT endothelial‐to‐mesenchymal transition
+
+ENI elective nodal irradiation
+
+GBM glioblastoma
+
+HCC hepatocarcinoma
+
+HIF1α hypoxia‐inducible factor 1α
+
+HNSCC head and neck squamous cell carcinoma
+
+HPBLs human peripheral blood lymphocytes
+
+ICBs immune checkpoint blockades
+
+IFN‐γ interferon‐γ
+
+IL1β interleukin‐1β
+
+TNFα tumor necrosis factor‐α
+
+IL‐6 interleukin‐6
+
+IMPT intensity‐modulated proton therapy
+
+ITD integral total dose volume
+
+LAG3 lymphocyte activation gene‐3
+
+LET linear energy transfer
+
+MBD mean body dose
+
+MDSCs myeloid‐derived suppressor cells
+
+MHD mean heart dose
+
+MID mean liver dose
+
+MLD mean lung dose
+
+MSLN mesothelin
+
+NF‐κB nuclear factor‐κB
+
+NPC nasopharyngeal carcinoma
+
+NSCLC non‐small cell lung cancer
+
+ORR overall response rate
+
+OS overall survival
+
+PDAC pancreatic ductal adenocarcinoma
+
+PD1 programmed cell death 1
+
+PD‐L1 programmed cell death‐ligand 1
+
+pFLASH proton FLASH‐radiation therapy
+
+pMBRT proton minibeam radiotherapy
+
+RBE relative biological effectiveness
+
+RIL radiation‐induced lymphopenia
+
+Tregs regulatory T‐cells
+
+STAT3 signal transducer and activator of transcription 3
+
+TILs tumor‐infiltrating lymphocytes
+
+TIME tumor immune microenvironment
+
+TME tumor microenvironment
+
+CD8+ TRM tissue resident memory cytotoxic
+
+cDC1 conventional dendritic cells type 1
+
+CD8+ TAMs CD8+ tumor associated macrophages
+
+1 INTRODUCTION
+
+Proton therapy is an advanced form of radiation therapy that precisely targets tumors while minimizing damage to surrounding healthy tissues. Its main advantages are derived from its unique physical properties, with the Bragg peak being the most notable. 1 Over the past few decades, the clinical applications of proton therapy have significantly progressed. In 2019, Yuan et al. summarized the application of proton therapy in treating head and neck squamous cell carcinoma (HNSCC), breast cancer (BC), non–small cell lung cancer (NSCLC), hepatocarcinoma (HCC), and prostate cancer. 2 Furthermore, the pediatric, 2 old, 3 and pregnant 4 patients may benefit the most from proton therapy for certain types of cancers.
+
+The tumor immune system plays a crucial role in tumor progression and response to therapy. 5 In this review, we describe the draining lymph nodes, peripheral blood immune cells, immune response of tumor cells, and the tumor immune microenvironment (TIME). (i) Proton therapy reduces radiation exposure to the draining lymph nodes, which are the primary sites for antigen presentation and T cell priming, which in turn better preserves the anti‐tumor immunity of the body. (ii) In peripheral blood immune cells, proton therapy exerts low irradiation toxicity, leading to a more pronounced active immunotherapy response. (iii) Stronger immunogenicity is triggered by proton therapy, which enhances the immune response of tumor cells. (iv) In the TIME, proton therapy builds a complicated immune landscape comprising various immune cells, cytokines, chemokines, and immune checkpoints that interact dynamically with tumor cells. The interaction among these elements can either promote tumor growth or enhance anti‐tumor immunity, highlighting the requirement for further research on the TIME. 6 , 7 , 8 , 9 , 10 Therefore, understanding the evolution of the tumor immune system in response to proton therapy is essential for developing effective treatment strategies and improving patient outcomes.
+
+The combination of proton therapy with immunotherapy and/or chemotherapy has gradually been utilized for the treatment of HNSCC, NSCLC, esophageal carcinoma, lymphoma, and pancreatic cancer. This review comprehensively describes the advantages and disadvantages of combination therapies for various tumor types. However, owing to the lack of sufficient clinical evidence, conducting large‐scale multi‐center prospective clinical trials is a direction for further study.
+
+This review aims to provide an overview of the current understanding of proton therapy, particularly its effects on the tumor immune system, and related therapeutic strategies. In addition, we summarize bulk RNA sequencing for proton therapy, emphasizing the necessity for single‐cell RNA sequencing in future research.
+
+2 BASIC PRINCIPLES OF PROTON THERAPY
+
+2.1 Physical characteristics of proton therapy
+
+Radiation therapy, an important cancer treatment strategy, is primarily classified into photon and particle therapies based on the type of radiation used. Proton therapy is a form of particle therapy that uses protons instead of conventional photons. 11 The fundamental principle underlying proton therapy involves the unique physical properties of protons, particularly their ability to deliver energy to a specific depth within the tissue, known as the Bragg peak. 1 The energy deposition pattern of proton is unique, characterized by a sharp increase in the dose at the Bragg peak, followed by a rapid fall‐off. This sharp dose gradient allows for precise dose distribution, helping eliminate tumors while sparing adjacent healthy tissues. Therefore, proton therapy is particularly suitable for tumors with complex anatomical relationships such as nasopharyngeal carcinoma (NPC). 12 Furthermore, the linear energy transfer (LET) of protons is higher than that of photons, resulting in more complicated DNA double‐strand breaks (DSBs), which are difficult for tumor cells to repair. 13 In addition, the relative biological effectiveness (RBE) of proton therapy is typically high, 14 indicating that proton therapy requires a lower dose than photons to kill cancer cells. Recent studies have found that the relatively low risk of radiation‐induced lymphopenia (RIL) during proton therapy may be attributed to a smaller radiation field size and lower radiation dose. 15
+
+2.2 Comparison of proton therapy with conventional radiotherapy
+
+Proton therapy has three major advantages over conventional radiotherapy. (i) Reduced radiation exposure: Proton therapy significantly decreases radiation exposure to healthy tissues, which is especially beneficial to pediatric populations, who are at a higher risk of long‐term side effects from radiation. Patients with medulloblastoma who received proton therapy reportedly exhibit improved neurocognitive outcomes and fewer secondary malignancies than those treated with traditional photon therapy. 16 , 17 (ii) Precise irradiation: Proton therapy delivers higher doses to tumors while minimizing exposure to the surrounding organs at risk, improving local control rates in various malignancies such as HNSCC, central nervous system cancer, and prostate cancer. 2 (iii) Reduced radiation‐induced immunosuppression: Radiation‐induced immunosuppression significantly hinders the effectiveness of anti‐tumor treatments, and proton therapy alleviates this condition in NSCLC and HNSCC. 18 , 19 Notably, the mechanisms by which protons induce tumor cell death differ from those associated with photon therapy, leading to distinct phenotypes. This has been thoroughly reviewed by Nikitaki et al. 13 Despite these advantages, the high cost of proton therapy facilities and limited availability of treatment centers remain the main barriers to its widespread adoption. 20
+
+2.3 Applications of proton therapy in different tumor types
+
+The idea of utilizing protons for cancer treatment was first proposed by Robert R. Wilson 21 in 1946, and the first patients received treatment in 1954. 22 Subsequently, proton therapy was used to treat various tumor types because of its versatility and effectiveness. 2 In recent years, proton therapy for HNSCC has shown promising results in reducing irradiation‐induced toxicities, thereby improving patients’ quality of life. 23 In 2025, proton therapy was also used to treat head and neck mucosal melanoma, conjunctival malignant melanoma, and endometrial cancer. 24 , 25 , 26 , 27 Additionally, proton therapy has been investigated for its potential in treating primary hepatic and pancreatic cancers, in which its dosimetric advantages can lead to improved outcomes. 28 Notably, in addition to eliminating the first malignancy, proton therapy also showed potential to prevent a second malignancy, which is one of the most serious late effects of radiation therapy. 29 For example, a retrospective cohort study involving nine pediatric patients with low‐grade brain tumors indicated that proton therapy was associated with lower incidence of second malignancy and mortality, compared with photon therapy at the same dosage. 30 Further research suggests that proton therapy could benefit patients with brain tumors because it can bypass traditional oxygen dependence. 31 Several reviews and clinical studies have identified the role of proton therapy in the treatment of lung cancer, 32 , 33 triple‐negative breast cancer, 34 and esophageal cancer. 35 As clinical evidence continues to accumulate, the role of proton therapy in the treatment of various malignancies is expected to expand, with ongoing research targeting the optimization of treatment protocols and exploring combination therapies to enhance efficacy. 2 Notably, proton irradiation induces distinct transcriptional profiles in various tumors, thereby shedding light on the underlying mechanisms (Table 1).
+
+TABLE 1 Studies on Transcriptional Profiles* of Tumors after Proton Irradiation.
+
+GEO ID	Tumor Types	Researcher	Publication Year	
+GSE149023	Breast Cancer	Cammarata et al. 36	2020	
+GSE116325	Breast Cancer	Bravatà et al. 37	2019	
+GSE103472	Breast Cancer	Bravatà et al. 38	2018	
+GSE162986	Glioblastoma	Bravatà et al. 39	2021	
+GSE127989	Glioblastoma	Cammarata et al. 40	2019	
+GSE192817	Glioblastoma, Head and Neck Cancer, Prostate Cancer	Schniewind et al. 41	2022	
+GSE90761	Head and Neck Cancer	Lupu‐plesu et al. 42	2017	
+GSE45609	Lung Cancer	Beheshti et al. 3	2014	
+GSE107444	Pancreatic Cancer	Fujinaga et al. 43	2019	
+*Source: Gene Expression Omnibus (GEO) Database
+
+John Wiley & Sons, Ltd.
+
+3 IMPACT OF PROTON THERAPY ON DRAINING LYMPH NODES
+
+Draining lymph nodes are important sites of immune response. They contain large numbers of T‐, B‐, and antigen‐presenting cells, which play crucial roles in tumor therapy. 44 , 45 , 46 , 47 During radiotherapy, immunogenic cell death and cytoplasmic DNA activate cGAS‐STING, which drives the recruitment and cross‐priming of dendritic cells in tumor‐draining lymph nodes. Subsequently, chemokines guide lymphocyte trafficking and expansion, ultimately leading to lymphocyte infiltration into tumors. 48 , 49 Irradiation of draining lymph nodes during radiotherapy may damage the immune system. For example, elective nodal irradiation (ENI) could reduce the expression of chemokines CXCR3 and CCR5, and inhibit the infiltration of IFNγ+/TNFα+ CD8+ T cells. 50 In head and neck tumors, ENI reduces the number of CD69+CD8+ and CCR7+CD4+ T cells in the blood. It also decreases the number of LFA‐1+CD44+CD4+ T cells in the draining lymph nodes and tumor microenvironment (TME). These changes suppress antitumor immunity, thereby increasing the risks of both local tumor recurrence and distant metastasis. 51 Notably, lymph node irradiation can also reduce the abscopal effect by inhibiting stem‐like CD8+ T‐cell proliferation within the tumor. 52  Proton therapy, which is characterized by reduced irradiation exposure of lymph node, preserves anti‐tumor immunity. Using a mouse model of glioblastoma (GBM), Pham et al. found that proton therapy can reduce radiation exposure to lymph nodes, thereby preserving specific T‐cell subsets, such as naive CD8+ T cells. 53 The effect of proton therapy on draining lymph nodes should be the focus of future studies, considering the limited number of studies.
+
+4 IMPACT OF PROTON THERAPY ON PERIPHERAL BLOOD IMMUNE CELLS
+
+4.1 Proton therapy relieves RIL and reduces the effective radiation dose to immune cells (EDIC)
+
+RIL is an important biomarker for radiation‐induced immunotoxicity caused by exposure to radiation. RIL occurs when circulating lymphocytes pass through irradiated areas and is associated with poor survival outcomes in several solid tumors. 54 Notably, unlike typical radiation‐induced cell death via apoptosis, 55 human peripheral blood lymphocytes (HPBLs) exhibit a different mode of death during proton therapy. 56 As observed by Miszczyk J et al., photons tended to induce necrosis rather than apoptosis in HPBL, especially at relatively high doses (≥ 1.5 Gy). 56 Furthermore, photons could kill tumor cells through necrosis, which enhances immunogenicity and thereby improves abscopal effects. 56 , 57 , 58 Proton therapy can reduce the occurrence of RIL via several mechanisms. These include reducing the radiation dose, 15 minimizing the radiation field, 15 and creating a volume effect by sparing larger volumes of normal tissue during Bragg peak therapy. 59 For example, a cohort study of 143 patients with unresectable HCC showed that compared with those who did not receive proton therapy, those receiving proton therapy had a higher median absolute lymphocyte count (ALC) nadir (0.41 vs. 0.32 k/µL, P = 0.002). Furthermore, compared with patients treated with photon therapy, these patients had longer median overall survival (OS) (33.2 vs. 13.2 months, P = 0.002) and median disease‐free survival (DFS) (36.2 vs. 19.6 months, P = 0.018). These improvements may be attributed to the reduced radiation exposure at lymphocyte generation sites, such as the spleen. 60 In addition, by reducing the radiation dose at non‐immune organs, proton therapy can alleviate lymphocytopenia and ultimately improve survival outcomes as well, which has been proved in patients with stage III NSCLC. 61 , 62
+
+The EDIC model assesses the average radiation dose absorbed by circulating lymphocytes. It performs better in reflecting the immunotoxicity caused by irradiation. The EDIC model was proposed by Jin et al. as the Jin model 63 and later modified into the Ladbury model by Ladbury et al. 64 Recently, several studies have reported that proton therapy is efficient in reducing EDIC, which can ultimately improve tumor prognosis. For locally advanced NSCLC, proton therapy resulted in a significantly lower median EDIC than photon therapy (4.0 Gy vs. 5.3 Gy, P<0.001). 65 Intensity‐modulated proton therapy (IMPT), an emerging proton therapy technique, exhibits excellent ability to minimize EDIC. For NSCLC, compared with intensity‐modulated radiotherapy, IMPT showed robustness in EDIC reduction (Jin model: 3.04 Gy vs. 4.99 Gy, P < 0.001; Ladbury model: 4.50 Gy vs. 7.60 Gy, P < 0.002), which led to an increase in the 2‐year OS rate (median 71% vs. 63%, P = 0.03). 66 Considering the complicated calculation of EDIC, which includes the mean heart dose (MHD), lung dose (MLD), liver dose (MID), integral total dose volume (ITD), mean body dose (MBD), and so on, 63 , 64 , 67 identifying the main driving factors is essential. For instance, a clinical study involving 10 patients with mediastinal Hodgkin lymphoma confirmed that the primary drivers of IMPT‐mediated EDIC reduction were integral dose reduction, accounting for 53.7%, and lung sparing, contributing 33.4%. 68 These findings, along with those of Nakamura et al., highlight the significant role of the lungs in lymphocytopenia. 62 , 68 Additionally, tumor location is an important factor influencing IMPT‐mediated EDIC reduction. For locally advanced BC, integral dose reduction was the primary driver of IMPT‐mediated EDIC reduction and was associated with liver‐sparing and lung‐sparing in patients with right‐sided and left‐sided BC, respectively. 67 In summary, personalizing the evaluation of the factors driving IMPT‐mediated EDIC reduction is indispensable.
+
+4.2 Unique immune cell subpopulations and cell interactions
+
+Cancer‐related inflammation plays a vital role in the initiation and progression of tumors. The key mechanisms include the intrinsic (oncogene activation) and extrinsic (inflammation or infection) pathways. Tumor‐related transcription factors such as nuclear factor‐κB (NF‐κB), signal transducer and activator of transcription 3 (STAT3), and hypoxia‐inducible factor 1α (HIF1α) play crucial roles. In addition, inflammatory mediators, such as cytokines, chemokines, and cyclooxygenase 2; myelomonocytic lineage cells (neutrophils and monocytes); and the cancer‐related inflammatory microenvironment are involved. 69 Proton irradiation induces distinct alterations in immune cell subpopulations. The ratio of circulating neutrophils to lymphocytes, normally ranging from 0.78 to 3.53. 70 , is positively associated with poor progression‐free survival (PFS) and OS in HNSCC (PFS: 39.2% vs. 75.8%, P<0.001; OS: 50.9% vs. 83.8%, P<0.001), especially in nasopharyngeal, hypopharyngeal, and laryngeal cancers. 71 Subsequently, Pham et al. conducted a detailed analysis of immune cell subpopulations. They classified leukocytes into T cells, B cells, NK cells, neutrophils, and monocytes and examined changes in each population separately. After 12 h of proton irradiation (4 fractions of 2.5 Gy), lymphocyte counts (CD4+ T cells, CD8+ T cells, B cells, and NK cells) did not decrease significantly, whereas neutrophil counts increased significantly (P = 0.03). In addition, they analyzed the effects of radiation parameters (irradiation type, irradiation volume, and dose rate) on six leukocyte subpopulations (including CD4+T cells, CD8+T cells, B cells, NK cells, neutrophils, and monocytes) using linear regression and tree‐based models, and observed that the impact of irradiation type on lymphocytes was stronger than that on myelocytes (CD8+ T cells were the most affected, followed by NK cells, B cells, and CD4+T cells). 72  Similarly, a mouse‐based study showed that early proton irradiation increased myeloid cell subpopulations. Its effect on decreasing the number of lymphocytes was relatively delayed and minor. 73 Furthermore, proton FLASH–radiation therapy (pFLASH) can up‐regulate the proportion of specific lymphocyte subsets at certain times. In a rat model of orthotopic glioma, Iturri et al. discovered that the proportion of B cells in the pFLASH group 24 hours after irradiation (257 ± 2 Gy/s) was significantly higher than that in the unirradiated group (P = 0.0054) and in the pFLASH group after 7 days of irradiation (P<0.0002). 74 Further research has found that, compared with photon therapy, proton therapy can also avoid the loss of T cell receptor diversity. 75 Proton irradiation protects lymphocyte subpopulations not only by preserving their numbers but also by enhancing interactions among specific subpopulations. For example, under the Bayesian network model, interactions between CD4+ T cells and CD8+ T cells, as well as between CD8+ T cells and B cells were strengthened after proton irradiation. 76 Because these studies mainly focused on mice rather than humans, the applicability of these results in clinical practice must be carefully evaluated.
+
+5 IMPACT OF PROTON THERAPY ON TUMOR CELL IMMUNE RESPONSE
+
+The immune response of tumor cells plays a key role in tumor radiation therapy. Boopathi et al. concluded that cancer cells killed by radiation therapy could trigger both innate and adaptive immune responses to help eliminate tumors. 77 Although proton therapy kills cells differently from photons and X‐rays, 55 , 56 the immune responses they induce may be similar at certain times. 78 Du et al. exposed the esophageal cancer cell line KYSE450 to X‐rays, protons, and carbon ion beams at a dose of 15 GyE/fraction. After 3 days of irradiation, they observed shared interferon and innate immune responses, including those related to interferon signaling and cytokine production regulation, which were dependent on the STING–STAT1 axis. 78 Furthermore, proton therapy failed to improve the clinical outcomes of NSCLC through radiation‐induced tumor immunity. 79 Nevertheless, it is unwise to conclude that proton therapy offers no benefits for immune response and tumor control, as previous studies were limited by their in vitro settings and small sample sizes. Proton therapy has a greater immunogenic effect than conventional photon therapy in olfactory neuroblastoma and NPC, which may enhance antitumor immune responses and the effectiveness of immunotherapeutic drugs. 80 In conclusion, rigorous in vivo and in vitro experiments should be conducted to clarify the effects of proton therapy on the immune responses of tumor cells.
+
+6 IMPACT OF PROTON THERAPY ON THE TIME
+
+In this section, we review the impact of proton therapy on the TIME from three perspectives: (i) infiltrating immune cells, (ii) cytokines and chemokines, and (iii) immune checkpoints. Figure 1 shows the TIME profile, and Table 2 presents the impact of proton therapy.
+
+FIGURE 1 Landscape of the TIME.
+
+TABLE 2 Alteration of the TIME after proton therapy.
+
+Tumor Types	Radiotherapy Strategy	Changes in the TIME	References	
+COAD	7 days after 16.4 Gy	CD8+ T cells, CD8+ T cells, TAM1s increased	81	
+		Tregs decreased		
+COAD	7 days after 8 Gy	CD8+ T cells, CD8+PD1+T, NK cells decreased	82	
+		CD4+PD1+T, MDSCs increased		
+NSCLC	8 days after 60 Gy/s	CD8+ T cells, TAM1s increased	83	
+		Tregs, TAM2s decreased		
+HNSCC	12 hours after 5 Gy	IFN‐γ increased	84	
+		Exosomes decreased		
+HCC	2 days after 3 Gy	CD8+ T cells increased	85	
+	2 days after 6 Gy	MDSCs, TAM2s increased		
+	3 days after 12 Gy	IL‐6 increased		
+Glioma	8 days after 257 ± 2 Gy/s	CD4+ T cells, CD8+ T cells, Tregs, CD8+ TRMs,
+
+NK cells, B cells increased
+
+	74	
+Medulloblastoma	5 days after 100 Gy/s	CD8+ T cells, TAM1s increased	86	
+		TAM2s decreased		
+GBM	7 days after 30 Gy	CD8+ TRMs, B cells, CD8+ TAMs, cDC1 increased	87	
+Abbreviations: TIME, tumor immune microenvironment; COAD, colon adenocarcinoma; NSCLC, non‐small cell lung cancer; HNSCC, head and neck squamous cell carcinoma; HCC, hepatocellular carcinoma; GBM, glioblastoma; Tregs, regulatory T‐cells; CD8+ TRMs, CD8+ tissue resident memory cytotoxic T cells; NK cells, natural killer cells; TAMs, tumor associated macrophages; MDSCs, myeloid‐derived suppressor cells; cDC1, conventional dendritic cells type 1; PD‐1, programmed cell death 1; IFN‐γ, interferon gamma; IL‐6, interleukin‐6.
+
+John Wiley & Sons, Ltd.
+
+6.1 Impact on infiltrating immune cells
+
+Photon therapy is a double‐edged sword for anti‐tumor immunity within the TME. 88 , 89 Recent studies have focused on the influence of proton therapy on immune cells within the TME. For instance, a study involving BALB/c mice with CT26 colon tumors demonstrated that proton irradiation led to increased immune cell infiltration, particularly at 7 and 14 days post‐treatment. RNA sequencing revealed the upregulation of genes associated with immune response and interferon signaling, suggesting that proton therapy not only induces direct tumor cell death, but also modulates the immune landscape, promoting a more favorable environment for immune activity. 81 Similarly, Iturri et al. found that proton minibeam radiotherapy (pMBRT) enhanced antigen presentation and immune memory formation in a rat model of glioblastoma. Moreover, pMBRT significantly increased the density of tissue‐resident memory CD8+T cells (CD8+TRMs), B cells, conventional dendritic cells type 1 (cDC1), and CD8+ tumor‐associated macrophages (CD8+ TAMs). 87 A subsequent study indicated that the preservation of specific immune cell subpopulations may result from proton therapy reducing the radiation exposure to the lymph nodes. 53 However, in the HCC model, although proton therapy decreased the tumor size, it also recruited immune suppressive cells such as CD163+ M2 and myeloid‐derived suppressor cells (MDSCs) into the TME. 85 Likewise, proton radiation triggered a stronger immunosuppressive response in colon tumors, manifested as an increase in MDSCs and CD4+PD1+T cells and a decrease in NK and CD8+T cells. 82 FLASH therapy, which has an excellent capacity to improve radiotherapy efficiency and reduce toxicity to normal tissues, 90 , 91 has been applied to proton therapy in the laboratory. 92 In a lung cancer model, pFLASH (60 Gy/s) enhanced the infiltration of cytotoxic CD8+T cells and M1‐type iNOS+ macrophages within the TME compared with conventional proton therapy (CPT, 1 Gy/s). Additionally, pFLASH significantly decreased the proportions of FOXP3+ regulatory T cells (FOXP3+ Tregs) and M2‐type CD163+ macrophages. Together, these changes led to a more effective reduction in the lung tumor burden and inhibited tumor cell proliferation. 83 Furthermore, Ni et al. discovered that pFLASH had a significant impact on TAM. Specifically, pFLASH eliminated lipid oxidase expression and reduced low‐density lipid oxidation. This decreased PPARγ activity and arginase 1 expression, thereby inhibiting immunosuppressive macrophage polarization. 86 In a rat model of orthotopic glioma, the advantages of pFLASH (257 Gy/s ± 2) over CPT (4 Gy/s ± 0.02) were not in tumor control but in alleviating neuroinflammation‐induced memory damage and increasing the infiltration of tumor‐infiltrating lymphocytes (TILs, including CD4+T cells, CD8+T cells, Tregs, CD8+TRMs, NK cells, and B cells) in the TME 8 days after radiation. 74 The effects of pFLASH on specific immune cells were complex. For example, compared to CPT, pFLASH treatment reduced Tregs in the TME. 83 However, this reduction was not statistically significant in the orthotopic glioma rat model (P>0.05). 74 The varied effects of proton therapy on tumor‐infiltrating immune cells may be due to two factors: (i) immune cell heterogeneity within the TME across tumors 93 and (ii) heterogeneity of the radiation dose. 94 Moreover, overemphasizing the effects of proton therapy on single‐type cells may be inappropriate, because the interactions of immune cells in the TME are complex and critical. 95  Hypoxia causes immune suppression in the TME. 96 However, oxygen supplementation did not reverse the immune suppression caused by proton therapy in glioma‐bearing rats. 31 , 97
+
+6.2 Changes in cytokines and chemokines
+
+Proton therapy has been linked to significant alterations in cytokine and chemokine levels within the TME. Proton therapy increases pro‐inflammatory cytokines such as interleukin‐6 (IL‐6), interleukin‐1β (IL1β), and tumor necrosis factor‐α (TNFα), which regulate immune responses and tumor progression. For example, a study on HCC indicated that after 3 days of proton therapy, the tumor volume decreased, which was accompanied by an increase in IL‐6, suggesting that a pro‐inflammatory environment may contribute to tumor control. 85 , 98 A recent study using a rat GBM model also revealed an increase in pro‐inflammatory IL1β, chemokine ligand 1, and TNFα 7 days after proton radiation. 87 Furthermore, in patients with HNSCC, proton therapy has been found to decrease the production of exosomes that suppress immune function, thereby potentially enhancing overall immune surveillance against tumors. 84 These changes in cytokine profiles highlight the key role of proton therapy in TIME remodeling, shaping a complex inflammatory and immune response against tumors.
+
+6.3 Regulation of immune checkpoint expression
+
+Immune checkpoints such as programmed cell death 1 (PD1), programmed cell death–ligand 1 (PD‐L1), cytotoxic T‐lymphocyte–associated protein 4 (CTLA4), and lymphocyte activation gene‐3 (LAG3) are essential for tumor immune evasion. 99 , 100 Recent studies have suggested that proton therapy affects anti‐tumor immunity by altering immune checkpoint expression. For instance, Chen et al. observed that photon therapy increased PD‐L1 expression in HCC cells both in vitro and in vivo. 85 Although an increase in PD‐L1 was positively correlated with the RBE in HCC, 85 this finding has been challenged by other studies. Shukla et al. found that after 8 days of pFLASH (60 Gy/s), the proportion of PD‐1+CD3+ T cells decreased, accompanied by a reduction in PD‐L1 expression in lung cancer cells. 83 Therefore, arbitrarily increasing the proton irradiation dose is not recommended because of its effects on immune checkpoint expression.
+
+The TIME, including infiltrating immune cells, cytokines, chemokines, and immune checkpoints, has been illustrated in Figure 1. For immune cells, we mainly focused on T cells, B cells, NK cells, TAMs, and neutrophils. For cytokines and chemokines, we illustrated the alterations in IL‐6 and exosomes. We have also introduced the expression of PD‐L1, which changes dynamically with the dose of proton irradiation. Abbreviations: Tregs, regulatory T cells; CD8+ TRMs, CD8+ tissue‐resident memory cytotoxic T cells; TAMs, tumor‐associated macrophages; NK Cells, natural killer cells; PD‐1, programmed cell death 1; PD‐L1, programmed cell death ligand 1; TIME, tumor immune microenvironment.
+
+7 EFFECTS OF PROTON THERAPY COMBINED WITH IMMUNOTHERAPY
+
+7.1 Mechanisms of combination therapy
+
+Radiation therapy has a complicated effect on tumor immunity, which can sometimes suppress anti‐tumor responses, contributing to its limited effectiveness. 89 Thus, combining radiation therapy with immunotherapy has emerged as a potential solution through their synergistic and abscopal effects. 101 , 102 , 103 Because proton therapy has the following features, it is reasonable to combine it with immunotherapy: (i) Relatively low peripheral lymphocytotoxicity: As described in section 4 on the Impact of Proton Therapy on Peripheral Blood Immune Cells, proton therapy exerts a less adverse impact on lymphocyte subpopulations, such as CD4+ and CD8+ T cells, which are indispensable for an effective immune response. 104 Therefore, the antitumor effects of proton therapy can be enhanced by activating the immune system. (ii) Relatively strong abscopal effect: Proton therapy predominantly induces necrosis in both tumor cells and immune cells instead of apoptosis, releasing more tumor antigens, which can more effectively activate the immune system and thereby enhance the efficacy of immunotherapies. 56 , 57 , 105 (iii) Complicated TME immune landscape: Both immune‐suppressive (TAM2s, MDSCs, Tregs, and PD‐L1) and immune‐activated (TAM1s, CD8+T Cells) cells/molecules in the TME can simultaneously increase following proton therapy. Therefore, combining proton therapy with immunotherapy, such as using immune checkpoint blockades (ICBs), could modulate the TME to enhance immune infiltration and activity. 106 Chen et al. proved this theory in HCC. 85
+
+7.2 Proton therapy combined with ICBs
+
+ICBs such as PD‐1, PD‐L1, and CTLA‐4 inhibitors have been widely used in cancer treatment (PD‐1 inhibitors: nivolumab; PD‐L1 inhibitors: durvalumab; PD‐1 inhibitors: tremelimumab and ipilimumab). In 2020, Nguyen et al. proposed combining proton therapy with ICBs as a therapeutic strategy for locally advanced HNSCC in old patients. 107 Several clinical studies have supported this perspective. For example, a case study involving anaplastic pituitary adenoma (APA) showed that treatment with ipilimumab and nivolumab achieved complete remission of the recurred APA after proton irradiation and temozolomide chemotherapy, resulting in no residual tumor burden for 34 months and improved survival rates. 108 Similarly, in two cases of leptomeningeal disease associated with melanoma, combining proton craniospinal irradiation with nivolumab and ipilimumab extended the OS to 7 months and PFS to 5 months while maintaining acceptable toxicity levels. 109 However, contradictory results have been reported in one case. Maslov et al. found that a patient with adenoid cystic carcinoma who received IMPT followed by nivolumab treatment died 3 months later, suggesting that the effectiveness of this combined therapy may be overestimated. 110 In addition to case reports, Kim et al. conducted a phase II trial on recurrent or metastatic squamous cell carcinoma of the head and neck in 2024. Combining durvalumab and tremelimumab with proton therapy increased the overall response rate (ORR) to 30.4%, median OS to 11.1 months (95% CI, 6.5–15.8), and median PFS to 3.7 months (95% CI, 1.6–5.7). 111 Moreover, ongoing research is evaluating the safety and efficacy of a combination of stereotactic body proton therapy with durvalumab in NSCLC, where the precision of proton therapy can mitigate adverse effects while enhancing the therapeutic window of immunotherapies. 112 Notably, compared with photon therapy, proton therapy has the potential to reduce the risk of tumor progression during ICB therapy because patients receiving proton therapy have higher lymphocyte counts, which could improve the PFS and duration of response. 113 Considering that the clinical evidence is insufficient and primarily focuses on a few cancer types, further large‐scale prospective studies are necessary to explore the combination of proton therapy and ICBs across various tumors in clinical practice. Additionally, compared with the combination therapy of photon radiotherapy and ICBs, there is a lack of foundational research on the mechanisms underlying the effect of proton therapy. A mechanistic study was conducted by Chen et al., who discovered that an anti‐PD‐L1 antibody could reverse the suppressive immune landscape induced by proton therapy in HCC. Specifically, there was an increase in tumor‐infiltrating T cells and a decrease in MDSC recruitment within the TME. 85 The possible combinations of ICBs are summarized in Table 3.
+
+TABLE 3 Combined Proton Therapy with Immunotherapy or Chemotherapy across Different Types of Tumors.
+
+Tumor Type	Combined Therapy	Evidence	Research group	
+HNSCC	Durvalumab, Tremelimumab	Phase II Clinical Trial	Kim et al. 111	
+Central Nervous System Germ Cell Tumors	Cisplatin, Cyclophosphamide, Etoposide, and/or Bleomycin	Single Tertiary Center Clinical Trial	Hong et al. 114	
+Leptomeningeal Disease associated with Melanoma	Ipilimumab, Nivolumab	Case Reports	Sener et al. 109	
+Anaplastic Pituitary Adenoma	Ipilimumab, Nivolumab	Case Reports	Shah et al. 108	
+Adenoid Cystic Carcinoma	Nivolumab	Case Reports	Maslov et al. 110	
+NSCLC	Durvalumab	Review	Mcmillan et al. 112	
+Cisplatin and Paclitaxel	Phase I Clinical Trial	Contreras et al. 115	
+Platinum‐based Chemotherapy	Phase II Clinical Trial	Hoppe et al. 116	
+Albumin‐Bound Paclitaxel and Cisplatin	Clinical Trial	Jin et al. 117	
+ESCA	Fluorouracil, and/or Taxanes, and/or Platinum	Clinical Trial	Abana et al. 118	
+HCC	anti‐PD‐L1 antibody	Experimental Study	Chen et al. 85	
+Pancreatic Cancer
+
+	CAR‐T Therapy (targeting mesothelin)	Experimental Study	Amit et al. 119	
+Capecitabine	Phase II Clinical Trial	Rapp et al. 120	
+Medulloblastoma 	CAR‐T Therapy (targeting GD2)	Experimental Study	Ni et al. 86	
+Hodgkin Lymphoma	ABVD; ABVE‐PC; DECA; IE	Clinical Trial	Hoppe et al. 121	
+Intrahepatic Cholangiocarcinoma	GCD	Case Reports	Nosaka et al. 122	
+Abbreviations: HNSCC, head and neck squamous cell carcinoma; NSCLC, non‐small cell lung cancer; ESCA, esophageal carcinoma; HCC, hepatocellular carcinoma; CAR‐T, chimeric antigen receptor T cell; PD‐L1, programmed cell death ligand 1; ABVD, adriamycin, bleomycin, vinblastine, and dacarbazine; ABVE‐PC, adriamycin, bleomycin, vincristine sulfate, etoposide, prednisone, and cyclophosphamide; DECA, dexamethasone, etoposide, cisplatin, and cytarabine; GCD, gemcitabine, cisplatin, and durvalumab; IE, Ifosfamide and Etoposide.
+
+John Wiley & Sons, Ltd.
+
+7.3 Proton therapy combined with chimeric antigen receptor T Cell (CAR‐T) therapy
+
+In 1993, the Israeli scientist Zelig Eshhar introduced the concept of CAR‐T therapy, 123 which was first applied in a phase I clinical study on ovarian cancer. 124 The main mechanism of CAR‐T cell therapy involves the use of genetic modifications to enable T cells to specifically recognize and attack tumor antigens. This approach can partially overcome tumor cells' immune escape. 125 Since then, CAR‐T cell therapy has been extended to the treatment of leukemia, lymphoma, multiple myeloma, and other hematological malignancies. 126 In recent years, researchers have attempted to apply CAR‐T therapy to modulate the TME in solid tumors by targeting immune checkpoints (PD‐1, CTLA‐4, TIM‐3, LAG‐3, B7‐H3, VISTA, and B7S1), immune suppressive cells (MDSCs, Tregs), immune suppressive cytokines (TGF‐β, IL‐10), tumor vasculature, cancer‐associated stromal cells, reprogramed metabolism and hypoxia. 127 , 128 CAR‐T therapy has been successful in HCC 129 and GBM. 130 Numerous reviews have suggested that combining radiation therapy with CAR‐T cell therapy may be beneficial. 131 , 132 , 133 Recently, proton radiation combined with CAR‐T cell therapy has emerged as a novel tumor treatment strategy (Table 3). For pancreatic cancer, the combination of proton therapy with CAR‐T therapy targeting mesothelin enhanced treatment effectiveness, as proton therapy significantly increased the expression of mesothelin in tumor cells and subsequently contributed to greater infiltration of CAR‐T cells into the tumor. Furthermore, the reactive TME (promotion of TAM1 polarization and reduction in MDSCs), along with the abscopal effect (upregulation of IFN‐γ levels in the serum) can help inhibit tumor growth. 119 In the following year, Ni et al. discovered that pFLASH could sensitize medulloblastoma to GD2 CAR‐T cell therapy by improving CAR‐T cell infiltration and activation. 86 Thus, the combination of proton therapy and CAR‐T cells is a promising direction for future research.
+
+8 EFFECTS OF PROTON THERAPY COMBINED WITH CHEMOTHERAPY
+
+Conventional chemotherapy stimulates anti‐tumor immunity in several ways: by initiating the release of immunostimulatory molecules from dying tumor cells, mediating off‐target effects on immune cell populations, and activating the whole‐body immune system. 134 Correspondingly, the combination of photon radiation with chemotherapy can improve anti‐tumor efficacy through additive effects, 135 which has been widely utilized in numerous tumors such as NSCLC, 136 lymphoma, 137 , 138 esophageal carcinoma, 139 and pancreatic cancer. 140 Given that proton therapy exerts excellent therapeutic effects alongside low radiation toxicity, the combination of proton therapy with chemotherapy has been proposed as a new treatment strategy (Table 3 ). Early studies have suggested that the main advantage of combining proton therapy with chemotherapy lies in reducing radiation toxicity instead of improving survival outcomes. For example, a large cohort study involving patients with Hodgkin's lymphoma showed that those who received proton therapy following standard chemotherapy experienced no early grade 3 toxicity. Additionally, the early relapse‐free survival rates were similar to those of photon radiation treatment. 121 Similarly, although combining proton therapy with capecitabine chemotherapy did not significantly improve the 1‐year OS of patients with unresectable, borderline resectable, or medically inoperable pancreatic cancer, it did significantly reduce the risk of surgical or perioperative complications in patients with borderline resectable disease. 120 In patients with central nervous system germ cell tumors, systemic chemotherapy (cisplatin, cyclophosphamide, etoposide, and/or bleomycin) followed by proton therapy did not result in better 5‐year EFS or OS rates than chemotherapy followed by photon therapy. This was true for both low‐risk (PEFS = 0.457, POS = 0.485) and high‐risk (PEFS = 0.605, POS = 0.392) groups. 114 Recent studies have indicated that combining proton therapy with chemotherapy can improve the survival outcomes of patients with cancer. For NSCLC, Contreras et al. reported that treatment involving large‐fraction proton beam radiation of 60 Gy delivered over 15 sessions, combined with cisplatin and paclitaxel chemotherapy, resulted in high rates of locoregional control and OS, along with good acute tolerability. 115 A phase I/II single‐arm nonrandomized prospective multicenter trial also reached similar conclusions. Researchers found that large‐fraction proton therapy, delivering doses ranging from 2.5 to 3.53 Gy per fraction and combined with platinum‐based treatment for stage II or III unresectable NSCLC, resulted in high overall survival rates. Specifically, the OS rates were 89% and 49% at 1 and 3 years, respectively, with PFS rates of 58% and 32%. 116 Additionally, a retrospective analysis of NSCLC with negative driver genes revealed that combination therapy including proton therapy and chemotherapy (albumin‐bound paclitaxel and cisplatin) provided a survival advantage over X‐ray treatment, particularly in the later stages, which eventually contributed to longer OS by the third year (51.6 ± 4.62 months, 95% CI, 42.5 ∼ 60.7 vs 33.1 ± 1.99 months; 95% CI, 29.2 ∼ 37.1; P<0.05). 117 Based on these findings, proton therapy combined with chemotherapy could not only minimize radiation‐related toxicity in NSCLC but also improve survival outcomes, especially in the late stages. IMPT, an efficient type of proton therapy, when used alongside chemotherapy (fluorouracil, taxanes, and/or platinum), could improve long‐term survival outcomes in patients with locally advanced esophageal cancer (5‐year OS rate: 41.1%; PFS: 34.6%; local regional recurrence‐free survival: 78.1%; distant metastasis‐free survival: 65.0%) and simultaneously reduced the risk of cardiopulmonary toxicity. 118 Differences in the survival outcomes of the combination of proton therapy and chemotherapy could be attributed to tumor heterogeneity and the relatively small sample size. Thus, large‐scale prospective multicenter clinical studies are necessary to better illustrate these therapeutic effects. In addition, research on the transcriptional profile and immune landscape after combination treatment is worthy of attention.
+
+9 CURRENT CHALLENGES AND FUTURE DIRECTIONS
+
+9.1 Single Cell RNA‐sequencing and radiotherapy biobanking
+
+Currently, research on proton therapy primarily focuses on bulk RNA sequencing in cancers such as BC, GBM, head and neck cancer, prostate cancer, lung cancer, and pancreatic cancer (Table 1). Because single‐cell RNA sequencing better describes biological changes in different cell types, it has been applied to GBM, 141 BC, 142 NSCLC, 143 and head and neck cancer 144 during photon therapy. However, the application of single‐cell transcriptomics in proton therapy is limited at present. Using single‐cell RNA sequencing, Shiau et al. discovered that proton therapy was associated with a reduction in lymphatic endothelial cells (ECs) and an increase in reactive endothelial‐to‐mesenchymal transition (EndMT) in PDAC. These findings suggest that incorporating nintedanib, an EndMT‐inhibiting drug, into proton therapy may provide a more effective therapeutic strategy. 145  Furthermore, as biological data accumulate, establishing radiotherapy biobanks could promote data sharing across multiple centers and prevent duplicated efforts. 146 In summary, utilizing the single‐cell RNA sequencing and establishing an authentic, large‐sample radiotherapy biobanking could improve the personalization of proton therapy.
+
+9.2 Technical challenges in clinical applications
+
+The clinical implementation of proton therapy is subject to several technical challenges that hinder its widespread adoption. These challenges include the high costs of building and maintaining proton therapy facilities, complexity of treatment planning systems, and need for specialized training of medical personnel. 147 In addition, precise delivery of proton beams requires advanced imaging techniques. Robust quality assurance protocols are essential for accurately targeting tumors while sparing the surrounding healthy tissue. Variability in patient anatomy and tumor characteristics further complicates treatment planning, necessitating the development of more sophisticated computational models and machine learning algorithms to predict treatment outcomes. 148 Overcoming these technical hurdles is essential to optimize proton therapy and establish it as a standard treatment for various cancers.
+
+9.3 High quality clinical research
+
+ Proton therapy is expensive and has strict indications. Therefore, conducting large‐scale clinical trials is challenging. However, multi‐center collaborative research may be a potential solution. Because combining proton therapy with other treatment strategies, such as immunotherapy and chemotherapy, may produce synergistic effects, hospitals should collaborate with pharmaceutical companies to facilitate clinical trials of these combination therapies. By performing multi‐cooperative, large‐sample, prospective, authoritative clinical studies, we may accumulate robust evidence regarding the efficacy and safety of proton therapy across various cancer types, which would ultimately benefit patients with cancer through improved treatment options.
+
+10 CONCLUSION
+
+In the evolving field of cancer treatment, proton therapy is a promising modality owing to its high efficacy and low toxicity. This review highlights that proton therapy selectively targets cancer cells, spares healthy tissue, and induces a unique immune response in peripheral blood immune cells, tumor cells, and the TIME. In addition, combining proton therapy with immunotherapy and/or chemotherapy may benefit patients with various types of cancer. We hope that this review will provide a better understanding of the impact of proton therapy on the immune system and shed light on potential combination treatment strategies.
+
+AUTHOR CONTRIBUTIONS
+
+Conceptualization: G.H. and Z.T. Methodology: R.L., M.T., M.F., Y.J., G.H., and Z.T. Investigation: R.L., M.T., M.F., and Z.T. Data curation: R.L., M.T., and Y.J. Writing – original draft preparation: R.L., M.T., Y.J., M.F., G.H., and Z.T. Writing – review and editing: G.H. and Z.T. Supervision: G.H. and Z.T. Funding: G.H. and Z.T. All authors have read and agreed to the published version of the manuscript.
+
+INSTITUTIONAL REVIEW BOARD STATEMENT
+
+Not applicable.
+
+INFORMED CONSENT STATEMENT
+
+Not applicable.
+
+CONFLICTS OF INTEREST STATEMENT
+
+The authors declare no conflicts of interest.
+
+ACKNOWLEDGMENTS
+
+We thank Guangyuan Hu and Zhen Tao for critically reading this manuscript. This work was financially supported by the National Health Council Foundation of China (grant number WKZX2023CX030002, 2024.01‐2026.11).
+
+DATA AVAILABILITY STATEMENT
+
+Data are provided to those interested, upon reasonable request.
+
+
+REFERENCES
+
+1 Matsuzaki Y , Date H , Sutherland KL , Kiyanagi Y . Nuclear collision processes around the Bragg peak in proton therapy. Radiol Phys Technol. 2010;3(1):84‐92. doi:10.1007/s12194-009-0081-2 20821107
+2 Yuan TZ , Zhan ZJ , Qian CN . New frontiers in proton therapy: applications in cancers. Cancer commun (London, England). 2019;39(1):61. doi:10.1186/s40880-019-0407-3 PMC6805548 31640788
+3 Beheshti A , Peluso M , Lamont C , Hahnfeldt P , Hlatky L . Proton irradiation augments the suppression of tumor progression observed with advanced age. Radiat Res. 2014;181(3):272‐283. doi:10.1667/rr13538.1 24568128 PMC4406472
+4 Dupere JM , Lucido JJ , Breen WG , et al. Pencil Beam Scanning Proton Therapy for Pregnant Patients With Brain and Head and Neck Cancers. Int J Radiat Oncol Biol Phys. 2024;118(3):853‐858. doi:10.1016/j.ijrobp.2023.09.040 37820769
+5 Strausberg RL . Tumor microenvironments, the immune system and cancer survival. Genome Biol. 2005;6(3):211. doi:10.1186/gb-2005-6-3-211 15774034 PMC1088935
+6 Gajewski TF , Schreiber H , Fu YX . Innate and adaptive immune cells in the tumor microenvironment. Nat Immunol. 2013;14(10):1014‐1022. doi:10.1038/ni.2703 24048123 PMC4118725
+7 Kerkar SP , Restifo NP . Cellular constituents of immune escape within the tumor microenvironment. Cancer Res. 2012;72(13):3125‐3130. doi:10.1158/0008-5472.Can-11-4094 22721837 PMC6327310
+8 Mocellin S , Wang E , Marincola FM . Cytokines and immune response in the tumor microenvironment. J Immunother (1991). 2001;24(5):392‐407.11685082
+9 Toor SM , Sasidharan Nair V , Decock J , Elkord E . Immune checkpoints in the tumor microenvironment. Semin Cancer Biol. 2020;65:1‐12. doi:10.1016/j.semcancer.2019.06.021 31265893
+10 Pitt JM , Marabelle A , Eggermont A , Soria JC , Kroemer G , Zitvogel L . Targeting the tumor microenvironment: removing obstruction to anticancer immune responses and immunotherapy. Ann Oncol. 2016;27(8):1482‐1492. doi:10.1093/annonc/mdw168 27069014
+11 Levin WP , Kooy H , Loeffler JS , DeLaney TF . Proton beam therapy. British j Cancer. 2005;93(8):849‐854. doi:10.1038/sj.bjc.6602754 PMC2361650 16189526
+12 Wong KCW , Hui EP , Lo KW , et al. Nasopharyngeal carcinoma: an evolving paradigm. Nat Rev Clin Oncol. 2021;18(11):679‐695. doi:10.1038/s41571-021-00524-x 34194007
+13 Nikitaki Z , Velalopoulou A , Zanni V , et al. Key biological mechanisms involved in high‐LET radiation therapies with a focus on DNA damage and repair. Expert Rev Mol Med. 2022;24:e15. doi:10.1017/erm.2022.6 35357290
+14 Paganetti H , Blakely E , Carabe‐Fernandez A , et al. Report of the AAPM TG‐256 on the relative biological effectiveness of proton beams in radiation therapy. Med Phys. 2019;46(3):e53‐e78. doi:10.1002/mp.13390 30661238 PMC9559855
+15 Ellsworth SG . Field size effects on the risk and severity of treatment‐induced lymphopenia in patients undergoing radiation therapy for solid tumors. Adv Radiat Oncol. 2018;3(4):512‐519. doi:10.1016/j.adro.2018.08.014 30370350 PMC6200885
+16 Young S , Phaterpekar K , Tsang DS , Boldt G , Bauman GS . Proton Radiotherapy for Management of Medulloblastoma: A Systematic Review of Clinical Outcomes. Adv Radiat Oncol. 2023;8(4):101189. doi:10.1016/j.adro.2023.101189 37008255 PMC10051027
+17 Ho ESQ , Barrett SA , Mullaney LM . A review of dosimetric and toxicity modeling of proton versus photon craniospinal irradiation for pediatrics medulloblastoma. Acta Oncol (Stockholm, Sweden). 2017;56(8):1031‐1042. doi:10.1080/0284186x.2017.1324207 28509599
+18 Lee HJ Jr., Zeng J , Rengan R . Proton beam therapy and immunotherapy: an emerging partnership for immune activation in non‐small cell lung cancer. Transl Lung Cancer Res. 2018;7(2):180‐188. doi:10.21037/tlcr.2018.03.28 29876317 PMC5960663
+19 Elbers JBW , Gunsch PA , Debets R , et al. HYpofractionated, dose‐redistributed RAdiotherapy with protons and photons to combat radiation‐induced immunosuppression in head and neck squamous cell carcinoma: study protocol of the phase I HYDRA trial. BMC Cancer. 2023;23(1):541. doi:10.1186/s12885-023-11031-w 37312053 PMC10262496
+20 Mitin T , Zietman AL . Promise and pitfalls of heavy‐particle therapy. J Clin Oncol. 2014;32(26):2855‐2863. doi:10.1200/jco.2014.55.1945 25113772 PMC4152713
+21 Wilson RR . Radiological use of fast protons. Radiology. 1946;47(5):487‐491. doi:10.1148/47.5.487 20274616
+22 Lawrence JH , Tobias CA , Born JL , et al. Pituitary irradiation with high‐energy proton beams: a preliminary report. Cancer Res. 1958;18(2):121‐134.13511365
+23 Sami M , Yousuf M , Hashmi Q , Ahmad M , Ghilman M , Shareef H . Proton Radiation Therapy for Head and Neck Cancers. Cureus. 2024;16(10):e70752. doi:10.7759/cureus.70752 39493189 PMC11531088
+24 Nakajima K , Iwata H , Takano G , et al. Hypofractionated Spot Scanning Proton Therapy for Head and Neck Mucosal Melanoma: A Retrospective Analysis With Quality‐of‐Life Outcome. Head Neck. 2025;48(5):1208‐1217. doi:10.1002/hed.70121 41334671 PMC13055425
+25 Horisaki K , Yoshikawa S , Omata W , Tsutsumida A , Kiyohara Y . Comparison of Adjuvant and Salvage Therapy with Immune Checkpoint Inhibitors in Head and Neck Mucosal Melanoma Treated with Proton Beam Therapy: A Retrospective Cohort Study. Acta Derm Venereol. 2025;105:adv43602. doi:10.2340/actadv.v105.43602 40629676 PMC12278589
+26 Matsuo T , Ogata T , Waki T , et al. Local Control of Conjunctival Malignant Melanoma by Proton Beam Therapy in a Patient With No Metastasis in Six Years From in Situ to Nodular Lesions. J Med Cases. 2025;16(1):28‐36. doi:10.14740/jmc4351 39759165 PMC11699862
+27 Chen YY , Liu FY , Chiang YY , Lai CH . Complete remission of endometrial cancer stage IVC treated with multimodality treatment including immunotherapy and maintenance PARP inhibitor ‐ A case report. Taiwan J Obstet Gynecol. 2025;64(3):524‐527. doi:10.1016/j.tjog.2024.12.027 40368525
+28 Raldow A , Lamb J , Hong T . Proton beam therapy for tumors of the upper abdomen. British J Radiol. 2020;93(1107):20190226. doi:10.1259/bjr.20190226 PMC7066948 31430202
+29 Hoskin P . The price of anticancer intervention. Secondary malignancies after radiotherapy. Lancet Oncol. 2002;3(9):577‐578.12233734
+30 Gallagher KJ , Youssef B , Georges R , et al. Proton Radiotherapy Could Reduce the Risk of Fatal Second Cancers for Children with Intracranial Tumors in Low‐ and Middle‐Income Countries. Int J Part Ther. 2021;7(4):1‐10. doi:10.14338/ijpt-20-00041.1 PMC8019578 33829068
+31 Potiron S , Iturri L , Lamirault C , et al. Dose Heterogeneity Reduces Radiation Oxygen Dependence in Both Tumor and Healthy Tissues: The Case of Proton Minibeam Radiation Therapy. Int J Radiat Oncol Biol Phys. 2025;123(4):1132‐1145. doi:10.1016/j.ijrobp.2025.06.3859 40582600
+32 Shirai K , Aoki S , Endo M , et al. Recent developments in the field of radiotherapy for the management of lung cancer. Jpn J Radiol. 2025;43(2):186‐199. doi:10.1007/s11604-024-01663-8 39316285 PMC11790782
+33 Iwata H , Murakami M , Maruo K , et al. Long‐term outcomes of concurrent chemo‐proton therapy for unresectable stage III non‐small cell lung cancer: a Japanese national registry study. Radiother Oncol. 2026;214:111307. doi:10.1016/j.radonc.2025.111307 41314394
+34 Sarlak S , Pagès G , Luciano F . Enhancing radiotherapy techniques for Triple‐Negative breast cancer treatment. Cancer Treat Rev. 2025;136:102939. doi:10.1016/j.ctrv.2025.102939 40286498
+35 Rao V , Singh S , Zade B . Advances in radiotherapy in the treatment of esophageal cancer. World J Clin Oncol. 2025;16(3):102872. doi:10.5306/wjco.v16.i3.102872 40130058 PMC11866087
+36 Cammarata FP , Forte GI , Broggi G , et al. Molecular Investigation on a Triple Negative Breast Cancer Xenograft Model Exposed to Proton Beams. Int J Mol Sci. 2020;21(17):6337. doi:10.3390/ijms21176337 32882850 PMC7503243
+37 Bravatà V , Cammarata FP , Minafra L , et al. Proton‐irradiated breast cells: molecular points of view. J Radiat Res. 2019;60(4):451‐465. doi:10.1093/jrr/rrz032 31135901 PMC6640903
+38 Bravatà V , Minafra L , Cammarata FP , et al. Gene expression profiling of breast cancer cell lines treated with proton and electron radiations. British J Radiol. 2018;91(1089):20170934. doi:10.1259/bjr.20170934 PMC6223146 29888960
+39 Bravatà V , Tinganelli W , Cammarata FP , et al. Hypoxia Transcriptomic Modifications Induced by Proton Irradiation in U87 Glioblastoma Multiforme Cell Line. J Pers Med. 2021;11(4):308. doi:10.3390/jpm11040308 33923454 PMC8073933
+40 Cammarata FP , Torrisi F , Forte GI , et al. Proton Therapy and Src Family Kinase Inhibitor Combined Treatments on U87 Human Glioblastoma Multiforme Cell Line. Int J Mol Sci. 2019;20(19):4745. doi:10.3390/ijms20194745 31554327 PMC6801826
+41 Schniewind I , Hadiwikarta WW , Grajek J , et al. Cellular plasticity upon proton irradiation determines tumor cell radiosensitivity. Cell Rep. 2022;38(8):110422. doi:10.1016/j.celrep.2022.110422 35196495
+42 Lupu‐Plesu M , Claren A , Martial S , et al. Effects of proton versus photon irradiation on (lymph)angiogenic, inflammatory, proliferative and anti‐tumor immune responses in head and neck squamous cell carcinoma. Oncogenesis. 2017;6(7):e354. doi:10.1038/oncsis.2017.56 28671677 PMC5541708
+43 Fujinaga H , Sakai Y , Yamashita T , et al. Biological characteristics of gene expression features in pancreatic cancer cells induced by proton and X‐ray irradiation. Int J Radiat Biol. 2019;95(5):571‐579. doi:10.1080/09553002.2019.1558297 30557072
+44 Saddawi‐Konefka R , Schokrpur S , Gutkind JS . Let it be: Preserving tumor‐draining lymph nodes in the era of immuno‐oncology. Cancer Cell. 2024;42(6):930‐933. doi:10.1016/j.ccell.2024.05.015 38861928
+45 Xu Q , Chu J , Hu Q , et al. The role and clinical significance of tumor‐draining lymph nodes in tumor progression and immunotherapy. Crit Rev Oncol Hematol. 2025;212:104745. doi:10.1016/j.critrevonc.2025.104745 40315968
+46 von Renesse J , Lin MC , Ho PC . Tumor‐draining lymph nodes ‐ friend or foe during immune checkpoint therapy? Trends Cancer. 2025;11(7):676‐690. doi:10.1016/j.trecan.2025.04.008 40348668
+47 Katakai T . Yin and yang roles of B lymphocytes in solid tumors: Balance between antitumor immunity and immune tolerance/immunosuppression in tumor‐draining lymph nodes. Front Oncol. 2023;13:1088129. doi:10.3389/fonc.2023.1088129 36761946 PMC9902938
+48 Koukourakis MI , Giatromanolaki A . Tumor draining lymph nodes, immune response, and radiotherapy: Towards a revisal of therapeutic principles. Biochim Biophys Acta Rev Cancer. 2022;1877(3):188704. doi:10.1016/j.bbcan.2022.188704 35227831
+49 Chen X , Yang M , Huang Y , Tu J , Cai Y , Yuan X . Molecular mechanisms underlying the abscopal effect induced by radiotherapy and its synergistic translational potential with immunotherapy. Ther Adv Med Oncol. 2025;17:17588359251387534. doi:10.1177/17588359251387534 41179116 PMC12579151
+50 Marciscano AE , Ghasemzadeh A , Nirschl TR , et al. Elective Nodal Irradiation Attenuates the Combinatorial Efficacy of Stereotactic Radiation Therapy and Immunotherapy. Clin Cancer Res. 2018;24(20):5058‐5071. doi:10.1158/1078-0432.Ccr-17-3427 29898992 PMC6532976
+51 Darragh LB , Gadwa J , Pham TT , et al. Elective nodal irradiation mitigates local and systemic immunity generated by combination radiation and immunotherapy in head and neck tumors. Nat Commun. 2022;13(1):7015. doi:10.1038/s41467-022-34676-w 36385142 PMC9668826
+52 Buchwald ZS , Nasti TH , Lee J , et al. Tumor‐draining lymph node is important for a robust abscopal effect stimulated by radiotherapy. Journal for Immunother Cancer. 2020;8(2): e000867. doi:10.1136/jitc-2020-000867 PMC7542667 33028691
+53 Pham TN , Coupey J , Yger F , Candéias SM , Thariat J , Valable S . Effect of glioblastoma and brain radiotherapy on T‐lymphocyte subpopulations in rodents. Radiother Oncol. 2025;206:110801. doi:10.1016/j.radonc.2025.110801 40081500
+54 Venkatesulu BP , Mallick S , Lin SH , Krishnan S . A systematic review of the influence of radiation‐induced lymphopenia on survival outcomes in solid tumors. Crit Rev Oncol Hematol. 2018;123:42‐51. doi:10.1016/j.critrevonc.2018.01.003 29482778
+55 Brown JM , Attardi LD . The role of apoptosis in cancer development and treatment response. Nat Rev Cancer. 2005;5(3):231‐237. doi:10.1038/nrc1560 15738985
+56 Miszczyk J , Rawojć K , Panek A , et al. Do protons and X‐rays induce cell‐killing in human peripheral blood lymphocytes by different mechanisms? Clin Transl Radiat Oncol. 2018;9:23‐29. doi:10.1016/j.ctro.2018.01.004 29594247 PMC5862687
+57 Wang X , Zhang H , XinZhang, Liu Y . Abscopal effect: from a rare phenomenon to a new frontier in cancer therapy. Biomark Res. 2024;12(1):98. doi:10.1186/s40364-024-00628-3 39228005 PMC11373306
+58 Li Z , Lai X , Fu S , et al. Immunogenic Cell Death Activates the Tumor Immune Microenvironment to Boost the Immunotherapy Efficiency. Adv Sci. 2022;9(22):e2201734. doi:10.1002/advs.202201734 PMC9353475 35652198
+59 Durante M . Kaplan lecture 2023: lymphopenia in particle therapy. Int J Radiat Biol. 2024;100(5):669‐677. doi:10.1080/09553002.2024.2324472 38442137
+60 De B , Ng SP , Liu AY , et al. Radiation‐Associated Lymphopenia and Outcomes of Patients with Unresectable Hepatocellular Carcinoma Treated with Radiotherapy. J Hepatocell Carcinoma. 2021;8:57‐69. doi:10.2147/jhc.S282062 33688489 PMC7937383
+61 Tang C , Liao Z , Gomez D , et al. Lymphopenia association with gross tumor volume and lung V5 and its effects on non‐small cell lung cancer patient outcomes. Int J Radiat Oncol Biol Phys. 2014;89(5):1084‐1091. doi:10.1016/j.ijrobp.2014.04.025 25035212
+62 Nakamura M , Ishikawa H , Ohnishi K , et al. Effects of lymphopenia on survival in proton therapy with chemotherapy for non‐small cell lung cancer. J Radiat Res. 2023;64(2):438‐447. doi:10.1093/jrr/rrac084 36592478 PMC10036091
+63 Jin JY , Hu C , Xiao Y , et al. Higher Radiation Dose to the Immune Cells Correlates with Worse Tumor Control and Overall Survival in Patients with Stage III NSCLC: A Secondary Analysis of RTOG0617. Cancers. 2021;13(24):6193. doi:10.3390/cancers13246193 34944813 PMC8699524
+64 Ladbury CJ , Rusthoven CG , Camidge DR , Kavanagh BD , Nath SK . Impact of Radiation Dose to the Host Immune System on Tumor Control and Survival for Stage III Non‐Small Cell Lung Cancer Treated with Definitive Radiation Therapy. Int J Radiat Oncol Biol Phys. 2019;105(2):346‐355. doi:10.1016/j.ijrobp.2019.05.064 31175902
+65 Friedes C , Iocolano M , Lee SH , et al. The effective radiation dose to immune cells predicts lymphopenia and inferior cancer control in locally advanced NSCLC. Radiother Oncol. 2024;190:110030. doi:10.1016/j.radonc.2023.110030 38008414
+66 Patel JS , McCall NS , Thomas M , et al. Immune System Dose With Proton Versus Photon Radiotherapy for Treatment of Locally Advanced NSCLC. Int J Part Ther. 2024;12:100016. doi:10.1016/j.ijpt.2024.100016 38832321 PMC11145531
+67 Loap P , Vu‐Bezin J , De Marzi L , Kirova Y . Proton therapy reduces the effective dose to immune cells in breast cancer patients. Strahlenther Onkol. 2024;200(12):1074‐1079. doi:10.1007/s00066-024-02263-1 39060636
+68 Loap P , De Marzi L , Decroocq J , et al. Proton Therapy Reduces the Effective Dose to Immune Cells in Mediastinal Hodgkin Lymphoma Patients. Int J Part Ther. 2024;13:100110. doi:10.1016/j.ijpt.2024.100110 39091405 PMC11293511
+69 Mantovani A , Allavena P , Sica A , Balkwill F . Cancer‐related inflammation. Nature. 2008;454(7203):436‐444. doi:10.1038/nature07205 18650914
+70 Forget P , Khalifa C , Defour JP , Latinne D , Van Pel MC , De Kock M . What is the normal value of the neutrophil‐to‐lymphocyte ratio? BMC Res Notes. 2017;10(1):12. doi:10.1186/s13104-016-2335-5 28057051 PMC5217256
+71 Cho Y , Kim JW , Yoon HI , Lee CG , Keum KC , Lee IJ . The Prognostic Significance of Neutrophil‐to‐Lymphocyte Ratio in Head and Neck Cancer Patients Treated with Radiotherapy. J Clin Med. 2018;7(12):512. doi:10.3390/jcm7120512 30513928 PMC6306798
+72 Pham TN , Coupey J , Toutain J , et al. Early effects of different brain radiotherapy modalities on circulating leucocyte subpopulations in rodents. Int J Radiat Biol. 2024;100(5):744‐755. doi:10.1080/09553002.2024.2324471 38466699
+73 Pham TN , Coupey J , Rousseau M , Thariat J , Valable S . Revealing the effect of X‐ray or proton brain irradiation on systemic inflammation and leukocyte subpopulation interplay in rodents. J Leukoc Biol. 2024;116(6):1530‐1543. doi:10.1093/jleuko/qiae156 38952292
+74 Iturri L , Bertho A , Lamirault C , et al. Proton FLASH Radiation Therapy and Immune Infiltration: Evaluation in an Orthotopic Glioma Rat Model. Int J Radiat Oncol Biol Phys. 2023;116(3):655‐665. doi:10.1016/j.ijrobp.2022.12.018 36563907
+75 Heather JM , Kim DW , Sepulveda SM , et al. The differential immunological impact of photon vs proton radiation therapy in high‐grade lymphopenia in patients with gastrointestinal tumors. Clin Exp Immunol. 2025;219(1):uxaf040. doi:10.1093/cei/uxaf040 40574667 PMC12342742
+76 Pham TN , Coupey J , Thariat J , Valable S . Bayesian networks in modeling leucocyte interplay following brain irradiation: A comprehensive framework. Comput Methods Programs Biomed. 2024;257:108421. doi:10.1016/j.cmpb.2024.108421 39276666
+77 Boopathi E , Den RB , Thangavel C . Innate Immune System in the Context of Radiation Therapy for Cancer. Cancers (Basel). 2023;15(15):3972. doi:10.3390/cancers15153972 37568788 PMC10417569
+78 Du J , Kageyama SI , Hirata H , et al. Comparative analysis of the immune responses in cancer cells irradiated with X‐ray, proton and carbon‐ion beams. Biochem Biophys Res Commun. 2021;585:55‐60. doi:10.1016/j.bbrc.2021.11.004 34784552
+79 Lockney NA , Zhang M , Morris CG , et al. Radiation‐induced tumor immunity in patients with non‐small cell lung cancer. Thorac Cancer. 2019;10(7):1605‐1611. doi:10.1111/1759-7714.13122 31228354 PMC6610279
+80 Lillo S , Mirandola A , Vai A , et al. Current Status and Future Directions of Proton Therapy for Head and Neck Carcinoma. Cancers (Basel). 2024;16(11):2085. doi:10.3390/cancers16112085 38893203 PMC11171191
+81 Mirjolet C , Nicol A , Limagne E , et al. Impact of proton therapy on antitumor immune response. Sci Rep. 2021;11(1):13444. doi:10.1038/s41598-021-92942-1 34188135 PMC8241828
+82 Burckel H , Nicol A , Mura C , et al. Distinct immune responses to proton and photon radiotherapy: implications for anti‐PD‐L1 combination therapy in colorectal cancer. J Transl Med. 2025;23(1):360. doi:10.1186/s12967-025-06377-7 40122794 PMC11931879
+83 Shukla S , Saha T , Rama N , et al. Ultra‐high dose‐rate proton FLASH improves tumor control. Radiother Oncol. 2023;186:109741. doi:10.1016/j.radonc.2023.109741 37315577 PMC10527231
+84 Chimote AA , Lehn MA , Bhati J , et al. Proton Treatment Suppresses Exosome Production in Head and Neck Squamous Cell Carcinoma. Cancers (Basel). 2024;16(5):1008. 10.3390/cancers16051008 38473367 PMC10931005
+85 Chen MF , Chen PT , Hsieh CC , Wang CC . Effect of Proton Therapy on Tumor Cell Killing and Immune Microenvironment for Hepatocellular Carcinoma. Cells. 2023;12(2):332. doi:10.3390/cells12020332 36672266 PMC9857172
+86 Ni H , Reitman ZJ , Zou W , et al. FLASH radiation reprograms lipid metabolism and macrophage immunity and sensitizes medulloblastoma to CAR‐T cell therapy. Nat Cancer. 2025;6(3):460‐473. doi:10.1038/s43018-025-00905-6 39910249 PMC12244404
+87 Iturri L , Riquelme‐Perez M , Bonté PE , et al. Evaluation of Proton Minibeam Radiotherapy on Antitumor Immune Responses in a Rat Model of Glioblastoma. Cancer Immunol Res. 2025;13(11):1854‐1872. doi:10.1158/2326-6066.Cir-24-0902 40833465 PMC12580782
+88 Zhang Y , Hu J , Ji K , et al. CD39 inhibition and VISTA blockade may overcome radiotherapy resistance by targeting exhausted CD8+ T cells and immunosuppressive myeloid cells. Cell Rep Med. 2023;4(8):101151. doi:10.1016/j.xcrm.2023.101151 37567173 PMC10439278
+89 Wang L , Lynch C , Pitroda SP , et al. Radiotherapy and immunology. J Exp Med. 2024;221(7):e20232101. doi:10.1084/jem.20232101 38771260 PMC11110906
+90 Vozenin MC , Hendry JH , Limoli CL . Biological Benefits of Ultra‐high Dose Rate FLASH Radiotherapy: Sleeping Beauty Awoken. Clin Oncol. 2019;31(7):407‐415. doi:10.1016/j.clon.2019.04.001 PMC6850216 31010708
+91 Zhou S , Zheng D , Fan Q , et al. Minimum dose rate estimation for pulsed FLASH radiotherapy: A dimensional analysis. Med Phys. 2020;47(7):3243‐3249. doi:10.1002/mp.14181 32279337
+92 Patriarca A , Fouillade C , Auger M , et al. Experimental Set‐up for FLASH Proton Irradiation of Small Animals Using a Clinical System. Int J Radiat Oncol Biol Phys. 2018;102(3):619‐626. doi:10.1016/j.ijrobp.2018.06.403 30017793
+93 Iglesia MD , Parker JS , Hoadley KA , Serody JS , Perou CM , Vincent BG . Genomic Analysis of Immune Cell Infiltrates Across 11 Tumor Types. J Natl Cancer Inst. 2016;108(11):djw144. doi:10.1093/jnci/djw144 27335052 PMC5241901
+94 Potiron S , Iturri L , Juchaux M , et al. The significance of dose heterogeneity on the anti‐tumor response of minibeam radiation therapy. Radiother Oncol. 2024;201:110577. doi:10.1016/j.radonc.2024.110577 39393469
+95 Ren X , Zhang L , Zhang Y , Li Z , Siemers N , Zhang Z . Insights Gained from Single‐Cell Analysis of Immune Cells in the Tumor Microenvironment. Ann Rev Immunol. 2021;39:583‐609. doi:10.1146/annurev-immunol-110519-071134 33637019
+96 Wang B , Zhao Q , Zhang Y , et al. Targeting hypoxia in the tumor microenvironment: a potential strategy to improve cancer immunotherapy. J Exp Clin Cancer Res. 2021;40(1):24. doi:10.1186/s13046-020-01820-7 33422072 PMC7796640
+97 Iturri L , Bertho A , Lamirault C , et al. Oxygen supplementation in anesthesia can block FLASH effect and anti‐tumor immunity in conventional proton therapy. Commun Med. 2023;3(1):183. doi:10.1038/s43856-023-00411-9 38102219 PMC10724215
+98 Chen MF , Hsieh CC , Chen WC , Lai CH . Role of interleukin‐6 in the radiation response of liver tumors. Int J Radiat Oncol Biol Phys. 2012;84(5):e621‐630. doi:10.1016/j.ijrobp.2012.07.2360 22975618
+99 Diesendruck Y , Benhar I . Novel immune check point inhibiting antibodies in cancer therapy‐Opportunities and challenges. Drug Resist Updat. 2017;30:39‐47. doi:10.1016/j.drup.2017.02.001 28363334
+100 He Y , Rivard CJ , Rozeboom L , et al. Lymphocyte‐activation gene‐3, an important immune checkpoint in cancer. Cancer Sci. 2016;107(9):1193‐1197. doi:10.1111/cas.12986 27297395 PMC5021038
+101 Levy A , Chargari C , Cheminant M , Simon N , Bourgier C , Deutsch E . Radiation therapy and immunotherapy: implications for a combined cancer treatment. Crit Rev Oncol Hematol. 2013;85(3):278‐287. doi:10.1016/j.critrevonc.2012.09.001 23036459
+102 Ishihara D , Pop L , Takeshima T , Iyengar P , Hannan R . Rationale and evidence to combine radiation therapy and immunotherapy for cancer treatment. Cancer Immunol Immunother. 2017;66(3):281‐298. doi:10.1007/s00262-016-1914-6 27743027 PMC11029249
+103 Jagodinsky JC , Harari PM , Morris ZS . The Promise of Combining Radiation Therapy With Immunotherapy. Int J Radiat Oncol Biol Phys. 2020;108(1):6‐16. doi:10.1016/j.ijrobp.2020.04.023 32335187 PMC7442714
+104 Durante M , Formenti S . Harnessing radiation to improve immunotherapy: better with particles? British J Radiol. 2020;93(1107):20190224. doi:10.1259/bjr.20190224 PMC7066943 31317768
+105 Demaria S , Golden EB , Formenti SC . Role of Local Radiation Therapy in Cancer Immunotherapy. JAMA Oncol. 2015;1(9):1325‐1332. doi:10.1001/jamaoncol.2015.2756 26270858
+106 Kong X , Zhang J , Chen S , et al. Immune checkpoint inhibitors: breakthroughs in cancer treatment. Cancer Biol Med. 2024;21(6):451‐472. doi:10.20892/j.issn.2095-3941.2024.0055 38801082 PMC11208906
+107 Nguyen NP , Kim L , Thariat J , et al. Immunotherapy and Modern Radiotherapy Technique for Older Patients with Locally Advanced Head and Neck Cancer: A Proposed Paradigm by the International Geriatric Radiotherapy Group. Cancers (Basel). 2022;14(21):5285. doi:10.3390/cancers14215285 36358703 PMC9654379
+108 Shah S , Manzoor S , Rothman Y , et al. Complete Response of a Patient With a Mismatch Repair Deficient Aggressive Pituitary Adenoma to Immune Checkpoint Inhibitor Therapy: A Case Report. Neurosurgery. 2022;91(2):e51‐e56. doi:10.1227/neu.0000000000002024 35544035 PMC9514746
+109 Sener U , Webb M , Breen WG , et al. Proton Craniospinal Irradiation with Immunotherapy in Two Patients with Leptomeningeal Disease from Melanoma. J Immunother Precis Oncol. 2024;7(1):1‐6. doi:10.36401/jipo-23-20 38327758 PMC10846635
+110 Maslov DV , Thomas K , Matrana M . Utilization of Nivolumab in Adenoid Cystic Carcinoma After Progression on Platinum‐Based Chemotherapy. Perm J. 2021;25:20.229. doi:10.7812/TPP/20.229 PMC8784041 33970093
+111 Kim H , Park S , Jung HA , et al. Phase II Trial of Combined Durvalumab Plus Tremelimumab with Proton Therapy for Recurrent or Metastatic Head and Neck Squamous Cell Carcinoma. Cancer Res Treat. 2023;55(4):1104‐1112. doi:10.4143/crt.2023.502 37202212 PMC10582547
+112 McMillan MT , Kang M , Shepherd AF , et al. Stereotactic body proton therapy for non‐small cell lung cancer: Clinical indications and recommendations. J Radiosurg SBRT. 2023;9(1):17‐32.38029014 PMC10681144
+113 Bo C , Lv Z , Zhang H , et al. Proton Therapy May Reduce the Risk of Cancer Progression During Immune Checkpoint Inhibitor Therapy: A Propensity Score‐Matched Analysis of Intensity Modulated Proton Versus Photon Radiation Therapy. Int J Radiat Oncol Biol Phys. 2026;124(3):733‐744. doi:10.1016/j.ijrobp.2025.09.042 41043559
+114 Hong KT , Lee DH , Kim BK , et al. Treatment outcome and long‐term follow‐up of central nervous system germ cell tumor using upfront chemotherapy with subsequent photon or proton radiation therapy: a single tertiary center experience of 127 patients. BMC Cancer. 2020;20(1):979. doi:10.1186/s12885-020-07484-y 33036578 PMC7547441
+115 Contreras J , Srivastava A , Samson P , et al. Phase I Study of Accelerated Hypofractionated Proton Therapy and Chemotherapy for Locally Advanced Non‐Small Cell Lung Cancer. IntJ Radiat Oncol Biol Phys. 2022;113(4):742‐748. doi:10.1016/j.ijrobp.2022.01.012 35074432
+116 Hoppe BS , Nichols RC , Flampouri S , et al. Chemoradiation with Hypofractionated Proton Therapy in Stage II‐III Non‐Small Cell Lung Cancer: A Proton Collaborative Group Phase 2 Trial. Int J Radiat Oncol Biol Phys. 2022;113(4):732‐741. doi:10.1016/j.ijrobp.2022.03.005 35306151
+117 Jin Y , Shimizu S , Li Y , et al. Proton therapy (PT) combined with concurrent chemotherapy for locally advanced non‐small cell lung cancer with negative driver genes. Radiat Oncol. 2023;18(1):189. doi:10.1186/s13014-023-02372-8 37974211 PMC10652584
+118 Abana CO , Damen PJ , van Rossum PS , et al. Esophageal Cancer Outcomes After Definitive Chemotherapy With Intensity Modulated Proton Therapy. Int J Part Ther. 2024;11:100009. doi:10.1016/j.ijpt.2024.100009 38757075 PMC11095094
+119 Amit U , Uslu U , Verginadis II , et al. Proton radiation boosts the efficacy of mesothelin‐targeting chimeric antigen receptor T cell therapy in pancreatic cancer. Proc Natl Acad Sci U S A. 2024;121(31):e2403002121. doi:10.1073/pnas.2403002121 39047033 PMC11294999
+120 Rapp CT , Rutenberg MS , Morris CG , Nichols RC . Dose‐escalated proton therapy with elective nodal irradiation and concomitant chemotherapy for unresectable, borderline resectable, or medically inoperable pancreatic cancer: a phase II trial. J Gastrointest Oncol. 2022;13(3):1395‐1401. doi:10.21037/jgo-21-593 35837200 PMC9274025
+121 Hoppe BS , Hill‐Kayser CE , Tseng YD , et al. Consolidative proton therapy after chemotherapy for patients with Hodgkin lymphoma. Ann Oncol. 2017;28(9):2179‐2184. doi:10.1093/annonc/mdx287 28911093 PMC5834068
+122 Nosaka T , Naito H , Murata Y , et al. Effective control in MSI‐high unresectable intrahepatic cholangiocarcinoma treated with gemcitabine/cisplatin/durvalumab and proton beam therapy: a case report. Front Immunol. 2025;16:1685944. doi:10.3389/fimmu.2025.1685944 41208980 PMC12588942
+123 Eshhar Z , Waks T , Gross G , Schindler DG . Specific activation and targeting of cytotoxic lymphocytes through chimeric single chains consisting of antibody‐binding domains and the gamma or zeta subunits of the immunoglobulin and T‐cell receptors. Proc Natl Acad Sci U S A. 1993;90(2):720‐724. doi:10.1073/pnas.90.2.720 8421711 PMC45737
+124 Kershaw MH , Westwood JA , Parker LL , et al. A phase I study on adoptive immunotherapy using gene‐modified T cells for ovarian cancer. Clin Cancer Res. 2006;12(20 Pt 1):6106‐6115. doi:10.1158/1078-0432.Ccr-06-1183 17062687 PMC2154351
+125 Qu C , Zhang H , Cao H , et al. Tumor buster ‐ where will the CAR‐T cell therapy ‘missile’ go? Mol Cancer. 2022;21(1):201. doi:10.1186/s12943-022-01669-8 36261831 PMC9580202
+126 Yang Z , Wang Y . Clinical development of chimeric antigen receptor‐T cell therapy for hematological malignancies. Chin Med J. 2023;136(19):2285‐2296. doi:10.1097/cm9.0000000000002549 37358555 PMC10538902
+127 Liu G , Rui W , Zhao X , Lin X . Enhancing CAR‐T cell efficacy in solid tumors by targeting the tumor microenvironment. Cell Mol Immunol. 2021;18(5):1085‐1095. doi:10.1038/s41423-021-00655-2 33785843 PMC8093220
+128 Ai K , Liu B , Chen X , et al. Optimizing CAR‐T cell therapy for solid tumors: current challenges and potential strategies. J Hematol Oncol. 2024;17(1):105. doi:10.1186/s13045-024-01625-7 39501358 PMC11539560
+129 Guizhen Z , Guanchang J , Liwen L , et al. The tumor microenvironment of hepatocellular carcinoma and its targeting strategy by CAR‐T cell immunotherapy. Front Endocrinol. 2022;13:918869. doi:10.3389/fendo.2022.918869 PMC9452721 36093115
+130 Zhu G , Zhang Q , Zhang J , Liu F . Targeting Tumor‐Associated Antigen: A Promising CAR‐T Therapeutic Strategy for Glioblastoma Treatment. Front Pharmacol. 2021;12:661606. doi:10.3389/fphar.2021.661606 34248623 PMC8264285
+131 Flynn JP , O'Hara MH , Gandhi SJ . Preclinical rationale for combining radiation therapy and immunotherapy beyond checkpoint inhibitors (i.e., CART). Transl Lung Cancer Res. 2017;6(2):159‐168. doi:10.21037/tlcr.2017.03.07 28529898 PMC5420544
+132 Qin VM , Haynes NM , D'Souza C , Neeson PJ , Zhu JJ . CAR‐T Plus Radiotherapy: A Promising Combination for Immunosuppressive Tumors. Front Immunol. 2021;12:813832. doi:10.3389/fimmu.2021.813832 35095911 PMC8790144
+133 Xia X , Yang Z , Lu Q , et al. Reshaping the tumor immune microenvironment to improve CAR‐T cell‐based cancer immunotherapy. Mol Cancer. 2024;23(1):175. doi:10.1186/s12943-024-02079-8 39187850 PMC11346058
+134 Galluzzi L , Humeau J , Buqué A , Zitvogel L , Kroemer G . Immunostimulation with chemotherapy in the era of immune checkpoint inhibitors. Nat Rev Clin Oncol. 2020;17(12):725‐741. doi:10.1038/s41571-020-0413-z 32760014
+135 Steel GG , Peckham MJ . Exploitable mechanisms in combined radiotherapy‐chemotherapy: the concept of additivity. Int J Radiat Oncol Biol Phys. 1979;5(1):85‐91. doi:10.1016/0360-3016(79)90044-0 422420
+136 Rosenzweig KE , Gomez JE . Concurrent Chemotherapy and Radiation Therapy for Inoperable Locally Advanced Non‐Small‐Cell Lung Cancer. J Clin Oncol. 2017;35(1):6‐10. doi:10.1200/jco.2016.69.9678 27870565
+137 Mauch PM . Management of early stage Hodgkin's disease: the role of radiation therapy and/or chemotherapy. Baillieres Clin Haematol. 1996;9(3):531‐541. doi:10.1016/s0950-3536(96)80024-2 8922243
+138 Andrieu JM , Ifrah N , Payen C , Fermanian J , Coscas Y , Flandrin G . Increased risk of secondary acute nonlymphocytic leukemia after extended‐field radiation therapy combined with MOPP chemotherapy for Hodgkin's disease. J Clin Oncol. 1990;8(7):1148‐1154. doi:10.1200/jco.1990.8.7.1148 2193118
+139 Rich TA , Ajani JA . High dose external beam radiation therapy with or without concomitant chemotherapy for esophageal carcinoma. Ann Oncol. 1994;5 Suppl 3:9‐15. doi:10.1093/annonc/5.suppl_3.s98204536
+140 Stoop TF , Theijse RT , Seelen LWF , et al. Preoperative chemotherapy, radiotherapy and surgical decision‐making in patients with borderline resectable and locally advanced pancreatic cancer. Nat Rev Gastroenterol Hepatol. 2024;21(2):101‐124. doi:10.1038/s41575-023-00856-2 38036745
+141 Liu SJ , Zou C , Pak J , et al. In vivo perturb‐seq of cancer and microenvironment cells dissects oncologic drivers and radiotherapy responses in glioblastoma. Genome Biol. 2024;25(1):256. doi:10.1186/s13059-024-03404-6 39375777 PMC11457336
+142 Meng J , Yang Y , Lv J , et al. CXCR6 expression correlates with radiotherapy response and immune context in triple‐negative breast cancer‐experimental studies. Int J Surg. 2024;110(8):4695‐4707. doi:10.1097/js9.0000000000001546 39143706 PMC11325934
+143 Li J , Bai M , Jia W , et al. Irradiated tumor cell‐released microparticles enhance the therapeutic efficacy of PD‐1 inhibitors by promoting M1‐TAMs polarization in NSCLC brain metastases. Cancer Lett. 2024;598:217133. doi:10.1016/j.canlet.2024.217133 39079563
+144 Wang M , Qin L , Thia K , et al. Cancer cell‐specific PD‐L1 expression is a predictor of poor outcome in patients with locally advanced oral cavity squamous cell carcinoma. J Immunother Cancer. 2024;12(10): e009617. doi:10.1136/jitc-2024-009617 39357980 PMC11448134
+145 Shiau C , Su J , Guo JA , et al. Treatment‐associated remodeling of the pancreatic cancer endothelium at single‐cell resolution. Front Oncol. 2022;12:929950. doi:10.3389/fonc.2022.929950 36185212 PMC9524152
+146 Ward TH , Gilbert DC , Higginbotham G , Morris CM , Speirs V , Curtin NJ . Radiotherapy biobanking: current landscape, opportunities, challenges, and future aspirations. J Pathol Clin Res. 2022;8(1):3‐13. doi:10.1002/cjp2.246 34658150 PMC8682944
+147 Suckert T , Nexhipi S , Dietrich A , et al. Models for Translational Proton Radiobiology‐From Bench to Bedside and Back. Cancers. 2021;13(16):4216. doi:10.3390/cancers13164216 34439370 PMC8395028
+148 Kernbach JM , Delev D , Neuloh G , et al. Meta‐topologies define distinct anatomical classes of brain tumours linked to histology and survival. Brain Commun. 2023;5(1):fcac336. doi:10.1093/braincomms/fcac336 36632188 PMC9830987

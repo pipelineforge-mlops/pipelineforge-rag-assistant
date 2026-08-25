@@ -1,0 +1,384 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: iScience
+Journal ID: iScience
+NLM Journal ID: 101724038
+
+iScience
+
+EISSN: 2589-0042
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498978
+PMID: 42633095
+DOI: 10.1016/j.isci.2026.116979
+Article ID: S2589-0042(26)02357-6
+Article ID: 116979
+Article version: 1
+Subjects: Article
+
+Dual-gene regulation of NGF overexpression and P75NTR knockdown enhances BMSC osteogenesis by suppressing pyroptosis
+
+Ji Ying 1 3 8 9
+Lv Zheng 7 8
+Wang Ye 2 8
+Mao Yongkang 1
+Lin Honghu 1
+Huang Jianjia 1
+Quoc Hoan Nguyen 1
+Bei Chaoyong beichaoyong@glmc.edu.cn 1 4 5 6 ∗
+1 Trauma Orthopedics Department, Affiliated Hospital of Guilin Medical University, Guilin, Guangxi 541001, China
+2 Fifth Clinical Medical College, Guilin Medical University, Guilin, Guangxi 541002, China
+3 Sports Medicine Center, West China Hospital, Sichuan University, Chengdu, Sichuan 610000, China
+4 Guangxi University of Chinese Medicine, Nanning, Guangxi 530200, China
+5 Guangxi Engineering Research Center of Digital Medicine and Clinical Transformation, Guilin, Guangxi 541001, China
+6 College of Physical Education and Health, Guangxi Normal University, Guilin, Guangxi 541006, China
+7 Department of Nuclear Medicine, Fourth Hospital of Harbin Medical University, Harbin, Heilongiiang 150001, China
+∗ Corresponding author beichaoyong@glmc.edu.cn8 These authors contributed equally
+
+9 Lead contact
+
+Publication date: 2026 Aug 21
+Electronic publication date: 2026 Aug 12
+Volume: 29
+Issue: 8
+Electronic Location ID: 116979
+Received 2025 Nov 8; Revised 2026 Apr 11; Accepted 2026 Jul 13
+Copyright: © 2026 Published by Elsevier Inc.
+Copyright year: 2026
+Copyright holder:
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: bone marrow mesenchymal stem cells, bone defect healing, pyroptosis regulation, bone tissue engineering, dual-gene delivery, engineered biomaterials
+
+==============================
+Summary
+
+Bone defects present a major clinical challenge in regenerative medicine, where bone marrow mesenchymal stem cells (BMSCs) are widely used but often show limited osteogenic efficacy. In this study, we developed an engineered tissue strategy combining lentivirus-mediated dual-gene regulation and an allogeneic bone scaffold to enhance bone regeneration. BMSCs were modified to overexpress nerve growth factor (NGF) and knock down the p75 neurotrophin receptor (P75NTR), and their effects on osteogenesis and pyroptosis were evaluated in vitro and in a rat femoral condyle defect model. The dual-gene modification suppressed NF-κB nuclear translocation and reduced pyroptosis-related protein expression, while significantly enhancing osteogenic differentiation of BMSCs. In vivo, scaffold-assisted delivery of engineered BMSCs promoted new bone formation and improved structural regeneration in critical-sized defects. These findings demonstrate that coordinated regulation of NGF and P75NTR signaling within a biomaterial-based system can enhance stem cell-mediated bone repair and improve functional bone regeneration outcomes.
+
+Graphical abstract
+
+Highlights
+
+• NGF and P75NTR regulate BMSC pyroptosis via NF-κB signaling
+
+• Dual-gene modulation enhances osteogenic differentiation of BMSCs
+
+• Scaffold-assisted gene delivery promotes bone defect regeneration
+
+• Suppression of pyroptosis improves bone healing in vivo models
+
+Biological sciences; Biomaterials; Tissue engineering
+
+Introduction
+
+Bone defects are a common condition caused by various factors, including but not limited to inflammation, trauma, infection, and tumor resection, posing a significant clinical concern worldwide.1,2,3 Despite the inherent self-repair ability of bone tissue, such as in cases of transverse fractures, crack fractures, and trabecular fractures,4 when bone defects exceed its natural healing capacity, it leads to severe functional impairment, necessitating medical intervention to restore its structure and function.5 Autologous bone transplantation has long been considered the “gold standard” for bone repair due to its excellent osteogenesis, osteoinduction, and osteoconduction capabilities.6,7 However, limitations such as donor site constraints, additional surgical trauma, and potential complications have hindered its widespread clinical application.8 Given these limitations, researchers and clinicians continuously seek alternative methods to discover safer and more effective bone repair strategies.
+
+Tissue engineering technology has shown promising applications in bone repair in recent years.9,10 This technology combines biologically active materials, growth factors, and cells with osteogenic potential to construct tissue-engineered products that promote bone defect repair.11,12 The U.S. FDA has authorized the clinical application of allogeneic bone materials when used in compliance with specific regulatory requirements. In this study, we chose allogeneic bone as the scaffold material, which possesses good biocompatibility and appropriate degradation rate, providing a suitable three-dimensional architecture to support cell adhesion and growth.13,14 Among the numerous seed cells available for tissue engineering, bone marrow mesenchymal stem cells (BMSCs) are considered one of the most promising due to their ease of isolation, multilineage differentiation potential, and good immunocompatibility.15 BMSCs can be readily propagated in vitro and possess multipotent differentiation potential, giving rise to osteogenic, chondrogenic, and adipogenic lineages.16 However, the use of BMSCs alone fails to fully replicate the osteogenic effects observed with autologous bone transplantation. In recent years, researchers have begun to focus on manipulating the phenotype and function of BMSCs through gene engineering methods to enhance their effectiveness in tissue engineering.17
+
+Nerve growth factor (NGF) belongs to the neurotrophin family and was initially discovered for its influence on the survival and differentiation of neurons.18,19 It interacts with two types of receptors: high-affinity tropomyosin receptor kinases (Trks) and low-affinity p75 neurotrophin receptor (p75NTR).20 Beyond its neurological functions, accumulating evidence has demonstrated that NGF can promote the osteogenic differentiation of BMSCs and facilitate sensory nerve ingrowth during bone regeneration, thereby contributing to fracture healing.21,22,23 However, emerging evidence suggests that NGF-mediated signaling may also exert context-dependent effects on BMSCs. In our preliminary study, NGF overexpression in BMSCs was associated with increased activation of pyroptosis-related signaling during bone defect repair, which may be linked to the concomitant upregulation of P75NTR.24 Pyroptosis represents a controlled inflammatory cell death pathway characterized by NF-κB activation in response to pathogens or cellular stress, ultimately leading to the caspase-mediated cleavage of the pore-forming effector gasdermin D (GSDMD).25,26 Within this process, the NF-κB P65 (RelA) subunit plays a critical role in transcriptional activation following its nuclear translocation.27 Importantly, previous studies have shown that inhibition or silencing of p75NTR can enhance the osteogenic differentiation capacity of BMSCs.28,29 Based on these findings, we hypothesized that NGF overexpression induced upregulation of P75NTR may activate NF-κB-mediated pyroptosis, thereby partially counteracting the pro-osteogenic effects of NGF. Therefore, simultaneous NGF overexpression and P75NTR inhibition may represent a promising strategy to suppress pyroptosis and improve BMSC-mediated bone regeneration.
+
+By combining genetically engineered BMSCs with allogeneic bone, this study develops a tissue-engineered bone. In vitro, we utilized lentivirus-mediated gene transduction technology to knockdown or overexpress P75NTR and overexpress NGF, suggesting P75NTR+/BMSC may regulate pyroptosis signal through nuclear translocation of the NF-κB signaling pathway, comparing the effects of NGF+/BMSCs, P75NTR−/BMSCs, and P75NTR−+NGF+/BMSCs on osteogenesis of BMSCs, exploring the efficacy of this strategy in promoting the osteogenic activity of BMSCs. In the in vivo study, the constructs were implanted into critical-sized defects created in the rat femoral condyle, and subsequent bone regeneration within the distal femoral defect region was evaluated. We further validated the repair efficacy of this tissue-engineered bone in an animal model, providing insights and methods for clinical treatment. In summary, this study not only provides a bone defect treatment strategy but also offers experimental data and theoretical support for the application of gene engineering technology in bone tissue engineering. These findings are expected to provide scientific evidence and therapeutic approaches for addressing complex bone defect problems in future clinical practice. Schematic illustration of bone defect repair using genetically engineered BMSCs delivered via an allogeneic bone scaffold (Figure 1).Figure 1 Schematics of repairing bone defect with genetically engineered materials
+
+Schematic representation of the overall experimental design and therapeutic strategy for bone defect repair. Bone marrow mesenchymal stem cells (BMSCs) were isolated and genetically modified via lentiviral transduction to achieve nerve growth factor (NGF) overexpression and p75 neurotrophin receptor (P75NTR) knockdown. The engineered BMSCs were subsequently seeded onto an allogeneic bone scaffold to construct a cell-gene-biomaterial complex. This construct was implanted into a rat femoral condyle defect model to evaluate bone regeneration.
+
+Results
+
+Characterization of scaffolds and BMSCs
+
+Scanning electron microscopy (SEM) was used to characterize the microstructure of the allogeneic bone scaffold (Figure 2A). At low magnification (50×), the scaffold exhibited a highly porous and interconnected three-dimensional trabecular-like architecture, with large, continuous pores. At higher magnifications (200× and 2.00K×), cells were observed to adhere to the scaffold surface. To further evaluate the mechanical properties of the scaffold, both compressive and tensile stress-strain tests were performed (Figure 2B). The results showed that the scaffold exhibited progressive stress increases with increasing strain under both compression and tension, indicating stable mechanical behavior. Notably, the scaffold loaded with cells (ABS-C) demonstrated higher stress-bearing capacity compared to the control group (ABS). Primary rat BMSCs expanded to passage 3 displayed a typical spindle-shaped appearance and formed a swirling growth pattern under microscopic observation (Figure 2C). Following osteogenic induction, the cells developed distinct mineralized nodules, which were visualized by positive alizarin red S (ARS) staining (Figure 2D). Proliferation analysis using the CCK-8 assay demonstrated a time-dependent increase in cellular metabolic activity (Figure 2E). Flow cytometric evaluation confirmed the mesenchymal phenotype of the isolated BMSCs, as they strongly expressed CD90 and CD29, while showing minimal CD45 and CD34 expression (Figure 2F).Figure 2 Characterization of Scaffolds and identification of the BMSCs
+
+(A) SEM images of the allogeneic bone scaffold at different magnifications (50×, 200×, and 2.00K×), showing a porous, trabecular-like three-dimensional architecture. Scale bars, 200 μm, 50 μm, and 5 μm, respectively.
+
+(B) Mechanical properties of the scaffold evaluated by compressive and tensile stress-strain tests comparing ABS and ABS-C groups.
+
+(C) Morphology of BMSCs observed under inverted light microscopy. Scale bar, 150 μm.
+
+(D) ARS staining showing calcium deposition and mineralized nodule formation after osteogenic induction. Scale bar, 150 μm.
+
+(E) Cell proliferation of BMSCs assessed by CCK-8 assay.
+
+(F) Flow cytometric characterization of BMSCs, confirming positive expression of CD29, CD90, and negative expression of CD45 and CD34. Data are presented as mean ± SEM, with n = 3 independent biological replicates. Statistical analysis was performed using one-way ANOVA. Significance is indicated as ∗p < 0.05, ∗∗p < 0.01, ∗∗∗p < 0.001. SEM, scanning electron microscopy; ARS, alizarin red S.
+
+Knocking down P75NTR inhibits NF-κB nuclear translocation and reduces pyroptosis
+
+Three days after lentiviral transfection, fluorescence microscopy confirmed successful gene modification. Green fluorescence was observed in the NGF overexpression and P75NTR overexpression groups, whereas the P75NTR knockdown group showed red fluorescence, indicating efficient transfection (Figure 3A). Quantitative analysis of western blot data showed that P75NTR expression was markedly increased in the P75NTR+/BMSCs group (8.43 ± 0.12) compared with the control group (1.00 ± 0.09), while the NGF+/BMSCs group also showed elevated expression (5.85 ± 0.24). In contrast, P75NTR−/BMSCs showed comparable levels to the control (1.05 ± 0.05). The pyroptosis-related proteins GSDMD and NLRP3 were significantly reduced in the P75NTR−/BMSCs group (0.74 ± 0.05 and 0.79 ± 0.02, respectively) compared with the P75NTR+/BMSCs group (1.23 ± 0.02 and 1.14 ± 0.04) and the NGF+/BMSCs group (1.18 ± 0.02 and 1.38 ± 0.04). Similarly, the relative expression of NF-κB p65 was significantly decreased in the P75NTR−/BMSCs group (0.68 ± 0.00) compared with the control (1.00 ± 0.03), P75NTR+/BMSCs (1.13 ± 0.04), and NGF+/BMSCs groups (1.11 ± 0.03) (Figures 3B and 3C). Immunofluorescence staining further demonstrated distinct subcellular localization patterns of p65 (Figure 3D). In the P75NTR+/BMSCs group, strong nuclear accumulation of p65 was observed, indicating activation of the NF-κB pathway. In contrast, in the P75NTR−/BMSCs group, p65 fluorescence was predominantly retained in the cytoplasm with minimal nuclear signal, suggesting reduced nuclear translocation of NF-κB.Figure 3 Influence of NGF overexpression and P75NTR modulation on pyroptosis in BMSCs
+
+(A) Fluorescence microscopy images showing transfection efficiency in different experimental groups. Scale bar, 50 μm.
+
+(B and C) Protein levels of the pyroptosis-related proteins, as measured by western blotting. Molecular weight markers are provided in the full-length blots (document S2).
+
+(D) Immunofluorescence staining showing subcellular localization of NF-κB p65. Scale bar, 10 μm. Data are presented as mean ± SEM, with n = 3 independent biological replicates. Statistical analysis was performed using one-way ANOVA. Significance is indicated as ∗p < 0.05, ∗∗p < 0.01, ∗∗∗p < 0.001.
+
+Two genes successfully transfected into BMSCs
+
+Fluorescence imaging confirmed successful gene modulation, with NGF overexpression exhibiting green fluorescence and P75NTR silencing reflected by red fluorescence (Figure 4A). Representative fluorescence patterns of each group is shown in Figure 4B. Western blot analysis was performed to evaluate the effects of NGF overexpression and P75NTR knockdown on protein expression in BMSCs (Figures 4C and 4D). Quantitative analysis demonstrated that the relative expression level of NGF protein was markedly increased in the NGF+/BMSCs group (2.05 ± 0.22) and the P75NTR−+NGF+/BMSCs group (2.52 ± 0.07) compared with the control group (1.00 ± 0.05) and the P75NTR−/BMSCs group (0.96 ± 0.31). In contrast, the expression of P75NTR protein was significantly reduced in the P75NTR−/BMSCs group (0.56 ± 0.07) and the P75NTR−+NGF+/BMSCs group (0.81 ± 0.05) compared with the control group (1.00 ± 0.01) and the NGF+/BMSCs group (1.22 ± 0.10).Figure 4 Validation of dual-gene modification efficiency in BMSCs
+
+(A and B) Fluorescence images confirming NGF overexpression and P75NTR knockdown in BMSCs following lentiviral transduction. Scale bar, 50 μm.
+
+(C and D) Western blot analysis of NGF and P75NTR protein expression. Molecular weight markers are provided in the full-length blots (document S2). Data are presented as mean ± SEM, with n = 3 independent biological replicates. Statistical analysis was performed using one-way ANOVA. Significance is indicated as ∗p < 0.05, ∗∗p < 0.01, ∗∗∗p < 0.001. NGF, nerve growth factor; P75NTR, p75 neurotrophin receptor.
+
+P75NTR knockdown combined with NGF overexpression reduces pyroptosis and promotes osteogenesis
+
+Protein expression analysis demonstrated distinct differences in pyroptosis-related markers among the experimental groups (Figure 5A). The expression of the inflammasome-related protein NLRP3 was significantly elevated in the NGF+/BMSCs group (2.46 ± 0.12) compared with the control group (1.00 ± 0.07). In contrast, the P75NTR−/BMSCs group (1.04 ± 0.02) showed levels comparable to the control, while the dual-gene group (1.29 ± 0.14) displayed a partial reduction compared with the NGF+/BMSCs group. A consistent pattern was observed for the pyroptosis protein GSDMD, with the highest expression detected in the NGF+/BMSCs group (4.84 ± 0.17). Notably, both the P75NTR−/BMSCs group (2.63 ± 0.03) and the dual-gene group (2.09 ± 0.11) exhibited markedly lower GSDMD expression compared with the NGF+/BMSCs group, indicating suppression of pyroptosis-related signaling following P75NTR knockdown. At the mRNA level, quantitative PCR analysis revealed trends consistent with the protein expression results (Figure 5B), further supporting the regulatory effect of dual-gene modification on pyroptosis-related pathways. Osteogenic differentiation was evaluated by detecting mineralized matrix formation through ARS staining. As shown in Figure 5C, after four weeks of osteogenic induction, the P75NTR−+NGF+/BMSCs group exhibited significantly more calcium deposits and mineralized nodules than the other groups. Western blot analysis further confirmed these findings at the protein level (Figure 5D). Quantitative analysis demonstrated that the expression of OPN was progressively increased across the groups, with the highest level observed in the P75NTR−+NGF+/BMSCs group (2.20 ± 0.01), followed by the NGF+/BMSCs group (2.00 ± 0.01) and the P75NTR−/BMSCs group (1.79 ± 0.01). A similar trend was observed for Runx2, where the P75NTR−+NGF+/BMSCs group (1.96 ± 0.03) showed markedly higher expression than the NGF+/BMSCs (1.24 ± 0.02) and P75NTR−/BMSCs (1.12 ± 0.02) groups. In addition, the expression of collagen I was significantly elevated in the P75NTR−+NGF+/BMSCs group (1.56 ± 0.02) compared with the NGF+/BMSCs (1.28 ± 0.02) and P75NTR−/BMSCs (1.19 ± 0.12) groups, as well as the control group (1.00 ± 0.13).Figure 5 Effect of dual gene regulation on pyroptosis and osteogenic potential in BMSCs
+
+(A) Expression of pyroptosis-related proteins analyzed by western blotting. Molecular weight markers are provided in the full-length blots (document S2).
+
+(B) Relative mRNA expression of pyroptosis markers determined by RT-qPCR.
+
+(C) Representative ARS staining showing mineralized nodule formation in each group. Scale bar, 50 μm.
+
+(D) Protein levels of the osteogenesis-associated proteins, as measured by western blotting. Molecular weight markers are provided in the full-length blots (document S2). Data are presented as mean ± SEM, with n = 3 independent biological replicates. Statistical analysis was performed using one-way ANOVA. Significance is indicated as ∗p < 0.05, ∗∗p < 0.01, ∗∗∗p < 0.001. ARS, alizarin red S.
+
+P75NTR knockdown combined with NGF improves bone defect healing in rats
+
+The three-dimensional reconstruction of the defect area was shown in Figure 6A. The color rendering showed that the yellow was the new bone trabecula, and the blue was the scaffold material. Trabecular structure of new bone can be seen in all the 4 groups, and trabecular structure can be seen at the edge of the defect area, and the support material in the middle has not been completely degraded. Micro-computed tomography (micro-CT) analysis was performed to quantitatively evaluate new bone formation in the defect area (Figure 6B). Among all groups, the P75NTR−+NGF+/BMSCs group exhibited the greatest extent of bone regeneration, as reflected by multiple trabecular parameters. Specifically, bone volume/total volume% (BV/TV%) was markedly higher in the P75NTR−+NGF+/BMSCs group (22.95% ± 1.23%) compared with the control group (11.70% ± 2.38%), the P75NTR−/BMSCs group (14.92% ± 0.31%), and the NGF+/BMSCs group (15.29 % ± 0.55%). Similarly, trabecular number (Tb.N) was significantly increased in the P75NTR−+NGF+/BMSCs group (4.24 ± 0.30) compared with the control (1.90 ± 0.14), P75NTR−/BMSCs (2.49 ± 0.07), and NGF+/BMSCs (2.56 ± 0.18) groups. In contrast, trabecular separation (Tb.Sp) was markedly reduced in the P75NTR−+NGF+/BMSCs group (0.18 ± 0.01) compared with the control group (0.42 ± 0.04), the P75NTR−/BMSCs group (0.34 ± 0.02), and the NGF+/BMSCs group (0.33 ± 0.02), indicating a denser and more compact trabecular structure.Figure 6 Micro-CT image analysis and histology analysis of bone regeneration
+
+(A) Three-dimensional reconstructed micro-CT images showing the morphology of the defect region 4 weeks post-implantation. Scale bar, 2 mm and 1.5 mm.
+
+(B) Quantitative analysis of bone regeneration parameters within the region of interest, including BV/TV, Tb.N, and Tb.Sp.
+
+(C) Representative H&E-stained sections illustrating tissue organization and new bone formation across treatment groups. Scale bar, 200 μm. Data are presented as mean ± SEM, with n = 3 independent biological replicates. Statistical analysis was performed using one-way ANOVA. Significance is indicated as ∗p < 0.05, ∗∗p < 0.01, ∗∗∗p < 0.001. BV/TV, bone volume/total volume; Tb.N, trabecular number; Tb.Sp, trabecular separation; H&E, hematoxylin and eosin.
+
+H&E staining results revealed, a small amount of new bone was formed in the edge of the defect area and a large amount of fibrous tissue was visible in the P75NTR−+NGF+/BMSCs group at 4 weeks after surgery. With the increase of time, the area of new bone increased. And 8 weeks after operation, the defect area in the P75NTR-/BMSCs group and the NGF+/BMSCs group were covered by new bone tissue. The defect area of the P75NTR−+NGF+/BMSCs group formed a complete and mature bone tissue structure, and the defect area was completely healed (Figure 6C).
+
+Discussion
+
+Bone defects remain a major clinical challenge.5,30 This is particularly the case when there is impaired vascularization or extensive tissue loss, and the bone’s own regenerative capacity is insufficient for complete repair.31,32 A bone graft is required when bone tissue is unable to repair itself completely, resulting in functional impairment.33 Bone tissue engineering has emerged as a promising strategy to address this limitation by integrating seed cells, bioactive cues, and supportive scaffolds.32 In the present study, we focused on enhancing the regenerative capacity of BMSCs through a dual-gene regulatory strategy, in combination with a bone scaffold, to improve bone defect repair outcomes.
+
+BMSCs are widely recognized as ideal seed cells for bone regeneration due to their osteogenic differentiation potential and immunomodulatory properties.34,35 Recent advances in gene engineering have enabled the modulation of intracellular signaling pathways to enhance stem-cell function further.36 NGF has been shown to enhance the osteogenic commitment of stem cells, thereby facilitating bone repair and fracture healing.37,38 However, our findings suggested that NGF overexpression may simultaneously activate p75NTR-mediated signaling, thereby increasing inflammatory pathway activation.24 In addition, previous studies have reported that downregulation of P75NTR improves the viability of BMSCs, and its upregulation may inhibit bone regeneration.39,40 By silencing P75NTR, we may reduce this negative impact. This genetic regulation strategy provides a new perspective for improving the functionality of tissue-engineered bone.
+
+Pyroptosis, as an inflammatory form of programmed cell death, has been increasingly recognized as a critical factor influencing stem cell survival and tissue regeneration.41 Mechanistically, activation of the NF-κB pathway promotes the transcription of inflammasome-related genes and facilitates the cleavage of GSDMD, ultimately leading to membrane disruption and inflammatory mediator release.42,43 In this context, P75NTR appears to function as an upstream regulator linking NGF signaling to NF-κB activation. Consistent with previous reports, our results demonstrate that knockdown of P75NTR suppresses NF-κB p65 activation and reduces pyroptosis, thereby improving the osteogenic capacity of BMSCs. Based on this mechanistic insight, we proposed and validated a dual-gene strategy combining P75NTR knockdown with NGF overexpression. This approach not only preserves the pro-osteogenic effects of NGF but also mitigates its potential pro-inflammatory side effects.
+
+In this study, our in vitro and in vivo results consistently showed that the dual-gene-modified BMSCs exhibited enhanced osteogenic differentiation and superior bone regeneration compared with single-gene modifications, highlighting the importance of targeting pyroptosis as a regulatory axis in bone tissue engineering. Furthermore, an allogeneic bone scaffold was employed as a structural carrier for cell delivery, providing a three-dimensional microenvironment to support cell attachment and retention at the defect site. Future studies incorporating scaffold-only controls and quantitative evaluation of scaffold-cell interactions would further clarify the independent contribution of biomaterials.
+
+In conclusion, this study demonstrates an effective bone defect treatment strategy by combining advanced gene engineering technology with traditional tissue engineering methods. This work provides new insight into the interplay between neurotrophic signaling and inflammatory cell death in bone repair and offers a promising direction for the development of next-generation cell-based therapies. Future research will further explore different combinations of gene regulation and scaffold materials to optimize the construction and functionality of tissue-engineered bone, ultimately realizing its clinical application.
+
+Limitations of the study
+
+This study has several limitations. First, although an allogeneic bone scaffold was used as a structural carrier for cell delivery, a scaffold-only control group was not included, which limits the ability to fully determine the independent contribution of the biomaterial to bone regeneration. Second, degradation behavior of the scaffold was not quantitatively assessed in the present work, and therefore conclusions regarding its degradation properties were based on literature support rather than experimental validation. Future studies incorporating additional control groups and more comprehensive mechanistic analyses will further strengthen these conclusions.
+
+Resource availability
+
+Lead contact
+
+Requests for further information and resources should be directed to and will be fulfilled by the lead contact, Ying Ji (jiying01027@163.com).
+
+Materials availability
+
+This study did not generate new unique reagents.
+
+Data and code availability
+
+• All data reported in this paper will be shared by the lead contact upon request.
+
+• This study did not generate new code.
+
+• Any additional information required to reanalyze the data reported in this paper is available from the lead contact upon request.
+
+Acknowledgments
+
+This work was supported by the 10.13039/501100001809 National Natural Science Foundation of China (grant nos. 82160416 and 81660366), Guangxi Postgraduate Education Innovation Program Project (YCBZ2025084), Guangxi Medical and health key cultivation discipline construction project, and GuangxiMedical and health key discipline construction project.
+
+Author contributions
+
+Y.J. performed the in vitro experiments, data analysis, and manuscript drafting. Y.W. conducted the in vivo experiments. H.L. and Y.M. contributed to study design and experimental execution. J.H. was involved in data acquisition. H.N.Q. and Z.L. performed data analysis and interpretation. C.B. conceived and supervised the study, secured funding, and critically revised the manuscript. All authors read and approved the final manuscript.
+
+Declaration of interests
+
+The authors declare no conflict of interest.
+
+STAR★Methods
+
+Key resources table
+
+REAGENT or RESOURCE	SOURCE	IDENTIFIER	
+Antibodies	
+	
+anti-NGF antibody	Abcam	ab52918	
+anti-P75NTR antibody	Abcam	ab52987	
+anti-GSDMD antibody	Abcam	ab219800	
+anti-NLRP3 antibody	Abcam	ab263899	
+anti-OPN antibody	Abcam	ab63856	
+anti-Runx2 antibody	Abcam	ab76956	
+anti-Collagen I antibody	Abcam	ab270993	
+anti-GAPDH antibody	Proteintech,	81115-1-RR	
+anti-β-Actin antibody	Proteintech,	10494-1-AP	
+	
+Bacterial and virus strains	
+	
+Lentiviral vector for NGF overexpression	GeneChem	22495-3	
+Lentiviral vector for P75NTR knockdown	GeneChem	113070-1	
+	
+Critical commercial assays	
+	
+CCK-8 assay kit	Beyotime	C0037	
+BCA protein assay kit	Beyotime	P0010S	
+GeneJET™ RNA Purification Kit	Thermo Fisher Scientific	K0732	
+RevertAid First Strand cDNA Synthesis Kit	Thermo	K16225	
+	
+Experimental models: Cell lines	
+	
+Bone marrow mesenchymal stem cells	OriCell	RASMX-01001	
+	
+Experimental models: Organisms/strains	
+	
+Sprague–Dawley rat	SJA Laboratory Animal Co., Ltd.	SP0656	
+	
+Software and algorithms	
+	
+ImageJ	NIH	RRID:SCR_003070	
+GraphPad Prism 9.0	GraphPad Software	RRID:SCR_002798	
+FlowJo	FlowJo LLC	Version 10	
+CTAn analysis software	Bruker microCT	Version 1.20.3.0	
+
+Experimental model and study participant details
+
+Experimental animals
+
+SD rats were used for the in vivo bone defect experiments. All animals were male, aged 8 weeks at the time of surgery. Rats were housed under standard laboratory conditions with a 12 h light/dark cycle, controlled temperature (24 ± 2°C), and ad libitum access to food and water. All animal experimental procedures were approved by the Institutional Animal Care and Use Committee (IACUC) of GLMC20243172, and were conducted in accordance with the guidelines for the Care and Use of Laboratory Animals.
+
+All efforts were made to minimize animal suffering and reduce the number of animals used. Male Sprague–Dawley rats aged 8 weeks were used in this study. Therefore, the potential influence of biological sex on bone regeneration outcomes could not be evaluated. This represents a limitation of the study, and future studies including both male and female animals are needed to determine whether sex-associated differences affect the regenerative efficacy of the engineered BMSC–scaffold constructs.
+
+Cell lines
+
+BMSCs were purchased from OriCell (Cyagen Biosciences, Guangzhou, China; RASMX-01001). According to the manufacturer’s information, these cells are derived from SD rat bone marrow and possess strong proliferative capacity and multipotent differentiation potential, including osteogenic, adipogenic, and chondrogenic lineages.
+
+All cells were handled in accordance with standard aseptic procedures. The identity and quality of the purchased BMSCs were authenticated by the supplier. In addition, the mesenchymal phenotype of BMSCs was further confirmed in this study by flow cytometry, showing positive expression of CD29, CD44, and CD90 and negative expression of CD34. The cells were tested and confirmed to be negative for mycoplasma contamination before use.
+
+Method details
+
+Synthesis and characterization of Scaffolds
+
+Cancellous bone allograft scaffolds (Cojoing, Beijing, China) were used as the biomaterial framework in this study. These scaffolds possess a porous three-dimensional trabecular-like microarchitecture that mimics the native bone extracellular matrix and provides a favorable environment for cell adhesion, proliferation, and osteogenic differentiation. Bone allografts have been widely used as osteoconductive scaffolds in bone defect repair due to their biocompatibility, structural stability, and interconnected pore network. Prior to cell seeding, the bone scaffolds were handled under sterile conditions according to the manufacturer’s instructions.44 Allogeneic bone is harvested from suitable donors under sterile conditions, following rigorous serological and microbiological screening to rule out infectious diseases. The bone tissue is washed, cut to shape, and subjected to ethanol gradient degreasing and antigen removal to inactivate viruses; it is then preserved following freeze-drying and sterilisation.45,46 Genetically modified BMSCs were seeded onto the scaffolds and cultured for 1, 3, and 5 days to evaluate cell adhesion and proliferation. At each time point, the constructs were gently rinsed with phosphate-buffered saline (PBS) to remove non-adherent cells and fixed using 2.5% glutaraldehyde. The samples were subsequently dehydrated through a graded ethanol series, vacuum-dried, and sputter-coated with a thin layer of gold using a desktop sputter coater (Quorum Technologies, UK). The surface morphology of the scaffolds and cell–scaffold interactions were then examined using a scanning electron microscope (SEM; Zeiss Gemini SEM 300, Germany) operated at an accelerating voltage of 15 kV. The compression and tensile experiments were tested using an electronic universal testing machine (CMT 6103, MTS, China).
+
+Origin and culture of BMSCs
+
+Primary BMSCs were obtained from Cyagen Biosciences (RASMX-01001, Guangzhou, China). The cells were resuscitated and expanded in low-glucose dulbecco’s modified Eagle’s medium (L-DMEM; Gibco, USA) containing 10% fetal bovine serum (FBS) and 1% penicillin–streptomycin. Cultures were maintained in a 37 °C incubator with 5% CO2 and saturated humidity. The culture medium was refreshed every 2–3 days to maintain optimal growth conditions. Once the cell monolayer reached approximately 70–80% confluence, BMSCs were detached and re-plated for subsequent passages.
+
+Identification of BMSCs
+
+Quality authentication of the purchased BMSCs was confirmed by the supplier, with detailed information provided in Document S1. To further verify the BMSC phenotype, flow-cytometric analysis was performed. Cells were washed and resuspended in phosphate-buffered saline (PBS; Solarbio, China) at a density of 1 × 106 cells/mL, followed by staining with fluorescence-conjugated antibodies targeting typical MSC markers. The antibody panel included CD34-FITC (PA5-85917, eBioscience), CD44-PE (103007, BioLegend), CD90-PE (MA1-80650, eBioscience), and CD29-PE (102207, BioLegend). Fluorescence signals were acquired using a BD FACSCanto flow cytometer (BD Biosciences, USA) and processed with flow cytometry softwaree (FlowJo V10; FlowJo LLC, USA).
+
+BMSCs transfection and grouping
+
+Bone marrow–derived mesenchymal stem cells were subjected to lentiviral modification to regulate the expression of NGF and P75NTR. Lentiviral particles carrying NGF-overexpression constructs or P75NTR-knockdown constructs (GENECHEM, Shanghai, China) were used for transduction. BMSCs were seeded in six-well plates at a density of 8 × 104 cells per well and cultured until reaching approximately 70–80% confluence. Lentiviral infection mixtures were prepared according to the manufacturer’s protocol (GENECHEM, Shanghai, China), and the multiplicity of infection (MOI) was set to 50.47,48 The cells were incubated with the viral suspension for 16 h, after which the infection medium was replaced with fresh complete culture medium. Transduction efficiency was evaluated 72 h post-infection by detecting fluorescent reporter expression using an inverted fluorescence microscope.
+
+Cell counting kit-8 (CCK-8) assay
+
+Cell viability was tested by the CCK8 assay in BMSCs. In brief, cells were seeded into 96-well plates at a density of 5.0 × 103 cells/well and incubated for 0, 6, 12, 24, 48, and 72 hours. Following removal of the culture medium, each well was supplemented with 100 μL of CCK-8 working solution prepared by mixing 10% CCK-8 reagent (C0037, Beyotime, China) with 90% complete medium. After incubation, the absorbance was measured at 570 nm using a microplate reader (Thermo, USA). All sample conditions were tested in triplicate.
+
+Western blot assay
+
+For protein expression analysis, BMSCs were seeded in six-well plates and grown to roughly 80% confluence before processing. After the designated treatments, culture medium was removed, and the cells were washed three times with ice-cold PBS. Total protein lysates were obtained using RIPA buffer (P0013B; Beyotime, China) supplemented with protease and phosphatase inhibitors. The collected lysates were clarified by centrifugation at 12,000 × g for 15 min at 4 °C, and the supernatant was retained. Protein concentrations were measured with a BCA assay kit (P0010S; Beyotime). Equal amounts of protein (20 μg per lane) were resolved by SDS-PAGE (10% gels) and transferred onto PVDF membranes (IPVH00010; Millipore, USA). Membranes were blocked at room temperature for 1 h before overnight incubation at 4 °C with primary antibodies listed in below table. After washing with TBST, membranes were incubated with HRP-conjugated secondary antibodies (1:5000; Proteintech, China) for 1 h. Chemiluminescent signals were visualized using an enhanced ECL detection reagent (WBKLS0100; Millipore) and imaged with the ChemiDoc™ XRS+ system (Bio-Rad). Band intensities were quantified using ImageJ software. All experiments were conducted in triplicate.The primary antibody information of this study
+
+Primary antibody name	Company and catalog	Dilution ratio	Molecular weight (kDa)	
+P75NTR	Abcam, ab52987	1:2,000	75	
+NGF	Abcam, ab52918	1:1,000	32	
+GSDMD	Abcam, ab219800	1:2,000	53	
+NLRP3	Abcam, ab263899	1:1,000	118	
+P65	Thermo Fisher Scientific, 51-0500	1:2,000	65	
+OPN	Abcam, ab63856	1:1,000	32	
+Runx2	Abcam, ab76956	1:1,000	57	
+Collagen I	Abcam, ab270993	1:1,000	139	
+β-Actin	Proteintech, 81115-1-RR	1;5,000	42	
+GAPDH	Proteintech, 10494-1-AP	1;5,000	36	
+
+Immunofluorescence
+
+We inoculated BMSCs into confocal dishes, allowed them to adhere overnight, and then applied different treatments. The medium was then discarded, and the cells were fixed with 4% paraformaldehyde for 15 minutes, followed by three washes with PBS. The samples were blocked with 5% BSA on a shaker at room temperature. Appropriate amounts of primary antibodies were added and incubated overnight on a shaker at 4°C. Subsequently, the cells were incubated with an anti-rabbit fluorescence-coupled secondary antibody at room temperature. After staining the cell nuclei with DAPI, the fluorescence intensity of different groups was captured using a laser confocal microscope.
+
+Alizarin red s (ARS) staining
+
+BMSCs were first plated onto six-well plates pretreated with 0.1% gelatin. Once cultures reached approximately 70% confluence, the growth medium was substituted with an osteogenic differentiation medium (RAXMX-90021; Cyagen, Guangzhou, China). The differentiation medium was refreshed every three days. After four weeks of induction, the cells were fixed in 4% paraformaldehyde for 30 minutes and subsequently stained with Alizarin Red S for 5 minutes to visualize mineralized nodules. Images of calcium nodules were captured using a microscope (Olympus Corporation). For protein expression analysis, cells undergoing osteogenic induction for two weeks were harvested for Western blotting.
+
+RNA extraction and qRT-PCR
+
+Pyroptosis gene expression was analyzed using qRT-PCR. BMSCs were harvested, and total RNA was extracted using the GeneJET™ RNA Purification Kit (K0732; Thermo Fisher Scientific, Warsaw, Poland, USA). cDNA was synthesized according to the manufacturer’s instructions using the RevertAid First Strand cDNA Synthesis Kit-LBID (K16225; Thermo). Quantitative real-time PCR was performed on a Thermo 7900HT Fast Real-Time PCR System employing PowerUp™ SYBR™ Green Master Mix (A25742; Thermo). Gene expression levels were determined using the 2-ΔΔCt comparison method, with primer sequences listed in below table.Primers for RT-qPCR of this study
+
+Gene name	Forward primer(5′-3′)	Reverse primer(5′-3′)	
+GSDMD	CCAGCATGGAAGCCTTAGAG	CAGAGTCGAGCACCAGACAC	
+NLRP3	TGCTGTGCGTGGGACTGAAG	GAACCAATGCGAGATCCTGACAAC	
+P75NTR	AGGGCACATACTCAGACGAA	AGATGGAGCAATAGACAGGAAT	
+GAPDH	CTCATGACCACAGTCCATGC	TTCAGCTCTGGGATGACCTT	
+
+Animal model and surgical implantation
+
+Male Sprague–Dawley (SD) rats aged eight weeks were obtained from SJA Laboratory Animal Co., Ltd. (Hunan, China). Animals were housed individually at the Experimental Animal Center of Guilin Medical College under controlled environmental conditions (24 °C; 12 h light/12 h dark cycle) with free access to food and water. All procedures followed the guidelines approved by the Institutional Animal Care and Use Committee of Guilin Medical College. For anesthesia, rats received 3% (w/v) pentobarbital sodium (0.1 mL/100 g; Ceva, France) before surgery. After shaving and disinfecting the operative site, a longitudinal incision was made over the lateral aspect of the right femoral condyle. The muscles and subcutaneous tissues were separated carefully to expose the distal femur. Following a previously described protocol,49 a circular bone defect (4.5 mm in diameter and 4.5 mm in depth) was created using a dental microdrill (Thomas, France). The defects were then filled with allogeneic bone scaffolds seeded with one of the following cell types: NGF+/BMSCs, P75NTR-/BMSCs, P75NTR-+NGF+/BMSCs, and BMSCs alone. After implantation, the surgical incision was sutured in layers, and animals were returned to individual cages with unrestricted activity. To minimize procedural distress, supplemental pentobarbital anesthesia was administered as needed. Euthanasia was performed 15 min after anesthetic administration by cervical spinal disruption.
+
+Micro-CT analysis
+
+Micro-computed tomography (Micro-CT) was used to evaluate new bone formation within the defect region. Four weeks after implantation, the right distal femurs were collected and fixed in 4% paraformaldehyde. The samples were scanned using a high-resolution 3D X-ray microscope (Zeiss Xradia 510 Versa) at 50 kV and 120 mA, with a voxel size of 9 μm. Reconstruction of the 3D datasets was carried out using CTAN analysis software. A cylindrical region of interest (ROI) corresponding to the original defect size (4.5 mm diameter × 4.5 mm depth) was selected for quantitative analysis. The following bone morphometric indices were calculated: bone volume/tissue volume (BV/TV %), trabecular number (Tb.N) and trabecular separation (Tb.Sp). These parameters were used to assess the degree of bone regeneration and structural recovery within the critical-size defect.
+
+Hematoxylin & eosin (H&E) staining
+
+After decalcification, bone specimens were passed through a graded ethanol series (50%, 70%, 90%, and 100%) for dehydration and then embedded in paraffin. The embedded tissues were sectioned into 5-μm slices using a microtome. Sections were stained with hematoxylin and eosin following standard procedures. Histological evaluation and bone morphology assessment were performed using a Leica optical microscope.
+
+Quantification and statistical analysis
+
+All quantitative data are presented as mean ± SEM. For in vitro assays, n represents biologically independent experiments; for animal experiments, n represents the number of rats. Sample sizes for each analysis are stated in the figure legends. Statistical analyses were performed using GraphPad Prism 9.0 (GraphPad Software, San Diego, CA, USA). Comparisons among more than two groups were performed using one-way analysis of variance (ANOVA). All tests were two-sided. Statistical significance is indicated in the figures and legends as ∗p < 0.05, ∗∗p < 0.01, ∗∗∗p < 0.001, and ∗∗∗∗p < 0.0001.
+
+Supplemental information
+
+Document S1. Supplementary message of the BMSCs
+
+Document S2. Full-length blots in the Western blotting experiment
+
+Supplemental information can be found online at https://doi.org/10.1016/j.isci.2026.116979.
+
+
+References
+
+1 Wang W. Yeung K.W.K. Bone grafts and biomaterials substitutes for bone defect repair: A review Bioact. Mater. 2 2017 224 247 10.1016/j.bioactmat.2017.05.007 29744432 PMC5935655
+2 Bose S. Sarkar N. Jo Y. Natural medicine delivery from 3D printed bone substitutes J. Contr. Release 365 2024 848 875 10.1016/j.jconrel.2023.09.025 PMC11147672 37734674
+3 Zhang P. Qi J. Zhang R. Zhao Y. Yan J. Gong Y. Liu X. Zhang B. Wu X. Wu X. Recent advances in composite hydrogels: synthesis, classification, and application in the treatment of bone defects Biomater. Sci. 12 2024 308 329 10.1039/d3bm01795h 38108454
+4 Zhang S. Xie D. Zhang Q. Mesenchymal stem cells plus bone repair materials as a therapeutic strategy for abnormal bone metabolism: Evidence of clinical efficacy and mechanisms of action implied Pharmacol. Res. 172 2021 105851 10.1016/j.phrs.2021.105851 34450314
+5 Xue N. Ding X. Huang R. Jiang R. Huang H. Pan X. Min W. Chen J. Duan J.A. Liu P. Wang Y. Bone Tissue Engineering in the Treatment of Bone Defects Pharmaceuticals 15 2022 879 10.3390/ph15070879 PMC9324138 35890177
+6 Wang Y. Zhang H. Hu Y. Jing Y. Geng Z. Su J. Bone repair biomaterials: a perspective from immunomodulation Adv. Funct. Mater. 32 2022 2208639 10.1002/adfm.202208639
+7 Gillman C.E. Jayasuriya A.C. FDA-approved bone grafts and bone graft substitute devices in bone regeneration Mater. Sci. Eng., C 130 2021 112466 10.1016/j.msec.2021.112466 PMC8555702 34702541
+8 Qi J. Yu T. Hu B. Wu H. Ouyang H. Current Biomaterial-Based Bone Tissue Engineering and Translational Medicine Int. J. Mol. Sci. 22 2021 10233 10.3390/ijms221910233 PMC8508818 34638571
+9 Zhang X. Jiang W. Xie C. Wu X. Ren Q. Wang F. Shen X. Hong Y. Wu H. Liao Y. Msx1(+) stem cells recruited by bioactive tissue engineering graft for bone regeneration Nat. Commun. 13 2022 5211 10.1038/s41467-022-32868-y 36064711 PMC9445030
+10 Lewns F.K. Tsigkou O. Cox L.R. Wildman R.D. Grover L.M. Poologasundarampillai G. Hydrogels and Bioprinting in Bone Tissue Engineering: Creating Artificial Stem-Cell Niches for In Vitro Models Adv. Mater. 35 2023 e2301670 10.1002/adma.202301670 PMC11478930 37087739
+11 Shang F. Yu Y. Liu S. Ming L. Zhang Y. Zhou Z. Zhao J. Jin Y. Advancing application of mesenchymal stem cell-based bone tissue regeneration Bioact. Mater. 6 2021 666 683 10.1016/j.bioactmat.2020.08.014 33005830 PMC7509590
+12 Collins M.N. Ren G. Young K. Pina S. Reis R.L. Oliveira J.M. Scaffold fabrication technologies and structure/function properties in Adv. Funct. Mater. 31 2021 2010609 10.1002/adfm.202010609
+13 Lakkireddy C. Vishwakarma S.K. Bardia A. Raju N. Ahmed S.I. Fathima S.M. Annamaneni S. Khan A.A. Biofabrication of allogenic bone grafts using cellularized amniotic scaffolds for application in efficient bone healing Tissue Cell 73 2021 101631 10.1016/j.tice.2021.101631 34461569
+14 Chen C.F. Chen Y.C. Fu Y.S. Tsai S.W. Wu P.K. Chen C.M. Chang M.C. Chen W.M. Characterization of Osteogenesis and Chondrogenesis of Human Decellularized Allogeneic Bone with Mesenchymal Stem Cells Derived from Bone Marrow, Adipose Tissue, and Wharton's Jelly Int. J. Mol. Sci. 22 2021 8987 10.3390/ijms22168987 PMC8396436 34445692
+15 Luo Z.W. Li F.X.Z. Liu Y.W. Rao S.S. Yin H. Huang J. Chen C.Y. Hu Y. Zhang Y. Tan Y.J. Aptamer-functionalized exosomes from bone marrow stromal cells target bone to promote bone regeneration Nanoscale 11 2019 20884 20892 10.1039/c9nr02791b 31660556
+16 Arthur A. Gronthos S. Clinical Application of Bone Marrow Mesenchymal Stem/Stromal Cells to Repair Skeletal Tissue Int. J. Mol. Sci. 21 2020 9759 10.3390/ijms21249759 PMC7767389 33371306
+17 Damasceno P.K.F. de Santana T.A. Santos G.C. Orge I.D. Silva D.N. Albuquerque J.F. Golinelli G. Grisendi G. Pinelli M. Ribeiro Dos Santos R. Genetic Engineering as a Strategy to Improve the Therapeutic Efficacy of Mesenchymal Stem/Stromal Cells in Regenerative Medicine Front. Cell Dev. Biol. 8 2020 737 10.3389/fcell.2020.00737 32974331 PMC7471932
+18 Indo Y. NGF-dependent neurons and neurobiology of emotions and feelings: Lessons from congenital insensitivity to pain with anhidrosis Neurosci. Biobehav. Rev. 87 2018 1 16 10.1016/j.neubiorev.2018.01.013 29407522
+19 Nicoletti V.G. Pajer K. Calcagno D. Pajenda G. Nógrádi A. The Role of Metals in the Neuroregenerative Action of BDNF, GDNF, NGF and Other Neurotrophic Factors Biomolecules 12 2022 1015 10.3390/biom12081015 PMC9330237 35892326
+20 Conroy J.N. Coulson E.J. High-affinity TrkA and p75 neurotrophin receptor complexes: A twisted affair J. Biol. Chem. 298 2022 101568 10.1016/j.jbc.2022.101568 PMC8889134 35051416
+21 Ye J. Gong P. NGF-CS/HA-coating composite titanium facilitates the differentiation of bone marrow mesenchymal stem cells into osteoblast and neural cells Biochem. Biophys. Res. Commun. 531 2020 290 296 10.1016/j.bbrc.2020.06.158 32800542
+22 Li Z. Meyers C.A. Chang L. Lee S. Li Z. Tomlinson R. Hoke A. Clemens T.L. James A.W. Fracture repair requires TrkA signaling by skeletal sensory nerves J. Clin. Investig. 129 2019 5137 5150 10.1172/jci128428 31638597 PMC6877307
+23 Tomlinson R.E. Li Z. Zhang Q. Goh B.C. Li Z. Thorek D.L.J. Rajbhandari L. Brushart T.M. Minichiello L. Zhou F. NGF-TrkA Signaling by Sensory Nerves Coordinates the Vascularization and Ossification of Developing Endochondral Bone Cell Rep. 16 2016 2723 2735 10.1016/j.celrep.2016.08.002 27568565 PMC5014649
+24 Ji Y. Mao Y. Lin H. Wang Y. Zhao P. Guo Y. Gu L. Fu C. Chen X. Lv Z. Acceleration of bone repairation by BMSCs overexpressing NGF combined with NSA and allograft bone scaffolds Stem Cell Res. Ther. 15 2024 194 10.1186/s13287-024-03807-z 38956719 PMC11218317
+25 Xue Y. Enosi Tuipulotu D. Tan W.H. Kay C. Man S.M. Emerging Activators and Regulators of Inflammasomes and Pyroptosis Trends Immunol. 40 2019 1035 1052 10.1016/j.it.2019.09.005 31662274
+26 Vasudevan S.O. Behl B. Rathinam V.A. Pyroptosis-induced inflammation and tissue damage Semin. Immunol. 69 2023 101781 10.1016/j.smim.2023.101781 PMC10598759 37352727
+27 Jacobs M.D. Harrison S.C. Structure of an IkappaBalpha/NF-kappaB complex Cell 95 1998 749 758 10.1016/s0092-8674(00)81698-0 9865693
+28 Wang N. Chen J. Chen X. Zhu L. Duan J. Wang Y. Bei C. [Effect of lentivirus-mediated silencing of P75 neurotrophin receptor gene on osteogenic differentiation of bone marrow mesenchymal stem cells in rats]. Zhongguo xiu fu chong jian wai ke za zhi 34 2020 1052 1058 10.7507/1002-1892.201912086 PMC8171920 32794678
+29 Chen J. Wang N. Zhang H. Zhang X. Zhao L. Zhu L. Li Z. Bei C. [Lentivirus-mediated silencing of P75 neurotrophin receptor combined with nerve growth factor overexpression and transfection of bone marrow mesenchymal stem cells combined with demineralized bone matrix for heterotopic osteogenesis]. Zhongguo xiu fu chong jian wai ke za zhi 34 2020 1438 1445 10.7507/1002-1892.202003166 PMC8171707 33191703
+30 Fernandez de Grado G. Keller L. Idoux-Gillet Y. Wagner Q. Musset A.M. Benkirane-Jessel N. Bornert F. Offner D. Bone substitutes: a review of their characteristics, clinical use, and perspectives for large bone defects management J. Tissue Eng. 9 2018 2041731418776819 10.1177/2041731418776819 PMC5990883 29899969
+31 Stahl A. Yang Y.P. Regenerative Approaches for the Treatment of Large Bone Defects Tissue Eng., Part B 27 2021 539 547 10.1089/ten.TEB.2020.0281 PMC8739850 33138705
+32 Zhu G. Zhang T. Chen M. Yao K. Huang X. Zhang B. Li Y. Liu J. Wang Y. Zhao Z. Bone physiological microenvironment and healing mechanism: Basis for future bone-tissue engineering scaffolds Bioact. Mater. 6 2021 4110 4140 10.1016/j.bioactmat.2021.03.043 33997497 PMC8091181
+33 El-Husseiny H.M. Mady E.A. El-Dakroury W.A. Zewail M.B. Noshy M. Abdelfatah A.M. Doghish A.S. Smart/stimuli-responsive hydrogels: State-of-the-art platforms for Appl. Mater. Today 29 2022 101560 10.1016/j.apmt.2022.101560
+34 Liu Y. Wang H. Dou H. Tian B. Li L. Jin L. Zhang Z. Hu L. Bone regeneration capacities of alveolar bone mesenchymal stem cells sheet in rabbit calvarial bone defect J. Tissue Eng. 11 2020 2041731420930379 10.1177/2041731420930379 PMC7288803 32566118
+35 Mazini L. Rochette L. Amine M. Malka G. Regenerative Capacity of Adipose Derived Stem Cells (ADSCs), Comparison with Mesenchymal Stem Cells (MSCs) Int. J. Mol. Sci. 20 2019 2523 10.3390/ijms20102523 31121953 PMC6566837
+36 Liu H. Su H. Wang X. Hao W. MiR-148a regulates bone marrow mesenchymal stem cells-mediated fracture healing by targeting insulin-like growth factor 1 J. Cell. Biochem. 120 2019 1350 1361 10.1002/jcb.27121 30335895
+37 Sun S. Diggins N.H. Gunderson Z.J. Fehrenbacher J.C. White F.A. Kacena M.A. No pain, no gain? The effects of pain-promoting neuropeptides and neurotrophins on fracture healing Bone 131 2020 115109 10.1016/j.bone.2019.115109 PMC6934100 31715336
+38 Zha K. Yang Y. Tian G. Sun Z. Yang Z. Li X. Sui X. Liu S. Zhao J. Guo Q. Nerve growth factor (NGF) and NGF receptors in mesenchymal stem/stromal cells: Impact on potential therapies Stem Cells Transl. Med. 10 2021 1008 1020 10.1002/sctm.20-0290 33586908 PMC8235142
+39 Edalat H. Hajebrahimi Z. Movahedin M. Tavallaei M. Amiri S. Mowla S.J. p75NTR suppression in rat bone marrow stromal stem cells significantly reduced their rate of apoptosis during neural differentiation Neurosci. Lett. 498 2011 15 19 10.1016/j.neulet.2011.04.050 21539892
+40 Wu Z. Yang Y. Wang M. Silencing p75NTR regulates osteogenic differentiation and angiogenesis of BMSCs to enhance bone healing in fractured rats J. Orthop. Surg. Res. 19 2024 192 10.1186/s13018-024-04653-8 38504358 PMC10953090
+41 Liu Y. Pan R. Ouyang Y. Gu W. Xiao T. Yang H. Tang L. Wang H. Xiang B. Chen P. Pyroptosis in health and disease: mechanisms, regulation and clinical perspective Signal Transduct. Targeted Ther. 9 2024 245 10.1038/s41392-024-01958-2 PMC11413206 39300122
+42 Paik S. Kim J.K. Shin H.J. Park E.J. Kim I.S. Jo E.K. Updated insights into the molecular networks for NLRP3 inflammasome activation Cell. Mol. Immunol. 22 2025 563 596 10.1038/s41423-025-01284-9 40307577 PMC12125403
+43 Elias E.E. Lyons B. Muruve D.A. Gasdermins and pyroptosis in the kidney Nat. Rev. Nephrol. 19 2023 337 350 10.1038/s41581-022-00662-0 36596918
+44 Bueno E.M. Glowacki J. Cell-free and cell-based approaches for bone regeneration Nat. Rev. Rheumatol. 5 2009 685 697 10.1038/nrrheum.2009.228 19901916
+45 Grover V. Kapoor A. Malhotra R. Sachdeva S. Bone allografts: a review of safety and efficacy Indian J. Dent. Res. 22 2011 496 10.4103/0970-9290.87084 22048602
+46 Drosos G.I. Kazakos K.I. Kouzoumpasis P. Verettas D.A. Safety and efficacy of commercially available demineralised bone matrix preparations: a critical review of clinical studies Injury 38 2007 S13 S21 10.1016/s0020-1383(08)70005-6 18224733
+47 Wang J. Zhao D. Lei Z. Ge P. Lu Z. Chai Q. Zhang Y. Qiang L. Yu Y. Zhang X. TRIM27 maintains gut homeostasis by promoting intestinal stem cell self-renewal Cell. Mol. Immunol. 20 2023 158 174 10.1038/s41423-022-00963-1 36596873 PMC9887071
+48 Cai Z. Chen J. Yu Z. Li H. Liu Z. Deng D. Liu J. Chen C. Zhang C. Ou Z. BCAT2 Shapes a Noninflamed Tumor Microenvironment and Induces Resistance to Anti-PD-1/PD-L1 Immunotherapy by Negatively Regulating Proinflammatory Chemokines and Anticancer Immunity Adv. Sci. 10 2023 e2207155 10.1002/advs.202207155 PMC10015882 36642843
+49 Oizumi I. Hamai R. Shiwaku Y. Mori Y. Anada T. Baba K. Miyatake N. Hamada S. Tsuchiya K. Nishimura S.N. Impact of simultaneous hydrolysis of OCP and PLGA on bone induction of a PLGA-OCP composite scaffold in a rat femoral defect Acta Biomater. 124 2021 358 373 10.1016/j.actbio.2021.01.048 33556607

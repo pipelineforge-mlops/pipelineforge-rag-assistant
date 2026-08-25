@@ -1,0 +1,642 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Am J Cardiovasc Drugs
+Journal ID: Am J Cardiovasc Drugs
+NLM Journal ID: 100967755
+
+American Journal of Cardiovascular Drugs
+
+ISSN: 1175-3277
+EISSN: 1179-187X
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498523
+PMID: 42337163
+DOI: 10.1007/s40256-026-00806-8
+Article ID: 806
+Article version: 1
+Subjects: Review Article
+
+De-risking Atrial Fibrillation: Refining Anticoagulation Decision-Making
+
+http://orcid.org/0009-0005-6631-2554 Radfar Navid nr435@njms.rutgers.edu
+1
+Gala Dhir 1
+Singh Harsh 1
+Bello Juan 2
+Allencherril Joseph 3
+1 https://ror.org/014ye1258 0000 0000 8936 2606 Department of Medicine, Rutgers New Jersey Medical School, Newark, NJ USA
+2 https://ror.org/002pd6e78 grid.32224.35 0000 0004 0386 9924 Division of Cardiology, Department of Medicine, Massachusetts General Hospital, Boston, MA USA
+3 https://ror.org/016tfm930 grid.176731.5 0000 0001 1547 9964 Division of Cardiology, Department of Medicine, University of Texas Medical Branch at Galveston, Galveston, TX USA
+Electronic publication date: 2026 Jun 23
+Print publication date: 2026
+Volume: 26
+Issue: 5
+First page: 523
+Last page: 536
+Received 2025 Nov 27; Accepted 2026 Jun 1
+Copyright: © The Author(s) 2026
+Copyright year: 2026
+License: Open Access This article is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License, which permits any non-commercial use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc/4.0/.
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+issue-copyright-statement: © Springer Nature Switzerland AG 2026
+
+==============================
+Traditional stroke risk assessment in atrial fibrillation relies on clinical scoring tools such as CHA₂DS₂-VASc, which do not capture the full spectrum of individual thromboembolic risk. Contemporary trials have further challenged this traditional approach, highlighting the importance of atrial fibrillation burden and patient-specific factors in guiding therapy. Advanced echocardiographic markers, including left atrial volume index, strain, and appendage morphology, correlate with atrial remodeling, while biomarkers reflecting cardiac stress and inflammation may further refine risk stratification. These multimodal tools offer a path toward more precise “de-risking” strategies and may help identify patients in whom the net benefit of anticoagulation warrants further individualized assessment. Integrating structural, functional, biomarker, and AI-enabled data into stroke prevention models represents a meaningful step toward personalized care in atrial fibrillation management.
+
+Key Points
+
+Standard stroke risk calculators in atrial fibrillation were designed for broad clinical use but treat key variables as binary, failing to capture the spectrum of individual thromboembolic risk. Emerging evidence supports moving toward more dynamic, personalized stratification.	
+Structural and functional atrial markers, including left atrial volume index, strain, and appendage morphology, alongside cardiac biomarkers, can meaningfully refine risk estimation, particularly in intermediate-risk or gray-zone patients.	
+Landmark trials including ARTESIA, NOAH-AFNET 6, and ALONE-AF collectively reinforce that anticoagulation decisions should be guided by individualized risk-benefit assessment rather than arrhythmia detection alone, with artificial intelligence and wearable technology offering a scalable pathway toward equitable, precision-based stroke prevention pending prospective validation.	
+
+Introduction
+
+Atrial fibrillation (AF) is the most common cardiac arrhythmia, with an estimated prevalence projected to reach 12.1 million by 2030 [1]. AF accounts for nearly 30% of all ischemic strokes, placing patients at a 2.4-fold increased risk of stroke [1]. Stroke prevention in AF primarily involves using oral anticoagulation therapy, guided by risk stratification tools such as the CHA₂DS₂-VASc score. While this scoring system provides a standardized framework for evaluating stroke risk, emerging evidence highlights its limitations, particularly in patients with low to intermediate risk [2]. In the USA, Medicare Part D, which covers prescription drugs, spending on oral anticoagulants increased from around $0.5 billion in 2011 to over $7 billion by 2019. This spending accounts for nearly 6% of total Medicare Part D drug costs [3]. Secondly, as the US population ages, there is a predicted 1.6-fold increase in the number of individuals with AF by the year 2030 [4]. Given this rise, even small reductions in inappropriate oral anticoagulant use through improved stroke risk reclassification may yield substantial economic benefit.
+
+The 2023 ACC/AHA/ACCP/HRS guidelines for diagnosis and management of AF recognize that patients with intermediate stroke risk may benefit from consideration of additional risk variables and alternative risk scores to inform medical decision-making [5]. AF presents significant heterogeneity in etiology, burden, comorbidities, and stroke risk, leading to a growing consensus that management strategies must be individually tailored [6]. This narrative review aims to evaluate current stroke and bleeding risk prediction models in AF, highlight limitations of existing algorithms, and explore emerging risk modifiers with the potential to improve risk stratification and guide derisking strategies in patients with AF.
+
+A broad literature search of PubMed, Scopus, the Cochrane Library, and relevant cardiovascular journals was conducted. Searches included studies evaluating stroke risk stratification, bleeding risk prediction, AF burden, structural and functional imaging markers, circulating biomarkers, and anticoagulation decision-making in AF. Studies were selected on the basis of clinical relevance to anticoagulation decision-making in AF, with emphasis on randomized controlled trials, prospective registries, large cohort studies, systematic reviews and meta-analyses, and major contemporary guidelines.
+
+Stroke Risk Scores
+
+CHADS₂ and CHA₂DS₂-VASc
+
+The CHADS₂ score, developed in 2001, estimates the risk of thromboembolic events in patients with AF. While current guidelines recommend the use of the CHA₂DS₂-VASc score to stratify stroke risk and identify patients who may benefit from anticoagulation, its ability to guide management of intermediate risk is limited (Table 1) [5, 7, 8].Table 1. This table summarizes three clinical tools for assessing ischemic stroke risk in patients with atrial fibrillation: CHADS₂, CHA₂DS₂-VASc, and ATRIA
+
+Risk score	Components & point allocation	Stroke risk estimates by score	
+CHADS₂	- CHF (1)
+
+- Hypertension (1)
+
+- Age ≥ 75 (1)
+
+- Diabetes (1)
+
+- Stroke/TIA (2)
+
+	0: 1.9%
+
+1: 2.8%
+
+2: 4.0%
+
+3: 5.9%
+
+4: 8.5%
+
+5: 12.5%
+
+6: 18.2%
+
+	
+CHA₂DS₂-VASc	- CHF (1)
+
+- Hypertension (1)
+
+- Age ≥ 75 (2)
+
+- Diabetes (1)
+
+- Prior stroke or TIA (2)
+
+- Vascular disease (1)
+
+- Age 65–74 (1)
+
+- Female sex (1)
+
+	0: 0.2%
+
+1: 0.6%
+
+2: 2.2%
+
+3: 3.2%
+
+4: 4.8%
+
+5: 7.2%
+
+6–9: 9.7%–12.2%
+
+	
+ATRIA	- Age 65–74 years (3)
+
+- Age 75–84 years (5)
+
+- Age > 85 years (6)
+
+- Prior bleeding (1)
+
+- History of hypertension (1)
+
+- History of congestive heart failure
+
+- History diabetes mellitus
+
+- Renal dysfunction (eGFR < 45 mL/min/1.73 m2 or end stage renal disease) (3)
+
+	0–3: 0.8%
+
+4: 2.6%
+
+> 5: 5.8%
+
+	
+CHF Congestive heart failure, eGFR estimated glomerular filtration rate, TE thromboembolism, TIA Transient ischemic attack
+
+Limitations
+
+Sex Category
+
+While earlier studies suggested women with AF suffer higher stroke incidence and severity [9–11], more recent evidence suggests age dependency in this risk [12]. Specifically, the increased stroke risk in women is most pronounced in those aged 65 or older with > 1 nonsex-related stroke risk factor [13]. CHA₂DS₂-VA is a sex independent modification of CHA₂DS₂-VASc, excluding the sex category (Sc).
+
+The FinACAF cohort study demonstrated that while women had a higher risk of ischemic stroke in 2007, this difference diminished by 2018, coinciding with increased oral anticoagulants (OAC) use among women. These findings challenged earlier assumptions that women were undertreated with OAC. In 2007, CHA₂DS₂-VASc outperformed the CHA₂DS₂-VA, but this difference attenuated over time. Toward the end of the study, CHA₂DS₂-VA emerged with marginal superiority, attributed to minimal sex differences in AF-related stroke observed in recent years [14]. Similarly, in a study of 78,852 patients from the UK (36.3% female), no statistically significant difference was found in performance between the CHA₂DS₂-VASc and CHA₂DS₂-VA scores. Female sex was not independently associated with increased risks of stroke, arterial thromboembolism, vascular dementia, or mortality. However, this cohort excluded patients aged ≥ 75 years and those with prior stroke, suggesting female sex does not increase stroke risk in younger patients without stroke risk factors [9].
+
+A Danish observational study of 239,671 OAC-naive patients with AF with a CHA₂DS₂-VA score of 0, demonstrated no significant difference in 1-year thromboembolism risk between males and females [12]. However, female sex was associated with a significantly higher risk of thromboembolism at CHA₂DS₂-VA scores of 2, 4, and 5 (P < 0.0001). Over a 5-year follow-up, the absolute risk of thromboembolism increased progressively with higher CHA₂DS₂-VA scores in both sexes, but this increase was more pronounced in women. Importantly, the excess risk associated with female sex was evident only in the presence of ≥ 2 nonsex-related stroke risk factors, suggesting “Sc” acts as a risk modifier rather than a predictor of stroke risk.
+
+Collectively, these data suggest that while female sex may still contribute to stroke risk, it functions primarily as a modifier that amplifies the effect of other comorbidities rather than an independent predictor. This nuance supports evolving guideline preferences toward sex-neutral stratification (e.g., CHA₂DS₂-VA) while maintaining openness to models such as ATRIA that incorporate sex within a recalibrated, multivariable context.
+
+The 2024 European Society of Cardiology Guidelines recognize CHA₂DS₂-VASc as the most widely used risk stratification tool while noting that prior recommendations align more closely with CHA₂DS₂-VA, as score thresholds for anticoagulation initiation have historically differed between men and women. Thus, CHA₂DS₂-VA is recommended to guide decisions on anticoagulation. OAC is recommended in patients with CHA₂DS₂-VA score > 2 (Class I) and may be considered in patients with a score of 1, following a patient-centric, shared-decision-making approach [15].
+
+Hypertension
+
+Hypertension in the CHA₂DS₂-VASc score is defined as resting blood pressure > 140/90 mmHg on at least two occasions or current treatment with antihypertensive medication [16]. However, this threshold is now outdated, as current clinical guidelines define hypertension at > 130/80 mm Hg [17]. Moreover, the score treats hypertension as a binary variable, without considering disease severity, treatment response, or remission. In reality, uncontrolled hypertension may amplify both ischemic stroke and bleeding risk in patients with AF, whereas well-controlled or resolved hypertension may confer substantially lower risk [18]. Consequently, assigning a single point regardless of blood pressure control may overestimate stroke risk in optimally managed patients and underestimate risk in poorly controlled patients. A modest C-statistic (0.64) highlights the need for dynamic or continuous risk models that integrate longitudinal blood pressure control to better inform anticoagulation decisions in patients with borderline or low risk [19].
+
+Diabetes Mellitus
+
+Diabetes Mellitus is similarly binary despite clear graduation in risk. The score defined diabetes as a fasting glucose > 126 mg/dL or active treatment [20]. However, in clinical practice, the risk varies significantly. For example, an individual with well-controlled diabetes and an HbA1c of 6% has a significantly lower risk for stroke compared with an individual with an HbA1c of 12% [21].
+
+While thromboembolic risk in AF varies across the spectrum of glycemic control, with lower HbA1c values being associated with decreased stroke risk, applying this to clinical practice is more nuanced. Most patients with diabetes are on more than one medication, with fluctuating adherence and competing comorbidities, diminishing the practicability of attaining or sustaining normal glycemic targets.
+
+ATRIA
+
+As CHA₂DS₂-VASc has only moderate predictive ability for ischemic stroke, Fang et al. developed the Anticoagulation and Risk Factors in Atrial Fibrillation (ATRIA) bleeding risk score in 20111 (Table 1) using data from more than 9000 anticoagulated patients with AF [22]. Importantly, ATRIA was developed during the warfarin era, which limits its contemporary performance in the direct oral anticoagulant (DOAC) era.
+
+Bleeding Risk Scores
+
+HEMORR2HAGES
+
+In 2006, the HEMORR2HAGES score was developed to assess bleeding risk in patients with AF receiving OAC (Table 2) [23]. This score incorporates various bleeding risk factors but has practical limitations. For example, genetic factors such as the CYP2C9 single nucleotide polymorphism was included as a risk factor but was not evaluated in the original cohort due to the unavailability of DNA samples, raising concern about its practical relevance. This tool places limited emphasis on modifiable risk factors and was developed before DOACs, further reducing its applicability [24].Table 2. This table summarizes two clinical tools used for bleeding risk stratification in atrial fibrillation: HEMORR₂HAGES and HAS-BLED
+
+Risk Score	Components & point allocation	Estimated annual bleed rate (per 100 years)	
+HEMORR₂HAGES	- Hepatic or renal disease (1)
+
+- Ethanol abuse (1)
+
+- Malignancy (1)
+
+- Age > 75 years (1)
+
+- Reduced platelet count or function (1)
+
+- Rebleeding risk (1)
+
+- Hypertension (uncontrolled) (1)
+
+- Anemia; Hb < 13 g/dL for males, Hb < 12 g/dL for females (1)
+
+- Genetic factors (CYP2C9) (1)
+
+- Stroke history (1)
+
+- Excessive fall risk (1)
+
+	0: 1.9
+
+1: 2.5
+
+2: 5.3
+
+3: 8.4
+
+4: 10.4
+
+5: 12.3
+
+	
+HAS-BLED	- Hypertension (1)
+
+- Abnormal renal function (1)
+
+- Abnormal liver function (1)
+
+- Stroke history (1)
+
+- Bleeding history or predisposition (1)
+
+- Labile INR (1)
+
+- Elderly; age > 65 years (1)
+
+- Drug or Alcohol use (≥ 8 drinks/week) (1)
+
+	0: 1.13
+
+1: 1.02
+
+2: 1.88
+
+3: 3.74
+
+4: 8.70
+
+5 to 9: insufficient data
+
+	
+Hb hemoglobin
+
+HAS-BLED
+
+Higher CHA₂DS₂-VASc scores have been associated with increased gastrointestinal and intracranial bleeding risks in nonanticoagulated patients [25]. Despite this association, the CHA₂DS₂-VASc score has limited predictive ability for bleeding events (pooled C-statistic 0.56) [26].
+
+The HAS-BLED score (2010) was derived from a cohort of 3450 anticoagulated AF patients to evaluate the 1-year risk of major bleeding (Table 2) [27]. It has demonstrated stronger predictive performance than the HEMORR2HAGES and ATRIA scores [28–30]. In a systematic review and meta-analysis of 11 studies including more than 60,000 patients, HAS-BLED achieved a pooled C-statistic of 0.65, comparable to HEMORR2HAGES and ATRIA (both 0.63), but significantly outperforming CHADS₂2 (0.55) and CHA₂DS₂-VASc (0.56) for major bleeding prediction [31]. Net reclassification and integrated discrimination analyses further confirmed its superiority, with HAS-BLED correctly reclassifying up to 31% more bleeding events compared with ATRIA and HEMORR₂HAGES. Calibration analyses demonstrated accurate risk prediction in both low- and high-risk strata. Furthermore, HAS-BLED demonstrated higher sensitivity for identifying AF patients at risk of major bleeding compared with HEMORR2HAGES and ATRIA [32].
+
+TRIALS Shaping Derisking Strategies
+
+GARFIELD AF
+
+Recognizing the need for greater precision in risk assessment, large-scale registries such as the Global Anticoagulant Registry in the FIELD-Atrial Fibrillation (GARFIELD-AF) have emerged, covering over 55,000 patients with newly diagnosed AF from 35 countries. This data facilitated the development of the GARFIELD-AF risk calculator, which evaluates risks for all-cause mortality, nonhemorrhagic stroke, systemic embolism, and major bleeding [33].
+
+This score incorporates 16 variables, including age, sex, weight, history of heart failure, vascular disease, prior stroke, bleeding, carotid occlusive disease, diabetes mellitus, chronic kidney disease, dementia, smoking status, ethnicity, antiplatelet treatment, pulse, and diastolic blood pressure [34]. It also estimates treatment effects and risk over a 24-month period. The GARFIELD-AF risk model has outperformed CHA₂DS₂-VASc for risk assessment for major bleeding, stroke, and all-cause mortality. Additionally, patients classified as low-risk by GARFIELD-AF would have been categorized as high risk (CHA₂DS₂-VASc > 2). However, within this cohort, the incidence of stroke risk increased [33]. A meta-analysis including 176,082 AF patients found that the GARFIELD-AF risk tool provided superior stroke risk prediction compared with CHA₂DS₂-VASc. The ability to integrate thromboembolic and bleeding risks makes it a strong candidate for replacing CHA₂DS₂-VASc [35].
+
+However, formal net reclassification (NRI) and integrated discrimination improvement (IDI) analyses have not been uniformly reported. The Danish validation study explicitly did not evaluate NRI. However, Proietti et al. did perform reclassification analyses in a warfarin-treated RCT cohort with adjudicated outcomes, revealing unfavorable results for GARFIELD-AF [36]. Using score quintiles, GARFIELD-AF was associated with a significant reduction in discriminatory capacity across all study outcomes, with relative IDI reductions ranging from −45.7% for any stroke/SE to −123.2% for ischemic stroke compared with CHA₂DS₂-VASc. These results suggest that substituting GARFIELD-AF for CHA₂DS₂-VASc may worsen patient reclassification [36]. Whether GARFIELD-AF’s higher c-index translates into reclassification across the actionable risk threshold remains unanswered, and potentially contradicted.
+
+ARTESIA
+
+AF burden can be assessed through various monitoring technologies, from Holter monitors and external event recorders to implantable loop recorders (ILR) and wearable devices. While wearable devices such as smartwatches hold promise in arrhythmia detection, arrhythmia duration, and burden may not be as reliably quantified [37]. Recent studies underline the dose-response relationship between AF burden and thromboembolic risk [38].
+
+The Apixaban for the Reduction of Thrombo-Embolism in Patients with Device-Detected Sub-Clinical Atrial Fibrillation (ARTESIA) was a prospective, multicenter, double-blind, randomized controlled trial that evaluated the efficacy and safety of apixaban compared with aspirin in patients with sub-clinical AF (SCAF) detected by implanted cardiac devices [39]. The trial included 4012 patients with > 1 acute heart rate episodes (AHRE) lasting ≥ 6 min in duration with no single episode lasting more than 24 h and a CHA₂DS₂-VASc score ≥ 2 in men or 3 in women. Individuals with clinical AF documented on electrocardiogram (ECG) were excluded. Participants were randomized to receive either apixaban or aspirin. The primary outcome was a composite of stroke, transient ischemic attack (TIA) with diffusion-weighted magnetic resonance imaging (MRI) evidence of cerebral infarction, and systemic embolism. The benefits of apixaban in preventing stroke or systemic embolism were more pronounced in patients with a higher CHA₂DS₂-VASc score (> 4), preventing 1.28 events per 100 patient-years compared with aspirin. Stroke risk was not significantly associated with AHRE duration (< 1 h, 1–6 h, > 6 h). In patients with a CHA₂DS₂-VASc score < 4, the benefit was minimal. Competing risks from noncardiovascular mortality and progression to clinical AF were not formally accounted for in the primary analysis, which relied on standard Kaplan–Meier and Cox proportional hazards methods.
+
+The TRENDS observational study suggested that an atrial tachycardia (AT)/AF burden ≥ 5.5 h was associated with a nearly double risk of thromboembolism (HR = 2.2, 95% CI 0.96–5.05, P = 0.06); however, this did not reach statistical significance [40].
+
+The subsequent ASSERT trial may explain the modest benefits of apixaban noted in ARTESIA. In this study, patients with device-detected SCAF > 24 h had a higher risk of subsequent stroke or systemic embolism in comparison to those not experiencing SCAF (HR 5.37, CI 95% 2.08–13.87) [41]. This was the only group that demonstrated a significant increase in stroke risk, which was not represented in ARTESIA.
+
+In the ARTESIA trial, apixaban significantly reduced annual rates of stroke or systemic embolism to 0.78%, compared with 1.24% with aspirin, a modest absolute risk reduction in a population with SCAF and lower baseline thromboembolic risk. However, this is notably lower than the traditional risk threshold used to justify anticoagulation in clinical AF. In contrast, enrolling patients with symptomatic AF unsuitable for vitamin K antagonists, the AVERROES trial observed significantly higher event rates with apixaban (1.6%) and aspirin (3.7%) groups [42]. This yielded a reduction in stroke or systemic embolism of 2.5% per year with apixaban and, with 8.3% per year on aspirin, resulting in a 5.8% absolute risk reduction per year. This comparison illustrates that the net clinical benefit of apixaban is more pronounced in patients with higher baseline risk, supporting the notion that anticoagulation initiation should be guided by individualized stroke risk stratification.
+
+GUARD AF
+
+The GUARD-AF (Reducing Stroke by Screening for Undiagnosed Atrial Fibrillation in Elderly Individuals) trial, involving 11,931 participants, evaluated AF screening in individuals aged 70 years and older using a 14-day continuous electrocardiographic (ECG) patch monitor [43]. The primary efficacy end point was hospitalization for stroke (ischemic or hemorrhagic), and the primary safety end point was hospitalization for a bleeding event.
+
+Incidence of stroke was not significantly different between the patch monitor screening group and the usual care group (0.7% versus 0.6%, respectively; HR 1.10; 95% CI: 0.69–1.75). The risk of bleeding was also comparable between the two groups (1.0% versus 1.1%; HR 0.87; 95% CI: 0.60–1.26). While the diagnosis of AF was higher in the screening group (5%) compared with the usual care group (3.3%), and initiation of oral anticoagulation was also higher in the screening group (4.2% versus 2.8%), the lack of significant stroke reduction suggests that short-term, one-time patch-based screening may be insufficient to affect outcomes. Notably, competing risks from noncardiovascular mortality were not formally accounted for, which may temper findings in this elderly cohort. These findings highlight the need for longer monitoring periods, targeted populations, or integrated management pathways rather than discontinuing screening efforts.
+
+LOOP
+
+In the LOOP trial, 6004 adults aged 70–90 years with ≥ 1 stroke risk factor were randomized to ILR monitoring or usual care to evaluate the detection of SCAF. Anticoagulation was recommended if AF episodes lasting > 6 min were detected in the ILR group. AF was diagnosed in 31.8% of participants in the ILR group, compared with 12.2% in the control group (hazard ratio, 3.17; 95% CI, 2.81–3.59; P < 0.0001). Consequently, OAC was initiated in 29.7% of participants in the ILR group, compared with 13.1% in the control group (HR 2.72, 95% CI 2.41–3.08; P < 0.0001). However, the primary outcome of time to first stroke or systemic arterial embolism was not significantly reduced (4.5% ILR group versus 5.6% in the control group). There was no statistically significant difference in major bleeding events between arms [44]. The primary analysis used standard Cox proportional hazards models without formal competing risk analyses, a relevant consideration given the noncardiovascular mortality burden in this elderly population.
+
+The LOOP trial highlights the importance of AF burden in stroke risk assessment as it quantifies the cumulative duration of AF episodes over a specific time frame. In contrast to categorical classifications (e.g., paroxysmal, persistent, or permanent), this approach emphasizes the association between AF episode duration and clinical outcomes.
+
+NOAH AFNET 6
+
+While the LOOP trial conveyed the importance of AF burden in refining stroke risk assessment, the Non–Vitamin K Antagonist Oral Anticoagulants in Patients with Atrial High Rate Episodes (NAOH-AFNET 6) trial further challenged the notion that all device-detected atrial arrhythmias warrant anticoagulation [45]. The investigators studied the efficacy and safety of anticoagulation in patients 65 or older with AHRE of > 6 min duration with an atrial rate > 180 beats per min detected by an implanted cardiac device. Patients had a CHA₂DS₂-VASc score of at least 2 and no ECG documented AF.
+
+The trial notably found no significant difference in the primary outcomes of stroke, systemic embolism, and cardiovascular death between participants with device-detected AF, regardless of the AHRE median duration of 2.8 h, who received anticoagulation and those who did not. Among patients with prior stroke or TIA, the rate of stroke was 1.6% per-patient year in the anticoagulation group and 2.3% per-patient year in the control group. Cumulative incidence curves were generated using the Aalen–Johansen estimator, accounting for competing events, providing a more rigorous representation of event rates than standard Kaplan–Meier analysis.
+
+However, major bleeding events were more frequent in the anticoagulation group (3.2% per patient year) than in the control group (0.8% per patient year). Thus, in patients with device-detected AF and a history of stroke or TIA, the benefits of anticoagulation may be offset by an increased risk of bleeding. This highlights the need for careful risk-benefit assessment when considering anticoagulation in patients with device-detected AF and a history of stroke or TIA.
+
+ALONE-AF
+
+The Anticoagulation One Year After Ablation of AF (ALONE-AF) randomized clinical trial addressed whether long-term OAC remains necessary after successful AF ablation. This multicenter trial enlisted 840 patients with a mean CHA₂DS₂-VASc 2.1 with no documented atrial arrhythmia recurrence for at least 1 year after catheter ablation, and at least one nonsex-related stroke risk factor were randomized to either discontinue or continue DOACs [46].
+
+At 2 years, the composite primary end point of stroke, systemic embolism, or major bleeding at 2 years occurred in 0.3% of patients in the discontinuation group versus 2.2% in the continuation group (95% CI −3.5 to −0.3; P = 0.02), driven primarily by fewer major bleeding events (0% versus 1.4%). Rates of ischemic stroke were low and similar (0.3% versus 0.8%), with no signal of excess thromboembolism among patients who stopped anticoagulation.
+
+This trial suggests that discontinuing OACs may reduce the risk of clinical events in patients with documented freedom from atrial arrhythmia after ablation and modest CHA₂DS₂-VASc scores. These findings reinforce the idea that AF burden and post-ablation rhythm status, rather than AF history alone, may inform long-term anticoagulation decisions.
+
+Provoked Atrial Fibrillation
+
+Provoked AF refers to AF that appears in the setting of an identifiable, transient stressor such as sepsis, electrolyte disturbances, myocardial ischemia, stress, endocrine derangements, obstructive sleep apnea, uncontrolled hypertension, or other forms of medical illness. For example, postoperative AF has an incidence of 20–40% following cardiac surgery [47]. In most cases, the trigger for provoked AF is multifactorial and can include inflammation, ischemia, and autonomic imbalance [48]. Commonly, acute inflammatory responses, such as those caused by surgery or sepsis, lead to a surge in cytokines, which promotes atrial electrical remodeling and impairs gap junctions, thereby causing arrhythmias [49]. Acute stressors can also trigger activation in the sympathetic nervous system, which can subsequently increase atrial automaticity and alter atrial electrophysiology, ultimately leading to atrial tachyarrhythmias [50].
+
+Provoked AF is often transient and may resolve with correction of the underlying cause; however, evidence suggests that these episodes are not entirely benign. There is an increased risk of thromboembolic events during this transient phase. However, the risks and benefits of continued anticoagulation need to be personalized as these patients are also at an increased risk of bleeding during an acute illness [51]. Current practice often includes short-term anticoagulation during the acute phase with re-evaluation once the transient state has resolved [5, 52]. However, the European Society of Cardiology acknowledges an unclear risk–benefit profile of anticoagulation in this context, considering long-term outcomes after resolution of the acute trigger, based on thromboembolic risk, bleeding risk, and patient preferences [15].
+
+Overall, AF occurring in the context of critical illness or provoking factors may reflect a transient, potentially reversible phenomenon, meriting reassessment of AF burden after stabilization rather than reflexive initiation of long-term anticoagulation. Additionally, is also important to recognize that the CHA₂DS₂-VASc score does not differentiate between provoked and unprovoked AF.
+
+Structural Parameters
+
+Left Atrium Size and Left Atrial Volume Index (LAVI)
+
+Nearly 30% of ischemic strokes are of cryptogenic etiology [53]. This substantial proportion of cryptogenic strokes has prompted investigations into structural and functional cardiac abnormalities, particularly those involving the left atrium (LA).
+
+Left atrial enlargement (LAE) has shown a consistent association with increased risk of stroke as demonstrated in multiethnic [54, 55] and elderly cohorts [56]. LAE measured by TTE may reflect the degree of LA remodeling due to AF [57]. A single-center cohort involving 6602 patients with NVAF classified as low risk by CHA₂DS₂-VASc demonstrated that moderate-to-severe LAE was a strong predictor of thromboembolic events. However, measuring LA size may not accurately measure the extent of atrial cardiopathy given patient variability [58].
+
+To address these limitations, the LA volume index (LAVI) emerged as a more robust metric of the LA [59]. Greater LAVI has been independently associated with cardioembolic stroke (CES) and an increased likelihood of AF detection in patients with embolic stroke of undetermined source (ESUS). In a cohort of 1020 patients with ischemic stroke, each 1 mL/m2 increase in LAVI correlated with a 7% higher odds of CES (P < 0.0001) [53]. Additionally, among ESUS patients undergoing cardiac monitoring, higher LAVI was an independent predictor of AF detection, suggesting LA remodeling may contribute to stroke risk beyond clinically apparent AF.
+
+Furthermore, LAVI may help uncover atrial cardiopathy, which is thought to cause thromboembolism independent of (or preceding) AF. Yang et al. found that LAVI-based stratification was most beneficial in intermediate-risk patients (CHA₂DS₂-VASc 2–4). However, its predictive value was less pronounced in high-risk patients (scores > 5) [60].
+
+LAVI has been integrated into novel risk stratification models to enhance stroke risk prediction in AF. One such model, the CLOTS-AF score, identifies patients with AF at high risk for left atrial appendage (LAA) thrombus before cardioversion by integrating clinical and echocardiographic parameters. Notably, LAVI > 34 mL/m2 was associated with an increased risk of LAA thrombus (OR 1.015, P < 0.001) [61]. While this model targets LAA clot formation rather than stroke risk, the presence of LAA thrombus in AF increases the risk for stroke. Incorporating LAVI, therefore, may be essential in refining stroke risk stratification and guiding derisking strategies in patients with or without AF.
+
+LAA Morphology
+
+The LAA is the source of over 90% of embolic strokes in NVAF and exhibits considerable anatomical variability in shape, size, and lobar complexity [62]. Wang et al. classified LAA morphology into four distinct types using cardiac CT and MRI: chicken wing, cactus, windsock, and cauliflower [63].
+
+The cauliflower shape has been most strongly associated with history of stroke or TIA, whereas the chicken wing morphology was associated with the lowest [64]. The odds of TE in patients with chicken wing morphology were significantly lower in comparison with cauliflower (OR 0.38, 95% CI: 0.26–0.56), windsock (OR 0.48, 95% CI: 0.31–0.73), and cactus morphologies (OR 0.49, 95% CI: 0.36–0.66) [65].
+
+Cardiac CT, cMRI, or 3D-TEE thus may help to guide anticoagulation decisions, especially identifying patients with chicken wing LAA morphology, who may be less likely to benefit from indefinite AC compared with patients with non-chicken wing LAA morphology [65].
+
+Additionally, a greater number of LAA lobes has been independently associated with increased risk of LA thrombus or spontaneous echo contrast (SEC) in patients with NVAF (95% CI 1.37–4.09; P = 0.002). These findings suggest that the number of LAA lobes is a moderate but significant predictor of thromboembolic risk beyond conventional risk stratification methods [66].
+
+LAA Function
+
+Beyond morphology, LAA function has also been associated with increased risk of stroke. Low-risk patients with AF (mean CHA₂DS₂-VASc score 2.3) with chicken wing morphology exhibited higher LAA emptying velocities and a two-and-a-half-fold lower prevalence of SEC (OR 3.2, 95% CI 1.1–9.3, P = 0.025) in comparison with non-chicken wing morphologies, suggesting a lower likelihood of thrombus formation [67]. These findings support the value of LAA functional assessment, particularly in TEE-derived LAA emptying velocity as an accessible, radiation-free, cost-effective tool for refining thromboembolic risk.
+
+LA Strain
+
+Definition and Measurement Techniques
+
+LA strain (LAε) and LA strain rate (LASR) are developing markers of left atrial function [68]. LAε is the percentage of deformation of the left atrial myocardium during the cardiac cycle. Similarly, LASR measures the deformation rate per unit of time, quantifying functional dynamics. Both LAε and LASR are assessed during three phases. First is the reservoir phase, which reflects the left atrial compliance during ventricular systole. Second, the conduit phase reflects passive left ventricular filling during early diastole. Lastly, the contraction phase reflects active atrial contraction during late diastole. The most studied metrics are the peak atrial longitudinal strain (PALS) and LASR during the reservoir phase (LASRr).
+
+A reduced LAε and a reduced LASR are strongly associated with an increased risk of embolic stroke. These findings suggest subclinical atrial dysfunction and may occur before the formal diagnosis of AF [69]. A cohort study of 806 older adults without prior stroke or AF demonstrated that low positive longitudinal LAε and negative longitudinal LASR during LA contraction were independently associated with ischemic stroke over a mean follow-up of 10.9 years. Participants in the lowest quintile of LAε had more than threefold increased risk of stroke (HR: 3.12), while those in the lowest quintile of LASR during LA contraction had a similarly increased risk (HR: 2.89). Notably, these associations were even stronger in participants with normal LA size, with reduced LAε (HR: 4.64) and LASR (HR: 11.02) predicting significantly higher stroke risk [68]. Over a median follow-up of 28 months of patients with cryptogenic stroke or TIA, LASr and LAS conduit strain (LAScd) were both significantly reduced in patients suffering stroke recurrence or death [70]. Inversely, given the study findings, the absence of such findings on echocardiography may aid in derisking patients.
+
+PALS was a significant predictor of both incident AF and ischemic stroke in a population-based study of 400 patients followed over a median of 16 years, with a higher risk of AF, composite outcome of AF, and ischemic stroke in individuals < 65 years old. After risk factor adjustment, a 5% reduction in PALS was linked to a 46% increased risk of developing AF (HR, 1.46) and a higher likelihood of the composite outcome. Although PALS was a significant predictor of both incident AF and ischemic stroke, the predictive value was diminished in participants aged > 65 years. This suggests that PALS may be a significant predictor of stroke risk stratification in younger, low-risk populations [71]. Although LAε parameters demonstrate independent associations with stroke risk after adjustment for CHA₂DS₂-VASc components in several studies, the shared pathophysiological basis linking atrial remodeling to conventional risk factors such as age and hypertension introduces a potential for collinearity that may limit the additive discriminatory value of these metrics beyond established risk scores [72].
+
+Potential to Refine Stroke Risk Stratification and Derisking Strategies
+
+Incorporating LAε and LASR into risk stratification models provides an innovative method for reducing patient risk and tailoring anticoagulation decisions. LA strain metrics may identify lower-risk patients who may not derive benefit from anticoagulation with borderline CHA₂DS₂-VASc scores or unclear indications for anticoagulation. In the setting of preserved LAε and LASR, blood stasis and thrombus formation are less likely.
+
+Newer data support this approach. In a cryptogenic stroke study, patients with higher LASr values had significantly lower rates of recurrent stroke or death, suggesting that preserved LA strain may identify patients who have minimal thromboembolic risk [73]. Similarly, in a population-based study of 400 participants, PALS was a significant predictor of AF and ischemic stroke in patients below the age of 65, but the predictive value seemed to diminish in older patients [71].
+
+A derisking strategy based on the LA strain could also be applied to monitoring the effectiveness of therapy. Patients pursuing rhythm control strategies with subsequently improved LAε and LASR may represent a population in whom prospective studies evaluating anticoagulation deescalation are warranted, though RCT evidence supporting this approach is currently lacking. Importantly, none of these imaging-based markers have been prospectively validated in RCTs as criteria for withholding or discontinuing OAC, and their role remains adjunctive and hypothesis-generating.
+
+Biomarkers
+
+Cardiac Biomarkers
+
+The relationship between cardiac biomarkers and cardiovascular outcomes has been well-described [74–77]. There has been increasing data on the relationship between cardiac biomarkers and the risk of AF as well. Elevated NT-proBNP levels have been associated with an increased risk of AF in the older population, regardless of echocardiographic parameters [78, 79]. The Aristotle and RE-LY trials found that the stroke or thromboembolism risk was doubled and increased up to fivefold higher for cardiovascular mortality when assessing NT-proBNP levels independently [80, 81]. Cardiac troponin elevation in AF patients is associated with nearly a two-fold increase in stroke risk and a threefold increase in cardiovascular mortality compared with undetectable levels of troponin [80].
+
+The ABC (Age, Biomarkers, Clinical History) stroke risk score, derived and internally validated in over 14,700 patients from the ARISTOTLE trial and externally validated in the RE-LY cohort, represents the most rigorously characterized biomarker-based risk model to date. Incorporating NT-proBNP, high-sensitivity cardiac troponin, and prior stroke history, the ABC-stroke score yielded a c-index of 0.68 versus 0.62 for CHA₂DS₂-VASc in the derivation cohort (P < 0.001), and 0.66 versus 0.59 in the external validation cohort [82].
+
+This improvement extended beyond discrimination metrics. Among patients classified as high-risk by CHA₂DS₂-VASc, nearly 70% were reclassified as low-risk by the ABC-stroke score, suggesting meaningful clinical downgrading that could directly inform deescalation of anticoagulation [83]. Similarly, the biomarker-based ABCD score demonstrated significantly improved continuous NRI compared with the non-sex CHA₂DS₂-VASc score (NRI = 0.576, P = 0.040) in patients with CHA₂DS₂-VA scores of 0–1, identifying a low-risk group who might reasonably avoid anticoagulation [84]. Nevertheless, it must be acknowledged that in real-world cohorts of anticoagulated patients, the addition of multiple biomarkers to CHA₂DS₂-VASc produced only a modest increase in c-index and marginal NRI improvement, with decision curve analyses showing lower net benefit compared with the original scores. These findings highlight that biomarker integration shows the greatest incremental value in intermediate-risk or borderline populations rather than across the full AF spectrum [85].
+
+Inflammatory Markers
+
+Recent clinical studies have additionally hypothesized that inflammation plays a role in triggering AF. Pentraxin-3 (PTX3) is a novel inflammatory marker produced at sites of local inflammation that has gained attention. In a subgroup analysis of 382 patients investigating plasma concentrations of PTX3, high-sensitivity C-reactive protein (hsCRP), and interleukin-6 (IL-6) and the first time of return to AF, IL-6 and PTX3 concentrations were significantly higher in patients with AF compared with those who were in sinus rhythm at 6- and 12-month follow-ups [86].
+
+hsCRP has also been investigated with respect to the recurrence rates of AF. A meta-analysis concluded that higher hsCRP levels correlated with AF recurrence rates [87]. At 1-month follow-up, AF recurrence was associated with significantly higher levels of hsCRP before cardioversion (OR 1.84; 95% CI 1.14–2.98; P = 0.013) even after adjustments for age, gender, and duration of AF. It is important to note, however, that hsCRP is a nonspecific systemic marker influenced by various comorbidities, and its interpretation requires caution.
+
+Impaired Renal Function
+
+Impaired renal function has also been independently associated with both AF recurrence and thromboembolic risk. In a prospective study of 159 patients undergoing successful cardioversion for persistent AF, 64% of patients with known chronic kidney disease (CKD) experienced recurrence at 1 year. Lower estimated glomerular filtration rate (eGFR) at baseline was associated with AF recurrence, with the highest risk seen in those with eGFR < 30 mL/min (HR 6.82, P < 0.001) [88]. This relationship may reflect the proarrhythmic effects of electrolyte imbalances, uremic toxins, and systemic inflammation commonly seen in advanced CKD.
+
+CKD has also been implicated in thromboembolism risk. In a cohort of 10,908 AF patients off anticoagulation, proteinuria was associated with a 54% higher risk of thromboembolism, and stroke risk increased as eGFR declined, likely reflecting the elevated levels of procoagulant factors and systemic inflammation seen in CKD [89]. In the ROCKET-AF trial, reduced eGFR was the second strongest predictor of stroke after prior stroke or TIA [90]. Incorporating creatinine clearance into the R2CHADS2 score improved the net reclassification index by 6.2% compared with CHA₂DS₂-VASc.
+
+Clinical and Economic Feasibility
+
+Despite their promise, the clinical implementation of advanced imaging and biomarker-based strategies faces significant real-world barriers. Left atrial strain measurements are subject to considerable intervendor variability [91]. Differences between vendor software have been identified as a major barrier to the widespread use and clinical applicability of LA strain, with intervendor coefficients of variation ranging from 31 to 42%. Consistent use of the same software platform has been recommended for serial patient assessments.
+
+Routine CT-based LAA morphology assessment also carries important real-word limitations. Cardiac CT requires iodinated contrast administration with recommended volumes ranging from 40 to 100 mL, depending on patient weight and renal function [92]. Radiation exposure varies considerably by protocol, from 2 mSv with optimized prospective acquisition to over 9 mSv with standard retrospective EKG-gated protocols [93]. Contrast-induced nephropathy risk is a particularly relevant concern given the high prevalence of CKD in the AF population, with expert consensus recommending careful evaluation before CT in patients with GFR < 30 mL/min and contrast volume minimization in those with GFR between 30 and 45 mL/min [94].
+
+From a health economics perspective, formal cost-effectiveness analyses of imaging-guided multimodal derisking strategies are currently lacking. A Markov cohort modeling study demonstrated that biomarker-based precision medicine reduced per-patient costs by 7% ($94,932 versus $102,057 Canadian dollars [CAD] over 20 years) and improved quality-adjusted life-years by 12%, with a dominant incremental cost-effectiveness ratio of −$6,541 CAD per quality-adjusted life-year [95]. However, these findings were specific to established biomarkers such high-sensitivity troponin I, NT-proBNP, GDF-15, and hemoglobin—incorporated into validated ABC-AF risk scores within a hypothetical cohort. These results therefore cannot be extrapolated to novel inflammatory markers such as PTX3 and IL-6, which lack validated clinical thresholds and are not routinely measured in AF management.
+
+Until prospective data demonstrate that imaging-guided anticoagulation decisions reduce thromboembolic events or bleeding complications in a cost-effective manner, these tools should be reserved for select cases where clinical uncertainty remains after conventional risk stratification, rather than applied broadly.
+
+Artificial Intelligence
+
+Artificial intelligence (AI) and machine learning offer a promising pathway to bridge the gap between resource-intensive advanced imaging and real-world clinical practice. AI models trained on routinely available data, including standard 12-lead EKGs and basic echocardiographic parameters, have demonstrated the ability to predict incident AF and estimate thromboembolic risk with accuracy comparable to established risk scores [96, 97]. Notably, explainable AI frameworks such as probabilistic graphical models have been validated on 1.6 million patients to incorporate social determinants of health alongside traditional clinical variables, capturing complex comorbidity interactions that point-based scoring systems cannot model and highlighting AI’s potential to deliver equitable, personalized risk stratification across diverse populations [98].
+
+In resource-limited settings, validated AI-enabled algorithms deployed via smartphones and smartwatches, several of which have received FDA clearance for AF detection, may offer a more scalable and equitable pathway to arrhythmia screening and individualized risk stratification than cardiac CT or MRI [99]. This potential to democratize personalized AF care makes AI integration a particularly compelling direction for future risk stratification models. However, as demonstrated by ARTESIA and NOAH-AFNET 6, device-detected AF does not automatically warrant anticoagulation. Prospective validation, societal consensus, and agreement on patient selection criteria remain essential prerequisites before AI-enabled smartwatch-based screening can be broadly integrated into personalized stroke risk stratification and anticoagulation decision-making in AF [100].
+
+Conclusions
+
+Stroke prophylaxis in AF is rapidly evolving from a one-size-fits-all paradigm towards a more nuanced, individualized approach. While the CHA₂DS₂-VASc score remains a practical and widely adopted tool, its reliance on broad clinical risk factors, including variables such as female sex that act more as risk modifiers than independent predictors, limits its precision. The score omits atrial morphologic features such as LAVI, Laε, and LAA, which may more directly predict the risk of embolic stroke from AF. However, their adoption into clinical practice is constrained by the simplicity and accessibility of the CHA₂DS₂-VASc score. Despite its promise, the integration of advanced imaging into stroke risk assessment is not universally feasible. The CHA₂DS₂-VASc score was deliberately designed for broad use, including in settings with limited resources. Therefore, structural and functional atrial imaging should be regarded as an adjunctive refinement, employed when clinically appropriate and logistically possible, rather than a replacement for traditional scoring systems. Future risk models must strike a balance between precision and practicality to promote equitable and individualized stroke prevention.
+
+Importantly, most existing risk scores prioritize clinical comorbidities associated with general stroke risk, rather than the anatomical and functional features unique to cardioembolic stroke. While much of the focus on LA structural parameters have centered on augmenting risk assessment, they also may clarify risk among patients in whom anticoagulation decisions are less straightforward. For example, patients with intermediate CHA₂DS₂-VASc scores or transient AF episodes in the setting of acute illness (e.g., sepsis or UTI) may be reflexively anticoagulated. However, in such “gray zone” cases, integrating LAVI, LA strain, and TEE findings, such as LAA morphology and high emptying velocities, may inform shared decision-making discussions and support closer outpatient rhythm monitoring and serial reassessment of stroke risk, though prospective data are needed before these structural parameters alone can be used to defer anticoagulation. Similarly, when AF arises in the context of a clearly identifiable and reversible trigger, the burden and persistence of arrhythmia following resolution of the acute insult, rather than the episode itself, should anchor the anticoagulation decision. This approach emphasizes shared decision-making and acknowledges that stroke prevention strategies should go beyond clinical risk scores, including structural and functional atrial evaluation.
+
+Incorporating dynamic metrics including LA strain could allow clinicians to refine anticoagulation decisions, tailoring therapy to an individual’s actual stroke risk rather than a static risk estimate. Likewise, reevaluating variables such as female sex as risk modifiers could prevent overtreatment in specific populations, such as women whose only CHA₂DS₂-VASc point arises from sex alone. Until robust prospective data become available, these factors may be best viewed as risk modifiers, augmenting our current stratification strategies without replacing them.
+
+As AF management evolves, integrating biomarkers, imaging-based atrial metrics, and insights from trials such as LOOP, NOAH-AFNET 6, ARTESIA, and ALONE-AF will be central to developing a multifaceted risk assessment approach. ALONE-AF further reinforces that anticoagulation decisions need not be permanent, in patients with documented freedom from arrhythmia following ablation, de-escalation may reduce net clinical harm. Emerging AI-enabled tools may offer a scalable complement to advanced imaging by integrating clinical, structural, and demographic variables that point-based scores cannot capture. This paradigm shift offers the potential to reduce thromboembolic events and avoid unnecessary anticoagulation and its attendant bleeding risks, ultimately improving patient outcomes through more personalized care.
+
+Funding
+
+No external funding was used in the preparation of this manuscript.
+
+Declarations
+
+Conflict of Interest
+
+Navid Radfar, Dhir Gala, Harsh Singh, Juan Bello, and Joseph Allencherril declare that they have no potential conflicts of interest that might be relevant to the contents of this manuscript.
+
+Authors’ Contributions
+
+Navid Radfar - Conceptualization, methodology, project administration, writing (original draft), reviewing and editing. Dhir Gala - Writing (original draft), reviewing and editing. Harsh Singh - Writing (original draft), reviewing and editing. Juan Bello – Writing (orignal draft), reviewing and editing. Joseph Allencherril - Conceptualization, supervision, reviewing and editing
+
+Data Availability Statement
+
+Data sharing not applicable to this article as no datasets were generated for this manuscript.
+
+Ethics Approval
+
+Not applicable.
+
+Code Availability
+
+Not applicable.
+
+Consent to Participate
+
+Not applicable.
+
+Consent for Publication
+
+Not applicable.
+
+
+References
+
+1. Newman JD O'Meara E Bohm M Implications of atrial fibrillation for guideline-directed therapy in patients with heart failure: JACC state-of-the-art review J Am Coll Cardiol 2024 83 9 932 950 10.1016/j.jacc.2023.12.033 38418008
+Newman JD, O’Meara E, Bohm M, et al. Implications of atrial fibrillation for guideline-directed therapy in patients with heart failure: JACC state-of-the-art review. J Am Coll Cardiol. 2024;83(9):932–50.38418008 10.1016/j.jacc.2023.12.033
+2. Yan S Li Q Xia Z Risk factors of thromboembolism in nonvalvular atrial fibrillation patients with low CHA2DS2-VASc score Medicine (Baltimore) 2019 98 8 e14549 10.1097/MD.0000000000014549 30813164 PMC6408143
+Yan S, Li Q, Xia Z, et al. Risk factors of thromboembolism in nonvalvular atrial fibrillation patients with low CHA2DS2-VASc score. Medicine (Baltimore). 2019;98(8):e14549.30813164 10.1097/MD.0000000000014549 PMC6408143
+3. Troy A Anderson TS National trends in use of and spending on oral anticoagulants among US Medicare Beneficiaries From 2011 to 2019 JAMA Health Forum. 2021 2 7 e211693 e211693 10.1001/jamahealthforum.2021.1693 35977203 PMC8796936
+Troy A, Anderson TS. National trends in use of and spending on oral anticoagulants among US Medicare Beneficiaries From 2011 to 2019. JAMA Health Forum. 2021;2(7):e211693–e211693.35977203 10.1001/jamahealthforum.2021.1693 PMC8796936
+4. Lee JS Han S Therrien NL Park C Luo F Essien UR Trends in drug spending of oral anticoagulants for atrial fibrillation, 2014–2021 Am J Prev Med 2024 66 3 463 472 10.1016/j.amepre.2023.10.014 37866490 PMC10922581
+Lee JS, Han S, Therrien NL, Park C, Luo F, Essien UR. Trends in drug spending of oral anticoagulants for atrial fibrillation, 2014–2021. Am J Prev Med. 2024;66(3):463–72.37866490 10.1016/j.amepre.2023.10.014 PMC10922581
+5. Joglar JA Chung MK Armbruster AL 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation: a report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines Circulation 2024 149 1 e1 e156 10.1161/CIR.0000000000001193 38033089 PMC11095842
+Joglar JA, Chung MK, Armbruster AL, et al. 2023 ACC/AHA/ACCP/HRS guideline for the diagnosis and management of atrial fibrillation: a report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines. Circulation. 2024;149(1):e1–156.38033089 10.1161/CIR.0000000000001193 PMC11095842
+6. Ortega-Martorell S Olier I Ohlsson M Lip GYH Advancing personalised care in atrial fibrillation and stroke: the potential impact of AI from prevention to rehabilitation Trends Cardiovasc Med 2025 35 4 205 211 10.1016/j.tcm.2024.12.003 39653093
+Ortega-Martorell S, Olier I, Ohlsson M, Lip GYH. Advancing personalised care in atrial fibrillation and stroke: the potential impact of AI from prevention to rehabilitation. Trends Cardiovasc Med. 2025;35(4):205–11.39653093 10.1016/j.tcm.2024.12.003
+7. Gage BF Waterman AD Shannon W Boechler M Rich MW Radford MJ Validation of clinical classification schemes for predicting StrokeResults From the National Registry of Atrial Fibrillation JAMA 2001 285 22 2864 2870 10.1001/jama.285.22.2864 11401607
+Gage BF, Waterman AD, Shannon W, Boechler M, Rich MW, Radford MJ. Validation of clinical classification schemes for predicting StrokeResults From the National Registry of Atrial Fibrillation. JAMA. 2001;285(22):2864–70.11401607 10.1001/jama.285.22.2864
+8. Brann A Day JD Bunch TJ The role of anticoagulation in a patient with atrial fibrillation and a CHADS2 Score of 1 Card Electrophysiol Clin. 2012 4 2 107 117 10.1016/j.ccep.2012.02.001 26939807
+Brann A, Day JD, Bunch TJ. The role of anticoagulation in a patient with atrial fibrillation and a CHADS2 Score of 1. Card Electrophysiol Clin. 2012;4(2):107–17.26939807 10.1016/j.ccep.2012.02.001
+9. Lip GYH Teppo K Nielsen PB CHA2DS2-VASc or a non-sex score (CHA2DS2-VA) for stroke risk prediction in atrial fibrillation: contemporary insights and clinical implications Eur Heart J 2024 45 36 3718 3720 10.1093/eurheartj/ehae540 39217500
+Lip GYH, Teppo K, Nielsen PB. CHA2DS2-VASc or a non-sex score (CHA2DS2-VA) for stroke risk prediction in atrial fibrillation: contemporary insights and clinical implications. Eur Heart J. 2024;45(36):3718–20.39217500 10.1093/eurheartj/ehae540
+10. Wagstaff AJ Overvad TF Lip GY Lane DA Is female sex a risk factor for stroke and thromboembolism in patients with atrial fibrillation? A systematic review and meta-analysis QJM 2014 107 12 955 967 10.1093/qjmed/hcu054 24633256
+Wagstaff AJ, Overvad TF, Lip GY, Lane DA. Is female sex a risk factor for stroke and thromboembolism in patients with atrial fibrillation? A systematic review and meta-analysis. QJM. 2014;107(12):955–67.24633256 10.1093/qjmed/hcu054
+11. Emdin CA Wong CX Hsiao AJ Atrial fibrillation as risk factor for cardiovascular disease and death in women compared with men: systematic review and meta-analysis of cohort studies BMJ 2016 532 h7013 10.1136/bmj.h7013 26786546 PMC5482349
+Emdin CA, Wong CX, Hsiao AJ, et al. Atrial fibrillation as risk factor for cardiovascular disease and death in women compared with men: systematic review and meta-analysis of cohort studies. BMJ. 2016;532:h7013.26786546 10.1136/bmj.h7013 PMC5482349
+12. Nielsen PB Skjøth F Overvad TF Larsen TB Lip GYH Female sex is a risk modifier rather than a risk factor for stroke in atrial fibrillation: should we use a CHA(2)DS(2)-VA Score Rather Than CHA(2)DS(2)-VASc? Circulation 2018 137 8 832 840 10.1161/CIRCULATIONAHA.117.029081 29459469
+Nielsen PB, Skjøth F, Overvad TF, Larsen TB, Lip GYH. Female sex is a risk modifier rather than a risk factor for stroke in atrial fibrillation: should we use a CHA(2)DS(2)-VA Score Rather Than CHA(2)DS(2)-VASc? Circulation. 2018;137(8):832–40.29459469 10.1161/CIRCULATIONAHA.117.029081
+13. Lang C Seyfang L Ferrari J Do women with atrial fibrillation experience more severe strokes? Results from the Austrian Stroke Unit Registry Stroke 2017 48 3 778 780 10.1161/STROKEAHA.116.015900 28151397
+Lang C, Seyfang L, Ferrari J, et al. Do women with atrial fibrillation experience more severe strokes? Results from the Austrian Stroke Unit Registry. Stroke. 2017;48(3):778–80.28151397 10.1161/STROKEAHA.116.015900
+14. Teppo K Lip GYH Airaksinen KEJ Comparing CHA(2)DS(2)-VA and CHA(2)DS(2)-VASc scores for stroke risk stratification in patients with atrial fibrillation: a temporal trends analysis from the retrospective Finnish AntiCoagulation in Atrial Fibrillation (FinACAF) cohort Lancet Reg Health Eur. 2024 43 100967 10.1016/j.lanepe.2024.100967 39171253 PMC11337097
+Teppo K, Lip GYH, Airaksinen KEJ, et al. Comparing CHA(2)DS(2)-VA and CHA(2)DS(2)-VASc scores for stroke risk stratification in patients with atrial fibrillation: a temporal trends analysis from the retrospective Finnish AntiCoagulation in Atrial Fibrillation (FinACAF) cohort. Lancet Reg Health Eur. 2024;43:100967.39171253 10.1016/j.lanepe.2024.100967 PMC11337097
+15. Van Gelder IC, Rienstra M, Bunting KV, et al. 2024 ESC Guidelines for the management of atrial fibrillation developed in collaboration with the European Association for Cardio-Thoracic Surgery (EACTS): Developed by the task force for the management of atrial fibrillation of the European Society of Cardiology (ESC), with the special contribution of the European Heart Rhythm Association (EHRA) of the ESC. Endorsed by the European Stroke Organisation (ESO). Eur Heart J 2024;45(36):3314–3414.10.1093/eurheartj/ehae176 39210723
+16. Zhang J Lenarczyk R Marin F The interpretation of CHA2DS2-VASc score components in clinical practice: a joint survey by the European Heart Rhythm Association (EHRA) Scientific Initiatives Committee, the EHRA Young Electrophysiologists, the Association of Cardiovascular Nursing and Allied Professionals, and the European Society of Cardiology Council on Stroke Europace 2021 23 2 314 322 10.1093/europace/euaa358 33554259
+Zhang J, Lenarczyk R, Marin F, et al. The interpretation of CHA2DS2-VASc score components in clinical practice: a joint survey by the European Heart Rhythm Association (EHRA) Scientific Initiatives Committee, the EHRA Young Electrophysiologists, the Association of Cardiovascular Nursing and Allied Professionals, and the European Society of Cardiology Council on Stroke. Europace. 2021;23(2):314–22.33554259 10.1093/europace/euaa358
+17. Whelton PK Carey RM Aronow WS 2017 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA Guideline for the prevention, detection, evaluation, and management of high blood pressure in adults: a report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines Hypertension 2018 71 6 e13 e115 29133356 10.1161/HYP.0000000000000065
+Whelton PK, Carey RM, Aronow WS, et al. 2017 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA Guideline for the prevention, detection, evaluation, and management of high blood pressure in adults: a report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines. Hypertension. 2018;71(6):e13–115.29133356 10.1161/HYP.0000000000000065
+18. Wang J Zhang DP Liu HB Zhong JC Yang XC Should atrial fibrillation patients with hypertension as an additional risk factor of the CHA2DS2-VASc score receive oral anticoagulation? J Geriatr Cardiol 2018 15 3 229 234 29721002 10.11909/j.issn.1671-5411.2018.03.005 PMC5919811
+Wang J, Zhang DP, Liu HB, Zhong JC, Yang XC. Should atrial fibrillation patients with hypertension as an additional risk factor of the CHA2DS2-VASc score receive oral anticoagulation? J Geriatr Cardiol. 2018;15(3):229–34.29721002 10.11909/j.issn.1671-5411.2018.03.005 PMC5919811
+19. Chen JY Zhang AD Lu HY Guo J Wang FF Li ZC CHADS2 versus CHA2DS2-VASc score in assessing the stroke and thromboembolism risk stratification in patients with atrial fibrillation: a systematic review and meta-analysis J Geriatr Cardiol 2013 10 3 258 266 24133514 10.3969/j.issn.1671-5411.2013.03.004 PMC3796700
+Chen JY, Zhang AD, Lu HY, Guo J, Wang FF, Li ZC. CHADS2 versus CHA2DS2-VASc score in assessing the stroke and thromboembolism risk stratification in patients with atrial fibrillation: a systematic review and meta-analysis. J Geriatr Cardiol. 2013;10(3):258–66.24133514 10.3969/j.issn.1671-5411.2013.03.004 PMC3796700
+20. Lip GY Nieuwlaat R Pisters R Lane DA Crijns HJ Refining clinical risk stratification for predicting stroke and thromboembolism in atrial fibrillation using a novel risk factor-based approach: the euro heart survey on atrial fibrillation Chest 2010 137 2 263 272 10.1378/chest.09-1584 19762550
+Lip GY, Nieuwlaat R, Pisters R, Lane DA, Crijns HJ. Refining clinical risk stratification for predicting stroke and thromboembolism in atrial fibrillation using a novel risk factor-based approach: the euro heart survey on atrial fibrillation. Chest. 2010;137(2):263–72.19762550 10.1378/chest.09-1584
+21. Mitsios JP, Ekinci EI, Mitsios GP, Churilov L, Thijs V. Relationship between glycated hemoglobin and stroke risk: a systematic review and meta‐analysis. J Am Heart Assoc 7(11):7858.10.1161/JAHA.117.007858 PMC6015363 29773578
+22. Fang MC Go AS Chang Y A new risk scheme to predict warfarin-associated hemorrhage: the ATRIA (Anticoagulation and Risk Factors in Atrial Fibrillation) Study J Am Coll Cardiol 2011 58 4 395 401 10.1016/j.jacc.2011.03.031 21757117 PMC3175766
+Fang MC, Go AS, Chang Y, et al. A new risk scheme to predict warfarin-associated hemorrhage: the ATRIA (Anticoagulation and Risk Factors in Atrial Fibrillation) Study. J Am Coll Cardiol. 2011;58(4):395–401.21757117 10.1016/j.jacc.2011.03.031 PMC3175766
+23. Gage BF Yan Y Milligan PE Clinical classification schemes for predicting hemorrhage: results from the National Registry of Atrial Fibrillation (NRAF) Am Heart J 2006 151 3 713 719 10.1016/j.ahj.2005.04.017 16504638
+Gage BF, Yan Y, Milligan PE, et al. Clinical classification schemes for predicting hemorrhage: results from the National Registry of Atrial Fibrillation (NRAF). Am Heart J. 2006;151(3):713–9.16504638 10.1016/j.ahj.2005.04.017
+24. Patrick AR Avorn J Choudhry NK Cost-effectiveness of genotype-guided warfarin dosing for patients with atrial fibrillation Circulation 2009 2 5 429 436 20031873 10.1161/CIRCOUTCOMES.108.808592
+Patrick AR, Avorn J, Choudhry NK. Cost-effectiveness of genotype-guided warfarin dosing for patients with atrial fibrillation. Circulation. 2009;2(5):429–36.20031873 10.1161/CIRCOUTCOMES.108.808592
+25. Maeda T Nishi T Funakoshi S Risks of bleeding and stroke based on CHA2DS2-VASc scores in Japanese patients with atrial fibrillation: a large-scale observational study using real-world data J Am Heart Assoc 2020 9 5 e014574 10.1161/JAHA.119.014574 32106743 PMC7335551
+Maeda T, Nishi T, Funakoshi S, et al. Risks of bleeding and stroke based on CHA2DS2-VASc scores in Japanese patients with atrial fibrillation: a large-scale observational study using real-world data. J Am Heart Assoc. 2020;9(5):e014574.32106743 10.1161/JAHA.119.014574 PMC7335551
+26. Lip GY Lane DA Modern management of atrial fibrillation requires initial identification of "low-risk" patients using the CHA2DS2-VASc score, and not focusing on "high-risk" prediction Circ J 2014 78 8 1843 1845 10.1253/circj.CJ-14-0584 25008366
+Lip GY, Lane DA. Modern management of atrial fibrillation requires initial identification of “low-risk” patients using the CHA2DS2-VASc score, and not focusing on “high-risk” prediction. Circ J. 2014;78(8):1843–5.25008366 10.1253/circj.cj-14-0584
+27. Pisters R Lane DA Nieuwlaat R de Vos CB Crijns HJ Lip GY A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with atrial fibrillation: the Euro Heart Survey Chest 2010 138 5 1093 1100 10.1378/chest.10-0134 20299623
+Pisters R, Lane DA, Nieuwlaat R, de Vos CB, Crijns HJ, Lip GY. A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with atrial fibrillation: the Euro Heart Survey. Chest. 2010;138(5):1093–100.20299623 10.1378/chest.10-0134
+28. Apostolakis S Lane DA Guo Y Buller H Lip GY Performance of the HEMORR(2)HAGES, ATRIA, and HAS-BLED bleeding risk-prediction scores in patients with atrial fibrillation undergoing anticoagulation: the AMADEUS (evaluating the use of SR34006 compared to warfarin or acenocoumarol in patients with atrial fibrillation) study J Am Coll Cardiol 2012 60 9 861 867 10.1016/j.jacc.2012.06.019 22858389
+Apostolakis S, Lane DA, Guo Y, Buller H, Lip GY. Performance of the HEMORR(2)HAGES, ATRIA, and HAS-BLED bleeding risk-prediction scores in patients with atrial fibrillation undergoing anticoagulation: the AMADEUS (evaluating the use of SR34006 compared to warfarin or acenocoumarol in patients with atrial fibrillation) study. J Am Coll Cardiol. 2012;60(9):861–7.22858389 10.1016/j.jacc.2012.06.019
+29. Roldán V Marín F Fernández H Predictive value of the HAS-BLED and ATRIA bleeding scores for the risk of serious bleeding in a "real-world" population with atrial fibrillation receiving anticoagulant therapy Chest 2013 143 1 179 184 10.1378/chest.12-0608 22722228
+Roldán V, Marín F, Fernández H, et al. Predictive value of the HAS-BLED and ATRIA bleeding scores for the risk of serious bleeding in a “real-world” population with atrial fibrillation receiving anticoagulant therapy. Chest. 2013;143(1):179–84.22722228 10.1378/chest.12-0608
+30. Apostolakis S Lane Deirdre A Guo Y Buller H Lip Gregory YH Performance of the HEMORR2HAGES, ATRIA, and HAS-BLED bleeding risk–prediction scores in nonwarfarin anticoagulated atrial fibrillation patients JACC 2013 61 3 386 387 10.1016/j.jacc.2012.10.010 23246385
+Apostolakis S, Lane Deirdre A, Guo Y, Buller H, Lip Gregory YH. Performance of the HEMORR2HAGES, ATRIA, and HAS-BLED bleeding risk–prediction scores in nonwarfarin anticoagulated atrial fibrillation patients. JACC. 2013;61(3):386–7.23246385 10.1016/j.jacc.2012.10.010
+31. Zhu W He W Guo L Wang X Hong K The HAS-BLED score for predicting major bleeding risk in anticoagulated patients with atrial fibrillation: a systematic review and meta-analysis Clin Cardiol 2015 38 9 555 561 10.1002/clc.22435 26418409 PMC6490831
+Zhu W, He W, Guo L, Wang X, Hong K. The HAS-BLED score for predicting major bleeding risk in anticoagulated patients with atrial fibrillation: a systematic review and meta-analysis. Clin Cardiol. 2015;38(9):555–61.26418409 10.1002/clc.22435 PMC6490831
+32. Caldeira D Costa J Fernandes RM Pinto FJ Ferreira JJ Performance of the HAS-BLED high bleeding-risk category, compared to ATRIA and HEMORR2HAGES in patients with atrial fibrillation: a systematic review and meta-analysis J Interv Card Electrophysiol 2014 40 3 277 284 10.1007/s10840-014-9930-y 25012972
+Caldeira D, Costa J, Fernandes RM, Pinto FJ, Ferreira JJ. Performance of the HAS-BLED high bleeding-risk category, compared to ATRIA and HEMORR2HAGES in patients with atrial fibrillation: a systematic review and meta-analysis. J Interv Card Electrophysiol. 2014;40(3):277–84.25012972 10.1007/s10840-014-9930-y
+33. Bassand JP Apenteng PN Atar D GARFIELD-AF: a worldwide prospective registry of patients with atrial fibrillation at risk of stroke Future Cardiol 2021 17 1 19 38 10.2217/fca-2020-0014 32696663
+Bassand JP, Apenteng PN, Atar D, et al. GARFIELD-AF: a worldwide prospective registry of patients with atrial fibrillation at risk of stroke. Future Cardiol. 2021;17(1):19–38.32696663 10.2217/fca-2020-0014
+34. Fox KAA Virdone S Pieper KS GARFIELD-AF risk score for mortality, stroke, and bleeding within 2 years in patients with atrial fibrillation Eur Heart J Qual Care Clin Outcomes. 2022 8 2 214 227 10.1093/ehjqcco/qcab028 33892489 PMC8888127
+Fox KAA, Virdone S, Pieper KS, et al. GARFIELD-AF risk score for mortality, stroke, and bleeding within 2 years in patients with atrial fibrillation. Eur Heart J Qual Care Clin Outcomes. 2022;8(2):214–27.33892489 10.1093/ehjqcco/qcab028 PMC8888127
+35. Ali A Siddiqui AA Ali M Shahid I Meta-analysis on performance of ABC and GARFIELD-AF compared to CHA2DS2-VASc and HAS-BLED in anticoagulated atrial fibrillation patients Cardiovasc Revasc Med 2024 60 74 81 10.1016/j.carrev.2023.10.007 37880043
+Ali A, Siddiqui AA, Ali M, Shahid I. Meta-analysis on performance of ABC and GARFIELD-AF compared to CHA2DS2-VASc and HAS-BLED in anticoagulated atrial fibrillation patients. Cardiovasc Revasc Med. 2024;60:74–81.37880043 10.1016/j.carrev.2023.10.007
+36. Proietti M Rivera-Caravaca JM Esteve-Pastor MA Marín F Lip GYH Stroke and thromboembolism in warfarin-treated patients with atrial fibrillation: comparing the CHA2DS2-VASc and GARFIELD-AF risk scores Thromb Haemost 2021 121 08 1107 1114 10.1055/a-1333-4448 33296920
+Proietti M, Rivera-Caravaca JM, Esteve-Pastor MA, Marín F, Lip GYH. Stroke and thromboembolism in warfarin-treated patients with atrial fibrillation: comparing the CHA2DS2-VASc and GARFIELD-AF risk scores. Thromb Haemost. 2021;121(08):1107–14.33296920 10.1055/a-1333-4448
+37. Perez MV Mahaffey KW Hedlin H Large-scale assessment of a smartwatch to identify atrial fibrillation N Engl J Med 2019 381 20 1909 1917 10.1056/NEJMoa1901183 31722151 PMC8112605
+Perez MV, Mahaffey KW, Hedlin H, et al. Large-scale assessment of a smartwatch to identify atrial fibrillation. N Engl J Med. 2019;381(20):1909–17.31722151 10.1056/NEJMoa1901183 PMC8112605
+38. Yang SY Huang M Wang AL Atrial fibrillation burden and the risk of stroke: a systematic review and dose-response meta-analysis World J Clin Cases. 2022 10 3 939 953 10.12998/wjcc.v10.i3.939 35127908 PMC8790433
+Yang SY, Huang M, Wang AL, et al. Atrial fibrillation burden and the risk of stroke: a systematic review and dose-response meta-analysis. World J Clin Cases. 2022;10(3):939–53.35127908 10.12998/wjcc.v10.i3.939 PMC8790433
+39. Healey JS Lopes RD Granger CB Apixaban for stroke prevention in subclinical atrial fibrillation N Engl J Med 2024 390 2 107 117 10.1056/NEJMoa2310234 37952132
+Healey JS, Lopes RD, Granger CB, et al. Apixaban for stroke prevention in subclinical atrial fibrillation. N Engl J Med. 2024;390(2):107–17.37952132 10.1056/NEJMoa2310234
+40. Glotzer TV Daoud EG Wyse DG The relationship between daily atrial tachyarrhythmia burden from implantable device diagnostics and stroke risk: the TRENDS study Circ Arrhythm Electrophysiol 2009 2 5 474 480 10.1161/CIRCEP.109.849638 19843914
+Glotzer TV, Daoud EG, Wyse DG, et al. The relationship between daily atrial tachyarrhythmia burden from implantable device diagnostics and stroke risk: the TRENDS study. Circ Arrhythm Electrophysiol. 2009;2(5):474–80.19843914 10.1161/CIRCEP.109.849638
+41. Van Gelder IC Healey JS Crijns HJGM Duration of device-detected subclinical atrial fibrillation and occurrence of stroke in ASSERT Eur Heart J 2017 38 17 1339 1344 10.1093/eurheartj/ehx042 28329139
+Van Gelder IC, Healey JS, Crijns HJGM, et al. Duration of device-detected subclinical atrial fibrillation and occurrence of stroke in ASSERT. Eur Heart J. 2017;38(17):1339–44.28329139 10.1093/eurheartj/ehx042
+42. Connolly Stuart J, Eikelboom J, Joyner C, et al. Apixaban in patients with atrial fibrillation. N Engl J Med 364(9):806-817.10.1056/NEJMoa1007432 21309657
+43. Lopes RD Atlas SJ Go AS Effect of screening for undiagnosed atrial fibrillation on stroke prevention J Am Coll Cardiol 2024 84 21 2073 2084 10.1016/j.jacc.2024.08.019 39230544
+Lopes RD, Atlas SJ, Go AS, et al. Effect of screening for undiagnosed atrial fibrillation on stroke prevention. J Am Coll Cardiol. 2024;84(21):2073–84.39230544 10.1016/j.jacc.2024.08.019
+44. Svendsen JH Diederichsen SZ Højberg S Implantable loop recorder detection of atrial fibrillation to prevent stroke (The LOOP Study): a randomised controlled trial Lancet 2021 398 10310 1507 1516 10.1016/S0140-6736(21)01698-6 34469766
+Svendsen JH, Diederichsen SZ, Højberg S, et al. Implantable loop recorder detection of atrial fibrillation to prevent stroke (The LOOP Study): a randomised controlled trial. Lancet. 2021;398(10310):1507–16.34469766 10.1016/S0140-6736(21)01698-6
+45. Diener HC Becher N Sehner S Anticoagulation in patients with Device‐detected atrial fibrillation with and without a prior stroke or transient ischemic attack: the NOAH‐AFNET 6 Trial J Am Heart Assoc 2024 13 17 e036429 10.1161/JAHA.124.036429 39190564 PMC11646511
+Diener HC, Becher N, Sehner S, et al. Anticoagulation in patients with Device‐detected atrial fibrillation with and without a prior stroke or transient ischemic attack: the NOAH‐AFNET 6 Trial. J Am Heart Assoc. 2024;13(17):e036429.39190564 10.1161/JAHA.124.036429 PMC11646511
+46. Kim D Shim J Choi EK Long-term anticoagulation discontinuation after catheter ablation for atrial fibrillation: the ALONE-AF randomized clinical trial JAMA 2025 334 14 1246 1254 10.1001/jama.2025.14679 40886309 PMC12400166
+Kim D, Shim J, Choi EK, et al. Long-term anticoagulation discontinuation after catheter ablation for atrial fibrillation: the ALONE-AF randomized clinical trial. JAMA. 2025;334(14):1246–54.40886309 10.1001/jama.2025.14679 PMC12400166
+47. Bessissow A Khan J Devereaux PJ Alvarez-Garcia J Alonso-Coello P Postoperative atrial fibrillation in non-cardiac and cardiac surgery: an overview J Thromb Haemost 2015 13 S304 S312 10.1111/jth.12974 26149040
+Bessissow A, Khan J, Devereaux PJ, Alvarez-Garcia J, Alonso-Coello P. Postoperative atrial fibrillation in non-cardiac and cardiac surgery: an overview. J Thromb Haemost. 2015;13:S304–12.26149040 10.1111/jth.12974
+48. Staerk L Sherer JA Ko D Benjamin EJ Helm RH Atrial fibrillation: epidemiology, pathophysiology, and clinical outcomes Circ Res 2017 120 9 1501 1517 10.1161/CIRCRESAHA.117.309732 28450367 PMC5500874
+Staerk L, Sherer JA, Ko D, Benjamin EJ, Helm RH. Atrial fibrillation: epidemiology, pathophysiology, and clinical outcomes. Circ Res. 2017;120(9):1501–17.28450367 10.1161/CIRCRESAHA.117.309732 PMC5500874
+49. Lazzerini PE Abbate A Boutjdir M Capecchi PL Fir(e)ing the rhythm: inflammatory cytokines and cardiac arrhythmias JACC Basic Transl Sci. 2023 8 6 728 750 10.1016/j.jacbts.2022.12.004 37426535 PMC10322731
+Lazzerini PE, Abbate A, Boutjdir M, Capecchi PL. Fir(e)ing the rhythm: inflammatory cytokines and cardiac arrhythmias. JACC Basic Transl Sci. 2023;8(6):728–50.37426535 10.1016/j.jacbts.2022.12.004 PMC10322731
+50. Chen PS Chen LS Fishbein MC Lin SF Nattel S Role of the autonomic nervous system in atrial fibrillation: pathophysiology and therapy Circ Res 2014 114 9 1500 1515 10.1161/CIRCRESAHA.114.303772 24763467 PMC4043633
+Chen PS, Chen LS, Fishbein MC, Lin SF, Nattel S. Role of the autonomic nervous system in atrial fibrillation: pathophysiology and therapy. Circ Res. 2014;114(9):1500–15.24763467 10.1161/CIRCRESAHA.114.303772 PMC4043633
+51. Induruwa I Hennebry E Hennebry J Thakur M Warburton EA Khadjooi K Sepsis-driven atrial fibrillation and ischaemic stroke Is there enough evidence to recommend anticoagulation? Eur J Intern Med 2022 98 32 36 10.1016/j.ejim.2021.10.022 34763982 PMC8948090
+Induruwa I, Hennebry E, Hennebry J, Thakur M, Warburton EA, Khadjooi K. Sepsis-driven atrial fibrillation and ischaemic stroke Is there enough evidence to recommend anticoagulation? Eur J Intern Med. 2022;98:32–6.34763982 10.1016/j.ejim.2021.10.022 PMC8948090
+52. Arunachalam K Kalyan Sundaram A Jha K Thakur L Pond K Evaluation of anticoagulation practice with new-onset atrial fibrillation in patients with sepsis and septic shock in medical intensive care unit: a retrospective observational cohort study Cureus. 2020 12 8 e10026 32983720 10.7759/cureus.10026 PMC7515803
+Arunachalam K, Kalyan Sundaram A, Jha K, Thakur L, Pond K. Evaluation of anticoagulation practice with new-onset atrial fibrillation in patients with sepsis and septic shock in medical intensive care unit: a retrospective observational cohort study. Cureus. 2020;12(8):e10026.32983720 10.7759/cureus.10026 PMC7515803
+53. Jordan K Yaghi S Poppas A Left atrial volume index is associated with cardioembolic stroke and atrial fibrillation detection after embolic stroke of undetermined source Stroke 2019 50 8 1997 2001 10.1161/STROKEAHA.119.025384 31189435 PMC6646078
+Jordan K, Yaghi S, Poppas A, et al. Left atrial volume index is associated with cardioembolic stroke and atrial fibrillation detection after embolic stroke of undetermined source. Stroke. 2019;50(8):1997–2001.31189435 10.1161/STROKEAHA.119.025384 PMC6646078
+54. Yaghi S Moon YP Mora-McLaughlin C Left atrial enlargement and stroke recurrence: the Northern Manhattan Stroke Study Stroke 2015 46 6 1488 1493 10.1161/STROKEAHA.115.008711 25908460 PMC4442058
+Yaghi S, Moon YP, Mora-McLaughlin C, et al. Left atrial enlargement and stroke recurrence: the Northern Manhattan Stroke Study. Stroke. 2015;46(6):1488–93.25908460 10.1161/STROKEAHA.115.008711 PMC4442058
+55. Di Tullio MR Sacco RL Sciacca RR Homma S Left atrial size and the risk of ischemic stroke in an ethnically mixed population Stroke 1999 30 10 2019 2024 10.1161/01.STR.30.10.2019 10512901
+Di Tullio MR, Sacco RL, Sciacca RR, Homma S. Left atrial size and the risk of ischemic stroke in an ethnically mixed population. Stroke. 1999;30(10):2019–24.10512901 10.1161/01.str.30.10.2019
+56. Gardin JM McClelland R Kitzman D M-mode echocardiographic predictors of six- to seven-year incidence of coronary heart disease, stroke, congestive heart failure, and mortality in an elderly cohort (the Cardiovascular Health Study) Am J Cardiol 2001 87 9 1051 1057 10.1016/S0002-9149(01)01460-6 11348601
+Gardin JM, McClelland R, Kitzman D, et al. M-mode echocardiographic predictors of six- to seven-year incidence of coronary heart disease, stroke, congestive heart failure, and mortality in an elderly cohort (the Cardiovascular Health Study). Am J Cardiol. 2001;87(9):1051–7.11348601 10.1016/s0002-9149(01)01460-6
+57. Sajeev JK Kalman JM Dewey H Cooke JC Teh AW The atrium and embolic stroke: myopathy not atrial fibrillation as the requisite determinant? JACC Clin Electrophysiol. 2020 6 3 251 261 10.1016/j.jacep.2019.12.013 32192674
+Sajeev JK, Kalman JM, Dewey H, Cooke JC, Teh AW. The atrium and embolic stroke: myopathy not atrial fibrillation as the requisite determinant? JACC Clin Electrophysiol. 2020;6(3):251–61.32192674 10.1016/j.jacep.2019.12.013
+58. Lang RM Badano LP Mor-Avi V Recommendations for Cardiac Chamber Quantification by Echocardiography in Adults: An Update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging Eur Heart J Cardiovasc Imag 2015 16 3 233 271 10.1093/ehjci/jev014 25712077
+Lang RM, Badano LP, Mor-Avi V, et al. Recommendations for Cardiac Chamber Quantification by Echocardiography in Adults: An Update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging. Eur Heart J Cardiovasc Imag. 2015;16(3):233–71.10.1093/ehjci/jev014 25712077
+59. Sato H Saito M Mitsui N Left atrial volume index as a predictor for large-vessel occlusion in cardiogenic cerebral infarction: a single-center cohort study World Neurosurg. 2022 159 e79 e83 10.1016/j.wneu.2021.12.003 34883273
+Sato H, Saito M, Mitsui N, et al. Left atrial volume index as a predictor for large-vessel occlusion in cardiogenic cerebral infarction: a single-center cohort study. World Neurosurg. 2022;159:e79–83.34883273 10.1016/j.wneu.2021.12.003
+60. Homssi M Balaji V Zhang C Shin J Gupta A Kamel H Association between left atrial volume index and infarct volume in patients with ischemic stroke Front Neurol 2023 14 1265037 10.3389/fneur.2023.1265037 38053799 PMC10694187
+Homssi M, Balaji V, Zhang C, Shin J, Gupta A, Kamel H. Association between left atrial volume index and infarct volume in patients with ischemic stroke. Front Neurol. 2023;14:1265037.38053799 10.3389/fneur.2023.1265037 PMC10694187
+61. Segan L Nanayakkara S Spear E Identifying patients at high risk of left atrial appendage thrombus before cardioversion: the CLOTS-AF Score J Am Heart Assoc 2023 12 12 e029259 10.1161/JAHA.122.029259 37301743 PMC10356043
+Segan L, Nanayakkara S, Spear E, et al. Identifying patients at high risk of left atrial appendage thrombus before cardioversion: the CLOTS-AF Score. J Am Heart Assoc. 2023;12(12):e029259.37301743 10.1161/JAHA.122.029259 PMC10356043
+62. Collado FMS, Lama von Buchwald CM, Anderson CK, et al. Left atrial appendage occlusion for stroke prevention in nonvalvular atrial fibrillation. J American Heart Association. 2021;10(21):e022274.10.1161/JAHA.121.022274 PMC8751840 34668395
+63. Wang Y Di Biase L Horton RP Nguyen T Morhanty P Natale A Left atrial appendage studied by computed tomography to help planning for appendage closure device placement J Cardiovasc Electrophysiol 2010 21 9 973 982 10.1111/j.1540-8167.2010.01814.x 20550614
+Wang Y, Di Biase L, Horton RP, Nguyen T, Morhanty P, Natale A. Left atrial appendage studied by computed tomography to help planning for appendage closure device placement. J Cardiovasc Electrophysiol. 2010;21(9):973–82.20550614 10.1111/j.1540-8167.2010.01814.x
+64. Di Biase L Santangeli P Anselmino M Does the left atrial appendage morphology correlate with the risk of stroke in patients with atrial fibrillation?: results from a multicenter study J Am Coll Cardiol 2012 60 6 531 538 10.1016/j.jacc.2012.04.032 22858289
+Di Biase L, Santangeli P, Anselmino M, et al. Does the left atrial appendage morphology correlate with the risk of stroke in patients with atrial fibrillation?: results from a multicenter study. J Am Coll Cardiol. 2012;60(6):531–8.22858289 10.1016/j.jacc.2012.04.032
+65. Lupercio F Carlos Ruiz J Briceno DF Left atrial appendage morphology assessment for risk stratification of embolic stroke in patients with atrial fibrillation: a meta-analysis Heart Rhythm 2016 13 7 1402 1409 10.1016/j.hrthm.2016.03.042 27016474
+Lupercio F, Carlos Ruiz J, Briceno DF, et al. Left atrial appendage morphology assessment for risk stratification of embolic stroke in patients with atrial fibrillation: a meta-analysis. Heart Rhythm. 2016;13(7):1402–9.27016474 10.1016/j.hrthm.2016.03.042
+66. Wang F Zhu M Wang X Predictive value of left atrial appendage lobes on left atrial thrombus or spontaneous echo contrast in patients with non-valvular atrial fibrillation BMC Cardiovasc Disord 2018 18 1 153 10.1186/s12872-018-0889-y 30064363 PMC6069846
+Wang F, Zhu M, Wang X, et al. Predictive value of left atrial appendage lobes on left atrial thrombus or spontaneous echo contrast in patients with non-valvular atrial fibrillation. BMC Cardiovasc Disord. 2018;18(1):153.30064363 10.1186/s12872-018-0889-y PMC6069846
+67. Petersen M Roehrich A Balzer J Left atrial appendage morphology is closely associated with specific echocardiographic flow pattern in patients with atrial fibrillation Europace 2015 17 4 539 545 10.1093/europace/euu347 25491111
+Petersen M, Roehrich A, Balzer J, et al. Left atrial appendage morphology is closely associated with specific echocardiographic flow pattern in patients with atrial fibrillation. Europace. 2015;17(4):539–45.25491111 10.1093/europace/euu347
+68. Mannina C Ito K Jin Z Association of left atrial strain with ischemic stroke risk in older adults JAMA Cardiol. 2023 8 4 317 325 10.1001/jamacardio.2022.5449 36753086 PMC9909576
+Mannina C, Ito K, Jin Z, et al. Association of left atrial strain with ischemic stroke risk in older adults. JAMA Cardiol. 2023;8(4):317–25.36753086 10.1001/jamacardio.2022.5449 PMC9909576
+69. Shih JY Tsai WC Huang YY Association of decreased left atrial strain and strain rate with stroke in chronic atrial fibrillation J Am Soc Echocardiogr 2011 24 5 513 519 10.1016/j.echo.2011.01.016 21353469
+Shih JY, Tsai WC, Huang YY, et al. Association of decreased left atrial strain and strain rate with stroke in chronic atrial fibrillation. J Am Soc Echocardiogr. 2011;24(5):513–9.21353469 10.1016/j.echo.2011.01.016
+70. Vera A Cecconi A Ximénez-Carrillo Á Left atrial strain predicts stroke recurrence and death in patients with cryptogenic stroke Am J Cardiol 2024 210 51 57 10.1016/j.amjcard.2023.10.001 37898159
+Vera A, Cecconi A, Ximénez-Carrillo Á, et al. Left atrial strain predicts stroke recurrence and death in patients with cryptogenic stroke. Am J Cardiol. 2024;210:51–7.37898159 10.1016/j.amjcard.2023.10.001
+71. Alhakak AS Biering-Sørensen SR Møgelvang R Usefulness of left atrial strain for predicting incident atrial fibrillation and ischaemic stroke in the general population Eur Heart J Cardiovasc Imaging 2022 23 3 363 371 10.1093/ehjci/jeaa287 33175146
+Alhakak AS, Biering-Sørensen SR, Møgelvang R, et al. Usefulness of left atrial strain for predicting incident atrial fibrillation and ischaemic stroke in the general population. Eur Heart J Cardiovasc Imaging. 2022;23(3):363–71.33175146 10.1093/ehjci/jeaa287
+72. Li Y Ding W Wang H Relationship of CHA2DS2-VASc and CHADS2 score to left atrial remodeling detected by velocity vector imaging in patients with atrial fibrillation PLoS ONE 2013 8 10 e77653 10.1371/journal.pone.0077653 24147047 PMC3798687
+Li Y, Ding W, Wang H, et al. Relationship of CHA2DS2-VASc and CHADS2 score to left atrial remodeling detected by velocity vector imaging in patients with atrial fibrillation. PLoS ONE. 2013;8(10):e77653.24147047 10.1371/journal.pone.0077653 PMC3798687
+73. Bhat A Chen HHL Khanna S Diagnostic and prognostic value of left atrial function in identification of cardioembolism and prediction of outcomes in patients with cryptogenic stroke J Am Soc Echocardiogr 2022 35 10 1064 1076 10.1016/j.echo.2022.05.018 35691457
+Bhat A, Chen HHL, Khanna S, et al. Diagnostic and prognostic value of left atrial function in identification of cardioembolism and prediction of outcomes in patients with cryptogenic stroke. J Am Soc Echocardiogr. 2022;35(10):1064–76.35691457 10.1016/j.echo.2022.05.018
+74. Fonarow GC Peacock WF Phillips CO Givertz MM Lopatin M Admission B-type natriuretic peptide levels and in-hospital mortality in acute decompensated heart failure J Am Coll Cardiol 2007 49 19 1943 1950 10.1016/j.jacc.2007.02.037 17498579
+Fonarow GC, Peacock WF, Phillips CO, Givertz MM, Lopatin M. Admission B-type natriuretic peptide levels and in-hospital mortality in acute decompensated heart failure. J Am Coll Cardiol. 2007;49(19):1943–50.17498579 10.1016/j.jacc.2007.02.037
+75. James SK Lindahl B Siegbahn A N-terminal pro-brain natriuretic peptide and other risk markers for the separate prediction of mortality and subsequent myocardial infarction in patients with unstable coronary artery disease: a Global Utilization of Strategies To Open occluded arteries (GUSTO)-IV substudy Circulation 2003 108 3 275 281 10.1161/01.CIR.0000079170.10579.DC 12847065
+James SK, Lindahl B, Siegbahn A, et al. N-terminal pro-brain natriuretic peptide and other risk markers for the separate prediction of mortality and subsequent myocardial infarction in patients with unstable coronary artery disease: a Global Utilization of Strategies To Open occluded arteries (GUSTO)-IV substudy. Circulation. 2003;108(3):275–81.12847065 10.1161/01.CIR.0000079170.10579.DC
+76. Kragelund C Grønning B Køber L Hildebrandt P Steffensen R N-terminal pro-B-type natriuretic peptide and long-term mortality in stable coronary heart disease N Engl J Med 2005 352 7 666 675 10.1056/NEJMoa042330 15716560
+Kragelund C, Grønning B, Køber L, Hildebrandt P, Steffensen R. N-terminal pro-B-type natriuretic peptide and long-term mortality in stable coronary heart disease. N Engl J Med. 2005;352(7):666–75.15716560 10.1056/NEJMoa042330
+77. Tsutamoto T Wada A Maeda K Attenuation of compensation of endogenous cardiac natriuretic peptide system in chronic heart failure: prognostic role of plasma brain natriuretic peptide concentration in patients with chronic symptomatic left ventricular dysfunction Circulation 1997 96 2 509 516 10.1161/01.CIR.96.2.509 9244219
+Tsutamoto T, Wada A, Maeda K, et al. Attenuation of compensation of endogenous cardiac natriuretic peptide system in chronic heart failure: prognostic role of plasma brain natriuretic peptide concentration in patients with chronic symptomatic left ventricular dysfunction. Circulation. 1997;96(2):509–16.9244219 10.1161/01.cir.96.2.509
+78. Wang TJ Larson MG Levy D Plasma natriuretic peptide levels and the risk of cardiovascular events and death N Engl J Med 2004 350 7 655 663 10.1056/NEJMoa031994 14960742
+Wang TJ, Larson MG, Levy D, et al. Plasma natriuretic peptide levels and the risk of cardiovascular events and death. N Engl J Med. 2004;350(7):655–63.14960742 10.1056/NEJMoa031994
+79. Patton KK Ellinor PT Heckbert SR N-terminal pro-B-type natriuretic peptide is a major predictor of the development of atrial fibrillation: the Cardiovascular Health Study Circulation 2009 120 18 1768 1774 10.1161/CIRCULATIONAHA.109.873265 19841297 PMC4132053
+Patton KK, Ellinor PT, Heckbert SR, et al. N-terminal pro-B-type natriuretic peptide is a major predictor of the development of atrial fibrillation: the Cardiovascular Health Study. Circulation. 2009;120(18):1768–74.19841297 10.1161/CIRCULATIONAHA.109.873265 PMC4132053
+80. Hijazi Z Oldgren J Andersson U Cardiac biomarkers are associated with an increased risk of stroke and death in patients with atrial fibrillation: a Randomized Evaluation of Long-term Anticoagulation Therapy (RE-LY) substudy Circulation 2012 125 13 1605 1616 10.1161/CIRCULATIONAHA.111.038729 22374183
+Hijazi Z, Oldgren J, Andersson U, et al. Cardiac biomarkers are associated with an increased risk of stroke and death in patients with atrial fibrillation: a Randomized Evaluation of Long-term Anticoagulation Therapy (RE-LY) substudy. Circulation. 2012;125(13):1605–16.22374183 10.1161/CIRCULATIONAHA.111.038729
+81. Hijazi Z Wallentin L Siegbahn A N-terminal pro-B-type natriuretic peptide for risk assessment in patients with atrial fibrillation: insights from the ARISTOTLE Trial (Apixaban for the Prevention of Stroke in Subjects With Atrial Fibrillation) J Am Coll Cardiol 2013 61 22 2274 2284 10.1016/j.jacc.2012.11.082 23563134
+Hijazi Z, Wallentin L, Siegbahn A, et al. N-terminal pro-B-type natriuretic peptide for risk assessment in patients with atrial fibrillation: insights from the ARISTOTLE Trial (Apixaban for the Prevention of Stroke in Subjects With Atrial Fibrillation). J Am Coll Cardiol. 2013;61(22):2274–84.23563134 10.1016/j.jacc.2012.11.082
+82. Hijazi Z Lindbäck J Alexander JH The ABC (age, biomarkers, clinical history) stroke risk score: a biomarker-based risk score for predicting stroke in atrial fibrillation Eur Heart J 2016 37 20 1582 1590 10.1093/eurheartj/ehw054 26920728 PMC4875560
+Hijazi Z, Lindbäck J, Alexander JH, et al. The ABC (age, biomarkers, clinical history) stroke risk score: a biomarker-based risk score for predicting stroke in atrial fibrillation. Eur Heart J. 2016;37(20):1582–90.26920728 10.1093/eurheartj/ehw054 PMC4875560
+83. Wang Y Jiang C He L ABC-AF-Stroke score predicts thromboembolism in non-anticoagulated patients following successful atrial fibrillation ablation: a report from the Chinese Atrial Fibrillation Registry Chin Med J (Engl) 2023 136 20 2451 2458 10.1097/CM9.0000000000002833 37858319 PMC10586856
+Wang Y, Jiang C, He L, et al. ABC-AF-Stroke score predicts thromboembolism in non-anticoagulated patients following successful atrial fibrillation ablation: a report from the Chinese Atrial Fibrillation Registry. Chin Med J (Engl). 2023;136(20):2451–8.37858319 10.1097/CM9.0000000000002833 PMC10586856
+84. Jung M Byeon K Kang KW Validation of biomarker-based ABCD Score in Atrial Fibrillation Patients with a Non-Gender CHA(2)DS(2)-VASc Score 0–1: a Korean Multi-Center Cohort Yonsei Med J 2022 63 10 892 901 10.3349/ymj.2022.0157 36168241 PMC9520051
+Jung M, Byeon K, Kang KW, et al. Validation of biomarker-based ABCD Score in Atrial Fibrillation Patients with a Non-Gender CHA(2)DS(2)-VASc Score 0–1: a Korean Multi-Center Cohort. Yonsei Med J. 2022;63(10):892–901.36168241 10.3349/ymj.2022.0157 PMC9520051
+85. Roldán V Rivera-Caravaca JM Shantsila A Enhancing the 'real world' prediction of cardiovascular events and major bleeding with the CHA(2)DS(2)-VASc and HAS-BLED scores using multiple biomarkers Ann Med 2018 50 1 26 34 10.1080/07853890.2017.1378429 28892413
+Roldán V, Rivera-Caravaca JM, Shantsila A, et al. Enhancing the “real world” prediction of cardiovascular events and major bleeding with the CHA(2)DS(2)-VASc and HAS-BLED scores using multiple biomarkers. Ann Med. 2018;50(1):26–34.28892413 10.1080/07853890.2017.1378429
+86. Masson S Aleksova A Favero C Predicting atrial fibrillation recurrence with circulating inflammatory markers in patients in sinus rhythm at high risk for atrial fibrillation: data from the GISSI atrial fibrillation trial Heart 2010 96 23 1909 1914 10.1136/hrt.2009.191460 20965978
+Masson S, Aleksova A, Favero C, et al. Predicting atrial fibrillation recurrence with circulating inflammatory markers in patients in sinus rhythm at high risk for atrial fibrillation: data from the GISSI atrial fibrillation trial. Heart. 2010;96(23):1909–14.20965978 10.1136/hrt.2009.191460
+87. Watanabe E Arakawa T Uchiyama T Kodama I Hishida H High-sensitivity C-reactive protein is predictive of successful cardioversion for atrial fibrillation and maintenance of sinus rhythm after conversion Int J Cardiol 2006 108 3 346 353 10.1016/j.ijcard.2005.05.021 15964643
+Watanabe E, Arakawa T, Uchiyama T, Kodama I, Hishida H. High-sensitivity C-reactive protein is predictive of successful cardioversion for atrial fibrillation and maintenance of sinus rhythm after conversion. Int J Cardiol. 2006;108(3):346–53.15964643 10.1016/j.ijcard.2005.05.021
+88. Schmidt M Daccarett M Rittger H Renal dysfunction and atrial fibrillation recurrence following cardioversion J Cardiovasc Electrophysiol 2011 22 10 1092 1098 10.1111/j.1540-8167.2011.02069.x 21489032
+Schmidt M, Daccarett M, Rittger H, et al. Renal dysfunction and atrial fibrillation recurrence following cardioversion. J Cardiovasc Electrophysiol. 2011;22(10):1092–8.21489032 10.1111/j.1540-8167.2011.02069.x
+89. Go AS Fang MC Udaltsova N Impact of proteinuria and glomerular filtration rate on risk of thromboembolism in atrial fibrillation: the anticoagulation and risk factors in atrial fibrillation (ATRIA) study Circulation 2009 119 10 1363 1369 10.1161/CIRCULATIONAHA.108.816082 19255343 PMC2733238
+Go AS, Fang MC, Udaltsova N, et al. Impact of proteinuria and glomerular filtration rate on risk of thromboembolism in atrial fibrillation: the anticoagulation and risk factors in atrial fibrillation (ATRIA) study. Circulation. 2009;119(10):1363–9.19255343 10.1161/CIRCULATIONAHA.108.816082 PMC2733238
+90. Piccini JP Stevens SR Chang Y Renal dysfunction as a predictor of stroke and systemic embolism in patients with nonvalvular atrial fibrillation: validation of the R(2)CHADS(2) index in the ROCKET AF (Rivaroxaban Once-daily, oral, direct factor Xa inhibition Compared with vitamin K antagonism for prevention of stroke and Embolism Trial in Atrial Fibrillation) and ATRIA (AnTicoagulation and Risk factors In Atrial fibrillation) study cohorts Circulation 2013 127 2 224 232 10.1161/CIRCULATIONAHA.112.107128 23212720
+Piccini JP, Stevens SR, Chang Y, et al. Renal dysfunction as a predictor of stroke and systemic embolism in patients with nonvalvular atrial fibrillation: validation of the R(2)CHADS(2) index in the ROCKET AF (Rivaroxaban Once-daily, oral, direct factor Xa inhibition Compared with vitamin K antagonism for prevention of stroke and Embolism Trial in Atrial Fibrillation) and ATRIA (AnTicoagulation and Risk factors In Atrial fibrillation) study cohorts. Circulation. 2013;127(2):224–32.23212720 10.1161/CIRCULATIONAHA.112.107128
+91. Wang Y Li Z Fei H Left atrial strain reproducibility using vendor-dependent and vendor-independent software Cardiovasc Ultrasound 2019 17 1 9 10.1186/s12947-019-0158-y 31092263 PMC6521472
+Wang Y, Li Z, Fei H, et al. Left atrial strain reproducibility using vendor-dependent and vendor-independent software. Cardiovasc Ultrasound. 2019;17(1):9.31092263 10.1186/s12947-019-0158-y PMC6521472
+92. Korsholm K, Berti S, Iriart X, et al. Expert Recommendations on Cardiac Computed Tomography for Planning Transcatheter Left Atrial Appendage Occlusion. JACC: Cardiovascular Interventions. 2020;13(3):277-292.10.1016/j.jcin.2019.08.054 31678086
+93. Spagnolo P Giglio M Di Marco D Diagnosis of left atrial appendage thrombus in patients with atrial fibrillation: delayed contrast-enhanced cardiac CT Eur Radiol 2021 31 3 1236 1244 10.1007/s00330-020-07172-2 32886202 PMC7880950
+Spagnolo P, Giglio M, Di Marco D, et al. Diagnosis of left atrial appendage thrombus in patients with atrial fibrillation: delayed contrast-enhanced cardiac CT. Eur Radiol. 2021;31(3):1236–44.32886202 10.1007/s00330-020-07172-2 PMC7880950
+94. Baber U Howard VJ Halperin JL Association of chronic kidney disease with atrial fibrillation among adults in the United States: REasons for Geographic and Racial Differences in Stroke (REGARDS) Study Circ Arrhythm Electrophysiol 2011 4 1 26 32 10.1161/CIRCEP.110.957100 21076159 PMC3049935
+Baber U, Howard VJ, Halperin JL, et al. Association of chronic kidney disease with atrial fibrillation among adults in the United States: REasons for Geographic and Racial Differences in Stroke (REGARDS) Study. Circ Arrhythm Electrophysiol. 2011;4(1):26–32.21076159 10.1161/CIRCEP.110.957100 PMC3049935
+95. Nakhlé G Tardif JC Roy D A cost-effectiveness analysis of biomarkers for risk prediction in atrial fibrillation Mol Diagn Ther 2023 27 3 383 394 10.1007/s40291-023-00639-0 36720803 PMC9888735
+Nakhlé G, Tardif JC, Roy D, et al. A cost-effectiveness analysis of biomarkers for risk prediction in atrial fibrillation. Mol Diagn Ther. 2023;27(3):383–94.36720803 10.1007/s40291-023-00639-0 PMC9888735
+96. Attia ZI Noseworthy PA Lopez-Jimenez F An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction Lancet 2019 394 10201 861 867 10.1016/S0140-6736(19)31721-0 31378392
+Attia ZI, Noseworthy PA, Lopez-Jimenez F, et al. An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction. Lancet. 2019;394(10201):861–7.31378392 10.1016/S0140-6736(19)31721-0
+97. Khurshid S Friedman S Reeder C ECG-based deep learning and clinical risk factors to predict atrial fibrillation Circulation 2022 145 2 122 133 10.1161/CIRCULATIONAHA.121.057480 34743566 PMC8748400
+Khurshid S, Friedman S, Reeder C, et al. ECG-based deep learning and clinical risk factors to predict atrial fibrillation. Circulation. 2022;145(2):122–33.34743566 10.1161/CIRCULATIONAHA.121.057480 PMC8748400
+98. Zimmerman RM Hernandez EJ Tristani-Firouzi M Yandell M Steinberg BA Explainable artificial intelligence for stroke risk stratification in atrial fibrillation Eur Heart J Digit Health. 2025 6 3 317 325 10.1093/ehjdh/ztaf019 40395413 PMC12088725
+Zimmerman RM, Hernandez EJ, Tristani-Firouzi M, Yandell M, Steinberg BA. Explainable artificial intelligence for stroke risk stratification in atrial fibrillation. Eur Heart J Digit Health. 2025;6(3):317–25.40395413 10.1093/ehjdh/ztaf019 PMC12088725
+99. Pedroso AF Khera R Leveraging AI-enhanced digital health with consumer devices for scalable cardiovascular screening, prediction, and monitoring NPJ Cardiovasc Health. 2025 2 1 34 10.1038/s44325-025-00071-9 40620667 PMC12221986
+Pedroso AF, Khera R. Leveraging AI-enhanced digital health with consumer devices for scalable cardiovascular screening, prediction, and monitoring. NPJ Cardiovasc Health. 2025;2(1):34.40620667 10.1038/s44325-025-00071-9 PMC12221986
+100. Papalamprakopoulou Z Stavropoulos D Moustakidis S Avgerinos D Efremidis M Kampaktsis PN Artificial intelligence-enabled atrial fibrillation detection using smartwatches: current status and future perspectives Front Cardiovasc Med. 2024 11 1432876 10.3389/fcvm.2024.1432876 39077110 PMC11284169
+Papalamprakopoulou Z, Stavropoulos D, Moustakidis S, Avgerinos D, Efremidis M, Kampaktsis PN. Artificial intelligence-enabled atrial fibrillation detection using smartwatches: current status and future perspectives. Front Cardiovasc Med. 2024;11:1432876.39077110 10.3389/fcvm.2024.1432876 PMC11284169

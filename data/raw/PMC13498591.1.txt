@@ -1,0 +1,726 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Sci Rep
+Journal ID: Sci Rep
+NLM Journal ID: 101563288
+
+Scientific Reports
+
+EISSN: 2045-2322
+Publisher: Nature Publishing Group
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498591
+PMID: 42401678
+DOI: 10.1038/s41598-026-60362-8
+Article ID: 60362
+Article version: 1
+Subjects: Article
+
+SMARTMed: semi-fragile dual watermarking with deep tamper detection and adversarial DNN fingerprinting for secure medical image transmission
+
+Jagadeesh Samudrala s.jagadeesh@giet.edu
+1
+Parida Ami Kumar 1
+Kollati Meenakshi 2
+1 https://ror.org/051f2wp73 grid.506618.c Department of Electronics and Communication Engineering, GIET University, Gunupur, Odisha India
+2 Department of Electronics and Communication Engineering, GRIET, Hyderabad, India
+Electronic publication date: 2026 Jul 4
+Publication date: 2026
+Volume: 16
+Electronic Location ID: 26353
+Received 2026 Mar 10; Accepted 2026 Jun 26
+Copyright: © The Author(s) 2026
+Copyright year: 2026
+License: Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Computational biology and bioinformatics, Engineering, Health care, Mathematics and computing
+issue-copyright-statement: © Springer Nature Limited 2026
+
+==============================
+Cloud-based electronic health records (EHRs) are vulnerable to modification during transmission and use, compromising security and privacy. To reduce this risk, we implemented a semi-fragile watermarking method using Slant Transform and chaotic sequences. This method creates a clinically sensitive tamper dataset. Transfer learning classifies images as original or tampered. Further, a black-box semi-fragile neural network watermarking is proposed, which can determine the model availability by distinguishing accidental modifications and malicious tampering using the generated fingerprints with the pretrained models such as ResNet, EfficientNet, and Vision Transformer architectures. If there is a tampering on the image, the semi-fragile watermarking supports tamper localization and self-recovery. Our approach resists clinically sensitive attacks and can self-recover tampered images, achieving high perceptual quality of ( PSNR of 44.91 dB and SSIM of 0.962), tamper detection (94.9%), and tamper localization (97.9%). The trained networks are watermarked to verify model integrity, and the model detects tampered images with 96.8% accuracy.
+
+Introduction
+
+A recent revolution in science and technology is the integration of Artificial Intelligence (AI) with cloud-based applications1,2. This technology has made significant contributions to agriculture, including soil nutrient analysis and estimation3, crop disease prediction, and biomass prediction4. In medicine, AI-based tools help physicians with diagnostics and treatment planning5. The applications in AI based deep learning models have a lot of commercial potential. The introduction of 4G connectivity6 has allowed widespread use of data-driven services such as multimedia streaming, digital content exchange on social platforms, and online healthcare and consultation7. This trend accelerated during the COVID-19 pandemic8. Hospitals now offer online consultations and share patient health reports9 and medical images10 through the cloud11. However, this rapid growth poses a major challenge to the security and privacy of patient medical data. Unauthorized modification of medical images can lead to incorrect diagnoses12, endangering the lives of patients, and to false medical claims in the insurance sector13. Therefore, this paper focuses on safeguarding the security14 of medical images.
+
+Recent advances in watermarking15 and encryption have drawn significant attention in the Cyber security community. Encryption16,17 is widely used to protect confidential information during data transmission, but it can signal to hackers that communication is happening. In contrast, watermarking18 conceals information by embedding digital content, such as text, images, video, or audio, within multimedia files, making hidden data less detectable. The literature identifies three types of watermarking scheme: fragile, semi-fragile, and robust19. Robust digital watermarking20,21 embeds external watermarks, such as hospital logos, into cover images using spatial or transform-domain techniques. This approach resists both intentional and unintentional attacks and is primarily used for ownership verification and copyright protection. In the Fragile Watermarking scheme22, the watermark is removed by even minor changes to the watermarked image, making it suitable for image forensics and verification of medical image integrity. Semi-fragile watermarking23 offers a balance between robust and fragile methods. When an image is subjected to clinically relevant attacks, the semi-fragile method can detect tampered areas and attempt to recover them. It tolerates attacks such as compression and intensity adjustments, making it well-suited for secure transmission24 of medical images in the cloud. The general approach of a semi-fragile watermarking process is given in Fig 1. In this process if an image is attacked during the transmission, then at the receiving end, the image needs to be cross checked for probable tampering. If the algorithm detects that the image is tampered with, then it goes to the further process of tamper localization and self-recovery.Fig. 1 An overview of a semi-fragile watermarking.
+
+Table 1 Comparison of recent semi-fragile watermarking techniques for medical image integrity and recovery.
+
+S. No	Ref	Year	Domain	Watermark embedding	Tamper detection	Watermarked	Recovered	Remarks	
+						PSNR	SSIM	PSNR	SSIM		
+1	25	2025	IWT	LSB-based authentication embedding in LH and HL subbands (2nd level IWT)	Normalizing Hamming Similarity (NHS)	54.7	0.99	43.4	0.99	Includes embedding and extraction time analysis	
+2	26	2025	Slant	DNA-based watermark generation with block-wise LSB embedding	DNA sequence verification	44.7	0.83	45.4	0.95	Performance evaluated at 50% tampering	
+3	27	2025	DWT	Edge-preserving watermark insertion in transform domain	Inverse embedding-based verification	55.4	0.98	N/A	N/A	Evaluated using NCC for signal attacks	
+4	28	2023	IWT	Random codeword embedding in HH band using key-based mapping	Syndrome decoding	45.0	0.73	N/A	N/A	Includes false acceptance (FA) and miss detection (MD)	
+
+Table 2 Recent works on DNN based watermarking.
+
+S. No	Reference (Year)	Watermarking type	Watermarking process	Model verification process	
+1	29 (2025)	Black-box	DNN is trained on a primary and secret backdoor task. A verifiable digital signature is generated by mapping specific trigger samples to the target samples.	Model verification involves quantitative assessment based on a trigger success rate and post fine tuning.	
+2	30 (2022)	White-Box	Watermark information is directly inserted into model parameters	The extracted watermark is verified to authenticate the model integrity	
+3	31 (2021)	Black-Box	Pre-defined unusual input-output combinations imprint the secret behaviour of the model	The model output is compared with a specific predefined input to validate the model’s integrity	
+4	32 (2024)	Black-Box	A poisoned image acts as an encryption mechanism and also as a technique to construct the poisoned image	A future enhancement module-based verification capable of classifying the poisoned image	
+
+In a medical distributed system, a large number of images are communicated over the covert communication channels. It may be a computationally difficult task to check the integrity of each and every medical image for potential tampering. Hence, at this point if one can use the deep neural network (DNN)33 approach, it will be an added advantage to the existing semi-fragile watermarking. Jagadeesh et al.34 proposed an approach where a set of medical images are watermarked then 5 different attacks applied on each watermarked image hence a dataset was formed with 6 different classes. This dataset is trained (transfer-learned) on a an existing GoogleNet and AlexNet. Whenever an image is requested by the end-user, initially is passes through transfer-learned network for potential tamper-detection, if network classifies the requested image as tampered with, then the tampered localization and self-recovery will be done based to repair the tampered portions. Hence this methodology is available to deal with the huge numbers of images uploaded to the cloud with help of semi-fragile watermarking and deep transfer learning for tamper detection, localization and self-recovery respectively in a pipeline. Now the interesting part is what happens if the transfer learned network tampered with ? . In the literature various techniques proposed to watermark a DNN Yuan et al.35 and introduced technical jargon such as black box, white box, fragile and semi-fragile. This paper cleverly combines the semi-fragile watermarking at image level and at a DNN level to securely transmit a medical image from end-to-end in a smart healthcare environment. The main contribution of the proposed work is:We employed our existing semi-fragile watermarking scheme26 for watermarking different image modalities and the watermarked images of these are attacked with 5 attacks and later preprocessed and augmented to create a database34 and for classification of six labels (One is untampered and the rest five are tampered attacks) we employed pre-trained models such as RESNET, EfficientNet and Vision transformer(ViT).
+
+A black-box semi-fragile neural network watermarking is employed that determines the model availability that is able to identify non-intentional attacks and malicious tampering using the generated RESNET, EfficientNet and Vision transformer model fingerprints.
+
+A dual watermarking approach at image level and network (DNN) level for medical image content authentication as well as verified usage of the DNN.
+
+The performance of the proposed tamper detection, localization and self-recovery is analyzed in terms of FPR and FRR.
+
+The statistical analysis of the proposed workflow is analyzed with ANOVA.
+
+Fig. 2 The block diagram of the proposed methodology.
+
+Related works
+
+This section is planned to explore the recent works on semi-fragile watermarking at image level in “Image level semi-fragile watermarking schemes” section and the works on Deep learning is covered in “Deep learning based watermarking schemes” section.
+
+Image level semi-fragile watermarking schemes
+
+Amrullah et al.25 proposed a two-level tamper detection method to obtain a high tampered localization accuracy. They employed IDWT transform and the authentication bits produced from LL band are concealed in the LH and HL bands. The first phase will analyze four segments to find the tampered bit or not. The second phase is carried only if the first phase has no tampered bit. The second phase checked each segment to determine whether it was tampered with or not. The authors employed Normalized Hamming Similarity (NHS) to classify malicious and incidental attacks. At the receiving end, tamper detection is achieved by secret key matching and the tampered areas are recovered through the scrambled recovery data. Pascal et al.28 intelligently used the error location codes proposed in Wolf & Elspas36 for computationally efficient tamper detection and localization method. Jagadeesh et al.26 proposed a method where initially the cover image is divided into 2 × 2 non-overlapping block, from each block an 8-bit watermark is generated using Slant Transform (ST) and DNA logistics, embedding will be based on a block mapping governed by a chaotic sequence. The tamper detection and self-recovery is shown under clinically sensitive attack types. Maazen et al.27 proposed a watermark generation with HL and LH bands of Discrete Wavelet Transform (DWT) of a cover image with control parameters α and β, the embedding is based on the chaotic substitution box with an edge awareness based on Laplacian operator. The comparative analysis of these start-of-art methodologies are given in Table 1. Rani et al.15 presented a review on recent works on watermarking. A composite watermarking approach was proposed by Lakhani et al.37.
+
+Deep learning based watermarking schemes
+
+From the literature it is found that, the DNN watermarking can be classified into white-box and black-box approaches. In white-box approach, the model internals are accessed for the integrity verification, whereas in black-box approach the model integrity is verified with a pre-defined input-output relation, here the specific input is called as trigger. In this section a review on recent works on black-box DNN is given. Liu et al.38 proposed the flaws in black-box watermarking schemes where the trigger samples by adding a random pattern to the clean samples which may not some times produced accurate results for the watermarking. Therefore, the authors applied Fourier perturbation impact of different frequency components of the input sample on the task functionality of the DNN by applying random perturbation. Then, by K-means clustering, they improved the watermarking parameters such as imperceptibility and robustness. Mouke et at.32 proposed a black box watermarking which can uniquely identify a user in a multi-user scenario also prevent the likelihood of poisoned image counterfeiting. The white-box approach of the DNN watermarking is out of scope of this paper but the interested readers may refer the work proposed by Minoru Kuribayashi et al.In this paper the authors proposed an image level semi-fragile watermarking inspired from the previous works of Jagadeesh et al.26 and model level black-box DNN watermarking, where the DNN is trained with a transfer learning approach for the tampered type classification in a cloud based smart healthcare system39. Ngo et al.29 proposed a three stage DNN watermarking approach which address embedding, persistence evaluation and restoration of the watermark. The recent DNN based watermarking schemes are tabulated in Table 2.Fig. 3 Bifurcation diagram of the logistic map.
+
+Proposed methodology
+
+This section describes the proposed intelligent tamper-management framework that ensures medical image integrity and model authenticity. The architecture integrates three modules, namely, one is Semi-fragile watermarking for image integrity verification and recovery. The second one is deep learning–based tamper classification using transfer learning, and the third is Black-box DNN watermarking for model fingerprinting and ownership verification. The overall methodology is shown in Fig. 2, where semi-fragile watermarking ensures image-level security, transfer learning enables intelligent tamper detection, and DNN watermarking preserves model integrity against adversarial modification or unauthorized reuse.
+
+Semi-fragile watermarking using slant kernel and chaotic sequence for medical image.
+
+Our previously published work26 is used in this research to handle DICOM images.
+
+Pre-processing
+
+In this framework, medical images are normalized to 8-bit per-channel depth to ensure compatibility with deep transfer learning models. While clinical DICOM images often maintain 12-bit precision, they are normalized to 8-bit to fit with the proposed semi-fragile watermarking and deep learning requirements. A medical image I converted from RGB color space to YCbCr color space, and the respective Y component is shown in Eq. (1), and the two least significant bits (LSB) planes were zeroed out in Eq. (2) to create space for watermark embedding.
+
+Block division
+
+The cover image is divided into 2 × 2 non-overlapping blocks as shown in Eq. (3). The total number of such blocks is given by\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k = \frac{M}{2} \times \frac{N}{2}$$\end{document}
+
+for an image of size M × N.
+
+The luminance component is computed as:1 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} Y = 16 + \left( \frac{65.738}{256} I_R + \frac{129.057}{256} I_G + \frac{25.064}{256} I_B \right) \end{aligned}$$\end{document}
+
+The modified luminance is:2 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} \hat{Y} = Y - \textrm{mod}(Y, 4) \end{aligned}$$\end{document}
+
+Each 2 × 2 block is represented as:3 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} \hat{Y}_{(i,j)} = \begin{bmatrix} \hat{Y}_{i,1} & \hat{Y}_{i,2} \\ \hat{Y}_{i,3} & \hat{Y}_{i,4} \end{bmatrix}, \quad i = 1,2,\ldots ,k \end{aligned}$$\end{document}
+
+Each 2 × 2 block is transformed from the spatial to the frequency domain using the Slant Transform (ST) 26. An 8-bit watermark is generated from each non-overlapping 2 × 2 block and embedded using the Least Significant Bit (LSB) method with a chaotic sequence defined in Eq. (4). The bifurcation diagram (Fig. 3) of the logistic map was analyzed to determine suitable initial conditions and secret key [β , z]. For \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\beta \approx 3.57$$\end{document}, the system exhibits chaotic behavior, characterized by strong nonlinearity and high sensitivity to initial conditions. The chosen parameters (β = 3.57, z(0) = 0.4) ensure the generated sequence is random and unpredictable, enhancing the security and robustness of watermark scrambling and block permutation. The watermark-embedding process follows our previous work 26. The resultant 2 × 2 block image after watermark embedding is denoted as D in Eq. (5).4 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} & Z_{i+1} = \beta Z_i (1 - Z_i) \end{aligned}$$\end{document}
+
+5 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} & D_{(i,j)} = \begin{bmatrix} D_{i,1} & D_{i,2} \\ D_{i,3} & D_{i,4} \end{bmatrix}, \quad i = 1,2,\ldots ,k \end{aligned}$$\end{document}
+
+Fig. 4 Tampered dataset preparation with MATLAB batch processor.
+
+Tampered (attacked) dataset creation
+
+A specialized dataset40 of tampered images was developed using watermarked medical images to replicate real-world tampering situations and support tamper classification. We identified five prevalent types of clinically sensitive attacks: content removal, copy-move, copy-paste, multi-region, and text addition tampering. Using a MATLAB-based batch processing script, five tampered versions were created for each of the 2500 watermarked images. In the content removal method, a section of the image was replaced with a neutral gray patch. The copy-move attack involved duplicating a segment of the image and pasting it elsewhere within the same image. The copy-paste attack meant inserting a patch from another image. The text addition attack included adding artificial labels or annotations to the image. Multi-region tampering incorporated two or more of these manipulations. The dataset preparation process is illustrated in Fig. 4.Table 3 Experimental setup for deep transfer learning.
+
+Parameter	ResNet	EfficientNet	ViT	
+Input image size	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$227 \times 227 \times 3$$\end{document}	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$224 \times 224 \times 3$$\end{document}	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$224 \times 224 \times 3$$\end{document}	
+Final layer modified	Fully connected	Linear	Linear head	
+Number of classes	6	6	6	
+Optimizer	Adam	Adam	Adam	
+Initial learning rate	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$1 \times 10^{-4}$$\end{document}	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$1 \times 10^{-4}$$\end{document}	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$1 \times 10^{-4}$$\end{document}	
+Mini-batch size	64	32	32	
+Max. Epochs	10	10	10	
+Fingerprint (FP) Dataset size	100	100	100	
+
+Classification of tampering via transfer Learning
+
+A deep learning classifier was created to automatically detect tampering types in watermarked medical images using transfer learning. ResNet, EfficientNet and ViT are used for this purpose. The network is trained on a labeled dataset with six categories: original, content-removal, copy-move, copy-paste, text-addition, and multi-region tampering. The dataset was structured in a folder with 2500 images for each class. Each image was resized to the corresponding network’s necessary input dimensions as given in Table 3.
+
+Mathematical analysis: tamper type classification via DNN
+
+Let the tamper dataset (Fig. 4) be represented as:6 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} D = \left\{ (x_i, y_i) \mid x_i \in \mathbb {R}^{H \times W \times C},\; y_i \in \{0,1,2,3,4,5\} \right\} _{i=1}^{N} \end{aligned}$$\end{document}
+
+where \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$x_i$$\end{document} denotes the \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$i^{\text {th}}$$\end{document} image in the dataset with dimension \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$H \times W \times C$$\end{document}, and \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$y_i$$\end{document} corresponds to the tamper class label (e.g., 0: untampered , 1: content-removal, 2: copy-move, 3: copy-paste, 4: text-addition, 5: multi-region).
+
+The CNN learns a mapping function from the input space to the output probability distribution over classes:7 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} f_{\theta } : \mathbb {R}^{H \times W \times C} \rightarrow \mathbb {R}^{K} \end{aligned}$$\end{document}
+
+where \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$f_{\theta }$$\end{document} represents the CNN parameterized by weights θ, and K = 6 is the number of output classes.
+
+The SoftMax function computes the predicted class probabilities:8 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} \hat{y}_i^{(j)} = \frac{e^{z_j}}{\sum _{k=1}^{K} e^{z_k}}, \quad \text {where } \textbf{z} = f_{\theta }(x_i) \end{aligned}$$\end{document}
+
+The network is trained to minimize the categorical cross-entropy loss:9 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} L(\theta ) = -\frac{1}{N} \sum _{i=1}^{N} \sum _{k=1}^{K} \delta (y_i = k)\, \log \hat{y}_i^{(k)} \end{aligned}$$\end{document}
+
+where \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\delta (y_i = k)$$\end{document} is the Kronecker delta function.
+
+The network weights θ are updated using gradient descent:10 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} \theta _{t+1} = \theta _t - \eta \nabla _{\theta } L(\theta ) \end{aligned}$$\end{document}
+
+where η is the learning rate.
+
+After training, the classification performance is measured using accuracy and F1-score. The classification accuracy is defined as:11 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} A = \frac{1}{N} \sum _{i=1}^{N} \mathbb {I}\left( \arg \max _{k} \hat{y}_i^{(k)} = y_i \right) \end{aligned}$$\end{document}
+
+where \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\mathbb {I}(\cdot )$$\end{document} is the indicator function. For each class c, precision, recall, and F1-score are computed as:12 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} & \text {Precision} \ (P) = \frac{TP_c}{TP_c + FP_c} \end{aligned}$$\end{document}
+
+13 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} & \text {Recall} \ (R) = \frac{TP_c}{TP_c + FN_c} \end{aligned}$$\end{document}
+
+14 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} & \text {F1-Score} \ (F1) = \frac{2 \times P \times R}{P + R} \end{aligned}$$\end{document}
+
+Verifying neural network integrity using semi-fragile adversarial watermarking
+
+To enhance security beyond just detecting image-level tampering, we integrate a new semi-fragile watermarking mechanism directly into the trained deep learning model. Building upon the approach described in Yuan et al.35, we employ adversarial examples as fingerprints to confirm the integrity of the neural network employed for classifying tamper types. This method functions like a black box and does not need access to internal model weights, making it ideal for deployment in real-world scenarios41. Specifically, it applies small perturbations to a collection of benign inputs using the Fast Gradient Sign Method (FGSM), creating a set of adversarial examples (fingerprints). The original model accurately classifies these adversarial inputs yet remains sensitive to any changes in its structure (for instance, due to pruning, tampering, or the introduction of Trojans). The expected class labels for these fingerprints are safely stored as a watermark signature. Nonetheless, this approach faces challenges regarding fingerprint diversity, interpretability, and dynamic adaptability.
+
+Fingerprint generation
+
+The model fingerprint must be able to transfer to benign modification models and resist transfer to malicious tampering models. For a model provider, the model is represented by \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\mathcal {F}(I, \theta )$$\end{document} = y, where \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\mathcal {F}$$\end{document} is the neural network model, I is the input samples, θ is the weights of the network, and y is the predictions per class. The class with the highest probability is taken as the original class. The logits of Sample I are computed before softmax determines how the model believes the image belongs to each class.\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} \min _{\eta } \quad&D(I, I + \eta ) \\ \text {s.t.} \quad&C(I + \eta ) = C(J), \\&T(I + \eta ) = T(J) \end{aligned}$$\end{document}
+
+Where D is the L2 norm and C and T are predicted label and logic vectors. For a fingerprint sample, I + η generates a target class J; fingerprint predictions remain unchanged for benign modifications and are altered during malicious tampering. To improve the transferability of the model fingerprints to benign modifications rather than malicious tampering, we adopted the strategy of Yuan et al.35.15 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} \text {Loss} = L_{CA}\big [C(I+\eta ),\, C(J)\big ] + \beta \times L_{2}\big [T(I+\eta ),\, T(J)\big ] \end{aligned}$$\end{document}
+
+Where \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$L_{CA}$$\end{document} is the cross-entropy loss, \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$L_{2}$$\end{document} is the L2 norm and β is the scaling factor. The two losses \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$L_{CA}$$\end{document} and \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$L_{2}$$\end{document} are minimized. The first loss ensures the predicted label of the modified sample I+η and the target sample J must be same. The second loss ensures the sample logit vectors should be as similar as possible. In addition, we must ensure the difference between the original sample and the target sample different and must be less than threshold T.16 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} Diff=D_{3}(I, I+\eta ) \end{aligned}$$\end{document}
+
+The fingerprint sample I’ is initialized with the original sample I. Randbel(.) function is used to generate \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${key_{1}, key_{2}, \cdots key_{n}}$$\end{document} to generate target label L' which must be different from the source label I. \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$Select\_Sample(.)$$\end{document} is a selection function that randomly selects the target sample J with label L' from the standard dataset. The objective function for the optimization is obtained by using the gradient descent algorithm. The optimization process is carried till the maximum number of iterations are reached. The final output is fingerprint sample I' and fingerprint label L'. The method takes the double the fingerprints needed. But fingerprints are rejected based on Eq. (16). The general approach of fingerprint generation process is illustrated in Fig. 5.
+
+To mitigate the risk of an insider attacker, i.e., a person who knows the training mechanism, the generation of model fingerprints, and the verification process. Protecting the model against an insider is always a challenge because the insider attacker may have legitimate access to the model. A security mechanism must have multiple layers of protection rather than depend on a single layer mechanism. In the present scheme, the keys, i.e., \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${key_{1}, key_{2}, \cdots key_{n}}$$\end{document} will be stored in a dedicated secret management system. The access to the keys are restricted using role-based permissions. Also, the keys will be rotated periodically as an additional security layer.Fig. 5 Block diagram for fingerprint generation.
+
+Model integrity verification as a hypothesis test
+
+The fingerprint verification is formulated with a binary hypothesis test. It is to determine the dependability of the transfer learned model. A null hypothesis is taken when the model is intact. An alternative hypothesis is accepted when the model is tampered. Let \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$f_{\theta } (.)$$\end{document} represent the transferred learned model. The algorithm representation of the hypothesis test is given in Algorithm 1.
+
+Algorithm 1 Fingerprint verification as a hypothesis test
+
+Model integrity verification under benign modifications
+
+The transfer learned model is available for the user. Due to benign modifications or un-intentional modifications, the model is needed to perform as expected. From the literature it is found that the model needs to be tested under these accidental modifications. The SMARTMed frame work is tested against the attacks described in Algorithm 2, 3, 4.
+
+Algorithm 2 Fine-tuning attack on the fingerprint classification model
+
+Algorithm 3 Pruning/Trimming attack on the fingerprint classification model
+
+Algorithm 4 Quantization attack on the fingerprint classification model
+
+Algorithm 5 Noise injection attack on the fingerprint classification model
+
+Algorithm 6 Weight scaling attack on the fingerprint classification model
+
+We further implement class-conditional perturbations using light-style transfer techniques (e.g., AdaIN42,43) to enhance fingerprint uniqueness across different models. Here the core idea is the proposed method can generate the semi-fragile model fingerprints (adversarial samples) which are robust to accidental modifications such as quantization and compression and fragile to tampering. such as data-poisoning.
+
+Model integrity verification under malicious modifications
+
+Whenever an intruder attempt to modify the network with intention, such modifications are considered as malicious modifications or attacks. Under these attacks, the model needs to be verified as tampered. The SMARTMed framework is address the attacks such as noise injection, weight scaling, back door,data poisoning and combined attacks as described in Algorithm 5, 6, 7, 8, 9 respectively.
+
+Algorithm 7 Backdoor attack on the fingerprint classification model
+
+Algorithm 8 Data poisoning attack on the fingerprint classification model
+
+Algorithm 9 Combined weight scaling and noise injection attack
+
+Tamper detection using verified CNN
+
+In the cloud-based Smart Health Care system (SHS) environment, the watermarked CNN model is used for distributed applications. Before accessing the model, users must verify its integrity via fingerprint verification. Once the model is confirmed to be intact, users can request a watermarked medical image from the cloud, which stores both the dataset and the model itself. The requested image is then processed by the model. If the image is identified as original and untampered, it is sent directly to the user. If tampering is detected, the image undergoes further processing to localize tampering and enable self-recovery, after which the restored image is provided to the user. This entire process of model verification and medical image tamper detection is illustrated in Fig. 2.
+
+Tamper localization and self-recovery
+
+Let the received image D is SHS be identified as tampered during DNN classification. The tamper localization and self-recovery process is describted as follows:Create two flags : \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\text {flag}_1$$\end{document} and \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\text {flag}_2$$\end{document} of size \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\dfrac{M}{2} \times \dfrac{N}{2}$$\end{document}.
+
+Divide the image D into 2 × 2 non-overlapping blocks (see Eq. (3)).
+
+Extract the 8-bit watermark from each 2 × 2 block, consisting of:6 bits of localization watermark
+
+2 bits of authentication watermark
+
+Compute the authentication bits from the 6-bit localization watermark.
+
+Compare the computed authentication bits with the extracted 2-bit authentication watermark:If equal, update the corresponding block location in \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\text {flag}_1$$\end{document} with logic-0 (intact block).
+
+Otherwise, update it with logic-1 (tampered block).
+
+Generate the watermark for each 2 × 2 block using the inverse chaotic sequence (following the transmitter procedure).
+
+Compare the generated watermark with the extracted watermark from the mapped block and update \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\text {flag}_2$$\end{document} with logic-0 or 1 accordingly.
+
+\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\text {flag}_2$$\end{document} represents a fine-tuned version of \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\text {flag}_1$$\end{document}, providing more precise tamper localization.
+
+Self-recovery:Based on \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\text {flag}_2$$\end{document}, for each tampered block:Identify its mapped block.
+
+If the mapped block is un-tampered:
+
+* Extract the watermark.
+
+* Compute the DC coefficient.
+
+* Recover the block using inverse slant transform.
+
+If the mapped block is also tampered:
+
+* Use the 8-neighborhood averaging of surrounding un-tampered blocks.
+
+The tamper localization process is illustrated in Fig. 6, and the self-recovery process is shown in Fig. 7.Fig. 6 Tamper localization process.
+
+Fig. 7 Self-recovery process.
+
+Experimental results and discussion
+
+A set of medical images with different modalities, such as MRI, X-RAY, Ultrasonic, PET, and Skin melanoma, are considered for experimentation. All these modalities contain 5000 of each, consisting of total of 25000 images, which are watermarked. All the watermarked images are tampered with different tampering attacks, and each type of attack is identified as a class. Now, along with the un-tampered watermarked images, six classes are available. The methodology is implemented using Python. ResNet, EfficientNet and ViT pre-trained networks are used for transfer learning. The experimentation is implemented on Nvidia DGX/HPC with 224 core CPU.
+
+Perceptual quality results
+
+To assess the imperceptibility and effectiveness of the watermark embedding process, we computed standard image quality metrics including Mean Squared Error (MSE), Peak Signal-to-Noise Ratio (PSNR), and Structural Similarity Index Measure (SSIM). The average MSE across the dataset was 2.666, indicating only minor deviations from the original image. The PSNR at 44.91 dB confirms high visual quality after embedding. Additionally, an SSIM score of 0.9624 reinforces the structural integrity of the watermarked images. Regarding computational efficiency, the watermarking process had an average execution time of 0.415 seconds per image, demonstrating its practicality for large-scale medical image datasets. The average perceptual quality metrics are given in Table  4.Table 4 Average performance metrics for watermark embedding across 2500 medical images.
+
+Metric	MSE	PSNR (dB)	SSIM	Embedding time (Sec)	
+Value	2.6663	44.91	0.9624	0.4154	
+
+Deep learning based tamper detection and classification performance results
+
+The dataset is split into 80% for training and 20% for testing. To prevent data leakage and ensure the model generalizes to new data, the partitioning was performed at the source-image level and is shown in Table  5. Here an utmost care is taken while dividing the dataset for training by giving the equal distribution among the various medical image modalities.
+
+DNN transfer learning is used to train the tamper dataset using the ResNet, EfficientNet, and ViT models. Experimental settings and hyperparameters of the models are given in Tables 3. The confusion charts for the test images are shown in Fig. 8. The per-class metrics of models are given in Table  6, 7, and 8 respectively. The confusion matrices demonstrate that all models have good accuracy. However, the main challenge lies in distinguishing Copy-Move and Copy-Paste manipulations, as they are visually similar. Among the evaluated architectures, ViT provides the best discrimination capability, reducing inter-class confusion significantly compared to ResNet and EfficientNet.Table 5 Train and test dataset split at source image level.
+
+Class	Modalities	TM	IPM	Train/IPM	Train/Class	Test/IPM	Test/Class	Total/Class	
+Original	CT, MRI, Skin Melanoma, Ultrasound, X-Ray	5	500	400	2000	100	500	2500	
+Content-Removal	CT, MRI, Skin Melanoma, Ultrasound, X-Ray	5	500	400	2000	100	500	2500	
+Copy-paste	CT, MRI, Skin Melanoma, Ultrasound, X-Ray	5	500	400	2000	100	500	2500	
+Copy-move	CT, MRI, Skin Melanoma, Ultrasound, X-Ray	5	500	400	2000	100	500	2500	
+Text-addition	CT, MRI, Skin Melanoma, Ultrasound, X-Ray	5	500	400	2000	100	500	2500	
+Multi-region	CT, MRI, Skin Melanoma, Ultrasound, X-Ray	5	500	400	2000	100	500	2500	
+
+Fig. 8 Confusion charts of (a) ResNet, (b) EfficientNet, (c) ViT.
+
+Table 6 Per class metrics of ResNet.
+
+Class	TP	TN	FP	FN	Precision	Recall	Specificity	F1-score	
+Content-removal	500	2500	0	0	1.000	1.000	1.000	1.000	
+Copy-move	424	2392	108	76	0.797	0.848	0.956	0.821	
+Copy-paste	391	2424	76	109	0.837	0.782	0.969	0.808	
+Multi-region	500	2500	0	0	1.000	1.000	1.000	1.000	
+Original	497	2496	4	3	0.992	0.994	0.998	0.993	
+Text-addition	500	2500	0	0	1.000	1.000	1.000	1.000	
+
+Table 7 Per class metrics of efficientnet.
+
+Class	TP	TN	FP	FN	Precision	Recall	Specificity	F1-score	
+Content-removal	500	2500	0	0	1.000	1.000	1.000	1.000	
+Copy-move	469	2418	82	31	0.851	0.938	0.967	0.892	
+Copy-paste	420	2469	31	80	0.931	0.848	0.987	0.883	
+Multi-region	500	2500	0	0	1.000	1.000	1.000	1.000	
+Original	498	2500	0	2	1.000	0.996	1.000	0.998	
+Text-addition	500	2500	0	0	1.000	1.000	1.000	1.000	
+
+Table 8 Per class metrics of ViT.
+
+Class	TP	TN	FP	FN	Precision	Recall	Specificity	F1-score	
+Content-removal	500	2497	3	0	0.994	1.000	0.998	0.997	
+Copy-move	482	2426	74	18	0.866	0.964	0.970	0.912	
+Copy-paste	434	2483	17	66	0.962	0.868	0.993	0.912	
+Multi-region	500	2500	0	0	1.000	1.000	1.000	1.000	
+Original	490	2500	0	10	1.000	0.980	1.000	0.989	
+Text-addition	500	2500	0	0	1.000	1.000	1.000	1.000	
+
+Cross-intensity and cross-modality generalization results
+
+To evaluate the generalization of the proposed method, an additional experiment is conducted on ViT. The network is already trained on the tamper data set at 5% to 10% . Now the network is evaluated on the un-seen tampering settings at 20% to 50% tampering. The results obtained are shown in Fig. 9. A high F1-Score indicates that the network is satisfactory beyond unseen training settings in terms of percentage of tampering. A similar experiment is conducted with un-seen modalities, i.e., the ViT is initially trained with modalities such as CT, MRI, Skin Melanoma and Ultrasound (see Table 5). Now, the network is tested with the X-Ray modality with 100 images per class. The confusion chart obtained shown in Fig. 10 and the accuracy and F1-score are shown in Fig. 11 ,which indicates that the proposed method is capable of detecting the unseen modalities.Fig. 9 Cross intensity generalization performance.
+
+Fig. 10 Cross modality generalization confusion chart.
+
+Fig. 11 Cross modality generalization performance.
+
+Model fingerprint perceptual quality results
+
+We generated 100 fingerprint images by randomly selecting source and target class pairs from our six-class tamper dataset to assess the robustness and fragility of the generated fingerprints. Each fingerprint was classified by both the original and tampered versions of the network to evaluate accuracy as in Eq. 17. Figure 12 shows the visual similarity between sample images and fingerprint images. The Mean Square Error (MSE) (see Eq. 18) is computed between these images are showed in Table 9. Here a threshold (MSE < 6.00) indicates a good perceptual similarity between original and fingerprint images. The fingerprints always lie near the decision boundary so that, they stable under small perturbations due to accidental modification and unstable under malicious tampering. To assess the integrity of the model fingerprint method, the model is need to be tested under various unintentional (accidental) attacks and malicious attacks.17 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} \textrm{Acc} = \frac{1}{N} \sum _{i=1}^{N} I\big (f(L_i') = L_i\big ) \end{aligned}$$\end{document}
+
+where I(· ) is the indicator function and N is the total number of samples.18 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} \textrm{MSE}(B_i, B_i') = \frac{1}{MN} \sum _{m=1}^{M} \sum _{n=1}^{N} \left[ D_i(m,n) - D_i'(m,n) \right] ^2 \end{aligned}$$\end{document}
+
+Fig. 12 Perceptual similarity between source and fingerprint images with (a) Source labels, (b) Source images, (c) Target Labels, (d) Target Images, (e) Fingerprint Images.
+
+Table 9 MSE computed between source and fingerprint images.
+
+Source label	Target label	MSE	
+Original	Copy-move	3.62	
+Content-removal	Text-addition	4.52	
+Copy-move	Original	3.26	
+Copy-paste	Content-removal	2.79	
+Text-addition	Multi-region	4.21	
+Multi-region	Copy-paste	3.46	
+
+Fingerprint verification as a hypothesis test results
+
+The hypothesis test was conducted across the networks, and the respective results are given in Table 10. The test conducted with a threshold of 0.8 is used for experimentation purposes. When the model is modified with minor, benign changes, it may show slight variations in accuracy. But in the face of malicious attacks, the alternative hypothesis will be adopted. This hypothesis test verifies the integrity of the model.Table 10 Model fingerprint verification hypothesis test across the models.
+
+Model	No. of	Accuracy	Threshold	Hypothesis accepted	
+	Fingerprint images	Obtained			
+ResNet	100	0.88	0.80	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$H_0$$\end{document}	
+EfficientNet	100	0.89	0.80	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$H_0$$\end{document}	
+ViT	100	0.99	0.80	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$H_0$$\end{document}	
+
+Model verification under Benign modifications (unintentional modifications) results
+
+Benign attacks experimentation conducted on the models. A set of 100 fingerprint images is considered for experimentation; each benign attack is conducted on the model with 5 iterations. The obtained results are plotted in Fig. 13. Under a fine-tuning attack, ViT achieved an accuracy of 0.98, compared to 0.95 for EfficientNet and 0.92 for ResNet. This shows that the fingerprint embedding approach remains stable. Even the ViT consistency was maintained across the other attacks, such as pruning and quantization attacks. This shows that the proposed model verification approach provides a strong robustness against benign attacks.Fig. 13 Model integrity under benign (accidental modifications) attacks. (a) Fine-tuning, (b) Pruning, (c) Quantization.
+
+Model integrity under malicious attacks
+
+Backdoor and data poisoning attacks were performed on the models using 100 fingerprint images, with each attack repeated for 5 iterations. As shown in Fig. 14, the model’s fingerprint accuracy drops below 0.2 under these attacks, demonstrating significant vulnerability. The figure also presents model integrity verification results for noise injection, weight scaling, backdoor, data poisoning, and combined attacks. In each scenario, the ViT model retained the lowest accuracy, as transformer-based models are more susceptible to malicious manipulations due to their global attention-driven feature learning.Fig. 14 Model integrity under malicious attacks. (a) Noise injection, (b) Weight scaling, (c) Backdoor attack, (d) Data Poisoning attack, (e) Combined attack.
+
+Tamper localization and self-recovery results
+
+According to the proposed methodology (see Fig. 2), after the model verification, the requested medical image will be analyzed to identify if it has been tampered with. If the image is deemed tampered, the methodology will localize the tampering and initiate a self-recovery process. The ability of the proposed method is tested against the following clinically sensitive attack types:Content-removal attack.
+
+Copy-move attack (collage attack type - 1)
+
+Copy-paste attack (collage attack type - 2)
+
+Multi-region attack.
+
+Text addition attack.
+
+Tamper localization and self-recovery ability under content-removal attack
+
+In this attack, 5%, 10%, 20%, 30%, 40%, or 50% of the pixels are removed. The effectiveness of the proposed method is shown in Fig. 15. Here, the attacker removes content entirely, resulting in complete information loss in the affected areas. While tamper detection and localization remain effective, self-recovery is significantly challenged. When the tamper rate exceeds 50%, the tamper coincidence problem arises, making self-recovery nearly impossible. In such cases, some studies recommend using advanced image inpainting techniques to recover as much content as possible.Fig. 15 Performance under content-removal attack. (a) Cover image, (b) Attack, (c) Tamper localization, (d) Self-recovery.
+
+Tamper localization and self-recovery ability Under copy-move attack
+
+A copy-move attack occurs when a portion of image pixels is copied and pasted within the same image at a different location. It is also known as a type 1 Collage attack. The performance of the proposed method is shown in Fig. 16. This attack is perceptually sensitive, so the robustness of watermarking methods is important against it. Some creators may copy and paste clinically sensitive information from one part of an image to another, which can lead to incorrect diagnoses, inappropriate treatment, and, in some cases, death.Fig. 16 Performance under copy-move attack. (a) Cover image, (b) Attack, (c) Tamper localization, (d) Self-recovery.
+
+Tamper localization and self-recovery ability under copy-paste attack
+
+When pixels are copied from a visually similar image and pasted onto another, this is referred to as a copy–paste attack, also known as a collage attack (Type ii) in the literature. Unlike copy–move tampering, where the manipulated regions originate from the same image, copy–paste attacks involve external sources, often from visually similar images, which complicates detection due to comparable texture and color patterns. Such manipulations can mislead medical diagnostics by either concealing or introducing clinically significant regions.
+
+The SMART-Med framework accurately detects and localizes tampered areas using its deep tamper classification network and semi-fragile watermark verification, even when the pasted region closely resembles the host image. Figure 17 shows detection and localization results for copy-paste attacks, highlighting high classification confidence and precise block-level recovery.Fig. 17 Performance under copy-paste attack. (a) Cover image, (b) Attack, (c) Tamper localization, (d) Self-recovery.
+
+Tamper localization and self-recovery ability under multi-region attack
+
+A multi-region attack involves any combination of two or more attack types. For this experiment, content removal, copy-move, and copy-paste attacks are combined. Figure 18 illustrates the methodology’s performance under this complex scenario. Multi-region attacks can be either localized or non-localized, with higher detection and localization accuracy observed in localized cases.Fig. 18 Performance under multi-region attack. (a) Cover image, (b) Attack, (c) Tamper localization, (d) Self-recovery.
+
+Tamper localization and self-recovery ability under text-addition attack:
+
+Sometimes, in medical images, the visible text metadata can be tampered with. Such attacks are known as text-addition attacks. Sensitive metadata, such as patient names and other diagnostic information, is printed on medical images. Intruders may attempt to add extra metadata. To simulate this attack, we used MS Word with text addition. The added text is deliberately in a large font to highlight the attack. The performance under this attack is also tested, as shown in Fig. 19 Generally, the performance metrics will not be computed under this attack, whereas for other attacks, the metrics will be calculated.Fig. 19 Performance under text-addition attack. (a) Cover image, (b) Attack, (c) Tamper localization, (d) Self-recovery.
+
+The SMART-Med system utilizes two flags for tamper detection and localization. based on these flags, the semi-fragile watermarking serves at the receiving end for self-recovery of tampered areas as much as possible. The experimentation conducted on each attack and the results obtained such as the sensitivity, specificity, precision and precision plots in the percentages of tampered with of 5%, 10%, 20%, 30%, 40% and 50%. The results are presented in Fig. 20 for content-removal, copy-move, copy-paste and text-addition attacks. The associated equations are given Table 11 The multi-region attack experimentation is conducted only at 5% and the obtained results are given in Table 12.Fig. 20 Tamper localization metrics vs % of tamper under (a) content-removal, (b) copy-move, (c) copy-paste, (d) text-addition attacks.
+
+Table 11 Definitions and performance evaluation metrics.
+
+Parameter/Metric	Abbreviations and calculation of the metric	
+Total pixels in the image	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$M_{\text {total}}$$\end{document}	
+Number of tampered pixels	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$X_{\text {tampered}}$$\end{document}	
+Number of correctly detected tampered pixels	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$X_{td}$$\end{document}	
+Number of falsely detected tampered pixels	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$X_{ad}$$\end{document}	
+Number of correctly detected untampered pixels	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$X_{un}$$\end{document}	
+Actual untampered pixels	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$X_{aun} = \dfrac{M_{\text {total}}}{X_{\text {tampered}}}$$\end{document}	
+Sensitivity	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\dfrac{X_{td}}{X_{\text {tampered}}}$$\end{document}	
+Specificity	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\dfrac{X_{aun} - X_{ad}}{X_{aun}}$$\end{document}	
+Precision	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\dfrac{X_{td}}{X_{td} + X_{ad}}$$\end{document}	
+Accuracy	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\dfrac{X_{td} + (X_{aun} - X_{ad})}{M_{\text {total}}}$$\end{document}	
+False positive rate (FPR)	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\dfrac{X_{ad}}{X_{aun}}$$\end{document}	
+False negative rate (FNR)	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\dfrac{X_{\text {tampered}} - X_{td}}{X_{\text {tampered}}}$$\end{document}	
+F1-Score	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\dfrac{2X_{td}}{X_{td} + X_{ad} + X_{\text {tampered}}}$$\end{document}	
+
+Table 12 Performance metrics under multi-region attack at 5% tamper size.
+
+Metric	Result	
+Sensitivity	0.797	
+Specificity	0.991	
+Precision	0.906	
+Accuracy	0.971	
+PSNR (dB)	39.59	
+SSIM	0.940	
+Self-recovery time (Sec)	0.150	
+
+Performance under signal processing (benign) attacks
+
+Generally the Semi-fragile watermarking methodologies will resist the attacks address under fragile watermarking schemes such as signal processing attacks. To demonstrate the ability of the proposed methodology, jpeg compression, noise additon and rotation attacks are demonstrated. The settings of these attacks are given in Table 13 and the response is shown in Fig. 21.Table 13 Summary of benign signal-processing attack specifications used for robustness evaluation.
+
+Attack type	Description	
+JPEG compression	Lossy JPEG compression applied with a quality factor (QF) of 85.	
+Noise addition	Additive Gaussian noise with zero mean and variance of 0.005.	
+Rotation	Clockwise image rotation of \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$2^\circ$$\end{document} using bilinear interpolation, followed by cropping to preserve the original image resolution.	
+
+Fig. 21 Performance under signal processing attacks. (a) JPEG Compression, (b) Noise addition, (c) Rotation.
+
+Perceptual quality metrics of self-recovered images
+
+The average PSNR and SSIM of the self-recovered images under various attack types and attack percentages are shown in Figs. 22 and 23 respectively. The PSNR trends indicate that, the quality of the self-recovered images decreases progressively with the increased tampering percentages. Under tamper coincidence problem (when tamper percentage \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\ge 50\%$$\end{document}), the PSNR of the self-recovered images maintained at 27dB. Similarly the SSIM progressively decreased from approximately 0.95 at a tamper percentage of 5% to 0.64 at tamper coincidence.Fig. 22 Average PSNR of self-recovered images of various attacks under different tamper percentages.
+
+Fig. 23 Average SSIM of self-recovered images of various attacks under different tamper percentages.
+
+Computational cost results
+
+The self-recovery time is computed during the self-recovery process. The average self-recovery time under various types of attack and percentages of attack are shown in Fig. 24. The computational ability of the proposed self-recovery mechanism is tested in self-recovery time. This metric is an indirect replica of all computational resources. An overall self-recovery time of 0.18 seconds across various types and percentages of tampering confirms the suitability of the proposed framework for real-time SHS applications. The average embedding time of the watermark is already reflected in Table 4. Model based computations costs are shown Fig. 25. ResNet with 11.8M parameters and with a memory size of 44.8 MB stands a most lightweight model among the other models. Where as EfficientNet is competitive with 5.3M parameters. ViT stands with increased parameters and memory usage. ViT performance is superior in comparison with other models in terms of fingerprint verification and tamper type classification performance.Fig. 24 Average self-recovery time under various attack types and percentages.
+
+Fig. 25 Computational costs of DNN architectures. (a) Number of parameters, (b) Model storage size, (c) Inference latency, (d) Fingerprint verification time, (e) Memory consumption.
+
+Block level FAR and FRR computation
+
+The watermarking method is expected to detect and localize the tampered regions in an image. To check this ability the literature recommends conducting a false acceptance rate (FAR) and false rejection rate (FRR) at image level and block level. For this purpose, a sample dataset is created with tampered images as well as the respective ground truth mask images. For the purpose of FAR and FRR, the multi-region attack is considered because of its complexity. Hence the obtained results reflects its suitability among other attacks. The steps for computation of FAR and FRR:Load the tampered image.
+
+Obtain the tamper detection flag.
+
+Load the corresponding ground truth binary mask.
+
+Compare the tamper detection flag with the ground truth binary mask.
+
+Compute the True Positive (TP), True Negative (TN), False Positive (FP), and False Negative (FN).
+
+Compute the False Acceptance Rate (FAR): 19 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} FAR = \frac{FN}{TP + FN} \end{aligned}$$\end{document}
+
+Compute the False Rejection Rate (FRR): 20 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\begin{aligned} FRR = \frac{FP}{TN + FP} \end{aligned}$$\end{document}
+
+The obtained results are given in Table  14, it clearly shows that the system is operated at lower FAR and FRR under content-removal attack and a slight increase of the metrics at copy-move attack as well as copy-paste attack due to un-even boundary changes. The overall results indicate that, the system operates at an acceptable level of FAR and FRR.Table 14 Block level FAR and FRR analysis for fingerprint verification.
+
+Attack (5%)	FAR	FRR	
+Content-removal	0.015	0.007	
+Copy-move	0.028	0.012	
+Copy-paste	0.035	0.014	
+Text-addition	0.012	0.004	
+
+Image level FAR and FRR computation
+
+In addition to the block-level tamper localization ability, the FAR and FRR are also evaluated at the image level using DNN fingerprint verification stage. The fingerprint verification process is formulated in terms of hypothesis testing (see “Model integrity verification as a hypothesis test” section). A null hypothesis \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$H_{0}$$\end{document} is accepted when the model is genuine similarly an alternative hypothesis \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$H_{1}$$\end{document} is accepted in case the model is detected as tampered.
+
+To evaluate the reliability of the proposed fingerprint verification mechanism, both genuine and tampered model variants were generated. Genuine models included the original fingerprinted network and benign modifications such as fine-tuning, pruning, and quantization, whereas tampered models included noise injection, scaling, combined attacks, backdoor insertion, and data poisoning. Each model was subjected to fingerprint verification and classified using a threshold-based decision rule. After carefully viewing the fingerprint accuracy obtained from benign and malicious tampering results summarized in Fig. 26, a decision threshold of τ = 0.63 with a decision margin of 0.44 is considered. The resulting TP, TN, FP, and FN outcomes were subsequently used to compute the FAR and FRR, thereby quantifying the probability of accepting tampered models and rejecting genuine models, respectively. The obtained results are given in the Table 15 and the respective FRR and FAR are summarized in Table 16.Fig. 26 Operational threshold selection for DNN fingerprint verification.
+
+Table 15 Threshold-based fingerprint verification results under benign and malicious attacks.
+
+Attack category	Attack type	Network accuracy	Threshold	Model atatus	
+		ResNet	EfficientNet	ViT			
+Benign	Fine tuning	0.928	0.942	0.988	0.63	Not-tampered	
+Benign	Pruning	0.864	0.878	0.902	0.63	Not-tampered	
+Benign	Quantization	0.861	0.882	0.901	0.63	Not-tampered	
+Malicious	Noise injection	0.312	0.292	0.202	0.63	Tampered	
+Malicious	Weight scaling	0.384	0.302	0.295	0.63	Tampered	
+Malicious	Backdoor	0.212	0.198	0.141	0.63	Tampered	
+Malicious	Data poisoning	0.168	0.146	0.096	0.63	Tampered	
+Malicious	Combined	0.142	0.124	0.094	0.63	Tampered	
+
+Table 16 Image-level FAR and FRR analysis for fingerprint verification.
+
+Model	TP	TN	FP	FN	FAR	FRR	
+ResNet18	14	24	1	1	0.0400	0.0667	
+EfficientNet	15	24	1	0	0.0400	0.0000	
+ViT	15	25	0	0	0.0000	0.0000	
+
+ANOVA of watermarked images
+
+An analysis of variance (ANOVA) is conducted on the watermarked image metrics (psnr, ssim and embedded time). From Table 17, the p values or the metrics found below 0.05 confirming that the improvements achieved by the proposed framework are statistically significant. The interested readers can found the discussion on mathematical background and related applications of ANOVA at44.Table 17 Statistical analysis of watermarking performance metrics.
+
+Metric	Mean ± SD	ANOVA p value	
+MSE	2.6663 ± 0.1210	< 0.01	
+PSNR	43.8763 ± 0.1982	< 0.01	
+SSIM	0.9624 ± 0.0149	< 0.05	
+Embedded time (s)	0.4154 ± 0.0375	0.021	
+
+Ablation study
+
+At a global level, the combination of image watermarking, DNN transfer learning, DNN model fingerprint, tamper classification via DNN, tamper localization and self-recovery are considered as a full framework of the proposed SMART-Med system. It is interesting to know the contribution and importance of each subsystem in the full framework. Hence, a brief ablation study is presented in Table 18 to indicate the importance of each subsystem with the average performance metrics. The ablation study also returns the ability of the SMART-Med System ability to the various watermarking modes such as semi-fragile, Robust as well as Fragile. Hence and end-to-end semi-fragile watermarking can be utilized in SHS by discarding the model based tamper detection. It shows the scalability of the proposed method.Table 18 Ablation study results.
+
+Configuration	Tamper classification accuracy (ViT)	Tamper detection accuracy (5% Multi-region attack)	Self-recovered image PSNR (dB)	Remarks	
+Full framework	0.99	0.971	39.59	Traditional Semi-fragile watermarking + DNN based tamper detection	
+Without watermarking	0.80	×	×	–	
+Without tamper detection via DNN	×	0.971	39.59	Traditional Semi-fragile watermarking	
+Without tamper localization	0.99	0.85	35.58	Robust watermarking	
+Without self-recovery	0.99	0.971	×	Fragile watermarking	
+
+Comparative analysis
+
+The objective of this comparative analysis is to evaluate the performance and security advantages of the proposed dual watermarking and model fingerprinting framework against existing semi-fragile watermarking and DNN watermarking schemes reported in recent literature. The comparison emphasizes four key aspects:Image imperceptibility and fidelity
+
+Tamper localization and self-recovery ability
+
+Model integrity verification performance under various attacks
+
+Image imperceptibility and fidelity comparison
+
+Table 19 compares the proposed Slant + deep-transfer learning framework with recent semi-fragile watermarking methods. The two-level IWT25achieved good quality (PSNR 42.81 dB, SSIM 0.986) but was tested on a limited dataset. The SVD + OTP45 scheme improved PSNR (43.65 dB) but lacked features like self-recovery and learning integration. The Slant + DNA26 method achieved PSNR 44.78 dB but had a lower SSIM (0.837). In contrast, our proposed approach delivered superior imperceptibility (PSNR 44.91 dB, SSIM 0.962) and effective tamper detection and localization over 25000 images. The combination of chaotic mapping and deep transfer learning enhances robustness, scalability, and AI-driven authentication, outperforming existing semi-fragile watermarking techniques.Fig. 27 PSNR comparison of self-recovered images.
+
+Fig. 28 SSIM comparison of self-recovered images.
+
+Fig. 29 Tamper detection and localization ability comparison.
+
+Table 19 Average PSNR and SSIM comparison with existing methods.
+
+S. No	Reference (Year)	Transform domain	Detection	Localization	Self-recovery	Avg. PSNR	Avg. SSIM	ML/DL integration	Dataset size	
+1	25 (2025)	Two level integer wavelets	\checkmark	\checkmark	\checkmark	42.81	0.986	Proposed in future scope	15	
+2	45 (2024)	SVD	\checkmark	\checkmark	\checkmark	43.65	0.995	Not proposed	1000	
+3	26 (2025)	Slant	\checkmark	\checkmark	\checkmark	44.78	0.837	Not proposed	30	
+4	Proposed	Slant	\checkmark	\checkmark	\checkmark	44.91	0.962	Deep transfer learning	25000	
+
+Tamper localization and self-recovery ability comparison
+
+Figures 27, 28 and 29 compare the proposed method with existing semi-fragile watermarking schemes, focusing on image quality and tamper detection. In Fig. 27, the proposed approach achieves the a PSNR at 44.8 dB, reflecting reported imperceptibility and low visual distortion. Similarly, Figure 28 shows a high SSIM of 0.93, indicating reported structural similarity between the original and recovered images.
+
+In Figure 29, the proposed approach shows reported tamper detection accuracy at 94.9% and localization at 99.9%, in comparison with the methods reported in Bouarroudj et al.46 and Amrullah et al.25 . This enhanced localization capability allows for accurate identification of manipulated regions and supports effective block-level self-recovery. Overall, the results confirm that the Slant + Deep Transfer Learning framework achieves a good balance among robustness, visual quality, and recovery fidelity compared to current semi-fragile watermarking methods techniques.
+
+Model integrity and verification ability comparison
+
+Table 20 compares the proposed semi-fragile adversarial fingerprinting method with existing DNN watermarking techniques, focusing on robustness, sensitivity, and verification accuracy. As demonstrated, the fragile watermarking approach47 exhibits high sensitivity to tampering but has low robustness against benign model updates, leading to a drop in accuracy to 88.5%.Table 20 Comparative analysis of model integrity and verification ability across different DNN watermarking techniques.
+
+S.No	Reference (Year)	Watermarking type	Robustness to benign attack	Sensitivity to adversarial attack	Accuracy	
+1	48 (2025)	Hybrid	Low	Moderate	92.1	
+2	32 (2024)	Robust	High	Moderate	91.7	
+3	47 (2021)	Fragile	Low	High	88.5	
+4	Proposed	Semi-fragile	High	High	96.8	
+
+The robust schemes32 and hybrid zero-watermarking48 approaches offer moderate performance, with accuracies around 91–92%. However, they struggle to detect subtle adversarial modifications because of their high tolerance for watermark responses. Conversely, the proposed semi-fragile watermarking framework provides strong robustness against benign operations like pruning and quantisation, while staying highly sensitive to adversarial attacks such as fine-tuning and data poisoning. This dual capability results in the highest overall verification accuracy of 96.8%, demonstrating its effectiveness in ensuring model integrity and authenticity in cloud-based and federated medical AI applications.
+
+Conclusion and future scope
+
+This work introduces a unified semi-fragile watermarking and adversarial fingerprinting framework for medical imaging systems. This work combines transform-domain watermark embedding (using Slant transform), chaotic sequence mapping for watermarking, and tamper classification using deep learning models. Quantitative results show the method delivers excellent image quality (PSNR = 44.8 dB, SSIM = 0.93), precise tamper localization (99.9 %), and robust self-recovery. At the model level, the semi-fragile adversarial DNN watermark verifies authenticity with 96.8 % accuracy, remaining robust against benign modifications but resilient to adversarial fine-tuning and poisoning. Compared to recent semi-fragile and neural watermarking methods, our work offers notable advantages in scalability, adaptability, and verification reliability, effectively bridging the gap between image and model integrity protection. This dual-layer approach improves trustworthiness in medical images and provides a flexible blueprint for secure AI integration in healthcare. Future work will explore quantization index modulation and adaptive watermarking, AI-driven integrity monitoring, and real-time edge deployment to enable autonomous, self-healing trust in medical and biomedical imaging systems. For the proposed framework, a structural limitation arises from the sequential dependency between the DNN model and the semi-fragile watermarking-based tamper localization and self-recovery process. Sometimes the DNN may misclassify a tampered image as genuine. This false-negative would bypass the tamper localization and self-recovery pipeline. But the probability of this false-negative is very low. To address this limitation. Future work may integrate blockchain or a blind zero-watermark pre-check, thereby eliminating the single-point dependency on the DNN classifier.
+
+Abbreviations
+
+Acc Accuracy
+
+ANOVA Analysis of variance
+
+CNN Convolutional neural network
+
+CT Computed tomography
+
+DDNN Deep discriminate neural network/Deep neural network
+
+DNN Deep neural network
+
+FAR False acceptance rate
+
+FN False negative
+
+FNR False negative rate
+
+FP False positive
+
+FPR False positive rate
+
+FRR False rejection rate
+
+IPM Images per modality
+
+JPEG Joint photographic experts group
+
+MRI Magnetic resonance imaging
+
+MSE Mean square error
+
+PSNR Peak signal-to-noise ratio
+
+QF Quality factor
+
+SSIM Structural similarity index measure
+
+TM Tamper modality/Tamper method
+
+TN True negative
+
+TP True positive
+
+ViT Vision pransformer
+
+Author contributions
+
+Samudrala Jagadeesh: Writing- original draft, Ami Kumar Parida: Supervision, M Meenakshi-Supervision.
+
+Funding
+
+This research received no external funding.
+
+Data availability
+
+Data will be made available on request.
+
+Declarations
+
+Competing interests
+
+The authors declare no competing interests.
+
+Publisher’s note
+
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+
+References
+
+1. Ahmad W Rasool A Javed AR Baker T Jalil Z Cyber security in IoT-based cloud computing: A comprehensive survey Electronics 2021 11 16 10.3390/electronics11010016
+Ahmad, W., Rasool, A., Javed, A. R., Baker, T. & Jalil, Z. Cyber security in IoT-based cloud computing: A comprehensive survey. Electronics 11, 16. 10.3390/electronics11010016 (2021).
+2. Nugraha, A. A. et al. Pancasila, and society: Various challenges in the era of the industrial revolution 4.0. Indones. J. Pancasila Glob. Const. 1, 307–390. 10.15294/ijpgc.v1i2.59802 (2022).
+3. Postolache S Sebastião P Viegas V Postolache O Cercas F IoT-based systems for soil nutrients assessment in horticulture Sensors 2022 23 403 10.3390/s23010403 36617000 PMC9823829
+Postolache, S., Sebastião, P., Viegas, V., Postolache, O. & Cercas, F. IoT-based systems for soil nutrients assessment in horticulture. Sensors 23, 403. 10.3390/s23010403 (2022).36617000 10.3390/s23010403 PMC9823829
+4. Wang Z Sugarcane biomass prediction with multi-mode remote sensing data using deep archetypal analysis and integrated learning Remote Sens. 2022 14 4944 10.3390/rs14194944
+Wang, Z. et al. Sugarcane biomass prediction with multi-mode remote sensing data using deep archetypal analysis and integrated learning. Remote Sens. 14, 4944. 10.3390/rs14194944 (2022).
+5. Mansour RF Artificial intelligence and internet of things enabled disease diagnosis model for smart healthcare systems IEEE Access 2021 9 45137 45146 10.1109/ACCESS.2021.3066365
+Mansour, R. F. et al. Artificial intelligence and internet of things enabled disease diagnosis model for smart healthcare systems. IEEE Access 9, 45137–45146. 10.1109/ACCESS.2021.3066365 (2021).
+6. Jha A Saha D Forecasting and analysing the characteristics of 3g and 4g mobile broadband diffusion in India: A comparative evaluation of Bass, Norton-Bass, Gompertz, and logistic growth models Technol. Forecast. Soc. Chang. 2020 152 119885 10.1016/j.techfore.2019.119885
+Jha, A. & Saha, D. Forecasting and analysing the characteristics of 3g and 4g mobile broadband diffusion in India: A comparative evaluation of Bass, Norton-Bass, Gompertz, and logistic growth models. Technol. Forecast. Soc. Chang. 152, 119885. 10.1016/j.techfore.2019.119885 (2020).
+7. Panda A Mohapatra S Online healthcare practices and associated stakeholders: Review of literature for future research agenda Vikalpa 2021 46 71 85 10.1109/ACCESS.2021.3066365
+Panda, A. & Mohapatra, S. Online healthcare practices and associated stakeholders: Review of literature for future research agenda. Vikalpa 46, 71–85. 10.1109/ACCESS.2021.3066365 (2021).
+8. Kumar SP A survey on connected healthcare beyond covid in India: Clinical perspectives J. Med. Eng. Technol. 2023 47 85 93 10.1080/03091902.2022.2098397 35856890
+Kumar, S. P. et al. A survey on connected healthcare beyond covid in India: Clinical perspectives. J. Med. Eng. Technol. 47, 85–93. 10.1080/03091902.2022.2098397 (2023).35856890 10.1080/03091902.2022.2098397
+9. Amrit P Anand A Kumar S Singh A Robust transmission of medical records using dual watermarking and optimization algorithm J. Phys: Conf. Ser. 2021 1767 012060 10.1088/1742-6596/1767/1/012060
+Amrit, P., Anand, A., Kumar, S. & Singh, A. Robust transmission of medical records using dual watermarking and optimization algorithm. J. Phys: Conf. Ser. 1767, 012060. 10.1088/1742-6596/1767/1/012060 (2021).
+10. Thind RK Anand A Sharma A SECURENet: Secure encoder-decoder based multiple watermarking for the protection of digital images Appl. Soft Comput. 2026 193 114837 10.1016/J.ASOC.2026.114837
+Thind, R. K., Anand, A. & Sharma, A. SECURENet: Secure encoder-decoder based multiple watermarking for the protection of digital images. Appl. Soft Comput. 193, 114837. 10.1016/J.ASOC.2026.114837 (2026).
+11. Kuo M-H Opportunities and challenges of cloud computing to improve health care services J. Med. Internet Res. 2011 13 e1867 10.2196/jmir.1867 PMC3222190 21937354
+Kuo, M.-H. Opportunities and challenges of cloud computing to improve health care services. J. Med. Internet Res. 13, e1867. 10.2196/jmir.1867 (2011).10.2196/jmir.1867 PMC3222190 21937354
+12. Khor HL Liew S-C Zain JM Region of interest-based tamper detection and lossless recovery watermarking scheme (ROI-DR) on ultrasound medical images J. Digit. Imaging 2017 30 328 349 10.1007/s10278-016-9930-9 28050716 PMC5422224
+Khor, H. L., Liew, S.-C. & Zain, J. M. Region of interest-based tamper detection and lossless recovery watermarking scheme (ROI-DR) on ultrasound medical images. J. Digit. Imaging 30, 328–349. 10.1007/s10278-016-9930-9 (2017).28050716 10.1007/s10278-016-9930-9 PMC5422224
+13. Suganya D Thirunadana Sikamani K Sasikala J Copy-move forgery detection of medical images using golden ball optimization Int. J. Comput. Appl. 2022 44 729 737 10.1080/1206212X.2021.1907905
+Suganya, D., Thirunadana Sikamani, K. & Sasikala, J. Copy-move forgery detection of medical images using golden ball optimization. Int. J. Comput. Appl. 44, 729–737. 10.1080/1206212X.2021.1907905 (2022).
+14. Sood R Rani J Anand A Bedi J Deep learning-based dual watermarking solution for securing medical images in e-healthcare Knowl.-Based Syst. 2025 330 114750 10.1016/J.KNOSYS.2025.114750
+Sood, R., Rani, J., Anand, A. & Bedi, J. Deep learning-based dual watermarking solution for securing medical images in e-healthcare. Knowl.-Based Syst. 330, 114750. 10.1016/J.KNOSYS.2025.114750 (2025).
+15. Rani J Anand A A review on advancement in watermarking techniques for biomedical data in e-Healthcare applications Biomed. Signal Process. Control 2026 112 108521 10.1016/J.BSPC.2025.108521
+Rani, J. & Anand, A. A review on advancement in watermarking techniques for biomedical data in e-Healthcare applications. Biomed. Signal Process. Control 112, 108521. 10.1016/J.BSPC.2025.108521 (2026).
+16. Bhanot R Hans R A review and comparative analysis of various encryption algorithms Int. J. Secur. Appl. 2015 9 289 306 10.14257/ijsia.2015.9.4.27
+Bhanot, R. & Hans, R. A review and comparative analysis of various encryption algorithms. Int. J. Secur. Appl. 9, 289–306. 10.14257/ijsia.2015.9.4.27 (2015).
+17. Demla K Anand A RISE: Rubik’s cube and image segmentation based secure medical images encryption Multimed. Tools Appl. 2024 83 70343 70367 10.1007/S11042-024-18351-4
+Demla, K. & Anand, A. RISE: Rubik’s cube and image segmentation based secure medical images encryption. Multimed. Tools Appl. 83, 70343–70367. 10.1007/S11042-024-18351-4 (2024).
+18. Hussan M Gull S Parah SA Qureshi G An efficient encoding based watermarking technique for tamper detection and localization Multimed. Tools Appl. 2023 82 37249 37271 10.1007/s11042-023-15039-z
+Hussan, M., Gull, S., Parah, S. A. & Qureshi, G. An efficient encoding based watermarking technique for tamper detection and localization. Multimed. Tools Appl. 82, 37249–37271. 10.1007/s11042-023-15039-z (2023).
+19. Melman A Evsutin O Methods for countering attacks on image watermarking schemes: Overview J. Vis. Commun. Image Represent. 2024 99 104073 10.1016/j.jvcir.2024.104073
+Melman, A. & Evsutin, O. Methods for countering attacks on image watermarking schemes: Overview. J. Vis. Commun. Image Represent. 99, 104073. 10.1016/j.jvcir.2024.104073 (2024).
+20. Onoja GU Bagiwa MA Kufena AM Robust watermarking techniques for the authentication and copyright protection of digital images: A survey SLU J. Sci. Technol 2023 6 100 112 10.56471/slujst.v6i.366
+Onoja, G. U., Bagiwa, M. A. & Kufena, A. M. Robust watermarking techniques for the authentication and copyright protection of digital images: A survey. SLU J. Sci. Technol 6, 100–112. 10.56471/slujst.v6i.366 (2023).
+21. Meenakshi, K., Swaraja, K. & Kora, P. A robust DCT-SVD based video watermarking using zigzag scanning. In Soft Computing and Signal Processing: Proceedings of ICSCSP 2018, Volume 1, 477–485. (Springer, 2019). 10.1007/978-981-13-3600-3_45.
+22. Gao Z Cheng Y Yin Z A survey of fragile model watermarking Signal Process. 2026 238 110088 10.1016/j.sigpro.2025.110088
+Gao, Z., Cheng, Y. & Yin, Z. A survey of fragile model watermarking. Signal Process. 238, 110088. 10.1016/j.sigpro.2025.110088 (2026).
+23. Wu, H.-C., Yeh, C.-P. & Tsai, C.-S. A semi-fragile watermarking scheme based on SVD and VQ techniques. In International Conference on Computational Science and Its Applications, 406–415. (Springer, 2006). 10.1007/11751595_44.
+24. Sood R Sharma A Anand A Encryption-based twining of visible and invisible watermarking for secure transmission of medical images Secur. Priv. 2025 8 e70080 10.1002/SPY2.70080
+Sood, R., Sharma, A. & Anand, A. Encryption-based twining of visible and invisible watermarking for secure transmission of medical images. Secur. Priv. 8, e70080. 10.1002/SPY2.70080 (2025).
+25. Amrullah A Ernawan F Raffei AFM Chuin LS TDSF: Two-phase tamper detection in semi-fragile watermarking using two-level integer wavelet transform Eng. Sci. Technol. Int. J. 2025 61 101909 10.1016/j.jestch.2024.101909
+Amrullah, A., Ernawan, F., Raffei, A. F. M. & Chuin, L. S. TDSF: Two-phase tamper detection in semi-fragile watermarking using two-level integer wavelet transform. Eng. Sci. Technol. Int. J. 61, 101909. 10.1016/j.jestch.2024.101909 (2025).
+26. Jagadeesh S Parida AK Meenakshi K Tamper detection, localization and self-recovery using slant transform with DNA encoding for medical images Results Eng. 2025 27 105907 10.1016/j.rineng.2025.105907
+Jagadeesh, S., Parida, A. K. & Meenakshi, K. Tamper detection, localization and self-recovery using slant transform with DNA encoding for medical images. Results Eng. 27, 105907. 10.1016/j.rineng.2025.105907 (2025).
+27. Alsabaan M Faheem Z Zhu Y Ali J Image watermarking algorithm base on the second order derivative and discrete wavelet transform Comput. Mater. Continua 2025 84 491 10.32604/cmc.2025.064971
+Alsabaan, M., Faheem, Z., Zhu, Y. & Ali, J. Image watermarking algorithm base on the second order derivative and discrete wavelet transform. Comput. Mater. Continua 84, 491. 10.32604/cmc.2025.064971 (2025).
+28. Lefèvre P Carré P Fontaine C Gaborit P Huang J Efficient image tampering localization using semi-fragile watermarking and error control codes Signal Process. 2022 190 108342 10.1016/j.sigpro.2021.108342
+Lefèvre, P., Carré, P., Fontaine, C., Gaborit, P. & Huang, J. Efficient image tampering localization using semi-fragile watermarking and error control codes. Signal Process. 190, 108342. 10.1016/j.sigpro.2021.108342 (2022).
+29. Ngo AT Heng CS Chattopadhyay N Chattopadhyay A Persistence of backdoor-based watermarks for neural networks: A comprehensive evaluation IEEE Trans. Neural Netw. Learn. Syst. 2025 36 15939 15950 10.1109/TNNLS.2025.3565170 40388282
+Ngo, A. T., Heng, C. S., Chattopadhyay, N. & Chattopadhyay, A. Persistence of backdoor-based watermarks for neural networks: A comprehensive evaluation. IEEE Trans. Neural Netw. Learn. Syst. 36, 15939–15950. 10.1109/TNNLS.2025.3565170 (2025).40388282 10.1109/TNNLS.2025.3565170
+30. Li, F.-Q., Wang, S.-L. & Zhu, Y. Fostering the robustness of white-box deep neural network watermarks by neuron alignment. In ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 3049–3053. (IEEE, 2022). 10.1109/ICASSP43922.2022.9747416.
+31. Yadollahi, M. M., Shoeleh, F., Dadkhah, S. & Ghorbani, A. A. Robust black-box watermarking for deep neural network using inverse document frequency. In 2021 IEEE Intl Conf on Dependable, Autonomic and Secure Computing, Intl Conf on Pervasive Intelligence and Computing, Intl Conf on Cloud and Big Data Computing, Intl Conf on Cyber Science and Technology Congress (DASC/PiCom/CBDCom/CyberSciTech), 574–581. (IEEE, 2021). 10.1109/DASC-PICom-CBDCom-CyberSciTech52372.2021.00100 .
+32. Mo M A novel robust black-box fingerprinting scheme for deep classification neural networks Expert Syst. Appl. 2024 252 124201 10.1016/j.eswa.2024.124201
+Mo, M. et al. A novel robust black-box fingerprinting scheme for deep classification neural networks. Expert Syst. Appl. 252, 124201. 10.1016/j.eswa.2024.124201 (2024).
+33. Thind RK Sood R Rani J Anand A Sharma A DeepDual-WM: A robust dual watermarking strategy for medical images using deep networks IEEE MultiMedia 2026 10.1109/MMUL.2026.3667050
+Thind, R. K., Sood, R., Rani, J., Anand, A. & Sharma, A. DeepDual-WM: A robust dual watermarking strategy for medical images using deep networks. IEEE MultiMedia10.1109/MMUL.2026.3667050 (2026).
+34. Jagadeesh, S., Parida, A. K. & Meenakshi, K. A blend of deep learning and machine learning based tamper detection of medical images followed by localization and self-recovery. In 2025 7th International Conference on Signal Processing, Computing and Control (ISPCC), 189–194. (IEEE, 2025). 10.1109/ISPCC66872.2025.11039578.
+35. Yuan Z Zhang X Wang Z Yin Z Semi-fragile neural network watermarking based on adversarial examples IEEE Trans. Emerg. Topics Comput. Intell. 2024 8 2775 2790 10.1109/TETCI.2024.3372373
+Yuan, Z., Zhang, X., Wang, Z. & Yin, Z. Semi-fragile neural network watermarking based on adversarial examples. IEEE Trans. Emerg. Topics Comput. Intell. 8, 2775–2790. 10.1109/TETCI.2024.3372373 (2024).
+36. Wolf JK Elspas B Error-locating codes-a new concept in error control IEEE Trans. Inf. Theory 1963 10.1109/TIT.1963.1057813
+Wolf, J. K. & Elspas, B. Error-locating codes-a new concept in error control. IEEE Trans. Inf. Theory10.1109/TIT.1963.1057813 (1963).
+37. Lakhani A Gupta N Anand A Enhancing robustness and security of medical images through composite watermarking method Soft. Comput. 2024 28 6809 6822 10.1007/S00500-023-09557-Z;REQUESTEDJOURNAL:JOURNAL:SOFC;PAGE:STRING:ARTICLE/CHAPTER
+Lakhani, A., Gupta, N. & Anand, A. Enhancing robustness and security of medical images through composite watermarking method. Soft. Comput. 28, 6809–6822. 10.1007/S00500-023-09557-Z;REQUESTEDJOURNAL:JOURNAL:SOFC;PAGE:STRING:ARTICLE/CHAPTER (2024).
+38. Liu Y Wu H Zhang X Robust and imperceptible black-box DNN watermarking based on Fourier perturbation analysis and frequency sensitivity clustering IEEE Trans. Dependable Secure Comput. 2024 21 5766 5780 10.1109/TDSC.2024.3384416
+Liu, Y., Wu, H. & Zhang, X. Robust and imperceptible black-box DNN watermarking based on Fourier perturbation analysis and frequency sensitivity clustering. IEEE Trans. Dependable Secure Comput. 21, 5766–5780. 10.1109/TDSC.2024.3384416 (2024).
+39. Kuribayashi M Yasui T Malik A White box watermarking for convolution layers in fine-tuning model using the constant weight code J. Imaging 2023 9 117 10.3390/jimaging9060117 37367465 PMC10299526
+Kuribayashi, M., Yasui, T. & Malik, A. White box watermarking for convolution layers in fine-tuning model using the constant weight code. J. Imaging 9, 117. 10.3390/jimaging9060117 (2023).37367465 10.3390/jimaging9060117 PMC10299526
+40. Parida, A.K., Meenakshi, K. & Jagadeesh, S. Medical Image tamper dataset Code Download. 10.34740/kaggle/dsv/10511496 (2025).
+41. Li Y Wang H Barni M A survey of deep neural network watermarking techniques Neurocomputing 2021 461 171 193 10.1016/j.neucom.2021.07.051
+Li, Y., Wang, H. & Barni, M. A survey of deep neural network watermarking techniques. Neurocomputing 461, 171–193. 10.1016/j.neucom.2021.07.051 (2021).
+42. Gu J Ye JC AdaIN-based tunable CycleGAN for efficient unsupervised low-dose CT denoising IEEE Trans. Comput. Imaging 2021 7 73 85 10.1109/TCI.2021.3050266
+Gu, J. & Ye, J. C. AdaIN-based tunable CycleGAN for efficient unsupervised low-dose CT denoising. IEEE Trans. Comput. Imaging 7, 73–85. 10.1109/TCI.2021.3050266 (2021).
+43. Nuriel, O., Benaim, S. & Wolf, L. Permuted Adain: Reducing the bias towards global statistics in image classification. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, 9482–9491. 10.1109/CVPR46437.2021.00936 (2021).
+44. Awudong B Yakupu P Yan J Li Q Research and implementation of denoising algorithm for brain MRIs via morphological component analysis and adaptive threshold estimation Mathematics 2024 12 748 10.3390/math12050748
+Awudong, B., Yakupu, P., Yan, J. & Li, Q. Research and implementation of denoising algorithm for brain MRIs via morphological component analysis and adaptive threshold estimation. Mathematics 12, 748. 10.3390/math12050748 (2024).
+45. AlShaikh M Robust and recovery watermarking approach based on SVD and OTP encryption J. Signal Process. Syst. 2024 96 385 399 10.1007/s11265-024-01919-6
+AlShaikh, M. Robust and recovery watermarking approach based on SVD and OTP encryption. J. Signal Process. Syst. 96, 385–399. 10.1007/s11265-024-01919-6 (2024).
+46. Bouarroudj R Secure and reversible fragile watermarking for accurate authentication and tamper localization in medical images Comput. Electr. Eng. 2025 123 110072 10.1016/j.compeleceng.2025.110072
+Bouarroudj, R. et al. Secure and reversible fragile watermarking for accurate authentication and tamper localization in medical images. Comput. Electr. Eng. 123, 110072. 10.1016/j.compeleceng.2025.110072 (2025).
+47. Botta M Cavagnino D Esposito R NeuNAC: A novel fragile watermarking algorithm for integrity protection of neural networks Inf. Sci. 2021 10.1016/j.ins.2021.06.073
+Botta, M., Cavagnino, D. & Esposito, R. NeuNAC: A novel fragile watermarking algorithm for integrity protection of neural networks. Inf. Sci.10.1016/j.ins.2021.06.073 (2021).
+48. Nawaz SA Medical image zero watermarking algorithm based on dual-tree complex wavelet transform, AlexNet and discrete cosine transform Appl. Soft Comput. 2025 10.1016/j.asoc.2024.112556
+Nawaz, S. A. et al. Medical image zero watermarking algorithm based on dual-tree complex wavelet transform, AlexNet and discrete cosine transform. Appl. Soft Comput.10.1016/j.asoc.2024.112556 (2025).

@@ -1,0 +1,400 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Arch Anim Breed
+Journal ID: Arch Tierz
+NLM Journal ID: 101701238
+Journal ID: AAB
+
+Archives Animal Breeding
+
+EISSN: 2363-9822
+Publisher: Copernicus Publications (Copernicus GmbH)
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13494805
+PMID: 42630609
+DOI: 10.5194/aab-68-589-2025
+Article ID: 01021829
+Article version: 1
+Subjects: Original Study
+
+Digital documentation of individual treatment data and its relation to veterinary slaughter lesions in pigs
+
+Görge Hannah hgoerge@tierzucht.uni-kiel.de 1
+Dittrich Imme 2
+Wilder Thore https://orcid.org/0000-0002-7095-8287 1
+Kemper Nicole 3
+Krieter Joachim 1
+1 Institute of Animal Breeding and Husbandry, Christian-Albrechts University, Olshausenstraße 40, 24098 Kiel, Germany
+2 Chamber of Agriculture of Schleswig-Holstein, Gutshof 1, 24327 Blekendorf, Germany
+3 Institute of Animal Hygiene, Animal Welfare and Farm Animal Behavior, University of Veterinary Medicine Hannover, Foundation, Bischofsholer Damm 15, 30173 Hanover, Germany
+Correspondence: Hannah Görge (hgoerge@tierzucht.uni-kiel.de)
+Electronic publication date: 2025 Sep 24
+Publication date: 2025
+Volume: 68
+Issue: 3
+First page: 589
+Last page: 605
+Received 2023 Sep 19; Accepted 2025 Jun 25
+Copyright: Copyright: © 2025 Hannah Görge et al.
+Copyright year: 2025
+License: This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this licence, visit https://creativecommons.org/licenses/by/4.0/
+License URL: https://creativecommons.org/licenses/by/4.0/
+
+Funding: Gesellschaft zur Förderung des Tierwohls in der Nutztierhaltung mbH (Initiative Tierwohl) The project was supported by the Gesellschaft zur Förderung des Tierwohls in der Nutztierhaltung mbH (Initiative Tierwohl).
+
+Disclaimer
+
+Publisher’s note: Copernicus Publications remains neutral with regard to jurisdictional claims made in the text, published maps, institutional affiliations, or any other geographical representation in this paper. While Copernicus Publications makes every effort to include appropriate place names, the final responsibility lies with the authors.
+
+==============================
+Abstract
+
+Legislation in the European Union demands the documentation of on-farm treatments and the documentation of lesions found at slaughter. The fulfilment of these documentation duties in a digitalised form allows further interpretation of the data. The aim of this study was to use a digital system for the documentation of on-farm treatments to determine the status quo of a farm's health status. Furthermore, relations between individual treatments and lesions found at slaughter were investigated. The data were obtained between August 2020 and September 2022 from a combined pig farm in northern Germany using a digital tool to document treatment data and from the slaughterhouses to which the pigs were delivered. The majority of individual treatments were observed in the fattening unit with 42.4 % of all individual treatments, followed by the rearing unit (40.4 %) and the piglet production (17.2 %). The most frequent reason for individual treatments was locomotor system diseases in all units (45.5 to 47.4 %), which occurred throughout the whole time of data collection. Gastrointestinal diseases represented the second most frequent individual treatment reason in the piglet production. Runt pigs in the rearing unit appeared in peaks, while tail lesions in the fattening unit seemed to occur especially in the colder months of the year. 18.2 % individuals received individual treatments. At the slaughterhouse, lesions were recorded for 18.1 % of the individuals. Lesions of the respiratory tract were found in 15.5 % of the individuals. The relation between slaughter lesions and individual treatment data was investigated using logistic regression models. In comparison to individual pigs which did not receive individual treatments, for individuals which received individual treatments in the early stage of life an odds ratio (OR) = 1.5 (95 % confidence interval (95 % CI): 1.2 to 2) and for individuals which received individual treatments in the later stage of life an OR = 1.9 (95 % CI: 1.4 to 2.5) were obtained. To conclude, there were higher risks for individuals which received individual treatments in the early or later stage of life but not for those who received treatments in both stages of life. Digitalised data of treatments can bring value to pig farming in regards to the overview they can provide.
+
+1 Introduction
+
+The emerging risk of antimicrobial resistance and increasing food safety regulations have forced several documentation duties on the farmer and the industry. As part of these duties, the documentation of treatments following Regulation (EU) 2019/06 on the use of veterinary medicinal products and the documentation of lesions found at slaughter following Regulation (EC) 854/2004 were set in place.
+
+In the era of digitalisation, in which precision livestock farming and the Internet of things have emerged and shifted ever more into the focus of farm managing practices, the potential of these documents to provide additional value is yet to be discovered (Morrone et al., 2022). Digitalised data can be used to interpret the past, to identify matters in the present and to predict the future (Eastwood et al., 2019; Janssen et al., 2017; Wolfert et al., 2017). For example, the main diseases that require treatments can be pointed out for different production areas, and seasonal appearances of disease occurrences can be reduced with the implementation of preventive measures.
+
+Studies have emerged investigating the potential of documented slaughter lesions as part of health monitoring schemes and disease surveillance (Correia-Gomes et al., 2017; Knage-Rasmussen et al., 2015; Nielsen et al., 2017). The potential lies especially in the cost-effective generation of data when compared to on-farm welfare assessments, since the data have to be documented by the law regardless. Nevertheless, Nielsen et al. (2015) pointed out that using slaughter inspection data for the cause of health monitoring should be used with caution since they were not originally intended for this purpose. To reflect on a herd's welfare status, on-farm data should be considered, additionally, especially since animal welfare is defined not only by physical integrity at one specific moment but rather by the balance of positive and negative experiences over a period of time (Carenzi and Verga, 2009). The Welfare Quality animal welfare assessment protocols are based on the four welfare principles “good feeding”, “good housing”, “good health” and “appropriate behaviour” (Dalmau et al., 2009). For “good health”, several studies have integrated on-farm treatment and antimicrobial use data into assessments, mainly using veterinary records (Bonde et al., 2005; Knage-Rasmussen et al., 2015). Nevertheless, the need to integrate on-farm data recording with veterinary recording has been highlighted, especially since there could be a discrepancy between prescribed and applied medication (Bracken, 2017; Menéndez González et al., 2010; Merle et al., 2012; Trauffler et al. 2014). Furthermore, Merle et al. (2012) observed digital data to be more accurate than handwritten documentation.
+
+Therefore, the aim of this study was to use a digital system to document treatments linked to the individual pig at the time of application. Thus, the information of treatments presented in a digital format was used to determine the status quo of the investigated farm's health status, e.g. through the determination of treatment frequencies and treatment occurrences throughout the year. Additionally, treatment information was put into relation with veterinary inspection data from the slaughterhouses linked to an individual animal. The animal's life from birth to slaughter could be investigated by placing special emphasis on treatments.
+
+2 Material and methods
+
+2.1 Animals and housing
+
+Data were collected at a German pig farm located in Schleswig-Holstein. The pig farm is a combined breeding and finishing farm, operating as a closed system and replacing sows with self-produced gilts. All pigs were housed according to the EU Council Directive 2008/120/EC, EU Council Directive 2010/63/EC and the “German Order for the Protection of Production Animals used for Farming Purposes and other Animals kept for the Production of Animal Products” (TierSchNutztV; Bundesministerium der Justiz und für Verbraucherschutz, 2021). Varying numbers of productive crossbred breeding sows (Large White × Landrace) with a mean of 147 sows were counted each day. They were artificially inseminated, testing offspring for the insemination organisation (GFS, Ascheberg, Germany), with the breeds of Duroc and Piétrain, as well as Large White and Landrace, for breeding and replacement purposes. Farrowing took place in farrowing compartments with plastic flooring. In four of the five farrowing compartments, the sows were fixated in farrowing crates. These compartments contained 10 to 12 pens each with slatted flooring. In the fifth farrowing compartment containing three pens, the crates were opened 5 d after farrowing. The floor was mostly slatted, except for a small area along the wall and the separated piglet nest, in which the floor was solid. The farm ran a 3-week farrowing cycle with a suckling period of 28 d. To test the offspring, every piglet received a radio frequency identification (RFID) ear tag on the first day of life, which was removed after identification at slaughter. The piglets' tails were not docked, and castration of the male piglets was carried out under injection anaesthesia during the first week of the piglets' lives. During the suckling period, the piglets were additionally fed with dry feed. The temperature in the farrowing departments was kept at 21 °C at farrowing and regulated down to 20 °C during the suckling period. After weaning, the piglets stayed in the same unit for 3 more days and were then moved to the rearing unit. The rearing unit was locally separated from the piglet production, and the pens were equipped with part slatted and part solid plastic flooring. Here, the piglets were kept in groups of 40 to 45 individuals. During the first 14 d of the rearing period, the piglets stayed in a compartment with a piglet nest, where the temperature was kept at 33 °C. In this compartment, the overall temperature was automatically regulated from 24.5 to 21.5 °C over the course of the 14 d. Afterwards, the piglets were transferred to compartments without piglet nests in which the temperature was kept at 22.5 °C. In both compartments, the piglets were fed with moist feeding ad libitum with a 3:1 animal to feeding place ratio. At an age of 63 to 67 d, the piglets were transferred into the fattening unit, which was locally separated again and had slatted concrete flooring. In the fattening unit the temperature was automatically regulated from 25 °C to 18 °C during the period of fattening. The unit contained 10 compartments, out of which 8 had 12 pens each and 2 contained 4 pens each. Each pen had a size of 2.5 m by 5 m. 15 fattening pigs were kept in each pen (stocking density: 0.83 m2 per pig). Since April 2022, only 13 fattening pigs have been kept in each of the pens (stocking density: 0.96 m2 per pig). The fattening pigs were restrictively fed with liquid feed with a 1:1 animal feeding place ratio three times a day at 05:00, 10:30 and 14:30 CET (central European time). The pigs stayed for 3–4 months at this location until slaughter (mean slaughter age: 178 d).
+
+2.2 Treatment routine
+
+Vaccinations and anthelmintic treatments were carried out routinely as prophylactic measures. The piglets were vaccinated against Lawsonia intracellularis, Mycoplasma hyopneumoniae and Porcine circovirus. Gilts were vaccinated against Actinobacillus pleuropneumoniae, Erysipelas, Influenza, Mycoplasma hyopneumoniae, Parvovirus and Porcine circovirus. Gestating sows were vaccinated against Clostridia, Escherichia coli, Erysipelas and Parvovirus. The anthelmintic treatments were carried out for the sows when brought into the farrowing pen and for the fattening pigs when brought into the fattening unit. In all units, daily animal observations were carried out, and pigs showing signs of illness, e.g. lameness, tail lesions or coughs, were treated as advised by the supervising veterinarian.
+
+2.3 Data collection
+
+For the data collection, a digital system was used from August 2020 to September 2022 to document the treatments at the time of application. The V-ETIC system (Henke Sass Wolf GmbH, Tuttlingen, Germany) operates with a cloud-based system which connects to a mobile application. The mobile application is connected via Bluetooth to an RFID reader, which is attached to a self-filling syringe. At the time of administration of a treatment, the RFID reader identifies the animal's RFID ear tag, and the treatment data linked to the individual are saved on the mobile device. The mobile application in combination with the RFID reader can be used offline in the stable but needs a WiFi connection to synchronise with the cloud-based system. The treatments are provided as treatment lists. A mobile phone and a RFID reader were placed at each of the three production areas piglet production, rearing and fattening unit to perform the digital treatment documentation, without risking disease transmission from one unit to another. The treatment routine was not changed due to the system implementation. Between August 2020 and January 2022, the farm was visited once a week to check for completeness of documentation and give support in system use. The digital documentation data were compared to the simultaneous handwritten documentation and completed when, for example, treatments were missing. Group treatments were not feasible to be documented with a direct link to the individual animal. After finishing the farm visits in January 2022, the treatment data were extracted from the cloud-based system.
+
+Lists were created on the first day of the piglets' lives by the farm staff using another digital device (WORKABOUT PRO™ 3, Psion Teklogix Inc., Mississauga, Canada), into which the link of the piglet's RFID, birthdate and weight was deposited.
+
+In addition to the on-farm treatment data, the insemination organisation provided the veterinary slaughter inspection data from all three slaughterhouses to which the pigs were delivered. The veterinary slaughter inspection in Germany is standardised following the General Administrative Regulation for Food Hygiene (AVV LmH, Die Bundesregierung, 2009) and documented as required by Regulation (EC) No. 854/2004.
+
+Figure 1 Display of observations used for analyses in the present study. The treatments were assigned to eight categories including treatments of the central nervous system (CNS), the gastrointestinal tract (GIT), the locomotor system (LOC), the respiratory system (RES), runt pigs (RUN), skin lesions (SKI), tail lesions (TAI) and other treatments (OTH). Treatment intervals allowed the separation of ongoing treatments from new treatments with 14 d for LOC and 6 d for the other categories.
+
+2.4 Data restriction and descriptive analyses
+
+All analyses were carried out using the statistical software SAS® 9.4 (SAS Institute Inc., 2018).
+
+In August 2020, the beginning of data collection, only treatments in the area of piglet production were documented due to system malfunctions that were fixed afterwards. The treatment documentation was then extended to the other production areas in September. In December 2020, the system at the rearing unit went through technical issues, during which some data were lost. Due to further technical issues, data collection stood still in April and May 2021, and data documented between 27 May and 2 June 2022 in the piglet production and rearing unit were lost.
+
+Overall, there were 5551 observations of treatments in the production areas piglet production, rearing unit and fattening unit (Fig. 1). To trace animals from birth to slaughter, only individual treatments linked to individual animals were considered, resulting in 4562 observed individual treatments. In the rearing unit, group treatments were carried out for 51 groups including 2069 individuals from October to November 2020, April to July 2021 and November 2021. In the fattening unit, group treatments were carried out for 5 compartments including 720 individuals in April and November 2021. The group treatments targeted respiratory diseases exclusively in the fattening unit and predominantly in the rearing unit. All group treatments were excluded from the analyses due to missing linkage to individual animals. No group treatments were carried out in piglet production. The individual treatments were assigned to eight treatment categories depending on the underlying treatment indication. The categories included treatments of the central nervous system (CNS), the gastrointestinal tract (GIT), the locomotor system (LOC), the respiratory system (RES), runt pigs (RUN), skin lesions (SKI), tail lesions (TAI) and other treatments (OTH) (Table 1).
+
+Treatment intervals were defined to determine whether a following treatment of the same individual was a treatment of a new disease or whether it was counted as an ongoing treatment of the previous disease (Fig. 2). For this purpose, distribution analyses of the difference in days between treatments were conducted. Taking treatment intervals applied in other literature and the duration animals might be affected by the different disease categories into account, a time period within the 90th percentile was selected (Bareille et al., 2003; Baumgärtner and Gruber, 2020; Buttchereit et al., 2012; Christensen et al., 1994; Dunlop et al., 1998; Houe et al., 2011; Smith, 1988). After applying the treatment intervals, 2208 observations of treatments were left, forming Dataset 1.
+
+Figure 2 Treatment intervals determine whether additional treatments in the same treatment category count as ongoing treatments or as new treatments: (a) displays two separate treatments; (b) displays one treatment with an ongoing treatment. The treatment interval is prolonged, and (c) again displays two separate treatments, where the first treatment includes an ongoing treatment and the treatment interval is prolonged.
+
+Table 1 Treatment indications placed into categories: of the central nervous system (CNS), the gastrointestinal tract (GIT), the locomotor system (LOC), the respiratory system (RES), runt pigs (RUN), skin lesions (SKI), tail lesions (TAI) and other treatments (OTH).
+
+Category	Indication	
+CNS	Head tilt	
+Muscle twitching	
+Paddling	
+GIT	Diarrhoea	
+Intestinal obstruction	
+Rectal prolapse	
+LOC	Claw injury lameness	
+Swollen claw	
+Swollen joint	
+Swollen joints	
+Swollen leg	
+RES	Cough	
+Dyspnoea	
+Pneumonia	
+Pumping	
+RUN	Thin	
+Weak	
+SKI	Abscess	
+Eczema	
+Red spots	
+Wound	
+TAI	Tail-biting lesion	
+Tail tip necrosis	
+OTH	Apathy	
+Aural haematoma	
+Blue ears	
+Fever	
+Abdominal hernia	
+Inappetence	
+Jaw fracture	
+Red eye	
+Umbilical infection	
+
+With the consideration of the lists generated on the first day of the piglets' lives, Dataset 2 was formed. Due to technical malfunctions, the lists generated on the first day of the piglets' lives were not complete, resulting in an exclusion of 10.8 % of the individuals who received treatments in Dataset 2.
+
+Dataset 3 included the additional information on the veterinary slaughter inspection data. One of the three slaughterhouses was excluded from the analyses due to the small number of observations ( n=133 ), resulting in the integration of slaughterhouse A ( n=3310 ) and B ( n=320 ) into the analyses. At slaughter, the RFID ear tags of 33.2 % of all slaughtered pigs were not read, because the readers were neglected to be switched on during slaughter routine or because ear tags were lost on the farm or during transportation. Additionally, data exclusion had to take place on five slaughter dates between July and October 2022 on which pigs were delivered alongside pigs without any information about treatments, which could not be differentiated. Therefore, individuals which received treatments could not be integrated in the dataset used for the statistical analyses (Dataset 3).
+
+For the statistical analyses, pigs that had been born from August 2020 were included. Hence, the first slaughter date to be used for analyses was 27 January 2021. The last slaughter date included was 12 October 2022, since the treatment data collection stopped at the end of September 2022, resulting in 3630 included observations. The slaughterhouse lesions were then aggregated into five categories: respiratory health (lesions of lung, pleura and pericardium), other organ health (lesions of liver, intestines and peritoneum), health of the extremities (arthritis, bursitis), integrity of the carcass (lesions of the skin, including tail lesions and necroses) and general health (including all lesions). An overview of the datasets and the analyses they were used for are displayed in Table 2.
+
+Table 2 Numbers and nature of datasets used for the different analyses. OR = odds ratios, LSM = least square means, SE = standard errors.
+
+Dataset	Numbers of observations	Nature of dataset	Used for	
+Dataset 1	2208	Treatment data	Descriptive analyses of treatment categories per production area, Frequencies of the treatment categories, number of repeated treatments, distribution of treatments throughout the data collection period	
+Dataset 2	9890 = Piglet production 8976 = Rearing unit 8144 = Fattening unit8144 = Overall	Treatment data and lists generated on the first day of the piglets' lives	Descriptive analyses of treatment frequency of individuals for the treatment categories and production areas	
+Dataset 3	3630	Treatment data, lists generated on the first day of the piglets' lives and veterinary slaughter inspection data	Statistical analyses with logistic regression models: significance, OR, LSM, their SE and their differences	
+
+2.5 Statistical analyses
+
+For the statistical analyses of the relation between veterinary slaughter inspection data and age at treatment, Dataset 3 was used. The veterinary slaughter lesions were presented as binary data defining the absence or presence of lesions. Lesions of the pleura and lung were classified in the lists provided as negative, marginal, moderate and severe. The scorings of the lesions were aggregated to a binary score: (0) absent (negative, marginal) and (1) present (moderate, severe). The variable “treatment and stage of life” (TS) was generated: (00) no treatment, (10) treatment in the early stage of life (piglet production and rearing unit), (01) treatment in the later stage of life (fattening unit) and (11) treatment in both stages of life. To integrate potential effects of birth group and season, the variable birth group was created. One birth group included three subsequent farrowing groups.
+
+Logistic regression models following logit functions were used to carry out the analyses. The dependent variables, in this case the veterinary slaughter lesions in the categories general health, respiratory health, other organ health, health of the extremities or integrity of the carcass, were explained by the three fixed effects TS, slaughterhouse (A, B) and birth group (A to J). The fixed effects were included in the model in a stepwise manner, considering Akaike's information criterion (AIC) and the deviance divided by its degrees of freedom (target value = 1). For the interpretation of the data, 5 % were used as level of significance, the odds ratios (ORs), the least square means (LSMs), and their standard errors (SEs), and their differences were considered, with the level of significance adjusted by Bonferroni.
+
+3 Results
+
+3.1 Descriptive analyses
+
+3.1.1 Treatment intervals and frequencies
+
+For the LOC category, the treatment interval of 14 d was defined, as 90 % of the treatments were separated by less than 14 d. In the other categories (CNS, GIT, RES; RUN, SKI, TAI and OTH), a uniform solution was found with an interval of 6 d derived from rearing and fattening since the majority of treatments (82.1 %) were carried out in these production areas.
+
+Overall, 18.2 % of all pigs going through all production areas were treated individually (Table 3). The LOC category occupied the most observations, representing 46.9 % of the treatments over all units. The next most frequent treatment reasons were in the RUN category (12.6 %), followed by the TAI (12.5 %) and RES (10.7 %) categories.
+
+Table 3 Treated individuals in the production areas piglet production, rearing unit and fattening unit. Displayed are categories with > 1 % treated pigs. The categories include all treatments (ALL) and treatments of the central nervous system (CNS), the gastrointestinal tract (GIT), the locomotor system (LOC), the respiratory system (RES), runt pigs (RUN) and tail lesions (TAI).
+
+Production area	Category	Treated pigs	Proportion (%)	
+Overall ( n=8144 )	ALL	1480	18.2	
+Piglet production ( n=9890 )	ALL	358	3.62	
+GIT	134	1.35	
+LOC	161	1.63	
+Rearing unit ( n=8976 )	ALL	705	7.85	
+LOC	351	3.91	
+RUN	172	1.92	
+Fattening unit ( n=8144 )	ALL	639	7.85	
+LOC	331	4.06	
+RES	122	1.50	
+TAI	164	2.01	
+
+Out of all the treatments, 17.2 % were applied in the piglet production. In the rearing unit 40.4 % of all treatments were administered, and the most treatments (42.4 %) were administered in the fattening unit. In the piglet production 3.6 % and in both the rearing and fattening unit 7.85 % of all pigs received treatments.
+
+The proportions of treatment categories for each production area are displayed in Fig. 3. It highlights that, in addition to LOC treatments, which were present from 45.5 % to 47.4 %, the treatment focus was put on different treatment categories depending on the production area. While it was put on the GIT category (35.5 %) in the piglet production and on the RUN category (21.2 %) in the rearing unit, in the fattening unit the focus shifted towards the TAI category (24.4 %).
+
+Regarding repeated treatments of individuals in the LOC category, 6.1 % and 5.8 % of the treated rearing piglets and the treated fattening pigs received more than one treatment, respectively. While the other categories over the production areas presented low numbers of repeated treatments, the TAI category in the fattening unit with 15.3 % of repeatedly treated individuals can be pointed out.
+
+Figure 3 Proportion of treatment categories in the production stages piglet production, rearing unit and fattening unit. The categories include treatments of the central nervous system (CNS), the gastrointestinal tract (GIT), the locomotor system (LOC), the respiratory system (RES), runt pigs (RUN), skin lesions (SKI), tail lesions (TAI) and other treatments (OTH). A, B and C indicate significant differences between production stages within treatment categories.
+
+3.1.2 Distribution of treatments over time
+
+When looking at the treatments of all production areas, a mean value of 2.75 individual treatments was carried out over all the units each day. A number of individual treatments per day were carried out: in the piglet production 0.43, in the rearing unit 1.08 and in the fattening unit 1.23 (Table 4). Over all the units the most treatments were counted in January 2022 and the fewest treatments in August 2022.
+
+Table 4 Treatments per day for the different categories in the production areas with 760 d with observations. Displayed are categories with mean treatments > 0.1 d−1. The categories include all treatments (ALL) and treatments of the central nervous system (CNS), the gastrointestinal tract (GIT), the locomotor system (LOC), the respiratory system (RES), runt pigs (RUN) and tail lesions (TAI).
+
+Production area	Category	Mean	Minimum	Maximum	Standard deviation	
+Overall	ALL	2.75	0	32	4.06	
+Piglet production	ALL	0.43	0	27	1.90	
+GIT	0.11	0	27	1.50	
+LOC	0.23	0	14	0.96	
+Rearing unit	ALL	1.08	0	18	2.14	
+CNS	0.12	0	7	0.54	
+LOC	0.56	0	14	1.29	
+RUN	0.25	0	13	1.08	
+Fattening unit	ALL	1.23	0	24	2.39	
+LOC	0.58	0	9	1.11	
+RES	0.18	0	24	1.30	
+TAI	0.30	0	14	1.16	
+
+Treatments within the GIT category in the piglet production appeared only in the periods between January and March 2021 and September and October 2021, when the most treatments were counted in this production area (Fig. 4a).
+
+By contemplating all treatments in the rearing unit, accumulated treatments occurred in September to November 2020, June to August 2021 and around March 2022. Peaks within the RUN category occurred in November 2020, July and August 2021, and March and May 2022. Looking at the LOC category, there were peaks in treatments from June to August in 2021 and 2022 and another peak in January to March 2022. Therefore, treatments occurred throughout the whole period of data collection, and no definite trends were detected.
+
+In the fattening unit, the highest treatment numbers occurred in November and December 2021. There were lower treatment numbers in the warmer months of the years compared to the colder months (Fig. 4b). Treatments in the LOC category peaked in both October 2020 and in December 2021, while treatments in the TAI category prominently peaked in December 2021.
+
+Figure 4 Distribution of individual treatments from September 2020 to September 2022 (a) for treatments of the gastrointestinal tract (GIT) in the piglet production and (b) for all treatments in the fattening unit.
+
+3.1.3 Lesions at slaughter
+
+Lesions in the general health category were found in 18.1 % of all pigs. Over all pigs, 15.5 % showed lesions in the respiratory health category, 2.64 % in the other organ health category, 0.28 % in the health of the extremities category and 1.35 % in the integrity of the carcass category. Due to the low prevalence in the other categories, only the general health category and the respiratory health category are considered in the following statistical analyses.
+
+The proportions of variable TS in Dataset 3 are presented as follows: of all pigs arriving at slaughter, 17.4 % were treated at least once in their lives, similar to the results gathered from Dataset 2, and 18.2 % were treated at least once in their lives (Table 3). Treatments in the early stage of life were administered to 8.76 %, treatments in the later stage of life were administered to 7.55 % and treatments in both stages were administered to 1.07 % of all pigs arriving at slaughter.
+
+3.2 Logistic regression models
+
+3.2.1 General health model
+
+For the logistic regression model regarding the general health at slaughter (GHM), the smallest AIC was achieved after integrating the variables TS, slaughterhouse and birth group in a stepwise manner. The deviance moved towards 1 (1.24 to 1.02). The Hosmer–Lemeshow goodness-of-fit test indicated good fit. The variables TS and birth group presented with p<0.001 and were considered to have a significant effect on the slaughter lesions.
+
+The LSMs and their differences are displayed in Fig. 5. In Fig. 5a, it is visible that having received a treatment in the early ( p=0.016 ) or the later ( p<0.001 ) stage of life is statistically different to having received no treatment. The LSMs were determined as 0.25 (SE: 0.04) for pigs treated in the early stage of life, 0.29 (SE: 0.05) for pigs treated in the later stage of life, 0.22 (SE: 0.07) for pigs treated in both stages and 0.17 (SE: 0.03) for pigs that were not treated.
+
+Figure 5 Least square means and standard errors for slaughter lesions of the variable “treatment and stage of life” (a) in the general health model (GHM) and (b) in the respiratory health model (RHM) and of the variable “birth group” (c) in the GHM and (d) in the RHM.
+
+The ORs, displayed in Fig. 6a, indicate higher risks of slaughter lesions of individuals having received treatments in the early (OR = 1.6, 95 % confidence interval (95 % CI): 1.2 to 2) and later (OR = 1.9, 95 % CI: 1.4 to 2.5) stages of life when compared to no treatments. This is not the case for individuals having received treatments in both defined stages of life.
+
+Regarding the slaughterhouses, the ORs do not indicate higher or lower risks of lesions if the pigs were inspected at either slaughterhouse A or B. No statistical differences in the LSMs were found.
+
+The LSMs for the birth groups ranged from 0.09 to 0.38, with the lowest value determined for birth group J (SE: 0.05) and the highest value for birth group D (SE: 0.04). Birth groups D, G and H, which present with the highest LSMs, differ significantly to birth groups B and C. The complexity of the differences in LSM of the birth groups is displayed in Fig. 5c.
+
+The ORs of the birth groups are determined in comparison to the risk of birth group A. The ORs show that birth groups D (OR = 2.1, 95 % CI: 1.4 to 3.1), G (OR = 1.6, 95 % CI: 1.1 to 2.1) and H (OR = 1.6, 95 % CI: 1.2 to 2.2) have higher risks, whereas the other birth groups present with similar risks of slaughter lesions.
+
+3.2.2 Respiratory health model
+
+In the respiratory health model (RHM), the best-fitting AIC could be obtained after integrating the variables TS, slaughterhouse and birth group in a stepwise manner, as well as a deviance close to 1. The Hosmer–Lemeshow goodness-of-fit test also indicated good fit. Overall the RHM is similar to the GHM; the differences are pointed out in the following.
+
+In Fig. 5b, it is visible that having received a treatment in the early ( p=0.005 ) or the later ( p=0.004 ) stage of life is statistically different to having received no treatment. The LSMs presented with 0.21 (SE: 0.04) for pigs treated in the early stage of life, 0.21 (SE: 0.04) for pigs treated in the later stage of life, 0.14 (SE: 0.06) for pigs treated in both stages and 0.14 (SE: 0.03) for pigs that were not treated.
+
+Figure 6 Odds ratios for the variable treatment and stage of life and slaughterhouse (a) in the general health model and (b) in the respiratory health model.
+
+Both risks of lesions at slaughter were present if treatments in either one of the life stages were performed with an OR = 1.7 (95 % CI: 1.2 to 2.2 for early treatments; 95 % CI: 1.3 to 2.3 for late treatments) (Fig. 6b).
+
+The LSM for the birth groups ranged from 0.05 (birth group J, SE: 0.02) to 0.32 (birth group D, SE: 0.07). Birth groups D and H, which present with the highest LSM, differ significantly to birth groups A, B, C and J. The complexity of differences in LSM is displayed in Fig. 5d.
+
+In this model, birth group F also presents with a higher risk (OR = 1.6, 95 % CI: 1.1 to 2.3) of slaughter lesions. It is noticeable that especially for birth group D (OR = 2.5, 95 % CI: 1.6 to 3.9) a higher OR is present than in the general health model. Additionally, birth group J has a lower risk (OR = 0.3, 95 % CI: 0.1 to 0.9) for slaughter lesions.
+
+4 Discussion
+
+4.1 Treatment data
+
+This study focusses on the relation of treatment data and slaughter lesions, to investigate the hypothesis that pigs which never required treatments were healthier at slaughter than pigs which were treated at least once.
+
+Whether treatment data can fully reflect the disease occurrence of a herd is controversially discussed. Kelton et al. (1998) suggested it can lead to over-reporting when diseases require more than one treatment or when treatments are utilised for prophylactic measures. To prevent over-reporting in the context of ongoing treatments in the present study, treatment intervals were used, following the approaches of other studies (Christensen et al., 1994; Dunlop et al., 1998; Houe et al., 2011). With regard to over-reporting due to prophylactic measures, vaccinations and anthelmintic treatments were excluded from the analyses. Other prophylactic treatments did not take place during the time of data collection. In this context, following the guidelines for the prudent use of veterinary antimicrobial drugs, the prophylactic use of antimicrobials must be avoided in Germany (Federal Ministry of Food and Agriculture, 2010), and since January 2022, the prophylactic and metaphylactic use of antibiotic treatment has been prohibited in the European Union and reserved for justified exceptions, e.g. when risks of infections are very high, major consequences are expected and no alternatives are available, following Regulation (EU) 2019/06. In contrast to over-reporting, under-reporting might take place if individuals are considered healthy, even though they show symptoms of disease, or the disease is simply not treated (Kelton et al., 1998; Weber et al., 2015).
+
+In the context of animal welfare, it is known that disease or the absence of disease reflects the welfare status and stress level of the animals (Sainsbury, 1986; von Borell, 2000). In the literature it is described that several data sources such as clinical observations combined with treatments and slaughter lesions should be considered to fully be able to reflect on a herd's welfare status (Bonde et al., 2005; Wadepohl et al., 2020). A full audit on clinical observations from independent observers as carried out in other studies is time-consuming, is expensive and only reflects on the health status of a herd at a single moment, where some clinical signs can easily be overlooked or underestimated by the observer because they are not shown constantly, e.g. coughing and diarrhoea (Nielsen et al., 2022; Petersen et al., 2008). For the assessment of lameness, every pig that does not move at the time of audit has to be motivated to move as practised in the study of Willgert et al. (2014).
+
+Since it is mandatory to document treatments in the European countries, this study explored the possibilities of the mandatory documentation of on-farm treatment data in a digitalised form. To date, there are few studies relying on on-farm treatment data collection, as it is considered inaccurate and data are rarely available in a standardised format for comparative purposes. However, on-farm data collection has been described as being successful and feasible, especially when electronic documentation is utilised (Menéndez González et al., 2010; Merle et al., 2012; Trauffler et al., 2014). Because veterinary dispensary records are mostly thoroughly recorded, they are used more often to investigate the health status of herds (Bonde et al., 2005; Knage-Rasmussen et al., 2015). Nevertheless, they could potentially lead to an over-reporting of treatments, since there could be a discrepancy present between prescribed and administered medicines (Bracken, 2017).
+
+In this study, malfunctions of the systems used on-farm and in the slaughterhouses led to loss of data. On-farm, technical malfunctions, which could not be fixed immediately, caused loss of treatment data in four time periods of between 1 week and 2 months of length. This highlights the need for technical improvements, before the system can be feasibly used on commercial farms. At the slaughterhouse, one-third of the RFID ear tags were not read; therefore, the data could not be linked to the individual animals. That is attributed to neglecting to switch on the readers during the slaughter routine or to the loss of ear tags on the farm and during transportation to the slaughterhouse. Caja et al. (2005) found 1.2 % of ear tags were lost during transportation to the slaughterhouse. Other literature found 4 % to 7 % of RFID ear tags to have been lost on the farm (Maselyne et al., 2014; Thölke and Wolf, 2022).
+
+Additionally, the treatment number is too low because group treatments were not included in the data collection. Nevertheless, group treatments were administered mainly in the rearing unit and rarely in the fattening unit to treat respiratory diseases predominantly. Since European legislation forbids prophylactic and metaphylactic treatments, the pigs with the most severe disease symptoms were likely to have been treated individually before group treatments were initiated. This could be confirmed with the comparison of the distribution of treatments over time and the handwritten documentation of group treatments, as peaks of individual treatments within the categories occurred prior to the administration of group treatments. As only animals with severe disease symptoms were treated individually, animals with subclinical respiratory diseases may likely be only treated in group treatments but still show respiratory lesions at slaughter. This could explain the contrast between the on-farm individual treatment data and the respiratory lesion data of the slaughterhouse.
+
+Furthermore, a limitation in terms of a “healthy worker effect” first described by McMichael (1976) is likely to be present in this study. Of course, individuals that died within the farrow-to-finish period could not be included in the analyses of the treatments and slaughter lesions; thus the investigated pigs may only represent the strong individuals of the farm.
+
+4.2 Treatment frequencies
+
+Within this study, 18.2 % of all pigs had undergone treatment once in their life. Nielsen et al. (2022) pointed out that there is a variation of treatment prevalence in conventional pig farms, finding prevalence of 5 to 13 % in their study, in which only data on the piglet production were integrated. As described by Hybschmann et al. (2011) for the example of gastrointestinal disorders, differences in treatment incidences are related not only to disease incidences but also to management factors, biosecurity measures, and treatment decisions in accordance with the individual farmers and veterinarians' attitude.
+
+Raasch et al. (2018) found, in a sample size of 60 farrow-to-finish herds in Germany, the most treatments to be administered at the rearing unit, which would reflect the results of the present study if group treatments were considered. In the present study, the individual treatment numbers were slightly lower in the rearing unit than in the fattening unit. When contemplating the treated individuals per production area, 7.85 % of all pigs were treated in both units. Considering the periods, the pigs stayed 4–5 weeks in the rearing unit, while they stayed 3–4 months in the fattening unit; the same number of pigs had been treated in a shorter period in the rearing unit. Additionally, more treatments were applied at the fattening unit to the same number of individuals, which can be attributed to the relatively high numbers of repeated treatments within the TAI category in this production area.
+
+4.3 Treatment focus of production areas
+
+In the piglet production, the focus of treatments was on the LOC and GIT categories, which have also been the main indications for treatments in this production area in other studies (Christensen et al., 1994; Johansen et al., 2004; Nielsen et al., 2022; Raasch et al., 2018). Nielsen et al. (2022) found GIT treatments especially in piglets that were being cross-fostered and discussed it as being due to an increased potential for pathogen transmission, increased stress levels and disturbed feed intake. Since the high numbers in GIT treatments increase the overall treatment numbers for the piglet production when they occur, the role of infectious diseases is highlighted, especially for this production area. In this context, the importance of biosecurity measures, including cleaning and disinfection routines to avoid disease entrance and transmission, and their relation to treatments is underlined as it has been in other studies (Pandolfi et al., 2018; Postma et al., 2017; Raasch et al., 2018).
+
+Focusing on the rearing unit, indications within the LOC and RUN categories played an important role. Raasch et al. (2018) reported mainly gastrointestinal and respiratory diseases in addition to lameness in this production area. They had a high proportion of orally administered treatments in their study, and Timmerman et al. (2006) described that oral treatments are mainly administered post weaning to treat gastrointestinal diseases, arthritis or respiratory diseases. Sarrazin et al. (2019) found that group treatments were mainly administered in the rearing unit in Europe. The present study did not take group treatments into account, and group treatments were administered to treat gastrointestinal and respiratory diseases, which explains the difference in results. Nevertheless, high numbers of treatments in the RUN category are present in this study. Explanations can be sought in the challenging process of weaning, during which piglets have to adjust to new surroundings, cope with unfamiliar piglets as they are regrouped and have to deal with nutritional challenges. This may lead to a low immune status of rearing piglets and an accumulation of diseases occurring at that time (Campbell et al., 2013; Weary et al., 2008).
+
+In the fattening unit, the treatment focus in this study was on the LOC and TAI categories. Higher occurrences of tail biting in undocked pigs than in docked pigs, as well as in conventional farms when compared to wean-to-finish farming systems, have been found in other studies (Gentz et al., 2020; Schrøder-Petersen and Simonsen, 2001). Nevertheless, the consequences of tail docking in the form of acute and chronic pain should be highlighted and considered ethically (Valros and Heinonen, 2015). In the literature, a relation between decreasing temperatures and an increasing prevalence of tail lesions and lameness has been described (EFSA, 2007; Lee et al., 2020; Zoric et al., 2003), which concurs with the distribution of treatments over time in this study. A relationship between heat stress and tail lesions has been discussed as well (D'Eath et al., 2014; EFSA, 2007; Schrøder-Petersen and Simonsen, 2001). Since tail lesions may lead to intercurrent disease, for example respiratory disease, due to the spread of bacteria resulting in septicaemia or pyaemia, this could lead to the overall higher treatment numbers in this production area, when they occur (Schrøder-Petersen and Simonsen, 2001). The reduction of treatments towards the warmer months of the year 2022 may also have been related to the reduction of pigs per pen in April 2022. Meyns et al. (2011) described that less space per individual heightens the risk of disease occurrences. The relatively high numbers of repeatedly treated individuals in the TAI category might indicate that tail-biting management could be optimised by, for example, following tail-biting intervention protocols as proposed by Chou et al. (2019).
+
+4.4 Lesions at slaughter
+
+The reported slaughter lesions do not reflect the on-farm treatment reasons, since there were only small numbers of lesions other than respiratory-health-related lesions reported. This is in accordance with studies by Horst et al. (2020), Pandolfi et al. (2018) and Teixeira et al. (2016). Additionally, Bonde et al. (2010) found that parasitic, intestinal and heart disorders are likely to be underestimated at slaughter. Similar risk factors such as climate and housing factors may result in the presence of tail lesions, which were treated mainly during the fattening period, and respiratory lesions, which were reported frequently at slaughter (EFSA, 2007; Meyns et al., 2011; Stärk, 2000). Correia-Gomes et al. (2017) pointed out that it is difficult to assess tail damage due to the rapid speed of the lines and the position of the observer. Thus, respiratory lesions may be more likely to be reported.
+
+4.5 Logistic regression models
+
+Both statistical models describe a similar situation, since the GHM contains all the information of the RHM in addition to the slaughter lesions of the other categories, and the majority of slaughter lesions were documented in the respiratory health category.
+
+The two slaughterhouses integrated in the models did not differ significantly, even though the number of observations differed. The exclusion of slaughterhouse B, to which relatively low numbers of pigs were sent, did not result in a difference in results of the models. The effects of different thresholds to document lesions by meat inspectors and the effects of slaughterhouses and farms have been discussed in other studies (Bonde et al., 2010; Eckhardt et al., 2009; Enøe et al., 2003; Hoischen-Taubner et al., 2011).
+
+There is a positive relation present between treatments and lesions documented at slaughter, when treatments were performed either in the early or in the later stages of life but not when they were performed in both stages. The risk of lesions for individual pigs which received treatments in the later stage of life is higher in the GHM than in the RHM, which leads to the assumption that lesions which are not respiratory-health-related show more prominently when the diseases have recently occurred. Blocks et al. (1994) found slaughter lesions to be positively related to initiation of treatments especially when treatments were applied nearer to the slaughter date. Nevertheless, treatments in the early stages of life also posed higher risks of lesions at slaughter. The literature discusses the first 12 weeks in a piglet's life to be critical especially in developing gastrointestinal immunity. For a good and long-term maturation of the immune system, an immunosuppressive environment seems to be essential (Moeser et al., 2017). Early disease events might influence this development, resulting in higher susceptibility to disease in the pig's ongoing life.
+
+Birth group J had the lowest LSM of slaughter lesions. When looking deeper into the treatment data of birth group J, it presents with the least number of treated pigs in the group. As mentioned before, this could be due to the reduction of pigs per pen in April 2022, since Meyns et al. (2011) described that space per individual correlated with disease occurrences. There are other differences between the birth groups, as shown in Fig. 5c and d. However, the effect birth group may comprise more effects like season, management or outbreaks of disease, which could not be included individually in the model. The individual influences of these effects could be investigated in more detail in future studies.
+
+Treatments performed in both stages of life did not pose a statistically significant higher risk of slaughter lesions. There is a relatively low number of individual pigs which received treatments in both stages in Dataset 3. Salas-Eljatib et al. (2018) found that unbalanced datasets result in higher variabilities, which might result in the wide range of confidence limits of the OR and the high standard error of LSM, which is especially visible when contemplating the LSM in the GHM (Fig. 5a).
+
+4.6 Limitations
+
+While the findings provide valuable insights, limitations should be acknowledged. As mentioned, group treatments were not included in the analysis, because it was not possible to link the treatments to the individual animals. Since one reason for group treatments was respiratory diseases, these may be underestimated in this study. Additionally, data were lost on the farm, because malfunctions of the system could not be easily fixed. Moreover, identification of some animals at the slaughterhouse was not possible because of lost ear tags or because of neglecting the ear tag reader in the routine of the slaughterhouse. Therefore, some data could not be linked to the individual animal and had to be excluded from analysis. This was mitigated by prolonging the period of data collection to ensure a sufficient sample size. Furthermore, this study was conducted on a commercial farm. Thus, it was not possible to control all aspects of this study, as some measures were based on management decisions. As a consequence, there are effects which could not be included individually in the logistic regression models which may be part of the fixed effect birth group. As those effects cannot be distinguished in this analysis, the interpretation of the effect birth group is difficult. This could be further investigated in future studies conducted on research farms with controlled environments.
+
+5 Conclusions
+
+This study highlighted the value of digitalised treatment data, in special regard to the overview such data can provide. However, technical improvements are still needed to ensure reliability and to avoid data losses. The most frequent reasons for treatment of individual animals were in the category of the locomotor system and in the fattening unit within the category of tail lesions. By putting treatment data linked to the individual animal in relation to lesions reported at slaughter, a positive relation between treatments in the early or later stages of the individual's life was observed. However, a positive relation between treatments in both stages of the individual's life could not be confirmed.
+
+Acknowledgements
+
+We would like to acknowledge and thank the farmer and farm staff for their participation in the study and all their support.
+
+Data availability
+
+Data are available from the corresponding author upon reasonable request.
+
+Author contributions
+
+Conceptualisation: HG and JK; data curation: HG; formal analysis: HG and ID; funding acquisition: JK; investigation: HG, JK, ID and TW; project administration: JK; resources: JK; supervision: JK, NK, ID and TW; validation: JK and NK; visualisation: HG; writing (original draft): HG; writing (review and editing): HG, JK, NK, ID and TW.
+
+Competing interests
+
+The contact author has declared that none of the authors has any competing interests.
+
+Ethical statement
+
+No animal experiments were carried out. All animal treatments were carried out primarily for the farmers' management purposes and not for scientific ones. The animals in the study were normally farmed animals and were housed conventionally. The animals were kept according to EU as well as national law (“German Animal Welfare Act” (German designation: TierSchG) and the “German Order for the Protection of Production Animals used for Farming Purposes and other Animals kept for the Production of Animal Products” (German designation: TierSchNutztV)). Sensitive personal data have been handled following best-practice guidelines, protocols and the “General Data Protection Regulation” (Regulation (EU) 2016/679).
+
+Review statement
+
+This paper was edited by Christian Nawroth and reviewed by Nikola Čobanović and one anonymous referee.
+
+
+References
+
+Bareille N Beaudeau F Billon S Robert A Faverdin P Effects of health disorders on feed intake and milk production in dairy cows Livest Prod Sci 83 53 62 10.1016/S0301-6226(03)00040-X 2003
+Baumgärtner W Gruber AD Spezielle Pathologie für die Tiermedizin 2nd ed. Stuttgart, Germany Georg Thieme Verlag 16 pp ISBN 9783132428591 2020
+Blocks GHM Vernooy JCM Verheijden JHM Integrated quality control project: Relationships between pathological findings detected at the slaughterhouse and information gathered in a veterinary health scheme at pig farms Vet Quart 16 123 127 10.1080/01652176.1994.9694432 1994 7985354
+Bonde M Baadsgaard NP Sørensen JT Sundrum A Weißmann F Documentation of animal health in organic pig herds Organic pig production in free range systems Braunschweig, Germany Landbauforschung Völkenrode – FAL Agricultural Research, Die Deutsche Bibliothek 45 50 ISBN 3-86576-005-8 2005
+Bonde M Toft N Thomsen PT Sørensen JT Evaluation of sensitivity and specificity of routine meat inspection of Danish slaughter pigs using Latent Class Analysis Prev Vet Med 94 165 169 10.1016/j.prevetmed.2010.01.009 2010 20132995
+Bracken J Roadmap to the Digital Transformation of Animal Health Data Front Vet Sci 4 123 10.3389/fvets.2017.00123 2017 28879202 PMC5572109
+Bundesministerium der Justiz und für Verbraucherschutz Tierschutz-Nutztierhaltungsverordnung in der Fassung der Bekanntmachung vom 22. August 2006 (BGBl. I S. 2043), die zuletzt durch Artikel 1a der Verordnung vom 29. Januar 2021 (BGBl. I S. 146) geändert worden ist, TierSchNutztV last access: 14 September 2025 https://www.gesetze-im-internet.de/tierschnutztv/index.html 2021
+Buttchereit N Stamer E Junge W Thaller G Genetic parameters for energy balance,fat/protein ratio, body condition score and disease traits in German Holstein cows J Anim Breed Genet 129 280 288 10.1111/j.1439-0388.2011.00976.x 2012 22775260
+Caja G Hernández-Jover M Conill C Garín D Alabern X Farriol B Ghirardi J Use of ear tags and injectable transponders for the identification and traceability of pigs from birth to the end of the slaughter line J Anim Sci 83 2215 2224 10.2527/2005.8392215x 2005 16100077
+Campbell JM Crenshaw JD Polo J The biological stress of early weaned piglets J Anim Sci Biotechnol 4 19 10.1186/2049-1891-4-19 2013 23631414 PMC3651348
+Carenzi C Verga M Animal welfare: review of the scientific concept and definition Ital J Anim Sci 8 21 30 2009
+Chou J-Y O'Driscoll K D'Eath RB Sandercock DA Camerlink I Multi-Step Tail Biting Outbreak Intervention Protocols for Pigs Housed on Slatted Floors Animals 9 582 10.3390/ani9080582 2019 31434257 PMC6720717
+Christensen J Ellegaard B Kirkegaard Petersen B Willeberg P Mousing J Pig health and production surveillance in Denmark: sampling design, data recording, and measures of disease frequency Prev Vet Med 20 47 61 1994
+Correia-Gomes C Eze JI Borobia-Belsué J Tucker AW Sparrow D Strachan D Gunn GJ Voluntary monitoring systems for pig health and welfare in the UK: Comparative analysis of prevalence and temporal patterns of selected non-respiratory post mortem conditions Prev Vet Med 146 1 9 10.1016/j.prevetmed.2017.07.007 2017 28992912
+Dalmau A Velarde A Scott K Edwards S Veissier I Keeling L Butterworth A van Overbeke G Bedaux V Welfare Quality assessment protocol for pigs (sows and piglets, growing and finishing pigs) Lelystad, Netherlands Welfare Quality Consortium 122 pp ISBN 978-90-78240-05-1 2009
+Die Bundesregierung AVV Lebensmittelhygiene vom 9. November 2009, zuletzt geändert durch Verwaltungsvorschrift vom 07.07.2022 (BAnz AT 19.07.2022 B2), AVV LmH last access: 14 September 2025 Available from: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_09112009_329225270006.htm 2009
+D'Eath RB Arnott G Turner SP Jensen T Lahrmann HP Busch ME Niemi JK Lawrence AB Sandøe P Injurious tail biting in pigs: How can it be controlled in existing systems without tail docking? Animal 8 1479 1497 10.1017/S1751731114001359 2014 25130712
+Dunlop RH McEwen SA Meek AH Black WD Clarke RC Friendship RM Individual and group antimicrobial usage rates on 34 farrow-to-finish swine farms in Ontario, Canada Prev Vet Med 34 247 264 10.1016/S0167-5877(97)00093-7 1998 9618740
+Eastwood C Klerkx L Ayre M Dela Rue B Managing Socio-Ethical Challenges in the Development of Smart Farming: From a Fragmented to a Comprehensive Approach for Responsible Research and Innovation J Agric Environ Ethics 32 741 768 10.1007/s10806-017-9704-5 2019
+Eckhardt P Fuchs K Kornberger B Köfer J A study of the reliability of findings obtained during meat inspection of slaughter pigs Wien Tierarztl Monatsschr 96 145 153 2009
+EFSA The risks associated with tail biting in pigs and possible means to reduce the need for tail docking considering the different housing and husbandry systems: Scientific Opinion of the Panel on Animal Health and Welfare EFSA J 5 611 10.2903/j.efsa.2007.611 2007
+Enøe C Christensen G Andersen S Willeberg P The need for built-in validation of surveillance data so that changes in diagnostic performance of post-mortem meat inspection can be detected Prev Vet Med 57 117 125 10.1016/s0167-5877(02)00229-5 2003 12581595
+Federal Ministry of Food Agriculture Guidelines for the prudent use of veterinary antimicrobial drugs -with notes for guidance- German Veterinary Journal Schlütersche Fachmedien GmbH 10 last access: 14 September 2025 Available from: https://www.bmleh.de/SharedDocs/Downloads/EN/_Animals/Antibiotikaleitlinien.pdf?__blob=publicationFile&v=2 2010
+Gentz M Lange A Zeidler S Lambertz C Gauly M Burfeind O Traulsen I Tail Lesions and Losses of Docked and Undocked Pigs in Different Farrowing and Rearing Systems Agriculture 10 130 10.3390/agriculture10040130 2020
+Hoischen-Taubner S Blaha T Werner C Sundrum A Repeatability of anatomical-pathological findings at the abattoir for characteristics of animal health Arch Lebensmittelhyg 62 82 87 10.2376/0003-925X-62-82 2011
+Horst A Gertz M Hasler M Krieter J Pig Organ Lesions Recorded in Different Abattoirs: A Statistical Approach to Assess the Comparability of Prevalence Agriculture 10 319 10.3390/agriculture10080319 2020
+Houe H Sandøe P Thomsen PT Welfare Assessments Based on Lifetime Health and Production Data in Danish Dairy Cows J Appl Anim Welf Sci 14 255 264 10.1080/10888705.2011.576984 2011 22044296
+Hybschmann GK Ersbøll AK Vigre H Baadsgaard NP Houe H Herd-level risk factors for antimicrobial demanding gastrointestinal diseases in Danish herds with finisher pigs: A register-based study Prev Vet Med 98 190 197 10.1016/j.prevetmed.2010.10.005 2011 21071103
+Janssen SJC Porter CH Moore AD Athanasiadis IN Foster I Jones JW Antle JM Towards a new generation of agricultural system data, models and knowledge products: Information and communication technology Agr Syst 155 200 212 10.1016/j.agsy.2016.09.017 2017 28701813 PMC5485661
+Johansen M Alban L Kjaersgård HD Baekbo P Factors associated with suckling piglet average daily gain Prev Vet Med 63 91 102 10.1016/j.prevetmed.2004.01.011 2004 15099719
+Kelton DF Lissemore KD Martin RE Recommendations for Recording and Calculating the Incidence of Selected Clinical Diseases of Dairy Cattle J Dairy Sci 81 2502 2509 10.3168/jds.S0022-0302(98)70142-0 1998 9785242
+Knage-Rasmussen KM Rousing T Sørensen JT Houe H Assessing animal welfare in sow herds using data on meat inspection, medication and mortality Animal 9 509 515 10.1017/S1751731114002705 2015 25385251
+Lee H Perkins C Gray H Hajat S Friel M Smith RP Williamson S Edwards P Collins LM Influence of temperature on prevalence of health and welfare conditions in pigs: time-series analysis of pig abattoir inspection data in England and Wales Epidemiol Infect 148 1 8 10.1017/S0950268819002085 2020 PMC7026902 32066511
+Maselyne J Saeys W Ketelaere Bde Mertens K Vangeyte J Hessel EF Millet S van Nuffel A Validation of a High Frequency Radio Frequency Identification (HF RFID) system for registering feeding patterns of growing-finishing pigs Comput Electron Agric 102 10 18 10.1016/j.compag.2013.12.015 2014
+McMichael AJ Standardized mortality ratios and the “healthy worker effect”: Scratching beneath the surface J Occup Med 18 165 168 10.1097/00043764-197603000-00009 1976 1255276
+Menéndez González S Steiner A Gassner B Regula G Antimicrobial use in Swiss dairy farms: Quantification and evaluation of data quality Prev Vet Med 95 50 63 10.1016/j.prevetmed.2010.03.004 2010 20381180
+Merle R Hajek P Käsbohrer A Hegger-Gravenhorst C Mollenhauer Y Robanus M Ungemach F-R Kreienbrock L Monitoring of antibiotic consumption in livestock: A German feasibility study Prev Vet Med 104 34 43 10.1016/j.prevetmed.2011.10.013 2012 22115924
+Meyns T van Steelant J Rolly E Dewulf J Haesebrouck F Maes D A cross-sectional study of risk factors associated with pulmonary lesions in pigs at slaughter Vet J 187 388 392 10.1016/j.tvjl.2009.12.027 2011 20122861
+Moeser AJ Pohl CS Rajput M Weaning stress and gastrointestinal barrier development: Implications for lifelong gut health in pigs Anim Nutr 3 313 321 10.1016/j.aninu.2017.06.003 2017 29767141 PMC5941262
+Morrone S Dimauro C Gambella F Cappai MG Industry 4.0 and Precision Livestock Farming (PLF): An up to Date Overview across Animal Productions Sensors 22 4319 10.3390/s22124319 2022 35746102 PMC9228240
+Nielsen CL Krogh MA Sørensen JT Kongsted H A field trial on the effect of cross-fostering on performance, clinical health and antibiotic usage during the suckling period of pigs Prev Vet Med 205 1 8 10.1016/j.prevetmed.2022.105678 2022 35665608
+Nielsen SS Nielsen GB Denwood MJ Haugegaard J Houe H Comparison of recording of pericarditis and lung disorders at routine meat inspection with findings at systematic health monitoring in Danish finisher pigs Acta Vet Scand 57 18 10.1186/s13028-015-0109-z 2015 25887329 PMC4381412
+Nielsen SS Denwood MJ Forkman B Houe H Selection of Meat Inspection Data for an Animal Welfare Index in Cattle and Pigs in Denmark Animals 7 94 10.3390/ani7120094 2017 29211009 PMC5742788
+Pandolfi F Edwards SA Maes D Kyriazakis I Connecting Different Data Sources to Assess the Interconnections between Biosecurity, Health, Welfare, and Performance in Commercial Pig Farms in Great Britain Front Vet Sci 5 1 13 10.3389/fvets.2018.00041 2018 29560358 PMC5845643
+Petersen HH Nielsen EO Hassing AG Ersbøll AK Nielsen JP Prevalence of clinical signs of disease in Danish finisher pigs Vet Rec 162 377 382 10.1136/vr.162.12.377 2008 18359931
+Postma M Vanderhaeghen W Sarrazin S Maes D Dewulf J Reducing Antimicrobial Usage in Pig Production without Jeopardizing Production Parameters Zoonoses Public Hlth 64 63 74 10.1111/zph.12283 2017 27362766
+Raasch S Postma M Dewulf J Stärk KDC Grosse Beilage E Association between antimicrobial usage, biosecurity measures as well as farm performance in German farrow-to-finish farms Porc Health Manag 4 30 10.1186/s40813-018-0106-5 2018 PMC6293545 30564434
+Sainsbury D Farm animal welfare: cattle, pigs and poultry Collins London 175 pp ISBN 0003831574 1986
+Salas-Eljatib C Fuentes-Ramirez A Gregoire TG Altamirano A Yaitul V A study on the effects of unbalanced data when fitting logistic regression models in ecology Ecol Indic 85 502 508 10.1016/j.ecolind.2017.10.030 2018
+Sarrazin S Joosten P van Gompel L Luiken REC Mevius DJ Wagenaar JA Heederik DJJ Dewulf J Quantitative and qualitative analysis of antimicrobial usage patterns in 180 selected farrow-to-finish pig farms from nine European countries based on single batch and purchase data J Antimicrob Chemother 74 807 816 10.1093/jac/dky503 2019 30544242
+Schrøder-Petersen DL Simonsen HB Tail Biting in Pigs Vet J 162 196 210 10.1053/tvjl.2001.0605 2001 11681870
+Smith B Lameness in pigs associated with foot and limb disorders In Pract 10 113 117 10.1136/inpract.10.3.113 1988
+Stärk KDC Epidemiological Investigation of the Influence of Environmental Risk Factors on Respiratory Diseases in Swine – A Literature Review Vet J 159 37 56 2000 10640410 10.1053/tvjl.1999.0421
+Teixeira DL Harley S Hanlon A O' Connel NE More SJ Manzanilla EG Boyle LA Study on the Association between Tail Lesion Score, Cold Carcass Weight, and Viscera Condemnations in Slaughter Pigs Front Vet Sci 3 1 7 10.3389/fvets.2016.00024 2016 27014706 PMC4790180
+Thölke H Wolf P Economic Advantages of Individual Animal Identification in Fattening Pigs Agriculture 12 126 10.3390/agriculture12020126 2022
+Timmerman T Dewulf J Catry B Feyen B Opsomer G Kruif A de Maes D Quantification and evaluation of antimicrobial drug use in group treatments for fattening pigs in Belgium Prev Vet Med 74 251 263 10.1016/j.prevetmed.2005.10.003 2006 16675051
+Trauffler M Griesbacher A Fuchs K Köfer J Antimicrobial drug use in Austrian pig farms: Plausibility check of electronic on-farm records and estimation of consumption Vet Rec 175 402 10.1136/vr.102520 2014 25053268 PMC4215275
+Valros A Heinonen M Save the pig tail Porc Health Manag 1 1 7 10.1186/2055-5660-1-2 2015 PMC5375127 28405411
+von Borell E Mechanismen der Bewältigung von Stress Arch Anim Breed 43 441 450 10.5194/aab-43-441-2000 2000
+Wadepohl K Blaha T Meemken D Evaluation of a simplified Herd Health and Welfare Index for benchmarking in pig herds Tierarztl Prax Ausg G 48 156 164 10.1055/a-1161-9750 2020 32557513
+Weary DM Jasper J Hötzel MJ Understanding weaning distress Appl Anim Behav Sci 110 24 41 10.1016/j.applanim.2007.03.025 2008
+Weber N Nielsen JP Jakobsen AS Pedersen LL Hansen CF Pedersen KS Occurrence of diarrhoea and intestinal pathogens in non-medicated nursery pigs Acta Vet Scand 57 64 10.1186/s13028-015-0156-5 2015 26419751 PMC4588272
+Willgert KJE Brewster V Wright AJ Nevel A Risk factors of lameness in sows in England Prev Vet Med 113 268 272 10.1016/j.prevetmed.2013.10.004 2014 24331733
+Wolfert S Ge L Verdouw C Bogaardt M-J Big Data in Smart Farming – A review Agr Syst 153 69 80 10.1016/j.agsy.2017.01.023 2017
+Zoric M Stern S Lundeheim N Wallgren P Four-year study of lameness in piglets at a research station Vet Rec 153 323 328 10.1136/vr.153.11.323 2003 14516114

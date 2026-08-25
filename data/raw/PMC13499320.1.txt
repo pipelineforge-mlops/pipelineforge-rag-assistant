@@ -1,0 +1,321 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: BMC Emerg Med
+Journal ID: BMC Emerg Med
+NLM Journal ID: 100968543
+
+BMC Emergency Medicine
+
+EISSN: 1471-227X
+Publisher: BMC
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499320
+PMID: 42629549
+DOI: 10.1186/s12873-026-01730-5
+Article ID: 1730
+Article version: 1
+Subjects: Research
+
+RapidNeuroGuide: an NLP-enhanced AI platform for digital headache triage and clinical decision support
+
+http://orcid.org/0000-0002-6174-915X Besli Nail beslinail@gmail.com
+1
+http://orcid.org/0000-0001-8980-4184 Bulut Burcu 2
+1 https://ror.org/03k7bde87 grid.488643.5 0000 0004 5894 3909 Department of Medical Biology, Hamidiye School of Medicine, University of Health Sciences, Istanbul, Türkiye
+2 https://ror.org/05v7bbe50 grid.414771.0 0000 0004 0419 1393 Department of Neurology, Fatih Sultan Mehmet Training and Research Hospital, Istanbul, Türkiye
+Electronic publication date: 2026 Aug 11
+Publication date: 2026
+Volume: 26
+Electronic Location ID: 225
+Received 2026 Mar 25; Accepted 2026 Aug 7
+Copyright: © The Author(s) 2026
+Copyright year: 2026
+License: Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Headache triage, Artificial intelligence, Natural language processing, Emergency medicine, Biomedical language models
+issue-copyright-statement: © BioMed Central Ltd., part of Springer Nature 2026
+
+==============================
+Background
+
+Headache is among the most frequent presenting complaints in emergency departments worldwide, yet differentiating life-threatening secondary causes from benign primary headaches remains a persistent clinical challenge.
+
+Objective
+
+This study describes Phase I of the RapidNeuroGuide development roadmap, comprising the development and an initial literature-derived technical proof-of-concept evaluation of a three-layer AI-driven headache triage engine that integrates critical threshold detection, SNNOOP10 red-flag scoring, and expert-weighted risk assessment.
+
+Methods
+
+A total of 240 PubMed-indexed headache articles were screened, and 121 full-text documents were acquired from legally accessible sources. The S-PubMedBERT-MS-MARCO sentence-transformer model was used to identify clinically relevant sentences, which were mapped to 23 structured clinical fields using a deterministic terminology dictionary comprising 103 expressions. The resulting 158 curated, literature-derived case representations constituted the proof-of-concept evaluation dataset.
+
+Results
+
+Exact agreement with the predefined reference triage classification was observed in 110 of 158 case representations (69.6%), while 157 cases (99.4%) were assigned within one adjacent triage category. One case (0.6%) differed by more than one category. All 47 case representations carrying a predefined CRITICAL reference classification were assigned to the CRITICAL category within the evaluated dataset. The NLP pipeline produced usable structured parameter sets for 114 of 119 machine-readable documents (95.8%), with a mean cosine similarity of 0.878 across 570 retained sentences.
+
+Conclusions
+
+RapidNeuroGuide demonstrated preliminary technical feasibility and measurable agreement with predefined reference triage categories in this Phase I proof-of-concept evaluation.
+
+Supplementary Information
+
+The online version contains supplementary material available at 10.1186/s12873-026-01730-5.
+
+Introduction
+
+Headache is among the most frequent neurological complaints encountered in emergency departments (EDs), accounting for approximately 2–4% of all visits worldwide [1, 2]. While most cases are benign and self-limiting, a critical minority represents life-threatening secondary conditions such as subarachnoid hemorrhage (SAH), bacterial meningitis, acute stroke, and intracranial malignancies. The central clinical challenge lies in rapidly and accurately distinguishing these dangerous etiologies from the far more common benign presentations, a task complicated by overlapping symptomatology and time-sensitive treatment windows.
+
+The consequences of missed or delayed diagnosis in this domain are well documented. Recent meta-analyses have demonstrated that SAH misdiagnosis in the ED remains alarmingly common, with misdiagnosed patients experiencing significantly higher morbidity and mortality [3]. Similarly, delays in recognizing bacterial meningitis directly correlate with worsened neurological outcomes and elevated fatality rates [4]. These findings underscore the urgent need for standardized, evidence-based triage tools to assist clinicians in rapidly identifying high-risk patients.
+
+The SNNOOP10 framework, introduced by Do et al., represents the most comprehensive structured approach for identifying secondary headache red flags in clinical practice [5]. Despite its widespread acceptance, real-world implementation remains inconsistent, particularly in high-pressure emergency settings where cognitive load, time constraints, and variability in clinician experience limit systematic application [6].
+
+The accelerating digital transformation of healthcare has created unprecedented opportunities for artificial intelligence (AI) and machine learning (ML) to address precisely this type of clinical decision-making challenge. Over the past five years, AI-driven clinical decision support systems (CDSS) have demonstrated promising results across multiple medical domains, from automated radiological interpretation to real-time sepsis prediction [7, 8]. In emergency medicine, ML-based triage models have demonstrated superior performance compared to conventional rule-based systems such as the Emergency Severity Index (ESI), particularly in predicting clinical deterioration and patient acuity [9, 10]. Natural language processing (NLP), and particularly transformer-based language models pre-trained on biomedical corpora, has emerged as a powerful tool for extracting structured clinical information from unstructured text, enabling the automation of tasks that previously required extensive manual review [11, 12].
+
+Despite these advances, the translation of AI-driven triage systems into clinically reliable tools remains limited. Most existing models rely on retrospective electronic health record datasets, which often lack standardized symptom representation and may not capture the nuanced clinical reasoning required for headache evaluation. Moreover, headache-specific AI triage systems remain scarce, and few studies have addressed the critical safety dimension of triage performance—namely the balance between over-triage and under-triage [13] Perhaps most critically, few studies have systematically examined the direction and potential clinical implications of over-triage and under-triage, specifically the balance between over-triage, which is clinically conservative but resource-intensive, and under-triage, which carries the risk of missed critical diagnoses.
+
+To address these limitations, we developed RapidNeuroGuide, an AI-based headache triage framework intended for future clinician-supervised evaluation in emergency care. The system uses a transparent three-layer decision architecture consisting of (i) predefined critical-pattern detection, (ii) guideline-based SNNOOP10 red-flag assessment, and (iii) expert-weighted risk stratification. The literature-processing pipeline uses the S-PubMedBERT-MS-MARCO biomedical sentence transformer to identify and structure potentially relevant clinical information from peer-reviewed full-text publications [14].
+
+This Phase I study had four primary objectives: (i) to develop a clinically informed three-layer triage framework, (ii) to evaluate the feasibility of NLP-assisted extraction of structured clinical information from peer-reviewed literature, (iii) to characterize agreement between framework-generated and predefined reference triage categories across a spectrum of headache presentations, and (iv) to describe the direction and magnitude of triage disagreements. In this manuscript, “Phase I” refers to the initial literature-derived technical proof-of-concept stage of the RapidNeuroGuide development roadmap and not to a conventional Phase I clinical trial. The findings are intended to inform a subsequent Phase II prospective clinical evaluation in consecutive emergency department patients. To our knowledge, this is among the first studies to combine guideline-based headache triage with transformer-assisted construction of a literature-derived proof-of-concept case set.
+
+Methods
+
+Study design and reporting framework
+
+This study represents Phase I of the RapidNeuroGuide development roadmap and was designed as an initial retrospective technical proof-of-concept evaluation of an AI-based headache triage system using 158 curated case representations derived from peer-reviewed medical literature. In this manuscript, the term “Phase I” refers solely to the first stage of the RapidNeuroGuide development roadmap and should not be interpreted as a conventional Phase I clinical trial. No participants were recruited, and the system was not deployed during actual emergency department care.
+
+Relevant reporting items from the TRIPOD (Transparent Reporting of a Multivariable Prediction Model for Individual Prognosis or Diagnosis) guidelines and the STARD (Standards for Reporting of Diagnostic Accuracy Studies) checklist were considered where applicable [15, 16]. The study was not designed as a prospective diagnostic-accuracy investigation, and the predefined reference triage categories were used as development-stage comparators rather than independently adjudicated clinical outcomes.
+
+The designation as Phase I reflects the positioning of this work within a two-phase development roadmap: Phase I encompasses literature-derived development and technical proof-of-concept evaluation, while the planned Phase II will involve prospective clinical evaluation in consecutive emergency department patients, including patient-generated symptom descriptions, clinician-assigned triage, workflow measures, and clinical outcomes. The complete study workflow, from literature acquisition and case construction to proof-of-concept evaluation, is summarized in Fig. 1.
+
+This study did not involve direct human subject participation, patient recruitment, intervention, or access to identifiable patient-level records. All data were derived from publicly available, peer-reviewed published sources. Accordingly, institutional ethical approval and study-specific informed consent were not required.
+
+Evidence-based clinical parameter design
+
+The clinical parameters and structured questions employed by the triage engine were systematically derived from established clinical practice guidelines, following an anchor guideline strategy analogous to the evidence synthesis methodology used by point-of-care clinical reference platforms such as UpToDate (https://www.uptodate.com/contents/search). Rather than relying on data-driven feature selection or ad hoc expert opinion, three core guideline sources representing the highest level of available evidence for headache evaluation served as the foundation for parameter design.
+
+The first anchor source was the SNNOOP10 red flag checklist, which provided the framework for all red flag screening parameters, including systemic symptoms, neurological deficits, onset characteristics, older age, pattern change, positional features, and precipitating factors [5]. The second anchor source was the International Classification of Headache Disorders, third edition (ICHD-3, 2018), which supplied the standardized diagnostic criteria for primary headache phenotyping, including pain quality, location, duration, and associated autonomic features for migraine, tension-type headache, cluster headache, and trigeminal autonomic cephalalgias [17]. The third anchor source was the American Academy of Family Physicians evidence-based review by Viera and Antono (2022), which provided an integrated clinical decision algorithm combining SNNOOP10 red flag assessment with ICHD-3-based phenotyping in the context of acute headache evaluation in adults, and served as the practical bridge between the two primary classification frameworks [18].
+
+From these three anchor sources, a total of 30 structured clinical parameters were defined across five clinical domains: patient demographics (age, gender), pain phenotype (onset, severity, character, location, novelty), SNNOOP10 red flag screening (neurological deficits, autonomic symptoms, fever, neck stiffness), medical and medication history (chronic diseases, anticoagulants, immunosuppressive therapy, pregnancy), and aggravating factors (positional change, Valsalva maneuver, physical activity). Each parameter was mapped to a specific guideline criterion, table entry, or diagnostic code, ensuring full bibliographic traceability. Secondary supporting references, including AHA/ASA guidelines for stroke and subarachnoid hemorrhage management [19] and the SNNOOP10 validation study by Viana and colleagues demonstrating 100% sensitivity for red flag detection [20], provided additional evidence for condition-specific scoring thresholds and risk factor weighting.
+
+The resulting guideline-derived framework was subsequently evaluated in a technical proof-of-concept analysis using curated case representations constructed from peer-reviewed literature through manual and NLP-assisted processes.
+
+Literature sources and full-text retrieval
+
+A structured literature search was conducted to identify PubMed-indexed publications describing headache presentations relevant to red-flag assessment, secondary headache disorders, and emergency triage. Full text was retrieved from legally accessible sources, including PubMed Central, Europe PMC, Unpaywall, and Semantic Scholar. Available XML, HTML, plain-text, and machine-readable PDF formats were processed for subsequent NLP-assisted feature extraction. Detailed search expressions, retrieval procedures, document formats, and preprocessing methods are provided in Supplementary Methods S1–S2.
+
+NLP-assisted clinical feature extraction and verification
+
+Full-text content was processed using the S-PubMedBERT-MS-MARCO biomedical sentence-transformer model [14]. Twenty predefined query templates covering clinical presentation, symptoms, diagnosis, physical examination, and clinical history were used to identify potentially relevant sentences. Retained sentences were mapped to 23 structured clinical fields using a deterministic terminology dictionary comprising 103 expressions. Candidate records required at least three structured parameters and a non-empty clinical presentation. Detailed query templates, sentence-selection procedures, terminology mappings, and retention criteria are provided in Supplementary Methods S3.
+
+Triage engine architecture
+
+RapidNeuroGuide applies a three-layer sequential decision architecture. The first layer evaluates seven predefined high-risk clinical patterns and assigns the CRITICAL category when a condition-specific activation threshold is met. The second layer calculates a weighted SNNOOP10 red-flag score across systemic, neurological, onset, older-age, and pattern-related domains. The third layer applies an expert-weighted risk score incorporating 13 clinical features and generates a normalized score ranging from 0 to 100. A final pattern-matching module compares the clinical profile with nine established headache types and may adjust the assigned triage category. Detailed condition-specific rules, domain weights, feature weights, scoring thresholds, and decision procedures are provided in Supplementary Methods S5. A schematic overview of the RapidNeuroGuide system architecture and validation pipeline is presented in Fig. 1.
+
+Statistical analysis
+
+Descriptive statistics were used to characterize the case set, triage-category distributions, and scoring variables. Continuous variables were summarized using means and standard deviations or medians and ranges, as appropriate, while categorical variables were reported as counts and percentages. The primary evaluation measures were exact agreement, agreement within one adjacent triage category, and the direction of disagreement relative to the predefined reference classification. Assignment to a more urgent category and assignment to a less urgent category were reported descriptively. Binary critical-alert agreement was analyzed separately from four-category triage agreement. Semantic-similarity values from the NLP pipeline were summarized using mean cosine-similarity scores and ranges. All analyses were performed using Python 3.11 with NumPy and SciPy libraries.
+
+Fig. 1 Overview of the RapidNeuroGuide headache triage framework. Literature-derived clinical information was processed using an NLP model and evaluated using three sequential components: critical-pattern detection, SNNOOP10-based red-flag scoring, and expert-weighted risk assessment. Framework outputs were compared with predefined reference classifications in a Phase I technical proof-of-concept evaluation
+
+Results
+
+Case-set characteristics and NLP processing
+
+The systematic search identified 240 candidate articles, from which 121 full-text PDFs were retrieved via PubMed Central and the Unpaywall open-access API. Following text extraction and NLP processing, 119 PDFs yielded extractable content (98.3% processing success), and the S-PubMedBERT pipeline produced usable structured parameter sets for 114 of 119 machine-readable documents (95.8% NLP extraction success). After case-set assembly, 158 curated, literature-derived case representations were included in the final proof-of-concept dataset. The populations reported in the source publications were not aggregated and were not treated as part of the evaluation sample. The constructed case set had a mean represented age of 41.9 ± 15.7 years (range: 2–78 years), with a slight female predominance (51.9%, n = 82) compared to males (48.1%, n = 76) (Fig. 2A–B). Pain severity analysis demonstrated clear stratification across triage levels, with CRITICAL cases clustering at higher pain scores (8–10), while ROUTINE cases predominantly occupied lower severity ranges (3–6) (Fig. 2C). Cases were derived from two complementary sources, including 134 literature-curated clinical scenarios and 24 fully NLP-extracted cases. Additionally, 32 cases (20.3%) underwent secondary NLP-based parameter enhancement through full-text analysis.
+
+Fig. 2 Characteristics of the literature-derived case set and summary of NLP processing
+
+The S-PubMedBERT-MS-MARCO pipeline demonstrated robust extraction performance across the processed PDFs (Fig. 2D). Of 119 machine-readable documents, the NLP model produced valid parameter sets for 114 (95.8%). A total of 570 sentences were retained, with a mean cosine similarity of 0.878 (range, 0.807–0.967), with a mean semantic similarity of 0.878 (range 0.807 to 0.967). When examined by clinical category, the highest mean similarity was observed in the presentation category (0.883 across 273 matches) and the symptoms category (0.883 across 32 matches), followed by diagnosis (0.874 across 165 matches), history (0.871 across 72 matches), and physical examination (0.861 across 28 matches). The pipeline extracted a total of 552 new clinical parameters across the 114 successfully processed cases, with onset characteristics, blood pressure status, and neurological symptoms being the most frequently extracted parameter types.
+
+Among the 32 case representations that underwent secondary NLP-assisted parameter enhancement, the additional parameters altered the framework-assigned triage category in four cases. Detailed parameter-level results are provided in Supplementary Results S6 and Supplementary Figure S1.
+
+Triage level distribution
+
+The three-layer triage framework assigned the 158 curated case representations to four urgency categories (Fig. 3A–B). According to the predefined reference classifications, the expected distribution was: CRITICAL 47 cases (29.7%), URGENT 36 cases (22.8%), SEMI-URGENT 29 cases (18.4%), and ROUTINE 46 cases (29.1%). In contrast, the system assigned 57 cases (36.1%) to CRITICAL, 16 (10.1%) to URGENT, 28 (17.7%) to SEMI-URGENT, and 57 (36.1%) to ROUTINE, reflecting a shift toward more conservative classification at the extremes of the triage spectrum (Fig. 3A–B).
+
+Fig. 3 Comparison of predefined reference and framework-assigned triage-category distributions. (A) Distribution of critical alert types among CRITICAL cases, with thunderclap headache and stroke as the most frequent conditions. (B) Comparison of triage outcomes, showing exact matches, over-triage, and under-triage. Most discrepancies were within one level, with a predominance of over-triage
+
+Overall, exact agreement with the predefined reference triage category was observed in 110 of 158 case representations (69.6%). Agreement within one adjacent triage category was observed in 157 of 158 case representations (99.4%). One case (0.6%) differed from the reference classification by more than one triage category. Most disagreements occurred between adjacent triage categories, while one case differed from the reference classification by more than one category. These results describe the magnitude of categorical disagreement and do not establish that a one-category difference is clinically acceptable.
+
+Analysis of the scoring framework demonstrated strong concordance between risk metrics and triage decisions. Both SNOOP red flag scores and ML-weighted risk scores exhibited clear separation across triage categories, with CRITICAL cases consistently occupying higher score ranges and ROUTINE cases clustering at lower values (Fig. 4A–B). The defined threshold boundaries further supported this stratification, highlighting the complementary roles of rule-based and data-driven risk estimation.
+
+The framework showed 98.1% agreement in binary critical-alert assignment (155/158 case representations). Within the curated dataset, all 47 cases carrying a predefined CRITICAL reference label were also assigned to the CRITICAL category by the framework. This finding is limited to the selected, professionally reported case representations included in the proof-of-concept dataset and should not be interpreted as prospective clinical sensitivity, a zero-miss rate, or evidence of safety under actual emergency department conditions. The framework assigned 57 cases to the CRITICAL category compared with 47 cases in the reference classification, indicating a tendency to escalate additional cases to the highest urgency category within this dataset.
+
+Analysis of disagreement direction showed assignments both above and below the predefined reference category (Fig. 4B). These differences are reported descriptively and cannot be interpreted as evidence of clinically safer performance, robustness, or prevention of missed high-risk presentations because the system was not evaluated in consecutive patients or under real-time clinical conditions. The relatively high proportion of CRITICAL case representations likely reflects the composition of the source literature, which is enriched for severe, unusual, and emergency headache presentations rather than the case mix expected in an unselected emergency department population.
+
+Fig. 4 Score distributions across triage levels. (A) SNOOP red flag score distribution by triage category, showing higher scores in CRITICAL cases and lower scores in ROUTINE cases. Dashed lines indicate threshold values. (B) ML-weighted risk score distribution (0–100), demonstrating clear separation between triage levels with higher scores in CRITICAL cases
+
+Critical case analysis
+
+Among the 57 case representations assigned to the CRITICAL triage category, 54 generated an explicit first-layer critical alert. Seven distinct alert types were identified (Fig. 5A). Thunderclap headache was the most frequent, accounting for 17 of 54 alerts (31.5%), followed by stroke in 14 (25.9%), meningitis in 10 (18.5%), hypertensive crisis in 6 (11.1%), giant cell arteritis in 4 (7.4%), eclampsia in 2 (3.7%), and an intracranial mass-related alert in 1 case (1.9%). Thunderclap headache and stroke together accounted for 31 of 54 explicit critical alerts (57.4%). Within the curated dataset, all 47 case representations carrying a predefined CRITICAL reference classification were assigned to the CRITICAL category by the framework.
+
+Fig. 5 Critical-alert types and direction of triage disagreement. Panel A presents the distribution of seven explicit first-layer critical-alert types among the 54 cases generating an alert. Panel B shows exact agreement (69.6%), assignment to a more urgent category (11.4%), and assignment to a less urgent category (19.0%)
+
+Scoring analysis
+
+SNNOOP10-based red-flag scores across all 158 case representations ranged from 0.0 to 54.5, with a mean of 16.1 and a median of 17.0. Higher scores were generally observed in more urgent framework-assigned categories. Expert-weighted risk scores ranged from 17.0 to 77.3, with a mean of 37.3 and a median of 36.2. The two score distributions showed broadly concordant patterns within the constructed dataset (Supplementary Figure S2).
+
+Safety analysis
+
+Framework-assigned triage categories were compared with the predefined reference classifications to describe exact agreement, the magnitude of disagreement, and its direction (Fig. 5B). Of the 158 case representations, 110 (69.6%) received the same category as the reference classification. Agreement within one adjacent triage category was observed in 157 cases (99.4%), while one case (0.6%) differed by more than one category. Eighteen cases (11.4%) were assigned to a more urgent category than the reference classification, whereas 30 cases (19.0%) were assigned to a less urgent category. These findings are descriptive and should not be interpreted as direct measures of clinical safety, harm, or acceptability [21].
+
+Discussion
+
+Principal findings
+
+This study presents Phase I of the RapidNeuroGuide development roadmap, comprising the development and initial technical proof-of-concept evaluation of a three-layer headache triage framework. The evaluation used 158 curated case representations derived from published medical literature.
+
+The observed results indicate that the framework frequently reproduced the predefined reference triage category within this constructed dataset, with most disagreements occurring between adjacent categories. All case representations carrying a predefined CRITICAL label were assigned to the CRITICAL category. However, these findings do not represent agreement with clinicians during actual patient encounters and should not be interpreted as prospective clinical accuracy or evidence of safety. Published case descriptions are selected and professionally refined and may provide more complete information than is available during initial emergency department triage.
+
+Comparison with existing digital triage systems
+
+Direct numerical comparison between RapidNeuroGuide and systems evaluated in actual emergency department populations should be approached cautiously because the present study used curated literature-derived case representations rather than consecutive patient encounters. Levin and colleagues demonstrated that ML-based electronic triage outperformed the traditional Emergency Severity Index, achieving approximately 85% sensitivity for high-acuity patients in a general ED population [9]. Klang and colleagues reported 88.3% sensitivity for predicting clinical deterioration using deep learning applied to ED presentations [22]. In the stroke-specific domain, Abedi and colleagues developed an ML-based stroke triage tool achieving approximately 90% sensitivity for identifying large vessel occlusion [23]. Within the final proof-of-concept dataset, all cases with a predefined CRITICAL label were identified by the framework, supporting the potential value of a guideline-anchored and interpretable scoring approach for further prospective evaluation.
+
+A potentially useful feature of RapidNeuroGuide is the explicit reporting of the direction and magnitude of disagreement. However, the observed agreement values and the proportions of more-urgent and less-urgent assignments cannot establish a clinical safety profile because the framework was not evaluated in consecutive patients or under real-time clinical conditions. Prospective evaluation is required to determine whether the transparent, guideline-anchored architecture provides clinically meaningful advantages over existing approaches [21, 24].
+
+It is important to note that the majority of existing AI-based headache tools are designed for diagnostic classification of primary headache subtypes rather than for emergency triage and risk stratification of potentially life-threatening secondary causes. Katsuki and colleagues (2023) developed a questionnaire-based AI diagnostic model trained on 6058 patients from a specialized headache clinic, achieving 93.7% micro-average accuracy and 88.8% sensitivity for migraine detection; however, the authors explicitly acknowledged the model’s limited performance for secondary headaches, stating that secondary causes must first be ruled out before applying the diagnostic algorithm [25]. In a companion study evaluating the clinical utility of this AI model, the same group demonstrated that AI-assisted diagnosis improved non-specialist accuracy from 46.0% to 83.2% (kappa from 0.212 to 0.678), yet diagnostic accuracy for secondary headache disorders remained low [26]. These findings underscore a critical gap in the current headache AI landscape: while primary headache classification has received substantial attention, the identification of dangerous secondary causes—the very conditions that carry the highest clinical stakes in emergency settings—has been comparatively neglected.
+
+More recently, large language model (LLM)-based approaches have emerged as alternatives for headache diagnosis. Zahn and colleagues tested three GPT-based models on a curated dataset of 50 clinical headache cases representing 20 ICHD-3 diagnoses and reported top-1 diagnostic accuracy ranging from 24% to 63% at the individual diagnosis level, although group-level accuracy reached 92% [27]. De Andrade et al. validated Head.AI, a free multilingual platform utilizing GPT-4o with a structured implementation of ICHD-3 criteria, on 315 expert-generated clinical vignettes covering 215 ICHD-3 diagnoses, achieving 89.5% first-hypothesis accuracy—the highest reported to date among AI-based headache diagnostic tools [28]. While these LLM-based systems demonstrate promising diagnostic capability, they differ fundamentally from RapidNeuroGuide in three respects: first, they target diagnostic classification rather than emergency triage and risk stratification; second, they depend on proprietary commercial LLM APIs, which introduces concerns regarding data privacy, reproducibility, and availability in resource-limited clinical environments; and third, their decision-making processes remain largely opaque, lacking the transparent, auditable, and guideline-traceable architecture that RapidNeuroGuide provides through its three-layer rule-based design. RapidNeuroGuide addresses this methodological gap through a transparent, guideline-anchored architecture intended for the identification of potentially serious secondary headache presentations; its clinical performance remains to be established prospectively.
+
+The role of biomedical language models in literature-based case construction
+
+The deployment of S-PubMedBERT-MS-MARCO for clinical parameter extraction highlights the growing potential of domain-specific transformer models in healthcare digitalization. Unlike general-purpose language models, PubMedBERT was pre-trained exclusively on biomedical text, which confers superior understanding of medical terminology, abbreviations, and clinical reasoning patterns compared with models trained on general web corpora [14]. The 87.8% mean semantic similarity achieved across 570 matched sentences in this study suggests that biomedical sentence transformers can reliably bridge the gap between unstructured clinical narrative and structured decision-support input.
+
+This approach has broader implications for the digital health research community. It demonstrates a scalable method for generating structured literature-derived case sets directly from published literature, reducing dependence on manual case curation and enabling rapid expansion of validation datasets. Furthermore, it provides a replicable framework for linking AI triage decisions to specific evidence from peer-reviewed sources, thereby enhancing the evidence base and audit trail of clinical decision support systems. Finally, it establishes a proof of concept for using sentence-level semantic similarity as a quality metric for clinical NLP extraction, complementing traditional named entity recognition approaches [12, 29].
+
+Potential clinical role and requirements for prospective evaluation
+
+The three-layer architecture of RapidNeuroGuide was intentionally designed for transparency and clinical interpretability, addressing one of the most significant barriers to AI adoption in healthcare. Each decision layer produces human-readable output: the first layer identifies specific critical conditions with supporting evidence and evidence-based emergency protocols; the second layer quantifies red flag burden using the internationally recognized SNNOOP10 framework; and the third layer provides an intuitive 0-to-100 risk score with explicit feature contributions. This transparent structure is intended to allow clinicians to examine the factors contributing to each output during future supervised evaluation [30, 31].
+
+The transparent architecture allows framework outputs to be traced to critical-pattern rules, SNNOOP10 categories, and expert-weighted input features. This interpretability may support future clinician-supervised evaluation. However, the present study did not assess real-time clinician use, patient interaction, alert burden, completion time, workflow disruption, downstream investigations, or patient outcomes. These remain objectives for prospective clinical evaluation rather than established advantages of the current system.
+
+RapidNeuroGuide is intended as a clinician-supervised decision-support framework rather than an autonomous patient-facing triage system. Patients may provide information through a structured digital interface, but the framework output is intended for review by medical staff, with final triage responsibility remaining with the clinician.
+
+Limitations
+
+Several limitations of this Phase I study warrant consideration. The test suite is derived from published medical literature, which inherently over-represents unusual, severe, and diagnostically challenging cases. The 29.7% proportion of expected critical cases in our dataset does not reflect the typical distribution encountered in emergency departments, where the vast majority of headache presentations are benign. Consequently, the system’s performance metrics should be interpreted as reflective of its ability to handle high-acuity scenarios rather than as estimates of real-world operational performance.
+
+The 50.4% PDF acquisition rate introduces potential selection bias, as articles available through open-access channels may differ systematically from those behind paywalls. Additionally, while the S-PubMedBERT extraction pipeline demonstrated high semantic similarity, the current approach relies on predefined query templates and keyword-based parameter mapping, which may miss atypical descriptions or context-dependent clinical information. More advanced named entity recognition and relation extraction systems could further improve extraction completeness in future iterations.
+
+Finally, this Phase I technical proof-of-concept evaluation is inherently limited by the absence of prospective clinical data. Published case descriptions are professionally selected, structured, and edited, whereas descriptions provided directly by patients may be incomplete, colloquial, ambiguous, or internally inconsistent. These differences may reduce the accuracy of clinical feature extraction and subsequent triage assignment. Literature-derived case representations therefore cannot fully reproduce the complexity, uncertainty, and time pressure of real-time emergency triage. Prospective evaluation should specifically compare performance using patient-generated descriptions with performance after clinician verification of the entered information.
+
+Future perspectives: phase II prospective clinical evaluation
+
+The present study establishes the technical and guideline-based foundation for RapidNeuroGuide. The planned Phase II study will prospectively evaluate the framework in consecutive emergency department patients presenting with headache and compare its outputs with clinician-assigned triage categories and relevant clinical outcomes. In Phase II, the triage engine will be deployed in a clinical pilot setting where actual emergency department patients presenting with headache will complete a structured digital intake form capturing the same parameters used by the triage engine. The engine’s real-time triage recommendations will be compared against the treating physician’s clinical assessment and the patient’s ultimate clinical outcome, including discharge diagnosis, imaging findings, and hospitalization status. Workflow evaluation will include patient form-completion time, algorithm-processing time, clinician-review time, and the total time required to complete the triage process.
+
+This Phase II design will enable several important analyses not possible with literature-derived data alone. It will provide true sensitivity, and specificity estimates for critical condition detection across a realistic case-mix that includes the large proportion of benign headaches typical of everyday emergency practice. It will generate prospective safety data including time-to-diagnosis metrics critical for regulatory approval pathways. It will also allow iterative refinement of scoring thresholds and feature weights based on real-world outcome data, moving from the current expert-derived weights toward empirically optimized parameters.
+
+Beyond Phase II, the longer-term roadmap envisions integration of the triage engine into hospital electronic health record (EHR) systems, enabling fully automated triage at the point of care. The modular three-layer architecture was designed with this interoperability in mind, allowing each layer to function independently or in concert depending on the available input data. Integration with advanced biomedical NER systems such as MedCAT could enable automated parameter extraction directly from clinical notes, further reducing the documentation burden on clinicians and expanding the system’s utility to inpatient and telehealth settings [29, 32]. The ultimate vision is a digital headache triage ecosystem that continuously learns from clinical outcomes, adapts to local epidemiological patterns, and provides personalized risk assessments while maintaining the evidence-based transparency that clinicians require.
+
+Conclusions
+
+RapidNeuroGuide was evaluated in a technical proof-of-concept dataset comprising 158 curated case representations derived from published medical literature. The framework’s performance can be summarized in three key findings: first, exact agreement with the predefined reference triage classification was observed in 110 of 158 cases (69.6%); second, agreement within one adjacent triage category was observed in 157 cases (99.4%), with one case (0.6%) differing by more than one category; and third, all 47 case representations carrying a predefined CRITICAL reference classification were assigned to the CRITICAL category within the evaluated dataset. These dataset-specific findings should not be interpreted as prospective clinical sensitivity, a zero-miss rate, or evidence of safety under actual emergency department conditions.
+
+The novel application of the S-PubMedBERT-MS-MARCO biomedical sentence transformer for automated clinical parameter extraction achieved a mean cosine similarity of 0.878 across 570 retained sentences, supporting the technical feasibility of using a domain-specific language model to structure clinically relevant information from unstructured medical text. This NLP-assisted approach provides a reproducible framework for the development-stage evaluation of clinical AI systems.
+
+As healthcare systems worldwide continue their digital transformation, RapidNeuroGuide provides a technical and guideline-based foundation for the future evaluation of AI-assisted headache triage in emergency workflows. The planned Phase II prospective clinical evaluation in consecutive emergency department patients will be essential for establishing the clinical effectiveness, safety, and operational feasibility required for deployment at the bedside. By combining guideline-based clinical reasoning with modern NLP capabilities in a transparent and auditable architecture, this work contributes to the responsible development of AI systems that support, rather than supplant, clinical judgment in the management of neurological emergencies.
+
+Supplementary Information
+
+Below is the link to the electronic supplementary material.
+
+Supplementary Material 1
+
+Supplementary Material 2
+
+Author contributions
+
+NB contributed to conceptualization, methodology, software development, NLP pipeline design, data analysis, and manuscript writing. BB contributed to clinical validation, expert review of triage parameters, and clinical guideline interpretation.
+
+Funding
+
+This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
+
+Data availability
+
+The validated test suite and analysis code will be made available in a public repository upon acceptance of the manuscript.
+
+Declarations
+
+Ethics approval and consent to participate
+
+This study involved no direct human participation, patient recruitment, intervention, or access to identifiable private patient data. All information was derived from publicly available, peer-reviewed literature sources. The study was conducted in accordance with the ethical principles of the Declaration of Helsinki, insofar as applicable to secondary research using publicly available, non-identifiable data. Therefore, institutional ethical approval and additional informed consent were not required for the present study.
+
+Consent for publication
+
+Not applicable.
+
+Competing interests
+
+The authors declare no competing interests.
+
+Publisher’s note
+
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+
+References
+
+1. Goldstein JN Camargo CA Pelletier AJ Edlow JA Headache in United States emergency departments: demographics, work-up and frequency of pathological diagnoses Cephalalgia 2019 26 684 90 10.1111/j.1468-2982.2006.01093.x 16686907
+Goldstein JN, Camargo CA, Pelletier AJ, Edlow JA. Headache in United States emergency departments: demographics, work-up and frequency of pathological diagnoses. Cephalalgia. 2019;26:684–90.10.1111/j.1468-2982.2006.01093.x 16686907
+2. Munoz-Ceron J Marin-Careaga V Pena L Mutis J Ortiz G Headache at the emergency room: etiologies, diagnostic usefulness of the ICHD-3 criteria, red and green flags PLoS ONE 2019 14 e0208728 10.1371/journal.pone.0208728 30615622 PMC6322863
+Munoz-Ceron J, Marin-Careaga V, Pena L, Mutis J, Ortiz G. Headache at the emergency room: etiologies, diagnostic usefulness of the ICHD-3 criteria, red and green flags. PLoS ONE. 2019;14:e0208728.30615622 10.1371/journal.pone.0208728 PMC6322863
+3. Carpenter CR Hussain AM Ward MJ others. Spontaneous subarachnoid hemorrhage: a systematic review and meta-analysis describing the diagnostic accuracy of history, physical examination, imaging, and lumbar puncture Acad Emerg Med 2019 23 963 1003 10.1111/acem.12984 PMC5018921 27306497
+Carpenter CR, Hussain AM, Ward MJ. others. Spontaneous subarachnoid hemorrhage: a systematic review and meta-analysis describing the diagnostic accuracy of history, physical examination, imaging, and lumbar puncture. Acad Emerg Med. 2019;23:963–1003.10.1111/acem.12984 PMC5018921 27306497
+4. Young N Thomas M Meningitis in adults: diagnosis and management Intern Med J 2018 48 1294 307 10.1111/imj.14102 30387309
+Young N, Thomas M. Meningitis in adults: diagnosis and management. Intern Med J. 2018;48:1294–307.30387309 10.1111/imj.14102
+5. Do TP Remmers A Schytz HW Schankin C Nelson SE Obermann M Red and orange flags for secondary headaches in clinical practice: SNNOOP10 list Neurology 2019 92 134 44 10.1212/WNL.0000000000006697 30587518 PMC6340385
+Do TP, Remmers A, Schytz HW, Schankin C, Nelson SE, Obermann M. Red and orange flags for secondary headaches in clinical practice: SNNOOP10 list. Neurology. 2019;92:134–44.30587518 10.1212/WNL.0000000000006697 PMC6340385
+6. Pohl H, Do TP, Garcia-Azorin D, et al. Red flags and orange flags for secondary headaches in clinical practice: an implementation study. Cephalalgia. 2022;42:1005–17.
+7. Rajkomar A Dean J Kohane I Machine learning in medicine N Engl J Med 2019 380 1347 58 10.1056/NEJMra1814259 30943338
+Rajkomar A, Dean J, Kohane I. Machine learning in medicine. N Engl J Med. 2019;380:1347–58.30943338 10.1056/NEJMra1814259
+8. Topol EJ High-performance medicine: the convergence of human and artificial intelligence Nat Med 2019 25 44 56 10.1038/s41591-018-0300-7 30617339
+Topol EJ. High-performance medicine: the convergence of human and artificial intelligence. Nat Med. 2019;25:44–56.30617339 10.1038/s41591-018-0300-7
+9. Levin S Toerper M Hamrock E Machine-learning-based electronic triage more accurately differentiates patients with respect to clinical outcomes compared with the Emergency Severity Index Ann Emerg Med 2018 71 565 74 10.1016/j.annemergmed.2017.08.005 28888332
+Levin S, Toerper M, Hamrock Eothers. Machine-learning-based electronic triage more accurately differentiates patients with respect to clinical outcomes compared with the Emergency Severity Index. Ann Emerg Med. 2018;71:565–74.28888332 10.1016/j.annemergmed.2017.08.005
+10. Fernandes M Vieira SM Leite F Palos C Finkelstein S Sousa JMC Clinical decision support systems for triage in the emergency department using intelligent systems: a review Artif Intell Med 2020 102 101762 10.1016/j.artmed.2019.101762 31980099
+Fernandes M, Vieira SM, Leite F, Palos C, Finkelstein S, Sousa JMC. Clinical decision support systems for triage in the emergency department using intelligent systems: a review. Artif Intell Med. 2020;102:101762.31980099 10.1016/j.artmed.2019.101762
+11. Gu Y Tinn R Cheng H Lucas M Usuyama N Liu X Domain-Specific Language Model Pretraining for Biomedical Natural Language Processing ACM Trans Comput Healthc 2022 3 1 23 10.1145/3458754
+Gu Y, Tinn R, Cheng H, Lucas M, Usuyama N, Liu X, et al. Domain-Specific Language Model Pretraining for Biomedical Natural Language Processing. ACM Trans Comput Healthc. 2022;3:1–23. 10.1145/3458754.
+12. Lee J Yoon W Kim S Kim D Kim S So CH BioBERT: a pre-trained biomedical language representation model for biomedical text mining Bioinformatics 2020 36 1234 40 10.1093/bioinformatics/btz682 31501885 PMC7703786
+Lee J, Yoon W, Kim S, Kim D, Kim S, So CH, et al. BioBERT: a pre-trained biomedical language representation model for biomedical text mining. Bioinformatics. 2020;36:1234–40. 10.1093/bioinformatics/btz682.31501885 10.1093/bioinformatics/btz682 PMC7703786
+13. Hinson JS Martinez DA Cabral S others. Triage performance in emergency medicine: a systematic review Ann Emerg Med 2019 74 140 52 10.1016/j.annemergmed.2018.09.022 30470513
+Hinson JS, Martinez DA, Cabral S. others. Triage performance in emergency medicine: a systematic review. Ann Emerg Med. 2019;74:140–52.30470513 10.1016/j.annemergmed.2018.09.022
+14. Deka P. S-PubMedBert-MS-MARCO sentence transformer model. 2021.
+15. Collins GS Reitsma JB Altman DG Moons KGM Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD): the TRIPOD statement Ann Intern Med 2024 162 55 63 10.7326/M14-0697 25560714
+Collins GS, Reitsma JB, Altman DG, Moons KGM. Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD): the TRIPOD statement. Ann Intern Med. 2024;162:55–63.10.7326/M14-0697 25560714
+16. Bossuyt PM Reitsma JB Bruns DE STARD 2015: an updated list of essential items for reporting diagnostic accuracy studies BMJ 2018 351 h5527 10.1136/bmj.h5527 PMC4623764 26511519
+Bossuyt PM, Reitsma JB, Bruns DEothers. STARD 2015: an updated list of essential items for reporting diagnostic accuracy studies. BMJ. 2018;351:h5527.10.1136/bmj.h5527 PMC4623764 26511519
+17. Headache Classification Committee of the International Headache Society The International Classification of Headache Disorders, 3rd edition Cephalalgia 2018 38 1 211 10.1177/0333102417738202 29368949
+Headache Classification Committee of the International Headache Society. The International Classification of Headache Disorders, 3rd edition. Cephalalgia. 2018;38:1–211.10.1177/0333102417738202 29368949
+18. Viera AJ Antono B Acute headache in adults: a diagnostic approach Am Fam Physician 2022 106 260 8 36126007
+Viera AJ, Antono B. Acute headache in adults: a diagnostic approach. Am Fam Physician. 2022;106:260–8.36126007
+19. Powers WJ Rabinstein AA Ackerson T Guidelines for the early management of patients with acute ischemic stroke: 2019 update Stroke 2019 50 e344 418 31662037 10.1161/STR.0000000000000211
+Powers WJ, Rabinstein AA, Ackerson Tothers. Guidelines for the early management of patients with acute ischemic stroke: 2019 update. Stroke. 2019;50:e344–418.31662037 10.1161/STR.0000000000000211
+20. Garcia-Azorin D Abelaira-Freire J Gonzalez-Garcia N Rodriguez-Adrada E Schytz HW Barloese M Sensitivity of the SNNOOP10 list in the high-risk secondary headache detection Cephalalgia 2022 42 1521 31 10.1177/03331024221120249 36003002
+Garcia-Azorin D, Abelaira-Freire J, Gonzalez-Garcia N, Rodriguez-Adrada E, Schytz HW, Barloese M, et al. Sensitivity of the SNNOOP10 list in the high-risk secondary headache detection. Cephalalgia. 2022;42:1521–31.36003002 10.1177/03331024221120249
+21. Chang DC Bass RR Cornwell EE MacKenzie EJ Undertriage of elderly trauma patients to state-designated trauma centers Arch Surg 2018 143 776 81 10.1001/archsurg.143.8.776 18711038
+Chang DC, Bass RR, Cornwell EE, MacKenzie EJ. Undertriage of elderly trauma patients to state-designated trauma centers. Arch Surg. 2018;143:776–81.10.1001/archsurg.143.8.776 18711038
+22. Klang E Barash Y Soffer S others. Predicting clinical deterioration of emergency department patients using machine learning NPJ Digit Med 2021 4 1 8
+Klang E, Barash Y, Soffer S. others. Predicting clinical deterioration of emergency department patients using machine learning. NPJ Digit Med. 2021;4:1–8.33398041
+23. Abedi V Khan A Zand R Implementing a machine learning screening approach for large vessel occlusion stroke JAMA Neurol 2020 77 1220 7
+Abedi V, Khan A, Zand R. Implementing a machine learning screening approach for large vessel occlusion stroke. JAMA Neurol. 2020;77:1220–7.
+24. Newgard CD Fu R Zive D Prospective validation of the national field triage guidelines for identifying seriously injured persons J Am Coll Surg 2021 222 146 58 10.1016/j.jamcollsurg.2015.10.016 PMC5323436 26712244
+Newgard CD, Fu R, Zive Dothers. Prospective validation of the national field triage guidelines for identifying seriously injured persons. J Am Coll Surg. 2021;222:146–58.10.1016/j.jamcollsurg.2015.10.016 PMC5323436 26712244
+25. Katsuki M Matsumori Y Kawamura S Kashiwagi K Koh A Tachikawa S Developing an artificial intelligence–based diagnostic model of headaches from a dataset of clinic patients’ records Headache: J Head Face Pain 2023 63 1097 108 10.1111/head.14611 37596885
+Katsuki M, Matsumori Y, Kawamura S, Kashiwagi K, Koh A, Tachikawa S, et al. Developing an artificial intelligence–based diagnostic model of headaches from a dataset of clinic patients’ records. Headache: J Head Face Pain. 2023;63:1097–108.10.1111/head.14611 37596885
+26. Katsuki M Shimazu T Kikui S Danno D Miyahara J Takeshima R Developing an artificial intelligence-based headache diagnostic model and its utility for non-specialists’ diagnostic accuracy Cephalalgia 2023 43 03331024231156925 10.1177/03331024231156925 37072919
+Katsuki M, Shimazu T, Kikui S, Danno D, Miyahara J, Takeshima R, et al. Developing an artificial intelligence-based headache diagnostic model and its utility for non-specialists’ diagnostic accuracy. Cephalalgia. 2023;43:03331024231156925.10.1177/03331024231156925 37072919
+27. Zahn A, Strauss S, Zwanzig D. Towards community-based evaluation of AI in neurology: development of a headache diagnosis dataset for large language models. Stud Health Technol Inform. 2025. pp. 237–41.10.3233/SHTI251535 41041781
+28. de Andrade JBC da Silva Costa TB Vasconcelos JL Lopes TLM Balsells MD Cristofolini VL Validation of an AI-Based platform for structured diagnosis of headache disorders using ICHD-3 criteria BMC Neurol 2025 25 489 10.1186/s12883-025-04473-1 41310513 PMC12661688
+de Andrade JBC, da Silva Costa TB, Vasconcelos JL, Lopes TLM, Balsells MD, Cristofolini VL, et al. Validation of an AI-Based platform for structured diagnosis of headache disorders using ICHD-3 criteria. BMC Neurol. 2025;25:489.41310513 10.1186/s12883-025-04473-1 PMC12661688
+29. Kraljevic Z, Bean D, Mascio A, Roguski L, Folarin A, Roberts A, et al. MedCAT–medical concept annotation tool. arXiv preprint arXiv:191210166. 2019.
+30. Char DS Shah NH Magnus D Implementing machine learning in health care — addressing ethical challenges N Engl J Med 2018 378 981 3 10.1056/NEJMp1714229 29539284 PMC5962261
+Char DS, Shah NH, Magnus D. Implementing machine learning in health care — addressing ethical challenges. N Engl J Med. 2018;378:981–3.29539284 10.1056/NEJMp1714229 PMC5962261
+31. Kelly CJ Karthikesalingam A Suleyman M Corrado G King D Key challenges for delivering clinical impact with artificial intelligence BMC Med 2019 17 195 10.1186/s12916-019-1426-2 31665002 PMC6821018
+Kelly CJ, Karthikesalingam A, Suleyman M, Corrado G, King D. Key challenges for delivering clinical impact with artificial intelligence. BMC Med. 2019;17:195.31665002 10.1186/s12916-019-1426-2 PMC6821018
+32. Davenport T Kalakota R The potential for artificial intelligence in healthcare Future Healthc J 2019 6 94 8 10.7861/futurehosp.6-2-94 31363513 PMC6616181
+Davenport T, Kalakota R. The potential for artificial intelligence in healthcare. Future Healthc J. 2019;6:94–8.31363513 10.7861/futurehosp.6-2-94 PMC6616181

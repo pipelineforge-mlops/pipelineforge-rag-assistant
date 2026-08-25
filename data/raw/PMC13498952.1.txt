@@ -1,0 +1,357 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Clin Transl Radiat Oncol
+Journal ID: Clin Transl Radiat Oncol
+NLM Journal ID: 101713416
+
+Clinical and Translational Radiation Oncology
+
+EISSN: 2405-6308
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498952
+PMID: 42633058
+DOI: 10.1016/j.ctro.2026.101261
+Article ID: S2405-6308(26)00156-4
+Article ID: 101261
+Article version: 1
+Subjects: Original Research Article
+
+The daily dose: Early usability of an LLM tool for patient summaries and trial matching in radiation oncology
+
+Holmes Jason a 1
+Mastroleo Federico b c d 1
+Borras-Osorio Mariana b
+Seetamsetty Srinivas b
+Shiraishi Satomi b
+Fatyga Mirek a
+Boughey Judy C. e
+Thiels Cornelius A. e
+Breen William G. b
+Ma Daniel J. b
+Ebner Daniel K. b
+Routman David M. b
+Laughlin Brady S. a
+Vargas Carlos E. a
+Patel Samir H. a
+Vora Sujay A. a
+Laack Nadia N. b
+Foong Andrew Y.K. b
+Liu Wei a ⁎
+Waddle Mark R. b ⁎
+a Department of Radiation Oncology, Mayo Clinic, 5777 E Mayo Blvd, Phoenix, AZ 85054, USA
+b Department of Radiation Oncology, Mayo Clinic, 200 First St SW, Rochester, MN 55905, USA
+c Division of Radiation Oncology, IEO – European Institute of Oncology IRCCS, Via Ripamonti 435, 20141, Milan, Italy
+d Department of Oncology and Hemato-Oncology, University of Milan, Via Festa del Perdono 7, 20122 Milan, Italy
+e Department of Surgery, Mayo Clinic, 200 First St SW, Rochester, MN 55905, USA
+⁎ Corresponding authors at: Department of Radiation Oncology, Mayo Clinic, 5777 E Mayo Blvd, Phoenix, AZ 85054, USA.1 co-first authors.
+
+Publication date: 2026 Nov
+Electronic publication date: 2026 Aug 11
+Volume: 61
+Electronic Location ID: 101261
+Received 2026 Jul 14; Revised 2026 Jul 18; Accepted 2026 Aug 9
+Copyright: © 2026 Published by Elsevier B.V. on behalf of European Society for Radiotherapy and Oncology.
+Copyright year: 2026
+Copyright holder:
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: large language model, radiation oncology, clinical decision support, workflow automation, electronic health record, clinical trial matching, artificial intelligence
+
+Abbreviation
+
+AAPM American Association of Physicists in Medicine
+
+AKI Acute kidney injury
+
+APP Advanced practice provider
+
+EHR Electronic health record
+
+GPT Generative Pre-trained Transformer
+
+HIPAA Health Insurance Portability and Accountability Act
+
+IRB Institutional Review Board
+
+LLM Large language model
+
+MCQ Multiple choice question
+
+NCCN National Comprehensive Cancer Network
+
+NP Nurse practitioner
+
+PA Physician assistant
+
+PSA Prostate-specific antigen
+
+RN Registered nurse
+
+SUS System Usability Scale
+
+TAM Technology Acceptance Model
+
+TAES TriAl Eligibility Surveillance (system)
+
+TDD The Daily Dose
+
+TRIPOD-LLM Transparent Reporting of a multivariable model for Individual Prognosis or Diagnosis–Large Language Models
+
+==============================
+Background
+
+Radiation oncology workflows generate large volumes of electronic health record (EHR) data requiring daily synthesis. Large language model (LLM)-based automation is promising, but workflow-embedded implementations at scale remain limited. We describe the design and early usability and adoption evaluation of The Daily Dose (TDD), an LLM-driven system for automated clinical summarization and trial identification in radiation oncology.
+
+Materials and methods
+
+TDD delivers physician-specific email summaries each morning across three Mayo Clinic campuses using RadOnc-GPT (GPT-4o) to generate EHR-derived patient summaries and identify potentially eligible clinical trials for new or consult visits. One month post-deployment, an anonymous cross-sectional survey adapted from the System Usability Scale and Technology Acceptance Model was administered to all recipients.
+
+Results
+
+Fifty-five of 110 users responded (50%); 94.5% were in radiation oncology and 69.1% were attending physicians. Overall, 83.6% used TDD at least several times per week. Mean domain scores (5-point Likert) were 3.89 ± 1.04 for usability and satisfaction, 3.43 ± 1.24 for perceived usefulness, and 3.80 ± 1.17 for impact and future use. Satisfaction was significantly associated with perceived time savings (p < 0.001); 27% estimated saving ≥10 min daily. Internal consistency was high (α = 0.97). Free-text responses highlighted improved preparedness and patient-context awareness but noted occasional inaccuracies and imperfect trial matching.
+
+Conclusion
+
+In this early usability and adoption evaluation, a workflow-integrated LLM summarization tool was widely adopted and generally favorably perceived. These findings reflect user perceptions; objective validation of summary accuracy, trial-matching performance, and workflow efficiency is needed to establish clinical impact.
+
+Highlights
+
+• LLM-generated daily patient summaries deployed across three Mayo Clinic campuses.
+
+• Early usability study: 50% response rate; 83.6% used the tool at least weekly.
+
+• Clinicians reported improved preparedness and awareness of clinical trial options.
+
+• Satisfaction correlated with perceived, self-reported time savings (p < 0.001).
+
+• Objective accuracy and workflow validation identified as essential next steps.
+
+1 Introduction
+
+Radiation oncology relies on a uniquely complex digital ecosystem to deliver precise, personalized cancer treatment; each patient's course generates hundreds of data points spanning years. Although electronic health records (EHRs) have standardized access to medical information, its volume can be overwhelming, requiring radiation oncologists and staff to consult multiple software programs. This manual process contributes to inefficiency, cognitive fatigue, and reduced time for direct patient interaction.
+
+Large language models (LLMs) have rapidly advanced the automation of information-intensive clinical tasks [1], [2]. Fine-tuned architectures can generate discharge, hospital-course, and CT-simulation summaries with accuracy comparable to professionally authored documentation in HIPAA-compliant settings [3], [4], [5], [6], [7], multi-agent and retrieval-augmented frameworks automate record retrieval, scheduling, documentation, and data integration across hospital systems [8], [9], and natural-language methods can streamline diagnostic and procedural coding [10] and predictive-model feature selection [11]. At the same time, LLM-generated clinical summaries remain vulnerable to omissions of key information, hallucinations, and incorrect prioritization of clinically relevant findings, underscoring the need for careful evaluation and continued human oversight when such systems are deployed in clinical practice [3], [4].
+
+RadOnc-GPT was developed as a specialized LLM agent for radiation-oncology workflows, capable of outcome labeling, documentation assistance, cancer patient education [12], and inbox message generation with expert-level performance [[13], [14]].
+
+Building on these works, we developed The Daily Dose (TDD), a production-level application that operationalizes RadOnc-GPT within the live clinical workflow. Each morning, TDD automatically emails every radiation oncologist a personalized, EHR-derived status summary of each scheduled patient and identifies clinical trials for which patients may be eligible. TDD is deployed across three Mayo Clinic campuses (Arizona, Florida, and Minnesota) and represents, to our knowledge, a first-in-practice implementation of LLM-driven automation in daily oncology care at scale. This manuscript describes the system's design and initial evaluation, which was conceived as an early usability and adoption study focused on clinician perceptions of usability, satisfaction, and perceived impact on workflow.
+
+2 Material and methods
+
+The Daily Dose (TDD) is a fully automated, provider-facing application integrated into the departmental workflow, delivering daily, physician-specific, AI-generated patient summaries by email. It runs autonomously within Mayo Clinic's secure, HIPAA-compliant computing environment, using RadOnc-GPT, an LLM-based agent tooled for radiation oncology, as its reasoning engine [13]. Throughout this evaluation, the LLM used was GPT-4o (OpenAI, San Francisco, CA) with temperature 0.
+
+TDD executes each morning at 5:00 AM local time; a coordinating script identifies participating physicians and initiates generation for each in parallel.
+
+2.1 Clinical summary
+
+For every provider, the system retrieves the day's appointment list from the EHR (time, type, patient name, identifier). For each appointment, RadOnc-GPT is prompted to retrieve relevant EHR elements—diagnosis details, treatment plans, appointments, radiology and pathology reports, and clinical notes—and synthesize a short narrative of the patient's current condition in the context of the upcoming visit. Disease-specific parameters (e.g., prostate cancer PSA trends, Gleason score, and NCCN risk category) are included when relevant. When data are insufficient, RadOnc-GPT outputs a standardized fallback statement: “There is not enough information to provide a status report”. The full prompt is available in the Supplemental Material.
+
+2.2 Clinical trial matching
+
+For new or consult visits, TDD further prompts RadOnc-GPT to evaluate potential clinical-trial eligibility (full prompt in Supplemental Material). RadOnc-GPT first identifies the primary diagnosis and treatment context to generate condition–intervention keyword pairs, used to iteratively search the clinicaltrials.gov API, restricted to open, actively accruing Mayo Clinic trials. Inclusion and exclusion criteria of each candidate trial are then assessed as likely met, not met, or lacking sufficient information. The output lists potentially relevant trials with short eligibility summaries and study links; standardized fallback text is inserted when no suitable trials are found or demographics are incomplete. The system was designed as a decision-support aid: trial suggestions are intended to prompt clinician consideration and require manual verification of eligibility before any action is taken. Formal performance metrics of the trial-matching component (including sensitivity, specificity, false-positive rate, and the proportion of suggestions leading to screening or referral) were not collected during this early deployment phase and are the focus of ongoing evaluation.
+
+2.3 Email format and delivery
+
+Once all summaries are generated, TDD constructs an email tailored to each physician. The message includes:1. A greeting and the physician's name,
+
+2. Each scheduled appointment with appointment type and intuitive visual indicators (e.g., emojis to distinguish consults, follow-ups, and simulations),
+
+3. The concise patient-status summary,
+
+4. Clinical-trial eligibility results (for new or consult patients only), and
+
+5. A closing section with contact information and feedback link.
+
+All content is rendered from Markdown, sent through the institutional mail server, and archived automatically. Log files record generation time, model interactions, and errors; failed processes are retried up to three times. Physicians typically receive their email before the clinical day begins, allowing rapid review of upcoming cases and potential matching trials (See Fig. 1).Fig. 1 System Diagram for The Daily Dose. Each morning, RadOnc-GPT retrieves the Radiation Oncologist’ schedule for the day and summarizes their patients. This summary is sent as a single email at the start of the day.
+
+Fig. 1
+
+2.4 Questionnaire and feedback
+
+One month after launching TDD to all of radiation oncology at Mayo Clinic, a structured feedback questionnaire (Microsoft Forms) was administered from August 1 to 27, 2025, with weekly email reminders. Participation was voluntary, responses were anonymous, and consent was implied by completion. Because participation was voluntary, respondents may not be fully representative of all users.
+
+The questionnaire content was adapted from System Usability Scale (SUS) [15] and Technology Acceptance Model (TAM) [16]. Given the nature of The Daily Dose, items were modified to capture domains relevant to clinical workflow integration. The adapted instrument was reviewed by the study team for clarity and face validity prior to distribution, but it did not undergo formal psychometric validation as a standalone scale, and no dedicated pilot-testing phase or structured oral interviews were performed; internal consistency was therefore assessed post hoc using Cronbach's alpha.
+
+The final survey included 11 items divided into 5 domains:1. Demographics: three multiple choice questions (MCQs) capturing the specialty, the professional role, and years in practice.
+
+2. Usage patterns: two MCQs assessing frequency of reading summaries and estimated daily time saved.
+
+3. Usability and satisfaction: five Likert-scale items, adapted from SUS, evaluating ease of use, clarity of summaries, ability to locate relevant information, integration into daily workflow and overall satisfaction.
+
+4. Perceived usefulness, impact and future use: nine Likert-scale items, adapted from TAM, assessing perceived usefulness, impact on clinical practice, intention to continue use, and likelihood of recommendation.
+
+5. Optional comments: three open questions on the most useful features, suggested improvements, and additional comments.
+
+2.5 Statistical analysis
+
+Descriptive statistics included means, standard deviations, and frequency distributions. Likert responses (1–5) were converted to numeric values, and domain scores were calculated as the mean of constituent items. Internal consistency was assessed with Cronbach's alpha for each domain and the overall scale. Given the ordinal nature of the data, non-parametric tests (Spearman rank correlation, Kruskal-Wallis, and Mann-Whitney U) were used as appropriate. Statistical significance was set at p < 0.05; missing data were handled through pairwise deletion.
+
+This project was reviewed and exempted by the Mayo Clinic Institutional Review Board, and conducted as a quality improvement initiative.
+
+This study is reported in accordance with the TRIPOD-LLM reporting guideline [17] (Supplemental Material).
+
+3 Results
+
+Fifty-five of 110 users (50%) completed the survey. Most worked in radiation oncology (94.5%), with small numbers from medical oncology (3.6%) and oncology nurse navigation (1.8%). Attending physicians predominated (69.1%), then advanced practice providers (14.5%) and registered nurses (10.9%); 56.4% had over 10 years of professional experience. Overall, 52.7% reported using TDD daily and 30.9% a few times per week (Table 1).Table 1 Characteristics of the survey respondents.
+
+Total	55 (100%)	
+Specialty	
+Radiation oncology	52 (94.5%)	
+Medical oncology	2 (3.6%)	
+Oncology nurse navigator	1 (1.8%)	
+  	
+Role	
+Attending physician	38 (69.1%)	
+APP (PA or NP)	8 (14.5%)	
+RN	6 (10.9%)	
+Resident / Fellow	2 (3.6%)	
+LPN	1 (1.8%)	
+  	
+Years of Experience	
+>10 years	31 (56.4%)	
+5–10 years	12 (21.8%)	
+<5 years	12 (21.8%)	
+  	
+Usage Frequency	
+Daily	29 (52.7%)	
+A few times a week	17 (30.9%)	
+Occasionally	5 (9.1%)	
+Rarely or never	4 (7.3%)	
+
+Perceived time savings varied across users. While 7 (12.7%) participants reported saving more than 20 min per day and 8 (14.5%) reported 10–20 min, 10 (18.2%) indicated saving 5–10 min, and 18 (32.7%) reported saving less than 5 min. Conversely, 12 (21.8%) respondents stated that they did not experience any time savings when using TDD.
+
+3.1 Usability and satisfaction
+
+The usability and satisfaction domain yielded a mean score of 3.89 (±1.04). Most respondents (87%) agreed that TDD was easy to use, 76% found the summaries clearly structured and easy to read, 56% could quickly locate needed information, and 60% reported good integration with daily workflow. Regarding overall satisfaction with TDD performance, 7% strongly disagreed, 24% disagreed, 20% were neutral, 16% agreed, and 33% strongly agreed (Fig. 2a).Fig. 2 Likert scale ratings of a) usability and satisfaction; b) perceived usefulness ratings; c) impact and future use ratings.
+
+Fig. 2
+
+3.2 Perceived usefulness
+
+The perceived usefulness section received a mean score of 3.43 (±1.24), only modestly above the neutral midpoint of the scale, indicating mixed perceptions of usefulness. Overall, 62% of respondents agreed or strongly agreed that TDD helped them stay updated on scheduled appointments, 53% that it improved understanding of patient clinical summaries, and 55% that it facilitated identification of patients eligible for clinical trials. Responses were more divided regarding team care coordination (35% disagreeing, 20% neutral) and reduction of time spent reviewing charts or preparing rounds (20% strongly disagreeing, 22% disagreeing, 11% neutral) (Fig. 2b).
+
+3.3 Impact and future use
+
+The impact and future use domain yielded a mean score of 3.80 (±1.17). A majority (64%) agreed or strongly agreed that they would like similar tools in other specialties and would continue using TDD if available; 60% would recommend it to a colleague, while 17% disagreed. Responses were mixed on whether TDD positively affects clinical efficiency (49% agreeing or strongly agreeing; 29% disagreeing or strongly disagreeing) (Fig. 2c).
+
+3.4 Overall satisfaction
+
+Overall satisfaction yielded a mean score of 3.70 ± 1.10. Satisfaction differed significantly across time-saved categories (p < 0.001), increasing with greater perceived time savings: participants reporting more than 5 min saved had the highest satisfaction, and those reporting no time savings the lowest (Fig. 3).Fig. 3 Overall Satisfaction by Time Saved When Using The Daily Dose.
+
+Fig. 3
+
+The breakdown of overall satisfaction by seniority level (Fig. 4) showed mean scores of 3.42 ± 0.82 for staff with <5 years of experience, 3.81 ± 0.79 for those with 5–10 years of seniority, and 3.77 ± 1.29 for staff with >10 years of experience (p = 0.607).Fig. 4 Overall Satisfaction by Seniority level.
+
+Fig. 4
+
+3.5 Internal consistency
+
+The internal consistency of the questionnaire was excellent, with an overall Cronbach's alpha of 0.971, indicating high reliability of the scale. Subscale analyses also demonstrated strong internal consistency, with Cronbach's alpha values of 0.906 for the Usability and Satisfaction section, 0.937 for the Perceived Usefulness section, and 0.951 for the Impact and Future Use section.
+
+3.6 Free-text feedback
+
+In the open questions, respondents highlighted concise, helpful summaries that improved understanding of patient history and treatment trajectory and aided daily preparation, especially when covering for colleagues. Areas for improvement included summaries that could be incorrect, contain unnecessary detail, or omit critically important information—indicating a need for access to outside records and improved accuracy and relevance. While trial identification was valued, feedback noted that the system frequently suggests erroneous trials or ones not meeting inclusion/exclusion criteria, requiring further refinement.
+
+4 Discussion
+
+4.1 Overview and adoption
+
+The Daily Dose represents one of the first LLM-based automation tools deployed across all providers within a single specialty at a large institution, spanning three Mayo Clinic regions and embedded directly into routine clinical workflow. One-month post-deployment responses were heterogeneous, but most users agreed or strongly agreed on key domains such as usability, time savings, and satisfaction, and more than half were daily users. This indicates an overall favorable but somewhat fragmented perception, as expected for an early-phase tool in real-world deployment. The high adoption rate suggests sufficient perceived value for incorporation into daily routines, while high usability scores and strong intention for continued use support the low interaction burden and seamless workflow integration. Importantly, these findings characterize user perception and do not represent objective clinical effectiveness, therefore they should be interpreted accordingly.
+
+4.2 Time savings, satisfaction, and preparedness
+
+Perceived time savings varied substantially among users. Using category midpoints, cumulative perceived savings across respondents approximated 560 min per day. This estimate should be interpreted with particular caution: it relies entirely on self-reported intervals and category-midpoint assumptions, and no objective measures were collected to corroborate these perceptions. Perceived time savings should therefore be regarded as a subjective signal of value. Nonetheless, modest individual gains may translate into meaningful collective benefit at scale.
+
+Interestingly, perceived time savings did not uniformly translate into reduced chart-review time, which may reflect TDD's role as a preparatory and organizational aid rather than a replacement for clinical decision-making or documentation review. In this context, agreement by half of respondents with key usefulness and impact statements is a meaningful signal. The association between satisfaction and perceived time savings nonetheless suggests that efficiency gains, when realized, meaningfully shape the user experience, consistent with the pattern observed in Fig. 3, where overall satisfaction increased with greater time saved.
+
+4.3 Clinical trials: context and implementation impact
+
+Clinical-trial matching is a domain of significant LLM promise, traditionally requiring labor-intensive manual review of patient records and protocol criteria. Early cognitive-computing approaches, such as IBM Watson for Clinical Trial Matching at Mayo Clinic and the TriAl Eligibility Surveillance (TAES) system, established feasibility of automated eligibility detection within EHRs [[18], [19]], institution-agnostic frameworks extended matching across networks [20], and recent LLM-driven systems such as TrialGPT report criterion-level accuracies of approximately 85–93% and reductions in manual screening time exceeding 40% [[21], [22], [23], [24]]. Whereas those studies emphasize technical performance, The Daily Dose is evaluated as a workflow-embedded intervention delivered daily to clinicians at scale, where value lies not only in eligibility determination but also in supporting routine consideration of trials within daily planning. In the present evaluation, however, we did not quantify the sensitivity, specificity, or false-positive rate of trial suggestions, nor the proportion of suggestions that ultimately led to screening or referral, and each suggestion currently carries a manual verification burden for the clinician; formal assessment of these performance metrics is a priority for future work.
+
+Consistent with this framing, free-text responses suggested an additional and somewhat unexpected effect: the tool helped at least some physicians develop a better understanding and awareness of ongoing clinical trials, particularly those relevant to their specialty. This educational impact may be meaningful even when trial suggestions require verification. At the same time, open-question feedback also highlighted concerns regarding occasional inaccuracies or irrelevant trial suggestions, showing the need for further refinements to ensure a sustained clinical trust over time.
+
+4.4 Measurement properties and subgroup patterns
+
+The questionnaire demonstrated excellent internal consistency across domains, supporting the coherence of the grouped items, and responses spanned the full Likert scale, capturing meaningful differences across professional roles. Senior respondents tended to rate the tool more favorably than their younger colleagues; however, these trends were not statistically significant and should be viewed as hypothesis generating (Fig. 4).
+
+4.5 Trust, human oversight, and governance
+
+User satisfaction, workflow efficiency, and clinical safety are distinct constructs, and the present data address them unequally: the survey primarily measures satisfaction and adoption, provides only subjective signals regarding efficiency, and does not directly assess safety. Sustained adoption of LLM-based tools will likely depend on factors beyond usability, including clinician trust, transparency about system limitations, and clear accountability for AI-generated content. Within The Daily Dose workflow, outputs are explicitly positioned as preparatory aids: they do not replace chart review or clinical decision-making, and human verification of any actionable content, including trial suggestions, remains mandatory. Regulatory expectations for such tools are evolving. In the United States, oversight of AI-enabled clinical software is being actively shaped by FDA guidance on artificial intelligence-enabled device software functions [25], while in the European Union the Artificial Intelligence Act introduces risk-based obligations that may apply to clinical AI systems [26]. Institutional governance (including monitoring of output quality, clear error-reporting and escalation pathways, and periodic revalidation after model or prompt updates) will be essential for safe scaling, both in the US and internationally.
+
+4.6 Limitations and future work
+
+Several limitations should be acknowledged. First, the survey captured user perceptions, therefore responses may reflect individual expectations and prior experience with digital tools. Second, although adapted from established frameworks, the instrument was not formally validated as a standalone scale, and results should therefore be interpreted as exploratory. Third, participation was voluntary, introducing potential selection bias: early adopters and enthusiastic users may have been more likely to respond, whereas dissatisfied or disengaged users may be under-represented, which could bias perception scores in either direction. Fourth, the survey timing, limited sample size, and predominance of radiation oncologists may reduce generalizability. In addition, this study did not objectively evaluate summary accuracy, omission rates, or factual error rates, nor the performance of the trial-matching component (sensitivity, specificity, false-positive rate, or referral yield); such evaluations are essential next steps before any claim of clinical impact can be made. Finally, all findings derive from a single academic institution with a specific EHR and computing infrastructure; transfer to other settings—particularly non-academic practices or centers with different EHR systems—cannot be assumed and will likely require substantial technical and workflow adaptation.
+
+A key limitation affecting new-patient summarization and trial matching is that RadOnc-GPT did not retrieve external records; sparse clinical context limits reliable eligibility assessment, whereas richer longitudinal data should improve trial identification and criterion reasoning. Future work will prioritize integrating external records.
+
+Scalability is also important: current costs are relatively high due to extensive EHR retrieval/summarization and, for consults, trial-eligibility evaluation. Planned mitigations include more selective data retrieval to reduce token use and tiered use of lower-cost models, reserving more capable models for complex cases. We have not yet quantified costs on a per-user or per-summary basis; formal cost and cost-effectiveness analyses will accompany future evaluations and will be essential for institutions considering similar deployments. Future evaluations should also incorporate objective workflow metrics and formal assessments of summary accuracy and omission rates.
+
+5 Conclusion
+
+In this early usability and adoption study, The Daily Dose was widely adopted and generally favorably perceived by providers across three Mayo Clinic campuses, supporting the feasibility of workflow-embedded, LLM-based summarization in a complex oncology environment. These findings reflect user perceptions and transferring this approach to other institutions may prove difficult and remains to be demonstrated. Ongoing development will be evaluated in future studies incorporating objective workflow metrics and formal assessments of summary accuracy and trial-matching performance.
+
+CRediT authorship contribution statement
+
+Jason Holmes: Writing – review & editing, Writing – original draft, Supervision, Software, Methodology, Conceptualization. Federico Mastroleo: Writing – review & editing, Writing – original draft, Investigation, Formal analysis, Data curation, Conceptualization. Mariana Borras-Osorio: Writing – review & editing, Investigation, Data curation. Srinivas Seetamsetty: Software, Resources. Satomi Shiraishi: Writing – review & editing, Supervision, Resources. Mirek Fatyga: Writing – review & editing, Supervision, Resources. Judy C. Boughey: Writing – review & editing, Resources. Cornelius A. Thiels: Writing – review & editing, Resources. William G. Breen: Writing – review & editing, Investigation. Daniel J. Ma: Writing – review & editing, Investigation. Daniel K. Ebner: Writing – review & editing, Investigation. David M. Routman: Writing – review & editing, Investigation. Brady S. Laughlin: Writing – review & editing, Investigation. Carlos E. Vargas: Writing – review & editing, Investigation. Samir H. Patel: Writing – review & editing, Investigation. Sujay A. Vora: Writing – review & editing, Investigation. Nadia N. Laack: Writing – review & editing, Supervision. Andrew Y.K. Foong: Writing – review & editing, Software, Methodology. Wei Liu: Writing – review & editing, Supervision, Conceptualization. Mark R. Waddle: Writing – review & editing, Supervision, Project administration, Conceptualization.
+
+Declaration of competing interest
+
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+Appendix A Supplementary data
+
+Clinical Summary and Clinical Trial Matching Prompt.
+
+Acknowledgements
+
+None.
+
+Generative AI disclosure
+
+ChatGPT (OpenAI, GPT-4o) was used to improve manuscript readability and language clarity and to assist in generating portions of the figures included in the diagrams; all scientific content, data analysis, interpretations, and final figure design were independently reviewed, verified, and approved by the authors, who take full responsibility for the accuracy and integrity of the work.
+
+Funding
+
+This work received no specific funding from public, commercial, or not-for-profit funding bodies.
+
+Ethics / IRB
+
+This project was reviewed and exempted by the Mayo Clinic Institutional Review Board and conducted as a quality improvement initiative. Informed consent for research purposes was implied by anonymous survey completion.
+
+Appendix A Supplementary data to this article can be found online at https://doi.org/10.1016/j.ctro.2026.101261.
+
+
+References
+
+1 Hao Y. Qiu Z. Holmes J. Large language model integrations in cancer decision-making: a systematic review and meta-analysis Npj Digit Med. 8 1 2025 450 10.1038/s41746-025-01824-7 40676129 PMC12271406
+2 Wang P. Liu Z. Li Y. Fine-tuning open-source large language models to improve their performance on radiation oncology tasks: a feasibility study to investigate their potential clinical applications in radiation oncology Med. Phys. 52 7 2025 e17985 10.1002/mp.17985 PMC12694766 40665561
+3 Verma R. Alsentzer E. Strasser Z. Verifiable summarization of electronic health records using large language models to support chart review Health Informatics Preprint 2025 10.1101/2025.06.02.25328807 posted online June 3
+4 Small W.R. Austrian J. O’Donnell L. Evaluating hospital course summarization by an electronic health record–based large language model JAMA Netw. Open 8 8 2025 e2526339 10.1001/jamanetworkopen.2025.26339 PMC12351420 40802185
+5 Goswami J. Prajapati K.K. Saha A. Saha A.K. Parameter-efficient fine-tuning large language model approach for hospital discharge paper summarization Appl. Soft Comput. 157 2024 111531 10.1016/j.asoc.2024.111531
+6 Osborne T. Abbasi S. Hong S. Towards inpatient discharge summary automation via large language models: a multidimensional evaluation with a HIPAA-compliant instance of GPT-4o and clinical expert assessment Health Systems and Quality Improvement Preprint 2025 10.1101/2025.04.03.25325204 posted online April 4 PMC12919585 41726458
+7 Cao M. Hu S. Sharp J. Using large language models to automate summarization of CT simulation orders in radiation oncology J Appl Clin Med Phys 26 11 2025 e70310 10.1002/acm2.70310 PMC12558592 41144781
+8 Gebreab S.A. Salah K. Jayaraman R. Habib Ur Rehman M. Ellaham S. LLM-Based Framework for Administrative Task Automation in Healthcare 2024 12th international symposium on digital forensics and security (ISDFS) 2024 IEEE 1 7 10.1109/ISDFS60797.2024.10527275
+9 Guerra R. Enhancing risk management in hospitals: leveraging artificial intelligence for improved outcomes Ital J Med 18 2 2024 10.4081/itjm.2024.1721
+10 Tavabi N. Singh M. Pruneski J. Kiapour A.M. Systematic evaluation of common natural language processing techniques to codify clinical notes, Konys A, ed PLoS One 19 3 2024 e0298892 10.1371/journal.pone.0298892 PMC10919678 38451905
+11 Jeong D.P. Lipton Z.C. Ravikumar P. LLM-Select: feature selection with large language models arXiv. Preprint posted online 2024 10.48550/ARXIV.2407.02694
+12 Hao Y. Holmes J. Waddle M.R. Personalizing prostate cancer education for patients using an EHR-integrated LLM agent Npj Digit Med 8 1 2025 770 10.1038/s41746-025-02166-0 41413170 PMC12714722
+13 Holmes J. Hao Y. Borras-Osorio M. RadOnc-GPT: an autonomous LLM agent for real-time patient outcomes labeling at scale arXiv. Preprint posted online 2025 10.48550/ARXIV.2509.25540
+14 Hao Y. Holmes J. Hobson J. Retrospective comparative analysis of prostate Cancer in-basket messages: responses from closed-domain large language models versus clinical teams Mayo Clin Proc Digit Health 3 1 2025 100198 10.1016/j.mcpdig.2025.100198 PMC11932704 40130001
+15 Brooke J. SUS - A quick and dirty usability scale
+
+16 Davis F.D. Venkatesh V. A critical assessment of potential measurement biases in the technology acceptance model: three experiments Int. J. Hum.-Comput. Stud. 45 1 1996 19 45 10.1006/ijhc.1996.0040
+17 Gallifant J. Afshar M. Ameen S. The TRIPOD-LLM reporting guideline for studies using large language models Nat. Med. 31 1 2025 60 69 10.1038/s41591-024-03425-5 39779929 PMC12104976
+18 Helgeson J. Rammage M. Urman A. Clinical performance pilot using cognitive computing for clinical trial matching at Mayo Clinic J. Clin. Oncol. 36 15_suppl 2018 e18598 10.1200/JCO.2018.36.15_suppl.e18598
+19 Meystre S.M. Heider P.M. Cates A. Piloting an automated clinical trial eligibility surveillance and provider alert system based on artificial intelligence and standard data models BMC Med. Res. Methodol. 23 1 2023 88 10.1186/s12874-023-01916-6 PMC10088225 37041475
+20 Shriver S.P. Arafat W. Potteiger C. Feasibility of institution-agnostic, EHR-integrated regional clinical trial matching Cancer 130 1 2024 60 67 10.1002/cncr.35022 37851512
+21 Jin Q. Wang Z. Floudas C.S. Matching patients to clinical trials with large language models Nat. Commun. 15 1 2024 9074 10.1038/s41467-024-53081-z 39557832 PMC11574183
+22 Callies A. Bodinier Q. Ravaud P. Davarpanah K. Real-world validation of a multimodal LLM-powered pipeline for high-accuracy clinical trial patient matching leveraging EHR data arXiv. Preprint posted online 2025 10.48550/ARXIV.2503.15374 PMC12749220 41275042
+23 Rybinski M. Kusa W. Karimi S. Hanbury A. Learning to match patients to clinical trials using large language models J. Biomed. Inform. 159 2024 104734 10.1016/j.jbi.2024.104734 39389283
+24 Beattie J. Owens D. Navar A.M. Large language model augmented clinical trial screening Health Informatics 2024 10.1101/2024.08.27.24312646 Preprint posted online August 28
+25 Draft Guidance for Industry and Food and Drug Administration Staff. Artificial Intelligence-Enabled Device Software Functions: Lifecycle Management and Marketing Submission Recommendations https://www.fda.gov/media/184856/download
+26 Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence and amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) (Text with EEA relevance) June 13, 2024. Accessed May 1 http://data.europa.eu/eli/reg/2024/1689/oj 2026

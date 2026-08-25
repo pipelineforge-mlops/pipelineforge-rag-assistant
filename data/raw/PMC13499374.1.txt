@@ -1,0 +1,591 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Brain Spine
+Journal ID: Brain Spine
+NLM Journal ID: 9918470888906676
+
+Brain & Spine
+
+EISSN: 2772-5294
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499374
+PMID: 42633373
+DOI: 10.1016/j.bas.2026.106257
+Article ID: S2772-5294(26)00333-4
+Article ID: 106257
+Article version: 1
+Subjects: Article
+
+Mortality among patients with aneurysmal SAH in a nationwide unselected cohort
+
+Stauning Agnes T. agnes.tving.stauning@regionh.dk a b ⁎
+Hauerberg John a
+Stavngaard Trine c
+Mkoma George F. d
+Munch Tina N. a e f
+a Department of Neurosurgery, Copenhagen University Hospital, Copenhagen, Denmark
+b Department of Neurosurgery, Odense University Hospital, Odense, Denmark
+c Department of Neuroradiology, Copenhagen University Hospital, Copenhagen, Denmark
+d Department of Data Science and AI in Health, Statens Serum Institut, Copenhagen, Denmark
+e Department of Congenital Disorders, Statens Serum Institut, Copenhagen, Denmark
+f Department of Clinical Medicine, Faculty of Health Sciences, University of Copenhagen, Copenhagen, Denmark
+⁎ Corresponding author. Department of Neurosurgery, Copenhagen University Hospital, Inge Lehmanns vej 6, 2100 Copenhagen Ø, Denmark. agnes.tving.stauning@regionh.dk
+Publication date: 2026
+Electronic publication date: 2026 Aug 12
+Volume: 6
+Electronic Location ID: 106257
+Received 2026 May 15; Revised 2026 Jul 15; Accepted 2026 Aug 5
+Copyright: © 2026 The Authors
+Copyright year: 2026
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: aSAH, Mortality, Rebleeding, WFNS score, Hydrocephalus
+
+Abbreviations
+
+aSAH aneurysmal subarachnoid haemorrhage
+
+DanStroke Danish Stroke Register
+
+AMI acute myocardial infraction
+
+TIA transient ischemic attack
+
+GCS Glasgow Coma Scale
+
+WFNS World Federation of Neurological surgeons
+
+EVD External ventricular drain
+
+DCI Delayed cerebral ischemia
+
+CTc Computed Tomography of the cerebrum
+
+CTA Computed Tomography angiography
+
+OR Odds ratio
+
+==============================
+Introduction
+
+Aneurysmal subarachnoid haemorrhage is a severe condition with reported in-hospital mortality ranging from 7.1% to 24.1%, but the term in-hospital mortality is not consistently defined, and methodological limitations persist in studies investigating mortality and potential risk factors for mortality. In Denmark, nearly all patients with aSAH are admitted to a neurosurgical department and recorded in a nationwide registry.
+
+Research question
+
+Using nationwide clinical data we aimed to estimate mortality within the primary admission to a neurosurgical department and identify risk factors associated with mortality in an unselected aSAH cohort.
+
+Material and methods
+
+All patients with aSAH recorded in the Danish Stroke Registry between January 1st 2017 and August 31st, 2022 were included. Associations between potential risk factors and mortality were examined using univariate and multivariate logistic regression models, adjusting for age, sex and neurosurgical admission. Subgroup analyses were conducted among patients who underwent closure of the aneurysm.
+
+Results
+
+The cohort comprised 1374 patients. Overall mortality was 22.0%. Mortality among patients who underwent aneurysm treatment was 11.9%. Lower Glasgow Coma Scale score, higher World Federation of Neurological Surgeons score, higher Fisher scale score, aneurysm size >12 mm, posterior circulation location, rebleeding and cerebral infarction were significantly associated with mortality.
+
+Discussion and conclusion
+
+In conclusion, this nationwide clinical register-based study showed that mortality after aSAH remained substantial, with 22.0% among all patients admitted to a neurosurgical department in Denmark and 11.9% among those who underwent closure of the aneurysm. Mortality was mainly related to initial clinical severity and complications rather than pre-existing comorbidity.
+
+Highlights
+
+• First nationwide study including all aSAH patients from a detailed database.
+
+• Estimated mortality and risk factors in an unselected nationwide cohort of aSAH patients.
+
+• Overall in-hospital mortality was 22.0%, 11.9% among patients undergoing aneurysm closure.
+
+• Mortality is mainly driven by initial clinical severity and acute neurological complications.
+
+• Key predictors include GCS, WFNS, Fisher scores, large aneurysms, posterior location, rebleed.
+
+1 Introduction
+
+Aneurysmal subarachnoid haemorrhage (aSAH) is a severe disease with high mortality and morbidity (Ikawa et al., 2020; Waweru and Gatimu, 2019; Dharia et al., 2020; Said et al., 2025; Ohta et al., 2023). Most patients die within the primary hospitalisation, often reported as in-hospital mortality, which over the past decade range from 7.1% to 24.1% (Ikawa et al., 2020; Waweru and Gatimu, 2019; Dharia et al., 2020; Said et al., 2025; Ohta et al., 2023; Zhu et al., 2023; Göttsche et al., 2022; Stienen et al., 2018; Schatlo et al., 2020; Øie et al., 2020; Stauning et al., 2022; Udy, 2020; Lantigua et al., 2015; Qureshi et al., 2005). However, the term in-hospital mortality is not consistently defined. In particular, the time frame covered by in-hospital mortality is frequently unclear and depends on the duration of hospitalisation, which may vary considerably, dependent on whether the term merely covers admittance to a neurosurgical department only or it also covers subsequent admittances to department of neurology and/or rehabilitation units (Ikawa et al., 2020; Waweru and Gatimu, 2019; Dharia et al., 2020; Said et al., 2025; Ohta et al., 2023; Zhu et al., 2023; Göttsche et al., 2022; Stienen et al., 2018; Schatlo et al., 2020; Øie et al., 2020; Stauning et al., 2022; Udy, 2020; Lantigua et al., 2015; Qureshi et al., 2005).
+
+Several studies have investigated potential risk factors for poor outcome following aSAH, identifying a significant association between age, hypertension, smoking and severity of the haemorrhage and mortality (Dharia et al., 2020; Göttsche et al., 2022; Stienen et al., 2018; Øie et al., 2020; Stauning et al., 2022; Lantigua et al., 2015; Luong et al., 2021; Mahajan et al., 2023). However, significant methodological limitations persist in studies investigating mortality following aSAH, as well as in those evaluating potential risk factors for mortality. The studies are often based on single-centre study populations (Göttsche et al., 2022; Stauning et al., 2022; Lantigua et al., 2015), focus on selected patient populations, such as subgroups who underwent closure of their aneurism, leaving out patients not found eligible for treatment (Ikawa et al., 2020; Dharia et al., 2020; Zhu et al., 2023; Stienen et al., 2018; Udy, 2020; Stauning et al., 2022) or they are limited to smaller geographical areas (Waweru and Gatimu, 2019; Said et al., 2025; Ohta et al., 2023; Luong et al., 2021). These factors compromise the generalisability of the results and makes it difficult to generalise the findings to broader and unselected groups.
+
+Consequently, overall mortality and the independent contribution of pre-existing comorbidities in a contemporary, clinically verified, and truly unselected national cohort remain incompletely investigated.
+
+Since 2017, the Danish Stroke Register (DanStroke) has systematically collected comprehensive clinical data on all patients diagnosed with aSAH in Denmark. All aSAH patients are transferred to one of the four neurosurgical departments, where it is mandatory to register them in DanStroke. All four departments follow common national treatment guidelines which ensures standardized patient management (Obbekjær et al., 2024). These national guidelines are consistent with the guidelines set by American Stroke Association and European Stroke Organization (Hoh et al., 2023; Steiner et al., 2013). The nationwide registry combined with standardized national treatment guidelines, provides a unique opportunity to minimise selection bias, improve case ascertainment, and enable more granular adjustment for both baseline comorbidity and acute disease severity.
+
+Hence, our objectives were to investigate the mortality within the primary admission to a neurosurgical department following aSAH in a nationwide, unselected patient population, and to identify potential risk factors associated with mortality.
+
+2 Methods
+
+2.1 Study design and population
+
+This study was a nationwide register-based cohort study. Patients were identified from the DanStroke register during the period January 1st, 2017, to August 31st, 2022. The DanStroke is a clinical register upheld by The Danish Healthcare Quality Institute. The clinical data are collected by physicians at the treating hospitals by filling a detailed scheme for every patient. Virtually all patients with aSAH are managed in one of the four departments of neurosurgery in Denmark, which ensures data collection on all patients. Completeness of data collection is continuously evaluated and adjusted by the steering committee of DanStroke.
+
+2.2 Management of aSAH in Denmark
+
+Denmark has a tax-funded healthcare system providing universal access to emergency and hospital care. Patients with suspected aSAH undergo initial evaluation with non-contrast computed tomography of the cerebrum (CTc) and CT angiography (CTA) at the nearest emergency department. Patients with SAH are subsequently transferred to one of the four neurosurgical centres. If a CTA cannot be performed at the primary hospital, the angiogram will be made after admission at the neurosurgical department.
+
+All patients are admitted to a neurointensive care unit. The treatment strategy is determined collaboratively by vascular neurosurgeons and interventional neuroradiologists. When active treatment is deemed appropriate, the ruptured aneurysm is secured either by microsurgical clipping or endovascular occlusion. Depending on the clinical condition, it is aimed to treat the aneurysm during daytime within the first 24 h. All patients with aSAH receive prophylactic nimodipine for 21 days. Patients are typically managed at the neurosurgical department throughout this period, unless their clinical condition allows earlier transfer to a local neurological department. From there, the patients are referred for rehabilitation at either a municipal rehabilitation centre or a specialised neurorehabilitation centre.
+
+2.3 Inclusion and exclusion criteria
+
+Patient aged ≥ 18 years admitted to one of the four neurosurgical centres in Denmark with a diagnosis of aSAH, identified by International Classification of Disease (ICD) 10 codes: 160.0-160.7. Patients with aneurysms from a dissection or patients with spontaneous SAH without a saccular aneurysm are not registered in DanStroke.
+
+Patients were excluded if their vital status at the time of discharge from the neurosurgical department was not documented.
+
+2.4 Endpoint and covariates
+
+It is mandatory for the neurosurgical centres in Denmark to report data on all admitted patients with aSAH to DanStroke. The endpoint of this study was mortality within the primary admission to one of the four neurosurgical departments.
+
+DanStroke provides data on the following variables: sex, age at aSAH diagnosis, neurosurgical department, hypertension, diabetes, atrial fibrillation, previous history for acute myocardial infraction (AMI), periphery atherosclerosis, smoking status, previous transient ischemic attack (TIA), and treatment with anticoagulation medication. Furthermore, the register contributes information on location of the intracranial aneurysm, number of intracranial aneurysms, the size of intracranial aneurysms, as well as Glasgow Coma Scale (GCS), Fisher scale score and World Federation of Neurological surgeons (WFNS) score at the time of admission.
+
+Neurological complications to aSAH are recorded and includes rebleeding, hydrocephalus, ventriculitis, ischemic infarctions and vasospasm. Rebleeding is defined as the presence of rebleeding observed on a CTc after SAH was diagnosed but prior to aneurysm occlusion. Hydrocephalus is defined as a condition that required an external ventricular drain (EVD) due to clinical symptoms and radiological finding. Ventriculitis is defined as an EVD-associated infection confirmed by positive bacterial cultures. Vasospasm (or delayed cerebral ischemia (DCI)) is considered present if demonstrated on CTA or transcranial Doppler or based on strong clinical suspicion as global or focal neurological deterioration without other cause. Infarctions occurred after the treatment, due to any cause, were defined as visible ischemic lesions on a CTc.
+
+2.5 Statistical analyses
+
+Continuous variables are presented as means with range, and categorical variables as frequencies and percentages. Associations between potential risk factors and mortality were examined using univariate and multivariate logistic regression models. The multivariable models were adjusted for potential confounders and mediators, including age, sex, and hospital of admission, to ensure comparability between groups and valid estimation of independent risk factors for mortality within the primary admission to a neurosurgical department. Although treatment guidelines and clinical standards are largely uniform across the four departments, differences in geographical catchment areas and regional variation in prehospital morbidity may contribute to inter-hospital differences in mortality (Stauning et al., 2025). Adjustment for department of admission therefore accounts for these structural differences between patient populations.
+
+To reduce potential confounding related to withdrawal of care, additional analyses were performed among patients who underwent aneurysm occlusion. Both univariable and multivariable analyses were conducted. The multivariable analyses were adjusted for age, GCS score at admission, and time from ictus to aneurysm occlusion, as these variables are potential confounders of the association between the investigated risk factors and mortality (Stauning et al., 2022; Lantigua et al., 2015; Mahajan et al., 2023).
+
+Results are reported as odds ratios with 95% confidence intervals. A p-value < 0.05 was considered statistically significant. Missing data were handled using multiple imputation by chained equations. Twenty imputed datasets were generated with the R package MICE.
+
+2.6 Statistical power and sample size
+
+The study cohort was based on an existing retrospective dataset; therefore, no a priori sample size calculation was performed. The adequacy of the sample size was assessed based on the number of outcome events available for multivariable modelling. Among 1374 included patients, 302 deaths occurred. The final logistic regression model included 23 covariates, corresponding to 13.1 events per variable, which exceeds the conventional minimum threshold of 10 events per variable and supports the reliability of the model estimates.
+
+2.7 Ethics
+
+The study was approved by the Danish Stroke Register and the Data Protection Board of Copenhagen University Hospital (reference number p-2023-14241) and exemption from individual patient consent was waived. The pseudo-anonymized data were stored and handled in accordance with the Danish Data Protection Agency and the General Data Protection Regulations.
+
+3 Results
+
+3.1 Study population
+
+Between January 1st, 2017, and August 31st, 2022, a total of 1576 patients with aSAH were identified in DanStroke. 150 patients were excluded as they were not admitted to a neurosurgical department. Additional fifty-two patients were excluded for further analyses due to missing information regarding vital status at discharge from the neurosurgical department, resulting in a final study population of 1374 patients included for analysis (Fig. S1 in supplementary). This corresponds to an estimated annual incidence of 5.4 per 100,000 person-years, based on a total population in Denmark with an age of 18 years or more of 4,526,363 individuals by January 1st, 2020 (Danmarks Statistik, 2020).
+
+3.2 Baseline characteristics
+
+The baseline characteristics of the study cohort are presented in Table 1. An overview of the distribution of missing data is presented in Table S1 in supplementary. The mean age of the patients was 59.3 years, and 69.1% were female. The most prevalent comorbidity was hypertension (35.2%) and 35.0% of the patients were active smokers. About 37.6% had an aneurysm at the anterior communicating artery, followed by 21.3% at the middle cerebral artery and 14.4% at the posterior communicating artery. The mean WFNS score was 2.7, while the mean Fisher scale score was 3.3.Table 1 Baselines and characteristics of the study population.
+
+Table 1Table 1	Total number of patients n = 1374 (%)	
+Patient characteristics	
+Age mean (range)	59.3 (19; 97)	
+Sex	
+ Female	950 (69.1)	
+ Male	424 (30.9)	
+Neurosurgical department	
+ Department A	547 (39.8)	
+ Department B	348 (25.3)	
+ Department C	340 (24.8)	
+ Department D	139 (10.1)	
+Risk factors	
+Previous AMI	
+ Yes	58 (4.2)	
+ No	1275 (92.8)	
+ Missing data	41 (3.0)	
+Atrial fibrillation	
+ Yes	51 (3.7)	
+ No	1286 (93.6)	
+ Missing data.	37 (2.7)	
+Diabetes	
+ Yes	63 (4.6)	
+ No	1273 (92.6)	
+ Missing data.	38 (2.8)	
+Hypertension	
+ Yes	484 (35.2)	
+ No	839 (61.1)	
+ Missing data.	51 (3.7)	
+Peripheral arteriosclerosis	
+ Yes	33 (2.4)	
+ No	1290 (93.9)	
+ Missing data.	51 (3.7)	
+Smoking	
+ Current	481 (35.0)	
+ Former	225 (16.4)	
+ Never	295 (21.5)	
+ Missing data.	373 (27.1)	
+Previous TIA	
+ Yes	22 (1.6)	
+ No	1296 (94.3)	
+ Missing data.	56 (4.1)	
+Anticoagulation therapy	
+ No	1124 (81.8)	
+ Yes	225 (16.4)	
+ Missing data.	25 (1.8)	
+Clinical status at admission	
+GCS score (mean)	11.0	
+WFNS Grad (mean)	2.7	
+Fisher scale score (mean)	3.3	
+Aneurysm characteristics	
+Aneurysm location	
+ Anterior communicating artery	516 (37.6)	
+ Anterior cerebral artery	45 (3.3)	
+ Internal carotid artery	65 (4.7)	
+ Top of the internal carotid artery	41 (3.0)	
+ Middle cerebral artery	292 (21.3)	
+ Posterior communicating artery	198 (14.4)	
+ Basilar artery	112 (8.2)	
+ Superior cerebellar artery	8 (0.6)	
+ Anterior inferior cerebellar artery	4 (0.3)	
+ Posterior inferior cerebellar artery	37 (2.7)	
+ Vertebral artery	19 (13.8)	
+ Unknown	37 (2.7)	
+Multiple Aneurysm	
+ Yes	283 (20.6)	
+ No	1091 (79.4)	
+Aneurysm > 12 mm	
+ Yes	189 (13.8)	
+ No	1185 (86.2)	
+Treatment and neurological complications	
+Type of treatment	
+ Endovascular	793 (57.7)	
+ Surgical	408 (29.7)	
+ No closure	173 (12.6)	
+Time from ictus until treatment	
+ < 24 h	710 (51.7)	
+ > 24 h	475 (34.6)	
+ Missing data	189 (13.8)	
+Rebleeding	
+ Yes	155 (11.3)	
+ No	1206 (87.8)	
+ Missing data.	13 (0.9)	
+Vasospasm	
+ Yes	319 (23.2)	
+ No	1025 (74.6)	
+ Missing data.	30 (21.8)	
+Infarctions	
+ Yes	315 (22.9)	
+ No	1059 (77.1)	
+Hydrocephalus	
+ Yes	848 (61.7)	
+ No	526 (38.3)	
+Ventriculitis	
+ Yes	68 (5.0)	
+ No	1306 (95.5)	
+
+Of the 1374 patients, 793 (57.7%) underwent endovascular treatment, and 408 (29.7%) underwent surgical clipping. The remaining 173 (12.6%) patients were opted out from treatment of the aneurysm. In these patient active treatment was not meaningful due to a very poor clinical condition assessed as too poor to tolerate the treatment. Hydrocephalus was the most common neurological complication to aSAH, observed in 61.7% of the patients, followed vasospasms in 23.2% of the patients.
+
+3.3 Mortality and risk factors
+
+The overall mortality within the primary admission to a neurosurgical department was 320/1374 (22.0%), whereas it was 143/1201 (11.9%) among patients who had their ruptured aneurysm treated.
+
+Table 2 presents adjusted and unadjusted analysis for potential risk factors for mortality. Treatment modality according to aneurysm location is summarised in Supplementary Table S2. Mortality across subgroups is presented in Supplementary Table S2.Table 2 Associations between potential risk factors and mortality after aSAH among 1374 unselected patients.
+
+Table 2Table 2	Total n = 1374 (%)	Survivors n = 1072 (%)	Non-survivors n = 302 (%)	Unadjusted analysis OR (95%CI)	p-value	Adjusted analysis OR (95%CI)a	p-value	
+Patient characteristics	
+Age mean (range)	59.3 (19:97)	57.53 (19:90)	65.27 (26:97)	1.05 (1.04: 1.06)	<0.0001			
+Sex	
+ Female	950 (100)	744 (78.3)	206 (21.7)	1.06 (0.93: 1.19)	0.376			
+ Male	424 (100)	328 (77.4)	96 (22.6)	Ref.				
+Neurosurgical department	
+ Department A	547 (100)	452 (82.6)	95 (17.3)	Ref.				
+ Department B	348 (100)	245 (70.4)	103 (29.6)	2.00 (1.45: 2.75)	<0.0001	1.92 (1.38: 2.67)	0.0001	
+ Department C	340 (100)	280 (82.4)	60 (17.6)	1.02 (0.71: 1.46)	0.93	1.02 (0.71: 1.47)	0.91	
+ Department D	139 (100)	95 (68.3)	44 (31.7)	2.20 (1.45: 3.36)	0.0004	2.11 (1.36: 3.26)	0.0008	
+Risk factors	
+Previous AMI	
+ Yes	58 (100)	35 (60.3)	23 (39.7)	2.42 (1.91: 3.06)	<0.0001	1.56 (0.87: 2.74)	0.128	
+ No	1275 (100)	1009 (79.1)	266 (20.9)	Ref.				
+ Missing data	41 (100)	28 (68.3)	13 (31.7)					
+Atrial fibrillation	
+ Yes	51 (100)	26 (51.0)	25 (49.0)	3.62 (2.82: 4.64)	<0.0001	1.92 (1.06: 3.49)	0.031	
+ No	1286 (100)	1020 (79.3)	266 (20.7)	Ref.				
+ Missing data	37 (100)	26 (70.3)	11 (29.7)					
+Diabetes	
+ Yes	63 (100)	39 (61.9)	24 (38.1)	2.27 (1.79: 2.86)	<0.0001	1.88 (1.07: 3.23)	0.0248	
+ No	1273 (100)	1005 (78.9)	268 (21.1)	Ref.				
+ Missing data	38 (100)	28 (73.7)	10 (26.3)					
+Hypertension	
+ Yes	484 (100)	360 (74.4)	124 (25.6)	1.42 (1.26: 1.59)	<0.0001	1.01 (0.76: 1.33)	0.965	
+ No	839 (100)	677 (80.7)	162 (19.3)	Ref.				
+ Missing data	51 (100)	35 (68.6)	16 (31.4)					
+Peripheral arteriosclerosis	
+ Yes	33 (100)	20 (60.1)	13 (39.1)	2.41 (1.77: 3.26)	<0.0001	1.64 (0.82: 3.24)	0.154	
+ No	1290 (100)	1017 (78.8)	273 (21.2)	Ref.				
+ Missing data	51 (100)	35 (68.6)	16 (31.4)					
+Smoking	
+ Current	481 (100)	415 (86.3)	66 (13.7)	0.71 (0.53: 0.95)	0.022	0.80 (0.59: 1.10)	0.16	
+ Former	225 (100)	181 (80.4)	44 (19.5)	0.80 (0.56: 1.14)	0.22	0.73 (0.50: 1.05)	0.095	
+ Never	295 (100)	236 (80.0)	59 (20.0)	Ref.		Ref.		
+ Missing data	373 (100)	240 (64.3)	133 (35.7)					
+Previous TIA	
+ Yes	22 (100)	19 (86.4)	3 (13.6)	0.89 (0.56: 1.35)	0.59	0.45 (0.13: 1.22)	0.153	
+ No	1296 (100)	1015 (78.3)	281 (21.7)	Ref.				
+ Missing data	56 (100)	38 (67.9)	18 (32.1)					
+Anticoagulation therapy	
+ Yes	225 (100)	143 (63.6)	82 (36.4)	1.59 (1.36: 1.76)	<0.0001	1.38 (1.24: 1.86)	0.0042	
+ No	1124 (100)	916 (81.5)	208 (18.5)	Ref.				
+ Missing data	25 (100)	13 (52.0)	12 (48.0)					
+Clinical status ad admission	
+GCS score (mean)	11.0	12.3	6.5	0.78 (0.75: 0.80)	<0.0001	0.78 (0.76: 0.81)	<0.0001	
+WFNS Grad (mean)	2.7	2.3	4.2	2.33 (2.11: 2.60)	<0.0001	2.31 (2.08: 2.59)	<0.0001	
+Fisher scale score (mean)	3.3	3.2	3.8	3.93 (3.06: 5.14)	<0.0001	3.80 (2.94: 5.02)	<0.0001	
+Aneurysm characteristics	
+Aneurysm location	
+ Anterior circulation	959 (100)	782 (81.5)	177 (18.5)	Ref.				
+ Posterior circulation	378 (100)	268 (70.9)	110 (29.1)	1.81 (1.61: 2.05)	<0.0001	1.87 (1.41: 2.28)	0.000014	
+ Missing data	37 (100)	22 (59.5)	15 (40.5)					
+Multiple aneurysms	
+ Yes	283 (100)	234 (82.7)	49 (17.3)	0.69 (0.56: 0.81)	<0.0001	0.81 (0.56: 1.14)	0.235	
+ No	1091 (100)	838 (76.8)	253 (23.2)	Ref.				
+Aneurysm > 12 mm	
+ Yes	189 (100)	114 (60.3)	75 (39.7)	2.78 (2.40: 3.21)	<0.0001	2.71 (1.92: 3.81)	< 0.0001	
+ No	1185 (100)	958 (80.8)	227 (19.1)	Ref.				
+Treatment and neurological complications	
+Type of treatment	
+ Endovascular	793 (100)	693 (87.4)	100 (12.6)	Ref.				
+ Surgical	408 (100)	365 (89.5)	43 (10.5)	0.82 (0.55: 1.2)	0.29	0.85 (0.57: 1.26)	0.43	
+ No closure	173 (100)	14 (8.1)	159 (91.9)	78.7 (45.3: 147.0)	<0.0001	66.3 (37.8: 125.0)	< 0.0001	
+Rebleeding	
+ Yes	155 (100)	86 (55.5)	69 (44.5)	3.54 (2.49: 5.01)	<0.0001	3.73 (2.58: 5.39)	< 0.0001	
+ No	1206 (100)	983 (81.5)	223 (18.5)	Ref.				
+ Missing data	13 (100)	3 (23.1)	10 (76.9)					
+Vasospasm	
+ Yes	319 (100)	274 (85.9)	45 (14.1)	0.55 (0.38: 0.77)	0.00071	0.64 (0.44: 0.91)	0.015	
+ No	1025 (100)	789 (77.0)	236 (23.0)	Ref.				
+ Missing data	30 (100)	9 (30.0)	21 (70.0)					
+Infractions	
+ Yes	315 (100)	198 (62.9)	117 (37.1)	2.79 (2.11: 3.69)	<0.0001	3.42 (2.53: 4.62)	< 0.0001	
+ No	1059 (100)	874 (82.5)	185 (17.5)	Ref.				
+Hydrocephalus	
+ Yes	848 (100)	648 (76.4)	200 (23.6)	1.28 (0.98: 1.68)	0.069	1.33 (1.00: 1.76)	0.049	
+ No	526 (100)	424 (80.6)	102 (19.4)	Ref.				
+Ventriculitis	
+ Yes	68 (100)	67 (98.5)	1 (1.5)	NA	NA	NA	NA	
+ No	1306 (100)	1005 (77.0)	301 (23.0)					
+a Adjusted for age, gender and neurosurgical department. NA: not applicable.
+
+3.4 Unadjusted analyses
+
+Demographic factors: Older age was associated with mortality (OR = 1.05 95% CI 1.04:1.06), whereas sex was not.
+
+Cardiovascular comorbidities: Significant associations were observed between several cardiovascular comorbidities and mortality within the primary admission to a neurosurgical department, including previous AMI (OR = 2.42, 95% CI 1.91:3.06), atrial fibrillation (OR = 3.62, 95% CI 2.82:4.64), hypertension (OR = 1.45, 95% CI 1.26:1.59) and peripheral arteriosclerosis (OR = 2.41, 95% CI 1.77:3.26). Diabetes (OR = 2.27 95% CI 1.79:2.86) and anticoagulant treatment (OR = 1.59 95% CI 1.36:1.76) were also significantly associated with a higher mortality.
+
+Factors related to the haemorrhage and aneurysm: high WFNS score, high Fisher scale score, and low GCS score at the time of admission were all strongly associated with mortality during admittance to a neurosurgical department (all with p-values <0.0001).
+
+Aneurysms larger than 12 mm and those located in the posterior circulation were significantly associated with increased mortality (both with p-values <0.0001).
+
+Treatment modality: We found no significant difference in mortality between patients who underwent endovascular treatment and those who underwent surgical clipping (p = 0.29). As expected, a clinical presentation which was too poor for treatment of the aneurysm was associated with a substantially higher mortality (OR = 78.7 95% CI 45.3:147.0).
+
+Neurological complications to aSAH: Rebleeding prior to aneurysm closure (OR = 3.54 95% CI 2.49:5.01) and infarction due to any cause (OR = 2.79 95% CI 2.11:3.69) were significantly associated with mortality during admittance to a neurosurgical department. Vasospasm (OR = 0.55 95% CI 0.38:0.77) was associated with lower mortality. Due to the limited number of non-surviving patients with ventriculitis (<5 cases), logistic regression analysis was not feasible.
+
+3.5 Adjusted analyses
+
+Cardiovascular comorbidities: None of the cardiovascular comorbidities remained significantly associated with mortality within the primary admission to a neurosurgical department.
+
+Factors related to the haemorrhage and aneurysm: Low GCS score (OR = 0.78 95% CI 0.76:0.81), high WFNS score (OR = 2.31 95% CI 2.08:2.59), high Fisher scale score (OR = 3.80 95% CI 2.94:5.02), aneurysms located in the posterior circulation (OR = 1.87 95% CI 1.41:2.28), and aneurysms larger than 12 mm (OR = 2.71 95% CI 1.92:3.81) remained significantly associated with mortality.
+
+Neurological complications to aSAH: Rebleeding prior to aneurysm occlusion (OR = 3.73 95% CI 2.58:5.39) and infarctions (OR = 3.42 95% CI 2.53: 4.62) continued to show significant associations with higher mortality.
+
+3.6 Subgroup analysis of patients who underwent aneurysm occlusion
+
+Among the 1201 (87.4%) patients who underwent treatment of the aneurysm, the mortality was 11.9%. Table 3 presents the risk for mortality within the primary admission to a neurosurgical department and potential risk factors among patients who underwent aneurysm occlusion. The estimates were adjusted for age, time from ictus until treatment and GCS at admission to a neurosurgical department.Table 3 Associations between potential risk factors and mortality among the subgroup of patients who underwent closure of the aneurysm.
+
+Table 3Table 3	Total n = 1201 (%)	Survivors n = 1058 (%)	Non-survivors n = 143 (%)	Unadjusted analysis OR (95%CI)	p-value	Adjusted analysis OR (95%CI)a	p-value	
+Patient characteristics	
+Age mean (range)	58.2 (19:90)	57.4 (19:90)	63.6 (27:89)	1.04 (1.03: 1.06)	<0.0001			
+Sex	
+ Female	843 (100)	734 (87.1)	109 (12.9)	Ref.		Ref.		
+ Male	358 (100)	324 (90.5)	34 (9.5)	0.71 (0.47: 1.05)	0.094	0.82 (0.53: 1.25)	0.37	
+Neurosurgical department	
+ Department A	500 (100)	446 (89.2)	54 (10.8)	Ref.		Ref.		
+ Department B	309 (100)	271 (90.0)	38 (10.0)	1.29 (0.82: 2.01)	0.25	1.09 (0.67: 1.74)	0.73	
+ Department C	281 (100)	250 (89.0)	31 (11.0)	0.92 (0.57: 1.46)	0.73	0.89 (0.54: 1.46)	0.54	
+ Department D	111 (100)	91 (82.0)	20 (18.0)	1.82 (1.02: 3.14)	0.37	1.49 (0.80: 2.71)	0.20	
+Risk factors	
+Previous AMI	
+ Yes	41 (100)	33 (80.5)	8 (19.5)	1.73 (0.73: 3.63)	0.172	1.28 (0.52: 2.82)	0.57	
+ No	1128 (100)	998 (88.5)	130 (11.5)	Ref.		Ref.		
+ Missing data	32 (100)	27 (84.4)	5 (15.6)					
+Atrial fibrillation	
+ Yes	32 (100)	24 (75.0)	8 (25.0)	2.26 (0.94: 4.87)	0.048	1.04 (0.40: 2.49)	0.93	
+ No	1139 (100)	1009 (88.6)	130 (11.4)	Ref.		Ref.		
+ Missing data	30 (100)	25 (83.3)	5 (16.7)					
+Diabetes	
+ Yes	49 (100)	39 (79.6)	10 (20.4)	2.33 (1.15: 4.43)	0.013	2.82 (1.33: 5.61)	0.0044	
+ No	1121 (100)	992 (88.5)	129 (11.5)	Ref.		Ref.		
+ Missing data	31 (100)	27 (87.1)	4 (12.9)					
+Hypertension	
+ Yes	413 (100)	355 (86.0)	58 (14.0)	1.47 (1.03: 2.09)	0.035	1.12 (0.76: 1.65)	0.59	
+ No	747 (100)	669 (89.6))	78 (10.4)	Ref.		Ref.		
+ Missing data	41 (100)	34 (83.0)	7 (17.1)					
+Peripheral arteriosclerosis	
+ Yes	23 (100)	17 (73.9)	6 (26.1)	2.53 (0.91: 6.15)	0.053	1.84 (0.63: 4.79)	0.23	
+ No	1140 (100)	1008 (88.4)	132 (11.6)	Ref.		Ref.		
+ Missing data	38 (100)	33 (86.8)	5 (13.2)					
+Smoking	
+ Current	446 (100)	410 (91.9)	36 (8.1)	0.56 (0.38: 0.83)	0.004	0.59 (0.37: 0.91)	0.016	
+ Former	196 (100)	177 (90.3)	19 (9.7)	0.65 (0.40: 1.04)	0.081	0.68 (0.40: 1.13)	0.14	
+ Never	271 (100)	235 (86.7)	36 (13.3)	Ref.		Ref.		
+ Missing data	288 (100)	236 (81.9)	52 (18.1)					
+Previous TIA	
+ Yes	19 (100)	18 (94.7)	1 (5.3)	NA	NA	NA	NA	
+ No	1138 (100)	1005 (88.3)	133 (11.7)					
+ Missing data	44 (100)	35 (79.5)	9 (20.5)					
+Anticoagulation therapy	
+ Yes	168 (100)	138 (82.1)	30 (17.9)	1.80 (1.15: 2.75)	0.0082	1.25 (0.76: 2.01)	0.37	
+ No	1019 (100)	908 (89.1)	111 (10.9)	Ref.		Ref.		
+ Missing data	14 (100)	12 (85.7)	2 (14.3)					
+Clinical status ad admission	
+GCS score (mean)	11.8	12.3	8.2	0.84 (0.81: 0.87)	< 0.0001			
+WFNS Grad (mean)	2.5	2.3	3.8	1.89 (1.67: 2.14)	< 0.0001	1.89 (1.45: 2.49)	< 0.0001	
+Fisher scale score (mean)	3.2	3.2	3.7	2.90 (2.14: 4.03)	< 0.0001	1.88 (1.35: 2.67)	< 0.0001	
+Aneurysm characteristics	
+Aneurysm location	
+ Anterior circulation	855 (100)	773 (90.4)	82 (9.6)	Ref.		Ref.		
+ Posterior circulation	321 (100)	264 (82.2)	57 (17.8)	2.12 (1.48: 3.03)	< 0.0001	2.11 (1.42: 3.10)	0.00016	
+ Missing data	25 (100)	21 (84.0)	4 (16.0)					
+Multiple aneurysms	
+ Yes	267 (100)	233 (87.3)	34 (12.7)	1.10 (0.72: 1.65)	0.64	1.14 (0.23: 1.75)	0.57	
+ No	934 (100)	825 (88.3)	109 (11.7)	Ref.		Ref.		
+Aneurysm > 12 mm	
+ Yes	139 (100)	111 (79.9)	28 (20.1)	2.08 (1.30: 3.24)	0.0017	1.67 (1.00: 2.71)	0.043	
+ No	1062 (100)	947 (89.2)	115 (10.8)	Ref.		Ref.		
+Treatment and neurological complications	
+Type of treatment	
+ Endovascular	793 (100)	693 (87.4)	100 (12.6)	0.82 (0.55: 1.19)	0.29	0.81 (0.54: 1.20)	0.30	
+ Surgical	408 (100)	365 (89.5)	43 (10.5)	Ref.		Ref.		
+Time from ictus until treatment	
+ < 24 h	710 (100)	609 (85.8)	101 (14.2)	Ref.				
+ > 24 h	475 (100)	435 (91.6)	40 (8.4)	0.56 (0.38: 0.82)	0.0032			
+ Missing data	16 (100)	14 (87.5)	2 (12.5)					
+Rebleeding	
+ Yes	115 (100)	86 (74.8)	29 (25.2)	2.89 (1.80: 4.55)	<0.0001	3.00 (1.79: 4.96)	<0.0001	
+ No	1082 (100)	969 (89.6)	113 (10.4)	Ref.		Ref.		
+ Missing data	4 (100)	3 (75.0)	1 (25.0)					
+Vasospasm	
+ Yes	319 (100)	274 (85.9)	45 (14.1)	1.34 (0.91: 1.95)	0.13	1.47 (0.97: 2.20)	0.066	
+ No	870 (100)	775 (89.1)	95 (10.9)	Ref.		Ref.		
+ Missing data	12 (100)	9 (75.0)	3 (25.0)					
+Infarctions	
+ Yes	299 (100)	197 (65.9)	102 (34.1)	10.9 (7.39: 16.3)	<0.0001	10.9 (7.18: 17.0)	<0.0001	
+ No	902 (100)	861 (95.5)	41 (4.5)	Ref.		Ref.		
+Hydrocephalus	
+ Yes	776 (100)	642 (82.7)	134 (17.3)	9.65 (5.14: 20.6)	<0.0001	5.26 (2.71: 11.5)	<0.0001	
+ No	425 (100)	416 (97.9)	9 (2.1)	Ref.		Ref.		
+Ventriculitis	
+ Yes	66 (100)	65 (98.5)	1 (1.5)	NA	NA	NA	NA	
+ No	1135 (100)	993 (87.5)	142 (12.5)					
+a Adjusted for age, time from ictus until treatment and GCS at the time of admission to the neurosurgical department. NA: not applicable.
+
+3.7 Unadjusted analyses
+
+Demographic factors: Older age was associated with mortality (OR = 1.04 95% CI 1.03:1.06), whereas sex was not.
+
+Cardiovascular comorbidities: Significant associations were observed between diabetes (OR = 2.33 95% CI 1.33: 5.61), hypertension (OR = 1.47 95% CI 1.03: 2.09), anticoagulant treatment (OR = 1.80 95% CI 1.15: 2.75) and mortality within the primary admission to a neurosurgical department.
+
+Factors related to the haemorrhage and aneurysm: high WFNS score, high Fisher scale score, and low GCS score at the time of admission were all strongly associated with mortality during admittance to a neurosurgical department (all with p-values <0.0001).
+
+Aneurysms larger than 12 mm and those located in the posterior circulation were significantly associated with increased mortality (both with p-values <0.0001).
+
+Treatment modality and time until treatment: We found no significant difference in mortality between patients who underwent endovascular treatment and those who underwent surgical clipping (p = 0.29). Treatment after 24 h from ictus was associated with lower mortality (OR = 0.56 95% CI 0.38: 0.82). Additional analyses showed that patients with 3-12 were significantly more likely to undergo aneurysm occlusion within 24 h than patient with GCS 13-15 (76.3% vs. 50.9%, p < 0.0001, Table S4).
+
+Neurological complications to aSAH: Rebleeding prior to aneurysm closure (OR = 2.89 95% CI 1.80:4.55), infarction (OR = 10.9 95% CI 7.39:16.3) and hydrocephalus (OR = 9.65 95% CI 5.14: 20.6) were significantly associated with mortality during admittance to a neurosurgical department.
+
+3.8 Adjusted analyses
+
+Cardiovascular comorbidities: Diabetes remained significantly associated with mortality (OR = 2.82 95% CI 1.33: 5.61).
+
+Factors related to the haemorrhage and aneurysm: There was a significantly association between high WFNS score (OR = 1.89 95% CI 1.45: 2.49), high Fisher scale score (OR = 1.88 95% CI 1.35: 2.67), aneurysms located in the posterior circulation (OR = 2.11 95% CI 1.42: 3.10), aneurysms larger than 12 mm (OR = 1.67 95% CI 1.00:2.71) and mortality.
+
+Neurological complications to aSAH: Rebleeding prior to aneurysm occlusion hydrocephalus, and infarctions continued to show significant associations with higher mortality (all with p < 0.0001).
+
+4 Discussion
+
+This nationwide, multicentre study of an unselected cohort comprising virtually all patients in Denmark diagnosed with aSAH over a five-and-a-half-year period demonstrated a mortality of 22.0% during the primarily admittance to a neurosurgical department. Notably, the mortality was 11.9% among patients whose clinical condition allowed treatment of the aneurysm. In the adjusted analyses, a low GCS, high WFNS grade, high Fisher scale score, aneurysm size greater than 12 mm, aneurysms located at the posterior circulation, rebleeding prior to aneurysm occlusion, and cerebral infarction due to any cause were all significantly associated with mortality during the primary neurosurgical admittance (all with p-values < 0.001). By including all patients with aSAH at the national level, irrespective of treatment eligibility, this study provides a comprehensive and representative assessment of mortality and associated risk factors.
+
+4.1 Mortality
+
+In the literature, in-hospital mortality is frequently used as an endpoint, with reported estimates ranging from 7.1% to 24.1% (Ikawa et al., 2020; Waweru and Gatimu, 2019; Dharia et al., 2020; Said et al., 2025; Ohta et al., 2023; Zhu et al., 2023; Göttsche et al., 2022; Stienen et al., 2018; Schatlo et al., 2020; Øie et al., 2020; Stauning et al., 2022; Udy, 2020; Lantigua et al., 2015; Qureshi et al., 2005). However, the term is not consistently defined, complicating direct comparisons between studies. Differences in healthcare systems and variation in hospital length of stay influence the observation period underlying this measure. For example, Qureshi et al. reported a mean hospital stay of 11.9 days with a wide standard deviation of ±11.5 days, illustrating the variability in the timeframe used to capture in-hospital deaths (Qureshi et al., 2005).
+
+Similar estimates have been reported in other studies including unselected patient populations. Schatlo et al. reported an in-hospital mortality of 20.1% among 1787 patients with aSAH, although the timeframe and hospital setting defining in-hospital mortality were not specified (Schatlo et al., 2020). Dharia et al. reported an in-hospital mortality of 21.4% in a cohort from 2015 with a mean hospital stay of 15.4 ± 14.3 days (Dharia et al., 2020). The highest reported mortality in an unselected cohort was described by Waweru et al. (24.1%) (Waweru and Gatimu, 2019). However, this study included only 158 patients from a single metropolitan area in Tanzania, representing a markedly different healthcare setting (Waweru and Gatimu, 2019). Overall, even though differences in healthcare systems and definitions of in-hospital mortality, the mortality observed in the present study is broadly consistent with previous reports while being based on a larger and more contemporary nationwide cohort.
+
+Some studies have reported in-hospital mortality exclusively among patients undergoing aneurysm occlusion (Ikawa et al., 2020; Udy, 2020; Stauning et al., 2022). Ikawa et al. reported an in-hospital mortality of 12.2% among patients treated endovascularly, although the in-hospital observation period was not clearly specified (Ikawa et al., 2020). In the present study we found a mortality of 11.9% among patients who underwent aneurysm occlusion.
+
+4.2 Risk factors for mortality
+
+Cardiovascular comorbidities: In the present study, several cardiovascular-related factors, including previous AMI, atrial fibrillation, and diabetes were significantly associated with mortality in unadjusted analyses for the entire study population. However, following adjustment for age, sex, and hospital of admission, these associations vanished. These findings differ from those reported by Kim et al., who analysed in-hospital mortality in a cohort of 53,713 patients with aSAH and found that cardiac failure and myocardial infarction were associated with a significantly increased risk of in-hospital mortality (Kim et al., 2013). Importantly, that study did not adjust for demographic variables, which may account for the discrepancy between their results and ours.
+
+A retrospective cohort study from 2012 including 4695 patients indicates that survivors after SAH have increased long-term mortality and stroke rates compared to a matched non-SAH population (Zaroff et al., 2012) indicating that cardiovascular vulnerability may have greater relevance in the long-term trajectory of these patients than during the acute in-hospital phase. Moreover, SAH-induced cardiac injury has also been associated with an elevated risk of death and heart failure hospitalisation (Ikawa et al., 2020; Schatlo et al., 2020). Notably, in these studies, cardiac failure typically represented a complication arising after the haemorrhagic event rather than a preexisting comorbidity. This distinction underscores the differing prognostic implications of chronic cardiovascular disease versus acute, aSAH-related cardiac dysfunction.
+
+Factors related to the haemorrhage and aneurysm: In this study we found that aneurysms located in the posterior circulation were associated with higher mortality for the entire study population and for the subgroup who underwent occlusion of their aneurysm in both adjusted and unadjusted analyses (Table 2 + 3). This aligns with J. Göttsche et al. and Øie et al. who also found that aneurysms in the posterior complex had the highest mortality rates (Göttsche et al., 2022; Øie et al., 2020). Aneurysms located within the posterior complex are in close relation to the brainstem and the lower cranial nerves responsible for the control of swallow function and respiration, and their rupture can therefore rapidly become life-threatening due to a more direct influence on these structures (Dharia et al., 2020).
+
+The adjusted analysis revealed that low GCS scores, high WFNS scores, high Fisher scale scores, and aneurysms size (larger than 12 mm) remained significantly associated with increased mortality. The robust associations between high WFNS and Fisher scale scores with mortality highlights the utility of these scoring systems in stratifying risk and guiding treatment decisions.
+
+Treatment modality and time until treatment: Our data revealed that a substantial proportion of patients (57.7%) underwent endovascular treatment, while 29.7% underwent surgical treatment (Table 1). As mentioned, the treatment strategy for each patient with aSAH is in every department determined through close collaboration between neurosurgeons and interventional radiologists. In our study, there was no significant difference in mortality between treatment modalities; this finding remained consistent in a subgroup analysis adjusted for aneurysm location (p-value: 0.998). In recent years, the proportion of patients treated with endovascular techniques has increased, driven by advancements in technological instruments and improved accessibility (Mackey et al., 2016; Luther et al., 2020). However, the present data do not allow assessment of the extent to which this shift in treatment strategy has influenced the mortality.
+
+In the subgroup of patients who underwent aneurysm occlusion, 609 out of 1201 underwent treatment within 24 h of ictus. Interestingly, treatment initiated more than 24 h after ictus was associated with lower mortality in the univariable analysis. This finding may reflect confounding by indication, as patients presenting with more severe haemorrhage are more likely to undergo prompt aneurysm occlusion while also having a higher baseline risk of mortality. Supporting this interpretation, patients with GCS 3-12 were significantly more likely to undergo aneurysm occlusion within 24 h than patients with GCS 13-15 (76.3% vs. 50.9%, p < 0.001, Table S4 in supplementary). However, the present dataset does not contain information on the reasons for delayed treatment and therefore cannot distinguish between patient delay (delayed presentation to medical care) and healthcare system delay (delayed diagnostic work-up or treatment).
+
+Neurological complications to aSAH: Infarctions and rebleeding were significantly associated with higher mortality in both adjusted and unadjusted analysis (Table 2 + 3). A multicentre register-based cohort study from 2023 also identified rebleeding after aSAH as an independent predictor of in-hospital mortality (adjusted OR 2.2, 95% CI 1.2:4.1) (Panni et al., 2023), this finding is supported by other studies (Said et al., 2025; Stauning et al., 2022; Lantigua et al., 2015).
+
+In the unadjusted analysis including all patients, vasospasm or DCI appeared to be associated with a lower risk of mortality. This finding most likely reflects a survivor bias. Cerebral vasospasm or DCI typically develop from day 3 after the initial haemorrhage, with the highest incidence occurring between days 8 and 11 following aSAH, although it may occur up to three weeks after ictus (Chalet et al., 2023). Consequently, patients who die early after the initial haemorrhage do not survive long enough to develop vasospasm, which may create the appearance of a protective association in analyses including all patients.
+
+In addition, our broad definition of vasospasm/DCI may have captured patients without clinically significant ischemia, thereby increasing the proportion of survivors classified as having vasospasm and further attenuating the association with mortality.
+
+In contrast, in the subgroup analysis restricted to patients who underwent aneurysm occlusion, vasospasm as associated with a non-significant increase in mortality. This is plausible, as vasospasm or DCI can lead to cerebral infarction, resulting in more extensive brain injury and a higher risk of death (Chalet et al., 2023; Alsbrook et al., 2023; Thompson et al., 2022; Veldeman et al., 2016).
+
+In this study hydrocephalus was defined by placement of an EVD and not by radiological findings alone. Consequently, patients considered too severely affected to benefit from neurosurgical intervention may not have received an EVD despite having hydrocephalus. This may have resulted in under ascertainment of hydrocephalus among patients who died early, thereby attenuating the association between hydrocephalus and mortality in the analysis including all patients. Restricting the analysis to patients who underwent aneurysm occlusion likely reduced this bias, which may explain the stronger association observed in this subgroup in both adjusted and unadjusted analysis.
+
+4.3 Limitations and strengths
+
+This study has limitations. Most notably, the short-term outcome and lack of data to estimate cumulative mortalities or mortality rates per time unit are major limitations. Furthermore, missing data may introduce information bias due to incomplete or inaccurate data recording for some of the variables. Both vasospasm/DCI and hydrocephalus are complications that develop after the initial haemorrhage. Consequently, analyses including all patients are susceptible to survivor bias. Additionally, the observational study design precludes definitive conclusions regarding causality, and unmeasured confounding.
+
+Even with these limitations, this nationwide unselected patient cohort comprises a unique data material. By including all patients with aSAH in an entire country, this study offers a reliable estimate of the mortality and associated risk factors during the primary neurosurgical admittance. Furthermore, the use of standardized clinical guidelines contributes to uniformity in patient management across centres, thereby enhancing the internal validity of the findings. As clinical practice in aSAH management largely follows international guidelines and standards, we regard the results of this study to be applicable to other institutions and countries.
+
+5 Conclusion
+
+In conclusion, this nationwide clinical register-based study showed that mortality after aSAH remained substantial, with 22.0% among all patients admitted to a neurosurgical department in Denmark and 11.9% among those who underwent closure of the aneurysm.
+
+The principal contribution of this study is the confirmation and quantification of established risk factors in a large, real-world nationwide cohort. According to our findings, mortality was primarily associated with poor clinical condition at presentation, rebleeding, and cerebral infarction rather than pre-existing comorbidities or treatment modality. These findings highlight the complexity of aSAH management and the multifactorial determinants of mortality during the acute phase of treatment.
+
+Compliance with ethical standards
+
+Funding declarations: The authors did not receive support from any organization for the submitted work. The authors have no relevant financial or non-financial interests to disclose. The study does not contain any studies with animals performed by any of the authors.
+
+Human Ethics and Consent to Participate: Danish Stroke Register and the Data Protection Board of Copenhagen University Hospital (reference number p-2023-14241) approved the study and exemption from individual patient consent was waived. The pseudo-anonymized data were stored and handled in accordance with the Danish Data Protection Agency and the General Data Protection Regulations.
+
+ATS contributed to study concept development, data analysis, and manuscript drafting. JH contributed to the study conception, facilitated data access, and provided clinical expertise. GFM assisted with statistical methodology. TNM contributed to the study conception, provided supervision in manuscript preparation and contributed with clinical expertise. TS contributed with clinical expertise and manuscript preparation. ATS, JH, GFM, TS and TNM critically reviewed the manuscript and approved the final version.
+
+Declaration of competing interest
+
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+Appendix A Supplementary data
+
+The following is the Supplementary data to this article:Multimedia component 1
+
+Appendix A Supplementary data to this article can be found online at https://doi.org/10.1016/j.bas.2026.106257.
+
+
+References
+
+Alsbrook D.L. Di Napoli M. Bhatia K. Pathophysiology of early brain injury and its Association with delayed cerebral ischemia in aneurysmal subarachnoid hemorrhage: a review of current literature J. Clin. Med. 12 3 2023 1015 10.3390/JCM12031015 Page 1015. 2023;12 36769660 PMC9918117
+Chalet F.X. Briasoulis O. Manalastas E.J. Talbot D.A. Thompson J.C. Macdonald R.L. Clinical burden of angiographic vasospasm and its complications after aneurysmal subarachnoid hemorrhage: a systematic review Neurol Ther. Adis. 12 2 2023 371 390 10.1007/s40120-022-00436-7 PMC10043150 36609962
+Danmarks Statistik Statistikdokumentation for Befolkningen 2020 2020 Published online
+Dharia A. Lacci J.V. Mascitelli J. Seifi A. Impact of ruptured aneurysm circulation on mortality: a nationwide inpatient sample analysis J. Stroke Cerebrovasc. Dis. 29 10 2020 10.1016/j.jstrokecerebrovasdis.2020.105124 32912535
+Göttsche J. Piffko A. Pantel T.F. Aneurysm location affects clinical course and mortality in patients with subarachnoid hemorrhage Front. Neurol. 13 2022 10.3389/fneur.2022.846066 PMC8964037 35359650
+Hoh B.L. Ko N.U. Amin-Hanjani S. Guideline for the management of patients with aneurysmal subarachnoid hemorrhage: a guideline from the American heart association/American stroke association Stroke 2023 10.1161/STR.0000000000000436 Published online 37212182
+Ikawa F. Michihata N. Matsushige T. In-hospital mortality and poor outcome after surgical clipping and endovascular coiling for aneurysmal subarachnoid hemorrhage using nationwide databases: a systematic review and meta-analysis Neurosurg. Rev. 43 2 2020 655 667 10.1007/s10143-019-01096-2 30941595
+Kim Y.W. Neal D. Hoh B.L. Risk factors, incidence, and effect of cardiac failure and myocardial infarction in aneurysmal subarachnoid hemorrhage patients Neurosurgery 73 3 2013 450 457 10.1227/NEU.0000000000000001 23728449
+Lantigua H. Ortega-Gutierrez S. Schmidt J.M. Subarachnoid hemorrhage: who dies, and why? Crit. Care 19 309 2015 10.1186/s13054-015-1036-0 PMC4556224 26330064
+Luong C.Q. Ngo H.M. Hoang H.B. Clinical characteristics and factors relating to poor outcome in patients with aneurysmal subarachnoid hemorrhage in Vietnam: a multicenter prospective cohort study PLoS One 16 8 August 2021 10.1371/journal.pone.0256150 PMC8362943 34388213
+Luther E. McCarthy D.J. Brunet M.C. Treatment and diagnosis of cerebral aneurysms in the post-International Subarachnoid Aneurysm Trial (ISAT) era: trends and outcomes J. Neurointerventional Surg. 12 7 2020 682 687 10.1136/NEURINTSURG-2019-015418 31959634
+Mackey J. Khoury J.C. Alwell K. Stable incidence but declining case-fatality rates of subarachnoid hemorrhage in a population Neurology 87 2016 2192 2197 27770074 10.1212/WNL.0000000000003353 PMC5123555
+Mahajan U.V. Khan H.A. Zhou X. Predictors of In-Hospital mortality and home discharge in patients with aneurysmal subarachnoid hemorrhage: a 4-Year retrospective analysis Neurocritical Care 38 1 2023 85 95 10.1007/s12028-022-01596-y 36114314
+Obbekjær T. Gulisano H.A. Mikkelsen R. Hauerberg J. Nielsen T.H. Aneurysmal Subarachnoidalblødning - Diagnosticering Og Behandling 2024
+Ohta T. Matsumoto S. Fukumitsu R. Incidence and outcomes of aneurysmal subarachnoid hemorrhage: a multicenter retrospective registry-based descriptive trial in Kobe City Neurol. Med.-Chir. 63 11 2023 519 525 10.2176/JNS-NMC.2023-0090 PMC10725825 37648538
+Øie L.R. Solheim O. Majewska P. Incidence and Case Fatality of Aneurysmal Subarachnoid Hemorrhage Admitted to Hospital Between 2008 and 2014 in Norway 2020 10.1007/s00701-020-04463-x/Published PMC7415018 32601806
+Panni P. Riccio L. Cao R. Clinical impact and predictors of aneurysmal rebleeding in poor-grade subarachnoid hemorrhage: results from the national POGASH registry Neurosurgery 93 3 2023 636 645 10.1227/neu.0000000000002467 37010298
+Qureshi A.I. Suri M.F.K. Nasar A. Trends in hospitalization and mortality for subarachnoid hemorrhage and unruptured aneurysms in the United States Neurosurgery 57 1 2005 1 7 10.1227/01.NEU.0000163081.55025.CD 15987534
+Said M. Gümüs M. Darkwah Oppong M. Risk Score for early prediction of In-Hospital mortality after aneurysmal subarachnoid hemorrhage: pooled analysis with Score construction and validation World Neurosurg. 194 2025 10.1016/j.wneu.2024.11.009 39566737
+Schatlo B. Fung C. Stienen M.N. Incidence and Outcome of Aneurysmal Subarachnoid Hemorrhage the Swiss Study on Subarachnoid Hemorrhage (Swiss SOS) 2020 10.1161/STROKEAHA.120.029538 Published online 33272133
+Stauning A.T. Eriksson F. Benndorf G. Mortality among patients treated for aneurysmal subarachnoid hemorrhage in Eastern Denmark 2017–2019 Acta Neurochir (Wien) 2022 10.1007/S00701-022-05303-W Published online PMC9303843 35864221
+Stauning A.T. Munch T.N. Mkoma G.F. Regional differences in mortality among regional differences in mortality among patients with ruptured intracranial patients with ruptured intracranial aneurysms in Denmark aneurysms in Denmark Dan. Med. J. 73 2 2026 7250580 10.61409/A07250580 41736647
+Steiner T. Juvela S. Unterberg A. Jung C. Forsting M. Rinkel G. European Stroke Organization guidelines for the management of intracranial aneurysms and subarachnoid haemorrhage Cerebrovasc. Dis. 35 2 2013 93 112 10.1159/000346087 23406828
+Stienen M.N. Germans M. Burkhardt J.K. Predictors of in-hospital death after aneurysmal subarachnoid hemorrhage: Analysis of a nationwide database (Swiss SOS [Swiss Study on Aneurysmal Subarachnoid Hemorrhage]) Stroke 49 2 2018 333 340 10.1161/STROKEAHA.117.019328 29335333
+Thompson J.C. Chalet F.X. Manalastas E.J. Hawkins N. Sarri G. Talbot D.A. Economic and humanistic burden of cerebral vasospasm and its related complications after aneurysmal subarachnoid hemorrhage: a systematic literature review Neurology and Therapy 2022 11 2 2022 597 620 10.1007/S40120-022-00348-6 11(2) PMC9095797 35441974
+Udy A. Six-month mortality and functional outcomes in aneurysmal sub-arachnoid haemorrhage patients admitted to intensive care units in Australia and New Zealand: a prospective cohort study J. Clin. Neurosci. 80 2020 92 99 10.1016/j.jocn.2020.07.049 33099375
+Veldeman M. Höllig A. Clusmann H. Delayed cerebral ischaemia prevention and treatment after aneurysmal subarachnoid haemorrhage: a systematic review Br. J. Anaesth. 117 1 2016 17 40 10.1093/BJA/AEW095 27160932 PMC4913393
+Waweru P. Gatimu S.M. Mortality and functional outcomes after a spontaneous subarachnoid haemorrhage: a retrospective multicentre cross-sectional study in Kenya PLoS One 14 6 2019 10.1371/journal.pone.0217832 PMC6561561 31188844
+Zaroff J.G. Leong J. Kim H. Cardiovascular predictors of long-term outcomes after non-traumatic subarachnoid hemorrhage Neurocritical Care 17 3 2012 374 381 10.1007/S12028-011-9592-X 21769457
+Zhu G. Yuan A. Yu D. Zha A. Wu H. Machine learning to predict mortality for aneurysmal subarachnoid hemorrhage (aSAH) using a large nationwide EHR database PLOS Digit. Health 2 12 2023 10.1371/journal.pdig.0000400 PMC10699620 38055677

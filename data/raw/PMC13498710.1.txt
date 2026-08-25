@@ -1,0 +1,286 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: J Reprod Infertil
+Journal ID: J Reprod Infertil
+NLM Journal ID: 101535586
+Journal ID: JRI
+
+Journal of Reproduction & Infertility
+
+ISSN: 2228-5482
+EISSN: 2251-676X
+Publisher: Avicenna Research Institute
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498710
+PMID: 42633040
+DOI: 10.18502/jri.v27i1.22119
+Article ID: JRI-27-31
+Article version: 1
+Subjects: Original Article
+
+Altered Expression of GABPB1-IT1 and SLC9A3-AS1 Long Non-Coding RNAs in Recurrent Implantation Failure
+
+Zaki-Dizaji Majid 1
+Ebrahimi Amir 2
+Jamshidi Behnoosh 1
+Nemati Seyed Mohammad Hossein 1
+Saeedinia Reza 3
+Heidary Zohreh 4 *
+1- Human Genetics Research Center, Baqiyatallah University of Medical Sciences, Tehran, Iran
+2- Department of Genetics, Tabriz University of Medical Sciences, Tabriz, Iran
+3- Student Research Committee, School of Medicine, Iran University of Medical Sciences, Tehran, Iran
+4- Vali-e-Asr Reproductive Health Research Center, Family Health Research Institute, Tehran University of Medical Sciences, Tehran, Iran
+* Corresponding Author: Zohreh Heidary, Vali-e-Asr Reproductive Health Research Center, Family Health Research Institute, Tehran University of Medical Sciences, Tehran, Iran, E-mail: z.heidary2016@gmail.com
+Print publication date: 2026 Jan-Mar
+Electronic publication date: 2026 Jan-Mar
+Volume: 27
+Issue: 1
+First page: 31
+Last page: 42
+Received 2026 Jan 16; Accepted 2026 Jun 2
+Copyright: Copyright© 2026, Journal of Reproduction & Infertility
+Copyright year: 2026
+License: This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International license (https://creativecommons.org/licenses/by-nc/4.0/). Non-commercial uses of the work are permitted, provided the original work is properly cited.
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: Embryo implantation, Infertility, Long non-coding RNA, Plasma, Recurrent implantation failure
+
+==============================
+Background:
+
+Recurrent implantation failure (RIF) impairs assisted reproductive technology (ART) success, though its mechanisms remain unclear. Studies have implicated altered miRNA expression in the plasma and endometrium of patients with RIF. In this study, long non-coding RNA (lncRNA) expression in plasma was investigated, using RIF-specific lncRNA-miRNA-mRNA network as guide.
+
+Methods:
+
+This study included 30 women with RIF and 30 age-matched controls (Not RIF). RIF miRNA RNA-seq data (GSE108966) was downloaded from the Gene Expression Omnibus (GEO) database and used to identify differentially expressed miRNAs. Next, miRNet 2.0 database was used to integrate the latest miRNA-mRNA interactions; also, the linkages between lncRNA and miRNA were identified and the networks created. Plasma samples were collected from participants during the implantation window. Cell-free RNA was extracted from 500 μl of plasma using the TRIzol method, and statistical analyses were performed using Prism version 8.0.
+
+Results:
+
+Based on a lncRNA-miRNA-mRNA network analysis, two lncRNAs, including GABPB1-IT1 and SLC9A3-AS1, were selected for expression analysis in plasma. Notably, GABPB1-IT1 and SLC9A3-AS1 were significantly downregulated in RIF samples compared to controls.
+
+Conclusion:
+
+Our findings show that GABPB1-IT1 and SLC9A3-AS1 are significantly downregulated in the plasma of women with recurrent implantation failure. These findings suggest their potential involvement in RIF and warrant further studies to elucidate their biological functions and evaluate their utility as non-invasive biomarkers.
+
+Introduction
+
+In assisted reproductive technology (ART), the embryo implantation rate per transfer is around 30%, and the rate of recurrent or repeated implantation failure (RIF) among in vitro fertilization (IVF) patients can reach up to 10% (1, 2). RIF remains a major clinical challenge due to the very low pregnancy rates in affected patients. The underlying mechanisms of RIF are not well understood, as they involve the complex interplay between the female and male factors, along with the embryo (3, 4). Research suggests that inadequate endometrial receptivity accounts for approximately two-thirds of implantation failures (5, 6). Currently, endometrial receptivity is assessed through morphological evaluation, which often involves invasive procedures that can harm women of childbearing age during laparoscopy. Consequently, there is an urgent need to discover noninvasive biomarkers for predicting RIF. Identifying and assessing potential circulating biomarkers for RIF could greatly enhance the development of new diagnostic and predictive methods (7).
+
+High-throughput sequencing and advances in molecular biology have increasingly implicated non-coding RNAs (ncRNAs) in post-transcriptional regulation across diverse biological processes (8, 9). Studies have demonstrated differential expression of microRNAs (miRNAs) (10–14), long non-coding RNAs (lncRNAs) (15–18), and circular RNAs (circRNAs) (19–25) in the endometria of women with RIF, suggesting their involvement in regulating the implantation process and potential as biomarkers for RIF diagnosis and treatment. LncRNAs, a diverse class of ncRNAs exceeding 200 nucleotides in length, act as key regulators of complex cellular processes (26). Notably, cells can secrete endogenous lncRNAs into biological fluids via microvesicles, exosomes, or protein complexes, resulting in stable, circulating lncRNAs that are resistant to RNA enzyme degradation (27, 28).
+
+Given the emerging evidence implicating lnc-RNAs in reproductive disorders, their role in RIF was investigated in the current study. To this end, publicly available RNA-seq data, specifically from a comprehensive two-center study that profiled alterations in the endometrial and blood miRNome during the mid-secretory phase in fertile women and patients with RIF (GSE108966), were utilized (29). Our primary objective was to construct a lncRNA–miRNA–mRNA interaction network to elucidate the molecular mechanisms underlying RIF and to identify promising candidate lncRNAs. Subsequently, the expression of selected lncRNAs was validated in plasma samples from patients with RIF using reverse transcription-quantitative polymerase chain reaction (RT-qPCR).
+
+Methods
+
+RNA-seq data, quality control, and trimming:
+
+GSE108966 was chosen for further research because of its ability to simultaneously assess the expression of both blood and endometrial miRNAs (29). Additionally, this dataset is notable for its large sample size, comprising 110 endometrial tissue and 92 blood samples collected from patients with RIF and healthy controls.
+
+At first, the quality of the samples’ sequencing was evaluated using the FastQC software (30). For this particular situation, a thorough evaluation was conducted on the sequencing quality per base, quality score, read content per base, and adapter content of each sample. Trimming with trimmomatic (31) was performed to improve the quality of the RNA-seq data by addressing issues such as low sequencing quality and high adaptor content. It is important to mention that readings shorter than 16 nucleotides were excluded considering the fact that miRNAs are typically between 17 and 25 nucleotides in length. Furthermore, an additional quality control (QC) was conducted to verify the effectiveness of the trimming process.
+
+Read mapping and quantification:
+
+The miRDeep2 (32) tool was used to match the trimmed reads to the reference genome. The mapping of the high-quality, trimmed sequences to the UCSC Genome Browser on Human (hg19) was initiated using the mapper algorithm. The miRDeep2 was provided with mature and stem-loop human miRNA sequences from miRBase, version 21, along with collapsed common reads. The study was conducted using the standard miRDeep2 settings. In total, the miRDeep2 program assessed the expression of more than 2600 miRNAs in these samples.
+
+Bioinformatic study design:
+
+A total of 91 participants from Spain and 111 from Estonia made up the GSE108966 dataset; therefore, two separate methods were used to analyze the RNA-seq data. Initially, samples were organized into two categories, blood and endometrium, solely according to their tissue of origin, rather than their geographic location. Then, the differentially expressed miRNAs (DEMs) from each category were crossed, revealing miRNAs that were noticeably dysregulated in the endometrium and blood of RIF patients (Figure 1A). The second method involved sorting samples into two groups according to their region; expression analysis was used to identify DEMs in each group’s blood and tissue, based on their biologic origin. Later on, DEMs that were shared between regions were detected and intersected to create DEMs that were shared between two cohorts (Figure 1B).
+
+Figure 1. The flowchart of the RNA-seq data analysis through two different approaches
+
+To maintain the integrity of our RNA-seq analysis, various quality control and normalization methods were used. After trimming and mapping, raw read counts were normalized using the DESeq2 package (v1.34.0) running on R (v4.2.0) (33). Since our dataset (GSE108966) included samples from two distinct cohorts (Spain and Estonia), potential batch effects from differences in sequencing centers, technical platforms, or specimen processing were controlled for. Batch effect correction was carried out by using the ComBat function of the sva package used to control for non-biological variance while still accommodating true biological signal.
+
+For the differential expression analysis, the Benjamini–Hochberg procedure was used to control the False Discovery Rate (FDR) when adjusting for multiple testing on thousands of transcripts. The adjusted p-values were calculated for each miRNA with only those <0.05 deemed statistically significant. This approach lowers the risk of false positives and ensures that all differentially expressed miRNAs and lncRNAs represent true biological phenomena rather than artifacts of multiple hypothesis testing.
+
+Network construction and analysis:
+
+After identifying DEMs using both methods, the list of miRNAs was uploaded into miRNet 2.0 for network construction and analysis. In the software settings, Homo sapiens was selected as the organism, but no tissue type was specified, allowing for a broader interaction search. The mRNA–miRNA interactions were derived from data imported from miRTarBase, TarBase, and miRecords, while the miRNA–lncRNA interactions were also incorporated using the software’s integrated settings (34). Following network generation, the built-in module analysis function in miRNet was applied to identify highly connected subnetworks. Among the resulting modules, module 1 was selected for further evaluation, and subsequent analyses were conducted based on this module to determine the most influential lncRNAs within the network. Module 1 was selected because it represented the most densely connected and biologically relevant subnetwork identified by miRNet module analysis, containing recurrently dysregulated miRNAs associated with RIF.
+
+Sample collection and study population:
+
+Blood samples were collected during the mid-luteal phase from 30 patients with RIF and 30 age-matched control participants between days P+3 and P+6 of a monitored natural cycle (the implantation window). All participants were under 40 years old and received IVF treatment in 2024 at Vali-e-Asr Hospital, Tehran University of Medical Sciences.
+
+Patients were identified as having unexplained RIF if they did not achieve clinical pregnancy after three or more transfers of high-quality embryos, or following the transfer of at least four embryos over multiple cycles, without any identifiable causes. The control group consisted of fertile individuals who underwent their first IVF/ICSI treatment solely due to male factor infertility or for non-medical reasons. Fertility was confirmed by successful implantation and clinical pregnancy after the first or second transfer cycle, although blood samples were collected prior to the confirmation of pregnancy outcomes.
+
+The study excluded participants with (1) uterine cavity abnormalities such as congenital uterine anomalies, fibroids, endometrial polyps, and adenomyosis; (2) conditions like hydrosalpinx, chromosomal abnormalities, or endocrine disorders; or (3) a history of hormone therapy or intrauterine procedures in the last three menstrual cycles.
+
+This research adhered to the ethical standards set forth in the Declaration of Helsinki. The study protocol received approval from the Tehran University of Medical Sciences Research Ethics Committee (Ethics Code: IR.TUMS.IKHC.REC.1402.326), and all participants gave written informed consent for blood sample collection and subsequent analysis.
+
+Sample processing:
+
+Peripheral blood samples (10 ml) were collected in EDTA tubes and sent to the laboratory. Upon arrival, the samples were visually inspected for quality. Any sample exhibiting signs of degradation, such as low plasma volume, hemolysis (red blood cell breakdown), high bilirubin, or particulate contamination, was rejected and a fresh sample was requested.
+
+Following collection, plasma was rapidly separated within 2 hr via two centrifugation steps (1,500 g and 15,000 g, both for 10 min at 4°C) and immediately stored at −80°C until further analysis.
+
+RNA isolation:
+
+RNA was isolated from 500 μl plasma using a modified RNAx-Plus Reagent protocol. Briefly, plasma was mixed with RNAx-Plus Reagent (1.5 ml) and chloroform (500 μl), with vortexing and 10-min incubation at room temperature between each addition. After centrifugation (12,000 g, 10 min, 4 °C), the supernatant was precipitated with isopropanol (1000 μl), RNA carrier (2 μl), and 3 M sodium acetate (50 μl) at −20°C for 25 min, followed by centrifugation (20,000 g, 20 min, 4°C). The RNA pellet was washed with 80% ice-cold ethanol and resuspended in nuclease-free water (30 μl).
+
+cDNA library construction and RT-qPCR:
+
+Purified RNA was immediately converted to cDNA using the SMOBIO kit (SMOBIO Technology, Taiwan) according to the manufacturer’s instructions. Briefly, total RNA was reverse transcribed using random primers to generate 20 μl of cDNA, which was then stored at −20°C.
+
+LncRNA-specific primers were designed using the NCBI’s primer BLAST tool (http://www.ncbi.nlm.nih.gov/tools/primer-blast/) and Oligo 7 software. Primer sequences are provided in table 1. ACTB (NM_001101.5) was used as the endogenous control for plasma samples, and lncRNA expression was calculated using the 2−ΔΔCT method.
+
+Table 1. Primer sequences for lncRNAs and ACTB gene
+
+LncRNA	Primer sequence (5′->3′)	Length	Annealing time	Product length	
+SLC9A3-AS1	AAGCGGCTCTGCTACCTCA
+CGGATCCTGAATGTCTTCCACGA	19
+23	59	75	
+GABPB1-IT1	GCCTTTAAGCCCCACGGTA
+CAACCTCATTTCTCTATGCCTGT	19
+23	59	87	
+ACTB	GTGGCCGAGGACTTTGATTG
+CCTGTAACAACGCATCTCATATT	20
+23	59	76	
+
+RT-qPCR was conducted using the SYBR Green PCR Kit (Ampliqon, Denmark) and an Applied Biosystems StepOne Real-Time PCR System (Thermo Fisher Scientific, US). The cycling protocol consisted of an initial denaturation step at 95°C for 15 min, followed by 40 cycles of denaturation (95°C for 10 s) and annealing/extension (59°C for 30 s). The amplification efficiencies of the target genes were estimated by the LinReg-PCR program (35).
+
+Statistical analysis:
+
+The Shapiro-Wilk test was used for normality. Differences between the RIF and control groups were evaluated using an un-paired t-test or Mann-Whitney U test, selected based on the outcome of a normality assessment. A p-value of less than 0.05 was considered statistically significant. All statistical analyses were conducted using Prism version 8.0 (GraphPad, US) and SPSS version 25 (IBM, US).
+
+Results
+
+Characteristics of the study population:
+
+A total of 60 participants were enrolled, including 30 women RIF and 30 age-matched controls undergoing IVF. The mean age was 34.68±6.2 years in the control group and 36.80±3.8 years in the RIF group. Further clinical details are provided in table 2.
+
+Table 2. Clinical characteristics of patients and controls (Mean ±SEM)
+
+	Controls (n=30)	Cases (n=30)	p-value	
+Age (years)	34.52±1.06	37.00±0.66	0.87	
+BMI (kg/m2)	25.34±0.55	25.44±0.66	0.68	
+Infertility duration (years)	5.88±0.71	5.48±0.84	0.64	
+Basal FSH (IU/L)	5.48±0.37	6.25±0.32	0.13	
+
+Sample type-based RNA-seq data expression analysis
+DEMs in blood of RIF patients:
+
+At first, the expression patterns of miRNAs were evaluated in blood samples obtained from 24 patients with RIF and 68 controls from two distinct regions. The analysis revealed that the expression of 12 miRNAs in the blood of RIF patients was significantly dysregulated (adjusted p-value <0.05) (Figure 2A). Interestingly, 11 of these differentially expressed miRNAs were significantly decreased in patients, while the one miRNA that showed increased expression was miR-423-5p. The miRNA that showed the greatest decrease in expression was miR-30a-3p (logFC=−2.36), while the miRNA with the smallest decrease in expression was miR-425-5p (logFC=−0.70). On the other hand, the only miRNA that was upregulated had a mean expression level 1.7 times higher (logFC=0.83) than that of healthy women
+
+Figure 2. A) volcano plot of blood DEMs, B) volcano plot of endometrial DEMs, C) intersection of blood and endometrial DEMs, D) unfiltered network of five DEMs, and E) degree-filtered network
+
+DEMs in endometrial tissue of RIF patients:
+
+Despite circulating miRNAs in the serum, the expression patterns of miRNAs of RIF patients were more variable in the endometrial tissue. A total of 64 DEMs were identified in the endometrium, with 28 miRNAs showing downregulation and 36 miRNAs showing amplification (Figure 2B). The downregulation of these DEMs varied, with the highest downregulated miRNA (miR-1248) falling by up to four times, while miR-182-5p showed a decrease of 0.77 times (logFC=−0.36). Nevertheless, the changes in upregulated miRNAs were more pronounced, with miR-44850-3p showing an increase of nearly tenfold (logFC= 3.46), while miR-151a-3p exhibited the lowest significant overexpression in the endometrial tissue of individuals with RIF, with a logFC of 0.33. Remarkably, among these DEMs, nine miRNAs were up-regulated more than twofold, while eight were downregulated by more than half. This suggests a significant disruption in the gene regulatory network inside the endometrial tissue, which contributes to the development of RIF.
+
+Prominent miRNA-lncRNA interactions:
+
+By analyzing the overlap between DEMs in blood and endometrium (Figure 2C), five miRNAs (miR-378c, miR-378d, miR-378e, miR425-5p, and miR-502-3P) were identified that were consistently and routinely dysregulated in both tissues. Concerning the levels of these DEMs, all five exhibited a significant drop. Among them, miR-378e showed the most pronounced relative decrease in both serum (logFC=−2.1) and endometrium (logFC=−1.48). Interestingly, the expression of two other members of the miR-378 family, specifically miR-378c and miR-378d, was shown to be more pronounced in serum compared to endometrium. While the miR-378 family showed significant dysregulation, its baseline expression was extremely low. However, the baseline expression of miR-425-5p, the differentially expressed miRNA with the least downregulation, was comparatively greater than that of the other miRNAs. Figure 2D illustrates the complete set of experimentally confirmed interactions between lncRNAs, miRNAs, and mRNAs in which these DEMs were implicated. Five specific DEMs were situated in the central part of the network and interacted with other transcripts in an opposing manner. When an additional filtering threshold was applied to this network (Figure 2E), a smaller subset of the network was obtained. This subset highlights the lncRNAs that regulate more than three of these DEMs, indicating their importance. Of the nine lncRNAs with strong interaction, GABPB1-IT1 was the only one that directly targeted four of the mentioned DEMs: miR-425-5p, miR-378c, miR-378d, and miR-378e. Additionally, GABPB1-IT1 competed with miR-502-3p to interact with KNCJ6 mRNA. This lncRNA, GABPB1-IT1, has not been previously studied in the context of RIF and was therefore selected for further analysis.
+
+Regional based RNA-seq data expression analysis
+DEMs in the Estonia cohort:
+
+The Estonian cohort included a total of 111 samples, which were divided into 47 blood samples (11 cases and 36 controls) and 64 endometrial tissue samples (20 cases and 44 controls). Based on the expression analysis, it was shown that 29 miRNAs were dysregulated in blood samples from the Estonia cohort. Out of them, 21 miRNAs were elevated, while the remaining eight miRNAs were significantly downregulated. Among all the DEMs, miR-141-3p showed the highest level of upregulation (logFC=1.93), while let-7b-5p exhibited the greatest decrease in expression (logFC=−1.44) (Figure 3A). However, a total of 76 DEMs were identified in the endometrial tissue. Among them, 35 miRNAs showed significant upregulation, whereas 41 miRNAs were downregulated. The expression levels of six miRNAs were upregulated by more than twofold (logFC >2), with miR-187-3p showing the highest upregulation (logFC=3.51). Conversely, the expression levels of nine other miRNAs decreased by more than 50% (logFC <−2), with miR-449b-5p being the most downregulated, showing a nearly 90% reduction in expression (logFC=−3.3) (Figure 3B). In the Estonian cohort, the analysis of blood and endometrial DEMs revealed five shared DEMs: miR-127-3p, miR-1307-5p, miR-141-3p, miR-22-3p, and miR-99b-5p (Figure 3C).
+
+Figure 3. A) volcano plot of DEMs in the blood, B) endometrial tissue of Estonian cohort, C) volcano plot of DEMs in the blood, D) endometrial tissue of Spanish cohort, F) fold changes of miR-127-3p in different samples, F) total network of miR-127-3p and its related transcripts, and G) module 1 of the network containing miR-127-3p and its direct interactions
+
+DEMs in Spanish cohort:
+
+In the blood of the Spanish cohort, a diverse set of miRNAs were shown to be highly dysregulated, unlike in the Estonian cohort. A total of 861 miRNAs exhibited notable expression in the blood of patients with RIF and healthy controls, with 239 of them showing substantial dysregulation. Among these DEMs, 87 showed increased expression, whereas the remaining DEMs exhibited significant down-regulation in patients. A total of 35 DEMs had a logFC value greater than 1. Among them, miR-130b-5p displayed the highest logFC value of 3.72. In contrast, blood samples from healthy controls contained 25 miRNAs that were at least twofold more abundant than those in patients (logFC <−1) (Figure 3D). Although over 200 DEMs were found in the blood of RIF patients in the Spanish cohort, only 150 miRNAs were found to be dysregulated in the endometrial tissue of this cohort, which consisted of 16 case samples and 30 controls. However, the majority of DEMs in the endometrium of the Spanish cohort were upregulated, with 87 upregulated DEMs compared to 64 downregulated DEMs. Interestingly, the levels of three miRNAs showed an increase of more than eightfold, with miR-4485-3p exhibiting a logFC of 6.03, indicating a significant alteration in the miRNA profile of RIF patients. This finding warrants further investigation. An interesting dysregulation that has been observed is related to miR-378i, which is a member of the miR-378 family.
+
+In the endometrial tissue of patients with RIF, miR-378i was found to be downregulated more than eight times. This finding is significant because, excluding miR-378i itself, other members of the miR-378 family also showed a significant reduction in the analysis using the previous approach. After comparing the results obtained from blood and endometrial samples, it was shown that 33 distinct DEMs were dysregulated in both types of samples. It is important to remark that although miR-378i was found to be overexpressed, the expression of miR-378c/d/e was decreased in both blood and tissue samples from the Spanish cohort, which is consistent with the prior findings of this study.
+
+Network construction and module analysis:
+
+Among the identified DEMs, miR-127-3p was the only miRNA shared between the Estonian and Spanish cohorts. However, the type of the identified dysregulation was not consistent. In the Estonian cohort, the expression levels of this specific miRNA were significantly reduced in both the endometrium and serum of patients with RIF. However, in the Spanish cohort, the reverse pattern was found, with RIF patients showing slight but not significant overexpression of miR-127-3p in both the endometrium and blood (Figure 3E). The interactions of miR-127-3p were obtained from TargetScan and miRDB databases, while Diana and NPInter were used to identify the lncRNAs that interact with miR-127-3p. The data were eventually uploaded to miRNet 2.0 in three separate queries, as shown in figure 3F. Upon analyzing the modules in this network, it was shown that miR-127-3p was allocated to module 1. This suggests that the SLC9A3-AS1/miR-127-3p axis could be a promising target for further investigation in the context of RIF (Figure 3G).
+
+As detailed in the previous paragraphs, RNA-seq data analysis identified several differentially expressed miRNAs and lncRNAs. Among these, GABPB1-IT1 and SLC9A3-AS1 were selected for further investigation due to their significant dysregulations and potential regulatory roles in the pathogenesis of RIF. GABPB1-IT1 directly interacted with four of the five shared dysregulated miRNAs, representing one of the highest interaction degrees within the filtered network. Similarly, SLC9A3-AS1 was prioritized due to its association with the SLC9A3-AS1/miR-127-3p regulatory axis identified in module 1.
+
+GABPB1-IT1 expression has been detected in plasma (36) and acts as a key component of a ceRNA network in premature ovarian insufficiency (37). SLC9A3-AS1 expression has also been detected in plasma (38) and may be related to cilia-related genes in recurrent miscarriage (39). Additionally, regulatory functions for these lncRNAs have been reported in cancer and other diseases. However, their roles have not been specifically investigated in RIF. Subsequently, plasma samples from patients with RIF and fertile controls were collected to validate these findings.
+
+Expression of selected lncRNA in RIF samples compared to controls:
+
+Our analysis revealed significant downregulation of two lncRNAs, GABPB1-IT1 and SLC9A3-AS1, in RIF samples compared with control samples. For GABPB1-IT1, the mean difference±SEM was −0.9179±0.2641 (95%CI: −1.447 to −0.3884; p=0.0002), whereas for SLC-9A3-AS1, the mean difference±SEM was −0.7119±0.2049 (95%CI: −1.123 to −0.3011; p=0.002). This marked decrease in expression was statistically significant (p<0.001), suggesting that the observed difference is unlikely to have occurred by chance. The magnitude and statistical significance of this downregulation are depicted in figure 4.
+
+Figure 4. Expression level of GABPB1-IT1 and SLC9A3-AS1 in RIF samples. Expression of GABPB1-IT1 (A) and SLC9A3-AS1 (B) in RIF plasma samples in comparison to controls showed significant downregulation. ***: <0.001. Data are presented as box-and-whisker plots showing the 10th–90th percentiles. Dots represent values outside the 10th–90th percentile range
+
+Discussion
+
+In this study, RNA-seq data (GSE108966) of miRNAs was used to construct lncRNA-miRNA-mRNA network to find candidate lncRNA in the pathogenesis of RIF. Two lncRNAs, GABPB1-IT1 and SLC9A3-AS1, were selected to evaluate the plasma of RIF and control samples. Expression analysis of these two lncRNAs showed significant downregulation in RIF samples.
+
+GABPB1 intronic transcript (GABPB1-IT1, NR_026891.1), a long non-coding RNA, has demonstrated diverse roles in various cancers. It was initially identified in non-small cell lung cancer (NSCLC) (40). Its downregulation in NSCLC and hepatocellular carcinoma (HCC) correlates with poor prognosis, suggesting a tumor-suppressive role, and in HCC, GABPB1-IT1 overexpression increases pigment epithelium-derived factor (PEDF), a target of miR-93, suppressing cell proliferation (40, 41). This contrasts with the oncogenic role of its parent gene, GABPB1, which inhibits anti-tumor immunity (42). GABPB1-IT1 is upregulated in the plasma of patients with ischemia-induced acute kidney injury (AKI), correlating inversely with miR-204-5p and potentially promoting apoptosis via miR-204-5p methylation (36). Furthermore, GABPB1-IT1 acts as a key component in a ceRNA network in premature ovarian insufficiency (37), sponges miR-21 to upregulate phosphatase and tensin homolog (PTEN) and inhibit proliferation in clear-cell renal cell carcinoma (ccRCC) (43); also along with H2BC18, HSPA1L, and MIR503HG, it serves as a prognostic predictor in colorectal cancer (CRC) (44). This multifaceted functionality highlights the complex regulatory roles of GABPB1-IT1 in both cancer and other diseases. In this study, significant downregulation of GABPB1-IT1 was reported in plasma samples of RIF patients (Figure 4). Given that GABPB1-IT1 is an intronic transcript of GABPB1, a transcription factor involved in mitochondrial biogenesis, its reduced expression may potentially be associated with altered cellular energy metabolism in endometrial cells, which plays an important role in decidualization (45, 46). However, this hypothesis remains speculative and requires further functional investigation.
+
+SLC9A3 antisense RNA 1 (SLC9A3-AS1, NR_ 125375.1), a long non-coding RNA, demonstrates oncogenic potential across various cancers. Elevated SLC9A3-AS1 levels are observed in plasma extracellular vesicles of lung cancer patients (38) and correlate with poor prognosis in nasopharyngeal carcinoma (NPC), NSCLC, and metastatic prostate adenocarcinoma (PRAD) (47–49). Mechanistically, SLC9A3-AS1 sponges miR-486-5p to upregulate E2F6, driving carcinogenic effects in NPC (47), and targets miR-760 to promote NSCLC progression (48). In liver cancer, SLC-9A3-AS1 downregulates miR-449b-5p, reducing sensitivity to Triptolide in Huh7 cells (50). Finally, SLC9A3-AS1 was significantly upregulated in prostate cancer cells (51), further supporting its role in cancer development. In this study, a significant downregulation of SLC9A3-AS1 was reported in plasma samples of RIF patients, as depicted in figure 4. This antisense lncRNA regulates SLC9A3, a Na+/H+ exchanger implicated in endometrial pH homeostasis and embryo implantation. Aberrant expression of SLC9A3-AS1 may alter the endometrial microenvironment, thereby affecting embryo attachment and implantation (52, 53).
+
+This study has some limitations that should be considered. First, the selection of candidate lnc-RNAs was based on an in silico lncRNA–miRNA–mRNA network analysis, and additional topological parameters such as betweenness centrality and clustering coefficient were not evaluated. Second, plasma lncRNA expression levels do not necessarily reflect endometrial expression patterns. Furthermore, tissue-specific filtering was not applied during the miRNet analysis, which may have included interactions not entirely specific to endometrial biology. However, since miRNet-derived interactions were largely based on experimentally validated databases rather than solely on prediction-based resources, a broader systems-level approach was intentionally used to enable identification of potentially novel regulatory axes involved in recurrent implantation failure. Finally, the relatively modest sample size and lack of functional validation experiments warrant further mechanistic and large-scale studies to confirm the biological roles of GABPB1-IT1 and SLC9A3-AS1 in RIF pathogenesis.
+
+A key finding of our study was the difference in miR-127-3p expression between the Estonian and Spanish cohorts, with significant downregulation detected in blood samples from Estonia and a slight, non-significant upregulation observed in the Spanish cohort. Several reasons may account for this difference. First, heterogeneity of the cohort may impact baseline miRNA expression and expression of miRNA in response to implantation related processes, including differences in genetic background, lifestyle, and other clinical characteristics. Second, variability in sample quantity and quality, RNA extraction, and sequencing platforms would possibly contribute to the small differences in measured expression. Third, biological variability including cycle monitoring, timing of sample collection within the implantation window, environmental impact, and differences in plasma versus tissue expression correlation, may further contribute to variability. These observations emphasize the need for validation of miRNA candidates across populations and technical settings, to confirm reproducibility and generalizability. Future studies using larger, harmonized cohorts with standard backgrounds and protocols will be essential to elucidating the biological role of miR-127-3p in recurrent implantation failure.
+
+Most research on the molecular mechanisms of RIF has centered on protein-coding genes, leaving the functions of non-coding RNAs, including lncRNAs, poorly understood. Despite their lack of protein-coding potential, ncRNAs play critical roles in modulating gene expression at various levels, either promoting or inhibiting RIF progression. In this study, two lncRNAs of GABPB1-IT1 and SLC9A3-AS1 were identified that were significantly downregulated in the plasma of RIF patients.
+
+Conclusion
+
+This study revealed differential expression of GABPB1-IT1 and SLC9A3-AS1 lncRNAs in the plasma of RIF patients compared to fertile controls, highlighting their potential involvement in the development of RIF. Future research should focus on elucidating their mechanisms of action and identifying their relevant miRNA targets to better understand their roles in RIF.
+
+Acknowledgement
+
+We sincerely thank the patients and medical team at Vali-e-Asr Hospital for their indispensable support and participation in this study.
+
+Funding: This research received ethical approval and funding from the Research Deputy of Tehran University of Medical Sciences, Tehran, Iran.
+
+Conflict of Interest
+
+The authors declare no competing interests.
+
+
+References
+
+1. Coughlan C Ledger W Wang Q Liu F Demirol A Gurgan T . Recurrent implantation failure: definition and management. Reprod Biomed Online. 2014;28(1):14–38.24269084 10.1016/j.rbmo.2013.08.011
+2. Busnelli A Reschini M Cardellicchio L Vegetti W Somigliana E Vercellini P . How common is real repeated implantation failure? an indirect estimate of the prevalence. Reprod Biomed Online. 2020;40(1): 91–7.31924493 10.1016/j.rbmo.2019.10.014
+3. Cimadomo D Craciunas L Vermeulen N Vomstein K Toth B . Definition, diagnostic and therapeutic options in recurrent implantation failure: an international survey of clinicians and embryologists. Hum Reprod. 2021;36(2):305–17.33313697 10.1093/humrep/deaa317
+4. Mojarrad M Hassanzadeh-Nazarabadi M Tafazoli N . Polymorphism of genes and implantation failure. Int J Mol Cell Med. 2013;2(1):1–8.24551783 PMC3920519
+5. Craciunas L Gallos I Chu J Bourne T Quenby S Brosens JJ . Conventional and modern markers of endometrial receptivity: a systematic review and meta-analysis. Hum Reprod Update. 2019;25(2): 202–23.30624659 10.1093/humupd/dmy044
+6. Fazli F Khanlarzadeh E Pilehvari Sh . The impact of l-arginine on uterine artery resistance and pregnancy outcomes in frozen embryo transfer for IVF candidates with recurrent implantation failure: a clinical trial. J Reprod Infertil. 2025;26(1):19–27.40757041 10.18502/jri.v26i1.18778 PMC12317719
+7. Zaki-Dizaji M Saeedinia M Derogar P Jamshidi B Masoumi M Heidary Z . hsa_circ_0004121 and hsa_circ_0030162 differentially expressed in plasma of patients with recurrent implantation failure. Rep Biochem Mol Biol. 2024;13(3):428–37.40330557 10.61186/rbmb.13.3.428 PMC12050057
+8. Nemeth K Bayraktar R Ferracin M Calin GA . Non-coding RNAs in disease: from mechanisms to therapeutics. Nat Rev Genet. 2024;25(3):211–32.37968332 10.1038/s41576-023-00662-1
+9. Zahir M Tavakoli B Zaki-Dizaji M Hantoushzadeh S Majidi Zolbin M . Non-coding RNAs in recurrent implantation failure. Clin Chim Acta. 2024;553:117731.38128815 10.1016/j.cca.2023.117731
+10. Azhari F Pence S Hosseini MK Balci BK Cevik N Bastu E . The role of the serum exosomal and endometrial microRNAs in recurrent implantation failure. J Matern Fetal Neonatal Med. 2022; 35(5):815–25.33249960 10.1080/14767058.2020.1849095
+11. Zeng H Fu Y Shen L Quan S . MicroRNA signatures in plasma and plasma exosome during window of implantation for implantation failure following in-vitro fertilization and embryo transfer. Reprod Biol Endocrinol. 2021;19(1):180.34876134 10.1186/s12958-021-00855-5 PMC8650536
+12. Chen P Li T Guo Y Jia L Wang Y Fang C . Construction of circulating microRNAs-based noninvasive prediction models of recurrent implantation failure by network analysis. Front Genet. 2021;12:712150.34367263 10.3389/fgene.2021.712150 PMC8344057
+13. Yang Q Gu WW Gu Y Yan NN Mao YY Zhen XX . Association of the peripheral blood levels of circulating microRNAs with both recurrent miscarriage and the outcomes of embryo transfer in an in vitro fertilization process. J Transl Med. 2018;16(1):186.29973278 10.1186/s12967-018-1556-x PMC6032771
+14. Freis A Keller A Ludwig N Meese E Jauckus J Rehnitz J . Altered miRNA-profile dependent on ART outcome in early pregnancy targets Wnt-pathway. Reproduction. 2017;154(6):799–805.28971890 10.1530/REP-17-0396
+15. Huang J Song N Xia L Tian L Tan J Chen Q . Construction of lncRNA-related competing endogenous RNA network and identification of hub genes in recurrent implantation failure. Reprod Biol Endocrinol. 2021;19(1):108.34243770 10.1186/s12958-021-00778-1 PMC8268333
+16. Feng C Shen JM Lv PP Jin M Wang LQ Rao JP . Construction of implantation failure related lncRNA-mRNA network and identification of lncRNA biomarkers for predicting endometrial receptivity. Int J Biol Sci. 2018;14(10):1361–77.30123082 10.7150/ijbs.25081 PMC6097487
+17. Zhao H Hu S Qi J Wang Y Ding Y Zhu Q . Increased expression of HOXA11-AS attenuates endometrial decidualization in recurrent implantation failure patients. Mol Ther. 2022;30(4):1706–20.35114391 10.1016/j.ymthe.2022.01.036 PMC9077377
+18. Chen MY Liao GD Zhou B Kang LN He YM Li SW . Genome-wide profiling of long noncoding RNA expression patterns in women with repeated implantation failure by RNA sequencing. Reprod Sci. 2019;26(1):18–25.29495908 10.1177/1933719118756752
+19. Ahmadi M Pashangzadeh S Moraghebi M Sabetian S Shekari M Eini F . Construction of circRNA-miRNA-mRNA network in the pathogenesis of recurrent implantation failure using integrated bioinformatics study. J Cell Mol Med. 2022;26(6):1853–64.33960101 10.1111/jcmm.16586 PMC8918409
+20. Zhao H Chen L Shan Y Chen G Chu Y Dai H . Hsa_circ_0038383-mediated competitive endogenous RNA network in recurrent implantation failure. Aging (Albany NY). 2021;13(4):6076–90.33611311 10.18632/aging.202590 PMC7950293
+21. Zhou T Ni T Li Y Zhang Q Yan J Chen ZJ . circFAM120A participates in repeated implantation failure by regulating decidualization via the miR-29/ABHD5 axis. FASEB J. 2021;35(9): e21872.34449947 10.1096/fj.202002298RR
+22. Zhao F Guo Y Shi Z Wu M Lv Y Song W . hsa_circ_001946 elevates HOXA10 expression and promotes the development of endometrial receptivity via sponging miR-135b. Diagn Pathol. 2021;16(1):44.33993878 10.1186/s13000-021-01104-4 PMC8127197
+23. Ni T Zhang Q Li Y Huang C Zhou T Yan J . CircSTK40 contributes to recurrent implantation failure via modulating the HSP90/AKT/FOXO1 axis. Mol Ther Nucleic Acids. 2021;2 6: 208–21.10.1016/j.omtn.2021.06.021 PMC8413673 34513305
+24. Luo J Zhu L Zhou N Zhang Y Zhang L Zhang R . Construction of circular RNA-microRNA-messenger RNA regulatory network of recurrent implantation failure to explore its potential pathogenesis. Front Genet. 2020;11:627459.33664765 10.3389/fgene.2020.627459 PMC7924221
+25. Liu L Li L Ma X Yue F Wang Y Wang L . Altered circular RNA expression in patients with repeated implantation failure. Cell Physiol Biochem. 2017;44(1):303–13.29132137 10.1159/000484887
+26. Mattick JS Amaral PP Carninci P Carpenter S Chang HY Chen LL . Long non-coding RNAs: definitions, functions, challenges and recommendations. Nat Rev Mol Cell Biol. 2023;24(6):430–47.36596869 10.1038/s41580-022-00566-8 PMC10213152
+27. Beylerli O Gareev I Sufianov A Ilyasova T Guang Y . Long noncoding RNAs as promising biomarkers in cancer. Noncoding RNA Res. 2022; 7(2):66–70.35310927 10.1016/j.ncrna.2022.02.004 PMC8891810
+28. Razzaghi H Heiat M Khoncheh A Abyazi MA Zaki-Dizaji M . Platelet-derived circRNAs hsa_ circ_0004771 and hsa_circ_0019120 differentially expressed in colorectal cancer and polyps. Rep Biochem Mol Biol. 2024;13(3):368–76.40330565 10.61186/rbmb.13.3.368 PMC12050060
+29. Rekker K Altmäe S Suhorutshenko M Peters M Martinez-Blanch JF Codoñer FM . A two-cohort RNA-seq study reveals changes in endometrial and blood miRNome in fertile and infertile women. Genes (Basel). 2018;9(12):574.30477193 10.3390/genes9120574 PMC6315937
+30. Andrews S . FastQC: a quality control tool for high throughput sequence data. Cambridge (UK): Babraham Bioinformatics; 2010.
+31. Bolger AM Lohse M Usadel B . Trimmomatic: a flexible trimmer for illumina sequence data. Bioinformatics. 2014;30(15):2114–20.24695404 10.1093/bioinformatics/btu170 PMC4103590
+32. Friedländer MR Mackowiak SD Li N Chen W Rajewsky N . miRDeep2 accurately identifies known and hundreds of novel microRNA genes in seven animal clades. Nucleic Acids Res. 2012;40(1):37–52.21911355 10.1093/nar/gkr688 PMC3245920
+33. Love MI Huber W Anders S . Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biol. 2014;15(12):550.25516281 10.1186/s13059-014-0550-8 PMC4302049
+34. Chang L Zhou G Soufan O Xia J . miRNet 2.0: network-based visual analytics for miRNA functional analysis and systems biology. Nucleic Acids Res. 2020;48(W1):W244–51.32484539 10.1093/nar/gkaa467 PMC7319552
+35. Ruijter JM Ramakers C Hoogaars WM Karlen Y Bakker O van den Hoff MJ . Amplification efficiency: linking baseline and bias in the analysis of quantitative PCR data. Nucleic Acids Res. 2009; 37(6):e45.19237396 10.1093/nar/gkp045 PMC2665230
+36. Feng F Zhang R Long L . LncRNA GABPB1-IT1 Is upregulated in ischemia-induced acute kidney injury and downregulates miR-204-5p to promote hypoxia-induced human renal proximal tubular epithelial cell apoptosis. Kidney Blood Press Res. 2024;49(1):480–9.38824919 10.1159/000539342
+37. Luo C Zhang J Bo L Wei L Yang G Gao S . Construction of a ceRNA-based lncRNA-mRNA network to identify functional lncRNAs in premature ovarian insufficiency. Front Genet. 2022;13:956805.36313451 10.3389/fgene.2022.956805 PMC9608794
+38. Bai Y Qu Y Wu Z Ren Y Cheng Z Lu Y . Absolute quantification and analysis of extra-cellular vesicle lncRNAs from the peripheral blood of patients with lung cancer based on multi-colour fluorescence chip-based digital PCR. Biosens Bioelectron. 2019;142:111523.31336224 10.1016/j.bios.2019.111523
+39. Li J Jing J Liu J Zhang D Zhang L Xie G . Integration of transcriptome and DNA methylation reveals the mechanism of cilia-related genes in recurrent miscarriage. Sci Rep. 2026;16(1):21324.42106497 10.1038/s41598-026-52154-x PMC13346893
+40. Xie J Xie G Chen Q Xu Z Bai W Chen M . Identification of a novel lncRNA GABPB1-IT1 that is downregulated and predicts a poor prognosis in non-small cell lung cancer. Oncol Lett. 2019; 18(1):838–45.31289561 10.3892/ol.2019.10357 PMC6540341
+41. Li B Wei Y Ge Q Duan Y Guo L . lncRNA GABPB1 intronic transcript 1 upregulates pigment epithelium-derived factor via miR-93 to suppress cell proliferation in hepatocellular carcinoma. Oncol Lett. 2021;21(4):260.33664823 10.3892/ol.2021.12521 PMC7882888
+42. Wang T Cao C Fan Y Xu J Hua T Ding J . GABPB1 plays a cancer-promoting role in non-small cell lung cancer. Discov Oncol. 2024;15(1):72.38466508 10.1007/s12672-024-00914-4 PMC10928022
+43. Tan C Du H Wang Y Zhao J Cheng X Lan H . LncRNA GABPB1-IT1 inhibits the tumorigenesis of renal cancer via the miR-21/PTEN axis. J Biochem Mol Toxicol. 2023;37(4):e23288.36756790 10.1002/jbt.23288
+44. Huang Y Li L Kang Z Luo H Lin X Zhao S . Prognostic model associated with necroptosis in colorectal cancer based on transcriptomic analysis and experimental validation. Front Biosci (Landmark Ed). 2024;29(3):98.38538261 10.31083/j.fbl2903098
+45. Dalla Torre M Pittari D Boletta A Cassina L Sitia R Anelli T . Mitochondria remodeling during endometrial stromal cell decidualization. Life Sci Alliance. 2024;7(12):e202402627.39366760 10.26508/lsa.202402627 PMC11452479
+46. Yang ZF Drumea K Mott S Wang J Rosmarin AG . GABP transcription factor (nuclear respiratory factor 2) is required for mitochondrial biogenesis. Mol Cell Biol. 2014;34(17):3194–201.24958105 10.1128/MCB.00492-12 PMC4135556
+47. Li J Li D Zhang X Li C Zhu F . Long noncoding RNA SLC9A3-AS1 increases E2F6 expression by sponging microRNA-486-5p and thus facilitates the oncogenesis of nasopharyngeal carcinoma. Oncol Rep. 2021;46(2):165.34165171 10.3892/or.2021.8116 PMC8218295
+48. Huang X Huang M Chen M Chen X . lncRNA SLC9A3-AS1 promotes oncogenesis of NSCLC via sponging microRNA-760 and may serve as a prognosis predictor of NSCLC patients. Cancer Manag Res. 2022;1 4:1087–98.10.2147/CMAR.S352308 PMC8921674 35300063
+49. Ye C Qin S Qiu S Zhao L Miao J Chen Y . A lncRNA-immune checkpoint-related gene signature predicts metastasis-free survival in prostate adenocarcinoma. Transl Androl Urol. 2022;11(12): 1691–705.36632155 10.21037/tau-22-711 PMC9827409
+50. Zhao L Zhang H Ren P Sun X . LncRNA SLC9A3-AS1 knockdown increases the sensitivity of liver cancer cell to triptolide by regulating miR-449b-5p-mediated glycolysis. Biotechnol Genet Eng Rev. 2024;40(2):1389–405.36946780 10.1080/02648725.2023.2193775
+51. Zhou T Nguyen S Wu J He B Feng Q . LncRNA LOC730101 promotes darolutamide resistance in prostate cancer by suppressing miR-1-3p. Cancers (Basel). 2024;16(14):2594.39061232 10.3390/cancers16142594 PMC11274508
+52. Chen KC Chang ML Lin CS Rajneesh CP Liao CH You WC . Insight into SLC9A3 deficiency-mediated micturition dysfunction caused by electrolyte imbalance. Biomed Pharmacother. 2023;158:114155.36916397 10.1016/j.biopha.2022.114155
+53. Ruan YC Chen H Chan HC . Ion channels in the endometrium: regulation of endometrial receptivity and embryo implantation. Hum Reprod Update. 2014;20(4):517–29.24591147 10.1093/humupd/dmu006

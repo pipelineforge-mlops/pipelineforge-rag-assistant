@@ -1,0 +1,328 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Bioinformatics
+Journal ID: Bioinformatics
+NLM Journal ID: 9808944
+Journal ID: bioinformatics
+
+Bioinformatics
+
+ISSN: 1367-4803
+EISSN: 1367-4811
+Publisher: Oxford University Press
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499228
+PMID: 42421216
+DOI: 10.1093/bioinformatics/btag502
+Article ID: btag502
+Article version: 1
+Subjects: Original Paper, Bioimage Informatics, AcademicSubjects/SCI01060
+
+DFCE-KanT: predicting spatial gene expression from histology images via contrastive learning
+
+https://orcid.org/0000-0002-0468-6535 Li Fang Conceptualization Data curation Methodology Resources Software Visualization Writing - original draft Department of Health Statistics, College of Preventive Medicine, Army Medical University, Chongqing, 400038, China
+
+Wang Pengyu Data curation Formal analysis Investigation Validation Writing - original draft Department of Health Statistics, College of Preventive Medicine, Army Medical University, Chongqing, 400038, China
+
+Shen Junjie Formal analysis Writing - review & editing Department of Health Statistics, College of Preventive Medicine, Army Medical University, Chongqing, 400038, China
+Center for Medical Big Data and Artificial Intelligence, Southwest Hospital, the First Affiliated Hospital of the Army Military Medical University, Chongqing, 400038, China
+
+https://orcid.org/0000-0002-9521-2940 Wu Yazhou Funding acquisition Project administration Supervision Writing - review & editing Department of Health Statistics, College of Preventive Medicine, Army Medical University, Chongqing, 400038, China
+
+Uhlmann Virginie Associate Editor
+Corresponding author. Department of Health Statistics, College of Preventive Medicine, Army Medical University, No. 30, Gaotanyan Zhengjie, Shapingba District, Chongqing, 400038, China. E-mail: asiawu@tmmu.edu.cn.‡ Fang Li and Pengyu Wang contributed equally to this work.
+
+Publication date: 2026 Aug
+Electronic publication date: 2026 Jul 8
+Volume: 42
+Issue: 8
+Electronic Location ID: btag502
+Received 2026 Jan 30; Revised 2026 Jun 11; Accepted 2026 Jun 26; 2026 Aug 22
+Copyright: © The Author(s) 2026. Published by Oxford University Press.
+Copyright year: 2026
+License: This is an Open Access article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/), which permits unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited.
+License URL: https://creativecommons.org/licenses/by/4.0/
+
+Funding: National Natural Science Foundation of China 10.13039/501100001809 82574207 82173621
+Page count: 11
+
+==============================
+Abstract
+
+Motivation
+
+Spatial transcriptomics (ST) can quantitatively characterize the spatial molecular profile in tissues and yet is costly to be applied at a large scale. One viable, a low-cost alternative would be to directly predict spatial gene expression from routine hematoxylin eosin (H&E) stained WSIs. Yet, the spatial context of the H&E image corresponding to a ST is not effectively utilized in current deep learning approaches.
+
+Results
+
+We present DFCE-KanT, which is a contrastive learning framework combining the tissue image features, gene features, and spatial location information for predicting spatial gene expressions from HE images. DenseNet incorporated a Feature Channel Enhancement (FCE) attention technique to extract features from the H&E images. A KanT, which is composed of a Kolmogorov-Arnold Network (KAN) and Transformer multi-head attention that can learn the best fusion strategy automatically in terms of fusing space information via positional encoding, increasing the ability to capture complex data patterns. This structure enhances the nonlinear ability for the projection head, modeling complex interaction between features and promoting the compatibility between image and gene expression features in the common embedding space. Experiments on five publicly available datasets (HER2+, cSCC, Alex, HBC, and Liver) demonstrate that DFCE-KanT performs noticeably better than existing methods, validating its efficacy in spatial gene expression prediction.
+
+Availability
+
+The source code and data are available at GitHub (https://github.com/LFfocus/DFCE-KanT) and Zenodo (https://zenodo.org/records/20637079).
+
+1 Introduction
+
+The spatial distribution patterns of gene expression within tissues are pivotal for deciphering tissue architecture, functional heterogeneity, and disease mechanisms (Rao et al. 2021, Tian et al. 2023, Valdeolivas et al. 2024). Traditional transcriptomics methods like bulk RNA sequencing, allow for the quantification of gene expression, yet lose spatial information. While single-cell RNA sequencing addresses cell heterogeneity, also lacks of any spatial information (Rosenberg et al. 2018, Alon et al. 2021, Chen et al. 2022). Breakthroughs in Spatial Transcriptomics (ST) technology now allow high-throughput measurement of gene expression while preserving spatial coordinates, providing unprecedented view of the tissue microenvironment (Ståhl et al. 2016, Zuo et al. 2025). However, ST requires expensive in situ sequencing and dedicated instrumentation, severely limits its applicability to large scale clinical trials (Marx 2021, Alexandrov et al. 2023, Saul and Kosinsky 2023). In contrast, hematoxylin and eosin (H&E)-stained whole slide images (WSIs) have obvious advantages in terms of low-cost and high-accessibility (Crosetto et al. 2015, Moor and Itzkovitz 2017, Waylen et al. 2020). Numerous studies have verified that gene expression patterns and histological images are strongly correlated (Mondol et al. 2023, Tsai et al. 2023). Consequently, developing algorithms that can predict spatial gene expression from H&E images, is now an important avenue of research in overcoming the cost barrier for ST technology.
+
+In recent years, numerous deep learning-based methods have been developed to establish mapping relationships between H&E images and spatial gene expression, offering a faster and more economical alternative to expensive ST technology (He et al. 2020, Shmatko et al. 2022, Wang et al. 2025). Representative works include ST-Net (He et al. 2020), which pioneered this field by using DenseNet (Simonyan and Zisserman 2015) to extract image features and mapping them to the gene dimension via fully connected layers. HisToGene (Pang et al. 2021), which employs a Vision Transformer (Dosovitskiy et al. 2021) (ViT) to capture global features through self-attention before projection. His2ST (Zeng et al. 2022), which integrates convolutional operations, Transformers, and graph neural networks (Kipf and Welling 2017) to extract intrinsic neighborhood relationships, with predictions based on a zero-inflated negative binomial distribution (Eraslan et al. 2019). THItoGene (Jia et al. 2024), which leverages dynamic convolution and capsule networks to mine latent molecular signals. Among them, ST-Net relies solely on convolutional operations to extract features from image patches without incorporating spatial information. HisToGene improves somewhat by modeling spatial relationships between spots. Hist2ST and THItoGene achieve further gains through enhanced image feature extraction and local point relationship modeling, but they still neglect inter-slice heterogeneity and intra-slice complexity. In addition, BLEEP (Xie et al. 2024) and mclSTExp (Min et al. 2024) apply contrastive learning to align image and gene expression features in a joint embedding space, but still exhibit suboptimal performance.
+
+While these methods have made significant advancements in modeling the H&E-spatial gene expression association, they still face limitations: (i) High cellular density, staining batch variations, and complex tissue structures in H&E images introduce substantial artifacts, obscuring crucial pathological features within background noise and hindering precise feature extraction; (ii) Current approaches inadequately model the non-linear correlations inherent in spatially adjacent gene expression, underutilizing spatial dependency information; (iii) They struggle to effectively mitigate noise interference and the inherent weak correlations between histological images, gene expression, and spatial positions. Collectively, these factors constrain the accuracy of spatial gene expression prediction.
+
+To address the aforementioned challenges, this study proposed DFCE-KanT, a novel contrastive learning-based model for spatial gene expression prediction. Specifically: (i) In the image feature extraction branch, we designed a Feature Channel Enhancement (FCE) attention mechanism to enhance critical pathological features while suppressing noise; (ii) For gene feature processing, we constructed a KanT module to adaptively capture the non-linear correlations of gene expression across spatial locations; (iii) In the cross-modal projection stage, we introduced a Kolmogorov-Arnold Network (KAN), which dynamically corrects the heterogeneous feature distributions between H&E images and spatial gene expression through learnable B-spline basis functions. We evaluated DFCE-KanT on five ST datasets: breast cancer HER2+ cutaneous squamous cell carcinoma (cSCC), breast cancer Alex, HBC, and Liver dataset. Experimental results demonstrate that DFCE-KanT outperforms existing methods, achieving superior performance in predicting spatial gene expression from histological images.
+
+2 Materials and methods
+
+2.1 Dataset and pre-processing
+
+We evaluated DFCE-KanT on five publicly available multi-slice ST datasets covering both tumor and normal tissues. All datasets comprised spatially resolved gene expression data, corresponding spatial coordinate, and histology images. Specifically, The HER2+ dataset (Andersson et al. 2021) comprises 32 tissue slides from seven patients, each with at least 180 data points. The cSCC dataset (Ji et al. 2020) consists of 12 tissue sections from four patients, with three slides per patient. The Alex dataset (Wu et al. 2021) and the 10× Genomics (Janesick et al. 2023) HBC dataset include six and three breast cancer tissue samples. The Liver dataset (Andrews et al. 2024) consists of four normal human liver samples.
+
+The ST dataset was preprocessed as follows. In case of histology image, given the huge size of WSIs and the high computational cost, image segmentation was used (Aresta et al. 2019, Dimitriou et al. 2019, Chen et al. 2022). We took a patch with dimension of 224 × 224 pixels from an H&E stained slide around the spatial coordinate of each Visium spot. This patch size approximates the spot diameter, ensuring precise alignment between local histological features and corresponding gene expression profiles. Regarding gene expression data, we filtered and normalized the data by selecting top 1000 highly variable genes (HVGs) per section, in order to mitigate the noise. We removed genes which are expressed on fewer than 1000 spots over all training sections. Counts for each spot were normalized by the total counts of the spot, scaled by 106, and log-transformed by log⁡(x+1) to stabilize variance and lessen distribution skewness.
+
+2.2 Overview of DFCE-KanT
+
+We presented DFCE-KanT, a new deep learning architecture for the problem of spatially resolved gene expression prediction directly from histology images. In order to exploit all available complimentary information over the different modalities, the model learned non-linear dependencies between tissue morphologies, gene expression patterns, and spatial location information. As shown in Fig. 1, our DFCE-KanT consists of three major components: (i) an image feature extractor DFCE module,(ii) a KanT module to integrate the gene expression with the spatial features extraction, and (iii) a feature alignment module to bridge heterogenous modalities.
+
+Figure 1 Architecture of DFCE-KanT. There are three parts in total: DFCE, KanT, and Alignment.
+
+For image description, please refer to the figure legend and surrounding text.
+
+2.2.1 The image feature extraction module (DFCE)
+
+This module captured essential histomorphological features from H&E-stained image patches, which were cropped around each sequencing spot and used as input. Inspired by the attention (Vaswani et al. 2017), the DFCE module adopted DenseNet-121 as its backbone network and incorporates a Feature Channel Enhancement (FCE) attention mechanism. The FCE mechanism adaptively re-weighted feature channels to amplify the most informative morphological patterns while suppressing irrelevant noise. Its primary objective was to improve the quality of the learned representations by explicitly modeling interdependencies among convolutional feature channels.
+
+Although pathological images contained distinctive cellular and tissue level details, whole slide images often included substantial redundant information. While DenseNet preserved fine details through dense feature reuse, it lacked the capacity to prioritize the most discriminative features. To mitigate this limitation, we integrated the FCE attention mechanism with DenseNet-121 for pathological image feature extraction. This hybrid design enhanced the representational capacity of pathological features via channel-wise attention.
+
+The procedure is as follows: DenseNet-121 generated a multi-channel feature map X from each input image patch. Since the importance of individual feature channels varied, X was subsequently refined by the FCE attention mechanism. As illustrated in Fig. 1, the FCE mechanism first modeled nonlinear channel relationships through a fully connected (FC) layer. A ReLU activation function was applied to enhance feature sparsity, followed by a second FC layer that estimated channel importance. Finally, a Sigmoid activation function generated channel attention weights A. These weights were multiplied element-wise with the original features, thereby emphasizing salient patterns and attenuating less relevant ones.
+
+(1) A=σ(FC(δ(FC(X))))
+
+(2) Ex=A⊗X
+
+where X denotes the feature map from DenseNet-121, FC represents a fully connected layer. δ is the ReLU nonlinear activation function, σ is the Sigmoid activation function, and ⊗ indicates element-wise multiplication. The output Ex corresponds to the enhanced feature representation for each image patch.
+
+2.2.2 Gene expression and spatial feature extraction module (KanT)
+
+Spatial gene expression data possess the properties of a large number of dimensions with heavy noise. In order to deal with the problem of sparseness as well as outliers, We integrated Kolmogorov-Arnold Networks (Kan) (Liu et al. 2025) into the Transformer architecture, constructing a spatially aware feature encoder named KanT. This encoder adaptively learned interactions among genes and their spatial dependencies, effectively capturing the spatial heterogeneity of gene expression. The gene expression profile gi∈Rd and spatial coordinates pi=(xi,yi) of each spot were received by the module as joint input.
+
+First, the gene features and coordinate embeddings were concatenated to form a fused representation:
+
+(3) Z=[g1 ⊕ p1,g2 ⊕ p2,…,gn ⊕ pn]T
+
+Where Z∈Rn×d is the fused feature, n is the number of spots and d the feature dimension.
+
+A multi-head attention (MHA) mechanism then models interactions among spots. For head i:
+
+(4) headi=Attention(ZWiQ,ZWiK,ZWiV)
+
+(5) Attention(Q,K,V)=softmax(QKTd)V
+
+Here, WiQ, WiK, WiV are projection matrices, and d is the head dimension. Next, the outputs of all h heads were concatenated and passed through a KAN layer. Based on KAN, some techniques have made several of advancements and made notable advances (Drokin 2024, Firsov et al. 2024). The KAN layer employed learnable spline basis functions to capture nonlinear gene interactions:
+
+(6) MHS(Z)=KAN(Concat(head1,head2,…,headh))
+
+Finally, a feedforward network (Bebis and Georgiopoulos 1994) performed nonlinear transformation and dimensionality reconstruction, producing the integrated feature vector Ez that encodes both gene expression and spatial information.
+
+2.2.3 The feature alignment module
+
+The morphological features in histological images and spatial gene expression exhibit multiscale nonlinear relationships. Conventional linear models often failed to capture the co-regulatory mechanisms between genes and morphology within the microenvironment, especially for genes with gradient expression patterns. To address this, motivated by previous approaches (Al-Qaness and Ni 2025, Li et al. 2025), we designed the KanPJ projection head to map Ex (the image features extracted from DFCE) and Ez (the gene features encoded by KanT) into a unified latent space. First, they were linearly projected to align dimensions, yielding Ex′ and Ez′ as the basis for spatial alignment. Subsequently, a nonlinear activation function was introduced to adapt to the zero-inflated distribution of gene expression and to fit the complex relationship between image features and genes. Spatial expression patterns were further captured using the B-spline basis functions in the KAN. Residual connections mitigated deep network degradation and prevented the loss of key biological signals.
+
+Finally, layer normalization was applied to standardy feature distributions and eliminate batch effects, generating aligned features Fx and Fz for subsequent contrastive learning (Chen et al. 2020, Le-Khac et al. 2020). The KanPJ projection head is formulated as follows:
+
+(7) Fx=LN(KAN(μ(Ex′))+Ex′)
+
+(8) Fz=LN(KAN(μ(Ez′))+Ez′)
+
+where μ denotes the Gaussian Error Linear Unit (GELU) activation function, KAN represents the Kolmogorov-Arnold network, and LN indicates layer normalization.
+
+This module was then trained end-to-end within a contrastive learning framework to establish similarity relationships between images and genes. Through cross-modal representation alignment, the model learned latent associations between morphological features and gene modules. Specifically, in the embedding space, the cosine similarity between image features and gene expression features from the same sequencing spot was maximized, while the similarity between embeddings from different spots was minimized.
+
+(9) S=sim(Fx,Fz)τ
+
+(10) Lossx→z=-1N∑i=1Nlog⁡ expSii∑j=1N expSij
+
+(11) Lossz→x=-1N∑i=1Nlog⁡ expSii∑j=1N expSji
+
+(12) Losstotal=12(Lossx→z+Lossz→x)
+
+Here, the similarity matrix S is derived from cosine similarity (sim), τ is a temperature coefficient, and N is the training batch size. Lossx→z measures the similarity between each image embedding and its corresponding genes, ensuring that tissue structure aligns with its specific gene expression profile. Lossz→x measures the similarity between each gene embedding and its matching images, emphasizing that gene expression should be associated with the morphological features of its native spatial context. Losstotal denotes the overall contrastive loss.
+
+This contrastive loss (Radford et al. 2021) spatially aligned tissue regions with similar morphology to those with analogous gene expression patterns. By framing the task as implicit association modeling, DFCE-KanT learned a unified aligned embedding space. Once trained, the model predicts spatial gene expression from H&E image tiles via a KNN-based retrieval strategy. The optimal K is set based on sensitivity analysis (Fig. S1, available as supplementary data at Bioinformatics online). For a given test image tile, it retrieves known expression profiles that are similar in the learned embedding space to infer the corresponding gene expression.
+
+2.3 Evaluation metrics
+
+We used Pearson Correlation Coefficient (PCC), Mean Squared Error (MSE), Mean Absolute Error (MAE), and Structural Similarity Index Measure (SSIM) to compare the performance of DFCE-KanT and other baseline methods. These metrics were calculated using the following equation.
+
+(13) PCC=E[(xi-μi)(x^i-μ^i)]σiσ^i
+
+(14) MSE=1N∑i=1N(xi-x^i)2
+
+(15) MAE=1N∑i=1N|xi-x^i|
+
+where xi and x^i denote the spatial expression vectors of gene i in the ground truth and the predicted result, respectively. μi and μ^i represent the average expression values of gene i in the ground truth and the predicted result, respectively. σi and σ^i denote the standard deviations of the spatial expression of gene i in the ground truth and the predicted result, respectively.
+
+(16) SSIM=(2μxμy+(k1L)2)(2σxy+(k2L)2)(μx2+μy2+(k1L)2)(σx2+σy2+(k2L)2)
+
+where μx and μy are the mean intensities of images x and y, σx2 and σy2 are the variances, σxy is the covariance. The constants k1 and k2 are 0.01 and 0.03, respectively, to stabilize the division. L is the dynamic range of pixel values.
+
+PCC measured the average correlation for each gene type, considering ground truth and predictions for every slide image. For each tissue section, we calculated the PCC for all highly variable genes (HVG) and the top 50 highly expressed genes (HEG). Meanwhile, for each gene type in each slide image, MSE and MAE measured the sample deviation between predictions and ground truth. SSIM is a perceptual metric that quantifies data quality degradation caused by processing such as data compression or transmission. SSIM helped evaluate the model’s ability to preserve the spatial patterns and structural features of gene expression (Wang et al. 2004). For PCC and SSIM, higher values indicated better performance. Conversely, for MSE and MAE, lower values indicate better performance.
+
+3 Results
+
+3.1 Experiment settings
+
+For DFCE-KanT, we adopted the Adam optimizer with the learning rate of 4 × 10−4, weight decay to 1 × 10⁻³, and batch size to 512. Training was conducted for 90 epochs on the HER2+ and cSCC datasets, 60 epochs on the Alex and HBC datasets, and 30 epochs on the Liver dataset (Fig. S2, available as supplementary data at Bioinformatics online). To ensure a fair comparison, all experiments for the baseline methods (THItoGene, HisToGene, His2ST, BLEEP, mclSTExp) and our DFCE-KanT were performed on same NVIDIA Tesla V100 GPUs.
+
+To evaluate model performance, we performed leave-one-out cross-validation on the five ST datasets (HER2+, cSCC, Alex, HBC and Liver). In each fold, one tissue section was kept out for testing, and the remaining sections were used for training. This process was repeated until every section had served as the test set once.
+
+3.2 Performance comparison with baseline methods
+
+By calculating the Pearson correlation coefficient (PCC) between predicted and observed expression in each tissue section, DFCE-KanT was evaluated against five leading methods for spatial gene expression prediction. This metric quantitatively evaluates the accuracy of spatial expression pattern reconstruction. As shown in Fig. 2A–E, DFCE-KanT achieves higher PCC values than all baseline methods across almost all five datasets. In the HER2+ dataset, DFCE-KanT (PCC = 0.2071) outperforms THItoGene (0.0715, +189.65%), HisToGene (0.0832, +148.92%), Hist2ST (0.1443, +43.52%), BLEEP (0.1182, +75.21%), and mclSTExp (0.1863, +11.16%). Consistent improvements are observed across the remaining datasets. cSCC (+65.47%, +285.68%, +62.75%, +48.55%, +9.38%), Alex (+79.18%, +90.12%, +97.26%, +34.80%, +17.84%), HBC (+65.04%, +2340.43%, +4.32%, +64.01%, +40.74%), and Liver (+5.13%, +92.23%, +31.18%, +46.78%, +20.17%). Wilcoxon signed-rank test results further verify that DFCE-KanT yields significant performance improvements over most baseline methods (P<.001).
+
+Figure 2 Comparative evaluation of spatial transcriptome prediction methods. Violin plots of PCC distributions between observed and predicted gene expression across the HER2+, cSCC, Alex, HBC, and Liver datasets for all six methods (THItoGene, HisToGene, His2ST, BLEEP, mclSTExp, and DFCE-KanT). PCC comparisons of gene expression prediction results on the (A) HER2+, (B) cSCC, (C) Alex, (D) HBC, and (E) Liver datasets. Section-level PCC value on the (F) HER2+ and (G) cSCC datasets.
+
+For image description, please refer to the figure legend and surrounding text.
+
+We further assessed section-level stability by visualizing PCC per tissue section. DFCE-KanT achieved the highest PCC in 19/32 sections of the HER2+ dataset (Fig. 2F, Table S1, available as supplementary data at Bioinformatics online) and 10/12 sections of the cSCC dataset (Fig. 2G, Table S2, available as supplementary data at Bioinformatics online). Section-wise results for Alex, HBC and Liver datasets are provided in Supplementary Materials (Figs. S3–S5, Tables S3–S5). These findings confirm its stable predictive performance across most tissue sections.
+
+3.3 Visualization of gene expression
+
+To characterize which genes DFCE-KanT predicts most accurately, we calculated the PCC and associated P-value between predicted and observed expression for each gene. Genes were ranked by their average − log10(P-value) across all sections, and the top 10 genes with the lowest average P-values were selected for further analysis.
+
+PCC and SSIM heatmaps for the top 10 genes predicted by all six methods are shown in Fig. S7, available as supplementary data at Bioinformatics online. For all datasets, DFCE-KanT achieved the best PCC and SSIM results. We further evaluated other methods using the top 10 genes identified by DFCE-KanT as a unified reference. As illustrated in Fig. 3, DFCE-KanT achieved the highest PCC and SSIM values in all tests, demonstrating its robustness in capturing biologically relevant genes. Most top-ranked genes predicted by DFCE-KanT also align well with those reported in previous studies (Pang et al. 2021, Zeng et al. 2022, Jia et al. 2024, Min et al. 2024), indicating strong biological relevance. Collectively, these results verify that our model can reliably identify disease-associated gene expression patterns.
+
+Figure 3 PCC and SSIM evaluation of the top 10 predicted genes across HER2+, cSCC, Alex, HBC and Liver datasets, comparing DFCE-KanT with baseline methods including THItoGene, HisToGene, His2ST, BLEEP and mclSTExp.
+
+For image description, please refer to the figure legend and surrounding text.
+
+For a clear visual comparison, Fig.  4 displays the predicted and true expression patterns of the top 10 genes in the HER2+ dataset. Our DFCE-KanT predictions most closely match the real spatial patterns. DFCE-KanT continuously outperforms the baseline methods. Parallel studies in cSCC, Alex, HBC and Liver datasets were yielded consistent results (Tables S6–S9, available as supplementary data at Bioinformatics online).
+
+Figure 4 The top 10 predicted genes with the highest mean − log10(P-value) on the HER2+ dataset. The ground-truth gene expression is shown in the first column, and gene expression predictions from six different methods are shown in the final six columns.
+
+For image description, please refer to the figure legend and surrounding text.
+
+To assess how well each method preserves spatial tissue architecture, we applied K-means clustering to predicted expression from all methods on expert-annotated HER2+ sections (B1, C1, D1, E1, F1, G2). SSIM was used to measure the extent of similarity between the clustering results and the true pathological structure.
+
+As shown in Fig.  5, the cluster assignments are overlaid as color-coded maps on the corresponding H&E images. DFCE-KanT achieves the highest SSIM on B1 and C1. On B1, it outperforms THItoGene, HisToGene, His2ST, BLEEP and mclSTExp by 0.49%, 1.52%, 0.46%, 0.35% and 0.38%, respectively. On C1, it surpasses these methods by 1.04%, 0.97%, 0.88%, 0.27% and 0.47%, respectively. On G2, mclSTExp obtains the best result, while DFCE-KanT outperforms all other baselines. On D1, E1 and F1, DFCE-KanT delivers competitive performance and consistently outperforms THItoGene and HisToGene. Overall, our model reconstructs spatial gene expression with high fidelity and effectively captures tissue spatial features.
+
+Figure 5 Comparison of spatial structure preservation in HER2+ tissue sections via K-means clustering. Spatial domain assignments predicted by THItoGene, HisToGene, His2ST, BLEEP, mclSTExp and DFCE-KanT are overlaid on H&E-stained images, with SSIM applied to quantify similarity to expert annotations. The first column presents histology images labeled by pathologists, and the remaining six columns show clustering results of gene expression from each method.
+
+For image description, please refer to the figure legend and surrounding text.
+
+3.4 Ablation experiment
+
+To verify the contribution of each component in DFCE-KanT, we carried out systematic ablation experiments on its three main modules: the FCE attention mechanismin in DFCE module, the KanT correlation module, and the Alignment projector. Experiments were performed on the HER2+, cSCC, Alex, HBC, and Liver datasets. The Pearson correlation coefficient (PCC) for the top 50 highly expressed genes (HEG) and all highly variable genes (HVG), together with the mean squared error (MSE) and mean absolute error (MAE) over all predicted spots, were used to assess the prediction accuracy.
+
+As shown in Fig.  6. Ours DFCE-KanT (Model D) achieved best in 11/20 metrics (3 for HER2+, 4 for cSCC, 1 each for Alex and HBC, and 2 for Liver) and second-best in 6/20 metrics (3 each for Alex and HBC). Performance deteriorated when any module was removed, as seen by lower HEG and HVG together alongside higher MSE and MAE. Detailed observations are as follows.
+
+Figure 6 Ablation study of latent embedding module.
+
+For image description, please refer to the figure legend and surrounding text.
+
+Removing the FCE attention mechanism in DFCE module (Model C3 versus Model D) noticeably decreased HEG and HVG while raising MSE and MAE on all datasets except Liver. Comparing Model B2 with C1 and Model B3 with C2 revealed a similar trend.
+
+Removing the Kan network in KanT (Model C2 versus Model D) lowered HEG and HVG, while raised MSE and MAE on all datasets except Alex. Comparing Model B1 with C1 and Model B3 with C3 showed comparable declines.
+
+Removing the Alignment module (Model C1 versus Model D) significantly reduced HEG and HVG and increased MSE and MAE on datasets other than cSCC and HBC. This pattern was also evident between Model B1 and C2 and between Model B2 and C3.
+
+Overall module contribution was assessed using a baseline model (Model A) that omitted the crucial aspect of each module. Relative to Model A, our Model D improved HEG by 10.9%, 9.5%, 22.9%, 72.7% and 28.9% for HER2+, cSCC, Alex, HBC and Liver datasets, and HVG by 6.8%, 9.5%, 12.9%, 100.2% and 21.4%. For the four datasets excluding Liver, MSE dropped by 0.4%, 2.6%, 0.7% and 9.5%, while MAE declined by 1.8%, 4.1%, 3.1% and 5.5%.
+
+The results indicate that each of the DFCE-KanT modules solves one particular space gene-expression prediction problem, and the DFCE module can extract information at a finer granularity from HE images; the KanT module can efficiently capture the spatial heterogeneity of gene expression, while the Alignment module ensure an effective multimodal features alignment. Together, these aspects boost the accuracy of spatial gene expression prediction from histology images.
+
+In a nutshell, DFCE-KanT achieved the best or second best results in almost all five dataset which proved that it was excellent and robust. Efficacy of our proposed architecture is also justified through ablation studies, that show how the three designed modules complement each other and tackle the main challenges of spatial gene expression prediction from histology images.
+
+4 Discussion
+
+Predicting spatial gene expression from histology images depends on strong correlations between image features and gene expression data. We develop DFCE-KanT to solve key challenges in this cross-modal prediction task.
+
+The DFCE module adopts an FCE attention mechanism. It adjusts weights across feature channels to highlight valuable tissue morphology and filter out noise. This design extracts pathological features more precisely than classic attention methods including SE (Hu et al. 2020) and CBAM (Woo et al. 2018) (Table S10, available as supplementary data at Bioinformatics online). The KanT encoder integrates Kolmogorov-Arnold Networks (KAN) and Transformer. It efficiently captures spatial heterogeneity in gene expression. Traditional MLPs and standard Transformer cannot well model complex nonlinear relationships. Model performance drops noticeably when we replace KAN with these conventional components across all datasets (Table S10, available as supplementary data at Bioinformatics online). We build the KanPJ projection head based on KAN. It projects image and gene expression features into a unified embedding space. This approach outperforms linear alignment and retains vital biological information. Control experiments (Table S11, available as supplementary data at Bioinformatics online) prove that our contrastive learning strategy is superior to direct regression. It also validates the effectiveness of our cross-modal alignment design.
+
+The three core modules work collectively to minimize cross-modal biases and yield robust joint features. We assessed DFCE-KanT across five public datasets: HER2+, cSCC, Alex, HBC and Liver. The model ranked first or second on most metrics, demonstrating solid predictive power and good generalization across datasets. A series of ablation tests validated the contribution of each component. Eliminating any module lowered PCC values for highly expressed genes (HEG) and highly variable genes (HVG), and increased MSE and MAE. Against the baseline model, DFCE-KanT lifted HEG by 10.9%–72.7% and HVG by 6.8%–100.2%. It also reduced MSE by up to 9.5% and MAE by up to 5.5%. Every module fulfills a dedicated role. The FCE mechanism refines histopathological feature extraction. The KanT encoder identifies spatial patterns in gene expression. The alignment module fuses multimodal data efficiently. Their joint operation markedly improves overall prediction performance.
+
+Spatial transcriptomic experiments are costly and time-consuming. These limitations hinder their large-scale clinical application. Our method enables fast and low-cost prediction using routine histopathological slides. It helps researchers understand disease mechanisms and assists pathologists in diagnosis, staging and prognosis. It also provides a solid foundation for personalized clinical treatment.
+
+Although DFCE-KanT has a promising prospect in predicting spatial gene expression, several limitations remain to be addressed. We outline three directions for future improvements. First, public spatial transcriptomic datasets contain relatively few patients, which prevents large-scale model training. This study adopted leave-one-out cross-validation at the tissue section level. This setting follows common practices in related studies and ensures fair comparison with published baselines. To boost model generalization, we will collect and integrate available spatial transcriptomic data, expand our dataset with larger patient cohorts and perform further validation. Second, as single-cell resolution spatial transcriptomic data becomes more available, we will build models to support gene expression prediction at finer spatial and cellular resolutions. Third, we will incorporate multi-omics data and broaden clinical applicability of the model.
+
+Supplementary Material
+
+btag502_Supplementary_Data
+
+Acknowledgements
+
+We sincerely thank the anonymous reviewers for their valuable and constructive suggestions.
+
+Author contributions
+
+Fang Li (Conceptualization [lead], Data curation [lead], Methodology [lead], Resources [lead], Software [lead], Visualization [lead], Writing—original draft [equal]), Pengyu Wang (Data curation [equal], Formal analysis [lead], Investigation [lead], Validation [equal], Writing—original draft [lead]), Junjie Shen (Formal analysis [supporting], Writing—review & editing [supporting]), and Yazhou Wu (Funding acquisition [lead], Project administration [lead], Supervision [lead], Writing—review & editing [lead])
+
+Supplementary material
+
+Supplementary material is available at Bioinformatics online.
+
+Conflict of interests
+
+The authors declare that they have no conflicts of interest.
+
+Funding
+
+This work was supported by the National Natural Science Foundation of China (82574207 and 82173621).
+
+Data availability
+
+This study utilized five publicly available ST datasets. The human HER2-positive breast tumor ST data can be found at https://github.com/almaan/her2st/. The Human cutaneous squamous cell carcinoma data are available from GSE144240. The Alex data and HBC data can be downloaded from https://doi.org/10.48610/4fb74a9. The Liver data are available from GSE240429.
+
+
+References
+
+Al-Qaness MAA , NiS.  TCNN-KAN: optimized CNN by Kolmogorov-Arnold network and pruning techniques for sEMG gesture recognition. IEEE J Biomed Health Inform  2025;29:188–97.39316475 10.1109/JBHI.2024.3467065
+Alexandrov T , Saez‐RodriguezJ, SakaSK.  Enablers and challenges of spatial omics, a melting pot of technologies. Mol Syst Biol  2023;19:e10571.37842805 10.15252/msb.202110571 PMC10632737
+Alon S , GoodwinDR, SinhaA, IMAXT Consortium  et al  Expansion sequencing: spatially precise in situ transcriptomics in intact biological systems. Science  2021;371:eaax2656.10.1126/science.aax2656 PMC7900882 33509999
+Andersson A , LarssonL, StenbeckL  et al  Spatial deconvolution of HER2-positive breast cancer delineates tumor-associated cell type interactions. Nat Commun  2021;12:6012.34650042 10.1038/s41467-021-26271-2 PMC8516894
+Andrews TS , NakibD, PercianiCT  et al  Single-cell, single-nucleus, and spatial transcriptomics characterization of the immunological landscape in the healthy and PSC human liver. J Hepatol  2024;80:730–43.38199298 10.1016/j.jhep.2023.12.023
+Aresta G , AraújoT, KwokS  et al  BACH: grand challenge on breast cancer histology images. Med Image Anal  2019;56:122–39.31226662 10.1016/j.media.2019.05.010
+Bebis G , GeorgiopoulosM.  Feed-forward neural networks. IEEE Potentials  1994;13:27–31.
+Chen A , LiaoS, ChengM  et al  Spatiotemporal transcriptomic atlas of mouse organogenesis using DNA nanoball-patterned arrays. Cell  2022;185:1777–92.e1721.35512705 10.1016/j.cell.2022.04.003
+Chen C , LuMY, WilliamsonDFK  et al  Fast and scalable search of whole-slide images via self-supervised deep learning. Nat Biomed Eng  2022;6:1420–34.36217022 10.1038/s41551-022-00929-8 PMC9792371
+Chen T, Kornblith S, Norouzi M  et al  A simple framework for contrastive learning of visual representations. In: International Conference on Machine Learning. 2020.
+Crosetto N , BienkoM, OudenaardenA.  Spatially resolved transcriptomics and beyond. Nat Rev Genet  2015;16:57–66.25446315 10.1038/nrg3832
+Dimitriou N , ArandjelovićO, CaiePD.  Deep learning for whole slide image analysis: an overview. Front Med (Lausanne)  2019;6:264.31824952 10.3389/fmed.2019.00264 PMC6882930
+Dosovitskiy A, Beyer L, Kolesnikov A  et al  An image is worth 16 × 16 words: Transformers for image recognition at scale. In: International Conference on Learning Representations. 2021.
+Drokin I. Kolmogorov-Arnold convolutions: design principles and empirical studies. arXiv preprint, 2024, preprint: not peer reviewed.
+Eraslan G , SimonLM, MirceaM  et al  Single-cell RNA-seq denoising using a deep count autoencoder. Nat Commun  2019;10:390.30674886 10.1038/s41467-018-07931-2 PMC6344535
+Firsov N , MyasnikovE, LobanovV  et al  HyperKAN: kolmogorov-Arnold networks make hyperspectral image classifiers smarter. Sensors  2024;24:7683.39686221 10.3390/s24237683 PMC11644919
+He B , BergenstråhleL, StenbeckL  et al  Integrating spatial gene expression and breast tumour morphology via deep learning. Nat Biomed Eng  2020;4:827–34.32572199 10.1038/s41551-020-0578-x
+Hu J , ShenL, AlbanieS  et al  Squeeze-and-excitation networks. IEEE Trans Pattern Anal Mach Intell  2020;42:2011–23.31034408 10.1109/TPAMI.2019.2913372
+Janesick A , ShelanskyR, GottschoAD, 10x Development Teams  et al  High resolution mapping of the tumor microenvironment using integrated single-cell, spatial and in situ analysis. Nat Commun  2023;14:8353.38114474 10.1038/s41467-023-43458-x PMC10730913
+Ji AL , RubinAJ, ThraneK  et al  Multimodal analysis of composition and spatial architecture in human squamous cell carcinoma. Cell  2020;182:497–514.e422.32579974 10.1016/j.cell.2020.05.039 PMC7391009
+Jia Y , LiuJ, ChenL  et al  THItoGene: a deep learning method for predicting spatial transcriptomics from histological images. Brief Bioinform  2024;25:bbad464.10.1093/bib/bbad464 PMC10749789 38145948
+Kipf TN , WellingM.  Semi-supervised classification with graph convolutional networks. In: International Conference on Learning Representations. 2017.
+Le-Khac PH , HealyG, SmeatonAF.  Contrastive representation learning: a framework and review. IEEE Access  2020;8:193907–34.
+Li S , ZhuangX, JiaS  et al  MultiKano: an automatic cell type annotation tool for single-cell multi-omics data based on Kolmogorov–Arnold network and data augmentation. Protein Cell  2025;16:374–80.39658105 10.1093/procel/pwae069 PMC12120243
+Liu Z, Wang Y, Vaidya S  et al  KAN: Kolmogorov-Arnold networks. In: International Conference on Learning Representations. 2025.
+Marx V.  Method of the year: spatially resolved transcriptomics. Nat Methods  2021;18:9–14.33408395 10.1038/s41592-020-01033-y
+Min W , ShiZ, ZhangJ  et al  Multimodal contrastive learning for spatial gene expression prediction using histology images. Brief Bioinform  2024;25:bbae551.10.1093/bib/bbae551 PMC11952928 39471412
+Mondol RK , MillarEKA, GrahamPH  et al  hist2RNA: an efficient deep learning architecture to predict gene expression from breast cancer histopathology images. Cancers  2023;15:2569.37174035 10.3390/cancers15092569 PMC10177559
+Moor AE , ItzkovitzS.  Spatial transcriptomics: paving the way for tissue-level systems biology. Curr Opin Biotechnol  2017;46:126–33.28346891 10.1016/j.copbio.2017.02.004
+Pang M , SuK, LiM.  Leveraging information in spatial transcriptomics to predict super-resolution gene expression from histology images in tumors. bioRxiv, 2021:1–31, preprint: not peer reviewed.
+Radford A, Kim JW, Hallacy C  et al  Learning transferable visual models from natural language supervision. In: International Conference on Machine Learning. 2021.
+Rao A , BarkleyD, FrançaGS  et al  Exploring tissue architecture using spatial transcriptomics. Nature  2021;596:211–20.34381231 10.1038/s41586-021-03634-9 PMC8475179
+Rosenberg AB , RocoCM, MuscatRA  et al  Single-cell profiling of the developing mouse brain and spinal cord with split-Pool barcoding. Science  2018;360:176–82.29545511 10.1126/science.aam8999 PMC7643870
+Woo S, Park J, Lee J‑Y  et al  CBAM: convolutional block attention module. In: Ferrari V, Hebert M, Sminchisescu C, Weiss Y (eds.), Computer Vision–ECCV 2018. Springer, 2018, 3–19.
+Saul D , KosinskyRL.  Spatial transcriptomics herald a new era of transcriptome research. Clin Transl Med  2023;13:e1264.37190941 10.1002/ctm2.1264 PMC10186148
+Shmatko A , Ghaffari LalehN, GerstungM  et al  Artificial intelligence in histopathology: enhancing cancer research and clinical oncology. Nat Cancer  2022;3:1026–38.36138135 10.1038/s43018-022-00436-4
+Simonyan K , ZissermanA.  Very deep convolutional networks for large-scale image recognition. In: International Conference on Learning Representations. 2015.
+Ståhl PL , SalménF, VickovicS  et al  Visualization and analysis of gene expression in tissue sections by spatial transcriptomics. Science  2016;353:78–82.27365449 10.1126/science.aaf2403
+Tian L , ChenF, MacoskoEZ.  The expanding vistas of spatial transcriptomics. Nat Biotechnol  2023;41:773–82.36192637 10.1038/s41587-022-01448-2 PMC10091579
+Tsai P-C , LeeT-H, KuoK-C  et al  Histopathology images predict multi-omics aberrations and prognoses in colorectal cancer patients. Nat Commun  2023;14:2102.37055393 10.1038/s41467-023-37179-4 PMC10102208
+Valdeolivas A , AmbergB, GiroudN  et al  Profiling the heterogeneity of colorectal cancer consensus molecular subtypes using spatial transcriptomics. NPJ Precis Oncol  2024;8:10.38200223 10.1038/s41698-023-00488-4 PMC10781769
+Vaswani A, Shazeer N, Parmar N  et al Attention is all you need. In: Neural Information Processing Systems. 2017.
+Wang Z , Bovik AC, Sheikh HR et al  Image quality assessment: from error visibility to structural similarity. IEEE Trans Image Process  2004;13:600–12.15376593 10.1109/tip.2003.819861
+Wang C , ChanAS, FuX  et al  Benchmarking the translational potential of spatial gene expression prediction from histology. Nat Commun  2025;16:1544.39934114 10.1038/s41467-025-56618-y PMC11814321
+Waylen LN , NimHT, MartelottoLG  et al  From whole-mount to single-cell spatial assessment of gene expression in 3D. Commun Biol  2020;3:602.33097816 10.1038/s42003-020-01341-1 PMC7584572
+Wu SZ , Al-EryaniG, RodenDL  et al  A single-cell and spatially resolved atlas of human breast cancers. Nat Genet  2021;53:1334–47.34493872 10.1038/s41588-021-00911-1 PMC9044823
+Xie R, Pang K, Chung S  et al  Spatially resolved gene expression prediction from histology images via bi-modal contrastive learning. In: Neural Information Processing Systems. 2023.
+Zeng Y , WeiZ, YuW  et al  Spatial transcriptomics prediction from histology jointly through transformer and graph neural networks. Brief Bioinform  2022;23:bbac297.10.1093/bib/bbac297 35849101
+Zuo C , ZhuJ, ZouJ  et al  Unravelling tumour spatiotemporal heterogeneity using spatial multimodal data. Clin Transl Med  2025;15:e70331.40341789 10.1002/ctm2.70331 PMC12059211

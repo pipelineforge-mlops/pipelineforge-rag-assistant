@@ -1,0 +1,460 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Sci Prog
+Journal ID: Sci Prog
+NLM Journal ID: 0411361
+Journal ID: SCI
+
+Science Progress
+
+ISSN: 0036-8504
+EISSN: 2047-7163
+Publisher: SAGE Publications
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498838
+PMID: 42627192
+DOI: 10.1177/00368504261478359
+Article ID: 10.1177_00368504261478359
+Article version: 1
+Subjects: Original Research Article
+
+Prosthetic restoration material selection using an integrated Fermatean fuzzy MCDM method
+
+Akkaya Ece 1
+Cari Melike 1
+https://orcid.org/0000-0001-5562-6367 Karaca Tolga Kudret 2
+https://orcid.org/0000-0001-5295-1631 Yalcin Kavus Bahar 3
+Ayyildiz Ertugrul 1 4
+1 Department of Industrial Engineering, 52976 Karadeniz Technical University , Trabzon, Turkiye
+2 Department of Industrial Engineering, 476272 Istanbul Topkapi University , Istanbul, Turkiye
+3 Quality Coordination Office, 226844 İzmir Katip Çelebi University , İzmir, Turkiye
+4 Industrial Policy and Development Center, Istanbul Ticaret University , Istanbul, Turkiye
+Tolga Kudret Karaca, Department of Industrial Engineering, Istanbul Topkapi University, No: 10, 34087 Zeytinburnu, Istanbul, Turkiye. Email: tolgakudretkaraca@topkapi.edu.tr
+Electronic publication date: 2026 Aug 21
+Publication date: 2026 Jul-Sep
+Volume: 109
+Issue: 3
+Electronic Location ID: 00368504261478359
+Received 2026 Apr 9; Revised 2026 Jul 24; Accepted 2026 Jul 30
+Copyright: © The Author(s) 2026
+Copyright year: 2026
+Copyright holder: SAGE Publications
+License: This article is distributed under the terms of the Creative Commons Attribution-NonCommercial 4.0 License (https://creativecommons.org/licenses/by-nc/4.0/) which permits non-commercial use, reproduction and distribution of the work without further permission provided the original work is attributed as specified on the SAGE and Open Access pages (https://us.sagepub.com/en-us/nam/open-access-at-sage).
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: dental prosthetic restoration material selection, clinical decision support, health informatics, patient-centered care, Fermatean fuzzy sets
+typesetter: ts10
+cover-date: July-September 2026
+
+==============================
+Selecting an appropriate dental crown material requires the simultaneous consideration of clinical performance, aesthetics, cost, and patient-related expectations. This study aimed to support dentists in selecting the most suitable dental prosthetic restoration material under uncertainty. An integrated Fermatean fuzzy multi-criteria decision-making (MCDM) framework was employed by combining the CRITIC (Criteria Importance Through Intercriteria Correlation) method for weighting and the WASPAS (Weighted Aggregated Sum Product Assessment) method for ranking alternatives. Six restorative material alternatives were evaluated using eleven sub-criteria grouped under three main dimensions: mechanical, visual, and eco-nomic. The criteria were identified through literature review and expert opinion. The findings indicated that clinical longevity was the most important criterion in the evaluation process. Among the six alternatives, the resin nano-ceramic CAD/CAM material achieved the highest overall performance, followed by the lithium disilicate CAD/CAM and zirconia-based ceramic materials. Across the tested λ values and ±20% changes in the three highest-weighted criteria, the ranking order remained unchanged, indicating that the results were stable within the examined sensitivity scenarios, confirming the robustness of the proposed framework. The proposed framework provides a transparent decision-support tool for restorative dentistry and demonstrates the applicability of Fermatean fuzzy MCDM methods to dental material selection.
+
+1. Introduction
+
+Dental crowns are artificial prosthetic restorations that mimic natural teeth and are designed to treat tooth loss, severe decay, or substantial loss of dental material. A dental crown can be used to rebuild a broken tooth or to support a large filling in a tooth that has extensive decay. It is also used to restore the tooth’s lost shape or color, to cover a dental implant placed in an area with a missing tooth, or to anchor a dental bridge using adjacent teeth for support. A continuing objective in restorative and prosthetic dentistry is to select materials that can reproduce the optical characteristics of natural teeth while providing sufficient mechanical resistance for intraoral function. 1 Therefore, the selection of crown material is a clinically important decision that directly affects restoration longevity, functional performance, aesthetics, and patient satisfaction.
+
+Prosthetic crown materials have evolved from conventional metal-ceramic systems to contemporary all-ceramic and CAD/CAM materials. This transition has been driven by the need to balance mechanical reliability, biocompatibility, optical performance, and increasing patient expectations. Depending on their composition, microstructure, and clinical indication, contemporary ceramic systems can provide suitable performance for both anterior and posterior restorative applications.1,2 Despite significant material advancements, selecting the optimal prosthetic crown material remains challenging because dentists must evaluate multiple material properties and patient-related expectations simultaneously. This complexity creates a need for a structured decision-support approach that can integrate clinical, mechanical, aesthetic, and economic criteria under uncertainty.
+
+Previous studies have shown that multi-criteria decision making (MCDM) based decision-support approaches can provide systematic, transparent, and reproducible frameworks for dental and biomedical material selection. Deniz and Orhan 3 developed an MCDM-based assessment model for engine-driven nickel-titanium instruments and emphasized that structured decision models can support dental practitioners in evaluating complex material alternatives. Similarly, Yadav et al. 4 applied a hybrid Entropy-VIKOR method to rank dental restorative composite materials using multiple performance-defining attributes, while Yadav et al. 5 further demonstrated the usefulness of MCDM techniques for optimizing resin-based dental composites through physical, mechanical, and clinical performance parameters. In another relevant study, Savran and Karpat 6 combined finite element analysis with MCDM methods to compare dental implant materials according to biomechanical and economic criteria. In parallel, clinical studies have also highlighted the importance of CAD/CAM-based restorative materials. Vervack et al. 7 reported promising clinical outcomes for resin composite CAD/CAM restorations, including Lava Ultimate CAD/CAM, whereas Aswal et al. 8 reviewed the clinical performance, survival, and complication profiles of CAD/CAM lithium disilicate and zirconia crowns. These studies collectively indicate that dental material selection increasingly requires evidence-based and multi-criteria decision frameworks.
+
+To address this gap, this study proposes an integrated Fermatean fuzzy MCDM framework combining Fermatean Fuzzy The CRiteria Importance Through Intercriteria Correlation (FF-CRITIC) and Fermatean Fuzzy Weighted Aggregated Sum Product Assessment (FF-WASPAS). FF-CRITIC is used to determine criterion weights from the aggregated expert evaluations, while FF-WASPAS is used to rank dental prosthetic restoration alternatives under uncertainty. Unlike previous studies, the proposed framework focuses specifically on dental prosthetic restoration material selection and incorporates expert judgments across mechanical, visual, and economic dimensions. The use of fuzzy sets was motivated by the qualitative and imprecise nature of criteria such as color harmony, dental aesthetics, marginal fit, and clinical longevity, which cannot be consistently expressed through exact numerical values. Fermatean fuzzy sets enable linguistic expert judgments to be represented through membership, non-membership, and hesitation degrees, thereby preserving the uncertainty and indecision embedded in the assessments.9–11
+
+Although several studies have utilized MCDM approaches for material selection, no prior research has integrated the FF-CRITIC and FF-WASPAS methods for the systematic selection of dental prosthetic materials. This research addresses the following gaps in the literature:• The impact of quality, performance, and expert opinions on dental material selection has not been comprehensively examined using advanced fuzzy MCDM frameworks.
+
+• The wide variety of prosthetic alternatives and complex literature create uncertainty that has not been sufficiently modeled in previous works.
+
+The main contributions and novelty of this study are as follows:• Introducing a hybrid FF-CRITIC and FF-WASPAS decision-making methodology for dental prosthetic material selection.
+
+• Demonstrating the applicability of structured fuzzy MCDM to real-world dental practice, providing a robust model for practitioners.
+
+• Offering a comprehensive evaluation based on expert knowledge and multi-dimensional clinical and aesthetic criteria.
+
+The explanation of the subsequent sections of this article is summarized as follows: Section 2 provides a summary of the literature review. Section 3 explains the proposed methodology in detail. Section 4 examines the introduction and application of the model for selecting dental prosthetic restorations. Section 5 discusses the results of the model. Section 6 provides the results of the model and indicates their contribution to future research.
+
+2. Literature review
+
+MCDM methods have undergone rapid evolution, providing structured frameworks for solving complex problems. In a typical MCDM process, the problem is defined, alternatives and criteria are identified, and the importance (weights) of each criterion is determined. These weights reflect the relative significance of each criterion in the decision context.
+
+The main challenges in MCDM, such as the uncertainty and subjectivity of the information, have led to the adoption of fuzzy logic and related methodologies to better model the ambiguity and uncertainty in real-world problems. Fuzzy set theory enables the mathematical modeling of imprecise, vague, or incomplete information. However, classical fuzzy set theory faced certain limitations in capturing real-life complexities, prompting researchers to develop a variety of fuzzy set extensions to better address uncertainty. Over the past several decades, a variety of fuzzy set extensions have been proposed to better represent the uncertainty and complexity. Among these sets, Fermatean Fuzzy Sets (FFSs), introduced by Senapati and Yager 12 as a special case of q-level orthopair fuzzy sets, allow even greater flexibility in representing uncertainty. This enhanced modeling capability has made FFSs especially attractive for complex MCDM problems.
+
+Recently, researchers have begun to integrate FFSs into MCDM techniques such as FF-CRITIC and FF-WASPAS, to process subjective expert assessments through structured mathematical procedures.13–16 To capture the current state of the art, a literature review focusing on the use of FF-CRITIC and FF-WASPAS was conducted. A summary of the relevant studies is provided in Table 1.Table 1. Selected studies employing fermatean fuzzy methods in MCDM and Selected studies focusing on dental or biomedical material selection using MCDM.
+
+Source	Aim	Method adopted	
+17	To address waste location problems in organizations.	WASPAS	
+18	To select the best location for waste disposal.	WASPAS	
+19	To evaluate logistics systems in healthcare organizations.	WASPAS	
+15	To optimize processes in refrigerator disassembly lines.	WASPAS, SWARA	
+20	To develop a new score function and a hybrid MCDM method.	CRITIC, GLDS	
+21	To enhance operational risk assessment.	Fine-Kinney, AHP, WASPAS	
+22	To rank the adoption of renewable technologies in government departments.	CRITIC,VIKOR	
+13	To evaluate service performance of hospitals during the COVID-19 pandemic.	CRITIC, TOPSIS	
+23	To improve expert decision-making in the public sector.	CRITIC,CODAS-SORT	
+24	To solve demand selection problems in reverse logistics.	CRITIC, EDAS	
+25	To assess performance of family medicine units.	TOPSIS	
+26	To select the optimal dental composite material.	AHP, TOPSIS	
+27	To select the optimal dental implant material.	VIKOR	
+28	To select biomaterials for spinal disc prosthesis.	Fuzzy AHP-TOPSIS	
+29	To select the optimal dental implant.	VIKOR	
+30	To assess metals for bio-implant applications.	SWARA, WASPAS	
+31	To compare hybrid MCDM methods for dental biomaterial selection.	AHP, VIKOR, TOPSIS, MOORA, ELECTRE, PROMETHEE	
+32	To determine and rank the criteria for toothpaste selection among smokers.	DEMATEL	
+
+Although the use of MCDM methods is widespread in engineering, healthcare, and logistics domains, there is still limited application of Fermatean Fuzzy-based approaches in dental material selection. To better illustrate the development of MCDM applications in dental and biomedical fields, Table 1 also presents selected studies focusing on dental material and implant selection using various MCDM techniques.
+
+Overall, the literature demonstrates that while MCDM techniques have been extensively applied in various engineering, healthcare, and logistics domains, the integration of advanced extensions such as FFSs remains relatively recent. Notably, although several studies have utilized MCDM methods for dental material selection, none have specifically implemented a hybrid approach in this field. This highlights a clear research gap and underscores the novelty of the present study, which aims to systematically evaluate dental prosthetic materials by leveraging the enhanced uncertainty modeling capacity of FFSs within a robust MCDM framework.
+
+3. Proposed methodology
+
+This study proposed an integrated approach combining FF-CRITIC and FF-WASPAS to determine the most suitable dental prosthetic material. By leveraging the advanced uncertainty modeling capability of FFSs, the methodology effectively addresses both the weighting of evaluation criteria and the ranking of alternative dental materials. The main stages framework are presented in Figure 1.Figure 1. Decision making framework for selecting dental prosthetic material selection.
+
+3.1. Preliminaries of Fermatean Fuzzy Sets
+
+In traditional fuzzy sets, (µ) presents the the membership degree. The degree of non-membership of an element is calculated by 1- µ. In the fuzzy set concept, the µ(x) takes values between [0,1]. The membership function value of the elements that are not included in the set is assigned as 0, and the membership function value of the elements that are fully included in the set is assigned as 1. The elements that are not clear whether they are included in the set or not are assigned a value between [0,1] according to the uncertainty. owever, recognizing the inadequacy of the clustering function, Atanassov 33 generalized the fuzzy set theory and introduced the IFS set theory. Atanassov 33 added a third function called uncertainty (π) to round the sum of degrees to 1. The FFSs proposed by Senapati and Yager (2020) allows for a more flexible and general modeling of uncertainty. Like IFS and PFS, three important components are used in the definitions of FFS. The basic definitions of FFS are shown in the figures below.
+
+Definition 1
+
+An Fermatean Fuzzy Number (FFN) is defined as follows 34 in a fixed set X. (1) F∼≅{(x,μa∼(x),va∼x);x∈X}
+
+F∼ = ( μa∼,va∼ ) is a FFN. μa∼(x):X ↦[0,1] and va∼(x):X ↦[0,1] are the membership and non-membership functions. For each x ∈ X , μa∼ and va∼ denote the membership and non-membership degrees of x , respectively, and both take values in the interval [0,1].
+
+where (2) 0≤μa∼(x)3+va∼(x)3≤1
+
+The π is calculated. (3) πa∼(x)=1−(μa∼(x))3−(va∼(x)3)3
+
+Definition 2
+
+FFN α∼=(μα∼,vα∼) multiplied by a positive real number λ is defined as follows. 35 (4) λα∼=(1−(1−μα∼3)λ3,vα∼λ)
+
+Definition 3
+
+A positive real number power λ of a FFN α∼=(μα∼,vα∼) is defined as follows. 35 (5) α∼λ=(μα∼λ,1−(1−vα∼3)λ3)
+
+Definition 4
+
+The sum and multiplication of two FFNs α∼=(μα∼,vα∼) and β∼=(μβ∼,vβ∼) are shown as follows. 36
+
+Sum: (6) α∼⊕β∼=(μα∼3+μβ∼3−μα∼3μβ∼33,vα∼vβ∼)
+
+Multiplication: (7) α∼⊗β∼=(μα∼μβ∼,vα∼3+vβ∼3−vα∼3vβ∼33)
+
+3.2. Proposed hybrid decision making methodology
+
+The FF-CRITIC and FF-WASPAS methods are combined to address the weighting and ranking of alternatives in the dental prosthetic material selection problem. In decision making problems, criteria often have varying degrees of importance, which are reflected by their weights. The CRITIC, introduced by Diakoulaki et al., 37 is widely used for determining criteria weights in fuzzy decision-making environments, as it accounts for both the variability and inter-criteria correlations. Mishra et al. extended CRITIC into the Fermatean Fuzzy environment (FF-CRITIC). 24 The key steps involve constructing a Fermatean Fuzzy decision matrix, determining criteria and alternatives, aggregating expert opinions, and then calculating criteria weights based on standard deviation and correlation. Although CRITIC employs statistical measures such as standard deviation and correlation, the input data in this study originate from expert judgments. Therefore, the resulting criterion weights are interpreted as expert-based rather than fully objective. 38
+
+The WASPAS method, developed by Zavadskas et al., 39 is a hybrid MCDM approach that combines the Weighted Sum Model and Weighted Product Model to improve reliability. Keshavarz-Ghorabaee et al. proposed the Fermatean Fuzzy extension (FF-WASPAS), which further increases robustness when handling uncertainty. 40 This integrated approach improves accuracy and reliability in ranking alternatives.19,41 The combination of these methods provides a systematic and reliable framework to support dentists in selecting the optimal prosthetic restoration material.
+
+Step 1
+
+The criteria, alternatives and decision makers to be considered in solving the decision problem are identified. A decision matrix is created by using the linguistic expressions given in Table 2 and summing the evaluations received from each decision maker. 42 Table 2. Linguistic terms.
+
+Linguistic terms	FFNs (µ, ν)	
+Extremely Low (EL)	0.1	0.9	
+Very Low (VL)	0.1	0.75	
+Low (L)	0.25	0.6	
+Medium Low (ML)	0.4	0.5	
+Medium (M)	0.5	0.4	
+Medium High (MH)	0.6	0.3	
+High (H)	0.7	0.2	
+Very High (VH)	0.8	0.1	
+Extremely High (EH)	0.9	0.1	
+
+The nine-level linguistic scale was adopted to provide sufficient discrimination among the dental material alternatives while keeping the expert evaluation process cognitively manageable. In expert-based clinical decision problems, fewer categories may not adequately capture subtle differences among materials, whereas too many categories may increase response burden and inconsistency. Therefore, the nine-level structure offers a balanced evaluation range. This choice is also consistent with psychometric evidence suggesting that rating scales with approximately seven to nine categories can provide adequate discrimination and respondent acceptability.43,44 In addition, the FFN parameterizations in Table 2 were adapted from previous Fermatean fuzzy MCDM studies, 42 particularly the FF-WASPAS framework of Keshavarz-Ghorabaee et al., 40 where a nine-level linguistic scale and the corresponding Fermatean fuzzy numbers were used to represent decision-maker judgments under uncertainty. All FFN pairs satisfy the Fermatean fuzzy condition, and the gradual increase in membership degree with a corresponding decrease in non-membership degree ensures an ordered and interpretable linguistic evaluation structure.
+
+Fermatean fuzzy decision matrix Eijt = ( µijt , νijt ), which reflects the evaluation of alternative i by expert t according to criterion j.
+
+Step 2
+
+Expert opinions are aggregated to create the Fermatean fuzzy decision matrix. The following equation is used for this. 45 (8) zij=Z(μij,vij)=(1−∏t=1d (1−(μijt)3)ψt3,∏t=1d (vijt)ψt)
+
+where d is the number of experts, Eijt = ( µijt , νijt ) is the Fermatean fuzzy evaluation of alternative Ai under criterion Cj by expert t , and ψt denotes the weight of expert t .
+
+Step 3
+
+Scores of evaluations are calculated.46,47 (9) S(zij)=12[ ((µij)3−((νij)3−ln⁡(1+(πij)3))+1]
+
+where S( zij ) represents the crisp performance score of alternative Ai under criterion Cj . The hesitation degree π is not treated as a separate weighting coefficient in this step. It is derived from Eq. 3 and represents the uncertainty embedded in each FFN. It is derived from Eq. (3) and represents the uncertainty embedded in each FFN. For the subsequent FF-CRITIC calculations, these scores constitute the crisp decision matrix K*=kij* , where kij*=S(zij) . Thus, each kij* is calculated from the aggregated Fermatean fuzzy evaluation zij Eq. (9).
+
+Step 4
+
+Standard deviations are determined. (10) σj=∑i=1m (kij*−k¯j)2m
+
+where kij* is the crisp value and m is the number of alternatives. k¯j is calculated as Eq. 11. (11) k¯j=∑i=1m kij*m
+
+Step 5
+
+The correlation values are calculated. (12) rjq=∑i=1m (kij*−k¯j)(kij*−k¯q)∑i=1m (kij*−k¯j)2∑i=1m (kij*−k¯q)2
+
+Step 6
+
+The quantity of information is calculated. (13) φj=σj(∑t=1n (1−rjt))
+
+Step 7
+
+The quantity of information is normalized by considering the standard deviations and correlation values of the criteria and the weight value of the criteria is obtained. (14) wj=φj∑i=1n φj
+
+Step 8
+
+The Q1 is calculated using the Weighted Sum Model (WSM), whereas Q2 is calculated using the Weighted Product Model (WPM). Equation (15) uses an additive aggregation structure in which the weighted criterion evaluations are summed, thereby allowing compensation among criteria. In contrast, Eq. (16) uses a multiplicative aggregation structure in which the weighted criterion evaluations are combined through products, making the result more sensitive to low performance under an individual criterion. (15) Qi1=∑j=1nwjZij
+
+(16) Qi2=∏j=1nZijwj
+
+Step 9
+
+The relative preference value Q is obtained for each alternative. (17) Qi=λQi1+(1−λ)Qi2
+
+where λ is the threshold value.
+
+Step 10
+
+The final score values of the alternatives are calculated based on score function and ranked from high to low.
+
+4. Real case application
+
+Artificial prosthetic restorations, which have been developed using various techniques until today, are selected among the artificial prosthetic restorations and included among the alternatives and are frequently used today. In this study, the alternatives to be used for prosthetic restoration material selection in dentistry are are shown in Figure 2.Figure 2. Images of the alternatives.
+
+The six alternatives were determined to represent different stages of development and major material families used in fixed prosthodontics rather than only the most recently introduced commercial products. This comparative framework includes a conventional metal-supported ceramic crown, early all-ceramic systems, lithium disilicate and zirconia-based ceramics, and a resin nano-ceramic CAD/CAM material. Such a structure enables the evaluation of restorative materials with different microstructures, mechanical properties, and clinical indications.48,49
+
+IPS Empress II and In-Ceram Alumina were retained not because they are the newest materials available, but because they are well-documented reference systems that represent important milestones in the evolution of all-ceramic restorations. In-Ceram Alumina is a glass-infiltrated alumina ceramic system that demonstrated favorable long-term clinical performance and contributed significantly to the development of high-strength all-ceramic restorations. 50 IPS Empress II represents an early lithium disilicate-based glass-ceramic system and served as the basis for subsequent generations of lithium disilicate restorations, which are currently among the most widely used esthetic restorative materials.48,51 Therefore, retaining these materials provides a broader comparative perspective and allows the proposed decision-support framework to distinguish between conventional restorations, legacy all-ceramic systems, and contemporary CAD/CAM-based alternatives.
+
+Furthermore, zirconia-based ceramics and lithium disilicate systems have become dominant restorative materials because of their favorable combination of mechanical strength, esthetics, and clinical reliability. 52 Resin nano-ceramic CAD/CAM materials have also emerged as alternatives that combine ceramic-like optical properties with improved machinability and simplified intraoral adjustment procedures. 53 Consequently, the selected alternatives collectively represent the major categories of restorative materials that have shaped contemporary prosthodontic practice.
+
+Although contemporary materials such as high-translucency multilayer zirconia, VITA Enamic, and Cerasmart are highly relevant in current restorative dentistry, they were not added as separate alternatives in this study because the expert evaluations, criteria weighting, and decision matrix were constructed based on the predefined six-material framework. Incorporating additional materials at the revision stage would require a new expert assessment process and would alter the original data structure. Therefore, these materials are acknowledged as important candidates for future research.
+
+Metal Supported Ceramic Crown (A1): These restorations, which have been used for many years and still constitute 80% of the veneers made in Turkiye, are usually made of a mixture of Nickel and Cobalt metals, and the superstructure is made of porcelain that tries to imitate the color of the tooth.
+
+IPS Empress II (A2): IPS Empress II is an earlier lithium disilicate-based glass-ceramic system developed for all-ceramic restorations. It is included in this study as a clinically documented reference material representing earlier generations of metal-free ceramic restorative systems.
+
+In-Ceram Alumina (A3): In-Ceram Alumina is a glass-infiltrated alumina ceramic system. It is retained in the comparative framework because it represents an established all-ceramic material category and provides a useful benchmark for comparing older alumina-based ceramics with more contemporary CAD/CAM-based materials.
+
+IPS E-Max CAD/CAM (A4): These are prosthetic all-ceramic restorations produced by controlled crystallization on a glass matrix with heat and pressure, reinforced with leucite crystals and computer-aided design and fabrication.
+
+Zirconia Block (A5): Prosthetic all-ceramic restorations consisting of zirconium dioxide (ZrO2) crystals and computer-aided design and fabrication.
+
+Lava Ultimate CAD/CAM (A6): These are zirconia blocks made of organic materials such as silica powder and zirconium silicate, reinforced with 80% nanoceramic filler particles and stabilized with yttrium. These are computer-aided designed and fabricated prosthetic full ceramic restorations.
+
+The criteria for dental prosthetic restoration material selection, identified through a review of dental material selection literature, comparison with previously proposed criterion frameworks, and expert opinion, are presented in Table 3.Table 3. Criteria and definitions for dental prosthetic restoration material selection.
+
+Criteria	Definition	
+C1. Fracture Resistance	The ability of the restoration material to resist cracking or fracture under masticatory forces and functional loading.	
+C2. Marginal Fit	The ability of the restoration to adapt accurately to the prepared tooth margin, supporting cementation quality, retention, and prevention of microleakage.	
+C3. Corrosion	The resistance of the material to chemical degradation in the oral environment, which is closely related to biocompatibility and long-term biological safety.	
+C4. Thermal and Electrical Conductivity	The degree to which the material transfers thermal or electrical stimuli, affecting patient comfort, pulp protection, and biological compatibility.	
+C5. Resistance to Abrasion and Deterioration	The ability of the material to maintain surface integrity against wear, aging, repair needs, and deterioration during long-term clinical use.	
+C6. Color Harmony	The ability of the restoration to match the natural tooth color and surrounding dentition for satisfactory aesthetic integration.	
+C7. Light Transmittance	The ability of the material to transmit and reflect light in a tooth-like manner, including translucency differences relevant to anterior and posterior applications.	
+C8. Dental Aesthetics	The overall visual performance of the restoration, including natural appearance, translucency, surface texture, shade stability, and patient-perceived attractiveness	
+C9. Pricing	The total economic burden of the restoration material, including material cost, production cost, and affordability for clinical use.	
+C10. Clinical Longevity	The expected long-term survival and serviceability of the restoration, considering durability, repairability, cementation success, and biological stability.	
+C11. Number of Treatment Sessions	The number of clinical appointments required to complete the restoration, reflecting treatment efficiency, chairside time, and patient convenience.	
+
+The criterion set is broadly consistent with Grachev et al., 54 who evaluated dental materials using mechanical, tribological, technological, biological, and economic factors. The present criteria similarly address mechanical performance, wear resistance, cost, and clinical efficiency. However, because this study focuses on fixed dental crowns, crown-specific factors such as marginal fit, thermal conductivity, color harmony, light transmittance, and dental aesthetics were also included.
+
+The mechanical criteria encompass fracture resistance, marginal fit, corrosion, thermal and electrical conductivity, and resistance to abrasion. These aspects evaluate each material’s ability to withstand chewing forces, ensure a proper fit to the tooth structure, resist chemical degradation, and maintain stability under thermal and mechanical stresses. Visual criteria include color harmony, light transmittance, and dental aesthetics, focusing on the extent to which each restoration matches natural tooth color and translucency, as well as its overall aesthetic integration within the patient’s smile. Economic criteria are represented by pricing, clinical longevity, and the number of treatment sessions required. These consider the cost-effectiveness of the material, its expected lifespan in clinical conditions, and the convenience for patients in terms of the duration and number of clinical appointments. In this study, these criteria, identified through literature review and expert opinion, were used to systematically evaluate and select the most suitable dental prosthetic restoration material from a professional perspective, taking into account both clinical and patient-centered outcomes.
+
+4.1 Implementation of the proposed methodology
+
+This study employed an expert-based evaluation process to support the selection of dental prosthetic restoration materials from both clinical and laboratory-oriented perspectives. Seven experts were consulted in the study. The panel consisted of six dentistry professionals and one dental prosthetics technician, all of whom had substantial professional experience in dental treatment, prosthetic restoration, or dental prosthesis production. The experts had at least 14 years of professional experience, providing experience-based clinical and laboratory perspectives. However, the panel size and composition were not intended to establish an objective or universally generalizable decision pattern; rather, they supported a case-specific expert assessment of the predefined alternatives. The inclusion of experts with different professional roles was intended to capture the multidimensional nature of dental prosthetic material selection, which involves not only clinical outcomes but also material handling, fabrication feasibility, marginal adaptation, CAD/CAM compatibility, finishing, and laboratory-related constraints. Table 4 summarizes the background information of the experts.Table 4. Background information of the experts.
+
+Experience	Education level	Job title	Area of expertise	Role in the evaluation	
+E-1	15+	MSc in Dentistry	Dentist	General Dentistry	Clinical assessment of restorative material suitability and patient-oriented criteria	
+E-2	14	PhD in Prosthetic Dental Treatment	Prosthodontist	Prosthetic Dentistry	Specialist assessment of prosthetic performance, longevity, marginal fit, and aesthetics	
+E-3	25+	MSc in Dentistry	Dentist	General Dentistry	Long-term clinical evaluation of restorative material performance	
+E-4	25+	MSc in Dentistry	Dentist	General Dentistry	Clinical evaluation of material selection, functionality, and patient satisfaction	
+E-5	14	Associate Degree in Dental Prosthetics	Dental Prosthetics Technician	Dental Prosthesis	Laboratory-based assessment of fabrication feasibility, CAD/CAM compatibility	
+E-6	14	MSc in Dentistry	Dentist	General Dentistry	Clinical evaluation of treatment practicality and patient-centered criteria	
+E-7	20+	MSc in Dentistry	Dentist	General Dentistry	Clinical assessment of prosthetic alternatives based on long-term practice experience	
+
+The experts evaluated the dental prosthetic restoration alternatives according to the specified criteria via linguistic terms in Table 2. These evaluations are presented in Table 5. All the criteria are defined as utility criteria and the higher the values, the higher the preference value of the prosthetic restoration.Table 5. Expert evaluations for alternatives.
+
+​	Expert-1	Expert-2	Expert-3	Expert-4	
+A1	A2	A3	A4	A5	A6	A1	A2	A3	A4	A5	A6	A1	A2	A3	A4	A5	A6	A1	A2	A3	A4	A5	A6	
+C1	VH	MH	H	MH	H	M	VH	H	H	H	VH	M	H	MH	H	MH	L	L	VH	MH	MH	H	H	VH	
+C2	L	MH	L	ML	L	ML	VL	H	L	VH	VH	VH	VL	H	L	H	H	H	VL	H	L	L	L	ML	
+C3	H	L	L	ML	ML	ML	M	L	L	L	L	L	H	M	M	M	L	L	H	M	M	M	L	L	
+C4	H	L	L	ML	ML	ML	H	L	L	ML	ML	ML	MH	L	L	ML	ML	ML	H	L	ML	L	ML	ML	
+C5	ML	L	L	L	VL	VL	ML	L	L	L	VL	VL	ML	ML	L	VL	VL	VL	L	L	ML	L	VL	VL	
+C6	L	MH	MH	H	M	MH	L	MH	MH	H	M	H	VL	H	H	MH	M	H	ML	H	MH	H	M	H	
+C7	L	MH	MH	MH	M	M	VL	MH	H	H	M	M	L	MH	H	H	M	H	L	H	MH	MH	MH	M	
+C8	L	L	MH	H	H	VH	L	L	MH	H	VH	VH	M	MH	MH	H	H	VH	L	ML	MH	VH	VH	VH	
+C9	M	MH	MH	H	H	H	H	H	H	VH	VH	VH	ML	L	M	H	H	VH	L	MH	MH	H	H	VH	
+C10	ML	M	M	MH	H	VH	L	L	L	H	H	VH	L	L	M	MH	MH	H	ML	M	M	MH	H	VH	
+C11	MH	MH	MH	ML	ML	ML	MH	MH	MH	VL	VL	VL	H	H	MH	L	L	L	H	MH	MH	L	VL	VL	
+​	Expert-5	Expert-6	Expert-7	
+A1	A2	A3	A4	A5	A6	A1	A2	A3	A4	A5	A6	A1	A2	A3	A4	A5	A6	
+C1	VH	M	H	VH	VH	VH	H	VH	MH	MH	H	M	VH	MH	H	MH	H	M	
+C2	ML	VH	VH	VH	VH	VH	VL	H	VL	L	L	ML	L	H	ML	ML	L	ML	
+C3	H	L	L	L	L	L	H	M	M	M	M	M	M	L	L	L	L	L	
+C4	MH	L	L	L	L	L	H	L	M	M	M	M	H	ML	ML	M	M	L	
+C5	VH	M	VH	H	VH	VH	L	M	M	L	L	VL	L	L	L	L	VL	VL	
+C6	M	H	VH	H	VH	VH	VL	ML	VH	M	M	H	VL	H	H	H	M	M	
+C7	L	VH	VH	H	VH	VH	L	MH	H	H	M	VH	L	H	H	H	M	M	
+C8	M	VH	VH	H	VH	VH	M	H	H	H	H	VH	L	L	H	H	H	H	
+C9	H	H	M	H	H	VH	M	MH	MH	H	H	H	M	H	H	VH	VH	VH	
+C10	M	M	M	VH	VH	VH	ML	M	M	MH	H	VH	L	M	M	H	H	VH	
+C11	H	VH	VH	VH	VH	VH	MH	H	H	L	L	L	H	H	H	L	L	L	
+
+The evaluations reported in Table 5 were obtained directly from the expert panel through a structured expert assessment form. To ensure confidentiality, the experts were anonymized and coded as E-1 to E-7 throughout the manuscript. The identities of the experts were not disclosed in accordance with research ethics and privacy considerations; however, their professional background, experience, education level, job title, and area of expertise are reported in Table 4 to demonstrate their suitability for the evaluation process. Each expert independently evaluated the six dental prosthetic restoration material alternatives according to the eleven predefined criteria using the linguistic scale.
+
+The expert assessments are converted into FFNs and aggregated expert opinions are calculated, with each expert’s opinion being of equal importance. Equal weighting was assigned to all experts because they all satisfied the predefined inclusion criteria and contributed complementary expertise. The panel was designed to provide a balanced multidisciplinary assessment rather than prioritize a single professional perspective. In addition, the experts represented two countries, Türkiye and Qatar, which increased the diversity of professional viewpoints.
+
+Since the evaluations were collected using linguistic variables and transformed into FFNs, a conventional inter-rater reliability test was not applied. Consistency was supported through a standardized linguistic scale, independent evaluations, predefined criteria, and aggregation within the Fermatean fuzzy framework.
+
+For each aggregated evaluation, the score values of the alternatives with respect to the criteria. The standard deviations of each criterion determined based on the score values are calculated. Then, the correlation values calculated for all criteria considered in pairs. The information levels of each criterion calculated by considering their correlations and standard deviations. As the information levels of the criteria increase, the weight values also increase. The weight values of the criteria are calculated by normalizing the information levels. These calculated values are indicated on the graph and shown in Figure 3.Figure 3. Criteria weights.
+
+The results highlight the relative importance of each criterion in the selection of dental prosthetic restoration materials. “Clinical Longevity” (C10) emerges as the most influential criterion, underscoring the critical importance of long-term performance and durability in clinical practice. In contrast, “Fracture Resistance” (C1) and especially “Resistance to Abrasion and Deterioration” (C5) receive the lowest weights, suggesting that, while relevant, they are less critical in the context of the evaluated alternatives.
+
+The WSM and WPM values for each alternative are calculated. Here, the weight values of the criteria obtained by the CRITIC method in the previous step were used in the calculation. λ is a parameter used in the WASPAS method and its value is set as 0.5. At this stage of the method, the WSM and WPM values were integrated using Eq. (17). The resulting Fermatean fuzzy preference values were then converted into crisp scores using the score function defined in Eq. (9), and the alternatives were ranked accordingly. The results are converted into net score values. The values are shown together with the graph. The ranking is shown in Figure 4.Figure 4. Ranking of dental prosthetic restorations.
+
+The ranking results indicate that Lava Ultimate CAD/CAM (A6) is the most preferred dental prosthetic restoration material, followed by IPS E-Max CAD/CAM (A4) and Zirconia Block (A5), reflecting the increasing importance of advanced ceramic and CAD/CAM technologies in modern prosthodontics. Traditional Metal Supported Ceramic Crowns (A1) received the lowest score, likely due to their limitations in aesthetics and biocompatibility compared to newer alternatives.
+
+Although the ranking order provides a clear prioritization, the numerical differences among some alternatives should be interpreted cautiously. In particular, In-Ceram Alumina (A3), Zirconia Block (A5), and IPS E-Max CAD/CAM (A4) showed relatively close WASPAS scores at. The difference between A3 and A5 was only 0.021, while the difference between A5 and A4 was 0.008. Therefore, these alternatives should be considered a closely performing group rather than materials with large clinical superiority gaps. In practical terms, when score differences are small, the final material selection should be guided not only by the ranking result but also by patient-specific and case-specific factors, including anterior or posterior tooth location, occlusal load, aesthetic expectations, cementation protocol, repairability, treatment cost, and clinician experience. Thus, the proposed framework should be used as a decision-support tool that helps structure clinical judgment rather than as a rigid prescription.
+
+4.2 Sensitivity analysis
+
+When integrating the WSM and WPM values calculated during the evaluation of FF-WASPAS, the value of λ was set as 0.5. The parameter λ is the WASPAS balancing coefficient that determines the relative contribution of the WSM and the WPM to the final preference score. A value of λ=1 represents full reliance on WSM, λ=0 represents full reliance on WPM, and λ=0.5 assigns equal importance to both components. In this study, to see the effect of varying λ values on the evaluation results, analysis is performed by assigning values between 0 and 1 in increments of 0.1 to this coefficient. Table 6 presents the calculated final score values.Table 6. Sensitivity analysis results.
+
+​	0	0.1	0.2	0.3	0.4	0.5	0.6	0.7	0.8	0.9	1	
+A1	0.187	0.196	0.205	0.213	0.221	0.229	0.237	0.245	0.252	0.259	0.267	
+A2	0.261	0.267	0.272	0.277	0.282	0.287	0.292	0.297	0.302	0.307	0.311	
+A3	0.271	0.276	0.280	0.284	0.289	0.293	0.297	0.301	0.306	0.310	0.314	
+A4	0.301	0.305	0.309	0.314	0.318	0.322	0.326	0.330	0.334	0.338	0.342	
+A5	0.287	0.293	0.298	0.303	0.309	0.314	0.319	0.324	0.329	0.334	0.339	
+A6	0.306	0.314	0.323	0.331	0.339	0.347	0.354	0.361	0.369	0.376	0.383	
+
+As shown in Table 6, changes in the λ coefficient affected the preference scores but did not alter the ranking of the alternatives. This result indicates that the ranking is stable with respect to the relative contributions of WSM and WPM within the examined λ range. However, this analysis demonstrates parameter stability only and should not be interpreted as proof of methodological efficiency or independent reliability.
+
+In addition to the sensitivity analysis based on the WASPAS compromise coefficient, a criteria weight sensitivity analysis was conducted to examine the robustness of the ranking results against changes in the most influential criteria. For this purpose, the three highest-weighted criteria, namely Clinical Longevity (C10), Dental Aesthetics (C8), and Marginal Fit (C2), were varied by ±20%. In each scenario, the selected criterion weight was increased or decreased by 20%, while the remaining criteria weights were proportionally normalized to ensure that the total weight remained equal to 1. The generated criteria weight scenarios are presented in Table 7.Table 7. Criteria weight scenarios for sensitivity analysis.
+
+Scenario	C1	C2	C3	C4	C5	C6	C7	C8	C9	C10	C11	
+Base	0.066	0.108	0.089	0.095	0.029	0.095	0.101	0.111	0.082	0.125	0.099	
+S1 C10 +20%	0.064	0.105	0.087	0.093	0.028	0.092	0.098	0.108	0.079	0.150	0.096	
+S2 C10 -20%	0.068	0.111	0.092	0.098	0.030	0.098	0.104	0.114	0.084	0.100	0.102	
+S3 C8 +20%	0.065	0.105	0.087	0.093	0.028	0.093	0.098	0.133	0.080	0.122	0.096	
+S4 C8 -20%	0.068	0.111	0.091	0.098	0.030	0.098	0.103	0.089	0.084	0.128	0.101	
+S5 C2 +20%	0.065	0.130	0.087	0.093	0.028	0.093	0.098	0.108	0.080	0.122	0.097	
+S6 C2 -20%	0.068	0.086	0.091	0.098	0.030	0.097	0.103	0.114	0.084	0.128	0.101	
+
+The scores obtained under the criteria weight sensitivity scenarios are shown in Figure 5. The results indicate that the ranking order remained unchanged across all scenarios. Lava Ultimate CAD/CAM (A6) was ranked first in the base case and in all six weight-change scenarios. IPS E-Max CAD/CAM (A4) consistently ranked second, followed by Zirconia Block (A5), In-Ceram Alumina (A3), IPS Empress II (A2), and Metal-Supported Ceramic Crown (A1). Therefore, the ranking order was maintained as A6 > A4 > A5 > A3 > A2 > A1 in all scenarios.Figure 5. Criteria weight sensitivity analysis results.
+
+Although minor score variations were observed, these changes did not affect the final ranking structure. For example, the score of A6 varied between 0.342 and 0.351, while A4 varied between 0.320 and 0.325. Similarly, the lower-ranked alternatives also preserved their positions across all scenarios. This finding confirms that the proposed FF-WASPAS ranking results are robust against ±20% changes in the three most influential criteria.
+
+4.3 Comparative analysis
+
+To examine whether the ranking was strongly dependent on the selected MCDM method, a comparative analysis was conducted using six well-known MCDM methods: TOPSIS, VIKOR, CODAS, SAW, EDAS, and CoCoSo. The same decision matrix and criteria weights were used in all methods to ensure comparability. All criteria were considered as benefit criteria. For VIKOR, lower Q values indicate better performance, whereas higher scores indicate better performance in WASPAS, TOPSIS, CODAS, SAW, EDAS, and CoCoSo. The comparative results are presented in Table 8.Table 8. Comparative ranking results obtained from alternative MCDM methods.
+
+Alternative	WASPAS	TOPSIS	VIKOR	CODAS	SAW	EDAS	COCOSO	
+A1. Metal-Supported Ceramic Crown	0.229	0.401	1	-0.9457	0.5672	0.5	1.3347	
+A2. IPS Empress II	0.287	0.4529	0.5307	0.0178	0.6801	0.5374	2.033	
+A3. In-Ceram Alumina	0.293	0.4349	0.3785	-0.0249	0.6843	0.5238	2.3979	
+A4. IPS E-Max CAD/CAM	0.322	0.5387	0.1592	0.1481	0.7294	0.66	2.4384	
+A5. Zirconia Block	0.314	0.5194	0.2394	0.0487	0.7061	0.6158	2.1501	
+A6. Lava Ultimate CAD/CAM	0.347	0.5933	0.0378	0.7559	0.7828	0.8628	2.1222	
+
+The ranking distribution is visualized in Figure 6. The graphical results show that the proposed FF-WASPAS results are largely consistent with the rankings obtained from the comparison methods. A6. Lava Ultimate CAD/CAM was ranked first not only in the proposed FF-WASPAS model but also in TOPSIS, VIKOR, CODAS, SAW, and EDAS. This indicates that A6 demonstrates strong and stable performance across different ranking logics. A4. IPS E-Max CAD/CAM also showed a highly robust performance, ranking second in WASPAS, TOPSIS, VIKOR, CODAS, SAW, and EDAS, and first in CoCoSo. Similarly, A5. Zirconia Block displayed the most stable intermediate position, ranking third across all applied methods.Figure 6. Comparative ranking of dental prosthetic restoration alternatives.
+
+Although the general ranking structure was consistent, some method-specific differences were observed. In particular, CoCoSo ranked A4 first and A3 second, while A6 was ranked fourth. This difference can be attributed to the aggregation logic of CoCoSo, which combines additive and multiplicative compromise-based appraisal strategies and may emphasize different performance patterns compared with distance-based or weighted aggregation methods. Nevertheless, A1. Metal-Supported Ceramic Crown was consistently ranked last in all methods, confirming its weakest overall performance among the evaluated alternatives.
+
+Overall, the comparative analysis indicates broad cross-method consistency in the ranking pattern. However, because all methods used the same expert-based decision matrix and criterion weights, this comparison should be interpreted as a method-dependence assessment rather than independent validation. The findings confirm that modern CAD/CAM-based and advanced ceramic alternatives, particularly A6, A4, and A5, outperform the conventional metal-supported ceramic crown. Therefore, the ranking pattern remains reliable even when the ranking method is changed.
+
+5. Discussion
+
+This study applied the integrated FF-CRITIC and FF-WASPAS methods to the selection of dental prosthetic restoration materials, addressing the complex multi-criteria decision faced by dentists in clinical practice. Notably, this is one of the first applications of FFSs in this context, contributing a novel decision-support framework to literature. The proposed approach systematically processes subjective expert evaluations and derives criterion weights from the variation and correlation structure of the aggregated assessments, providing a systematic structure for expert-driven material selection under uncertainty. The practical motivation for using FFSs lies in the linguistic and imprecise nature of the expert assessments. 55 Assigning exact numerical values to criteria such as dental aesthetics, marginal fit, and clinical longevity would imply a level of precision that expert judgments may not support. FFSs represent each linguistic assessment through membership and non-membership degrees while retaining the associated hesitation, thereby preventing uncertainty from being reduced immediately to a single crisp value. However, because this study did not directly compare Fermatean fuzzy sets with crisp or alternative fuzzy representations, this advantage should be interpreted as representational rather than as evidence of empirical superiority. Unlike single-criterion material comparisons, the proposed model reflects the fact that prosthetic material selection is not determined only by mechanical strength, but also by longevity, marginal adaptation, aesthetics, treatment burden, and cost-related considerations.
+
+The results indicated that clinical longevity was the most significant criterion, consistent with the priority of maximizing restoration durability and patient health outcomes. This result is consistent with clinical survival studies showing that long-term performance is one of the main indicators of restorative success. For example, Aziz and El-Mowafy 56 reported 6-year cumulative survival rates of 96.0% for lithium disilicate glass-ceramic CAD/CAM crowns and 90.8% for metal-ceramic crowns. Similarly, Sailer et al. 57 reported an estimated 5-year survival rate of 94.7% for metal-ceramic single crowns, while all-ceramic systems such as lithium disilicate, alumina, and zirconia showed comparable survival patterns. Larsson and Wennerberg 58 also reported high 5-year survival rates for zirconia-based crowns. These findings support the high weight assigned to clinical longevity in the present study.
+
+Aesthetic outcomes were ranked as the second most important criterion, highlighting the growing emphasis on patient satisfaction and natural appearance in modern dentistry. Since aesthetic perception is subjective and influenced by socio-cultural factors, its high weight underscores the need for restorations that closely mimic natural teeth. 59 This finding is also supported by clinical evidence indicating that CAD/CAM lithium disilicate crowns can provide higher patient-rated color, chewing ability, and overall satisfaction compared with metal-ceramic crowns. 56 In the present study, the high importance of dental aesthetics and light-related criteria reflects the clinical reality that anterior and visible-zone restorations require not only adequate strength but also shade stability, translucency, and natural optical integration.
+
+The third most important criterion, marginal fit, is essential for minimizing microleakage, preventing recurrent caries, and ensuring the long-term integrity of restorations. 60 Marginal fit also has practical implications for cementation quality and restoration survival. Poor marginal adaptation may increase the risk of microleakage, cement dissolution, recurrent caries, marginal discoloration, and eventual restoration replacement. Therefore, the relatively high weight of marginal fit is clinically meaningful and consistent with the role of CAD/CAM accuracy in improving restoration adaptation.
+
+A counter-intuitive finding is the relatively low weight assigned to fracture resistance. This should not be interpreted as meaning that fracture resistance is clinically unimportant. Rather, it reflects the logic of the CRITIC method, in which a criterion receives a higher weight when it shows greater contrast among alternatives and stronger conflict with other criteria. In this study, most evaluated materials received relatively high and close expert scores for fracture resistance, suggesting that the alternatives were generally perceived as mechanically acceptable. Therefore, fracture resistance had limited discriminatory power compared with clinical longevity, dental aesthetics, and marginal fit. Clinically, this means that once a material satisfies an acceptable mechanical threshold, dentists may place greater emphasis on factors that more clearly differentiate treatment success, such as long-term serviceability, marginal adaptation, aesthetics, and treatment efficiency.
+
+Among the alternatives, Lava Ultimate CAD/CAM emerged as the top-ranked material. This result should be interpreted as an overall multi-criteria performance outcome rather than a universal clinical recommendation for all crown indications. Lava Ultimate CAD/CAM and other resin nano-ceramic CAD/CAM materials may offer advantages related to machinability, repairability, chairside workflow, and patient comfort. Vervack et al. 7 reported a survival rate of 91.4% and a success rate of 87.2% for resin composite CAD/CAM restorations over a mean follow-up of 28 months, while also noting that marginal changes may occur over time. However, clinicians should still consider restoration type, tooth location, occlusal load, adhesive protocol, and manufacturer indications before selecting this material.
+
+IPS E-Max CAD/CAM and Zirconia Block also performed strongly and consistently appeared among the top alternatives. This result is clinically plausible because lithium disilicate CAD/CAM materials are widely used due to their favorable balance between aesthetics and mechanical performance, while zirconia-based restorations are preferred when higher strength and posterior load-bearing capacity are required. Clinical evidence also supports the favorable performance of lithium disilicate CAD/CAM crowns, with reported survival rates ranging from 83.5% to 100% in clinical studies and a 6-year cumulative survival rate of 96.0% in one retrospective clinical comparison. 56 Zirconia-based crowns have also shown high clinical survival in systematic reviews, although technical complications such as chipping or retention-related issues may still occur depending on crown design and fabrication approach.57,58
+
+From a practical clinical perspective, the proposed model can support dentists by clarifying which material may be more appropriate under different clinical priorities. When treatment efficiency, aesthetics, and balanced overall performance are emphasized, CAD/CAM-based materials such as Lava Ultimate CAD/CAM and IPS E-Max CAD/CAM may become more attractive. When strength and posterior load-bearing reliability are dominant concerns, zirconia-based restorations may be preferred. When cost sensitivity or conventional laboratory familiarity is important, metal-supported ceramic crowns may still remain a feasible alternative despite their lower overall ranking. Therefore, the model should be viewed as a decision-support tool that complements, rather than replaces, clinical judgment.
+
+6. Conclusions
+
+This study developed an integrated Fermatean fuzzy decision-support framework for dental prosthetic restoration material selection. The findings highlighted clinical longevity, aesthetics, and marginal fit as the most important factors, and demonstrated that Lava Ultimate CAD/CAM was the top-ranked material, followed by IPS E-Max CAD/CAM and Zirconia Block. The sensitivity analysis supported the stability of the ranking results across different λ values. The main contribution of this study is the adaptation of an advanced fuzzy MCDM framework to a clinically relevant dental material selection problem. By combining objective criterion weighting with expert-based alternative evaluation, the proposed model offers a transparent structure for supporting evidence-based and patient-centered restorative decisions.
+
+However, some limitations should be noted. The number of experts consulted in the evaluation process was limited, and all experts were selected from a single country. This may restrict the generalizability of the results to broader clinical populations or different healthcare settings. In addition, only six prosthetic materials were compared, and other relevant alternatives might be considered in future studies. Another limitation is that the expert panel was not internationalized and did not include formal inter-rater reliability statistics. Although the panel included experienced professionals from different dental practice roles, future studies may validate the proposed framework with a larger and internationally diverse expert group and apply agreement measures such as Kendall’s coefficient of concordance or intraclass correlation after appropriate transformation of linguistic evaluations.
+
+The findings should be interpreted within the boundaries of the case considered. The ranking is dependent on the seven-member expert panel, the professional and regional contexts represented by the experts, and the six predefined material alternatives. Different regions, candidate materials, market conditions, or expert compositions may produce different results. Moreover, mechanically and physically oriented criteria were evaluated qualitatively rather than through laboratory measurements. Future studies should include materials scientists and integrate expert judgments with quantitative mechanical, optical, biological, and cost data. The present study focused on six predefined. However, newer materials such as high-translucency multilayer zirconia, VITA Enamic, Cerasmart, and other hybrid CAD/CAM blocks were not included in the current decision matrix. Future studies may expand the alternative set by incorporating these contemporary materials and collecting new expert evaluations accordingly. For future research, expanding the diversity and number of experts, as well as including a wider range of dental materials and clinical scenarios, could further validate and strengthen the proposed decision-support framework. Incorporating real-world clinical outcome data would also help assess the practical effectiveness of the model in guiding restorative material choices.
+
+ORCID iDs
+
+Tolga Kudret Karaca https://orcid.org/0000-0001-5562-6367
+
+Bahar Yalcin Kavus https://orcid.org/0000-0001-5295-1631
+
+Funding: The authors received no financial support for the research, authorship, and/or publication of this article.
+
+The authors declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.
+
+
+References
+
+1 Warreth A Elkareimi Y . All-ceramic restorations: A review of the literature. Saudi Dental Journal 2020 32: 365–372.10.1016/j.sdentj.2020.05.004, Epub ahead of print 2020.34588757 PMC8461086
+2 Bajraktarova-Valjakova E Korunoska-Stevkovska V Kapusevska B , et al. Contemporary dental ceramic materials, a review: Chemical composition, physical and mechanical properties, indications for use. Open Access Macedonian Journal of Medical Sciences 2018; 6: 1–14. 10.3889/oamjms.2018.378, Epub ahead of print 2018.30338002 PMC6182519
+3 Deniz N Orhan EO . Development of a multi-criteria decision-making–based assessment model for dental material selection: Engine-driven nickel-titanium instruments case study. Clinical Oral Investigations 2022; 26: 2645–2659. 10.1007/s00784-021-04234-7 34750681
+4 Yadav R Singh M Meena A , et al. Selection and ranking of dental restorative composite materials using hybrid Entropy-VIKOR method: An application of MCDM technique. Journal of the Mechanical Behavior of Biomedical Materials 2023; 147: 106103. 10.1016/j.jmbbm.2023.106103 37690292
+5 Yadav R Saini S Sonwal S , et al. Optimization and ranking of dental restorative composites by ENTROPY-VIKOR and VIKOR-MATLAB. Polymers for Advanced Technologies 2024; 35: 1–7. 10.1002/pat.6526, Epub ahead of print 2024.
+6 Savran E Karpat F . Biomechanical effects of material selection and micro-groove design for dental implants. Materialpruefung/Materials Testing 2025; 67: 1000–1013. 10.1515/mt-2024-0426
+7 Vervack V De Coster P Vandeweghe S . Clinical evaluation of resin composite cad/cam restorations placed by undergraduate students. Journal of Clinical Medicine 2021; 10: 1–14. 10.3390/jcm10153269, Epub ahead of print 2021.PMC8348683 34362055
+8 Aswal GS Rawat R Dwivedi D , et al. Clinical Outcomes of CAD/CAM (Lithium disilicate and Zirconia) Based and Conventional Full Crowns and Fixed Partial Dentures: A Systematic Review and Meta-Analysis. Cureus 2023; 15: 1–17. 10.7759/cureus.37888, Epub ahead of print 2023.PMC10199723 37213959
+9 Zadeh LA . Fuzzy sets. Information and Control 1965; 8: 338–353. 10.1016/s0019-9958(65)90241-x
+10 Erdoğan M Kaya İ Karaşan A , et al. Evaluation of autonomous vehicle driving systems for risk assessment based on three-dimensional uncertain linguistic variables. Applied Soft Computing 2021; 113: 107934. 10.1016/j.asoc.2021.107934
+11 Erdogan M Ayyildiz E . Investigation of the pharmaceutical warehouse locations under COVID-19—A case study for Duzce, Turkey. Engineering Applications of Artificial Intelligence 2022; 116: 1–18. 10.1016/j.engappai.2022.105389, Epub ahead of print 2022.PMC9420725 36059577
+12 Senapati T Yager R . Fermatean fuzzy sets. Journal of Ambient Intelligence and Humanized Computing 2020; 11: 663–674. 10.1007/s12652-019-01377-0
+13 Erdogan M Ayyildiz E . Comparison of hospital service performances under COVID-19 pandemics for pilot regions with low vaccination rates. Expert Systems with Applications 2022; 206: 117773. 10.1016/j.eswa.2022.117773 35702379 PMC9181836
+14 Ayyildiz E . Fermatean fuzzy step-wise Weight Assessment Ratio Analysis (SWARA) and its application to prioritizing indicators to achieve sustainable development goal-7. Renewable Energy 2022; 193: 136–148. 10.1016/j.renene.2022.05.021
+15 Kose Y Ayyildiz E Cevikcan E . Evaluation of disassembly line layouts using an integrated fermatean fuzzy decision-making methodology: An application for refrigerator disassembly line. Computers and Industrial Engineering 2024; 190: 1–23. 10.1016/j.cie.2024.110090, Epub ahead of print 2024.
+16 Yildirim B Ayyildiz E Aydin N . Optimal location selection for electric vehicle car-sharing stations using Fermatean fuzzy decision-making methodology. Journal of Cleaner Production 2024; 485: 144400. 10.1016/j.jclepro.2024.144400
+17 Mishra AR Rani P . Multi-criteria healthcare waste disposal location selection based on Fermatean fuzzy WASPAS method. Complex and Intelligent Systems 2021; 7: 2469–2484. 10.1007/s40747-021-00407-9 34777968 PMC8212908
+18 Akram M Ali U Santos-García G , et al. 2-tuple linguistic Fermatean fuzzy MAGDM based on the WASPAS method for selection of solid waste disposal location. Mathematical Biosciences and Engineering 2023; 20: 3811–3837. 10.3934/mbe.2023179 36899606
+19 Aytekin A Görçün ÖF Ecer F , et al. Evaluation of the pharmaceutical distribution and warehousing companies through an integrated Fermatean fuzzy entropy-WASPAS approach. Kybernetes 2022; 52: 1. 10.1108/K-04-2022-0508, Epub ahead of print 2023.
+20 Mishra AR Chen SM Rani P . Multicriteria decision making based on novel score function of Fermatean fuzzy numbers, the CRITIC method, and the GLDS method. Information Sciences 2023; 623: 1. 10.1016/j.ins.2022.12.031, Epub ahead of print 2023.
+21 Ayvaz B Tatar V Sağır Z , et al. An integrated Fine-Kinney risk assessment model utilizing Fermatean fuzzy AHP-WASPAS for occupational hazards in the aquaculture sector. Process Safety and Environmental Protection 2024; 186: 232–251. 10.1016/j.psep.2024.04.025
+22 Kamali Saraji M Aliasgari E Streimikiene D . Assessment of the challenges to renewable energy technologies adoption in rural areas: A Fermatean CRITIC-VIKOR approach. Technological Forecasting and Social Change 2023; 189: 1. 10.1016/j.techfore.2023.122399, Epub ahead of print 2023.39022384
+23 Aro JL Selerio E Evangelista SS , et al. Fermatean fuzzy CRITIC-CODAS-SORT for characterizing the challenges of circular public sector supply chains. Operations Research Perspectives 2022; 9: 1. 10.1016/j.orp.2022.100246, Epub ahead of print 2022.
+24 Mishra AR Rani P Pandey K . Fermatean fuzzy CRITIC-EDAS approach for the selection of sustainable third-party reverse logistics providers using improved generalized score function. Journal of Ambient Intelligence and Humanized Computing 2021; 13: 295–311. 10.1007/s12652-021-02902-w 33584868 PMC7871958
+25 Karaman E Kazan H . Performance Evaluation In Family Physician: The Application of TOPSIS Multi-Criteria Decision Making Method. Alphanumeric Journal 2015; 3: 1–12. 10.17093/aj.2015.3.2.5000139457, Epub ahead of print 2015.
+26 Yadav R . Analytic hierarchy process-technique for order preference by similarity to ideal solution: A multi criteria decision-making technique to select the best dental restorative composite materials. Polymer Composites 2021; 42: 6867–6877. 10.1002/pc.26346
+27 Isabels KR Vinodhini GAF . Material selection for dental implant - IF VIKOR MCDM technique. Advances and Applications in Mathematical Sciences 2023; 22: 1807–1817.
+28 Ansaripour H Haeussler KL Ferguson SJ , et al. Prioritizing biomaterials for spinal disc implants by a fuzzy AHP and TOPSIS decision making method. Scientific Reports 2023; 13: 1. 10.1038/s41598-023-48735-9, Epub ahead of print 2023.38057609 PMC10700574
+29 Takács Á Albert J . Optimization of Multi-Criteria Decision-Making for Dental Implant Selection. Design of Machines and Structures 2024; 14: 75–83. 10.32972/dms.2024.007
+30 Kumar A Rajak S . Selection of Bio-implant Materials Based on Metal Additive Manufacturing using Integrated SWARA and WASPAS MCDM Technique. Journal of Materials Engineering and Performance 2025; 34: 1–21. 10.1007/s11665-024-10545-z
+31 Siva Bhaskar A Khan A . Comparative analysis of hybrid MCDM methods in material selection for dental applications. Expert Systems with Applications 2022; 209. 10.1016/j.eswa.2022.118268, Epub ahead of print 2022.
+32 Tarim EA Kuruoglu Kandemir E Mevsim V . The ordering of smokers’ toothpaste choice criteria with fuzzy model. Atatürk Üniversitesi Diş Hekimliği Fakültesi Dergisi 2020; 29: 1. 10.17567/ataunidfd.559817
+33 Atanassov KT . Intuitionistic fuzzy sets. Fuzzy Sets and Systems 1986; 20: 87–96. 10.1016/s0165-0114(86)80034-3
+34 Senapati T Yager R . Fermatean fuzzy weighted averaging/geometric operators and its application in multi-criteria decision-making methods. Engineering Applications of Artificial Intelligence 2019; 85: 112–121. 10.1016/j.engappai.2019.05.012
+35 Simic V Gokasar I Deveci M , et al. Fermatean Fuzzy Group Decision-Making Based CODAS Approach for Taxation of Public Transit Investments. IEEE Transactions on Engineering Management 2021; 70: 1–16.
+36 Senapati T Yager R . Some new operations over fermatean fuzzy numbers and application of fermatean fuzzy WPM in multiple criteria decision making. Informatica (Netherlands) 2019; 30: 391–412. 10.15388/informatica.2019.211
+37 Diakoulaki D Mavrotas G Papayannakis L . Determining objective weights in multiple criteria problems: The critic method. Computers & Operations Research 1995; 22: 763–770. 10.1016/0305-0548(94)00059-h
+38 Ayyildiz E Yildirim B Erdogan M , et al. Strategic site selection methodology for small modular reactors: A case study in Türkiye. Renewable and Sustainable Energy Reviews 2025; 215: 115545. 10.1016/j.rser.2025.115545
+39 Zavadskas EK Turskis Z Antucheviciene J , et al. Optimization of weighted aggregated sum product assessment. Elektronika ir Elektrotechnika 2012; 122: 3–6. 10.5755/j01.eee.122.6.1810
+40 Keshavarz-Ghorabaee M Amiri M Hashemi-Tabatabaei M , et al. A new decision-making approach based on fermatean fuzzy sets and waspas for green construction supplier evaluation. Mathematics 2020; 8: 1–24. 10.3390/math8122202
+41 Ayyildiz E Taskin GA . A novel spherical fuzzy AHP-integrated spherical WASPAS methodology for petrol station location selection problem: a real case study for İstanbul. Environmental Science and Pollution Research 2020; 27: 36109–36120. 10.1007/s11356-020-09640-0 32557027
+42 Saraji MKMK Streimikiene D Kyriakopoulos GLGL . Fermatean fuzzy critic copras method for evaluating the challenges to industry 4.0 adoption for a sustainable digital transformation. Sustainability (Switzerland) 2021; 13: 1–20. 10.3390/su13179577, Epub ahead of print 2021.
+43 Preston CC Colman AM . Optimal number of response categories in rating scales: Reliability, validity, discriminating power, and respondent preferences. Acta Psychologica 2000; 104: 1–15. 10.1016/S0001-6918(99)00050-5, Epub ahead of print 2000.10769936
+44 Miller GA . The magical number seven, plus or minus two: some limits on our capacity for processing information. Psychological Review 1956; 63: 81–97.13310704
+45 Ayyildiz E Erdogan M . Identifying and prioritizing the factors to determine best insulation material using Bayesian best worst method. Proceedings of the Institution of Mechanical Engineers, Part E: Journal of Process Mechanical Engineering 2022; 238: 6 1. 10.1177/09544089221111586, Epub ahead of print.
+46 Gonzales R Almacen RM Gonzales G , et al. Priority Roles of Stakeholders for Overcoming the Barriers to Implementing Education 4.0: An Integrated Fermatean Fuzzy Entropy-Based CRITIC-CODAS-SORT Approach. Complexity 2022; 2022: 1–23. 10.1155/2022/7436256, Epub ahead of print 2022.
+47 Gonzales G Costan F Suladay D , et al. Fermatean Fuzzy DEMATEL and MMDE Algorithm for Modelling the Barriers of Implementing Education 4.0: Insights from the Philippines. Applied Sciences 2022; 12: 689. 10.3390/app12020689
+48 Denry I Kelly JR . Emerging ceramic-based materials for dentistry. Journal of Dental Research 2014; 93: 1235–1242. 10.1177/0022034514553627, Epub ahead of print 2014.25274751 PMC4237640
+49 Kelly JR Benetti P . Ceramic materials in dentistry: Historical evolution and current practice. Australian Dental Journal 2011; 56: 84–96. 10.1111/j.1834-7819.2010.01299.x, Epub ahead of print 2011.21564119
+50 Raigrodski AJ Chiche GJ Potiket N , et al. The efficacy of posterior three-unit zirconium-oxide-based ceramic fixed partial dental prostheses: A prospective clinical pilot study. Journal of Prosthetic Dentistry 2006; 96: 237–244. 10.1016/j.prosdent.2006.08.010, Epub ahead of print 2006.17052467
+51 Conrad HJ Seong WJ Pesun IJ . Current ceramic materials and systems with clinical recommendations: A systematic review. Journal of Prosthetic Dentistry 2007; 98. 10.1016/S0022-3913(07)60124-3, Epub ahead of print 2007.18021828
+52 Sulaiman TA . Materials in digital dentistry—A review. Journal of Esthetic and Restorative Dentistry 2020; 32: 171–181. 10.1111/jerd.12566, Epub ahead of print 2020.31943720
+53 Mainjot AK Dupont NM Oudkerk JC , et al. From Artisanal to CAD-CAM Blocks: State of the Art of Indirect Composites. Journal of Dental Research 2016; 95: 487–495. 10.1177/0022034516634286, Epub ahead of print 2016.26933136
+54 Grachev DI Chizhmakov EA Stepanov DY , et al. Dental Material Selection for the Additive Manufacturing of Removable Complete Dentures (RCD). International Journal of Molecular Sciences 2023; 24: 1–20. 10.3390/ijms24076432, Epub ahead of print 2023.PMC10094705 37047405
+55 Cari M Ayyildiz E . A fuzzy-based decision framework for optimal co-working space site selection. Engineering, Construction and Architectural Management 2026; 32: 1–33. 10.1108/ecam-09-2025-1550
+56 Aziz A El-Mowafy O . Six-year clinical performance of lithium disilicate glass-ceramic CAD-CAM versus metal-ceramic crowns Ahmed. Journal of Advanced Prosthodontics; 15: 44–54. 10.4047/jap.2023.15.1.44, Epub ahead of print 2023.36908754 PMC9992700
+57 Sailer I Makarov NA Thoma DS , et al. All-ceramic or metal-ceramic tooth-supported fixed dental prostheses (FDPs)? A systematic review of the survival and complication rates. Part I: Single crowns (SCs). Dental Materials, 2015. Epub ahead of print 2015. 10.1016/j.dental.2015.02.011 25842099
+58 Larsson C Wennerberg A . The Clinical Success of Zirconia-Based Crowns: A Systematic Review. The International Journal of Prosthodontics 2014; 27: 33–43. 10.11607/ijp.3647, Epub ahead of print 2014.24392475
+59 Tin-Oo MM Saddki N Hassan N . Factors influencing patient satisfaction with dental appearance and treatments they desire to improve aesthetics. BMC Oral Health 2011; 11: 1–8. 10.1186/1472-6831-11-6, Epub ahead of print 2011.21342536 PMC3059271
+60 Azar B Eckert S Kunkela J , et al. The marginal fit of lithium disilicate crowns: Press vs. CAD/CAM. Brazilian Oral Research 2018; 32: 1–7. 10.1590/1807-3107/2018.vol32.0001, Epub ahead of print 2018.29364328

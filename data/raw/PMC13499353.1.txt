@@ -1,0 +1,615 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Internet Interv
+Journal ID: Internet Interv
+NLM Journal ID: 101631612
+
+Internet Interventions
+
+EISSN: 2214-7829
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499353
+PMID: 42633306
+DOI: 10.1016/j.invent.2026.100989
+Article ID: S2214-7829(26)00088-6
+Article ID: 100989
+Article version: 1
+Subjects: Full Length Article
+
+From burnout to resilience: A clinician-codesigned digital mindfulness intervention for nurses and resident physicians
+
+Antico Lia lia_antico@brown.edu a ⁎
+Giannopoulos Angelo a
+Neves Vinicius Vieira a
+Mader Daniel b
+Demerly Sarah a
+Brewer Judson A. a
+a Department of Behavioral and Social Sciences, School of Public Health, Brown University, Providence, USA
+b Department of Pediatric Oncology, University Hospital, Ulm, Germany
+⁎ Corresponding author at: Department of Behavioral and Social Sciences, Brown University School of Public Health, 155 South Main Street, Providence, RI, 02903, USA. lia_antico@brown.edu
+Publication date: 2026 Dec
+Electronic publication date: 2026 Aug 12
+Volume: 46
+Electronic Location ID: 100989
+Received 2025 Aug 11; Revised 2026 May 11; Accepted 2026 Aug 7
+Copyright: © 2026 The Authors. Published by Elsevier B.V.
+Copyright year: 2026
+Copyright holder:
+License: This is an open access article under the CC BY-NC license (http://creativecommons.org/licenses/by-nc/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: Burnout, Anxiety, Mindfulness, Digital therapeutics, Mobile phone, Nurses, Resident physicians
+
+==============================
+Objective
+
+Burnout is a persistent issue among healthcare professionals, impairing both patient care and provider well-being. This pilot feasibility study evaluated the preliminary effects of a brief, mobile app–based mindfulness training (MT) program, developed using a user-centered design approach, in reducing burnout and improving psychological outcomes among registered nurses and resident physicians.
+
+Methods
+
+Two single-arm pilot trials were conducted. Participants completed the digital MT intervention and online assessments at pre-intervention, post-intervention, and one-month follow-up. Study 1 included 27 registered nurses; Study 2 included 29 resident physicians. While the intervention consisted of seven digital modules, the average completion time was 28 days (SD = 15) for nurses and 30 days (SD = 16) for residents, reflecting a self-paced delivery model. The primary outcome was cynicism, with secondary outcomes including emotional exhaustion, anxiety, depression, intolerance of uncertainty, self-compassion, nonreactivity, non-judgment, worry, sleep disturbances, and emotion regulation difficulties.
+
+Results
+
+Among nurses, significant reductions were associated with participation for cynicism (27%) and emotional exhaustion (28%), with decreased scores maintained at follow-up. Additional post-intervention improvements included reduced anxiety (46%), depression (52%), worry (7%), sleep disturbances (16%), and emotion regulation difficulties (11%). Increases were also found in self-compassion (13%), nonreactivity (8%), and non-judgment (9%). Among residents, significant reductions in cynicism did not persist after correction for multiple comparisons. However, residents showed significant reductions in emotional exhaustion (19%), anxiety (32%), intolerance of uncertainty (14%), emotion regulation difficulties (13%) and sleep disturbances (15%) at follow-up as well as early increases in self-compassion (21%) and nonreactivity (19%) and reduction in worry (13%). Emotional exhaustion and anxiety were consistently correlated across time points in both groups.
+
+Conclusions
+
+These findings replicate and extend previous evidence among physicians, supporting the feasibility and preliminary benefits of brief and self-paced app-based mindfulness training (MT) in addressing burnout and anxiety among both nurses and residents. These pilot results provide a basis for future randomized controlled trials to further evaluate the intervention's effectiveness.
+
+Highlights
+
+• User-centered design helped optimize app-based burnout intervention.
+
+• Mobile mindfulness training was associated with reduced burnout in nurses and resident physicians.
+
+• Psychological improvements were maintained at one-month follow-up.
+
+1 Introduction
+
+It's 3:47 a.m. The hospital corridor glows under fluorescent lights. Exhausted, a resident physician rubs their eyes, trying to stay awake and focused while finishing patient notes. A nurse ends their twelfth consecutive hour on their feet, hungry and without having seen their family. This is not an unusual night, but it reflects the daily reality faced by thousands of healthcare workers pushed to their limits.
+
+1.1 Background
+
+The chronic stress behind the scenes in healthcare is part of a larger, and well-documented crisis. Burnout, defined as an occupational syndrome marked by emotional exhaustion, cynicism, and a reduced sense of personal accomplishment (WHO, 2019), remains a persistent and critical issue in healthcare, worsened by the COVID-19 pandemic (Shanafelt et al., 2022). In 2024, 43.2% of physicians reported experiencing at least one symptom of burnout, a decrease from 48.2% in 2023 and 53% in 2022 (Berg, 2025). While this trend may reflect progress from systemic efforts, experts caution against premature optimism (Berg, 2025). Specific initiatives have begun to address the root causes of clinician distress, such as the Dr. Lorna Breen Health Care Provider Protection Act, which provides federal grants for employee education and helps remove stigmatizing mental health questions from state licensing applications (Sindhu and Adashi, 2022). Additionally, health systems have increasingly adopted the AMA's ‘Joy in Medicine’ framework, which directs organizations to appoint Chief Wellness Officers and implement ‘efficiency of practice’ reforms to reduce administrative tasks (AMA, 2025). Despite these gains, burnout rates remain significantly higher than the 38% pre-pandemic baseline (Shanafelt et al., 2022).
+
+Though much of the literature emphasizes physician burnout, evidence shows that nurses and resident physicians—who often have less autonomy and higher frontline exposure—are equally, if not more, affected. In 2025, 65% of nurses reported high stress and burnout levels (Galoustian, 2025). A national U.S. survey found burnout prevalence at 47% among nurses compared to 32% among physicians (Aiken et al., 2023). Common drivers include chronic understaffing, long and demanding shifts, inadequate compensation, poor clinical supervision and leadership, and a lack of autonomy or respect (Dilig-Ruiz et al., 2018; Galanis et al., 2023; Specchia et al., 2021; Zhou et al., 2020). Nurses frequently manage large patient loads, emotionally charged interactions, and limited organizational support (Bruyneel et al., 2024, Bruyneel et al., 2025; Friese et al., 2024; Lasater, 2024).
+
+Resident physicians, though at a different career stage, face similar challenges. In 2024, 34.5% of residents reported burnout symptoms (Berg, 2025). Like nurses, residents work on the front lines of care, often in high-pressure environments and rapidly changing clinical situations (Phillips and Dalgarno, 2017). They manage complex patients while working long hours, frequent on-call shifts, and with minimal control over their schedules, all while making critical decisions (Berg, 2025; Ng et al., 2024, Ng et al., 2025; Phillips and Dalgarno, 2017). However, residents also navigate unique stressors related to their transitional role from student to independent clinician, such as exams, research, teaching, and administrative tasks (Ng et al., 2024, Ng et al., 2025). Additionally, personality traits such as perfectionism, reluctance to delegate, and workaholism also intensify burnout risk (Ng et al., 2025; Schaufeli et al., 2009).
+
+1.2 The high cost of burnout
+
+The consequences of burnout are extensive. It is linked to deteriorating personal well-being and relationships, increased medical errors, reduced quality of care, lower job satisfaction, absenteeism, and high turnover (Dyrbye et al., 2020; Galanis et al., 2023; Li et al., 2024; Low et al., 2019). For instance, a 2024 systematic review and meta-analysis of 85 studies, including 288,581 nurses from 32 countries, found burnout associated with lower safety climate and more adverse events, such as more frequent nosocomial infections, patient falls, medication errors, patient safety incidents and missed care as well as lower patient satisfaction (Li et al., 2024). Systematic reviews and meta-analyses have consistently shown that nurses and resident physicians who experience high levels of burnout also frequently report comorbid symptoms, including anxiety, depression, and sleep disturbances (Buivydienė et al., 2025; Chen et al., 2021; Membrive-Jiménez et al., 2022). Rather than existing as isolated experiences, the core burnout dimensions of emotional exhaustion and cynicism often coexist with and exacerbate anxiety in medical professionals (Roy et al., 2021). This relationship is often reciprocal. Theoretical models suggest that as emotional exhaustion and cynicism diminish a clinician's perceived self-efficacy, their capacity to manage high-stakes clinical environments weakens, potentially leading to increased anxiety (Roy et al., 2021).
+
+Worsening the issue is a critical global shortage of healthcare workers. The World Health Organization estimates that by 2030, there will be a shortfall of 10 million healthcare workers (WHO, 2024). Among them, nurses alone face a global deficit of over 5.7 million, expected to persist for years (WHO, 2024). Physician shortages are also widespread internationally, with many countries struggling to train and retain doctors (OECD, 2023). In the U.S., the Association of American Medical College projects a shortage of up to 86,000 physicians by 2036 (AAMC, 2024). While these gaps are primarily driven by structural factors, such as an aging population with increased clinical needs and statutory limits on residency training capacity, burnout acts as a critical exacerbating lever. By increasing early retirement and reducing clinical work hours, burnout further depletes the available workforce (Dall et al., 2024). In the U.S. alone, the annual cost of physician turnover and reduced clinical effort is estimated at approximately $4.6 billion (Han et al., 2019). Consequently, addressing burnout—particularly among nurses and resident physicians— is not only a matter of provider well-being but a necessary economic and public health strategy to mitigate these projected shortages.
+
+1.3 Mindfulness as a pathway to recovery
+
+Burnout is a systemic issue that demands both institutional and individual-level solutions. While organizational strategies address structural factors like workload, staffing, and supportive work environments, individual approaches focus on building resilience through personal development and coping tools (Luberto et al., 2017; Ruotsalainen et al., 2015; West et al., 2016).
+
+Among strategies for clinician burnout, mindfulness training (MT) has emerged as one of the most promising (Cohen et al., 2023; Hsu et al., 2024). Mindfulness, as defined by Kabat-Zinn, involves intentionally paying attention to the present moment in a nonjudgmental way (Kabat-Zinn, 1991). One of the earliest and most influential studies in this area was conducted by Krasner et al. in 2009, who demonstrated that an MT program for primary care physicians led to significant improvements in burnout, mood disturbance, and empathy (Krasner et al., 2009). Meta-analytical evidence supports the efficacy of mindfulness-based interventions (MBIs) in clinical settings (Fendel et al., 2021; Lomas et al., 2018). For instance, a systematic review by Lomas et al. (2018) involving 3805 healthcare professionals found that MBIs consistently improve well-being and reduce psychological distress (Lomas et al., 2018). Furthermore, Fendel et al. (2021) confirmed in a meta-analysis of 25 studies including 925 physicians that MBIs yield significant reductions in burnout and stress, with benefits maintained at follow-up (Fendel et al., 2021).
+
+Recent research has highlighted the value of individual-focused interventions, particularly mindfulness and coaching, for nurses and resident physicians (Cohen et al., 2023; Hsu et al., 2024; Kiratipaisarl et al., 2024; Lu and Ratnapalan, 2022; Musker and Othman, 2024). For example, an umbrella review of nine systematic reviews and two meta-analyses, encompassing 131 studies, found that strategies such as mindfulness, yoga, and professional development significantly reduce burnout and occupational stress (Hsu et al., 2024). Similarly, a 2024 meta-analysis of 33 studies involving 2536 resident physicians showed that individual interventions like coaching and meditation significantly decreased emotional exhaustion and cynicism (Kiratipaisarl et al., 2024). By enhancing a clinician's capacity for mindfulness, these interventions may foster the self-compassion necessary to protect against empathy fatigue and long-term exhaustion (Bian et al., 2025; Neff, 2003; Wasson et al., 2020).
+
+1.4 Bridging the gaps through co-design
+
+Despite the established efficacy of mindfulness, a significant gap remains in its clinical implementation. Traditional programs are often prohibitively time-intensive, typically requiring eight-week commitments with 2.5-hour weekly sessions, 45 min of daily home practice, and a full-day retreat (Krasner et al., 2009; Scheepers et al., 2020), a structure that risks overwhelming already burdened clinicians. To improve accessibility, research has shifted toward digital mindfulness-based interventions (MBIs). A 2021 meta-analysis of 97 randomized controlled trials found that online MBIs were associated with significant improvements in depression, anxiety, stress, and mindfulness across diverse populations (Sommers-Spijkerman et al., 2021). Notably, these digital formats may offer benefits comparable to traditional face-to-face interventions while significantly increasing accessibility and scalability for healthcare workforces facing high clinical demands (Sommers-Spijkerman et al., 2021). The transition to digital formats alone, however, does not guarantee clinical engagement. The key contribution of the pilot study lies in its methodological shift toward a co-design and participatory framework where clinicians are active partners in the development process rather than passive recipients of a generic tool.
+
+By involving healthcare workers in the design phase, the intervention is specifically tailored to the “user-environment” constraints of clinical practice, ensuring preliminary accessibility, user relevance, and engagement (Quezada et al., 2021; Swensen et al., 2016). Beyond digital delivery, a distinctive feature of this intervention is its emphasis on participant autonomy. By allowing for a self-paced progression, rather than enforcing a rigid daily schedule, the program is designed to enhance perceived control and reduce the burden of participation. This inherent flexibility is theoretically relevant for healthcare workforces, as it acknowledges the unpredictable nature of clinical shifts and allows for a more sustainable integration of mindfulness practices into daily life.
+
+Our team utilized this user-centered approach to develop a brief digital MT intervention with direct input from a multidisciplinary group of attending physicians, nurses, psychologists, and social workers (Antico and Brewer, 2025). We subsequently evaluated its impact on attending physician burnout through two independent single-arm studies. Results from both studies suggested that participation in the digital MT intervention was associated with significant reductions in burnout, anxiety, and intolerance of uncertainty, with corresponding increases in self-compassion, nonreactivity, and non-judgment of internal experiences. Additionally, physicians reported improvements in sleep and emotional regulation, as well as reduced levels of worry (Antico and Brewer, 2025). Notably, these studies also found that burnout scores correlated positively with anxiety scores, further supporting the intertwined relationship between anxiety and burnout (Antico and Brewer, 2025).
+
+2 Study 1 overview
+
+To assess the feasibility and preliminary impact of our digital MT program across a wider range of clinicians, we conducted a preregistered pilot feasibility study with registered nurses. Using the same Unwinding app (Behavioral Health team at Sharecare), participants completed web-based surveys at baseline, post-intervention, and one-month follow-up (Antico and Brewer, 2025). As a pilot investigation, designed as a prevention strategy, this study aims to provide the preliminary evidence and effect size estimates necessary to power future randomized controlled trials.
+
+The primary outcome was cynicism, a key indicator of empathy fatigue, with emotional exhaustion as a secondary outcome. While the MBI traditionally includes a third dimension (personal accomplishment), we focused on these two components as they represent the ‘core’ of burnout in medical professionals and were the primary targets of our MT intervention (IsHak et al., 2009; Thomas, 2004). Other secondary outcomes included anxiety, depression, mindfulness (specifically nonreactivity and non-judgment of inner experience), intolerance of uncertainty, worry, sleep disturbances, and difficulties in emotion regulation.
+
+We evaluated the following hypotheses:Hypothesis 1 Nurses would report reduced cynicism post-intervention compared to baseline.
+
+Hypothesis 2 Nurses would show improvement in secondary outcomes: lower emotional exhaustion, anxiety, depression, intolerance of uncertainty, worry, sleep disturbances, and difficulties in emotion regulation; and higher nonreactivity, non-judgment, and self-compassion.
+
+Hypothesis 3 Cynicism and emotional exhaustion would positively correlate with anxiety.
+
+3 Methods
+
+3.1 Ethical considerations
+
+The research was approved by the Brown University Institutional Review Board (Protocol 2022003296) and was conducted following the Declaration of Helsinki guidelines for studies involving human subjects. Eligible participants were provided with an online informed consent form via Qualtrics. After consenting by selecting “yes” (a waiver for documentation of the informed consent was obtained), they were directed to complete the online survey. Participants were compensated with a $25 Amazon gift card for each survey completed, for a total of $75 for completing all three surveys. All data collected were de-identified, with each participant assigned to a unique alphanumeric code. To ensure confidentiality, the master key linking participant identifiers to these codes was stored in a password-protected file in a secure location separate from the study data. While identifiers and IP addresses were used for recruitment, rapport, and data quality screening, they were removed from all final datasets and destroyed upon study completion. All statistical analyses were conducted on this de-identified data. Outcomes and hypotheses were preregistered at ClinicalTrials.gov (NCT06145425). In alignment with CONSORT extension for Pilot and Feasibility Trials reporting standards, we note that the exploratory outcome of difficulties in emotion regulation was added after the pre-registration, as an exploratory measure.
+
+3.2 Participants
+
+Nurses were recruited from multiple sites across the United States, representing a diverse range of both academic medical centers and non-academic community institutions. Recruitment and data collection were conducted between April 2023 and October 2024. Participants were reached via digital flyers and hospital newsletters. Using a convenience sampling strategy appropriate for a feasibility design, eligible participants had to be currently employed as a registered nurse providing direct patient care, fluent in English, willing to listen to a mindfulness audio course for 15 min a day for one week, and willing to both complete three online surveys. In line with a prevention approach, no baseline burnout score thresholds were required for inclusion, allowing for an evaluation across a broad spectrum of the clinical workforce. The online surveys were distributed via Qualtrics, before and after the training, as well as one month after the end of the training. Participants were excluded from the study if their psychotropic medication dose had changed in the six weeks prior to enrollment. Participant recruitment and flow were conducted in alignment with the CONSORT extension for Pilot and Feasibility Trials. Detailed enrollment, allocation, and attrition data are reported in the Results (see Fig. 1).Fig. 1 CONSORT (Consolidated Standards of Reporting Trials) flow diagram of study procedures of study 1.
+
+Fig. 1
+
+3.3 Intervention
+
+The mindfulness-based training program was designed to prevent burnout and empathy fatigue in healthcare professionals and was delivered via Unwinding by Sharecare mobile application (Antico and Brewer, 2025). While the platform provides a broad library of standalone guided meditations (e.g., breathing, noting), this study evaluated a specifically curated seven-module curriculum tailored to the unique occupational stressors of clinicians. Following the mHealth Evidence Reporting and Assessment (mERA) guidelines (Agarwal et al., 2017), the technology platform is characterized as a standalone digital therapeutic that utilizes an evidence-based habit-change theoretical framework to identify and alter unhelpful habit loops through reinforcement learning (Brewer, 2019).
+
+The intervention consists of seven 15-minute modules, encompassing educational content, practical mindfulness exercises, and a concluding summary. This ultra-brief format, totaling approximately 1.75 h of content was specifically chosen to address the chronic time constraints of healthcare professionals. The curriculum is delivered as an asynchronous, self-paced audio course, enabling participants to integrate the training into daily transitions, such as commuting or breaks, without the requirement for a fixed schedule. Within this accessible format, the program utilizes an evidence-based habit-change theoretical framework to identify and alter unhelpful clinical habit loops through reinforcement learning (Brewer, 2019). The curriculum focuses on preventing empathy fatigue by distinguishing between empathy and compassion, managing intrusive thoughts and self-judgment with kindness, reducing stress, and preventing emotional contagion through curiosity. Each module integrates real-world clinical scenarios and strategies for breaking unhelpful behavioral patterns. While the broader app offers additional guided meditations—such as noting, breathing, and loving-kindness—these were optional and not mandatory for study participation (Antico and Brewer, 2025).
+
+We developed the intervention through a user-centered design (UCD) approach, incorporating clinician feedback at each stage to ensure the curriculum was tailored to face the realities of clinical practice. After identifying primary burnout factors from the literature and interviews, a physician with over twenty years of clinical experience developed a “minimal viable product.” This initial version underwent two rounds of iterative testing with forty clinicians to ensure content fit, clarity, and feasibility. In the first round, ten physicians provided feedback via open-ended and closed-ended questions, evaluating how well the modules met their professional needs and the clarity of the pragmatic exercise instructions. Themes and real-world vignettes extracted from this feedback were incorporated into the curriculum to enhance authenticity. A second round involving thirty clinicians was then conducted to confirm the refined content's suitability. These refinements ensured that the final curriculum was specifically calibrated to the feasibility requirements and professional needs of the workforce (Antico and Brewer, 2025). Further technical specifications and mERA checklist compliance details are provided in Supplementary material (A).
+
+3.4 Intervention orientation and surveillance
+
+No strict time frame was set for completing each module, as this pilot study served as a feasibility and proof-of-concept phase to observe real-world engagement and the time required for clinicians to complete the program. Participants were instructed to complete the program at their own pace, ideally finishing one module per day, and were cautioned not to exceed one module per day. This pacing was intended to ensure they did not rush through the material and had sufficient time to implement the pragmatic exercises into their clinical practice. Furthermore, every two weeks, the instructor reached out to participants to investigate and address any technical issues of the app. While the application itself tracked module completion, the research team did not have access to this usage metadata during the study. Adherence was instead monitored via a manual verification process: participants were required to email the research team upon completing the seven modules to receive the link for the post-intervention survey. This approach ensured that participants had engaged with the full program content prior to the following assessments and allowed the research team to provide a controlled transition to the post-test phase.
+
+3.5 Measures
+
+Three online surveys took place before and after the training, as well as one month after the end of the training, to assess primary and secondary measures.
+
+3.5.1 Primary outcome
+
+Cynicism is one of the key dimensions of burnout and was selected as the primary outcome because the intervention was specifically tailored to address “empathy fatigue” and the interpersonal components of burnout. It was assessed using the Maslach Burnout Inventory (MBI) (Maslach et al., 1997). To minimize participant burden, we utilized a single item asking participants how often “they have become more callous toward people since they took this job,” with responses ranging from “never” to “every day.” The validity of this abbreviated MBI item compared to the complete questionnaire has been demonstrated by West and colleagues (West et al., 2009, West et al., 2012). These single-item measures have demonstrated strong concurrent validity with the full MBI and are highly predictive of physician well-being and clinical performance (West et al., 2009, West et al., 2012). Scores on the 7-point Likert scale range from 0 to 6, with higher scores indicating greater cynicism (Maslach et al., 1997).
+
+3.5.2 Secondary outcomes
+
+Emotional exhaustion, another key dimension of burnout, was assessed using the MBI (Maslach et al., 1997). Together with cynicism, these two dimensions are considered the “core” of the burnout syndrome in medical professionals (West et al., 2009, West et al., 2012). We utilized a single item asking participants how often “they felt burned out from their work,” with responses ranging from “never” to “every day.” Scores on the 7-point Likert scale range from 0 to 6, with higher scores indicating greater emotional exhaustion (Maslach et al., 1997).
+
+Anxiety symptoms were measured using the Generalized Anxiety Disorder-7 (GAD-7), a 7-item questionnaire assessing symptoms of anxiety over the past week (Spitzer et al., 2006). Scores on the 4-point Likert scale range from 0 to 3, corresponding to “not at all” to “nearly every day,” with higher scores indicating greater anxiety. Anxiety severity is categorized as mild (5–9 points), moderate (10–14 points), or severe (15–21 points). In the current sample, internal consistency was good (Cronbach's α = 0.86).
+
+Depressive symptoms were assessed using the Patient Health Questionnaire (PHQ-2), a 2-item measure evaluating how often participants in the past two weeks “had little interest or pleasure in doing things” and “felt down, depressed, or hopeless” (Kroenke et al., 2001). Scores on the 4-point Likert scale range from 0 to 6, with higher scores indicating more severe depressive symptoms (current sample α = 0.91).
+
+Intolerance of uncertainty was assessed using the Intolerance of Uncertainty Scale-12 (IUS-12), an abbreviated version containing 12 items from the original 27-item IUS (Carleton et al., 2007). Scores range on a 5-point Likert scale from 1 to 5, corresponding to “not at all characteristics of me” to “entirely characteristic of me.” Higher scores indicate greater intolerance of uncertainty, particularly in relation to ambiguous situations or an uncertain future (current sample α = 0.92).
+
+Self-compassion was assessed using the Self-Compassion Scale Short Form (SCS-SF), a 12-item abbreviated version of the original 26-item SCS (Raes et al., 2011). Scores are measured on a 5-point Likert scale ranging from 1 to 5, corresponding to “almost never” to “almost always”. Higher scores indicate greater self-compassion (current sample α = 1.0).
+
+Mindfulness was assessed using the Five Facet Mindfulness Questionnaire (FFMQ), which refers to their ability of nonreactivity and non-judgment of emotions and thoughts (Baer et al., 2008). The questionnaire for nonreactivity consists of 7 items and the questionnaire for non-judgment of 8 items from the original 39-item FFMQ, each rated on a 5-point Likert scale. This scale ranges from 1 (indicating “never true”) to 5 (indicating “always true”). The total scores for nonreactivity range from 7 to 35, the total scores for non-judgment range from 8 to 40. Nonreactivity (current sample α = 0.84); Non-judgment (current sample α = 0.96).
+
+Worry was assessed using the Penn State Worry Questionnaire (PSWQ) (Meyer et al., 1990). The PSWQ consists of 16 items, each rated on a 5-point Likert scale ranging from 1 (“not at all typical of me”) to 5 (“very typical of me”). Total scores range from 16 to 80, with higher scores indicating higher levels of worry (current sample α = 0.79).
+
+Worry-related sleep disturbances were assessed using the Patient-reported Outcomes Measurement Information System (PROMIS) (Buysse et al., 2010; Yu et al., 2012). A short form with five preselected items was used, selected for their direct assessment of worry interfering with sleep (Yu et al., 2012). Each item was rated on a 5-point Likert scale ranging from 1 (“not at all”) to 5 (“very much”). Total scores range from 5 to 25, with higher scores indicating greater sleep disturbances and sleep-related impairment (current sample α = 0.95).
+
+Difficulties in emotion regulation were measured using the Difficulties in Emotion Regulation Scale (DERS), a 36-item questionnaire. Items were rated on a 5-point Likert scale ranging from 1 (“almost never”) to 5 (“almost always”) (Gratz and Roemer, 2004). Total scores range from 36 to 180, with higher scores indicating greater difficulties in emotion regulation (current sample α = 0.94).
+
+3.6 Statistical analysis
+
+Data were analyzed using a per-protocol (PP) approach; only participants who completed the curated seven-module program and all three assessment points were included in the final analysis. Missing data from participants who did not complete the intervention or the follow-up surveys were handled via listwise deletion (complete-case analysis). Primary longitudinal analyses were performed using Repeated Measures ANOVA to evaluate overall changes in scores across the three points, for all primary and secondary outcomes. Given the non-normal distribution of some variables, non-parametric Friedman tests were also conducted as sensitivity analyses to ensure the robustness of the results. Post-hoc analyses were conducted using Wilcoxon signed-rank tests, with Benjamini-Hochberg corrections applied for multiple comparisons. Spearman's correlation coefficient was employed to assess the relationship between burnout dimensions and other variables.
+
+Effect sizes were reported as partial eta squared (ηp2) for Repeated Measures ANOVA test, Kendall's W for Friedman tests and as Pearson's r for pairwise Wilcoxon signed-rank tests. For ηp2 values of 0.01, 0.06, and 0.14 represented small, medium, and large effects. For both W and r, thresholds of 0.1, 0.3, and 0.5 were used to indicate small, medium, and large effect sizes, respectively (Cohen, 1992).
+
+4 Results
+
+4.1 Participants
+
+A total of 30 nurses replied to our recruitment message, met the eligibility criteria and provided informed consent. Of this initial group of 30 participants who received the allocated intervention, 27 (90%) completed assessments at all three time points and were included in the final analysis (Fig. 1). The final sample (N = 27) included 21 women, 5 men and 1 non-binary individual. Participants had been working in healthcare for an average of 11.08 years (SD 8.12) and the average age of the sample was 36.88 years (SD 10.63; see Table 1).Table 1 Demographic characteristics of Study 1.
+
+	Nurses N = 27	
+Mean age in years (SD)	36.88 (10.63)	
+Gender		
+ Male	5 (18.5%)	
+ Female	21 (77.8%)	
+ Non-binary	1 (3.7%)	
+Race and ethnicity		
+ White	23 (85.2%)	
+ Asian	3 (11.1%)	
+ Black or African American	1 (3.7%)	
+ Hispanic, Latinx, Spanish	0 (0%)	
+Work status		
+ Employed full-time	23 (85.2%)	
+ Employed part-time	4 (14.8%)	
+Mean years working in health care (SD)	15 (9.76)	
+Medical specialty		
+ Emergency medicine	7 (25.9%)	
+ Pediatrics	4 (14.8%)	
+ Cardiac medicine	2 (7.4%)	
+ Family medicine	1 (3.7%)	
+ Internal medicine	4 (14.8%)	
+ Orthopedics	1 (3.7%)	
+ Anesthesiology	2 (7.4%)	
+ Psychiatry	1 (3.7%)	
+ Adolescent psychiatry	1 (3.7%)	
+ Acute care unit	1 (3.7%)	
+ Progressive care unit	1 (3.7%)	
+ Gastroenterology	2 (7.4%)	
+Participants took an average time of 28 (SD 15) days to complete the program.
+
+4.2 Outcomes
+
+Outcome scores at each assessment point compared with baseline are summarized in Table 2, while full descriptive statistics and comprehensive post-hoc parameters are available in Table B.1 in Supplementary material (B).Table 2 Descriptive statistics for primary and secondary outcomes (N = 27 nurses).
+
+	Mean
+(SD)	P values	Effect sizes
+(r)	
+Cynicism				
+ Baseline	2.89 (1.55)			
+ Δ at post-intervention (%)	−0.78(−27%)	0.008	0.57	
+ Δ at 1-month post-intervention (%)	−0.78 (−27%)	0.008	0.57	
+Emotional exhaustion				
+ Baseline	3.59 (1.42)			
+ Δ at post-intervention (%)	−1 (−28%)	0.001	0.72	
+ Δ at 1-month post-intervention (%)	−1.03 (−29%)	0.001	0.64	
+GAD-7				
+ Baseline	8.15 (4.36)			
+ Δ at post-intervention (%)	−3.78 (−46%)	<0.001	0.75	
+ Δ at 1-month post-intervention (%)	−3.52 (−43%)	<0.001	0.71	
+PHQ-2				
+ Baseline	1.37 (1.71)			
+ Δ at post-intervention (%)	−0.70 (−52%)	0.013	0.56	
+ Δ at 1-month post-intervention (%)	−0.47 (−46%)	0.013	0.53	
+Intolerance of uncertainty				
+ Baseline	30.9 (9.77)			
+ Δ at post-intervention (%)	−4.3 (−14%)	0.006	0.54	
+ Δ at 1-month post-intervention (%)	−3.8 (−13%)	0.004	0.61	
+Self-compassion				
+ Baseline	34.9 (9.47)			
+ Δ at post-intervention (%)	4.6 (13%)	0.001	0.63	
+ Δ at 1-month post-intervention (%)	5.1 (15%)	0.001	0.69	
+Nonreactivity				
+ Baseline	22.5 (4.02)			
+ Δ at post-intervention (%)	1.9 (8%)	0.007	0.55	
+ Δ at 1-month post-intervention (%)	2.3 (10%)	0.005	0.59	
+Non-judgment				
+ Baseline	25.5 (8.19)			
+ Δ at post-intervention (%)	2.3 (9%)	0.050	0.41	
+ Δ at 1-month post-intervention (%)	3.9 (15%)	0.011	0.55	
+Worry				
+ Baseline	50.5 (15.1)			
+ Δ at post-intervention (%)	−3.3 (−7%)	0.047	0.42	
+ Δ at 1-month post-intervention (%)	−4.7 (−9%)	0.002	0.65	
+Sleep disturbances				
+ Baseline	12.2 (5.26)			
+ Δ at post-intervention (%)	−2 (−16%)	0.004	0.60	
+ Δ at 1-month post-intervention (%)	−2.35 (−19%)	0.004	0.59	
+Difficulties in emotion regulation				
+ Baseline	85.4 (23.8)			
+ Δ at post-intervention (%)	−9.3 (−11%)	0.003	0.62	
+ Δ at 1-month post-intervention (%)	−9.7 (−11%)	0.003	0.59	
+Δ: change between baseline and stated time points; GAD-7 = Generalized Anxiety Disorder – 7; PHQ-2 = Patient Health Questionnaire-2; SD = Standard Deviation; IQR = Interquartile Range.
+
+Repeated measures ANOVA tests indicated significant changes over time for cynicism (F(2,52) = 8.22, P < .001, ηp2 = 0.24), emotional exhaustion (F(2,52) = 15.86, P < .001, ηp2 = 0.38), anxiety (F(2,52) = 20.42, P < .001, ηp2 = 0.44), intolerance of uncertainty (F(2,52) = 8.88, P < .001, ηp2 = 0.54), self-compassion (F(2,52) = 10.60, P < .001, ηp2 = 0.29), depression (F(2,52) = 6.72, P = .003, ηp2 = 0.21), difficulties with emotions (F(2,52) = 11.28, P < .001, ηp2 = 0.30), worry (F(2,52) = 6.95, P = .002, ηp2 = 0.21), sleep difficulties (F(2,52) = 10.27, P < .001, ηp2 = 0.28), nonreactivity (F(2,52) = 9.55, P < .001, ηp2 = 0.27) and non-judgment (F(2,52) = 7.11, P = .002, ηp2 = 0.22). Sensitivity analyses using Friedman tests mirrored these results, showing consistent significant effects across both models. The only exception was the Non-judgment outcome, where the Friedman test indicated only a trend (χ2₂ = 5.79, P = .055, W = 0.11).
+
+Post hoc Wilcoxon signed-rank tests revealed a 28% reduction in emotional exhaustion from pre- to post-intervention (W26 = 166, P = .001, r = 0.72) and a 29% reduction from pre-intervention to follow-up (W26 = 192, P = .001, r = 0.64). Also, these tests found a 27% reduction in cynicism both from pre- to post-intervention (W26 = 121, P = .008, r = 0.57) and from pre-intervention to follow-up (W26 = 121, P = .008, r = 0.57). Concerning anxiety, Wilcoxon signed-rank tests showed a 46% reduction from pre- to post-intervention (W26 = 350, P < .001, r = 0.75) and a 43% reduction from pre-intervention to follow-up (W26 = 280, P < .001 r = 0.71). Similarly, intolerance of uncertainty reduced by 14% from pre- to post-intervention (W26 = 252, P = .006, r = 0.54) and by 13% from pre-intervention to follow-up (W26 = 244, P = .004, r = 0.61 – see Fig. 2).Fig. 2 Box and whisker plots at baseline, at postintervention, and 1 month after intervention completion for (A) cynicism scores, and (B) emotional exhaustion scores from the Maslach Burnout Inventory, (C) Generalized Anxiety Disorder-7 scores, and (D) Depression from the Patient Health Questionnaire, *P = .05, **P = .01, ***P ≤ .001.
+
+Fig. 2
+
+On the other hand, Wilcoxon signed-rank tests evidenced a significant rise in self-compassion levels, specifically a 13% increase from pre- to post-intervention (W26 = 31.5, P = .001, r = 0.63) and a 15% increase from pre-intervention to follow-up (W26 = 20.5, P = .001, r = 0.68). Likewise, nonreactivity showed an 8% increase from pre- to post-intervention (W26 = 29, P = .007, r = 0.55) and 10% increase from pre-intervention to follow-up (W26 = 29, P = .005, r = 0.59). Furthermore, non-judgmental scores demonstrated a 9% increase from pre- to post-intervention (W26 = 91.5, P = .050, r = 0.41) and a 15% increase from pre-intervention to follow-up (W26 = 54.5, P = .011, r = 0.55 – Fig. 3).Fig. 3 Box and whisker plots at baseline, at postintervention, and 1 month after intervention completion for (A) intolerance of uncertainty scores, (B) self-compassion scores, (C) nonreactivity, and (D) non-judgment of inner experiences scores. *P = .05, **P = .01, ***P ≤ .001.
+
+Fig. 3
+
+Finally, Wilcoxon signed-rank tests revealed significant reductions in depression, emotional difficulties, sleep difficulties, and worry. Firstly, depression had a 52% reduction from pre- to post-intervention (W26 = 74, P = .013, r = 0.56) and a 46% reduction from pre-intervention to follow-up (W26 = 62.5, P = .013, r = 0.53). Secondly, difficulties with emotion reduced by 11% from pre- to post-intervention (W26 = 301, P = .003, r = 0.62) and by 11% from pre-intervention to follow-up (W26 = 317, P = .003, r = 0.59). Thirdly, worry showed a 7% reduction from pre- to post-intervention (W26 = 243, P = .047, r = 0.41) and a 9% reduction from pre-intervention to follow-up (W26 = 330, P = .002, r = 0.65). Lastly, sleep difficulties reduced by 16% from pre- to post-intervention (W26 = 242, P = .004, r = 0.60) and by 19% from pre-intervention to follow-up (W26 = 236, P = .004, r = 0.59 – Fig. 4).Fig. 4 Box and whisker plots at baseline, at postintervention, and 1 month after intervention completion for (A) worry scores, (B) sleep disturbances scores, and (C) difficulties in emotion regulation scores. *P = .05, **P = .01.
+
+Fig. 4
+
+4.3 Correlations
+
+Table 3 shows the correlations between anxiety, emotional exhaustion and cynicism at each assessment point. There were significant correlations between anxiety and emotional exhaustion at baseline, right after the intervention, and at the 1-month follow-up (rs ≥ 0.48; Ps ≤ 0.012). However, anxiety and cynicism were only significantly correlated right after the intervention. (r = 0.55; P = .003). Correlations between the other outcomes can be found in the Supplementary material (C).Table 3 Correlations between anxiety and burnout scores at baseline, postintervention, and 1-month postintervention.
+
+Variables	GAD-7 × cynicism	P-value	GAD-7 × emotional exhaustion	P-value	
+Baseline	0.24	0.225	0.48	0.012	
+Post-intervention	0.55	0.003	0.71	<0.001	
+1-Month post intervention	0.31	0.122	0.50	0.009	
+
+5 Study 2 overview
+
+To further evaluate the preliminary impact and feasibility of our MT program, we conducted a pre-registered study with resident physicians. This allowed us to assess the signal of effect for doctors at different career stages, who face both common stressors shared with attending physicians and nurses and unique challenges, such as longer shifts, more on-call hours, and greater work-related stress due to their training status, described above (West et al., 2018).
+
+The study's aims and design mirrored Study 1. We used the same MT intervention, delivered via the Unwinding by Sharecare app, and assessed outcomes at baseline, post-intervention, and one-month follow-up, focusing on the same primary and secondary outcomes. As this was a pilot investigation, we focused on evaluating the consistency of the intervention's feasibility across different clinical cohorts.
+
+We evaluated the following hypotheses:Hypothesis 1 Residents would report lower cynicism post-intervention compared to baseline.
+
+Hypothesis 2 Residents would show improvements in secondary outcomes, including reductions in emotional exhaustion, anxiety, depression, intolerance of uncertainty, worry, sleep disturbances, and difficulties in emotion regulation; and increases in nonreactivity, non-judgment, and self-compassion.
+
+Hypothesis 3 Cynicism and emotional exhaustion would positively correlate with anxiety.
+
+6 Methods
+
+6.1 Ethical considerations
+
+As with Study 1, this study was approved by the Brown University Institutional Review Board (Protocol 2022003296) and was conducted in accordance with the Declaration of Helsinki guidelines for research involving human subjects. Participants followed the same consent process as in Study 1, with identical compensation totaling $75. All data were anonymized and handled with strict confidentiality. As with Study 1, this study was preregistered at ClinicalTrials.gov (NCT06145425), except for the exploratory outcome of difficulties in emotion regulation that we added later.
+
+6.2 Participants
+
+This study followed the same single-arm pilot design and recruitment protocols as Study 1, but focused exclusively on residents. Data was collected from March 2023 to July 2024. Participant flow and attrition were tracked in accordance with CONSORT feasibility guidelines.
+
+6.3 Intervention and surveillance
+
+The same mindfulness-based intervention as in Study 1 was utilized. Similar to Study 1, this served as a proof-of-concept phase to observe real-world engagement patterns among residents. There was no strict time frame for completing the modules, but participants were cautioned to complete no more than one module per day.
+
+6.4 Outcome measures
+
+The same protocol as in Study 1 was followed, with measurements taken at three time points: baseline, post-intervention, and one-month follow-up. The same primary and secondary outcomes were applied as described in Study 1. In the current sample, internal consistency at baseline was as follows: anxiety (α = 0.90), depression (α = 0.67), intolerance of uncertainty (α = 0.94), self-compassion (α = 0.97), mindfulness nonreactivity (α = 0.82), mindfulness non-judgment (α = 0.93), worry (α = 0.93), sleep disturbances (α = 0.92), and difficulties in emotion regulation (α = 0.96).
+
+6.5 Statistical analysis
+
+Statistical analysis was performed in a manner analogous to Study 1.
+
+7 Results
+
+7.1 Participants
+
+A total of 44 participants met eligibility criteria and consented to participate. Out of this group who received the allocated intervention, 29 residents (78%) completed the three-time-point assessments and were included in the final analysis (see the CONSORT diagram, Fig. 5). The final sample (N = 29) included 10 men, 17 women and 2 non-binary. Participants had been working in healthcare for an average of 2 years (SD 1.2) and the average age was 29.6 (SD 2.8, Table 4).Fig. 5 CONSORT (Consolidated Standards of Reporting Trials) flow diagram of study procedures of Study 2.
+
+Fig. 5
+
+Table 4 Demographic characteristics of Study 1.
+
+	Resident physicians N = 29	
+Mean age in years (SD)	29.6 (2.8)	
+Gender		
+ Male	10 (34.5%)	
+ Female	17 (58.6%)	
+ Non-binary	2 (6.9%)	
+Race and Ethnicity		
+ White	16 (55.2%)	
+ Asian	9 (31.0%)	
+ Black or African American	3 (10.3%)	
+ Hispanic, Latinx, Spanish	1 (3.4%)	
+Work status		
+ Employed full-time	29 (100%)	
+ Employed part-time	0 (0%)	
+Mean years working in health care (SD)	11.08 (8.12)	
+Medical specialty		
+ Emergency medicine	7 (13.8%)	
+ Neurology	4 (6.9%)	
+ Internal medicine	13 (44.8%)	
+ Family medicine	2 (6.9%)	
+ Urology	2 (6.9%)	
+ Pediatrics	2 (6.9%)	
+ Physical medicine and rehab	3 (10.3%)	
+ Anesthesiology	1 (3.4%)	
+Participants took an average time of 30 (SD 16) days to complete the program.
+
+7.2 Outcomes
+
+Outcome scores at each assessment point compared with baseline are summarized in Table 5, while full descriptive statistics and comprehensive post-hoc parameters are available in Table D.1 in Supplementary material (D).Table 5 Descriptive statistics for primary and secondary outcomes (N = 29 resident physicians).
+
+	Mean
+(SD)	P values	Effect sizes
+(r)	
+Cynicism				
+ Baseline	3.03 (1.59)	–	–	
+ Δ at post-intervention (%)	−0.48 (−16%)	0.178	0.29	
+ Δ at 1-month post-intervention (%)	−0.72 (−24%)	0.105	0.38	
+Emotional exhaustion				
+ Baseline	3.48 (1.50)	–	–	
+ Δ at post-intervention (%)	−0.48 (−14%)	0.186	0.24	
+ Δ at 1-month post-intervention (%)	−0.65 (−19%)	0.037	0.46	
+GAD-7				
+ Baseline	7.14 (5.32)	–	–	
+ Δ at post-intervention (%)	−2.17 (−30%)	0.101	0.34	
+ Δ at 1-month post-intervention (%)	−2.31 (−32%)	0.044	0.43	
+PHQ-2				
+ Baseline	1.10 (1.40)	–	–	
+ Δ at post-intervention (%)	−0.31 (−28%)	0.486	0.19	
+ Δ at 1-month post-intervention (%)	−0.7 (−6%)	0.872	0.07	
+Intolerance of uncertainty				
+ Baseline	34.3 (10.8)	–	–	
+ Δ at post-intervention (%)	−2.3 (−7%)	0.069	0.35	
+ Δ at 1-month post-intervention (%)	−4.9 (−14%)	0.05	0.45	
+Self-compassion				
+ Baseline	31.7 (7.88)	–	–	
+ Δ at post-intervention (%)	5.5 (17%)	0.001	0.63	
+ Δ at 1-month post-intervention (%)	6.6 (21%)	0.001	0.69	
+Nonreactivity				
+ Baseline	20.7 (4.09)	–	–	
+ Δ at post-intervention (%)	3.3 (16%)	0.008	0.52	
+ Δ at 1-month post-intervention (%)	3.9 (19%)	0.002	0.67	
+Non-judgment				
+ Baseline	25 (6.83)			
+ Δ at post-intervention (%)	2 (8%)	0.225	0.33	
+ Δ at 1-month post-intervention (%)	1.7 (7%)	0.456	0.19	
+Worry				
+ Baseline	55.6 (12.7)	–	–	
+ Δ at post-intervention (%)	−4.7 (−9%)	0.047	0.39	
+ Δ at 1-month post-intervention (%)	−6.8 (−13%)	0.014	0.53	
+Sleep disturbances				
+ Baseline	12.1 (5.36)	–	–	
+ Δ at post-intervention (%)	−1.2 (−10%)	0.202	0.27	
+ Δ at 1-month post-intervention (%)	−1.8 (−15%)	0.044	0.48	
+Difficulties in emotion regulation				
+ Baseline	89.9 (24.9)			
+ Δ at post-intervention (%)	−6.5 (−7%)	0.134	0.32	
+ Δ at 1-month post-intervention (%)	−11.6 (−13%)	0.039	0.46	
+Δ: change between baseline and stated time points; GAD-7 = Generalized Anxiety Disorder – 7; PHQ-2 = Patient Health Questionnaire-2; SD = Standard Deviation.
+
+Repeated measures ANOVA tests indicated significant changes over time for cynicism (F(2,56) = 3.34, P = .043, ηp2 = 0.11), anxiety (F(2,56) = 4.54, P = .015, ηp2 = 0.14), intolerance of uncertainty (F(2,56) = 4.77, P = .012, ηp2 = 0.15), self-compassion (F(2,56) = 14.15, P < .001, ηp2 = 0.34), nonreactivity (F(2,56) = 10.45, P < .001, ηp2 = 0.27), worry (F(2,56) = 6.73, P = .002, ηp2 = 0.19), sleep difficulties (F(2,56) = 3.19, P = .049, ηp2 = 0.10), and difficulties with emotions (F(2,56) = 4.78, P = .012, ηp2 = 0.15). Trend-level changes were observed for emotional exhaustion (F(2,56) = 3.02, P = .057, ηp2 = 0.10) and no significant changes over time depression (F(2,56) = 0.94, P = .396, ηp2 = 0.03), and non- judgment of inner experiences (F(2,56) = 1.84, P = .168, ηp2 = 0.06). Sensitivity analyses using Friedman tests mirrored these results, showing consistent significant effects across both models. The only exceptions were the cynicism and anxiety outcomes, where the Friedman tests indicated respectively no significant changes over time (χ2₂ = 4.34, P = .11, W = 0.07; χ2₂ = 2.51, P = .29, W = 0.04).
+
+Post hoc Wilcoxon signed-rank tests indicated a 24% reduction of cynicism from pre-intervention to follow-up, but not from pre- to post-intervention. However, while the initial comparison reached significance (P = .035), it did not remain statistically significant after correction for multiple comparisons (P = .10). For emotional exhaustion, we observed a statistically significant 21% reduction from pre-intervention to follow-up, but not from pre- to post-intervention. Similarly for anxiety, we observe a significant 32% reduction from pre-intervention to follow-up, but not from pre- to post-intervention (see Fig. 6).Fig. 6 Box and whisker plots at baseline, at postintervention, and 1 month after intervention completion for (A) cynicism scores, and (B) emotional exhaustion scores from the Maslach Burnout Inventory, (C) Generalized Anxiety Disorder-7 scores, and (D) Depression from the Patient Health Questionnaire, * P = .05.
+
+Fig. 6
+
+Regarding intolerance of uncertainty, post hoc tests revealed a 14% reduction from pre-intervention to follow-up, and a 7% reduction from pre- to post-intervention, which approached significance.
+
+Instead, self-compassion increased 17% from pre- to post-intervention and 21% increase from pre-intervention to follow-up. Similarly, we found a 16% increase in nonreactivity from pre- to post-intervention and 19% increase from pre-intervention to follow-up (see Fig. 7).Fig. 7 Box and whisker plots at baseline, at postintervention, and 1 month after intervention completion for (A) intolerance of uncertainty scores, (B) self-compassion scores, (C) nonreactivity, and (D) non-judgment of inner experiences scores. *P = .05, **P = .01, ***P ≤ .001.
+
+Fig. 7
+
+Wilcoxon signed-rank tests revealed significant reductions in worry of 9% from pre- to post-intervention and 13% reduction from pre-intervention to follow-up; in sleep difficulties of 15% from pre-intervention to follow-up, but not from pre- to post-intervention; and similarly in difficulties with emotions we observed a reduction of 13% from pre-intervention to follow-up, but not from pre- to post-intervention (see Fig. 8).Fig. 8 Box and whisker plots at baseline, at postintervention, and 1 month after intervention completion for (A) worry scores, (B) sleep disturbances scores, and (C) difficulties in emotion regulation scores. *P = .05.
+
+Fig. 8
+
+Finally, we observed no significant changes in nonjudgment from pre-intervention to post-intervention, nor from pre-intervention to follow-up (see Fig. 7). Similarly, regarding depression, no significant changes from pre-intervention to post-intervention, nor from pre-intervention to follow-up (see Fig. 6).
+
+7.3 Correlations
+
+Table 6 shows the correlations between anxiety, emotional exhaustion and cynicism at each assessment point. There were significant correlations between anxiety and emotional exhaustion at baseline, right after the intervention, and at the 1-month follow-up (rs ≥ 0.46; Ps ≤ 0.012). However, anxiety and cynicism were only significantly correlated right after the intervention. (r = 0.46; P = .001). Correlations between the other outcomes can be found in the Supplementary material (Table E.1).Table 6 Correlations between anxiety and burnout scores at baseline, postintervention, and 1-month postintervention.
+
+Variables	GAD-7 × cynicism	P-value	GAD-7 × emotional exhaustion	P-value	
+Baseline	0.31	0.102	0.46	0.012	
+Post-intervention	0.46	0.001	0.70	<0.001	
+1-month post intervention	0.32	0.083	0.49	0.007	
+
+8 Discussion
+
+8.1 Principal findings
+
+This study builds on our previous research suggesting the feasibility and preliminary signal of effect of digital mindfulness training (MT) in reducing physician burnout (Antico and Brewer, 2025). To examine whether these preliminary benefits extend beyond attending physicians, we conducted two independent single-arm pilot studies with registered nurses and resident physicians. To better understand the magnitude of these effects, we contextualized our findings relative to US population norms.
+
+Findings among nurses largely replicated earlier results in attending physicians, with participation in the MT intervention being associated with MT leading to significant observed reductions in burnout, anxiety, depression, intolerance of uncertainty, worry, sleep disturbances, and difficulties in emotion regulation. Regarding clinical meaningfulness, emotional exhaustion moved from an average baseline frequency of “once a week” to “once a month or less,” while anxiety severity shifted from the “mild” clinical range to a “minimal” or sub-clinical level. Increases in self-compassion, nonreactivity, and non-judgment were also observed. Effect sizes ranged from medium to large at both post-intervention and follow-up assessments.
+
+Among resident physicians, participation in the MT intervention was associated with observed reductions in several outcomes; however, the timing and robustness of these changes varied. A significant reduction in emotional exhaustion, anxiety, intolerance of uncertainty, and difficulties with emotion regulation emerged by the one-month follow-up rather than immediately post-intervention. Emotional exhaustion moved toward a “monthly” rather than “weekly” burden, and anxiety scores approached the sub-clinical threshold. Notably, no statistically significant reductions were maintained for cynicism after correction for multiple comparisons. Interestingly, certain psychological benefits were observed immediately post-intervention and were sustained over time, specifically increased self-compassion and nonreactivity and reduced worry. In both cohorts, depressive symptoms remained within the same sub-clinical category throughout the study, as baseline levels were already below the threshold for clinical risk.
+
+These results replicate our previous findings in attending physicians (Antico and Brewer, 2025) and extend them in nurses and resident physicians across diverse specialties. By comparing these results to the latest US general population data (Terlizzi and Zablotsky, 2024; West et al., 2020), it is evident that while these clinicians entered the study with an initial burden significantly higher than the US working-class average, the intervention helped bridge this “health gap.” The consistency and magnitude of these preliminary effects across psychological domains highlight the potential of the digital MT as a scalable strategy to support well-being in healthcare settings affected by chronic stress.
+
+The novelty of this approach is centered on its delivery architecture, which combines clinician-led co-design with an asynchronous, self-paced “micro-dosing” model. Importantly, our MT program is designed so that it can be completed in only seven 15-minute sessions (~1.75 h in total) and delivered in a format that is suitable for working professionals. The curriculum is delivered as a flexible audio course, enabling participants to integrate the training into daily transitions, such as commuting or breaks, without the requirement for a fixed daily schedule. Within this accessible format, the program utilizes an evidence-based habit-change theoretical framework to identify and alter unhelpful clinical habit loops through reinforcement learning (Brewer, 2019). While primarily a digital intervention, it also includes a minor supportive component in the form of bi-weekly instructor check-ins to address technical issues and maintain motivation. By contrast, traditional Mindfulness-Based Interventions (MBIs), including the standard 8-week MBSR course with weekly 2.5-hour sessions and a retreat, typically require 26 to 75 h of group and independent practice (Krasner et al., 2009). While face-to-face interventions have long been the gold standard, our findings align with a growing body of literature—including meta-analyses of randomized controlled trials—suggesting that digital mindfulness formats can produce comparable improvements in psychological distress and well-being (Hsu et al., 2024; Sommers-Spijkerman et al., 2021). In fact, some evidence indicates that digital delivery may even enhance engagement for certain populations by reducing the logistical barriers and chronic time constraints often experienced by clinicians (Spijkerman et al., 2016). By achieving significant improvements with a substantially lower time commitment, our results support the role of digital MT as a high-value alternative that maintains the core benefits of traditional mindfulness while meeting the practical needs of healthcare environments.
+
+Moreover, our effects mirror those identified in recent systematic reviews and meta-analyses showing that person-centered, self-care interventions, such as MBIs, coaching, and self-compassion training delivered in mental health settings, are among the most effective approaches to mitigating burnout and improving well-being in healthcare professionals (Hsu et al., 2024; Kiratipaisarl et al., 2024; Lu and Ratnapalan, 2022).
+
+Consistent with earlier studies (Antico and Brewer, 2025; Roy et al., 2020), we also found significant positive correlations between burnout and anxiety at all time points in both studies. This finding highlights how intertwined these constructs are, where the progression of emotional exhaustion and cynicism likely erodes a clinician's ability to cope, creating a reciprocal cycle that sustains high anxiety levels (Roy et al., 2021). Consequently, interventions should specifically measure and target both anxiety and burnout to effectively break this cycle.
+
+8.2 Patterns observed in resident physicians: potential interpretations
+
+The patterns observed among residents in Study 2, specifically the emergence of certain benefits only at follow-up, may suggest that for this cohort benefits potentially accumulate over time or require a longer integration period. However, as this study did not directly compare residents to nurses or attending physicians, these observations remain descriptive and cannot be used to conclude that the intervention works differently across professions. Instead, these findings highlight the preliminary nature of the results in this specific trainee population. Residents occupy a distinct role within the healthcare team, characterized by their transitional status as medical trainees (Ng et al., 2025; Phillips and Dalgarno, 2017). Unlike fully licensed physicians and experienced nurses, residents are still in training, balancing the dual demands of clinical responsibilities and academic progression. This stage of training is often marked by a heavy workload, uncertainty in clinical decision-making, and the development of a professional identity. These factors may contribute to distinct burnout risks and influence how residents engage with interventions or institutional initiatives (Phillips and Dalgarno, 2017). Furthermore, individual differences in psychological flexibility or baseline distress may be more influential than professional roles in determining these outcomes.
+
+Additionally, the intervention used in these studies was not co-developed with resident input. As a result, it may not have fully captured their unique perspectives or addressed the practical realities of their day-to-day clinical experience. This lack of direct involvement in the design phase may have influenced the specific patterns of response observed in this cohort. Residents' specific stressors may affect how they perceive and respond to feedback or changes in clinical workflows, particularly if those changes were not designed with their specific needs in mind. These findings suggest that future refinements of the intervention should involve residents in the design process to ensure relevance, feasibility, and potential efficacy within their specific professional context.
+
+8.3 Improvements in psychological factors associated with burnout
+
+Our digital training program is grounded in a reinforcement-learning model (Brewer, 2019), which helps clinicians recognize and change unhelpful habitual behaviors that perpetuate anxiety and burnout. Over the modules, clinicians learn to manage intrusive thoughts and self-judgment with kindness, reduce stress and anxiety driven by uncertainty, and curb emotional contagion by cultivating curiosity. Consistent with our prior research with physicians (Antico and Brewer, 2025), nurses and resident physicians reported increased self-compassion and nonreactivity post-intervention. These findings align with a meta-analysis indicating that mindfulness-based interventions (MBIs) significantly enhance self-compassion among healthcare professionals (Beaumont et al., 2021). Self-compassion involves treating oneself with kindness, particularly after clinical errors or perceived failures, and reducing harsh self-criticism, a trait often observed in clinicians and a key factor in burnout (Neff, 2003). Several studies suggest that high levels of self-compassion help alleviate empathy fatigue and promote compassionate care toward others (Chu, 2024; Crego et al., 2022; Kabakçı and Altun, 2022; McDonald et al., 2021). Additionally, enhanced nonreactivity enables clinicians to respond to challenging situations with greater equanimity rather than reactive distress. MBI practices support the acceptance and evaluation of one's current experience in a kind and non-judgmental manner (Wasson et al., 2020).
+
+Furthermore, our findings indicate a reduction in intolerance of uncertainty among both nurses and residents following the intervention. This improvement may enable clinicians to better tolerate distress associated with uncertainty without becoming overwhelmed. Mindfulness training (MT) aids clinicians in developing greater tolerance for the unknown and diminishes the compulsive need for certainty or control, factors that can fuel anxiety and burnout (Bergin and Pakenham, 2016).
+
+Understanding the role of these variables in relation to clinician burnout may provide important guidance for refining mindfulness interventions to address clinicians' day-to-day needs and to target specific cognitive and emotional vulnerabilities within healthcare workers, potentially increasing the program's clinical utility.
+
+8.4 Implications for intervention design
+
+These findings underscore the potential of this digital mindfulness training as a scalable and accessible tool to support clinician well-being across diverse healthcare roles. Combined with our previous results in attending physicians, these findings highlight the potential value of prioritizing participant autonomy and involving users in the design of such interventions. While this study did not involve a comparative test of design methodologies (i.e., UCD vs. non-UCD), the high levels of engagement and significant improvements observed across cohorts suggest that utilizing a UCD-informed program is a promising approach (Brewer and Antico, 2025; Gunawan et al., 2025).
+
+The UCD approach was used for tailoring content, delivery, and scheduling to the unique workflows and stressors of each professional group, with the aim of enhancing both adoption and sustained use (Quezada et al., 2021). In the context of digital mindfulness programs for healthcare burnout, UCD can help identify and proactively address barriers such as time constraints, technological limitations, or skepticism about mindfulness's relevance. It also supports the inclusion of flexible features, such as brief modules, asynchronous access, and reminders, that accommodate demanding clinical schedules. Notably, the program's self-paced model prioritizes participant autonomy. The inclusion of bi-weekly instructor check-ins characterizes the intervention as a hybrid model rather than a purely automated tool. Evidence suggests that such “guided” digital interventions often yield higher adherence and larger effect sizes than unguided versions (Baumel et al., 2019; Linardon et al., 2019). We speculate that this hybrid approach, combining flexibility with human support, may have helped clinicians navigate the unpredictable and overwhelming demands of the clinical environment. However, as the current study did not directly measure the specific impact of autonomy on adherence, further research is required to formally test these mechanisms of engagement.
+
+Importantly, involving diverse user groups may promote equity by ensuring interventions meet the needs of clinicians across specialties, career stages, genders, and cultural backgrounds. Ultimately, integrating UCD principles may support clinician ownership and empowerment, key factors for sustaining mental health initiatives within healthcare organizations (Swensen et al., 2016). Future efforts to address burnout could benefit from embedding participatory design as a central element of intervention development, evaluation, and refinement.
+
+8.5 Limitations and future research
+
+These findings are encouraging and build upon our earlier work. As proof-of-concept studies, they offer preliminary evidence of potential effectiveness and provide valuable guidance for designing future randomized controlled trials, including estimates of expected effect sizes. Nonetheless, several limitations must be acknowledged.
+
+First, both studies used single-arm designs without control groups and had relatively short follow-up periods (one-month post-intervention). To more rigorously evaluate long-term efficacy, future research should incorporate randomized controlled trials (RCTs) with extended follow-up. Causal relationships cannot be reliably inferred from single-arm designs, as observed changes may result from confounding factors such as time, placebo effects, or other external influences (Cucherat et al., 2020). Future trials should utilize active control groups, such as time-matched digital health education or stress-management apps lacking a mindfulness component, to differentiate the specific effects of MT from non-specific factors like “digital placebo” effects or general self-care engagement. Furthermore, future RCTs should be designed to examine the psychological mechanisms through which MT exerts its potential benefits. Based on our findings, nonreactivity, self-compassion and intolerance of uncertainty are strong candidates for mediation analysis. Investigating these pathways would clarify whether the reduction in burnout is driven by a change in how clinicians relate to internal distress (nonreactivity) or a shift in their cognitive appraisal of clinical ambiguity (intolerance of uncertainty), or a move toward treating oneself with kindness rather than harsh self-criticism following clinical challenges (self-compassion). Such analyses would provide a more robust theoretical rationale for the intervention's impact and its ability to break the cycle of clinician distress.
+
+Second, sample sizes were modest, and participants were not demographically representative; most were White and female. While this limits generalizability, it is noteworthy that women tend to report higher levels of burnout and anxiety, potentially making them more responsive to such interventions (Catuzzi and Beck, 2014; Hoff and Lee, 2021; Lyubarova et al., 2023). Nonetheless, future studies should aim for greater diversity in gender, race, and professional roles.
+
+Third, these pilot studies did not employ specific burnout score cut-offs as inclusion or exclusion criteria. We intentionally adopted this approach to evaluate the intervention as a universal prevention and health promotion tool, observing its feasibility across the full spectrum of clinician well-being. However, the lack of a baseline severity threshold makes it difficult to distinguish between the program's primary preventive effects and its therapeutic utility for those already in distress. Future research should consider employing specific score thresholds to determine whether the intervention is more effective as a broad resilience-building tool or as a targeted treatment for high-risk individuals.
+
+Fourth, these studies did not include a formal, systematic measurement of potential harms or adverse events, such as transient increases in anxiety or emotional discomfort during the use of the program. While no such events were spontaneously reported by participants during the bi-weekly instructor check-ins, the lack of a structured assessment means that subtle or transient negative experiences may have gone unrecorded. Future large-scale trials should incorporate standardized safety monitoring and reporting protocols to more comprehensively evaluate the safety profile of digital mindfulness interventions.
+
+Another limitation is the selection bias that our use of a per-protocol analysis and convenience sampling may have introduced. By only including participants who completed the full course (n = 27 for nurses; n = 29 for residents), our results reflect the most motivated clinicians. Moreover, clinicians who enrolled may have had preexisting interest in or positive attitudes toward mindfulness, potentially biasing the results. This raises concerns about how effective the program would be among those less inclined to engage with mindfulness-based approaches. While this approach is appropriate for a feasibility study to see how the “full dose” works, it may overestimate the program's impact compared to a real-world setting.
+
+In addition, the absence of resident involvement in the program's initial development may have contributed to their different outcomes compared to professional groups who participated in co-design. Future efforts should prioritize resident input to enhance program relevance and impact.
+
+Furthermore, outcome measures relied exclusively on self-report and focused primarily on individual-level changes. Yet, both individual and organizational factors contribute to burnout. Future studies should include organizational-level outcomes such as work engagement, team functioning, and perceived leadership support. Integrating mindfulness programs with organizational strategies (e.g., staffing improvements, leadership training) may reveal synergistic effects.
+
+Additionally, while the application tracked module completion, the research team did not have access to this usage metadata. Consequently, adherence was monitored via manual verification rather than objective digital engagement metrics. This prevents a granular analysis of potential dose-response relationships, examining whether higher levels of app engagement correlate with stronger clinical effects. Future research should aim to integrate these objective behavioral metrics to better understand intervention adherence and specific mechanisms of change.
+
+Finally, while hard clinical outcomes like mortality or complication rates are difficult to measure across sites, more feasible proxies, such as patient adherence, provider–patient relationship quality, or compassionate care behaviors, could offer valuable insights. Incorporating objective biomarkers (e.g., cortisol, heart rate variability) and behavioral metrics may also deepen understanding of the physiological impact of mindfulness and its potential translation into clinical practice (Kiratipaisarl et al., 2024; Luberto et al., 2017). Understanding these broader systemic effects is essential for developing effective, sustainable strategies to reduce burnout and improve care quality.
+
+9 Conclusions
+
+Our findings suggest that digital mindfulness training is a feasible and promising approach that may be associated with reduction in burnout and anxiety, not only among attending physicians, as previously shown, but also among nurses and resident physicians across different specialties. In the nurse cohort, improvements were observed across multiple psychological domains. Among resident physicians, observed benefits appeared more gradually; specifically, significant reductions in the emotional exhaustion—but not cynicism—and anxiety emerged at the one-month follow-up.
+
+Overall, these pilot results reinforce the need for comprehensive burnout strategies that address both individual well-being and systemic contributors and the importance of prioritizing participant autonomy and involving clinicians in the design process to ensure interventions are relevant, practical, and sustainable in real-world healthcare settings. While these preliminary findings are encouraging, they should be interpreted with caution due to the lack of a control group. Future randomized controlled trials are necessary to establish the definitive efficacy of this digital intervention.
+
+To the resident rubbing tired eyes at dawn, the nurse enduring her twelfth hour on aching feet, and the attending physician still reviewing one last lab result, this pilot investigation suggests that such tools could represent a feasible step toward more sustainable care for those who care for others.
+
+Funding sources
+
+This research was financed by the 10.13039/501100001711 Swiss National Science Foundation (P500PS_202924) and was made possible also in part by a grant from the Peter G Peterson Foundation (#008225).
+
+Declaration of competing interest
+
+Dr. Brewer is a paid consultant for, and holds stock in, Sanmai Technologies, PBC, an early-stage startup developing ethical, non-invasive brain stimulation technologies using transcranial focused ultrasound to treat psychological disorders and enhance mental wellness. All other authors declare no other conflicts of interest.
+
+Appendix A Supplementary data
+
+Supplementary material
+
+Data availability
+
+The datasets generated and analyzed during this study are available from the corresponding author on reasonable request.
+
+Appendix A Supplementary data to this article can be found online at https://doi.org/10.1016/j.invent.2026.100989.
+
+
+References
+
+AAMC New AAMC report shows continuing projected physician shortage 2024 AAMC https://www.aamc.org/news/press-releases/new-aamc-report-shows-continuing-projected-physician-shortage
+Agarwal S. Lefevre A.E. Labrique A.B. A call to digital health practitioners: new guidelines can help improve the quality of digital health evidence JMIR Mhealth Uhealth 5 10 2017 e136 10.2196/mhealth.6640 PMC5650671 28986340
+Aiken L.H. Lasater K.B. Sloane D.M. Pogue C.A. Fitzpatrick Rosenbaum K.E. Muir K.J. McHugh M.D. US Clinician Wellbeing Study Consortium Cleary M. Ley C. Borchardt C.J. Brant J.M. Turner B.L. Leimberger A.E. Kozlowski K. Coleman B.L. Albert N.M. Stewart C. Steele D. Whade J.J. Physician and nurse well-being and preferred interventions to address burnout in hospital practice: factors associated with turnover, outcomes, and patient safety JAMA Health Forum 4 7 2023 e231809 10.1001/jamahealthforum.2023.1809 PMC10329209 37418269
+AMA Joy in Medicine®: recognized organizations (September 3) American Medical Association https://www.ama-assn.org/practice-management/physician-health/joy-medicine-recognized-organizations 2025
+Antico L. Brewer J. Digital mindfulness training for burnout reduction in physicians: clinician-driven approach JMIR Form. Res. 9 1 2025 e63197 10.2196/63197 PMC11806274 39854701
+Baer R.A. Smith G.T. Lykins E. Button D. Krietemeyer J. Sauer S. Walsh E. Duggan D. Williams J.M.G. Construct validity of the Five Facet Mindfulness Questionnaire in meditating and nonmeditating samples Assessment 15 3 2008 329 342 10.1177/1073191107313003 18310597
+Baumel A. Muench F. Edan S. Kane J.M. Objective user engagement with mental health apps: systematic search and panel-based usage analysis J. Med. Internet Res. 21 9 2019 e14567 10.2196/14567 PMC6785720 31573916
+Beaumont E. Bell T. McAndrew S. Fairhurst H. The impact of compassionate mind training on qualified health professionals undertaking a compassion-focused therapy module Couns. Psychother. Res. 21 4 2021 910 922 10.1002/capr.12396
+Berg S. U.S. physician burnout hits lowest rate since COVID-19 (May 1) American Medical Association https://www.ama-assn.org/practice-management/physician-health/us-physician-burnout-hits-lowest-rate-covid-19 2025
+Bergin A.J. Pakenham K.I. The stress-buffering role of mindfulness in the relationship between perceived stress and psychological adjustment Mindfulness 7 4 2016 928 939 10.1007/s12671-016-0532-x
+Bian J. Chen F. Fang S. Wang Y. Self-compassion intervention programs for nurses: a scoping review Healthcare 13 2 2025 2 10.3390/healthcare13020177 PMC11764811 39857204
+Brewer J. Mindfulness training for addictions: has neuroscience revealed a brain hack by which awareness subverts the addictive process? Current Opinion in Psychology Mindfulness 28 2019 198 203 10.1016/j.copsyc.2019.01.014 30785066
+Brewer J. Antico L. Collaborative wellness initiatives: involving physicians to address burnout in healthcare R. I. Med. J. 108 3 2025 27 29 http://rimed.org/rimedicaljournal/2025/03/2025-03-27-wellbeing-brewer.pdf 40009098
+Bruyneel A. Bouckaert N. Pirson M. Sermeus W. Van den Heede K. Unfinished nursing care in intensive care units and the mediating role of the association between nurse working environment, and quality of care and nurses’ wellbeing Intensive Crit. Care Nurs. 81 2024 103596 10.1016/j.iccn.2023.103596 38043435
+Bruyneel A. Dauvergne J.E. Bouckaert N. Caillet A. Sermeus W. Poiroux L. Van den Heede K. Association of burnout and intention-to-leave the job with objective nursing workload and nursing working environment: a cross-sectional study among intensive care nurses J. Clin. Nurs. 2025 10.1111/jocn.17650 (n/a(n/a)) 39809579
+Buivydienė A. Rapolienė L. Truš M. Jakavonytė-Akstinienė A. Connections between job satisfaction and depression, anxiety, and stress among nurses Front. Psychol. 16 2025 10.3389/fpsyg.2025.1548993 PMC11835875 39973959
+Buysse D.J. Yu L. Moul D.E. Germain A. Stover A. Dodds N.E. Johnston K.L. Shablesky-Cade M.A. Pilkonis P.A. Development and validation of patient-reported outcome measures for sleep disturbance and sleep-related impairments Sleep 33 6 2010 781 792 10.1093/sleep/33.6.781 20550019 PMC2880437
+Carleton R.N. Norton M.A.P.J. Asmundson G.J.G. Fearing the unknown: a short version of the Intolerance of Uncertainty Scale J. Anxiety Disord. 21 1 2007 105 117 10.1016/j.janxdis.2006.03.014 16647833
+Catuzzi J.E. Beck K.D. Anxiety vulnerability in women: a two-hit hypothesis Experimental Neurology Special Issue: The Importance of Sex in the Etiology, Presentation, and Treatment of Neurological Disorders 259 2014 75 80 10.1016/j.expneurol.2014.01.023 24518489
+Chen R. Sun C. Chen J.-J. Jen H.-J. Kang X.L. Kao C.-C. Chou K.-R. A large-scale survey on trauma, burnout, and posttraumatic growth among nurses during the COVID-19 pandemic Int. J. Ment. Health Nurs. 30 1 2021 102 116 10.1111/inm.12796 33107677 PMC7894338
+Chu L.-C. Effect of compassion fatigue on emotional labor in female nurses: moderating effect of self-compassion PloS One 19 3 2024 e0301101 10.1371/journal.pone.0301101 PMC10977725 38547163
+Cohen C. Pignata S. Bezak E. Tie M. Childs J. Workplace interventions to improve well-being and reduce burnout for nurses, physicians and allied healthcare professionals: a systematic review 2023 10.1136/bmjopen-2022-071203 PMC10314589 37385740
+Cohen J. Quantitative methods in psychology: a power primer Psychol. Bull. 112 1992 1155 1159 https://cir.nii.ac.jp/crid/1571417125554624128
+Crego A. Yela J.R. Riesco-Matías P. Gómez-Martínez M.-Á. Vicente-Arruebarrena A. The benefits of self-compassion in mental health professionals: a systematic review of empirical research Psychol. Res. Behav. Manag. 15 2022 2599 2620 10.2147/PRBM.S359382 36133626 PMC9482966
+Cucherat M. Laporte S. Delaitre O. Behier J.-M. d’Andon A. Binlich F. Bureau S. Cornu C. Fouret C. Hoog Labouret N. Laviolle B. Miadi-Fargier H. Paoletti X. Roustit M. Simon T. Varoqueaux N. Vicaut E. Westerloppe J. From single-arm studies to externally controlled studies. Methodological considerations and guidelines. Therapies, XXXVès Rencontres Nationales de Pharmacologie et Recherche Clinique, Pour l’Innovation Thérapeutique et l’Évaluation Des Technologies de Santé, Tables Rondes Giens – 6-7 Octobre 2019 / XXXV National Meeting of Clinical Pharmacology and Clinical Research for Therapeutic Innovation and Evaluation of Health Technologies Giens Workshops 2019 6th–7th October 2019 75(1) 2020 21 27 10.1016/j.therap.2019.11.007 32063399
+Dall T. Reynolds R. Chakrabarti R. Ruttinger C. Zarek P. Parker O. The Complexities of Physician Supply and Demand: Projections From 2021 to 2036 2024 AAMC
+Dilig-Ruiz A. MacDonald I. Varin M.D. Vandyk A. Graham I.D. Squires J.E. Job satisfaction among critical care nurses: a systematic review Int. J. Nurs. Stud. 88 0020–7489 2018 123 134 10.1016/j.ijnurstu.2018.08.014 30292878
+Dyrbye L.N. Major-Elechi B. Hays J.T. Fraser C.H. Buskirk S.J. West C.P. Relationship between organizational leadership and health care employee burnout and satisfaction Mayo Clin. Proc. 95 4 2020 698 708 10.1016/j.mayocp.2019.10.041 32247343
+Fendel J.C. Bürkle J.J. Göritz A.S. Mindfulness-based interventions to reduce burnout and stress in physicians: a systematic review and meta-analysis Acad. Med. 96 5 2021 751 764 33496433 10.1097/ACM.0000000000003936
+Friese C.R. Medvec B.R. Marriott D.J. Khadr L. Rurka Wade M. Riba M. Titler M.G. Changes in registered nurse employment plans and workplace assessments JAMA Netw. Open 7 7 2024 e2421680 10.1001/jamanetworkopen.2024.21680 PMC11258586 39023894
+Galanis P. Moisoglou I. Katsiroumpa A. Vraka I. Siskou O. Konstantakopoulou O. Meimeti E. Kaitelidou D. Increased job burnout and reduced job satisfaction for nurses compared to other healthcare workers after the COVID-19 pandemic Nurs. Rep. 13 3 2023 3 10.3390/nursrep13030095 PMC10443294 37606463
+Galoustian G. Nursing 2025: no relief as burnout, stress and staffing woes persist (April 29) https://www.fau.edu/newsdesk/articles/beyond-the-bedside-nursing-survey.php 2025
+Gratz K.L. Roemer L. Multidimensional assessment of emotion regulation and dysregulation: development, factor structure, and initial validation of the difficulties in emotion regulation scale J. Psychopathol. Behav. Assess. 26 1 2004 41 54 10.1023/B:JOBA.0000007455.08539.94
+Gunawan D. Antico L. Nardi W. Brewer J. Developing a mindfulness program for pre-clinical medical students in Indonesia: a mixed-methods study on suitability and appropriateness BMC Med. Educ. 25 1 2025 1072 10.1186/s12909-025-07642-5 PMC12272978 40676531
+Han S. Shanafelt T.D. Sinsky C.A. Awad K.M. Dyrbye L.N. Fiscus L.C. Trockel M. Goh J. Estimating the attributable cost of physician burnout in the United States Ann. Intern. Med. 170 11 2019 784 790 31132791 10.7326/M18-1422
+Hoff T. Lee D.R. Burnout and physician gender: what do we know? Med. Care 59 8 2021 711 10.1097/MLR.0000000000001584 34081678
+Hsu H.-C. Lee H.-F. Hung H.-M. Chen Y.-L. Yen M. Chiang H.-Y. Chow L.-H. Fetzer S.J. Mu P.-F. Effectiveness of individual-based strategies to reduce nurse burnout: an umbrella review J. Nurs. Manag. 2024 1 2024 8544725 10.1155/2024/8544725 PMC11918503 40224800
+IsHak W.W. Lederer S. Mandili C. Nikravesh R. Seligman L. Vasa M. Ogunyemi D. Bernstein C.A. Burnout during residency training: a literature review J. Grad. Med. Educ. 1 2 2009 236 242 21975985 10.4300/JGME-D-09-00054.1 PMC2931238
+Kabakçı K. Altun Özlem Şahin Examining the relationship between nurses’ compassion and professional burnout J. Psychiatr. Nurs. 2022 10.14744/phd.2022.29291
+Kabat-Zinn Jon Full Catastrophe Living (Revised Edition): Using the Wisdom of Your Body and Mind to Face Stress, Pain, and Illness 1991
+Kiratipaisarl W. Surawattanasakul V. Sirikul W. Individual and organizational interventions to reduce burnout in resident physicians: a systematic review and meta-analysis BMC Med. Educ. 24 1 2024 1234 10.1186/s12909-024-06195-3 39478552 PMC11523819
+Krasner M.S. Epstein R.M. Beckman H. Suchman A.L. Chapman B. Mooney C.J. Quill T.E. Association of an educational program in mindful communication with burnout, empathy, and attitudes among primary care physicians JAMA 302 12 2009 1284 1293 10.1001/jama.2009.1384 19773563
+Kroenke K. Spitzer R.L. Williams J.B.W. The PHQ-9 J. Gen. Intern. Med. 16 9 2001 606 613 10.1046/j.1525-1497.2001.016009606.x 11556941 PMC1495268
+Lasater K.B. Addressing the nurse retention crisis—leveraging policies supported by evidence JAMA Netw. Open 7 7 2024 e2421635 10.1001/jamanetworkopen.2024.21635 39023896
+Li L.Z. Yang P. Singer S.J. Pfeffer J. Mathur M.B. Shanafelt T. Nurse burnout and patient safety, satisfaction, and quality of care: a systematic review and meta-analysis JAMA Netw. Open 7 11 2024 e2443059 10.1001/jamanetworkopen.2024.43059 PMC11539016 39499515
+Linardon J. Cuijpers P. Carlbring P. Messer M. Fuller-Tyszkiewicz M. The efficacy of app-supported smartphone interventions for mental health problems: a meta-analysis of randomized controlled trials World Psychiatry 18 3 2019 325 336 31496095 10.1002/wps.20673 PMC6732686
+Lomas T. Medina J.C. Ivtzan I. Rupprecht S. Eiroa-Orosa F.J. A systematic review of the impact of mindfulness on the well-being of healthcare professionals J. Clin. Psychol. 74 3 2018 319 355 28752554 10.1002/jclp.22515
+Low Z.X. Yeo K.A. Sharma V.K. Leung G.K. McIntyre R.S. Guerrero A. Lu B. Sin Fai Lam S.F.C. Tran B.X. Nguyen L.H. Ho C.S. Tam W.W. Ho Prevalence of burnout in medical and surgical residents: a meta-analysis Int. J. Environ. Res. Public Health 16 1660–4601 2019 10.3390/ijerph16091479 PMC6539366 31027333
+Lu F.-I. Ratnapalan S. Burnout interventions for resident physicians: a scoping review of their content, format, and effectiveness Arch. Pathol. Lab. Med. 147 2 2022 227 235 10.5858/arpa.2021-0115-EP 35687790
+Luberto C.M. Wasson R.S. Kraemer K.M. Sears R.W. Hueber C. Cotton S. Feasibility, acceptability, and preliminary effectiveness of a 4-week mindfulness-based cognitive therapy protocol for hospital employees Mindfulness 8 6 2017 1522 1531 10.1007/s12671-017-0718-x 29335671 PMC5766285
+Lyubarova R. Salman L. Rittenberg E. Gender differences in physician burnout: driving factors and potential solutions Perm. J. 27 2 2023 130 136 10.7812/TPP/23.023 37303223 PMC10266850
+Maslach C. Jackson S.E. Leiter M.P. Maslach burnout inventory: third edition Evaluating Stress: A Book of Resources 1997 Scarecrow Education 191 218
+McDonald M.A. Meckes S.J. Lancaster C.L. Compassion for oneself and others protects the mental health of first responders Mindfulness 12 3 2021 659 671 10.1007/s12671-020-01527-y 33204359 PMC7662019
+Membrive-Jiménez M.J. Gómez-Urquiza J.L. Suleiman-Martos N. Velando-Soriano A. Ariza T. De la Fuente-Solana E.I. Cañadas-De la Fuente G.A. Relation between burnout and sleep problems in nurses: a systematic review with meta-analysis Healthcare 10 5 2022 5 10.3390/healthcare10050954 PMC9140410 35628091
+Meyer T.J. Miller M.L. Metzger R.L. Borkovec T.D. Development and validation of the Penn State Worry Questionnaire Behav. Res. Ther. 28 6 1990 487 495 10.1016/0005-7967(90)90135-6 2076086
+Musker M. Othman S. Effective interventions to reduce burnout in nurses: a meta-analysis Complement. Ther. Clin. Pract. 54 2024 101827 10.1016/j.ctcp.2023.101827 38181650
+Neff K. Self-compassion: an alternative conceptualization of a healthy attitude toward oneself Self Identity 2 2 2003 85 101 10.1080/15298860309032
+Ng I.K.S. Tham S.Z. Chong K.M. Teo D.B. Looking beyond duty hours: offering a balanced quantitative-qualitative approach to resident burnout J. R. Coll. Physicians Edinb. 54 3 2024 236 240 10.1177/14782715241273739 39136279
+Ng I.K.S. Tham S.Z.L. Chong K.M. Goh Wilson G.W. Thong C. Teo K.S.H. Burnout among medical residents: key drivers and practical mitigating strategies Postgrad. Med. J. 101 1195 2025 475 480 10.1093/postmj/qgae179 39680959
+OECD Health at a Glance 2023: geographic distribution of doctors (November 7) OECD https://www.oecd.org/en/publications/health-at-a-glance-2023_7a7afb35-en/full-report/geographic-distribution-of-doctors_5b1219d2.html 2023
+Phillips S.P. Dalgarno N. Professionalism, professionalization, expertise and compassion: a qualitative study of medical residents BMC Med. Educ. 17 1 2017 21 10.1186/s12909-017-0864-9 28114984 PMC5259915
+Quezada P. Cueva R. Paz F. A systematic review of user-centered design techniques applied to the design of mobile application user interfaces Soares M.M. Rosenzweig E. Marcus A. Design, User Experience, and Usability: UX Research and Design 2021 Springer International Publishing 100 114 10.1007/978-3-030-78221-4_7
+Raes F. Pommier E. Neff K.D. Van Gucht D. Construction and factorial validation of a short form of the Self-Compassion Scale Clin. Psychol. Psychother. 18 3 2011 250 255 10.1002/cpp.702 21584907
+Roy A. Druker S. Hoge E.A. Brewer J.A. Physician anxiety and burnout: symptom correlates and a prospective pilot study of app-delivered mindfulness training JMIR Mhealth Uhealth 8 4 2020 e15608 10.2196/15608 PMC7160707 32234708
+Roy A. Hoge E.A. Abrante P. Druker S. Liu T. Brewer J.A. Clinical efficacy and psychological mechanisms of an app-based digital therapeutic for generalized anxiety disorder: randomized controlled trial J. Med. Internet Res. 23 12 2021 e26987 https://www.jmir.org/2021/12/e26987/1000 10.2196/26987 PMC8686411 34860673
+Ruotsalainen J.H. Verbeek J.H. Mariné A. Serra C. Preventing occupational stress in healthcare workers Cochrane Database Syst. Rev. 2015 4 2015 CD002892 10.1002/14651858.CD002892.pub5 PMC6718215 25847433
+Schaufeli W.B. Bakker A.B. van der Heijden F.M.M.A. Prins J.T. Workaholism among medical residents: it is the combination of working excessively and compulsively that counts Int. J. Stress. Manag. 16 4 2009 249 272 10.1037/a0017537
+Scheepers R. Silkens M. Berg J. van den Lombarts K. Associations between job demands, job resources and patient-related burnout among physicians: results from a multicentre observational study BMJ Open 10 9 2020 e038466 10.1136/bmjopen-2020-038466 PMC7517563 32973063
+Shanafelt T.D. West C.P. Dyrbye L.N. Trockel M. Tutty M. Wang H. Carlasare L.E. Sinsky C. Changes in burnout and satisfaction with work-life integration in physicians during the first 2 years of the COVID-19 pandemic Mayo Clin. Proc. 97 12 2022 2248 2258 10.1016/j.mayocp.2022.09.002 36229269 PMC9472795
+Sindhu K.K. Adashi E.Y. The Dr Lorna Breen health care provider protection act: a modest step in the right direction JAMA Health Forum 3 9 2022 e223349 10.1001/jamahealthforum.2022.3349 36218950
+Sommers-Spijkerman M. Austin J. Bohlmeijer E. Pots W. New evidence in the booming field of online mindfulness: an updated meta-analysis of randomized controlled trials JMIR Ment. Health 8 7 2021 e28168 10.2196/28168 PMC8329762 34279240
+Specchia M.L. Cozzolino C.M.R. Carini E. Di Pilla A. Galletti C. Ricciardi W. Damiani G. Leadership styles and nurses’ job satisfaction. Results of a systematic review Int. J. Environ. Res. Public Health 18 4 2021 1660 4601 10.3390/ijerph18041552 33562016 PMC7915070
+Spijkerman M.P.J. Pots W.T.M. Bohlmeijer E. Effectiveness of online mindfulness-based interventions in improving mental health: a review and meta-analysis of randomised controlled trials Clin. Psychol. Rev. 45 2016 102 114 27111302 10.1016/j.cpr.2016.03.009
+Spitzer R.L. Kroenke K. Williams J.B.W. Löwe B. A brief measure for assessing generalized anxiety disorder: the GAD-7 Arch. Intern. Med. 166 10 2006 1092 1097 10.1001/archinte.166.10.1092 16717171
+Swensen S. Gorringe G. Caviness J. Peters D. Leadership by design: Intentional organization development of physician leaders J. Manag. Dev. 35 4 2016 549 570 10.1108/JMD-08-2014-0080
+Terlizzi E.P. Zablotsky B. Symptoms of anxiety and depression among adults: United States, 2019 and 2022 National Health Statistics Reports [Internet] 2024 National Center for Health Statistics (US) 10.15620/cdc/64018 PMC11616099 39591466
+Thomas N.K. Resident burnout JAMA 292 23 2004 2880 2889 15598920 10.1001/jama.292.23.2880
+Wasson R.S. Barratt C. O’Brien W.H. Effects of mindfulness-based interventions on self-compassion in health care professionals: a meta-analysis Mindfulness 11 8 2020 1914 1934 10.1007/s12671-020-01342-5 32421083 PMC7223423
+West C.P. Dyrbye L.N. Sloan J.A. Shanafelt T.D. Single item measures of emotional exhaustion and depersonalization are useful for assessing burnout in medical professionals J. Gen. Intern. Med. 24 12 2009 1318 1321 10.1007/s11606-009-1129-z 19802645 PMC2787943
+West C.P. Dyrbye L.N. Satele D.V. Sloan J.A. Shanafelt T.D. Concurrent validity of single-item measures of emotional exhaustion and depersonalization in burnout assessment J. Gen. Intern. Med. 27 11 2012 1445 1452 10.1007/s11606-012-2015-7 22362127 PMC3475833
+West C.P. Dyrbye L.N. Erwin P.J. Shanafelt T.D. Interventions to prevent and reduce physician burnout: a systematic review and meta-analysis Lancet 388 10057 2016 2272 2281 10.1016/S0140-6736(16)31279-X 27692469
+West C.P. Dyrbye L.N. Shanafelt T.D. Physician burnout: contributors, consequences and solutions J. Intern. Med. 283 6 2018 516 529 10.1111/joim.12752 29505159
+West C.P. Dyrbye L.N. Sinsky C. Trockel M. Tutty M. Nedelec L. Carlasare L.E. Shanafelt T.D. Resilience and burnout among physicians and the general US working population JAMA Netw. Open 3 7 2020 e209385 10.1001/jamanetworkopen.2020.9385 PMC7333021 32614425
+World Health Organization Burn-out an “occupational phenomenon”: International Classification of Diseases https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases 2019
+World Health Organization Health workforce https://www.who.int/health-topics/health-workforce 2024
+Yu L. Buysse D.J. Germain A. Moul D.E. Stover A. Dodds N.E. Johnston K.L. Pilkonis P.A. Development of short forms from the PROMIS™ sleep disturbance and sleep-related impairment item banks Behav. Sleep Med. 10 1 2012 6 24 10.1080/15402002.2012.636266 PMC3261577 22250775
+Zhou A.Y. Panagioti M. Esmail A. Agius R. Van Tongeren M. Bower P. Factors associated with burnout and stress in trainee physicians: a systematic review and meta-analysis JAMA Netw. Open 3 8 2020 e2013761 10.1001/jamanetworkopen.2020.13761 PMC7435345 32809031

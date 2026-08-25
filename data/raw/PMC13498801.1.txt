@@ -1,0 +1,395 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Cancer Control
+Journal ID: Cancer Control
+NLM Journal ID: 9438457
+Journal ID: CCX
+
+Cancer Control: Journal of the Moffitt Cancer Center
+
+ISSN: 1073-2748
+EISSN: 1526-2359
+Publisher: SAGE Publications
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498801
+PMID: 42627373
+DOI: 10.1177/10732748261480328
+Article ID: 10.1177_10732748261480328
+Article version: 1
+Subjects: Research Article
+
+A Multimodal Graph Neural Network Based on MRI Radi-omics for Prognostic Prediction in Locally Advanced Cervical Squamous Cell Carcinoma
+
+Li Yimin 1 *
+Wang Youjia 1 *
+Kang Yaxin 2
+Luo Furong 3
+Zheng Chunnuan 4
+Zhuo Ruiyu 5
+Qiu Lu 1
+Xie Yuanfu 1
+https://orcid.org/0009-0001-9331-6025 Zhuo Yanhong 1
+1 Department of Radiation Oncology, 117893 Zhangzhou Hospital Affiliated to Fujian Medical University , Zhangzhou, Fujian, China
+2 Department of Gynecology, Clinical Oncology School of Fujian Medical University , 66552 Fujian Cancer Hospital , Fuzhou, Fujian, China
+3 Department of Radiology, 117893 Zhangzhou Hospital Affiliated to Fujian Medical University , Zhangzhou, Fujian, China
+4 Department of Pathology, 117893 Zhangzhou Hospital Affiliated to Fujian Medical University , Zhangzhou, Fujian, China
+5 School of Informatics, 598543 Xiamen University , Xiamen, Fujian, China
+Yanhong Zhuo, Department of Radiation Oncology, Zhangzhou Hospital Affiliated to Fujian Medical University, No. 59 Shengli West Road, Xiangcheng District, Zhangzhou, Fujian 350600, China. Email: zhuoyanhong928@163.comYuanfu Xie, Department of Radiation Oncology, Zhangzhou Hospital Affiliated to Fujian Medical University, No. 59 Shengli West Road, Xiangcheng District, Zhangzhou, Fujian 350600, China. Email: yuanfuxie@126.com* Contributed equally as first authors.
+
+Electronic publication date: 2026 Aug 21
+Publication date: 2026 Jan-Dec
+Volume: 33
+Electronic Location ID: 10732748261480328
+Received 2026 Apr 2; Revised 2026 Jun 24; Accepted 2026 Aug 5
+Copyright: © The Author(s) 2026
+Copyright year: 2026
+Copyright holder: SAGE Publications Inc, unless otherwise noted. Manuscript content on this site is licensed under Creative Common Licences
+License: This article is distributed under the terms of the Creative Commons Attribution-NonCommercial 4.0 License (https://creativecommons.org/licenses/by-nc/4.0/) which permits non-commercial use, reproduction and distribution of the work without further permission provided the original work is attributed as specified on the SAGE and Open Access pages (https://us.sagepub.com/en-us/nam/open-access-at-sage).
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: cervical cancer, magnetic resonance imaging, radiomics, deep learning, graph neural network, multimodal integration, survival prediction
+
+Funding: The Natural Science Foundation of Fujian Province 2024J011556 The Startup Fund for Scientific Research, Fujian Medical University 2023QH1346 The Climbing Project at the Doctor’s Studio of Zhangzhou Affiliated Hospital of Fujian Medical University PDB202322
+typesetter: ts10
+cover-date: January-December 2026
+
+==============================
+Introduction
+
+We aimed to develop and validate a clinically interpretable multimodal deep learning framework integrating multi-sequence MRI and clinical variables for predicting overall survival (OS) in locally advanced cervical squamous cell carcinoma (LACSCC).
+
+Methods
+
+This retrospective cohort study included 247 patients with pathologically confirmed LACSCC. Pretreatment MRI sequences, including contrast-enhanced T1-weighted imaging (T1CE), T2-weighted imaging (T2WI), and diffusion-weighted imaging (DWI), were analyzed. Tumor regions of interest were manually delineated, and slice-level deep features were extracted using a fine-tuned ResNet-50 network. A graph neural network was then constructed to model spatial relationships among MRI slices, aggregate slice-level features into patient-level representations, and integrate imaging features with clinical variables to generate a Deep Learning Prognostic Score (DLPS). Model performance was assessed using time-dependent receiver operating characteristic (ROC) curves, Kaplan-Meier survival analysis, Cox regression analysis, and nomogram calibration.
+
+Results
+
+In the validation cohort, the model achieved area under the ROC curve values of 0.747, 0.749, and 0.706 for predicting 1-year, 3-year, and 5-year OS, respectively. Kaplan-Meier survival analysis showed significantly better OS in the high-DLPS group than in the low-DLPS group. Multivariable Cox regression analysis identified DLPS as an independent predictor of OS. The nomogram integrating DLPS and significant clinical variables showed good calibration in both the training and validation cohorts.
+
+Conclusion
+
+We developed and validated a multimodal MRI-based GNN framework for individualized OS prediction in LACSCC. By integrating spatially structured imaging features with clinical variables, the model provided effective prognostic stratification and may support personalized risk assessment and treatment decision-making.
+
+Introduction
+
+Cervical cancer continues to pose a major global health burden and remains one of the leading causes of cancer-related mortality among women worldwide. 1 Despite continuous advances in screening and treatment, a considerable proportion of patients are still diagnosed initially at a locally advanced stage. 2 Compared with early-stage disease, LACC is associated with substantially worse survival outcomes and greater prognostic heterogeneity. A large population-based evaluation of the 2018 FIGO staging system demonstrated a progressive decline in survival with increasing disease stage. 3 Moreover, despite advances in concurrent chemoradiotherapy and image-guided adaptive brachytherapy, nodal and systemic failures remain major barriers to further improving survival in LACC. 4 In the INTERLACE phase III trial, the 5-year overall survival rate was 72% among patients treated with standard chemoradiotherapy alone, further indicating that a substantial proportion of patients remain at risk of recurrence or death after standard treatment. 5 Therefore, individualized pretreatment prognostic stratification in this population is clinically important.
+
+Magnetic resonance imaging (MRI) plays a central role in the clinical management of cervical cancer, particularly in disease staging, treatment planning, and response assessment. In patients with LACC, pretreatment MRI can help evaluate tumor size, local extension, adjacent organ invasion, lymph node status, and intratumoral heterogeneity, which are closely associated with tumor burden, treatment response, and prognosis.6,7 Multiparametric MRI sequences, including contrast-enhanced T1-weighted imaging (T1CE), T2-weighted imaging (T2WI), and diffusion-weighted imaging (DWI), provide complementary information regarding tumor morphology, cellularity, and the tumor microenvironment. 8 However, conventional MRI assessment still mainly relies on qualitative interpretation and a limited number of quantitative metrics, which may be inadequate for fully characterizing tumor heterogeneity associated with long-term prognosis.7,9,10 In recent years, radiomics- and deep learning-based approaches have been increasingly applied to extract high-dimensional features from MRI, showing considerable potential for predicting treatment response and survival outcomes. 11 Nevertheless, most existing approaches either treat each MRI slice as an independent sample or aggregate slice-level features using simple strategies, such as average pooling or max pooling.12-15 These approaches often fail to account for the anatomical spatial continuity between adjacent slices and the complex intratumoral topological relationships, leading to the loss of important three-dimensional spatial information and consequently limiting the accuracy of prognostic prediction. 16
+
+A graph neural network (GNN), as a powerful framework for modeling non-Euclidean data, offers a promising approach to overcome these limitations. 17 Unlike conventional convolutional neural networks or simple pooling strategies that treat slices as independent and discard inter-slice spatial context, GNN explicitly capture dependencies among data points through nodes and edges. 18 In medical image analysis, sequential MRI slices from an individual patient can be naturally represented as a graph, where each slice serves as a node and edges connect adjacent slices according to their anatomical order. This formulation enables a GNN to effectively aggregate slice-level local features while preserving spatial continuity, and the graph attention mechanism further allows adaptive weighting of prognostically informative slices during patient-level representation learning. 19 Moreover, multimodal fusion of imaging features with clinicopathological information, such as stage and pathological biomarkers, has been shown to further enhance predictive performance. 20 However, studies applying GNN to integrate the spatial features of multi-sequence MRI with clinical information for prognostic prediction in cervical cancer remain scarce.
+
+Therefore, this study aimed to develop and validate a clinically interpretable, MRI-based multimodal deep learning framework for prognostic prediction in locally advanced cervical squamous cell carcinoma (LACSCC). The framework used GNN to model the spatial topological relationships among MRI slices and integrated multisequence imaging features with clinical variables to predict overall survival (OS).
+
+Methods
+
+Study Cohort
+
+This retrospective study included 247 patients with LACSCC treated at Zhangzhou Hospital, Fujian Province, between June 2020 and May 2025. The inclusion criteria were as follows: (1) histologically confirmed cervical squamous cell carcinoma; (2) locally advanced disease (stages IB2-IVA) according to the 2018 FIGO staging system; (3) completion of definitive radiotherapy; (4) availability of pretreatment multiparametric MRI data; and (5) complete clinical and survival follow-up data. Patients with a history of pelvic malignancy, prior pelvic radiotherapy, incomplete follow-up data, or poor image quality were excluded. All consecutive patients who met the prespecified inclusion and exclusion criteria between June 2020 and May 2025 were included. The final cohort consisted of 247 patients, including 38 OS events. Patients were randomly divided into a training cohort (n = 172; 26 OS events) and an internal validation cohort (n = 75; 12 OS events) using stratified sampling according to OS status. Because this was a retrospective single-center study, no formal a priori sample size calculation was performed. The limited number of outcome events was considered when specifying the multivariable models and is acknowledged as an important limitation. All patients received definitive radiotherapy consisting of pelvic external beam radiotherapy (EBRT) followed by high-dose-rate brachytherapy (HDR-BT). EBRT was delivered using intensity-modulated radiotherapy (IMRT) or volumetric modulated arc therapy (VMAT) techniques, with the clinical target volume encompassing the primary tumor, uterus, parametria, upper vagina, and regional lymph node drainage areas; elective para-aortic irradiation was performed when indicated. The EBRT dose to the elective nodal regions was 45–50 Gy in 25–28 fractions (5 fractions per week), with a simultaneous integrated boost to gross lymph node metastases (up to 60 Gy) and to the primary cervical tumor (up to 54 Gy). HDR-BT was delivered at a total dose of 28–30 Gy. Concurrent chemotherapy was predominantly cisplatin-based, with nedaplatin, carboplatin, or paclitaxel substituted when cisplatin was contraindicated. Nimotuzumab (200 mg weekly for 6 cycles) was administered concurrently with radiotherapy in eligible patients.
+
+The collected clinical variables included age, FIGO stage, EGFR status, HER2 status, PD-L1 CPS, pretreatment tumor volume, uterine corpus invasion, vaginal invasion, bladder invasion, rectal invasion, lymph node metastasis, concurrent chemotherapy, neoadjuvant chemotherapy, concurrent nimotuzumab, immunotherapy, and OS. These clinicopathological factors were selected based on their established prognostic relevance in cervical cancer and their routine availability in clinical practice. 21 Performance status and comorbidity data were not consistently documented in the electronic medical records and therefore could not be reliably ascertained for this retrospective cohort. Age was dichotomized at 65 years according to common clinical practice. Tumor volume was categorized using 50 cm3 as a predefined clinically interpretable threshold. Immunohistochemical markers were categorized according to the institutional pathological reporting system: EGFR was grouped as low expression and high expression, HER2 as IHC 0/1+ and IHC 2+/3+ (Detailed IHC protocols are provided in the Supplementary Material), and PD-L1 according to CPS categories (evaluated by Combined Positive Score [CPS] via the 22C3 pharmDx assay). Missing biomarker data were recorded as “unknown”.
+
+The reporting of this study conforms to the TRIPOD + AI statement. 22
+
+MRI Acquisition and Regions of Interest (ROI) Delineation
+
+All patients underwent pretreatment pelvic MRI, including T1CE, T2WI, and DWI sequences. MRI examinations were performed on a 1.5T scanner (Optima® MR360, GE Healthcare) using a standard head coil. Detailed acquisition parameters are provided in the Supplementary Material. The tumor regions on axial images were manually delineated by two experienced clinicians who were blinded to the patients’ clinical outcomes. The delineated tumor regions were defined as ROIs. The segmentation results were independently reviewed to ensure consistency and accuracy. An ROI-guided image patch extraction strategy was then applied to focus the analysis on tumor-relevant regions. Specifically, axial images were partitioned into fixed-size patches, and only those overlapping with the tumor ROIs were retained. To minimize background noise and improve the signal-to-noise ratio, patches with less than 10% tumor area were excluded.
+
+Deep Learning-Based MRI Feature Extraction
+
+To capture subtle phenotypic characteristics of tumors across different imaging sequences, a fine-tuned ResNet-50 deep convolutional neural network was used as the feature extractor. For each patient, the three-dimensional MRI data, including DWI, T1CE, and T2WI sequences, were decomposed into a series of two-dimensional axial slices and fed into the network. The network had been optimized for survival prediction during the pretraining stage. During feature extraction, the final classification layer was removed, and the 2048-dimensional feature vectors from the penultimate layer were extracted. Through this process, each patient’s imaging data were transformed into a high-dimensional feature matrix, in which each row represented the deep semantic representation of an individual MRI slice. This approach effectively converted unstructured imaging data into structured tensors for subsequent modeling.
+
+Graph Construction and Clinical Data Preprocessing
+
+For categorical clinical variables, including age, stage, EGFR, and HER2, missing values were imputed using Multivariate Imputation based on the Iterative Imputer. For the imaging data, the slice-level features extracted in the previous stage were modeled as a graph structure. Specifically, each slice-level feature vector was treated as a node, and edges were established according to the spatial adjacency order of the slices. This topological graph structure not only preserved slice-level feature information but also maintained the spatial continuity of the tumor. In addition, to improve model robustness, a small amount of Gaussian noise was added to the node features during training as a data augmentation strategy to simulate real-world perturbations.
+
+Multimodal Graph Attention Network for Survival Prediction
+
+We designed an improved graph-based survival network to process the heterogeneous multimodal data described above. The model consisted of two parallel branches. The MRI branch adopted a GAT as the core backbone and used a multi-head attention mechanism to dynamically compute the association weights among different slice nodes. This mechanism enabled the model to automatically identify and focus on the key slices that were most informative for prognostic assessment, and to aggregate local node features into a global imaging embedding through attentional aggregation. The clinical branch extracted higher-order clinical representations using an MLP. Finally, the imaging embedding and clinical representation were concatenated at the fusion layer and fed into fully connected layers to calculate the DLPS for each patient.
+
+The prognostic value of DLPS was evaluated using Kaplan-Meier (KM) survival analysis. Patients were stratified into the high-DLPS group and low-DLPS group according to the median DLPS. The survival differences between the two groups were compared using the log-rank test. Time-dependent receiver operating characteristic (ROC) curves at 1, 3, and 5 years were further constructed to evaluate predictive performance.
+
+Model Training Strategy and Interpretability Analysis
+
+To address the right-censored nature of survival data, the Cox partial likelihood loss (CPLL) was adopted as the loss function to maximize the conditional probability of observed events. Model training was performed using the stochastic gradient descent (SGD) optimizer, with the cosine annealing warm restarts strategy applied to dynamically adjust the learning rate and facilitate model convergence. To reduce the risk of overfitting, the GNN architecture was intentionally kept shallow, consisting of two graph attention layers followed by attentional aggregation and a compact clinical branch. Several regularization strategies were applied during training, including dropout (rate = 0.6), L2 weight decay (1 × 10−4), gradient clipping (maximum norm = 1.0), early stopping based on the internal validation C-index, and mild Gaussian noise augmentation of node features during training. The learning rate was set conservatively at 1 × 10−5, and cosine annealing warm restarts were used for learning-rate scheduling. In addition, to enhance the clinical interpretability of the model, a gradient-based feature attribution method was used to quantify and visualize the contributions of different clinical variables and MRI features to survival risk prediction. Gradient-weighted class activation mapping (Grad-CAM) was further applied to visualize the tumor regions that contributed most to model prediction.
+
+Cox Regression Analysis and Nomogram Construction
+
+Univariable and multivariable Cox proportional hazards regression models were used to analyze the associations of DLPS and clinical variables with OS. Variables with a P value < 0.05 in the multivariable Cox regression analysis were included in the nomogram. Based on the results of the multivariable analysis, a nomogram integrating DLPS and significant clinical variables was constructed to estimate individualized probabilities of OS. Calibration curves for the training and validation cohorts were plotted to assess the calibration performance of the model.
+
+Statistical Analysis
+
+Continuous variables were expressed as mean ± standard deviation or median (interquartile range), while categorical variables were presented as frequencies and percentages. For comparisons in the baseline table, normally distributed continuous variables were analyzed using Student’s t-test, whereas non-normally distributed continuous variables were analyzed using the Mann–Whitney U test. Categorical variables were compared using the chi-square test or Fisher’s exact test, as appropriate. A two-sided P < 0.05 was considered statistically significant. All statistical analyses were performed in Python (version 3.10.0).
+
+Ethics approval and consent to participate
+
+This study was conducted in accordance with the principles of the Declaration of Helsinki (2024 revision). The study protocol was reviewed and approved by the Ethics Committee of Zhangzhou Hospital Affiliated to Fujian Medical University (approval number: 2024KYB484; date of approval: 23 December 2024). All patient data were anonymized and de-identified prior to analysis. Due to the retrospective nature of this study, which utilized anonymized data from electronic medical records, the requirement for informed consent was waived by the same ethics committee.
+
+Results
+
+Baseline Characteristics of the Patients
+
+A total of 247 patients with LACSCC were included in this study. The baseline clinical and pathological characteristics of the patients in the training and validation cohorts are summarized in Table 1. No statistically significant differences were observed between the two cohorts in terms of age, FIGO stage, tumor volume, invasion status, lymph node metastasis, treatment strategies, or molecular biomarkers (all P > 0.05).Table 1. Baseline Characteristics
+
+Characteristic	Cohort group	P-value	
+Training cohort	Validation cohort	
+N=172	N=75	
+OS time (months), median [IQR]	​	27.82 [14.80–49.05]	29.50 [16.08–51.85]	0.914	
+OS status	Censored	146 (84.88%)	63 (84.00%)	1.000	
+Death	26 (15.12%)	12 (16.00%)	​	
+Age (year)	<65	73 (42.44%)	30 (40.00%)	0.828	
+≥65	99 (57.56%)	45 (60.00%)	​	
+Tumor volume (cm3)	<50	39 (22.67%)	20 (26.67%)	0.607	
+≥50	133 (77.33%)	55 (73.33%)	​	
+FIGO Stage	II	52 (30.23%)	29 (38.67%)	0.189	
+III	106 (61.63%)	37 (49.33%)	​	
+IVA	14 (8.14%)	9 (12.00%)	​	
+EGFR expression	IHC 1/2+	24 (13.95%)	15 (20.00%)	0.078	
+IHC 3/4+	140 (81.40%)	52 (69.33%)	​	
+unknown	8 (4.65%)	8 (10.67%)	​	
+HER-2 expression	IHC 0	84 (48.84%)	35 (46.67%)	0.230	
+IHC 1+	37 (21.51%)	10 (13.33%)	​	
+IHC 2+/3+	18 (10.47%)	8 (10.67%)	​	
+unknown	33 (19.19%)	22 (29.33%)	​	
+PD-L1 CPS	<1	8 (4.65%)	9 (12.00%)	0.140	
+≥1,<20	70 (40.70%)	26 (34.67%)	​	
+≥20	73 (42.44%)	28 (37.33%)	​	
+unknown	21 (12.21%)	12 (16.00%)	​	
+Corpus invasion	No	83 (48.26%)	33 (44.00%)	0.647	
+Yes	88 (51.74%)	42 (56.00%)	​	
+Vaginal invasion	No	6 (3.49%)	5 (6.67%)	0.190	
+Upper 2/3	145 (84.30%)	56 (74.67%)	​	
+Lower 1/3	21 (12.21%)	14 (18.67%)	​	
+Bladder invasion	No	162 (94.19%)	71 (94.67%)	1.000	
+Yes	10 (5.81%)	4 (5.33%)	​	
+Rectal invasion	No	166 (96.51%)	70 (93.33%)	0.317	
+Yes	6 (3.49%)	5 (6.67%)	​	
+Lymph node metastasis	No	104 (60.47%)	52 (69.33%)	0.403	
+Pelvic	52 (30.23%)	17 (22.67%)	​	
+Para-aortic	16 (9.30%)	6 (8.00%)	​	
+Concurrent chemotherapy	No	65 (37.79%)	34 (45.33%)	0.449	
+Yes	106 (62.21%)	41 (54.67%)	​	
+Neoadjuvant chemotherapy	No	133 (77.33%)	60 (80.00%)	0.764	
+Yes	39 (22.67%)	15 (20.00%)	​	
+Concurrent Nimotuzumab	No	38 (22.09%)	12 (16.00%)	0.356	
+Yes	134 (77.91%)	63 (84.00%)	​	
+Concurrent Immunotherapy	No	164 (95.35%)	72 (96.00%)	1.000	
+Yes	8 (4.65%)	3 (4.00%)	​	
+Data are presented as median [IQR] or n (%). P-values were calculated using chi-square test or Fisher’s exact test for categorical variables and Mann-Whitney U test for continuous variables. Missing data are indicated as “unknown.” Abbreviations: CPS, combined positive score; EGFR, epidermal growth factor receptor; FIGO, International Federation of Gynecology and Obstetrics; HER-2, human epidermal growth factor receptor 2; IHC, immunohistochemistry; IQR, inter-quartile range; OS, overall survival; PD-L1, programmed death ligand 1.
+
+Predictive Performance of DLPS for OS
+
+Time-dependent ROC curve analysis suggested that DLPS had moderate discriminative ability for predicting OS. In the training and validation cohorts, the AUCs of DLPS for predicting 1-year, 3-year, and 5-year OS were 0.664, 0.840, and 0.874, and 0.747, 0.749, and 0.706, respectively (Figure 1).Figure 1. Time-dependent ROC curves of the deep learning prognostic score (DLPS) for predicting 1-year, 3-year, and 5-year overall survival (OS) in the (A) training and (B) validation cohorts
+
+Patients were stratified into the high-DLPS group and low-DLPS group according to the median DLPS. KM survival analysis showed that, in validation cohort, patients in the high-DLPS group showed significantly improved OS than those in the low-DLPS group (P = 0.023; Figure 2).Figure 2. Kaplan-Meier survival curves for OS in the validation cohorts stratified by the median DLPS. Patients were categorized into the High-DLPS group and Low-DLPS group, and survival differences were compared using the log-rank test
+
+Univariable and Multivariable Cox Regression Analyses
+
+Univariable Cox proportional hazards regression identified several variables significantly associated with OS, including DLPS and selected clinical variables (Table 2). Given the limited number of outcome events (n = 38), the multivariable model was restricted to four covariates to maintain an acceptable events-per-variable ratio. Candidate variables with P < 0.20 in univariable analysis (including lymph node metastasis, bladder invasion, and nimotuzumab) were entered into a backward stepwise elimination procedure; only FIGO stage, concurrent chemotherapy, DLPS, and HER-2 status were retained in the final model. In the multivariable model, DLPS remained independently associated with OS after adjustment for other clinical prognostic factors, confirming its independent prognostic value. More advanced clinical stage,HER-2 expression IHC 2+/3+ was also identified as an independent risk factor, whereas concurrent chemotherapy was a protective factor.Table 2. Univariate and Multivariate Cox Regression Analyses of Prognostic Factors for Overall Survival in Patients With Locally Advanced Cervical Cancer
+
+Variable	Characteristic	Univariate HR (95% CI)	P value	Multivariate HR (95% CI)	P value	
+FIGO Stage	II (ref)	1.00	-	1.00	-	
+III	4.44 (1.04-18.96)	0.044	3.23 (0.73-14.39)	0.124	
+IVA	6.20 (1.03-37.16)	0.046	7.97 (1.28-49.69)	0.026	
+Concurrent chemotherapy	No (ref)	1.00	-	1.00	-	
+Yes	0.44 (0.20-0.97)	0.042	0.23 (0.10-0.55)	<0.001	
+DLPS	per SD increase	2.83(1.98-4.00)	<0.001	7.00(3.59-13.68)	<0.001	
+Age(years)	<65 (ref)	1.00	-	​	​	
+≥65	1.47 (0.65-3.30)	0.355	​	​	
+CPS	<1 (ref)	1.00	-	​	​	
+≥1,<20	1.41 (0.18-10.75)	0.741	​	​	
+≥20	1.39 (0.18-10.82)	0.752	​	​	
+EGFR expression	Low (IHC 1/2+) (ref)	1.00	-	​	​	
+High (IHC 3/4+)	0.61 (0.23-1.63)	0.323	​	​	
+HER-2 expression	IHC 0/1+ (ref)	1.00	-	​	​	
+IHC 2+/3+	3.17 (1.42-7.07)	0.005	4.27(1.54-11.79)	0.005	
+Tumor volume (cm3)	<50(ref)	1.00	-	​	​	
+≥50	1.56 (0.54-4.54)	0.412	​	​	
+Corpus invasion	No(ref)	1.00	-	​	​	
+Yes	1.31 (0.60-2.85)	0.497	​	​	
+Lymph node metastasis	No (ref)	1.00	-	​	​	
+Pelvic	1.93 (0.82-4.56)	0.132	​	​	
+Para-aortic	2.86 (0.99-8.24)	0.052	​	​	
+Bladder invasion	No (ref)	1.00	-	​	​	
+Yes	2.69 (0.80-8.99)	0.109	​	​	
+Rectal invasion	No (ref)	1.00	-	​	​	
+Yes	1.18 (0.12-8.33)	0.876	​	​	
+Neoadjuvant chemotherapy	No (ref)	1.00	-	​	​	
+Yes	0.68 (0.25-1.81)	0.441	​	​	
+Concurrent Nimotuzumab	No (ref)	1.00	-	​	​	
+Yes	0.32 (0.09-1.08)	0.065	​	​	
+Abbreviations: HR, hazard ratio; CI, confidence interval; DLPS, deep learning prognostic score; CPS, combined positive score; EGFR, epidermal growth factor receptor; HER-2, human epidermal growth factor receptor 2; IHC, immunohistochemistry; ref, reference category. Note: Variables with unstable estimates due to complete separation are excluded (Vaginal Invasion, Concurrent Immunotherapy).
+
+Incremental Value of DLPS
+
+As shown in Table S1, the addition of DLPS improved the prognostic performance of the clinical model. In the core clinical model including FIGO stage and concurrent chemotherapy, the C-index increased from 0.688 to 0.825 in the training cohort and from 0.573 to 0.750 in the internal validation cohort after adding DLPS. The time-dependent AUCs in the internal validation cohort also improved at 1, 3, and 5 years. In the screened clinical model based on variables with P < 0.20 in univariable analysis, the internal validation C-index increased from 0.676 to 0.790 after incorporating DLPS. As shown in Table S2, DLPS remained significantly associated with OS after adjustment for treatment-related variables, with an HR of 2.71 (95% CI, 1.90–3.87; P < 0.001) in the treatment-adjusted model and 2.66 (95% CI, 1.86–3.82; P < 0.001) after further adjustment for FIGO stage. These findings suggest that DLPS provides additional prognostic value beyond conventional clinical and treatment-related variables.
+
+Nomogram Construction and Calibration
+
+A nomogram integrating DLPS and significant clinical variables was constructed based on the multivariable Cox regression results to estimate individualized probabilities of OS (Figure 3). The nomogram showed generally acceptable agreement between predicted and observed survival outcomes in this cohort. Calibration curves in both the training and validation cohorts demonstrated good calibration at different time points, indicating reliable predictive performance.Figure 3. Nomogram integrating DLPS and significant clinical variables identified in the multivariable Cox regression analysis for individualized prediction of OS. Calibration curves in the training and validation cohorts show the agreement between predicted and observed survival probabilities at different time points
+
+Model Interpretability Analysis
+
+Grad-CAM heatmaps showed that the model primarily focused on intratumoral regions rather than the surrounding normal tissues (Figure 4A). Feature importance analysis, further revealed that DLPS was among the most important contributors to OS prediction (Figure 4B), followed by clinical variables such as clinical stage.Figure 4. Model interpretability analysis. (A) Gradient-weighted class activation mapping (Grad-CAM) heatmaps showing the tumor regions that contributed most to model prediction. (B) Feature importance analysis, showing the relative contributions of MRI features and clinical variables to OS prediction
+
+Discussion
+
+Accurate pretreatment prognostic stratification remains a major clinical challenge in patients with LACSCC, given the substantial heterogeneity in survival outcomes despite standard treatment.2,6,23 In this study, we developed and validated a multi-modal graph neural network model that integrates deep features derived from multisequence MRI with clinical variables to predict OS in patients with LACSCC. The model-derived DLPS demonstrated robust discriminative performance in the validation cohort and remained an independent predictor of OS in the multivariable Cox regression analysis. Furthermore, the nomogram incorporating DLPS and key clinical variables improved the feasibility and accuracy of individualized survival assessment. Taken together, these findings suggest that, within current imaging-based prognostic frameworks, explicit modeling of spatial imaging structure combined with clinical variables may provide additional value for prognostic stratification in LACSCC.
+
+Previous studies have extensively investigated the role of MRI-based radiomics in prognostic prediction for cervical cancer. However, approaches based on handcrafted texture, shape, and intensity features are often limited by feature stability and generalizability.12-15 With the increasing application of deep learning in cervical cancer imaging analysis, many studies have employed convolutional neural networks to automatically learn high-level imaging features and have shown promise in predicting treatment response and other clinically relevant outcomes. 24 Nevertheless, most of these studies, including a recent multi-center multimodal model by Wang et al, have targeted progression-free survival or relied on pooling-based aggregation; relatively few have addressed OS using structure-aware approaches.25-27 In this context, the stable performance of our model for OS prediction suggests that the deep features extracted by the network may capture tumor phenotypes associated with long-term prognosis. This prognostic association may be partly explained by the ability of multiparametric MRI to reflect tumor burden, local invasion, nodal status, and intratumoral heterogeneity before treatment. These imaging phenotypes may be related to aggressive tumor biology and impaired treatment response. Therefore, DLPS may capture prognostically relevant imaging information beyond conventional qualitative MRI assessment. Spatial heterogeneity is a prominent imaging characteristic of solid tumors and has been widely recognized as being closely associated with tumor biology, treatment response, and patient outcome. 10 In most existing deep learning studies based on cervical cancer MRI, sequential slices are either analyzed independently or aggregated using simple pooling strategies, which may not fully exploit the heterogeneous information distributed across the three-dimensional tumor space.12-15 Against this background, our study explicitly modeled the spatial adjacency relationships among MRI slices, allowing feature aggregation to preserve inter-slice contextual information and thereby provide a more comprehensive representation of overall tumor structure. 28 This strategy is consistent with the emerging trend toward structure-aware analysis in medical imaging research and offers a novel perspective for incorporating spatial heterogeneity into prognostic modeling for cervical cancer. 29
+
+Multimodal fusion of imaging features and clinical variables has generally been considered an effective approach for improving prognostic performance. 20 In the present study, imaging and clinical data were processed through parallel branches and fused at a high-level representation space, enabling DLPS to encode both imaging phenotypes and clinical risk information. 28 Importantly, DLPS retained its independent prognostic value after adjustment for clinical variables, including stage and treatment strategies, further supporting the utility of multimodal integration.
+
+Model interpretability is particularly important for deep learning-based prognostic models, as the “black-box” nature of these approaches may hinder their clinical acceptance and implementation. In the present study, we used multiple strategies to im-prove interpretability. Grad-CAM was applied to visualize the tumor regions contributing most to model prediction 30 and the resulting heatmaps showed that the model primarily focused on intratumoral regions rather than surrounding normal tissues, suggesting that the network captured lesion-relevant imaging patterns rather than re-lying predominantly on background signals. In addition, feature importance analysis was used to quantify the relative contributions of imaging-derived and clinical features to OS prediction. Furthermore, the nomogram integrating DLPS translated the model output into a clinically intuitive tool, which may facilitate its interpretation and application in individualized prognostic evaluation and treatment decision-making. 31
+
+DLPS was among the most influential contributors to OS prediction, supporting its role as a summary measure of prognostically relevant imaging phenotypes. Clinical stage remained an important predictor of OS, which is consistent with its established role in reflecting tumor extent and overall disease burden.32,33 Concurrent chemo-therapy emerged as a protective factor, consistent with its established role in improving outcomes in patients with locally advanced disease treated with definitive radiotherapy. 33 More importantly, DLPS remained independently associated with OS after adjustment for conventional clinical variables, indicating that it may capture prognostically relevant information beyond that reflected by routine clinical assessment. Collectively, these findings suggest that the proposed model may serve not as a replacement for established clinical indicators, but rather as a complementary tool for improving individualized prognostic stratification. 34
+
+Several clinical and molecular variables incorporated in the present model merit further discussion. EGFR overexpression has been associated with tumor proliferation, radioresistance, and adverse outcomes in cervical carcinoma, and its inclusion is clinically relevant given that the majority of patients in this cohort received concurrent nimotuzumab, an anti-EGFR monoclonal antibody. 35 PD-L1 expression, evaluated by CPS, reflects tumor immune evasion status and has demonstrated predictive significance for immunotherapy benefit in pivotal phase III cervical cancer trials. 36 HER2 overexpression, although relatively infrequent in cervical squamous cell carcinoma (approximately 5–15%), has been linked to aggressive tumor behavior in genomic and clinical cohorts. 35 These three biomarkers were processed through an independent clinical branch and fused with imaging features only at the representation level, consistent with the model’s rationale of integrating imaging-orthogonal biological dimensions. In the final nomogram, HER2 IHC 2+/3+ was the only molecular biomarker retained as an independent adverse prognostic factor (HR: 4.27, 95% CI: 1.54–11.79, P = 0.005), providing suggestive evidence that HER2 overexpression may identify a biologically high-risk subset, although the limited number of HER2-positive cases in this cohort warrants cautious interpretation and external validation.
+
+This study has several limitations. First, the limited number of outcome events (38 deaths, approximately 15%) restricts the number of covariates that can be reliably included in multivariable models and may produce unstable estimates or inflated performance metrics. Second, the single-center retrospective design necessitates external validation in larger, multi-institutional cohorts before clinical translation. Third, the imaging protocol included only conventional MRI sequences; the addition of dynamic contrast-enhanced sequences could further characterize the tumor microenvironment and should be explored in future work. Fourth, while Grad-CAM visualizations provide qualitative localization of model attention, they do not establish causal relationships between imaging features and tumor biology. Fifth, despite sensitivity analyses adjusting for treatment-related variables, residual confounding cannot be fully excluded given the non-randomized retrospective design. Finally, subgroup analyses based on molecular biomarkers were exploratory and underpowered; these findings should be regarded as hypothesis-generating rather than definitive. These limitations underscore the exploratory nature of the present framework and the need for prospective validation before clinical application. Future studies based on these findings should prioritize prospective multi-center validation, molecularly enriched cohorts to confirm the prognostic role of HER2, and extension of the graph framework to three-dimensional volumetric representations.
+
+Conclusion
+
+In this retrospective study, a multimodal graph neural network framework integrating multi-sequence MRI deep features and clinical variables was developed for predicting overall survival in patients with locally advanced cervical squamous cell carcinoma. The model-derived deep learning prognostic score demonstrated independent prognostic value and enabled effective stratification of patients into distinct risk groups. The nomogram combining the deep learning prognostic score with clinical stage, HER2 status, and concurrent chemotherapy showed favorable calibration, suggesting potential utility for individualized risk assessment. Given the single-center, retrospective design and the limited number of outcome events, these findings should be interpreted as exploratory. Prospective validation in larger, multi-institutional cohorts is needed to confirm the generalizability and clinical applicability of the proposed framework. Future studies integrating pathomics, genomics, and additional imaging modalities may further refine prognostic accuracy and advance the understanding of the biological determinants underlying the imaging-derived risk signatures.
+
+Supplemental Material
+
+Supplemental Material - A Multimodal Graph Neural Network Based on MRI Radi-omics for Prognostic Prediction in Locally Advanced Cervical Squamous Cell Carcinoma
+
+Supplemental Material for A Multimodal Graph Neural Network Based on MRI Radi-omics for Prognostic Prediction in Locally Advanced Cervical Squamous Cell Carcinoma by Yimin Li, Youjia Wang, Yaxin Kang, Furong Luo, Chunnuan Zheng, Ruiyu Zhuo, Lu Qiu, Yuanfu Xie, Yanhong Zhuo in Cancer Control
+
+Supplemental Material - A Multimodal Graph Neural Network Based on MRI Radi-omics for Prognostic Prediction in Locally Advanced Cervical Squamous Cell Carcinoma
+
+Supplemental Material for A Multimodal Graph Neural Network Based on MRI Radi-omics for Prognostic Prediction in Locally Advanced Cervical Squamous Cell Carcinoma by Yimin Li, Youjia Wang, Yaxin Kang, Furong Luo, Chunnuan Zheng, Ruiyu Zhuo, Lu Qiu, Yuanfu Xie, Yanhong Zhuo in Cancer Control
+
+ORCID iD
+
+Yanhong Zhuo https://orcid.org/0009-0001-9331-6025
+
+Ethical Considerations
+
+This study was conducted in accordance with the principles of the Declaration of Helsinki (2024 revision). The study protocol was reviewed and approved by the Ethics Committee of Zhangzhou Hospital Affiliated to Fujian Medical University (approval number: 2024KYB484; date of approval: 23 December 2024). All patient data were anonymized and de-identified prior to analysis. Due to the retrospective nature of this study, which utilized anonymized data from electronic medical records, the requirement for informed consent was waived by the same ethics committee.
+
+Consent to Participate
+
+Patient consent was waived due to the retrospective nature of this study, which utilized anonymized data from electronic medical records, as approved by the ethics committee.
+
+Data Availability Statement
+
+The data presented in this study are not publicly available due to institutional policies of the af-filiated hospital. Data may be obtained upon reasonable request to the corresponding author, who will assist in obtaining the necessary approval from the hospital for data access.*
+
+Appendix Abbreviations
+
+AUC Area Under the Curve
+
+CI Confidence Interval
+
+CPLL Cox Partial Likelihood Loss
+
+CPS Combined Positive Score
+
+CCT Concurrent Chemotherapy
+
+DLPS Deep Learning Prognostic Score
+
+DWI Diffusion-Weighted Imaging
+
+EBRT External Beam Radiotherapy
+
+EGFR Epidermal Growth Factor Receptor
+
+FIGO International Federation of Gynecology and Obstetrics
+
+GAT Graph Attention Network
+
+GNN Graph Neural Network
+
+Grad-CAM Gradient-Weighted Class Activation Mapping
+
+HDR-BT High-Dose-Rate Brachytherapy
+
+HER2 Human Epidermal Growth Factor Receptor 2
+
+HR Hazard Ratio
+
+IHC Immunohistochemistry
+
+IMRT Intensity-Modulated Radiotherapy
+
+IQR Interquartile Range
+
+KM Kaplan-Meier
+
+LACC Locally Advanced Cervical Cancer
+
+LACSCC Locally Advanced Cervical Squamous Cell Carcinoma
+
+MLP Multilayer Perceptron
+
+MRI Magnetic Resonance Imaging
+
+OS Overall Survival
+
+PD-L1 Programmed Death Ligand 1
+
+ROC Receiver Operating Characteristic
+
+ROI Region of Interest
+
+SGD Stochastic Gradient Descent
+
+T1CE Contrast-Enhanced T1-Weighted Imaging
+
+T2WI T2-Weighted Imaging
+
+VMAT Volumetric Modulated Arc Therapy
+
+Author Contributions: Conceptualization, Yimin Li and Yanhong Zhuo; methodology, Yimin Li and Ruiyu Zhuo; soft-ware, Ruiyu Zhuo; formal analysis, Youjia Wang and Ruiyu Zhuo; investigation, Yimin Li, Youjia Wang, Furong Luo, Chunnuan Zheng and Lu Qiu; data curation, Yimin Li and Youjia Wang; writing—original draft preparation, Yimin Li and Youjia Wang; writing—review and editing, Yaxin Kang, Yuanfu Xie and Yanhong Zhuo; supervision, Yuanfu Xie and Yanhong Zhuo; project administration, Yanhong Zhuo. All authors have read and agreed to the published version of the manuscript.
+
+Funding: The authors disclosed receipt of the following financial support for the research, authorship, and/or publication of this article: This research was funded by the Startup Fund for Scientific Research, Fujian Medical University (grant number 2023QH1346); the Climbing Project at the Doctor’s Studio of Zhangzhou Affiliated Hospital of Fujian Medical University (grant number PDB202322); and the Natural Science Foundation of Fujian Province (grant number 2024J011556). The APC was funded by the afore-mentioned grants. The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or in the decision to publish the results.
+
+The authors declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.
+
+Supplemental Material: Supplemental material for this article is available online.
+
+
+References
+
+1 Bray F Laversanne M Sung H , et al. Global cancer statistics 2022: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries. CA Cancer J Clin. 2024;74(3):229-263. doi:10.3322/caac.21834.38572751
+2 Perkins RB Wentzensen N Guido RS Schiffman M . Cervical Cancer Screening: A Review. JAMA. 2023;330(6):547-558. doi:10.1001/jama.2023.13174.37552298
+3 Wright JD Matsuo K Huang Y , et al. Prognostic Performance of the 2018 International Federation of Gynecology and Obstetrics Cervical Cancer Staging Guidelines. Obstet Gynecol. 2019;134(1):49-57. doi:10.1097/AOG.0000000000003311.31188324 PMC7641496
+4 Pötter R Tanderup K Schmid MP , et al. MRI-guided adaptive brachytherapy in locally advanced cervical cancer (EMBRACE-I): a multicentre prospective cohort study. Lancet Oncol. 2021;22(4):538-547. doi:10.1016/S1470-2045(20)30753-1.33794207
+5 McCormack M Eminowicz G Gallardo D , et al. Induction chemotherapy followed by standard chemoradiotherapy versus standard chemoradiotherapy alone in patients with locally advanced cervical cancer (GCIG INTERLACE): an international, multicentre, randomised phase 3 trial. Lancet. 2024;404(10462):1525-1535. doi:10.1016/S0140-6736(24)01438-7.39419054
+6 Abu-Rustum NR Campos SM Amarnath S , et al. Cervical Cancer, Version 2.2026, NCCN Clinical Practice Guidelines In. Oncology. J Natl Compr Canc Netw. 2025;23(12):549-573. doi:10.6004/jnccn.2025.0057.41671440
+7 Manganaro L Lakhman Y Bharwani N , et al. Correction to: Staging, recurrence and follow-up of uterine cervical cancer using MRI: Updated Guidelines of the European Society of Urogenital Radiology after revised FIGO staging 2018. Eur Radiol. 2022;32(1):738. doi:10.1007/s00330-021-08066-7.34142221
+8 Boemi S Pavan M Siena R , et al. Locally Advanced Cervical Cancer: Multiparametric MRI in Gynecologic Oncology and Precision Medicine. Diagnostics. 2025;15(22):2858. doi:10.3390/diagnostics15222858.41300883 PMC12651371
+9 Ho JC Allen PK Bhosale PR , et al. Diffusion-Weighted Magnetic Resonance Imaging as a Predictor of Outcome in Cervical Cancer After Chemoradiation. Int J Radiat Oncol Biol Phys. 2017;97(3):546-553. doi:10.1016/j.ijrobp.2016.11.015.28011045 PMC6112612
+10 Javadi S Kundra V . Multiparameter MRI and Clinical Factors for Predicting Early Response to Chemoradiotherapy in Cervical Cancer. Radiol Imaging Cancer. 2021;3(1):e209038. doi:10.1148/rycan.2021209038.33778762 PMC7983722
+11 Gillies RJ Kinahan PE Hricak H . Radiomics: Images Are More than Pictures, They Are Data. Radiology. 2016;278(2):563-577. doi:10.1148/radiol.2015151169.26579733 PMC4734157
+12 Gui B Autorino R Miccò M , et al. Pretreatment MRI Radiomics Based Response Prediction Model in Locally Advanced Cervical Cancer. Diagnostics. 2021;11(4):631. doi:10.3390/diagnostics11040631.33807494 PMC8066099
+13 Zhang X Zhao J Zhang Q , et al. MRI-based radiomics value for predicting the survival of patients with locally advanced cervical squamous cell cancer treated with concurrent chemoradiotherapy. Cancer Imaging. 2022;22(1):35. doi:10.1186/s40644-022-00474-2.35842679 PMC9287951
+14 Cai C Xiao JF Cai R , et al. Longitudinal dynamic MRI radiomic models for early prediction of prognosis in locally advanced cervical cancer treated with concurrent chemoradiotherapy. Radiat Oncol. 2024;19(1):181. doi:10.1186/s13014-024-02574-8.39707484 PMC11662755
+15 Xin W Rixin S Linrui L Zhihui Q Long L Yu Z . Machine learning-based radiomics for predicting outcomes in cervical cancer patients undergoing concurrent chemoradiotherapy. Comput Biol Med. 2024;177:108593. doi:10.1016/j.compbiomed.2024.108593.38801795
+16 Litjens G Kooi T Bejnordi BE , et al. A survey on deep learning in medical image analysis. Med Image Anal. 2017;42:60-88. doi:10.1016/j.media.2017.07.005.28778026
+17 Wu Z Pan S Chen F Long G Zhang C Yu PS . A Comprehensive Survey on Graph Neural Networks. IEEE Trans Neural Netw Learn Syst. 2020;32(1):4-24. doi:10.1109/TNNLS2978386.32217482
+18 Bianchi FM Grattarola D Livi L Alippi C . Graph Neural Networks With Convolutional ARMA Filters. IEEE Trans Pattern Anal Mach Intell. 2021;44(7):3496-3507. doi:10.1109/TPAMI3054830.33497331
+19 Zhou J Cui G Hu S , et al. Graph neural networks: A review of methods and applications. AI Open. 2020;1:57-81. doi:10.1016/j.aiopen.2021.01.001.
+20 Lambin P Leijenaar RTH Deist TM , et al. Radiomics: the bridge between medical imaging and personalized medicine. Nat Rev Clin Oncol. 2017;14(12):749-762. doi:10.1038/nrclinonc.2017.141.28975929
+21 Cohen PA Jhingran A Oaknin A Denny L . Cervical cancer. Lancet. 2019;393(10167):169-182. doi:10.1016/S0140-6736(18)32470-X.30638582
+22 Collins GS Moons KGM Dhiman P , et al. TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ. 2024;385:e078378. doi:10.1136/bmj-2023-078378.38626948 PMC11019967
+23 Lorusso D Xiang Y Hasegawa K , et al. Pembrolizumab or placebo with chemoradiotherapy followed by pembrolizumab or placebo for newly diagnosed, high-risk, locally advanced cervical cancer (ENGOT-cx11/GOG-3047/KEYNOTE-A18): a randomised, double-blind, phase 3 clinical trial. Lancet. 2024;403(10434):1341-1350. doi:10.1016/S0140-6736(24)00317-9.38521086
+24 Matsuo K Purushotham S Jiang B , et al. Survival outcome prediction in cervical cancer: Cox models vs deep-learning model. Am J Obstet Gynecol. 2019;220(4):381. doi:10.1016/j.ajog.2018.12.030e1-381.e14.PMC7526040 30582927
+25 Yang H Xu Y Gong J , et al. Automated Prediction of Complete Pathological Response to Neo-Adjuvant Chemoradiotherapy Using Hybrid Model-Based MRI Radiomics in Locally Advanced Cervical Cancer. International Journal of Radiation Oncology*Biology*Physics. 2022;114(3, Supplement):e94. doi:10.1016/j.ijrobp.2022.07.879.
+26 Wang W Yang G Liu Y , et al. Multimodal deep learning model for prognostic prediction in cervical cancer receiving definitive radiotherapy: a multi-center study. npj Digit Med. 2025;8(1):503. doi:10.1038/s41746-025-01903-9.40760164 PMC12322216
+27 Provenzano D Wang JY Haji-Momenian S , et al. Prediction of Progression After Cervix Cancer Radiotherapy Using a Machine-Learning Model on Pre-Treatment MRI. International Journal of Radiation Oncology*Biology*Physics. 2023;117(2, Supplement):S132. doi:10.1016/j.ijrobp.2023.06.482.
+28 Wang C Guo J Zhao N , et al. A Cancer Survival Prediction Method Based on Graph Convolutional Network. IEEE Trans Nanobioscience. 2019;19(1):117-126. doi:10.1109/TNB2936398.31443039
+29 Nyman J Denize T Bakouny Z , et al. Spatially aware deep learning reveals tumor heterogeneity patterns that encode distinct kidney cancer states. Cell Rep Med. 2023;4(9):101189. doi:10.1016/j.xcrm.2023.101189.37729872 PMC10518628
+30 Selvaraju RR Cogswell M Das A Vedantam R Parikh D Batra D . Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization. 2017 IEEE International Conference on Computer Vision (ICCV). 2017;2017:618-626. doi:10.1109/ICCV74.
+31 Iasonos A Schrag D Raj GV Panageas KS . How to build and interpret a nomogram for cancer prognosis. J Clin Oncol. 2008. 2007;26(8):1364-1370. doi:10.1200/JCO.12.9791.18323559
+32 Meng Q Wang W Liu X Wang D Zhang F . Nomograms Predicting Survival of Cervical Cancer Patients Treated With Concurrent Chemoradiotherapy Based on the 2018 FIGO Staging System. Front Oncol. 2022;12:870670. doi:10.3389/fonc.2022.870670.35646645 PMC9130963
+33 Sturdza AE Pötter R Kossmeier M , et al. Nomogram Predicting Overall Survival in Patients With Locally Advanced Cervical Cancer Treated With Radiochemotherapy Including Image-Guided Brachytherapy: A Retro-EMBRACE Study. Int J Radiat Oncol Biol Phys. 2021;111(1):168-177. doi:10.1016/j.ijrobp.2021.04.022.33932530
+34 Qiu H Wang M Wang S , et al. Integrating MRI-based radiomics and clinicopathological features for preoperative prognostication of early-stage cervical adenocarcinoma patients: in comparison to deep learning approach. Cancer Imaging. 2024;24(1):101. doi:10.1186/s40644-024-00747-y.39090668 PMC11292990
+35 Cancer Genome Atlas Research Network . Albert Einstein College of Medicine, Analytical Biological Services. Integrated genomic and molecular characterization of cervical cancer. Nature. 2017;543(7645):378–384. doi:10.1038/nature21386.28112728 PMC5354998
+36 Colombo N Dubot C Lorusso D , et al. Pembrolizumab for Persistent, Recurrent, or Metastatic Cervical Cancer. N Engl J Med. 2021;385(20):1856-1867. doi:10.1056/NEJMoa2112435.34534429

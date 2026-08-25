@@ -1,0 +1,407 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: J Gerontol A Biol Sci Med Sci
+Journal ID: J Gerontol A Biol Sci Med Sci
+NLM Journal ID: 9502837
+Journal ID: gerona
+
+The Journals of Gerontology Series A: Biological Sciences and Medical Sciences
+
+ISSN: 1079-5006
+EISSN: 1758-535X
+Publisher: Oxford University Press
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499689
+PMID: 42440338
+DOI: 10.1093/gerona/glag180
+Article ID: glag180
+Article version: 1
+Subjects: THE JOURNAL OF GERONTOLOGY: Biological Sciences, Original Article, AcademicSubjects/MED00280, AcademicSubjects/SCI00960
+
+Urinary metabolic age from high-resolution nuclear magnetic resonance spectroscopy reveals longitudinal aging patterns
+
+https://orcid.org/0000-0002-2587-8587 Gauß Karen Friederike PhD Institute of Clinical Chemistry and Laboratory Medicine, University Medicine Greifswald, Greifswald, Germany
+Institute of Clinical Chemistry and Laboratory Medicine, University Medicine Oldenburg, Oldenburg, Germany
+
+Friedrich Nele PhD Institute of Clinical Chemistry and Laboratory Medicine, University Medicine Greifswald, Greifswald, Germany
+German Center for Cardiovascular Research (DZHK), Partner Site Greifswald, Greifswald, Germany
+
+Henning Ann-Kristin PhD Institute of Clinical Chemistry and Laboratory Medicine, University Medicine Greifswald, Greifswald, Germany
+
+Hertel Johannes PhD German Center for Cardiovascular Research (DZHK), Partner Site Greifswald, Greifswald, Germany
+Department of Psychiatry and Psychotherapy, University Medicine Greifswald, Greifswald, Germany
+
+Grabe Hans Jörgen MD Department of Psychiatry and Psychotherapy, University Medicine Greifswald, Greifswald, Germany
+German Center for Neurodegenerative Diseases (DZNE), Greifswald, Germany
+
+https://orcid.org/0000-0001-7003-399X Völzke Henry MD Institute for Community Medicine, University Medicine Greifswald, Greifswald, Germany
+
+Nauck Matthias MD Institute of Clinical Chemistry and Laboratory Medicine, University Medicine Greifswald, Greifswald, Germany
+German Center for Cardiovascular Research (DZHK), Partner Site Greifswald, Greifswald, Germany
+
+Petersmann Astrid MD Institute of Clinical Chemistry and Laboratory Medicine, University Medicine Greifswald, Greifswald, Germany
+Institute of Clinical Chemistry and Laboratory Medicine, University Medicine Oldenburg, Oldenburg, Germany
+
+Duque Gustavo MD, PhD, FRACP, FGSA (Biological Sciences Section)
+Decision Editor
+Address correspondence to: Karen Friederike Gauß, PhD. E-mail: KarenFriederike.Gauss@med.uni-greifswald.de
+Publication date: 2026 Sep
+Electronic publication date: 2026 Jul 13
+Volume: 81
+Issue: 9
+Electronic Location ID: glag180
+Received 2026 Mar 2; Accepted 2026 Jul 2; 2026 Aug 22
+Copyright: © The Author(s) 2026. Published by Oxford University Press on behalf of the Gerontological Society of America.
+Copyright year: 2026
+License: This is an Open Access article distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivs licence (https://creativecommons.org/licenses/by-nc-nd/4.0/), which permits non-commercial reproduction and distribution of the work, in any medium, provided the original work is not altered or transformed in any way, and that the work is properly cited. For commercial re-use, please contact reprints@oup.com for reprints and translation rights for reprints. All other permissions can be obtained through our RightsLink service via the Permissions link on the article page on our site—for further information please contact journals.permissions@oup.com.
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Biological age, Urinary metabolomics, High resolution 1H nuclear magnetic resonance (NMR), Machine learning
+
+Funding: Community Medicine Research Network of the University Medicine Greifswald German Federal State of Mecklenburg—West Pomerania
+Page count: 12
+
+==============================
+Abstract
+
+Biological age captures inter-individual heterogeneity in aging process arising from genetic and environmental influences. Metabolites, as the end-products of metabolism, integrate these factors and are therefore well suited for biological age estimation. Urinary metabolomics, in particular, provides a non-invasive and information-rich matrix for assessing systemic metabolic states. We applied different machine learning techniques to develop a biological age score from high-resolution 1H nuclear magnetic resonance metabolites measured in urine samples from a large population-based cohort. The derived metabolic age score was applied to evaluate longitudinal trajectories over more than a decade. Cross-sectional associations with age-related clinical phenotypes were examined, and prospective analyses assessed associations with incident diseases and all-cause mortality. Metabolic age progression over time varied between individuals, underscoring inter-individual heterogeneity in metabolic aging. In cross-sectional analyses, the metabolic age score showed biologically plausible associations with a range of age-related clinical phenotypes. Furthermore, metabolic age was predictive of multiple diseases and all-cause mortality independent of chronological age. Our findings highlight the utility of urinary metabolomics as a robust, non-invasive approach for biological age assessment. The characterization of long-term metabolic age trajectories provides novel insight into inter-individual differences in aging and establishes urinary metabolic age as a promising tool for risk stratification and aging research.
+
+Graphical Abstract
+
+Graphical Abstract A urine sample vial is shown, followed by an arrow pointing to an NMR spectrometer labeled “77 urine metabolites.” A subsequent arrow leads to a scatterplot of metabolic age versus chronological age, illustrating Δage as the residual deviation from the regression line. Below, a horizontal bar reads: “NMR based biological age score to assess individual aging trajectories.” This is followed by longitudinal plots showing diverging biological age trajectories for individuals with antihypertensive medication and adiposity, indicating increasing separation between cases and controls over time. An arrow leads to a summary box stating that individuals with disease exhibit accelerated metabolic aging trajectories over time.
+
+Introduction
+
+Biological age, in contrast to chronological age, refers to an individual’s aging status based on various factors such as genetics, lifestyle or environmental influences. Thus, due to inter-individual variability in physiological characteristics, persons with the same chronological age may differ in biological age and consequently in the risk of age-related adverse outcomes.1 There are numerous approaches to develop biological age predictors using different biomarkers, eg, DNA methylation,2,3 telomere shortening,4 proteomics,5,6 clinical biomarkers7–9 and, more recently, metabolomics.1,10–12 Rutledge et al.13 provide a comprehensive overview of aging clocks derived from omics data, highlighting the increasing relevance of such models.
+
+Among the various approaches, metabolomics has emerged as a powerful tool for assessing biological aging.14,15 High-throughput metabolomics methods allow for the comprehensive profiling of small-molecule metabolites, which are the end products of metabolism and reflect both genetic and environmental influences. Because metabolite levels are closely related to an individual’s current physiological state, metabolomics is particularly suited to assess biological aging.14 Studies demonstrated that metabolic profiles change with age16 and metabolomics-based age scores have been shown to correlate with chronological age, predicting age-related diseases, and forecasting mortality risk.1,10,11,16,17
+
+For the analysis of urinary and plasma metabolites, 1H nuclear magnetic resonance (NMR) spectroscopy provides a robust and reproducible method with minimal sample preparation and the ability to quantify a broad spectrum of metabolites,18 facilitating the development of metabolic age scores. Urine, in particular, serves as a noninvasive and rich source of metabolic information, capturing systemic physiological changes associated with aging.19,20
+
+In a precedent work, Hertel et al.1 developed sex-specific metabolic age scores based on 400 MHz 1H NMR urinary data in the Study of Health in Pomerania (SHIP), a large population based cohort located in the northeast of Germany.21 Using non-linear regression models, their urinary age score showed strong correlations with chronological age and associations with clinical outcomes such as diabetes and adiposity. Moreover, the age score was predictive of all-cause mortality, and results were partially replicated in a second, independent SHIP cohort.
+
+Based on the work from Hertel et al.1 we present an updated metabolic age score derived from urinary metabolites measured on a higher-resolution 600 MHz NMR platform with a broader metabolite panel.
+
+Although several metabolic age scores have been developed in recent years, most existing models are based on blood-derived metabolite profiles and rely on cross-sectional data. Only a few studies1,17,22 used urinary 1H-NMR metabolic data (exclusively or in combination with other predictors) to construct an age predictor. However, even in this context, longitudinal analyses remain largely absent. One recent study investigated longitudinal metabolic age derived from NMR-measured plasma metabolites from more than 13 000 individuals.23 It was demonstrated that repeated measurements can be used not only to estimate biological age, but also the pace of aging. Individuals with accelerated metabolic aging showed an increased mortality risk, highlighting the clinical relevance of aging dynamics in addition to biological age itself.
+
+To our knowledge, only one published study1 has investigated longitudinal metabolic age derived from urine samples, but only in a small clinical cohort in 2-time points and no urinary metabolomics study assessed a larger cohort across multiple follow-up time points.
+
+This represents a drawback, as the dynamic nature of the metabolome may offer valuable insights into individual aging processes over time. By tracking changes in metabolic age within individuals over time, our study delivers the first longitudinal analysis of urinary metabolic aging in a large population-based cohort over more than a decade.
+
+Our findings aim to advance the field of biological aging concepts and offer new perspectives for precision health monitoring and disease risk stratification.
+
+Material and methods
+
+Study population
+
+The SHIP is a longitudinal, population-based cohort project conducted in West Pomerania, a region in northeastern Germany with the aim to investigate common risk factors, subclinical disorders and manifest diseases. The study design and methodology have been described in detail elsewhere.21 Briefly, a stratified random sample was drawn from local population registries, covering all registered inhabitants of the region. From a total population of 212 157 individuals, 4308 participants were enrolled in the baseline cohort SHIP-START-0 (1997-2001), of whom 3891 provided valid urine samples for 1H NMR spectroscopy. Since baseline, 4 follow-up examinations have been conducted approximately every 5 years: SHIP-START-1 (2002-2006; n = 3300), SHIP-START-2 (2008-2012; n = 2333), SHIP-START-3 (2014-2016; n = 1718) and SHIP-START-4 (2019-2021; n = 1182), allowing for longitudinal analyses of health trajectories, disease incidence, and biomarker dynamics over time.24 NMR-measurements of urinary samples with the same metabolite panel as in the baseline cohort were conducted for SHIP-START-2 (n = 2241) and SHIP-START-3 (n = 1567).
+
+In a subsequent phase, an independent sample, SHIP-TREND (n = 4420), was recruited from the same geographic region between 2008 and 2012, applying similar recruitment strategies and examination protocols. This design allowed for the comparison of 2 independent cohorts from the same source population across different time periods.24 NMR-measurement were conducted for n = 4322 participants.
+
+The study followed the recommendations of the Declaration of Helsinki. The medical ethics committee of the University of Greifswald approved the study protocol, and oral and written informed consents were obtained from each of the study participants.
+
+Measurements
+
+Sociodemographic variables and medical history were obtained through structured, computer-assisted interviews with similar procedures in SHIP-START and SHIP-TREND. Smoking behavior was classified into current smokers and nonsmokers. Information on physical activity was self-reported and categorized into 2 groups: inactive (no reported activity) and regularly active (more than 1 hour per week). Likewise, information on intake of hypertensive medication and on history of myocardial infarction and stroke was self-reported. Further, all participants underwent standardized physical examinations. Body height and weight were measured to calculate body mass index (BMI).
+
+Laboratory analysis
+
+Biochemical analyses were performed by certified laboratory personnel following the manufacturer’s protocols. Glycated hemoglobin (HbA1c) levels were measured via high-performance liquid chromatography (Bio-Rad Diamat, Munich, Germany). Triglycerides, cholesterol, creatinine and cystatine C concentrations were assessed photometrically (Dimension Vista; Siemens Healthcare Diagnostics, Eschborn, Germany). Creatinine and cystatine C were used to calculate the estimated glomerular filtration rate (eGFR) using the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) formula.25 Renal insufficiency was defined as eGFR < 60 mL min−1 /1.73 m2, hypercholesterolemia as total cholesterol ≥ 5.17 mmol L−1, and hypertriglyceridemia as triglycerides ≥2.26 mmol L−1.
+
+NMR measurements
+
+The samples, which are stored at −80°C, were slowly thawed and brought to room temperature. After thawing, 540 µL of urine were mixed with 60 µL of urine buffer.
+
+The urine buffer used is a phosphate buffer (1,5 M KH2PO4) containing 0.1% contained sodium 3-trimethylsilyl-(2,2,3,3-D4)-1-propionate (TSP), 2 mM sodium azide (NaN3) and has a pH of 7.4.
+
+The urine samples were measured at the University Medicine Greifswald Spectra on 600 MHz Bruker Avance IVDr systems (Bruker Biospin, Ettlingen, Germany) and a 5-mm BBI probe, equipped with a z-gradient and an automated tuning and matching unit (Bruker Biospin).
+
+Specimens were automatically delivered to the spectrometer via Sample Jet (Bruker Biospin) in standard 5 mm NMR tubes. The settings used correspond to those from the Bruker’s bodyfluid NMR methods package (B.I.Methods2.0, Bruker Biospin). The acquisition temperature was set to 300°K. A standard one-dimensional 1H NMR pulse sequence with suppression of the water peak (Bruker pulse sequence “noesygppr1d”; NOESY, Nuclear Overhauser and Exchange Spectroscopy) was used. The sequence has the form RD-gz, 1-90°-t-90°-tm-gz2-90°AQ-90°, where RD is the relaxation delay (4 s), 90° represents the 90° random forest (RF) hard pulse, t is a short delay (4 µs), tm is the mixing time (10 ms), gz1 and gz2 are the magnetic field z gradients both applied for 1 ms and AQ is the acquisition time (2.7 s) collecting 64 k data points at a spectral width of 20 ppm. A low power pulse is applied at the water resonance frequency to saturate the solvent signal during RD and tm. The receiver gain is set at 90.5 for all experiments. For pre-processing, a line broadening of 0.3 Hz, a zero filling to produce 128 k data points and zero order phase correction were applied.
+
+Automated quantification of urine metabolites was performed on the spectra using the Bruker IVDr Quantification in Urine Analysis (B.I.Quant-UR eTM, Bruker Biospin).
+
+Mortality analysis
+
+Vital status was assessed through annual queries to local population registries from study enrollment until January 2023. Participants were censored at the date of death or last known follow-up. Follow-up duration was calculated as the number of days between baseline assessment and the censoring date. The median follow-up time was 20.2 years (interquartile range IQR: 18.4-21.8) for SHIP-START and 9.0 years (IQR: 7.5-11.7) for SHIP-TREND. The underlying cause of death was defined by 2 independently working internists with joint reading in case of disagreements.
+
+Statistical analysis
+
+Metabolites with more than 50% values below the limit of detection (LOD) were excluded from analysis, thus keeping 77 out of 150 metabolites for analysis. Measurements below the LOD were treated as zero. The 50% threshold was selected to ensure robust estimation and model stability, as metabolites detected in only few participants provide limited quantitative information for population-based modeling and are more sensitive to imputation-related uncertainty. Urinary metabolite concentrations were normalized to urinary creatinine to account for differences in urine dilution arising from hydration status. Although urinary creatinine concentrations may vary with age, they are also characterized by substantial within-person variability.26 Creatinine normalization therefore remains a widely used approach in epidemiological urine metabolomics studies to improve comparability across samples. Also, sensitivity analysis using probabilistic quotient normalization as an alternative normalization method yielded virtually identical model performance (Table S3).
+
+Model training and selection and biological aging metrics (SHIP-TREND-0)
+
+To develop the metabolic age score, we trained multiple machine learning models to predict chronological age from metabolite concentrations in SHIP-TREND-0. Training models included linear regression, support vector machines, least absolute shrinkage and selection operator (LASSO) regression, random forest (RF) and gradient boosting (XGBoost). For internal validation, 10-fold cross-validation within the training data set was applied. Performance of the models was evaluated using mean absolute error (MAE) and mean coefficient of determination (R2).
+
+Further analysis was carried out based on the best-performing model (XGBoost). Shapley additive explanations (SHAP) values were used to interpret the contribution of each predictor variable in the XGBoost model. Global feature importance was measured as the mean absolute SHAP value across all observations.
+
+A residual age score (Δage) was derived as the residual when regressing metabolic age on chronological age, see Figure 1A for illustration. Thus, Δage captures the component of the metabolomic signal that is independent of chronological age and therefore represents the additional biological information encoded in the metabolic profile. Positive Δage values indicate higher biological age than expected, whereas negative values reflect lower biological age than expected.
+
+Figure 1 (A) Scatterplot of metabolic age over chronologic age. Red line: linear regression line. The blue arrows denote Δage, the age-independent residual part of the metabolic age score when regressing metabolic age on chronologic age (figure adapted from Hertel et al.1). Positive Δage indicates higher biological age than expected, while negative Δage indicate lower biological age than expected. (B) Kaplan–Meier curves for tertiles of Δage for training data SHIP-TREND-0 (left) and test data SHIP-START-0 (right). The lines represent the groups with lowest (red), median (green), and highest (blue) tertiles of Δage. Survival functions were not equal (log-rank test, p < .001 and p = .02, respectively). (C) Trajectories of residual age over time per outcome group for antihypertensive medication, adiposity and physical activity.
+
+Figure 1 contains three panels. Panel A shows a scatterplot of metabolic age versus chronological age. A linear regression line is overlaid in red. Blue arrows illustrate Δage as the vertical residual distance from the regression line for individual observations. Points above the regression line indicate positive Δage (higher biological age than expected), while points below indicate negative Δage (lower biological age than expected). Panel B shows Kaplan–Meier survival curves stratified by tertiles of Δage for 2 cohorts: SHIP-TREND-0 (left) and SHIP-START-0 (right). Three curves are displayed per cohort: lowest Δage tertile (red), middle tertile (green), and highest tertile (blue). In both cohorts, the lowest Δage tertile shows the highest survival probability, and the highest Δage tertile shows the lowest survival probability, with the middle tertile in between. Survival curves differ significantly between groups (log-rank test p < .001 in SHIP-TREND-0 and p = .02 in SHIP-START-0). Panel C shows trajectories of residual age over time stratified by outcome groups. For antihypertensive medication and adiposity, cases start with higher biological age at baseline and show increasing divergence over time, with cases exhibiting increasing biological age and controls showing decreasing biological age. For physical activity, cases also start with higher biological age at baseline; over time, biological age decreases in cases and increases in controls.
+
+For external validation, the XGBoost model was applied to the independent SHIP-START-0 and MAE and R2 were determined.
+
+Associations with clinical endpoints and risk factors (cross-sectional analysis in SHIP-TREND-0 and SHIP-START-0)
+
+Associations between Δage and clinical and demographic variables were assessed using Δage as dependent variable and clinical endpoints and risk factors as predictors. Linear regression models were used for continuous predictors and analysis of variance for binary variables; both models were adjusted for sex. Clinical endpoints and risk factors included diabetes, intake of antihypertensive medication (self-reported), history of myocardial infection (self-reported), history of stroke (self-reported), adiposity (BMI > 30 kg m−2), hypertriglyceridemia, hypercholesterolemia, physical activity (self-reported), current smoking (self-reported), renal insufficiency, BMI and HbA1c. P-values were corrected for multiple testing using the Benjamini-Hochberg method, controlling the false discovery rate at 5%.
+
+To evaluate the prognostic value of Δage at baseline, logistic regression models were used to predict incident outcomes at follow-up (SHIP-START-1), adjusting for sex. Model discrimination was assessed using the area under the receiver operating characteristic curve (AUC-ROC).
+
+Survival analysis with mortality outcomes (SHIP-TREND-0 and SHIP-START-0)
+
+We assessed the association between Δage and all-cause mortality using Cox proportional hazards models. Further, the same analysis was conducted with adjustment for chronological age, sex, BMI, smoking, diabetes and physical activity. We assessed the proportional hazards assumption using Schoenfeld residuals; all p-values were greater than 0.5, indicating no evidence for a violation of the assumption. For illustration, Kaplan–Meyer plots were plotted for tertiles of Δage. Log-rank test was applied to test for significant differences between the survival curves.
+
+Longitudinal trajectories of metabolic age (SHIP-START-0, SHIP-START-2, SHIP-START-3)
+
+To investigate changes in biological aging of the outcome groups over time, metabolic age was analyzed at 3-time points (SHIP-START-0, SHIP-START-2, SHIP-START-3; NMR measurements with the same metabolite panel were not available for SHIP-START-1). We used linear mixed-effects models with random intercepts for individuals, and time, clinical outcome and sex as well as the interaction term outcome*time as fixed effects to model trajectories. Interaction terms were assessed to test whether aging trajectories differed by clinical status. For illustration, the trajectories of residual age across follow-ups were plotted per outcome group.
+
+All statistical analyses were performed in R version 4.3.2 (R Foundation for Statistical Computing, Vienna, Austria; 2023. URL https://www.R-project.org/.). Training models were implemented using the caret, xgboost, glmnet, and randomForest packages. Mixed models used the lmerTest package; survival analysis used the survival and survminer packages. ROC analyses were conducted with the pROC package.
+
+ChatGPT (OpenAI) was used for assistance with language editing, graphical abstract creation, and technical support in code debugging. All scientific content and analyses remain the responsibility of the authors.
+
+Results
+
+After exclusion of NMR data due to failed quality reports (according to the manufacturer’s recommendations) or missing clinical data, n = 3701 (SHIP-START-0), n = 2160 (SHIP-START-2), n = 1441 (SHIP-START-3), and n = 4184 (SHIP-TREND-0) NMR spectra were available for analysis. Table 1 gives the cohort characteristics of the baseline SHIP-START-0 and the baseline SHIP-TREND-0. In SHIP-TREND-0, participants were older on average and had a higher BMI, while more participants were physically active and less participants reported smoking. Table S1 gives metabolite concentrations for the baselines SHIP-START-0 and SHIP-TREND-0.
+
+Table 1 Characteristics of the SHIP-START-0 and SHIP-TREND-0 participants.a
+
+Outcome	SHIP-START-0 (n = 3701)	SHIP-TREND-0 (n = 4184)	p	
+Age (yr)	49.70 (16.31)	51.83 (15.50)	<.001	
+Sex (male) (%)	49.23	48.80	.723	
+BMI (kg m−2)	27.21 (4.69)	28.07 (5.17)	<.001	
+HbA1c (mmol mol−1 Hb)	5.44 (0.92)	5.35 (0.78)	<.001	
+Physical activity (%)	41.76	69.26	<.001	
+Current smoking (%)	30.44	26.62	<.001	
+Diabetes (%)	10.87	12.06	.146	
+Antihypertensive medication (%)	25.01	34.18	<.001	
+Myocardial infarction (%)	2.78	3.09	.481	
+Stroke (%)	1.68	2.11	.252	
+Adiposity (%)	24.95	31.18	<.001	
+Renal insufficiency (%)	1.24	2.05	.014	
+Hypertriglyceridemia (%)	24.35	18.46	<.001	
+Hypercholesterolemia (%)	57.06	58.13	<.001	
+Abbreviations: BMI, body mass index; eGFR, estimated glomerular filtration rate.
+
+a Mean (SD) values for continuous outcomes, proportions for categorical outcomes. p-values from 2-sided t-test for continual outcomes, chi-squared test for proportions, adjusted for multiple testing using the Benjamini-Hochberg method. Myocardial infarction, stroke, antihypertensive medication, current smoking and physical activity self-reported; renal insufficiency (eGFR < 60 mL min−1/1.73 m2, eGFR calculated with CKD-EPI formula using serum creatinine and cystatine C); adiposity (BMI > 30 kg m−2); hypertriglyceridemia (TG > 2.26 mmol L−1); hypercholesterolemia (chol > 5.17 mmol L−1).
+
+Model training and performance (SHIP-TREND-0 and SHIP-START-0)
+
+Multiple machine learning models to estimate biological age from metabolic profiles were trained on SHIP-TREND-0 and internal 10-fold cross validation was performed. Among all models evaluated, the XGBoost model showed the best performance based on lowest MAE and highest R2, see Table S2. Mean MAE (mean from 10-fold internal validation) and mean R2 for the XGBoost model were MAE = 8.95 (standard deviation SD = 0.28) years (age range of the study sample 20-84 years) and R2 = 0.49 (SD = 0.03).
+
+For external validation, the XGBoost model was applied in the independent test data set SHIP-START-0 and MAE and R2 were calculated: MAE = 11.65 [y], R2 = 0.38 (age range 20-81 years).
+
+Variable importance based on SHAP values is shown for the top 20 metabolites in Figure S1.
+
+Association of Δage with clinical endpoints and risk factors (SHIP-TREND-0 and SHIP-START-0)
+
+We assessed the associations between the age-independent part of the metabolic age score (Δage) and a broad set of clinical endpoints and risk facto5rs. Results are given in Table 2. In the training data set SHIP-TREND-0, all endpoints were significantly associated to Δage. For diabetes, intake of antihypertensive medication, myocardial infarction, stroke, adiposity, hypertriglyceridemia, current smoking and renal insufficiency, Δage was higher in the outcome group, whereas physical active individuals and probands with hypercholesterolemia had lower Δage compared to the reference group. Additionally, BMI and HbA1c were positively associated with Δage. For replication, the same analysis was conducted in SHIP-START-0, exhibiting significant associations for diabetes, intake of antihypertensive medication, history of myocardial infarction, stroke, current smoking, renal insufficiency and HbA1c. Associations remained significant after adjusting for multiple testing for diabetes, stroke, renal insufficiency and HbA1c. Directions of effect were the same as in SHIPT-TREND-0, except for smoking, which was inversely associated to Δage in the test data.
+
+Table 2 Associations of Δage to clinical outcomes and risk factors in training and test data set.a
+
+Outcome	Cases	Controls	Direction of effect	p	p-adjust	
+Train data (SHIP-TREND-0)	
+ Diabetes	504	3674	Cases older	<.001	<.001	
+ Antihypertensive medication	1427	2748	Cases older	<.001	<.001	
+ Myocardial infarction	129	4042	Cases older	<.001	<.001	
+ Stroke	88	4084	Cases older	.019	.019	
+ Adiposity	1303	2876	Cases older	<.001	<.001	
+ Hypertriglyceridemia	771	3406	Cases older	<.001	<.001	
+ Hypercholesterolemia	2428	1749	Cases younger	<.001	<.001	
+ Physical activity	2884	1280	Cases younger	.007	.008	
+ Current smoking	1109	3057	Cases older	.014	.015	
+ Renal insufficiency	83	3957	Cases older	<.001	<.001	
+ BMI	—	—	Increase	<.001	<.001	
+ HbA1c	—	—	Increase	<.001	<.001	
+Test data (SHIP-START-0)	
+ Diabetes	401	3289	Cases older	<.001	<.001	
+ Antihypertensive medication	921	2761	Cases older	.037	.063	
+ Myocardial infarction	102	3572	Cases older	.029	.058	
+ Stroke	62	3618	Cases older	.005	.020	
+ Adiposity	922	2773	n.s.	.873	.873	
+ Hypertriglyceridemia	825	2563	n.s.	.740	.807	
+ Hypercholesterolemia	1935	1456	n.s.	.177	.236	
+ Physical activity	1539	2146	n.s.	.068	.102	
+ Current smoking	1122	2564	Cases younger	.024	.058	
+ Renal insufficiency	42	3333	Cases older	.007	.021	
+ BMI	—	—	n.s.	.609	.731	
+ HbA1c	—	—	Increase	<.001	<.001	
+Abbreviations: BMI, body mass index; eGFR, estimated glomerular filtration rate; n.s. not significant.
+
+a ANOVA for binary outcomes, linear regression for continuous outcomes, both adjusted for sex. p-adjust: p-value adjusted for multiple testing using the Benjamini-Hochberg method. Myocardial infarction, stroke, antihypertensive medication, current smoking and physical activity self-reported; renal insufficiency (eGFR < 60 mL min−1/1.73m2, eGFR calculated with CKD-Epi formula using serum creatinine and cystatine C); adiposity (BMI > 30 kg m−2); hypertriglyceridemia (TG > 2.26 mmol L−1); hypercholesterolemia (chol > 5.17 mmol L−1).
+
+Prediction of outcomes in follow up (SHIP-START-1)
+
+We examined whether baseline Δage in SHIP-START-0 predicted future disease outcomes in the SHIP-START-1 follow-up study about 5 years later. Results of logistic regression models are given in Table 3. Higher Δage at baseline was significantly associated with increased odds of incident diabetes, myocardial infarction, stroke and renal insufficiency over time. For smoking, lower Δage predicted smoking in SHIP-START-1. Further, higher Δage at baseline was linked to higher HbA1c levels in the follow-up. Findings remained significant after adjusting for multiple testing for HbA1c, diabetes and renal insufficiency.
+
+Table 3 Predictive value of Δage in SHIP-START-0 for incident outcomes at first follow-up SHIP-START-1.a
+
+Outcome	Cases (follow-up)	Controls (follow-up)	OR/estimate (95% CI)	p	p.adj	AUC (95% CI)	
+Diabetes	524	2317	1.02 (1.01-1.03)	0.004	0.016	0.65 (0.62-0.67)	
+Antihypertensive medication	918	1912	n.s.	0.664	0.865	0.65 (0.63-0.67)	
+Myocardial infarction	109	2708	1.03 (1.00-1.05)	0.031	0.086	0.71 (0.66-0.76)	
+Stroke	71	2749	1.03 (1.00-1.06)	0.049	0.098	0.73 (0.67-0.78)	
+Adiposity	848	1985	n.s.	0.666	0.865	0.56 (0.54-0.59)	
+Hypertriglyceridemia	638	2017	n.s.	0.865	0.865	0.52 (0.50-0.55)	
+Hypercholesterolemia	1390	1274	n.s.	0.600	0.865	0.53 (0.51-0.55)	
+Physical activity	1109	1720	n.s.	0.770	0.865	0.53 (0.51-0.56)	
+Current smoking	740	2086	0.99 (0.98-1.00)	0.036	0.086	0.63 (0.61-0.66)	
+Renal insufficiency	79	2592	1.05 (1.02-1.08)	0.002	0.012	0.80 (0.76-0.85)	
+BMI	—	—	n.s.	0.823	0.865	—	
+HbA1c	—	—	0.01 (0.01-0.01)	<0.001	<0.001	—	
+Abbreviations: AUC, area under curve; BMI, body mass index; CI, confidence interval; OR: Odds ratio.
+
+a p-Value for logistic regression (binary outcomes) and linear regression (continuous outcomes), adjusted for sex. p.adj: p-value adjusted for multiple testing. AUC for ROC-analysis. Myocardial infarction, stroke, antihypertensive medication, current smoking and physical activity self-reported; renal insufficiency (eGFR < 60 ml/min/1.73m2, eGFR calculated with CKD-Epi formula using serum creatinine and cystatine C); adiposity (BMI > 30 kg/m2); hypertriglyceridemia (TG > 2.26 mmol/L); hypercholesterolemia (chol > 5.17 mmol/L); n.s. not significant.
+
+For diabetes (AUC = 0.65), antihypertensive medication (AUC = 0.65), myocardial infarction (AUC = 0.71), stroke (AUC = 0.73), and smoking (AUC = 0.63), ROC analyses demonstrated a moderate discriminative ability, while AUC was 0.80 for renal insufficiency, with a good discriminative ability.
+
+Survival analysis (SHIP-TREND and SHIP-START)
+
+In SHIP-TREND, Cox proportional hazards analysis showed significant association of Δage with all-cause mortality (HR = 1.35 [95% confidence interval (CI), 1.22-1.49] per SD, p < .001). Analysis with additional confounders showed the residual age to be still a significant predictor of all-cause mortality (age and sex adjusted model: HR = 1.31 [95% CI, 1.19-1.44], p < .001; fully adjusted model: HR = 1.23 [95% CI, 1.12-1.36], p < .001). In the replication cohort SHIP-START, Δage was equally significantly associated with all-cause mortality (HR = 1.08 [95% CI, 1.02-1.15] per SD, p = .012; age and sex adjusted model: HR = 1.13 [95% CI, 1.06-1.20], p < .001; fully adjusted model: HR = 1.13 [95% CI, 1.06-1.21], p < .001).
+
+Kaplan–Meier curves illustrate survival probabilities over time stratified by tertiles of Δage, see Figure 1B. Log-rank test was significant (p < .001 and p = .02 for SHIP-TREND and SHIP-START, respectively).
+
+Longitudinal changes in predicted age (SHIP-START)
+
+In individuals with NMR measurements at baseline SHIP-START-0 and at follow-ups SHIP-START-2 and SHIP-START-3, we assessed the longitudinal course of predicted age analyzing interaction effects of clinical endpoints and time in a mixed-effects model. Results are given in Table 4.
+
+Table 4 Development of metabolic age over time (baseline and 2 follow-ups).a
+
+Outcome	p	p.adj	Estimate (95% CI)	
+Diabetes	.233	.350	n.s.	
+Antihypertensive medication	.013	.039	0.07 (0.01-0.12)	
+Myocardial infarction	.749	.749	n.s.	
+Stroke	.345	.414	n.s.	
+Adiposity	<.001	<.001	0.14 (0.08-0.20)	
+Hypertriglyceridemia	.056	.118	n.s.	
+Hypercholesterolemia	.337	.414	n.s.	
+Physical activity	.008	.032	−0.07 (−0.13 to −0.02)	
+Current smoking	.402	.439	n.s.	
+Renal insufficiency	.069	.118	n.s.	
+BMI	<.001	<.001	0.01 (0.01-0.02)	
+HbA1c	.061	.118	n.s.	
+Abbreviations: BMI, body mass index; CI, confidence interval; n.s., not significant.
+
+a p-Values for interaction terms outcome*time from linear mixed effects models, p.adj: p-Values adjusted for multiple testing. Myocardial infarction, stroke, antihypertensive medication, current smoking and physical activity self-reported; renal insufficiency (eGFR < 60 mL min−1/1.73 m2, eGFR calculated with CKD-Epi formula using serum creatinine and cystatine C); adiposity (BMI > 30 kg m−2); hypertriglyceridemia (TG > 2.26 mmol L−1); hypercholesterolemia (chol > 5.17 mmol L−1).
+
+Significant interaction effects were found for antihypertensive medication, adiposity, physical activity and BMI, indicating that the change of Δage over time depends on these factors. For example, participants with adiposity showed a significantly higher increase in residual age over time compared to non-obese individuals (p < .001, β =  0.14 [95% CI, 0.08-0.20]). For illustration, Figure 1C shows the longitudinal trajectories according to clinical status for the significant binary endpoints.
+
+Discussion
+
+We developed and validated a biological age score derived from urinary metabolites quantified by high resolution 1H NMR spectroscopy with a broad panel of 77 quantified metabolites. To our knowledge, for the first time, longitudinal analysis of biological age based on urinary metabolite data in a large cohort over more than 15 years was considered.
+
+Over the last years, numerous studies assessed biological age scores derived from metabolic data.1,10,16,17,23,27–29 Mostly, metabolic age clocks were derived based on plasma metabolites. Only few studies developed age scores using urinary metabolites,1,17,22 with only one study assessing longitudinal aspects.1
+
+Plasma and urine capture complementary aspects of systemic metabolism. While plasma metabolite concentrations are tightly regulated to maintain systemic homeostasis, urinary metabolite profiles reflect the physiological processes required to achieve this homeostasis. As previously described in literature,30 the urinary metabolome is shaped by both intrinsic factors, such as genetics and physiology, and extrinsic influences, including fluid consumption, dietary intake and gut microbiome activity. Consequently, plasma and urinary metabolic profiles may therefore provide complementary information on biological aging.
+
+In our study, different machine learning models were trained on chronological age in a large population based cohort using NMR measured urinary metabolites. From the best performing model, we calculated the metabolic age and derived the residual from regressing metabolic age on chronological age. This residual age, referred to as the “informative error” in,31 reflects the biologically meaningful deviation from chronological age. Thus, it represents the component of the metabolic signal that is independent of chronological age and thus captures additional information relevant to underlying aging processes.
+
+Among the tested machine learning models, XGBoost showed the best overall performance regarding R2 and MAE. The observed MAE lies in the upper range of previously reported metabolomics-based biological age prediction models, which typically range from approximately 4-10 years depending on sample material, platform and method, eg, Lau et al.,10 van den Akker et al.,11 Robinson et al.17 Especially, the distinct biological information captured by plasma and urine metabolite profiles and the higher variability of urinary metabolite concentrations may contribute to differences in the performance statistics. Linear and LASSO regression performed worst. This pattern likely reflects correlated metabolite features or non-linear relationships in the data, which limit the performance of linear modeling approaches. The XGBoost model demonstrated stable accuracy, with consistent results across cross-validation, as reflected in the low SD. External validation in the independent SHIP-START-0 yielded moderately reduced accuracy, which is expected and likely reflects differences between the cohorts (see Table 1), as well as differences in urine collection and processing procedures. However, the main question in the context of this study is not, if R2 and MAE of the biological age model are fully reproducible across cohorts, but if the additional information lying within the residual age is maintained in independent cohorts.
+
+For this, in cross-sectional analysis, we analyzed associations of the residual Δage with clinically relevant outcomes and risk factors in both training and test cohort to assess the transferability of the informational content of the residual age score. In the training cohort all outcomes were significantly associated to Δage. Results from the training cohort could be replicated in the test cohort for diabetes, intake of antihypertensive medication, myocardial infarction, stroke, renal insufficiency, smoking and HbA1c, showing that the biological meaningful information of the metabolic age score is transferable across cohorts. Further, while we found no significant association for adiposity in the test cohort, we found a significant association for a more strictly defined obesity (BMI ≥ 40 kg m−2; p = .045). Overall, our findings confirm results from other studies which equally found associations of metabolic age with diabetes,11,17,28 adiposity,1,28,32 cardiovascular risk factors and diseases1,28 and renal insufficiency.1
+
+In the training cohort, higher residual age at baseline was linked to diabetes, antihypertensive medication, myocardial infarction, stroke, adiposity, renal insufficiency, hypertriglyceridemia and elevated BMI and HbA1c levels, whereas physical activity and hypercholesterolemia were inversely associated to Δage. Directions of effects were consistent in the training cohort for significant findings, with the exception of smoking. Mostly, the direction of effects between outcomes and residual age were biologically meaningful, whereas results for smoking and hypercholesterolemia have to be discussed.
+
+The opposite directions of the associations between smoking and biological age observed in SHIP-START-0 and SHIP-TREND-0 should be interpreted cautiously. While smokers in SHIP-TREND-0 were biologically older, smokers in SHIP-START-0 were biologically younger. A similar pattern was observed for physical activity as another behavioral variable: physically active individuals were biologically younger in SHIP-TREND-0 but showed the opposite (non-significant) trend in SHIP-START-0. Thus, the associations observed in SHIP-TREND-0 were not consistently replicated in SHIP-START-0. These findings likely reflect cohort-specific and methodological differences. Smoking prevalence was higher in SHIP-START-0, whereas physical activity levels were higher in SHIP-TREND-0 (Table 1). Both smokers and physically active individuals were younger in SHIP-START-0 (p < .001), although absolute age differences among smokers were small. Moreover, smoking and physical activity were significantly associated in SHIP-TREND-0 (χ2(1)  = 43.29, p < .001), but not in SHIP-START-0 (χ2(1) = 0.04, p = .85), suggesting different clustering of lifestyle behaviors across cohorts. Finally, variable definition and measurement may also have contributed, as both exposures were self-reported, physical activity was defined by a low activity threshold of 1 hour activity per week, and the binary current smoking status did not capture cumulative lifetime exposure. Together, these factors may (partly) explain the differing associations observed across cohorts.
+
+Hypercholesterolemia was inversely associated to the residual age in the training cohort, a finding that appears biologically counterintuitive. Several factors may contribute to this finding. While stratified analyses by lipid-lowering medication status did not reveal statistically significant associations within subgroups (unadjusted p = .06 und p = .07 for medicated and non-medicated individuals, respectively), medication use itself was strongly positively associated with residual age when included as a covariate (p < .001). This pattern suggests that treatment-related effects may influence the metabolic profile captured by the biological age score. However, the absence of a statistically significant interaction between hypercholesterolemia and medication use (p = .08) argues against clear effect modification by treatment status. Importantly, both hypercholesterolemia and medication use were positively associated with chronological age, indicating biologically plausible age dependencies. Given that residual age is derived from chronological age, complex age-related and treatment-related dynamics may partially explain the observed inverse association. Further, survival bias in older individuals with treated dyslipidemia may also play a role. Overall, the underlying mechanisms cannot be conclusively determined in the present study and further research is required.
+
+When examining the top 20 metabolites identified by the XGBoost model, see Figure S1, several are closely linked to glucose metabolism, renal function and cardiovascular risk, thus reflecting the biologically meaningful associations of metabolic age with diabetes, adiposity, cardiovascular disease and kidney disease. For example, Friedrich et al.33 found that, among others, higher baseline levels of urinary betaine, D-glucose and dimethylamine were linked to increases in HbA1c over time, while formic acid and trigonelline were associated with decreases. Similar patterns were observed for changes in fasting glucose and HOMA-IR, eg, for dimethylamine, D-glucose and 1-methylnicotinamide. Further, BMI was positively associated to urinary glucose and inversely associated to citrate, glycine, trigonelline, and formate.34 Regarding renal function, in Kim et al.35 specific metabolites (betaine, dimethylamine, glucose, methylnicotinamide) showed distinct patterns according to the degree of renal insufficiency. Further, oxaloacetate and citrate were found to be associated with cardiovascular risk in different age groups.36 Previous studies have reported associations between urinary metabolite signatures and stroke risk, eg, Oliveira et al.37 compared levels of urinary metabolites between different stroke risk groups in elderly people with significant findings for trigonelline and glycolate, while38 found differing levels of NMR measured urinary citrate, dimethylamine and glycine in stroke patients compared to healthy individuals. Further, several metabolites contributing to the urinary model, including dimethylamine, are involved in host–microbiome co-metabolic pathways related to choline and trimethylamine metabolism. Given that gut microbiome composition and function change with age, urinary metabolomic profiles may therefore partially reflect integrated host–microbiome–renal processes.
+
+Typically, biologically older individuals are more vulnerable and more susceptible to developing aging-related diseases earlier than biologically younger subjects.23 Therefore, we examined the predictive and discriminative ability of the metabolic age score at baseline for adverse outcomes at the first follow-up of the test dataset SHIP-START-0. The metabolic age score demonstrated relevant predictive ability for several adverse outcomes. Importantly, ROC analyses revealed AUC values above 0.7 for myocardial infarction, stroke, and renal insufficiency, indicating the potential for future disease risk stratification.
+
+Besides the predictive ability for onset of diseases, our metabolic age score revealed significant association to increased all-cause mortality, even after adjusting for sex, chronological age and other clinical covariates, emphasizing the potential of the score to provide additive information on survival risk. The results were equally found in both training and test cohort, again showing the transferability of the information contained in the age score across the cohorts.
+
+As outlined in, Panyard et al.39 there is a lack of longitudinal data of biological age scores. Our study provides novel insights into the long-term trajectories of metabolic age over several years. Some studies addressed longitudinal aspects,23,27,32 but almost exclusively for plasma based metabolic age measures. To our knowledge, there is only one study1 that evaluated longitudinal urinary based metabolic age in a small clinical cohort in 2-time points (before and after surgery).
+
+Therefore, for the first time, we assessed the longitudinal development of biological age derived from urinary metabolites in a population-based cohort over multiple time points covering a time period of approximately 15 years. The analysis of longitudinal trajectories over baseline and 2 follow-up examinations revealed biologically plausible patterns for some of the outcomes: individuals with adiposity and with intake of antihypertensive medication revealed accelerated metabolic aging over time compared to the healthier individuals, who showed decreasing scores. Physically active individuals showed a decline of Δage over time, whereas the non-active subjects showed increasing metabolic age. Moreover, the longitudinal change in Δage was shown to depend on BMI. Interestingly, at baseline of the test data SHIP-START-0, physically active probands were biologically older (effect not significant, adjusted p = .231), which might be possibly due to the minimal definition of activity as discussed above.
+
+In summary, our metabolic age score showed biologically meaningful associations to clinically relevant diseases and risk factors and was predictive for a range of diseases and for overall survival, suggesting that urinary metabolite-based biological age scores are a promising tool for aging research. We showed transferability of the biologically meaningful information surplus of the residual age to an independent test cohort. Moreover, for the first time, we showed the potential of urinary metabolic aging measures to capture inter-individual variability in aging trajectories over time. By moving beyond cross-sectional assessments, our longitudinal approach provides novel insights into the dynamic nature of biological aging, underscoring the utility of urinary metabolite–based age scores as tools for monitoring age-related processes and disease susceptibility across the life course.
+
+Strengths and limitations
+
+To our knowledge, our study is the first study on metabolic age including longitudinal data measured in urinary samples in baseline and 2 follow-up examinations in a large population-based cohort and therefore giving novel insights in the temporal progression of the age score. Urine as a bio-fluid offers several practical advantages: it is noninvasively and easy to collect, and therefore well-suited for large-scale and longitudinal studies. Nuclear magnetic resonance spectroscopy allows robust and reproducible quantification of metabolites, making it a promising method for clinical translation. Training and testing of models were performed in 2 independent population-based cohorts, with test data including baseline and 3 follow-up examinations. Different machine learning approaches were compared and the optimal model was chosen based on performance statistics.
+
+Nonetheless, certain limitations should be acknowledged. Although the model was validated in an independent cohort, both cohorts originated from the same source population. Therefore, additional validation in populations with different demographic, genetic, and environmental backgrounds is required to fully assess external generalizability.
+
+No follow-up data for the training cohort was available, such that longitudinal analysis could not be carried out in the training cohort. The predictive value for incident disease and mortality was moderate for some of the outcomes, nevertheless the observed associations indicate that the metabolic age score captures relevant aspects of biological aging processes. Metabolites with more than 50% measurements below LOD were not considered in the model training, possibly missing metabolites with significant contribution to the model. However, a 75% cutoff would have led to an inclusion of 10 additional metabolites with only limited contribution to the model according to SHAP values. Training and testing was performed on a population-based cohort, not including severely ill patients (eg, kidney failure), which would might have contributed to the age score. The negative association of residual age and hypercholesterolemia could not be fully explained and needs further investigation.
+
+Conclusion
+
+Urinary NMR-based biological age scores offer a noninvasive, biologically meaningful, and longitudinally stable measure of aging. Our findings suggest that such scores can reflect both cross-sectional health status and future disease risk. Novel aspects in longitudinal analysis revealed individual variability in aging trajectories, highlighting potential use in personalized medicine and risk stratification.
+
+Future research should focus on refining prediction models and exploring their utility in preventive and clinical contexts.
+
+Supplementary Material
+
+glag180_Supplementary_Data
+
+Acknowledgments
+
+SHIP is a part of the Community Medicine Research Network of the University Medicine Greifswald, which is supported by the German Federal State of Mecklenburg- West Pomerania.
+
+Supplementary material
+
+Supplementary material is available at The Journals of Gerontology, Series A: Biological Sciences and Medical Sciences online.
+
+Funding
+
+SHIP is part of the Community Medicine Research Network of the University Medicine Greifswald, which is supported by the German Federal State of Mecklenburg—West Pomerania.
+
+Conflicts of interest
+
+None declared.
+
+Data availability
+
+Restrictions apply to the availability of data generated or analyzed during this study to preserve patient confidentiality or because they were used under license. Data can be applied for following a standardized procedure: https://transfer.ship-med.uni-greifswald.de/FAIRequest/
+
+Author contributions
+
+Karen Friederike Gauß (Conceptualization [equal], Data curation [equal], Formal analysis [equal], Investigation [equal], Software [equal], Visualization [equal], Writing—original draft [equal]), Nele Friedrich (Visualization [equal], Writing—review & editing [equal]), Ann-Kristin Henning (Data curation [equal], Investigation [equal], Writing—review & editing [equal]), Johannes Hertel (Writing—review & editing [equal]), Hans Jörgen Grabe (Writing—review & editing [equal]), Henry Völzke (Writing—review & editing [equal]), Matthias Nauck (Writing—review & editing [equal]), and Astrid Petersmann (Supervision [equal], Writing—review & editing [equal]).
+
+
+References
+
+1 Hertel J , FriedrichN, WittfeldK, et al  Measuring biological age via metabonomics: the metabolic age score. J Proteome Res. 2016;15:400-410. 10.1021/acs.jproteome.5b00561 26652958
+2 Hannum G , GuinneyJ, ZhaoL, et al  Genome-wide methylation profiles reveal quantitative views of human aging rates. Mol Cell. 2013;49:359-367. 10.1016/j.molcel.2012.10.016 23177740 PMC3780611
+3 Horvath S.  DNA methylation age of human tissues and cell types. Genome Biol. 2013;14:R115. 10.1186/gb-2013-14-10-r115 24138928 PMC4015143
+4 Ledda C , LoretoC, RapisardaV.  Telomere length as a biomarker of biological aging in shift workers. Appl Sci. 2020;10:2764. ARTN 2764 10.3390/app10082764
+5 Johnson AA , ShokhirevMN, Wyss-CorayT, et al  Systematic review and analysis of human proteomics aging studies unveils a novel proteomic aging clock and identifies key processes that change with age. Ageing Res Rev. 2020;60:101070. 10.1016/j.arr.2020.101070 32311500
+6 Tanaka T , BasistyN, FantoniG, et al  Plasma proteomic biomarker signature of age predicts health and life span. Elife. 2020;9:9. 10.7554/eLife.61073 PMC7723412 33210602
+7 Belsky DW , CaspiA, HoutsR, et al  Quantification of biological aging in young adults. Proc Natl Acad Sci USA. 2015;112:E4104-10. 10.1073/pnas.1506264112 26150497 PMC4522793
+8 Mak JKL , McMurranCE, Kuja-HalkolaR, et al  Clinical biomarker-based biological aging and risk of cancer in the UK Biobank. Br J Cancer. 2023;129:94-103. 10.1038/s41416-023-02288-w 37120669 PMC10307789
+9 Levine ME.  Modeling the rate of senescence: can estimated biological age predict mortality more accurately than chronological age?  J Gerontol A Biol Sci Med Sci. 2013;68:667-674. 10.1093/gerona/gls233 23213031 PMC3660119
+10 Lau CE , ManouM, MarkozannesG, et al  NMR metabolomic modeling of age and lifespan: A multicohort analysis. Aging Cell. 2024;23:e14164. 10.1111/acel.14164 38637937 PMC11258446
+11 van den Akker EB , TrompetS, Barkey WolfJJH, et al  Metabolic age based on the BBMRI-NL (1)H-NMR metabolomics repository as biomarker of age-related disease. Circ Genom Precis Med. 2020;13:541-547. 10.1161/CIRCGEN.119.002610 33079603
+12 Robinson O , LauCE.  Measuring biological age using metabolomics. Aging (Albany NY). 2020;12:22352-22353. 10.18632/aging.104216 33253122 PMC7746335
+13 Rutledge J , OhH, Wyss-CorayT.  Measuring biological age using omics data. Nat Rev Genet. 2022;23:715-727. 10.1038/s41576-022-00511-7 35715611 PMC10048602
+14 Hamsanathan S , AnthonymuthuT, ProsserD, et al  A molecular index for biological age identified from the metabolome and senescence-associated secretome in humans. Aging Cell. 2024;23:e14104. 10.1111/acel.14104 38454639 PMC11019119
+15 Srivastava S.  Emerging insights into the metabolic alterations in aging using metabolomics. Metabolites. 2019;9:301. ARTN10.3390/metabo912030131847272 10.3390/metabo9120301 PMC6950098
+16 Mutz J , IniestaR, LewisCM.  Metabolomic age (MileAge) predicts health and life span: a comparison of multiple machine learning algorithms. Sci Adv. 2024;10:eadp3743. 10.1126/sciadv.adp3743 39693428 PMC11654675
+17 Robinson O , Chadeau HyamM, KaramanI, et al  Determinants of accelerated metabolomic and epigenetic aging in a UK cohort. Aging Cell. 2020;19:e13149. 10.1111/acel.13149 32363781 PMC7294785
+18 Emwas A-H , RoyR, McKayRT, et al  NMR spectroscopy for metabolomics research. Metabolites. 2019;9:123.31252628 10.3390/metabo9070123 PMC6680826
+19 Adav SS , WangY.  Metabolomics signatures of aging: recent advances. Aging Dis. 2021;12:646-661. 10.14336/AD.2020.0909 33815888 PMC7990359
+20 Chiu CY , YehKW, LinG, et al  Metabolomics reveals dynamic metabolic changes associated with age in early childhood. PLoS One. 2016;11:e0149823. 10.1371/journal.pone.0149823 26914934 PMC4767415
+21 Volzke H , AlteD, SchmidtCO, et al  Cohort profile: the study of health in Pomerania. Int J Epidemiol. 2011;40:294-307. 10.1093/ije/dyp394 20167617
+22 Rist MJ , RothA, FrommherzL, et al  Metabolite patterns predicting sex and age in participants of the Karlsruhe Metabolomics and Nutrition (KarMeN) study. PLoS One. 2017;12:e0183228. 10.1371/journal.pone.0183228 28813537 PMC5558977
+23 Zhang S , WangZ, WangY, et al  A metabolomic profile of biological aging in 250,341 individuals from the UK Biobank. Nat Commun. 2024;15:8081. 10.1038/s41467-024-52310-9 39278973 PMC11402978
+24 Volzke H , SchossowJ, SchmidtCO, et al  Cohort profile update: the study of health in sPomerania (SHIP). Int J Epidemiol. 2022;51:e372-e383. 10.1093/ije/dyac034 35348705
+25 Inker LA , EneanyaND, CoreshJ, et al  New creatinine- and cystatin C-Based equations to estimate GFR without race. N Engl J Med. 2021;385:1737-1749. 10.1056/NEJMoa2102953 34554658 PMC8822996
+26 Selvin E , JuraschekSP, EckfeldtJ, et al  Within-person variability in kidney measures. Am J Kidney Dis. 2013;61:716-722. 10.1053/j.ajkd.2012.11.048 23337799 PMC3628297
+27 van Holstein Y , MooijaartSP, van OevelenM, et al  The performance of metabolomics-based prediction scores for mortality in older patients with solid tumors. Geroscience. 2024;46:5615-5627. 10.1007/s11357-024-01261-6 38963649 PMC11493906
+28 Faquih TO , van Hylckama VliegA, SurendranP, et al  Robust metabolomic age prediction based on a wide selection of metabolites. J Gerontol A Biol Sci Med Sci. 2025;80:glae280. 10.1093/gerona/glae280 39821408 PMC11809259
+29 Deelen J , KettunenJ, FischerK, et al  A metabolic profile of all-cause mortality risk identified in an observational study of 44,168 individuals. Nat Commun. 2019;10:3346. 10.1038/s41467-019-11311-9 31431621 PMC6702196
+30 Swann JR , SpagouK, LewisM, et al  Microbial-mammalian cometabolites dominate the age-associated urinary metabolic phenotype in Taiwanese and American populations. J Proteome Res. 2013;12:3166-3180. 10.1021/pr4000152 23701591 PMC3835364
+31 Hertel J , FrenzelS, KonigJ, et al  The informative error: a framework for the construction of individualized phenotypes. Stat Method Med Res. 2019;28:1427-1438. 10.1177/0962280218759138 29468943
+32 Kuiper LM , SmitAP, BizzarriD, et al  Lifestyle factors and metabolomic aging biomarkers: meta-analysis of cross-sectional and longitudinal associations in three prospective cohorts. Mech Ageing Dev. 2024;220:111958. 10.1016/j.mad.2024.111958 38950629
+33 Friedrich N , SkaabyT, PietznerM, et al  Identification of urine metabolites associated with 5-year changes in biomarkers of glucose homoeostasis. Diabetes Metab. 2018;44:261-268. 10.1016/j.diabet.2017.05.007 28669514
+34 Li TQ , IhanusA, OhukainenP, et al  Clinical and biochemical associations of urinary metabolites: quantitative epidemiological approach on renal-cardiometabolic biomarkers. Int J Epidemiol. 2024;53:dyad162. 10.1093/ije/dyad162 38030573 PMC10859141
+35 Kim Y , LeeJ, KangMS, et al  Urinary metabolite profile predicting the progression of CKD. Kidney360. 2023;4:1048-1057. 10.34067/KID.0000000000000158 37291728 PMC10476680
+36 Martinez PJ , AgudiezM, MoleroD, et al  Urinary metabolic signatures reflect cardiovascular risk in the young, middle-aged, and elderly populations. J Mol Med (Berl). 2020;98:1603-1613. 10.1007/s00109-020-01976-x 32914213 PMC7591416
+37 Oliveira N , SousaA, AmaralAP, et al  Identification of urine metabolic markers of stroke risk using untargeted nuclear magnetic resonance analysis. Int J Mol Sci. 2024;25:7436. 10.3390/ijms25137436 39000542 PMC11242327
+38 Jung JY , LeeHS, KangDG, et al  1H-NMR-based metabolomics study of cerebral infarction. Stroke. 2011;42:1282-1288. 10.1161/STROKEAHA.110.598789 21474802
+39 Panyard DJ , YuB, SnyderMP.  The metabolomics of human aging: advances, challenges, and opportunities. Sci Adv. 2022;8:eadd6155. 10.1126/sciadv.add6155 36260671 PMC9581477

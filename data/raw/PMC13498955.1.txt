@@ -1,0 +1,380 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Clin Transl Radiat Oncol
+Journal ID: Clin Transl Radiat Oncol
+NLM Journal ID: 101713416
+
+Clinical and Translational Radiation Oncology
+
+EISSN: 2405-6308
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498955
+PMID: 42633067
+DOI: 10.1016/j.ctro.2026.101263
+Article ID: S2405-6308(26)00158-8
+Article ID: 101263
+Article version: 1
+Subjects: Original Research Article
+
+VMAT-based lattice radiotherapy for advanced bulky hepatocellular carcinoma within multimodality treatment: a consecutive feasibility series
+
+Lin Yu-Wei marklin1108@gmail.com a b ⁎
+Chiang Shao-Wei swchiang0215@vghks.gov.tw a
+Hsieh Yang-Wei wewe750422@gmail.com a c
+Pan Chia-Peng cppan@vghks.gov.tw a
+Kung Mei-Lang kungmeilang@gmail.com d
+Lin Kung-Hung kunghunglin@vghks.gov.tw e f ⁎
+a Department of Radiation Oncology, Kaohsiung Veterans General Hospital, Kaohsiung, Taiwan
+b School of Medicine, College of Medicine, National Sun Yat-sen University, Kaohsiung, Taiwan
+c Medical Physics and Informatics Laboratory of Electronics Engineering, National Kaohsiung University of Science and Technology, Kaohsiung, Taiwan
+d Department of Medical Education and Research, Kaohsiung Veterans General Hospital, Kaohsiung, Taiwan
+e Health Management Center, Kaohsiung Veterans General Hospital, Kaohsiung, Taiwan
+f Division of Gastroenterology and Hepatology, Kaohsiung Veterans General Hospital, Kaohsiung, Taiwan
+⁎ Corresponding authors at: No. 386, Dazhong 1st Rd., Zuoying Dist., Kaohsiung 813414, Taiwan. marklin1108@gmail.comkunghunglin@vghks.gov.tw
+Publication date: 2026 Nov
+Electronic publication date: 2026 Aug 11
+Volume: 61
+Electronic Location ID: 101263
+Received 2026 Mar 28; Revised 2026 Jul 3; Accepted 2026 Aug 9
+Copyright: © 2026 The Author(s)
+Copyright year: 2026
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Hepatocellular carcinoma, Lattice radiotherapy, Spatially fractionated radiotherapy, VMAT, Adaptive radiotherapy, High-resolution Cone-beam CT
+
+==============================
+Purpose
+
+Bulky advanced hepatocellular carcinoma (HCC) remains difficult to treat with conventional homogeneous ablative radiotherapy because safe dose escalation is limited by hepatic reserve, tumor-to-liver geometry, and adjacent organs at risk (OARs). This study evaluated local control, tumor response, toxicity, and treatment continuity after volumetric-modulated arc therapy (VMAT)-based lattice radiotherapy (VMAT-LRT) in patients with advanced HCC.
+
+Methods
+
+We retrospectively reviewed our initial consecutive VMAT-LRT cohort treated between October 2024 and March 2026. VMAT-LRT was considered for tumors >300 cm3 or unfavorable tumor-to-liver or tumor-to-OAR geometry that rendered SBRT or homogeneous curative-dose radiotherapy unfeasible, while local treatment remained indicated. VMAT-LRT delivered high-dose intratumoral lattice spheres using VMAT-based planning, followed by lower-dose peripheral irradiation individualized according to clinical goals. Endpoints included local control, tumor response, RILD, CTCAE toxicity, and treatment continuity.
+
+Results
+
+Twelve VMAT-LRT courses in 11 patients were completed as planned. Median age was 70 years, median follow-up was 6.1 months, and median initial tumor volume was 557 cm3. Objective tumor response was observed in all treated courses. Median relative and absolute volume reductions were 65% and 320 cm3, respectively. Local control was achieved in all courses, with no documented local progression. Four patients achieved complete response. Systemic or subsequent anticancer therapy continued after radiotherapy in 8 of 11 patients without interruption attributable to acute radiotherapy-related toxicity. Acute toxicity was limited to Grade 0–2 events. RILD was Grade 0 in 10 evaluable courses and Grade 3 in one course. No late toxicity was recorded among 11 evaluable courses.
+
+Conclusion
+
+VMAT-LRT was feasible for advanced bulky HCC, achieving meaningful tumor regression and durable in-field local control with acceptable toxicity while allowing continuation of multimodality treatment in selected patients.
+
+Highlights
+
+• Median 3-month tumor-volume reduction was 65% in bulky advanced HCC.
+
+• All 12 treated courses achieved local control without in-field progression.
+
+• Acute toxicity was limited to Grade 0–2 events, with no Grade 3 or higher gastrointestinal toxicity.
+
+• VMAT-LRT supported systemic therapy continuity in selected advanced HCC patients.
+
+Introduction
+
+Hepatocellular carcinoma (HCC) is a leading cause of cancer-related mortality worldwide, with more than half of patients presenting at an advanced stage [1], [2], [3]. Effective management therefore requires a multidisciplinary approach that may include transplantation, surgical resection, ablation, transarterial chemoembolization (TACE), targeted therapy, immunotherapy, and external beam radiotherapy (EBRT) [4], [5]. Despite these advances, durable control remains limited due to pronounced intratumoral heterogeneity [6], [7], [8], intrinsic or acquired treatment resistance [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], and frequent local and distant relapse [19], [20], [21], [22], [23], [24], [25].
+
+With modern image guidance and precision delivery, EBRT has become applicable across multiple HCC scenarios, including early-to-intermediate tumors [26], [27], locoregional recurrence [28], [29], and unresectable disease [30], [31], [32]. Randomized studies further suggest that stereotactic body radiation therapy (SBRT) or proton therapy combined with TACE can improve local control and progression-free survival compared with sorafenib, with overall survival benefit in selected cohorts [31], [32]. More recently, large-scale multinational EBRT outcome data have reinforced the clinical value of EBRT and its integration into contemporary HCC treatment decision-making [33].
+
+Nevertheless, large advanced HCC remains particularly challenging to treat with conventional homogeneous EBRT. These tumors often involve substantial tumor burden, limited functional liver reserve, and close proximity to organs at risk (OARs). As a result, standard ablative RT may be infeasible when tumor volume is extensive or tumor-to-OAR geometry is unfavorable. However, local treatment may still be clinically indicated for symptom palliation, local control, or potentiation of systemic therapy response. This creates a critical treatment gap for patients with large, unresectable, or treatment-refractory HCC who require RT but cannot safely undergo standard ablative regimens.
+
+Spatially fractionated radiation therapy (SFRT), including lattice radiotherapy (LRT), offers a potential strategy to address this gap [34], [35]. Unlike homogeneous EBRT, LRT delivers a heterogeneous dose distribution with high-dose intratumoral lattice spheres and lower-dose valleys, thereby enabling intratumoral dose escalation while helping to spare surrounding OARs [34], [35]. Volumetric-modulated arc therapy (VMAT)-based LRT enables three-dimensional dose sculpting that may enhance tumor response or local control while reducing exposure to surrounding OARs [36], [37], [38], [39], [40].
+
+We therefore hypothesized that VMAT-LRT could provide a feasible local treatment option for advanced HCC when SBRT or homogeneous curative-dose RT is not suitable. This study evaluated local control, tumor response, toxicity, and treatment continuity in our initial consecutive VMAT-LRT cohort.
+
+Methods
+
+Patient Enrollment and Baseline Characteristics.
+
+This retrospective consecutive feasibility series reviewed patients with advanced bulky HCC treated with VMAT-LRT between October 2024 and March 2026. VMAT-LRT was considered for unresectable HCC with gross tumor volume (GTV) >300 cm3 or unfavorable tumor-to-liver or tumor-to-OAR geometry that made SBRT or homogeneous curative-dose radiotherapy clinically unfeasible, while local treatment remained indicated for symptom relief, local control, or enhancement of systemic therapy response. Patients were required to have ECOG performance status 0–2 and Child-Pugh class A or B7. Both intrahepatic bulky HCC and selected extrahepatic HCC-related lesions were included when local treatment was clinically indicated. Patient characteristics and treatment history are summarized in Table 1. This study was approved by the Institutional Review Board, and informed consent was waived because of the retrospective medical record-based design (26-CT3–16–260,128-5).Table 1 Patient and disease characteristics.
+
+Characteristic	Patient 1	Patient 2	Patient 3	Patient 4	Patient 4′*	Patient 5	Patient 6	Patient 7	Patient 8	Patient 9	Patient 10	Patient 11	
+Tumor site / disease extent	Multifocal HCC + 
+peritoneal metastasis	Multifocal HCC + 
+right adrenal/IVC involvement	Multifocal HCC + 
+diaphragm invasion	HCC, S2/3/4	HCC, S2/3/4	Multifocal HCC	HCC, S8	Multifocal HCC	Multifocal HCC	HCC, S2 and S5/8	Multifocal HCC	HCC, S5/8	
+VMAT-LRT treatment site	Peritoneal metastasis	Right adrenal/IVC lesion with intrahepatic invasion	Diaphragm-invading hepatic lesion	S2/3/4	S2/3/4	S4	S8	S3	S4	S5/8	S5	S5/8	
+Clinical indication for VMAT-LRT	Symptom relief	Symptom relief	Symptom relief	Local control	Local control	Local control	Enhancement of systemic therapy response	Local control	Enhancement of systemic therapy response	Enhancement of systemic therapy response	Enhancement of systemic therapy response	Enhancement of systemic therapy response	
+ECOG status	2	0	2	1	1	0	1	0	0	0	1	1	
+Age, years	70	57	60	80	80	72	93	65	75	65	35	82	
+AJCC, TNM/stage	cT3N0M1,
+Stage IVB	cT4N0M1,
+Stage IVB	cT4N0M1,
+Stage IVB	cT1bN0M0,
+Stage IB	cT1bN0M0,
+Stage IB	cT4N0M1,
+Stage IVB	cT2N0M1,
+Stage IVB	cT3N1M0,
+Stage IVA	cT2N1M0,
+Stage IVA	cT3N0M0,
+Stage II	cT3N1M1,
+Stage IVB	cT2N0M0,
+Stage II	
+BCLC stage	C	C	C	B	B	C	C	C	C	B	C	B	
+Child-Pugh score	B7	A6	B7	A6	A6	A6	A6	A6	A6	A5	B7	A5	
+Previous treatment	HAIC	HAIC + TAE + A + B	HAIC	HAIC	HAIC	HAIC	A + B	HAIC	HAIC	HAIC	TACE + A + B	–	
+Concurrent treatment	A + B	HAIC + A + B	A + B	–	–	A + B	A + B	T → D	T → D	T → D	T → D	A + B	
+Continuous/maintenance treatment/salvage	A + B	HAIC + A + B	–	–	A + B	Lenvatinib	A + B	Durvalumab	Lenvatinib	Durvalumab	Durvalumab	A + B + TAE	
+Patients 2 and 3 had contiguous intrahepatic–extrahepatic HCC involvement. * Patient 4′ represents a second VMAT-LRT course delivered to Patient 4.
+
+Target Delineation and Motion Assessment.
+
+The GTV was defined as visible macroscopic disease on CT simulation and diagnostic imaging. No additional margin for subclinical microscopic extension was intentionally added; therefore, the clinical target volume (CTV) was defined as equivalent to the GTV because VMAT-LRT was directed to the macroscopic bulky target rather than elective microscopic disease. For lesions with relevant respiratory motion, an internal target volume (ITV) was generated from 4D-CT image information. The planning target volume (PTV) was created by adding an individualized setup margin to the CTV or ITV, typically 2–5 mm, according to motion magnitude, immobilization reproducibility, and proximity to adjacent OARs.
+
+Lattice Radiotherapy Planning and Delivery.
+
+LRT was planned using VMAT in the Eclipse treatment planning system (v18, Varian Medical Systems, Palo Alto, CA, USA), adapted from published lattice protocols and planning guidelines [34], [35]. The lattice design (Fig. 1) consisted of multiple high-dose lattice spheres, each 1.5 cm in diameter, distributed within the GTV/CTV. Spheres were placed with a center-to-center separation of at least 3 cm whenever feasible, including 3–6 cm in the axial plane. Sphere-edge clearance of at least 1 cm from adjacent OARs was maintained whenever anatomy permitted. The number and position of lattice spheres were individualized according to tumor geometry, tumor-OAR relationships, and physician review, using the institutional sphere-placement workflow described in Supplementary Material 1 and illustrated in Supplementary Figs. S1 and S2.Fig. 1 VMAT-based lattice radiotherapy planning concept.
+
+(A) Representative CTV (red) for bulky hepatocellular carcinoma with intratumoral lattice spheres (yellow).
+
+(B) Three-dimensional distribution of lattice spheres within the CTV.
+
+(C) Dose colour-wash (Dose range from 20 Gy to 8 Gy) illustrating the lattice sphere (“peak”) dose distribution.
+
+(D) Composite dose distribution combining the lattice-sphere component (delivered upfront) with the peripheral irradiation component (Dose range from 57.1 Gy to 28.55 Gy). (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 1
+
+Planning prioritized steep dose gradients around each lattice sphere to confine high-dose peaks within the tumor while minimizing dose spillage to uninvolved liver and adjacent OARs. Dose outside the sphere regions was constrained to low-valley levels whenever feasible, and the high-dose sphere component was designed to fall off rapidly within the CTV before reaching the tumor-OAR interface. Ring-based optimization and a stereotactic normal-tissue objective with intermediate fall-off were used to promote rapid dose drop-off around lattice spheres [34], [35]. A two-tier prescription (Supplementary Fig. S1) was employed: lattice spheres received 18–20 Gy delivered upfront on Day 1, followed by peripheral tumor irradiation of 20–52.5 Gy in 5–15 fractions, individualized according to clinical goals. The summed lattice and peripheral dose distributions were reviewed against institutional constraints (adapted from the ASTRO guideline [41]) for mean liver dose and adjacent OARs (Supplementary Material 2).
+
+Dose heterogeneity was quantified using peak-to-valley dose ratio (PVDR) and DVH-based metrics. PVDR was defined as Dpeak/Dvalley, where Dpeak was the mean dose within lattice spheres [42] and Dvalley was CTV D50% [43]. Following recent guidelines, the CTV D10/D90 ratio, calculated from the DVH as CTV D10% divided by D90%, was recorded as a heterogeneity indicator [38], [44], [45], [46]. Treatment was delivered with 6-MV flattening-filter-free photon beams at 740 MU/min on a ring-gantry linear accelerator with high-resolution CBCT for daily setup verification and on-treatment monitoring. Respiratory gating or abdominal compression was not routinely applied. Daily high-resolution HyperSight CBCT was used for image guidance and assessment of interfractional anatomic changes. Adaptive replanning was considered when daily CBCT demonstrated clinically meaningful anatomical change that could compromise target coverage or OAR safety.
+
+Toxicity Assessment and Follow-up Protocol.
+
+Toxicity was graded using CTCAE v5.0. Toxicities of interest included constitutional symptoms and treatment-related adverse events, such as fatigue, pain, nausea, and vomiting. Acute toxicity was defined as events occurring during radiotherapy or within 90 days after completion, and late toxicity as events occurring beyond 3 months. Patients were assessed weekly during treatment, then at 1 and 3 months post-RT, and every 3 months thereafter, including routine laboratory tests, liver function panels, and tumor markers. Radiation-induced liver disease (RILD) was monitored and categorized as classic or non-classic. Classic RILD was defined as anicteric hepatomegaly and/or ascites with alkaline phosphatase ≥2× baseline or upper limit of normal within 2 weeks to 4 months post-RT, without tumor progression. Non-classic RILD was defined as AST/ALT ≥5× baseline or upper limit of normal or a ≥ 2-point increase in Child–Pugh score, also unrelated to progression.
+
+Post-treatment imaging with contrast-enhanced CT or MRI was performed at 3 and 6 months, then every 3–6 months, with earlier imaging triggered by rising AFP/PIVKA-II or new symptoms. Tumor response was quantified as the percentage reduction in GTV/CTV on follow-up imaging relative to baseline. Radiologic response was evaluated using follow-up contrast-enhanced CT or MRI, incorporating both volumetric change of the treated target and qualitative changes in viable enhancement or necrosis. Complete response was defined as disappearance of viable enhancing tumor within the treated target, whereas partial response reflected substantial target-volume reduction and/or decreased viable enhancing component without local progression.
+
+Survival endpoints were analyzed descriptively and measured from RT initiation. Overall survival was defined as time to death from any cause; disease-specific survival as time to disease-specific death, with non-disease deaths censored; progression-free survival as time to progression or death; and time to progression as time to progression, with deaths censored. Survival curves were estimated using Kaplan–Meier analysis with Greenwood 95% confidence intervals.
+
+Results
+
+Patient Characteristics and Treatment Parameters.
+
+VMAT-LRT was applied for tumors >300 cm3 or unfavorable tumor-to-liver or tumor-to-OAR geometry that rendered SBRT or homogeneous curative-dose radiotherapy unfeasible, while local treatment remained indicated for symptom relief, local control, or enhancement of systemic therapy response. A total of 11 patients underwent 12 VMAT-LRT courses for advanced bulky HCC between October 2024 and March 2026. One patient received two separate VMAT-LRT courses. Patient and disease characteristics are summarized in Table 1. Overall, 8 of 11 patients (73%) had BCLC stage C disease. The median age was 70 years (range, 35–93 years). Target lesions were predominantly bulky intrahepatic HCC. Selected extrahepatic extensions were treated when local therapy was clinically indicated, including right adrenal gland invasion with inferior vena cava encasement in Patient 2 and diaphragm invasion with right ventricle compression in Patient 3 (Supplementary Fig. S3). Only Patient 1 had an isolated extrahepatic peritoneal HCC metastasis treated with VMAT-LRT. The median baseline GTV/CTV was 556.5 cm3 (range, 300–2150 cm3).
+
+All 12 courses were completed as planned. Each treatment plan incorporated 6–24 high-dose lattice spheres. Lattice spheres received 18–20 Gy in a single fraction on Day 1, most commonly 20 Gy. Peripheral tumor irradiation ranged from 20 to 52.5 Gy in 5–15 fractions and was individualized according to tumor volume, liver reserve, tumor-to-OAR geometry, and clinical treatment intent. The most common peripheral prescription was 37.5 Gy in 15 fractions. The median mean liver dose was 13 Gy (range, 1.00–19.77 Gy). All plans were reviewed against institutional dose constraints for uninvolved liver and adjacent OARs (Table 2). Dose heterogeneity metrics demonstrated a median PVDR of 3.32 and a median CTV D10/D90 ratio of 4.06 (Table 2). All patients had received prior or concurrent anticancer therapy except one treatment-naive patient. Continuous, maintenance, or salvage anticancer therapy after VMAT-LRT was documented in most patients and was not interrupted because of acute RT-related toxicity (Table 1).Table 2 LRT planning and dosimetric parameters.
+
+Characteristic	Patient 1	Patient 2	Patient 3	Patient 4	Patient 4′⁎	Patient 5	Patient 6	Patient 7	Patient 8	Patient 9	Patient 10	Patient 11	
+Baseline GTV/CTV volume, cm3	2150	468	422	1536	702	645	437	324	301	793	300	687	
+PTV margin, mm	3	3	0#	3	3	3	3	2	2	3	2	5	
+Number of spheres	18	9	9	24	15	10	8	7	7	21	6	13	
+Sphere dose, Gy	20	20	20	20	20	18	20	20	20	20	18	20	
+Peripheral dose/fractions, Gy/fx	37.5/15	37.5/15	25.0/5	37.5/15	35.0/14	52.5/15	37.1/14	38.5/14	49.0/14	44.8/14	38.5/14	37.5/15	
+D10%/D90%	3.08	3.81	3.48	3.26	11.9	3.17	4.32	5.98	4.75	3.65	5.08	5.36	
+PVDR (mean vertex dose/GTV D50%)	2.24	3.35	3.86	2.61	3.32	3.41	3.65	3.31	3.05	2.91	3.34	3.12	
+Mean liver dose, Gy	1.0	13.7	12.15	17.13	12.59	14.16	13.42	2.1	9.32	15.07	10.79	19.77	
+Stomach Dmax, Gy	25.37	40.46	20.47	44.59	40.26	37.36	27.01	38.22	41.66	26.48	30.47	19.53	
+Duodenum Dmax, Gy	42.82	38.14	14.73	43.89	38.58	11.15	0.48	23.4	0.66	33.32	29.27	23.54	
+Bowel Dmax, Gy	43.13	41.07	0.97	44.75	42.83	41.16	33.01	37.55	41.66	39.96	36.6	31.74	
+Heart mean dose, Gy	0	2.14	7.49	3.96	3.96	7.66	3.26	0.39	1.71	2.99	0.88	4.97	
+Monitor Units	11,267	9976	11,311	16,536	18,137	12,028	11,187	10,713	12,143	19,203	9970	13,325	
+⁎ Patient 4′ represents a second VMAT-LRT course delivered to Patient 4.
+
+Local Control, Tumor Response, and Adaptive Replanning.
+
+The median follow-up from RT initiation was 6.1 months. During the recorded follow-up period, local control was achieved in all 12 treated courses, with no documented in-field local progression. Objective response was observed in all 12 courses. At approximately 3 months after VMAT-LRT, the median relative tumor volume reduction was 64.6%, corresponding to a median absolute reduction of 320 cm3 (Table 3). A waterfall plot of tumor volume reduction for all 12 treatment courses is shown in Fig. 2.Table 3 Treatment response, ART events, toxicity, and systemic therapy continuation.
+
+Characteristic	Patient 1	Patient 2	Patient 3	Patient 4	Patient 4′⁎	Patient 5	Patient 6	Patient 7	Patient 8	Patient 9	Patient 10	Patient 11	
+Baseline GTV/CTV volume, cm3	2150	468	422	1536	702	645	437	324	301	793	300	687	
+Target volume at 3 months after VMAT-LRT, cm3	522	78.5	189	702	643	333	109	97	25	244	125	275	
+Absolute target volume reduction at 3 months, cm3	1628	389.5	233	834	59	312	328	227	276	549	175	412	
+Relative target volume reduction at 3 months, %	−76%	−83%	−55%	−54%	−8%	−48%	−75%	−70%	−92%	−69%	−58%	−60%	
+Complete response after VMAT-LRT	–	–	–	–	12 months	–	4 months	–	4 months	–	–	4 months	
+Local progression event	No	No	No	No	No	No	No	No	No	No	No	No	
+Any progression event	No	Yes	Yes	No	No	No	No	No	Yes	No	Yes	No	
+Adaptive replanning	No	Yes	No	No	No	No	Yes	Yes	Yes	No	No	No	
+Reason for adaptive replanning	–	Regression >10%	–	–	–	–	Regression >10%	Loss tumor-OAR clearance	Loss tumor-OAR clearance	–	–	–	
+Acute toxicity	Grade 1	Grade 2	Grade 1	Grade 0	Grade 0	Grade 1	Grade 1	Grade 2	Grade 2	Grade 2	Grade 2	Grade 0	
+Late toxicity	Grade 0	Grade 0	N/A	Grade 0	Grade 0	Grade 0	Grade 0	Grade 0	Grade 0	Grade 0	Grade 0	Grade 0	
+Radiation-induced liver disease	Grade 0	Grade 0	N/A	Grade 0	Grade 0	Grade 0	Grade 0	Grade 0	Grade 0	Grade 0	Grade 3	Grade 0	
+Abbreviations: A + B, atezolizumab plus bevacizumab; ART, adaptive radiotherapy; BCLC, Barcelona Clinic Liver Cancer; CBCT, cone-beam CT; CTV, clinical target volume; ECOG, Eastern Cooperative Oncology Group; GTV, gross tumor volume; HAIC, hepatic arterial infusion chemotherapy; HCC, hepatocellular carcinoma; IVC, inferior vena cava; OAR, organ at risk; PR, partial response; PTV, planning target volume; PVDR, peak-to-valley dose ratio; RILD, radiation-induced liver disease; RT, radiotherapy; TAE, transarterial embolization; TACE, transarterial chemoembolization; T → D, tremelimumab followed by durvalumab; VMAT-LRT, volumetric-modulated arc therapy-based lattice radiotherapy.
+
+⁎ Patient 4′ represents a second VMAT-LRT course delivered to Patient 4.
+
+Fig. 2 Tumor volume reduction after VMAT-LRT.
+
+Waterfall plot showing percentage tumor volume change at approximately 3 months after VMAT-LRT for each treatment course. Most courses demonstrated substantial tumor volume reduction, with green bars indicating patients who subsequently achieved complete response. The x-axis labels indicate patient numbers; P4′ represents the second VMAT-LRT course delivered to Patient 4. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 2
+
+Marked cytoreduction was frequently accompanied by radiographic necrotic change. In selected cases, residual peripheral enhancing foci were observed near tumor-OAR interfaces, where peripheral dose coverage was intentionally constrained to maintain OAR safety (Fig. 3). Adaptive replanning was performed in 4 courses when daily CBCT demonstrated clinically meaningful anatomical changes that could affect target coverage or OAR safety (Table 3). Representative imaging examples are shown in Fig. 4 and Supplementary Fig. S4. Four complete responses were observed after VMAT-LRT. Three complete responses occurred approximately 4 months after RT (Fig. 5), and one occurred 12 months after the second VMAT-LRT course.Fig. 3 Representative bulky HCC peritoneal metastasis: 3-month regression with necrotic change.
+
+(A) Three-dimensional rendering showing the peritoneal metastatic target (orange) and lattice spheres (magenta).
+
+(B) Coronal simulation CT demonstrating baseline target and lattice sphere geometry.
+
+(C) Follow-up CT at 3 months after lattice radiotherapy showing marked tumor regression with radiographic necrosis (baseline contour shown for reference).
+
+(D) Axial simulation CT at baseline.
+
+(E) Axial CT at 3 months demonstrating necrotic change with residual peripheral contrast enhancement suggestive of viable foci at the periphery (white arrows). (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 3
+
+Fig. 4 High-resolution CBCT-guided adaptation for evolving tumor-OAR geometry.
+
+(A) Day 1 cone-beam CT (CBCT) with baseline target contour (CTV, red).
+
+(B) Day 3 CBCT demonstrating early on-treatment regression relative to baseline geometry.
+
+(C) Day 4 re-simulation CT used for adaptive replanning: baseline CTV (red) versus adapted CTV (orange); duodenum (pink); tumor-OAR interface (blue).
+
+(D) Axial view emphasizing proximity at the tumor-OAR interface and the rationale for adaptation. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 4
+
+Fig. 5 Treatment timeline and rapid regression during VMAT-LRT.
+
+(A) Baseline CT showing the original target volume, with the baseline contour shown in red (437 cm3).
+
+(B) Day 4 re-simulation CT after upfront lattice-sphere delivery, demonstrating early tumor regression; the baseline contour is shown in red and the re-simulation contour in orange (181 cm3).
+
+(C) CBCT on Day 21, corresponding to the final treatment fraction, showing further target regression; the baseline contour is shown in red and the end-of-treatment contour in orange (109 cm3).
+
+(D) Follow-up imaging at 4 months demonstrating complete radiographic response.
+
+(E) Treatment timeline summarizing upfront lattice-sphere delivery on Day 1, Day 5 re-simulation, subsequent peripheral irradiation, serial CBCT monitoring, and the interval to complete radiographic response. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 5
+
+Toxicity and Liver Safety.
+
+VMAT-LRT was generally well tolerated (Table 3). Acute toxicity was limited to CTCAE Grade 0–2, and no patient experienced acute toxicity requiring treatment interruption. Some patients experienced transient abdominal dull pain and nausea after Day 1 high-dose lattice sphere delivery, which generally subsided within a few days. At 3 months, RILD was Grade 0 in 10 evaluable courses and Grade 3 in one course; one course was not evaluable for 3-month RILD assessment. No late toxicity was recorded during available follow-up among 11 evaluable courses.
+
+Survival Outcomes.
+
+Survival outcomes were analyzed descriptively at the patient level because of the small sample size, heterogeneous disease burden, and frequent use of multimodality therapy before and after VMAT-LRT. From RT initiation, the median overall survival was 6.2 months. Median disease-specific survival was not reached. Median progression-free survival was 6.0 months. Median time to progression was not reached. At 6 months, overall survival, disease-specific survival, progression-free survival, and time to progression rates were 57.7%, 90.9%, 32.7%, and 63.6%, respectively. Survival curves are shown in Supplementary Fig. S5 and S6.
+
+Discussion
+
+Bulky advanced HCC remains difficult to treat with conventional homogeneous ablative radiotherapy or SBRT because safe dose escalation is constrained by non-tumorous liver tolerance, baseline hepatic reserve, prior locoregional therapy, respiratory motion, and adjacent OARs. VMAT-LRT addresses this challenge by shifting from uniform dose escalation to spatial dose heterogeneity, using high-dose intratumoral spheres and lower-dose valley/peripheral regions to achieve cytoreduction while preserving liver and OAR safety. In this feasibility series of 11 patients receiving 12 VMAT-LRT courses, all treatments were completed as planned, all treated targets demonstrated objective volumetric response, and the median 3-month target-volume reduction was 65% (median absolute reduction, 320 cm3). Four patients subsequently achieved complete response within the treated target. No Grade 3 or higher gastrointestinal or cardiopulmonary OAR toxicity was observed; the only Grade 3 event was acute RILD with transient liver enzyme elevation. These findings are consistent with emerging SFRT and lattice radiotherapy experience in bulky tumors, including head and neck, thoracic, abdominal, pelvic, limb, and skin lesions, where early reports have described tumor regression or symptom improvement with acceptable toxicity [47], [48], [49], [50], [51], [52], [53], [54], [55], [56]. Together, these data support VMAT-LRT as a feasible local cytoreductive strategy for selected patients with large advanced HCC.
+
+Because VMAT-LRT delivers focal high-dose spheres within bulky liver or upper-abdominal HCC lesions, motion assessment and tumor-OAR geometry are central safety considerations. In this cohort, most bulky lesions showed limited target excursion assessed by 4D-CT, likely because many tumors were partially constrained by adjacent liver tissue, diaphragm, vascular structures, or extrahepatic extension. Sphere placement was deliberately conservative: sphere edges were required to remain within the CTV and at least 1 cm from adjacent OARs when anatomy permitted, with rapid intratumoral dose fall-off before the tumor-OAR interface. For peripheral dose delivery, ITV-based planning and individualized PTV margins were applied according to lesion motion and location. Daily high-resolution CBCT was used for setup verification and repeated assessment of target geometry, tumor-OAR relationships, gastrointestinal filling, and early anatomic change. Respiratory gating and abdominal compression were not routinely applied because target motion was limited on 4D-CT, and prolonged breath-hold, gated delivery, or compression was considered less tolerable for this fragile patient population. However, gating [50], compression, or surface-guided monitoring may remain useful in selected cases with greater respiratory motion. In this initial series, unexpected rapid tumor regression or loss of tumor-OAR clearance during VMAT-LRT highlighted the need for early CBCT-based safety monitoring. Based on these observed anatomic changes, we summarized practical ART safety checkpoints to guide physician review and possible replanning when substantial tumor regression (>10%), a > 5-mm reduction in tumor-OAR clearance, loss of planned clearance, or anticipated liver/OAR constraint violation is observed. These criteria may support safer delivery of VMAT-LRT in similar bulky HCC cases, while requiring prospective validation.
+
+Unlike some other bulky-tumor SFRT settings, advanced HCC is primarily managed with systemic therapy and immunotherapy-based regimens [57]. Therefore, VMAT-LRT should not be viewed as a replacement for systemic therapy, but as an add-on local strategy for symptom relief, cytoreduction, local control, and support of systemic therapy continuity. In our cohort, many patients received immunotherapy-based systemic treatment before, during, or after VMAT-LRT, and most were able to continue or resume systemic therapy without interruption attributable to LRT-related toxicity. More directly relevant to HCC, a recent retrospective series reported 32 patients with bulky unresectable HCC treated with VMAT-based lattice SFRT and concurrent systemic therapy, further supporting interest in integrating lattice-based spatial dose escalation with systemic treatment in this disease setting [58]. Although spatial dose gradients may contribute to immune-compatible tumor response [38], [39], [59], [60], [61], necrotic change, and rapid volumetric regression, this study was not designed to prove robust immune synergy [59], [60], [62], [63], [64], or abscopal response [65], [66], [67].
+
+Several limitations should be acknowledged. This was a single-center retrospective feasibility series with a small sample size, heterogeneous disease extent, variable systemic therapy context, and relatively short follow-up. There was no comparator arm, and the contribution of VMAT-LRT cannot be isolated from prior locoregional therapy or concurrent and subsequent systemic treatment. Survival outcomes should therefore be interpreted cautiously because large advanced HCC is strongly influenced by performance status, liver reserve, vascular invasion, extrahepatic progression, and subsequent treatment availability. Accordingly, the main message of this early series is feasibility: VMAT-LRT can provide local cytoreduction and treated-target control while preserving OAR safety and systemic therapy continuity in selected patients.
+
+Conclusion
+
+This initial experience suggests that VMAT-based LRT is feasible and well tolerated for selected patients with bulky advanced HCC, achieving meaningful tumor regression and durable in-field local control with acceptable toxicity while remaining compatible with multimodality treatment. Future prospective studies are needed to define optimal patient selection, refine dose–volume and lattice geometry parameters, and clarify how VMAT-LRT should be integrated with systemic therapy. Endpoints should extend beyond survival to include symptom response, liver function preservation, local control, systemic therapy continuity, patient-reported outcomes, and adaptive workflow requirements.
+
+Funding
+
+This study was conducted without financial support from any public, commercial, or not-for-profit funding agencies.
+
+Author contribution
+
+Study concept and design: SW Chiang, KH Lin, YW Lin.
+
+Data acquisition: SW Chiang, YW Hsieh, CP Pan, ML Kung, YW Lin.
+
+Quality control of data and algorithms: SW Chiang, YW Hsieh, CP Pan.
+
+Data analysis and interpretation: SW Chiang, ML Kung, KH Lin, YW Lin.
+
+Statistical analysis: YW Hsieh, CP Pan.
+
+Manuscript preparation and revision: SW Chiang, KH Lin, ML Kung, YW Lin.
+
+Manuscript editing and review: SW Chiang, ML Kung, KH Lin, YW Lin.
+
+Declaration of generative AI and AI-assisted technologies in the manuscript preparation process
+
+The authors used an AI language tool for readability and clarity, then reviewed and edited the article themselves, accepting full responsibility for its content.
+
+Declaration of competing interest
+
+The authors declare no financial or personal conflicts regarding this work.
+
+Appendix A Supplementary data
+
+Supplementary material
+
+Supplementary Material 1 and illustrated in Supplementary Figs. S1 and S2.A two-tier prescription (Supplementary Fig. S1)mean liver dose and adjacent OARs (Supplementary Material 2)Results:Patient 3 (Supplementary Fig. S3).Representative imaging examples are shown in Fig. 4 and Supplementary Fig. S4.Survival curves are shown in Supplementary Figure. S5 and S6.
+
+Data availability
+
+Data supporting this study are available from the corresponding author upon reasonable request and pending necessary approvals.
+
+Acknowledgement
+
+A portion of this work was presented at the ESTRO Annual Meeting, 2026.
+
+Appendix A Supplementary data to this article can be found online at https://doi.org/10.1016/j.ctro.2026.101263.
+
+
+References
+
+1 Bray F. Laversanne M. Sung H. Ferlay J. Siegel R.L. Soerjomataram I. Global cancer statistics 2022: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries CA Cancer J Clin 74 2024 229 263 38572751 10.3322/caac.21834
+2 Pinter M. Hucke F. Graziadei I. Vogel W. Maieron A. Konigsberg R. Advanced-stage hepatocellular carcinoma: transarterial chemoembolization versus sorafenib Radiology 263 2012 590 599 22438359 10.1148/radiol.12111550
+3 Llovet J.M. Kelley R.K. Villanueva A. Singal A.G. Pikarsky E. Roayaie S. Hepatocellular carcinoma Nat Rev Dis Primers 7 2021 6 10.1038/s41572-020-00240-3 33479224
+4 Lewis S. Dawson L. Barry A. Stanescu T. Mohamad I. Hosni A. Stereotactic body radiation therapy for hepatocellular carcinoma: from infancy to ongoing maturity JHEP Rep 4 2022 100498 10.1016/j.jhepr.2022.100498 PMC9289870 35860434
+5 Marrero J.A. Kulik L.M. Sirlin C.B. Zhu A.X. Finn R.S. Abecassis M.M. Diagnosis, staging, and Management of Hepatocellular Carcinoma: 2018 practice guidance by the American Association for the Study of Liver Diseases Hepatology 68 2018 723 750 29624699 10.1002/hep.29913
+6 Coffin P. He A. Hepatocellular carcinoma: past and present challenges and progress in molecular classification and precision oncology Int J Mol Sci 24 2023 10.3390/ijms241713274 PMC10487618 37686079
+7 Suresh A. Dhanasekaran R. Implications of genetic heterogeneity in hepatocellular cancer Adv Cancer Res 156 2022 103 135 35961697 10.1016/bs.acr.2022.01.007 PMC10321863
+8 Khatib S. Pomyen Y. Dang H. Wang X.W. Understanding the cause and consequence of tumor heterogeneity Trends Cancer 6 2020 267 271 32209440 10.1016/j.trecan.2020.01.010
+9 Geng L. Zhu M. Luo D. Chen H. Li B. Lao Y. TKT-PARP1 axis induces radioresistance by promoting DNA double-strand break repair in hepatocellular carcinoma Oncogene 43 2024 682 692 38216672 10.1038/s41388-023-02935-9 PMC10890932
+10 Yeoh K.W. Prawira A. Saad M.Z.B. Lee K.M. Lee E.M.H. Low G.K. Vinorelbine augments radiotherapy in hepatocellular carcinoma Cancers (Basel) 12 2020 10.3390/cancers12040872 PMC7226273 32260169
+11 Gkika E. Strouthos I. Kirste S. Adebahr S. Schultheiss M. Bettinger D. Repeated SBRT for in- and out-of-field recurrences in the liver Strahlenther Onkol 195 2019 246 253 30353350 10.1007/s00066-018-1385-0
+12 McDuff S.G.R. Remillard K.A. Zheng H. Raldow A.C. Wo J.Y. Eyler C.E. Liver reirradiation for patients with hepatocellular carcinoma and liver metastasis Pract Radiat Oncol 8 2018 10.1016/j.prro.2018.04.012 29937235
+13 Lee D.S. Woo J.Y. Kim J.W. Seong J. Re-irradiation of hepatocellular carcinoma: clinical applicability of deformable image registration Yonsei Med J 57 2016 41 49 26632381 10.3349/ymj.2016.57.1.41 PMC4696970
+14 Ohtaka T. Shiba S. Shibuya K. Okazaki S. Miyasaka Y. Tomizawa K. Long-term survivor of hepatocellular carcinoma treated with repeated carbon ion radiotherapy and transarterial chemoembolization: a case report Clin J Gastroenterol 15 2022 771 775 35679000 10.1007/s12328-022-01642-4 PMC9334374
+15 Lee S. Kim H. Ji Y. Cho B. Kim S.S. Jung J. Evaluation of hepatic toxicity after repeated stereotactic body radiation therapy for recurrent hepatocellular carcinoma using deformable image registration Sci Rep 8 2018 16224 30385839 10.1038/s41598-018-34676-1 PMC6212421
+16 Krisnawan V.E. Stanley J.A. Schwarz J.K. DeNardo D.G. Tumor microenvironment as a regulator of radiation therapy: new insights into stromal-mediated radioresistance Cancers (Basel) 12 2020 10.3390/cancers12102916 PMC7600316 33050580
+17 Jeggo P.A. Pearl L.H. Carr A.M. DNA repair, genome stability and cancer: a historical perspective Nat Rev Cancer 16 2016 35 42 26667849 10.1038/nrc.2015.4
+18 Lord C.J. Ashworth A. The DNA damage response and cancer therapy Nature 481 2012 287 294 22258607 10.1038/nature10760
+19 Rahbari N.N. Mehrabi A. Mollberg N.M. Muller S.A. Koch M. Buchler M.W. Hepatocellular carcinoma: current management and perspectives for the future Ann Surg 253 2011 453 469 21263310 10.1097/SLA.0b013e31820d944f
+20 Xu X.F. Xing H. Han J. Li Z.L. Lau W.Y. Zhou Y.H. Risk factors, patterns, and outcomes of late recurrence after liver resection for hepatocellular carcinoma: a Multicenter study from China JAMA Surg 154 2019 209 217 30422241 10.1001/jamasurg.2018.4334 PMC6439634
+21 Ferini G. Palmisciano P. Scalia G. Haider A.S. Bin-Alamer O. Sagoo N.S. The role of radiation therapy in the treatment of spine metastases from hepatocellular carcinoma: a systematic review and meta-analysis Neurosurg Focus 53 2022 E12 10.3171/2022.8.FOCUS2255 36321286
+22 Feng Y. Wu H. Huang D.Q. Xu C. Zheng H. Maeda M. Radiofrequency ablation versus repeat resection for recurrent hepatocellular carcinoma (</= 5 cm) after initial curative resection Eur Radiol 30 2020 6357 6368 32529568 10.1007/s00330-020-06990-8
+23 Singal A.G. Ozgurdal K. Fan X. Vassilev Z. Pan X. Multani J.K. Real-world systemic treatment patterns after atezolizumab and bevacizumab in patients with hepatocellular carcinoma in the United States Cancers (Basel) 15 2023 10.3390/cancers15235532 PMC10705135 38067235
+24 Liu Q.J. Zhang J.C. Wang Y.F. Zou M.H. Zhou W.X. Lu Y. Correlation of radiotherapy, targeted therapy, and immunotherapy with hepatocellular carcinoma recurrence World J Gastrointest Oncol 17 2025 107815 10.4251/wjgo.v17.i7.107815 PMC12278229 40697226
+25 Giannone F. Cassese G. Cubisino A. Felli E. Cipriani F. Branciforte B. Patterns of site and timing of recurrence after curative resection in single and multiple large hepatocellular carcinoma: a Multicenter international comprehensive analysis Ann Surg Oncol 32 2025 6312 6323 40537677 10.1245/s10434-025-17673-3
+26 Kim T.H. Koh Y.H. Kim B.H. Kim M.J. Lee J.H. Park B. Proton beam radiotherapy vs. radiofrequency ablation for recurrent hepatocellular carcinoma: a randomized phase III trial J Hepatol 74 2021 603 612 33031846 10.1016/j.jhep.2020.09.026
+27 Bush D.A. Volk M. Smith J.C. Reeves M.E. Sanghvi S. Slater J.D. Proton beam radiotherapy versus transarterial chemoembolization for hepatocellular carcinoma: results of a randomized clinical trial Cancer 129 2023 3554 3563 37503907 10.1002/cncr.34965
+28 Comito T. Loi M. Franzese C. Clerici E. Franceschini D. Badalamenti M. Stereotactic Radiotherapy after Incomplete Transarterial (Chemo-) Embolization (TAE\TACE) versus Exclusive TAE or TACE for Treatment of Inoperable HCC: A Phase III Trial (NCT02323360) Curr Oncol 29 2022 8802 8813 36421345 10.3390/curroncol29110692 PMC9689962
+29 Xi M. Yang Z. Hu L. Fu Y. Hu D. Zhou Z. Radiofrequency ablation versus stereotactic body radiotherapy for recurrent small hepatocellular carcinoma: a randomized, open-label, controlled trial J Clin Oncol 43 2025 1073 1082 39693584 10.1200/JCO-24-01532
+30 Mendez Romero A. van der Holt B. Willemssen F. de Man R.A. Heijmen B.J.M. Habraken S. Transarterial chemoembolization with drug-eluting beads versus stereotactic body radiation therapy for hepatocellular carcinoma: outcomes from a multicenter, randomized, phase 2 trial (the TRENDY trial) Int J Radiat Oncol Biol Phys 117 2023 45 52 37037359 10.1016/j.ijrobp.2023.03.064
+31 Yoon S.M. Ryoo B.Y. Lee S.J. Kim J.H. Shin J.H. An J.H. Efficacy and safety of Transarterial chemoembolization plus external beam radiotherapy vs sorafenib in hepatocellular carcinoma with macroscopic vascular invasion: a randomized clinical trial JAMA Oncol 4 2018 661 669 29543938 10.1001/jamaoncol.2017.5847 PMC5885246
+32 Dawson L.A. Winter K.A. Knox J.J. Zhu A.X. Krishnan S. Guha C. Stereotactic body radiotherapy vs sorafenib alone in hepatocellular carcinoma: the NRG oncology/RTOG 1112 phase 3 randomized clinical trial JAMA Oncol 11 2025 136 144 39699905 10.1001/jamaoncol.2024.5403 PMC11843352
+33 Moon A.M. Yanagihara T.K. Dawson L.A. Yu J.I. Lawrence T.S. Kim T.H. Overall survival among patients with hepatocellular carcinoma treated with external beam radiation therapy: individual patient data outcomes from a multinational cohort J Clin Oncol 44 19 2026 1784 1797 42139645 10.1200/JCO-25-02399 PMC13313461
+34 Grams M.P. Owen D. Park S.S. Petersen I.A. Haddock M.G. Jeans E.B. VMAT grid therapy: a widely applicable planning approach Pract Radiat Oncol 11 2021 10.1016/j.prro.2020.10.007 33130318
+35 Grams M.P. Deufel C.L. Kavanaugh J.A. Corbin K.S. Ahmed S.K. Haddock M.G. Clinical aspects of spatially fractionated radiation therapy treatments Phys Med 111 2023 102616 10.1016/j.ejmp.2023.102616 37311338
+36 Frankart A.J. Nelson B. Kumar N. Takiar V. Intratumoral dose escalation using lattice radiotherapy for hepatocellular carcinoma with Unfavorable size and location International Journal of Radiation Oncology*Biology*Physics 117 2023 e296
+37 Np J. Rao S. Singh A. Velu U. Mehta A. Lewis S. Feasibility planning study of lattice radiotherapy for palliation in bulky tumors Precis Radiat Oncol 8 2024 209 217 40337457 10.1002/pro6.1248 PMC11934898
+38 Li H. Mayr N.A. Griffin R.J. Zhang H. Pokhrel D. Grams M. Overview and recommendations for prospective multi-institutional spatially fractionated radiation therapy clinical trials Int J Radiat Oncol Biol Phys 119 2024 737 749 38110104 10.1016/j.ijrobp.2023.12.013 PMC11162930
+39 Prezado Y. Grams M. Jouglar E. Martinez-Rovira I. Ortiz R. Seco J. Spatially fractionated radiation therapy: a critical review on current status of clinical and preclinical studies and knowledge gaps Phys Med Biol 69 2024 10.1088/1361-6560/ad4192 38648789
+40 Li Y. Martin-Paulpeter R.M. Chung C.V. Aguilar M.A. Matias C.A. Delgado A. Novel pencil-beam scanning proton lattice radiation therapy for the treatment of bulky liver cancer: dosimetric comparison with VMAT-lattice radiotherapy Front Oncol 15 2025 1731259 10.3389/fonc.2025.1731259 PMC12913141 41716710
+41 Apisarnthanarax S. Barry A. Cao M. Czito B. DeMatteo R. Drinane M. External beam radiation therapy for primary liver cancers: An ASTRO clinical practice guideline Pract Radiat Oncol 12 2022 28 51 34688956 10.1016/j.prro.2021.09.004
+42 Bhagyalakshmi A.T. Ramasubramanian V. Impact of number and placement of high-dose vertices on equivalent uniform dose and peak-to-valley ratio for lattice radiotherapy J Med Phys 49 2024 493 501 39926149 10.4103/jmp.jmp_97_24 PMC11801099
+43 Wei S. Xu L. Qi H. Zheng A. Vermeulen M. Shepherd A. Pencil beam scanning proton lattice radiotherapy: single-field versus multi-field optimization Front Oncol 15 2025 1716722 10.3389/fonc.2025.1716722 PMC12865407 41640435
+44 Zhang H. Wu X. Zhang X. Chang S.X. Megooni A. Donnelly E.D. Photon GRID radiation therapy: a physics and dosimetry white paper from the radiosurgery society (RSS) GRID/LATTICE, microbeam and FLASH radiotherapy working group Radiat Res 194 2020 665 677 33348375 10.1667/RADE-20-00047.1
+45 Murphy N.L. Philip R. Wozniak M. Lee B.H. Donnelly E.D. Zhang H. A simple dosimetric approach to spatially fractionated GRID radiation therapy using the multileaf collimator for treatment of breast cancers in the prone position J Appl Clin Med Phys 21 2020 105 114 33119939 10.1002/acm2.13040 PMC7700924
+46 Zhang H. Ma L. Lim A. Ye J. Lukas L. Li H. Dosimetric validation for prospective clinical trial of GRID collimator-based spatially fractionated radiation therapy: dose metrics consistency and heterogeneous pattern reproducibility Int J Radiat Oncol Biol Phys 118 2024 565 573 37660738 10.1016/j.ijrobp.2023.08.061
+47 Ferini G. Valenti V. Viola A. Umana G.E. Illari S.I. Parisi S. First-ever clinical experience with magnetic resonance-based lattice radiotherapy for treating bulky Gynecological Tumors Anticancer Res 42 2022 4641 4646 36039437 10.21873/anticanres.15968
+48 Duriseti S. Kavanaugh J.A. Szymanski J. Huang Y. Basarabescu F. Chaudhuri A. LITE SABR M1: a phase I trial of lattice stereotactic body radiotherapy for large tumors Radiother Oncol 167 2022 317 322 34875286 10.1016/j.radonc.2021.11.023
+49 Iori F. Cappelli A. D’Angelo E. Cozzi S. Ghersi S.F. De Felice F. Lattice radiation therapy in clinical practice: a systematic review Clin Transl Radiat Oncol 39 2023 100569 10.1016/j.ctro.2022.100569 PMC9800252 36590825
+50 Price A.T. Schiff J.P. Zhu T. Mazur T. Kavanaugh J.A. Maraghechi B. First treatments for lattice stereotactic body radiation therapy using magnetic resonance image guided radiation therapy Clin Transl Radiat Oncol 39 2023 100577 10.1016/j.ctro.2023.100577 PMC9883196 36718251
+51 Ferini G. Zagardo V. Viola A. Patane D. Parisi S. Cuccia F. The promising effects of lattice radiotherapy for large, fungating, or ulcerating breast cancers: a prospective single-center study In Vivo 38 2024 2484 2493 39187357 10.21873/invivo.13719 PMC11363780
+52 Xu P. Wang S. Zhou J. Yuan K. Wang X. Li L. Spatially fractionated radiotherapy (lattice SFRT) in the palliative treatment of locally advanced bulky unresectable head and neck cancer Clin Transl Radiat Oncol 48 2024 100830 10.1016/j.ctro.2024.100830 PMC11364051 39219705
+53 El Chammah S. Bendahman M. Ghandour S. Fuchs L. Kinj R. Guyer G. Lattice radiotherapy for extensive liver metastases in synchronous EGFR-mutant lung adenocarcinoma and small cell lung cancer Clin Transl Radiat Oncol 54 2025 101023 10.1016/j.ctro.2025.101023 PMC12332872 40787640
+54 Studer G. Streller T. Jeller D. Huebner D. Fuchs B. Glanzmann C. Diagnosis-related outcome following palliative spatially fractionated radiation therapy (lattice) of large tumors Cancers (Basel) 17 2025 10.3390/cancers17172752 PMC12427535 40940850
+55 Ferini G. Viola A. Muscato A. Pergolizzi S. Castorina P. Zagardo V. Lattice radiotherapy-induced dramatic regression of bulky metastases challenges radioresistance compared with homogeneous hypofractionation in anorectal mucosal melanoma: a case report Oncologie 28 2026 211 217
+56 Iori F. Tubin S. Mourad W.F. Durante M. Prezado Y. Lara P.C. The future is not always uniform: rethinking radiotherapy through spatial fractionation Nat Rev Clin Oncol 23 2026 656 671 42270816 10.1038/s41571-026-01161-y
+57 Reig M. Sanduzzi-Zamparelli M. Forner A. Rimola J. Ferrer-Fabrega J. Burrel M. BCLC strategy for prognosis prediction and treatment recommendations: the 2026 update J Hepatol 84 2026 631 654 41151697 10.1016/j.jhep.2025.10.020
+58 Yang L. Ma Y. Peng J. Wu H. Wang Y. Xu H. Lattice SFRT combined with systemic therapy for bulky unresectable hepatocellular carcinoma: a retrospective study on safety and efficacy J Clin Oncol 44 2026 e16270-e
+59 Lu Q. Yan W. Zhu A. Tubin S. Mourad W.F. Yang J. Combining spatially fractionated radiation therapy (SFRT) and immunotherapy opens new rays of hope for enhancing therapeutic ratio Clin Transl Radiat Oncol 44 2024 100691 10.1016/j.ctro.2023.100691 PMC10684810 38033759
+60 McMillan M.T. Khan A.J. Powell S.N. Humm J. Deasy J.O. Haimovitz-Friedman A. Spatially fractionated radiotherapy in the era of immunotherapy Semin Radiat Oncol 34 2024 276 283 38880536 10.1016/j.semradonc.2024.04.002 PMC12013776
+61 Morel D. Robert C. Paragios N. Gregoire V. Deutsch E. Translational Frontiers and clinical opportunities of immunologically fitted radiotherapy Clin Cancer Res 30 2024 2317 2332 38477824 10.1158/1078-0432.CCR-23-3632 PMC11145173
+62 Passelli K. Reparaz D. Kinj R. Herrera F.G. Strategies for overcoming tumour resistance to immunotherapy: harnessing the power of radiation therapy Br J Radiol 97 2024 1378 1390 38833685 10.1093/bjr/tqae100 PMC11256940
+63 Lukas L. Zhang H. Cheng K. Epstein A. Immune priming with spatially fractionated radiation therapy Curr Oncol Rep 25 2023 1483 1496 37979032 10.1007/s11912-023-01473-7 PMC10728252
+64 Jin Y. Qian L. Gu Y. Gu B. Shen C. Sun X. The use of spatially fractionated radiation therapy combined with immune checkpoint inhibitors and vascular endothelial growth factor inhibitor in the treatment of Giant metastatic hepatocellular carcinoma: a case report Adv Radiat Oncol 11 2026 101973 10.1016/j.adro.2025.101973 PMC12808881 41550122
+65 Yan W. Khan M.K. Wu X. Simone C.B. 2nd Fan J. Gressen E. Spatially fractionated radiation therapy: history, present and the future Clin Transl Radiat Oncol 20 2020 30 38 31768424 10.1016/j.ctro.2019.10.004 PMC6872856
+66 Johnsrud A.J. Jenkins S.V. Jamshidi-Parsian A. Quick C.M. Galhardo E.P. Dings R.P.M. Evidence for early stage anti-tumor immunity elicited by spatially fractionated radiotherapy-immunotherapy combinations Radiat Res 194 2020 688 697 33348372 10.1667/RADE-20-00065.1 PMC8008989
+67 Griffin R.J. Ahmed M.M. Amendola B. Belyakov O. Bentzen S.M. Butterworth K.T. Understanding high-dose, ultra-high dose rate, and spatially fractionated radiation therapy Int J Radiat Oncol Biol Phys 107 2020 766 778 32298811 10.1016/j.ijrobp.2020.03.028

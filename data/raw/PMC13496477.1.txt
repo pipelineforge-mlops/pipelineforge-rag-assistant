@@ -1,0 +1,207 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: J Community Hosp Intern Med Perspect
+Journal ID: J Community Hosp Intern Med Perspect
+NLM Journal ID: 101601396
+
+Journal of Community Hospital Internal Medicine Perspectives
+
+EISSN: 2000-9666
+Publisher: Greater Baltimore Medical Center
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13496477
+PMID: 42631313
+DOI: 10.55729/2000-9666.1562
+Article ID: jchim-16-02-001
+Article version: 1
+Subjects: Perspective
+
+Artificial Intelligence in Medicine: A Definition of Terms
+
+Johnson Teray a *
+Blanchard Melvin b
+a Strategy and Operations, Lifepoint Health, USA
+b Department of Medicine, Greater Baltimore Medical Center, USA
+* Corresponding author. E-mail address: tjohnson70904@gmail.com (T. Johnson).
+Publication date: 2026
+Electronic publication date: 2026 Mar 17
+Volume: 16
+Issue: 2
+First page: 1
+Last page: 6
+Received 2025 Jul 1; Revised 2025 Sep 24; Accepted 2025 Oct 14
+Copyright: © 2026 Greater Baltimore Medical Center
+Copyright year: 2026
+License: This is an open access article under the CC BY-NC license (http://creativecommons.org/licenses/by-nc/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: Artificial intelligence, Generative AI, Healthcare, Medicine, Terms, Definitions, Machine learning
+
+==============================
+As artificial intelligence (AI) tools gain traction in clinical, operational, and administrative settings, healthcare professionals must develop a foundational understanding of key AI concepts to engage with these technologies responsibly and effectively. This perspective outlines essential AI terminology—such as machine learning, generative and agentic AI, large language models, artificial neural networks, and prompt engineering—paired with concrete clinical examples to illustrate their relevance in modern medical practice. By clarifying these terms and exploring their applications, this paper aims to equip healthcare leaders with the vocabulary and context necessary to evaluate, implement, and oversee AI systems within their organizations. Such literacy is critical to ensuring that AI technologies are used ethically, transparently, and in service of improving patient outcomes.
+
+1. Introduction
+
+Artificial Intelligence (AI) refers to the science of designing machines that can mimic human cognitive functions. Though the concept of AI emerged in the 1950s, its early application was constrained by limited computational power, minimal data availability in digital form, and low memory capacity. Over the decades, exponential improvements in semiconductor microchip technology have yielded significantly higher processing speeds and memory. Combined with the vast amounts of data now available through electronic medical records (EMRs) and organizational databases, these advances have made AI a practical and transformative tool in healthcare (see Table 1).
+
+In medicine, AI can be predictive—identifying patterns in data to forecast outcomes (machine learning); generative—creating new content (generative AI); or agentic—acting autonomously to make decisions and perform tasks without human input. Each of these capabilities is transforming clinical care, operations, and the patient experience. Therefore, several concepts regarding AI are defined below, which are sourced from current trends in healthcare and research articles that describe how these are being used.1–5
+
+2. Machine learning
+
+Historically, physicians relied on experience and observation to identify disease patterns and treatment outcomes—an early form of intelligence-based medicine.6 Today, clinicians are inundated with complex datasets (e.g., vital signs, wearables, labs, imaging, genomics, and proteomics) that exceed what a single practitioner can interpret. Machine learning (ML) enables AI to analyze these large, diverse datasets—whether textual, numeric, or visual—to detect patterns, make predictions, and generate insights.7,8 By recognizing trends that may be imperceptible to humans, ML supports more accurate diagnoses, personalized treatments, and improved healthcare delivery.
+
+Clinicians are currently using a machine learning model called MammaPrint to predict the distant recurrence of breast cancer in patients with early-stage breast cancer.9 MammaPrint is FDA-approved and includes a 70-gene assay with genes that are associated with tumor progression and metastasis. Clinicians have used MammaPrint to determine the treatment each patient receives. For example, clinicians recommend that low-risk patients receive shortened endocrine therapy. MammaPrint was found to increase patient and clinician confidence in making decisions regarding chemotherapy.10
+
+3. Generative AI
+
+Generative AI refers to systems that create new content—such as text, images, or data—based on learned patterns from large datasets.11,12 In healthcare, these tools, often powered by large language models (LLMs), are increasingly used to streamline documentation tasks, generate discharge summaries, and support clinical communication.13 For example, a generative AI model can review clinician notes to generate personalized after-visit summaries with follow-up instructions, improving both efficiency and patient comprehension. While powerful, these tools require human oversight to ensure accuracy and patient safety.
+
+Clinicians at Sutter Health, a 25-hospital health system in California, utilizes generative AI to listen to and record patient and physician conversations during patient visits. The AI then writes a clinical note for the patient's record, which includes information about their physical exam, assessment, and plan. It is also used to generate a note in patient-friendly language so that patients can understand their notes. Before sending the note to the patients, clinicians review and sign it.14 Doing so has increased patient satisfaction and allowed physicians to spend more time engaging with patients through eye contact instead of typing notes during patient interactions.
+
+4. Agentic AI
+
+Agentic AI describes systems capable of independent action, decision-making, and adaptive learning—without continuous human input.15,16 These agents are guided by goals rather than prompts and utilize a combination of ML, natural language processing, and automation.17 In medicine, agentic AI can manage complex care workflows. For example, an AI agent tasked with managing a patient's hypertension might analyze lifestyle data, send reminders for medications and appointments, and even coordinate care logistics. Their autonomy and contextual awareness make them promising tools in chronic disease management and patient engagement.
+
+Clinicians are currently using agentic AI in EHRs such as athenaOne.18 Its AI agent, called Agentforce, is being used to summarize patient histories and process patient refills. For example, if a patient calls the practice for a refill on their prescription, Agentforce scans the EHR, identifies care gaps, and prepares a visit summary for the staff member to review. Additionally, Agentforce prepares a prescription order for clinician approval.
+
+5. Large language models
+
+Large language models (LLMs) are a type of machine learning model designed to process and generate human language.19 Unlike general ML models, which can analyze diverse data types, LLMs are trained exclusively on language and text. Modern LLMs like ChatGPT, Google Gemini, and Microsoft Copilot can generate medical summaries, suggest differential diagnoses, or assist in drafting clinical documentation.
+
+Training LLMs involves feeding them vast amounts of curated text, allowing them to learn linguistic structure and contextual relevance.20 In practice, they can reduce administrative tasks in electronic health records (EHRs), enabling clinicians to spend more time with patients.21 However, these tools are not HIPAA-compliant, and any inputted data may be used for further model training—raising data privacy concerns.20
+
+Users can detect bias in LLM responses by analyzing language patterns and content emphasis. Indicators include disproportionate use of gendered terms, culturally specific references, or favoritism toward particular viewpoints or groups.22 Overgeneralizations are another red flag. For instance, a statement such as “All patients with diabetes are overweight” reflects a biased assumption that disregards the type of diabetes or other contributing lifestyle and genetic factors.
+
+To minimize such bias, data scientists must critically evaluate the composition of the training data.21 If the data is historical, it may under-represent marginalized populations or reflect past systemic inequities, such as discriminatory laws or environmental disparities. For example, historical records may inaccurately imply that all members of a particular racial or socioeconomic group are more prone to conditions like asthma due to where they lived, without accounting for structural determinants of health. To address this, data scientists can augment training datasets with representative examples from underrepresented groups, apply weighting to smaller samples, and incorporate synthetic data that mimics real-world distributions to achieve better balance and fairness.
+
+Another challenge involves data access.19,20 Much of the highest-quality clinical and scientific information—such as peer-reviewed journal content and EMRs—is restricted due to paywalls, privacy regulations, or copyright protections. As a result, publicly available training data often skews toward English-language content and Western perspectives. This imbalance increases the risk of hallucination or inaccurate responses when LLMs are prompted with topics outside their accessible knowledge base. Mitigation strategies include training LLMs on licensed subsets of proprietary data under formal agreements and employing techniques like retrieval-augmented generation (RAG) to anchor outputs to verified sources, thereby enhancing reliability while respecting legal and ethical constraints.23
+
+Clinicians are currently using an LLM called PEACH to assist with perioperative clinical decision support.24 PEACH integrates perioperative guidelines into its decision recommendations. For example, clinicians use PEACH to answer clinical questions. PEACH was shown to be approximately 97/% accurate; additionally, clinicians rated it highly in ease of understanding and making decisions more quickly.
+
+6. Artificial neural networks
+
+Artificial neural networks (ANNs) are machine learning models inspired by the structure of the human brain.25 Comprised of interconnected ‘nodes,’ ANNs learn through pattern recognition across vast datasets. In medicine, ANNs are particularly useful in diagnostic imaging.26 For instance, after training on thousands of CT scans labeled with lung cancer, an ANN can identify cancer in new images with high accuracy.27
+
+Though the concept of neural networks dates to the 1940s, significant progress began in the 1980s with improvements in computer processing.28 Today, ANNs form the basis of many advanced AI applications, including deep learning systems.
+
+Radiologists are using ANNs to detect disease, such as chest diseases from x-rays, (e.g., COVID-19), breast cancer from mammograms, and detecting scaphoid fractures on wrist radiographs,29 These tools are helpful in diagnosis, screening, segmentation, monitoring, and risk prediction. This has helped clinicians reduce repetitive tasks in detection and analyzing radiology scans, and analyze these scans more quickly and consistently.
+
+7. Deep learning
+
+Deep learning (DL) is a subset of machine learning that employs multi-layered neural networks—referred to as ‘deep’ networks—for more complex analyses. DL systems mimic human cognitive processes by continuously refining their understanding as they receive new data.30 This makes them well-suited to tasks such as speech recognition, image classification, and clinical decision support.
+
+Introduced formally in 2006, DL has revolutionized fields like gaming, finance, and now healthcare. 31 In clinical practice, DL can transcribe physician dictations, generate notes, and support diagnostic decisions—helping reduce physician burnout and enhance operational efficiency.
+
+Currently, clinicians are using deep learning algorithms to predict acute kidney injury (AKI).32 The model has been used to predict about 56 % of AKI across inpatients and 90 % of Aki that required providing dialysis. The algorithm also produces a list of the most significant clinical variables for each prediction and future trajectories for blood tests. The algorithm allows clinicians to identify patients at risk of developing AKI within a timeframe that allows early treatment.
+
+8. Chatbots
+
+Chatbots are AI-driven tools designed to simulate human conversation and provide real-time support. 33 In healthcare, they are increasingly used for both patient engagement and administrative support. Powered by natural language processing (NLP), chatbots can answer health questions, send medication reminders, assist with chronic disease management, and escalate clinical concerns when needed.34–38
+
+For example, a diabetes chatbot may track glucose levels daily, offer dietary suggestions, and prompt clinical review when readings are abnormal. These applications help extend care beyond the clinic, improve adherence, and reduce the workload on healthcare staff.
+
+Clinicians at Stanford Medicine are currently using ChatEHR to talk with medical records.39 Doing so has expedited chart reviews by allowing clinicians to ask questions about a patient's medical history (e.g., what a patient's allergies are), automatically summarize charts, and gather additional information. The chatbot uses information from the patient's medical record to respond.
+
+9. Prompt engineering
+
+Prompt engineering is the practice of crafting clear, purposeful instructions to guide an AI algorithm's output.40,41 In the context of large language models, well-structured prompts significantly increase the likelihood of receiving relevant, accurate, and task-specific responses.42 Effective prompts provide contextual detail and explicitly state the user's intent, helping the model understand not only what is being asked, but why 7.
+
+Techniques for prompt engineering include using precise and concise language, avoiding ambiguity, and breaking down complex tasks into smaller, more manageable components. This modular approach is particularly useful in clinical settings where layered reasoning is often required.43
+
+In medicine, vague prompts can lead to overly broad or clinically unhelpful responses. For example, the prompt “What is wrong with a patient who has a fever?” is ineffective because it lacks the context—such as the patient's age, comorbidities, or symptom profile—needed to narrow down the model's reasoning.
+
+In contrast, an effective prompt might read: “A 42-year-old male presents with a 102 °F fever, dry cough, shortness of breath, and loss of taste. No recent travel history. What are the most likely differential diagnoses, and what initial tests should be ordered?” This version includes relevant demographic data, specific symptoms, and notable negatives, which help the model generate a clinically sound, context-aware response.
+
+Thoughtfully engineered prompts not only improve AI accuracy but also align outputs with clinical reasoning processes, making them valuable tools for decision support in healthcare.
+
+Clinicians are currently using prompt engineering to draft responses to patient questions in EHRs. For example, clinicians are providing the wanted style and tone and giving the model context to tailor responses.44 Doing so have improved the quality and relevance of replies.
+
+10. Hallucination
+
+In AI, ‘hallucination’ refers to the generation of false or misleading information that appears plausible but is not based on verified data.45 This phenomenon often occurs in LLMs, which generate text by predicting likely word sequences rather than fact-checking.46
+
+In a clinical setting, hallucinated content can introduce risk—such as fictitious citations or incorrect medication dosages.47 To mitigate this, it is critical to incorporate human oversight, connect AI tools to validated medical databases, and design prompts that constrain outputs within reliable boundaries.45 Addressing hallucination is key to the safe integration of AI into medical practice.
+
+11. Conclusion
+
+Artificial Intelligence holds transformative potential across all domains of healthcare, including community hospitals, where clinicians increasingly encounter AI-enabled tools such as diagnostic imaging support, sepsis prediction models, and automated documentation systems.27,48,49 As these technologies move from tertiary centers into broader clinical practice, it is essential for both clinical and non-clinical professionals to develop a clear understanding of core AI concepts and their practical applications. By familiarizing themselves with key terms, such as machine learning, generative AI, LLMs, and hallucination, physicians, nurses, and administrators can more effectively harness AI to enhance patient care, streamline operations, and address the unique needs of their populations. Moreover, clinicians can critically evaluate outputs, recognize limitations, and safeguard against unsafe recommendations.41,45,50 An informed workforce is critical to ensuring that AI tools are used ethically, safely, and to their fullest potential.
+
+By learning from successful implementations in other health systems, community physicians, nurses, and administrators can more effectively harness AI to enhance patient care, streamline operations, and respond to local population health needs.51,52 An informed workforce is critical to ensuring that AI tools are adopted ethically and used safely.53 AI literacy is no longer optional knowledge but is a core competency that equips clinicians to actively shape how AI augments clinical care.
+
+Table 1 Term summary and examples.
+
+Terms	Potential Use in Medicine	
+Machine Learning	Predict the recurrence of breast cancer in patients with early-stage breast cancer	
+Generative AI	Listen to and record patient and physician conversations during patient visits to then write a clinical note for the patient's record	
+Agentic AI	Scan an EHR, identify care gaps, prepare a visit summary for the staff member to review, and prepare a prescription order for clinician approval	
+LLMs	Clinical decision support, such as integrating perioperative guidelines into the LLM's decision recommendations	
+/ANNs	Detect disease in radiology images, such as chest diseases from x-rays and breast cancer from mammograms	
+Deep Learning	Predict acute kidney injury (AKI)	
+Chatbots	Use chatbots to talk with medical records by allowing clinicians to ask questions about a patient's medical history and obtain responses.	
+Prompt Engineering	Specifying context and tone when responding to patient inquiries in the EHR using an LLM.	
+
+Conflict of interest: The authors have no conflicts of interest.
+
+Disclaimers: This article has not been submitted to any other publication and has not been presented at any conferences or meetings.
+
+Source(s) of support: No external sources of support, such as grants, drugs, or equipment, were used in the development or writing of this article.
+
+
+References
+
+1 Bedi S Liu Y Orr-Ewing L Testing and evaluation of health care applications of large language models: a systematic review JAMA 2025 333 4 319 328 10.1001/jama.2024.21700 39405325 PMC11480901
+2 Barreda M Cantarero-Prieto D Coca D Transforming healthcare with chatbots: uses and applications-a scoping review Digit Health 2025 11 20552076251319176 10.1177/20552076251319174 PMC11915287 40103640
+3 Zaghir J Naguib M Bjelogrlic M Névéol A Tannier X Lovis C Prompt engineering paradigms for medical applications: scoping review J Med Internet Res 2024 26 e60501 10.2196/60501 39255030 PMC11422740
+4 Khosravi M Zare Z Mojtabaeian SM Izadi R Artificial intelligence and decision-making in healthcare: a thematic analysis of a systematic review of reviews Health Serv Res Manag Epidemiol 2024 11 23333928241234864 10.1177/23333928241234863 PMC10916499 38449840
+5 Chelli M Descamps J Lavoué V Hallucination rates and reference accuracy of ChatGPT and bard for systematic reviews: comparative analysis J Med Internet Res 2024 26 e53164 10.2196/53164 38776130 PMC11153973
+6 Bi Q Goodman KE Kaminsky J Lessler J What is machine learning? A primer for the epidemiologist Am J Epidemiol October 21 2019 10.1093/aje/kwz189 . Published online 31509183
+7 Gunantara N A review of multi-objective optimization: methods and its applications Cogent Eng 2018 5 1 1502242 10.1080/23311916.2018.1502242
+8 Wiens J Shenoy ES Machine learning for healthcare: on the verge of a major shift in healthcare epidemiology Clin Infect Dis 2018 66 1 149 153 10.1093/cid/cix731 29020316 PMC5850539
+9 Lian J Yao R Xu Y Prediction of the 70-gene signature (MammaPrint) high versus low risk by nomograms among axillary lymph node positive (LN+) and negative (LN-) Chinese breast cancer patients, a retrospective study BMC Cancer 2025 25 1 1128 10.1186/s12885-025-14507-z 40597882 PMC12211753
+10 van Steenhoven JEC den Dekker BM Kuijer A Patients' perceptions of 70-gene signature testing: commonly changing the initial inclination to undergo or forego chemotherapy and reducing decisional conflict Breast Cancer Res Treat 2020 182 1 107 115 10.1007/s10549-020-05683-6 32430679 PMC7275022
+11 IBM What is generative AI? IBM
+12 NIH Generative Artificial Intelligence National Library of Medicine
+13 Bhuyan SS Sateesh V Mukul N Generative artificial intelligence use in healthcare: opportunities for clinical excellence and administrative efficiency J Med Syst 2025 49 1 10 10.1007/s10916-024-02136-1 39820845 PMC11739231
+14 American Medical Association How electronic health record AI is changing medical summaries for doctors and helping patients July 21 2025 Published online
+15 Hinostroza Fuentes VG Karim HA Tan MJT AlDahoul N AI with agency: a vision for adaptive, efficient, and ethical healthcare Front Digit Health 2025 7 1600216 10.3389/fdgth.2025.1600216 40400543 PMC12092461
+16 Liawrungrueang W Artificial intelligence (AI) agents versus agentic AI: what's the effect in spine surgery? Neurospine 2025 22 2 473 477 10.14245/ns.2550308.154 40625011 PMC12242738
+17 Finn T Downie A Agentic AI vs. generative AI IBM
+18 Valentine J Why agentic AI matters for healthcare athenahealth
+19 Maity S Saikia MJ Large language models in healthcare and medical applications: a review Bioengineering (Basel) 2025 12 6 10.3390/bioengineering12060631 PMC12189880 40564447
+20 Dennstädt F Hastings J Putora PM Schmerder M Cihoric N Implementing large language models in healthcare while balancing control, collaboration, costs and security NPJ Digit Med 2025 8 1 143 10.1038/s41746-025-01476-7 40050366 PMC11885444
+21 Lin C Kuo CF Roles and potential of large language models in healthcare: a comprehensive review Biomed J April 2025 100868 10.1016/j.bj.2025.100868 Published online 40311872 PMC12517079
+22 Huang L Yu W Ma W A survey on hallucination in large language models: principles, taxonomy, challenges, and open questions ACM Trans Inf Syst 2025 43 2 1 55 10.1145/3703155
+23 Amugongo LM Mascheroni P Brooks S Doering S Seidel J Retrieval augmented generation for large language models in healthcare: a systematic review PLOS Digital Health 2025 4 6 e0000877 10.1371/journal.pdig.0000877 40498738 PMC12157099
+24 Ke YH Jin L Elangovan K Real-world deployment and evaluation of <scp>PEri</scp>-operative <scp>AI CHatbot</scp> (<scp>PEACH</scp>): a large language model chatbot for peri-operative medicine Anaesthesia September 19 2025 10.1111/anae.16755 . Published online 40973491
+25 Jiang J Trundle P Ren J Medical image analysis with artificial neural networks Comput Med Imag Graph 2010 34 8 617 631 10.1016/j.compmedimag.2010.07.003 20713305
+26 Lee JG Jun S Cho YW Deep learning in medical imaging: general overview Korean J Radiol 2017 18 4 570 584 10.3348/kjr.2017.18.4.570 28670152 PMC5447633
+27 Ardila D Kiraly AP Bharadwaj S End-to-end lung cancer screening with three-dimensional deep learning on low-dose chest computed tomography Nat Med 2019 25 6 954 961 10.1038/s41591-019-0447-x 31110349
+28 Hardesty L Explained: Neural networks MIT News
+29 Kufel J Bargieł-Łączek K Kocot S What is machine learning, artificial neural networks and deep learning?—examples of practical applications in medicine Diagnostics 2023 13 15 2582 10.3390/diagnostics13152582 37568945 PMC10417718
+30 Oppermann A What is deep learning and how does it work? BuiltIn
+31 Thomas M The history of deep learning: top moments that shaped the technology BuiltIn
+32 Tomašev N Glorot X Rae JW A clinically applicable approach to continuous prediction of future acute kidney injury Nature 2019 572 7767 116 119 10.1038/s41586-019-1390-1 31367026 PMC6722431
+33 Laymouna M Ma Y Lessard D Schuster T Engler K Lebouché B Roles, users, benefits, and limitations of chatbots in health care: rapid review J Med Internet Res 2024 26 e56930 10.2196/56930 39042446 PMC11303905
+34 Fadhil A A conversational interface to improve medication adherence: towards AI support in patient's treatment March 3 2018 Published online
+35 Kurniawan MH Handiyani H Nuraini T Hariyati RTS Sutrisno S A systematic review of artificial intelligence-powered (AI-powered) chatbot intervention for managing chronic illness Ann Med 2024 56 1 2302980 10.1080/07853890.2024.2302980 38466897 PMC10930147
+36 Altom DS Awad Taha AI Mahmoud Hussein AAA Artificial intelligence-based chatbots in chronic disease management: a systematic review of applications and challenges Cureus March 22 2025 10.7759/cureus.81001 . Published online PMC12011281 40260325
+37 Barreda M Cantarero-Prieto D Coca D Transforming healthcare with chatbots: uses and applications-a scoping review Digit Health 2025 11 20552076251319176 10.1177/20552076251319174 PMC11915287 40103640
+38 SenBhattacharya B Pissurlenkar VS Assistive Chatbots for healthcare: a succinct review August 8 2023 Published online
+39 Armitage H Clinicians can ‘chat’ with medical records through new AI software, ChatEHR Stanford Medicine
+40 Liu J Liu F Wang C Liu S Prompt engineering in clinical practice: tutorial for clinicians J Med Internet Res 2025 27 10.2196/72644 e72644 e72644 40955776 PMC12439060
+41 Meskó B Prompt engineering as an important emerging skill for medical professionals: tutorial J Med Internet Res 2023 25 e50638 10.2196/50638 37792434 PMC10585440
+42 Wang MH Jiang X Zeng P Balancing accuracy and user satisfaction: the role of prompt engineering in AI-driven healthcare solutions Front Artif Intell 2025 8 10.3389/frai.2025.1517918 PMC11865202 40017484
+43 Wang J Shi E Yu S Prompt engineering for healthcare: methodologies and applications March 23 2024 Published online
+44 Afshar M Gao Y Wills G Prompt engineering with a large language model to assist providers in responding to patient inquiries: a real-time implementation in the electronic health record JAMIA Open 2024 7 3 ooae080 10.1093/jamiaopen/ooae080 39166170 PMC11335368
+45 Asgari E Montaña-Brown N Dubois M A framework to assess clinical safety and hallucination rates of LLMs for medical text summarisation NPJ Digit Med 2025 8 1 274 10.1038/s41746-025-01670-7 40360677 PMC12075489
+46 Farquhar S Kossen J Kuhn L Gal Y Detecting hallucinations in large language models using semantic entropy Nature 2024 630 8017 625 630 10.1038/s41586-024-07421-0 38898292 PMC11186750
+47 Ashwin M Jha S Prasad G Kumar S Fake it till you make it? AI hallucinations and ethical dilemmas in Anesthesia research and practice J Anaesthesiol Clin Pharmacol 2025 41 3 381 383 10.4103/joacp.joacp_56_25 40635820 PMC12237199
+48 Topol EJ High-performance medicine: the convergence of human and artificial intelligence Nat Med 2019 25 1 44 56 10.1038/s41591-018-0300-7 30617339
+49 A path for translation of machine learning products into healthcare delivery EMJ Innovations January 27 2020 10.33590/emjinnov/19-00172 Published online
+50 Hatem R Simmons B Thornton JE A call to address AI “Hallucinations” and how healthcare professionals can mitigate their risks Cureus September 5 2023 10.7759/cureus.44720 . Published online PMC10552880 37809168
+51 Jiang F Jiang Y Zhi H Artificial intelligence in healthcare: past, present and future Stroke Vasc Neurol 2017 2 4 230 243 10.1136/svn-2017-000101 29507784 PMC5829945
+52 Yu KH Kohane IS Framing the challenges of artificial intelligence in medicine BMJ Qual Saf 2019 28 3 238 241 10.1136/bmjqs-2018-008551 30291179
+53 Ethical dimensions of using artificial intelligence in health care AMA J Ethics 2019 21 2 E121 E124 10.1001/amajethics.2019.121

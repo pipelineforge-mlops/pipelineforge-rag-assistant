@@ -1,0 +1,330 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Int J Chron Obstruct Pulmon Dis
+Journal ID: Int J Chron Obstruct Pulmon Dis
+NLM Journal ID: 101273481
+Journal ID: copd
+
+International Journal of Chronic Obstructive Pulmonary Disease
+
+ISSN: 1176-9106
+EISSN: 1178-2005
+Publisher: Dove Press
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499541
+PMID: 42633429
+DOI: 10.2147/COPD.S609203
+Article ID: 609203
+Article version: 1
+Subjects: Original Research
+
+Explainable Machine Learning for Predicting Deep Vein Thrombosis in Critically Ill Patients with COPD: Development and Multicenter External Validation
+
+Wang et al
+
+Wang et al
+
+Wang Guangdong 1
+http://orcid.org/0000-0003-1109-4404 Liu Tingting 1
+Ji Wenwen 1
+Li Tingting 1
+http://orcid.org/0009-0001-6569-5806 Wang Zhuoyang 1
+Hu Tinghua 1
+Wang Xiaojian 2
+http://orcid.org/0000-0002-5743-5158 Shi Zhihong 1
+1 Department of Respiratory and Critical Care Medicine, The First Affiliated Hospital of Xi’an Jiaotong University , Xi’an , Shaanxi , 710061 , People’s Republic of China
+2 Department of Respiratory and Critical Care Medicine, Xi’an Chang’an District Hospital , Xi’an , Shaanxi , 710100 , People’s Republic of China
+Correspondence: Zhihong Shi, Department of Respiratory and Critical Care Medicine, The First Affiliated Hospital of Xi’an Jiaotong University, No. 277 Yanta West Road, Xi’an, Shaanxi, 710061, People’s Republic of China, Email docszh@xjtufh.edu.cnXiaojian Wang, Department of Respiratory and Critical Care Medicine, Xi’an Chang’an District Hospital, Guodu Subdistrict, Chang’an District, Xi’an, Shaanxi, 710100, People’s Republic of China, Email 1216325717@qq.com
+Electronic publication date: 2026 Aug 18
+Publication date: 2026
+Volume: 21
+Electronic Location ID: 609203
+Received 2026 Mar 14; Accepted 2026 Jul 27
+Copyright: © 2026 Wang et al.
+Copyright year: 2026
+Copyright holder: Wang et al.
+License: This work is published and licensed by Dove Medical Press Limited. The full terms of this license are available at https://www.dovepress.com/terms.php and incorporate the Creative Commons Attribution – Non Commercial (unported, v4.0) License (http://creativecommons.org/licenses/by-nc/4.0/). By accessing the work you hereby accept the Terms. Non-commercial uses of the work are permitted without any further permission from Dove Medical Press Limited, provided the work is properly attributed. For permission for commercial use of this work, please see paragraphs 4.2 and 5 of our Terms (https://www.dovepress.com/terms.php).
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Keywords: chronic obstructive pulmonary disease, deep vein thrombosis, machine learning, XGBoost, SHAP interpretability
+
+Funding: This research was supported by the Chinese Academy of Medical Sciences Innovation Fund for Medical Sciences (Grant No. 2021-I2M-049) and the Chinese Academy of Medical Sciences Innovation Fund for Medical Sciences (Grant No. 2022-KY-209-3).
+
+Figure count: 8
+Table count: 2
+Reference count: 39
+Page count: 14
+
+==============================
+Background
+
+Deep vein thrombosis (DVT) is a frequent yet underrecognized complication in critically ill patients with chronic obstructive pulmonary disease (COPD). Existing risk assessment tools are not specifically tailored to this high-risk population. We aimed to develop and externally validate an interpretable machine-learning model for early prediction of DVT in ICU-admitted COPD patients.
+
+Methods
+
+Adult COPD patients admitted to the ICU were identified from the MIMIC-IV database and randomly divided into training and internal validation cohorts. Eight machine-learning algorithms were constructed and compared. The best-performing model was externally validated in MIMIC-III and eICU cohorts. Model discrimination, calibration, and clinical utility were assessed using AUC, calibration plots, decision-curve analysis (DCA), and Brier scores. SHAP analysis was applied for global and individual interpretability. A web-based calculator was developed for clinical application.
+
+Results
+
+Among 6,672 ICU patients with COPD, 462 (6.9%) developed DVT. XGBoost showed the best overall performance, with an AUC of 0.840 (95% CI 0.812–0.868) in the internal validation cohort and good calibration. External validation confirmed stable discrimination in both MIMIC-III and eICU cohorts. Model interpretation identified prolonged PTT, elevated RDW, reduced SpO2, and increased respiratory rate as important contributors to DVT risk. Decision-curve analysis suggested potential clinical benefit across relevant risk thresholds.
+
+Conclusion
+
+We developed and externally validated an explainable machine-learning model for early prediction of DVT in ICU patients with COPD. By providing individualized risk estimates and interpretable explanations, this tool may help clinicians identify high-risk patients earlier and support more targeted thromboprophylaxis and imaging surveillance strategies.
+
+Introduction
+
+Deep vein thrombosis (DVT) remains a major and often underrecognized complication in critically ill patients.1,2 In the intensive care unit (ICU), multiple prothrombotic factors—including immobilization, systemic inflammation, invasive procedures, and hemodynamic instability—converge to markedly increase venous thromboembolism risk.3–5 DVT not only predisposes patients to pulmonary embolism but is also associated with prolonged length of stay, higher healthcare costs, and increased short- and long-term mortality.4,6 Although pharmacologic thromboprophylaxis is widely implemented, the incidence of DVT in critically ill populations remains substantial, underscoring the need for more precise risk stratification strategies.
+
+Among ICU populations, patients with chronic obstructive pulmonary disease (COPD) represent a uniquely vulnerable subgroup.7,8 Beyond advanced age and frequent comorbidities, COPD is characterized by persistent systemic inflammation, chronic hypoxemia, oxidative stress, endothelial dysfunction, and recurrent infectious exacerbations.9–11 These pathophysiological disturbances contribute to hypercoagulability and impaired fibrinolysis, creating a biological milieu conducive to thrombosis.12,13 Furthermore, acute respiratory failure and mechanical ventilation—common in ICU-admitted COPD patients—may exacerbate venous stasis and inflammatory activation.4,14 Despite these mechanisms, current DVT risk assessment tools were largely derived from heterogeneous hospitalized populations and do not specifically account for the complex interplay of respiratory dysfunction, inflammation, and critical illness that defines ICU COPD patients.15,16
+
+Traditional statistical approaches, such as logistic regression–based models, assume linear relationships and limited interactions among predictors.17 However, thrombotic risk in critically ill patients is likely driven by nonlinear effects and high-order interactions between physiologic, laboratory, and treatment-related variables. Machine-learning techniques offer the capacity to model such complexity and have demonstrated superior predictive performance across various critical care outcomes.18 Nevertheless, concerns regarding model transparency and interpretability have hindered their translation into bedside decision-making.19 Clinicians are unlikely to adopt predictive tools that function as “black boxes” without clear mechanistic insight.
+
+Recent studies have emphasized the vulnerability of patients with COPD during acute infectious and respiratory insults, including COVID-19, and have underscored the need for more precise risk assessment in this population.20,21 Meanwhile, machine-learning models using structured electronic health records have shown promise for predicting venous thromboembolism in broad clinical populations. However, existing models are generally not tailored to ICU-admitted COPD patients, in whom hypoxemia, systemic inflammation, immobilization, invasive support, and critical illness may jointly shape thrombotic risk. These gaps support the development of a population-specific, externally validated, and interpretable prediction model for DVT in critically ill patients with COPD. Importantly, few studies have specifically developed and externally validated explainable machine-learning models for predicting DVT in ICU-admitted patients with COPD. Existing prediction models have either focused on general hospitalized populations, broader ICU cohorts, or venous thromboembolism risk without COPD-specific stratification.15,16 This underscores an important gap in precision risk assessment for this high-risk subgroup.
+
+Therefore, we sought to construct and externally validate an explainable machine-learning model for early DVT risk stratification in critically ill COPD patients. Model performance was comprehensively assessed, and interpretability was ensured using SHAP analysis. An online calculator was developed to support individualized clinical decision-making.
+
+Materials and Methods
+
+Data Sources
+
+This retrospective multicenter study was conducted using three publicly available critical care databases: the Medical Information Mart for Intensive Care IV (MIMIC-IV), MIMIC-III, and the eICU Collaborative Research Database. MIMIC-IV served as the development cohort, whereas MIMIC-III and eICU were used for independent external validation.
+
+MIMIC-IV contains detailed ICU data from Beth Israel Deaconess Medical Center between 2008 and 2022, including demographic characteristics, diagnoses, laboratory results, vital signs, medications, and clinical outcomes.22 MIMIC-III comprises ICU admissions from the same institution between 2001 and 2012.23 The eICU database includes multicenter ICU data collected across hospitals in the United States between 2014 and 2015.24 All databases are fully de-identified and publicly accessible. Ethical approval was obtained by the original database investigators.
+
+Study Population and Outcome Definition
+
+Adult patients aged 18 years or older with a documented diagnosis of COPD, identified using ICD-9 and ICD-10 codes, were eligible for inclusion. To avoid within-patient correlation, only the first ICU admission during the study period was analyzed.
+
+Patients were excluded if their ICU length of stay was less than 24 hours, if DVT had been documented prior to ICU admission, or if essential baseline variables required for model construction were unavailable. The primary outcome was incident DVT occurring during ICU hospitalization. DVT events were identified using ICD-9 and ICD-10 diagnosis codes recorded after ICU admission to ensure temporal alignment between predictors and outcome. ICD-based definitions have been widely used in administrative and electronic health record studies of venous thromboembolism, and previous validation studies have supported their utility for identifying VTE/DVT events, particularly when inpatient diagnosis codes are used.25,26 However, because systematic imaging records and detailed diagnostic timing were not uniformly available across databases, possible outcome misclassification could not be fully excluded. The patient selection process is illustrated in Figure 1. Figure 1 Flowchart of patient selection and cohort derivation.
+
+The flowchart illustrates the selection process for ICU-admitted COPD patients from three databases: MIMIC-IV, MIMIC-III and EICU. Each database lists initial patient counts: 8146 for MIMIC-IV, 4050 for MIMIC-III and 10630 for EICU. Exclusion criteria are consistent across databases: age less than 18 years, ICU length of stay less than or equal to 24 hours, DVT prior to ICU admission and missing values greater than 30 percent in key variables required for analysis. After applying these criteria, the final included patient counts are 6672 for MIMIC-IV, 3538 for MIMIC-III and 6724 for EICU. Each final group is divided into patients with and without DVT: MIMIC-IV has 6210 without DVT and 462 with DVT; MIMIC-III has 3200 without DVT and 338 with DVT; EICU has 6404 without DVT and 320 with DVT.Flowchart of COPD patient selection from three databases, showing exclusion criteria and final patient counts.
+
+Statistical Analysis
+
+For baseline comparisons, continuous variables were assessed for distributional characteristics and presented as mean ± standard deviation or median with interquartile range as appropriate. Group comparisons were performed using Student’s t-test or the Wilcoxon rank-sum test. Categorical variables were expressed as counts and percentages and compared using the chi-square test or Fisher’s exact test when necessary. All statistical analyses and data visualizations were performed using R (version 4.4.2) and JD_DCPM (V6.11, Jingding Medical Technology Co., Ltd). Statistical tests were two-sided, and a p-value less than 0.05 was considered statistically significant.
+
+Candidate Variables and Data Preprocessing
+
+Baseline variables were extracted within the first 24 hours of ICU admission to reflect early clinical status. Candidate predictors were selected based on clinical relevance and prior literature and included demographic characteristics, vital signs, laboratory measurements, comorbidities, and treatment-related variables. The full list of candidate variables and their missing data proportions is presented in Supplementary Table 1. Missingness was quantified for each variable. Predictors with more than 25% missing data were excluded. This prespecified threshold was chosen as a conservative pragmatic balance between retaining clinically relevant predictors and reducing imputation uncertainty for variables with substantial missingness. The threshold falls within the 10–30% missingness range under which missForest has been previously evaluated.27 Variables below this threshold were imputed using missForest, a nonparametric random forest–based approach suitable for mixed-type data. All preprocessing steps were performed exclusively within the training set to prevent information leakage.
+
+To reduce redundancy and multicollinearity, highly correlated predictors were filtered before feature selection. For continuous variables, pairwise Spearman correlation coefficients were calculated, and when the absolute correlation exceeded 0.60, the variable less strongly associated with the outcome was removed. For categorical predictors, association strength was quantified using Cramér’s V, and when values exceeded 0.50, the less outcome-relevant variable was excluded.
+
+Feature Selection and Model Development
+
+The MIMIC-IV cohort was randomly divided into a training set and an internal validation set at a ratio of 7:3. To minimize information leakage, the internal validation set and the two external validation cohorts were not used for missing-data imputation, correlation filtering, feature selection, resampling, or hyperparameter tuning. All preprocessing and feature selection steps were fitted only within the MIMIC-IV training set. Class rebalancing using SMOTE combined with random under-sampling was applied only to the training data. During cross-validation for hyperparameter tuning, resampling was restricted to the training portion of each fold, whereas the held-out fold was left unchanged. Feature selection was conducted within the training set using a two-step strategy combining least absolute shrinkage and selection operator (LASSO) regression and the Boruta algorithm.28,29 Only predictors retained by both methods were included in the final modeling process to enhance robustness and reduce selection instability. Because of class imbalance in the outcome, the training data were rebalanced using a hybrid approach integrating random under-sampling of the majority class and the synthetic minority over-sampling technique (SMOTE). Eight machine-learning algorithms were subsequently developed, including logistic regression, k-nearest neighbors, decision tree, random forest, extreme gradient boosting (XGBoost), Light Gradient Boosting Machine, support vector machine, and neural network.
+
+Hyperparameters were optimized using grid search and K-fold cross-validation within the training set, with AUC as the primary optimization metric. Key tuned parameters included tree depth, learning rate, number of trees or boosting rounds, regularization parameters, kernel parameters, and hidden-layer structure, as appropriate for each algorithm. The final tuning strategies and selected hyperparameters are provided in Supplementary Table 2.
+
+Model Evaluation and External Validation
+
+Model performance was assessed in the internal validation set in terms of discrimination, calibration, and clinical utility. Discrimination was evaluated using the area under the receiver operating characteristic curve and the area under the precision–recall curve, together with sensitivity, specificity, F1 score, and balanced accuracy. Calibration was examined through calibration plots and quantified using the Brier score. Clinical utility across a range of threshold probabilities was assessed using decision curve analysis and clinical impact curves. The best-performing model identified in the internal validation phase was subsequently applied to the independent MIMIC-III and eICU cohorts without retraining. Discrimination, calibration, and clinical utility metrics were recalculated to evaluate model transportability and generalizability across datasets.
+
+Model Interpretability
+
+To enhance transparency and facilitate clinical adoption, SHAP analysis was applied to the final model to quantify both global feature importance and individual-level contributions. Global interpretability was illustrated using SHAP summary plots and feature-importance rankings, whereas local interpretability was demonstrated using dependence plots and individualized explanations, including waterfall and force plots. In addition, a web-based interactive risk calculator was developed using the Shiny framework to support individualized DVT risk estimation in clinical practice.
+
+Results
+
+Patient Characteristics and Incidence of DVT
+
+A total of 6,672 ICU-admitted patients with COPD were included in the MIMIC-IV cohort, among whom 462 patients (6.9%) developed DVT during hospitalization. The detailed patient selection process is illustrated in Figure 1. Baseline characteristics stratified by DVT status are presented in Table 1. Compared with patients without DVT, those who developed DVT had significantly higher heart rate and respiratory rate, lower peripheral oxygen saturation (SpO2), and higher red cell distribution width (RDW) and partial thromboplastin time (PTT). In addition, the DVT group exhibited greater illness severity, reflected by higher Sequential Organ Failure Assessment (SOFA) and Simplified Acute Physiology Score II (SAPS II) scores. Comorbid conditions such as sepsis, acute kidney injury, malignant cancer, and pneumonia were more prevalent in patients with DVT.Table 1 Baseline Characteristics of ICU-Admitted Patients with COPD in the MIMIC-IV Cohort, Stratified by Incident DVT
+
+Variables	Non-DVT (n=6210)	DVT (n=462)	p-value	
+Age, years	72.06 (11.19)	71.99 (10.80)	0.889	
+Gender, male, n (%)	3364 (54.2)	239 (51.7)	0.334	
+Race, n (%)			0.227	
+White	4478 (72.1)	319 (69.0)		
+Black	546 (8.8)	39 (8.4)		
+Asian	83 (1.3)	10 (2.2)		
+Other	1103 (17.8)	94 (20.3)		
+Smoke, n (%)	1577 (25.4)	114 (24.7)	0.774	
+Alcohol, n (%)	607 (9.8)	49 (10.6)	0.618	
+Weight, kg	81.87 (26.20)	81.48 (33.08)	0.762	
+Heart rate, bpm	88.70 (19.80)	93.92 (20.53)	<0.001	
+MBP, mmHg	81.89 (18.33)	82.56 (17.74)	0.443	
+Temperature, °C	36.66 (0.73)	36.74 (0.76)	0.024	
+Resp rate, bpm	20.02 (6.14)	21.16 (6.37)	<0.001	
+SpO2, %	96.28 (4.16)	95.42 (5.12)	<0.001	
+WBC, k/uL	12.53 (8.75)	12.91 (7.21)	0.361	
+RBC, m/uL	3.57 (0.76)	3.52 (0.81)	0.246	
+Hemoglobin, mg/dL	10.58 (2.20)	10.45 (2.33)	0.247	
+Hematocrit, %	32.72 (6.68)	32.45 (7.14)	0.392	
+RDW, %	15.33 (2.26)	15.83 (2.59)	<0.001	
+Platelet, k/uL	211.34 (103.62)	218.23 (111.09)	0.17	
+BUN, mg/dl	28.35 (21.84)	28.21 (21.04)	0.895	
+Creatinine, mg/dL	1.42 (1.34)	1.44 (1.46)	0.766	
+Potassium, mEq/L	4.32 (0.75)	4.27 (0.78)	0.184	
+Sodium, mEq/L	138.26 (5.27)	138.00 (5.22)	0.306	
+Calcium, mEq/L	8.38 (0.79)	8.27 (1.06)	0.005	
+Chloride, mEq/L	102.78 (6.72)	102.66 (6.39)	0.717	
+Anion gap, mEq/L	13.99 (4.20)	14.09 (3.93)	0.623	
+Glucose, mg/dl	146.21 (71.47)	152.57 (118.78)	0.082	
+INR	1.49 (0.83)	1.48 (0.76)	0.885	
+PT, seconds	16.26 (8.96)	16.19 (8.04)	0.881	
+PTT, seconds	37.79 (21.62)	48.46 (34.40)	<0.001	
+Sepsis, n (%)	3393 (54.6)	296 (64.1)	<0.001	
+AKI, n (%)	4850 (78.1)	403 (87.2)	<0.001	
+Hypertension, n (%)	4564 (73.5)	331 (71.6)	0.416	
+Diabetes, n (%)	2167 (34.9)	147 (31.8)	0.197	
+Myocardial infarct, n (%)	1452 (23.4)	99 (21.4)	0.367	
+Congestive heart failure, n (%)	2819 (45.4)	190 (41.1)	0.084	
+Renal disease, n (%)	1660 (26.7)	109 (23.6)	0.156	
+Malignant cancer, n (%)	955 (15.4)	109 (23.6)	<0.001	
+Severe liver disease, n (%)	220 (3.5)	17 (3.7)	0.981	
+Atrial fibrillation, n (%)	2445 (39.4)	160 (34.6)	0.049	
+Pneumonia, n (%)	1961 (31.6)	183 (39.6)	<0.001	
+Vasoactive, n (%)	2297 (37.0)	189 (40.9)	0.103	
+Antibiotics, n (%)	4388 (70.7)	349 (75.5)	0.029	
+Glucocorticoid, n (%)	1643 (26.5)	149 (32.3)	0.008	
+Diuretic, n (%)	3415 (55.0)	249 (53.9)	0.683	
+Ventilator, n (%)	5453 (87.8)	420 (90.9)	0.057	
+SOFA	4.70 (3.19)	5.05 (3.37)	0.026	
+SAPSII	39.13 (12.94)	41.73 (13.29)	<0.001	
+GCS	13.63 (2.65)	13.73 (2.73)	0.423	
+Hospital mortality, n (%)	866 (13.9)	102 (22.1)	<0.001	
+Los hospital, days	11.20 (10.29)	18.60 (19.22)	<0.001	
+ICU mortality, n (%)	608 (9.8)	65 (14.1)	0.004	
+Los ICU, days	4.46 (5.53)	7.42 (10.09)	<0.001	
+Notes: Statistical significance was defined as a two-sided P value < 0.05.
+
+Abbreviations: ICU, intensive care unit; COPD, chronic obstructive pulmonary disease; DVT, deep vein thrombosis; MBP, mean blood pressure; SpO2, peripheral oxygen saturation; WBC, white blood cell count; RBC, red blood cell count; RDW, red cell distribution width; BUN, blood urea nitrogen; INR, international normalized ratio; PT, prothrombin time; PTT, partial thromboplastin time; AKI, acute kidney injury; SOFA, Sequential Organ Failure Assessment; SAPS II, Simplified Acute Physiology Score II; GCS, Glasgow Coma Scale; hospital LOS, hospital length of stay; ICU LOS, ICU length of stay.
+
+Importantly, the occurrence of DVT was associated with worse clinical outcomes. Patients in the DVT group experienced higher ICU mortality (14.1% vs 9.8%) and hospital mortality (22.1% vs 13.9%), as well as significantly prolonged ICU and hospital length of stay (Table 1). These findings underscore the clinical relevance of early DVT risk stratification in critically ill COPD patients.
+
+Feature Selection Results
+
+Prior to model development, correlation analysis was conducted to mitigate multicollinearity. Highly correlated continuous and categorical variables were filtered according to predefined thresholds, as visualized in Supplementary Figures 1 and 2.
+
+Feature selection was subsequently performed within the training set using LASSO regression and the Boruta algorithm. The LASSO coefficient trajectories and cross-validation results are shown in Figure 2, demonstrating shrinkage of non-informative predictors. The Boruta algorithm further ranked variable importance relative to shadow features (Figure 3). Only predictors consistently retained by both methods were included in the final feature set, ensuring robustness and stability for downstream modeling. Figure 2 LASSO-based feature selection in the MIMIC-IV training cohort. (A) Coefficient trajectories of candidate predictors as the penalty parameter (λ) varies. Each curve represents an individual predictor, with coefficients progressively shrinking toward zero as regularization increases. Numbers along the top axis indicate the number of predictors retained at each log(λ) value. (B) Cross-validated binomial deviance plotted against log(λ), with error bars representing variability across folds. The dotted vertical lines correspond to the λ values yielding the minimum deviance and the one–standard-error (1-SE) criterion, respectively.
+
+The image A showing a line graph with the horizontal axis labeled, Log Lambda, ranging from negative 8 to negative 3. The vertical axis is labeled, Coefficients, ranging from negative 0.1 to 0.4. Multiple coefficient trajectories are plotted as separate curves that move toward 0 as Log Lambda increases. Visible top-axis numbers are 36, 34, 29, 14, 2, 0. No discrete point markers with exact coordinates are shown. The image B showing a line graph with the horizontal axis labeled, Log(lambda), ranging from negative 8 to negative 3. The vertical axis is labeled, Binomial Deviance, ranging from 0.47 to 0.53. A series of red point markers with vertical error bars is plotted. The points lie near 0.49 from about negative 8 through about negative 6, then rise after about negative 5 toward about 0.51 to 0.52 by about negative 3. Two vertical dotted reference lines appear near about negative 5.8 and about negative 3.2. Visible top-axis numbers are 37, 36, 35, 34, 34, 30, 26, 20, 11, 8, 2, 1, 1.Two line graphs showing LASSO coefficient paths and cross validated binomial deviance versus log lambda.
+
+Figure 3 Boruta-based ranking of predictor importance in the training cohort. The Boruta algorithm was used to evaluate candidate predictor relevance by comparing observed feature importance with randomized shadow features. Boxplots show the distribution of importance scores across iterations. Confirmed important variables, tentative variables, rejected variables, and shadow features are indicated using different colors.
+
+A boxplot chart shows the importance of various predictors. The ′Variables′ axis includes categories like shadowMin, smoke, hypertension, race, aki, pneumonia, ventilator, diabetes, age, potassium, sodium, weight, atrial fibrillation, malignancy, glucose, wbc, resp rate, temperature, spo2, sodiumgap, aniongap, calcium, bun, myocardial infarct, rdw, heart rate, rbc, plt, platelet, chloride, pt. The ′Importance′ axis ranges from -5 to 25. Each category has a boxplot with whiskers and outliers. ShadowMin′s median is near -2, with an outlier at -5. Early variables (smoke to renal disease) have medians from 0 to 2. Variables from age to calcium have medians from 2 to 5. Variables from bun to platelet have medians from 5 to 7, with outliers up to 9. Pt has the highest median at 22, whiskers from 19 to 25 and an outlier at 18.A boxplot chart showing predictor importance rankings across many variables and shadow features.
+
+Model Performance in the Internal Validation Cohort
+
+Eight machine-learning algorithms were constructed and evaluated. Comparative discrimination performance is summarized in Table 2. The corresponding ROC curves are presented in Figure 4A, and the calibration curves are shown in Figure 4B. Among all models, XGBoost demonstrated the best overall performance, achieving an AUC of 0.840 (95% CI 0.812–0.868) in the internal validation cohort. This performance exceeded that of logistic regression (AUC 0.564) and other baseline algorithms. XGBoost also achieved the highest area under the precision–recall curve (AUPRC) and balanced accuracy, indicating improved predictive performance under class imbalance conditions. In addition, XGBoost yielded the lowest Brier score among all models (Supplementary Table 3), suggesting superior calibration.Table 2 Discrimination Performance of Eight Machine-Learning Models
+
+Model	AUC	AUPRC	Sensitivity	Specificity	F1	Balanced Accuracy	
+LR	0.564 (0.524–0.605)	0.551 (0.515–0.593)	0.377 (0.332–0.425)	0.682 (0.634–0.727)	0.445 (0.397–0.492)	0.530 (0.496–0.562)	
+KNN	0.605 (0.565–0.644)	0.613 (0.574–0.657)	0.483 (0.430–0.530)	0.664 (0.615–0.712)	0.531 (0.481–0.574)	0.574 (0.537–0.607)	
+DT	0.715 (0.679–0.751)	0.778 (0.747–0.807)	0.514 (0.461–0.564)	0.814 (0.774–0.853)	0.605 (0.559–0.650)	0.664 (0.631–0.698)	
+RF	0.815 (0.784–0.845)	0.857 (0.834–0.880)	0.574 (0.527–0.620)	0.935 (0.910–0.959)	0.700 (0.661–0.738)	0.755 (0.727–0.781)	
+XGBoost	0.840 (0.812–0.868)	0.880 (0.856–0.900)	0.654 (0.610–0.704)	0.920 (0.894–0.944)	0.754 (0.720–0.788)	0.787 (0.761–0.813)	
+LightGBM	0.835 (0.807–0.864)	0.876 (0.855–0.896)	0.641 (0.595–0.689)	0.928 (0.902–0.951)	0.748 (0.711–0.785)	0.784 (0.758–0.811)	
+SVM	0.610 (0.570–0.649)	0.604 (0.563–0.646)	0.070 (0.045–0.097)	0.964 (0.946–0.982)	0.126 (0.084–0.171)	0.517 (0.501–0.532)	
+Nnet	0.572 (0.532–0.611)	0.560 (0.525–0.599)	0.341 (0.297–0.388)	0.770 (0.726–0.810)	0.434 (0.386–0.480)	0.556 (0.524–0.588)	
+Abbreviations: LR, logistic regression; KNN, k-nearest neighbors; DT, decision tree; RF, random forest; XGBoost, extreme gradient boosting; LightGBM, Light Gradient Boosting Machine; SVM, support vector machine; Nnet, neural network; AUC, area under the receiver operating characteristic curve; AUPRC, area under the precision–recall curve.
+
+Figure 4 Discrimination and calibration of the eight prediction models. (A) Receiver operating characteristic (ROC) curves of LR, KNN, DT, RF, XGBoost, LightGBM, SVM, and Nnet in the internal validation cohort, with corresponding AUC values displayed in the legend. (B) Calibration curves comparing predicted probabilities with observed event rates. The diagonal dashed line represents perfect agreement between predicted and observed outcomes.
+
+Image A shows a receiver operating characteristic graph with ′1 - Specificity (False Positive Rate)′ on the x-axis and ′Sensitivity′ on the y-axis, both ranging from 0.0 to 1.0. A diagonal line runs from (0.0, 0.0) to (1.0, 1.0). AUC values: LR 0.564, DT 0.715, RF 0.815, KNN 0.605, SVM 0.61, Nnet 0.572, XGBoost 0.84, LightGBM 0.835. Curves rise from (0.0, 0.0) to (1.0, 1.0). Image B presents a calibration graph with ′Actual Probability′ on the x-axis and ′Observed Proportion′ on the y-axis, both from 0.0 to 1.0. A dashed diagonal line runs from (0.0, 0.0) to (1.0, 1.0). Models: DT, LightGBM, Nnet, SVM, RF, KNN, LR, XGBoost. Some curves align with the diagonal at mid-range probabilities, others diverge at higher probabilities.Two line graphs showing receiver operating characteristic curves and calibration curves for eight models.
+
+Calibration curves showed close agreement between predicted and observed risks (Figure 4B). Decision curve analysis further demonstrated that XGBoost provided greater net benefit across a wide range of threshold probabilities compared with alternative models (Figure 5A). The clinical impact curve illustrated favorable identification of high-risk patients while maintaining acceptable false-positive rates (Figure 5B). Taken together, these findings support the selection of XGBoost as the final model for external validation and interpretability analysis. Figure 5 Decision curve analysis and clinical impact curve. (A) Decision curve analysis (DCA) comparing the standardized net benefit of LR, KNN, DT, RF, XGBoost, LightGBM, SVM, and Nnet across a range of threshold probabilities. (B) Clinical impact curve for the XGBoost model, illustrating the number of patients classified as high risk (solid line) and the number of true events among those identified as high risk (dashed line) at each threshold probability.
+
+Image A′s graph shows Standardized Net Benefit (0.0 to 1.0) against High Risk Threshold (0.0 to 0.8) and Cost:Benefit Ratio (1:100 to 4:1). Models: LR, DT, RF, KNN, SVM, Nnet, XGBoost, LightGBM. Curves start near 1.0 at threshold 0.0, decline to 0.7 at 0.2, 0.4-0.6 at 0.4 and 0.0-0.5 between 0.6 and 0.8. Image B′s graph shows Number high risk (0 to 800) against High Risk Threshold (0.0 to 1.0) and Cost:Benefit Ratio (1:100 to 100:1). Solid curve starts near 780 at 0.0, drops to 600 at 0.2, 350 at 0.4, 280 at 0.6, 240 at 0.8 and near 0 at 1.0. Dashed curve starts near 380 at 0.0, decreases to 340 at 0.2, 280 at 0.4, 250 at 0.6, 230 at 0.8 and near 0 at 1.0.Two line graphs showing decision curve analysis and a clinical impact curve across risk thresholds.
+
+External Validation
+
+The XGBoost model was subsequently applied to the independent MIMIC-III and eICU cohorts without retraining to assess generalizability. As shown in Figure 6A and B, respectively, the model maintained robust discrimination performance in the MIMIC-III and eICU external validation cohorts. Although minor attenuation of AUC was observed relative to the development cohort, overall predictive ability remained stable across institutions and time periods. These findings indicate satisfactory model transportability and support the external validity of the proposed risk prediction framework. Figure 6 External validation of the XGBoost model in the MIMIC-III and eICU cohorts. Receiver operating characteristic (ROC) curves of the XGBoost model in (A) the MIMIC-III cohort and (B) the eICU cohort, demonstrating discrimination performance in independent external datasets.
+
+A two plot receiver operating characteristic graph showing XGBoost model performance in MIMIC-III and eICU.
+
+Model Interpretability and Clinical Application
+
+To enhance transparency, SHAP analysis was applied to the final XGBoost model. Global feature importance ranking based on mean absolute SHAP values is presented in Figure 7A, with the SHAP summary plot shown in Figure 7B. Prolonged PTT, elevated RDW, reduced SpO2, increased respiratory rate, and selected laboratory parameters emerged as the most influential predictors of DVT risk. SHAP dependence plots further illustrated nonlinear relationships between key continuous predictors and model output (Supplementary Figure 3). At the individual level, the SHAP waterfall plot (Figure 8A) and force plot (Figure 8B) demonstrated how specific combinations of feature values contributed to personalized risk estimates, highlighting both risk-enhancing and protective factors within individual patients. Figure 7 Global interpretability of the XGBoost model using SHAP. (A) Ranking of predictors based on their mean absolute SHAP values (mean(|SHAP value|)), reflecting overall contribution to the model output. (B) SHAP summary (beeswarm) plot, where each point represents an individual patient. The x-axis indicates the direction and magnitude of each feature’s effect on the predicted risk, and color represents the corresponding feature value.
+
+The image A showing a horizontal bar chart of mean absolute SHAP values by predictor. The x-axis label is mean open parenthesis vertical bar SHAP value vertical bar close parenthesis, unit not shown, ranging from 0.00 to 0.04 with ticks at 0.00, 0.01, 0.02, 0.03, 0.04. The y-axis lists ptt, atrial fibrillation, rdw, heart rate, temperature, resp rate, glucose, platelet, congestive heart failure, rbc, myocardial infarct, pt, calcium, spo2, malignant cancer. Bar endpoints are approximately: ptt 0.041; atrial fibrillation 0.034; rdw 0.031; heart rate 0.031; temperature 0.027; resp rate 0.025; glucose 0.025; platelet 0.023; congestive heart failure 0.016; rbc 0.014; myocardial infarct 0.013; pt 0.013; calcium 0.013; spo2 0.013; malignant cancer 0.012. The image B showing a SHAP summary beeswarm plot. The x-axis label is SHAP value, unit not shown, ranging from negative 0.1 to 0.3 with ticks at negative 0.1, 0.0, 0.1, 0.2, 0.3. The y-axis lists the same predictors as image A. A vertical reference line is at 0.0. Points for ptt extend from about negative 0.05 to about 0.33. Atrial fibrillation spans about negative 0.08 to 0.06. Rdw spans about negative 0.05 to 0.22. Heart rate spans about negative 0.10 to 0.12. Temperature spans about negative 0.10 to 0.12. Resp rate spans about negative 0.08 to 0.08. Glucose spans about negative 0.08 to 0.18. Platelet spans about negative 0.03 to 0.10. Congestive heart failure spans about negative 0.06 to 0.05. Rbc spans about negative 0.08 to 0.06. Myocardial infarct spans about negative 0.10 to 0.06. Pt spans about negative 0.02 to 0.06. Calcium spans about negative 0.02 to 0.08. Spo2 spans about negative 0.06 to 0.10. Malignant cancer spans about negative 0.02 to 0.10. A side label reads Feature value with High at the top and Low at the bottom.Two plots showing SHAP predictor ranking and a SHAP summary beeswarm for an XGBoost model.
+
+Figure 8 Individual-level explanation of the XGBoost prediction using SHAP. (A) SHAP waterfall plot for a representative patient, illustrating how individual feature values shift the model output from the baseline expectation, E[f(x)], to the final predicted value, f(x). Positive SHAP values increase the predicted risk, whereas negative values decrease it. (B) Corresponding SHAP force plot visualizing the same additive feature contributions along the prediction axis.
+
+Image A displays a SHAP waterfall plot with a horizontal axis labeled ′Prediction′ and tick marks at 0.1, 0.2 and 0.3. The vertical axis lists feature values: rdw (12.5), atrialfibrillation (1), glucose (126), ptt (28.7), heartrate (97), congestiveheartfailure (0), platelet (275), rbc (5.11), spo2 (90). The plot shows f(x) equals 0.158 and E[f(x)] equals 0.25. Step values on the bars are negative 0.0665, negative 0.0529, negative 0.0447, plus 0.0349, -0.0338, plus 0.0298, plus 0.0248. Image B presents a SHAP force plot with the same axis labels and tick marks. Below the axis, f(x) equals 0.158 and E[f(x)] equals 0.25. Feature labels include heartrate (97), rdw (12.5), atrialfibrillation (1), glucose (126), ptt (28.7). Contribution values on segments are plus 0.0293, plus 0.0767, negative 0.0665, negative 0.0529, negative 0.0447, negative 0.0338.Two plots showing SHAP waterfall and SHAP force contributions for a prediction.
+
+To facilitate clinical translation, a web-based interactive risk calculator was developed using the Shiny framework (Supplementary Figure 4). The application enables individualized DVT risk estimation and provides corresponding SHAP-based explanation outputs, thereby supporting transparent and patient-specific decision-making in ICU settings. The tool can be accessed at https://pppmmm.shinyapps.io/copd_dvt/.
+
+Discussion
+
+In this multicenter study, we developed and externally validated an explainable machine-learning model for predicting DVT in critically ill patients with COPD. Among eight candidate algorithms, XGBoost demonstrated superior discrimination, calibration, and clinical utility compared with conventional statistical approaches. Importantly, model performance remained stable in two independent external cohorts, supporting its generalizability across institutions and time periods. By integrating SHAP analysis and implementing a web-based risk calculator, we further enhanced model transparency and clinical applicability. Together, these findings provide a robust and interpretable framework for early DVT risk stratification in ICU-admitted COPD patients.
+
+COPD patients admitted to the ICU represent a uniquely vulnerable population with respect to thrombotic complications. Beyond traditional risk factors such as immobility and advanced age, COPD is characterized by chronic systemic inflammation, hypoxemia, oxidative stress, endothelial dysfunction, and recurrent infectious exacerbations.9–11 These pathophysiological disturbances contribute to hypercoagulability and impaired fibrinolysis, thereby creating a prothrombotic milieu. In the critical care setting, additional factors including mechanical ventilation, central venous catheterization, hemodynamic instability, and sepsis may further amplify thrombotic risk.14 Our findings, demonstrating both a substantial incidence of DVT and its association with increased ICU and hospital mortality, underscore the clinical importance of early identification and targeted prevention in this subgroup. Existing DVT risk assessment tools were largely derived from heterogeneous hospitalized populations and may not adequately capture the complex interaction between respiratory failure, systemic inflammation, and critical illness that defines ICU-admitted COPD patients. This highlights the need for population-specific predictive models. Established VTE risk assessment tools, including the Padua Prediction Score and Caprini score, are useful in general hospitalized or surgical populations. However, they were not specifically developed for ICU-admitted patients with COPD and may not fully capture dynamic respiratory, inflammatory, and critical illness–related risk factors. A formal retrospective comparison was not performed because several score components, including mobility status, prior VTE history, recent surgery or trauma, and mechanical prophylaxis, were not uniformly available across the databases. Future prospective studies should directly compare this model with established VTE risk scores and assess its incremental value for thromboprophylaxis decision-making.
+
+Traditional logistic regression models assume linear associations and limited interaction effects among predictors.17 However, thrombotic risk in critically ill patients is likely driven by nonlinear relationships and high-order interactions between physiologic, laboratory, and treatment-related variables. In our study, tree-based ensemble methods, particularly XGBoost, outperformed logistic regression and several other algorithms, suggesting that modeling nonlinearities and feature interactions yields meaningful gains in predictive accuracy. Notably, evaluation using the area under the precision–recall curve and balanced accuracy further supported the advantage of the selected model under conditions of outcome imbalance. Moreover, favorable Brier scores and calibration performance indicate that the model not only discriminates high-risk individuals but also provides reliable probability estimates, which are essential for clinical decision-making. Decision curve analysis demonstrated net clinical benefit across a range of threshold probabilities, reinforcing the potential value of the model in real-world settings.
+
+Beyond predictive performance, interpretability remains a central concern for clinical adoption of machine-learning models. To address this issue, we applied SHAP analysis to quantify both global and individual-level feature contributions. Several key predictors emerged as influential, including prolonged partial thromboplastin time (PTT), elevated red cell distribution width (RDW), reduced peripheral oxygen saturation (SpO2), and increased respiratory rate. These findings are biologically plausible and align with established mechanisms of thrombogenesis. Prolonged PTT may reflect coagulation pathway disturbances and underlying systemic activation of hemostatic processes.30,31 Elevated RDW has been associated with systemic inflammation and oxidative stress, both of which contribute to endothelial dysfunction and thrombosis.32,33 Hypoxemia, reflected by reduced SpO2, may promote thrombosis through hypoxia-inducible pathways that enhance coagulation factor expression and platelet activation.34,35 Increased respiratory rate likely captures the severity of respiratory compromise and systemic stress, indirectly reflecting the overall inflammatory and prothrombotic state.36 Collectively, these predictors map onto components of Virchow’s triad—hypercoagulability, endothelial injury, and venous stasis—providing mechanistic coherence to the model outputs.37
+
+From a clinical perspective, early and individualized DVT risk stratification has important implications. In ICU-admitted COPD patients, risk profiles may evolve rapidly during the first 24 hours. A transparent model capable of generating individualized risk probabilities could inform decisions regarding intensified thromboprophylaxis, early imaging surveillance, or closer hemodynamic monitoring. For example, patients identified as high risk might benefit from earlier duplex ultrasonography or more aggressive preventive strategies, whereas low-risk patients could potentially avoid unnecessary interventions. The integration of SHAP-based explanations further enhances clinician trust by clarifying how specific variables contribute to a given patient’s predicted risk. By translating complex model outputs into interpretable components, this approach may facilitate bedside adoption and shared decision-making. However, several implementation issues should be considered. Model performance may be affected by differences in data availability, measurement frequency, and coding practices across hospitals. Therefore, model predictions should complement, rather than replace, clinical judgment and local thromboprophylaxis protocols. Prospective multicenter studies are needed to determine whether model-guided risk stratification can improve prophylaxis allocation and reduce DVT events without increasing bleeding risk.
+
+Our study also contributes to the growing body of literature on machine-learning–based risk prediction in critical care.18 While prior investigations have applied machine-learning techniques to venous thromboembolism prediction in general hospitalized populations,38,39 data specifically addressing critically ill COPD patients remain limited. Moreover, many existing models lack external validation or do not incorporate formal interpretability analyses. By leveraging large, independent datasets for external validation and embedding explainability within the modeling framework, we aimed to bridge this gap and enhance methodological rigor. The consistent performance across MIMIC-IV, MIMIC-III, and eICU cohorts strengthens confidence in the robustness and transportability of the proposed model.
+
+Several limitations should be acknowledged. First, this study was retrospective in nature and relied on routinely collected electronic health record data, which may be subject to residual confounding, coding bias, and misclassification. Second, DVT events were identified using ICD diagnosis codes rather than systematic imaging screening. Although ICD-based definitions have been used and validated in prior VTE studies, this approach may still lead to outcome misclassification, particularly for asymptomatic, undiagnosed, incidentally detected, or miscoded DVT events. Differences in diagnostic surveillance and coding practices across databases may also have affected the observed DVT incidence and model performance. Third, detailed thromboprophylaxis information, including timing, dose, duration, drug type, and mechanical prophylaxis, was not uniformly available across databases. These factors may represent important unmeasured confounders because they can affect both DVT occurrence and the interpretation of predictor–outcome associations. Therefore, the model should be viewed as an early risk stratification tool rather than a causal model of DVT development. Finally, although the model was externally validated in MIMIC-III and eICU, all cohorts were derived from US-based institutions, which may limit generalizability to other healthcare systems. Further prospective validation in non-US and more diverse clinical settings is warranted.
+
+In conclusion, we developed and externally validated an explainable machine-learning model for predicting DVT in critically ill patients with COPD. The model demonstrated robust discrimination, reliable calibration, and meaningful clinical utility across multiple cohorts. By integrating transparent SHAP-based interpretation and a web-based deployment tool, this framework offers a practical approach for individualized DVT risk stratification in the ICU. Future prospective studies should examine whether implementation of this model can improve thromboprophylaxis allocation and ultimately reduce thrombotic complications in this high-risk population.
+
+Acknowledgments
+
+We would like to thank the investigators and contributors of the MIMIC and eICU databases for making these valuable resources publicly available.
+
+Data Sharing Statement
+
+The datasets analyzed during the current study are publicly available upon completion of the required data use agreements and training. MIMIC-IV and MIMIC-III are accessible via PhysioNet (https://physionet.org), and the eICU Collaborative Research Database is available through the eICU data portal.
+
+Ethics Approval and Consent to Participate
+
+This study was conducted using publicly available, fully de-identified databases, including MIMIC-IV, MIMIC-III, and the eICU Collaborative Research Database. The original data collection protocols for MIMIC-III and MIMIC-IV were approved by the Institutional Review Boards of the Massachusetts Institute of Technology and Beth Israel Deaconess Medical Center, and the requirement for informed consent was waived. The eICU Collaborative Research Database was also released as a de-identified research database in accordance with relevant ethical and privacy protection requirements. The present study was approved by the Ethics Committee of the First Affiliated Hospital of Xi’an Jiaotong University (Approval number: KYLLSL-2026-616-02). All authors complied with the data use agreements of the corresponding databases.
+
+Author Contributions
+
+Guangdong Wang conceived and designed the study, accessed the databases, performed data extraction and statistical analyses, developed the machine-learning models, interpreted the results, and drafted the manuscript. Tingting Liu contributed to data preprocessing and verification of the clinical variables. Wenwen Ji assisted with cohort screening and verification of the outcome definitions. Tingting Li contributed to model validation and figure preparation. Zhuoyang Wang assisted with supplementary analyses and manuscript revision. Tinghua Hu provided methodological and statistical support and critically reviewed the manuscript. Xiaojian Wang and Zhihong Shi supervised the study, contributed to the interpretation of the findings, and critically revised the manuscript. All authors made a significant contribution to the work reported, whether in the conception, study design, execution, acquisition of data, analysis and interpretation, or in all these areas; took part in drafting, revising, or critically reviewing the article; gave final approval of the version to be published; agreed on the journal to which the article has been submitted; and agree to be accountable for all aspects of the work.
+
+Disclosure
+
+The authors declare that they have no competing interests.
+
+
+References
+
+1. Parikh KC, Oh D, Sittipunt C, et al. Venous thromboembolism prophylaxis in medical ICU patients in Asia (VOICE Asia): a multicenter, observational, cross-sectional study. Thromb Res. 2012;129:e152–14. doi:10.1016/j.thromres.2012.01.012 22326367
+2. Bergmann JF, Cohen AT, Tapson VF, et al. Venous thromboembolism risk and prophylaxis in hospitalised medically ill patients. The ENDORSE Global Survey. Thromb Haemost. 2010;103:736–748. doi:10.1160/th09-09-0667 20135072
+3. Ejaz A, Ahmed MM, Tasleem A, et al. Thromboprophylaxis in intensive care unit patients: a literature review. Cureus. 2018;10:e3341. doi:10.7759/cureus.3341 30473974 PMC6248708
+4. Minet C, Potton L, Bonadona A, et al. Venous thromboembolism in the ICU: main characteristics, diagnosis and thromboprophylaxis. Crit Care. 2015;19:287. doi:10.1186/s13054-015-1003-9 26283414 PMC4539929
+5. Gao X, Zeng L, Wang H, et al. Prevalence of venous thromboembolism in intensive care units: a meta-analysis. J Clin Med. 2022;11. doi:10.3390/jcm11226691 PMC9698016 36431168
+6. Fernando SM, Tran A, Cheng W, et al. VTE prophylaxis in critically ill adults: a systematic review and network meta-analysis. Chest. 2022;161:418–428. doi:10.1016/j.chest.2021.08.050 34419428
+7. Li M, Jiang Y, Xu Y, Li Q. The prevalence and risk factors of pulmonary embolism in patients with chronic obstructive pulmonary disease: a systematic review and meta-analysis. Thromb J. 2025;23:42. doi:10.1186/s12959-025-00728-6 40301960 PMC12039155
+8. Bertoletti L, Couturaud F, Sanchez O, Jimenez D. Pulmonary embolism and chronic obstructive pulmonary disease. Semin Thromb Hemost. 2023;49:809–815. doi:10.1055/s-0042-1756190 36108648
+9. Barnes PJ. Inflammatory mechanisms in patients with chronic obstructive pulmonary disease. J Allergy Clin Immunol. 2016;138:16–27. doi:10.1016/j.jaci.2016.05.011 27373322
+10. Marcuccio G, Candia C, Maniscalco M, Ambrosino P. Endothelial dysfunction in chronic obstructive pulmonary disease: an update on mechanisms, assessment tools and treatment strategies. Front Med. 2025;12:1550716. doi:10.3389/fmed.2025.1550716 PMC11880998 40046916
+11. Agustí AG, Noguera A, Sauleda J, Sala E, Pons J, Busquets X. Systemic effects of chronic obstructive pulmonary disease. Eur Respir J. 2003;21:347–360. doi:10.1183/09031936.03.00405703 12608452
+12. Huang J, Wu B, Zhang Z, Wang L. Risk factors associated with venous thromboembolism in individuals with COPD: a systematic review and meta-analysis. Clin Appl Thromb Hemost. 2025;31:10760296251388989. doi:10.1177/10760296251388989 41105647 PMC12541179
+13. Jin Y, Zhu K, Wu S, He S, Cao C. Biomarkers of prothrombotic state and risk assessment of exacerbations in patients with chronic obstructive pulmonary disease. Int J Chron Obstruct Pulmon Dis. 2024;19:2273–2283. doi:10.2147/copd.S466563 39416877 PMC11480642
+14. Patel R, Cook DJ, Meade MO, et al. Burden of illness in venous thromboembolism in critical care: a multicenter observational study. J Crit Care. 2005;20:341–347. doi:10.1016/j.jcrc.2005.09.014 16310605
+15. Barbar S, Noventa F, Rossetto V, et al. A risk assessment model for the identification of hospitalized medical patients at risk for venous thromboembolism: the padua prediction score. J Thromb Haemost. 2010;8:2450–2457. doi:10.1111/j.1538-7836.2010.04044.x 20738765
+16. Caprini JA. Thrombosis risk assessment as a guide to quality patient care. Dis Mon. 2005;51:70–78. doi:10.1016/j.disamonth.2005.02.003 15900257
+17. Harrell FE. Regression Modeling Strategies: With Applications to Linear Models, Logistic and Ordinal Regression, and Survival Analysis. Springer International Publishing; 2015.
+18. Johnson AE, Ghassemi MM, Nemati S, et al. Machine learning and decision support in critical care. Proc IEEE Inst Electr Electron Eng.2016;104:444–466. doi:10.1109/jproc.2015.2501978 27765959 PMC5066876
+19. Topol EJ. High-performance medicine: the convergence of human and artificial intelligence. Nat Med. 2019;25:44–56. doi:10.1038/s41591-018-0300-7 30617339
+20. Muneeb Hassan M, Ameeq M, Jamal F, Tahir MH, Mendy JT. Prevalence of covid-19 among patients with chronic obstructive pulmonary disease and tuberculosis. Ann Med. 2023;55:285–291. doi:10.1080/07853890.2022.2160491 36594409 PMC9815254
+21. Hassan MM, Tahir MH, Ameeq M, et al. Risk factors identification of COVID-19 patients with chronic obstructive pulmonary disease: a retrospective study in Punjab-Pakistan. Immun Inflamm Dis. 2023;11:e981. doi:10.1002/iid3.981 37647450 PMC10461420
+22. Johnson AEW, Bulgarelli L, Shen L, et al. MIMIC-IV, a freely accessible electronic health record dataset. Sci Data. 2023;10:1. doi:10.1038/s41597-022-01899-x 36596836 PMC9810617
+23. Johnson AE, Pollard TJ, Shen L, et al. MIMIC-III, a freely accessible critical care database. Sci Data. 2016;3:160035. doi:10.1038/sdata.2016.35 27219127 PMC4878278
+24. Pollard TJ, Johnson AE, Raffa JD, et al. The eICU collaborative research database, a freely available multi-center database for critical care research. Sci Data. 2018;5:180178. doi:10.1038/sdata.2018.178 30204154 PMC6132188
+25. Fang MC, Fan D, Sung SH, et al. Validity of using inpatient and outpatient administrative codes to identify acute venous thromboembolism: the CVRN VTE Study. Med Care. 2017;55:e137–e143. doi:10.1097/mlr.0000000000000524 29135777 PMC5125903
+26. Alotaibi GS, Wu C, Senthilselvan A, McMurtry MS. The validity of ICD codes coupled with imaging procedure codes for identifying acute venous thromboembolism using administrative data. Vasc Med. 2015;20:364–368. doi:10.1177/1358863x15573839 25834115
+27. Stekhoven DJ, Bühlmann P. MissForest--non-parametric missing value imputation for mixed-type data. Bioinformatics. 2012;28:112–118. doi:10.1093/bioinformatics/btr597 22039212
+28. Ji W, Wang G, Liu T, et al. Prediction of acute kidney injury in critically ill patients with community-acquired pneumonia using machine learning. J Intensive Care Med. 2025;40:1247–1259. doi:10.1177/08850666251349792 40518946
+29. Gao L, Wang GD, Yang XY, et al. Development of a risk prediction model for sepsis-related delirium based on multiple machine learning approaches and an online calculator. PLoS One. 2025;20:e0323831. doi:10.1371/journal.pone.0323831 40668815 PMC12266397
+30. Levi M, van der Poll T. Inflammation and coagulation. Crit Care Med. 2010;38:S26–34. doi:10.1097/CCM.0b013e3181c98d21 20083910
+31. Esmon CT. The interactions between inflammation and coagulation. Br J Haematol. 2005;131:417–430. doi:10.1111/j.1365-2141.2005.05753.x 16281932
+32. Montagnana M, Cervellin G, Meschi T, Lippi G. The role of red blood cell distribution width in cardiovascular and thrombotic disorders. Clin Chem Lab Med. 2011;50:635–641. doi:10.1515/cclm.2011.831 22505527
+33. Fava C, Cattazzo F, Hu ZD, Lippi G, Montagnana M. The role of red blood cell distribution width (RDW) in cardiovascular risk assessment: useful or hype? Ann Transl Med. 2019;7:581. doi:10.21037/atm.2019.09.58 31807562 PMC6861793
+34. Gupta N, Zhao YY, Evans CE. The stimulation of thrombosis by hypoxia. Thromb Res. 2019;181:77–83. doi:10.1016/j.thromres.2019.07.013 31376606
+35. Semenza GL. Hypoxia-inducible factors in physiology and medicine. Cell. 2012;148:399–408. doi:10.1016/j.cell.2012.01.021 22304911 PMC3437543
+36. Aglen SAS, Simonsen HF, Sjøset TE, Jammer I. Respiratory rate as a predictor of clinical deterioration and mortality: a scoping review. Acta Anaesthesiol Scand. 2025;69:e70113. doi:10.1111/aas.70113 40828518
+37. Bagot CN, Arya R. Virchow and his triad: a question of attribution. Br J Haematol. 2008;143:180–190. doi:10.1111/j.1365-2141.2008.07323.x 18783400
+38. Tillman BF, Domenico HJ, Moore RP, et al. A real-time prognostic model for venous thromboembolic events among hospitalized adults. Res Pract Thromb Haemost. 2024;8:102433. doi:10.1016/j.rpth.2024.102433 38882464 PMC11179067
+39. Chen R, Petrazzini BO, Malick WA, Rosenson RS, Do R. Prediction of venous thromboembolism in diverse populations using machine learning and structured electronic health records. Arterioscler Thromb Vasc Biol. 2024;44:491–504. doi:10.1161/atvbaha.123.320331 38095106 PMC10872966

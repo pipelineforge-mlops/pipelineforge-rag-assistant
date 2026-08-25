@@ -1,0 +1,556 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: iScience
+Journal ID: iScience
+NLM Journal ID: 101724038
+
+iScience
+
+EISSN: 2589-0042
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499093
+PMID: 42633169
+DOI: 10.1016/j.isci.2026.117167
+Article ID: S2589-0042(26)02545-9
+Article ID: 117167
+Article version: 1
+Subjects: Article
+
+Hashimoto’s thyroiditis influences tumor cell states and intratumoral microbiota in papillary thyroid carcinoma
+
+Che Yue 1 2
+Kou Wei 1 2
+Xu Lianghui 1 2
+Liu Zhuoran 1
+Kuang Jie 1
+Cheng Xi 1
+Zhao Qiwu zhaoqiwu@sjtu.edu.cn 1 ∗
+Feng Haoran wangyi_fenghaoran@163.com 1 ∗∗
+Qiu Weihua qwh11072@rjh.com.cn 1 3 ∗∗∗
+1 Department of General Surgery, Ruijin Hospital, Shanghai Jiao Tong University School of Medicine, Shanghai, China
+∗ Corresponding author zhaoqiwu@sjtu.edu.cn∗∗ Corresponding author wangyi_fenghaoran@163.com∗∗∗ Corresponding author qwh11072@rjh.com.cn2 These authors contributed equally
+
+3 Lead contact
+
+Publication date: 2026 Sep 18
+Electronic publication date: 2026 Aug 13
+Volume: 29
+Issue: 9
+Electronic Location ID: 117167
+Received 2026 Apr 2; Revised 2026 Jun 4; Accepted 2026 Jul 27
+Copyright: © 2026 The Authors
+Copyright year: 2026
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: papillary thyroid carcinoma, intratumoral microbiome, tumor microenvironment
+
+==============================
+Summary
+
+Hashimoto’s thyroiditis is associated with reduced lymph node metastasis in papillary thyroid carcinoma, suggesting that the autoimmune microenvironment may influence tumor progression. We utilized single-cell RNA sequencing and intratumoral 16S ribosomal RNA gene sequencing to investigate malignant epithelial cell states and microbial features in PTC with and without Hashimoto’s thyroiditis. Tumors with Hashimoto’s thyroiditis exhibited malignant epithelial populations enriched for innate immune signaling programs and showed increased intratumoral microbial diversity with reduced abundance of several Gram-negative bacteria, particularly Pseudomonas. Within the Hashimoto’s thyroiditis subgroup, lymph node metastasis was associated with increased Gram-negative bacterial abundance. Functional experiments further showed that Pseudomonas-derived lipopolysaccharide enhanced thyroid cancer cell migration in vitro and in vivo. These findings suggest that Hashimoto’s thyroiditis reshapes both epithelial transcriptional states and the intratumoral microbial environment, potentially contributing to a less aggressive tumor phenotype.
+
+Graphical abstract
+
+Highlights
+
+• HT-PTC contains malignant epithelial cells enriched in innate immune programs
+
+• HT-PTC exhibits increased intratumoral microbial diversity
+
+• HT-PTC shows reduced invasive Gram-negative genera, including Pseudomonas
+
+• Lipopolysaccharide promotes PTC cell migration in vitro and in vivo
+
+Health sciences; Medicine; Medical specialty; Endocrinology; Oncology; Transcriptomics
+
+Introduction
+
+Thyroid cancer, originating from follicular or parafollicular epithelial cells, represents the most common malignancy of the head and neck. Its incidence has increased markedly in recent decades.1 Papillary thyroid carcinoma (PTC), the predominant histological subtype, is generally associated with a favorable prognosis.2 Nevertheless, a subset of patients develops aggressive disease characterized by lymph node metastasis, recurrence, or disease-specific mortality, underscoring the incomplete understanding of the molecular and microenvironmental drivers of PTC progression.
+
+Hashimoto’s thyroiditis (HT) is an autoimmune disorder marked by chronic lymphocytic infiltration and follicular destruction. Epidemiological evidence indicates that patients with pre-existing HT have an increased risk of developing PTC.3 Paradoxically, patients with PTC with coexisting HT often exhibit less aggressive features, including smaller tumor size, lower disease stage, and fewer lymph node metastases.4,5,6 These findings suggest that HT modulates the biological behavior of PTC. Therefore, elucidating the molecular characteristics and tumor microenvironment (TME) of PTC coexisting with HT (HT-PTC) is of critical importance.
+
+The TME plays a critical role in cancer initiation and progression. Single-cell RNA sequencing (scRNA-seq) enables high-resolution characterization of cellular heterogeneity within PTC.7 In parallel, intratumoral microbiota have emerged as important modulators of tumor biology.8,9,10 In thyroid cancer, preliminary studies indicated the presence of distinct microbial signatures.11,12 A previous study identified distinct intratumoral microbial signatures and demonstrated that microbial dysbiosis is associated with thyroid carcinogenesis and HT.13 However, whether intratumoral microbes interact with specific malignant epithelial cell or immune contexts to influence metastatic behavior, particularly in HT-PTC, remains unclear.
+
+In this study, we provide the first integrated analysis of HT-PTC from both single-cell sequencing and intratumoral microbiome perspectives. We identified an epithelial transcriptional program characterized by innate immune activation under the HT background and revealed that the reduced relative abundance of specific Gram-negative bacteria may contribute to a less aggressive tumor phenotype. These findings offer new insights into the role of the autoimmune microenvironment in modulating tumor progression and provide a theoretical basis for metastasis risk stratification and for identifying potential therapeutic targets in PTC.
+
+Results
+
+Single-cell landscape reveals distinct cellular remodeling in the PTC microenvironment
+
+To characterize cellular heterogeneity in the PTC TME with or without HT, scFAST-seq analysis was performed on tumor samples from four treatment-naive patients with PTC, including two with HT and two without HT (nonHT). After quality control filtering, 44,280 high-quality cells were retained for downstream analyses (Figures S1, S2A–S2C; Table S1).
+
+Graph-based clustering identified 27 cell clusters, which were annotated using canonical marker genes into 11 major cell populations, including malignant epithelial cells (Cancer cells), normal thyroid follicular epithelial cells (Thyroid cells), B cells (naive and plasma B cells), regulatory CD4+ cells, neutrophils, IL1B+ M1-like macrophage, C1QB+ M2-like macrophage, dendritic cells, mast cells, endothelial cells, cancer-associated fibroblasts (CAFs) (Figures 1A–1C and S2D–S2E).Figure 1 Single-cell transcriptomic landscape of the PTC tumor microenvironment
+
+(A) t-SNE plot of all single cells (n = 44,280), colored by annotated cell types.
+
+(B) t-SNE plot of all single cells, colored by clinical group, including HT-PTC (n = 27,916) and NHT-PTC (n = 16 364).
+
+(C) Dot plot shows the expression of representative marker genes used for cell type annotation. Dot color represents mean normalized expression levels, and dot size indicates the percentage of cells expressing each gene.
+
+(D) Radar plot shows the relative proportions of major cell types between the HT-PTC and NHT-PTC groups.
+
+(E) The fractions of samples in each cell subcluster. See also Figures S1 and S2, and Table S1. t-SNE, t-distributed stochastic neighbor embedding; HT-PTC, papillary thyroid cancer with concomitant Hashimoto’s thyroiditis; NHT-PTC, papillary thyroid cancer without Hashimoto’s thyroiditis; n = 4 biological replicates (HT = 2, NHT = 2).
+
+All major cell populations were present in both HT and nonHT tumors, but their relative proportions differed between groups. HT tumors exhibited an increased proportion of B cells, including both plasma cells and naive B cells. In contrast, nonHT tumors showed higher proportions of effector CD8+ T cells, regulatory T cells, neutrophils, and IL1B+ M1-like myeloid cells (Figures 1D and 1E). Differences were also observed within malignant and normal thyroid follicular epithelial cell proportions, prompting further subclustering of epithelial cells to assess transcriptional heterogeneity between HT and nonHT tumors.
+
+Distinct transcriptional heterogeneity of malignant epithelial clusters in HT and nonHT tumors
+
+To further investigate epithelial heterogeneity associated with HT status, malignant epithelial cells and normal thyroid follicular epithelial cells were re-clustered. In total, six malignant epithelial clusters and one normal epithelial cell cluster were identified (Figures 2A, 2B, and S3).Figure 2 Transcriptional heterogeneity and malignant features of epithelial cells in HT-PTC and NHT-PTC tumors
+
+(A) t-SNE plot of reclustered epithelial cells (8,043) following cell type annotation.
+
+(B) Upper, t-SNE plot colored by clinical group, including HT-PTC (1,887) and NHT-PTC (6,156). Lower, t-SNE plot colored by different cell clusters.
+
+(C) Feature plots show the expression of canonical epithelial and thyroid differentiation markers EPCAM, SLC26A4, TPO, and KRT19, which were used to distinguish normal thyroid follicular epithelial cells from malignant epithelial cells.
+
+(D) Feature plots show the expression of stemness-associated markers CD44 and ALDH1A1 in normal and malignant epithelial cells.
+
+(E) Radar plot shows the relative proportions of malignant epithelial subclusters.
+
+(F) Heatmap shows GSVA scores based on MSigDB Hallmark gene sets across malignant epithelial subclusters.
+
+(G) CNV profiles inferred for each malignant epithelial subcluster.
+
+(H) The distribution of CNV scores across epithelial subclusters. The center line indicates the median, the box represents the interquartile range (IQR), and the whiskers represent 1.5× IQR. See also Figure S3. GSVA, gene set variation analysis; CNV, copy number variation; MSigDB, Molecular Signatures Database; t-SNE, t-distributed stochastic neighbor embedding; n = 4 biological replicates (HT-PTC = 2, NHT-PTC = 2).
+
+All epithelial subclusters expressed the canonical epithelial marker gene EPCAM, confirming their shared epithelial identity. Thyroid differentiation-related genes (SLC26A4 and TPO) were predominantly expressed in normal thyroid epithelial cells. KRT19, a common marker of epithelial-derived tumors, was mainly expressed in malignant epithelial cells (Figure 2C). Expression of the stemness-associated gene CD44 was detected across clusters, whereas the metabolic reprogramming and therapy resistance-associated gene ALDH1A1 was more highly expressed in normal epithelial clusters (Figure 2D). This pattern suggests functional heterogeneity among malignant epithelial cell clusters.
+
+The distribution of malignant epithelial clusters differed between HT and nonHT tumors. Cluster_0 and cluster_4 were predominantly derived from HT tumors, while cluster_1 was enriched in nonHT tumors (Figure 2E).
+
+To further characterize the biological features of individual clusters, GSVA was performed to assess pathway activity. Cluster_0, cluster_2, and cluster_3 displayed higher enrichment of gene sets related to cell cycle progression, DNA replication, and DNA repair (Figure 2F). InferCNV analysis further revealed heterogeneous CNV burden across malignant clusters. Recurrent chromosomal alterations were detected across malignant cells, including losses of chromosomes 6 and 8 and gains of chromosomes 3 and 12 (Figure 2G). Quantitative analysis showed higher CNV burden in cluster_1 and cluster_4. In contrast, cluster_0, cluster_2, and cluster_3 exhibited lower CNV scores (Figure 2H). HT-PTC-enriched malignant epithelial cell clusters did not display a markedly increased CNV burden, suggesting that the heterogeneity in these cells may be predominantly reflected at the level of transcriptional functional states rather than overt genomic structural changes.
+
+To explore potential developmental relationships among epithelial states, pseudotime trajectory analysis was performed. The inferred trajectory revealed a continuous transition from normal thyroid epithelial cells to malignant epithelial populations. The HT-enriched Cluster_0 was located at the distal end of the inferred trajectory, whereas the nonHT-enriched Cluster_1 occupied an intermediate position (Figures S4A–S4B). Thyroid differentiation markers (TPO and SLC26A7) were progressively downregulated along pseudotime, whereas DPP4 and FN1 expression gradually increased (Figure S4C). These findings suggest that Cluster_0 represents a late-stage malignant transcriptional state within the epithelial developmental continuum.
+
+HT-PTC enriched malignant epithelial clusters exhibit an innate immune transcriptional program
+
+To further delineate the transcriptional features of malignant epithelial subpopulations, differential gene expression analysis was performed across all identified clusters. Cluster_0 exhibited significant upregulation of genes including CHI3L1, PLAU, ECM1, CTSC, and APOE (Figure 3A). This pattern indicates elevated expression of genes associated with extracellular matrix remodeling and stress responses within this cluster, rather than canonical inflammatory effector molecules.Figure 3 Innate immune transcriptional profile in HT-PTC epithelial clusters
+
+(A) Heatmap shows expression patterns of differentially expressed genes across the malignant epithelial clusters.
+
+(B) Dot plot shows the expression of interferon-responsive genes, antigen presentation-related genes, and selected chemokines in tumor epithelial cells. Dot color indicates mean normalized expression levels, and dot size represents the percentage of cells expressing each gene.
+
+(C) Dot plot shows the expression of genes involved in TLR signaling, STING-mediated cytosolic DNA sensing, and NF-κB signaling pathways across epithelial clusters. Dot color indicates mean normalized expression levels, and dot size represents the percentage of cells expressing each gene.
+
+(D) Feature plots show the expression patterns of representative genes across malignant epithelial clusters.
+
+(E) GO biological process enrichment analysis of epithelial clusters 0, 2, and 3.
+
+(F) GO biological process enrichment analysis of epithelial clusters 1, 4, and 5. See also Figures S4 and S5. GO, gene ontology; TLR, toll-like receptor; STING, stimulator of interferon genes; NF-κB, nuclear factor kappa B; n = 4 biological replicates (HT-PTC = 2, NHT-PTC = 2).
+
+Next, we examined the distribution of immune-related signatures. Interferon-responsive genes, including STAT1, IRF1, and MHC class II genes (HLA-DRA, HLA-DRB1, CD74), were heterogeneously expressed across malignant epithelial clusters. Classical IFN-γ-inducible chemokines (CXCL9, CXCL10, CXCL11) were minimally expressed and primarily sequestered within cluster_3 (Figure 3B). This cluster also showed expression of innate immune and inflammatory genes, including IRAK2, PELI1, TMEM173, CXCL8, IL1B, and TNF.
+
+Moreover, cluster_0, cluster_2, and cluster_3 showed cluster-specific expression of genes involved in innate immune and microbial sensing pathways. These pathways included components of Toll-like receptor (TLR) signaling, STING-mediated cytosolic DNA sensing, and NF-κB signaling (Figure 3C). Expression of TLR2 and TLR4, as well as classical pro-inflammatory cytokines (TNF, IL1B, CXCL8), remained low across the majority of epithelial clusters.
+
+To validate these findings, we analyzed an independent scRNA-seq dataset (GEO: GSE163203). Consistent with our cohort, HT-PTC samples displayed a higher proportion of B cells than nonHT-PTC samples (Figures S5A–S5B). Re-clustering of thyroid epithelial cells identified six malignant epithelial subclusters (Figure S5C), among which Epi-C3 and Epi-C4 were preferentially enriched in HT-PTC. Notably, Epi-C4 exhibited elevated expression of CXCL2, GDF15, HBEGF, CYR61, JUN, DUSP6, and KLF6 (Figure S5D), indicative of an epithelial stress-response program accompanied by activation of inflammatory and innate immune-related signaling pathways. This transcriptional profile showed substantial similarity to the innate immune-associated epithelial state identified in our own cohort.
+
+Collectively, HT-PTC enriched malignant epithelial subpopulations harbor a selectively enriched innate immune-related transcriptome. This state is defined by the priming of innate recognition and signaling pathways, counterbalanced by a relatively restricted expression of classical inflammatory effector molecules (Figure 3D).
+
+Functional enrichment reveals cluster-specific features in epithelial cells
+
+GO enrichment analysis identified distinct functional features across epithelial subpopulations. Cluster_0, cluster_2, and cluster_3 were enriched for processes related to tissue remodeling. These included wound healing, cell adhesion, cytoskeletal organization, angiogenesis, and responses to exogenous biological entities (Figure 3E).
+
+In contrast, cluster_1 and cluster_4 showed different functional patterns. Cluster_1 was enriched for protein synthesis pathways, including ribosomal activity and RNA processing. Cluster_4 was associated with protein homeostasis and responses to oxidative or chemical stress. Cluster_5 showed enrichment in pathways related to cytoskeletal dynamics, cell-matrix adhesion, and morphological plasticity. This cluster also showed activation of multiple signaling and developmental regulatory programs (Figure 3F).
+
+Collectively, these enrichment patterns demonstrate distinct functional programs across epithelial clusters, involving tissue remodeling, biosynthetic activity, and stress response within the TME.
+
+Intratumoral microbiota profiling identifies potential drivers of HT associated epithelial states
+
+Based on the prominent enrichment of innate immune transcriptional programs in HT-PTC epithelial cells and the well-recognized role of innate immunity in mediating host-microbe interactions, we next hypothesized whether intratumoral microbial alterations were associated with epithelial immune states and transcriptional remodeling.
+
+A total of 125 thyroid tissue samples (63 tumor tissues and 62 matched peritumoral tissues) were subjected to 16S rRNA gene sequencing. Patients were predominantly female with a median age of 45.7 years. Despite early-stage disease, 54.84% (34/62) had lymph node metastasis, and 69.35% (43/62) were classified as intermediate to high risk according to the American Thyroid Association (ATA) risk stratification. Among them, 43.55% (27/62) patients had concomitant HT (Table 1; Figure S1; Table S2).Table 1 Clinical characteristics of patients in 16S cohort
+
+Patients characteristics	Total no. (n = 62)	Percent (%)	
+Gender	
+	
+ Male	25	40.32	
+ Female	37	59.68	
+Age, media (range), years	45.7 ± 10.4 (23–71)	
+	
+T stage (T)	
+	
+ T1a	36	58.06	
+ T1b	24	38.71	
+ T2	2	3.23	
+Tumor Size (range), mm	9.8 ± (3.6–27)	
+	
+Lymph node-metastasis (N)	
+	
+ Yes	34	54.84	
+ No	28	45.16	
+	
+Subtypes of PTC	
+	
+ Classical type	37	59.68	
+ Follicular type	19	30.65	
+ Oncocytic variant	2	3.22	
+ Warthin-like variant	4	6.45	
+	
+ATA risk-stratification	
+	
+ Low	19	30.65	
+ Intermediate to high	43	69.35	
+	
+Hashimoto thyroiditis	
+	
+ Yes	27	43.55	
+ No	35	56.45	
+
+Sterile ddH2O was included as extraction and PCR negative controls, and no detectable amplicons were observed, indicating minimal background contamination. Negative controls were therefore excluded from downstream sequencing. After quality filtering, 12,544,822 high-quality sequences were retained and clustered into 16,694 ASVs, which were taxonomically assigned to 933 genera. Good’s coverage indicated near-complete sampling of microbial communities in both tumor and peritumoral tissues (mean > 99%), supporting sufficient sequencing depth.
+
+To validate the presence of intratumoral bacteria, fluorescence in situ hybridization (FISH) was performed. Positive bacterial signals were detected in both tumor and adjacent peritumoral thyroid tissues (Figure S6). Together, these results demonstrate the existence of a detectable intratumoral microbiota in PTC tissues.
+
+Microbial community characteristics of intratumoral microbiota in PTC
+
+To establish the overall ecological features of the intratumoral microbiota in PTC, we first compared microbial diversity and community composition between tumor and matched peritumoral tissues. Alpha diversity was assessed using Pielou’s evenness, Shannon, and Simpson indices. Tumor tissues showed increased alpha diversity, but the differences were not statistically significant (p > 0.05, Figure 4A). Beta diversity assessed by Bray-Curtis distance and NMDS showed a weak separation between tumor and peritumoral tissues, which was not statistically significant by PERMANOVA (R2 = 0.009, p = 0.345; Figure 4B).Figure 4 Alternation of intratumor microbiota in PTC between tumor and peritumor tissues
+
+(A) Alpha diversity indices comparing microbial diversity between PTC tumor (n = 63) and peritumor (n = 62) samples. Each point represents one sample. The center line indicates the median, the box represents the IQR, and the whiskers represent 1.5× IQR. Pairwise comparisons were performed using the Wilcoxon rank-sum test.
+
+(B) Beta diversity analysis based on Bray-Curtis distances, visualized by NMDS. Each point corresponds to a sample, shaped and colored by group. Statistical significance was assessed using permutational multivariate analysis of variance (PERMANOVA), R2 = 0.009, p = 0.345.
+
+(C) UPGMA clustering shows the relative abundance at the phylum level.
+
+(D) UPGMA clustering shows the relative abundance at the genus level.
+
+(E) Volcano plot showing differential microbial abundance at the genus level between tumor and peritumor samples, based on ANCOM-BC2 analysis. Red and blue dots indicate significantly enriched genera in tumor and peritumor tissues, respectively.
+
+(F) Taxonomic cladogram generated by LEfSe, depicting differentially abundant taxa between tumor and peritumor microbial communities.
+
+(G) LDA scores of differentially abundant taxa, with a threshold of log10 (LDA score) > 2. NMDS, non-metric multidimensional scaling; UPGMA, unweighted pair group method with arithmetic mean; ANCOM-BC2, analysis of compositions of microbiomes with bias correction 2; LEfSe, linear discriminant analysis effect size; LDA, linear discriminant analysis. See also Figure S6. Statistical significance is indicated as: ns, not significant.
+
+Taxonomic profiling revealed the overall composition of intratumoral microbiota in PTC. At the phylum level, the dominant taxa included Proteobacteria, Firmicutes, Cyanobacteria, Actinobacteria, and Bacteroidota (Figure 4C). At the genus level, the most abundant taxa were Delftia, Staphylococcus, and Pseudomonas (Figure 4D).
+
+Differential abundance analysis using ANCOM-BC2 identified several taxa that differed significantly between tumor and peritumoral tissues. Terrimonas, Prevotella_7, Neisseria, and Rubellimicrobium were significantly enriched in tumor tissues, whereas Enterobacter, Parabacteroides, Bacteroides, Fusobacterium, and Christensenellaceae_R-7_group were significantly depleted (p < 0.05; Figure 4E). LEfSe analysis showed consistent results, further supporting distinct microbial features between tumor and peritumoral tissues (Figures 4F and 4G).
+
+HT significantly reshapes the diversity and structural composition of the PTC microbiome
+
+We next examined microbial community differences between tumor tissues from patients with PTC with HT (HT-T) and their matched adjacent tissues (HT-adj), as well as between tumor tissues from patients with PTC without HT (nonHT-T) and their matched adjacent tissues (nonHT-adj). HT-T group showed increased species richness (Chao1, p = 0.031) and higher evenness (Shannon, Simpson, and Pielou’s evenness indices, all p < 0.05). HT-tumor tissues also exhibited higher Shannon and Simpson diversity than matched adjacent tissues (Shannon, p = 0.026; Simpson, p = 0.049), indicating enhanced microbial diversity within the HT TME (Figure 5A). Beta diversity assessed by Bray-Curtis dissimilarity and NMDS showed a weak separation of HT-T samples, which was not statistically significant by PERMANOVA (R2 = 0.026, p = 0.337; Figure 5B). These results suggest alterations in microbial richness and evenness rather than a global community shift.Figure 5 Alterations of the intratumor microbiota in PTC with or without coexisting HT
+
+(A) Alpha diversity indices compare microbial diversity across groups (HT-T, n = 27; HT-adj, n = 27; nonHT-T, n = 36; nonHT-adj, n = 35). Each point represents an individual sample. The center line indicates the median, the box represents the IQR, and the whiskers represent 1.5× IQR. Statistical comparisons were performed using the Kruskal–Wallis test followed by Dunn’s multiple comparisons test with Benjamini–Hochberg correction.
+
+(B) Beta diversity analysis based on Bray-Curtis distances, visualized by NMDS. Each point corresponds to a sample, shaped and colored by group. Statistical significance was assessed using permutational multivariate analysis of variance (PERMANOVA), R2 = 0.026, p = 0.337.
+
+(C) SIMPER analysis identifying genera contributing most strongly to Bray-Curtis dissimilarity.
+
+(D) UPGMA clustering shows the relative abundance of phyla level across groups.
+
+(E) UPGMA clustering shows the relative abundance at the genus level across groups.
+
+(F) Taxonomic cladogram generated by LEfSe, depicting differentially abundant taxa between microbiome communities. (G) LDA scores of differentially abundant taxa with a cutoff of log10 (LDA score) > 2. HT-T, tumor tissues from patients with PTC with HT; HT-adj, peritumoral tissues from patients with PTC with HT; nonHT-T, tumor tissues from patients with PTC without HT; and nonHT-adj, peritumoral tissues from patients with PTC without HT. NMDS, non-metric multidimensional scaling; SIMPER, similarity percentage analysis; UPGMA, unweighted pair group method with arithmetic mean; LEfSe, linear discriminant analysis effect size; LDA, linear discriminant analysis.
+
+To identify taxa contributing to community differences, SIMPER analysis was performed. Similarity percentage (SIMPER) analysis identified genera contributing most strongly to Bray-Curtis dissimilarity, including Delftia, Stenotrophomonas, Pseudomonas, Staphylococcus, Cutibacterium, Lactobacillus, and Defluviicoccus (Figure 5C). Unweighted pair group method with arithmetic (UPGMA)-based hierarchical clustering demonstrated distinct patterns of dominant microbial taxa at both phylum and genus levels (Figures 5D and 5E).
+
+Differential taxonomic analysis further revealed microbial features associated with HT status. LEfSe identified that Bradyrhizobium, Pseudonocardia, and Solirubrobacter were enriched in HT-T, whereas Variovorax and Sumerlaea were more abundant in the nonHT-T group (Figures 5F and 5G).
+
+These analyses indicate that HT status is associated with distinct intratumoral microbial diversity patterns and taxonomic composition in PTC.
+
+Selective depletion of specific microbial genera characterizes HT-PTC
+
+To determine whether HT associated epithelial states were accompanied by changes in intratumoral microbial composition, we performed differential abundance analyses between patients with PTC with and without HT. In tumor tissues, 134 ASVs were unique to HT-T and 80 to nonHT-T. In paired peritumoral tissues, 38 ASVs were exclusive to HT-adj and 94 to nonHT-adj, with 203 ASVs shared between groups (Figure 6A).Figure 6 Altered abundance patterns of selected bacterial genera in HT-PTC
+
+(A) Venn diagram shows the distribution of ASVs among the four groups (HT-T, n = 27; HT-adj, n = 27; nonHT-T, n = 36; nonHT-adj, n = 35).
+
+(B) Ternary plot shows the relative distribution of the eight most abundant genera among HT-T, HT-adj, and nonHT-T groups. Each point represents one bacterial genus, positioned according to its relative abundance across the three groups.
+
+(C) Heatmap shows the core microbiome at the genus level across the four groups, defined by relative abundance detection thresholds. Relative prevalence patterns within each phylum are indicated by a color gradient ranging from blue (lower) to red (higher).
+
+(D) Bar plots show CLR-transformed abundances of Staphylococcus, Pseudomonas, and Acinetobacter across the four groups.
+
+(E) Bar plots show CLR-transformed abundances of Escherichia-Shigella, Ruminococcus, Bacteroides, and Blautia across the four groups.
+
+(F) Bar plots showing CLR-transformed abundances of Prevotella_7, Corynebacterium, Porphyromonas, Lactobacillus, and Subdoligranulum, with no significant differences observed among the four groups. Statistical comparisons were performed using the Kruskal–Wallis test followed by pairwise Wilcoxon rank-sum tests with Benjamini–Hochberg false discovery rate correction. The central line represents the median, the box indicates the IQR, and whiskers extend to 1.5× IQR. HT-T, tumor tissues from patients with PTC with HT; HT-adj, peritumoral tissues from patients with PTC with HT; nonHT-T, tumor tissues from patients with PTC without HT; and nonHT-adj, peritumoral tissues from patients with PTC without HT; ASV, amplicon sequence variant; CLR, centered log-ratio transformation.
+
+Ternary plot analysis demonstrated group-specific distribution patterns of the eight most abundant genera across HT-T, HT-adj, and nonHT-T samples. Several dominant genera, including Lactobacillus, Staphylococcus, and Pseudomonas, were skewed toward the nonHT-T group, whereas Prevotella_7 showed relative enrichment in HT-T and Porphyromonas in HT-adj (Figure 6B). Consistently, relative abundance analysis showed higher levels of Staphylococcus, Lactobacillus, and Pseudomonas in nonHT-T, whereas Cutibacterium was significantly enriched in HT-T (Figures 6C and 6D).
+
+Staphylococcus, Pseudomonas, Acinetobacter, Escherichia-Shigella, Ruminococcus, Bacteroides, and Blautia differed significantly among the four groups (p < 0.05; Figures 6D and 6E). In contrast, multiple highly prevalent genera across all groups, including Prevotella_7, Corynebacterium, Porphyromonas, Lactobacillus, and Subdoligranulum, did not show significant differences in abundance (Figure 6F), indicating that HT associated microbial alterations preferentially involved a subset of dominant taxa rather than a global reshaping of the microbial community.
+
+Correlation analysis between the specific PTC intratumoral microbiome and the clinical factors
+
+CCA analysis revealed that TSH was the clinical parameter most strongly associated with microbial community variation (R2 = 0.92, p < 0.001), followed by thyroid autoantibodies (TgAb, R2 = 0.34, p = 0.008; TPOAb, R2 = 0.17, p = 0.020). Age and nodule size showed weaker but significant associations (Age, R2 = 0.15, p = 0.006; tumor size, R2 = 0.13, p = 0.023; Figure 7A). Spearman correlation analysis showed negative associations between specific genera and clinical parameters. Pseudomonas was negatively correlated with TgAb (p = 0.029) and TPOAb (p = 0.028). Lactobacillus was negatively correlated with age (p = 0.037). Prevotella_7 was negatively correlated with serum FT3 levels (p = 0.047; Figure 7B).Figure 7 Microbial features associated with lymph node metastasis in HT-PTC
+
+(A) CCA showing associations between clinical parameters and microbial community composition in PTC. Arrows indicate clinical variables contributing to microbial compositional variation, and each point represents one sample.
+
+(B) Spearman correlation analysis shows associations between selected bacterial genera and clinicopathological parameters. Color intensity represents the correlation coefficient, and significance levels are indicated within the plot.
+
+(C) Bar plot shows the occurrence of LNM in HT and nonHT groups. Statistical comparisons were performed using the chi-square test, χ2(1) = 6.120, p = 0.0134.
+
+(D) Alpha diversity indices compares tumor and peritumoral microbiota among HT subgroups stratified by lymph node metastasis status (HT-LN-T, n = 10; HT-LN-adj, n = 10; HT-nonLN-T, n = 9; HT-nonLN-adj, n = 9). Each point represents an individual sample. The center line indicates the median, the box represents the IQR, and the whiskers represent 1.5× IQR. Pairwise comparisons were performed using the Wilcoxon rank-sum test. Statistical comparisons were performed using the Kruskal–Wallis test followed by Dunn’s multiple comparisons test with Benjamini–Hochberg correction.
+
+(E) Venn diagram shows the distribution of ASVs among the four HT subgroups.
+
+(F) Heatmap shows the core microbiome at the genus level across the four HT subgroups. Relative prevalence patterns within each phylum are indicated by a color gradient ranging from blue (lower) to red (higher).
+
+(G) BugBase-predicted Gram-negative bacterial phenotypes, showing relative abundance differences between patients with HT-PTC with and without lymph node metastasis. Statistical comparisons were performed using the Kruskal–Wallis test followed by Dunn’s multiple comparisons test with Benjamini–Hochberg correction. HT-LN-T, tumor tissues from patients with HT-PTC with lymph node metastasis; HT-LN-adj, peritumoral tissues from patients with HT-PTC with lymph node metastasis; HT-nonLN-T, tumor tissues from patients with HT-PTC without lymph node metastasis; HT-nonLN-adj, peritumoral tissues from patients with HT-PTC without lymph node metastasis; CCA, canonical correspondence analysis; ASV, amplicon sequence variant; LNM, lymph node metastasis. Statistical significance is indicated as ∗p < 0.05, ∗∗p < 0.01, and ∗∗∗p < 0.001.
+
+Conserved depletion of selected genera in LNM-positive HT-PTC
+
+Patients with HT exhibited a significantly lower frequency of lymph node metastasis compared with patients with nonHT (χ2(1) = 6.120, p = 0.0134, Figure 7C), consistent with observations reported in previous retrospective studies.
+
+To characterize microbial features by lymph node metastasis status within patients with HT, age- and tumor stage-matched subgroup analyses were performed. In peritumoral tissues, patients with HT with lymph node metastasis showed reduced microbial diversity and evenness compared with patients without metastasis (Figure 7D). Venn analysis and genus-level comparisons showed partial separation between lymph node metastasis-positive and -negative patients. Prevotella_7 was enriched in tumor tissues of metastatic patients. Pseudomonas, Escherichia-Shigella, and Bacteroides were enriched in peritumoral tissues (Figures 7E and 7F). BugBase analysis showed a higher proportion of Gram-negative bacteria in peritumoral tissues of metastatic patients (Figure 7G).
+
+Collectively, these results indicate that lymph node metastasis in patients with HT is associated with localized alterations in peritumoral microbial diversity and composition, rather than uniform changes across tissue compartments.
+
+Pseudomonas-derived lipopolysaccharide (LPS) enhances PTC cell migration in vitro and in vivo
+
+In summary, patients with HT, particularly those without lymph node metastasis, exhibited a significantly reduced abundance of Gram-negative bacteria compared with those with metastasis, with Pseudomonas being the most abundant genus. Lipopolysaccharide is a major pathogen-associated molecule derived from Gram-negative bacteria. Therefore, Pseudomonas-derived LPS was selected for subsequent in vitro functional assays to evaluate its potential effects on PTC cell migration. Human PTC cell lines B-CPAP, TPC-1, and K1 were used to assess the effects of LPS on cell migration in vitro. In wound healing assays, LPS-treated cells showed significantly faster scratch closure than controls (p < 0.05; Figures 8A and 8B). Transwell assays consistently showed increased cell migration following LPS treatment, with higher migration at 400 ng/mL than at 200 ng/mL (p < 0.05; Figures 8C and 8D). Among the three cell lines, B-CPAP showed the strongest migration response to LPS.Figure 8 Pseudomonas-derived LPS enhances PTC cell migration in vitro and lung metastasis in vivo
+
+(A) Representative images of wound healing assays showing the migration ability of PTC cell lines following LPS treatment. Scale bars, 500 μm.
+
+(B) Quantification of wound closure in PTC cell lines under different LPS concentrations. Data are presented as mean ± SD; error bars represent SD across biological replicates (n = 3).
+
+(C) Representative images of Transwell migration assays performed in PTC cell lines following LPS treatment. Scale bars, 50 μm.
+
+(D) Quantification of migrated cells in Transwell assays under different LPS concentrations. Data are presented as mean ± SD; error bars represent SD across biological replicates (n = 3).
+
+(E) Schematic illustration of the experimental design used to assess the effects of different concentrations of LPS on B-CPAP cell metastasis in vivo.
+
+(F) Representative photographs of excised lungs and hematoxylin and eosin (H&E)-stained lung sections. Scale bars, 1000 μm and 100 μm.
+
+(G) Quantification of the number of lung metastatic foci in each group (n = 4 per group). Statistical analyses were performed using two-way ANOVA with Tukey’s multiple-comparisons test for in vitro experiments and one-way ANOVA with Dunnett’s multiple-comparisons test for in vivo experiments. Statistical significance is indicated as ∗p < 0.05, ∗∗p < 0.01, ∗∗∗p < 0.001, and ∗∗∗∗p < 0.0001.
+
+For in vivo assessment, B-CPAP cells pretreated with 0, 200, or 400 ng/mL LPS were injected via the tail vein into 6-week-old NCG mice (Figure 8E). Mice receiving LPS-treated cells developed more lung metastatic nodules than controls, with higher counts in the 400 ng/mL group than in the 200 ng/mL group (p < 0.05; Figure 8F). Together, these results indicate that transient LPS pre-exposure is associated with increased migration in vitro and enhanced lung colonization in vivo.
+
+Discussion
+
+This study integrated scRNA-seq with 16S rRNA sequencing to characterize malignant epithelial states and the intratumoral microbiota in HT-PTC. Our findings provide insight into the biological basis underlying the different clinical behavior of HT-PTC and identify potential microbial features with relevance for risk stratification.
+
+HT is characterized by chronic immune activation and extensive remodeling of the thyroid microenvironment.14,15 Consistently, we observed a marked enrichment of plasma cells and naive B cells in HT-PTC, whereas neutrophils and IL1B+ M1-like macrophages were more prevalent in nonHT tumors. The distinct immune ecosystem states may partially explain the favorable clinical characteristics of HT-PTC.7
+
+At the epithelial level, we identified a malignant subpopulation enriched in HT-PTC with increased expression of IRAK2, PELI1, TMEM173, CXCL8, IL1B, and TNF. These genes are involved in innate immune and inflammatory signaling pathways. Notably, although tumor heterogeneity is often attributed to CNV,16 these innate immune transcription patterns exhibited relatively low inferred CNV burdens. This finding suggests that their functional state may be less associated with genomic alterations and more closely related to microenvironmental immune stimuli. Pseudotime analysis further indicated that this population occupies a terminal position along the epithelial trajectory, accompanied by progressive loss of thyroid differentiation markers and increased expression of mesenchymal-associated genes, supporting the existence of a differentiated immune-activated epithelial state in HT-PTC.
+
+Considering that interferon and complement signaling pathways are key regulators of host-microbe interactions and are enriched in HT-associated epithelial states, the observed association between these immune programs and microbial alterations may reflect coordinated remodeling of the tumor immune microenvironment and intratumoral microbial ecosystem in HT-PTC. Microbiota have been implicated in tumor progression through immune modulation and metabolic reprogramming.8,9,10,17 Previous studies have reported that increased microbial diversity is more frequently observed in thyroid cancers with advanced clinical stage.11,18 Here, we found that HT-PTC exhibits distinct microbial features, including higher Shannon and Simpson indices and a lower dominance index in both tumor and peritumor tissues. These results indicate a more diverse and evenly distributed microbial community.
+
+Several genera, including Staphylococcus, Lactobacillus, Pseudomonas, Escherichia-Shigella, and Ruminococcus, were significantly depleted in HT-PTC. These findings are consistent with previous reports showing depletion of Staphylococcus and remodeling of microbial interaction networks in HT-PTC.13 Staphylococcus has been linked to immune modulation,19 whereas Lactobacillus and Pseudomonas have been associated with reduced levels of tumor-infiltrating lymphocytes20 and worse prognosis21,22 Although their functions in thyroid cancer remain unclear, depletion of these taxa may reduce exposure to pro-tumorigenic microbial signals. This microbial landscape may contribute to the lower frequency of lymph node metastasis and more favorable outcomes observed in HT-PTC., suggesting that intratumoral microbial signatures may have value for risk stratification.
+
+Mechanistically, microbial signals may influence tumor behavior. LPS is a major component of Gram-negative bacterial membranes. It primarily interacts with TLR4 and then activates downstream pathways of inflammatory cytokine production and sustains chronic inflammation.23 LPS has been recognized as a marker of Gram-negative bacterial presence. It was reported that LPS could promote tumor invasion, metastasis, and immune checkpoint inhibitor resistance across multiple malignancies.24,25,26 In vitro and in vivo experiments in this study demonstrate that Pseudomonas-derived LPS enhances PTC cell migration and metastatic colonization, supporting a functional link between microbial signals and epithelial cell phenotypes.
+
+We also observed an association between serum TSH levels and intratumoral microbial composition. While elevated TSH has been associated with thyroid cancer progression,27,28 its relationship with the tumor microbiome remains poorly understood. The gut microbiota has been proposed to regulate thyroid function by modulating the absorption of thyroid-related micronutrients.29,30,31 Recent study reported that microbial diversity patterns in thyroid tissues resemble those observed in oral and fecal samples, suggesting microbial translocation or systemic host-microbiota interactions.32 Our findings further suggest a potential association between endocrine status and intratumoral microbial ecology.
+
+Based on these observations, we propose that intratumoral microbial stimuli may contribute to transcriptional reprogramming of PTC epithelial cells toward innate immune activation. These factors may impose selective pressure on the intratumoral microbiota, preferentially suppressing taxa with higher invasive potential and promoting the establishment of a more balanced microbial ecosystem. Consequently, the depletion of pro-tumorigenic microbes may be associated with microbe-tumor interactions, thereby influencing its metastatic potential. Future studies should determine whether microbial signatures can improve risk stratification and whether microbe-derived signaling pathways can be therapeutically targeted to limit metastatic progression.
+
+In conclusion, HT-PTC exhibits distinct epithelial transcriptional states and intratumoral microbial features, characterized by innate immune activation and altered microbial composition independent of genomic instability. These changes are associated with reduced abundance of specific Gram-negative genera and may contribute to a less invasive phenotype.
+
+Limitations of the study
+
+Several limitations should be noted. First, this study was based on a single-center cohort. Future multicenter studies with larger cohorts are required to validate and extend these findings. Second, LPS stimulation represents a simplified model of microbial signaling and does not fully recapitulate the complexity of interactions between live bacteria and tumor cells. Further studies using live Pseudomonas co-culture systems and in vivo colonization models are needed to validate these observations and to elucidate the mechanistic role of intratumoral microbes in shaping the TME and influencing tumor progression.
+
+Resource availability
+
+Lead contact
+
+Requests for further information and resources should be directed to and will be fulfilled by the lead contact, Weihua Qiu (qwh11072@rjh.com.cn).
+
+Materials availability
+
+This study did not generate new unique reagents.
+
+Data and code availability
+
+• The normalized expression data of single-cell RNA sequencing reported in this paper have been deposited at OMIX, China National Center for Bioinformation/Beijing Institute of Genomics, Chinese Academy of Sciences, and are publicly accessible at https://ngdc.cncb.ac.cn/omix (OMIX: OMIX017448).
+
+• 16S rRNA gene sequencing data reported in this paper have been deposited at Genome Sequence Archive (Genomics, Proteomics and Bioinformatics 2025) in National Genomics Data Center (Nucleic Acids Res 2025), China National Center for Bioinformation/Beijing Institute of Genomics, Chinese Academy of Sciences, and are publicly accessible at https://ngdc.cncb.ac.cn/gsa-human (GSA: HRA016816).
+
+• This paper does not report original code.
+
+• Any additional information required to reanalyze the data reported in this paper is available from the lead contact upon request.
+
+Acknowledgments
+
+We thank the participants from the cohort included in this study. This work was supported by the 10.13039/501100001809 National Natural Science Foundation of China (82573280 and 82303864).
+
+Author contributions
+
+Y.C.: writing – original draft, writing – review and editing, conceptualization, validation, investigation, formal analysis, data curation, and visualization. W.K.: writing – original draft, investigation, formal analysis, data curation, and visualization. L.X.: writing – review and editing, methodology, resources, software, and visualization. Z.L.: investigation and data curation. J.K.: investigation and data curation. X.C.: methodology and project administration. Q.Z.: supervision, project administration, and funding acquisition. H.F.: supervision and conceptualization. W.Q.: writing – review and editing, supervision, funding acquisition, and conceptualization.
+
+Declaration of interests
+
+The authors declare no competing interests.
+
+Declaration of generative AI and AI-assisted technologies in the writing process
+
+Not applicable.
+
+STAR★Methods
+
+Key resources table
+
+REAGENT or RESOURCE	SOURCE	IDENTIFIER	
+Chemicals, peptides, and recombinant proteins	
+	
+Lipopolysaccharide (LPS, Pseudomonas aeruginosa)	Sigma-Aldrich	L9143	
+	
+Critical commercial assays	
+	
+SeekOne™ DD Single Cell Full-length RNA Sequence Transcriptome-seq Kit	Seekgene	K00801-08	
+	
+Deposited data	
+	
+Papillary thyroid cancer 16s rRNA gene sequencing	GSA	GSA: HRA016816	
+Papillary thyroid cancer single-cell sequencing	OMIX	OMIX: OMIX017448	
+	
+Experimental models: Cell lines	
+	
+Human: B-CPAP cells	NCACC	SCSP-543	
+Human: TPC-1 cells	BCRJ	0397	
+Human: K1 cells	ECACC	92030501	
+	
+Experimental models: Organisms/strains	
+	
+NCG mice: NOD/ShiLtJGpt-Prkdcem26Cd52Il2rgem26Cd22/Gpt, six-week-old, male	GemPharmatech	T001475	
+	
+Oligonucleotides	
+	
+16s rRNA V3-V4: 341F/806R	Custom synthesized	341F: 5′-CCTAYGGGRBGCASCAG-3′
+806R: 5′-GGACTACNNGGGTATCTAAT- 3′	
+FISH Probe: EUB338	Custom synthesized	5′-GCTGCCTCCCGTAGGAGT-3′	
+	
+Software and algorithms	
+	
+R version v4.4.1	R Foundation for Statistical Computing	https://www.r-project.org	
+QIIME2 v2025.4	Caporaso Lab, Northern Arizona University	https://qiime2.org	
+ImageJ	National Institutes of Health	https://imagej.net/ij	
+GraphPad Prism v9.5.0	Software Inc.	https://www.graphpad.com/	
+AnnotationDbi	V1.56.1	https://bioconductor.org/packages/AnnotationDbi/	
+clusterProfiler	V4.2.0	https://bioconductor.org/packages/clusterProfiler/	
+enrichplot	V1.14.1	https://bioconductor.org/packages/enrichplot/	
+GSVA	V2.2.1	https://bioconductor.org/packages/GSVA/	
+Harmony	V0.1	https://github.com/immunogenomics/harmony	
+inferCNV	V1.17.0	https://github.com/broadinstitute/infercnv	
+MSigDB	V7.5.1	https://www.gsea-msigdb.org/gsea/msigdb	
+Seurat	V4.1.1	https://github.com/satijalab/seurat	
+SingleR	V1.8.1	https://bioconductor.org/packages/SingleR/	
+	
+Other	
+	
+Illumina MiSeq System Illumina	Illumina	https://www.illumina.com/	
+SeekOne™ Digital Droplet System	Seekgene	https://www.seekgene.com/	
+
+Experimental model and study participant details
+
+Study design and participants
+
+Ethical approval for this study (No. 2023242) was provided by the Research Ethics Committee of Ruijin Hospital, Shanghai, China, on 12 September 2023, and complied with the Declaration of Helsinki. All participants provided informed consent prior to enrollment.
+
+A total of 66 patients were enrolled between February 2024 and October 2024 at Ruijin Hospital. Participants were recruited from patients newly diagnosed with PTC who underwent thyroidectomy at Ruijin Hospital. The cohort included a single cell sequencing group (n = 4) and a 16S rRNA gene sequencing group (n = 62).
+
+The inclusion criteria were as follows: (a) newly diagnosed papillary thyroid carcinoma, confirmed by postoperative histopathological examination; (b) availability of paired tumor and peritumoral tissue samples; (c) complete clinicopathological data, including sex, age, TNM stage, recurrence risk stratification and the presence of concomitant Hashimoto’s thyroiditis.
+
+The exclusion criteria were as follows: (a) recent use of antibiotics, probiotics, prebiotics, or synbiotics; (b) clinical or laboratory evidence of active infection prior to surgery; (c) a history of malignancy or prior radiotherapy/chemotherapy; or (d) insufficient paired tissue or clinical data.
+
+TNM staging was performed according to the 8th edition of the American Joint Committee on Cancer (AJCC) staging system. Recurrence risk stratification followed the 2024 guidelines of the American Thyroid Association (ATA). The diagnosis of Hashimoto’s thyroiditis was based on the presence of anti-thyroid peroxidase antibodies (TPO-Ab) and/or anti-thyroglobulin antibodies (TG-Ab) and/or diffuse lymphocytic infiltration observed on histopathological examination.
+
+The flow diagram of patient enrollment is summarized in Figure S1. Clinical characteristics of the participants are summarized in Tables 1, S1, and S2. Subgroup analyses were predefined according to the presence or absence of Hashimoto’s thyroiditis and lymph node metastasis. Propensity score matching was performed based on age and tumor stage to reduce baseline imbalance between groups. Sex-specific analyses were not conducted, as the study was not powered to detect sex-based differences.
+
+Cell lines
+
+Human papillary thyroid carcinoma cell lines B-CPAP, TPC-1, and K1 were obtained from the National Collection of Authenticated Cell Cultures (NCACC, China), the Rio de Janeiro Cell Bank (BCRJ, Brazil), and the European Collection of Authenticated Cell Cultures (ECACC, UK), respectively. B-CPAP and TPC-1 cells were derived from female donors, whereas K1 cells were derived from a male donor.33 B-CPAP and K1 cells were cultured in Dulbecco’s Modified Eagle Medium (DMEM; MeilunBio, China), whereas TPC-1 cells were maintained in Roswell Park Memorial Institute 1640 medium (RPMI-1640; MeilunBio, China). All media were supplemented with 10% fetal bovine serum (FBS; Gibco, USA), 100 U/mL penicillin, and 100 μg/mL streptomycin. Cells were cultured at 37°C in a humidified incubator containing 5% CO2 and routinely tested for mycoplasma contamination.
+
+Mice
+
+Ethical approval for all animal procedures (No. RJ2023070) was provided by the Animal Ethics Committee of Ruijin Hospital, Shanghai, China, on 8 December 2023. All animal procedures were conducted in accordance with the guidelines of the Chinese Zoological Society. Six-week-old male NCG mice were obtained from GemPharmatech Co., Ltd. All animals were housed under specific pathogen-free (SPF) conditions in a temperature- and humidity-controlled room (23°C, 65% humidity) with a 12-h light/dark cycle and had free access to food and water.
+
+Creation of experimental lung metastasis mouse model
+
+Briefly, the human thyroid cancer cell line B-CPAP was seeded in 6 well plates and cultured to approximately 50% confluence before being treated with LPS at 0 ng/mL (control), 200 ng/mL, or 400 ng/mL for 48 h to evaluate the effect of pre-stimulation on metastatic potential. Following treatment, cells were harvested and resuspended in phosphate-buffered saline (PBS) at a concentration of 1 × 106 cells per 100 μL.
+
+Twelve mice were randomly assigned to three groups (n = 4 per group), with each mouse serving as an independent experimental unit. Each mouse received 100 μL of the prepared cell suspension via lateral tail vein injection within 3–5 s. All injections were performed by the same investigator to minimize variability. Body weight was measured twice weekly. At the predefined experimental endpoint, all mice were euthanized by carbon dioxide inhalation, and lungs were harvested for assessment of metastatic tumor burden. Gross metastatic nodules were recorded, and lung tissues were subjected to hematoxylin and eosin (H&E) staining for histological evaluation of pulmonary metastases.
+
+Method details
+
+Sample collection
+
+Tumor tissues and paired peritumor tissues were collected under sterile conditions in the operating room and immediately placed in sterile tubes, frozen on dry ice, and stored at −80°C until DNA extraction. To monitor potential contamination, three open Eppendorf tubes containing 1 mL sterile ddH2O were placed in the operating room during tissue collection.
+
+Single cell RNA-seq (scRNA-seq)
+
+The collected samples were immediately transferred into tissue preservation medium (RPMI-1640 supplemented with 2% fetal bovine serum (FBS)), and single cell suspensions were prepared within 6 h. Libraries were prepared using the SeekOne DD scFAST-seq kit according to the manufacturer’s instructions.34 Raw sequencing data were processed using SeekSoul software and aligned to the human reference genome GRCh38 to generate gene expression matrices. Batch effects were corrected using Harmony (v0.1).35 Quality control was performed using Seurat (v4.1.1),36 excluding genes expressed in fewer than three cells and filtering out cells with <200 or >100,000 UMIs, <100 or >30,000 detected genes, or mitochondrial gene content >20%.
+
+Cell type annotation
+
+Initial cell type annotation was performed using SingleR (v1.8.1) to obtain a coarse classification. The annotations were subsequently confirmed through manual inspection based on canonical marker genes for each cell type. Clusters simultaneously expressing markers of two or more known cell types were considered doublet cells and excluded from further analyses. Seven major cell populations based on previously reported marker genes were annotated,37 including tumor epithelial cells (EPCAM+ KRT18+ KRT19+ KRT7+ KRT8+ TG+), thyroid follicular epithelial cells (TPO+ SLC26A4+), endothelial cells (CD34+ CDH5+ CLDN5+ PECAM1+ PLVAP+ RAMP2+ VWF+), fibroblasts (ACTA2+ COL3A1+ COL1A2+ COL1A1+ DCN+ LUM+ TAGLN+), T cells (CD3D+ CD3E+ CD3G+ GNLY+ KLRD1+ KLRF1+ NKG7+ TRAC+), B cells (CD79A+ CD79B+ IGHD+ IGHM+ MS4A1+), and myeloid cells (C1QB+ CD14+ CD163+ CD68+ LYZ+ S100A8+ S100A9+).
+
+Differentially expressed genes (DEGs), functional pathway and gene set enrichment analysis (GSEA)
+
+Genes with a log2 fold change ≥0.25 and expressed in at least 25% of cells in either group were considered differentially expressed. Gene Ontology (GO) enrichment analysis was conducted using clusterProfiler (v4.2.0).38 Gene set variation analysis (GSVA) was performed using GSVA (v2.2.1),39 with gene sets obtained from MSigDB (v7.5.1).
+
+Copy number variation inference (CNV)
+
+Copy number variation (CNV) inference was conducted using inferCNV (v1.17.0),40 with thyroid follicular epithelial cells as reference. Noise reduction and signal smoothing were applied during CNV inference using a sliding window approach with a window size of 101 genes. Hierarchical clustering of inferred CNV profiles was conducted using the Ward.D2 algorithm.
+
+Trajectory analysis
+
+Monocle 3 algorithm was performed to investigate the differentiation trajectories of HT-PTC malignant cell subtypes. A CellDataSet object was constructed from quality-controlled epithelial cells, followed by normalization, preprocessing, and dimensionality reduction using the preprocess_cds() and reduce_dimension() functions with UMAP embedding. Cells were clustered using cluster_cells(), and a principal graph was constructed using learn_graph(). Pseudotime was calculated by ordering cells along the inferred trajectory using order_cells(), with normal thyroid follicular epithelial cells defined as the root. Genes associated with pseudotime variation were identified using graph_test() (q-value <1 × 10-5) and used to characterize dynamic transcriptional changes along epithelial trajectories.
+
+16S rRNA gene sequencing
+
+16S rRNA gene sequencing data were processed using standard pipelines to generate Amplicon Sequence Variants (ASVs). Low-quality reads and chimeras were removed, and taxonomic annotation was performed using the SILVA database (https://www.arb-silva.de). Alpha diversity indices were calculated from the ASV table, and beta diversity was assessed using Bray-Curtis distances and visualized by non-metric multidimensional scaling (NMDS). Differentially abundant taxa were identified using linear discriminant analysis effect size (LEfSe)41 and Analysis of Compositions of Microbiomes With Bias Correction 2 (ANCOM-BC2).42 Associations between microbial communities and clinical variables were evaluated using canonical correspondence analysis (CCA) and Spearman’s correlation with false discovery rate (FDR) correction.
+
+Wound healing assay
+
+Cells were seeded in 6 well plates and grown to full confluence. A linear scratch was made using a sterile pipette tip held perpendicular to the plate. Detached cells were removed by washing with sterile PBS. Serum free medium containing 0, 200, or 400 ng/mL LPS was added according to the experimental groups. Baseline images were taken immediately (0 h), after which cells were incubated at 37°C with 5% CO2. Wound closure was monitored and photographed under a microscope at the same positions at the indicated time points to assess closure.
+
+Transwell migration assay
+
+Cells were seeded into 6 well plates and grown to approximately 50% confluence, then stimulated with serum containing medium supplemented with 0, 200 or 400 ng/mL LPS for 48 h. After stimulation, cells were collected and resuspended in serum free medium. A total of 5 × 104 cells were added to the upper chamber of Transwell inserts (8 μm pore size; Corning, USA), with medium containing 10% FBS placed in the lower chamber as a chemoattractant. After 24 h of incubation, non-migrated cells on the upper surface were removed by sterile PBS, and migrated cells on the lower surface were fixed with 10% paraformaldehyde, stained with crystal violet, and quantified under the microscope.
+
+Quantification and statistical analysis
+
+Statistical analyses and figures were performed using GraphPad Prism v9.5.0 and R v4.4.1. Comparisons between two groups were conducted using Student’s t test or the Mann-Whitney U test, depending on data normality. For multiple group comparisons, one-way ANOVA and two-way ANOVA with appropriate post-hoc tests were applied for normally distributed data, while non-parametric data were analyzed using the Kruskal-Wallis test followed by Dunn’s post-hoc test with Holm correction. Data were expressed as mean ± standard deviation (SD), median (interquartile range, IQR), or number (percentage). p value <0.05 was considered statistically significant. Statistical significance is indicated as ∗p < 0.05, ∗∗p < 0.01, ∗∗∗p < 0.001, ∗∗∗∗p < 0.0001, ns, not significant.
+
+Supplemental information
+
+Document S1. Figures S1–S6 and Table S1
+
+Table S2. Detail information of 62 Paris of patients with PTC in 16SrRNA gene sequencing cohort, related to Table 1 and Figure S1
+
+Supplementary data related to this article can be found online at https://doi.org/10.1016/j.isci.2026.117167.
+
+
+References
+
+1 Han B. Zheng R. Zeng H. Wang S. Sun K. Chen R. Li L. Wei W. He J. Cancer incidence and mortality in China, 2022 J. Natl. Cancer Cent. 4 2024 47 53 10.1016/j.jncc.2024.01.006 39036382 PMC11256708
+2 Kitahara C.M. Schneider A.B. Epidemiology of Thyroid Cancer Cancer Epidemiol. Biomarkers Prev. 31 2022 1284 1297 10.1158/1055-9965.EPI-21-1440 35775227 PMC9473679
+3 Ralli M. Angeletti D. Fiore M. D'Aguanno V. Lambiase A. Artico M. de Vincentiis M. Greco A. Hashimoto's thyroiditis: An update on pathogenic mechanisms, diagnostic protocols, therapeutic strategies, and potential malignant transformation Autoimmun. Rev. 19 2020 102649 10.1016/j.autrev.2020.102649 32805423
+4 Xu S. Huang H. Qian J. Liu Y. Huang Y. Wang X. Liu S. Xu Z. Liu J. Prevalence of Hashimoto Thyroiditis in Adults With Papillary Thyroid Cancer and Its Association With Cancer Recurrence and Outcomes JAMA Netw. Open 4 2021 e2118526 10.1001/jamanetworkopen.2021.18526 PMC8317012 34313737
+5 Borowczyk M. Janicki A. Dworacki G. Szczepanek-Parulska E. Danieluk M. Barnett J. Antonik M. Kałużna M. Bromińska B. Czepczyński R. Decreased staging of differentiated thyroid cancer in patients with chronic lymphocytic thyroiditis J. Endocrinol. Investig. 42 2019 45 52 10.1007/s40618-018-0882-4 29619749 PMC6304183
+6 Jara S.M. Carson K.A. Pai S.I. Agrawal N. Richmon J.D. Prescott J.D. Dackiw A. Zeiger M.A. Bishop J.A. Tufano R.P. The relationship between chronic lymphocytic thyroiditis and central neck lymph node metastasis in North American patients with papillary thyroid carcinoma Surgery 154 2013 1272 1282 10.1016/j.surg.2013.07.021 24238047
+7 Pan J. Ye F. Yu C. Zhu Q. Li J. Zhang Y. Tian H. Yao Y. Zhu M. Shen Y. Papillary Thyroid Carcinoma Landscape and Its Immunological Link With Hashimoto Thyroiditis at Single-Cell Resolution Front. Cell Dev. Biol. 9 2021 758339 10.3389/fcell.2021.758339 PMC8602800 34805166
+8 Nejman D. Livyatan I. Fuks G. Gavert N. Zwang Y. Geller L.T. Rotter-Maskowitz A. Weiser R. Mallel G. Gigi E. The human tumor microbiome is composed of tumor type-specific intracellular bacteria Science 368 2020 973 980 10.1126/science.aay9189 32467386 PMC7757858
+9 Ye L. Wu B.S. Xu Z.A. Ji X.F. Guan L. Li P.P. Li Y. Cheng H.W. Xiao J. Evidence for an intra-tumoral microbiome in pituitary neuroendocrine tumors with different clinical phenotypes J. Neuro Oncol. 163 2023 133 142 10.1007/s11060-023-04318-2 37140882
+10 Li Y. Zhang D. Wang M. Jiang H. Feng C. Li Y.X. Intratumoral microbiota is associated with prognosis in patients with adrenocortical carcinoma iMeta 2 2023 e102 10.1002/imt2.102 PMC10989844 38868430
+11 Yuan L. Yang P. Wei G. Hu X. Chen S. Lu J. Yang L. He X. Bao G. Tumor microbiome diversity influences papillary thyroid cancer invasion Commun. Biol. 5 2022 864 10.1038/s42003-022-03814-x PMC9402670 36002642
+12 Gnanasekar A. Castaneda G. Iyangar A. Magesh S. Perez D. Chakladar J. Li W.T. Bouvet M. Chang E.Y. Ongkeko W.M. The intratumor microbiome predicts prognosis across gender and subtypes in papillary thyroid carcinoma Comput. Struct. Biotechnol. J. 19 2021 1986 1997 10.1016/j.csbj.2021.03.032 33995898 PMC8085784
+13 Yu S. Ding Y. Wang X. Kin Ng S. Cao S. Liu W. Guo Z. Xie Y. Hong S. Xu L. Intratumoral Bacteria Dysbiosis Is Associated with Human Papillary Thyroid Cancer and Correlated with Oncogenic Signaling Pathways Engineering 28 2023 179 192 10.1016/j.eng.2023.01.007
+14 Ehlers M. Schott M. Hashimoto's thyroiditis and papillary thyroid cancer: are they immunologically linked? Trends Endocrinol. Metab. 25 2014 656 664 10.1016/j.tem.2014.09.001 25306886
+15 Ma H. Li G. Huo D. Su Y. Jin Q. Lu Y. Sun Y. Zhang D. Chen X. Impact of Hashimoto's thyroiditis on the tumor microenvironment in papillary thyroid cancer: insights from single-cell analysis Front. Endocrinol. 15 2024 1339473 10.3389/fendo.2024.1339473 PMC11439672 39351536
+16 Huang N. Shah P.K. Li C. Lessons from a decade of integrating cancer copy number alterations with gene expression profiles Briefings Bioinf. 13 2012 305 316 10.1093/bib/bbr056 PMC3357489 21949216
+17 Perry L.M. Cruz S.M. Kleber K.T. Judge S.J. Darrow M.A. Jones L.B. Basmaci U.N. Joshi N. Settles M.L. Durbin-Johnson B.P. Human soft tissue sarcomas harbor an intratumoral viral microbiome which is linked with natural killer cell infiltrate and prognosis J. Immunother. Cancer 11 2023 e004285 10.1136/jitc-2021-004285 36599469 PMC9815021
+18 Dai D. Yang Y. Yang Y. Dang T. Xiao J. Wang W. Teng L. Xu J. Ye J. Jiang H. Alterations of thyroid microbiota across different thyroid microhabitats in patients with thyroid carcinoma J. Transl. Med. 19 2021 488 10.1186/s12967-021-03167-9 34847917 PMC8638380
+19 Zhao H. Zhang L. Du D. Mai L. Liu Y. Morigen M. Fan L. The RIG-I-like receptor signaling pathway triggered by Staphylococcus aureus promotes breast cancer metastasis Int. Immunopharmacol. 142 2024 113195 10.1016/j.intimp.2024.113195 39303544
+20 Zhang S. Zhang S. Ma X. Zhan J. Pan C. Zhang H. Xie X. Wen J. Xie X. Intratumoral microbiome impacts immune infiltrates in tumor microenvironment and predicts prognosis in esophageal squamous cell carcinoma patients Front. Cell. Infect. Microbiol. 13 2023 1165790 10.3389/fcimb.2023.1165790 PMC10174428 37180444
+21 Cao Y.-q. Cheng Y.-m. Li T.-c. Zhang Y.-j. Li C.-q. Li H.-c. Review of metabolomics and microbiomics in esophageal cancer: From pathogenesis to prognosis LabMed Discovery 2 2025 100045 10.1016/j.lmd.2025.100045
+22 Liu X. Yao Y. Xiao A. Cao D. Zhang J. Shi Y. Zhong Q. He Z. Wu W. Pan-cancer analysis reveals intratumoral microbial diversity in multiple cancers by amplicon technology Front. Cell. Infect. Microbiol. 15 2025 1549319 10.3389/fcimb.2025.1549319 PMC12438974 40964054
+23 Kawai T. Akira S. Toll-like receptors and their crosstalk with other innate receptors in infection and immunity Immunity 34 2011 637 650 10.1016/j.immuni.2011.05.006 21616434
+24 Gowing S.D. Chow S.C. Cools-Lartigue J.J. Chen C.B. Najmeh S. Goodwin-Wilson M. Jiang H.Y. Bourdeau F. Beauchamp A. Angers I. Gram-Negative Pneumonia Augments Non-Small Cell Lung Cancer Metastasis through Host Toll-like Receptor 4 Activation J. Thorac. Oncol. 14 2019 2097 2108 10.1016/j.jtho.2019.07.023 31382038
+25 Wu Z. Guo J. Zhang Z. Gao S. Huang M. Wang Y. Zhang Y. Li Q. Li J. Bacteroidetes promotes esophageal squamous carcinoma invasion and metastasis through LPS-mediated TLR4/Myd88/NF-kappaB pathway and inflammatory changes Sci. Rep. 14 2024 12827 10.1038/s41598-024-63774-6 PMC11150411 38834834
+26 Nakazawa N. Yokobori T. Sohda M. Hosoi N. Watanabe T. Shimoda Y. Ide M. Sano A. Sakai M. Erkhem-Ochir B. Significance of Lipopolysaccharides in Gastric Cancer and Their Potential as a Biomarker for Nivolumab Sensitivity Int. J. Mol. Sci. 24 2023 11790 10.3390/ijms241411790 PMC10380503 37511547
+27 Cooper D.S. Specker B. Ho M. Sperling M. Ladenson P.W. Ross D.S. Ain K.B. Bigos S.T. Brierley J.D. Haugen B.R. Thyrotropin suppression and disease progression in patients with differentiated thyroid cancer: results from the National Thyroid Cancer Treatment Cooperative Registry Thyroid 8 1998 737 744 10.1089/thy.1998.8.737 9777742
+28 Franco A.T. Malaguarnera R. Refetoff S. Liao X.H. Lundsmith E. Kimura S. Pritchard C. Marais R. Davies T.F. Weinstein L.S. Thyrotrophin receptor signaling dependence of Braf-induced thyroid tumor initiation in mice Proc. Natl. Acad. Sci. USA 108 2011 1615 1620 10.1073/pnas.1015557108 21220306 PMC3029699
+29 Fröhlich E. Wahl R. Microbiota and Thyroid Interaction in Health and Disease Trends Endocrinol. Metab. 30 2019 479 490 10.1016/j.tem.2019.05.008 31257166
+30 Neuman H. Debelius J.W. Knight R. Koren O. Microbial endocrinology: the interplay between the microbiota and the endocrine system FEMS Microbiol. Rev. 39 2015 509 521 10.1093/femsre/fuu010 25701044
+31 Liu J. Qin X. Lin B. Cui J. Liao J. Zhang F. Lin Q. Analysis of gut microbiota diversity in Hashimoto's thyroiditis patients BMC Microbiol. 22 2022 318 10.1186/s12866-022-02739-z 36564707 PMC9789560
+32 Chang W. Kang L. Lan T. Zhou C. Pang B. Jiang X. Zhao Z. Multi-Niche Microbial Profiling in Papillary Thyroid Carcinoma and Thyroid Nodules: Linking Oral, Gut, and Tissue Microbiota J. Inflamm. Res. 18 2025 14391 14404 10.2147/JIR.S552936 41126974 PMC12539417
+33 Pilli T. Prasad K.V. Jayarama S. Pacini F. Prabhakar B.S. Potential utility and limitations of thyroid cancer cell lines as models for studying thyroid cancer Thyroid 19 2009 1333 1342 10.1089/thy.2009.0195 20001716 PMC2833173
+34 Sang G. Chen J. Zhao M. Shi H. Han J. Sun J. Guan Y. Ma X. Zhang G. Gong Y. High Throughput Detection of Variation in Single-Cell Whole transcriptome through Streamlined scFAST-Seq Preprint at bioRxiv 2023 10.1101/2023.03.19.533382
+35 Korsunsky I. Millard N. Fan J. Slowikowski K. Zhang F. Wei K. Baglaenko Y. Brenner M. Loh P.R. Raychaudhuri S. Fast, sensitive and accurate integration of single-cell data with Harmony Nat. Methods 16 2019 1289 1296 10.1038/s41592-019-0619-0 31740819 PMC6884693
+36 Hao Y. Hao S. Andersen-Nissen E. Mauck W.M. 3rd Zheng S. Butler A. Lee M.J. Wilk A.J. Darby C. Zager M. Integrated analysis of multimodal single-cell data Cell 184 2021 3573 3587.e29 10.1016/j.cell.2021.04.048 34062119 PMC8238499
+37 Pu W. Shi X. Yu P. Zhang M. Liu Z. Tan L. Han P. Wang Y. Ji D. Gan H. Single-cell transcriptomic analysis of the tumor ecosystems underlying initiation and progression of papillary thyroid carcinoma Nat. Commun. 12 2021 6058 10.1038/s41467-021-26343-3 34663816 PMC8523550
+38 Gene Ontology C. The Gene Ontology resource: enriching a GOld mine Nucleic Acids Res. 49 2021 D325 D334 10.1093/nar/gkaa1113 33290552 PMC7779012
+39 Hänzelmann S. Castelo R. Guinney J. GSVA: gene set variation analysis for microarray and RNA-seq data BMC Bioinf. 14 2013 7 10.1186/1471-2105-14-7 PMC3618321 23323831
+40 Patel A.P. Tirosh I. Trombetta J.J. Shalek A.K. Gillespie S.M. Wakimoto H. Cahill D.P. Nahed B.V. Curry W.T. Martuza R.L. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma Science 344 2014 1396 1401 10.1126/science.1254257 24925914 PMC4123637
+41 Segata N. Izard J. Waldron L. Gevers D. Miropolsky L. Garrett W.S. Huttenhower C. Metagenomic biomarker discovery and explanation Genome Biol. 12 2011 R60 10.1186/gb-2011-12-6-r60 21702898 PMC3218848
+42 Lin H. Peddada S.D. Multigroup analysis of compositions of microbiomes with covariate adjustments and repeated measures Nat. Methods 21 2024 83 91 10.1038/s41592-023-02092-7 38158428 PMC10776411

@@ -1,0 +1,159 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Euro Surveill
+Journal ID: Euro Surveill
+NLM Journal ID: 100887452
+Journal ID: eurosurveillance
+
+Eurosurveillance
+
+ISSN: 1025-496X
+EISSN: 1560-7917
+Publisher: European Centre for Disease Prevention and Control
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498902
+PMID: 42626794
+DOI: 10.2807/1560-7917.ES.2026.31.33.2600689
+Article ID: 2600689
+Article ID: 2600689
+Article version: 1
+Subjects: Rapid Communication
+
+Detection of a novel Shamonda Orthobunyavirus in dairy cattle, France, June 2026
+
+Kelleci Mikail 1
+Fusade-Boyer Maxime 1
+Chrétien Delphine 1
+Durand Elodie 1
+Mircovich Mathias 1
+Sécula Aurélie 1
+Linard Benjamin 2
+Herman Nicolas 3
+Schelcher François 1
+Croville Guillaume 1
+Zientara Stephan 4
+Bessière Pierre 1
+https://orcid.org/0000-0001-7770-4012 Guérin Jean-Luc 1
+1 Université de Toulouse, École Nationale Vétérinaire de Toulouse (ENVT), Institut national de recherche pour l'agriculture, l'alimentation et l'environnement (INRAE), Interactions Hôtes-Agents Pathogènes (IHAP), Toulouse, France
+2 Université de Toulouse, Institut national de recherche pour l'agriculture, l'alimentation et l'environnement (INRAE), Mathématiques et Informatique Appliquées de Toulouse (MIAT), Castanet-Tolosan, France
+3 Clinique vétérinaire des Mazets, Rioms-ès-Montagnes, France
+4 UMR Virologie, Institut national de recherche pour l'agriculture, l'alimentation et l'environnement (INRAE), École Nationale Vétérinaire d’Alfort, ANSES Laboratoire de Santé Animale, Maisons-Alfort, France
+Correspondence: Jean-Luc Guérin (jean-luc.guerin@envt.fr)
+
+Print publication date: 2026 Aug 20
+Volume: 31
+Issue: 33
+Electronic Location ID: 2600689
+Received 2026 Aug 8; Accepted 2026 Aug 20
+Copyright: This article is copyright of the authors or their affiliated institutions, 2026.
+Copyright year: 2026
+Copyright holder: The authors or their affiliated institutions
+License: This is an open-access article distributed under the terms of the Creative Commons Attribution (CC BY 4.0) Licence. You may share and adapt the material, but must give appropriate credit to the source, provide a link to the licence, and indicate if changes were made.
+License URL: https://creativecommons.org/licenses/by/4.0/
+
+Keywords: orthobunyavirus, simbu, shamonda, cattle, emergence
+sequence: 1
+
+==============================
+In June 2026, acute fever, diarrhoea, lethargy and marked reduction of milk yield were reported in dairy cattle in eastern France. Unbiased Nanopore metagenomics on pooled plasma from affected cows detected Simbu serogroup Orthobunyavirus, provisionally named European Shamonda Virus, and recovered complete genomes. Segments L and M clustered with Nigerian Shamonda virus, whereas S showed a distinct clustering pattern, suggesting high mutation rate or reassortment. Similar findings in neighbouring countries indicate cross-border emergence requiring coordinated surveillance.
+
+Orthobunyaviruses are a large genus of arboviruses able to cause disease in humans and animals [1]. One of the largest serogroups of orthobunyaviruses is the Simbu serogroup. Here we describe detection of a novel European Shamonda virus (ESV) of Simbu serogroup associated with acute illness in dairy cattle.
+
+Current event
+
+In June 2026, veterinarians started reporting clusters of acute diarrhoea, transient fever, lethargy and marked but reversible reductions in milk yield in dairy cattle in the departments of Doubs and Ain, then, in July, in Savoie and Haute-Savoie, in eastern France. Similar clinical episodes were reported first informally in general media and the dairy industry at the same time, and later confirmed in Germany, Switzerland and the Netherlands [2-4]. Initial investigations considered heat stress, nutritional or metabolic disorders and known infectious causes. Schmallenberg virus (SBV) specific RT-qPCR tests performed during the early investigations were negative. We aimed to identify a potential infectious agent, provide its initial genomic characterisation and investigate its potential pathological impact.
+
+Field investigation and metagenomic detection
+
+Across the nine dairy herds investigated initially in eastern France, the clinical episode was characterised by a 15–75% decrease in herd bulk milk production, associated with diarrhoea, depression or anorexia and, less consistently, fever. The proportion of cows with diarrhoea ranged from 8 to 100% between herds (number of cows on each farm: 25–275), and diarrhoeic episodes generally lasted 1–6 days. Detailed herd-level epidemiological and clinical data are provided in Supplementary Table 4.
+
+An initial unbiased metagenomic analysis [5] of faecal samples collected from diarrhoeic cows did not identify a plausible causative agent. Plasma and faecal samples were subsequently collected from 14 symptomatic dairy cows from three affected farms in Haute-Savoie. All sampled animals had developed fever and/or depression within the preceding 48 h and were still symptomatic at the time of sampling, corresponding to the acute phase of the clinical episode. Samples were combined into three plasma and three faecal pools.
+
+Total RNA was extracted and reverse-transcribed, and sequence-independent cDNA amplification was performed using the SMART-9N method, without requiring prior knowledge of the viral genomes [5]. The amplified products were then used to prepare the sequencing library with the Native Barcoding Kit 96 V14 (Oxford Nanopore Technologies, Oxford, the United Kingdom (UK)) and subsequently sequenced on an Oxford Nanopore Technologies PromethION 2 Solo instrument equipped with a PromethION FLO-PRO114M flow cell (Oxford Nanopore Technologies).
+
+Nanopore metagenomic reads were quality-filtered (fastplong version 0.4.1), host-depleted by mapping to the Bos taurus genome with minimap2 version 2.30-r1287 (https://github.com/lh3/minimap2/releases) and taxonomically classified using Kraken2 version 2.1.5 (https://github.com/DerrickWood/kraken2) and KrakenUniq version 1.0.4 (https://github.com/fbreitwieser/krakenuniq). Orthobunyavirus reads were detected in all three plasma pools (ca 4,700, 43,500 and 7,500 reads) and at lower abundance in the faecal pools (< 1,000 reads). Reference-guided assembly (minimap2, samtools version 1.23.1 https://www.htslib.org/) and Medaka version 2.0.1 (https://github.com/nanoporetech/medaka) recovered complete L and M coding sequences and a 775-nt partial S segment, deposited in GenBank (PZ797891–PZ797893). The same metagenomic workflow was subsequently applied to samples from five additional affected herds located in three different French regions (Bourgogne-Franche-Comté, Grand Est and Normandie), using plasma of cows or brain tissue from aborted fetuses. In all samples analysed, the Simbu serogroup Orthobunyavirus provisionally named European Shamonda Virus (ESV), was the only plausible pathogenic agent detected, enabling us to obtain two new complete genomes, deposited in GenBank (OZ516531–OZ516536). More detailed evidence is presented in Supplementary Table 5.
+
+To assess the initial territorial extent of ESV circulation in dairy farms, plasma samples collected from acutely affected cows in 33 herds (one or two cows per herd) between 28 July and 11 August, and samples from aborted fetuses originating from 18 additional herds (one fetus per herd) sampled between 27 July and 11 August were tested using both a pan-Simbu RT-qPCR assay [6] and an in-house ESV-specific RT-qPCR assay using the primers ESV-F (5′-GCACAGGATTTTGCCCAAGG-3′) and ESV-R (5′-ATTCTTCGCAGCCCCATGAA-3′). In all 18 herds, in which abortions were investigated, an episode of fever and depression in cows had been reported 2–4 weeks before the occurrence of abortions. We detected ESV systematically in all tested samples with both assays. In samples from abortions, viral RNA was consistently detected in the placenta and/or fetal organs, including spleen and brain; brain tissue tested positive in six fetuses, supporting systemic circulation of this virus and raising the possibility of fetal infection associated with abortion. Detailed detection data are presented in Supplementary Tables 6 and 7.
+
+No formal analytical epidemiological study was performed at this stage. However, the consistent detection of novel Shamonda virus RNA in acutely affected cattle from multiple herds, together with the absence of any other plausible infectious agent by untargeted metagenomic analysis, strongly supports ESV as the likely aetiological agent of the observed clinical signs.
+
+Genomic and phylogenetic characterisation
+
+Maximum-likelihood phylogenetic analyses were performed separately for the three genomic segments using IQ-TREE version 1.6.12 (https://iqtree.github.io/). The best-fitting models were TPM2 + F + R2 for S and GTR + F + I + G4 for L and M. Branch support was assessed using 10,000 ultrafast bootstrap replicates.
+
+Phylogenetic analyses of sequences downloaded from GenBank showed that the virus detected in France belonged to a distinct Shamonda lineage. Based on the L and M segments, the recent French and German viruses clustered with the historical Nigerian Shamonda virus strain Ib An 5550, isolated from cattle in 1965 [7], and were clearly distinct from the lineage comprising Asian and South African Shamonda viruses detected between 2002 and 2023 (Figure). The French virus shared 93.02% and 92.63% nt identity with strain Ib An 5550 for the L and M segments, respectively. French and German viruses shared 99.93% nt identity in both the L and M genome segments. Pairwise nucleotide and amino acid identities with representative members of the Simbu serogroup are provided in Supplementary Tables 1–3.
+
+Figure Maximum-likelihood phylogenetic trees of the L, M and S genome segments of the novel European Shamonda virus detected in diseased cattle, France, Germany, and representative Simbu serogroup orthobunyaviruses, 1965–2026
+
+The L and M segments of French and German viruses identified in 2026 clustered with the historical Nigerian Shamonda virus strain, but the S segment did not.Branch support was assessed using 10,000 ultrafast bootstrap replicates, and only bootstrap values ≥ 90% are shown. The L, M and S trees included 41, 30 and 40 nucleotide sequences, respectively. French strains are labelled in blue with a star, while the blue box highlights the French and German strains and their closest known related strain. For the L and S segment trees, strain DHL10M110 of Akaban virus was used as the outgroup to root the trees (KY284021.1 and KY284023.1) and the sequence of Oropouche from 1991 (AF441119.1) for the M segment. Sequences used as outgroup were omitted from the final figure for clarity. The scale bar indicates the number of nt substitutions per site.
+
+The sequences were downloaded from GenBank.
+
+Phylogenetic analysis showed that the S segments of the French and German viruses, which shared 100% nt identity, did not cluster directly with those of the Nigerian Shamonda virus strains. This phylogenetic observation could be explained by a high mutation rate or a reassortment event involving the S segment. However, if such a reassortment event occurred, the relatively high nucleotide identity observed with Ib An 5550 strain for the S segment (97.1%) suggests that the putative donor virus was likely a genetically closely related member of the Simbu serogroup. No evidence of intrasegment recombination was detected in the S segment using genetic algorithm for recombination detection [8]. The available data do not allow the timing, direction, or the lineage in which such a reassortment may have occurred to be determined.
+
+Overall, the phylogenetic topologies, branch lengths and nucleotide divergence across the three genomic segments support the existence of a distinct Shamonda lineage that has evolved independently from the Asian and South African lineages currently represented in sequence databases and is more closely related to the historical Nigerian Ib An 5550 strain. These findings are consistent with the long-term circulation and independent evolution of this lineage within a largely unsampled viral population, followed by either recent emergence or introduction into France, Germany and Switzerland. The phylogenetic incongruence observed for the S segment further suggests that reassortment may have contributed to the evolutionary history of this lineage.
+
+Discussion
+
+Orthobunyaviruses are enveloped, negative-sense RNA viruses with three genome segments: L encodes the RNA-dependent RNA polymerase, M encodes the surface glycoproteins Gn and Gc, and S encodes the nucleoprotein and the non-structural protein NSs [1]. Several Simbu serogroup viruses are transmitted by Culicoides biting midges and cause disease in ruminants. The M segment is generally the most variable, while L and S are more conserved [9,10].
+
+Shamonda virus was first isolated from cattle in Nigeria in 1965 and was subsequently detected in cattle and Culicoides in Japan [7,11]. It has been associated with congenital malformations in calves and was detected in an aborted goat fetus in South Africa in 2023 [11,12]. The complete L protein of the French virus shared 98.5% amino acid identity with Shamonda virus and 97.5% with Schmallenberg virus, data available in Supplementary Table 1. Both values exceed the 96% species demarcation threshold currently used for the genus Orthobunyavirus, supporting assignment of the French virus to the species Orthobunyavirus schmallenbergense. Nevertheless, its distinct phylogenetic placement and the nucleotide divergence observed across all three genomic segments support its description as a novel Shamonda lineage within this species. To our knowledge, the contemporaneous detections in France and Germany represent the first reported molecular identification of a Shamonda Orthobunyavirus in Europe.
+
+The clinical presentation resembles the acute syndrome that accompanied the emergence of Schmallenberg virus in European dairy cattle in 2011 [13,14]. The closely related French and German viral sequences, together with contemporaneous reports of similar disease in Switzerland, then in the Netherlands [2-4], support the emergence of a geographically widespread lineage rather than an isolated event. Its route and timing of introduction into Europe remain unknown. The seasonal occurrence of cases is compatible with vector-borne transmission, but entomological investigations are required to identify the vectors involved and define the geographical extent of circulation.
+
+Priority investigations include individual testing of acute cases, virus isolation, paired serology, retrospective screening of archived samples and surveillance of Culicoides. Reproductive surveillance should include abortions, stillbirths and congenital malformations, together with perinatal sampling of dams and offspring. Paired serology and molecular or antigen detection in maternal, placental and fetal/neonatal samples, combined with pathological examination, will be important to assess transplacental infection and reproductive consequences. Experimental infections may subsequently be required to establish causality and determine the duration of viraemia, tissue tropism, transmissibility and reproductive consequences. This event also illustrates the value of untargeted metagenomic sequencing when routine assays directed against known pathogens, including Schmallenberg virus, fail to identify the cause of an emerging syndrome.
+
+Culicoides-borne orthobunyaviruses also represent a public health concern. Oropouche virus has caused large outbreaks of febrile illness in humans [15], while Shuni virus, another member of the Simbu serogroup, has been detected in human neurological cases [16]. The Shamonda virus described here is phylogenetically related to these viruses within the genus Orthobunyavirus, but no evidence currently indicates that it can infect humans. Its zoonotic potential should therefore be assessed without presuming human pathogenicity.
+
+Conclusion
+
+Untargeted Nanopore metagenomics identified a novel, European Shamonda virus (ESV) during an acute febrile–diarrhoeic syndrome in French dairy cattle. Discordant phylogenetic placement of the S segment relative to L and M might suggest a reassortment event. Coordinated veterinary, laboratory and public health sector surveillance is now required to define the distribution, clinical impact and reproductive consequences of the virus.
+
+Ethical statement
+
+Samples were collected as part of routine veterinary diagnostic investigations. Therefore, an ethical permit was not needed.
+
+Use of artificial intelligence tools
+
+None declared.
+
+Acknowledgements
+
+We gratefully thank the field veterinarians (Drs Anne-Lise Rousset and Fabien Plenecassagne) for the initial sampling, farmers and departmental veterinary laboratories (Drs Marc Hessemann, Doubs; Alain Viry, Jura; Fabienne Benoit, LABEO), for their invaluable contribution to the case identification and sample collection. We also warmly thank the French veterinarians and laboratory diagnosticians (ADILVA) for their collaboration during the ongoing investigations. We acknowledge the fruitful exchanges with our colleagues at the Friedrich-Loeffler-Institut (FLI), Germany, which contributed to the broader European discussion around this emerging virus.
+
+Data availability
+
+The viral sequences generated in this study are available in GenBank under accession numbers: PZ797891–PZ797893; OZ516531–OZ516536.
+
+Supplementary Data
+
+1075000 Supplementary Material
+
+Authors’contributions: Mikail Kelleci: Formal analysis, Methodology, Writing – original draft, Writing – review & editing. Maxime Fusade-Boyer: Formal analysis, Validation, Visualization, Writing – original draft, Writing – review & editing. Delphine Chrétien: Formal analysis, Investigation, Methodology, Writing – review & editing. Elodie Durand: Investigation, Writing – review & editing. Mathias Mircovich: Formal analysis, Investigation, Writing – review & editing. Aurélie Sécula: Formal analysis, Methodology, Validation, Writing – review & editing. Benjamin Linard: Methodology, Software, Writing – review & editing. Nicolas Herman: Investigation, Writing – original draft, Writing – review & editing. François Schelcher: Conceptualization, Investigation, Writing – review & editing. Guillaume Croville: Funding acquisition, Methodology, Project administration, Writing – review & editing. Stephan Zientara: Validation, Writing – original draft, Writing – review & editing. Pierre Bessière: Conceptualization, Investigation, Validation, Writing – original draft, Writing – review & editing. Jean-Luc Guérin: Conceptualization, Funding acquisition, Investigation, Project administration, Supervision, Validation, Writing – review & editing.
+
+Conflict of interest: None declared.
+
+Funding statement: The genomics analyses have been done in the framework of the METAPATH clinical metagenomics platform, with the financial funding of the Région Occitanie, France. The project is partly funded by the “PEPR Elevages Durables” funded by the French Government (France 2030, Agence Agralife) and coordinated by INRAE. M. KELLECI PhD grant funding is provided by the FEDER and the University of Toulouse Graduate School on Emerging infectious Diseases (UNITEID).
+
+
+References
+
+1 Elliott RM . Orthobunyaviruses: recent genetic and structural insights. Nat Rev Microbiol. 2014;12(10):673-85. 10.1038/nrmicro3332 25198140
+2 Friedrich-Loeffler-Institut (FLI). FLI detects a new orthobunyavirus of the Simbu serogroup (“Shamonda-like”) in cattle in Germany. Greifswald-Insel Riems: FLI; 3 Aug 2026. Available from: https://www.fli.de/en/press/press-releases/press-singleview/fli-detects-a-new-orthobunyavirus-of-the-simbu-serogroup-shamonda-like-in-cattle-in-germany/
+3 Institute of Virology and Immunology (IVI). Neues Orthobunyavirus der Simbu-Serogruppe bei Rindern entdeckt. [New Orthobunyavirus of the Simbu serogroup detected in cattle]. Bern: IVI; 3 Aug 2026. German. Available from: https://www.ivi.admin.ch/de/neues-orthobunyavirus-der-simbu-serogruppe-bei-rindern-entdeckt
+4 Royal GD. Clinical signs associated with ‘Shamonda-like’ virus now also reported in cattle in Friesland and Limburg. Deventer: Royal GD; 19 Aug 2026. Available from: https://www.gdanimalhealth.com/en/News/2026/08/Clinical-signs-Shamonda-also-reported-in-Friesland-and-Limburg
+5 Claro IM Ramundo MS Coletti TM da Silva CAM Valenca IN Candido DS Rapid viral metagenomics using SMART-9N amplification and nanopore sequencing. Wellcome Open Res. 2023;6:241. 10.12688/wellcomeopenres.17170.2 37224315 PMC10189296
+6 Golender N Bumbarov VY Erster O Beer M Khinich Y Wernike K . Development and validation of a universal S-segment-based real-time RT-PCR assay for the detection of Simbu serogroup viruses. J Virol Methods. 2018;261:80-5. 10.1016/j.jviromet.2018.08.008 30098376
+7 Causey OR Kemp GE Causey CE Lee VH . Isolations of Simbu-group viruses in Ibadan, Nigeria 1964-69, including the new types Sango, Shamonda, Sabo and Shuni. Ann Trop Med Parasitol. 1972;66(3):357-62. 10.1080/00034983.1972.11686835 4634776
+8 Kosakovsky Pond SL Posada D Gravenor MB Woelk CH Frost SDW . GARD: a genetic algorithm for recombination detection. Bioinformatics. 2006;22(24):3096-8. 10.1093/bioinformatics/btl474 17110367
+9 Wang J Firth C Amos-Ritchie R Davis SS Yin H Holmes EC Evolutionary history of Simbu serogroup orthobunyaviruses in the Australian episystem. Virology. 2019;535:32-44. 10.1016/j.virol.2019.06.013 31261025
+10 Hoffmann B Scheuch M Höper D Jungblut R Holsteg M Schirrmeier H Novel orthobunyavirus in cattle, Europe, 2011. Emerg Infect Dis. 2012;18(3):469-72. 10.3201/eid1803.111905 22376991 PMC3309600
+11 Hirashima Y Kitahara S Kato T Shirafuji H Tanaka S Yanase T . Congenital malformations of calves infected with Shamonda virus, Southern Japan. Emerg Infect Dis. 2017;23(6):993-6. 10.3201/eid2306.161946 28518043 PMC5443447
+12 Yanase T Kato T Aizawa M Shuto Y Shirafuji H Yamakawa M Genetic reassortment between Sathuperi and Shamonda viruses of the genus Orthobunyavirus in nature: implications for their genetic relationship to Schmallenberg virus. Arch Virol. 2012;157(8):1611-6. 10.1007/s00705-012-1341-8 22588368
+13 Koenraadt CJ Balenghien T Carpenter S Ducheyne E Elbers AR Fife M Bluetongue, Schmallenberg - what is next? Culicoides-borne viral diseases in the 21st Century. BMC Vet Res. 2014;10(1):77. 10.1186/1746-6148-10-77 24685104 PMC3978055
+14 Afonso A Abrahantes JC Conraths F Veldhuis A Elbers A Roberts H The Schmallenberg virus epidemic in Europe-2011-2013. Prev Vet Med. 2014;116(4):391-403. 10.1016/j.prevetmed.2014.02.012 24656341
+15 Zhang Y Liu X Wu Z Feng S Lu K Zhu W Oropouche virus: A neglected global arboviral threat. Virus Res. 2024;341:199318. 10.1016/j.virusres.2024.199318 38224842 PMC10827532
+16 Motlou TP Venter M . Shuni virus in cases of neurologic disease in humans, South Africa. Emerg Infect Dis. 2021;27(2):565-9. 10.3201/eid2702.191551 33496223 PMC7853583

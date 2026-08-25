@@ -1,0 +1,299 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: JACC Adv
+Journal ID: JACC Adv
+NLM Journal ID: 9918419284106676
+
+JACC: Advances
+
+EISSN: 2772-963X
+Publisher: Elsevier
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13499514
+PMID: 42600556
+DOI: 10.1016/j.jacadv.2026.103112
+Article ID: S2772-963X(26)00533-8
+Article ID: 103112
+Article version: 1
+Subjects: Original Research
+
+Development and External Validation of an Echocardiography-Based AI Model for Predicting Aortic Stenosis Progression
+
+Itelman Edward MD Edi.Itleman@gmail.com @itelman_Edi a b ∗ ∗
+Faierstein Kobi MD b c ∗
+Caller Tal PhD b c
+Shapira Yaron MD a b
+Altman Yuval BSC d
+Yacobi Bar BSC d
+Kornowski Ran MD a b
+Segev Amit MD b c
+Maor Elad MD, PhD b c
+Perl Leor MD a b
+a Department of Cardiology, Rabin Medical Center, Petah Tikva, Israel
+b The Gray Faculty of Medical and Health Sciences, Tel Aviv University, Tel Aviv, Israel
+c Leviev Heart Institute, Sheba Medical Center, Ramat Gan, Israel
+d Beilinson Medical Center Innovation, Artificial Intelligence Center, Rabin Medical Center, Petah Tikva, Israel
+∗ Address for correspondence: Dr Edward Itelman, Cardiology Division, Rabin Medical Center, Jabotinsky Street 39, Petah Tikva 4941492, Israel. Edi.Itleman@gmail.com@itelman_Edi∗ These authors contributed equally to this work.
+
+Publication date: 2026 Sep
+Electronic publication date: 2026 Aug 14
+Volume: 5
+Issue: 9
+Electronic Location ID: 103112
+Received 2026 Mar 11; Revised 2026 Jun 24; Accepted 2026 Jul 8
+Copyright: © 2026 The Authors
+Copyright year: 2026
+License: This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: aortic stenosis, disease progression prediction, machine learning
+
+Abbreviations and Acronyms
+
+AI artificial intelligence
+
+AS aortic stenosis
+
+AUROC area under the receiver-operating characteristic curve
+
+ML machine learning
+
+==============================
+Background
+
+Aortic stenosis (AS) is the most common valvular heart disease in older adults, necessitating careful medical surveillance and timely intervention. However, current fixed surveillance intervals often fail to account for the variability of disease progression. This results in inefficient use of resources and potential delays in treatment for rapid progression of disease.
+
+Objectives
+
+The purpose of this study was to develop and externally validate models for fixed-horizon prediction of progression from mild or moderate to severe AS.
+
+Methods
+
+A retrospective cohort study analyzed structured echocardiographic report data from 2 independent large tertiary centers (derivation: 9,247 visits; external validation: 3,873 visits). Three models were developed using 21 routinely available echocardiographic and demographic variables to predict progression to severe AS at 1-, 3-, and 5-year horizons. Model performance was evaluated using the area under the receiver-operating characteristic curve (AUROC) and the F1 score.
+
+Results
+
+The models demonstrated consistent discrimination across internal testing and external validation. Internal test set AUROCs were 0.90 (95% CI: 0.86-0.93), 0.91 (95% CI: 0.88-0.93), and 0.91 (95% CI: 0.87-0.95) for the 1-, 3-, and 5-year prediction horizons, respectively. External validation AUROCs were 0.91 (95% CI: 0.90-0.93), 0.88 (95% CI: 0.87-0.90), and 0.88 (95% CI: 0.87-0.90), respectively.
+
+Conclusions
+
+Models based on routinely available structured echocardiographic data predicted progression from mild or moderate to severe AS and showed consistent performance in an independent external cohort. These findings support the potential use of structured-data risk prediction to inform personalized surveillance strategies for patients with AS.
+
+Central Illustration
+
+Aortic stenosis (AS) is a common valvular heart disease in older adults, and its prevalence continues to rise as populations age. In individuals over 75 years, AS affects approximately 12.4%, with severe AS present in 3.4% of this group, representing a major cause of morbidity and mortality worldwide.1 Demographic projections estimate that by 2050, more than 9 million Europeans are expected to have AS and over 2.6 million severe AS.1,2 Despite the availability of effective interventions—including surgical and transcatheter aortic valve implantation—underdiagnosis, undertreatment, and delays in referral remain widespread.3, 4, 5, 6, 7 These delays are associated with worse clinical outcomes, greater health care expenditures, and persistent disparities in access to timely care, particularly among women and minority populations.4,5,8,9
+
+The clinical course of AS is heterogeneous. Some patients remain stable for prolonged periods, whereas others progress rapidly to severe disease. Current practice guidelines provide fixed surveillance intervals,3,10 but these population-based recommendations fail to capture individual variability in disease progression. A recent review demonstrated that 1 in 4 patients with moderate or severe AS is not clinically recognized and that missed diagnoses disproportionately affect women and underrepresented minorities.8
+
+Efforts to improve risk stratification have traditionally focused on clinical parameters, hemodynamic progression rates, and imaging biomarkers, including left ventricular remodeling, valvular calcium burden, and flow-gradient patterns.11 However, these approaches are limited by measurement variability, inconsistent availability, and poor reproducibility across centers. The emergence of artificial intelligence (AI) and machine learning (ML) has created new opportunities for phenotype extraction, automated quantification, and prediction of disease trajectories in valvular heart disease.12
+
+We recently developed an ML model using solely echocardiographic report parameters to predict 5-year progression from mild/moderate to severe AS.13 The derivation study included 9,330 echocardiograms from 3,443 patients and demonstrated excellent discriminative performance (area under the receiver-operating characteristic curve [AUROC] = 0.91) and good calibration. Our model required no clinical variables, laboratory data, or advanced imaging inputs—making it highly practical for real-world deployment within existing echocardiographic workflows. Building on prior structured-data approaches to AS progression prediction, we developed a practical echocardiography-based model using a limited set of routinely available variables to predict progression from mild or moderate to severe AS across clinically relevant 1-, 3-, and 5-year horizons. We also performed external validation, which is crucial before clinical implementation, to evaluate model generalizability across different populations, imaging systems, and clinical settings.
+
+Methods
+
+Study population
+
+This retrospective cohort study included adult patients over 18 years who underwent transthoracic echocardiography at Rabin Medical Center (Petah Tikva, Israel) from 1995 to 2024, and Sheba Medical Center (Ramat Gan, Israel) from 2007 to 2025.
+
+Cohort assembly and eligibility criteria
+
+The unit of analysis was the echocardiographic examination. Patients could contribute more than one eligible baseline examination if they had repeated studies meeting inclusion criteria during the study period. Eligible examinations were required to demonstrate mild or moderate AS at baseline and to have sufficient longitudinal echocardiographic follow-up to determine progression status for at least one of the predefined prediction horizons.
+
+Exclusion criteria included severe AS present at baseline, reported left ventricular ejection fraction ≤35%, prior aortic valve intervention, or insufficient longitudinal follow-up to assign a progression label (Figure 1, Table 1). The same eligibility criteria and labeling framework were applied to both the internal cohort from Rabin Medical Center and the external validation cohort from Sheba Medical Center.Figure 1 Study Flow Diagram
+
+Overview of patient inclusion and exclusion criteria, resulting in the final internal and external cohorts used for model development and validation. AS = aortic stenosis; LVEF = left ventricular ejection fraction; TTE = transthoracic echocardiography.
+
+Table 1 Baseline Characteristics of the Internal and External Analytic Cohorts
+
+	Internal Cohort	External Cohort	Internal Missing (%)	External Missing (%)	SMD	
+Number of visits	9,247	3,873	—	—	—	
+Number of unique patients	2,870	1,666	—	—	—	
+Age (y)	74.8 ± 11.4	73.6 ± 13.5	0.0%	0.0%	0.10	
+Female (%)	46.8%	48.7%	0.0%	0.0%	0.04	
+Aortic valve mean gradient (mm Hg)	27.6 ± 8.7	24.4 ± 7.6	0.0%	0.1%	0.39	
+Aortic valve maximum gradient (mm Hg)	45.9 ± 13.2	41.4 ± 12.0	0.0%	0.0%	0.36	
+Aortic valve area (cm2)	1.0 ± 0.3	1.1 ± 0.3	0.0%	0.0%	0.32	
+Aortic root diameter (cm)	3.1 ± 0.5	3.2 ± 0.5	18.8%	0.8%	0.36	
+Ascending aorta diameter (cm)	3.5 ± 0.5	3.5 ± 0.5	34.2%	3.4%	0.02	
+Doppler velocity index (unitless)	0.3 ± 0.1	0.3 ± 0.1	67.7%	50.4%	0.19	
+Left ventricular ejection fraction (%)	59.9 ± 7.0	59.7 ± 6.4	59.1%	0.0%	0.03	
+Interventricular septum thickness (cm)	1.2 ± 0.2	1.2 ± 0.2	2.1%	0.6%	0.09	
+Left atrial area (cm2)	23.7 ± 5.9	NA	8.9%	100.0%	NA	
+Left atrial diameter (cm)	4.2 ± 0.7	4.1 ± 0.7	29.6%	1.8%	0.12	
+Left ventricular end-diastolic diameter (cm)	4.6 ± 0.6	4.7 ± 0.6	2.2%	0.2%	0.08	
+Left ventricular end-systolic diameter (cm)	2.9 ± 0.7	2.9 ± 0.6	2.4%	0.6%	0.04	
+Left ventricular outflow tract diameter (cm)	2.1 ± 0.2	2.1 ± 0.2	44.8%	0.2%	0.11	
+Left ventricular posterior wall thickness (cm)	1.1 ± 0.2	1.0 ± 0.2	2.3%	0.7%	0.67	
+Pulse (beats/min)	71.5 ± 13.2	71.0 ± 13.7	65.7%	15.0%	0.04	
+Stroke volume (mL)	76.4 ± 18.3	80.6 ± 17.9	66.7%	2.1%	0.23	
+Weight (kg)	75.3 ± 15.6	76.6 ± 15.6	35.7%	4.1%	0.09	
+Height (cm)	163.9 ± 9.6	165.1 ± 9.7	35.1%	4.3%	0.12	
+Body surface area (m2)	1.8 ± 0.2	1.8 ± 0.2	36.1%	4.2%	0.10	
+Values are mean ± SD and sex as the proportion of female patients. Missingness is reported as the percentage of visits with unavailable data. Absolute standardized mean differences (SMDs) quantify differences between cohorts.
+
+Values are summarized at the visit level for examinations successfully labeled for at least one prediction horizon. SMD = standardized mean difference; absolute SMD values <0.1 generally reflect negligible differences, 0.1 to 0.2 small differences, 0.2 to 0.5 moderate differences, and >0.5 large differences.
+
+Outcome definition
+
+For each eligible baseline echocardiographic examination, progression to severe AS was modeled as a fixed-horizon binary outcome at 1, 3, and 5 years. Separate labels were generated for each prediction horizon. An examination was labeled as having the outcome if any subsequent echocardiographic examination within the corresponding time window demonstrated severe AS. An examination was labeled as not having the outcome only if the patient had at least 1 follow-up echocardiographic examination beyond the relevant time horizon that continued to demonstrate nonsevere AS. Examinations without sufficient longitudinal follow-up to determine outcome status for a given horizon were excluded from that horizon-specific analysis.
+
+Severe AS was defined according to guideline-supported echocardiographic criteria incorporating peak aortic jet velocity, mean transvalvular gradient, and aortic valve area when reported. The analysis was therefore conducted as a fixed-horizon prediction task and not as a time-to-event survival analysis.
+
+Predictors and missing data handling
+
+Candidate predictors consisted of demographic and structured echocardiographic variables available in routine echocardiography reports at both institutions. Since several variables included in our previously published model were not consistently available in the external validation cohort, the final feature set was restricted to 21 demographic and commonly reported echocardiographic parameters shared between the internal and external data sets (Table 1).
+
+For CatBoost models, missing values were not imputed and were handled using CatBoost’s native missing-value handling during tree construction. Continuous variables were used as recorded, without scaling or transformation. This approach was applied consistently across internal and external data sets. For the logistic regression comparator, missing values were imputed using mean imputation calculated from the training data, and variables were standardized before model fitting.
+
+Model development and hyperparameter tuning
+
+Model development was conducted using data from the originating center. Three separate ML models were developed using gradient-boosted decision trees (CatBoost) to predict progression to severe AS at 1-, 3-, and 5-year time horizons. The internal cohort was divided into training, validation, and test sets using an approximate 70-20 to 10 split. Splitting was performed at the patient level, ensuring that all examinations from a given patient were assigned to the same split. Within each split, repeated examinations from the same patient were treated as independent observations.
+
+All CatBoost models were trained using a binary logistic loss function. Hyperparameter optimization was performed using grid search within the training and validation sets, employing patient-level cross-validation to ensure that all examinations from a given patient were assigned to the same fold. The search space included key parameters such as tree depth, learning rate, number of iterations, and L2 regularization. Model selection was based on mean cross-validated AUROC. The held-out test set was not used at any stage of model training, tuning, or selection. Early stopping was applied during training to reduce overfitting.
+
+Logistic regression comparator
+
+As a baseline comparator, logistic regression models were trained separately for each prediction horizon using the same feature set and patient-level train/test splits as the CatBoost models. Missing values were imputed using mean imputation calculated from the training data, and variables were standardized before model fitting. Logistic regression was fit with L2 regularization using a standard optimization algorithm (L-BFGS solver) and a maximum of 1,000 iterations.
+
+Performance evaluation and statistical analysis
+
+For each fixed prediction horizon, final model performance was evaluated on the corresponding held-out internal test set. Discrimination was assessed using the AUROC. Classification-based metrics, including recall, precision, specificity, accuracy, and F1-score, were calculated using a fixed decision threshold of 0.5. The F1-score was defined as the harmonic mean of recall and precision.
+
+Calibration was assessed separately for each fixed prediction horizon using the corresponding internal test-set predictions, with calibration curves, the integrated calibration index (ICI), and the Brier score. The ICI summarizes the average absolute difference between predicted and observed outcome probabilities, with lower values indicating better calibration. The Brier score measures the mean squared difference between predicted probabilities and observed outcomes, with lower values indicating better overall probabilistic accuracy. Decision curve analysis was similarly performed separately for each fixed prediction horizon using the corresponding held-out internal test set predictions to assess potential clinical utility across a range of threshold probabilities.
+
+Internal resampling performance was evaluated using 10-fold patient-grouped cross-validation within the combined training and validation sets. Results from cross-validation are reported as mean ± SD across folds.
+
+The 95% CIs for held-out test-set and external validation performance metrics were estimated using nonparametric bootstrap resampling at the examination level. Logistic regression, calibration, and subgroup performance CIs were estimated using the same bootstrap framework.
+
+As an exploratory interpretability analysis, we assessed feature importance for the 5-year model using the feature-importance output generated by CatBoost to identify variables that contributed most to model predictions.
+
+Subgroup analysis was performed on the internal held-out test set by stratifying examinations according to patient age (<75 vs ≥ 75 years at the time of the echocardiographic study). Model discrimination within each subgroup was assessed using AUROC.
+
+External validation
+
+External validation was performed using data from Sheba Medical Center, an independent tertiary medical center. The external cohort was assembled retrospectively from institutional echocardiography records using the same eligibility criteria applied to the internal cohort. Baseline examinations were required to demonstrate mild or moderate AS and to have sufficient longitudinal echocardiographic follow-up to determine outcome status for at least 1 prediction horizon.
+
+The same 21 predictors used for model development were extracted from the external data set when available, and missing values were handled using the same approach as in the internal cohort. Progression labels were generated using the same fixed-horizon outcome definition applied in the internal cohort, based on subsequent echocardiographic examinations demonstrating severe AS within the 1-, 3-, or 5-year horizon. No model retraining or recalibration was performed using the external validation cohort.
+
+Model performance in the external cohort was evaluated separately for each prediction horizon using the same discrimination and classification metrics described earlier. Differences between the internal and external analytic cohorts were summarized using absolute standardized mean differences (SMDs). For continuous variables, SMDs were calculated as the difference in means divided by the pooled standard deviation; for binary variables, SMDs were derived from the pooled proportion.
+
+Ethics
+
+The Institutional Review Boards of both centers approved this study. A completed TRIPOD-AI checklist is provided as Supplemental Table 2.
+
+Results
+
+Study population
+
+From a cohort of 529,751 echocardiography examinations of 207,157 patients from the Rabin Medical Center and 326,335 examinations from 144,616 patients at Sheba, we included 9,247 labeled echocardiographic visits from 2,870 patients in the internal analytic cohort and 3,873 visits from 1,666 patients in the external analytic cohort. For model evaluation, the internal labeled data sets comprised 5,247 visits for the 1-year horizon, including 756 outcome events; 3,819 visits for the 3-year horizon, including 2,149 outcome events; and 3,357 visits for the 5-year horizon, including 2,780 outcome events. The external labeled data sets included 3,042 visits for the 1-year horizon (328 outcome events), 2,026 visits for the 3-year horizon (867 outcome events), and 1,641 visits for the 5-year horizon (1,159 outcome events) (Central Illustration).Central Illustration AMachineLearningModelPredictsAorticStenosisProgressionUsingEchocardiographic andDemographicVariables
+
+The model, trained on data from 2 medical centers, demonstrates strong predictive accuracy for progression to severe aortic stenosis. AI = artificial intelligence; AUC = areaa under the curve; LV = left ventricular; other abbreviation as in Figure 1.
+
+Baseline characteristics of the internal and external analytic cohorts are summarized in Table 1. Most variables showed negligible or small absolute SMDs (<0.1). Moderate differences were observed in several hemodynamic measures of AS, including mean and peak transvalvular gradients and aortic valve area (absolute SMDs: 0.2-0.4).
+
+Internal test set performance
+
+For the 1-year model, the internal test-set AUROC was 0.90 (95% CI: 0.86-0.93) (Figure 2), and the F1-score was 0.57 (95% CI: 0.49-0.64). The 3-year model had an internal test-set AUROC of 0.91 (95% CI: 0.88-0.93) with an F1-score of 0.85 (95% CI: 0.81-0.88). The 5-year model showed an internal test-set AUROC of 0.91 (95% CI: 0.87-0.95) and an F1-score of 0.88 (95% CI: 0.85-0.92). Corresponding recall, specificity, precision, and accuracy for each time window are listed in Table 2.Figure 2 Receiver-Operating Characteristic Curves for the 1-, 3-, and 5-Year Prediction Models
+
+Each subplot displays receiver-operating characteristic curves for the internal test set and external validation cohort for the corresponding prediction horizon. AUROC = area under the receiver-operating characteristic curve.
+
+Table 2 Performance of the 1-, 3-, and 5-Year Prediction Models on the Internal Test Set and the External Validation Cohort
+
+	1-Year Test Internal	1-Year External	3-Year Test Internal	3-Year External	5-Year Test Internal	5-Year External	
+AUROC	0.90 (0.86-0.93)	0.91 (0.90-0.93)	0.91 (0.88-0.93)	0.88 (0.87-0.90)	0.91 (0.87-0.95)	0.88 (0.87-0.90)	
+F1-score	0.57 (0.49-0.64)	0.55 (0.51-0.59)	0.85 (0.81-0.88)	0.79 (0.77-0.81)	0.88 (0.85-0.92)	0.86 (0.84-0.87)	
+Recall	0.83 (0.74-0.92)	0.81 (0.76-0.85)	0.87 (0.82-0.91)	0.86 (0.84-0.88)	0.82 (0.78-0.87)	0.82 (0.80-0.84)	
+Precision	0.43 (0.36-0.51)	0.42 (0.38-0.46)	0.83 (0.78-0.87)	0.73 (0.71-0.76)	0.96 (0.93-0.98)	0.90 (0.88-0.92)	
+Specificity	0.81 (0.77-0.84)	0.86 (0.85-0.88)	0.79 (0.73-0.85)	0.77 (0.74-0.79)	0.83 (0.71-0.93)	0.78 (0.75-0.82)	
+Accuracy	0.81 (0.78-0.84)	0.86 (0.84-0.87)	0.83 (0.80-0.87)	0.81 (0.79-0.82)	0.82 (0.78-0.87)	0.81 (0.79-0.83)	
+AUROC = area under the receiver-operating characteristic curve.
+
+Values represent point estimates with corresponding 95% CIs.
+
+As a baseline comparison, logistic regression achieved held-out internal test-set AUROCs of 0.90 (95% CI: 0.86-0.93), 0.90 (95% CI: 0.87-0.93), and 0.89 (95% CI: 0.84-0.93) for the 1-, 3-, and 5-year prediction horizons, respectively. These values were broadly comparable to the CatBoost models across prediction horizons.
+
+Exploratory feature-importance analysis of the 5-year model is presented in Figure 3.Figure 3 Feature Importance for the 5-Year Prediction Model
+
+Feature importance values reflect each variable’s relative influence on the trained CatBoost model’s predictions.
+
+Cross-validation performance
+
+In the internal 10-fold patient-level cross-validation, the mean AUROC for the 1-year model was 0.89 ± 0.02, with a mean F1-score of 0.57 ± 0.03. For the 3-year model, the mean AUROC was 0.88 ± 0.02, and the mean F1-score was 0.83 ± 0.03. For the 5-year model, the mean AUROC was 0.90 ± 0.02, and the mean F1-score was 0.90 ± 0.02. Values are presented as mean ± SD across folds. Full cross-validation results are provided in Supplemental Table 1.
+
+Calibration analysis
+
+Calibration was assessed separately for each fixed prediction horizon using the corresponding held-out internal test-set predictions. Calibration performance varied across prediction horizons. The 3-year model demonstrated the lowest calibration error, with an ICI of 0.051 (95% CI: 0.048-0.111) and Brier score of 0.123 (95% CI: 0.105-0.142). Calibration error was higher for the 1-year model, with an ICI of 0.237 (95% CI: 0.203-0.282) and Brier score of 0.130 (95% CI: 0.113-0.147), and for the 5-year model, with an ICI of 0.224 (95% CI: 0.176-0.274) and Brier score of 0.124 (95% CI: 0.104-0.144). Calibration curves are presented in Supplemental Figure 1. Decision curve analysis was performed for each fixed prediction horizon using the corresponding held-out internal test-set predictions and is presented in Supplemental Figure 2.
+
+External validation
+
+When tested on the external cohort, the 1-year model achieved an AUROC of 0.91 (95% CI: 0.90-0.93) (Figure 2) with an F1-score of 0.55 (95% CI: 0.51-0.59). The 3-year model's external AUROC was 0.88 (95% CI: 0.87-0.90), accompanied by an F1-score of 0.79 (95% CI: 0.77-0.81). For the 5-year model, external AUROC was 0.88 (95% CI: 0.87-0.90), with an F1-score of 0.86 (95% CI: 0.84-0.87). External recall, precision, and specificity for each prediction window are summarized in Table 2. ROC curves are presented in Figure 2, and comparison of confusion matrices can be seen in Figure 4.Figure 4 Confusion Matrices for Internal Test Set and External Validation Predictions
+
+Confusion matrices are shown for the 1-, 3-, and 5-year models, with paired subplots displaying results from the internal test set (left column) and the external validation cohort (right column).
+
+Subgroup analysis
+
+In age-stratified subgroup analysis of the held-out internal test set, model discrimination varied across age strata and prediction horizons. For the 1-year prediction model, AUROC was 0.92 (95% CI: 0.87-0.96) among examinations from patients aged <75 years and 0.88 (95% CI: 0.83-0.93) among those aged ≥75 years. For the 3-year model, AUROC was 0.85 (95% CI: 0.78-0.91) and 0.93 (95% CI: 0.90-0.96), respectively. For the 5-year model, AUROC was 0.89 (95% CI: 0.82-0.94) and 0.93 (95% CI: 0.89-0.97), respectively.
+
+Discussion
+
+In this multicenter study, we externally validated and expanded an ML model to predict progression of AS from mild or moderate to severe AS. The model demonstrated good discrimination across all prediction horizons, with internal test-set AUROCs of 0.90 at 1 year, 0.91 at 3 years, and 0.91 at 5 years. These results were confirmed in an independent external cohort without retraining, with AUROCs of 0.91 for 1-year prediction and 0.88 for both 3- and 5-year prediction. To our knowledge, this is among the largest and most thoroughly validated efforts to forecast AS deterioration using an approach that avoids the computational and infrastructural challenges associated with image-based AI. We have also performed subgroup analysis stratified by age (<75 years vs ≥ 75 years) on the internal test set. Model discrimination varied across age strata and prediction horizons, without evidence of uniform loss of performance in either age group.
+
+Calibration performance varied across prediction horizons, with the 3-year model showing closer agreement between predicted and observed risk than the 1-year and 5-year models. This suggests that although the models showed good discrimination, predicted probabilities may require recalibration before clinical implementation, particularly for the 1- and 5-year horizons. When considering other modeling options, such as logistic regression, we found that logistic regression achieved discrimination broadly comparable to CatBoost across prediction horizons. This finding suggests that much of the prognostic signal is contained within routinely available structured echocardiographic and demographic variables. CatBoost remains a practical modeling option in this setting because of its ability to handle missing data natively and model nonlinear relationships, but the present findings should not be interpreted as demonstrating clear algorithmic superiority.
+
+Predicting progression of disease in the realm of AS has traditionally focused on using clinical characteristics to predict AS-related events in patients with already-established severe valvular disease. In a paper by Minamino-Muta et al,14 1,274 asymptomatic severe AS patients were used to develop a model for predicting AS-related events, and in a study by Monin et al,15 a model was developed and then externally validated, with good AUROC scores of 0.89 to 0.90. Yet these models do not offer solutions for patients with mild or moderate AS. Attempts to use clinical variables to predict AS deterioration, as shown in the trial by Kurmann et al,16 yielded only mediocre results (AUROC of 0.67). While recent deep learning studies, such as the subanalysis of the PROGRESSA study,17 have begun to explore disease progression, they often rely on smaller, carefully selected data sets (n = 303) and achieve AUROCs of 0.83 to 0.85. Our study extends these prior efforts by evaluating fixed-horizon progression from mild or moderate to severe AS in a large real-world cohort, using routinely available structured echocardiographic data and independent external validation. Other models, such as one described in a paper by Sánchez-Puente et al,18 also used structured clinical and echocardiographic variables to predict AS progression and reported good performance with external validation. Our study should therefore be viewed as complementary rather than directly comparative: it evaluates a related structured-data prediction approach in a different health care setting and extends fixed-horizon prediction to 5-year progression. Differences in cohort construction, outcome definitions, and available structured variables limit direct head-to-head comparison across studies.
+
+As we strive for clinical implementation of our model, we must face the tendency for models to perform poorly on new data. A recent review of cardiovascular ML found that 81% of algorithms showed reduced performance in external validations, with nearly 25% experiencing significant AUROC drops (>0.10).19 In this study, we show a successful external validation process in which our model showed minimal performance loss, with only a 0.03 decrease in 5-year AUC, supporting the transportability of the structured-data prediction framework (Figure 2). In the feature importance analysis (Figure 3), computed as relative contribution to model predictions, we can see that expected features such as age and mean AS gradient play an essential role in the prognostication algorithm alongside other previously unrecognized features such as the stroke volume and the interventricular septum thickness, suggesting that routinely reported echocardiographic parameters beyond conventional AS severity measures may contribute to risk stratification.
+
+The current guidelines endorse fixed echocardiographic follow-up intervals.3,10 These uniform recommendations overlook the significant differences in how quickly patients' conditions may progress. Our model employs a simple, streamlined approach to provide a personalized risk assessment for patients based on the first echocardiogram. In a world of truly personalized medicine, patients could complete an echocardiogram and, within seconds, receive a probability score for disease progression that would assist them and their treating physician in scheduling a personally tailored follow-up regimen. Our emphasis on a minimal number of variables and a low-computational-resource modeling method makes this model potentially applicable to all patients undergoing echocardiography worldwide. The authors intend to establish a website through which any physician can submit requests to use the algorithm and have echocardiography reports sent for risk stratification.
+
+Study Limitations
+
+First, although the model predicts hemodynamic progression, it currently does not incorporate clinical outcomes such as symptoms or valve replacement surgery, even though hemodynamic severity mainly influences these events. Secondly, this registry does not include clinical endpoints such as mortality or valvular interventions; we hope that future studies will assess the feasibility of predicting clinical events from echo-based registries. Because nonprogression was assigned only when a follow-up echocardiogram beyond the relevant prediction horizon continued to show nonsevere AS, baseline examinations without sufficient follow-up were excluded from that horizon-specific analysis rather than classified as nonprogressors. Thus, the analysis should be interpreted as a fixed-horizon prediction among patients with adequate longitudinal echocardiographic follow-up, rather than as a time-to-event competing-risk analysis in the full baseline population. Thirdly, several variables had substantial missingness, reflecting real-world variability in echocardiographic reporting. Fourth, the analysis used fixed-horizon binary labels based on available follow-up echocardiography rather than time-to-event survival modeling, and classification of nonprogression required sufficient longitudinal echocardiographic follow-up. Although patient-aware splitting was used to avoid leakage between training and test sets, repeated examinations from the same patient within analytic cohorts may still introduce within-patient correlation. Calibration also varied across prediction horizons, indicating that recalibration may be needed before clinical implementation. Lastly, both cohorts are from tertiary centers in the same country; further validation in more diverse, multiethnic populations worldwide would help determine if the findings are broadly applicable.
+
+Conclusions
+
+We developed and externally validated a machine-learning model that predicts progression of AS using readily accessible, structured echocardiographic data. The findings support the potential value of structured echocardiographic risk prediction for individualized surveillance planning across institutions. Integrating this tool may help clinicians shift from fixed surveillance schedules to a personalized, precision medicine approach to managing valvular heart disease. Future work should focus on prospective, real-world validation across broader and more diverse populations to confirm clinical utility and support widespread adoption.Perspectives COMPETENCY IN MEDICAL KNOWLEDGE: The clinical course of AS is heterogeneous, and guideline-recommended fixed surveillance intervals do not capture individual variability in progression. Machine learning models using only 21 routinely reported echocardiographic and demographic variables predicted progression from mild or moderate to severe AS at 1, 3, and 5 years with good discrimination (AUROC: 0.90–0.91), performance that was preserved in an independent external cohort without retraining (AUROC: 0.88-0.91).
+
+COMPETENCY IN SYSTEMS-BASED PRACTICE: Because the models require only structured echocardiographic report data—no clinical variables, laboratory data, or image-based processing—they can be deployed within existing echocardiography workflows at minimal computational cost, enabling personalized surveillance scheduling in place of uniform follow-up intervals and more efficient allocation of imaging resources.
+
+TRANSLATIONAL OUTLOOK: Integration of structured-data risk prediction into echocardiography reporting systems could support individualized surveillance and timelier referral for patients with AS.
+
+Funding support and author disclosures
+
+Publishing costs will be paid by the Israel Hamer & Frida Hamer and Haya Hamer Fund for Medical Research. The authors have reported that they have no relationships relevant to the contents of this paper to disclose.
+
+Supplementary material
+
+Supplementary material
+
+The authors attest they are in compliance with human studies committees and animal welfare regulations of the authors’ institutions and Food and Drug Administration guidelines, including patient consent where appropriate. For more information, visit the Author Center.
+
+Appendix
+
+For supplemental tables and figures, please see the online version of this paper.
+
+
+References
+
+1 Osnabrugge R.L.J. Mylotte D. Head S.J. Aortic stenosis in the elderly: disease prevalence and number of candidates for transcatheter aortic valve replacement: a meta-analysis and modeling study J Am Coll Cardiol 62 11 2013 1002 1012 10.1016/j.jacc.2013.05.015 23727214
+2 Motazedian P. Prosperi-Porta G. Hibbert B. Cost-effectiveness of population screening for aortic stenosis Eur Heart J Qual Care Clin Outcomes 2024 10.1093/ehjqcco/qcae043 PMC12187065 38777625
+3 Praz F. Borger M.A. Lanz J. 2025 ESC/EACTS Guidelines for the management of valvular heart disease: developed by the task force for the management of valvular heart disease of the European Society of Cardiology (ESC) and the European Association for Cardio-Thoracic Surgery (EACTS) Eur Heart J 2025 10.1093/EURHEARTJ/EHAF194 41217787
+4 Généreux P. Sharma R.P. Cubeddu R.J. The mortality burden of untreated aortic stenosis J Am Coll Cardiol 82 22 2023 2101 2109 10.1016/j.jacc.2023.09.796 37877909
+5 Benfari G. Essayagh B. Michelena H.I. Severe aortic stenosis: secular trends of incidence and outcomes Eur Heart J 45 21 2024 1877 1886 10.1093/EURHEARTJ/EHAD887 38190428
+6 Sethi A. Elmariah S. Gunnarsson C. The cost of waiting for a transcatheter aortic valve replacement in Medicare beneficiaries with severe aortic stenosis Structural Heart 2024 10.1016/j.shj.2024.100321 PMC11632791 39670051
+7 Weintraub W.S. Clinical and economic consequences of delayed transcatheter aortic valve replacement Structural Heart 8 6 2024 100325 10.1016/J.SHJ.2024.100325 PMC11632697 39670050
+8 Reisman A.M. Elmariah S. A review of “Access to Care” issues in aortic stenosis patients: a negative report card Structural Heart 9 1 2025 100351 10.1016/J.SHJ.2024.100351 PMC11864121 40017833
+9 Moore M. Chen J. Mallow P.J. Rizzo J.A. The direct health-care burden of valvular heart disease: evidence from US national survey data Clinicoecon Outcomes Res 8 2016 613 627 10.2147/CEOR.S112691 27799803 PMC5076539
+10 Otto C.M. Nishimura R.A. Bonow R.O. 2020 ACC/AHA guideline for the management of patients with valvular heart disease: a report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines J Am Coll Cardiol 77 4 2021 e25 e197 10.1016/j.jacc.2020.11.018 33342586
+11 Nchimi A. Dibato J.E. Davin L. Schoysman L. Oury C. Lancellotti P. Predicting disease progression and mortality in aortic stenosis: a systematic review of imaging biomarkers and meta-analysis Front Cardiovasc Med 5 2018 10.3389/fcvm.2018.00112 PMC6113371 30186838
+12 Armoundas A.A. Narayan S.M. Arnett D.K. Use of artificial intelligence in improving outcomes in heart disease: a scientific statement from the American Heart Association Circulation 149 14 2024 10.1161/CIR.0000000000001201 PMC11042786 38415358
+13 Itelman E. Shapira Y. Shechter A. Prediction of aortic stenosis progression using artificial intelligence: a machine learning model JACC: Adv 2025 102121 10.1016/J.JACADV.2025.102121 PMC12791866 40879588
+14 Minamino-Muta E. Kato T. Morimoto T. A risk prediction model in asymptomatic patients with severe aortic stenosis: CURRENT-AS risk score Eur Heart J Qual Care Clin Outcomes 6 2 2020 166 174 10.1093/ehjqcco/qcz044 31386103
+15 Monin J.L. Lancellotti P. Monchi M. Risk score for predicting outcome in patients with asymptomatic aortic stenosis Circulation 120 1 2009 69 75 10.1161/CIRCULATIONAHA.108.808857 19546391
+16 Kurmann R. Buffle E. Pasch A. Seiler C. de Marchi S.F. Predicting progression of aortic stenosis by measuring serum calcification propensity Clin Cardiol 45 12 2022 1297 1302 10.1002/CLC.23922 36330592 PMC9748749
+17 Sanabria M. Tastet L. Pelletier S. AI-Enhanced prediction of aortic stenosis progression: insights from the PROGRESSA Study JACC: Adv 3 10 2024 101234 10.1016/J.JACADV.2024.101234 PMC11416525 39309663
+18 Sánchez-Puente A. Dorado-Díaz P.I. Sampedro-Gómez J. Machine learning to optimize the echocardiographic Follow-Up of aortic stenosis JACC Cardiovasc Imaging 16 6 2023 733 744 10.1016/J.JCMG.2022.12.008 36881417
+19 Yu A.C. Mohajer B. Eng J. External validation of deep learning algorithms for radiologic diagnosis: a systematic review Radiol Artif Intell 4 3 2022 10.1148/RYAI.210064 PMC9152694 35652114

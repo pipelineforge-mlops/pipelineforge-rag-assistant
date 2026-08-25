@@ -1,0 +1,407 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Oncol Res
+Journal ID: Oncol Res
+NLM Journal ID: 9208097
+Journal ID: OR
+
+Oncology Research
+
+ISSN: 0965-0407
+EISSN: 1555-3906
+Publisher: Tech Science Press
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13494482
+PMID: 42630686
+DOI: 10.32604/or.2026.083919
+Article ID: 83919
+Article version: 1
+Subjects: Review
+
+Targeting the Neuro-Immune Axis in Next-Generation Oncology: Discovery and Validation of β2-Adrenergic Blockade to Reverse Ecosystem-Wide Resistance
+
+Targeting the Neuro-Immune Axis in Next-Generation Oncology: Discovery and Validation of β2-Adrenergic Blockade to Reverse Ecosystem-Wide Resistance
+
+Targeting the Neuro-Immune Axis in Next-Generation Oncology: Discovery and Validation of β2-Adrenergic Blockade to Reverse Ecosystem-Wide Resistance
+
+Xu Heng 1 #
+Lu Jiaan 1 #
+Wang Zizhang 1 #
+Xu Jiayu 2
+Peng Shihui 3
+Chen Haiqing 4
+Cao Qiang 5 p2527437@mpu.edu.mo
+Sun Qing 6 13611976156@163.com
+Huang Shangke 7 huangshangke001@swmu.edu.cn
+1 Clinical Medical College, Southwest Medical University , Luzhou , China
+2 School of Computer Science and Informatics, Cardiff University , Cardiff , UK
+3 Department of Public Health Laboratory Sciences, School of Public Health, Hengyang Medical School, University of South China , Hengyang , China
+4 Department of Orthopedics, The First Affiliated Hospital of Chongqing Medical University , Chongqing , China
+5 Faculty of Applied Sciences, Macao Polytechnic University , R. de Luís Gonzaga Gomes, Macao , China
+6 Department of Otolaryngology, QingPu Hospital Affiliated to Fudan University , Shanghai , China
+7 Department of Oncology, The Affiliated Hospital, Southwest Medical University , Luzhou , China
+* Corresponding Authors: Qiang Cao. Email: p2527437@mpu.edu.mo; Qing Sun. Email: 13611976156@163.com; Shangke Huang. Email: huangshangke001@swmu.edu.cn#These authors contributed equally to this work
+
+Publication date: 2026
+Electronic publication date: 2026 Aug 13
+Volume: 34
+Issue: 9
+Electronic Location ID: 6
+Received 2026 Apr 13; Accepted 2026 May 25
+Copyright: © 2026 The Authors. Published by Tech Science Press.
+Copyright year: 2026
+Copyright holder: The Authors
+License: This work is licensed under a Creative Commons Attribution 4.0 International License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
+License URL: https://creativecommons.org/licenses/by/4.0/
+
+Keywords: Predictive biomarkers, multi-omics, sympathetic-immune axis, tumor ecosystem, immunotherapy resistance, β2-adrenergic receptor, clinical translation
+
+Funding: the Science and Technology Strategic Cooperation Programs of Luzhou Municipal People’s Government and Southwest Medical University 2023LZXNYDJ033 the Undergraduate Innovation Training Program Project of Southwest Medical University S202410632042 S202410632158
+
+==============================
+Despite the potential of current cancer immunotherapies, tumor cells frequently evade immune surveillance by forming an immunosuppressive microenvironment, leading to treatment resistance. Current inquiry positions the sympathetic nervous system (SNS) at the forefront of tumor immunology as a critical driver of this immune evasion. This review delineates the cellular pharmacology of SNS-mediated immune regulation across the tumor ecosystem. Operating predominantly through the cyclic adenosine monophosphate-protein kinase A (cAMP-PKA) signaling axis, the SNS engages in bidirectional regulation with immune cells of the tumor microenvironment (TME). Norepinephrine and epinephrine interact with β2-adrenergic receptors (β2-ARs), triggering G-protein dissociation, adenylyl cyclase stimulation, and cAMP generation. This pharmacological cascade promotes the polarization of macrophages to the M2 phenotype, hinders dendritic cell maturation, impairs natural killer (NK) cell function, fosters the differentiation of regulatory T cells (Tregs), and suppresses the effector activity of CD8+ T cells. Consequently, we evaluate the translational prospects of repurposing β-blockers as potent anti-cancer immunomodulators. Preclinical evidence demonstrates that pharmacological blockade of β2-AR signaling can reverse these immunosuppressive effects, augmenting intratumoral CD8+ T-cell infiltration and enhancing the efficacy of immune checkpoint inhibitors (ICIs). Ultimately, engineering multimodal combination regimens—guided by multi-omics biomarker stratification—offers a novel trajectory to overcome resistance, restore therapeutic sensitivity, and advance precision cancer immunotherapy.
+
+1 Introduction
+
+The immune system suppresses tumorigenesis via a tripartite mechanism: clearance of oncogenic viruses, regulation of the inflammatory microenvironment [1], and cytotoxic killing mediated by recognition of tumor-associated antigens [2,3]. However, during the development and progression of tumors, tumor cells can evade immune surveillance by losing antigenicity [4], losing immunogenicity, and forming an immunosuppressive microenvironment [5]. In the tumor microenvironment (TME), the composition and functional state of infiltrating immune cells have a profound impact on tumor growth and patient prognosis. Increased infiltration of cytotoxic CD8+ T lymphocytes has been associated with improved clinical prognoses and prolonged overall survival in patients [6]. Conversely, a greater abundance of regulatory T cells (Tregs) correlates with poorer prognosis [7]. Moreover, M2-polarized macrophages exhibit immunosuppressive properties and actively promote tumor cell proliferation, invasion, and migration [8,9]. These research findings provide a significant theoretical foundation for the development and application of new tumor immunotherapies.
+
+Conventional tumor immunology studies have predominantly concentrated on local cellular and molecular interactions, frequently neglecting the regulatory influence of the sympathetic nervous system (SNS). Recent evidence indicates that fibers of the SNS are capable of directly innervating tumor tissues [10,11] and establishing immune synapse-like structures modulated by immune cells [12,13]. These observations highlight a pivotal role of the SNS in shaping the immune landscape of the TME. These nerve fibers exert regulatory effects on immune cell recruitment and activity through the release of adrenergic neurotransmitters [14]. Notably, activation of the β2-adrenergic receptor (β2-AR) pathway represents a crucial mechanism that restricts T lymphocyte entry into tumor sites, thereby exerting a significant impact on tumor growth and advancement [10].
+
+Therefore, the primary objective of this review is to systematically elucidate the pharmacological mechanisms by which the SNS drives tumor immune evasion via β2-AR signaling. Furthermore, we aim to construct a biomarker-driven, multimodal clinical translation framework to evaluate the repurposing of β-blockers as immunomodulatory adjuncts, with the ultimate goal of reversing ecosystem-wide resistance and enhancing cancer immunotherapy.
+
+2 Foundations of SNS-Activated TME
+
+Chronic stress, characterized by prolonged exposure to uncontrollable psychological or physiological stressors, triggers persistent compensatory responses in the neuroendocrine system, with the overactivation of the SNS being recognized as a central factor in driving stress-induced pathophysiological alterations. Chronic stress–driven activation of the SNS and its pro-tumor consequences are highly context dependent [15,16]. Distinct stress modalities—for example, psychological/emotional stress versus physical/physiological stress—may recruit partially different neural and endocrine pathways, thereby shaping SNS tone and the extent of sympathetic innervation within the tumor. Experimental models show that chronic restraint stress can increase intratumoral NE concentrations by several fold and is closely associated with the sprouting of sympathetic fibers into the tumor mass, indicating that stress-induced sympathetic remodeling is a core pathophysiological driver of tumor progression [17,18]. At the same time, these findings suggest that what is often labeled “chronic stress” should not be viewed as a simple binary state, but rather as a cumulative adrenergic load delivered to the TME, with both temporal (sustained versus transient catecholamine exposure) and spatial (local high-density nerve–immune contacts) dimensions. However, a quantitative framework that systematically integrates stress intensity, exposure duration, and the density of tumor-associated sympathetic innervation into a predictive model of immune suppression has not yet been established. Defining this “stress–innervation–immunosuppression” relationship is likely to be a foundational requirement for translating behavioral or autonomic interventions into precise, stage-appropriate anticancer strategies.
+
+Chronic stress engages both the sympathoadrenal medullary (SAM) axis and the hypothalamic–pituitary–adrenal (HPA) axis, resulting in persistent release of NE and epinephrine (Epi) [17,19,20]. NE released by sympathetic nerve endings and Epi produced by the adrenal medulla act as key effectors through which the SNS modulates the TME [21]. These catecholamines exert local effects—either via systemic circulation or direct neural innervation of the tumor—interacting with cancer and immune cells in paracrine and autocrine fashions [22].
+
+NE and Epi can interact with β2-AR expressed on tumor as well as immune cells, initiating downstream signaling pathways that engage mediators including vascular endothelial growth factor (VEGF) and matrix metalloproteinases (MMPs). This interaction promotes the shift of β2-AR from an inactive to an active conformation, facilitating downstream effects.
+
+This shift triggers G-protein dissociation and activation of downstream effectors [23,24]. Activated β2-AR engages Gs proteins, causing GDP release from the Gαs subunit and its subsequent binding to GTP [25,26]. The released Gαs-GTP complex subsequently stimulates adenylyl cyclase (AC), promoting the conversion of ATP into cyclic AMP (cAMP) [27,28]. The generated cAMP binds to the regulatory domains of protein kinase A (PKA), inducing dissociation of its regulatory and catalytic subunits and thereby activating PKA [29].
+
+Once activated, PKA phosphorylates multiple downstream substrates, thereby modulating cellular metabolism, gene expression, and physiological functions [27,30]. Given that cAMP signaling governs cell proliferation and differentiation, aberrant cAMP dynamics have been implicated in tumorigenesis [31]. Indeed, cAMP–PKA signaling regulates cancer cell growth, migration, invasion, and metabolism [27,32]. In preclinical models of hepatocellular carcinoma, lung cancer, breast carcinoma, glioma, and lymphoma, activation of the cAMP-mediated PKA pathway has been shown to enhance tumor cell proliferation, sustain survival, regulate motility, increase adhesiveness, and promote invasiveness [31,33]. Moreover, malignant traits such as invasion, migration, adhesion, and clonogenicity in medulloblastoma, ovarian carcinoma, colorectal carcinoma, breast carcinoma, and pituitary tumors are closely associated with cAMP/PKA signaling [30,34].
+
+Beyond the direct effects on cancer cells, neural signaling also profoundly orchestrates the TME. Specifically, tumor-infiltrating lymphocytes (TILs), dendritic cells (DCs), natural killer (NK) cells, and macrophages express receptors for various neurotransmitters and neuropeptides, allowing them to sense neural cues and adjust immune responses in a context-dependent manner. Engagement of specific receptors can either induce pro-tumorigenic immunity or, when blocked, enhance antitumor immunity [35,36]. Concurrently, tumor cells within the TME may secrete neurotrophic factors—such as nerve growth factor (NGF) [18]—to increase sympathetic fiber infiltration, thereby establishing a pro-tumorigenic neural network [37] (Fig. 1).
+
+Figure 1 Sympathetic nervous system (SNS)–β2-adrenergic signaling modulates tumor immunity. Chronic stress activates the SNS and hypothalamic–pituitary–adrenal axis, promoting norepinephrine (NE) and epinephrine (Epi) release. These catecholamines act on β2-adrenergic receptors (β2-ARs) within the tumor microenvironment (TME), initiating the cAMP–PKA pathway. This suppresses dendritic cell maturation, impairs NK and CD8+ T-cell function, and promotes regulatory T cell (Treg) and M2 macrophage polarization. Abbreviations: DCs, dendritic cells; TILs, tumor-infiltrating lymphocytes; NK, natural killer; M∅, macrophages.
+
+3 Mechanisms of SNS-Mediated Immune Regulation.
+
+While the primary focus of this review is the β2-AR signaling axis, it is critical to acknowledge that the SNS orchestrates tumor immunity through a broader repertoire of receptors, including α-adrenergic receptors (α-ARs) and dopamine receptors [16]. For instance, α-ARs expressed on myeloid cells can modulate cytokine production and macrophage polarization, while vascular α1-ARs influence tumor perfusion and subsequent immune cell infiltration. Similarly, dopamine—a precursor to NE and an independent neurotransmitter—can interact with dopamine receptors (DRs) on specific immune subsets to exert context-dependent immunomodulatory effects [38]. However, among these diverse pathways, the β2-AR is uniquely characterized by its near-ubiquitous expression across almost all immune subsets within the TME. Furthermore, chronic β2-AR activation is overwhelmingly recognized as the dominant neuro-immune driver of profound immune exhaustion and therapy resistance [18]. Therefore, to provide a mechanistically deep and clinically actionable framework, this review specifically concentrates on the β2-AR axis as the primary therapeutic vulnerability.
+
+3.1 Effects on Innate Immune Cells
+
+3.1.1 Macrophages
+
+Sympathetic neurotransmitters including NE and Epi engage β-adrenergic receptors on macrophages, enhancing the expression of immunosuppressive molecules—such as arginase-1 (ARG1), PD-L1, CD47, and the anti-inflammatory cytokine IL-10 [39,40,41]—while concurrently downregulating M1-related markers, evidenced by markedly reduced TNF-α levels [41,42]. This shifts macrophage polarization toward the M2 tumor-associated phenotype (TAMs), fostering an immunosuppressive microenvironment [43]. M2-polarized TAMs facilitate tumor progression via two principal mechanisms:
+
+Inhibition of T-cell activation: Loss of co-stimulatory molecules (CD80/CD86/CD40) impairs T-cell priming [43], and high PD-L1 expression induces T-cell exhaustion [41]. Promotion of angiogenesis, invasion, and proliferation: M2 TAMs secrete VEGF and PDGF to drive neovascularization [44,45], release MMP-9 to degrade the extracellular matrix and facilitate metastasis [44], and transfer oncogenic miRNAs (miR-155-5p/miR-221-5p) via exosomes to accelerate tumor cell proliferation [18,44]. Collectively, these effects contribute to a protumorigenic immune landscape.
+
+3.1.2 Dendritic Cells (DCs)
+
+Inhibition of Maturation and Antigen Presentation
+
+Under homeostatic conditions, DC maturation depends on activation of the MAPK/NF-κB pathways, leading to up-regulation of MHC-II and CD80/CD86 and initiation of T-cell–mediated antitumor immunity [46,47]. SNS activation of β-AR, however, triggers the cAMP–PKA cascade, which suppresses MAPK/NF-κB signaling [48], thereby blocking DC maturation, diminishing antigen-presenting capacity, and resulting in suboptimal T-cell activation [49].
+
+Cytokine Profile Reprogramming
+
+Cytokine profile reprogramming entails alteration of cytokine expression patterns or signaling pathways to influence cell differentiation, function, and fate. Mature DCs typically secrete IL-12 to promote Th1 differentiation and cell-mediated immunity [50,51]. SNS signaling down-regulates DC IL-12 production—weakening Th1 responses—while increasing release of immunosuppressive cytokines such as IL-10, which drives regulatory T-cell (Treg) differentiation and further suppresses T-cell activation [52]. Future research should determine whether these cytokine alterations are reversible via selective β-AR inhibition or if combined strategies (e.g., DC-targeted vaccines plus adrenergic blockade) are necessary to restore robust proinflammatory signaling in tumor-infiltrating DCs.
+
+3.1.3 NK Cells
+
+Direct Inhibition
+
+SNS-derived catecholamines inhibit NK cell activity [13], reducing secretion of Th1-type cytokines (IL-12, IFN-γ), impairing cytotoxic function, and elevating Th2-type IL-10 production [53], thereby facilitating tumor immune escape and proliferation.
+
+TME-Mediated Synergistic Suppression
+
+Tumor cells secrete immunomodulatory factors such as TGF-β and PGE2 [54]. TGF-β down-regulates activating NK receptors (e.g., NKG2D, NKp30) while up-regulating inhibitory receptors (e.g., NKG2A, KIR) [55,56,57], further impairing NK cell function and undermining tumor immune surveillance.
+
+3.2 Effects on Adaptive Immune Cells
+
+3.2.1 CD8+ T Cells
+
+Direct Inhibition of Activation and Metabolism
+
+Activation of β2-adrenergic receptors (β2-AR) on CD8+ T cells engages the cAMP/PKA axis, which inhibits ZAP70 phosphorylation and CD3ζ-chain signal transduction, while upregulating the checkpoint receptor PD-1; this collectively suppresses CD28-mediated co-stimulatory signaling and T-cell activation [58].
+
+Suppression of Key Cytokine Secretion
+
+β2-AR signaling significantly reduces the secretion of IL-2 and other tumor cytokines, thereby inhibiting T cell proliferation and reducing their cytotoxic function [58,59,60]. The reduction in IFN-γ interferes with APC production of IL-12 and weakens the Th1 response. Additionally, reduced MHC-I/II expression on target cells decreases the efficiency of antigen presentation [61], and reduced MHC-I/II expression also disrupts the balance between pro-tumor and antitumor immunity in the TME [62]. Recent studies have revealed that SNS signaling, via the cAMP-PKA axis, exerts more than just an acute suppression of TCR signaling and other immediate effects. It also shapes the core molecular profile of T cell exhaustion through epigenetic and transcriptional reprogramming, thus driving irreversible functional exhaustion in CD8+ T cells [58,63]. As established by foundational original reports, the epigenetic landscape of exhausted T cells is strictly governed by precise regulatory events, primarily driven by the overexpression of the transcription factor TOX, alongside the profound inhibition of TCF-1, a crucial factor responsible for maintaining stem-like properties and self-renewal [64,65,66,67]. In the context of adrenergic stress, the sympathetic signaling cascade intersects with these established epigenetic programs. Specifically, activated PKA phosphorylates the transcription factor CREB, which can subsequently bind to relevant regulatory regions to further promote the expression of exhaustion-associated profiles, including TOX. Meanwhile, the cAMP-PKA axis antagonizes key survival and self-renewal pathways (such as Wnt/β-catenin), leading to a sustained repression of TCF-1 expression. This “bidirectional regulation”—characterized by TOX upregulation and TCF-1 downregulation—fundamentally drives CD8+ T cells toward a state of functional decline, stripping them of their proliferative potential and cytotoxic activity.
+
+These findings provide a deeper mechanistic explanation for the action of β2-AR blockers, showing that their intervention goes beyond reversing transient signal suppression. They may also block pathogenic transcriptional programs, fundamentally reshaping T cell fate and restoring their effector functions and metabolic adaptability. This theoretical foundation paves the way for the combination of β2-AR blockade with immune checkpoint inhibitors (ICIs) to fundamentally rebuild T cell function.
+
+3.2.2 Regulatory T Cells (Tregs)
+
+β2-AR activation modulates transcriptional control via the cAMP/PKA pathway: PKA phosphorylates CREB, promoting its nuclear translocation and binding to the Foxp3 promoter, thus enhancing Foxp3 transcription and driving Treg differentiation and maturation [68,69]. Tregs secrete anti-inflammatory cytokines—including IL-10, IL-35, and TGF-β—to inhibit DC function and foster conversion of naïve T cells into additional Tregs [70,71]. Elevated Treg CTLA-4 binds CD80/CD86 on DCs, blocking CD28 co-stimulation and reducing effector T-cell activation and proliferation [72]. In the TME, high Treg-to-effector T-cell ratios correlate with poorer clinical outcomes across multiple malignancies [71,73].
+
+3.2.3 Cytotoxic T Lymphocytes (CTLs)
+
+Cytokine-Mediated Negative Feedback and Metabolic Inhibition
+
+When memory CD8+ T cells are re-exposed to antigen, they secrete IL-2 and IFN-γ. IL-2 promotes upregulation of β2-adrenergic receptors (β2-AR) on effector T cells; nevertheless, stimulation of β2-AR signaling subsequently suppresses IL-2 production, establishing an autoinhibitory negative feedback mechanism [74]. In addition, β2-AR activation impairs mitochondrial function in CD8+ T cells, disrupting the metabolic reprogramming essential for full activation [63].
+
+Impaired Trafficking and Microenvironmental Synergy
+
+SNS-induced upregulation of trophic factors and chemokines (e.g., CXCL12) enhances adhesion between tumor cells and nerve fibers, thereby hindering CTL homing to neoplastic sites [18] (CAF activation is also influenced by chemokines such as CXCL12, which further modulates the TME and immune cell infiltration) [75]. Within the TME, elevated PD-1 on CTLs engages PD-L1, activating SHP1/SHP2 phosphatases and dampening TCR signaling [76]. Moreover, interactions between the pro-survival protein Bcl-2 and the apoptotic mediator Bim in PD-L1+ cells promote CD8+ T-cell apoptosis, further compromising CTL effector function and reducing tumor-cell lysis [76,77] (Table 1).
+
+Table 1 Detailed SNS–immune interaction table.
+
+Immune Cell Type	SNS/β2-AR Activation Effects	Key Signaling Pathways	Functional Consequence	Relevant Markers/Molecules	
+Macrophages (MØ)	Promotes M2 polarization; upregulates ARG1, IL-10, CD47, PD-L1; suppresses TNF-α and co-stimulatory molecules (CD80/CD86/CD40)	β2-AR → Gs → AC → cAMP → PKA	Supports tumor growth, metastasis, ECMremodeling, and immune escape	ARG1, IL-10, PD-L1, CD47, CD80, CD86, MMP-9, VEGF	
+Dendritic Cells (DCs)	Blocks maturation via cAMP–PKA; downregulates MAPK/NF-κB pathway; reduces MHC-II and CD80/CD86 expression	β2-AR → cAMP → PKA→↓MAPK/NF-κB	Supports tumor growth, metastasis, ECMremodeling, and immune escape	MHC-II, CD80/CD86, IL-12, IL-10, MAPK, NF-κB	
+Natural Killer Cells (NK)	Suppresses IFN-γ and IL-12 secretion; increases IL-10; downregulates activating receptors (NKG2D, NKp30) and upregulates inhibitory ones (NKG2A, KIR)	β2-AR → cAMP → PKA; also influenced by TGF-β, PGE2 in TME	Impaired cytotoxicity and immune surveillance, enhanced tumor tolerance	IFN-γ, IL-12, IL-10, NKG2D, NKp30, KIR, NKG2A	
+CD8+ T Cells	Inhibits ZAP70 and CD3ζ phosphorylation; impairs CD28 signaling; reduces IL-2 and IFN-γ; increases PD-1 expression	β2-AR → cAMP → PKA→↓TCR signaling, ↑PD-1	Reduces effector function, proliferation, and antigen recognition	ZAP70, CD3ζ, CD28, IL-2, IFN-γ, PD-1, MHC-I/II	
+Regulatory T Cells (Tregs)	Activates CREB via PKA; enhances Foxp3 transcription; increases IL-10, IL-35，TGF-β; promotes CTLA-4 expression and DC suppression	β2-AR → cAMP → PKA → CREB → Foxp3	Creates highly suppressive immune environment, linked to poor prognosis	CREB, Foxp3, IL-10, IL-35, TGF-β, CTLA-4	
+Cytotoxic T Lymphocytes (CTLs)	Forms a self-inhibitory loop: IL-2 upregulates β2-AR, which suppresses further IL-2 secretion. Disrupts mitochondrial metabolism; increases PD-1 engagement and apoptosis via Bcl-2/Bim interaction	β2-AR → cAMP → PKA; PD-1/PD-L1 → SHP1/SHP2	Dysfunction of CTL cells; reduced tumor cell clearance	IL-2, IFN-γ, β2-AR, CXCL12, PD-1, PD-L1, SHP1, SHP2, Bcl-2, Bim	
+
+4 Sympathetic Nerve Fibers and Tumors
+
+The regulation of tumor immunity by β2-AR signaling is highly dynamic, strictly dictated by temporal duration, local hormone concentrations, receptor expression profiles, and spatial heterogeneity within the TME. Temporally, the duration of action fundamentally determines the immunological outcome: acute physiological stress induces transient catecholamine spikes that can mobilize immune cells, whereas chronic stress maintains persistently elevated NE and Epi concentrations. This sustained adrenergic load shifts the balance toward long-term immune exhaustion and tumor tolerance [18]. Spatially, sympathetic innervation and the resultant neurotransmitter gradients are highly uneven. Nerve fiber density is frequently enriched at the tumor’s invasive margins and perivascular niches, whereas the hypoxic tumor core remains relatively denervated, creating localized “adrenergic hotspots” [78]. Furthermore, the immunomodulatory impact is heavily dependent on receptor expression and local hormone concentration. Target cells within the TME exhibit heterogeneous β2-AR expression; for example, M2-like TAMs, Tregs, and exhausted CD8+ T cells positioned near these nerve terminals robustly upregulate β2-ARs, rendering them exquisitely sensitive to even subtle fluctuations in local catecholamine concentrations [79]. Consequently, this spatiotemporal heterogeneity dictates that SNS-immune interactions form a progressively evolving ecosystem, resulting in marked differences among different patients and tumor types [80,81].
+
+Reflecting this complex ecosystem, the presence and functional impact of SNS fibers within tumor tissues display marked tumor-type specificity [11]. Broadly, intratumoral nerves may be classified as pro-tumorigenic, antitumorigenic, or dual-function fibers. In many solid tumors, sympathetic fibers are recruited and driven by tumor-derived neurotrophic factors—such as NGF and brain-derived neurotrophic factor (BDNF)—and infiltrate the TME via perivascular routes or through adjacent stromal tissue [18].
+
+In prostate cancer, for example, chronic sympathetic adrenergic activity has been linked to tumor initiation and early growth, whereas cholinergic (parasympathetic) input has been associated with the promotion of local invasion and distant dissemination in later stages [82,83,84]. This indicates that tumor progression is not governed by sympathetic signaling alone, but rather emerges from a coordinated but imbalanced autonomic network in which both sympathetic and parasympathetic branches remodel the TME to favor immune suppression, tissue remodeling, and metastatic competency [85].
+
+In gastric and colorectal malignancies, the role of the SNS remains contentious, with evidence supporting both tumor-promoting and tumor-suppressive functions [86,87].
+
+5 Therapeutic Strategies and Applications
+
+5.1 Prospects for β-Adrenergic Receptor Blockade
+
+The role of sympathetic adrenergic signaling in cancer progression is strikingly tissue specific. In prostate cancer, sympathetic input has been implicated as a driver of early tumor growth and local progression [82], whereas in certain gastric and colorectal settings its net effect remains controversial and may even include context-dependent inhibitory influences [86]. Pancreatic ductal adenocarcinoma, by contrast, exhibits a highly desmoplastic stroma that physically limits neural infiltration, giving rise to a relatively “low-innervation” phenotype in which sympathetic fibers have restricted access to the malignant compartment [85].
+
+Despite this spatial and anatomical heterogeneity, β2-AR signaling appears to act as a conserved immunosuppressive node across tumor types: it attenuates CD8+ T cell–mediated cytotoxicity, constrains effector T-cell infiltration and promotes dysfunctional/exhausted phenotypes in tumor-infiltrating lymphocytes [58]. This conserved β2-AR–dependent brake on antitumor immunity provides the biological rationale for exploring β-blockers as immunological co-therapeutics, including reports of synergy with immune checkpoint inhibitors (ICIs) in melanoma models [88]. However, any clinical deployment of β-blockade is unlikely to be uniformly effective across all malignancies. Its benefit will almost certainly depend on multiple modifiers, such as intratumoral sympathetic nerve density and remodeling, the adrenergic receptor expression profile on tumor and immune cells, and the availability of compensatory non–β2-AR pathways. These considerations argue for biomarker-guided patient stratification, rather than assuming that β-blockers are broadly applicable in a tumor-agnostic manner.
+
+Successful integration of β-blockade into cancer immunotherapy further hinges on two unresolved clinical variables: dose and timing.
+
+Dose. Most dosing information derives from cardiovascular indications, but those regimens may not correspond to the optimal immunomodulatory window. Preclinical data suggest that comparatively low doses of β-blockers can restore T-cell metabolic fitness, cytotoxic function and intratumoral infiltration [89], potentially relieving sympathetic suppression of antitumor immunity while avoiding overt haemodynamic toxicity. Early-phase clinical studies will therefore need to prioritize immunological readouts—such as CD8+ T-cell reinvigoration, increased effector infiltration and decreased suppressive myeloid/Treg populations—rather than relying solely on traditional cardiovascular tolerability windows.
+
+Timing. The therapeutic window may also be indication specific. Neoadjuvant administration could, in principle, remodel an immunosuppressive TME before surgery. Adjuvant use may help eradicate minimal residual disease and reduce recurrence risk, consistent with epidemiological trends suggesting improved outcomes in certain breast cancer cohorts [90]. In advanced disease, concurrent β-blockade plus ICIs [91] aims to overcome immune exhaustion and checkpoint resistance in established lesions. Determining which of these windows is optimal for which tumor contexts is a central objective for prospective, stratified clinical trials.
+
+Finally, safety cannot be treated as an afterthought. Combining β-blockers with ICIs raises a plausible risk of amplifying immune-related adverse events (irAEs), including life-threatening toxicities such as myocarditis and pneumonitis. Emerging evidence indicates that patients receiving ICIs alongside β-blockade warrant intensified, prospective safety monitoring [91]. The theoretical basis is straightforward: β-adrenergic signaling exerts a tonic suppressive influence on effector T cells, whereas ICIs remove intrinsic checkpoint restraints. Dual removal of these restraints could heighten systemic immune activation [92], improving tumor control but also increasing autoimmunity risk. We therefore argue that immune-toxicity surveillance and management protocols must be embedded as core design elements in β-blocker/ICI combination trials, rather than handled reactively.
+
+5.2 Multimodal Combination Therapy Strategies
+
+Short-term SNS hyperactivity can maintain cardiovascular homeostasis, whereas chronic activation exerts detrimental effects on cardiac and circulatory systems [93,94]. As a baseline intervention, behavioral modifications such as aerobic exercise and meditation have demonstrated efficacy in dampening resting SNS overactivity and lowering plasma NE levels [95,96,97,98,99]. Concurrently, conventional multimodal approaches—such as combining immunotherapy with radiotherapy or chemotherapy—have yielded synergistic effects in various solid tumors [100,101,102,103,104,105,106].
+
+Although behavioral modifications and conventional treatments can effectively lower systemic adrenergic stress, their broad effects often fail to overcome the dense, localized neural networks protecting aggressive tumors. Translating the emerging field of “cancer sympatheology” into actual patient benefits requires us to move past broad theoretical concepts. Instead, future combination regimens must specifically target and disrupt the neuro-immune signaling loop within the tumor bed. To address this clinical gap, we outline three concrete, mechanism-driven strategies to guide future trial designs:
+
+Spatiotemporal sequencing of pharmacological blockade. Simply administering β-blockers simultaneously with immune checkpoint inhibitors (ICIs) may yield suboptimal results due to pre-existing fibrotic barriers. We propose a “priming-then-activation” sequential strategy. In highly desmoplastic tumors, a 7-to-14-day “run-in” phase of non-selective β-blockade (e.g., propranolol) could inhibit adrenergic-driven stromal remodeling and alleviate local hypoxia prior to ICI administration [107,108]. Once this “neural-niche” is physically and metabolically dismantled, the subsequent introduction of anti-PD-1/PD-L1 therapy can achieve maximum intratumoral penetrance and CD8+ T cell reinvigoration.
+
+Biomarker-driven multi-omics stratification. Not all patients require neuro-immune blockade. Implementing predictive modeling through multi-omics data mining is essential to guide multimodal therapy. By integrating bulk and single-cell RNA sequencing data, researchers can construct a specific “Neuro-Immune Risk Score” based on baseline sympathetic nerve density and β2-AR expression profiles on intratumoral macrophages and exhausted T cells [109]. Funneling only high-risk patients into intensive β-blockade + ICI combination trials will optimize response rates and prevent unnecessary systemic irAEs in low-risk cohorts.
+
+TME-responsive nanomedicine and targeted electroceuticals. Systemic administration of β-blockers frequently causes dose-limiting cardiovascular toxicities. Drawing on the success of intelligent delivery vehicles, we propose the engineering of TME-responsive nanomedical platforms. Specifically, MMP-cleavable or hypoxia-responsive lipid nanoparticles co-loaded with β2-AR antagonists and ICIs could remain inert systemically but release payloads selectively within the hyper-innervated tumor margins [110,111]. Furthermore, these localized pharmacological approaches can be integrated with advanced neuromodulation techniques. Evaluating non-invasive vagus nerve stimulation (VNS) to activate cholinergic anti-inflammatory pathways represents a promising adjunctive strategy to synergistically counterbalance sympathetic overdrive and reprogram the immunosuppressive TME [112] (Fig. 2).
+
+Figure 2 Clinical translation framework and multimodal combination strategies targeting the neuro-immune axis. (A) Biomarker-driven multi-omics stratification: By integrating bulk and single-cell RNA sequencing data, researchers can construct a specific “Neuro-Immune Risk Score” to funnel high-risk patients into intensive combination trials while preventing unnecessary systemic irAEs in low-risk cohorts. (B) Optimization of dose, timing, and safety: Successful integration of β-blockade hinges on balancing these critical variables. Optimized low dosing can restore T-cell metabolic fitness and cytotoxic function while avoiding overt hemodynamic toxicity. Concurrently, immune-toxicity surveillance must be embedded as core design elements to monitor the plausible risk of amplified immune-related adverse events (irAEs). (C) Targeted electroceuticals and TME-responsive nanomedicine: Evaluating non-invasive vagus nerve stimulation (VNS) represents a promising adjunctive strategy to synergistically counterbalance sympathetic overdrive. Furthermore, this can be integrated with intelligent lipid nanoparticles to release payloads selectively within hyper-innervated tumor margins. Abbreviations: TME, tumor microenvironment; ICI, immune checkpoint inhibitor.
+
+6 Conclusion
+
+The SNS forms structured neuro–immune synapses with immune cells via tumor-innervating fibers, releasing NE and Epi that act on β2-AR to exert multifaceted regulatory effects on antitumor immunity. This review has synthesized evidence demonstrating that β2-AR activation engages the Gs protein–cAMP–PKA axis to modulate immune cell function. Tumor-derived neurotrophic factors can recruit sympathetic fibers to establish localized neural networks [18,37], and SNS-mediated regulation of the TME exhibits tissue specificity. In summary, these findings demonstrate the potential of targeting sympathetic nerve pathways as an adjunctive measure in cancer immunotherapy.
+
+7 Future Directions
+
+However, along with the advancement of β-AR-targeted therapies, the powerful adaptability of the tumor ecosystem must be acknowledged. Long-term inhibition of β2-AR signaling could not only undermine its direct tumor-promoting effects but also trigger compensatory neural signaling reprogramming, leading to the activation of other adrenergic, dopaminergic, or cholinergic pathways. For instance, in prostate cancer models, β2-AR blockade has been shown to upregulate α1-adrenergic receptor activity, maintaining tumor survival via the IP3/DAG-PKC pathway, while also shifting β2-AR signaling from the Gs-cAMP-PKA axis to the Gi-Src axis, which enhances the invasive phenotype. Simultaneously, cholinergic signaling from the paraSNS, alongside potential dopamine-mediated immunomodulation, may be abnormally activated, creating immune-suppressive synergies across neuro-branches and forming new immune escape routes at multiple levels. This compensatory potential suggests that adrenergic signaling may function as a ‘‘double-edged sword’’ in immune regulation.
+
+Given these complexities, future therapeutic strategies should consider synergistic interventions targeting multiple neurotransmitter pathways. Additionally, dynamic biopsy samples from patients before and after treatment should be utilized to perform comprehensive neural molecular mapping, enabling real-time monitoring of adaptive resistance mechanisms. Nevertheless, significant challenges remain. While the potential of β-adrenergic receptor blockade in cancer immunotherapy is clear, the dynamic regulation of β2-AR signaling across discrete immune-cell subsets requires further elucidation. Techniques such as single-cell RNA sequencing and spatial transcriptomics will be crucial to understanding the dual roles of SNS signaling in various cancers, such as gastric and colorectal cancers, as well as the pathways through which SNS fibers influence the bone marrow microenvironment in hematologic malignancies.
+
+To address these challenges, future studies should leverage organoid models and engineered neural–immune co-cultures to reconstruct neurotransmitter gradients and map SNS-driven regulatory networks at single-cell resolution. Advancing this field will require interdisciplinary collaboration—not only to identify reliable biomarkers of SNS activity but also to design clinical trials integrating β-adrenergic receptor blockade with immune checkpoint inhibitors, and to develop targeted delivery systems tailored to the TME. Furthermore, the successful clinical translation of these neuro-targeted immunotherapies hinges on overcoming significant pharmacological and safety hurdles. Establishing rigorous immune-toxicity surveillance protocols and identifying reliable, non-invasive circulating biomarkers will be indispensable for monitoring real-time therapeutic responses and mitigating adverse events. Moreover, exploring vagal nerve stimulation in combination with chemoradiotherapy represents an exciting avenue for neuro-immunomodulation. Iterative preclinical and clinical innovations will ultimately unify sympathoneural biology, immunology, and oncology into a cohesive framework, establishing the emerging field of ‘‘cancer sympatheology’’ and providing an expandable technological substrate for personalized immune interventions that intercept tumor initiation, progression, and dissemination.
+
+Not applicable.
+
+Funding Statement
+
+This research was funded by the Science and Technology Strategic Cooperation Programs of Luzhou Municipal People’s Government and Southwest Medical University, grant number 2023LZXNYDJ033; and the Undergraduate Innovation Training Program Project of Southwest Medical University, grant numbers S202410632042 and S202410632158.
+
+Author Contributions
+
+The authors confirm contribution to the paper as follows: conceptualization, Heng Xu, Jiaan Lu, Zizhang Wang, and Shangke Huang; data curation, Heng Xu and Jiaan Lu; writing—original draft preparation, Heng Xu, Jiaan Lu, Zizhang Wang, Jiayu Xu, Shihui Peng, Haiqing Chen, Qiang Cao, Qing Sun, and Shangke Huang; writing—review and editing, Qiang Cao, Qing Sun, and Shangke Huang. All authors reviewed and approved the final version of the manuscript.
+
+Availability of Data and Materials
+
+Not applicable.
+
+Ethics Approval
+
+Not applicable.
+
+Conflicts of Interest
+
+The authors declare no conflicts of interest. The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or in the decision to publish the results.
+
+Abbreviations
+
+Term	Interpretation	
+TNBC	Triple-Negative Breast Cancer	
+AC	Adenylyl Cyclase	
+AD	Alzheimer’s Disease	
+AKT	Protein Kinase B	
+ARG1	Arginase-1	
+ATP	Adenosine Triphosphate	
+BDNF	Brain-Derived Neurotrophic Factor	
+Bcl-2	B-cell Lymphoma 2	
+cAMP	Cyclic Adenosine Monophosphate	
+CAR-T	Chimeric Antigen Receptor T cell	
+CD28	 Cluster of Differentiation 28	
+CD8	Cluster of Differentiation 8	
+CD80	Cluster of Differentiation 80	
+CD86	Cluster of Differentiation 86	
+CTLA-4	Cytotoxic T-Lymphocyte–Associated Protein 4	
+CREB	cAMP Response Element-Binding Protein	
+CXCL12	C-X-C Motif Chemokine Ligand 12	
+DCs	Dendritic Cells	
+DHEA	Dehydroepiandrosterone	
+ER	Estrogen Receptor	
+GABA	Gamma-Aminobutyric Acid	
+GCP	Good Clinical Practice	
+GS	Glutamine Synthetase	
+IFN-γ	Interferon-γ	
+IKK	IκB Kinase	
+IL-2	Interleukin-2	
+IL-10	Interleukin-10	
+IL-12	Interleukin-12	
+IL-35	Interleukin-35	
+LVEF	Left Ventricular Ejection Fraction	
+M2	Macrophage Type 2	
+MAPK	Mitogen-Activated Protein Kinase	
+MHC-I	Major Histocompatibility Complex Class I	
+MHC-II	Major Histocompatibility Complex Class II	
+NK	Natural Killer	
+NE	Norepinephrine	
+NF-κB	Nuclear Factor kappa-light-chain-enhancer of activated B cells	
+NKG2D	Natural Killer Group 2D	
+PD-1	Programmed Cell Death Protein 1	
+PD-L1	Programmed Death-Ligand 1	
+PE	Pulmonary Embolism	
+PGE2	Prostaglandin E2	
+PKA	Protein Kinase A	
+RBC	Red Blood Cells	
+SHP1	Src Homology Region 2 Domain-Containing Phosphatase-1	
+SNS	Sympathetic Nervous System	
+TCR	T-cell Receptor	
+TGF-β	Transforming Growth Factor-beta	
+TILs	Tumor-Infiltrating Lymphocytes	
+TME	Tumor Microenvironment	
+Treg	Regulatory T Cells	
+TSA	Tumor-Specific Antigen	
+VEGF	Vascular Endothelial Growth Factor	
+ZAP70	ζ-chain–Associated Protein Kinase 70	
+
+
+References
+
+1. Qu X , Tang Y , Hua S . Immunological approaches towards cancer and inflammation: a cross talk. Front Immunol. 2018; 9: 563. doi:10.3389/fimmu.2018.00563. 29662489 PMC5890100
+2. Swann JB , Smyth MJ . Immune surveillance of tumors. J Clin Investig. 2007; 117( 5): 1137– 46. doi:10.1172/jci31405. 17476343 PMC1857231
+3. Janssen LME , Ramsay EE , Logsdon CD , Overwijk WW . The immune system in cancer metastasis: friend or foe? J ImmunoTher Cancer. 2017; 5( 1): 79. doi:10.1186/s40425-017-0283-9. 29037250 PMC5644253
+4. Dhatchinamoorthy K , Colbert JD , Rock KL . Cancer immune evasion through loss of MHC class I antigen presentation. Front Immunol. 2021; 12: 636568. doi:10.3389/fimmu.2021.636568. 33767702 PMC7986854
+5. Beatty GL , Gladney WL . Immune escape mechanisms as a guide for cancer immunotherapy. Clin Cancer Res. 2015; 21( 4): 687– 92. doi:10.1158/1078-0432.CCR-14-1860. 25501578 PMC4334715
+6. Huang H , Ge J , Fang Z , Wu S , Jiang H , Lang Y , et al. Precursor exhausted CD8+ T cells in colorectal cancer tissues associated with patient’s survival and immunotherapy responsiveness. Front Immunol. 2024; 15: 1362140. doi:10.3389/fimmu.2024.1362140. 38510246 PMC10950923
+7. Salama P , Phillips M , Grieu F , Morris M , Zeps N , Joseph D , et al. Tumor-infiltrating FOXP3+ T regulatory cells show strong prognostic significance in colorectal cancer. J Clin Oncol. 2009; 27( 2): 186– 92. doi:10.1200/JCO.2008.18.7229. 19064967
+8. Bruni D , Angell HK , Galon J . The immune contexture and Immunoscore in cancer prognosis and therapeutic efficacy. Nat Rev Cancer. 2020; 20( 11): 662– 80. doi:10.1038/s41568-020-0285-7. 32753728
+9. Huang L , Wang F , Wang X , Su C , Wu S , Yang C , et al. M2-like macrophage-derived exosomes facilitate metastasis in non-small-cell lung cancer by delivering integrin αVβ3. MedComm. 2022; 4( 1): e191. doi:10.1002/mco2.191. 36582304 PMC9789322
+10. Li J , Che M , Zhang B , Zhao K , Wan C , Yang K . The association between the neuroendocrine system and the tumor immune microenvironment: emerging directions for cancer immunotherapy. Biochim Biophys Acta BBA Rev Cancer. 2023; 1878( 6): 189007. doi:10.1016/j.bbcan.2023.189007. 37907132
+11. Stavropoulos I , Sarantopoulos A , Liverezas A . Does sympathetic nervous system modulate tumor progression? A narrative review of the literature. J Drug Assess. 2020; 9( 1): 106– 16. doi:10.1080/21556660.2020.1782414. 32939316 PMC7470065
+12. Nance DM , Sanders VM . Autonomic innervation and regulation of the immune system (1987-2007). Brain Behav Immun. 2007; 21( 6): 736– 45. doi:10.1016/j.bbi.2007.03.008. 17467231 PMC1986730
+13. Elenkov IJ , Wilder RL , Chrousos GP , Vizi ES . The sympathetic nerve—an integrative interface between two supersystems: the brain and the immune system. Pharmacol Rev. 2000; 52( 4): 595– 638. doi:10.1016/S0031-6997(24)01470-4. 11121511
+14. Ondicova K , Mravec B . Role of nervous system in cancer aetiopathogenesis. Lancet Oncol. 2010; 11( 6): 596– 601. doi:10.1016/S1470-2045(09)70337-7. 20522385
+15. Obeng-Gyasi E , Parker S . Combined effects of social and behavioral factors on stress and depression. Diseases. 2025; 13( 2): 46. doi:10.3390/diseases13020046. 39997053 PMC11854132
+16. Zahalka AH , Frenette PS . Nerves in cancer. Nat Rev Cancer. 2020; 20( 3): 143– 57. doi:10.1038/s41568-019-0237-2. 31974491 PMC7709871
+17. Dai S , Mo Y , Wang Y , Xiang B , Liao Q , Zhou M , et al. Chronic stress promotes cancer development. Front Oncol. 2020; 10: 1492. doi:10.3389/fonc.2020.01492. 32974180 PMC7466429
+18. Cole SW , Nagaraja AS , Lutgendorf SK , Green PA , Sood AK . Sympathetic nervous system regulation of the tumour microenvironment. Nat Rev Cancer. 2015; 15( 9): 563– 72. doi:10.1038/nrc3978. 26299593 PMC4828959
+19. Kaiser M , Jaillardon L . Pathogenesis of the crosstalk between reproductive function and stress in animals-part 1: hypothalamo-pituitary-adrenal axis, sympatho-adrenomedullary system and kisspeptin. Reprod Domest Anim. 2023; 58( Suppl 2): 176– 83. doi:10.1111/rda.14444. 37724657
+20. Chan H , Li F , Dokoshi T , Cavagnero KJ , Li Q , Chen Y , et al. Psychological stress increases skin infection through the action of TGFβ to suppress immune-acting fibroblasts. Sci Immunol. 2025; 10( 106): eads0519. doi:10.1126/sciimmunol.ads0519. 40215323 PMC12183641
+21. Tilan J , Kitlinska J . Sympathetic neurotransmitters and tumor angiogenesis-link between stress and cancer progression. J Oncol. 2010; 2010: 539706. doi:10.1155/2010/539706. 20508839 PMC2874925
+22. Arese M , Bussolino F , Pergolizzi M , Bizzozero L . An overview of the molecular cues and their intracellular signaling shared by cancer and the nervous system: from neurotransmitters to synaptic proteins, anatomy of an all-inclusive cooperation. Int J Mol Sci. 2022; 23( 23): 14695. doi:10.3390/ijms232314695. 36499024 PMC9739679
+23. Kobilka B . The structural basis of G-protein-coupled receptor signaling (Nobel Lecture). Angew Chem Int Ed. 2013; 52( 25): 6380– 8. doi:10.1002/anie.201302116. PMC4031317 23650120
+24. Dror RO , Arlow DH , Maragakis P , Mildorf TJ , Pan AC , Xu H , et al. Activation mechanism of the β2-adrenergic receptor. Proc Natl Acad Sci U S A. 2011; 108( 46): 18684– 9. doi:10.1073/pnas.1110499108. 22031696 PMC3219117
+25. Jenkins BG , Zhu A , Poutiainen P , Choi JK , Kil KE , Zhang Z , et al. Functional modulation of G-protein coupled receptors during Parkinson disease-like neurodegeneration. Neuropharmacology. 2016; 108: 462– 73. doi:10.1016/j.neuropharm.2015.11.010. 26581500 PMC4896842
+26. Dunlap K , Holz GG , Rane SG . G proteins as regulators of ion channel function. Trends Neurosci. 1987; 10( 6): 241– 4. doi:10.1016/0166-2236(87)90166-4. 22241937 PMC3254587
+27. Zhang H , Kong Q , Wang J , Jiang Y , Hua H . Complex roles of cAMP–PKA–CREB signaling in cancer. Exp Hematol Oncol. 2020; 9( 1): 32. doi:10.1186/s40164-020-00191-1. 33292604 PMC7684908
+28. Sassone-Corsi P . The cyclic AMP pathway. Cold Spring Harb Perspect Biol. 2012; 4( 12): a011148. doi:10.1101/cshperspect.a011148. 23209152 PMC3504441
+29. London E , Bloyd M , Stratakis CA . PKA functions in metabolism and resistance to obesity: lessons from mouse and human studies. J Endocrinol. 2020; 246( 3): R51– 64. doi:10.1530/JOE-20-0035. 32485681 PMC7385994
+30. Ahmed MB , Alghamdi AAA , Islam SU , Lee JS , Lee YS . cAMP signaling in cancer: a PKA-CREB and EPAC-centric approach. Cells. 2022; 11( 13): 2020. doi:10.3390/cells11132020. 35805104 PMC9266045
+31. Zhang H , Liu Y , Liu J , Chen J , Wang J , Hua H , et al. cAMP-PKA/EPAC signaling and cancer: the interplay in tumor microenvironment. J Hematol Oncol. 2024; 17( 1): 5. doi:10.1186/s13045-024-01524-x. 38233872 PMC10792844
+32. Lorton D , Bellinger DL . Molecular mechanisms underlying β-adrenergic receptor-mediated cross-talk between sympathetic neurons and immune cells. Int J Mol Sci. 2015; 16( 3): 5635– 65. doi:10.3390/ijms16035635. 25768345 PMC4394497
+33. Eccles RL , Czajkowski MT , Barth C , Müller PM , McShane E , Grunwald S , et al. Bimodal antagonism of PKA signalling by ARHGAP36. Nat Commun. 2016; 7: 12963. doi:10.1038/ncomms12963. 27713425 PMC5059767
+34. Braadland PR , Ramberg H , Grytli HH , Taskén KA . β-adrenergic receptor signaling in prostate cancer. Front Oncol. 2015; 4: 375. doi:10.3389/fonc.2014.00375. 25629002 PMC4290544
+35. Sharawy I . Neuroimmune crosstalk and its impact on cancer therapy and research. Discov Oncol. 2022; 13( 1): 80. doi:10.1007/s12672-022-00547-5. 35997976 PMC9399329
+36. Paijens ST , Vledder A , de Bruyn M , Nijman HW . Tumor-infiltrating lymphocytes in the immunotherapy era. Cell Mol Immunol. 2021; 18( 4): 842– 59. doi:10.1038/s41423-020-00565-9. 33139907 PMC8115290
+37. Demir IE , Ceyhan GO , Liebl F , D’Haese JG , Maak M , Friess H . Neural invasion in pancreatic cancer: the past, present and future. Cancers. 2010; 2( 3): 1513– 27. doi:10.3390/cancers2031513. 24281170 PMC3837319
+38. Franco R , Reyes-Resina I , Navarro G . Dopamine in health and disease: much more than a neurotransmitter. Biomedicines. 2021; 9( 2): 109. doi:10.3390/biomedicines9020109. 33499192 PMC7911410
+39. Grailer JJ , Haggadone MD , Sarma JV , Zetoune FS , Ward PA . Induction of M2 regulatory macrophages through the β2-adrenergic receptor with protection during endotoxemia and acute lung injury. J Innate Immun. 2014; 6( 5): 607– 18. doi:10.1159/000358524. 24642449 PMC4159611
+40. Castiglione F , Tieri P , Palma A , Jarrah AS . Statistical ensemble of gene regulatory networks of macrophage differentiation. BMC Bioinformatics. 2016; 17( Suppl 19): 506. doi:10.1186/s12859-016-1363-4. 28155642 PMC5260144
+41. Wang J , Li S , Lan Y , Liu X , Li W . Glioma-associated macrophages: unraveling their dual role in the microenvironment and therapeutic implications. Curr Med. 2024; 3( 1): 4. doi:10.1007/s44194-024-00031-y.
+42. Lopes RL , Borges TJ , Araújo JF , Pinho NG , Bergamin LS , Battastini AMO , et al. Extracellular mycobacterial DnaK polarizes macrophages to the M2-like phenotype. PLoS One. 2014; 9( 11): e113441. doi:10.1371/journal.pone.0113441. 25419575 PMC4242626
+43. Boutilier AJ , Elsawa SF . Macrophage polarization states in the tumor microenvironment. Int J Mol Sci. 2021; 22( 13): 6995. doi:10.3390/ijms22136995. 34209703 PMC8268869
+44. Zhang G , Tao X , Ji B , Gong J . Hypoxia-driven M2-polarized macrophages facilitate cancer aggressiveness and temozolomide resistance in glioblastoma. Oxid Med Cell Longev. 2022; 2022: 1614336. doi:10.1155/2022/1614336. 36046687 PMC9423979
+45. Mantovani A , Allavena P , Marchesi F , Garlanda C . Macrophages as tools and targets in cancer therapy. Nat Rev Drug Discov. 2022; 21( 11): 799– 820. doi:10.1038/s41573-022-00520-5. 35974096 PMC9380983
+46. Kurilin V , Alshevskaya A , Sennikov S . Development of cell technologies based on dendritic cells for immunotherapy of oncological diseases. Biomedicines. 2024; 12( 3): 699. doi:10.3390/biomedicines12030699. 38540312 PMC10968364
+47. Herman JP , McKlveen JM , Ghosal S , Kopp B , Wulsin A , Makinson R , et al. Regulation of the hypothalamic-pituitary-adrenocortical stress response. Compr Physiol. 2016; 6( 2): 603– 21. doi:10.1002/cphy.c150015. 27065163 PMC4867107
+48. Rescigno M , Martino M , Sutherland CL , Gold MR , Ricciardi-Castagnoli P . Dendritic cell survival and maturation are regulated by different signaling pathways. J Exp Med. 1998; 188( 11): 2175– 80. doi:10.1084/jem.188.11.2175. 9841930 PMC2212396
+49. Jiang L , Huang D , Nie S , Xie M . Polysaccharide isolated from seeds of Plantago asiatica L. induces maturation of dendritic cells through MAPK and NF-κB pathway. Saudi J Biol Sci. 2018; 25( 6): 1202– 7. doi:10.1016/j.sjbs.2017.09.011. 30174523 PMC6117183
+50. Schmitt N , Morita R , Bourdery L , Bentebibel SE , Zurawski SM , Banchereau J , et al. Human dendritic cells induce the differentiation of interleukin-21-producing T follicular helper-like cells through interleukin-12. Immunity. 2009; 31( 1): 158– 69. doi:10.1016/j.immuni.2009.04.016. 19592276 PMC2731623
+51. Chen J , Xiang X , Nie L , Guo X , Zhang F , Wen C , et al. The emerging role of Th1 cells in atherosclerosis and its implications for therapy. Front Immunol. 2023; 13: 1079668. doi:10.3389/fimmu.2022.1079668. 36685487 PMC9849744
+52. Vives-Pi M , Rodríguez-Fernández S , Pujol-Autonell I . How apoptotic β-cells direct immune response to tolerance or to autoimmune diabetes: a review. Apoptosis. 2015; 20( 3): 263– 72. doi:10.1007/s10495-015-1090-8. 25604067 PMC4328127
+53. Eskandari F , Webster JI , Sternberg EM . Neural immune pathways and their connection to inflammatory diseases. Arthritis Res Ther. 2003; 5( 6): 251. doi:10.1186/ar1002. 14680500 PMC333413
+54. Zhang H , Li S , Wang D , Liu S , Xiao T , Gu W , et al. Metabolic reprogramming and immune evasion: the interplay in the tumor microenvironment. Biomark Res. 2024; 12( 1): 96. doi:10.1186/s40364-024-00646-1. 39227970 PMC11373140
+55. Mamessier E , Sylvain A , Thibult ML , Houvenaeghel G , Jacquemier J , Castellano R , et al. Human breast cancer cells enhance self tolerance by promoting evasion from NK cell antitumor immunity. J Clin Investig. 2011; 121( 9): 3609– 22. doi:10.1172/JCI45816. 21841316 PMC3171102
+56. Gras Navarro A , Björklund AT , Chekenya M . Therapeutic potential and challenges of natural killer cells in treatment of solid tumors. Front Immunol. 2015; 6: 202. doi:10.3389/fimmu.2015.00202. 25972872 PMC4413815
+57. Jacquelot N , Seillet C , Souza-Fonseca-Guimaraes F , Sacher AG , Belz GT , Ohashi PS . Natural killer cells and type 1 innate lymphoid cells in hepatocellular carcinoma: current knowledge and future perspectives. Int J Mol Sci. 2021; 22( 16): 9044. doi:10.3390/ijms22169044. 34445750 PMC8396475
+58. Farooq MA , Ajmal I , Hui X , Chen Y , Ren Y , Jiang W . β2-adrenergic receptor mediated inhibition of T cell function and its implications for CAR-T cell therapy. Int J Mol Sci. 2023; 24( 16): 12837. doi:10.3390/ijms241612837. 37629018 PMC10454818
+59. Sun Z , Ren Z , Yang K , Liu Z , Cao S , Deng S , et al. A next-generation tumor-targeting IL-2 preferentially promotes tumor-infiltrating CD8+ T-cell response and effective tumor control. Nat Commun. 2019; 10: 3874. doi:10.1038/s41467-019-11782-w. 31462678 PMC6713724
+60. Habanjar O , Bingula R , Decombat C , Diab-Assaf M , Caldefie-Chezet F , Delort L . Crosstalk of inflammatory cytokines within the breast tumor microenvironment. Int J Mol Sci. 2023; 24( 4): 4002. doi:10.3390/ijms24044002. 36835413 PMC9964711
+61. Verdon DJ , Mulazzani M , Jenkins MR . Cellular and molecular mechanisms of CD8+ T cell differentiation, dysfunction and exhaustion. Int J Mol Sci. 2020; 21( 19): 7357. doi:10.3390/ijms21197357. 33027962 PMC7582856
+62. Jorgovanovic D , Song M , Wang L , Zhang Y . Roles of IFN-γ in tumor progression and regression: a review. Biomark Res. 2020; 8( 1): 49. doi:10.1186/s40364-020-00228-x. 33005420 PMC7526126
+63. Qiao G , Bucsek MJ , Winder NM , Chen M , Giridharan T , Olejniczak SH , et al. β-Adrenergic signaling blocks murine CD8+ T-cell metabolic reprogramming during activation: a mechanism for immunosuppression by adrenergic stress. Cancer Immunol Immunother. 2019; 68( 1): 11– 22. doi:10.1007/s00262-018-2243-8. 30229289 PMC6326964
+64. Huang YJ , Ngiow SF , Baxter AE , Manne S , Park SL , Wu JE , et al. Continuous expression of TOX safeguards exhausted CD8 T cell epigenetic fate. Sci Immunol. 2025; 10( 105): eado3032. doi:10.1126/sciimmunol.ado3032. 40053604
+65. Kye YC , Kuchroo VK . The dual role of TOX in regulating TH1 and CD8+ T cell fate. Nat Immunol. 2026; 27( 5): 886– 7. doi:10.1038/s41590-026-02494-7. 41974962
+66. Sun Q , Dong C . Regulators of CD8+ T cell exhaustion. Nat Rev Immunol. 2026; 26( 2): 129– 51. doi:10.1038/s41577-025-01221-x. 41034337
+67. Khan O , Giles JR , McDonald S , Manne S , Ngiow SF , Patel KP , et al. TOX transcriptionally and epigenetically programs CD8+ T cell exhaustion. Nature. 2019; 571( 7764): 211– 8. doi:10.1038/s41586-019-1325-x. 31207603 PMC6713202
+68. Grover P , Goel PN , Greene MI . Regulatory T cells: regulation of identity and function. Front Immunol. 2021; 12: 750542. doi:10.3389/fimmu.2021.750542. 34675933 PMC8524049
+69. Fiyouzi T , Pelaez-Prestel HF , Reyes-Manzanas R , Lafuente EM , Reche PA . Enhancing regulatory T cells to treat inflammatory and autoimmune diseases. Int J Mol Sci. 2023; 24( 9): 7797. doi:10.3390/ijms24097797. 37175505 PMC10177847
+70. Bettini M , Vignali DAA . Regulatory T cells and inhibitory cytokines in autoimmunity. Curr Opin Immunol. 2009; 21( 6): 612– 8. doi:10.1016/j.coi.2009.09.011. 19854631 PMC2787714
+71. Zhang Z , Hu Y , Chen Y , Chen Z , Zhu Y , Chen M , et al. Immunometabolism in the tumor microenvironment and its related research progress. Front Oncol. 2022; 12: 1024789. doi:10.3389/fonc.2022.1024789. 36387147 PMC9659971
+72. Balta E , Wabnitz GH , Samstag Y . Hijacked immune cells in the tumor microenvironment: molecular mechanisms of immunosuppression and cues to improve T cell-based immunotherapy of solid tumors. Int J Mol Sci. 2021; 22( 11): 5736. doi:10.3390/ijms22115736. 34072260 PMC8199456
+73. Sasidharan Nair V , Saleh R , Toor SM , Cyprian FS , Elkord E . Metabolic reprogramming of T regulatory cells in the hypoxic tumor microenvironment. Cancer Immunol Immunother. 2021; 70( 8): 2103– 21. doi:10.1007/s00262-020-02842-y. 33532902 PMC8289790
+74. Qiao G , Chen M , Bucsek MJ , Repasky EA , Hylander BL . Adrenergic signaling: a targetable checkpoint limiting development of the antitumor immune response. Front Immunol. 2018; 9: 164. doi:10.3389/fimmu.2018.00164. 29479349 PMC5812031
+75. Rollins BJ . Inflammatory chemokines in cancer growth and progression. Eur J Cancer. 2006; 42( 6): 760– 7. doi:10.1016/j.ejca.2006.01.002. 16510278
+76. Mi Y , Han J , Zhu J , Jin T . Role of the PD-1/PD-L1 signaling in multiple sclerosis and experimental autoimmune encephalomyelitis: recent insights and future directions. Mol Neurobiol. 2021; 58( 12): 6249– 71. doi:10.1007/s12035-021-02495-7. 34480337 PMC8639577
+77. Chinai JM , Janakiram M , Chen F , Chen W , Kaplan M , Zang X . New immunotherapies targeting the PD-1 pathway. Trends Pharmacol Sci. 2015; 36( 9): 587– 95. doi:10.1016/j.tips.2015.06.005. 26162965 PMC4562806
+78. Sattler AL , Diba P , Hawthorne K , Pelz C , Grieco J , Korzun T , et al. Sympathetic nerve-fibroblast crosstalk drives nerve injury, fibroblast activation, and matrix remodeling in pancreatic cancer. JCI Insight. 2026; 11( 7): e192814. doi:10.1172/jci.insight.192814. 41712286 PMC13134732
+79. Zhang L , Zhu D , Wang J , Guo J , Jiang M , Qi X , et al. The neuro-immune axis in cancer: mechanisms of innervation-driven tumor progression and therapeutic opportunities. Front Immunol. 2026; 16: 1693419. doi:10.3389/fimmu.2025.1693419. 41601691 PMC12833073
+80. McQuerry JA , Chang JT , Bowtell DDL , Cohen A , Bild AH . Mechanisms and clinical implications of tumor heterogeneity and convergence on recurrent phenotypes. J Mol Med. 2017; 95( 11): 1167– 78. doi:10.1007/s00109-017-1587-4. 28871446 PMC6296823
+81. Bourdeleau P , Couvelard A , Ronot M , Lebtahi R , Hentic O , Ruszniewski P , et al. Spatial and temporal heterogeneity of digestive neuroendocrine neoplasms. Ther Adv Med Oncol. 2023; 15: 17588359231179310. doi:10.1177/17588359231179310. 37323185 PMC10262621
+82. Magnon C , Hall SJ , Lin J , Xue X , Gerber L , Freedland SJ , et al. Autonomic nerve development contributes to prostate cancer progression. Science. 2013; 341( 6142): 1236361. doi:10.1126/science.1236361. 23846904
+83. Liu SQ , Li B , Li JJ , Sun S , Sun SR , Wu Q . Neuroendocrine regulations in tissue-specific immunity: from mechanism to applications in tumor. Front Cell Dev Biol. 2022; 10: 896147. doi:10.3389/fcell.2022.896147. 36072337 PMC9442449
+84. Guillot J , Dominici C , Lucchesi A , Nguyen HTT , Puget A , Hocine M , et al. Sympathetic axonal sprouting induces changes in macrophage populations and protects against pancreatic cancer. Nat Commun. 2022; 13: 1985. doi:10.1038/s41467-022-29659-w. 35418199 PMC9007988
+85. Târtea EA , Petrescu M , Udriștoiu I , Gheorman V , Biciușcă V , Petrescu AR , et al. Clinical outcomes depending on sympathetic innervation in pancreatic cancer. Cancers. 2023; 15( 11): 3040. doi:10.3390/cancers15113040. 37297000 PMC10252059
+86. Kamiya A , Hiyama T , Fujimura A , Yoshikawa S . Sympathetic and parasympathetic innervation in cancer: therapeutic implications. Clin Auton Res. 2021; 31( 2): 165– 78. doi:10.1007/s10286-020-00724-y. 32926324
+87. He R , Huang S , Lu J , Su L , Gao X , Chi H . Unveiling the immune symphony: decoding colorectal cancer metastasis through immune interactions. Front Immunol. 2024; 15: 1362709. doi:10.3389/fimmu.2024.1362709. 38415252 PMC10897008
+88. Kokolus KM , Zhang Y , Sivik JM , Schmeck C , Zhu J , Repasky EA , et al. Beta blocker use correlates with better overall survival in metastatic melanoma patients and improves the efficacy of immunotherapies in mice. OncoImmunology. 2018; 7( 3): e1405205. doi:10.1080/2162402X.2017.1405205. 29399407 PMC5790362
+89. Li W , Wan J , Chen C , Zhou C , Liao P , Hu Q , et al. Dissecting the role of cell signaling versus CD8+ T cell modulation in propranolol antitumor activity. J Mol Med. 2022; 100( 9): 1299– 306. doi:10.1007/s00109-022-02238-8. 35895125
+90. Barron TI , Connolly RM , Sharp L , Bennett K , Visvanathan K . Beta blockers and breast cancer mortality: a population-based study. J Clin Oncol. 2011; 29( 19): 2635– 44. doi:10.1200/JCO.2010.33.5422. 21632503
+91. Mellgard G , Patel VG , Zhong X , Joshi H , Qin Q , Wang B , et al. Effect of concurrent beta-blocker use in patients receiving immune checkpoint inhibitors for advanced solid tumors. J Cancer Res Clin Oncol. 2023; 149( 7): 2833– 41. doi:10.1007/s00432-022-04159-y. 35788726 PMC10739778
+92. Barbieri A , Robinson N , Palma G , Maurea N , Desiderio V , Botti G . Can beta-2-adrenergic pathway be a new target to combat SARS-CoV-2 hyperinflammatory syndrome?—lessons learned from cancer. Front Immunol. 2020; 11: 588724. doi:10.3389/fimmu.2020.588724. 33117402 PMC7561388
+93. Triposkiadis F , Briasoulis A , Sarafidis P , Magouliotis D , Athanasiou T , Paraskevaidis I , et al. The sympathetic nervous system in hypertensive heart failure with preserved LVEF. J Clin Med. 2023; 12( 20): 6486. doi:10.3390/jcm12206486. 37892623 PMC10607346
+94. Hall JE , do Carmo JM , da Silva AA , Wang Z , Hall ME . Obesity, kidney dysfunction and hypertension: mechanistic links. Nat Rev Nephrol. 2019; 15( 6): 367– 85. doi:10.1038/s41581-019-0145-4. 31015582 PMC7278043
+95. Pedersen L , Idorn M , Olofsson GH , Lauenborg B , Nookaew I , Hansen RH , et al. Voluntary running suppresses tumor growth through epinephrine- and IL-6-dependent NK cell mobilization and redistribution. Cell Metab. 2016; 23( 3): 554– 62. doi:10.1016/j.cmet.2016.01.011. 26895752
+96. Leosco D , Parisi V , Femminella GD , Formisano R , Petraglia L , Allocca E , et al. Effects of exercise training on cardiovascular adrenergic system. Front Physiol. 2013; 4: 348. doi:10.3389/fphys.2013.00348. 24348425 PMC3842896
+97. Grässler B , Thielmann B , Böckelmann I , Hökelmann A . Effects of different training interventions on heart rate variability and cardiovascular health and risk factors in young and middle-aged adults: a systematic review. Front Physiol. 2021; 12: 657274. doi:10.3389/fphys.2021.657274. 33981251 PMC8107721
+98. Borghesi F , Cremascoli R , Chirico A , Bianchi L , Di Moia A , Priano L , et al. Mind and body connection in expert meditators: a computational study based on central and peripheral nervous system. BMC Complementary Med Ther. 2024; 24( 1): 117. doi:10.1186/s12906-024-04413-5. PMC10921575 38454382
+99. Zhang Z , Luh WM , Duan W , Zhou GD , Weinschenk G , Anderson AK , et al. Longitudinal effects of meditation on brain resting-state functional connectivity. Sci Rep. 2021; 11: 11361. doi:10.1038/s41598-021-90729-y. 34059702 PMC8166909
+100. Wang Y , Deng W , Li N , Neri S , Sharma A , Jiang W , et al. Combining immunotherapy and radiotherapy for cancer treatment: current challenges and future directions. Front Pharmacol. 2018; 9: 185. doi:10.3389/fphar.2018.00185. 29556198 PMC5844965
+101. Yu S , Wang Y , He P , Shao B , Liu F , Xiang Z , et al. Effective combinations of immunotherapy and radiotherapy for cancer treatment. Front Oncol. 2022; 12: 809304. doi:10.3389/fonc.2022.809304. 35198442 PMC8858950
+102. Jin J , Zhao Q . Engineering nanoparticles to reprogram radiotherapy and immunotherapy: recent advances and future challenges. J Nanobiotechnol. 2020; 18( 1): 75. doi:10.1186/s12951-020-00629-y. PMC7227304 32408880
+103. Lang X , Wang X , Han M , Guo Y . Nanoparticle-mediated synergistic chemoimmunotherapy for cancer treatment. Int J Nanomed. 2024; 19: 4533– 68. doi:10.2147/IJN.S455213. PMC11127654 38799699
+104. Bagherifar R , Kiaie SH , Hatami Z , Ahmadi A , Sadeghnejad A , Baradaran B , et al. Nanoparticle-mediated synergistic chemoimmunotherapy for tailoring cancer therapy: recent advances and perspectives. J Nanobiotechnol. 2021; 19( 1): 110. doi:10.1186/s12951-021-00861-0. PMC8052859 33865432
+105. Qiu J , Cheng Z , Jiang Z , Gan L , Zhang Z , Xie Z . Immunomodulatory precision: a narrative review exploring the critical role of immune checkpoint inhibitors in cancer treatment. Int J Mol Sci. 2024; 25( 10): 5490. doi:10.3390/ijms25105490. 38791528 PMC11122264
+106. Wu M , Huang Q , Xie Y , Wu X , Ma H , Zhang Y , et al. Improvement of the anticancer efficacy of PD-1/PD-L1 blockade via combination therapy and PD-L1 regulation. J Hematol Oncol. 2022; 15( 1): 24. doi:10.1186/s13045-022-01242-2. 35279217 PMC8917703
+107. Wang X , Yan Y , Li L , Li T , Thakur A , Zhang K , et al. The influence of neuro-tumor interactions on tumorigenesis and therapeutic response. Exp Hematol Oncol. 2026; 15( 1): 18. doi:10.1186/s40164-026-00752-w. 41645346 PMC12882464
+108. Zhang F , Wang Y , Liu F , Li Y , Liu X , Ren X , et al. Impact of beta blockers on cancer neuroimmunology: a systematic review and meta-analysis of survival outcomes and immune modulation. Front Immunol. 2025; 16: 1635331. doi:10.3389/fimmu.2025.1635331. 40842986 PMC12364651
+109. Nie Q , Jiang M , Wan S , Xi M , Hua W , Jiang F , et al. Neuro-immune-related gene signatures define molecular subtypes and prognostic score in bladder cancer with SERPINE2 as a potential therapeutic target. PeerJ. 2026; 14: e20917. doi:10.7717/peerj.20917. 41800135 PMC12967077
+110. Weng B , Zhu N , Li H , Ding L , Wu Y , Chen Y , et al. Reinvigorating CD8+ T cells through ADRB1 blockade using copper-propranolol nanoparticles for enhanced immune checkpoint blockade therapy. J Nanobiotechnol. 2026; 24( 1): 24. doi:10.1186/s12951-025-03924-8. PMC12784565 41491200
+111. Chi H , Carbone M , Deng Y . When vaccines reset tumors: SARS-CoV-2 mRNA shots create a transient checkpoint-sensitive state. Signal Transduct Target Ther. 2025; 10: 423. doi:10.1038/s41392-025-02521-3. 41469372 PMC12753749
+112. Do M , Tyler WJ . Transcutaneous vagus nerve stimulation in breast cancer: a neuroimmune model to improve quality of life. Front Oncol. 2026; 16: 1731999. doi:10.3389/fonc.2026.1731999. 41717404 PMC12913136

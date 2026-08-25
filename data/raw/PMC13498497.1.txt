@@ -1,0 +1,529 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Appl Health Econ Health Policy
+Journal ID: Appl Health Econ Health Policy
+NLM Journal ID: 101150314
+
+Applied Health Economics and Health Policy
+
+ISSN: 1175-5652
+EISSN: 1179-1896
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498497
+PMID: 42477266
+DOI: 10.1007/s40258-026-01050-6
+Article ID: 1050
+Article version: 1
+Subjects: Original Research Article
+
+Active Transport Health Model: Valuing the Health Benefits of Active Transport
+
+http://orcid.org/0000-0002-4588-7528 Wanjau Mary Njeri 1 2
+http://orcid.org/0000-0003-0675-8712 Möller Holger 3 4
+http://orcid.org/0000-0002-8027-6773 Standen Christopher 5 6
+http://orcid.org/0000-0002-5706-5118 Haigh Fiona 5 6
+http://orcid.org/0000-0002-3206-8232 Veerman J. Lennert l.veerman@griffith.edu.au
+1
+1 https://ror.org/02sc3r913 grid.1022.1 0000 0004 0437 5432 Public Health and Economics Modelling Group, School of Medicine and Dentistry, Griffith University, Gold Coast Campus, Parklands Drive, Southport, QLD 4222 Australia
+2 https://ror.org/03g5d6c96 grid.430282.f 0000 0000 9761 7912 Viertel Cancer Research Centre, Cancer Council Queensland, Brisbane, Australia
+3 https://ror.org/03r8z3t63 grid.1005.4 0000 0004 4902 0432 School of Population Health, University of New South Wales, Kensington Campus, Sydney, NSW 2052 Australia
+4 https://ror.org/023331s46 grid.415508.d 0000 0001 1964 6010 Injury Division, The George Institute for Global Health, Newtown, NSW Australia
+5 https://ror.org/03r8z3t63 grid.1005.4 0000 0004 4902 0432 International Centre for Future Health Systems, University of New South Wales, High St, Kensington, NSW 2052 Australia
+6 https://ror.org/04w6y2z35 grid.482212.f 0000 0004 0495 2383 Directorate Clinical Services Integration and Population Health, Sydney Local Health District, Missenden Road, Camperdown, NSW 2050 Australia
+Electronic publication date: 2026 Jul 20
+Print publication date: 2026
+Volume: 24
+Issue: 5
+First page: 841
+Last page: 856
+Received 2025 Oct 10; Accepted 2026 May 14
+Copyright: © The Author(s) 2026
+Copyright year: 2026
+License: Open Access This article is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License, which permits any non-commercial use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc/4.0/.
+License URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+Funding: http://dx.doi.org/10.13039/501100008810 NSW Ministry of Health
+
+Funding: Griffith University Open Access funding enabled and organized by CAUL and its Member Institutions
+
+issue-copyright-statement: © Springer Nature Switzerland AG 2026
+
+==============================
+Background
+
+Active transport can increase physical activity at the population level, thereby improving population health. Knowing the health and related economic benefits of infrastructure measures that change physical activity may help underpin the case for investment, but valuing such benefits is challenging.
+
+Objective
+
+The aim of this study was to develop a model to estimate the health benefits of changes in active transport behaviour and translate these to an economic value. We applied the model to the state of New South Wales, Australia.
+
+Methods
+
+The The Active Transport Health Model is a proportional multi-state lifetable model that quantifies the health impacts of changes in active transport behaviour over a population’s lifetime. Health outcomes related to physical activity, air pollution and road trauma are modelled. Model outputs include age- and sex-specific changes in disease incidence, prevalence and mortality, summarised as health-adjusted life-years, which are translated to monetary terms. Changes in healthcare costs are also modelled. Values per additional person-kilometres of walking and cycling are reported (in Australian dollars). A 5% discount rate is applied.
+
+Results
+
+Compared to car use, the health benefits for an additional person-kilometre walked are AU$4.41 (95% uncertainty interval AU$3.81–AU$5.05), and AU$2.42 (95% uncertainty interval AU$2.05–AU$2.76) for an additional person-kilometre cycled. This varies with various factors such as age and current physical activity level.
+
+Conclusions
+
+The Active Transport Health Model can be used to assess and value the health benefits of active transport. The monetary per-kilometre values in our study were higher than those of previous studies. This has important implications for infrastructure planning and guidelines on transport projects where monetised health benefits of physical activity are factored into cost-benefit analyses.
+
+Supplementary Information
+
+The online version contains supplementary material available at 10.1007/s40258-026-01050-6.
+
+Key Points for Decision Makers
+
+Active transport increases physical activity and improves population health, and valuing these health benefits helps make a case for investment in transport infrastructure.	
+The Active Transport Health Model values the health benefits of active transport.	
+Per-person kilometre values were AU$4.41 for walking and AU$2.42 for cycling.	
+
+Background
+
+Physical inactivity is one of the main contributors to the rise in non-communicable diseases such as type 2 diabetes mellitus, cancers and cardiovascular diseases [1–3]. In Australia, physical inactivity accounted for 2.1% of the total disease burden in 2024 [4]. Most disadvantaged communities are disproportionately affected with higher rates compared with least disadvantaged communities [5].
+
+Numerous previous studies have highlighted the physical activity (PA) and health benefits of active transport [6–13]. Active transport refers to modes of transport that involve PA, such as walking and cycling, including walking and cycling to and from public transport stops. From a health perspective, therefore, it is important that decisions on transport policies and infrastructure investment consider potential changes in PA and related health benefits. However, decision-support tools for transport policies and infrastructure investment do not adequately include PA-related health benefits [14]. Cost-benefit analysis guidelines used for business case development [15] typically do not consider the negative impact on health arising from projects expected to reduce levels of PA, for example, a road project that will encourage people to switch from active to motorised transport. Furthermore, there is often little scientific rigour in the way the health benefits of potential increases in PA are estimated and valued [16].
+
+Forecasting and valuing the health benefits of active transport projects or policies is challenging because the benefits depend on numerous variables and assumptions. For example, the health benefits may vary depending on age and existing level of PA [17]. In recognition of these challenges, NSW Health commissioned a project whose aim was to develop a best-practice method to estimate and value the health benefits of active transport. In an earlier study, we systematically reviewed the international evidence to identify best-practice methods to quantify the impact of active transport on health outcomes [18]. Nineteen models were identified [8–10, 19–34] and evaluated against a set of criteria developed in stakeholder consultation [18]. In summary, the review found that tools such as the Health Economic Assessment Tool (HEAT) focus primarily on changes in all-cause mortality, without capturing morbidity, disease incidence or healthcare costs [10]. The Integrated Transport and Health Impact Model (ITHIM) estimates changes in disease outcomes but does not fully integrate long-term population dynamics, survival and health-system costs in a life-course framework [9]. In the Australian context, the proportional multistate life table (pMSLT) approach was found to fill key decision gaps as it aligns with Australian Treasury and transport appraisal requirements, which increasingly require long-term (e.g. over the life course) impact estimates on multiple diseases, healthcare costs, productivity and monetisation rather than single summary metrics. Second, it integrates multiple causal pathways relevant to active transport (PA, air pollution and injury risk) within a single internally consistent framework, meeting decision makers’ needs for evidence on net health impacts across multiple exposures and outcomes. Third, the pMSLT models can be readily parameterised using country-specific epidemiological, demographic and cost data, enabling alignment with national burden of disease estimates. While other international tools could theoretically be adapted, this would require substantial modification to reflect Australian disease profiles, population structure and policy evaluation requirements [18]. Based on the evaluation, a ‘proportional multistate life table (pMSLT) model’ was recommended as the best method currently available [18]. In this paper, we report on the development of an Active Transport Health Model. The identified pMSLT model was expanded to incorporate additional health outcomes associated with PA and air pollution and we estimate the health benefits of changes in active transport behaviour and translate these to an economic value.
+
+Methods
+
+Quantifying the value of health-related benefits of active transport can be considered as a four-step process: (1) estimation of the impact of a policy or infrastructure measures on active transport behaviour; (2) estimation of the impact of changed transport behaviour on exposures related to active transport; (3) quantification of the impact of changes in exposures on health outcomes; and (4) valuing the health outcomes. This project focused on steps 2, 3 and 4. For the first step, the input for the Model is the net change in active travel, which could be based on either (a) prior travel demand modelling or (b) a policy/strategy target.
+
+The Model was developed with oversight from a cross-agency advisory group consisting of representatives from six NSW government clusters: Health, Education, Treasury, Transport, Planning and Environment, Premier and Cabinet. The preparation of this article was guided by the Consolidated Health Economic Evaluation Reporting Standards 2022 (CHEERS 2022) statement [35]. No ethics approval was required for this analysis.
+
+The Active Transport Health Model (the Model)
+
+The Active Transport Health Model (the Model) is based on the pMSLT, an established mathematical modelling approach applied in previous studies [8, 16, 19, 36–38] (Fig. S1 of the Electronic Supplementary Material [ESM]). The Model is designed to incorporate multiple diseases whilst allowing for comorbidities. The population is modelled by sex in 5-year age groups until everyone reaches the age of 100 years or dies. The Model estimates the health impact of a change in active transport behaviour by simulating the population over their remaining lifetime, both under ‘business as usual’ assumptions and, in parallel, in a scenario in which more (or fewer) people engage in active transport (Fig. 1). The impact is calculated as the difference in outcomes between these two scenarios.Fig. 1 Analytical framework for modelling the health- and health-related economic impacts of active transport. COPD chronic obstructive pulmonary disease, PM2.5 particulate matter with an aerodynamic diameter of 2.5 µm or less, $$ Australian dollars.Infrastructure changes that consider active transport affect public transport use, car use and active transport behaviour. Increased active transport results in increased PA and exposure to on-road air pollution, noise and the risk of road trauma. Decreased car use impacts on road trauma and air pollution. Increased public transport use promotes PA, though walking to/from public transport stops can impact on air pollution. The effect of exposures on health outcomes listed and healthcare costs is modelled and health-adjusted life-years (HALYs) gained (or lost) and healthcare cost savings (or increases) can be calculated. The economic value of the health benefits is calculated by multiplying HALYs with the value of a life-year. Values per additional person-kilometre (km) of walking, cycling and walking for public transport are reported (in Australian dollars). Outcomes in grey (low back pain and osteoarthritis) are included in the Model but are not included in the reference case analysis.
+
+The Model considers all exposures (PA, air pollution and road transport injury) associated with active transport [8]. Fourteen health outcomes were modelled applying a set of differential equations to describe the transition between four states (healthy, diseased, dead from the disease and dead from all other causes) [Fig. S2 of the ESM] [36]. Transition probabilities among the four states reflect rates of cause-specific incidence, remission, case fatality, and all-cause morbidity and mortality. A change in exposure to the risk factors, PA and PM2.5 (particulate matter with an aerodynamic diameter of 2.5 µm or less), modifies incidence via the potential impact fraction calculation (Sect. 2 of the ESM) [39]. A change in incidence translates to changes in prevalence and, consequently, years lived with disability (YLDs) and mortality. Double counting of health effects and impact on healthcare costs is avoided by the life table structure, and by ignoring disease-specific mortality when an impact of PA on all-cause mortality is applied (Sect. 2 of the ESM). Road fatalities impact directly on mortality. Road injuries impact on years lived with disability, which are captured in disability-adjusted life-years in the schematic description (Fig. S1 of the ESM). Estimation of the effect of change in active transport behaviour on road trauma is explained in Sect. 2.2.3.
+
+The Model produces a range of outcomes including changes in incidence, prevalence, mortality, life-years lived, YLDs, summarised as health-adjusted life-years HALYs, and healthcare costs over selected time periods and lifetime. The health benefits are translated to monetary terms by multiplying HALYs with the value of a year in full health and healthcare cost changes are included to derive an economic value. Values per additional person-km of walking, cycling and walking for public transport are reported (in Australian dollars).
+
+Exposures
+
+Physical Activity (PA) [Including Travel Patterns]
+
+We used PA data for NSW from the National Health Survey 2017–18 [40]. Weekly PA levels were calculated by multiplying the minutes of total weekly PA by the average metabolic equivalent of task (MET) value for each activity (walking = 3.5, cycling = 6.8, moderate PA = 5, vigorous PA = 7.5) [41]. A MET is defined as the ratio of work metabolic rate to a standard resting metabolic rate of 1 MET during quiet sitting. In the compendium, activities are listed as multiples of the resting MET level. This ranges from 0.9 METs (sleeping) to 18 METs (running at 17.5 km/hour). In the model, we subtracted 1 from the MET value for each activity, on the assumption that the activity displaces sitting with a MET value of 1. For the model, PA levels were categorised into the four groups: inactive, low active (>0 and <600 MET-minutes per week), moderately active (≥600 and <1600 MET-min/week) and highly active (≥1600 MET-min/week) (SF Table S1) [40]. Physical activity was modelled as a categorical approximation of a Dirichlet distribution, which generalizes the beta distribution to multiple categories [42].
+
+For the analysis of all-cause mortality, the PA data were also analysed by quartiles of activity (Table S2 of the ESM). This aligns with the values reported in the systematic review by Ekelund et al., who pooled results from cohort studies that used objectively measured PA (with accelerometers) as exposure [43]. To use their results, we assumed that the activity patterns in NSW are like those in the source studies. This seems a conservative assumption: participants in cohort studies tend to be healthier and more active than the general population, which could result in an underestimation of the mortality risk among the least active members of the population [44, 45]. From the process, we derived a risk function (a level of risk at every level of PA), which was then applied to the activity categories used in the model. The baseline travel patterns and person-km travelled data were derived from the NSW Household Travel survey, 2019/2020 [46]. In this study, a change in travel patterns (use of active transport) results in changes in mode-specific person-km travelled (see Sect. 2.6). These changes are used to determine the health impact of increasing PA levels by shifting car travel to walking, cycling and walking for public transport.
+
+Physical activity displacement (extent to which walking or cycling uptake arising from new active transport investment results in net additional PA) was accounted for in the model. Findings from a systematic review of the evidence suggested that active transport-related PA was not offset by lower levels of activity in other domains (leisure, work, household) except perhaps in older people [47]. We extended our peer-reviewed systematic review [47] and estimated a quality-weighted average PA displacement of 12.45% (95% uncertainty intervals 4.62–22.29), which we applied in our main analysis (Sect. 3.1 and Fig. S3 of the ESM).
+
+Air Pollution
+
+Particulate matter with an aerodynamic diameter of 2.5 µm or less is commonly used as an indicator of air quality and measured by air quality monitoring sites. Measuring the health benefits of improved air quality due to reduced motorised transport ensures that the benefits that accrue from improved air quality at a population level are also considered in economic appraisals of active transport.
+
+As representative data for NSW were not available, data on PM2.5 from air quality monitoring sites measuring PM2.5 in the greater Sydney area for 2018 were obtained from the NSW Planning, Industry and Environment website [48]. Annual averages were calculated. Days with PM2.5 equal to or above the 95th percentile were excluded from the analysis as these higher air pollution levels are typically due to landscape fires [49]. After excluding days with potential landscape fires, the mean annual PM2.5 level for all 14 stations was 7.11 µg/m3 [95% confidence interval 7.07–7.16], modelled as normally distributed. The PM2.5 pollution attributable to road transport was calculated from a NSW modelling study that estimated that around 7.7% of ambient PM2.5 in the greater Sydney region was estimated to be due to on-road vehicles [50].
+
+The Model incorporated the health effects of exposure to PM2.5 via two mechanisms: population-wide ambient effects and individual effects among traffic participants. A change in exposure for the ambient effect was estimated as the difference in the mean PM2.5 between baseline and intervention scenarios, adding up the emissions due to the various traffic modes. Based on previous studies [51–53], we calculated the change in individual exposure due to an increase in active transport (Sect. 3.2 of the ESM, Equation A).
+
+Road Trauma
+
+In this study, all road transport crashes that were recorded by NSW police and resulted in injury or deaths were included in the analysis. A distance-based model was used to estimate the effect of change in active transport behaviour on road trauma. Injuries and fatalities for transport modes were summarised by combinations of victim and striking mode, using 2018 data from the Transport for NSW (TfNSW) Crashlink database [54]. In the model, a Gamma distribution was applied to the injury and fatality data to capture uncertainty. Road crashes involving only one transport mode were presented as “single mode”. Baseline injury and fatality rates were calculated per pairwise combination of victim and striking mode [9, 55]. Calculating rates per pairwise combination requires data on the number of injuries/fatalities, person-km travelled for the victim mode and vehicle-km travelled for the striking mode per year (Equation B in Sect. 3.3 of the ESM). Person-kilometres travelled were derived from the NSW Household Travel Survey [46], the Survey of Motor Vehicle Use 2018 [56] and the NSW Cycle Survey [57]. For pedestrians, bicyclists and motorcycle/moped riders, person-km travelled were the same as vehicle km travelled. The number of injuries and fatalities for a change in the transport mode mix were estimated using Equation C in Sect. 3.3 of the ESM. These calculations take into consideration a safety in numbers effect, whereby increases in pedestrian and cyclist numbers results in a less than proportional increase in the number of injuries [58].
+
+Health Outcomes
+
+Modelled diseases associated with PA are breast cancer, colon cancer, type 2 diabetes, ischaemic stroke and ischaemic heart disease. These were the conditions included in the Global Burden of Disease (GBD) studies [59, 60].
+
+The magnitudes of relative risk for the effects of PA (measures of association) reported in the GBD 2013 study [61, 62] were selected for use in the Model because the measures were based on a study in which the authors obtained the relative risk for each PA exposure category for the diseases with probable or convincing causal associations, based on epidemiological evidence from systematic reviews and meta-analyses (Table S3 of the ESM) [62]. (The measures used in the GBD 2017 study [59] were taken from a meta-analysis in which authors categorised PA in MET minutes/week [63].) We used ‘ErRelative risk’ functions to incorporate uncertainty.
+
+Additional health outcomes associated with PA were investigated for inclusion in the Model. Systematic reviews of peer-reviewed evidence were carried out to assess the strength of the evidence for the association between PA and the health outcomes: all-cause mortality (Sect. 4.2 of the ESM), musculoskeletal diseases (low back pain, osteoarthritis) [64] and mental health problems (depressive disorders, anxiety) [65]. Upon assessment for causality, the evidence that PA can prevent depression and anxiety was judged to be probable [65]. The evidence that PA can prevent premature mortality was considered convincing (Sect. 4.2, Tables S4–S8, and Fig. S4 of the ESM) [43, 66–73]. The outcomes depression, anxiety and all-cause mortality have been included in the model. However, for osteoarthritis and low back pain, the evidence was possible [64], and these two conditions were included in the sensitivity analysis only.
+
+For air pollution, the Model includes ischaemic heart disease, ischaemic stroke, intracerebral haemorrhage, subarachnoid haemorrhage, tracheal, bronchus and lung cancer, chronic obstructive pulmonary disease, lower respiratory tract infection and type 2 diabetes. The relative risks measures used in our Model were drawn from the GBD 2017 study, which based estimates on previous epidemiological evidence (Table S9 of the ESM) [59]. These diseases associated with air pollution were based on a global study from 2016 [74], World Health Organization methods and tools for assessing the health risks of air pollution [75], and a systematic review of outdoor particulate matter exposure and lung cancer [76]. For PM2.5-related outcomes, we used a normal distribution to incorporate uncertainty. For road trauma, we used the local road transport injury data [54] as outlined earlier and modelled mortality and morbidity by mode of transport.
+
+Economic Evaluation
+
+In the Model, HALYs are valued in monetary terms based on the ‘value of a statistical life’ (VSL) estimates from three sources most commonly used in the Australian context: the Australian Transport Assessment and Planning/TfNSW ‘Inclusive Willingness to Pay’ value [77, 78], the 2023 Office of Impact Analysis values [79–81] and a value commonly used in health economics literature, based on a direct estimate of willingness to pay for 1 year in full health [82]. Following extensive consultation with the cross-agency advisory group, we used the 2023 Office of Impact Analysis values [79] for the reference case (main analysis), as those are the standard for government business cases in Australia. For the conversion of the VSL to the value of a statistical life-year (VSLY), we adapted the 3% discounting as applied in the Office of Impact Analysis values [79] in the main analyses and in sensitivity analyses where we used the Australian Transport Assessment and Planning/TfNSW VSL value [78]. In a second sensitivity analysis, we varied discounting and used 7% discounting to convert the Office of Impact Analysis VSL to VSLY (Table S10 of the ESM).
+
+Healthcare cost savings (or increases) resulting from the changes in health outcomes were also calculated. The healthcare costs were calculated using data from the Health System Spending on Disease and Injury in Australia, 2020–21 report prepared by the Australian Institute of Health and Welfare [83]. For the calculations of costs per case, GBD 2021 prevalence, incidence, YLD and population data were used (Table S11 of the ESM). Detailed age and sex specific costs are presented in Table S12 of the ESM. In addition to costs for the specific diseases and injuries in the model, overall healthcare costs for all other health conditions are also included (Table S13 of the ESM). This is necessary because, as interventions prolong life, healthcare costs will be incurred in these ‘added years of life’ [84]. We adjusted the 2020–21 healthcare costs to December 2023 values using the inflation factor that we calculated from the consumer price indexes, December 2021 to December 2023. The consumer price index data were sourced from the Australian Bureau of Statistics [85].
+
+This study adopts a health system perspective for healthcare costs, while for the health benefits, the use of Office of Impact Analysis VSL values to derive the VSLY is consistent with a societal valuation of health outcomes. We applied discounting to two future streams of benefit (or harm): healthcare costs and health outcomes (HALYs). In this work, a 5% discount rate was applied. This is in line with the latest NSW Government Guide to Cost-Benefit Analysis 2023, which recommends the central real social discount rate of 5%, with mandatory sensitivity analyses at 3% and 7% [86]. Values per additional person-km of walking, cycling and walking for public transport are reported (in Australian dollars).
+
+Disease Input Data
+
+We used incidence, prevalence, YLDs and cause-specific mortality data from the GBD 2021 Results tool [87] and updated to GBD 2023 at the manuscript peer-review stage [88], June 2023 population data [89] and 2019 pre-Covid all-cause mortality rates for NSW [90] (Table S14 of the ESM) [60, 87]. We used specialised software (DisMod II) to enforce internal consistency in the epidemiological estimates, and to derive parameters not provided in the data sources (i.e. case fatality and remission) [36]. Disability weights (which indicate the average loss of quality of life due to disease by age) were derived from the GBD 2023 disease-specific YLDs and prevalence by 5-year age group and sex. More detail on input data preparation is presented in Sect. 6.2 and Table S15 of the ESM.
+
+Description of the Modelled Scenario
+
+A central (reference case) scenario was selected to demonstrate how the Model works for the New South Wales context. This central (reference case) scenario was based on the following: a mode-specific intervention scenario for walking, cycling on-road, cycling off-road and walking associated with public transport. As in previous work [8], shifts towards walking, cycling and public transport go at the expense of the mode share for private vehicles (cars). For the walking scenario, we assumed an intervention in which 10,000 travellers replace five one-way (single) weekly car trips of 0–2 km with walking (average ~1.2 km depending on age and sex [46]) over 1 year. Added walking is modelled as a proportional increase in walking by age and sex groups. For the cycling reference case, we assumed a replacement of five weekly car trips of 2–5 km with cycling (average ~3.3 km [46]), and for public transport, replacing five weekly car trips of 6–16 km with public transport plus walking to and from public transport stops (average ~9 km [46]). We assumed no changes to the number of trips, destinations, home location and distances travelled. For cycling, two scenarios are modelled, cycling on on-road facilities (e.g. mixed traffic, bicycle lanes) and cycling on separate off-road facilities (e.g. bicycle paths/tracks not exposed to motor vehicle air pollution and injury risk). It requires the assumption that the off-road infrastructure is as safe as car travel, and its users are exposed to background air quality rather than the worse air quality when sharing the road with motorised traffic, and that the risk and exposure estimates in the reference scenario are based on on-road cycling.
+
+To estimate the distance of walking and cycling trips that replaced car occupant trips, we calculated the mean km travelled for each of the three distance categories (< 2 km; ≥ 2 and < 5 km; 5–16 km) separately for each age and sex group using input data provided by TfNSW with lognormal distributions to capture uncertainty. Similarly, for public transport, the mean minutes of public transport walking was calculated for each of the three distance categories separately by age and sex. These estimates were used to derive the health impact of increasing PA levels by shifting car travel to walking, cycling and walking for public transport. Decreases in car occupant km travelled were used to estimate the health impact of exposure to PM2.5 and road trauma.
+
+In each case, all other transport and PA was assumed to be stable and all levels of PA within each age-sex group (20–100 years) were assumed to benefit equally [43]. The health effects were estimated via exposures to PA, road trauma and air pollution (ambient and traffic participants). We assumed an average speed of 4.48 km/hour for walking, the lower end of the range in the compendium of PA [41], to relate time and distance, and 16 km/hour for cycling. Based on a systematic review of the literature [47] and extended work in Sect. 3.1 of the ESM, 87.58% of active travel-related PA was considered to be net additional PA, the remainder being compensated by reductions in activity in other domains. All health conditions discussed above as well as all-cause mortality (based on studies in which PA is measured objectively with accelerometry [43]) were included in the main analysis, except osteoarthritis and low back pain for which the evidence of a causal association was weaker. Increases in PA were assumed to gradually translate to reduced mortality in the 5 following years.
+
+Instead of moving a proportion of the population from one PA category to the next higher, the Model keeps everyone in the same group but lowers the risk of disease for that whole group, based on the shift in the average PA level in that group. In technical terms, this is the ‘relative risk shift’ method (Sect. 2 of the ESM) [39].
+
+Health-adjusted life-years were valued in accordance with current Office of Impact Analysis recommendations [79]. Costs and health were discounted at 5% per annum.
+
+The Model was developed in MS Excel. Additional software EpigearXL and Ersatz add-in tools provided additional Excel functions. Both add-ins are available free of charge via https://www.epigear.com/index.htm. Quality checking was conducted for all stages of the model development. All input data were reviewed by three authors. Each modeller logged in model development actions they implemented, and these were reviewed internally by the team and checked by the senior author. Multiple model tests were conducted by three authors. The Model was developed with oversight from a cross-agency advisory group and an external peer review of the project report was commissioned to review the methods applied in development of the Model. The Model adheres to Treasury NSW guidelines for a cost-benefit analysis where applicable (Table S16 of the ESM) [86, 91].
+
+Uncertainty and Sensitivity Analyses
+
+The Model has an interface (‘dashboard’) that allows the user a range of options with respect to scenarios modelled and facilitates running analyses with different settings (see Sect. 8 and Fig. S5 of the ESM). The Ersatz add-in tool was used to run the cohorts and conduct the uncertainty analysis (https://www.epigear.com/index_files/ersatz.html). The Ersatz software performs a Monte Carlo simulation with bootstrapping (2000 iterations) while incorporating probabilistic (parameter) uncertainty from model inputs (in this case, PA, PM2.5, injuries and fatalities, relative risks and travel data). For all outputs, mean values are reported with the 95% uncertainty intervals, representing the 2.5th and 97.5th percentiles capturing input data uncertainty. In sensitivity analyses, we systematically varied the main analysis settings described above (see also Sect. 8 of the ESM) and examined the impact on the results.
+
+The Model was piloted in four real-world policy applications in New South Wales, Australia. While these pilots are beyond the scope of this study, we discuss key insights from two applications in the Discussion section to illustrate how the Model can be applied in policy and practice.
+
+Results
+
+The reference case puts the economic value of the health benefits of a person-km walking at $4.41 (95% uncertainty interval $3.81–$5.05) in 2023 Australian dollars (Table 1). An additional person-km cycled on on-road facilities (e.g. mixed traffic, bicycle lanes) results in $2.42 ($2.05–$2.76) in health benefits. An additional person-km of cycling on separate off-road facilities (e.g. bicycle paths/tracks not exposed to motor vehicle air pollution and injury risk) is valued at $2.47 ($2.10–$2.81) per km. An increase in walking associated with public transport use is associated with health benefits of $4.17 ($3.54–$4.86) per person-km. Table 1 shows additional findings for the reference case. Healthcare cost savings, due to fewer cases of disease related to the risk factors in the model, are offset by the cost of other healthcare in added years of life. Table 1 Main findings of the reference case of 10,000 travellers switching five trips per week from car to active transport for 1 year
+
+Reference case scenarios/output variables	Walking	Cycling (on-road)	Cycling (off-road/not exposed to motor vehicle air pollution and injury risk)a	Walking associated with public transport useb	
+Variable	Mean (95% uncertainty interval)	
+AU$ per person-km (2023 AU$ value)	4.41 (3.81–5.05)	2.42 (2.05–2.76)	2.47 (2.10–2.81)	4.17 (3.54–4.86)	
+Extra kms walked/cycled per year	3,197,610 (3,173,818–3,223,030)	11,346,587 (11,284,289–11,410,570)	11,347,039 (11,284,062–11,412,281)	1,587,277 (1,557,778–1,617,720)	
+HALYs gained over the lifetime	67 (57–76)	133 (113–152)	135 (114–154)	31 (26–36)	
+HALYs gained in years 0–30	65 (56–74)	130 (110–149)	132 (112–151)	29 (25–34)	
+Life years added, lifetime	156 (134–179)	310 (262–356)	311 (262–356)	71 (59–84)	
+Life years added, years 0–30	140 (120–161)	285 (241–327)	285 (240–326)	60 (50–71)	
+Healthcare cost savings, lifetime (AU$)	145,043 (104,378–185,802)	488,901 (397,087–575,999)	387,778 (296,139–472,942)	10,326 (-10,923 to 32,867)	
+Healthcare cost savings, years 0–30 (AU$)	139,979 (100,166–179,868)	480,385 (389,995–565,990)	379,982 (290,014–463,664)	7027 (-13,571 to 28,733)	
+Cost of other healthcare in added years of life, lifetime (AU$)	1,397,954 (1,194,635–1,599,419)	3,336,408 (2,805,691–3,829,176)	3,340,341 (2,803,053–3,836,157)	551,999 (450,300–666,232)	
+Cost of other healthcare in added years of life, years 0–30 (AU$)	1,365,429 (1,167,182–1,562,836)	3,281,368 (2,759,029–3,765,964)	3,285,120 (2,757,305–3,774,510)	531,290 (433,095–642,512)	
+Health benefits discount rate 5%. Cost discount rate 5%. The reference case assumes 10,000 travellers switch five trips per week from car to active transport. Exposures included are physical activity, air quality (particulate matter with an aerodynamic diameter of 2.5 µm or less, ambient and traffic participants) and road trauma. The conversion of VSL to VSLY is discounted at 5% and VSLY is $235,000 (Office of Impact Analysis 2023 value)
+
+AU$ Australian dollars, km kilometre, HALYS health-adjusted life-years
+
+aFor the off-road cycling scenario (e.g. bicycle paths /tracks not exposed to motor vehicle air pollution and injury risk), road traffic injury and air pollution for traffic participants switched off, leaving physical activity and ambient air pollution effects
+
+bWalking to and from public transport stops. In this project, for the reference case, we modelled 12.45% (95% uncertainty interval 4.62–22.29) physical activity displacement. Health outcomes included in the reference case: all-cause mortality, breast cancer, colorectal cancer, type 2 diabetes mellitus, ischaemic heart disease, ischaemic stroke, tracheal, bronchus and lung cancer and chronic obstructive pulmonary disease, lower respiratory diseases, intracerebral haemorrhage, subarachnoid haemorrhage depression and anxiety
+
+Table 2 presents results across multiple sensitivity scenarios, with additional details reported in Table S17 of the ESM. The choice of the value for a healthy life-year substantially impacts the per person-km value. Using the TfNSW value of a statistical life-year yields per person-km values of $7.50 for walking, $4.15 for on road cycling, $4.24 for off road cycling and $7.02 for walking associated with public transport use. Applying the Office of Impact Analysis value of a statistical life-year, with a 7% discount rate to convert from VSL to VSLY (compared with 3% in the main analysis), produces higher per person-km values than both the reference case and TfNSW-based estimates (Table 2). Inclusion of costs of other healthcare in added years lowers the estimated per person-km value for all scenarios. A 0% discounting of both health effects and costs increases the value of an additional person-km to $7.72 for walking, $4.14 for on road cycling, $4.21 for off road cycling and $7.58 for walking associated with public transport use. A uniform 7% discount rate yields a per person-km value of $3.84 for walking, approximately 13% lower than the reference case value of $4.41, which applies a 5% discount rate Table 2 Results for a range of scenarios in the sensitivity analysis
+
+Reference case scenarios/output variables	Walking	Cycling (on road)	Cycling (off road)	Walking associated with public transport use	
+AU$ per person-km (2023 AU$ value)	Mean (95% uncertainty interval)	
+Value of a healthy life-year varied	
+Office of Impact Analysis value, conversion of VSL to VSLY (based on a private time preference disc rate of 3%), reference case	4.41 (3.81–5.05)	2.42 (2.05–2.76)	2.47 (2.10–2.81)	4.17 (3.54–4.86)	
+Using ATAP/Transport for New South Wales VSL in 2023 value	7.50 (6.47–8.59)	4.15 (3.52–4.75)	4.24 (3.59–4.82)	7.02 (5.96–8.20)	
+7% discounting conversion Office of Impact Analysis VSL to VSLY	7.96 (6.86–9.11)	4.41 (3.74–5.04)	4.50 (3.81–5.12)	7.45 (6.31–8.69)	
+Inclusion of cost of other healthcare in added years of life varied	
+Cost of other healthcare in added years of life included, reference case	4.41 (3.81–5.05)	2.42 (2.05–2.76)	2.47 (2.10–2.81)	4.17 (3.54–4.86)	
+Cost of other healthcare in added years of life not included	4.98 (4.46–5.41)	2.82 (2.57–3.04)	2.86 (2.64–3.12)	4.62 (4.09–5.17)	
+Discount rates varied	
+0% for costs, 0% for health outcomes	7.72 (7.04–8.41)	4.14 (3.77–4.45)	4.21 (3.88–4.54)	7.58 (6.62–8.27)	
+3% for costs, 3% for health outcomes	5.49 (5.05–5.96)	3.01 (2.77–3.22)	3.06 (2.82–3.30)	5.19 (4.56–5.80)	
+7% for costs, 3% for health outcomes	5.63 (5.15–6.15)	3.11 (2.87–3.33)	3.16 (2.92–3.38)	5.35 (4.69–5.91)	
+5% for costs, 5% for health outcomes (reference case)	4.41 (3.81–5.05)	2.42 (2.05–2.76)	2.47 (2.10–2.81)	4.17 (3.54–4.86)	
+7% for costs, 5% for health outcomes	4.62 (4.19 to 5.04)	2.57 (2.35 to 2.77)	2.60 (2.43–2.80)	4.29 (3.80–4.78)	
+7% for costs, 7% for health outcomes	3.84 (3.42–4.20)	2.16 (1.98–2.35)	2.21 (2.02–2.35)	3.57 (3.19–3.96)	
+10% for costs, 10% for health outcomes	3.10 (2.84–3.35)	1.74 (1.60–1.88)	1.80 (1.65–1.93)	2.88 (2.55–3.20)	
+PA displacement varied	
+Reference cases with no PA displacement	4.86 (4.28–5.42)	2.54 (2.06–2.89)	2.59 (2.17–2.93)	4.71 (4.13–5.35)	
+Risk factors (with only a single risk factor included in each scenario and all others switched off)	
+PA (12.45% PA displacement)	4.63 (4.24–5.01)	2.54 (2.06–2.89)	2.54 (2.06–2.89)	4.10 (3.45–4.64)	
+Air quality (PM2.5), ambient	0.006 (0.004–0.008)	0.000 (0.000–0.000)	0.000 (0.000–0.000)	− 0.003 (− 0.004 to − 0.002)	
+Air quality (PM2.5), traffic participants	− 0.008 (− 0.011 to − 0.005)	− 0.014 (− 0.019 to − 0.010)		− 0.007 (− 0.010 to − 0.005)	
+Road traffic injury	− 0.087 (− 0.087 to − 0.086)	− 0.037 (− 0.037 to − 0.037)		0.146 (0.140–0.151)	
+Sex	
+Male	4.92 (4.22–5.62)	2.51 (2.13–2.87)	2.56 (2.16–2.92)	4.44 (3.69–5.23)	
+Female	3.99 (3.38–4.58)	1.60 (1.34–1.86)	1.70 (1.45–1.97)	3.88 (3.29–4.48)	
+Age, years	
+20–29	0.63 (0.46–0.80)	0.28 (0.21–0.37)	0.30 (0.23–0.38)	0.91 (0.73–1.11)	
+30–39	1.18 (0.98–1.39)	0.57 (0.45–0.67)	0.60 (0.49–0.72)	1.65 (1.33–1.95)	
+40–49	2.06 (1.74–2.44)	0.95 (0.76–1.11)	1.01 (0.85–1.16)	2.73 (2.31–3.22)	
+50–59	5.28 (4.46–6.08)	2.95 (2.45–3.51)	3.10 (2.53–3.70)	6.32 (5.37–7.24)	
+60–69 years	9.72 (8.17–11.20)	5.68 (4.79–6.55)	5.85 (4.94–6.80)	11.07 (9.43–12.64)	
+70+ years	22.79 (19.62–25.92)	7.87 (6.55–9.03)	7.91 (6.82–9.16)	25.01 (20.76–29.00)	
+PA level of new active transport participants	
+Inactive	6.68 (5.65–7.60)	4.19 (3.76–4.61)	4.27 (3.86–4.67)	6.38 (5.34–7.31)	
+Low active	6.49 (5.49–7.51)	2.79 (2.30–3.20)	2.83 (2.40–3.25)	6.71 (5.40–8.00)	
+Moderately active	1.59 (0.29–3.03)	0.97 (0.29–1.68)	1.01 (0.32–1.78)	1.52 (0.50–2.81)	
+Highly active	0.09 (− 0.14 to 0.36)	0.14 (− 0.07 to 0.45)	0.18 (− 0.10 to 0.50)	0.28 (0.10–0.51)	
+Intervention	
+Smaller intervention: 3 trips/week to active transporta	4.84 (3.97–5.66)	3.38 (2.88–3.83)	3.46 (2.98–3.87)	4.35 (3.77–5.01)	
+Mode share +10 percentage pointsb	12.25 (8.81–16.35)	6.36 (5.16–7.89)	6.38 (5.27–7.81)	16.55 (12.15–22.81)	
+Intervention effect lasts lifelong	3.54 (3.06–3.98)	1.60 (1.34–1.81)	1.71 (1.61–1.82)	3.56 (3.07–4.11)	
+Diseases/health outcome	
+Ischaemic heart disease, via PAy and PM2.5	0.081	0.047	0.053	0.09	
+Ischaemic stroke, via PA and PM2.5	0.074	0.029	0.031	0.10	
+Diabetes, via PA and PM2.5	0.060	0.024	0.031	0.06	
+Colorectal cancer, via PA	0.072	0.029	0.029	0.10	
+Breast cancer, via PA	0.030	0.004	0.004	0.03	
+COPD, via PM2.5	− 0.0024	− 0.0050	0.0000	− 0.01	
+Lung cancer, via PM2.5	− 0.0008	− 0.0020	0.0000	− 0.0025	
+Depression, via PA	0.096	0.042	0.042	0.09	
+Anxiety, via PA	0.163	0.055	0.055	0.16	
+Subarachnoid haemorrhage, via PM2.5	− 0.0002	− 0.0004	0.0000	− 0.0006	
+Intracerebral haemorrhage, via PM2.5	− 0.0003	− 0.0006	0.0000	− 0.0007	
+Lower respiratory infections, via PM2.5	− 0.0003	− 0.0007	0.0000	− 0.0007	
+Osteoarthritis, via PA	0.21	0.11	0.11	0.19	
+Low back pain, via PA	0.13	0.06	0.06	0.12	
+PA-related all-cause mortality	4.05	2.28	2.28	3.54	
+Diseases as reference case, all-cause mortality off	0.49	0.19	0.25	0.78	
+AU$ Australian dollars, ATAP Australian Transport Assessment and Planning, COPD chronic obstructive pulmonary disease, km kilometre, PA physical activity, PM2.5 particulate matter with an aerodynamic diameter of 2.5 µm or less, VSL value of statistical year, VSLY value of statistical life year
+
+Unless otherwise indicated, reference case settings (see Sect. 2.6, and Sect. 8 of the ESM) were used. Single risk factor effects included for each sensitivity scenario as opposed to the reference case where all modelled risk factor effects are included. The impact of cycling on separate off-road facilities (e.g., bicycle paths /tracks not exposed to motor vehicle air pollution and injury risk) was estimated by switching off the impacts of road traffic injuries and air pollution exposure for travellers
+
+aThis ‘smaller intervention’ scenario is different to the reference case in that 10,000 persons switch 3 trips per week from car to active transport (walking, cycling or public transport). In the reference case, 10,000 persons switch 5 trips per week from car to active transport. Analyses for the sensitivity analysis with diseases/health outcome varied were run on point estimates with uncertainty switched off because of time/resource limitations
+
+bIn this scenario, the intervention ‘mode share’ setting of the Model is used, rather than ‘change in number of trips for a number of persons’ (see Sect. 6 of the ESM for details on the mode share setting of the model)
+
+Assuming no displacement of PA across life domains increases per person km values by approximately 10% (Table 2). Nearly all the benefits are from increases in PA, which is $4.63 per person km for walking, $2.54 for both on-road and off-road cycling, and $4.10 for walking associated with public transport use. Per person-km values are higher for male than female individuals, and absolute benefits increase markedly with age. For example, the value of an additional person-km walking rises from $0.63 for those in their 20s, to about $22.79 for those aged over 70 years. Benefits are also substantially higher among individuals who are currently inactive or have low activity levels compared with those who already highly active. Per person-km values for walking were $6.68 for inactive and $6.49 for low-active individuals. A small intervention, three car trips per week replaced by active transport, results in a slightly higher value per person-km, whereas an intervention whose effect lasts lifelong yields a lower value of $3.54 per person-km of walking (in the main analysis, the intervention effect is modelled as lasting only 1 year). Estimates of the per person-km values when each disease is modelled independently via respective risk factor(s) are reported (Table 2); notably, depression adds $0.10 and anxiety $0.16 per person-km of walking. The inclusion of a direct effect of PA on all-cause mortality (with the gradual effect in the 5 following years) raises the value of an additional person-km walked by about nine-fold, from $0.49 to $4.41.
+
+Discussion
+
+Main Findings
+
+We developed the Model, a best-practice method to assess and value the health benefits of active transport. In the main analysis, an additional person-km walked was valued at $4.41, an additional person-km cycled at $2.42 and person-km walked for public transport at $4.17. The impact of a shift to cycling on off-road facilities has been estimated to be $2.47 per person-km. These are marginal benefits meaning that they represent the effect of adding PA to existing average activity levels in the NSW population. Nearly all the benefits are from increases in PA, which is valued at $4.63 per km for walking and $2.54 per km for cycling (with risk factors, PM2.5 and road traffic injuries switched off). The Model allows a transparent assessment of net health outcomes highlighting potential trade-offs. For instance, the Model considers the adverse health impacts of air pollution on those engaging in active transport, as well as benefits to the wider population from less pollutants due to reduced motorised transport. The positive effects of improvements in ambient air quality are negligible and offset by almost equally small negative effects of active transport participants inhaling more pollutants. Road traffic injuries and deaths are estimated to result in losses of $0.09 per km if car trips are replaced by walking, and $0.04 per person-km for cycling. This effect occurs because on a per-km basis, walking and cycling are riskier than car transport. In contrast, replacing car trips with public transport delivers a net benefit of $0.15 per person-km, as public transport is safer than private car use, and because taking cars off the road reduces the risks faced by other traffic participants. Other societal impacts beyond health (e.g. congestion or social cohesion) are not included in this Model. Now, these would be addressed through complementary appraisal components within cost-benefit analyses.
+
+How the Estimated Economic Value Varies Across Various Factors
+
+The difference in these values depends on various factors. The lower value for cycling compared with walking is partly explained by the greater efficiency of cycling. The age of the people who walk, cycle or use public transport also has a large influence on the size of the health benefits. The absolute benefits of extra PA are much greater in old age compared with young age. This is because the prevalence of the chronic diseases is high in old age, and to a lesser extent because discounting favours immediate gains over those decades into the future. In NSW, cyclists tend to be relatively young, and this reduces the value of a km cycled compared with the other modes, which are used more by older travellers. Removing the effect of age leaves a walking-to-cycling ratio of 1.54, which agrees with current TfNSW assumptions regarding the relative intensity of effort per km of cycling compared with walking. (In other words, if new cyclists had the same age distribution as current walkers, the value of a km cycling would be about 1.5 times higher than estimated above.) The intervention size and the duration of intervention effect impact the per person-km value. The size and durability of the intervention effect size is a step outside this modelling and can be determined from travel demand modelling, policy targets or other evaluations. These are usually infrastructural measures, so impacts are assumed durable. However, the Model can accommodate a waning of effect or an increase over time. Uptake of active travel often occurs incrementally over several years, through partial or mixed mode changes [92], which our modelling framework is designed to accommodate through flexible assumptions about the timing and durability of effect. The values are sensitive to several of the parameter settings, as the sensitivity analysis results show. Of note are the much larger benefits for those who are currently inactive or have low levels of activity compared with those who already highly active.
+
+Comparison of the Per Kilometre (Km) Values with Previous Work
+
+The updated TfNSW Guidelines recommend valuing health benefits at $2.20 per person-km for cycling and $4.39 per person-km for walking, and accident (crash) costs at $0.24 per person-km for cycling and $0.12 per person-km for walking (these are Australian Transport Assessment and Planning values, 2024 prices) [93]. Previous TfNSW studies valued cycling/person-km at $1.46 and walking/person-km at $2.19 [93].
+
+For the NSW context, the health benefits of active transport (walking and cycling) due to increased PA as well as the potential disbenefits due to road transport injuries and air pollution are specified as separate $ per person-km values in the TfNSW guidance documents for use in a cost-benefit analysis [93]. The Model considers the joint health effects associated with the exposures of PA, air pollution and road transport as a default, but values for each individual exposure can also be calculated separately.
+
+A previous Australian study explored incorporation of monetised PA-related health benefits in a cost-benefit analysis of built environment interventions [16]. The findings showed that the value of PA-related health benefits associated with walking was A$0.98 (95% UI 0.73–1.24) per km and A$0.62 (95% UI 0.46–0.79) per km for cycling.
+
+The higher values in our current study are mainly owing to the inclusion of a direct link with mortality, especially if the PA–mortality relationship is based on studies in which PA is measured with accelerometry. The evidence that PA can prevent musculoskeletal conditions was judged not strong enough for inclusion in the main analysis, but if further evidence confirms a causal relationship, reductions in low back pain and osteoarthritis through active transport will add to the value.
+
+Strengths and Limitations
+
+The Model captures the value of health benefits arising from the impact on both mortality and morbidity. It has an interface (‘dashboard’) that allows the user a range of options with respect to scenarios modelled and the inclusion or exclusion of risk factors and health conditions. This provides an increased degree of choice for the analysts, but it may increase model complexity. As a strength, the Model considers the most up-to-date evidence on health outcomes associated with PA and PM2.5, including the systematic review studies that we conducted to inform the inclusion of depression and anxiety and all-cause mortality. These relied on evidence from previous studies (systematic reviews of primary cohort studies) that provided pooled estimates. Inclusion of only primary studies with a follow-up period of >1 year helped reduce the possibility of reverse causality. Our review of the literature was rigorous. However, the findings may be subject to publication bias.
+
+A limitation is that by only including health outcomes with a quantifiable evidence base, the Model does not capture less easily quantifiable impacts of increased use of active transport, for example impact on social connection and cohesion, which have been reported as co‑benefits of active travel interventions [94]. Hence, overall benefits may be underestimated. In addition, our model does not include impacts on improved treatment, rehabilitation and survival outcomes among people with existing disease. For example, higher PA is linked to improved prognosis and reduced mortality from breast and colorectal cancers [95, 96], while reduced air pollution improves outcomes for individuals with cardiopulmonary disease [97]. Excluding these direct effects likely leads to an underestimation of the total health benefits of increased active transport.
+
+Another limitation is that the Model focused on the health benefits of active transport, which are typically one component among many in the assessment of major infrastructure measures. In addition, we assume that the input data on travel changes captures the net changes in overall mobility (trips) and any spillover effects would be in the domain of travel demand modelling. In modelling the defined scenarios for walking, cycling and public transport, it was assumed that no changes occur to the number of trips, destinations, home location and distances travelled. However, in practice, people are willing to take a longer route to use higher comfort off-road facilities and as such the travel distance would be expected to increase too [98].
+
+Implications for Policy and Areas for Further Research
+
+The Model can be applied at two levels. First, the per-km values can be used in cost-benefit analyses for business cases for infrastructure policies or projects. In cost-benefit analyses, the model results should be applied as cumulative benefits based on the behavioural change timeframes of the relevant intervention. For example, for a project that replaces car trips with walking trips for 2 years, the cost-benefit analysis will calculate the total number of additional km walked over year 1 multiplied by the per person-km value ($4.41 in the reference case), plus the multiplication of the total number of additional person-km walked over year 2 with $4.41, to which the discount rate for health benefit should be applied for the respective years. Additional steps to account for non-health costs and benefits are required for a full cost-benefit analysis. Second, the Model can be used to run analyses with the parameters set by the analyst to align with the characteristics of the project. The broader methodology can be used in health impact assessments in the health sector and in other intersectoral policy areas where interventions outside the health sector have health consequences.
+
+To demonstrate application of the Model to policy-relevant scenarios, the Model was applied in two real-world pilot case studies in New South Wales, Australia. The first examined the Wagga Wagga Active Travel Project, which delivered 45 km of connected cycling infrastructure linking residential areas with the central business district and key destinations. Health benefits were estimated from projected 1- and 21-year increases in cycling based on evidence from the UK, Australia and New Zealand [99]. Both benefits from increased PA and costs associated with cycling-related injuries were included, capturing differential impacts across population subgroups, with larger gains among previously inactive and older individuals. The second pilot applied the Model to the Coffs Harbour Draft Movement and Place Strategy, assessing the health costs and benefits of increasing walking, cycling and public transport mode share in line with TfNSW targets over a 30-year period. This case study demonstrates how the model can evaluate integrated transport strategies and assess health outcomes under alternative policy design scenarios.
+
+The Model presents a best-practice method to cost the health benefits of active transport. The values estimated help to strengthen the health and economic case of investment in strategies aimed at reducing motorised transport. This is particularly important in settings such as Australia where the latest census data show that over half (53.1%) of Australia’s working population drives to work [100]. Just 3.2% of workers used an active mode of transport, including cycling and walking, for their commute [100]. Increased uptake of active transport would improve air quality and increases PA levels. However, safety plays a key role in convincing more travellers to switch to active transport modes [101] and further investment in active transport infrastructure is crucial.
+
+In future research, subject to data availability, other forms of micromobility and e-mobility should be considered for inclusion in the Model. The Model can be refined to produce disaggregated findings across different population groups and places. This will support a more health equity focussed approach to understanding the health impacts of active transport. This is of particular importance because interventions designed to improve population health can sometimes have unanticipated negative impacts on health equity. This could for example happen if interventions benefit those who are already experiencing better health to a greater extent or neglect marginalised groups or even worsen the environment of disadvantaged communities through traffic displacement.
+
+Conclusions
+
+The Model was developed to assess and value the health benefits of active transport. Our analysis suggests that the value of the health benefits of active transport is higher than previously estimated. The results vary systematically and substantially with age and activity level, with great benefits for older individuals and the inactive and much lower gains for the young, and almost none for the segment of the population that already achieves high levels of PA. The choice of the value for a healthy life-year and discount rates for health effects and costs also has a large impact. Our findings show that investments in infrastructure that support active transport can significantly improve population health.
+
+Supplementary Information
+
+Below is the link to the electronic supplementary material.Supplementary file1 (DOCX 685 KB)
+
+Supplementary file2 (DOCX 36 KB)
+
+Acknowledgements
+
+We acknowledge the input provided by the appointed cross-agency advisory group consisting of representatives from six NSW government clusters: Health; Education; Treasury; Transport; Planning and Environment; and Premier and Cabinet. This project involved in-depth stakeholder engagement and consultation. Dr. Belen Zapata-Diomedi (RMIT) contributed to earlier stages of this project.
+
+Funding
+
+Open Access funding enabled and organized by CAUL and its Member Institutions. This study was funded by the New South Wales (NSW) Ministry of Health. The NSW Ministry of Health initiated this project to identify a best-practice method to cost the health benefits of active transport.
+
+Declarations
+
+Conflict of Interest
+
+Mary Njeri Wanjau, Holger Möller, Christopher Standen, Fiona Haigh and J. Lennert Veerman have no conflicts of interest that are directly relevant to the content of this article.
+
+Ethics Approval
+
+No ethics approval was required for this analysis.
+
+Consent to Participate
+
+Not applicable.
+
+Consent for Publication
+
+Not applicable.
+
+Availability of Data and Material
+
+Baseline travel patterns and transport injury data are available on request and upon approval by Transport for New South Wales (TfNSW). All other data used are available in the article and supplementary material.
+
+Code Availability
+
+The model was developed in MS Excel. Additional software EpigearXL and Ersatz add-in tools provided additional Excel functions. Both add-ins are available free of charge via https://www.epigear.com/index.htm. There are plans to translate the Model into R, but this will depend on the availability of resources, including funding.
+
+Authors’ Contributions
+
+MNW: methodology, formal analysis, investigation, data curation, validation, writing (original draft preparation), writing (reviewing and editing), visualization, project administration. HM: conceptualization, methodology, formal analysis, investigation, data curation, validation, writing (reviewing and editing), visualization, funding acquisition. CS: investigation, writing (reviewing and editing). FH: conceptualization, investigation, writing (reviewing and editing), funding acquisition. LV: conceptualization, methodology, formal analysis, investigation, resources, data curation, validation, writing (reviewing and editing), visualization, project administration, supervision, funding acquisition.
+
+
+References
+
+1. Booth FW Roberts CK Laye MJ Lack of exercise is a major cause of chronic diseases Compr Physiol 2012 2 2 1143 1211 10.1002/j.2040-4603.2012.tb00425.x 23798298 PMC4241367
+Booth FW, Roberts CK, Laye MJ. Lack of exercise is a major cause of chronic diseases. Compr Physiol. 2012;2(2):1143–211.23798298 10.1002/cphy.c110025 PMC4241367
+2. Lee IM Effect of physical inactivity on major non-communicable diseases worldwide: an analysis of burden of disease and life expectancy Lancet 2012 380 9838 219 229 10.1016/S0140-6736(12)61031-9 22818936 PMC3645500
+Lee IM, et al. Effect of physical inactivity on major non-communicable diseases worldwide: an analysis of burden of disease and life expectancy. Lancet. 2012;380(9838):219–29.22818936 10.1016/S0140-6736(12)61031-9 PMC3645500
+3. GBD 2021 Risk Factors Collaborators Global burden and strength of evidence for 88 risk factors in 204 countries and 811 subnational locations, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021 Lancet 2024 403 10440 2162 2203 10.1016/S0140-6736(24)00933-4 38762324 PMC11120204
+GBD 2021 Risk Factors Collaborators. Global burden and strength of evidence for 88 risk factors in 204 countries and 811 subnational locations, 1990-2021: a systematic analysis for the Global Burden of Disease Study 2021. Lancet. 2024;403(10440):2162–203.38762324 10.1016/S0140-6736(24)00933-4 PMC11120204
+4. Australian Institute of Health and Welfare. Australian Burden of Disease Study 2024. 2024. https://www.aihw.gov.au/reports/burden-of-disease/australian-burden-of-disease-study-2024/contents/interactive-data-on-risk-factor-burden/leading-risk-factors. Accessed Dec 2024.
+5. Australian Institute of Health and Welfare. Australian Burden of Disease Study 2018: interactive data on risk factor burden. 2021. https://www.aihw.gov.au/reports/burden-of-disease/abds-2018-interactive-data-risk-factors/contents/physical-inactivity. Accessed Jul 2021.
+6. Giles-Corti B City planning and population health: a global challenge Lancet 2016 388 10062 2912 2924 10.1016/S0140-6736(16)30066-6 27671668
+Giles-Corti B, et al. City planning and population health: a global challenge. Lancet. 2016;388(10062):2912–24.27671668 10.1016/S0140-6736(16)30066-6
+7. Australian Government. Walking, riding and access to public transport: supporting active travel in Australian communities ministerial statement. Department of Infrastructure and Transport, editor. 2013. https://www.infrastructureaustralia.gov.au. Accessed 26 May 2026.
+8. Zapata-Diomedi B A shift from motorised travel to active transport: what are the potential health gains for an Australian city? PLoS ONE 2017 12 10 e0184799 10.1371/journal.pone.0184799 29020093 PMC5636090
+Zapata-Diomedi B, et al. A shift from motorised travel to active transport: what are the potential health gains for an Australian city? PLoS ONE. 2017;12(10):e0184799.29020093 10.1371/journal.pone.0184799 PMC5636090
+9. Woodcock J Givoni M Morgan AS Health impact modelling of active travel visions for England and Wales using an Integrated Transport and Health Impact Modelling Tool (ITHIM) PLoS ONE 2013 8 1 e51462 10.1371/journal.pone.0051462 23326315 PMC3541403
+Woodcock J, Givoni M, Morgan AS. Health impact modelling of active travel visions for England and Wales using an Integrated Transport and Health Impact Modelling Tool (ITHIM). PLoS ONE. 2013;8(1):e51462.23326315 10.1371/journal.pone.0051462 PMC3541403
+10. Cavill N The Health Economic Assessment Tool (HEAT) for walking and cycling: from evidence to advocacy on active transport J Sci Med Sport 2012 15 S69 10.1016/j.jsams.2012.11.166
+Cavill N, et al. The Health Economic Assessment Tool (HEAT) for walking and cycling: from evidence to advocacy on active transport. J Sci Med Sport. 2012;15:S69.
+11. Creatore MI Association of neighborhood walkability with change in overweight, obesity, and diabetes JAMA 2016 315 20 2211 2220 10.1001/jama.2016.5898 27218630
+Creatore MI, et al. Association of neighborhood walkability with change in overweight, obesity, and diabetes. JAMA. 2016;315(20):2211–20.27218630 10.1001/jama.2016.5898
+12. Frank LD Andresen MA Schmid TL Obesity relationships with community design, physical activity, and time spent in cars Am J Prev Med 2004 27 2 87 96 10.1016/j.amepre.2004.04.011 15261894
+Frank LD, Andresen MA, Schmid TL. Obesity relationships with community design, physical activity, and time spent in cars. Am J Prev Med. 2004;27(2):87–96.15261894 10.1016/j.amepre.2004.04.011
+13. King AC Aging in neighborhoods differing in walkability and income: Associations with physical activity and obesity in older adults Soc Sci Med 2011 73 10 1525 1533 10.1016/j.socscimed.2011.08.032 21975025 PMC3637547
+King AC, et al. Aging in neighborhoods differing in walkability and income: Associations with physical activity and obesity in older adults. Soc Sci Med. 2011;73(10):1525–33.21975025 10.1016/j.socscimed.2011.08.032 PMC3637547
+14. Brown V A systematic review of economic analyses of active transport interventions that include physical activity benefits Transp Policy 2016 45 190 208 10.1016/j.tranpol.2015.10.003
+Brown V, et al. A systematic review of economic analyses of active transport interventions that include physical activity benefits. Transp Policy. 2016;45:190–208.
+15. NSW Government. Transport for NSW cost benefit analysis guide. Transport for NSW, editor. 2023. https://www.transport.nsw.gov.au/projects/project-delivery-requirements/project-cost-benefit-analysis/transport-for-nsw-cost-benefit. Accessed on 10 July 2026.
+16. Zapata-Diomedi B A method for the inclusion of physical activity-related health benefits in cost-benefit analysis of built environment initiatives Prev Med 2018 106 224 230 10.1016/j.ypmed.2017.11.009 29126917
+Zapata-Diomedi B, et al. A method for the inclusion of physical activity-related health benefits in cost-benefit analysis of built environment initiatives. Prev Med. 2018;106:224–30.29126917 10.1016/j.ypmed.2017.11.009
+17. Humphreys BR McLeod L Ruseski JE Physical activity and health outcomes: evidence from Canada Health Econ 2014 23 1 33 54 10.1002/hec.2900 23364850
+Humphreys BR, McLeod L, Ruseski JE. Physical activity and health outcomes: evidence from Canada. Health Econ. 2014;23(1):33–54.23364850 10.1002/hec.2900
+18. Möller H What is the best practice method for auantifying the health and economic benefits of active transport? Int J Environ Res Public Health 2020 17 17 6186 10.3390/ijerph17176186 32858934 PMC7503465
+Möller H, et al. What is the best practice method for auantifying the health and economic benefits of active transport? Int J Environ Res Public Health. 2020;17(17):6186.32858934 10.3390/ijerph17176186 PMC7503465
+19. Cobiac LJ Vos T Barendregt JJ Cost-effectiveness of interventions to promote physical activity: a modelling study PLoS Med 2009 6 7 e1000110 10.1371/journal.pmed.1000110 19597537 PMC2700960
+Cobiac LJ, Vos T, Barendregt JJ. Cost-effectiveness of interventions to promote physical activity: a modelling study. PLoS Med. 2009;6(7):e1000110.19597537 10.1371/journal.pmed.1000110 PMC2700960
+20. Brown V Obesity-related health impacts of active transport policies in Australia: a policy review and health impact modelling study Aust N Z J Public Health 2017 41 6 611 616 10.1111/1753-6405.12726 29044847
+Brown V, et al. Obesity-related health impacts of active transport policies in Australia: a policy review and health impact modelling study. Aust N Z J Public Health. 2017;41(6):611–6.29044847 10.1111/1753-6405.12726
+21. Sælensminde K Cost-benefit analyses of walking and cycling track networks taking into account insecurity, health effects and external costs of motorized traffic Transp Res A Policy Pract 2004 38 8 593 606 10.1016/j.tra.2004.04.003
+Sælensminde K. Cost-benefit analyses of walking and cycling track networks taking into account insecurity, health effects and external costs of motorized traffic. Transp Res A Policy Pract. 2004;38(8):593–606.
+22. Gu J Mohit B Muennig PA The cost-effectiveness of bike lanes in New York City Inj Prev 2017 23 4 239 10.1136/injuryprev-2016-042057 27613434
+Gu J, Mohit B, Muennig PA. The cost-effectiveness of bike lanes in New York City. Inj Prev. 2017;23(4):239.27613434 10.1136/injuryprev-2016-042057
+23. Taddei C Cycling promotion and non-communicable disease prevention: health impact assessment and economic evaluation of cycling to work or school in Florence PLoS ONE 2015 10 4 e0125491 10.1371/journal.pone.0125491 25928421 PMC4415918
+Taddei C, et al. Cycling promotion and non-communicable disease prevention: health impact assessment and economic evaluation of cycling to work or school in Florence. PLoS ONE. 2015;10(4):e0125491.25928421 10.1371/journal.pone.0125491 PMC4415918
+24. Zheng H Ehrlich F Amin J Economic evaluation of the direct healthcare cost savings resulting from the use of walking interventions to prevent coronary heart disease in Australia Int J Health Care Finance Econ 2010 10 2 187 201 10.1007/s10754-009-9074-2 19882347
+Zheng H, Ehrlich F, Amin J. Economic evaluation of the direct healthcare cost savings resulting from the use of walking interventions to prevent coronary heart disease in Australia. Int J Health Care Finance Econ. 2010;10(2):187–201.19882347 10.1007/s10754-009-9074-2
+25. Stokes RJ MacDonald J Ridgeway G Estimating the effects of light rail transit on health care costs Health Place 2008 14 1 45 58 10.1016/j.healthplace.2007.04.002 17543570
+Stokes RJ, MacDonald J, Ridgeway G. Estimating the effects of light rail transit on health care costs. Health Place. 2008;14(1):45–58.17543570 10.1016/j.healthplace.2007.04.002
+26. Holm AL Glümer C Diderichsen F Health impact assessment of increased cycling to place of work or education in Copenhagen BMJ Open 2012 2 4 e001135 10.1136/bmjopen-2012-001135 22833650 PMC4400672
+Holm AL, Glümer C, Diderichsen F. Health impact assessment of increased cycling to place of work or education in Copenhagen. BMJ Open. 2012;2(4):e001135.22833650 10.1136/bmjopen-2012-001135 PMC4400672
+27. Rojas-Rueda D Health impact assessment of increasing public transport and cycling use in Barcelona: a morbidity and burden of disease approach Prev Med 2013 57 5 573 579 10.1016/j.ypmed.2013.07.021 23938465
+Rojas-Rueda D, et al. Health impact assessment of increasing public transport and cycling use in Barcelona: a morbidity and burden of disease approach. Prev Med. 2013;57(5):573–9.23938465 10.1016/j.ypmed.2013.07.021
+28. Buekers J Health impact model for modal shift from car use to cycling or walking in Flanders: application to two bicycle highways J Transp Health 2015 2 4 549 562 10.1016/j.jth.2015.08.003
+Buekers J, et al. Health impact model for modal shift from car use to cycling or walking in Flanders: application to two bicycle highways. J Transp Health. 2015;2(4):549–62.
+29. Doorley R Pakrashi V Ghosh B Health impacts of cycling in Dublin on individual cyclists and on the local population J Transp Health 2017 6 420 432 10.1016/j.jth.2017.03.014
+Doorley R, Pakrashi V, Ghosh B. Health impacts of cycling in Dublin on individual cyclists and on the local population. J Transp Health. 2017;6:420–32.
+30. Mueller N Health impacts related to urban and transport planning: a burden of disease assessment Environ Int 2017 107 243 257 10.1016/j.envint.2017.07.020 28778040
+Mueller N, et al. Health impacts related to urban and transport planning: a burden of disease assessment. Environ Int. 2017;107:243–57.28778040 10.1016/j.envint.2017.07.020
+31. Johansson C Impacts on air pollution and health by changing commuting from car to bicycle Sci Total Environ 2017 584-585 55 63 10.1016/j.scitotenv.2017.01.145 28135613
+Johansson C, et al. Impacts on air pollution and health by changing commuting from car to bicycle. Sci Total Environ. 2017;584–585:55–63.28135613 10.1016/j.scitotenv.2017.01.145
+32. Brey R Is the widespread use of urban land for cycling promotion policies cost effective? A cost-benefit analysis of the case of Seville Land Use Policy 2017 63 130 139 10.1016/j.landusepol.2017.01.007
+Brey R, et al. Is the widespread use of urban land for cycling promotion policies cost effective? A cost-benefit analysis of the case of Seville. Land Use Policy. 2017;63:130–9.
+33. Macmillan A The societal costs and benefits of commuter bicycling: simulating the effects of specific policies using system dynamics modeling Environ Health Perspect 2014 122 4 335 344 10.1289/ehp.1307250 24496244 PMC3984216
+Macmillan A, et al. The societal costs and benefits of commuter bicycling: simulating the effects of specific policies using system dynamics modeling. Environ Health Perspect. 2014;122(4):335–44.24496244 10.1289/ehp.1307250 PMC3984216
+34. Genter JA., Donovan S, Petrenas B, and Badland H. Valuing the health benefits of active transport modes. NZ Transport Agencyre search report 2008;359. 72 pp. https://www.nzta.govt.nz/assets/resources/research/reports/359/docs/359.pdf. Accessed Mar 2020.
+35. Husereau D Consolidated Health Economic Evaluation Reporting Standards 2022 (CHEERS 2022) statement: updated reporting guidance for health economic evaluations BMC Med 2022 20 1 23 10.1186/s12916-021-02204-0 35022047 PMC8753858
+Husereau D, et al. Consolidated Health Economic Evaluation Reporting Standards 2022 (CHEERS 2022) statement: updated reporting guidance for health economic evaluations. BMC Med. 2022;20(1):23.35022047 10.1186/s12916-021-02204-0 PMC8753858
+36. Barendregt JJ A generic model for the assessment of disease epidemiology: the computational basis of DisMod II Popul Health Metr 2003 1 1 4 10.1186/1478-7954-1-4 12773212 PMC156029
+Barendregt JJ, et al. A generic model for the assessment of disease epidemiology: the computational basis of DisMod II. Popul Health Metr. 2003;1(1):4.12773212 10.1186/1478-7954-1-4 PMC156029
+37. Barendregt JJ Coping with multiple morbidity in a life table Math Popul Stud 1998 7 1 29 49, 109 10.1080/08898489809525445 12321476
+Barendregt JJ, et al. Coping with multiple morbidity in a life table. Math Popul Stud. 1998;7(1):29–49, 109.12321476 10.1080/08898489809525445
+38. Vos T Barendregt J Mihalopoulos C Veerman L Magnus A Cobiac L Assessing cost-effectiveness in prevention (ACE-Prevention): final report 2010 Melbourne University of Queensland, Brisbane and Deakin University
+Vos T, Barendregt J, Mihalopoulos C, Veerman L, Magnus A, Cobiac L, et al. Assessing cost-effectiveness in prevention (ACE-Prevention): final report. Melbourne: University of Queensland, Brisbane and Deakin University; 2010.
+39. Barendregt JJ Veerman JL Categorical versus continuous risk factors and the calculation of potential impact fractions J Epidemiol Community Health 2010 64 3 209 10.1136/jech.2009.090274 19692711
+Barendregt JJ, Veerman JL. Categorical versus continuous risk factors and the calculation of potential impact fractions. J Epidemiol Community Health. 2010;64(3):209.19692711 10.1136/jech.2009.090274
+40. Australian Bureau of Statistics. Microdata: National Health Survey, 2017–18. 2019. https://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/4324.0.55.001Explanatory%20Notes102017-18?OpenDocument. Accessed Apr 2020.
+41. Ainsworth BE Compendium of physical activities: an update of activity codes and MET intensities Med Sci Sports Exerc 2000 32 9 Suppl. S498 504 10.1097/00005768-200009001-00009 10993420
+Ainsworth BE, et al. Compendium of physical activities: an update of activity codes and MET intensities. Med Sci Sports Exerc. 2000;32(9 Suppl.):S498-504.10993420 10.1097/00005768-200009001-00009
+42. Gartner CE Barendregt JJ Hall WD Predicting the future prevalence of cigarette smoking in Australia: how low can we go and by when? Tob Control 2009 18 3 183 10.1136/tc.2008.027615 19179370
+Gartner CE, Barendregt JJ, Hall WD. Predicting the future prevalence of cigarette smoking in Australia: how low can we go and by when? Tob Control. 2009;18(3):183.19179370 10.1136/tc.2008.027615
+43. Ekelund U Dose-response associations between accelerometry measured physical activity and sedentary time and all cause mortality: systematic review and harmonised meta-analysis BMJ 2019 366 l4570 10.1136/bmj.l4570 31434697 PMC6699591
+Ekelund U, et al. Dose-response associations between accelerometry measured physical activity and sedentary time and all cause mortality: systematic review and harmonised meta-analysis. BMJ. 2019;366:l4570.31434697 10.1136/bmj.l4570 PMC6699591
+44. Zheng Z Survival advantage of cohort participation attenuates over time: results from three long-standing community-based studies Ann Epidemiol 2020 45 40 6.e4 10.1016/j.annepidem.2020.03.010 32371044 PMC7294871
+Zheng Z, et al. Survival advantage of cohort participation attenuates over time: results from three long-standing community-based studies. Ann Epidemiol. 2020;45:40-6.e4.32371044 10.1016/j.annepidem.2020.03.010 PMC7294871
+45. Bopp M Braun J Faeh D Variation in mortality patterns among the general population, study participants, and different types of nonparticipants: evidence from 25 years of follow-up Am J Epidemiol 2014 180 10 1028 1035 10.1093/aje/kwu226 25344298
+Bopp M, Braun J, Faeh D. Variation in mortality patterns among the general population, study participants, and different types of nonparticipants: evidence from 25 years of follow-up. Am J Epidemiol. 2014;180(10):1028–35.25344298 10.1093/aje/kwu226
+46. NSW Government. Transport for NSW. Household Travel Survey (HTS) 2019/2020. 2020. https://www.transport.nsw.gov.au/data-and-research/data-and-insights/surveys/household-travel-survey-hts. Accessed 26 May 2026.
+47. Wanjau MN Does active transport displace other physical activity? A systematic review of the evidence J Transp Health 2023 31 101631 10.1016/j.jth.2023.101631
+Wanjau MN, et al. Does active transport displace other physical activity? A systematic review of the evidence. J Transp Health. 2023;31:101631.
+48. NSW Planning Industry and Environment. Air quality data. 2018. https://www.dpie.nsw.gov.au/air-quality/search-for-and-download-air-quality-data. Accessed Apr 2020.
+49. Johnston FH Estimated global mortality attributable to smoke from landscape fires Environ Health Perspect 2012 120 5 695 701 10.1289/ehp.1104422 22456494 PMC3346787
+Johnston FH, et al. Estimated global mortality attributable to smoke from landscape fires. Environ Health Perspect. 2012;120(5):695–701.22456494 10.1289/ehp.1104422 PMC3346787
+50. Chang TCL Major source contributions to ambient PM2.5 and exposures within the New South Wales Greater Metropolitan Region Atmosphere 2019 10 3 138 10.3390/atmos10030138
+Chang LT.-C, Scorgie Y, Duc HN, Monk K, Fuchs D, Trieu T. Major Source Contributions to Ambient PM2.5 and Exposures within the New South Wales Greater Metropolitan Region. Atmosphere, 2019;10(3), 138. 10.3390/atmos10030138
+51. World Health Organization WHO expert meeting: methods and tools for assessing the health risks of air pollution at local, national and international level 2014 Copenhagen WHO Regional Office for Europe
+World Health Organization. WHO expert meeting: methods and tools for assessing the health risks of air pollution at local, national and international level. Copenhagen: WHO Regional Office for Europe; 2014.
+52. Rojas-Rueda D Replacing car trips by increasing bike and public transport in the greater Barcelona metropolitan area: a health impact assessment study Environ Int 2012 49 100 109 10.1016/j.envint.2012.08.009 23000780
+Rojas-Rueda D, et al. Replacing car trips by increasing bike and public transport in the greater Barcelona metropolitan area: a health impact assessment study. Environ Int. 2012;49:100–9.23000780 10.1016/j.envint.2012.08.009
+53. Tainio M Can air pollution negate the health benefits of cycling and walking? Prev Med 2016 87 233 236 10.1016/j.ypmed.2016.02.002 27156248 PMC4893018
+Tainio M, et al. Can air pollution negate the health benefits of cycling and walking? Prev Med. 2016;87:233–6.27156248 10.1016/j.ypmed.2016.02.002 PMC4893018
+54. Transport for New South Wales. Centre for Road Safety Crashlink database 2020. https://roadsafety.transport.nsw.gov.au/statistics/index.html. Accessed Mar 2020.
+55. Maizlish N Health cobenefits and transportation-related reductions in greenhouse gas emissions in the San Francisco Bay area Am J Public Health 2013 103 4 703 709 10.2105/AJPH.2012.300939 23409903 PMC3673232
+Maizlish N, et al. Health cobenefits and transportation-related reductions in greenhouse gas emissions in the San Francisco Bay area. Am J Public Health. 2013;103(4):703–9.23409903 10.2105/AJPH.2012.300939 PMC3673232
+56. Australian Bureau of Statistics. Survey of motor vehicle use, Australia, 12 months ended 30 June 2018. 2019. https://www.abs.gov.au/ausstats/abs@.nsf/mf/9208.0. Accessed Apr 2020.
+57. Transport Performance and Analytics. Active transport: cycling. 2019. https://opendata.transport.nsw.gov.au/dataset/active-transport-cycling. Accessed May 2020.
+58. Elvik R Goel R Safety-in-numbers: an updated meta-analysis of estimates Accid Anal Prev 2019 129 136 147 10.1016/j.aap.2019.05.019 31150920
+Elvik R, Goel R. Safety-in-numbers: an updated meta-analysis of estimates. Accid Anal Prev. 2019;129:136–47.31150920 10.1016/j.aap.2019.05.019
+59. GBD 2017 Disease and Injury Incidence and Prevalence Collaborators Global, regional, and national incidence, prevalence, and years lived with disability for 354 diseases and injuries for 195 countries and territories, 1990-2017: a systematic analysis for the Global Burden of Disease Study 2017 Lancet 2018 392 10159 1789 1858 10.1016/S0140-6736(18)32279-7 30496104 PMC6227754
+GBD 2017 Disease and Injury Incidence and Prevalence Collaborators. Global, regional, and national incidence, prevalence, and years lived with disability for 354 diseases and injuries for 195 countries and territories, 1990-2017: a systematic analysis for the Global Burden of Disease Study 2017. Lancet. 2018;392(10159):1789–858.30496104 10.1016/S0140-6736(18)32279-7 PMC6227754
+60. GBD 2021 Diseases and Injuries Collaborators Global incidence, prevalence, years lived with disability (YLDs), disability-adjusted life-years (DALYs), and healthy life expectancy (HALE) for 371 diseases and injuries in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021 Lancet 2024 403 10440 2133 2161 10.1016/S0140-6736(24)00757-8 38642570 PMC11122111
+GBD 2021 Diseases and Injuries Collaborators. Global incidence, prevalence, years lived with disability (YLDs), disability-adjusted life-years (DALYs), and healthy life expectancy (HALE) for 371 diseases and injuries in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021. Lancet. 2024;403(10440):2133–61.38642570 10.1016/S0140-6736(24)00757-8 PMC11122111
+61. Global Burden of Disease Study 2013 Collaborators Global, regional, and national incidence, prevalence, and years lived with disability for 301 acute and chronic diseases and injuries in 188 countries, 1990–2013: a systematic analysis for the Global Burden of Disease Study 2013 Lancet 2015 386 9995 743 800 10.1016/S0140-6736(15)60692-4 26063472 PMC4561509
+Global Burden of Disease Study 2013 Collaborators. Global, regional, and national incidence, prevalence, and years lived with disability for 301 acute and chronic diseases and injuries in 188 countries, 1990–2013: a systematic analysis for the Global Burden of Disease Study 2013. Lancet. 2015;386(9995):743–800.26063472 10.1016/S0140-6736(15)60692-4 PMC4561509
+62. Danaei G The preventable causes of death in the United States: comparative risk assessment of dietary, lifestyle, and metabolic risk factors PLoS Med 2009 6 4 e1000058 10.1371/journal.pmed.1000058 19399161 PMC2667673
+Danaei G, et al. The preventable causes of death in the United States: comparative risk assessment of dietary, lifestyle, and metabolic risk factors. PLoS Med. 2009;6(4):e1000058.19399161 10.1371/journal.pmed.1000058 PMC2667673
+63. Kyu HH Physical activity and risk of breast cancer, colon cancer, diabetes, ischemic heart disease, and ischemic stroke events: systematic review and dose-response meta-analysis for the Global Burden of Disease Study 2013 BMJ 2016 354 i3857 10.1136/bmj.i3857 27510511 PMC4979358
+Kyu HH, et al. Physical activity and risk of breast cancer, colon cancer, diabetes, ischemic heart disease, and ischemic stroke events: systematic review and dose-response meta-analysis for the Global Burden of Disease Study 2013. BMJ. 2016;354:i3857.27510511 10.1136/bmj.i3857 PMC4979358
+64. Wanjau MN The potential impact of physical activity on the burden of osteoarthritis and low back pain in Australia: a systematic review of reviews and life table analysis J Phys Act Health 2023 20 8 690 701 10.1123/jpah.2022-0541 37268300
+Wanjau MN, et al. The potential impact of physical activity on the burden of osteoarthritis and low back pain in Australia: a systematic review of reviews and life table analysis. J Phys Act Health. 2023;20(8):690–701.37268300 10.1123/jpah.2022-0541
+65. Wanjau MN Physical activity and depression and anxiety disorders: a systematic review of reviews and assessment of causality AJPM Focus 2023 2 2 100074 10.1016/j.focus.2023.100074 37790636 PMC10546525
+Wanjau MN, et al. Physical activity and depression and anxiety disorders: a systematic review of reviews and assessment of causality. AJPM Focus. 2023;2(2):100074.37790636 10.1016/j.focus.2023.100074 PMC10546525
+66. Hamer M Chida Y Walking and primary prevention: a meta-analysis of prospective cohort studies Br J Sports Med 2008 42 4 238 243 10.1136/bjsm.2007.039974 18048441
+Hamer M, Chida Y. Walking and primary prevention: a meta-analysis of prospective cohort studies. Br J Sports Med. 2008;42(4):238–43.18048441 10.1136/bjsm.2007.039974
+67. Hupin D Even a low-dose of moderate-to-vigorous physical activity reduces mortality by 22% in adults aged ≥60 years: a systematic review and meta-analysis Br J Sports Med 2015 49 19 1262 1267 10.1136/bjsports-2014-094306 26238869
+Hupin D, et al. Even a low-dose of moderate-to-vigorous physical activity reduces mortality by 22% in adults aged ≥60 years: a systematic review and meta-analysis. Br J Sports Med. 2015;49(19):1262–7.26238869 10.1136/bjsports-2014-094306
+68. Kelly P Systematic review and meta-analysis of reduction in all-cause mortality from walking and cycling and shape of dose response relationship Int J Behav Nutr Phys Act 2014 11 132 10.1186/s12966-014-0132-x 25344355 PMC4262114
+Kelly P, et al. Systematic review and meta-analysis of reduction in all-cause mortality from walking and cycling and shape of dose response relationship. Int J Behav Nutr Phys Act. 2014;11:132.25344355 10.1186/s12966-014-0132-x PMC4262114
+69. Lollgen H Bockenhoff A Knapp G Physical activity and all-cause mortality: an updated meta-analysis with different intensity categories Int J Sports Med 2009 30 3 213 224 10.1055/s-0028-1128150 19199202
+Lollgen H, Bockenhoff A, Knapp G. Physical activity and all-cause mortality: an updated meta-analysis with different intensity categories. Int J Sports Med. 2009;30(3):213–24.19199202 10.1055/s-0028-1128150
+70. Nocon M Association of physical activity with all-cause and cardiovascular mortality: a systematic review and meta-analysis Eur J Cardiovasc Prev Rehabil 2008 15 3 239 246 10.1097/HJR.0b013e3282f55e09 18525377
+Nocon M, et al. Association of physical activity with all-cause and cardiovascular mortality: a systematic review and meta-analysis. Eur J Cardiovasc Prev Rehabil. 2008;15(3):239–46.18525377 10.1097/HJR.0b013e3282f55e09
+71. Samitz G Egger M Zwahlen M Domains of physical activity and all-cause mortality: systematic review and dose-response meta-analysis of cohort studies Int J Epidemiol 2011 40 5 1382 1400 10.1093/ije/dyr112 22039197
+Samitz G, Egger M, Zwahlen M. Domains of physical activity and all-cause mortality: systematic review and dose-response meta-analysis of cohort studies. Int J Epidemiol. 2011;40(5):1382–400.22039197 10.1093/ije/dyr112
+72. Woodcock J Non-vigorous physical activity and all-cause mortality: systematic review and meta-analysis of cohort studies Int J Epidemiol 2011 40 1 121 138 10.1093/ije/dyq104 20630992
+Woodcock J, et al. Non-vigorous physical activity and all-cause mortality: systematic review and meta-analysis of cohort studies. Int J Epidemiol. 2011;40(1):121–38.20630992 10.1093/ije/dyq104
+73. Veerman L Physical activity and life expectancy: a life-table analysis Br J Sports Med 2025 59 5 333 338 10.1136/bjsports-2024-108125 39542739
+Veerman L, et al. Physical activity and life expectancy: a life-table analysis. Br J Sports Med. 2025;59(5):333–8.39542739 10.1136/bjsports-2024-108125
+74. Ding D The economic burden of physical inactivity: a global analysis of major non-communicable diseases Lancet 2016 388 10051 1311 1324 10.1016/S0140-6736(16)30383-X 27475266
+Ding D, et al. The economic burden of physical inactivity: a global analysis of major non-communicable diseases. Lancet. 2016;388(10051):1311–24.27475266 10.1016/S0140-6736(16)30383-X
+75. World Health Organization WHO expert meeting methods and tools for assessing the health risks of air pollution at local, national and international level 2014 Geneva World Health Organization
+World Health Organization. WHO expert meeting methods and tools for assessing the health risks of air pollution at local, national and international level. Geneva: World Health Organization; 2014.
+76. Hamra GB Outdoor particulate matter exposure and lung cancer: a systematic review and meta-analysis Environ Health Perspect 2014 122 9 906 911 10.1289/ehp/1408092 24911630 PMC4154221
+Hamra GB, et al. Outdoor particulate matter exposure and lung cancer: a systematic review and meta-analysis. Environ Health Perspect. 2014;122(9):906–11.24911630 10.1289/ehp/1408092 PMC4154221
+77. Australian Transport Assessment and Planning (ATAP). Australian Transport Asessment and Planning Guidelines M4 Active Travel. 2015.
+78. Transport for New South Wales. Principles and guidelines: economic appraisal of transport investments and initiatives. Transport economic appraisal guidelines, 2016, evaluation and benefits, finance and investment. https://www.transport.nsw.gov.au/principles-and-guidelines-economic-appraisal-of-transport-investments-and-initiatives. Accessed 26 May 2026.
+79. Australia Government. Value of statistical life year. Department of the Prime Minister and Cabinet: the Office of Impact Analysis (OIA), editor. 2023. https://oia.pmc.gov.au/sites/default/files/2023-10/value-of-statistical-life.pdf. Accessed 26 May 2026.
+80. Australian Government. Best practice regulation guidance note: value of statistical life. Department of the Prime Minister and Cabinet, editor. 2019. Office of Best Practice Regulation.
+81. Price Waterhouse Coopers (PwC) Economic valuation of safety benefits: serious injuries: final report 2005 Sydney Roads and Traffic Authority of NSW
+Price Waterhouse Coopers (PwC). Economic valuation of safety benefits: serious injuries: final report. Sydney: Roads and Traffic Authority of NSW; 2005.
+82. Karnon J, Afzali HHA, Edney LC. New cancer drugs are very expensive: here’s how we work out value for our money. 2015. https://theconversation.com/new-cancer-drugs-are-very-expensive-heres-how-we-work-out-value-for-our-money-44014
+83. Australian Institute of Health and Welfare, Health system spending on disease and injury in Australia. 2020–21. https://www.aihw.gov.au/reports/health-welfare-expenditure/health-system-spending-on-disease-and-injury-in-au/data. Accessed 26 May 2026.
+84. Van Baal PHM Economic evaluation and the postponement of health care costs Health Econ 2011 20 4 432 445 10.1002/hec.1599 21210494
+Van Baal PHM, et al. Economic evaluation and the postponement of health care costs. Health Econ. 2011;20(4):432–45.21210494 10.1002/hec.1599
+85. Australian Bureau of Statistics. Consumer Price Index, Australia. The Consumer Price Index (CPI) measures household inflation and includes statistics about price change for categories of household expenditure. Tables 1 and 2. CPI: all groups, index numbers and percentage changes. 2024. https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release#key-statistics. Accessed 26 May 202].
+86. NSW Government. NSW government guide to cost-benefit analysis TPG23-08. NSW Treasury, editor. 2023. https://www.treasury.nsw.gov.au/finance-resource/guidelines-cost-benefit-analysis. Accessed 26 May 2026.
+87. Global Burden of Disease Collaborative Network. Global Burden of Disease Study 2021 (GBD 2021) results. 2024. https://vizhub.healthdata.org/gbd-results/. Accessed Jul 2024.
+88. Global Burden of Disease Collaborative Network. Global Burden of Disease Study 2023 (GBD 2023) results. 2024. https://vizhub.healthdata.org/gbd-results/. Accessed Jul 2024.
+89. Australian Bureau of Statistics. National, state and territory population. Statistics about the population and components of change (births, deaths, migration) for Australia and its states and territories. Table 8: Estimated resident population, by age and sex-at June 2023. 2024. https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/dec-2023#data-downloads-data-cubes. Accessed Jul 2024.
+90. Australian Bureau of Statistics. Deaths, year of occurrence, age at death, age-specific death rates, sex, states, territories and Australia. 2024. https://www.abs.gov.au/statistics/people/population/deaths-australia/latest-release. Accessed Jul 2024.
+91. NSW Government. Policy and guidelines paper: NSW government guide to cost-benefit analysis (TPP17-03). Treasury, editor. 2017. www.treasury.nsw.gov.au/. Accessed 26 May 2026.
+92. Panter J Impact of new transport infrastructure on walking, cycling, and physical activity Am J Prev Med 2016 50 2 e45 53 10.1016/j.amepre.2015.09.021 26585051 PMC4712020
+Panter J, et al. Impact of new transport infrastructure on walking, cycling, and physical activity. Am J Prev Med. 2016;50(2):e45-53.26585051 10.1016/j.amepre.2015.09.021 PMC4712020
+93. NSW Government, Transport for New South Wales. Economic parameter values for economic modelling, appraisal and evaluation of transport projects. Transport for New South Wales, editor. 2024. https://www.transport.nsw.gov.au/system/files/media/documents/2024/Economic%20Parameter%20Values%20Aug%202024_1.pdf. Accessed 26 May 2026.
+94. Ding D The co-benefits of active travel interventions beyond physical activity: a systematic review Lancet Planet Health. 2024 8 10 e790 803 10.1016/S2542-5196(24)00201-8 39393380
+Ding D, et al. The co-benefits of active travel interventions beyond physical activity: a systematic review. Lancet Planet Health. 2024;8(10):e790-803.39393380 10.1016/S2542-5196(24)00201-8
+95. Bull FC World Health Organization 2020 guidelines on physical activity and sedentary behaviour Br J Sports Med 2020 54 24 1451 10.1136/bjsports-2020-102955 33239350 PMC7719906
+Bull FC, et al. World Health Organization 2020 guidelines on physical activity and sedentary behaviour. Br J Sports Med. 2020;54(24):1451.33239350 10.1136/bjsports-2020-102955 PMC7719906
+96. World Health Organization,.WHO guidelines on physical activity and sedentary behaviour. 2020. https://iris.who.int/server/api/core/bitstreams/faa83413-d89e-4be9-bb01-b24671aef7ca/content. Accessed 26 May 2026.33369898
+97. Rajagopalan S Landrigan PJ Pollution and the heart N Engl J Med 2021 385 20 1881 1892 10.1056/NEJMra2030281 34758254
+Rajagopalan S, Landrigan PJ. Pollution and the heart. N Engl J Med. 2021;385(20):1881–92.34758254 10.1056/NEJMra2030281
+98. Standen C Determinants of mode and route change following the opening of a new cycleway in Sydney, Australia J Transp Health 2017 4 255 266 10.1016/j.jth.2016.10.004
+Standen C, et al. Determinants of mode and route change following the opening of a new cycleway in Sydney, Australia. J Transp Health. 2017;4:255–66.
+99. Sloman L, Cope A, Kennedy A, Crawford F, Cavill N, Parkin J. Summary of outcomes of the cycling demonstration towns and Cycling City and Towns Programmes. 21 June 2017.
+100. Australian Bureau of Statistics. Australia’s journey to work. 2022. https://www.abs.gov.au/articles/australias-journey-work. Accessed 26 May 2026.
+101. Ibrahim MN The role of safety in modal choice and shift: a transport users’ perspective in Australia J Transport Health. 2024 38 101863 10.1016/j.jth.2024.101863 PMC10085019 37036867
+Ibrahim MN, et al. The role of safety in modal choice and shift: a transport users’ perspective in Australia. J Transport Health. 2024;38:101863.10.1371/journal.pone.0280949 PMC10085019 37036867

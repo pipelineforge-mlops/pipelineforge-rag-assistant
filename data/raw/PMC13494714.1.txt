@@ -1,0 +1,542 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Front Physiol
+Journal ID: Front Physiol
+NLM Journal ID: 101549006
+Journal ID: Front. Physiol.
+
+Frontiers in Physiology
+
+EISSN: 1664-042X
+Publisher: Frontiers Media SA
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13494714
+PMID: 42630888
+DOI: 10.3389/fphys.2026.1888182
+Article version: 1
+Article version:
+Subjects: Review
+
+Cognitive risk during underwater exposure: from environmental stressors to assessment and context-aware monitoring
+
+Zhao Houyu 1 † Writing – original draft Writing – review & editing Investigation Conceptualization
+Wang Longfei 2 † Writing – review & editing Writing – original draft Conceptualization
+Zhao Yucheng 3 † Writing – original draft Conceptualization Writing – review & editing
+Zhao Nan 2 Writing – review & editing
+Zhang Shi 1 Writing – review & editing
+Wang Yan 1 * Writing – review & editing
+Yu Xuhua 2 * Funding acquisition Conceptualization Project administration Writing – review & editing Supervision
+Fang Yiqun 2 * Project administration Supervision Writing – review & editing Funding acquisition Conceptualization
+1 Department of Diving Medicine, Navy Special Medical Center, Naval Medical University , Shanghai ,  China
+2 Department of Underwater and Hyperbaric Medicine, Navy Special Medical Center, Naval Medical University , Shanghai ,  China
+3 Department of Medical Research, Naval Medical Specialty Center, Naval Medical University , Shanghai ,  China
+* Correspondence: Yan Wang, 616485882@qq.com; Xuhua Yu, xuhua_0813@163.com; Yiqun Fang, 1287225836@qq.com†These authors have contributed equally to this work
+
+Electronic publication date: 2026 Aug 7
+Publication date: 2026
+Volume: 17
+Electronic Location ID: 1888182
+Received 2026 May 22; Revised 2026 Jul 19; Accepted 2026 Jul 23
+Copyright: Copyright © 2026 Zhao, Wang, Zhao, Zhao, Zhang, Wang, Yu and Fang.
+Copyright year: 2026
+Copyright holder: Zhao, Wang, Zhao, Zhao, Zhang, Wang, Yu and Fang
+License: This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.
+License URL: https://creativecommons.org/licenses/by/4.0/
+
+Keywords: cognitive impairment, context-aware monitoring, critical flicker fusion frequency, diving physiology, EEG, heart rate variability, underwater exposure
+
+Funding: The author(s) declared that financial support was received for this work and/or its publication. This work was supported by the Discipline Development Program in Diving Medicine, the “Strengthening Foundation Program” of the Naval Medical Specialty Center, the Military Science Program of the National Social Science Fund of China, and the Naval Weapon and Equipment Pre-research Unit (3020201020102).
+
+Figure count: 3
+Table count: 6
+Equation count: 0
+Reference count: 89
+Page count: 16
+
+section-at-acceptance: Environmental, Aviation and Space Physiology
+
+==============================
+Underwater exposure imposes a distinctive cognitive burden because divers must maintain performance while environmental and physiological safety margins can change rapidly. Safe performance depends on attention, psychomotor speed, executive control, working memory, spatial orientation, metacognition, and decision-making, each of which may be influenced by pressure, breathing gases, respiratory load, immersion, thermal stress, fatigue, and individual susceptibility. Evidence from recreational, technical, breath-hold, and saturation diving remains difficult to synthesize because studies differ in exposure mode, gas composition, timing, task selection, ecological validity, and operational endpoints. This narrative state-of-the-art review addresses three questions: which stressors shape cognitive risk, how risk is currently assessed, and how selected signals might contribute to future context-aware estimation without adding unsafe task burden. We describe the literature-identification strategy, define cognitive risk as a probabilistic and baseline-referenced state rather than a single test abnormality, and map vulnerable domains to operational hazards such as delayed response, navigation error, unsafe gas decisions, missed alarms, and delayed recovery. We critically evaluate behavioral tasks, CFFF, EEG/ERP, HRV, electrodermal activity, NIRS, respiratory CO2 monitoring, and wearable platforms, emphasizing feasibility, signal quality, nonspecificity, synchronization, individualized baselines, and validation against operational outcomes. Finally, we propose a staged pathway from dry chamber validation to wet-chamber or planned-pause testing and then to occupational or saturation settings. Selected physiological and behavioral signals may contribute to cognitive-risk estimation only after transparent interpretation and prospective validation against meaningful endpoints.
+
+1 Introduction
+
+Underwater operations require cognition, physiology, and environmental control to remain coordinated under rapidly changing conditions. A diver must navigate, communicate, monitor life-support equipment, regulate buoyancy, interpret environmental cues, and maintain contingency plans while exposed to pressure, altered breathing gases, immersion, thermal stress, limited visibility, restricted movement, and limited escape options (Clark, 2015; Piispanen et al., 2021; Sharma et al., 2023). For recreational, military, occupational, technical, and saturation divers, even a small delay in attention, gas management, or emergency decision-making can be amplified by depth, decompression obligation, equipment complexity, respiratory burden, and team dependence (Hobbs et al., 2014; Freiberger et al., 2016; Dunworth et al., 2017; Dreyer et al., 2024).
+
+Underwater cognition therefore differs from generic laboratory cognitive performance. Attention, working memory, inhibition, processing speed, situation awareness, workload, physiological state, and decision-making operate as a closed-loop system (Endsley, 1995; Wickens, 2008). Attention supports monitoring of depth, time, gas supply, buddy position, task progress, and unexpected change. Executive control suppresses unsafe responses under anxiety, overload, or narcosis, a function that appears vulnerable during underwater exposure (Karakaya et al., 2021). Working memory supports navigation, decompression planning, and procedural recall, whereas metacognitive accuracy is essential because divers may not reliably recognize their own impairment during inert gas narcosis (Germonpré et al., 2017). Cognitive decline underwater should therefore be viewed not only as a lower test score, but as reduced reliability, self-detection, and resilience of task-relevant control (Ergen et al., 2017; Lafère et al., 2019).
+
+The evidence base has expanded. Recent studies and reviews have described cognitive function in scuba, technical, and saturation diving, including alertness, memory, decision-making, executive function, event-related potentials, and functional connectivity (Germonpré et al., 2017; Steinberg and Doppelmayr, 2017; Karakaya et al., 2021; Sharma et al., 2023; Vrijdag et al., 2022a). Extreme exposures remain difficult to study, but a 45 ATA simulated saturation dive reported impaired numerical Stroop performance even in expert divers (Kageyama and Sawamura, 2024). Taken together, these findings suggest that underwater cognitive vulnerability is measurable and exposure dependent, although not uniform across domains or paradigms.
+
+The field remains fragmented. Studies differ in wet versus dry exposure, at-depth versus post-dive testing, breathing gas, exercise state, thermal condition, expertise, and cognitive endpoint. Monitoring approaches are equally diverse: CFFF is used as a low-burden index of central arousal (Lafère et al., 2019; Mankowska et al., 2021), EEG/ERP can capture neurofunctional changes (Karakaya et al., 2021; Vrijdag et al., 2022a), and HRV has been explored in relation to operational performance. No single tool currently provides a validated, continuously deployable, and operationally robust measure of underwater cognitive risk.
+
+This review has both a review component and a perspective component. The review component summarizes cognitive domains, environmental determinants, and assessment tools. The perspective component proposes a conceptual monitoring framework that should be read as a research roadmap rather than operational guidance. We distinguish established observations, emerging hypotheses, and future research recommendations throughout. The overall conceptual logic is summarized in Figure 1.
+
+Figure 1 Conceptual risk cascade linking underwater environmental stressors to cognitive performance and operational risk. Environmental stressors may increase physiological and neurofunctional burden, which can affect vulnerable cognitive domains and safety-relevant performance. The arrows indicate a simplified pathway; feedback may occur among cognition, behavior, anxiety, breathing pattern, respiratory load, task demand, mitigation decisions, and environmental exposure.
+
+Flowchart illustrating a conceptual risk cascade from underwater environmentalstressors to physiological and neurofunctional burden, vulnerable cognitive domains, and operational risk. The diagram also shows a monitoring overlay that includes brief cognitive probes, CFFF, EEG/ERP, HRV/EDA, NIRS, CO2 and respiratory monitoring, and wearable fusion. The arrows represent a simplified pathway, with possible feedback among cognition, behavior, anxiety, breathing pattern, respiratory load, task demand, mitigation decisions, and environmental exposure.
+
+2 Scope and approach of this review
+
+This narrative, state-of-the-art review is intended for diving physiology, diving medicine, human factors, neuroergonomics, and extreme-environment research. It provides a structured interpretive synthesis and research roadmap rather than a systematic evidence grade or practice guideline. A systematic review or meta-analysis was not attempted because exposure mode, depth, gas composition, exercise state, timing, participant expertise, and cognitive outcomes vary widely. Instead, the review is organized around a translational question: how can underwater cognitive risk be understood and studied in ways that may eventually improve diving safety and operational performance?
+
+PubMed/MEDLINE, Web of Science, Scopus, and Google Scholar were searched from database inception to May 2026. Search terms combined exposure terms (diving, scuba, technical diving, saturation diving, freediving, underwater exposure, hyperbaric chamber, immersion), stressor terms (nitrogen narcosis, hypercapnia, carbon dioxide, oxygen partial pressure, hyperoxia, gas density, cold exposure, workload, fatigue), cognitive terms (cognition, cognitive impairment, vigilance, reaction time, executive function, working memory, metacognition, decision-making), and monitoring terms (CFFF, EEG, ERP, HRV, EDA, NIRS, respiratory monitoring, wearable sensor, passive BCI, neuroergonomics). Reference lists of key reviews and mechanistic papers were also screened. Selection followed an iterative narrative-review process rather than blinded duplicate screening; no formal excluded-study log was generated. Priority was given to human diving or hyperbaric studies with clearly described exposure conditions, objective cognitive or operational outcomes, time-resolved or at-depth measurements, and monitoring relevance. Studies were de-emphasized when exposure was poorly characterized, the outcome was remote from diving safety, or the monitoring implication was not interpretable.
+
+Because this is not a systematic review, no pooled estimate or formal risk-of-bias score was calculated. This narrative approach has important limitations: study selection was not blinded, contradictory findings could not be resolved statistically, and conclusions should be read as a structured synthesis rather than a definitive evidence hierarchy. Contradictory findings were interpreted by comparing exposure characterization, timing of assessment, cognitive-domain specificity, ecological validity, and linkage to operational outcomes rather than by vote counting. We also applied a practical hierarchy of interpretation: respiratory CO2 and breathing load were treated as high-priority monitoring targets because they have direct physiological and safety relevance; behavioral tasks provide objective but task-specific evidence; CFFF, EEG/ERP, HRV/EDA, and NIRS are adjunct signals that require context and endpoint validation; biological markers are mainly mechanistic or recovery-context evidence. Cognitive performance refers to observed task output, cognitive impairment to an observed decline on a defined task, cognitive readiness to pre-dive preparedness, and cognitive risk to the probability that a diver’s current environmental, physiological, and behavioral state will degrade task-relevant cognition before an overt error occurs. Thus, cognitive risk is a probabilistic latent operational state, an engineering prediction variable, and a safety metric rather than a clinical diagnosis. Operationally, it should be estimated from individualized baseline deviation, exposure load, respiratory burden, autonomic or neurofunctional strain, task phase, subjective state, and recovery trajectory: cognitive risk = f(baseline deviation, exposure load, respiratory burden, autonomic/neurofunctional strain, task phase, subjective state, prior recovery). Thresholds should be validated against operational outcomes, not assumed from universal cutoffs. Table 1 summarizes this evidence hierarchy and its interpretive limits.
+
+Table 1 Evidence hierarchy and interpretive limits supporting the review framework.
+
+Evidence cluster	Representative sources	Evidence strength in this review	Current inference	Main limitation	Interpretive use	
+CO2 and respiratory burden	Dunworth et al., 2017; Freiberger et al., 2016	Relatively direct physiological and safety relevance	CO2 and breathing load are high-priority variables	CO2, effort, anxiety, and workload often co-vary	Measure when feasible and validate against performance	
+Behavioral task evidence	Dalecki et al., 2012; Steinberg and Doppelmayr, 2017; Kageyama and Sawamura, 2024	Objective but task-specific	Selected domains can deteriorate during immersion or hyperbaric exposure	Tasks, timing, gas, and ecology are heterogeneous	Use as endpoint-specific probes, not global scores	
+Gas narcosis and metacognition	Hobbs et al., 2014; Germonpré et al., 2017; Vrijdag et al., 2022a	Moderate mechanistic and behavioral support	Narcosis may affect cognition and self-awareness	Wet/dry exposure and task differences limit generalization	Pair gas variables with domain-specific probes	
+CFFF	Balestra et al., 2012; Lafère et al., 2019; Mankowska et al., 2026	Adjunct arousal/neurofunctional evidence	Useful for low-burden state sampling	Not a global cognition measure; device and context dependent	Combine with tasks and exposure variables	
+EEG/ERP	Karakaya et al., 2021; Vrijdag et al., 2022a	Mechanistically informative in controlled settings	Can detect neurofunctional changes during hyperbaric exposure	Artifact, sensor, and ecological-validity constraints	Use primarily for chamber validation and selected field studies	
+HRV/EDA	Freiberger et al., 2024; Chen et al., 2025	Contextual autonomic evidence	May index strain trends related to workload or stress	Nonspecific to cognition and affected by breathing/cold/exercise	Interpret with respiratory, thermal, and task labels	
+NIRS and breath-hold monitoring	Eichhorn et al., 2015; McKnight et al., 2021	Useful in apnea and constrained contexts	Can track cerebral oxygenation trajectories	Sensor fixation, systemic physiology, and context specificity	Focus on hypoxia/apnea and recovery questions	
+Biological mechanisms	Vezzoli et al., 2024; Balestra et al., 2024; Zhao et al., 2024a, Zhao et al., 2024b	Mechanistic and recovery-context evidence	May help explain susceptibility or prolonged effects	Does not validate real-time cognitive-risk monitoring in humans	Use for post-dive recovery and mechanistic research	
+
+3 Cognitive domains affected by underwater exposure
+
+Cognitive performance underwater cannot be reduced to a single score. Different stressors may affect different domains, and the same exposure can impair one process while sparing, or transiently improving, another. Apparent contradictions across studies may therefore reflect domain specificity, testing time, and task selection rather than true inconsistency.
+
+Attention and vigilance are central because divers monitor multiple dynamic variables while filtering irrelevant stimuli. Reduced vigilance can delay detection of gas problems, depth deviations, equipment malfunction, or buddy distress. Cold exposure and shallow immersion can affect attention and processing speed even without deep pressure exposure, and nitrogen narcosis may add distractibility, overconfidence, and reduced situation awareness (Dalecki et al., 2012; Falla et al., 2021).
+
+Reaction time and psychomotor performance matter because many underwater tasks are time constrained. Simple reaction time is useful for repeated low-burden testing, whereas discrimination reaction time, tracking, and multitasking better approximate operational performance. Comparisons of reaction-time measures and CFFF indicate that motor speed, visual processing, and arousal are related but separable constructs (Tikkinen et al., 2016).
+
+Executive function, including inhibitory control, cognitive flexibility, conflict monitoring, and planning, is especially operationally relevant. Divers at 20 m water depth showed selective executive-function impairment (Steinberg and Doppelmayr, 2017), and numerical Stroop testing detected changes during a 45 ATA simulated saturation dive (Kageyama and Sawamura, 2024). These paradigms are attractive because they probe conflict processing with relatively simple stimulus-response demands.
+
+Executive vulnerability is not limited to one task or exposure model. Response-selection paradigms suggest that nitrogen narcosis can alter sensorimotor decision stages rather than simply slow motor output (Meckler et al., 2014). Across open-water and chamber studies, the most sensitive endpoint varies with depth, gas, timing, and task complexity, arguing against a single global cognition score (Tikkinen et al., 2016; Brebeck et al., 2017; Germonpré et al., 2017; Lafère et al., 2019).
+
+Working memory supports navigation, decompression planning, equipment sequencing, and procedural recall. It is commonly assessed with digit span, Corsi block-tapping, n-back, and spatial tasks. Findings are inconsistent, probably because cognitive load, timing, and practice effects differ. Monitoring should therefore match the probe to the operational task rather than treat working memory as a universal marker.
+
+Decision-making and metacognition are critical because divers must recognize when their own performance is deteriorating. Gas narcosis is hazardous when subjective confidence fails to decline with objective performance. Studies suggest that objective and subjective measures may not fully align during air or nitrox exposures (Hobbs et al., 2014; Germonpré et al., 2017), making impairment-awareness mismatch a relevant monitoring target.
+
+Longer-term and repeated-exposure findings are harder to interpret. Some studies link diving exposure to neuropsychological, neurofunctional, or white-matter outcomes, whereas others are weaker or confounded by training, selection, decompression history, vascular risk, and exposure heterogeneity (Slosman et al., 2004; Hemelryck et al., 2014; Bast-Pettersen et al., 2015; Coco et al., 2019; Rosén et al., 2022). These data should not be overread as proof of chronic injury in all divers, but they justify longitudinal and recovery-focused designs.
+
+3.1 Mapping cognitive domains to operational risk
+
+A domain-to-risk mapping is needed because operational incidents rarely arise from one isolated cognitive function. Gas-management errors may combine attention to gauges, working-memory updating, metacognitive recognition of narrowing awareness, and decision-making under social or mission pressure. Navigation deviation may depend on spatial working memory and divided attention, whereas delayed alarm response may depend on vigilance, psychomotor speed, respiratory strain, and thermal stress. Future protocols should predefine the domain expected to contribute to each operational outcome.
+
+This mapping also clarifies validation. A simple reaction-time probe may detect vigilance loss or psychomotor slowing, but it cannot validate a model intended to prevent unsafe gas decisions. Conversely, a short Stroop or response-inhibition probe may represent conflict monitoring but may be less sensitive to hand cooling or display constraints. Table 2 summarizes this mapping as a guide for future protocol design.
+
+Table 2 Proposed mapping between cognitive domains and operational risk endpoints for future protocol design.
+
+Cognitive domain	Operational risks	Candidate endpoint	Recommended probe or context	
+Vigilance/sustained attention	Missed alarm, delayed detection of gas or depth deviation, buddy-distress oversight	Missed signal rate; time to detect abnormal display or alarm	Brief vigilance probe; event detection during simulated monitoring	
+Reaction time/psychomotor speed	Delayed response to equipment, communication, or ascent/descent cues	Simple or choice reaction time; response delay to standardized cue	Low-burden repeated probe; separate motor and cognitive components when cold or gloves are present	
+Executive control	Unsafe impulse, poor inhibition under narcosis/anxiety, inappropriate emergency action	Stroop/interference cost; response-inhibition errors; rule violation	Short Stroop, Flanker, Simon, or go/no-go probe during chamber or planned pause	
+Working memory/spatial orientation	Navigation deviation, procedure omission, decompression-plan error	Route deviation; recall of gas/time plan; sequence error	Spatial span, n-back, route-memory, or procedure-recall probe matched to mission	
+Metacognition/decision-making	Failure to recognize impairment, overconfidence, unsafe gas or ascent decision	Mismatch between self-rating and objective performance; unsafe choice	Performance-confidence rating plus objective task and operational scenario	
+This mapping is intended to guide future protocols and requires validation before use in risk estimation or decision support.
+
+4 Environmental determinants of cognitive risk
+
+Table 3 summarizes the major environmental stressors, candidate mechanisms, affected domains, and monitoring implications discussed in this section.
+
+Table 3 Environmental stressors and cognitive implications during underwater exposure.
+
+Stressor	Diving context	Cognitive domains affected	Candidate mechanisms	Representative evidence	Monitoring implications	Priority	
+Depth/pressure	Scuba, technical, saturation	Executive control, reaction time, psychomotor performance	Increased gas partial pressures, gas density, decompression obligation	Steinberg and Doppelmayr, 2017; Kageyama and Sawamura, 2024	Continuously label depth, pressure, phase, and decompression obligation	High	
+Nitrogen narcosis	Compressed-air and trimix diving	Judgment, memory, calculation, inhibitory control, metacognition	Inert gas effects on CNS function and network connectivity	Clark, 2015; Hobbs et al., 2014; Vrijdag et al., 2022a	Pair gas exposure with brief executive probes and EEG/CFFF where feasible	High	
+Gas composition	Air, nitrox, heliox, trimix	Error rate, arousal, cognitive-domain-specific effects	Narcotic potency, oxygen partial pressure, gas density	Germonpré et al., 2017; Lafère et al., 2019; Sharma et al., 2025	Report partial pressures and gas density; avoid gas-label-only interpretation	Medium-high	
+Hypercapnia/respiratory burden	Exercise at depth, rebreathers, high-density gas	Attention, planning, psychomotor performance, situational awareness	CO2 retention, increased work of breathing, dyspnea, anxiety	Dunworth et al., 2017; Freiberger et al., 2016	Prioritize CO2 and breathing-load monitoring when feasible	High	
+Oxygen partial pressure	Nitrox, HBO, rebreathers, saturation	Arousal, central excitability, task-specific performance	Hyperoxia, chemoreflex modulation, CNS oxygen toxicity risk	Vrijdag et al., 2022b; Möller et al., 2023	Interpret arousal metrics with oxygen exposure and CNS toxicity risk in view	Context dependent	
+Cold immersion	Open-water and polar/temperate diving	Attention, processing speed, executive function, dexterity-mediated performance	Thermal stress, discomfort, peripheral cooling, arousal changes	Falla et al., 2021; Piispanen et al., 2021	Combine thermal, manual-performance, workload, and cognitive measures	Context dependent	
+Workload and fatigue	Operational, military, rescue, prolonged operations	Vigilance, decision-making, multitasking, working memory	Exercise, sleep loss, cumulative stress, fatigue	Möller et al., 2021, Möller et al., 2023	Use phase labels, workload ratings, fatigue measures, and longitudinal baselines	High in prolonged work	
+Breath-hold hypoxia/hypercapnia	Freediving	Executive control, awareness, hypoxic blackout risk	Apnea, cerebral oxygenation changes, blood-gas shifts	McKnight et al., 2021; Paganini et al., 2026	Integrate NIRS/SpO2, apnea phase, symptoms, and recovery trajectory	High in freediving	
+
+4.1 Hyperbaric pressure and depth
+
+Depth is the most visible determinant of underwater risk, but cognitive effects arise through several pathways: gas partial pressures, gas density, work of breathing, decompression obligation, thermal exchange, and equipment complexity. Depth is therefore useful operationally, but effects attributed to depth may actually reflect gas, respiratory load, or task context.
+
+At recreational and technical depths, compressed-air diving increases nitrogen partial pressure and may induce inert gas narcosis. At extreme depths, saturation exposure adds confinement and cumulative physiological load. A simulated 440 m sea-water saturation dive at 45 ATA found impaired numerical Stroop performance in expert divers, suggesting that training does not eliminate hyperbaric cognitive vulnerability (Kageyama and Sawamura, 2024).
+
+Technical diving adds complexity because gas choice, decompression obligation, equipment configuration, bailout planning, and task loading change simultaneously. Future studies should therefore report depth and pressure together with gas composition, inspired partial pressures, estimated gas density, exercise state, temperature, and task demands. Without these details, depth-related cognitive effects remain difficult to interpret.
+
+4.2 Inert gas narcosis and breathing-gas composition
+
+Nitrogen narcosis can affect reasoning, memory, calculation, judgment, mood, motor behavior, and self-awareness, with risk generally increasing with depth during compressed-air diving. Its operational hazard is not only performance decline, but also reduced recognition of decline while safety-critical decisions continue (Clark, 2015).
+
+Neurophysiological studies provide mechanistically informative, but context-limited, evidence. Auditory ERP changes during simulated 500 kPa air exposure and EEG functional-connectivity changes during air breathing at 608 kPa suggest altered cognitive processing under hyperbaric nitrogen (Karakaya et al., 2021; Vrijdag et al., 2022a). These findings support EEG/ERP as research tools, but not yet as deployable operational monitors.
+
+Breathing-gas composition may modify cognitive risk through narcotic potency, gas density, oxygen partial pressure, and respiratory mechanics. Air, nitrox, heliox, and trimix are not interchangeable exposures. Open-water and chamber studies indicate gas-specific effects, but differences in inspired partial pressures, task timing, and subjective state limit direct comparison (Brebeck et al., 2017; Germonpré et al., 2017; Sharma et al., 2025).
+
+Future studies should report gas composition quantitatively rather than categorically. Inspired partial pressures, gas density, and breathing resistance are likely more informative than labels such as air, nitrox, or trimix, especially when comparing dry chambers with wet dives.
+
+Nitrox illustrates this caution. It may reduce venous gas bubbles in selected simulated protocols (Souday et al., 2016), but decompression advantage should not be conflated with a validated cognitive benefit across all tasks and depths.
+
+4.3 Hypercapnia, respiratory burden, and gas density
+
+Carbon dioxide retention is a major determinant of underwater cognitive risk. Hypercapnia can arise from elevated inspired CO2, scrubber failure, dead space, inadequate ventilation, high gas density, breathing resistance, exercise, or behavioral suppression of breathing. It can escalate rapidly and may interact with anxiety, dyspnea, and oxygen-toxicity risk (Dunworth et al., 2017).
+
+CO2 effects are not identical to nitrogen or oxygen effects. Hyperbaric studies indicate that N2, CO2, and O2 can affect attention, memory, planning, and psychomotor outcomes differently (Fothergill et al., 1991; Freiberger et al., 2016; Gill et al., 2014). CO2 should therefore be measured where feasible rather than inferred from symptoms alone.
+
+Respiratory burden links physiology to cognition. Increased gas density and resistance can raise breathing effort, promote CO2 retention, increase anxiety, and reduce spare attentional capacity. Inspired or expired CO2, ventilation, respiratory rate, work of breathing, and gas density should be recorded whenever feasible, particularly in rebreather, technical, and high-workload dives.
+
+A key research need is to separate hypercapnia from effort. Cognitive risk may reflect elevated CO2, high physical workload, or both. Combining respiratory monitoring with brief cognitive probes and autonomic signals could help identify when respiratory burden becomes cognitively consequential.
+
+4.4 Oxygen partial pressure, hyperoxia, and central excitability
+
+Oxygen is neither simply protective nor harmful. Inspired oxygen partial pressure varies with depth and breathing mixture, and its cognitive effects depend on level, duration, susceptibility, and interaction with nitrogen, CO2, and workload. Higher oxygen partial pressure may reduce inert gas fraction in some mixtures, but hyperoxia can also alter central excitability and increase oxygen-toxicity risk in susceptible contexts (Wingelaar et al., 2017; Ciarlone et al., 2019; Vrijdag et al., 2022b).
+
+Oxygen-related neural effects may be misread as improved alertness, reduced narcosis, or emerging hyperexcitability depending on the outcome measured. CFFF studies under normobaric and hyperbaric oxygen suggest arousal changes, but not simple cognitive enhancement (Sharma et al., 2024).
+
+High oxygen partial pressure should not be assumed to improve cognition uniformly. Oxygen exposure should be modeled as a state variable when interpreting CFFF, EEG, subjective alertness, or cognitive probes during oxygen-rich decompression, rebreather use, or hyperoxic exercise.
+
+4.5 Cold immersion and thermal stress
+
+Cold exposure can degrade cognition through discomfort, pain, altered arousal, motor impairment, distraction, and changes in skin and core temperature. It may impair attention, processing speed, executive function, and memory (Falla et al., 2021), while also reducing dexterity, display interaction, regulator comfort, and task persistence.
+
+Cold is also an indirect cognitive stressor because it can increase perceived workload, breathing discomfort, and fatigue. Arctic and cold-water diving studies highlight the need to report temperature, exposure duration, suit type, hand cooling, and task type alongside cognitive outcomes (Piispanen et al., 2021).
+
+Immersion itself is not neutral. Five-meter water immersion can impair overall cognitive performance, sustained attention, and tracking, and task complexity may influence the size of the deficit (Dalecki et al., 2012). These findings caution against attributing all effects to gas or pressure.
+
+For monitoring, thermal and immersion variables should be integrated rather than treated as nuisance factors. A slowed response during cold-water tool use may reflect cognitive slowing, hand cooling, visibility, stress, or their combination.
+
+4.6 Physical workload, fatigue, and prolonged underwater operations
+
+Exercise has bidirectional effects on cognition. In general exercise science, acute exercise may modestly improve selected executive-function or reaction-time outcomes, but effects depend on intensity, task, timing, and training status (Chang et al., 2012; McMorris and Hale, 2012; Ludyga et al., 2016; Garrett et al., 2024). Underwater exercise is different because it can increase CO2 production, ventilation demand, breathing discomfort, perceived exertion, fatigue, and attentional narrowing, especially with immersion, equipment load, increased gas density, or breathing resistance (Freiberger et al., 2016; Dunworth et al., 2017; Pattyn et al., 2018). Studies of submersion and hyperoxic underwater exercise show that cognitive responses may differ from dry laboratory expectations (Möller et al., 2021, Möller et al., 2023).
+
+Fatigue may be more important than acute task load in prolonged operations, but it is harder to measure. It includes physical fatigue, sleep restriction, cumulative stress, repeated decompression demands, and psychological strain. In saturation diving, confinement, altered sleep, noise, social stress, and long exposure windows may produce fluctuations not captured by single pre- and post-dive tests (Sharma et al., 2023; Kageyama and Sawamura, 2024). Broader fatigue research suggests that cognitive and physical fatigue interact through perceived exertion, self-regulation, and sustained attention (Marcora et al., 2009; Van Cutsem et al., 2017; Pattyn et al., 2018).
+
+Workload assessment should be explicit. NASA-TLX can separate mental demand, physical demand, temporal demand, effort, performance, and frustration (Hart and Staveland, 1988; Hart, 2006). In diving, these dimensions may diverge: a chamber task can impose high mental demand with little movement, whereas current-exposed work can impose high physical and respiratory demand with secondary cognitive effects. Workload reports should be paired with objective markers such as exercise intensity, ventilation, respiratory rate, CO2, heart rate, HRV, task duration, sleep history, and environmental exposure.
+
+4.7 Saturation diving and confined hyperbaric exposure
+
+Saturation diving combines depth, duration, confinement, sleep disruption, decompression time, team dependence, and constrained working conditions. Simulated 45 ATA saturation exposure has been associated with impaired cognitive performance, while commercial-diver studies highlight the importance of subjective state, fatigue, and chamber environment (Imbert et al., 2018; Kageyama and Sawamura, 2024).
+
+Saturation studies are limited by small samples, logistical barriers, and difficulty standardizing exposure. This supports the rationale for continuous low-burden sampling, but also means that chamber environmental records, sleep/activity monitoring, brief executive probes, HRV, respiratory indicators, and subjective fatigue reports require prospective validation before operational use.
+
+4.8 Breath-hold diving and hypoxia-related risk
+
+Breath-hold diving should be treated separately from scuba and saturation diving. Dominant stressors include apnea, hypoxia, hypercapnia, hydrostatic pressure, bradycardia, peripheral vasoconstriction, cerebral blood-flow redistribution, and sometimes decompression stress. Recent reviews emphasize rapid blood-gas changes, neurovascular responses, and persistent knowledge gaps (Tetzlaff et al., 2021; Paganini et al., 2026). NIRS work in elite freedivers illustrates feasibility of cerebral oxygenation monitoring under specialized conditions (McKnight et al., 2021).
+
+Freediving is useful for monitoring development because hypoxia and hypercapnia evolve rapidly and can be measured alongside neurofunctional signals. Event-related EEG and NIRS studies show that prolonged breath-holding or deep breath-hold dives can modulate neurocognitive and cerebral-oxygenation markers in experienced divers (Eichhorn et al., 2015; Steinberg and Doppelmayr, 2019; McKnight et al., 2021).
+
+The apnea literature also emphasizes individual reserve and adaptation. Spleen and lung volumes predict apnea performance (Schagatay et al., 2012), and freedivers may show distinctive cerebral metabolism, cerebrovascular reactivity, vascular adaptation, or antioxidant responses during repeated hypoxic-hypercapnic exposure (Sureda et al., 2015; Tanaka et al., 2016; Vestergaard and Larsson, 2019). These adaptations should not be generalized uncritically to scuba or saturation diving.
+
+For this review, breath-hold diving provides both a model of extreme physiological compensation and a reminder that monitoring thresholds are context specific. Mechanisms from freediving should not be transferred directly to compressed-gas or saturation diving.
+
+Swimming and aquatic-exercise research reinforces this systems view: immersion, exercise, breathing pattern, and aquatic posture can influence cerebrovascular and cognitive function even outside compressed-gas diving (Shoemaker et al., 2019).
+
+5 Assessment methods for underwater-related cognitive risk
+
+Table 4 summarizes candidate cognitive assessment tools, their advantages, limitations, and feasible use contexts.
+
+Table 4 Cognitive assessment tools used in diving and hyperbaric studies.
+
+Tool/task	Target domain	Advantages	Limitations	Underwater feasibility	Best-use scenario/recommended use	
+Simple reaction time	Psychomotor speed	Brief, repeatable, easy to automate	Practice effects; motor contamination; low domain specificity	High	Repeated low-burden probe for trend detection	
+Discrimination/tracking tasks	Sensorimotor coordination, sustained attention	Closer to operational performance	Affected by dexterity, visibility, and equipment	Moderate	Controlled chamber or field protocols emphasizing operational performance	
+Stroop/Simon/Flanker	Inhibitory control and conflict processing	Sensitive to executive changes; feasible in chambers	Requires display-response reliability; practice effects	Moderate	Core executive probe for chamber, wet, or planned-pause testing	
+Digit span/Corsi/n-back	Verbal and spatial working memory	Domain-specific; compact	May be less sensitive than RT/executive measures in some exposures	Moderate	Navigation, planning, or procedure-heavy missions	
+MATB-II or micro-MATB	Multitasking and operational performance	Higher ecological validity	Longer, more complex, harder underwater	Low to moderate	Model training and validation in chambers or simulators	
+CFFF	Visual processing/cortical arousal proxy	Simple and portable	Confounded by illumination, method, age, ocular factors; not global cognition	Moderate	Adjunct arousal signal within multimodal assessment, not a global cognition proxy	
+Waterproof digital testing	Multiple domains	Potential for in-water assessment	Interface reliability, glove use, pressure/waterproofing	Emerging	Field feasibility studies after interface validation	
+
+5.1 Behavioral cognitive tasks
+
+Behavioral tests remain the foundation of cognitive assessment because they are interpretable, inexpensive, and directly related to task performance. Reaction-time tasks are brief and repeatable; Stroop tasks assess conflict processing; digit span, Corsi, n-back, and spatial tasks assess working memory; and tracking or dual-task paradigms approximate motor-cognitive coordination. Tasks should be chosen according to the cognitive domain most relevant to the mission.
+
+Behavioral tasks also have limitations. Practice effects, motor slowing, hand cooling, display visibility, glove use, buoyancy, and touchscreen reliability can contaminate interpretation. Post-dive testing may miss transient at-depth impairment or introduce recovery effects, whereas at-depth testing may interfere with safety. Protocols should therefore use brief, robust, domain-specific probes with repeated baselines and automated quality-control flags.
+
+5.2 Stroop and executive-function paradigms
+
+Stroop-type paradigms assess inhibitory control and conflict processing with simple stimuli. Their use at 20 m water depth and during simulated 45 ATA saturation exposure supports feasibility across different contexts (Steinberg and Doppelmayr, 2017; Kageyama and Sawamura, 2024). The challenge is to keep probes short enough for safety while retaining sensitivity to meaningful deterioration.
+
+5.3 Multitasking and operational-performance batteries
+
+Operational performance underwater is inherently multitask: divers track depth, time, gas, communication, navigation, body position, and task progress. Multitasking batteries therefore offer greater ecological validity than isolated tasks. MATB-II-like frameworks, which include tracking, monitoring, communication, and resource management, are especially relevant when physiological monitoring is linked to operational performance rather than isolated cognitive scores (Freiberger et al., 2024).
+
+5.4 Critical flicker fusion frequency
+
+CFFF is widely used in diving and hyperbaric research because it is simple, non-invasive, and repeatable. It is often interpreted as a marker of cortical arousal or central nervous system alertness (Mankowska et al., 2021). Studies using CFFF under different gas mixtures and after scuba diving explain why it remains attractive for field research (Balestra et al., 2012; Lafère et al., 2019).
+
+Its interpretation should be restrained. CFFF is best treated as a complementary neurofunctional index rather than a substitute for cognitive testing. It enables repeated low-burden sampling of arousal state, but is affected by instructions, illumination, device characteristics, circadian state, learning, ocular factors, and threshold definition (Mankowska et al., 2021, Mankowska et al., 2026; Muth et al., 2026).
+
+Recent work reinforces this caution. Oxygen exposure can alter CFFF responses across normobaric and hyperbaric conditions, and correlations between CFFF components and executive or memory measures appear variable (Sharma et al., 2024; Mankowska et al., 2025, Mankowska et al., 2026). Thus, CFFF meaning depends on gas, light, device, participant, and task context.
+
+Accordingly, CFFF should be combined with exposure data, brief cognitive probes, and physiological signals rather than used as a stand-alone proxy for global cognition.
+
+5.5 Underwater-compatible digital testing
+
+Digital testing can bridge laboratory neuropsychology and operational monitoring. Waterproof tablets or pressure-tolerant interfaces could allow short cognitive probes during chamber exposures or planned underwater pauses. A recent case study identified feasibility but also practical limits in stimulus presentation and touch-response reliability (Yoshimura and Takahashi, 2025). Future systems need glove-compatible interfaces, high-contrast displays, low burden, timing calibration, and physiological-data integration.
+
+5.6 Timing, baselines, and interpretation
+
+Assessment timing strongly shapes interpretation. Pre-dive testing captures fatigue, sleep, anxiety, and baseline readiness; in-dive testing captures acute exposure effects but is constrained by safety; immediate post-dive testing may detect residual effects; and delayed testing may reflect recovery, fatigue, or decompression-related symptoms (Dreyer et al., 2024). Rigorous protocols should include repeated individualized baselines, exposure-phase labels, and explicit handling of learning effects.
+
+6 Physiological and neurofunctional monitoring strategies
+
+Table 5 summarizes the main physiological and neurofunctional monitoring approaches, including their signals, limitations, and current status.
+
+Table 5 Physiological and neurofunctional monitoring approaches.
+
+Monitoring method	Signal type	Target risk	Strengths	Limitations	Current status	
+EEG	Neurofunctional connectivity, spectral dynamics, ERP components	Nitrogen narcosis, cortical arousal, stimulus processing	Direct brain-state information	Setup burden, artifacts, waterproofing, pressure tolerance	High mechanistic value; operational readiness remains early	
+ERP	P300/MMN-like indices of cognitive processing	Attention and stimulus evaluation	Objective and domain interpretable	Needs controlled stimuli; artifacts	Useful for validation; limited immediate in-dive readiness	
+HRV	Autonomic regulation	Stress, workload, fatigue, impaired performance risk	Wearable, continuous, low burden	Nonspecific; affected by breathing, cold, exercise	Useful for contextual trend monitoring within multimodal models	
+EDA	Sympathetic arousal	Stress and workload	Continuous, complementary to HRV	Water and motion challenges; nonspecific	Adjunct workload/stress signal; interpretation depends on context	
+NIRS/fNIRS	Cerebral oxygenation/hemodynamics	Hypoxia, cerebral stress, frontal activation	Useful in breath-hold and chamber contexts	Waterproofing, motion, hair, pressure effects	High for hypoxia/apnea questions; water deployment remains constrained	
+Respiratory CO2/ventilation	Inspired or expired CO2, breathing pattern	Hypercapnia and respiratory burden	Targets a known critical risk	Sensor integration and calibration underwater	High practical relevance when reliable sensing is available	
+Wearable platforms	Multisensor fusion	General cognitive-risk estimation	Scalable and longitudinal	Validation, data quality, interpretability	Research-stage; useful only after endpoint validation	
+
+6.1 EEG and event-related potentials
+
+EEG is mechanistically valuable because it measures neurofunctional state directly, but most evidence remains chamber-based, proof-of-concept, or dependent on controlled stimuli. Functional connectivity at 608 kPa air exposure and auditory ERP changes during simulated hyperbaric nitrogen exposure suggest sensitivity to nitrogen narcosis and altered stimulus processing (Karakaya et al., 2021; Vrijdag et al., 2022a). These findings support EEG/ERP as research tools; they do not establish deployable in-dive monitoring or direct identification of cognitive impairment.
+
+Field translation requires waterproofing, pressure tolerance, electrical safety, electrode stability, limited setup time, artifact control, ecological validity, and timely interpretability. A chamber signal is not automatically useful during a working dive with movement, bubbles, equipment noise, thermal stress, and task switching. EEG and ERP are therefore among the most informative mechanistic tools, but remain constrained for continuous operational use.
+
+Signal-quality control should be a core requirement. In diving-relevant EEG/ERP, motion, ocular and facial-muscle artifacts, regulator or mask movement, electrode displacement, perspiration, pressure effects, water sealing, cable movement, and equipment noise can mimic or obscure neurocognitive effects. Wearable EEG improves portability but may reduce channel count, sampling flexibility, and artifact tolerance. Out-of-lab artifact-correction and wearable-EEG benchmarking work shows the need for online artifact management, device comparison, and neurometric reliability checks (Ronca et al., 2024, Ronca et al., 2026a).
+
+EEG protocols should report electrode type, fixation, impedance or contact-quality criteria, sampling rate, filtering, artifact correction, retained data percentage, synchronization, and whether features were computed from artifact-free windows only. Any EEG-derived alarm should include signal-confidence flags and validation against prespecified task or operational endpoints.
+
+6.2 HRV, electrodermal activity, and autonomic markers
+
+Autonomic markers are attractive because they can be measured continuously and non-invasively. HRV reflects autonomic regulation, workload, stress, breathing patterns, and recovery state. Diving studies suggest associations between HRV features, operational performance, and physiological stress responses, but HRV should be used within multimodal models rather than as a stand-alone cognitive marker (Freiberger et al., 2024; Chen et al., 2025).
+
+General HRV methodology supports caution because indices are strongly affected by respiration, posture, workload, stress, and recovery state (Laborde et al., 2017; Shaffer and Ginsberg, 2017). In underwater settings, these influences are part of the operational state. HRV is most useful when modeled with breathing pattern, CO2 risk, workload, temperature, and task performance.
+
+EDA may complement HRV by indexing sympathetic arousal, but neither HRV nor EDA should be treated as a direct marker of cognitive impairment. Autonomic changes may reflect cognitive strain, emotion, cold, hypercapnia, exercise, pain, anxiety, breathing pattern, recovery, or equipment discomfort. Their value lies in synchronization with dive phase, respiratory variables, thermal exposure, workload, subjective state, and task performance (Ronca et al., 2026b).
+
+6.3 NIRS and cerebral oxygenation
+
+NIRS can monitor cerebral oxygenation and hemodynamics, especially in frontal regions relevant to executive control, but it does not directly measure cognition. It has been used during deep breath-hold diving in elite freedivers (McKnight et al., 2021), and may be useful in breath-hold, dry hyperbaric, or limited-movement chamber contexts. Barriers in scuba and occupational diving include sensor fixation, pressure tolerance, motion artifacts, water sealing, hair interference, thermal stress, equipment interference, and interpretation under changing oxygen and CO2 levels.
+
+Interpretation requires care. fNIRS signals are affected by extracerebral blood flow, motion, optode placement, hair, and systemic physiology (Pinti et al., 2020). Diving amplifies these limitations because pressure, water sealing, facial equipment, exercise, and CO2 can all influence cerebral and peripheral hemodynamics.
+
+NIRS should be viewed as a cerebral-state signal rather than a direct cognitive test. Reduced cerebral oxygenation may indicate hypoxic risk, but stable oxygenation does not guarantee preserved executive function. Like HRV, NIRS becomes useful when combined with exposure data and brief cognitive probes.
+
+6.4 Respiratory CO2 monitoring and breathing-load assessment
+
+Respiratory monitoring is one of the strongest candidates for future underwater cognitive-risk research because CO2 retention and breathing load have direct physiological and safety relevance. CO2 retention can arise from equipment failure, high work of breathing, exercise, or behavioral patterns and can rapidly degrade mental and physical performance (Dunworth et al., 2017). Inspired CO2, end-tidal CO2, ventilation, respiratory rate, gas density, and work of breathing would directly address a known safety threat, but sensor robustness and equipment integration remain major constraints.
+
+Because subjective symptoms may not detect CO2-related cognitive risk early enough, respiratory metrics should be incorporated into future estimation models when feasible. A diver with rising CO2, increasing respiratory effort, deteriorating HRV, and slowed reaction time represents a different risk state from isolated mild slowing after repetitive testing, but this combined interpretation still requires prospective endpoint validation.
+
+6.5 Wearable platforms and multimodal risk estimation
+
+Wearable technology is expanding in diving, including devices for breath-hold applications, heart rate, and oxygen saturation (Vinetti et al., 2020; Bube et al., 2022; Beatty et al., 2024; Park et al., 2025). For cognitive risk, however, physiological signals must be validated against task-relevant cognitive and operational outcomes.
+
+The next step is not simply to add sensors. A useful system must define what each signal means, when it should be interpreted as potentially relevant, and how false alarms will be controlled. Without such validation, wearable monitoring risks becoming data-rich but operationally weak.
+
+A proposed architecture could include environmental exposure data, physiological signals, and brief cognitive probes. Environmental data include depth, pressure, phase, gas, temperature, and workload proxies; physiological signals may include HRV, respiratory variables, EEG-derived metrics, NIRS, EDA, and oxygen saturation; cognitive probes should be short and domain specific. As outlined in Figure 2, these streams would require data-quality checks and individualized baselines before contributing to risk estimates. Such systems might eventually support continued monitoring, workload reduction, gas switch, ascent, rest, or post-dive recovery restriction, but only after prospective validation.
+
+Figure 2 Proposed architecture for context-aware underwater cognitive-risk estimation. Exposure data, physiological signals, cognitive probes, and subjective state require artifact control, synchronization, baseline referencing, and feasibility checks before they can be translated into interpretable risk estimates. The architecture highlights key methodological requirements for future validation studies.
+
+Flowchart illustrating a proposed context-aware architecture for underwatercognitive-risk estimation. The architecture includes input, data-quality, individualized baseline, risk-inference, decision, and feedback layers. Arrows indicate information flow and feedback from operational decisions to baseline updating and model calibration. The figure emphasizes that exposure data, physiological signals, cognitive probes, and subjective state require quality control, baseline reference, and prospective validation before operational interpretation.
+
+6.6 Feasibility staging for underwater monitoring
+
+Feasibility differs substantially across settings. Dry hyperbaric chambers are suitable for mechanism testing and synchronized EEG/ERP or NIRS recording, but cannot reproduce movement, buoyancy, visibility, thermal, and equipment constraints. Wet chambers and planned underwater pauses can test waterproof interfaces, display-response reliability, and brief probes with lower safety risk. Continuous open-water or occupational monitoring is currently most realistic for passive exposure data, respiratory variables, heart rate or HRV, and selected low-burden wearable outputs; continuous EEG/ERP/NIRS remains research-stage unless signal quality and safety are demonstrated.
+
+A method feasible during a decompression stop may be inappropriate during navigation, rescue, tool use, current exposure, or emergency ascent. Future studies should label each method as feasible now, chamber-only, feasible during planned underwater pauses, or speculative for continuous real-dive deployment. Table 6 summarizes the corresponding feasibility and validation considerations.
+
+Table 6 Feasibility and validation considerations for candidate monitoring components.
+
+Component	Near-term feasible setting	Main constraints	Core validation endpoint	
+Exposure and equipment data	Continuous open-water, chamber, and saturation settings	Synchronization and standardized phase labels	Depth/phase-linked association with operational events	
+Brief cognitive probes	Dry chamber, wet chamber, planned underwater pauses	Practice effects, interface reliability, safety burden	Meaningful within-diver change; response delay; error rate	
+CFFF	Chamber and selected field protocols	Illumination, ocular factors, device thresholds	Arousal-state change as adjunct, not global cognition	
+HRV/EDA	Continuous passive monitoring	Nonspecificity: exercise, cold, CO2, anxiety, pain, recovery	Context-aware strain trends with respiratory and task labels	
+Respiratory CO2/breathing load	High priority when sensor integration is reliable	Sensor calibration, water sealing, dead space, equipment integration	Hypercapnia or breathing-load risk; relation to performance decline	
+EEG/ERP	Dry chamber; experimental wet settings; limited real-dive deployment	Waterproofing, pressure, artifacts, electrode stability, safety	Signal-quality-controlled association with attention/executive outcomes	
+NIRS/fNIRS	Freediving, chamber, and controlled underwater protocols	Fixation, hair, motion, systemic physiology, waterproofing	Cerebral oxygenation trajectory and recovery, especially apnea/hypoxia	
+Wearable fusion model	Research-stage; staged validation required	Data quality, synchronization, individual baselines, false alarms	Association with task failure, unsafe decision, navigation deviation, missed alarm, or delayed recovery	
+The matrix summarizes feasible testing settings, key constraints, and candidate validation endpoints that should be addressed before operational implementation.
+
+6.7 Relation to passive BCI and neuroergonomics
+
+The framework aligns with passive brain-computer interface and neuroergonomics research, which infers operator state from neurophysiological and physiological signals without deliberate commands. These fields have developed methods for monitoring workload, vigilance, stress, mental effort, and operator capacity in aviation, driving, surgery, and industry (Borghini et al., 2022; Bagheri and Power, 2022; Zhou et al., 2022). Diving shares the need for state estimation but adds pressure, immersion, respiratory constraints, water sealing, and limited interfaces. Underwater monitoring should borrow validation logic from these fields while avoiding direct transfer of thresholds from dry or seated tasks.
+
+A useful underwater system should be transparent and operator centered. It should indicate whether risk is driven by respiratory burden, environmental exposure, autonomic strain, cognitive-probe deterioration, poor signal confidence, or their combination. Without interpretability, multimodal fusion may increase false alarms and distrust rather than improve safety.
+
+7 Emerging biological mechanisms
+
+This review is not primarily mechanistic, and biological mechanisms should be interpreted as context for susceptibility, recovery, and prolonged effects rather than as evidence for real-time cognitive-risk monitoring in human divers. Diving physiology involves pressure, gas kinetics, vascular responses, oxidative stress, decompression stress, and inflammatory responses (Bosco et al., 2018; Vezzoli et al., 2024). Dopamine/BDNF findings may offer a neurochemical bridge between narcosis-related physiology and cognition, although operational interpretation remains preliminary (Bosco et al., 2023).
+
+The redox-vascular literature is relevant mainly to recovery, resilience, and repeated exposure. Diving can produce adverse stress responses or adaptive physiological responses depending on exposure profile, fitness, and recovery state (Perovic et al., 2014). Biomarkers should therefore be interpreted as context-dependent indicators of load and adaptation rather than simple evidence of injury.
+
+Saturation and scuba studies have reported oxidative-stress biomarker changes across prolonged or depth-varying exposures (Mrakic-Sposta et al., 2020; Marchetti et al., 2022). These markers are not cognitive tests, but they may help explain recovery differences, prolonged fatigue, symptoms, or delayed readiness for complex tasks.
+
+Field studies provide systemic context rather than direct cognitive-monitoring validation. Repeated or deep dives can be accompanied by endothelial dysfunction, oxidative stress, vascular gas emboli, and antioxidant responses, and integrated physiological-biochemical monitoring is feasible in real dive settings (Obad et al., 2010; Sureda et al., 2012; Marinovic et al., 2012; Balestra et al., 2024). These findings do not directly measure cognition, but they support including vascular and biological context when recovery or repeated exposure is a concern.
+
+Vascular and neuroinflammatory pathways are emerging but should be interpreted cautiously. Decompression stress, endothelial activation, microbubbles, cerebral oxygenation changes, and blood-brain barrier vulnerability may contribute to post-dive symptoms or longer-term effects in susceptible contexts. Animal studies suggest pathways linking prolonged underwater stress, hippocampal vulnerability, microglial activation, and cognition, but should not be overgeneralized to human divers (Zhao et al., 2024a, Zhao et al., 2024b).
+
+Immediate task performance may not fully capture biological burden, but current biological evidence does not justify real-time human cognitive-risk classification. Future studies should test whether physiological monitoring, biochemical markers, and cognitive recovery curves can improve post-dive risk assessment.
+
+8 Practical implications and future directions
+
+8.1 Pre-dive screening
+
+Pre-dive assessment may need to move beyond general medical fitness in occupational or research contexts. Sleep, fatigue, stress, anxiety, medication, dehydration, prior dives, recent illness, and sensitivity to narcosis or CO2 can affect cognitive readiness. A short baseline battery covering reaction time, executive control, and subjective fatigue could contextualize in-dive or post-dive changes, but individualized thresholds require validation.
+
+8.2 In-dive monitoring
+
+In-dive monitoring must be low burden and should not distract from safety-critical tasks. The most realistic near-term approach is passive exposure and physiological monitoring, with brief cognitive probes only during planned pauses or chamber intervals. Systems should flag patterns that justify attention, workload reduction, or post-dive reassessment, not issue black-box operational commands.
+
+8.3 Post-dive recovery assessment
+
+Post-dive monitoring matters because impairment may persist after surfacing. Residual narcosis, vascular gas emboli, fatigue, and inflammatory or oxidative responses may affect recovery (Dreyer et al., 2024; Balestra et al., 2024). Post-dive tests should distinguish transient at-depth impairment, decompression-related symptoms, fatigue, and delayed recovery.
+
+8.4 Standardization and validation
+
+A standardized underwater cognitive-risk battery should include a small number of tasks covering vigilance, reaction time, executive control, and working memory, plus subjective fatigue and workload. The battery should be brief, repeatable, device-stable, and usable across dry chambers, wet chambers, and field conditions; it should support comparison rather than replace mission-specific assessment.
+
+8.5 Toward individualized cognitive-risk estimation
+
+Individualized cognitive-risk estimation is a future goal rather than a current operational capability. Divers differ in fitness, experience, anxiety, ventilatory response, narcosis susceptibility, cold tolerance, sleep, and learning effects. Machine-learning models may eventually integrate exposure, physiology, and performance, but require large, well-labeled datasets, transparent features, and validation against meaningful endpoints. Interpretability is essential; black-box scores without confidence or driver information should not guide safety-critical decisions.
+
+8.6 Ideal study methodology
+
+An ideal future study would be staged, prospective, and validation oriented. Stage 1 would establish repeated dry baselines across separate days to quantify intra-individual variability, practice effects, sleep/fatigue influences, and device reliability. Outputs would include stable baseline distributions for reaction time, executive control, vigilance, workload, HRV, respiratory variables, and any EEG/NIRS features.
+
+Stage 2 would use controlled dry hyperbaric chamber exposures with standardized pressure, gas mixture, inspired partial pressures, CO2 or ventilation load, temperature, workload, and testing time. The goal would be feasibility, signal quality, domain sensitivity, and dose-response characterization, not operational deployment.
+
+Stage 3 would test only components that passed stage-2 feasibility and signal-quality criteria in wet-chamber or open-water trials. Cognitive probes should be brief, prespecified, and limited to planned pauses. Waterproofing, display readability, response reliability, glove use, buoyancy, motion artifacts, and workload interference would become primary endpoints.
+
+Stage 4 would evaluate occupational or saturation settings for longitudinal reliability, recovery curves, false-alarm burden, user acceptance, and decision usefulness. Core validation outcomes should include task failure, response delay, navigation deviation, gas-management error, unsafe ascent/descent behavior, missed alarm, expert-rated performance, abnormal recovery, and restriction from safety-sensitive work.
+
+8.7 Research roadmap and priority areas
+
+Figure 3 translates the discussion into a staged roadmap. The field does not need more unrelated tests; it needs comparable protocols that connect exposure, physiology, cognition, and operational outcome. A minimal core dataset should include participant expertise, exposure profile, gas variables, CO2/respiratory burden, thermal exposure, workload, cognitive probes, physiological signal quality, and operational endpoints.
+
+Figure 3 Research roadmap for underwater cognitive-risk assessment and monitoring. Future work should progress from standardized cognitive batteries and reporting variables, to direct comparison of monitoring modalities within the same protocols, and then to baseline-referenced estimation models evaluated across chamber, open-water, and saturation settings.
+
+Flowchart showing a staged research roadmap for underwater cognitive-riskassessment and monitoring. Stage 1 standardizes the evidence base with compact cognitive batteries, exposure variables, practice-effect control, and individualized baseline procedures. Stage 2 compares monitoring modalities such as CFFF, EEG/ERP, HRV/EDA, NIRS, CO2 and gas-density recording. Stage 3validates baseline-referenced estimation models against operational endpoints across chamber, open-water, and saturation settings. Five priority areas are listed below the stages.
+
+A staged strategy would reduce the gap between laboratory and field research. Chamber studies suit mechanism and signal validation; wet-chamber and open-water studies test usability and ecological validity; saturation or occupational studies are needed for longitudinal reliability and decision usefulness. Each stage should have explicit stop/go criteria before a tool is treated as operationally informative.
+
+8.8 Research gaps and reporting standards
+
+Several gaps remain urgent: real underwater studies are fewer than chamber studies; deep and saturation studies are necessarily small; CO2, workload, sleep, and thermal variables are often underreported; and few studies link signals to operational endpoints. Most importantly, multimodal signals have not yet been prospectively validated for safety-critical cognitive-risk classification. This limitation should guide interpretation of the proposed framework.
+
+A practical reporting standard would improve comparability. Future studies should report participant expertise, pressure profile, wet/dry exposure, gas and inspired partial pressures, estimated gas density, CO2 and respiratory variables, temperature, workload, timing of cognitive tests, baseline procedures, device characteristics, signal-quality criteria, and operational endpoints. This would allow future systematic reviews or meta-analyses to distinguish robust findings from context-specific effects.
+
+9 Conclusion
+
+Underwater cognitive risk is a multidimensional physiological, neurofunctional, and operational problem shaped by pressure, gases, nitrogen narcosis, CO2 retention, oxygen partial pressure, immersion, cold, workload, fatigue, and individual susceptibility. Cognitive performance, cognitive impairment, cognitive readiness, and cognitive risk should be distinguished: impairment is observed task decline, whereas risk is a probabilistic, baseline-referenced state that may precede overt error.
+
+The main contribution of this review is to organize current evidence and outline a staged research roadmap for underwater cognitive-risk assessment and monitoring. Future work should move from isolated pre- and post-dive tests toward integrated, context-aware, staged validation. Environmental exposure data, respiratory and autonomic measures, selected neurofunctional signals, and brief cognitive probes may become useful when quality controlled, synchronized, interpreted against individualized baselines, and evaluated against operational endpoints. Figures 1-3 and Tables 2, 6 are intended to support protocol design and should be tested prospectively before operational use. Multimodal fusion should not be assumed to solve the problem automatically; its value will depend on transparency, feasibility, signal quality, ecological validity, and prospective validation.
+
+Author contributions
+
+HZ: Writing – original draft, Writing – review & editing, Investigation, Conceptualization. LW: Writing – review & editing, Writing – original draft, Conceptualization. YZ: Writing – original draft, Conceptualization, Writing – review & editing. NZ: Writing – review & editing. SZ: Writing – review & editing. YW: Writing – review & editing. XY: Funding acquisition, Conceptualization, Project administration, Writing – review & editing, Supervision. YF: Project administration, Supervision, Writing – review & editing, Funding acquisition, Conceptualization.
+
+Conflict of interest
+
+The author(s) declared that this work was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
+
+Generative AI statement
+
+The author(s) declared that generative AI was used in the creation of this manuscript. AI-assisted tools (Deepseek-V4, China) were used solely for graphical rendering based on author-designed schematics. All figures were critically reviewed and verified by the authors to ensure scientific accuracy. Any alternative text (alt text) provided alongside figures in this article has been generated by Frontiers with the support of artificial intelligence and reasonable efforts have been made to ensure accuracy, including review by the authors wherever possible. If you identify any issues, please contact us.
+
+Any alternative text (alt text) provided alongside figures in this article has been generated by Frontiers with the support of artificial intelligence and reasonable efforts have been made to ensure accuracy, including review by the authors wherever possible. If you identify any issues, please contact us.
+
+Publisher’s note
+
+All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claim that may be made by its manufacturer, is not guaranteed or endorsed by the publisher.
+
+Edited by: Costantino Balestra, Haute École Bruxelles-Brabant (HE2B), Belgium
+
+Reviewed by: Alessandro Marroni, DAN Europe Foundation, Malta
+
+Vincenzo Ronca, Sapienza University of Rome, Italy
+
+Annette Schmidt, Munich University of the Federal Armed Forces, Germany
+
+Clément Leveque, University of North Carolina at Chapel Hill, United States
+
+
+References
+
+Bagheri M. Power S. D. (2022). Simultaneous classification of both mental workload and stress level suitable for an online passive brain-computer interface. Sensors 22, 535. doi: 10.3390/s22020535 35062495 PMC8781201
+Balestra C. Lafère P. Germonpré P. (2012). Persistence of critical flicker fusion frequency impairment after a 33 mfw SCUBA dive: evidence of prolonged nitrogen narcosis? Eur. J. Appl. Physiol. 112, 4063–4068. doi: 10.1007/s00421-012-2391-z 22476770
+Balestra C. Lévêque C. Mrakic-Sposta S. Vezzoli A. Wauthy P. Germonpré P. . (2024). Physiology of deep closed circuit rebreather mixed gas diving: vascular gas emboli and biological changes during a week-long liveaboard safari. Front. Physiol. 15, 1395846. doi: 10.3389/fphys.2024.1395846 38660539 PMC11040087
+Bast-Pettersen R. Skare ØCheckt. a. e. Nordby K. C. Skogstad M. (2015). A twelve-year longitudinal study of neuropsychological function in non-saturation professional divers. Int. Arch. Occup. Environ. Health 88, 669–682. doi: 10.1007/s00420-014-0991-0 25355537 PMC4508362
+Beatty P. Evans W. Gravelyn S. Tumperi M. Daubon D. Veith A. (2024). Physiological monitoring to prevent diving disorders. Front. Physiol. 15, 1517361. doi: 10.3389/fphys.2024.1517361 39744705 PMC11688341
+Borghini G. Aricò P. Di Flumeri G. Ronca V. Giorgi A. Sciaraffa N. . (2022). Air Force pilot expertise assessment during unusual attitude recovery flight. Safety 8, 38. doi: 10.3390/safety8020038 30654563
+Bosco G. Giacon T. A. Paolocci N. Vezzoli A. Noce C. D. Paganini M. . (2023). Dopamine/BDNF loss underscores narcosis cognitive impairment in divers: a proof of concept in a dry condition. Eur. J. Appl. Physiol. 123, 143–158. doi: 10.1007/s00421-022-05055-6 36214902 PMC9813116
+Bosco G. Rizzato A. Moon R. E. Camporesi E. M. (2018). Environmental physiology and diving medicine. Front. Psychol. 9, 72. doi: 10.3389/fpsyg.2018.00072 29456518 PMC5801574
+Brebeck A. K. Deussen A. Schmitz-Peiffer H. Range U. Balestra C. Cleveland S. . (2017). Effects of oxygen-enriched air on cognitive performance during SCUBA-diving - an open-water study. Res. Sport. Med. 25, 345–356. doi: 10.1080/15438627.2017.1314289 28397524
+Bube B. Zanón B. B. Lara Palma A. M. Klocke H. (2022). Wearable devices in diving: scoping review. JMIR Mhealth. Uhealth. 10, e35727. doi: 10.2196/35727 36066926 PMC9490542
+Chang Y. K. Labban J. D. Gapin J. I. Etnier J. L. (2012). The effects of acute exercise on cognitive performance: a meta-analysis. Brain Res. 1453, 87–101. doi: 10.1016/j.brainres.2012.02.068 22480735
+Chen Y. J. Tzeng Y. S. Tang S. E. Li C. R. Wu S. Y. Huang K. L. (2025). Autonomic and physiological stress responses in navy divers: the protective role of diving experience. Front. Physiol. 16, 1642779. doi: 10.3389/fphys.2025.1642779 40901610 PMC12399529
+Ciarlone G. E. Hinojo C. M. Stavitzski N. M. Dean J. B. (2019). CNS function and dysfunction during exposure to hyperbaric oxygen in operational and clinical settings. Redox Biol. 27, 101159. doi: 10.1016/j.redox.2019.101159 30902504 PMC6859559
+Clark J. E. (2015). Moving in extreme environments: inert gas narcosis and underwater activities. Extrem. Physiol. Med. 4, 1. doi: 10.1186/s13728-014-0020-7 25713701 PMC4337274
+Coco M. Buscemi A. Perciavalle V. Maci T. Galvano G. Scavone A. M. F. . (2019). Cognitive deficits and white matter alterations in highly trained scuba divers. Front. Psychol. 10, 2376. doi: 10.3389/fpsyg.2019.02376 31695655 PMC6817599
+Dalecki M. Bock O. Schulze B. (2012). Cognitive impairment during 5 m water immersion. J. Appl. Physiol. (1985). 113, 1075–1081. doi: 10.1152/japplphysiol.00825.2012 22879536
+Dreyer S. Schneppendahl J. Hoffmanns M. Muth T. Schipke J. D. (2024). Narcotic nitrogen effects persist after a simulated deep dive. Med. (Kaunas). 60 (7), 1083. doi: 10.3390/medicina60071083 39064512 PMC11278881
+Dunworth S. A. Natoli M. J. Cooter M. Cherry A. D. Peacher D. F. Potter J. F. . (2017). Hypercapnia in diving: a review of CO2 retention in submersed exercise at depth. Undersea. Hyperb. Med. 44, 191–209. doi: 10.22462/5.6.2017.1 28779577
+Eichhorn L. Erdfelder F. Kessler F. Doerner J. Thudium M. O. Meyer R. . (2015). Evaluation of near-infrared spectroscopy under apnea-dependent hypoxia in humans. J. Clin. Monit. Comput. 29, 749–757. doi: 10.1007/s10877-015-9662-2 25649718
+Endsley M. R. (1995). Toward a theory of situation awareness in dynamic systems. Hum. Factors 37, 32–64. doi: 10.1518/001872095779049543
+Ergen M. Uslu A. Caglar O. Akca-Kalem S. Cimsit M. Gurvit H. (2017). Evaluation of cognitive performance in professional divers by means of event-related potentials and neuropsychology. Clin. Neurophysiol. 128, 579–588. doi: 10.1016/j.clinph.2017.01.007 28231476
+Falla M. Micarelli A. Hüfner K. Strapazzon G. (2021). The effect of cold exposure on cognitive performance in healthy adults: a systematic review. Int. J. Environ. Res. Public Health 18 (18), 9725. doi: 10.3390/ijerph18189725 34574649 PMC8470111
+Fothergill D. M. Hedges D. Morrison J. B. (1991). Effects of CO2 and N2 partial pressures on cognitive and psychomotor performance. Undersea. Biomed. Res. 18, 1–19. 1902340
+Freiberger J. Derrick B. Chon K. H. Hossain M. B. Posada-Quintero H. F. Cooter M. . (2024). Does heart rate variability predict impairment of operational performance in divers? Sensors. (Basel). 24 (23), 7726. doi: 10.3390/s24237726 39686263 PMC11644904
+Freiberger J. J. Derrick B. J. Natoli M. J. Akushevich I. SChinazi E. A. Parker C. . (2016). Assessment of the interaction of hyperbaric N2, CO2, and O2 on psychomotor performance in divers. J. Appl. Physiol. (1985). 121, 953–964. doi: 10.1152/japplphysiol.00534.2016 27633739
+Garrett J. Chak C. Bullock T. Giesbrecht B. (2024). A systematic review and Bayesian meta-analysis provide evidence for an effect of acute physical activity on cognition in young adults. Commun. Psychol. 2, 82. doi: 10.1038/s44271-024-00124-2 39242965 PMC11358546
+Germonpré P. Balestra C. Hemelryck W. Buzzacott P. Lafère P. (2017). Objective vs. subjective evaluation of cognitive performance during 0.4-MPa dives breathing air or nitrox. Aerosp. Med. Hum. Perform. 88, 469–475. doi: 10.3357/amhp.4608.2017 28417835
+Gill M. Natoli M. J. Vacchiano C. MacLeod D. B. Ikeda K. Qin M. . (2014). Effects of elevated oxygen and carbon dioxide partial pressures on respiratory function and cognitive performance. J. Appl. Physiol. (1985). 117, 406–412. doi: 10.1152/japplphysiol.00995.2013 24947022
+Hart S. G. (2006). NASA-task load index (NASA-TLX); 20 years later. Proc. Hum. Factors. Ergon. Soc Annu. Meet. 50, 904–908. doi: 10.1177/154193120605000909
+Hart S. G. Staveland L. E. (1988). Development of NASA-TLX (Task Load Index): results of empirical and theoretical research. In: Hancock P. A. Meshkati N. , editors. Human Mental Workload. (Amsterdam: North-Holland), 139–183. doi: 10.1016/S0166-4115(08)62386-9
+Hemelryck W. Germonpré P. Papadopoulou V. Rozloznik M. Balestra C. (2014). Long term effects of recreational SCUBA diving on higher cognitive function. Scand. J. Med. Sci. Sport. 24, 928–934. doi: 10.1111/sms.12100 23902533
+Hobbs M. Higham P. A. Kneller W. (2014). Memory and metacognition in dangerous situations: investigating cognitive impairment from gas narcosis in undersea divers. Hum. Factors. 56, 696–709. doi: 10.1177/0018720813510737 25029895
+Imbert J. P. Balestra C. Kiboub F. Z. Loennechen Ø. Eftedal I. (2018). Commercial divers' subjective evaluation of saturation. Front. Psychol. 9, 2774. doi: 10.3389/fpsyg.2018.02774 30692957 PMC6340096
+Kageyama N. Sawamura T. (2024). Effect of hyperbaric exposure on cognitive performance: an investigation conducting numerical Stroop tasks during a simulated 440 m sea water saturation diving. J. Physiol. Anthropol. 43, 24. doi: 10.1186/s40101-024-00366-3 39375772 PMC11459827
+Karakaya H. Aksu S. Egi S. M. Aydin S. Uslu A. (2021). Effects of hyperbaric nitrogen narcosis on cognitive performance in recreational air SCUBA divers: an auditory event-related brain potentials study. Ann. Work. Expo. Health 65, 505–515. doi: 10.1093/annweh/wxaa132 33942846
+Laborde S. Mosley E. Thayer J. F. (2017). Heart rate variability and cardiac vagal tone in psychophysiological research - recommendations for experiment planning, data analysis, and data reporting. Front. Psychol. 8, 213. doi: 10.3389/fpsyg.2017.00213 28265249 PMC5316555
+Lafère P. Hemelryck W. Germonpré P. Matity L. Guerrero F. Balestra C. (2019). Early detection of diving-related cognitive impairment of different nitrogen-oxygen gas mixtures using critical flicker fusion frequency. Diving. Hyperb. Med. 49, 119–126. doi: 10.28920/dhm49.2.119-126 31177518 PMC6704008
+Ludyga S. Gerber M. Brand S. Holsboer-Trachsler E. Pühse U. (2016). Acute effects of moderate aerobic exercise on specific aspects of executive function in different age and fitness groups: a meta-analysis. Psychophysiology 53, 1611–1626. doi: 10.1111/psyp.12736 27556572
+Mankowska N. D. Marcinkowska A. B. Waskow M. Sharma R. I. Kot J. Winklewski P. J. (2021). Critical flicker fusion frequency: a narrative review. Med. (Kaunas). 57 (10), 1096. doi: 10.3390/medicina57101096 34684133 PMC8537539
+Mankowska N. D. Sharma R. I. Marcinkowska A. B. Kot J. Winklewski P. J. (2025). Assessing the relationship between the flicker test and cognitive performance. Biology 14, 1469. doi: 10.3390/biology14111469 41300262 PMC12650153
+Mankowska N. D. Sharma R. I. Marcinkowska A. B. Winklewski P. J. Kot J. (2026). Complex relationship between critical flicker fusion frequency and established cognitive tests unveiled by hyperbaric exposure. Biol. (Basel). 15 (3), 242. doi: 10.3390/biology15030242 41677712 PMC12896693
+Marchetti E. Pigini D. Spagnoli M. Tranfo G. Buonaurio F. Sciubba F. . (2022). Hyperbaric exposure of scuba divers affects the urinary excretion of nucleic acid oxidation products and hypoxanthine. Int. J. Environ. Res. Public Health 19 (5), 3005. doi: 10.3390/ijerph19053005 35270697 PMC8910156
+Marcora S. M. Staiano W. Manning V. (2009). Mental fatigue impairs physical performance in humans. J. Appl. Physiol. (1985). 106, 857–864. doi: 10.1152/japplphysiol.91324.2008 19131473
+Marinovic J. Ljubkovic M. Breskovic T. Gunjaca G. Obad A. Modun D. . (2012). Effects of successive air and nitrox dives on human vascular function. Eur. J. Appl. Physiol. 112, 2131–2136. doi: 10.1007/s00421-011-2187-6 21964910
+McKnight J. C. Mulder E. Ruesch A. Kainerstorfer J. M. Wu J. Hakimi N. . (2021). When the human brain goes diving: using near-infrared spectroscopy to measure cerebral and systemic cardiovascular responses to deep, breath-hold diving in elite freedivers. Philos. Trans. R. Soc Lond. B. Biol. Sci. 376, 20200349. doi: 10.1098/rstb.2020.0349 34176327 PMC8237162
+McMorris T. Hale B. J. (2012). Differential effects of differing intensities of acute exercise on speed and accuracy of cognition: a meta-analytical investigation. Brain Cognit. 80, 338–351. doi: 10.1016/j.bandc.2012.09.001 23064033
+Meckler C. Blatteau J. E. Hasbroucq T. Schmid B. Risso J. J. Vidal F. (2014). Effects of hyperbaric nitrogen-induced narcosis on response-selection processes. Ergonomics 57, 210–218. doi: 10.1080/00140139.2013.877161 24428598
+Möller F. Hoffmann U. Dalecki M. Dräger T. Doppelmayr M. Steinberg F. (2021). Physical exercise intensity during submersion selectively affects executive functions. Hum. Factors. 63, 227–239. doi: 10.1177/0018720819879313 31596615
+Möller F. Jacobi E. Hoffmann U. Vogt T. (2023). Physiological and cognitive responses to hyperoxic exercise in full water submersion. Eur. J. Sport. Sci. 23, 1647–1657. doi: 10.1080/17461391.2023.2193942 37009949
+Mrakic-Sposta S. Vezzoli A. D'Alessandro F. Paganini M. Dellanoce C. Cialoni D. . (2020). Change in oxidative stress biomarkers during 30 days in saturation dive: a pilot study. Int. J. Environ. Res. Public Health 17 (19), 7118. doi: 10.3390/ijerph17197118 32998440 PMC7579105
+Muth T. Schipke J. D. Brebeck A. K. Dreyer S. (2026). Critical flicker fusion frequency: confounders and caveats. Eur. J. Appl. Physiol. 126, 725–734. doi: 10.1007/s00421-025-05935-7 40864284 PMC12948893
+Obad A. Marinovic J. Ljubkovic M. Breskovic T. Modun D. Boban M. . (2010). Successive deep dives impair endothelial function and enhance oxidative stress in man. Clin. Physiol. Funct. Imaging 30, 432–438. doi: 10.1111/j.1475-097X.2010.00962.x 20718805
+Paganini M. Moon R. E. Camporesi E. M. Bosco G. (2026). Advances in breath-hold diving research: a state-of-the-art review. Eur. J. Appl. Physiol. 126, 1223–1243. doi: 10.1007/s00421-025-06093-6 41417060 PMC13013280
+Park T. S. Kim M. G. Park J. H. Hong J. M. Lee D. Han I. H. . (2025). Wearable technology in diving: a review of heart rate and oxygen saturation monitoring for enhanced safety and performance. Healthc. (Basel). 13 (18), 2346. doi: 10.3390/healthcare13182346 41008476 PMC12469997
+Pattyn N. Van Cutsem J. Dessy E. Mairesse O. (2018). Bridging exercise science, cognitive psychology, and medical practice: is "cognitive fatigue" a remake of "the emperor's new clothes"? Front. Psychol. 9, 1246. doi: 10.3389/fpsyg.2018.01246 30250436 PMC6139359
+Perovic A. Unic A. Dumic J. (2014). Recreational scuba diving: negative or positive effects of oxidative and cardiovascular stress? Biochem. Med. (Zagreb). 24, 235–247. doi: 10.11613/bm.2014.026 24969917 PMC4083575
+Piispanen W. W. Lundell R. V. Tuominen L. J. Räisänen-Sokolowski A. K. (2021). Assessment of alertness and cognitive performance of closed circuit rebreather divers with the critical flicker fusion frequency test in arctic diving conditions. Front. Physiol. 12, 722915. doi: 10.3389/fphys.2021.722915 34447319 PMC8384076
+Pinti P. Tachtsidis I. Hamilton A. Hirsch J. Aichelburg C. Gilbert S. . (2020). The present and future use of functional near-infrared spectroscopy (fNIRS) for cognitive neuroscience. Ann. N. Y. Acad. Sci. 1464, 5–29. doi: 10.1111/nyas.13948 30085354 PMC6367070
+Ronca V. Castagneto Gissey L. Bellini M. I. Iodice A. Sada V. Sbardella E. . (2026b). Multi-method characterization of neurophysiological and biological stress responses in surgical teams during real surgical procedures. Front. Neuroergonomics. 7, 1702748. doi: 10.3389/fnrgo.2026.1702748 41788916 PMC12957276
+Ronca V. Cecchetti M. Capotorto R. Di Flumeri G. Giorgi A. Germano D. . (2026a). Beyond the lab: real-world benchmarking of wearable EEGs for passive brain-computer interfaces. Brain Inf. 13, 3. doi: 10.1186/s40708-025-00290-x 41456250 PMC12779824
+Ronca V. Di Flumeri G. Giorgi A. Vozzi A. Capotorto R. Germano D. . (2024). o-CLEAN: a novel multi-stage algorithm for the ocular artifacts' correction from EEG data in out-of-the-lab applications. J. Neural Eng. 21, 056023. doi: 10.1088/1741-2552/ad7b78 39284360
+Rosén A. Gennser M. Oscarsson N. Kvarnström A. Sandström G. Seeman-Lodding H. . (2022). Protein tau concentration in blood increases after SCUBA diving: an observational study. Eur. J. Appl. Physiol. 122, 993–1005. doi: 10.1007/s00421-022-04892-9 35142945 PMC8926952
+Schagatay E. Richardson M. X. Lodin-Sundström A. (2012). Size matters: spleen and lung volumes predict performance in human apneic divers. Front. Physiol. 3, 173. doi: 10.3389/fphys.2012.00173 22719729 PMC3376424
+Shaffer F. Ginsberg J. P. (2017). An overview of heart rate variability metrics and norms. Front. Public Health 5, 258. doi: 10.3389/fpubh.2017.00258 29034226 PMC5624990
+Sharma R. I. Mankowska N. D. Marcinkowska A. B. Winklewski P. J. Kot J. (2024). Critical flicker fusion frequency results during oxygen decompression in standard HBOT session - observational study. Int. Marit. Health 75, 167–176. doi: 10.5603/imh.99568 39411987
+Sharma R. I. Mankowska N. D. Marcinkowska A. B. Winklewski P. J. Kot J. (2025). Heliox at 4 ATA reduces error rates compared to trimix and air, but it does not affect short-term memory in hyperbaric conditions. Biol. (Basel). 14 (12), 1748. doi: 10.3390/biology14121748 41463521 PMC12730837
+Sharma R. I. Marcinkowska A. B. Mankowska N. D. Waśkow M. Kot J. Winklewski P. J. (2023). Cognitive functions in scuba, technical and saturation diving. Biol. (Basel). 12 (2), 229. doi: 10.3390/biology12020229 36829505 PMC9953147
+Shoemaker L. N. Wilson L. C. Lucas S. J. E. MaChado L. Thomas K. N. Cotter J. D. (2019). Swimming-related effects on cerebrovascular and cognitive function. Physiol. Rep. 7, e14247. doi: 10.14814/phy2.14247 31637867 PMC6803778
+Slosman D. O. De Ribaupierre S. Chicherio C. Ludwig C. Montandon M. L. Allaoua M. . (2004). Negative neurofunctional effects of frequency, depth and environment in recreational scuba diving: the Geneva "memory dive" study. Br. J. Sport. Med. 38, 108–114. doi: 10.1136/bjsm.2002.003434 15039241 PMC1724771
+Souday V. Koning N. J. Perez B. Grelon F. Mercat A. Boer C. . (2016). Correction: Enriched air nitrox breathing reduces venous gas bubbles after simulated SCUBA diving: a double-blind cross-over randomized trial. PloS One 11, e0165771. doi: 10.1371/journal.pone.0165771 27783710 PMC5081201
+Steinberg F. Doppelmayr M. (2017). Executive functions of divers are selectively impaired at 20-meter water depth. Front. Psychol. 8, 1000. doi: 10.3389/fpsyg.2017.01000 28676772 PMC5476772
+Steinberg F. Doppelmayr M. (2019). Neurocognitive markers during prolonged breath-holding in freedivers: an event-related EEG study. Front. Physiol. 10, 69. doi: 10.3389/fphys.2019.00069 30792665 PMC6374628
+Sureda A. Batle J. M. Ferrer M. D. Mestre-Alfaro A. Tur J. A. Pons A. (2012). Scuba diving activates vascular antioxidant system. Int. J. Sport. Med. 33, 531–536. doi: 10.1055/s-0031-1297957 22562744
+Sureda A. Batle J. M. Tur J. A. Pons A. (2015). Competitive apnea diving sessions induces an adaptative antioxidant response in mononucleated blood cells. J. Physiol. Biochem. 71, 373–380. doi: 10.1007/s13105-015-0417-9 26036219
+Tanaka H. Tomoto T. Kosaki K. Sugawara J. (2016). Arterial stiffness of lifelong Japanese female pearl divers. Am. J. Physiol. Regul. Integr. Comp. Physiol. 310, R975–R978. doi: 10.1152/ajpregu.00048.2016 26984889
+Tetzlaff K. Lemaitre F. Burgstahler C. Luetkens J. A. Eichhorn L. (2021). Going to extremes of lung physiology-deep breath-hold diving. Front. Physiol. 12, 710429. doi: 10.3389/fphys.2021.710429 34305657 PMC8299524
+Tikkinen J. Wuorimaa T. Siimes M. A. (2016). A comparison of simple reaction time, visual discrimination and critical flicker fusion frequency in professional divers at elevated pressure. Diving. Hyperb. Med. 46, 82–86. 27334995
+Van Cutsem J. Marcora S. De Pauw K. Bailey S. Meeusen R. Roelands B. (2017). The effects of mental fatigue on physical performance: a systematic review. Sport. Med. 47, 1569–1588. doi: 10.1007/s40279-016-0672-0 28044281
+Vestergaard M. B. Larsson H. B. (2019). Cerebral metabolism and vascular reactivity during breath-hold and hypoxic challenge in freedivers and healthy controls. J. Cereb. Blood Flow Metab. 39, 834–848. doi: 10.1177/0271678x17737909 29099292 PMC6498754
+Vezzoli A. Mrakic-Sposta S. Brizzolari A. Balestra C. Camporesi E. M. Bosco G. (2024). Oxy-inflammation in humans during underwater activities. Int. J. Mol. Sci. 25 (5), 3060. doi: 10.3390/ijms25053060 38474303 PMC10931934
+Vinetti G. Lopomo N. F. Taboni A. Fagoni N. Ferretti G. (2020). The current use of wearable sensors to enhance safety and performance in breath-hold diving: a systematic review. Diving. Hyperb. Med. 50, 54–65. doi: 10.28920/dhm50.1.54-65 32187619 PMC7276267
+Vrijdag X. C. E. van Waart H. Pullon R. M. Sames C. Mitchell S. J. Sleigh J. W. (2022a). EEG functional connectivity is sensitive for nitrogen narcosis at 608 kPa. Sci. Rep. 12, 4880. doi: 10.1038/s41598-022-08869-8 35318392 PMC8940999
+Vrijdag X. C. E. van Waart H. Sames C. Mitchell S. J. Sleigh J. W. (2022b). Does hyperbaric oxygen cause narcosis or hyperexcitability? A quantitative EEG analysis. Physiol. Rep. 10, e15386. doi: 10.14814/phy2.15386 35859332 PMC9300958
+Wickens C. D. (2008). Multiple resources and mental workload. Hum. Factors. 50, 449–455. doi: 10.1518/001872008x288394 18689052
+Wingelaar T. T. van Ooij P. A. M. van Hulst R. A. (2017). Oxygen toxicity and special operations forces diving: hidden and dangerous. Front. Psychol. 8, 1263. doi: 10.3389/fpsyg.2017.01263 28790955 PMC5524741
+Yoshimura N. Takahashi K. (2025). Evaluating tablet-based cognitive testing in underwater environments: a case study with two divers. i-com 24, 601–611. doi: 10.1515/icom-2025-0020 31755547
+Zhao H. Liang K. Yu Z. Wen Y. Shi J. Zhang T. . (2024b). Hyperbaric oxygen preconditioning rescues prolonged underwater exercise-induced hippocampal dysfunction by regulating microglia activation and polarization. Neurosci. Res. 207, 26–36. doi: 10.1016/j.neures.2024.05.004 38848903
+Zhao H. Liang K. Yu Z. Wen Y. Yu X. Xin J. . (2024a). CCR3 knockdown attenuates prolonged underwater operations-induced cognitive impairment via alleviating microglia-mediated neuroinflammation. iScience 27, 110379. doi: 10.1016/j.isci.2024.110379 39156650 PMC11326909
+Zhou Y. Huang S. Xu Z. Wang P. Wu X. Zhang D. (2022). Cognitive workload recognition using EEG signals and machine learning: a review. IEEE Trans. Cognit. Dev. Syst. 14, 799–818. doi: 10.1109/TCDS.2021.3090217 25079929

@@ -1,0 +1,331 @@
+
+JOURNAL INFORMATION
+==============================
+NLM Title Abbreviation: Commun Med (Lond)
+Journal ID: Commun Med (Lond)
+NLM Journal ID: 9918250414506676
+
+Communications Medicine
+
+EISSN: 2730-664X
+Publisher: Nature Publishing Group
+
+ARTICLE INFORMATION
+==============================
+PMCID: PMC13498552
+PMID: 42629381
+DOI: 10.1038/s43856-026-01868-0
+Article ID: 1868
+Article version: 1
+Subjects: Perspective
+
+From frailty-driven to frailty-informed care in the age of wearable AI
+
+Bignami Elena Giovanna elenagiovanna.bignami@unipr.it
+1
+http://orcid.org/0009-0005-8213-2561 Madeo Mattia 1
+Siniscalchi Carmine 2
+Fedele Sara 1
+Cerundolo Nicoletta 2
+Bellini Valentina 1
+Meschi Tiziana 3
+1 https://ror.org/02k7wn190 grid.10383.39 0000 0004 1758 0937 Anesthesiology, Critical Care and Pain Medicine Division, Department of Medicine and Surgery, University of Parma, Parma, Italy
+2 https://ror.org/03jg24239 grid.411482.a Internal Medicine of Continuity Care, Azienda Ospedaliero-Universitaria di Parma, Parma, Italy
+3 https://ror.org/02k7wn190 grid.10383.39 0000 0004 1758 0937 Internal Medicine of Continuity Care, Azienda Ospedaliero-Universitaria di Parma; Department of Medicine and Surgery, University of Parma, Parma, Italy
+Electronic publication date: 2026 Aug 21
+Publication date: 2026
+Volume: 6
+Electronic Location ID: 452
+Received 2026 Mar 6; Accepted 2026 Aug 11
+Copyright: © The Author(s) 2026
+Copyright year: 2026
+License: Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+License URL: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Keywords: Prognosis, Diagnosis
+issue-copyright-statement: © Springer Nature Limited 2026
+
+==============================
+As populations age, frailty is increasingly monitored through wearable technologies capable of continuously capturing behavioral and physiological change. While these systems enable earlier detection of vulnerability, they also risk transforming probabilistic signals into rigid clinical thresholds. We propose a frailty-informed framework in which artificial intelligence (AI) augments, rather than replaces, clinical judgment. By integrating longitudinal digital monitoring with multidimensional geriatric assessment and bedside evaluation, this approach supports anticipatory, patient-centered care. Proportional design, transparency and clinical oversight are essential to ensure that predictive systems guide care without narrowing therapeutic options.
+
+Bignami et al. present perspectives on integrating wearable technologies and artificial intelligence in frailty monitoring. They propose a framework that is frailty-informed to augment clinical decision-making.
+
+Introduction
+
+Frailty is increasingly recognized as a central determinant of outcomes in ageing societies. Because frailty affects a large and growing proportion of older adults and carries substantial implications for hospitalization, disability and mortality, it is a topic of relevance well beyond specialist geriatric practice.
+
+Frailty is traditionally conceptualized as diminished physiological reserve and increased vulnerability to stressors1. It is multidimensional, dynamic and probabilistic1–3, yet no single instrument is universally accepted as the reference standard for its assessment. The phenotype model2 and the cumulative deficit index3 represent the two most widely used, but conceptually distinct, approaches, alongside several other validated scales. Despite its prognostic importance, frailty has for decades been assessed predominantly through structured instruments applied at discrete time points, capturing isolated clinical states rather than longitudinal trajectories2,3. Decisions based on such episodic assessments may contribute to frailty-driven care, in which frailty functions as a categorical label that can inadvertently constrain therapeutic options before a patient’s individual trajectory is fully appreciated. This lacks of a unifying operational definition is a challenge that any technology-driven approach, including wearable-AI, inherits rather than resolves: the value of continuous monitoring therefore lies not in establishing a new universal frailty threshold, but in providing additional longitudinal information to complement multidimensional clinical assessment.
+
+Recent advances in wearable technologies and AI offer the possibility of complementing episodic frailty assessment with continuous monitoring of behavioral and physiological change. Wearable devices can capture signals related to mobility and gait, sleep and circadian patterns, and recovery kinetics (i.e., the rate and pattern of return to baseline mobility, activity and physiological function following an acute stressor such as surgery or acute illness4,5). These measures provide predominantly objective, observer-independent correlates of selected frailty domains, although important dimensions of established frailty constructs, including self-reported exhaustion2, remain poorly captured by current wearable-AI approaches.
+
+Machine learning systems increasingly combine wearable-derived features with clinical and contextual information to infer frailty-related vulnerability4–7 (e.g., mobility and gait metrics, sleep and circadian parameters, together with contextual factors such as comorbidity burden and social determinants of health; see ref. 6 for a recent scoping review of AI-based approaches to frailty identification). However, the current evidence remains heterogeneous, and the incremental predictive value over conventional episodic assessment appears modest in several studies, particularly for outcomes such as hospitalization and mortality4,5,7. Accelerometry-derived and gait-based digital biomarkers may improve prediction of adverse outcomes in selected populations4,5,7,8, while emerging on-device AI approaches may facilitate longitudinal analysis with reduced data transmission and computational demands8. Overall, however, wearable-AI-based frailty inference remains an evolving research field rather than an established clinical capability.
+
+These developments promise earlier detection of functional decline and more timely intervention. At the same time, they introduce a structural challenge—by which we mean a challenge rooted in how predictive systems are designed and embedded within care pathways, rather than a limitation of any single algorithm—namely: when vulnerability is continuously quantified, how should such signals inform clinical judgment without becoming automated thresholds? Predictive systems designed to anticipate deterioration may inadvertently reshape therapeutic boundaries if not embedded within appropriate oversight.
+
+In this perspective, we propose a shift from frailty-driven to a frailty-informed approach, in which longitudinal digital monitoring augments, not displace, multidimensional geriatric assessment and bedside clinical evaluation. By situating predictive tools within accountable, proportionate and patient-centered care pathways, frailty-informed AI can support anticipatory perioperative management and continuity across chronic care trajectories while preserving clinical discretion. We further examine the ethical, clinical and governance implications of this transition and outline, where the evidence remains preliminary, the practical barriers that will determine whether this transition can be realized at the bedside.
+
+Frailty as Probability
+
+Long-standing geriatric research emphasizes that frailty predicts adverse outcomes without determining individual trajectories1–3. The frailty phenotype conceptualizes not merely diminished physiological reserve, but an emergent, radically altered state arising from critical transitions in the physiology governing homeostasis, of which diminished physiological reserve and vulnerability to stressors2 are the clinical expression, while the cumulative deficit model (which conceptualizes frailty as a marker of biological, rather than chronological, ageing), situates frailty along a graded spectrum of risk rather than a binary state3. Contemporary frameworks further underscore that vulnerability is dynamic and may respond to timely intervention or environmental modification1.
+
+This distinction also bears directly on the nature of frailty diagnostic cutoffs. Even the field’s principal instruments are not free of the tension they otherwise describe: the phenotype’s operational cut-point (conventionally ≥ 3 of 5 criteria denoting ‘frail’) imposes a categorical boundary onto a process that is conceptually continuous leading up to the critical transition, whereas the deficit accumulation index yields a continuously distributed score with no single mandated threshold. Wearable-AI systems therefore inherit, rather than introduce, a long-standing tension between the clinical convenience of an actionable cut-point and the biological reality of a graded, individually variable trajectory—a tension that is central to the argument developed in this perspective.
+
+Frailty predicts. It does not prescribe. This distinction is foundational to responsible integration of predictive systems in clinical care. Critical care scholarship has long warned that prognostic expectations can shape therapeutic intensity, potentially generating a self-fulfilling prophecy, as described by Wilkinson, when prediction influences limitation of care9. Empirical analyses of end-of-life decision-making further illustrate how outcome prediction may influence thresholds for escalation or withdrawal of treatment10. We emphasize that this remains, at present, a conceptual concern grounded in broader critical-care and end-of-life scholarship9,10, rather than an empirically demonstrated phenomenon specific to wearable-derived frailty scores; dedicated outcome studies directly linking such scores to treatment-limitation decisions are, to our knowledge, still lacking.
+
+When predictive outputs are applied without contextual interpretation and proportional deliberation, statistical association may be misinterpreted as clinical mandate9,10. The same structural hazard applies to algorithmic vulnerability derived from wearable and AI-based monitoring. Frailty-driven integration risks converting probabilistic signals into rigid operational thresholds when embedded uncritically into care pathways, potentially narrowing perceived treatment options. At the same time, when wearable-derived scores influence escalation pathways without deliberation, vulnerability risks being collapsed into mere stratification—reduced to a categorical label rather than sustained as a graded signal for attention.
+
+In contrast, frailty-informed care preserves proportionality. By treating frailty as navigational intelligence (i.e., an interpretive signal that orients, without dictating, clinical decision-making), it augments clinical judgement, allowing longitudinal digital monitoring and bedside evaluation to guide anticipatory, patient-centered decision-making (Fig. 1).Fig. 1 The Strategic Inflection: From Frailty-Driven to Frailty-Informed Care.
+
+Simplified comparison of the two care models. Left (Frailty-DRIVEN): episodic assessment produces a single static score that, if applied uncritically, can harden into a fixed threshold and narrow treatment options. Right (Frailty-INFORMED): continuous wearable data are synthesized by AI into a longitudinal trajectory that supports—rather than replaces—clinical judgement, preserving discretion over care decisions.
+
+Figure 1 offers a simplified, heuristic contrast intended to illustrate a risk to be avoided, not a description of universal current practice: many geriatricians already integrate frailty scores as one element within a broader, multidimensional and interdisciplinary assessment, and the ‘frailty-driven’ pole depicted here should be read as a cautionary extreme rather than a characterization of contemporary geriatric care as a whole.
+
+Algorithmic Vulnerability and Structural Bias
+
+While frailty-informed AI has the potential to enhance clinical decision-making, predictive systems can encode inequity when optimization targets are misaligned11,12. Empirical studies have shown that healthcare algorithms may underestimate need in marginalized populations due to reliance on flawed proxy measures11. Responsible machine learning frameworks therefore emphasize bias auditing, transparency, subgroup performance evaluation and contextual oversight12,13.
+
+Wearable-derived frailty inference is exposed to similar vulnerabilities. Behavioral signals, such as mobility patterns, sleep timing, and social engagement, reflect not only physiological status but also socioeconomic context, environmental constraint and baseline disability, embedding structural determinants of health within predictive features12,14. Without representative datasets, external validation and adaptive calibration, algorithmic frailty profiles may inadvertently translate structural disadvantage into biological risk11,12.
+
+Behavioral signals captured by wearables do not necessarily reflect physiological vulnerability. Reduced activity, altered sleep timing, or diminished social engagement may instead arise from lifestyle, occupational or caregiving constraints, or from temporary changes unrelated to health. Failing to distinguish these situations from true functional is essential to avoid misclassifying behavioral variation as biological risk, and highlights the need for context-aware interpretation of wearable-derived data.
+
+Successful implementation also depends on practical factors that extend beyond algorithmic performance. Sustained adherence to wearable devices is challenging outside research settings, particularly among cognitively impaired older adults who may require support with device use, charging and interpretation of feedback. In addition, digital literacy, informed consent for continuous passive monitoring, and unequal access to devices and connectivity represent important barriers to equitable adoption. Addressing these implementation challenges is as important as ensuring algorithmic fairness and transparency if wearable-AI is to be translated into routine frailty care. These practical barriers are as important as algorithmic fairness and governance for successful clinical implementation.
+
+Current wearable-AI pipelines also remain predominantly oriented toward physical and functional domains of frailty. The interface between cognitive and functional decline—a well-recognized feature of the frailty syndrome—is comparatively neglected; integrating passive digital markers of cognitive change with existing cognitive screening remains an open methodological challenge that frailty-informed frameworks will need to address as the field matures.
+
+Ethical and governance scholarship in digital medicine therefore calls for explicit interrogation of optimization objectives, transparent reporting of model performance across demographic strata, and continuous bias surveillance12,13. Personalization beyond one-size-fits-all15 thresholds is increasingly recognized as necessary in heterogeneous clinical populations, particularly in wearable-based health assessment15. Individual baselines should anchor interpretation, and uncertainty should be made explicit13. This need for individualized, context-aware interpretation is corroborated by independent evidence: a living umbrella review of systematic reviews on consumer wearable technologies found considerable, device- and population-dependent variability in measurement accuracy, reinforcing that uniform thresholds are unlikely to generalize across devices or populations16.
+
+In parallel, continuous passive monitoring raises non-trivial privacy and governance concerns. Wearable-derived frailty inference may involve sensitive behavioral traces (mobility routines, sleep timing, social rhythms) that are potentially re-identifiable or actionable beyond the original clinical intent17,18. A frailty-informed paradigm, therefore, requires embedding privacy-by-design principles, explicit consent models, and clear boundaries for secondary data use as core safeguards rather than afterthoughts17,18.
+
+Frailty-informed AI is not just a conceptual shift; it demands that these safeguards and structural protections are integral to system design, ensuring that anticipatory guidance enhances patient-centered care13.
+
+AI as Clinical Colleague
+
+The structural and ethical vulnerabilities inherent in algorithmic frailty inference highlight that predictive tools cannot operate in isolation. Within a frailty-informed framework, AI embodies a collaborative model, functioning as an extension of the clinician’s perceptual and cognitive capacity rather than an autonomous decision-maker. By integrating longitudinal digital signals with bedside assessment and multidimensional geriatric evaluation, these systems can identify subtle deviations in patient trajectories without prematurely constraining therapeutic options.
+
+This principle is consistently reflected across multiple domains of the literature. Consensus guidance for AI implementation in critical care emphasizes human oversight, interpretability and continuous outcome evaluation19. Similarly, techno ethical frameworks further conceptualize AI competence as an extension of professional agency rather than external automation20. This position is not specific to any one clinical field: independent professional-society guidance has likewise concluded that AI should enhance, rather than substitute for, physician decision-making, and has called for research, regulatory guidance and oversight to keep pace with clinical AI adoption21.
+
+In practice, frailty-informed AI acts as an additional perceptual layer: it identifies longitudinal deviation that would otherwise remain undetected, contextualizes vulnerability within evolving trajectories, and signals areas for closer clinical attention—all while leaving ultimate decision-making in the hands of healthcare professionals. Clinicians retain authority while AI expands awareness; it does not determine treatment ceilings or therapeutic limits.
+
+This augment-rather-than-replace paradigm is increasingly reflected across contemporary AI research. Recent large-scale evaluations of general-purpose medical AI agents have likewise shown that high-performing systems are most appropriately conceived as decision-support tools operating within clinician-supervised workflows rather than autonomous decision-makers. An autonomous agent operating within a sandboxed electronic health record environment achieved diagnostic and treatment-planning performance at or above physician level across simulated emergency-department cases22, while a conversational AI system optimized for longitudinal disease management generated guideline-aligned management plans that were non-inferior to those of primary-care physicians across simulated multivisit encounters23. Importantly, both studies were conducted in simulated environment, and their authors caution that further prospective validation is required before real-world deployment. this caveat applies equally to wearable-derived frailty inference. The same caution applies to wearable-derived frailty inference, where clinical integration must similarly be guided by rigorous evaluation rather than technological capability alone.
+
+Translating this oversight principle into practice requires that predictive outputs remain interpretable and clinically actionable. Clinicians should be able to understand the factors driving a frailty prediction, whether through feature-importance summaries or comparable interpretability tools, rather than receiving an opaque risk score13. Because wearable-derived trajectories are personalized, clinicians must also account for shifts in a patient’s own baseline, for example, following an intercurrent illness or a change in living situation, rather than comparing current signals only to population norms. Likewise, deviations should be considered alongside plausible alternative explanations, including device malfunction, non-adherence, travel, or other transient lifestyle changes unrelated to health status, before being treated as evidence of clinical decline. Finally, transparency regarding which features are available to clinicians and patients, and what level of explainability is required for genuinely informed decision-making, should be specified prospectively as part of system design rather than inferred at the point of care.
+
+For safe integration, AI implementation must address generalizability, calibration across baseline disabilities, and performance drift over time. Wearable signals are context-dependent and can be distorted by seasonality, environment, socioeconomic constraints, or device heterogeneity. Continuous audit, bias monitoring, and clinically anchored recalibration are therefore essential, consistent with broader recommendations for wearables in digital health24.
+
+Frailty-driven integration compresses discretion by embedding scores into rigid pathways. In contrast, frailty-informed integration expands clinical deliberation by providing anticipatory insight.
+
+From Sensor to Bedside: The Technological Implementation Pipeline
+
+Translating the conceptual shift from frailty-driven to frailty-informed care into practice depends on a multi-stage technological pipeline whose maturity varies considerably across stages, and making this pipeline explicit helps clarify both feasibility and current limitations.
+
+Signal acquisition typically relies on consumer- or medical-grade accelerometry and photoplethysmography embedded in wrist-worn devices and less commonly in chest- or ankle-worn sensors, capturing mobility, gait and cardiovascular signals continuously in the community setting4,5,8.
+
+Processing architectures range from cloud-based pipelines, in which raw signals are transmitted for centralized analysis, to increasingly capable on-device (edge) architectures that perform feature extraction locally—reducing data transmission, battery consumption and privacy exposure while preserving clinically meaningful signal8.
+
+Algorithmic approaches applied to these signals include time-series forecasting methods that model trajectories over time, multivariate biomarker-fusion techniques that combine multiple behavioral and physiological streams into composite vulnerability indices, and, increasingly, interpretable machine-learning models designed to preserve clinician-legible reasoning rather than function as opaque classifiers4,7,12.
+
+Finally, outputs must be translated into a form usable at the point of care. Current implementations range from simple longitudinal dashboards to more elaborate trajectory-visualization interfaces; however, standardized approaches for integrating these outputs into electronic health records and clinical workflows remain immature and represent an important direction for future development.
+
+Perioperative Monitoring and Prediction
+
+We focus on the perioperative setting as an illustrative, rather than exclusive, application of frailty-informed wearable AI because surgery represents a discrete, time-limited physiological stressor with clearly defined pre- and postoperative phases. This makes deviations from an individual’s expected recovery trajectory comparatively easier to detect and interpret than the more heterogeneous trajectories encountered in community geriatrics, oncology or long-term care. Although the proposed framework is equally relevant to these settings, they remain important areas for future validation and implementation. Preoperative frailty robustly predicts postoperative complications, prolonged recovery and early readmission1,3, yet conventional perioperative risk assessment remains largely episodic, relying on single time-point evaluation rather than continuous functional trajectories.
+
+Wearable monitoring has demonstrated feasibility as a preoperative risk assessment adjunct in older surgical patients, with home-derived activity metrics correlating with established measures of functional capacity and surgical risk scores25. Longitudinal, real-world mobility trajectories can therefore complement traditional assessments, enable earlier detection of delayed recovery patterns and inform more targeted post-discharge follow-up26.
+
+Continuous wearable-based monitoring allows for resilience profiling before and after surgery. Deviations from expected recovery trajectories may be detected before overt clinical deterioration occurs. In this context, the ‘expected’ trajectory is typically operationalized as the patient’s own preoperative baseline, projected forward using population-level recovery curves stratified by procedure type and baseline functional status, rather than a single universal threshold; a deviation is therefore defined relative to the individual’s own trend, corroborated where possible against comparable patients, rather than against a fixed external cut-off. For example, subtle reductions in mobility variability or delayed recovery kinetics can signal impending complications, prompting timely, contextually guided interventions.
+
+Such anticipatory detection has implications beyond individual episodes. Recurrent hospital readmissions frequently reflect unrecognized physiological drift rather than isolated acute events. Frailty-informed wearable strategies can help interrupt this cycle by identifying early destabilization and guiding proportionate intervention. Emerging evidence suggests that wearable-derived mobility and recovery signatures can stratify postoperative trajectories and identify patients at elevated risk of complications and readmissions, supporting a trajectory-based surveillance model rather than reactive reassessment26–28.
+
+Importantly, reducing readmissions is not solely an economic objective; it also preserves continuity of care and functional autonomy. Frailty-informed perioperative care therefore transforms episodic risk estimation into longitudinal stewardship, integrating predictive insight with clinician judgement to anticipate deterioration without constraining therapeutic options.
+
+Bedside Physiological Corroboration of Longitudinal Vulnerability Signals
+
+Longitudinal wearable-derived vulnerability signals gain actionable value when corroborated by physiological assessment at the bedside. Although frailty itself is best understood as a longitudinal, probabilistic trajectory rather than an instantaneous state1–3, bedside assessment necessarily samples this trajectory at a single point in time; it therefore corroborates, rather than redefines, the continuous wearable-derived signal, providing a physiological anchor for its interpretation. Point-of-care ultrasound has emerged as a powerful extension of clinical examination, enabling rapid, non-invasive evaluation of cardiopulmonary and vascular status across diverse care settings, assessing organ reserve.
+
+In fragile patients, lung ultrasound can detect interstitial patterns and early pulmonary congestion before overt respiratory decompensation becomes clinically apparent29,30. The presence and dynamic variation of B-lines correlate with pulmonary fluid accumulation and have demonstrated prognostic relevance in heart failure trajectories30.
+
+Compression ultrasound allows early identification of deep venous thrombosis in immobilized or functionally declining patients, linking reduced mobility directly to thromboembolic risk and supporting guideline-based management pathways31.
+
+Focused cardiac ultrasound further contributes to assessment of physiological reserve. Echocardiographic indices such as left ventricular ejection fraction and tricuspid annular plane systolic excursion (TAPSE) provide insight into hemodynamic and right ventricular reserve, both critical determinants of resilience in frail individuals32,33.
+
+These organ-specific measures are intended to complement, not substitute for, a holistic, ageing-centered geriatric assessment. Frailty arises from cumulative, cross-system erosion of physiological reserve rather than from dysfunction of any single organ, and bedside corroboration is most informative when interpreted within this broader multidimensional context1–3.
+
+Integrating wearable-derived longitudinal trajectories with focused bedside ultrasound represents a hybrid model of anticipatory care. Wearables identify subtle deviations in functional patterns, while bedside imaging provides real-time physiological validation, anchoring predictive insights in direct clinical observation. The two data streams are complementary rather than redundant, even during hospitalization when wearable metrics are expected to decline as a consequence of the acute illness itself: longitudinal wearable trajectories indicate that a deviation is occurring, and approximately when it began, whereas bedside ultrasound helps establish why, by identifying a specific corroborating physiological substrate (for example, pulmonary congestion, new venous thrombosis, or reduced ventricular reserve). Used together, the two can help distinguish expected illness-related decline from an emerging organ-specific complication warranting targeted action, a distinction that neither modality can reliably achieve alone. Such complementarity reinforces that frailty-informed AI augments embodied clinical assessment rather than replacing it (Fig. 2).Fig. 2 Hybrid Frailty-Informed Synthesis: Bridging Continuous Digital Trajectories with Bedside Physiological Corroboration.
+
+Left: bedside point-of-care ultrasound (lung, cardiac, compression) corroborates organ reserve at a single time point, always alongside—never in place of—full clinical examination. Right: continuous wearable data (mobility variability, circadian stability, recovery kinetics) are synthesized into a longitudinal vulnerability trajectory. AI supports the clinician’s perception at every step; final judgement and oversight remain human.
+
+Anticipatory Care and Clinical Time
+
+Continuous vulnerability mapping shortens the interval between physiological drift and clinical response. Personalized therapeutic intensity becomes grounded in dynamic reserve rather than chronological age alone. This aligns with the concept of intelligent time, in which digital systems synthesize complexity and restore cognitive space for shared decision-making and relational care34. By translating continuous data streams into clinically interpretable trajectories, frailty-informed AI reorganizes attention rather than fragmenting it.
+
+The aim is not automation of judgment. It is expansion of perceptual capacity. Anticipatory medicine depends on that expansion.
+
+This expansion of perceptual capacity must, however, extend to the older adult and their care partners, not only to the clinician. Shared decision-making requires that wearable-derived vulnerability signatures be communicated back to patients in accessible, non-technical form. Data sharing that supports patient understanding and agency, rather than clinician interpretation alone, is an essential, and currently underdeveloped, component of frailty-informed care.
+
+Sustainability and Proportional Design
+
+AI deployment in healthcare carries environmental, infrastructural and ethical consequences. Sustainable AI requires proportionality between computational intensity and demonstrable clinical benefit35. Green AI principles emphasize efficiency, lifecycle awareness and avoidance of unnecessary computational escalation36. Independent analyses of AI’s environmental footprint in healthcare reach concordant conclusions, calling for energy-efficient model design, lifecycle awareness and renewable-energy-aware deployment as core, rather than optional, components of responsible clinical AI37.
+
+Wearable-derived frailty modelling can often rely on interpretable behavioral features implemented through resource-conscious architectures. Clinical value does not necessarily increase with algorithmic complexity; in frailty assessment, signal interpretability and longitudinal stability often outweigh marginal gains from more sophisticated models.
+
+Sustainability, in frailty-informed AI, extends beyond computational efficiency. It encompasses workflow integration, patient burden, and clinician cognitive load, ensuring that continuous monitoring enhances care without creating unnecessary complexity or data fatigue. Frailty-informed design prioritizes targeted predictive utility, transparency and measurable patient impact over opaque algorithmic escalation.
+
+Governance and Regulatory Coherence
+
+Healthcare AI increasingly falls within high-risk regulatory domains requiring transparency, documentation and human oversight38,39. Structured implementation frameworks provide operational guidance for responsible integration, emphasizing accountability, performance monitoring, and clear allocation of clinical responsibility19.
+
+Lessons from the maturation of AI in medical imaging are instructive here, as that field has already confronted many of the practical barriers that frailty-informed wearable AI is now beginning to encounter. External validation across heterogeneous populations and devices, integration into existing clinical workflows without adding cognitive burden, and demonstrable reimbursement pathways have each historically limited real-world adoption of imaging AI at least as much as algorithmic performance itself.
+
+A further, cross-cutting challenge is that the field currently lacks a stable, agreed-upon yardstick for comparing medical AI systems. As recently highlighted in a commentary on two generalist medical AI agents, the researcher choices underlying an evaluation (the raters used, whether they were blinded, how case complexity was set, and how the benchmark itself was designed) can shift the apparent ranking of competing systems, and a tool’s measured capability can be superseded within months by the next generation of underlying language models40. Wearable-derived frailty inference is not exempt from this measurement problem: as noted earlier, reported predictive performance is itself dependent on the validation cohort, comparator and outcome definition used, reinforcing the case for standardized, prospectively validated evaluation frameworks rather than benchmark comparisons alone.
+
+Comparable barriers apply directly to wearable-derived frailty inference. Questions of liability and accountability arise when AI-derived trajectories inform—or fail to flag—a clinical decision, and responsibility for such outcomes, whether resting with the treating clinician, the device manufacturer, or the health system, remains largely unresolved. Reimbursement pathways for continuous monitoring technologies are similarly underdeveloped, and the health-economic case for sustained wearable-AI surveillance, as distinct from episodic risk assessment, has yet to be firmly established. Regulatory frameworks are evolving to address these tools: in the United States, the FDA’s guidance on AI/ML-based Software as a Medical Device sets expectations for predetermined change-control plans and post-market performance monitoring, while in the European Union the Medical Device Regulation and In Vitro Diagnostic Regulation (MDR/IVDR), together with the Artificial Intelligence Act, establish conformity-assessment and oversight requirements relevant to continuous monitoring devices38. Navigating these frameworks, rather than algorithmic sophistication alone, will likely determine the pace of real-world adoption.
+
+Establishing this health-economic and population-health case will require a common set of outcome metrics, rather than device-level accuracy statistics alone. Candidate metrics include: system-level reduction in unplanned readmissions and length of stay attributable to earlier detection of physiological drift; cost per averted hospitalization, or per quality-adjusted life-year gained, benchmarked against the cost of the monitoring infrastructure itself; the number of patients who would need to be monitored to prevent one adverse admission, as a population-level analogue of the number-needed-to-treat; clinician-facing metrics such as additional review time and alert burden per patient-year, to guard against the workflow costs described above; and equity metrics that report predictive performance and monitoring uptake separately across socioeconomic, age and comorbidity strata rather than as a single pooled estimate. To our knowledge, none of these have yet been reported specifically for wearable-derived frailty trajectories, and we regard their prospective, multi-site collection as a precondition, rather than an incidental benefit, of moving from pilot demonstrations to population-level adoption.
+
+Frailty-informed AI aligns intrinsically with these governance imperatives. Because it is designed to augment rather than replace clinical reasoning, it integrates within accountable workflows. By prioritizing interpretability, explicit uncertainty, and clinician oversight, frailty-informed systems reinforce regulatory transparency. Because it informs vulnerability without operationalizing exclusion, it reduces ethical exposure.
+
+Regulatory coherence, therefore, stabilizes innovation, rather than suppressing it. By clarifying responsibility, preserving professional judgement and embedding continuous evaluation, governance structures help ensure that wearable-derived frailty inference remains aligned with ethical standards and patient-centered care. Frailty-informed AI is conceptually constructed to be compatible with emerging oversight architectures. In doing so, it transforms predictive capability into accountable clinical support rather than operationalized stratification.
+
+Strategic Inflection
+
+Aging societies require scalable yet proportionate models of vulnerability assessment. Wearable AI renders continuous inference technically feasible. At the same time, bias research cautions against structural encoding of inequity11,12; prognostic misuse literature warns against conflating prediction with therapeutic limitation9,10; sustainability principles constrain indiscriminate computational expansion35,36; and regulatory frameworks mandate accountability, transparency and human oversight38,39.
+
+These forces converge at a strategic inflection point.
+
+The strategic question is not whether to adopt AI, but how it is integrated: as a threshold or as guidance. Frailty-driven systems operationalize vulnerability as deterministic stratification, embedding scores into pathways that compress discretion and subtly redefine therapeutic boundaries. In this model, vulnerability may become an implicit gatekeeper.
+
+Frailty-informed integration follows a different trajectory. It translates vulnerability into clinical navigation, preserving uncertainty, contextual interpretation, and professional deliberation. Vulnerability becomes a signal for heightened attention, not a threshold for exclusion.
+
+At the bedside, this distinction determines whether a wearable-derived score closes options or opens conversations.
+
+Frailty-informed medicine synthesizes geriatric science1–3, responsible machine learning and oversight principles11–13,19, techno-ethical accountability20, personalization beyond uniform thresholds15, sustainability imperatives35,36, regulatory coherence38,39, and commitment to patient-centered care34.
+
+This convergence does not signal the mechanization of medicine; it marks its maturation: a transition from episodic risk labeling to accountable, longitudinal stewardship of vulnerability.
+
+Conclusion
+
+Frailty is not a static label but a living trajectory of resilience and risk. Wearable artificial intelligence is beginning to render that trajectory visible with greater temporal depth, offering a potential shift from episodic recognition toward continuous interpretation—though, as discussed above, the technical maturity and validated clinical benefit of this shift remain uneven and are still being established.
+
+The decisive question, however, is not technological capability but clinical integration. Predictive systems can either compress discretion into thresholds or expand judgment through anticipatory insight. The distinction is structural.
+
+Frailty-informed AI represents the latter path. Anchored in sustainable design, regulatory accountability and clinician oversight, it reframes vulnerability as navigational intelligence rather than deterministic stratification. It does not automate limitation; it contextualizes risk. It does not replace professional reasoning; it extends perceptual capacity.
+
+At this strategic inflection point, the future of wearable AI in medicine will be determined less by algorithmic sophistication than by governance, proportionality, ethical clarity, and continued attention to the practical, regulatory and patient-centered barriers outlined above. If deliberately integrated, it will not narrow therapeutic space. It will strengthen clinical foresight, continuity and responsibility.
+
+The maturation of digital medicine will not be measured by automation, but by its capacity to preserve judgment while enhancing understanding.
+
+Supplementary information
+
+Transparent Peer Review file
+
+Supplementary information
+
+The online version contains supplementary material available at 10.1038/s43856-026-01868-0.
+
+Author contributions
+
+E.G.B.: Conceptualization, Supervision, writing, review and editing. M.M.: Literature review, writing original draft. C.S., S.F., N.C.: Literature review, writing, review and editing. V.B., T.M.: Conceptualization, Critical revision of the manuscript, review and editing. All authors read and approved the final manuscript.
+
+Peer review
+
+Peer review information
+
+Communications Medicine thanks Karen Bandeen-Roche, Kunal Dalsania and the other, anonymous, reviewer(s) for their contribution to the peer review of this work. A peer review file is available.
+
+Funding
+
+This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
+
+Data availability
+
+No datasets were generated or analyzed during the current study. Data sharing is therefore not applicable to this article.
+
+Competing interests
+
+The authors declare no competing interests.
+
+Declaration on the use of artificial intelligence
+
+Generative AI tools were used exclusively for language editing and correction of the English text of this manuscript. All scientific content, conceptual framing, literature interpretation and conclusions are the product of the authors’ own intellectual work, and the authors take full responsibility for the accuracy and integrity of the manuscript, in accordance with the journal’s policy.
+
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+
+References
+
+1. Clegg A Young J Iliffe S Rikkert MO Rockwood K Frailty in elderly people Lancet 2013 381 752 762 10.1016/S0140-6736(12)62167-9 23395245 PMC4098658
+Clegg, A., Young, J., Iliffe, S., Rikkert, M. O. & Rockwood, K. Frailty in elderly people. Lancet 381, 752–762 (2013).23395245 10.1016/S0140-6736(12)62167-9 PMC4098658
+2. Fried LP Frailty in older adults: evidence for a phenotype J. Gerontol. A Biol. Sci. Med. Sci. 2001 56 M146 M156 10.1093/gerona/56.3.M146 11253156
+Fried, L. P. et al. Frailty in older adults: evidence for a phenotype. J. Gerontol. A Biol. Sci. Med. Sci. 56, M146–M156 (2001).11253156 10.1093/gerona/56.3.m146
+3. Rockwood K A global clinical measure of fitness and frailty in elderly people CMAJ 2005 173 489 495 10.1503/cmaj.050051 16129869 PMC1188185
+Rockwood, K. et al. A global clinical measure of fitness and frailty in elderly people. CMAJ 173, 489–495 (2005).16129869 10.1503/cmaj.050051 PMC1188185
+4. Culos, A. et al. A machine learning model for frailty based on wearable device measurements. Commun. Med.10.1038/s43856-026-01419-7 (2026).10.1038/s43856-026-01419-7 PMC13031508 41714788
+5. Osuka Y Chan LLY Brodie MA Okubo Y Lord SR A wrist-worn wearable device can identify frailty in middle-aged and older adults: the UK Biobank Study J. Am. Med Dir. Assoc. 2024 25 105196 10.1016/j.jamda.2024.105196 39128825
+Osuka, Y., Chan, L. L. Y., Brodie, M. A., Okubo, Y. & Lord, S. R. A wrist-worn wearable device can identify frailty in middle-aged and older adults: the UK Biobank Study. J. Am. Med Dir. Assoc. 25, 105196 (2024).39128825 10.1016/j.jamda.2024.105196
+6. Dalsania, K. A. et al. Use of conventional artificial intelligence methods in the identification of frailty: a scoping review. J. Am. Geriatr. Soc. 17. 10.1111/jgs.70387 (2026).10.1111/jgs.70387 PMC13418579 41845582
+7. Fan S Digital health technology combining wearable gait sensors and machine learning improve the accuracy in prediction of frailty Front Public Health 2023 11 1169083 10.3389/fpubh.2023.1169083 37546315 PMC10402732
+Fan, S. et al. Digital health technology combining wearable gait sensors and machine learning improve the accuracy in prediction of frailty. Front Public Health 11, 1169083 (2023).37546315 10.3389/fpubh.2023.1169083 PMC10402732
+8. Kasper KA Wearable AI for on-device frailty assessment Nat. Commun. 2025 17 991 10.1038/s41467-025-67728-y 41419773 PMC12847780
+Kasper, K. A. et al. Wearable AI for on-device frailty assessment. Nat. Commun. 17, 991 (2025).41419773 10.1038/s41467-025-67728-y PMC12847780
+9. Wilkinson D The self-fulfilling prophecy in intensive care Theor. Med Bioeth. 2009 30 401 410 10.1007/s11017-009-9120-6 19943193
+Wilkinson, D. The self-fulfilling prophecy in intensive care. Theor. Med Bioeth. 30, 401–410 (2009).19943193 10.1007/s11017-009-9120-6
+10. Sprung CL End-of-life practices in European intensive care units: the Ethicus Study JAMA 2003 290 790 797 10.1001/jama.290.6.790 12915432
+Sprung, C. L. et al. End-of-life practices in European intensive care units: the Ethicus Study. JAMA 290, 790–797 (2003).12915432 10.1001/jama.290.6.790
+11. Obermeyer Z Powers B Vogeli C Mullainathan S Dissecting racial bias in an algorithm used to manage the health of populations Science 2019 366 447 453 10.1126/science.aax2342 31649194
+Obermeyer, Z., Powers, B., Vogeli, C. & Mullainathan, S. Dissecting racial bias in an algorithm used to manage the health of populations. Science 366, 447–453 (2019).31649194 10.1126/science.aax2342
+12. Rajkomar A Hardt M Howell MD Corrado G Chin MH Ensuring fairness in machine learning to advance health equity Ann. Intern Med. 2018 169 866 872 10.7326/M18-1990 30508424 PMC6594166
+Rajkomar, A., Hardt, M., Howell, M. D., Corrado, G. & Chin, M. H. Ensuring fairness in machine learning to advance health equity. Ann. Intern Med. 169, 866–872 (2018).30508424 10.7326/M18-1990 PMC6594166
+13. Wiens J Do no harm: a roadmap for responsible machine learning for health care Nat. Med 2019 25 1337 1340 10.1038/s41591-019-0548-6 31427808
+Wiens, J. et al. Do no harm: a roadmap for responsible machine learning for health care. Nat. Med 25, 1337–1340 (2019).31427808 10.1038/s41591-019-0548-6
+14. Gianfrancesco MA Tamang S Yazdany J Schmajuk G Potential biases in machine learning algorithms using electronic health record data JAMA Intern Med 2018 178 1544 1547 10.1001/jamainternmed.2018.3763 30128552 PMC6347576
+Gianfrancesco, M. A., Tamang, S., Yazdany, J. & Schmajuk, G. Potential biases in machine learning algorithms using electronic health record data. JAMA Intern Med 178, 1544–1547 (2018).30128552 10.1001/jamainternmed.2018.3763 PMC6347576
+15. Bignami EG Wearable devices in healthcare beyond the one-size-fits all paradigm Sens. (Basel) 2025 25 6472 10.3390/s25206472 PMC12568095 41157526
+Bignami, E. G. et al. Wearable devices in healthcare beyond the one-size-fits all paradigm. Sens. (Basel) 25, 6472 (2025).10.3390/s25206472 PMC12568095 41157526
+16. Doherty C Baldwin M Keogh A Caulfield B Argent R Keeping Pace with Wearables: A Living Umbrella Review of Systematic Reviews Evaluating the Accuracy of Consumer Wearable Technologies in Health Measurement Sports Med. 2024 54 2907 2926 10.1007/s40279-024-02077-2 39080098 PMC11560992
+Doherty, C., Baldwin, M., Keogh, A., Caulfield, B. & Argent, R. Keeping Pace with Wearables: A Living Umbrella Review of Systematic Reviews Evaluating the Accuracy of Consumer Wearable Technologies in Health Measurement. Sports Med. 54, 2907–2926 (2024).39080098 10.1007/s40279-024-02077-2 PMC11560992
+17. Chikwetu L Does deidentification of data from wearable devices give us a false sense of security? A systematic review Lancet Digit. Health 2023 5 e239 e247 10.1016/S2589-7500(22)00234-5 36797124 PMC10040444
+Chikwetu, L. et al. Does deidentification of data from wearable devices give us a false sense of security? A systematic review. Lancet Digit. Health 5, e239–e247 (2023).36797124 10.1016/S2589-7500(22)00234-5 PMC10040444
+18. Doherty C Baldwin M Lambe R Altini M Caulfield B Privacy in consumer wearable technologies: a living systematic analysis of data policies across leading manufacturers NPJ Digit. Med. 2025 8 363 10.1038/s41746-025-01757-1 40517175 PMC12167361
+Doherty, C., Baldwin, M., Lambe, R., Altini, M. & Caulfield, B. Privacy in consumer wearable technologies: a living systematic analysis of data policies across leading manufacturers. NPJ Digit. Med. 8, 363 (2025).40517175 10.1038/s41746-025-01757-1 PMC12167361
+19. Cecconi M Implementing artificial intelligence in critical care medicine: a consensus of 22 Crit. Care 2025 29 290 10.1186/s13054-025-05532-2 40629428 PMC12239397
+Cecconi, M. et al. Implementing artificial intelligence in critical care medicine: a consensus of 22. Crit. Care 29, 290 (2025).40629428 10.1186/s13054-025-05532-2 PMC12239397
+20. Bignami EG Russo M Semeraro F Bellini V Technoethics in real life: AI as a core clinical competency J. Anesth. Analg. Crit. Care 2025 5 13 10.1186/s44158-025-00233-2 40025619 PMC11871806
+Bignami, E. G., Russo, M., Semeraro, F. & Bellini, V. Technoethics in real life: AI as a core clinical competency. J. Anesth. Analg. Crit. Care 5, 13 (2025).40025619 10.1186/s44158-025-00233-2 PMC11871806
+21. Daneshvar N Artificial intelligence in the provision of health care: an American college of physicians policy position paper Ann. Intern. Med. 2024 177 964 967 10.7326/M24-0146 38830215
+Daneshvar, N. et al. Artificial intelligence in the provision of health care: an American college of physicians policy position paper. Ann. Intern. Med. 177, 964–967 (2024).38830215 10.7326/M24-0146
+22. Ferber D Towards autonomous medical artificial intelligence agents Nature 2026 655 1282 1291 10.1038/s41586-026-10675-5 42310457 PMC13421332
+Ferber, D. et al. Towards autonomous medical artificial intelligence agents. Nature 655, 1282–1291 (2026).42310457 10.1038/s41586-026-10675-5 PMC13421332
+23. Liévin V Towards conversational artificial intelligence for disease management Nature 2026 655 1292 1299 10.1038/s41586-026-10764-5 42310463 PMC13421318
+Liévin, V. et al. Towards conversational artificial intelligence for disease management. Nature 655, 1292–1299 (2026).42310463 10.1038/s41586-026-10764-5 PMC13421318
+24. Canali S Schiaffonati V Aliverti A Challenges and recommendations for wearable devices in digital health: data quality, interoperability, health equity, fairness PLOS Digit Health 2022 1 e0000104 10.1371/journal.pdig.0000104 36812619 PMC9931360
+Canali, S., Schiaffonati, V. & Aliverti, A. Challenges and recommendations for wearable devices in digital health: data quality, interoperability, health equity, fairness. PLOS Digit Health 1, e0000104 (2022).36812619 10.1371/journal.pdig.0000104 PMC9931360
+25. Greco M Wearable Health Technology for Preoperative Risk Assessment in Elderly Patients: The WELCOME Study Diagnostics (Basel) 2023 13 630 10.3390/diagnostics13040630 36832119 PMC9955976
+Greco, M. et al. Wearable Health Technology for Preoperative Risk Assessment in Elderly Patients: The WELCOME Study. Diagnostics (Basel) 13, 630 (2023).36832119 10.3390/diagnostics13040630 PMC9955976
+26. Yixiao C Hui S Quhong S Xiaoxi Z Jirong Y A review of utility of wearable sensor technologies for older person frailty assessment Exp. Gerontol. 2025 200 112668 10.1016/j.exger.2024.112668 39733783
+Yixiao, C., Hui, S., Quhong, S., Xiaoxi, Z. & Jirong, Y. A review of utility of wearable sensor technologies for older person frailty assessment. Exp. Gerontol. 200, 112668 (2025).39733783 10.1016/j.exger.2024.112668
+27. Gresham G Wearable activity monitors to assess performance status and predict clinical outcomes in advanced cancer patients NPJ Digit. Med. 2018 1 27 10.1038/s41746-018-0032-6 31304309 PMC6550281
+Gresham, G. et al. Wearable activity monitors to assess performance status and predict clinical outcomes in advanced cancer patients. NPJ Digit. Med. 1, 27 (2018).31304309 10.1038/s41746-018-0032-6 PMC6550281
+28. Low CA Fitbit step counts during inpatient recovery from cancer surgery as a predictor of readmission Ann. Behav. Med. 2018 52 88 92 10.1093/abm/kax022 29538623 PMC6051699
+Low, C. A. et al. Fitbit step counts during inpatient recovery from cancer surgery as a predictor of readmission. Ann. Behav. Med. 52, 88–92 (2018).29538623 10.1093/abm/kax022 PMC6051699
+29. Lichtenstein DA Mezière GA Relevance of lung ultrasound in the diagnosis of acute respiratory failure: the BLUE protocol Chest 2008 134 117 125 10.1378/chest.07-2800 18403664 PMC3734893
+Lichtenstein, D. A. & Mezière, G. A. Relevance of lung ultrasound in the diagnosis of acute respiratory failure: the BLUE protocol. Chest 134, 117–125 (2008).18403664 10.1378/chest.07-2800 PMC3734893
+30. Platz E Dynamic changes and prognostic value of pulmonary congestion by lung ultrasound in acute and chronic heart failure: a systematic review Eur. J. Heart Fail 2017 19 1154 1163 10.1002/ejhf.839 28557302 PMC5731779
+Platz, E. et al. Dynamic changes and prognostic value of pulmonary congestion by lung ultrasound in acute and chronic heart failure: a systematic review. Eur. J. Heart Fail 19, 1154–1163 (2017).28557302 10.1002/ejhf.839 PMC5731779
+31. Kearon C Antithrombotic therapy for VTE Disease: CHEST Guideline and Expert Panel Report Chest 2016 149 315 352 10.1016/j.chest.2015.11.026 26867832
+Kearon, C. et al. Antithrombotic therapy for VTE Disease: CHEST Guideline and Expert Panel Report. Chest 149, 315–352 (2016).26867832 10.1016/j.chest.2015.11.026
+32. Ghio S Prognostic relevance of the echocardiographic assessment of right ventricular function in patients with idiopathic pulmonary arterial hypertension Int J. Cardiol. 2010 140 272 278 10.1016/j.ijcard.2008.11.051 19070379
+Ghio, S. et al. Prognostic relevance of the echocardiographic assessment of right ventricular function in patients with idiopathic pulmonary arterial hypertension. Int J. Cardiol. 140, 272–278 (2010).19070379 10.1016/j.ijcard.2008.11.051
+33. Lang RM Recommendations for cardiac chamber quantification by echocardiography in adults J. Am. Soc. Echocardiogr. 2015 28 1 39.e14 10.1016/j.echo.2014.10.003 25559473
+Lang, R. M. et al. Recommendations for cardiac chamber quantification by echocardiography in adults. J. Am. Soc. Echocardiogr. 28, 1–39.e14 (2015). JanPMID: 25559473.25559473 10.1016/j.echo.2014.10.003
+34. Bignami EG Russo M Bellini V Reclaiming patient-centered care: how intelligent time is redefining healthcare priorities J. Med Syst. 2025 49 30 10.1007/s10916-025-02163-6 39982622
+Bignami, E. G., Russo, M. & Bellini, V. Reclaiming patient-centered care: how intelligent time is redefining healthcare priorities. J. Med Syst. 49, 30 (2025).39982622 10.1007/s10916-025-02163-6
+35. Bignami E Darhour LJ Bellini V Sustainable AI in medicine: navigating innovation, challenges, and environmental impact Health Econ. Rev. 2025 15 110 10.1186/s13561-025-00704-w 41467931 PMC12754882
+Bignami, E., Darhour, L. J. & Bellini, V. Sustainable AI in medicine: navigating innovation, challenges, and environmental impact. Health Econ. Rev. 15, 110 (2025).41467931 10.1186/s13561-025-00704-w PMC12754882
+36. Bellini V Bignami E Green artificial intelligence: pioneering sustainable innovation in health technologies J. Perioper. Pr. 2025 35 586 587 10.1177/17504589251346638 40509902
+Bellini, V. & Bignami, E. Green artificial intelligence: pioneering sustainable innovation in health technologies. J. Perioper. Pr. 35, 586–587 (2025).10.1177/17504589251346638 40509902
+37. Manrai AK Medical AI has a measurement problem Nature 2026 655 1138 1139 10.1038/d41586-026-02125-z 42521737
+Manrai, A. K. Medical AI has a measurement problem. Nature 655, 1138–1139 (2026).42521737 10.1038/d41586-026-02125-z
+38. European Parliament and Council of the European Union. Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act). Off. J. Eur. Union L 2024/1689 (2024).
+39. Topol EJ High-performance medicine: the convergence of human and artificial intelligence Nat. Med. 2019 25 44 56 10.1038/s41591-018-0300-7 30617339
+Topol, E. J. High-performance medicine: the convergence of human and artificial intelligence. Nat. Med. 25, 44–56 (2019).30617339 10.1038/s41591-018-0300-7
+40. Ueda, D. et al. Climate change and artificial intelligence in healthcare: review and recommendations towards a sustainable future. Diagn. Interv. Imaging. 10.1016/j.diii.2024.06.002 (2024).10.1016/j.diii.2024.06.002 38918123
