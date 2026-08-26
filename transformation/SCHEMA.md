@@ -116,6 +116,13 @@ license-clean. Les exclure ici serait une decision irreversible prise trop tot.
 controle (y compris `\x9f`, rencontre a l'inspection), soft hyphens, recollage
 des mots coupes en fin de ligne, normalisation des espaces.
 
+**Pas de numero de page** — La fiche de mission (Section 5 du Plan de Projet)
+prevoit un champ `page` par chunk. Le format `.txt` de `pmc-oa-opendata` ne
+contient aucune information de pagination : elle n'existe que dans le PDF
+d'origine ou le XML JATS. Le champ est donc absent, volontairement, plutot que
+rempli d'une valeur inventee. Recuperable depuis le `.xml` sur S3 si le besoin
+se confirme cote embeddings.
+
 ---
 
 ## Invariants proposes pour les tests de Hanane
