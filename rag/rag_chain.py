@@ -44,9 +44,17 @@ def answer_question(question: str, top_k: int = 5, where: dict = None) -> dict:
         chunks = retrieve(question, top_k=top_k, where=where)
         retrieval_time = time.time() - t_retrieval_start
 
-        # --- Génération ---
+                # --- Génération ---
         t_generation_start = time.time()
-        answer = generate_answer(question, chunks)
+        try:
+            answer = generate_answer(question, chunks)
+        except Exception as e:
+            answer = (
+                "Une erreur est survenue lors de la génération de la réponse "
+                "(service LLM indisponible ou quota dépassé). Veuillez réessayer "
+                "dans quelques instants."
+            )
+            mlflow.log_param("generation_error", str(e))
         generation_time = time.time() - t_generation_start
 
         total_time = time.time() - start_time
