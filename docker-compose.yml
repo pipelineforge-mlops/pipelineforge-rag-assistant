@@ -11,7 +11,7 @@ services:
       - .env
     environment:
       - MLFLOW_TRACKING_URI=http://mlflow:5000
-      - VECTORSTORE_URL=http://vectorstore:6333
+      - VECTOR_DB_URL=http://vectorstore:6333
     depends_on:
       - vectorstore
       - mlflow
