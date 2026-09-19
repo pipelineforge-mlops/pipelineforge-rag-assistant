@@ -1,16 +1,17 @@
 """
 main.py — API FastAPI (Chbab Brahim, Sprint 4)
-Expose le module RAG d'Hafsa Elhilali (rag_chain.answer_question) via HTTP.
+Expose le module RAG d'Hafsa Elhilali via HTTP.
 """
 import time
 import logging
 
 from fastapi import FastAPI, HTTPException
+from prometheus_fastapi_instrumentator import Instrumentator
 
 from schemas import AskRequest, AskResponse, HealthResponse, Source
 
-# Le dossier rag/ (livré par Hafsa Elhilali) est monté/installé comme package
-# à côté de l'API — voir docker-compose.yml (volume) ou requirements.txt (pip install -e ../rag)
+# Le dossier rag/ (livré par Hafsa Elhilali) est copié dans l'image
+# et ajouté au PYTHONPATH — voir Dockerfile
 from rag_chain import answer_question
 
 logging.basicConfig(level=logging.INFO)
@@ -21,6 +22,9 @@ app = FastAPI(
     description="API exposant la chaîne RAG (retrieval + génération) sur le corpus scientifique.",
     version="1.0.0",
 )
+
+# Expose /metrics au format Prometheus (nombre de requêtes, latence, codes de statut)
+Instrumentator().instrument(app).expose(app)
 
 
 @app.get("/health", response_model=HealthResponse)
