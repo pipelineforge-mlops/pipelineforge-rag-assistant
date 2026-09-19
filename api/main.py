@@ -6,6 +6,8 @@ import time
 import logging
 
 from fastapi import FastAPI, HTTPException
+from pathlib import Path
+from fastapi.responses import FileResponse
 
 from schemas import AskRequest, AskResponse, HealthResponse, Source
 
@@ -21,6 +23,11 @@ app = FastAPI(
     description="API exposant la chaîne RAG (retrieval + génération) sur le corpus scientifique.",
     version="1.0.0",
 )
+
+@app.get("/", include_in_schema=False)
+def index():
+    """Interface web de démonstration."""
+    return FileResponse(Path(__file__).parent / "static" / "index.html")
 
 
 @app.get("/health", response_model=HealthResponse)
