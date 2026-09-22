@@ -14,7 +14,6 @@ COPY rag/requirements.txt ./requirements-rag.txt
 RUN pip install --no-cache-dir -r requirements-api.txt
 RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
 RUN pip install --no-cache-dir -r requirements-rag.txt
-RUN pip install --no-cache-dir protobuf==4.25.3
 
 
 # --- Code de l'API ---
