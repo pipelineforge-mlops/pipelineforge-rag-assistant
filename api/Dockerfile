@@ -9,16 +9,20 @@ WORKDIR /app
 # --- Dépendances de l'API ---
 COPY api/requirements.txt ./requirements-api.txt
 # --- Dépendances du module RAG (Hafsa Elhilali) : à compléter si un requirements.txt existe dans rag/ ---
-# COPY rag/requirements.txt ./requirements-rag.txt
+COPY rag/requirements.txt ./requirements-rag.txt
 
 RUN pip install --no-cache-dir -r requirements-api.txt
-# RUN pip install --no-cache-dir -r requirements-rag.txt
+RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+RUN pip install --no-cache-dir -r requirements-rag.txt
+RUN pip install --no-cache-dir protobuf==4.25.3
+
 
 # --- Code de l'API ---
 COPY api/ ./
 
 # --- Code du module RAG (rag_chain.py, retriever.py, generation.py) ---
 COPY rag/ ./rag_module/
+COPY embeddings/output/chroma_db /app/embeddings/output/chroma_db
 ENV PYTHONPATH="/app/rag_module:${PYTHONPATH}"
 
 EXPOSE 8000
